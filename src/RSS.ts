@@ -102,6 +102,18 @@ export const SEARCH_ITEMS: RSSItem[] = [
         TYPE: "ISSUE",
         link: `${BASE_URL}/whatwg-html.json`
     },
+    {
+        title: "rails/rails pr",
+        query: 'repo:rails/rails is:pr is:open',
+        TYPE: "ISSUE",
+        link: `${BASE_URL}/rails-pr.json`
+    },
+    {
+        title: "rust-lang/rfcs pr",
+        query: 'repo:rust-lang/rfcs is:pr is:open',
+        TYPE: "ISSUE",
+        link: `${BASE_URL}/rust-rfc.json`
+    },
     // Repository
     {
         title: "LightWeight JavaScript repositories",
