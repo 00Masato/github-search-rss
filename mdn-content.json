@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1782266?u=fb61bcf590c36c273cc80a3a95b9897869d7b9a9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">Added a page for MathMLElement.style and updated SVGElement.style to fix typos. Both are based on HTMLElement.style</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">These pages are all similar and we can benefit from having an example for MathMLElement.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/26635",
             "title": "Add page for MathMLElement.style, update SVGElement.style",
-            "date_modified": "2023-05-08T03:56:44.000Z",
+            "date_modified": "2023-05-08T04:13:56.000Z",
             "date_published": "2023-05-08T03:07:09.000Z",
             "author": {
                 "name": "NotWoods",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50659234?u=41a0dec2e6fdd50a15ad649285460c784e817030&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds an new example of using <code class=\"notranslate\">srcset</code> attribute on the <code class=\"notranslate\">&lt;img&gt;</code> tag.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Earlier on the page, the reader is told:</p>\n<blockquote>\n<p dir=\"auto\">If providing higher-density versions of an image for high-DPI (Retina) display, use <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset\" rel=\"nofollow\">srcset</a> on the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element instead. This lets browsers opt for lower-density versions in data-saving modes, and you don't have to write explicit media conditions.</p>\n</blockquote>\n<p dir=\"auto\">But in \"The srcset attribute\" section, the example used to demonstrate how to include alternate images based on pixel density only uses srcset in the <source> elements and src in the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">NIL</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25150.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1614202399\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25150\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25150/hovercard\" href=\"https://github.com/mdn/content/issues/25150\">#25150</a></p>",
             "url": "https://github.com/mdn/content/pull/26618",
             "title": "25150 add new srcset usage example",
-            "date_modified": "2023-05-07T11:50:36.000Z",
+            "date_modified": "2023-05-08T05:02:35.000Z",
             "date_published": "2023-05-06T15:31:21.000Z",
             "author": {
                 "name": "adarshajit",
@@ -160,10 +160,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">easier to read this HTML without linting.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This example was really difficult to decipher. It's easier to read this HTML without lifting; and it's about ARIA roles, not learning HTML, so whitespace is not an issue (nor would it be if it were about HTML)</p>",
             "url": "https://github.com/mdn/content/pull/26576",
             "title": "Minor edit: set html-nolint to HTML example",
-            "date_modified": "2023-05-04T18:47:05.000Z",
+            "date_modified": "2023-05-08T04:23:59.000Z",
             "date_published": "2023-05-04T06:06:29.000Z",
             "author": {
                 "name": "estelle",
