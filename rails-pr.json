@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds test coverage for <code class=\"notranslate\">String#blank?</code> with every non-dummy encoding that is bundled with Ruby.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48149.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1698518966\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48149\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48149/hovercard\" href=\"https://github.com/rails/rails/issues/48149\">#48149</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/48160",
-            "title": "Test `String#blank?` with every non-dummy encoding",
-            "date_modified": "2023-05-08T03:02:56.000Z",
-            "date_published": "2023-05-07T20:55:06.000Z",
-            "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rack/rack/blob/main/CHANGELOG.md?plain=1#L98\">Rack 3.0 doesn't guarantee rewindable request body streams. </a></p>\n<p dir=\"auto\">Therefore Rack doesn't <a href=\"https://github.com/rack/rack/commit/42aff22f708123839ba706cbe659d108b47c40c7#diff-7404531728e9194974263579fc1b939066d457000ec901206b49ced795df9babL48\">rewind the body after parsing the POST params like it use to</a>.<br>\nSince this is a test request, <a href=\"https://github.com/rails/rails/blob/main/actionpack/lib/action_controller/test_case.rb#L122\">we can garantee the stream is rewindable</a> and rewind in the test instead.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While this is only a soft failure, all buildkite builds <a href=\"https://buildkite.com/rails/rails/builds/96229#0187f3ef-462a-4bfc-8de8-9612c20e0e73\" rel=\"nofollow\">are currently failing</a> on <code class=\"notranslate\">action_pack [rack-3]</code>. This should bring it back to green.</p>\n<p dir=\"auto\">We could wait for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1465595207\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46594\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46594/hovercard\" href=\"https://github.com/rails/rails/pull/46594\">#46594</a>  to land, but this has been in the pipes for a while. Fixing CI for the other branches seems like a good idea.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Maybe the right solution is to remove the test entirely? The test doesn't seem to test much at this point. Only that the request is a stream.</p>\n<p dir=\"auto\">If we do keep the test, <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1465595207\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46594\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46594/hovercard\" href=\"https://github.com/rails/rails/pull/46594\">#46594</a> also <a href=\"https://github.com/rails/rails/pull/46594/files#diff-b0e9e928ad4f52e85feaa663c8b5c33b3ff5e46646b67945bceb444a0ccbd394R264-R269\">fixes it</a>, but I think it invalidates the test.<br>\n<a href=\"https://github.com/rails/rails/blob/main/actionpack/lib/action_dispatch/http/request.rb#L356-L362\">It bypass the body_stream branch</a> in <code class=\"notranslate\">ActionDispatch::Request#body</code> by setting <code class=\"notranslate\">RAW_POST_DATA</code> <a href=\"https://github.com/rails/rails/blob/main/actionpack/lib/action_controller/test_case.rb#L503-L505\">when doing the request</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/blob/main/actionpack/test/controller/test_case_test.rb#L277-L280\">We already have tests</a> on the <code class=\"notranslate\">RAW_POST_DATA</code> branch of <code class=\"notranslate\">ActionDispatch::Request#body</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG -- N/A</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48158",
             "title": "Fix failing buildkite build - action_pack [rack-3]",
@@ -25,17 +14,6 @@
             "author": {
                 "name": "JoeDupuis",
                 "url": "https://github.com/JoeDupuis"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This commit addresses a few problems:</p>\n<ol dir=\"auto\">\n<li>\n<p dir=\"auto\"><code class=\"notranslate\">read_multi</code> (and <code class=\"notranslate\">fetch_multi</code> and <code class=\"notranslate\">delete_multi</code>) logs multiple keys as if they were a single composite key.  For example, <code class=\"notranslate\">read_multi(\"posts/1\", \"posts/2\")</code> will log \"Cache read_multi: posts/1/posts/2\".  This can make the log confusing or indecipherable when keys contain more slashes, such as with view fragments.</p>\n</li>\n<li>\n<p dir=\"auto\"><code class=\"notranslate\">write_multi</code> logs its entire argument as a single composite key.  For example, <code class=\"notranslate\">write_multi(\"p1\" =&gt; post1, \"p2\" =&gt; post2)</code> will log \"Cache write_multi: p1=#Post:0x.../p2=#Post:0x...\".</p>\n</li>\n<li>\n<p dir=\"auto\"><code class=\"notranslate\">MemoryStore#cleanup</code> logs its instrumentation payload instead of setting it on the event.  For example, when 10 entries are in the cache, <code class=\"notranslate\">cleanup</code> will log \"Cache cleanup: size=10\" instead of merging <code class=\"notranslate\">{ size: 10 }</code> into the event payload.</p>\n</li>\n</ol>\n<p dir=\"auto\">Multi-key logging was first added in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/ca6aba7f30ad9910f17e4c5b39667889d9518794/hovercard\" href=\"https://github.com/rails/rails/commit/ca6aba7f30ad9910f17e4c5b39667889d9518794\"><tt>ca6aba7</tt></a>, then reverted in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/c4a46fa781d39f1b4607cb1613a1c67fa044ce54/hovercard\" href=\"https://github.com/rails/rails/commit/c4a46fa781d39f1b4607cb1613a1c67fa044ce54\"><tt>c4a46fa</tt></a> due to being unwieldy, and then re-added in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/2b96d5822bfe407be7589e293f3265c0c7a6726c/hovercard\" href=\"https://github.com/rails/rails/commit/2b96d5822bfe407be7589e293f3265c0c7a6726c\"><tt>2b96d58</tt></a> (for <code class=\"notranslate\">write_multi</code>) and <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/62023884f76c108127c8966f4d67bb717338dd66/hovercard\" href=\"https://github.com/rails/rails/commit/62023884f76c108127c8966f4d67bb717338dd66\"><tt>6202388</tt></a> (for <code class=\"notranslate\">read_multi</code>) but without any handling or formatting.</p>\n<p dir=\"auto\">This commit changes the way multi-key operations are logged in order to prevent these problems.  For example, <code class=\"notranslate\">read_multi(\"posts/1\", \"posts/2\")</code> will now log \"Cache read_multi: 2 key(s) specified\", and <code class=\"notranslate\">write_multi(\"p1\" =&gt; post1, \"p2\" =&gt; post2)</code> will now log \"Cache write_multi: 2 key(s) specified\".</p>",
-            "url": "https://github.com/rails/rails/pull/48150",
-            "title": "Log key summary for `*_multi` cache operations",
-            "date_modified": "2023-05-08T00:03:54.000Z",
-            "date_published": "2023-05-06T21:26:08.000Z",
-            "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "jpbalarini",
                 "url": "https://github.com/jpbalarini"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16636757?u=27830160a8177896eb66623c0a9b730015a2aae0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, we don't document the use case for ActiveJob's <code class=\"notranslate\">queue_with_priority</code> block arguments. It seems necessary to document them in the API docs as well considering how useful this option is.</p>",
+            "url": "https://github.com/rails/rails/pull/48099",
+            "title": "Document queue_with_priority block arguments and their use [ci skip]",
+            "date_modified": "2023-04-30T06:51:36.000Z",
+            "date_published": "2023-04-30T06:51:33.000Z",
+            "author": {
+                "name": "shivamsinghchahar",
+                "url": "https://github.com/shivamsinghchahar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19731661?u=c357f2a01218b4864aba60738484286b95d97ecc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48094.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1689435061\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48094\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48094/hovercard\" href=\"https://github.com/rails/rails/issues/48094\">#48094</a><br>\n<code class=\"notranslate\">unscope</code> not working when where by tripe dot range</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Define <code class=\"notranslate\">fetch_attribute</code> to <code class=\"notranslate\">activerecord/lib/arel/nodes/and.rb</code>, because unscope uses fetch_attribute to determine whether to exclude predicate or not.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48095",
+            "title": "Fix unscope not working when where by tripe dot range",
+            "date_modified": "2023-04-29T07:48:44.000Z",
+            "date_published": "2023-04-29T07:48:40.000Z",
+            "author": {
+                "name": "ippachi",
+                "url": "https://github.com/ippachi"
             }
         }
     ]
