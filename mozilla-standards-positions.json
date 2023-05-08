@@ -1,0 +1,229 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "mozilla/standards-positions Issues",
+    "home_page_url": "https://00masato.github.io/github-search-rss/mozilla-standards-positions.json",
+    "feed_url": "https://00masato.github.io/github-search-rss/mozilla-standards-positions.json",
+    "description": "mozilla/standards-positions Issues on GitHub",
+    "items": [
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21203?u=db5ec5c020d0d91be41b08e96eee7a2e63356acc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: WebAuthn PRF extension</li>\n<li>Specification or proposal URL (if available): <a href=\"https://w3c.github.io/webauthn/#prf-extension\" rel=\"nofollow\">https://w3c.github.io/webauthn/#prf-extension</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/w3c/webauthn/wiki/Explainer:-PRF-extension\">https://github.com/w3c/webauthn/wiki/Explainer:-PRF-extension</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional): dveditz</li>\n</ul>\n<p dir=\"auto\">(Requested as part of <a href=\"https://groups.google.com/a/chromium.org/g/blink-dev/c/iTNOgLwD2bI\" rel=\"nofollow\">https://groups.google.com/a/chromium.org/g/blink-dev/c/iTNOgLwD2bI</a>)</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/798",
+            "title": "WebAuthn PRF extension",
+            "date_modified": "2023-05-04T22:22:27.000Z",
+            "date_published": "2023-05-04T22:22:27.000Z",
+            "author": {
+                "name": "agl",
+                "url": "https://github.com/agl"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8703745?u=19367f14c475a9dc03e05b4801b87fb410f8a6f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Intervention Reporting</li>\n<li>Specification or proposal URL (if available):  <a href=\"https://wicg.github.io/intervention-reporting/#intervention-report\" rel=\"nofollow\">https://wicg.github.io/intervention-reporting/#intervention-report</a></li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zcorpan/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zcorpan\">@zcorpan</a></li>\n</ul>",
+            "url": "https://github.com/mozilla/standards-positions/issues/797",
+            "title": "Request for position: Intervention Reporting (Reporting API)",
+            "date_modified": "2023-05-01T18:24:56.000Z",
+            "date_published": "2023-05-01T18:24:56.000Z",
+            "author": {
+                "name": "sefeng211",
+                "url": "https://github.com/sefeng211"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8703745?u=19367f14c475a9dc03e05b4801b87fb410f8a6f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: COEP violation Reporting</li>\n<li>Specification or proposal URL (if available):  <a href=\"https://html.spec.whatwg.org/multipage/browsers.html#queue-a-cross-origin-embedder-policy-inheritance-violation\" rel=\"nofollow\">https://html.spec.whatwg.org/multipage/browsers.html#queue-a-cross-origin-embedder-policy-inheritance-violation</a></li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zcorpan/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zcorpan\">@zcorpan</a></li>\n</ul>",
+            "url": "https://github.com/mozilla/standards-positions/issues/796",
+            "title": "Request for position: COEP violation (Reporting API) ",
+            "date_modified": "2023-05-02T09:46:26.000Z",
+            "date_published": "2023-05-01T18:18:39.000Z",
+            "author": {
+                "name": "sefeng211",
+                "url": "https://github.com/sefeng211"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8703745?u=19367f14c475a9dc03e05b4801b87fb410f8a6f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: COOP violation Reporting</li>\n<li>Specification or proposal URL (if available):  <a href=\"https://html.spec.whatwg.org/multipage/browsers.html#coop-violation-navigation-to\" rel=\"nofollow\">https://html.spec.whatwg.org/multipage/browsers.html#coop-violation-navigation-to</a></li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zcorpan/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zcorpan\">@zcorpan</a></li>\n</ul>",
+            "url": "https://github.com/mozilla/standards-positions/issues/795",
+            "title": "Request for position: COOP violation (Reporting API) ",
+            "date_modified": "2023-05-01T18:15:10.000Z",
+            "date_published": "2023-05-01T18:15:10.000Z",
+            "author": {
+                "name": "sefeng211",
+                "url": "https://github.com/sefeng211"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32498324?u=6ff39af834311a2dbeefc3c3071dde7eeb6d5a0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: CSS Anchor Positioning</li>\n<li>Specification or proposal URL (if available): <a href=\"https://drafts.csswg.org/css-anchor-position-1/\" rel=\"nofollow\">https://drafts.csswg.org/css-anchor-position-1/</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/CSSAnchoredPositioning/explainer.md\">https://github.com/MicrosoftEdge/MSEdgeExplainers/blob/main/CSSAnchoredPositioning/explainer.md</a> (probably slightly outdated but should give a general overview)</li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional):</li>\n</ul>\n<h2 dir=\"auto\">Other Information</h2>\n<p dir=\"auto\">This new CSS functionality will allow web developers to position elements anchored to another element with built in fallback positioning. This will go hand in hand with the Popover API <a href=\"https://github.com/mozilla/standards-positions/issues/698\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mozilla/standards-positions/issues/698/hovercard\">which Mozilla is positive on</a></p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/794",
+            "title": "CSS Anchor Positioning",
+            "date_modified": "2023-04-29T10:54:31.000Z",
+            "date_published": "2023-04-29T10:50:30.000Z",
+            "author": {
+                "name": "lukewarlow",
+                "url": "https://github.com/lukewarlow"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1127449?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Storage Buckets</li>\n<li>Specification or proposal URL (if available): <a href=\"https://wicg.github.io/storage-buckets/\" rel=\"nofollow\">https://wicg.github.io/storage-buckets/</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/WICG/storage-buckets/blob/main/explainer.md\">https://github.com/WICG/storage-buckets/blob/main/explainer.md</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/asutherland/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/asutherland\">@asutherland</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>",
+            "url": "https://github.com/mozilla/standards-positions/issues/792",
+            "title": "Storage Buckets",
+            "date_modified": "2023-04-27T23:13:11.000Z",
+            "date_published": "2023-04-27T22:50:58.000Z",
+            "author": {
+                "name": "evanstade",
+                "url": "https://github.com/evanstade"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8131197?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Attribution Reporting</li>\n<li>Specification or proposal URL (if available): <a href=\"https://wicg.github.io/attribution-reporting-api/\" rel=\"nofollow\">https://wicg.github.io/attribution-reporting-api/</a></li>\n<li>Explainer URL (if available):<br>\n<a href=\"https://github.com/WICG/attribution-reporting-api#attribution-reporting-api\">Attribution Reporting API</a><br>\n<a href=\"https://github.com/WICG/attribution-reporting-api/blob/main/EVENT.md\">Event Level Reports</a><br>\n<a href=\"https://github.com/WICG/attribution-reporting-api/blob/main/AGGREGATE.md\">Aggregatable Reports</a></li>\n<li>Caniuse.com URL (optional): N/A</li>\n<li>Bugzilla URL (optional): N/A</li>\n<li>Mozillians who can provide input (optional): N/A</li>\n</ul>",
+            "url": "https://github.com/mozilla/standards-positions/issues/791",
+            "title": "Request for position: Attribution Reporting API",
+            "date_modified": "2023-04-25T23:19:52.000Z",
+            "date_published": "2023-04-25T23:19:52.000Z",
+            "author": {
+                "name": "akashnadan",
+                "url": "https://github.com/akashnadan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3396686?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Clipboard API and events - Permissions API integration</li>\n<li>Specification or proposal URL (if available): <a href=\"https://w3c.github.io/clipboard-apis/#clipboard-permissions\" rel=\"nofollow\">https://w3c.github.io/clipboard-apis/#clipboard-permissions</a></li>\n<li>Explainer URL (if available):</li>\n<li>Caniuse.com URL (optional): <a href=\"https://caniuse.com/mdn-api_permissions_permission_clipboard-write\" rel=\"nofollow\">https://caniuse.com/mdn-api_permissions_permission_clipboard-write</a></li>\n<li>Bugzilla URL (optional): <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1646270\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1646270</a></li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/EdgarChen/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/EdgarChen\">@EdgarChen</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">See also <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"321669083\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mozilla/standards-positions/issues/89\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mozilla/standards-positions/issues/89/hovercard\" href=\"https://github.com/mozilla/standards-positions/issues/89\">#89</a> for the previous discussion about permissions. Apple was against this in 2020 in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"499440305\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/clipboard-apis/issues/101\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/clipboard-apis/issues/101/hovercard\" href=\"https://github.com/w3c/clipboard-apis/issues/101\">w3c/clipboard-apis#101</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"321735781\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/permissions/issues/175\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/permissions/issues/175/hovercard\" href=\"https://github.com/w3c/permissions/issues/175\">w3c/permissions#175</a> while Blink shipped this in Chrome 64 in 2018 per caniuse.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/790",
+            "title": "Request for position: `clipboard-write` permission",
+            "date_modified": "2023-04-25T22:54:32.000Z",
+            "date_published": "2023-04-25T22:31:04.000Z",
+            "author": {
+                "name": "saschanaz",
+                "url": "https://github.com/saschanaz"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/300430?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: WebRTC Codec selection API</li>\n<li>Specification or proposal URL (if available): <a href=\"https://w3c.github.io/webrtc-extensions/#dom-rtcrtpencodingparameters-codec\" rel=\"nofollow\">https://w3c.github.io/webrtc-extensions/#dom-rtcrtpencodingparameters-codec</a></li>\n<li>Explainer URL (if available): Slides for the WG interim at <a href=\"https://docs.google.com/presentation/d/1OfAN3sfVXhvOBCqgLMegrNcHz7-V4qTnuHjBP3gLdgg/edit#slide=id.g216ea3acd8c_1_3\" rel=\"nofollow\">https://docs.google.com/presentation/d/1OfAN3sfVXhvOBCqgLMegrNcHz7-V4qTnuHjBP3gLdgg/edit#slide=id.g216ea3acd8c_1_3</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jan-ivar/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jan-ivar\">@jan-ivar</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">RTCRtpEncodingParameters.codec</code> field is a new API allowing the developers to change the current codec used to encode a layer without having to do a renegotiation with a different codec order. Currently, the codec used by a sender is the first one negotiated, which is not convenient for developers as they can't update all the encoding parameters (especially in simulcast use case) at the same time as they change codec.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/789",
+            "title": "WebRTC Codec selection API",
+            "date_modified": "2023-04-24T16:01:11.000Z",
+            "date_published": "2023-04-24T16:01:11.000Z",
+            "author": {
+                "name": "Orphis",
+                "url": "https://github.com/Orphis"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118266?u=5a7fb2f3d1ecc7dcd73f43f4b478cb4938e6572c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: customElements.getName</li>\n<li>Specification or proposal URL (if available): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1678368760\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/html/issues/9195\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/whatwg/html/pull/9195/hovercard?comment_id=1174422812&amp;comment_type=review_comment\" href=\"https://github.com/whatwg/html/pull/9195#discussion_r1174422812\">whatwg/html#9195 (comment)</a></li>\n<li>Explainer URL (if available): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"176784759\" data-permission-text=\"Title is private\" data-url=\"https://github.com/WICG/webcomponents/issues/566\" data-hovercard-type=\"issue\" data-hovercard-url=\"/WICG/webcomponents/issues/566/hovercard\" href=\"https://github.com/WICG/webcomponents/issues/566\">WICG/webcomponents#566</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional): <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1829335\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1829335</a></li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/smaug----/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/smaug----\">@smaug----</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">This was a proposed addition to the customElements spec by the WCCG, during their spring F2F, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/smaug----/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/smaug----\">@smaug----</a> was in attendance. See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"176784759\" data-permission-text=\"Title is private\" data-url=\"https://github.com/WICG/webcomponents/issues/566\" data-hovercard-type=\"issue\" data-hovercard-url=\"/WICG/webcomponents/issues/566/hovercard\" href=\"https://github.com/WICG/webcomponents/issues/566\">WICG/webcomponents#566</a> for more on the problem/solution.</p>\n<p dir=\"auto\">WebKit has already landed a patch for this: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1679186980\" data-permission-text=\"Title is private\" data-url=\"https://github.com/WebKit/WebKit/issues/13053\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/WebKit/WebKit/pull/13053/hovercard\" href=\"https://github.com/WebKit/WebKit/pull/13053\">WebKit/WebKit#13053</a></p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/785",
+            "title": "Request for position: customElements.getName ",
+            "date_modified": "2023-04-23T08:41:23.000Z",
+            "date_published": "2023-04-23T08:41:23.000Z",
+            "author": {
+                "name": "keithamus",
+                "url": "https://github.com/keithamus"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63884798?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: CSS (The exact spec where this will go is TBD)</li>\n<li>Specification or proposal URL (if available): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1679203027\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/csswg-drafts/issues/8747\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/csswg-drafts/issues/8747/hovercard\" href=\"https://github.com/w3c/csswg-drafts/issues/8747\">w3c/csswg-drafts#8747</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/WICG/view-transitions/blob/main/default-ua-transitions.md\">https://github.com/WICG/view-transitions/blob/main/default-ua-transitions.md</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional):</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">If an author chooses to disable UA transitions for a subset of navigations, they will need to use the API proposed at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1679153366\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mozilla/standards-positions/issues/783\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mozilla/standards-positions/issues/783/hovercard\" href=\"https://github.com/mozilla/standards-positions/issues/783\">#783</a> to detect whether a UA transition was executed for a navigation.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/784",
+            "title": "Request for Position: Disabling UA Transitions",
+            "date_modified": "2023-04-21T23:33:02.000Z",
+            "date_published": "2023-04-21T23:33:02.000Z",
+            "author": {
+                "name": "khushalsagar",
+                "url": "https://github.com/khushalsagar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63884798?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: HTML</li>\n<li>Specification or proposal URL (if available): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1558379555\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/html/issues/8782\" data-hovercard-type=\"issue\" data-hovercard-url=\"/whatwg/html/issues/8782/hovercard\" href=\"https://github.com/whatwg/html/issues/8782\">whatwg/html#8782</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/WICG/view-transitions/blob/main/default-ua-transitions.md\">https://github.com/WICG/view-transitions/blob/main/default-ua-transitions.md</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional):</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">This API would help with issues like <a href=\"https://stackoverflow.com/questions/66867737/iphone-safari-detect-swipe-navigation\" rel=\"nofollow\">this</a>. Chromium is planning to ship similar browser UX and we're looking forward to fixing this problem in an interoperable way.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/783",
+            "title": "Request for Position: Detecting UA Transitions",
+            "date_modified": "2023-04-21T22:07:03.000Z",
+            "date_published": "2023-04-21T22:07:03.000Z",
+            "author": {
+                "name": "khushalsagar",
+                "url": "https://github.com/khushalsagar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36379249?u=4840c2d79361800483d4c22b03d928ae33115103&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on a Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Submitting element directionality: the dirname attribute</li>\n<li>Specification or proposal URL: <a href=\"https://html.spec.whatwg.org/#submitting-element-directionality:-the-dirname-attribute\" rel=\"nofollow\">Submitting element directionality: the dirname attribute</a></li>\n<li>Explainer URL: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#dirname\" rel=\"nofollow\">MDN docs</a></li>\n<li>Bugzilla URL: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=675943\" rel=\"nofollow\">Bug 675943</a></li>\n<li>Mozillians who can provide input: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zcorpan/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zcorpan\">@zcorpan</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">We intend to prototype and ship this feature soon.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/782",
+            "title": "Request for Mozilla Position: Submitting element directionality via the dirname attribute",
+            "date_modified": "2023-04-20T14:32:54.000Z",
+            "date_published": "2023-04-19T16:15:46.000Z",
+            "author": {
+                "name": "vinhill",
+                "url": "https://github.com/vinhill"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9669289?u=e8e8784508f465315202d7d0f03a33ccb8478edd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Fenced frames</li>\n<li>Specification or proposal URL (if available): <a href=\"https://wicg.github.io/fenced-frame/\" rel=\"nofollow\">https://wicg.github.io/fenced-frame/</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/WICG/fenced-frame/tree/master/explainer\">https://github.com/WICG/fenced-frame/tree/master/explainer</a></li>\n<li>Caniuse.com URL (optional): N/A</li>\n<li>Bugzilla URL (optional): N/A</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">Fenced frames is a framing isolation primitive designed for maximum isolation between a frame and its embedder, between which no communication is allowed. Compared with iframes, this entails a similar visual experience but radically different processing model. A fenced frame is therefore suitable for (but not required to) hosting cross-site data which must not be joined across contexts. Please note that while the motivation for fenced frames is in part fueled by <a href=\"https://github.com/wicg/turtledove/\">FLEDGE</a> and <a href=\"https://github.com/wicg/shared-storage\">Shared Storage</a>, this proposal is entirely independent and stands on its own, and is to be evaluated as such. It can indeed be used independent of those APIs.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/shivanigithub/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/shivanigithub\">@shivanigithub</a></p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/781",
+            "title": "Request for Mozilla position: Fenced frames",
+            "date_modified": "2023-04-18T14:28:38.000Z",
+            "date_published": "2023-04-18T14:28:38.000Z",
+            "author": {
+                "name": "domfarolino",
+                "url": "https://github.com/domfarolino"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25407494?u=60d75baec37057d49329cbdffd2f7d06513ba7e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Specification Title: Explicit compile hints</p>\n</li>\n<li>\n<p dir=\"auto\">Specification or proposal URL (if available): <a href=\"https://docs.google.com/document/d/19xTAM4A75tz0xUq_velMzGA4JHEgXpyflUxXTcuNiyE/edit?usp=sharing\" rel=\"nofollow\">https://docs.google.com/document/d/19xTAM4A75tz0xUq_velMzGA4JHEgXpyflUxXTcuNiyE/edit?usp=sharing</a></p>\n</li>\n<li>\n<p dir=\"auto\">Explainer URL (if available): -</p>\n</li>\n<li>\n<p dir=\"auto\">Caniuse.com URL (optional): -</p>\n</li>\n<li>\n<p dir=\"auto\">Bugzilla URL (optional): -</p>\n</li>\n<li>\n<p dir=\"auto\">Mozillians who can provide input (optional): Yulia Startsev &amp; Nicolas B. Pierron</p>\n</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>",
+            "url": "https://github.com/mozilla/standards-positions/issues/780",
+            "title": "Request for Mozilla Position: Explicit compile hints",
+            "date_modified": "2023-04-18T15:47:53.000Z",
+            "date_published": "2023-04-18T10:32:32.000Z",
+            "author": {
+                "name": "marjakh",
+                "url": "https://github.com/marjakh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6134073?u=7d3be873c12977dcef2e9f7f18beccffeb41efd3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Add a capability to create a Blob URL with a unique (non-opaque) origin.</li>\n<li>Specification or proposal URL: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1580148570\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/FileAPI/issues/192\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/FileAPI/issues/192/hovercard\" href=\"https://github.com/w3c/FileAPI/issues/192\">w3c/FileAPI#192</a></li>\n<li>Explainer URL:\n<ol dir=\"auto\">\n<li><a href=\"https://github.com/shhnjk/Safe-Blob-URL\">Add a crossOrigin option to Blob</a>.</li>\n<li><a href=\"https://gist.github.com/ddworken/309363b5d140bcc5ff6b39fa4a8d7a12\">Add <code class=\"notranslate\">allow-unique-origin</code> keyword to iframe/CSP sandbox</a>.</li>\n</ol>\n</li>\n<li>Mozillians who can provide input: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mozfreddyb/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mozfreddyb\">@mozfreddyb</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dveditz/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dveditz\">@dveditz</a>.</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">We have 2 proposals (listed above in the explainer URLs) to provide this capability. While we (Google) prefer <a href=\"https://gist.github.com/ddworken/309363b5d140bcc5ff6b39fa4a8d7a12\"><code class=\"notranslate\">allow-unique-origin</code></a> option, we are happy to hear if you preper the other one.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/779",
+            "title": "Request for Mozilla Position: Add a capability to create a Blob URL with a unique (non-opaque) origin",
+            "date_modified": "2023-04-20T01:05:53.000Z",
+            "date_published": "2023-04-17T22:05:38.000Z",
+            "author": {
+                "name": "shhnjk",
+                "url": "https://github.com/shhnjk"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5575980?u=2ddb1124be9aeb67b032d6864e91d6120057be60&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: WhatWG owning type streams</li>\n<li>Specification or proposal URL (if available): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1659853703\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/streams/issues/1271\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/whatwg/streams/pull/1271/hovercard\" href=\"https://github.com/whatwg/streams/pull/1271\">whatwg/streams#1271</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/whatwg/streams/blob/main/streams-for-raw-video-explainer.md\">https://github.com/whatwg/streams/blob/main/streams-for-raw-video-explainer.md</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jan-ivar/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jan-ivar\">@jan-ivar</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>",
+            "url": "https://github.com/mozilla/standards-positions/issues/778",
+            "title": "WhatWG owning type streams ",
+            "date_modified": "2023-04-13T20:31:18.000Z",
+            "date_published": "2023-04-13T20:31:18.000Z",
+            "author": {
+                "name": "youennf",
+                "url": "https://github.com/youennf"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7681467?u=7879f080290271128b3b338fe220869f5abc5864&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: The <code class=\"notranslate\">overlay</code> CSS property</li>\n<li>Specification or proposal URL (if available): <a href=\"https://drafts.csswg.org/css-position-4/#overlay\" rel=\"nofollow\">https://drafts.csswg.org/css-position-4/#overlay</a></li>\n<li>Explainer URL (if available): <a href=\"https://github.com/chrishtr/rendering/blob/master/entry-exit-animations.md\">https://github.com/chrishtr/rendering/blob/master/entry-exit-animations.md</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional):</li>\n<li>Mozillians who can provide input (optional):</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">The CSS Spec is done. There are additional tie-ins to HTML and fullscreen:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1667002962\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/fullscreen/issues/223\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/whatwg/fullscreen/pull/223/hovercard\" href=\"https://github.com/whatwg/fullscreen/pull/223\">whatwg/fullscreen#223</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1648089210\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/html/issues/9093\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/whatwg/html/pull/9093/hovercard\" href=\"https://github.com/whatwg/html/pull/9093\">whatwg/html#9093</a></li>\n</ul>\n<p dir=\"auto\">Here is the CSSWG issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1477759048\" data-permission-text=\"Title is private\" data-url=\"https://github.com/w3c/csswg-drafts/issues/8189\" data-hovercard-type=\"issue\" data-hovercard-url=\"/w3c/csswg-drafts/issues/8189/hovercard\" href=\"https://github.com/w3c/csswg-drafts/issues/8189\">w3c/csswg-drafts#8189</a></p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/777",
+            "title": "The `overlay` CSS property",
+            "date_modified": "2023-04-19T09:44:59.000Z",
+            "date_published": "2023-04-13T19:59:54.000Z",
+            "author": {
+                "name": "josepharhar",
+                "url": "https://github.com/josepharhar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/537310?u=b7d9b21331bf5771c05022462ceed0621dceb66b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Adding payto protocol to the registerProtocolHandler safelist.</li>\n<li>Specification or proposal URL (if available): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1665007054\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/html/issues/9154\" data-hovercard-type=\"issue\" data-hovercard-url=\"/whatwg/html/issues/9154/hovercard\" href=\"https://github.com/whatwg/html/issues/9154\">whatwg/html#9154</a></li>\n<li>Explainer URL (if available): <a href=\"https://datatracker.ietf.org/doc/html/rfc8905\" rel=\"nofollow\">RFC 8905</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional): <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1827827\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1827827</a></li>\n<li>Mozillians who can provide input (optional):</li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\">The Payto scheme is described in <a href=\"https://datatracker.ietf.org/doc/html/rfc8905\" rel=\"nofollow\">RFC 8905</a> but not adapted in the safe listed scheme list. To support this RFC Independent Submission (ISSN: 2070-1721) it will be great to adapt it.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/776",
+            "title": "Adding payto protocol to the registerProtocolHandler safelist.",
+            "date_modified": "2023-04-13T17:22:59.000Z",
+            "date_published": "2023-04-13T08:19:59.000Z",
+            "author": {
+                "name": "rastislavcore",
+                "url": "https://github.com/rastislavcore"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41948741?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Request for Mozilla Position on an Emerging Web Specification</h2>\n<ul dir=\"auto\">\n<li>Specification Title: Zstd Content-Encoding</li>\n<li>Specification or proposal URL (if available): <a href=\"https://datatracker.ietf.org/doc/html/rfc8878\" rel=\"nofollow\">https://datatracker.ietf.org/doc/html/rfc8878</a></li>\n<li>Explainer URL (if available): <a href=\"https://docs.google.com/document/d/1aDyUw4mAzRdLyZyXpVgWvO-eLpc4ERz7I_7VDIPo9Hc/edit?usp=sharing\" rel=\"nofollow\">https://docs.google.com/document/d/1aDyUw4mAzRdLyZyXpVgWvO-eLpc4ERz7I_7VDIPo9Hc/edit?usp=sharing</a></li>\n<li>Caniuse.com URL (optional):</li>\n<li>Bugzilla URL (optional): <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=zstd\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=zstd</a></li>\n<li>Mozillians who can provide input (optional): <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/martinthomson/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/martinthomson\">@martinthomson</a></li>\n</ul>\n<h3 dir=\"auto\">Other information</h3>\n<p dir=\"auto\"><a href=\"https://facebook.github.io/zstd/\" rel=\"nofollow\">Zstandard</a>, or \"zstd\", is a data compression mechanism, described in <a href=\"https://datatracker.ietf.org/doc/html/rfc8878\" rel=\"nofollow\">RFC8878</a>, providing high compression ratios. The proposal is to add \"zstd\" to the tokens in the <code class=\"notranslate\">Accept-Encoding</code> header, and decompress with Zstandard when the token is seen in the <code class=\"notranslate\">Content-Encoding</code> header. It is anticipated to make pages load faster and reduce serving costs, by reducing CPU and/or bandwidth consumption, especially for dynamic content.</p>\n<p dir=\"auto\">Chrome is currently evaluating implementing this, and is interested in other browsers' position on the specification.</p>",
+            "url": "https://github.com/mozilla/standards-positions/issues/775",
+            "title": "Request for Mozilla Position: Zstandard compression format for Content-Encoding",
+            "date_modified": "2023-04-23T14:51:09.000Z",
+            "date_published": "2023-04-13T06:00:56.000Z",
+            "author": {
+                "name": "nidhijaju",
+                "url": "https://github.com/nidhijaju"
+            }
+        }
+    ]
+}

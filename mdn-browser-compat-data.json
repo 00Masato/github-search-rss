@@ -1,0 +1,229 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "mdn/browser-compat-data update data",
+    "home_page_url": "https://00masato.github.io/github-search-rss/mdn-browser-compat-data.json",
+    "feed_url": "https://00masato.github.io/github-search-rss/mdn-browser-compat-data.json",
+    "description": "mdn/browser-compat-data update data on GitHub",
+    "items": [
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chromium (Chrome, Opera, Samsung Internet, WebView Android) for the <code class=\"notranslate\">footer</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19679",
+            "title": "Add Chromium versions for footer HTML element",
+            "date_modified": "2023-05-07T11:25:59.000Z",
+            "date_published": "2023-05-07T11:25:48.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for all browsers for the <code class=\"notranslate\">font</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\">Hello world!</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19678",
+            "title": "Add all browsers versions for font HTML element",
+            "date_modified": "2023-05-07T11:25:23.000Z",
+            "date_published": "2023-05-07T11:25:10.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chromium (Chrome, Opera, Samsung Internet, WebView Android) for the <code class=\"notranslate\">figure</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19677",
+            "title": "Add Chromium versions for figure HTML element",
+            "date_modified": "2023-05-07T03:05:08.000Z",
+            "date_published": "2023-05-07T03:04:48.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chromium (Chrome, Opera, Samsung Internet, WebView Android) for the <code class=\"notranslate\">figcaption</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19676",
+            "title": "Add Chromium versions for figcaption HTML element",
+            "date_modified": "2023-05-07T03:00:30.000Z",
+            "date_published": "2023-05-07T03:00:16.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">fieldset</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fieldset</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19675",
+            "title": "Add Chrome/Safari versions for fieldset HTML element",
+            "date_modified": "2023-05-07T02:32:52.000Z",
+            "date_published": "2023-05-07T02:32:41.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">em</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\">Hello <em>world</em>!</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19674",
+            "title": "Add Chrome/Safari versions for em HTML element",
+            "date_modified": "2023-05-07T02:19:05.000Z",
+            "date_published": "2023-05-07T02:18:51.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">div</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19673",
+            "title": "Add Chrome/Safari versions for div HTML element",
+            "date_modified": "2023-05-07T02:17:50.000Z",
+            "date_published": "2023-05-07T02:17:38.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">dfn</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\">A validator is a program that checks for syntax errors in code or documents.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19672",
+            "title": "Add Chrome/Safari versions for dfn HTML element",
+            "date_modified": "2023-05-07T02:15:45.000Z",
+            "date_published": "2023-05-07T02:15:35.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chromium (Chrome, Opera, Samsung Internet, WebView Android) for the <code class=\"notranslate\">details</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19671",
+            "title": "Add Chromium versions for details HTML element",
+            "date_modified": "2023-05-07T02:11:18.000Z",
+            "date_published": "2023-05-07T02:11:05.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">ins</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<blockquote>There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.</blockquote>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19670",
+            "title": "Add Chrome/Safari versions for ins HTML element",
+            "date_modified": "2023-05-07T02:09:55.000Z",
+            "date_published": "2023-05-07T02:09:43.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">del</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<blockquote>There is <del>nothing</del> <ins>no code</ins> either good or bad, but <del>thinking</del> <ins>running it</ins> makes it so.</blockquote>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19669",
+            "title": "Add Chrome/Safari versions for del HTML element",
+            "date_modified": "2023-05-07T02:09:21.000Z",
+            "date_published": "2023-05-07T02:09:07.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">dl</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19668",
+            "title": "Add Chrome/Safari versions for dl HTML element",
+            "date_modified": "2023-05-07T02:01:29.000Z",
+            "date_published": "2023-05-07T02:01:19.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">dt</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19667",
+            "title": "Add Chrome/Safari versions for dt HTML element",
+            "date_modified": "2023-05-07T02:00:32.000Z",
+            "date_published": "2023-05-07T02:00:21.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">dd</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19666",
+            "title": "Add Chrome/Safari versions for dd HTML element",
+            "date_modified": "2023-05-07T01:59:49.000Z",
+            "date_published": "2023-05-07T01:59:37.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">colgroup</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19665",
+            "title": "Add Chrome/Safari versions for colgroup HTML element",
+            "date_modified": "2023-05-07T01:54:16.000Z",
+            "date_published": "2023-05-07T01:54:01.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">col</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19664",
+            "title": "Add Chrome/Safari versions for col HTML element",
+            "date_modified": "2023-05-07T01:51:21.000Z",
+            "date_published": "2023-05-07T01:51:08.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">code</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19663",
+            "title": "Add Chrome/Safari versions for code HTML element",
+            "date_modified": "2023-05-07T01:48:46.000Z",
+            "date_published": "2023-05-07T01:48:35.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for all browsers for the <code class=\"notranslate\">center</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\nHello world!\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19662",
+            "title": "Add all browsers versions for center HTML element",
+            "date_modified": "2023-05-07T01:45:39.000Z",
+            "date_published": "2023-05-07T01:45:27.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">button</code> HTML element. The data comes from manual testing, running test code through BrowserStack, SauceLabs and custom VMs.</p>\n<p dir=\"auto\">Test Code: ```</p>\n<p dir=\"auto\">Hello</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\"><pre class=\"notranslate\"><code class=\"notranslate\"></code></pre></div>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19661",
+            "title": "Add Chrome/Safari versions for button HTML element",
+            "date_modified": "2023-05-07T01:40:38.000Z",
+            "date_published": "2023-05-07T01:40:24.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <code class=\"notranslate\">true</code>/<code class=\"notranslate\">null</code> values with exact version numbers (or <code class=\"notranslate\">false</code>) for Chrome and Safari for the <code class=\"notranslate\">br</code> HTML element. Other</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19660",
+            "title": "Add Chrome/Safari versions for br HTML element",
+            "date_modified": "2023-05-07T01:37:17.000Z",
+            "date_published": "2023-05-07T01:37:04.000Z",
+            "author": {
+                "name": "queengooborg",
+                "url": "https://github.com/queengooborg"
+            }
+        }
+    ]
+}

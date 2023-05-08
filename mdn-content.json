@@ -1,0 +1,229 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "mdn/content update content",
+    "home_page_url": "https://00masato.github.io/github-search-rss/mdn-content.json",
+    "feed_url": "https://00masato.github.io/github-search-rss/mdn-content.json",
+    "description": "mdn/content update content on GitHub",
+    "items": [
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23019147?u=4c0de81596ced64dc067dea5686f7ca2912db0cb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fx113 supports <code class=\"notranslate\">prefers-reduced-transparency</code> media query behind the preference <code class=\"notranslate\">layout.css.prefers-reduced-transparency.enabled</code>.</p>\n<p dir=\"auto\">This PR:</p>\n<ul dir=\"auto\">\n<li>adds an entry for <code class=\"notranslate\">prefers-reduced-transparency</code> media query to the Firefox experimental feature list for release notes.</li>\n<li>adds <code class=\"notranslate\">prefers-reduced-transparency</code> to the <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries\" rel=\"nofollow\">Using media queries</a> page.</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li>Doc issues: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1647827017\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25773\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25773/hovercard\" href=\"https://github.com/mdn/content/issues/25773\">#25773</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1664446787\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26150\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26150/hovercard\" href=\"https://github.com/mdn/content/issues/26150\">#26150</a></li>\n<li>Content update: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1621214590\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25289\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/25289/hovercard\" href=\"https://github.com/mdn/content/pull/25289\">#25289</a></li>\n</ul>\n<h3 dir=\"auto\">Related links</h3>\n<ul dir=\"auto\">\n<li>Bug: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1736914\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1736914</a></li>\n<li>Spec: <a href=\"https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency\" rel=\"nofollow\">https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-transparency</a></li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/26632",
+            "title": "docs(fx113-relnote): add \"prefers-reduced-transparency\" to experimental feature list",
+            "date_modified": "2023-05-08T00:37:37.000Z",
+            "date_published": "2023-05-08T00:35:31.000Z",
+            "author": {
+                "name": "dipikabh",
+                "url": "https://github.com/dipikabh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108879845?u=eeb9306682180ab80521c80fd8f46609fe3c6770&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">All issues auto-fixed</p>",
+            "url": "https://github.com/mdn/content/pull/26631",
+            "title": "Markdownlint auto-cleanup",
+            "date_modified": "2023-05-08T00:15:18.000Z",
+            "date_published": "2023-05-08T00:13:21.000Z",
+            "author": {
+                "name": "mdn-bot",
+                "url": "https://github.com/mdn-bot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23019147?u=4c0de81596ced64dc067dea5686f7ca2912db0cb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fx113 introduces <code class=\"notranslate\">prefers-reduced-transparency</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1647827017\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25773\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25773/hovercard\" href=\"https://github.com/mdn/content/issues/25773\">#25773</a>).</p>\n<p dir=\"auto\">While going through the existing page on a similar media query, <code class=\"notranslate\">prefers-reduced-motion</code>, I came across the following things that could be improved for clarity:</p>\n<ul dir=\"auto\">\n<li>replaced \"system\" with \"device\"</li>\n<li>replaced pronouns like \"it\" with the doer for clarity</li>\n<li>moved pieces of info from syntax descriptions to the intro paragraph</li>\n<li>added a link that explains \"vestibular motion disorders\"</li>\n<li>rewrote \"Examples\" description to add more context and added a description to the example \"Result\"</li>\n<li>tweaked the example so that a change is actually visible when \"Reduce motion\" is enabled</li>\n<li>made \"See also\" items compliant with the <a href=\"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide#see_also_section\" rel=\"nofollow\">new guidelines</a></li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">To improve clarity of the text</p>",
+            "url": "https://github.com/mdn/content/pull/26630",
+            "title": "fix(prefers-reduced-motion): Edit text and improve example",
+            "date_modified": "2023-05-07T18:41:48.000Z",
+            "date_published": "2023-05-07T17:25:50.000Z",
+            "author": {
+                "name": "dipikabh",
+                "url": "https://github.com/dipikabh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">String</code> page should be purely runtime semantics. I've moved syntax-related stuff to the grammar page.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26624",
+            "title": "Move escape sequences to lexical grammar",
+            "date_modified": "2023-05-07T04:23:13.000Z",
+            "date_published": "2023-05-07T04:21:10.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50659234?u=41a0dec2e6fdd50a15ad649285460c784e817030&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds an new example of using <code class=\"notranslate\">srcset</code> attribute on the <code class=\"notranslate\">&lt;img&gt;</code> tag.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Earlier on the page, the reader is told:</p>\n<blockquote>\n<p dir=\"auto\">If providing higher-density versions of an image for high-DPI (Retina) display, use <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset\" rel=\"nofollow\">srcset</a> on the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element instead. This lets browsers opt for lower-density versions in data-saving modes, and you don't have to write explicit media conditions.</p>\n</blockquote>\n<p dir=\"auto\">But in \"The srcset attribute\" section, the example used to demonstrate how to include alternate images based on pixel density only uses srcset in the <source> elements and src in the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">NIL</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25150.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1614202399\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25150\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25150/hovercard\" href=\"https://github.com/mdn/content/issues/25150\">#25150</a></p>",
+            "url": "https://github.com/mdn/content/pull/26618",
+            "title": "25150 add new srcset usage example",
+            "date_modified": "2023-05-07T11:50:36.000Z",
+            "date_published": "2023-05-06T15:31:21.000Z",
+            "author": {
+                "name": "adarshajit",
+                "url": "https://github.com/adarshajit"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1384036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The example provided here is wrong, this chapter is talking about <code class=\"notranslate\">SvgImageElement</code> but not <code class=\"notranslate\">HTMLImageElement</code></p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">This example does not correctly demonstrate how to use async in <code class=\"notranslate\">SVGImageElement</code>, and the API usage of  <code class=\"notranslate\">HTMLImageElement</code> and <code class=\"notranslate\">SvgImageElement</code> is very different.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://www.w3.org/TR/SVG11/struct.html#ImageElement\" rel=\"nofollow\">https://www.w3.org/TR/SVG11/struct.html#ImageElement</a></p>\n",
+            "url": "https://github.com/mdn/content/pull/26615",
+            "title": "The async props of `SvgImageElement` is not correctly documented.",
+            "date_modified": "2023-05-07T15:55:52.000Z",
+            "date_published": "2023-05-06T07:42:13.000Z",
+            "author": {
+                "name": "Losses",
+                "url": "https://github.com/Losses"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/710216?u=b1e64f250837e953a3e5855bb4f2fa514907a4f0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">\"block element\" and \"inline element\" term are old of HTML 4.01 era. The CSS Specification says \"block level\" and \"inline level\".</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">The incorrect keywords \"block element\" and \"inline element\" have been translated into Japanese as they are, causing problems that some web developers cannot understand CSS specifications correctly.</p>\n<p dir=\"auto\">e.g. <a href=\"https://zenn.dev/coedo/articles/html-css-inline-element-block-level-element\" rel=\"nofollow\">https://zenn.dev/coedo/articles/html-css-inline-element-block-level-element</a></p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<p dir=\"auto\"><a href=\"https://www.w3.org/TR/css-display-3/#display-value-summary\" rel=\"nofollow\">https://www.w3.org/TR/css-display-3/#display-value-summary</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26612",
+            "title": "Fix the description of the display property according to the CSS specification",
+            "date_modified": "2023-05-07T08:02:56.000Z",
+            "date_published": "2023-05-06T04:40:27.000Z",
+            "author": {
+                "name": "oti",
+                "url": "https://github.com/oti"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Addresses <a href=\"https://github.com/mdn/browser-compat-data/pull/19446#pullrequestreview-1413326321\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19446/hovercard\">feedback</a> provided as part of a BCD update to the cookies.CookieStore property details <a href=\"https://github.com/mdn/browser-compat-data/pull/19446\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19446/hovercard\">#19446</a></p>",
+            "url": "https://github.com/mdn/content/pull/26606",
+            "title": "Note about incognito cooking store support and identification",
+            "date_modified": "2023-05-05T17:28:37.000Z",
+            "date_published": "2023-05-05T17:26:39.000Z",
+            "author": {
+                "name": "rebloor",
+                "url": "https://github.com/rebloor"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/31983543?u=360b2c98e571cd2b764f354b5d58c048abba4b89&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Non-standard system color extensions <a href=\"https://github.com/mdn/content/issues/26596\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26596/hovercard\">#26596</a></p>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26599",
+            "title": "Update /web/css/system-color/index.md",
+            "date_modified": "2023-05-06T03:16:20.000Z",
+            "date_published": "2023-05-05T09:22:11.000Z",
+            "author": {
+                "name": "momobutong",
+                "url": "https://github.com/momobutong"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47511217?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Clarified the description for 'safe', 'unsafe', and 'normal' values and removed values that did not belong.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Unclear description of justify-content and the baseline values did not belong.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<p dir=\"auto\"><a href=\"https://drafts.csswg.org/css-align-3/#propdef-justify-content\" rel=\"nofollow\">W3C Draft Justify-Content</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">\"<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #17064.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1263373304\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/17064\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/17064/hovercard\" href=\"https://github.com/mdn/content/issues/17064\">#17064</a>\"</p>",
+            "url": "https://github.com/mdn/content/pull/26598",
+            "title": "Clarify justify-content description",
+            "date_modified": "2023-05-05T21:43:25.000Z",
+            "date_published": "2023-05-05T07:03:38.000Z",
+            "author": {
+                "name": "lyndipc",
+                "url": "https://github.com/lyndipc"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59781940?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I believe this makes the article clearer while preserving all important info.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">I also added a link to a passage on Mix-ins in MDN's Javascript Reference.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">None</p>",
+            "url": "https://github.com/mdn/content/pull/26595",
+            "title": "Improve accuracy and concision",
+            "date_modified": "2023-05-05T05:14:51.000Z",
+            "date_published": "2023-05-05T04:22:45.000Z",
+            "author": {
+                "name": "klu22",
+                "url": "https://github.com/klu22"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39087996?u=0bfb15351d70d43196a212731dbdf1ba521ab3e7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Such as the title.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">In order to avoid ambiguity and be consistent with <code class=\"notranslate\">Array.reduce()</code>.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">None.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1688094312\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/translated-content/issues/13024\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/translated-content/pull/13024/hovercard\" href=\"https://github.com/mdn/translated-content/pull/13024\">mdn/translated-content#13024</a></p>",
+            "url": "https://github.com/mdn/content/pull/26594",
+            "title": "fix: Update the description of callbackFn's accumulator in `Array.reduceRight()`",
+            "date_modified": "2023-05-05T01:40:26.000Z",
+            "date_published": "2023-05-05T01:37:10.000Z",
+            "author": {
+                "name": "JasonLamv-t",
+                "url": "https://github.com/JasonLamv-t"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75995030?u=81453b48134a6bee8573efd9c723bcb3411b11aa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26533.\">closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1692050639\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26533\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26533/hovercard\" href=\"https://github.com/mdn/content/issues/26533\">#26533</a></p>\n\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Fixing <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1692050639\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26533\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26533/hovercard\" href=\"https://github.com/mdn/content/issues/26533\">#26533</a></p>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26589",
+            "title": "Fix broken link",
+            "date_modified": "2023-05-05T17:46:08.000Z",
+            "date_published": "2023-05-04T18:08:11.000Z",
+            "author": {
+                "name": "RajuKanaka",
+                "url": "https://github.com/RajuKanaka"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39165319?u=183f8d6eeb97b106b96293c040984710c0652229&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The updated example mentioned in <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Streams_API/Using_readable_streams\" rel=\"nofollow\">readable streams </a> section, removed the while loop as it was not needed</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Correctness of the doc</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26582.\">Fixes</span> <a href=\"https://github.com/mdn/content/issues/26582\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26582/hovercard\">#26582</a></p>\n",
+            "url": "https://github.com/mdn/content/pull/26588",
+            "title": "removed while loop from the example",
+            "date_modified": "2023-05-05T00:54:05.000Z",
+            "date_published": "2023-05-04T17:52:10.000Z",
+            "author": {
+                "name": "MohitMaheshwari1711",
+                "url": "https://github.com/MohitMaheshwari1711"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">easier to read this HTML without linting.</p>",
+            "url": "https://github.com/mdn/content/pull/26576",
+            "title": "Minor edit: set html-nolint to HTML example",
+            "date_modified": "2023-05-04T18:47:05.000Z",
+            "date_published": "2023-05-04T06:06:29.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Here's a guide to \"What is a PWA?\". Happy for any kind of feedback, I wasn't sure exactly what I should cover in here or in how much detail.</p>\n<p dir=\"auto\">It has a broken link to an unwritten glossary page to \"SDK\", which I can write if we agree it's worth doing.</p>",
+            "url": "https://github.com/mdn/content/pull/26569",
+            "title": "Add 'What is a PWA' guide",
+            "date_modified": "2023-05-06T05:56:47.000Z",
+            "date_published": "2023-05-03T23:22:05.000Z",
+            "author": {
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8236166?u=47445b6b86a69f0ff20b15d75e77460be5d536b0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">webRequest.onAuthRequired</code> event is only fired when the server responds with 401/407 and the <code class=\"notranslate\">WWW-Authenticate</code> header uses the <code class=\"notranslate\">Basic</code> scheme. This second precondition is used by the browser to prompt the user for credentials. However, it wasn't clear in the docs that other authentication schemes are ignored by the webRequest API.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I was trying to achieve something using Web extensions that cannot actually be achieved the way I intended because of this precondition, but it took me a while to realize because the docs didn't specifically call this out. I suspect if this wasn't clear to me, it could also be unclear for other developers.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">N/A</p>",
+            "url": "https://github.com/mdn/content/pull/26568",
+            "title": "Specify webRequest.onAuthRequired prerequisites",
+            "date_modified": "2023-05-04T14:24:46.000Z",
+            "date_published": "2023-05-03T22:28:34.000Z",
+            "author": {
+                "name": "NSeydoux",
+                "url": "https://github.com/NSeydoux"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11358567?u=692057122d617f05a2196510045df84d579b3af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Correct \"web site\" and \"web page\" to single words to improve consistency.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26461.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1687730930\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26461\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26461/hovercard\" href=\"https://github.com/mdn/content/issues/26461\">#26461</a></p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26566",
+            "title": "Correct word usage",
+            "date_modified": "2023-05-08T00:42:30.000Z",
+            "date_published": "2023-05-03T19:16:35.000Z",
+            "author": {
+                "name": "dawei-wang",
+                "url": "https://github.com/dawei-wang"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR updates the documentation for the <a href=\"https://privacycg.github.io/storage-access/\" rel=\"nofollow\">Storage Access API</a>, which is being shipped in Chrome 113. In particular I:</p>\n<ul dir=\"auto\">\n<li>Added a storage-access permissions-policy directive page</li>\n<li>Added an entry for it on permissions-policy main page</li>\n<li>Updated description of sandbox=\"allow-storage-access-by-user-activation\" to make it a little clearer</li>\n<li>Updated wording on requestStorageAccess() page to make usage a bit clearer, include information about Permissions-Policy, and make the security information more standard MDN style.</li>\n<li>Included exceptions information on hasStorageAccess()/requestStorageAccess()</li>\n<li>Updated main Storage Access API page to include information on latest spec behavior and try to make sense of the browser differences and different security mechanisms</li>\n<li>Checked the \"Using\" guide, and made some improvements</li>\n</ul>\n<p dir=\"auto\">See my <a href=\"https://docs.google.com/document/d/1ukOLx-MlKnlR8bufp4Wxmf7kCpqmlKJ6QvEwS2RfIyI/edit#\" rel=\"nofollow\">research document</a> for the overall details of what this project entails.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26558",
+            "title": "Update Storage Access API content",
+            "date_modified": "2023-05-03T14:13:16.000Z",
+            "date_published": "2023-05-03T14:11:16.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/495429?u=2f3b9dd03c6c4a961d44a632fe1976c73fa19e1f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Uses the APIRef sidebar for all \"RemotePlayback\" pages, and adds a GroupData item for the DefaultAPISidebar on the overview page.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Makes sure the following pages have a sidebar:</p>\n<ul dir=\"auto\">\n<li>/en-US/docs/Web/API/Remote_Playback_API</li>\n<li>/en-US/docs/Web/API/RemotePlayback/cancelWatchAvailability</li>\n<li>/en-US/docs/Web/API/RemotePlayback</li>\n<li>/en-US/docs/Web/API/RemotePlayback/prompt</li>\n<li>/en-US/docs/Web/API/RemotePlayback/state</li>\n<li>/en-US/docs/Web/API/RemotePlayback/watchAvailability</li>\n</ul>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1457726049\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/22441\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/22441/hovercard\" href=\"https://github.com/mdn/content/issues/22441\">#22441</a>.</p>",
+            "url": "https://github.com/mdn/content/pull/26541",
+            "title": "fix(RemotePlayback): use APIRef + add GroupData for overview page",
+            "date_modified": "2023-05-03T09:23:53.000Z",
+            "date_published": "2023-05-02T18:18:39.000Z",
+            "author": {
+                "name": "caugner",
+                "url": "https://github.com/caugner"
+            }
+        }
+    ]
+}
