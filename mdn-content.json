@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97945148?u=a6895a737c183867bcc85b3dcb06c625158d1701&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR:</p>\n<ol dir=\"auto\">\n<li>removes outdated information on the <code class=\"notranslate\">user-select</code> page according to BCD;</li>\n<li>removes legacy prefixed properties from the example;</li>\n<li>tweaks the format of an external link.</li>\n</ol>\n<h3 dir=\"auto\">Motivation</h3>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">The BCD for this property:<br>\n<a href=\"https://github.com/mdn/browser-compat-data/blob/main/css/properties/user-select.json\">https://github.com/mdn/browser-compat-data/blob/main/css/properties/user-select.json</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>",
+            "url": "https://github.com/mdn/content/pull/26648",
+            "title": "Remove outdated info from `user-select`",
+            "date_modified": "2023-05-08T12:40:29.000Z",
+            "date_published": "2023-05-08T12:36:56.000Z",
+            "author": {
+                "name": "yarusome",
+                "url": "https://github.com/yarusome"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22315378?u=be9da25c22039f7cd7ff8007c0d44129c8aac092&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/mdn/content/pull/26647",
             "title": "Mention `navigator.sendBeacon()` on `FormData` page",
@@ -25,17 +36,6 @@
             "author": {
                 "name": "yarusome",
                 "url": "https://github.com/yarusome"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15782191?u=3f0dd577b7ffd499ad15b8845faaea53fff5f547&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"> values are not always absolute. I corrected  description in Values section.</p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26644",
-            "title": "correct length values description",
-            "date_modified": "2023-05-08T10:21:11.000Z",
-            "date_published": "2023-05-08T10:18:59.000Z",
-            "author": {
-                "name": "amirhosainshahsavari",
-                "url": "https://github.com/amirhosainshahsavari"
             }
         },
         {
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50659234?u=41a0dec2e6fdd50a15ad649285460c784e817030&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds an new example of using <code class=\"notranslate\">srcset</code> attribute on the <code class=\"notranslate\">&lt;img&gt;</code> tag.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Earlier on the page, the reader is told:</p>\n<blockquote>\n<p dir=\"auto\">If providing higher-density versions of an image for high-DPI (Retina) display, use <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset\" rel=\"nofollow\">srcset</a> on the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element instead. This lets browsers opt for lower-density versions in data-saving modes, and you don't have to write explicit media conditions.</p>\n</blockquote>\n<p dir=\"auto\">But in \"The srcset attribute\" section, the example used to demonstrate how to include alternate images based on pixel density only uses srcset in the <source> elements and src in the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">NIL</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25150.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1614202399\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25150\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25150/hovercard\" href=\"https://github.com/mdn/content/issues/25150\">#25150</a></p>",
             "url": "https://github.com/mdn/content/pull/26618",
             "title": "25150 add new srcset usage example",
-            "date_modified": "2023-05-08T05:02:35.000Z",
+            "date_modified": "2023-05-08T12:43:20.000Z",
             "date_published": "2023-05-06T15:31:21.000Z",
             "author": {
                 "name": "adarshajit",
@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Addresses <a href=\"https://github.com/mdn/browser-compat-data/pull/19446#pullrequestreview-1413326321\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19446/hovercard\">feedback</a> provided as part of a BCD update to the cookies.CookieStore property details <a href=\"https://github.com/mdn/browser-compat-data/pull/19446\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19446/hovercard\">#19446</a></p>",
             "url": "https://github.com/mdn/content/pull/26606",
             "title": "Note about incognito cooking store support and identification",
-            "date_modified": "2023-05-05T17:28:37.000Z",
+            "date_modified": "2023-05-08T12:25:09.000Z",
             "date_published": "2023-05-05T17:26:39.000Z",
             "author": {
                 "name": "rebloor",
