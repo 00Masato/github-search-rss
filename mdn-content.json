@@ -6,17 +6,6 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33548838?u=ea609280f61608dd20c0388e0a41c695cec12dd0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/mdn/content/pull/26650",
-            "title": "Fix typo",
-            "date_modified": "2023-05-08T15:06:52.000Z",
-            "date_published": "2023-05-08T15:05:04.000Z",
-            "author": {
-                "name": "geryogam",
-                "url": "https://github.com/geryogam"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97945148?u=a6895a737c183867bcc85b3dcb06c625158d1701&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR:</p>\n<ol dir=\"auto\">\n<li>removes outdated information on the <code class=\"notranslate\">user-select</code> page according to BCD;</li>\n<li>removes legacy prefixed properties from the example;</li>\n<li>tweaks the format of an external link.</li>\n</ol>\n<h3 dir=\"auto\">Motivation</h3>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">The BCD for this property:<br>\n<a href=\"https://github.com/mdn/browser-compat-data/blob/main/css/properties/user-select.json\">https://github.com/mdn/browser-compat-data/blob/main/css/properties/user-select.json</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>",
             "url": "https://github.com/mdn/content/pull/26648",
             "title": "Remove outdated info from `user-select`",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "MohitMaheshwari1711",
                 "url": "https://github.com/MohitMaheshwari1711"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This example was really difficult to decipher. It's easier to read this HTML without lifting; and it's about ARIA roles, not learning HTML, so whitespace is not an issue (nor would it be if it were about HTML)</p>",
+            "url": "https://github.com/mdn/content/pull/26576",
+            "title": "Minor edit: set html-nolint to HTML example",
+            "date_modified": "2023-05-08T04:23:59.000Z",
+            "date_published": "2023-05-04T06:06:29.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
             }
         }
     ]
