@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1080678?u=b6e211b7766e6aa01e794067f67dd65d419c0150&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR does the following:</p>\n<ul dir=\"auto\">\n<li>Adds <code class=\"notranslate\">trilogy</code> to lists of adapters where applicable</li>\n<li>Uses <code class=\"notranslate\">MySQL</code> instead of adatper names where applicable</li>\n<li>Splits type information into adapters code so that the adapter is set correctly.</li>\n<li>Fix tests that were using mysql2 when they should be abstract</li>\n</ul>\n<p dir=\"auto\">cc/ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a></p>",
+            "url": "https://github.com/rails/rails/pull/48175",
+            "title": "Clean up docs and code using mysql2 when we mean trilogy",
+            "date_modified": "2023-05-09T15:02:54.000Z",
+            "date_published": "2023-05-09T14:32:35.000Z",
+            "author": {
+                "name": "eileencodes",
+                "url": "https://github.com/eileencodes"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8165?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><code class=\"notranslate\">ActiveRecord::PredicateBuilder</code> currently assumes that a column name will only be specified in dot notation with a single period. If a column is specified in dot notation for a table that is namespaced in a schema, it will use the schema name as the table name. This PR allows columns to specified in the format <code class=\"notranslate\">schema.table.column</code> as well as <code class=\"notranslate\">table.column</code>.</p>\n<p dir=\"auto\">This <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48172.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1701038607\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48172\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48172/hovercard\" href=\"https://github.com/rails/rails/issues/48172\">#48172</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the behavior of <code class=\"notranslate\">ActiveRecord::PredicateBuilder.references</code> and <code class=\"notranslate\">ActiveRecord::PredicateBuilder#convert_dot_notation_to_hash</code></p>\n<p dir=\"auto\">I didn't add this to the CHANGELOG, but if a reviewer thinks it's significant enough I'm happy to do so.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48171",
             "title": "Allow PredicateBuilder to recognize schema namespaced table names",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "lazaronixon",
                 "url": "https://github.com/lazaronixon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/514063?u=7b0b24d6d590d840aeaf85a43d5f4994282fc03f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the Rails API Documentation link for Action View Form Helpers was linking to the base of Rails API docs. Seems like linking to the Action View Form Helpers section of the docs is preferred here.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes one link in Action View Form Helpers docs.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48087",
-            "title": "Link to Action View Form Helpers section in API",
-            "date_modified": "2023-04-28T01:39:43.000Z",
-            "date_published": "2023-04-28T01:39:37.000Z",
-            "author": {
-                "name": "mikepmunroe",
-                "url": "https://github.com/mikepmunroe"
             }
         }
     ]
