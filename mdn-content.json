@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118302324?u=7307c3614fc98d4ffe32b130812d5d635caba95b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I noticed a grammatical error in the text on line 107 and corrected it. The mistake was causing a sentence to be structured incorrectly. This commit resolves the issue and ensures that the sentence appears correctly on the page.</p>\n<p dir=\"auto\">\"Insterting strings of text from CSS isn´t really really something we do very often on the web. However, as text ...\"</p>\n<p dir=\"auto\">Incorrect original version:</p>\n<p dir=\"auto\">\"Inserting strings of text from CSS isn't really something we do very often on the web however, as that text ...\"</p>\n<p dir=\"auto\">This change separates the two thoughts into two sentences, which is a clearer and more standard way of presenting them.</p>",
+            "url": "https://github.com/mdn/content/pull/26715",
+            "title": "Fixed grammar mistake on line 107 of index.md",
+            "date_modified": "2023-05-10T21:02:35.000Z",
+            "date_published": "2023-05-10T20:41:36.000Z",
+            "author": {
+                "name": "sebiram",
+                "url": "https://github.com/sebiram"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds a bit about single-page apps to the \"What is a PWA?\" guide. The idea is that this is enough to allow us to remove <a href=\"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Structural_overview\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Structural_overview</a>. I'm not sure if there's anything else we should say here.</p>\n<p dir=\"auto\">It would be good, somewhere, to talk about SPAs in depth, but I don't think the PWA docs are the right place for that.</p>",
             "url": "https://github.com/mdn/content/pull/26711",
             "title": "Add a bit about SPAs",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "oti",
                 "url": "https://github.com/oti"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Addresses <a href=\"https://github.com/mdn/browser-compat-data/pull/19446#pullrequestreview-1413326321\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19446/hovercard\">feedback</a> provided as part of a BCD update to the cookies.CookieStore property details <a href=\"https://github.com/mdn/browser-compat-data/pull/19446\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19446/hovercard\">#19446</a></p>",
-            "url": "https://github.com/mdn/content/pull/26606",
-            "title": "Note about incognito cooking store support and identification",
-            "date_modified": "2023-05-09T03:55:22.000Z",
-            "date_published": "2023-05-05T17:26:39.000Z",
-            "author": {
-                "name": "rebloor",
-                "url": "https://github.com/rebloor"
             }
         }
     ]
