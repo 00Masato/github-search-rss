@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13257832?u=fa23502350405d76b4b84196930a0538046cbbb2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Updated the ActiveSupport::InheritableOptions documentation to exemplify how to use a parent hash that contains string keys.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"parent = { &quot;foo&quot; =&gt; true }\nchild = ActiveSupport::InheritableOptions.new(parent.symbolize_keys)\nchild.foo # =&gt; true\"><pre class=\"notranslate\"><code class=\"notranslate\">parent = { \"foo\" =&gt; true }\nchild = ActiveSupport::InheritableOptions.new(parent.symbolize_keys)\nchild.foo # =&gt; true\n</code></pre></div>\n<p dir=\"auto\">This example is helpful because ActiveSupport::OrderedOptions only deals with symbol keys and this implementation detail is hidden from the API docs.</p>\n\n\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48187",
-            "title": "[Documentation] ActiveSupport::InheritableOptions with string keys [ci-skip]",
-            "date_modified": "2023-05-10T17:54:57.000Z",
-            "date_published": "2023-05-10T17:05:52.000Z",
-            "author": {
-                "name": "juanmanuelramallo",
-                "url": "https://github.com/juanmanuelramallo"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48173.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1701211131\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48173/hovercard\" href=\"https://github.com/rails/rails/issues/48173\">#48173</a></p>\n<p dir=\"auto\">If for some reason the column identification fails, we should fallback to the old error rendering with only line information.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tenderlove/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tenderlove\">@tenderlove</a></p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jasonkim/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jasonkim\">@jasonkim</a></p>",
             "url": "https://github.com/rails/rails/pull/48184",
             "title": "Properly fallback when ERB column can't be computed",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "shivamsinghchahar",
                 "url": "https://github.com/shivamsinghchahar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19731661?u=c357f2a01218b4864aba60738484286b95d97ecc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48094.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1689435061\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48094\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48094/hovercard\" href=\"https://github.com/rails/rails/issues/48094\">#48094</a><br>\n<code class=\"notranslate\">unscope</code> not working when where by tripe dot range</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Define <code class=\"notranslate\">fetch_attribute</code> to <code class=\"notranslate\">activerecord/lib/arel/nodes/and.rb</code>, because unscope uses fetch_attribute to determine whether to exclude predicate or not.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48095",
+            "title": "Fix unscope not working when where by tripe dot range",
+            "date_modified": "2023-04-29T07:48:44.000Z",
+            "date_published": "2023-04-29T07:48:40.000Z",
+            "author": {
+                "name": "ippachi",
+                "url": "https://github.com/ippachi"
             }
         }
     ]
