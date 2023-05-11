@@ -6,11 +6,11 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/677252?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Correct return value of <code class=\"notranslate\">location.toString()</code></p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Accurately describe the API's behavior</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26719",
-            "title": "Correct return value of location.toString()",
-            "date_modified": "2023-05-11T01:56:21.000Z",
-            "date_published": "2023-05-11T01:53:59.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/677252?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Demonstrate the API that the page is documenting</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">As originally written, the example demonstrates a different API (<code class=\"notranslate\">Object.prototype.toString</code>)</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26720",
+            "title": "Correct example for location.toString()",
+            "date_modified": "2023-05-11T02:11:22.000Z",
+            "date_published": "2023-05-11T02:09:10.000Z",
             "author": {
                 "name": "jugglinmike",
                 "url": "https://github.com/jugglinmike"
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131768684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/26717",
             "title": "Add filter effects guide",
-            "date_modified": "2023-05-11T01:07:09.000Z",
+            "date_modified": "2023-05-11T02:10:52.000Z",
             "date_published": "2023-05-11T01:06:55.000Z",
             "author": {
                 "name": "tinnapobimac",
