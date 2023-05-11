@@ -61,17 +61,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds a bit about single-page apps to the \"What is a PWA?\" guide. The idea is that this is enough to allow us to remove <a href=\"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Structural_overview\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Structural_overview</a>. I'm not sure if there's anything else we should say here.</p>\n<p dir=\"auto\">It would be good, somewhere, to talk about SPAs in depth, but I don't think the PWA docs are the right place for that.</p>",
-            "url": "https://github.com/mdn/content/pull/26711",
-            "title": "Add a bit about SPAs",
-            "date_modified": "2023-05-11T07:43:54.000Z",
-            "date_published": "2023-05-10T17:21:56.000Z",
-            "author": {
-                "name": "wbamberg",
-                "url": "https://github.com/wbamberg"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91181094?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The example should omit the brackets around the parameter, as described in the explanation above this code.</p>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">According to the description above this code, the brackets around the parameter can be removed if there is only one parameter.But in the code the bracket remains around the arrow function with <code class=\"notranslate\">event</code> being the only parameter.</p>\n\n",
             "url": "https://github.com/mdn/content/pull/26704",
             "title": "Fix arrow syntax explanation",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Josh-Cena",
                 "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50659234?u=41a0dec2e6fdd50a15ad649285460c784e817030&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds an new example of using <code class=\"notranslate\">srcset</code> attribute on the <code class=\"notranslate\">&lt;img&gt;</code> tag.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Earlier on the page, the reader is told:</p>\n<blockquote>\n<p dir=\"auto\">If providing higher-density versions of an image for high-DPI (Retina) display, use <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset\" rel=\"nofollow\">srcset</a> on the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element instead. This lets browsers opt for lower-density versions in data-saving modes, and you don't have to write explicit media conditions.</p>\n</blockquote>\n<p dir=\"auto\">But in \"The srcset attribute\" section, the example used to demonstrate how to include alternate images based on pixel density only uses srcset in the <source> elements and src in the <a target=\"_blank\" rel=\"noopener noreferrer\" href=\"\"><img style=\"max-width: 100%;\"></a> element.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">NIL</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25150.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1614202399\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25150\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25150/hovercard\" href=\"https://github.com/mdn/content/issues/25150\">#25150</a></p>",
+            "url": "https://github.com/mdn/content/pull/26618",
+            "title": "25150 add new srcset usage example",
+            "date_modified": "2023-05-08T12:43:20.000Z",
+            "date_published": "2023-05-06T15:31:21.000Z",
+            "author": {
+                "name": "adarshajit",
+                "url": "https://github.com/adarshajit"
             }
         }
     ]
