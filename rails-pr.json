@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48173.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1701211131\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48173/hovercard\" href=\"https://github.com/rails/rails/issues/48173\">#48173</a></p>\n<p dir=\"auto\">If for some reason the column identification fails, we should fallback to the old error rendering with only line information.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tenderlove/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tenderlove\">@tenderlove</a></p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jasonkim/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jasonkim\">@jasonkim</a></p>",
             "url": "https://github.com/rails/rails/pull/48184",
             "title": "Properly fallback when ERB column can't be computed",
-            "date_modified": "2023-05-11T06:03:58.000Z",
+            "date_modified": "2023-05-11T06:56:11.000Z",
             "date_published": "2023-05-10T01:44:32.000Z",
             "author": {
                 "name": "casperisfine",
