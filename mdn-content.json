@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26729.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1705842335\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26729\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26729/hovercard\" href=\"https://github.com/mdn/content/issues/26729\">#26729</a></p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26737",
+            "title": "Fix description of TypedArray.from()",
+            "date_modified": "2023-05-12T01:54:38.000Z",
+            "date_published": "2023-05-12T01:54:27.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR rewrites the main PWA page at <a href=\"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps</a> to include our new docs. Most of the content is just copied from the corresponding subpages, like <a href=\"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Reference\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Reference</a>.</p>",
             "url": "https://github.com/mdn/content/pull/26736",
             "title": "New PWA main page",
@@ -141,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds docs for the <code class=\"notranslate\">RTCAudioSourceStats</code>. Note that there is \"surrounding\" documentation still to do. This should however be able to go in now.</p>\n<p dir=\"auto\">Note also this is a flattened dictionary. As discussed offline, this is a reasonable approach given the size of the dictionary data.</p>\n<p dir=\"auto\">This is part of delivery for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1664412478\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26146\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26146/hovercard\" href=\"https://github.com/mdn/content/issues/26146\">#26146</a></p>",
             "url": "https://github.com/mdn/content/pull/26667",
             "title": "Add RTCAudioSourceStats",
-            "date_modified": "2023-05-12T00:29:51.000Z",
+            "date_modified": "2023-05-12T01:15:13.000Z",
             "date_published": "2023-05-09T07:50:54.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adarshajit",
                 "url": "https://github.com/adarshajit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1384036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The example provided here is wrong, this chapter is talking about <code class=\"notranslate\">SvgImageElement</code> but not <code class=\"notranslate\">HTMLImageElement</code></p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">This example does not correctly demonstrate how to use async in <code class=\"notranslate\">SVGImageElement</code>, and the API usage of  <code class=\"notranslate\">HTMLImageElement</code> and <code class=\"notranslate\">SvgImageElement</code> is very different.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://www.w3.org/TR/SVG11/struct.html#ImageElement\" rel=\"nofollow\">https://www.w3.org/TR/SVG11/struct.html#ImageElement</a></p>\n",
-            "url": "https://github.com/mdn/content/pull/26615",
-            "title": "The async props of `SvgImageElement` is not correctly documented.",
-            "date_modified": "2023-05-09T02:26:59.000Z",
-            "date_published": "2023-05-06T07:42:13.000Z",
-            "author": {
-                "name": "Losses",
-                "url": "https://github.com/Losses"
             }
         }
     ]
