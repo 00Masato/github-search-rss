@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Going through the tests while working on another PR I noticed that this test is now redundant.</p>\n<p dir=\"auto\"><code class=\"notranslate\">test_protocol_with_and_without_separators</code> already has <a href=\"https://github.com/rails/rails/compare/main...JoeDupuis:remove-redundant-test?expand=1#diff-70e7b8f0866ad1ef711c751f1d4216fa15907daeb8212293be7cdbf995488682L191-L194\">the same assertion.</a></p>",
+            "url": "https://github.com/rails/rails/pull/48198",
+            "title": "Remove redundant protocol test for url_for",
+            "date_modified": "2023-05-12T02:12:19.000Z",
+            "date_published": "2023-05-12T02:11:22.000Z",
+            "author": {
+                "name": "JoeDupuis",
+                "url": "https://github.com/JoeDupuis"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Because <code class=\"notranslate\">ActiveSupport::MessagePack::Serializer::SIGNATURE</code> includes a non-ASCII-only byte (<code class=\"notranslate\">\"\\xCC\"</code>), it raises <code class=\"notranslate\">Encoding::CompatibilityError</code> when compared with another string that is not encoded with <code class=\"notranslate\">Encoding::BINARY</code> and also includes a non-ASCII-only byte.</p>\n<p dir=\"auto\">To prevent that, this commit changes <code class=\"notranslate\">AS::MessagePack#signature?</code> to directly compare the first two bytes of both strings.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48196.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1706670535\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48196\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48196/hovercard\" href=\"https://github.com/rails/rails/issues/48196\">#48196</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/48197",
+            "title": "Handle non-ASCII-only in `AS::MessagePack#signature?`",
+            "date_modified": "2023-05-12T02:14:11.000Z",
+            "date_published": "2023-05-12T02:07:15.000Z",
+            "author": {
+                "name": "jonathanhefner",
+                "url": "https://github.com/jonathanhefner"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1327776549\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45752\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45752/hovercard\" href=\"https://github.com/rails/rails/pull/45752\">#45752</a>, a <code class=\"notranslate\">:params</code> kwarg was added to <code class=\"notranslate\">assert_enqueued_email_with</code> so that mailer params and args could be specified simultaneously. However, for backward compatibility, the old behavior of treating an <code class=\"notranslate\">:args</code> Hash as params was preserved.  The result is that if both <code class=\"notranslate\">:params</code> and <code class=\"notranslate\">:args</code> are specified and <code class=\"notranslate\">:args</code> is a Hash, <code class=\"notranslate\">:params</code> is ignored.</p>\n<p dir=\"auto\">This commit deprecates specifying params via <code class=\"notranslate\">:args</code> (i.e. passing a Hash to <code class=\"notranslate\">:args</code>).</p>\n<p dir=\"auto\">After the deprecated behavior is removed, it will be possible to pass a Hash to <code class=\"notranslate\">:args</code>, and the Hash will be treated as named args instead.</p>",
             "url": "https://github.com/rails/rails/pull/48194",
             "title": "Deprecate params via `:args` for `assert_enqueued_email_with`",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "jpbalarini",
                 "url": "https://github.com/jpbalarini"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16636757?u=27830160a8177896eb66623c0a9b730015a2aae0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, we don't document the use case for ActiveJob's <code class=\"notranslate\">queue_with_priority</code> block arguments. It seems necessary to document them in the API docs as well considering how useful this option is.</p>",
-            "url": "https://github.com/rails/rails/pull/48099",
-            "title": "Document queue_with_priority block arguments and their use [ci skip]",
-            "date_modified": "2023-05-08T13:14:39.000Z",
-            "date_published": "2023-04-30T06:51:33.000Z",
-            "author": {
-                "name": "shivamsinghchahar",
-                "url": "https://github.com/shivamsinghchahar"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19731661?u=c357f2a01218b4864aba60738484286b95d97ecc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48094.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1689435061\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48094\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48094/hovercard\" href=\"https://github.com/rails/rails/issues/48094\">#48094</a><br>\n<code class=\"notranslate\">unscope</code> not working when where by tripe dot range</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Define <code class=\"notranslate\">fetch_attribute</code> to <code class=\"notranslate\">activerecord/lib/arel/nodes/and.rb</code>, because unscope uses fetch_attribute to determine whether to exclude predicate or not.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48095",
-            "title": "Fix unscope not working when where by tripe dot range",
-            "date_modified": "2023-04-29T07:48:44.000Z",
-            "date_published": "2023-04-29T07:48:40.000Z",
-            "author": {
-                "name": "ippachi",
-                "url": "https://github.com/ippachi"
             }
         }
     ]
