@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47357913?u=2d646311de0018868bca74a4336f861e49392ccd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Describe what <code class=\"notranslate\">DOMHighResTimeStamp</code> is</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">There is no description about what a <code class=\"notranslate\">DOMHighResTimeStamp</code> is supposed to mean. For example, <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription/expirationTime\" rel=\"nofollow\">PushSubscription.expirationTime</a> states:</p>\n<blockquote>\n<p dir=\"auto\">The expirationTime read-only property of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription\" rel=\"nofollow\">PushSubscription</a> interface returns a <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/DOMHighResTimeStamp\" rel=\"nofollow\">DOMHighResTimeStamp</a> of the subscription expiration time associated with the push subscription, if there is one, or null otherwise.</p>\n</blockquote>\n<p dir=\"auto\">There is no telling what the</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<p dir=\"auto\">From: <a href=\"https://w3c.github.io/hr-time/#sec-domhighrestimestamp\" rel=\"nofollow\">https://w3c.github.io/hr-time/#sec-domhighrestimestamp</a></p>\n<blockquote>\n<p dir=\"auto\">A DOMHighResTimeStamp is a double, so it can only represent an epoch-relative time—the number of milliseconds from the Unix epoch to a moment—to a finite resolution. For moments in 2023, that resolution is approximately 0.2 microseconds.</p>\n</blockquote>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26752",
+            "title": "Describe what DOMHighResTimeStamp is",
+            "date_modified": "2023-05-12T21:04:27.000Z",
+            "date_published": "2023-05-12T21:02:02.000Z",
+            "author": {
+                "name": "hamza1311",
+                "url": "https://github.com/hamza1311"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26741.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1707056028\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26741\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26741/hovercard\" href=\"https://github.com/mdn/content/issues/26741\">#26741</a> - the text is a little ambiguous, I thought \"complex\" was not needed, and in this context I think it's OK just to say \"software\" here.</p>",
             "url": "https://github.com/mdn/content/pull/26750",
             "title": "Fix 26741: reduce ambiguity, remove unneeded word",
@@ -86,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1533077393\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/147\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/147/hovercard\" href=\"https://github.com/openwebdocs/project/issues/147\">openwebdocs/project#147</a></p>\n<ul dir=\"auto\">\n<li>brief description</li>\n<li>demonstration example</li>\n<li>properties</li>\n<li>guides</li>\n<li>associated properties</li>\n<li>glossary terms<br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #155.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1693208519\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/155\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/155/hovercard\" href=\"https://github.com/openwebdocs/project/issues/155\">openwebdocs/project#155</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/26735",
             "title": "CSS: scroll snap module",
-            "date_modified": "2023-05-12T12:08:38.000Z",
+            "date_modified": "2023-05-12T20:54:53.000Z",
             "date_published": "2023-05-11T21:25:07.000Z",
             "author": {
                 "name": "estelle",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "rebloor",
                 "url": "https://github.com/rebloor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">String</code> page should be purely runtime semantics. I've moved syntax-related stuff to the grammar page.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26624",
-            "title": "Move escape sequences to lexical grammar",
-            "date_modified": "2023-05-07T04:23:13.000Z",
-            "date_published": "2023-05-07T04:21:10.000Z",
-            "author": {
-                "name": "Josh-Cena",
-                "url": "https://github.com/Josh-Cena"
             }
         }
     ]
