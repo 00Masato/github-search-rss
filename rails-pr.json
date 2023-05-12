@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rails/rails/commit/e68bfaf1fe1a7890a67af6f444281185f507cf9e#diff-8b09ea0c52da5a4c3aa0eadbe23c3df5e77cbdb850f04fde04fd1e30b7e010ce\">UrlRewriter was removed in 2010</a> The <code class=\"notranslate\">url_rewriter_test.rb</code> stuck around. Now, it is really just testing <code class=\"notranslate\">url_for</code>.  Most of the tests are identical.</p>\n<p dir=\"auto\">Some tests in <code class=\"notranslate\">url_rewriter_test.rb</code> were missing in the <code class=\"notranslate\">url_for</code> spec so I moved them.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Hoping to save a spelunking trip for the next person who works around <code class=\"notranslate\">url_for</code> <g-emoji class=\"g-emoji\" alias=\"grin\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f601.png\">😁</g-emoji></p>\n<p dir=\"auto\">I am working on a couple of PRs and was trying to make sense of some of the tests. I found these redundant and confusing. Then with a bit of digging I realized there used to be a <code class=\"notranslate\">UrlRewriter</code> class.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG -- N/A</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48199",
+            "title": "Remove UrlRewriter tests",
+            "date_modified": "2023-05-12T04:42:57.000Z",
+            "date_published": "2023-05-12T04:29:15.000Z",
+            "author": {
+                "name": "JoeDupuis",
+                "url": "https://github.com/JoeDupuis"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Going through the tests while working on another PR I noticed that this test is now redundant.</p>\n<p dir=\"auto\"><code class=\"notranslate\">test_protocol_with_and_without_separators</code> already has <a href=\"https://github.com/rails/rails/compare/main...JoeDupuis:remove-redundant-test?expand=1#diff-70e7b8f0866ad1ef711c751f1d4216fa15907daeb8212293be7cdbf995488682L191-L194\">the same assertion.</a></p>",
             "url": "https://github.com/rails/rails/pull/48198",
             "title": "Remove redundant protocol test for url_for",
-            "date_modified": "2023-05-12T02:12:19.000Z",
+            "date_modified": "2023-05-12T04:15:22.000Z",
             "date_published": "2023-05-12T02:11:22.000Z",
             "author": {
                 "name": "JoeDupuis",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "shivamsinghchahar",
                 "url": "https://github.com/shivamsinghchahar"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19731661?u=c357f2a01218b4864aba60738484286b95d97ecc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48094.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1689435061\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48094\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48094/hovercard\" href=\"https://github.com/rails/rails/issues/48094\">#48094</a><br>\n<code class=\"notranslate\">unscope</code> not working when where by tripe dot range</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Define <code class=\"notranslate\">fetch_attribute</code> to <code class=\"notranslate\">activerecord/lib/arel/nodes/and.rb</code>, because unscope uses fetch_attribute to determine whether to exclude predicate or not.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48095",
-            "title": "Fix unscope not working when where by tripe dot range",
-            "date_modified": "2023-04-29T07:48:44.000Z",
-            "date_published": "2023-04-29T07:48:40.000Z",
-            "author": {
-                "name": "ippachi",
-                "url": "https://github.com/ippachi"
             }
         }
     ]
