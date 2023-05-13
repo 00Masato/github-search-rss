@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This lines up with the changes from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1708384156\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48214\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48214/hovercard\" href=\"https://github.com/rails/rails/pull/48214\">#48214</a></p>",
+            "url": "https://github.com/rails/rails/pull/48215",
+            "title": "Document bash / command-line fixed-font preferences",
+            "date_modified": "2023-05-13T01:37:17.000Z",
+            "date_published": "2023-05-13T01:32:59.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/48214",
+            "title": ":nail_care: Clean up Railties changelog for code blocks",
+            "date_modified": "2023-05-13T01:37:54.000Z",
+            "date_published": "2023-05-13T01:27:42.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This backports part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1600214136\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47510\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47510/hovercard\" href=\"https://github.com/rails/rails/pull/47510\">#47510</a> to fix this failing build:<br>\n<a href=\"https://buildkite.com/rails/rails/builds/96360#01880ded-cecb-4a71-9e9f-35db4f5bbce7/1069-1084\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/96360#01880ded-cecb-4a71-9e9f-35db4f5bbce7/1069-1084</a></p>",
             "url": "https://github.com/rails/rails/pull/48213",
             "title": "Backport TooManyOrTest to fix pq crash on stable",
-            "date_modified": "2023-05-13T00:30:53.000Z",
+            "date_modified": "2023-05-13T00:47:19.000Z",
             "date_published": "2023-05-13T00:30:53.000Z",
             "author": {
                 "name": "zzak",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "nvasilevski",
                 "url": "https://github.com/nvasilevski"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33079237?u=76f101f16829322713f7ba0c1496767a861ca89b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is a problem that has existed since the introduction of <a href=\"https://github.com/rails/rails/pull/35077/files#r260410047\">ActiveRecord::InsertAll</a>.<br>\nInitially, <code class=\"notranslate\">ActiveRecord::InsertAll</code> used <code class=\"notranslate\">ActiveRecord::Relation::QueryAttribute#value_for_database</code> to convert values. As the code evolved, it switched to using <code class=\"notranslate\">ActiveModel::Type::XXX#serialize</code> to serialize values.<br>\nThis is inconsistent with how attributes are converted in <code class=\"notranslate\">Model#save</code>, which uses <code class=\"notranslate\">ActiveModel::Attribute::FromUser#value_for_database</code>.<br>\nTherefore, in some cases, data created using <code class=\"notranslate\">Model#insert</code> and <code class=\"notranslate\">Model#create</code> may be inconsistent. This PR fixes this issue.</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Fix value conversion of ActiveRecord::InsertAll::Builder#values_list</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/boblail/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/boblail\">@boblail</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tenderlove/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tenderlove\">@tenderlove</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/kamipo/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/kamipo\">@kamipo</a></p>\n<p dir=\"auto\"><em>PS: English is not my native language; please excuse typing errors.</em></p>",
-            "url": "https://github.com/rails/rails/pull/48139",
-            "title": "Fix active record insert values of type cast and serialize",
-            "date_modified": "2023-05-12T03:34:22.000Z",
-            "date_published": "2023-05-05T15:28:14.000Z",
-            "author": {
-                "name": "OuYangJinTing",
-                "url": "https://github.com/OuYangJinTing"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8878264?u=f2b36c3d2bb7d96ed8bb4009b02eba6f85bec0c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">We are working a lot with postgresql and schemas. I noticed that the ActiveRecord does not support many options for them. I want to enable possible options while maintaining similar behavior to <code class=\"notranslate\">create_table</code> and <code class=\"notranslate\">drop_table</code></p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Added support of <strong>IF NOT EXISTS</strong> statement in <code class=\"notranslate\">create_schema</code></li>\n<li>Added support for <code class=\"notranslate\">force: cascade</code> option in <code class=\"notranslate\">create_schema</code></li>\n<li><strong>BREAKING CHANGE</strong> Changed default behavior of <code class=\"notranslate\">drop_schema</code>\n<ul dir=\"auto\">\n<li>no longer runs <strong>CASCADE</strong> by default</li>\n<li>supports <code class=\"notranslate\">force: :cascade</code> option, similar to <code class=\"notranslate\">drop_table</code></li>\n</ul>\n</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48132",
-            "title": "Postgresql improvements to create_schema and drop_schema ",
-            "date_modified": "2023-05-11T22:36:39.000Z",
-            "date_published": "2023-05-04T19:55:09.000Z",
-            "author": {
-                "name": "Adam-Stomski",
-                "url": "https://github.com/Adam-Stomski"
             }
         }
     ]
