@@ -130,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1146369?u=057e912610899b0df3dd1915f4502e9c8ac7dbc5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I suggest having a strict type for a value of a range. This type can be converted into another value of another range. The solution to the problem of conversion from two integer ranges is always the same, as far as I know, and so it can easily be written once for everyone and used. I think such a small but helpful addition to Rust's standard library types, such as <code class=\"notranslate\">std::ops::Range</code> and <code class=\"notranslate\">std::ops::RangeInclusive</code>, would enrich their interface and make the user code a little more stable by providing guarantees that specific values always lie within the range from which it was taken from.</p>\n<p dir=\"auto\"><a href=\"https://github.com/vityafx/rfcs/blob/master/text/0000-range-get-and-convert-methods.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3412",
             "title": "Proposal: add range value type and range value conversions between different ranges.",
-            "date_modified": "2023-04-13T01:50:52.000Z",
+            "date_modified": "2023-05-12T23:30:12.000Z",
             "date_published": "2023-04-10T09:11:21.000Z",
             "author": {
                 "name": "vityafx",

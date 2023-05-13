@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33548838?u=ea609280f61608dd20c0388e0a41c695cec12dd0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/mdn/content/pull/26755",
+            "title": "Keep StrictMode",
+            "date_modified": "2023-05-13T00:20:55.000Z",
+            "date_published": "2023-05-13T00:18:49.000Z",
+            "author": {
+                "name": "geryogam",
+                "url": "https://github.com/geryogam"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See also <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1708244399\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26753\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/26753/hovercard\" href=\"https://github.com/mdn/content/pull/26753\">#26753</a>.</p>",
             "url": "https://github.com/mdn/content/pull/26754",
             "title": "Fix return value for Range: getBoundingClientRect()",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "OnkarRuikar",
                 "url": "https://github.com/OnkarRuikar"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39087996?u=0bfb15351d70d43196a212731dbdf1ba521ab3e7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Such as the title.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The original code does not print the commented expected output.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Nope yet.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">None.</p>",
-            "url": "https://github.com/mdn/content/pull/26662",
-            "title": "fix: code error in the examples of `Array.shift()`",
-            "date_modified": "2023-05-09T17:02:45.000Z",
-            "date_published": "2023-05-09T04:52:23.000Z",
-            "author": {
-                "name": "JasonLamv-t",
-                "url": "https://github.com/JasonLamv-t"
             }
         }
     ]
