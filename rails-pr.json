@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The description was mentioning broadcasting to a comment channel and then the example broadcast to a post channel.</p>\n<p dir=\"auto\">In itself, not too confusing, but because the example is broadcasting comments on the post channel, it looks as if the order of parameters is reversed on the <code class=\"notranslate\">broadcast_to</code> call.</p>",
-            "url": "https://github.com/rails/rails/pull/48223",
-            "title": "Change a confusing Action Cable guide example.",
-            "date_modified": "2023-05-14T03:40:41.000Z",
-            "date_published": "2023-05-14T03:40:38.000Z",
-            "author": {
-                "name": "JoeDupuis",
-                "url": "https://github.com/JoeDupuis"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48185.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1703067636\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48185\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48185/hovercard\" href=\"https://github.com/rails/rails/issues/48185\">#48185</a></p>\n<p dir=\"auto\">Action Cable can be mounted standalone, but it loses the health check route provided by the railties.<br>\nThis change adds configuration for a health check rack app and a health check route to \"mount\" the rack app.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48222",
             "title": "Add health check on standalone Action Cable",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "jonathanhefner",
                 "url": "https://github.com/jonathanhefner"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2145?u=852c36277afc8bff6cfd2565a665294841184ecc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because writing <code class=\"notranslate\">Rails.application.credentials</code> can be a tad cumbersome.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">Rails</code> to have a convenient <code class=\"notranslate\">credentials</code> method for one less hop to get to credentials. (Similar to <code class=\"notranslate\">Rails.configuration</code>)</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48147",
+            "title": "Add credentials convenience method on Rails",
+            "date_modified": "2023-05-07T23:44:53.000Z",
+            "date_published": "2023-05-06T04:07:39.000Z",
+            "author": {
+                "name": "mattpolito",
+                "url": "https://github.com/mattpolito"
             }
         }
     ]
