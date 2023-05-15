@@ -6,21 +6,21 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9212605?u=4d2fbef485de203c14cd1742842a1666c7c235fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Removes a link without any description. This kind of data is what browser compat table is for anyway.</p>\n<p dir=\"auto\">Also removes the \"Summary\" heading which doesn't align with current format.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Browser compat table exists.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26787",
-            "title": "Remove old contents from AnimationEvent.pseudoElement",
-            "date_modified": "2023-05-15T15:02:03.000Z",
-            "date_published": "2023-05-15T14:59:55.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4582440?u=24f21cb8a29c523faef9be8873cff0374c8cfa18&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">One character grammar fix</p>",
+            "url": "https://github.com/mdn/content/pull/26789",
+            "title": "Update index.md",
+            "date_modified": "2023-05-15T15:18:15.000Z",
+            "date_published": "2023-05-15T15:16:01.000Z",
             "author": {
-                "name": "alattalatta",
-                "url": "https://github.com/alattalatta"
+                "name": "lgenzelis",
+                "url": "https://github.com/lgenzelis"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The correct key for apache configs is <code class=\"notranslate\">apacheconf</code> not <code class=\"notranslate\">apache</code>. This shows an error during build time.</p>\n<p dir=\"auto\"><strong>References:</strong></p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/PrismJS/prism/blob/master/components/prism-apacheconf.js\">https://github.com/PrismJS/prism/blob/master/components/prism-apacheconf.js</a></li>\n<li><a href=\"https://prismjs.com/download.html#themes=prism&amp;languages=apacheconf\" rel=\"nofollow\">https://prismjs.com/download.html#themes=prism&amp;languages=apacheconf</a></li>\n</ul>\n<p dir=\"auto\"><strong>related issues and pull requests:</strong></p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1710237735\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/yari/issues/8862\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/yari/pull/8862/hovercard\" href=\"https://github.com/mdn/yari/pull/8862\">mdn/yari#8862</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/26786",
             "title": "fix(learn): Prism key for syntax highlighting apache code is 'apacheconf'",
-            "date_modified": "2023-05-15T14:36:10.000Z",
+            "date_modified": "2023-05-15T15:44:48.000Z",
             "date_published": "2023-05-15T14:11:06.000Z",
             "author": {
                 "name": "bsmth",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Chrome 114 adds the <code class=\"notranslate\">text-wrap</code> and <code class=\"notranslate\">white-space-collapse</code> CSS properties, and updates the <code class=\"notranslate\">white-space</code> property with new behavior — as well as taking its usual keywords, it can now act as a shorthand property for <code class=\"notranslate\">text-wrap</code> and <code class=\"notranslate\">white-space-collapse</code>. These items are specified in <a href=\"https://www.w3.org/TR/css-text-4/\" rel=\"nofollow\">CSS Text Level 4</a>.</p>\n<p dir=\"auto\">This PR adds new content for those items.</p>\n<p dir=\"auto\">Note - there is another related property, <code class=\"notranslate\">white-space-trim</code>, which is specced as being included in the <code class=\"notranslate\">white-space</code> shorthand value, but this is not supported yet so I have not mentioned it.</p>\n<p dir=\"auto\">My <a href=\"https://docs.google.com/document/d/1de7T6UbSEcDvKKmyqz-yS3D2CS7XT67mxFjHhzKYlMc/edit#\" rel=\"nofollow\">research document</a> provides additional details about this overall project and its required changes.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/26781",
             "title": "Adding white-space-collapse and text-wrap properties",
-            "date_modified": "2023-05-15T11:27:06.000Z",
+            "date_modified": "2023-05-15T16:08:27.000Z",
             "date_published": "2023-05-15T11:25:11.000Z",
             "author": {
                 "name": "chrisdavidmills",
@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2689559?u=bee129e83ec7fde1eed8a2ce68dd81252e84978a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I found out that when using <code class=\"notranslate\">container-type</code> on an element, this also causes a new stacking context, just like the other scenario's already mentioned.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">It took me quite some time to figure out why this was, also posting a question on Stack Overflow (<a href=\"https://stackoverflow.com/questions/76237217/how-can-i-position-z-indexed-contained-within-css-containers-used-for-container\" rel=\"nofollow\">https://stackoverflow.com/questions/76237217/how-can-i-position-z-indexed-contained-within-css-containers-used-for-container</a>)</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://codepen.io/gofix/pen/yLREXaN\" rel=\"nofollow\">https://codepen.io/gofix/pen/yLREXaN</a></p>",
             "url": "https://github.com/mdn/content/pull/26761",
             "title": "Container-type also causes stacking context",
-            "date_modified": "2023-05-13T09:50:13.000Z",
+            "date_modified": "2023-05-15T15:08:18.000Z",
             "date_published": "2023-05-13T05:57:40.000Z",
             "author": {
                 "name": "gofix",
