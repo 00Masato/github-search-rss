@@ -116,17 +116,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1146369?u=057e912610899b0df3dd1915f4502e9c8ac7dbc5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I suggest having a strict type for a value of a range. This type can be converted into another value of another range. The solution to the problem of conversion from two integer ranges is always the same, as far as I know, and so it can easily be written once for everyone and used. I think such a small but helpful addition to Rust's standard library types, such as <code class=\"notranslate\">std::ops::Range</code> and <code class=\"notranslate\">std::ops::RangeInclusive</code>, would enrich their interface and make the user code a little more stable by providing guarantees that specific values always lie within the range from which it was taken from.</p>\n<p dir=\"auto\"><a href=\"https://github.com/vityafx/rfcs/blob/master/text/0000-range-get-and-convert-methods.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3412",
-            "title": "Proposal: add range value type and range value conversions between different ranges.",
-            "date_modified": "2023-05-16T17:37:45.000Z",
-            "date_published": "2023-04-10T09:11:21.000Z",
-            "author": {
-                "name": "vityafx",
-                "url": "https://github.com/vityafx"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This fixes the 404 not-found handling so that the not-found page can load javascript/css resources. Otherwise pages like <a href=\"https://rust-lang.github.io/rfcs/foo\" rel=\"nofollow\">https://rust-lang.github.io/rfcs/foo</a> do not render correctly.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3411",
             "title": "Fix 404 handling",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Skepfyr",
                 "url": "https://github.com/Skepfyr"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11978847?u=b4a030bf36dcb812a3eba7011cacd66952169210&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ModProg/rfcs/blob/format-dynamic-fill/text/3394-format-dynamic-fill.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3394",
+            "title": "format-dynamic-fill",
+            "date_modified": "2023-04-04T15:54:51.000Z",
+            "date_published": "2023-02-23T20:31:22.000Z",
+            "author": {
+                "name": "ModProg",
+                "url": "https://github.com/ModProg"
             }
         }
     ]
