@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26453626?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fix typo and unnecessary code</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">fix typo in /en-US/docs/Learn/Server-side/Express_Nodejs/mongoose<br>\nremove unnecessary code in author model</p>",
+            "url": "https://github.com/mdn/content/pull/26795",
+            "title": "fix typo",
+            "date_modified": "2023-05-16T02:58:11.000Z",
+            "date_published": "2023-05-16T02:04:10.000Z",
+            "author": {
+                "name": "a89529294",
+                "url": "https://github.com/a89529294"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8965209?u=c035cd2c89c1674b958e3efa7ff9877d3f977d3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">remove space to make the example work</p>",
             "url": "https://github.com/mdn/content/pull/26794",
             "title": "fix space in permission name",
@@ -209,17 +220,6 @@
             "title": "Use export at the end consistently",
             "date_modified": "2023-05-13T01:21:21.000Z",
             "date_published": "2023-05-13T01:18:38.000Z",
-            "author": {
-                "name": "geryogam",
-                "url": "https://github.com/geryogam"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33548838?u=ea609280f61608dd20c0388e0a41c695cec12dd0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/mdn/content/pull/26755",
-            "title": "Keep StrictMode",
-            "date_modified": "2023-05-13T00:20:55.000Z",
-            "date_published": "2023-05-13T00:18:49.000Z",
             "author": {
                 "name": "geryogam",
                 "url": "https://github.com/geryogam"
