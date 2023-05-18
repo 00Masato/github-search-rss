@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110363331?u=28ae16fc359f88d1814dc306b3aab73970206c96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is what the file said.</p>\n<p dir=\"auto\"><code class=\"notranslate\">TODO: Consider renaming this method, as it only conditionally extends keys, not always</code>,</p>\n<p dir=\"auto\">so I changed the method name.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the <code class=\"notranslate\">TODO:</code> and renamed it to the <code class=\"notranslate\">append_if_exist_keys_including_timestamps</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48244",
             "title": "Fix method name for `InsertAll#keys_including_timestamps`",
-            "date_modified": "2023-05-17T10:34:30.000Z",
+            "date_modified": "2023-05-18T00:34:49.000Z",
             "date_published": "2023-05-17T10:32:51.000Z",
             "author": {
                 "name": "asberel",
@@ -36,17 +36,6 @@
             "author": {
                 "name": "nvasilevski",
                 "url": "https://github.com/nvasilevski"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52599949?u=3a3e6f882db1807067702b1fee03636e352d3a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">I got the following MySQL error(MySQL 8.0.23)</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Mysql2::Error: Too-big precision 100 specified for 'XXX'. Maximum is 65.\"><pre class=\"notranslate\"><code class=\"notranslate\">Mysql2::Error: Too-big precision 100 specified for 'XXX'. Maximum is 65.\n</code></pre></div>\n<p dir=\"auto\">although the comment on <code class=\"notranslate\">add_column</code> says that the maximum is 63.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">according to MySQL doc, the maximum is 65.<br>\n<a href=\"https://dev.mysql.com/doc/refman/8.0/en/precision-math-decimal-characteristics.html\" rel=\"nofollow\">https://dev.mysql.com/doc/refman/8.0/en/precision-math-decimal-characteristics.html</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48237",
-            "title": "fix a comment on `add_column` regarding the maximum value of precision in MySQL",
-            "date_modified": "2023-05-17T05:21:46.000Z",
-            "date_published": "2023-05-16T16:31:55.000Z",
-            "author": {
-                "name": "a5-stable",
-                "url": "https://github.com/a5-stable"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "OuYangJinTing",
                 "url": "https://github.com/OuYangJinTing"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8878264?u=f2b36c3d2bb7d96ed8bb4009b02eba6f85bec0c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">We are working a lot with postgresql and schemas. I noticed that the ActiveRecord does not support many options for them. I want to enable possible options while maintaining similar behavior to <code class=\"notranslate\">create_table</code> and <code class=\"notranslate\">drop_table</code></p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Added support of <strong>IF NOT EXISTS</strong> statement in <code class=\"notranslate\">create_schema</code></li>\n<li>Added support for <code class=\"notranslate\">force: cascade</code> option in <code class=\"notranslate\">create_schema</code></li>\n<li><strong>BREAKING CHANGE</strong> Changed default behavior of <code class=\"notranslate\">drop_schema</code>\n<ul dir=\"auto\">\n<li>no longer runs <strong>CASCADE</strong> by default</li>\n<li>supports <code class=\"notranslate\">force: :cascade</code> option, similar to <code class=\"notranslate\">drop_table</code></li>\n</ul>\n</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48132",
+            "title": "Postgresql improvements to create_schema and drop_schema ",
+            "date_modified": "2023-05-11T22:36:39.000Z",
+            "date_published": "2023-05-04T19:55:09.000Z",
+            "author": {
+                "name": "Adam-Stomski",
+                "url": "https://github.com/Adam-Stomski"
             }
         }
     ]
