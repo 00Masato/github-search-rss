@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19670?u=d7df321e1e8f2ee042f53aa8990a319210e82534&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Summary:</p>\n<p dir=\"auto\">This proposal will enhance cargo and crates.io through adoption of the Sigstore capabilities and workflows as described in the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/trustification/rust-rfcs/blob/sigstore-rfc/text/0000-sigstore-integration.md\">Rendered</a></p>\n<p dir=\"auto\">For reference: <a href=\"https://internals.rust-lang.org/t/pre-rfc-using-sigstore-for-signing-and-verifying-crates/18115\" rel=\"nofollow\">pre-RFC discussions</a></p>\n<p dir=\"auto\">Made in collaboration with Tim Pletcher (HPE) and feedback from the community and RFCs from other package ecosystems.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3403",
             "title": "RFC: sigstore and cargo/crates.io",
-            "date_modified": "2023-05-18T21:47:30.000Z",
+            "date_modified": "2023-05-19T06:35:22.000Z",
             "date_published": "2023-03-27T11:11:01.000Z",
             "author": {
                 "name": "lulf",
