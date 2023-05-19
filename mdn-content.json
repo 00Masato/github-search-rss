@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13042856?u=4b6b72c916ab7a5e62f39e544e9ce4e932813ada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Remove express-validator import statement from code sample.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Module not yet installed at this point in tutorial. Running the program with the exact code provided causes 'module not found' error.</p>",
+            "url": "https://github.com/mdn/content/pull/26859",
+            "title": "Remove express-validator import statement",
+            "date_modified": "2023-05-19T15:44:29.000Z",
+            "date_published": "2023-05-19T15:41:43.000Z",
+            "author": {
+                "name": "josephrmartinez",
+                "url": "https://github.com/josephrmartinez"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11002344?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Explicitly say that Firefox and Chrome use different serialization algorithms to pass return value of <code class=\"notranslate\">scripting.executeScript()</code> WebExtensions method.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Despite current description of script result has a link to the Chrome incompatibilities page, wording is confusing. The phrase does not suggest that another serialization method is implemented in Chrome. Explicit mention of JSON serialization along with structured clone should warn readers about corner cases.</p>",
             "url": "https://github.com/mdn/content/pull/26857",
             "title": "scripting.executeScript: result serialization incompatibility",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=de6bd3d5d570d97e4c15ba2b0e774f3ebd2456ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Remove altGlyph docs as they are unshipped everywhere.</p>\n<p dir=\"auto\">BCD: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1703989540\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/19776\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19776/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/19776\">mdn/browser-compat-data#19776</a></p>",
             "url": "https://github.com/mdn/content/pull/26855",
             "title": "Remove docs for SVG altGlyph",
-            "date_modified": "2023-05-19T13:45:40.000Z",
+            "date_modified": "2023-05-19T15:56:45.000Z",
             "date_published": "2023-05-19T13:42:48.000Z",
             "author": {
                 "name": "Elchi3",
@@ -102,17 +113,6 @@
             "author": {
                 "name": "hamishwillee",
                 "url": "https://github.com/hamishwillee"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13042856?u=4b6b72c916ab7a5e62f39e544e9ce4e932813ada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Running the program exactly as-is at this point will return the following error:<br>\nError: Cannot find module 'express-validator'<br>\nThe tutorial either needs to instruct people to install express-validator or comment out the code for now.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Following the tutorial exactly as written should not result in errors. Another solution would be to not include the express-validator line at this point, but add it at a later time when the tutorial actually requests installing and using the module.<br>\nconst { body, validationResult } = require(\"express-validator\");</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26843",
-            "title": "Add note about module not yet installed",
-            "date_modified": "2023-05-19T06:40:29.000Z",
-            "date_published": "2023-05-18T21:26:51.000Z",
-            "author": {
-                "name": "josephrmartinez",
-                "url": "https://github.com/josephrmartinez"
             }
         },
         {
@@ -218,7 +218,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This pull request removes instances of <code class=\"notranslate\">{{EmbedLiveSample}}</code> macro where a <strike>third</strike> fourth parameter is provided.</p>\n<ul dir=\"auto\">\n<li>Most of these are empty: <code class=\"notranslate\">{{EmbedLiveSample('title', 'width', 'height', '')}}</code></li>\n<li>Ones with screenshots are presumably fallbacks when browsers did not support the features demonstrated. Deleting the screenshots in this case as the live sample renders well by itself so a screenshot is redundant.</li>\n</ul>\n<p dir=\"auto\"><strong>Other changes:</strong></p>\n<ul dir=\"auto\">\n<li>Fixing duplicate section headings, using bold text instead for some sections.</li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/26816",
             "title": "chore: Remove embedlivesample macro calls with a fourth parameter",
-            "date_modified": "2023-05-19T07:59:40.000Z",
+            "date_modified": "2023-05-19T15:46:56.000Z",
             "date_published": "2023-05-17T16:00:31.000Z",
             "author": {
                 "name": "bsmth",
