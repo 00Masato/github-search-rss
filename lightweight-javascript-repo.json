@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62189478?u=78b563194d2140d10ec3930c99ea3bb0e85b9688&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library to access Google Bard.</div>",
+            "url": "https://github.com/EvanZhouDev/bard-ai",
+            "title": "EvanZhouDev/bard-ai: A lightweight library to access Google Bard.",
+            "date_modified": "2023-05-19T03:45:12.000Z",
+            "date_published": "2023-05-16T04:31:02.000Z",
+            "author": {
+                "name": "EvanZhouDev",
+                "url": "https://github.com/EvanZhouDev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7956947?u=2f956b4252ef740a9135dafa492ece88391863cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight package to support running an SMTP server in parallel with tests sending emails.</div>",
+            "url": "https://github.com/webstech/test-smtp-server",
+            "title": "webstech/test-smtp-server: Lightweight package to support running an SMTP server in parallel with tests sending emails.",
+            "date_modified": "2023-03-03T22:36:56.000Z",
+            "date_published": "2021-11-02T04:45:35.000Z",
+            "author": {
+                "name": "webstech",
+                "url": "https://github.com/webstech"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107406373?u=64be03bd812be328b743ae255107f1e30aec4085&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A secure, lightweight and easy-to-use webserver powered by ExpressJS</div>",
             "url": "https://github.com/Lillious/Node-Webserver",
             "title": "Lillious/Node-Webserver: A secure, lightweight and easy-to-use webserver powered by ExpressJS",
@@ -185,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11529148?u=94446866c576d620cbd33e62834c480091fedcf0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><a href=\"http://www.embla-carousel.com\" rel=\"nofollow\">www.embla-carousel.com</a> — A lightweight carousel library with fluid motion and great swipe precision.</div>",
             "url": "https://github.com/davidjerleke/embla-carousel",
             "title": "davidjerleke/embla-carousel: www.embla-carousel.com — A lightweight carousel library with fluid motion and great swipe precision.",
-            "date_modified": "2023-05-19T22:08:38.000Z",
+            "date_modified": "2023-05-19T23:35:20.000Z",
             "date_published": "2019-03-18T18:34:50.000Z",
             "author": {
                 "name": "davidjerleke",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "sebbo2002",
                 "url": "https://github.com/sebbo2002"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106929622?u=e58a07d4d3424678892318e9e47ba94601caaa04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and modular Tailwind CSS styled components, and vanilla JavaScript plugins for developing web interfaces faster.</div>",
-            "url": "https://github.com/variablesign/uikit",
-            "title": "variablesign/uikit: A lightweight and modular Tailwind CSS styled components, and vanilla JavaScript plugins for developing web interfaces faster.",
-            "date_modified": "2023-04-19T19:34:24.000Z",
-            "date_published": "2023-02-17T12:08:19.000Z",
-            "author": {
-                "name": "variablesign",
-                "url": "https://github.com/variablesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75273648?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>jSuites is a collection of lightweight common required javascript web components. It is composed of fully responsive vanilla plugins to help you bring the best user experience to your projects, independent of the platform. Same JS codebase across different platforms.</div>",
-            "url": "https://github.com/jsuites/jsuites",
-            "title": "jsuites/jsuites: jSuites is a collection of lightweight common required javascript web components. It is composed of fully responsive vanilla plugins to help you bring the best user experience to your projects, independent of the platform. Same JS codebase across different platforms.",
-            "date_modified": "2023-05-16T14:50:43.000Z",
-            "date_published": "2019-05-08T18:00:48.000Z",
-            "author": {
-                "name": "jsuites",
-                "url": "https://github.com/jsuites"
             }
         }
     ]
