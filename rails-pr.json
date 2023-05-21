@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100293177?u=0bc3abff25d7a41543d090c630cfbf11f709fc15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">According to the HTML spec<br>\nfound at <a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html%5C#the-source-element\" rel=\"nofollow\">https://html.spec.whatwg.org/multipage/embedded-content.html\\#the-source-element</a>,</p>\n<blockquote>\n<p dir=\"auto\">If the type attribute is not specified, the user agent will not select a different<br>\nsource element if it finds that it does not support the image format after fetching it.</p>\n</blockquote>\n<p dir=\"auto\">It goes on to mention:</p>\n<blockquote>\n<p dir=\"auto\">When a source element has a following sibling source element or img<br>\nelement with a srcset attribute specified, it must have at least one of the following:</p>\n</blockquote>\n<p dir=\"auto\">Where it lists a 'media' and 'type' attribute.</p>\n<p dir=\"auto\">cc: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/guilleiguaran/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/guilleiguaran\">@guilleiguaran</a></p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">To make the <code class=\"notranslate\">source</code> element match the HTML spec found <a href=\"https://html.spec.whatwg.org/multipage/embedded-content.html#the-source-element\" rel=\"nofollow\">here</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48266",
             "title": "Add 'type' attribute to 'source' element",
-            "date_modified": "2023-05-20T23:02:09.000Z",
+            "date_modified": "2023-05-21T00:12:57.000Z",
             "date_published": "2023-05-20T22:39:25.000Z",
             "author": {
                 "name": "siaw23",
@@ -22,17 +22,6 @@
             "title": "`ERB::Util.html_escape_once` always returns an `html_safe` string",
             "date_modified": "2023-05-20T17:43:21.000Z",
             "date_published": "2023-05-20T17:35:10.000Z",
-            "author": {
-                "name": "flavorjones",
-                "url": "https://github.com/flavorjones"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8207?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><code class=\"notranslate\">SafeBuffer#clone_empty</code> is unused within the Rails codebase. The last caller was removed by <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/479c7cacd5db58ab7200bc1de58c829a1a643278/hovercard\" href=\"https://github.com/rails/rails/commit/479c7cacd5db58ab7200bc1de58c829a1a643278\"><tt>479c7ca</tt></a> in 2014 (Rails 4.2.0).</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">A <a href=\"https://github.com/search?q=clone_empty+language%3ARuby&amp;type=code&amp;l=Ruby&amp;p=1\">search on github</a> suggests that this method isn't called often by any public code written or updated in the last 11 years.</p>\n<p dir=\"auto\">Is this a method we want to continue to support?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48264",
-            "title": "Deprecate `SafeBuffer#clone_empty`",
-            "date_modified": "2023-05-20T17:57:21.000Z",
-            "date_published": "2023-05-20T16:48:06.000Z",
             "author": {
                 "name": "flavorjones",
                 "url": "https://github.com/flavorjones"
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ajee10x",
                 "url": "https://github.com/ajee10x"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds <code class=\"notranslate\">Object#isolated_copy</code> (as a private API) which performs a <code class=\"notranslate\">deep_dup</code> unless the object is frozen or a non-anonymous module.  In which case, it simply returns <code class=\"notranslate\">self</code>.</p>\n<p dir=\"auto\">TODO:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> tests</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> update <code class=\"notranslate\">thread_mattr_accessor</code> docs</li>\n</ul>\n<hr>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a> <code class=\"notranslate\">Module#deep_dup</code> returning <code class=\"notranslate\">self</code> may cause unexpected behavior (see <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1702310736\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48178\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48178/hovercard\" href=\"https://github.com/rails/rails/pull/48178\">#48178</a>).  What do you think of replacing <code class=\"notranslate\">Module#deep_dup</code> with <code class=\"notranslate\">Module#isolated_copy</code>?  (In other words, restoring the original behavior of <code class=\"notranslate\">Module#deep_dup</code>, and defining <code class=\"notranslate\">Module#isolated_copy</code> with the specialized behavior instead.)</p>",
+            "url": "https://github.com/rails/rails/pull/48179",
+            "title": "Add `Object#isolated_copy`",
+            "date_modified": "2023-05-10T18:03:32.000Z",
+            "date_published": "2023-05-09T16:37:22.000Z",
+            "author": {
+                "name": "jonathanhefner",
+                "url": "https://github.com/jonathanhefner"
             }
         }
     ]
