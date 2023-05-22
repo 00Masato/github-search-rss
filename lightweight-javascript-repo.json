@@ -6,6 +6,39 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18330673?u=6948fe99cd1433df0104fc88d23b1395d59f1f7f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight module that downloads and runs Minecraft using javascript / NodeJS</div>",
+            "url": "https://github.com/Pierce01/MinecraftLauncher-core",
+            "title": "Pierce01/MinecraftLauncher-core: Lightweight module that downloads and runs Minecraft using javascript / NodeJS",
+            "date_modified": "2023-05-17T17:33:51.000Z",
+            "date_published": "2018-10-29T22:12:22.000Z",
+            "author": {
+                "name": "Pierce01",
+                "url": "https://github.com/Pierce01"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2023-05-22T21:38:05.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132421698?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"gem\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f48e.png\">💎</g-emoji> A lightweight, modular, and extendable 3D game engine built for the web.</div>",
+            "url": "https://github.com/lattice-engine/lattice",
+            "title": "lattice-engine/lattice: 💎 A lightweight, modular, and extendable 3D game engine built for the web.",
+            "date_modified": "2023-05-19T16:34:05.000Z",
+            "date_published": "2023-05-03T03:24:34.000Z",
+            "author": {
+                "name": "lattice-engine",
+                "url": "https://github.com/lattice-engine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32807631?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple &amp; lightweight AES (Advanced Encryption Standard) module. Wrapper for Node.js crypto module.</div>",
             "url": "https://github.com/Hazmi35/nano-aes",
             "title": "Hazmi35/nano-aes: Simple & lightweight AES (Advanced Encryption Standard) module. Wrapper for Node.js crypto module.",
@@ -31,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22573947?u=b6b781721acb7fab1e68adb291f9a2a5b66a022a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"cup_with_straw\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f964.png\">🥤</g-emoji> Lightweight ReactJS form validation library with Hooks </div>",
             "url": "https://github.com/oreoluwadnd/BubbleForm",
             "title": "oreoluwadnd/BubbleForm: 🥤 Lightweight ReactJS form validation library with Hooks ",
-            "date_modified": "2023-05-22T15:50:01.000Z",
+            "date_modified": "2023-05-22T21:12:48.000Z",
             "date_published": "2023-05-19T08:54:43.000Z",
             "author": {
                 "name": "oreoluwadnd",
@@ -58,17 +91,6 @@
             "author": {
                 "name": "WhiskeySockets",
                 "url": "https://github.com/WhiskeySockets"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132421698?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"gem\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f48e.png\">💎</g-emoji> A lightweight, modular, and extendable 3D game engine built for the web.</div>",
-            "url": "https://github.com/lattice-engine/lattice",
-            "title": "lattice-engine/lattice: 💎 A lightweight, modular, and extendable 3D game engine built for the web.",
-            "date_modified": "2023-05-19T16:34:05.000Z",
-            "date_published": "2023-05-03T03:24:34.000Z",
-            "author": {
-                "name": "lattice-engine",
-                "url": "https://github.com/lattice-engine"
             }
         },
         {
@@ -201,28 +223,6 @@
             "author": {
                 "name": "LaineZ",
                 "url": "https://github.com/LaineZ"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
-            "url": "https://github.com/usememos/memos",
-            "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
-            "date_modified": "2023-05-22T20:19:12.000Z",
-            "date_published": "2021-12-08T15:30:18.000Z",
-            "author": {
-                "name": "usememos",
-                "url": "https://github.com/usememos"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/53054099?u=cb5b0c881e0c9f7c7aa00da0a6b5bed62da4618e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight multi-tab IDE based on CodeMirror</div>",
-            "url": "https://github.com/Yash-Singh1/monkeyide",
-            "title": "Yash-Singh1/monkeyide: A lightweight multi-tab IDE based on CodeMirror",
-            "date_modified": "2023-03-04T17:55:36.000Z",
-            "date_published": "2020-09-20T00:15:16.000Z",
-            "author": {
-                "name": "Yash-Singh1",
-                "url": "https://github.com/Yash-Singh1"
             }
         }
     ]
