@@ -6,6 +6,39 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a draft so reviewers can review the dependencies:</p>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1714788029\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/pwa-examples/issues/27\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/pwa-examples/pull/27/hovercard\" href=\"https://github.com/mdn/pwa-examples/pull/27\">mdn/pwa-examples#27</a><br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1715122402\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/pwa-examples/issues/28\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/pwa-examples/pull/28/hovercard\" href=\"https://github.com/mdn/pwa-examples/pull/28\">mdn/pwa-examples#28</a></p>",
+            "url": "https://github.com/mdn/content/pull/26891",
+            "title": "Draft: PWA first tutorial",
+            "date_modified": "2023-05-22T03:01:06.000Z",
+            "date_published": "2023-05-22T02:58:53.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Improved express server start instructions for Windows command line. This is copied from <a href=\"https://github.com/mdn/content/pull/26540/files#r1198612209\">https://github.com/mdn/content/pull/26540/files#r1198612209</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Eschivo/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Eschivo\">@Eschivo</a>.</p>",
+            "url": "https://github.com/mdn/content/pull/26890",
+            "title": "Serverstart instructions update",
+            "date_modified": "2023-05-22T02:18:58.000Z",
+            "date_published": "2023-05-22T02:16:59.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40999116?u=a84ce6bb104a959e847095a7ac081faea4737bd5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Contents in 'Numbered lists' are indented, but contents in 'bulleted lists' are not. Add the indent to improve consistency</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26889",
+            "title": "add indents for 'bulleted lists' in writing style",
+            "date_modified": "2023-05-22T02:14:27.000Z",
+            "date_published": "2023-05-22T02:12:11.000Z",
+            "author": {
+                "name": "jasonren0403",
+                "url": "https://github.com/jasonren0403"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22805161?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">I have tried the stylesheet dose not work without <code class=\"notranslate\">xmlns=\"http://www.w3.org/1999/xhtml</code>. So I update it.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">link to stylesheet won't work because of missing xmlns <a href=\"https://github.com/mdn/content/issues/26883\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26883/hovercard\">#26883</a></p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26883.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1718530004\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26883\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26883/hovercard\" href=\"https://github.com/mdn/content/issues/26883\">#26883</a></p>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/26888",
             "title": "Update index.md",
@@ -53,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26169430?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26873.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1718335337\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26873\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26873/hovercard\" href=\"https://github.com/mdn/content/issues/26873\">#26873</a></p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/26884",
             "title": "Prevent exposure of MongoDB URI",
-            "date_modified": "2023-05-21T17:29:15.000Z",
+            "date_modified": "2023-05-22T02:39:03.000Z",
             "date_published": "2023-05-21T16:46:23.000Z",
             "author": {
                 "name": "KingChampion36",
@@ -80,17 +113,6 @@
             "author": {
                 "name": "hieyou1",
                 "url": "https://github.com/hieyou1"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13042856?u=4b6b72c916ab7a5e62f39e544e9ce4e932813ada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Changed Github to GitHub</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Consistency and accuracy throughout page. For some reason GitHub was formatted as Github several times on this page.</p>",
-            "url": "https://github.com/mdn/content/pull/26874",
-            "title": "Change Github to GitHub",
-            "date_modified": "2023-05-22T02:05:32.000Z",
-            "date_published": "2023-05-21T01:11:15.000Z",
-            "author": {
-                "name": "josephrmartinez",
-                "url": "https://github.com/josephrmartinez"
             }
         },
         {
@@ -201,28 +223,6 @@
             "author": {
                 "name": "wbamberg",
                 "url": "https://github.com/wbamberg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16962484?u=cc824d140d08903000ca556f4fc0db6e97a852a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fix the link line reference in the code for <code class=\"notranslate\">forceGet</code> parameter.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26824",
-            "title": "Fix the link line reference at reload().",
-            "date_modified": "2023-05-21T23:57:57.000Z",
-            "date_published": "2023-05-17T19:51:44.000Z",
-            "author": {
-                "name": "joaodinizgit",
-                "url": "https://github.com/joaodinizgit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1365071?u=a28e0813dc14227725639ff1d19a94f36319e285&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<ul dir=\"auto\">\n<li>Change /docs/ links to /en-US/docs/</li>\n<li>Add missing <code class=\"notranslate\">{{WebExtAPIRef</code> in declarativenetrequest/index.md</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">There is a missing <code class=\"notranslate\">{{WebExtAPIRef</code> in the DNR article. I might have overlooked it before because the bot was spitting out tons of \"useless\" warnings about non-resolvable URLs. I fixed it by replacing <code class=\"notranslate\">/docs/</code> with <code class=\"notranslate\">/en-US/docs/</code>, and then <code class=\"notranslate\">/en-US/en-US/docs/</code> with <code class=\"notranslate\">/en-US/docs/</code>.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1710946766\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26793\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/26793/hovercard\" href=\"https://github.com/mdn/content/pull/26793\">#26793</a></p>\n",
-            "url": "https://github.com/mdn/content/pull/26818",
-            "title": "DNR docs: replace /docs with /en-US/docs + fix missing WebExtAPIRef",
-            "date_modified": "2023-05-20T00:26:52.000Z",
-            "date_published": "2023-05-17T16:55:24.000Z",
-            "author": {
-                "name": "Rob--W",
-                "url": "https://github.com/Rob--W"
             }
         }
     ]
