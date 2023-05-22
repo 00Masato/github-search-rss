@@ -6,10 +6,21 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14862687?u=837ee644eec256f26de9c4c9c7ec0fa92f162c97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Modified the example</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26841.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1716115539\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26841\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26841/hovercard\" href=\"https://github.com/mdn/content/issues/26841\">#26841</a></p>",
+            "url": "https://github.com/mdn/content/pull/26895",
+            "title": "Update index.md",
+            "date_modified": "2023-05-22T08:08:56.000Z",
+            "date_published": "2023-05-22T08:08:43.000Z",
+            "author": {
+                "name": "postmeback",
+                "url": "https://github.com/postmeback"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF114 adds support for the Popover API behind a preference. This adds the Experimental features entry.</p>\n<p dir=\"auto\">Other docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1703488925\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26694\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26694/hovercard\" href=\"https://github.com/mdn/content/issues/26694\">#26694</a></p>",
             "url": "https://github.com/mdn/content/pull/26894",
             "title": "FF114 Add Popover API to FF Experimental Features",
-            "date_modified": "2023-05-22T07:06:36.000Z",
+            "date_modified": "2023-05-22T07:08:16.000Z",
             "date_published": "2023-05-22T07:06:16.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -17,10 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates the popover API \"Web API\" docs with some live examples. The examples are all very similar - they mirror for the button vs input elements. Note that I did not update a live example for the event handler, thought that would be not be hard.</p>\n<p dir=\"auto\">This is worth doing IMO because live examples are a very obvious up-front demo of browser support. I also found it useful because it wasn't obvious to me at first that if you declare an element as a popover when popover API is not supported that div displays its content. A bit ugly.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chrisdavidmills/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chrisdavidmills\">@chrisdavidmills</a> YOu'd be the right person to look at this. I'm very pleased you already documented this - the \"Using guide\" is really good.</p>\n<p dir=\"auto\">Related docs work in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1703488925\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26694\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26694/hovercard\" href=\"https://github.com/mdn/content/issues/26694\">#26694</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates the popover API \"Web API\" docs with some live examples. The examples are all very similar - they mirror for the button vs input elements.</p>\n<p dir=\"auto\">Note that I did not update a live example for the event handler, or add to the <a href=\"/en-US/docs/Web/API/HTMLElement/showPopover\">show</a>/hide/toggle methods. I could certainly do so if you think it useful? (mostly ran out of steam).</p>\n<p dir=\"auto\">This is worth doing IMO because live examples are a very obvious up-front demo of browser support. I also found it useful because it wasn't obvious to me at first that if you declare an element as a popover when popover API is not supported that div displays its content. A bit ugly.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chrisdavidmills/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chrisdavidmills\">@chrisdavidmills</a> YOu'd be the right person to look at this. I'm very pleased you already documented this - the \"Using guide\" is really good.</p>\n<p dir=\"auto\">Related docs work in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1703488925\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26694\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26694/hovercard\" href=\"https://github.com/mdn/content/issues/26694\">#26694</a></p>",
             "url": "https://github.com/mdn/content/pull/26893",
             "title": "Popover API - add live examples for Web API",
-            "date_modified": "2023-05-22T07:02:00.000Z",
+            "date_modified": "2023-05-22T07:09:13.000Z",
             "date_published": "2023-05-22T06:39:42.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -130,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">There is one instance of <code class=\"notranslate\">go</code> used as a language for code blocks. We do not (yet) support Go in Prism syntax highlighting. This of course raises a build error which we can resolve in this PR.</p>\n<div class=\"highlight highlight-source-lisp notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"```go\nfunc (svg *SVG) TheOnlyGoExample(\n```\"><pre class=\"notranslate\">```go\nfunc (svg *SVG) TheOnlyGoExample(\n```</pre></div>\n<p dir=\"auto\">Instead of adding Go as a supported language for this one example, I propose to rewrite the example in plain JS which translates better to our usual conventions for examples.</p>\n<p dir=\"auto\">Improvements / suggestions on the example are welcome.</p>",
             "url": "https://github.com/mdn/content/pull/26849",
             "title": "chore: remove Golang example, add JS variant instead",
-            "date_modified": "2023-05-22T06:13:37.000Z",
+            "date_modified": "2023-05-22T07:58:30.000Z",
             "date_published": "2023-05-19T10:29:32.000Z",
             "author": {
                 "name": "bsmth",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andreydanil",
                 "url": "https://github.com/andreydanil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15782191?u=3f0dd577b7ffd499ad15b8845faaea53fff5f547&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Length values are not always absolute. For example we can use 2em for height property as a length value but it is not absolute. I corrected this in the Values section.</p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26811",
-            "title": "Correct length values description",
-            "date_modified": "2023-05-20T00:26:10.000Z",
-            "date_published": "2023-05-17T12:17:34.000Z",
-            "author": {
-                "name": "amirhosainshahsavari",
-                "url": "https://github.com/amirhosainshahsavari"
             }
         }
     ]
