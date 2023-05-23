@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=9531927576dae8d2a9b8a9c5ebea42db423c01c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/export/text/0000-export.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3435",
+            "title": "RFC: `#[export]` (dynamically linked crates)",
+            "date_modified": "2023-05-23T13:06:20.000Z",
+            "date_published": "2023-05-23T13:06:18.000Z",
+            "author": {
+                "name": "m-ou-se",
+                "url": "https://github.com/m-ou-se"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding a (defaulted) generic parameter to the <code class=\"notranslate\">core::future::Future</code> trait to allow more flexibility in <code class=\"notranslate\">Future::poll</code>'s second argument (<code class=\"notranslate\">context</code>).</p>\n<p dir=\"auto\">This is would allow new <code class=\"notranslate\">Waker</code>s to be created, that may be used to:</p>\n<ul dir=\"auto\">\n<li>Allow the creation of ABI-stable wakers, allowing futures constructed by a shared object to be run on another's executor.</li>\n<li>Allow wakers to adopt other structures that that of vtable/pointer pairs, which may be desirable to certain domains.</li>\n<li>Allow specific futures to rely on additional behaviour of specific wakers that certain executors may provide.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/generic-futures/text/0000-generic-futures.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3434",
             "title": "Generic Futures",
@@ -141,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28248770?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes a feature to provide a guarantee that function calls are tail-call eliminated via the <code class=\"notranslate\">become</code> keyword. If this guarantee can not be provided an error is generated instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/phi-go/rfcs/blob/guaranteed-tco/text/0000-explicit-tail-calls.md\">Rendered</a></p>\n<p dir=\"auto\">For reference, previous RFCs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"33774368\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/81\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/81/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/81\">#81</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"205914157\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1888\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1888/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/1888\">#1888</a>, as well as an earlier issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"43705105\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/271\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/271/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/271\">#271</a>, and the currently active issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"435379329\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2691\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2691/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2691\">#2691</a>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3407",
             "title": "Explicit Tail Calls",
-            "date_modified": "2023-05-23T11:33:53.000Z",
+            "date_modified": "2023-05-23T12:56:48.000Z",
             "date_published": "2023-04-06T12:31:47.000Z",
             "author": {
                 "name": "phi-go",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Skepfyr",
                 "url": "https://github.com/Skepfyr"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11978847?u=b4a030bf36dcb812a3eba7011cacd66952169210&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ModProg/rfcs/blob/format-dynamic-fill/text/3394-format-dynamic-fill.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3394",
-            "title": "format-dynamic-fill",
-            "date_modified": "2023-04-04T15:54:51.000Z",
-            "date_published": "2023-02-23T20:31:22.000Z",
-            "author": {
-                "name": "ModProg",
-                "url": "https://github.com/ModProg"
             }
         }
     ]
