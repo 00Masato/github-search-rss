@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=de6bd3d5d570d97e4c15ba2b0e774f3ebd2456ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Make the example code more complete by adding <code class=\"notranslate\">&lt;html&gt;</code>, <code class=\"notranslate\">&lt;head&gt;</code> and some usage notes to say that <code class=\"notranslate\">&lt;frameset&gt; </code>elements can't actually exist in a <code class=\"notranslate\">&lt;body&gt;</code>.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">This came up in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1699627855\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/19681\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/19681/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/19681\">mdn/browser-compat-data#19681</a></p>",
             "url": "https://github.com/mdn/content/pull/26901",
             "title": "Frames can't exist within a <body>",
-            "date_modified": "2023-05-22T12:11:04.000Z",
+            "date_modified": "2023-05-23T00:20:52.000Z",
             "date_published": "2023-05-22T12:08:33.000Z",
             "author": {
                 "name": "Elchi3",
@@ -102,17 +102,6 @@
             "author": {
                 "name": "KingChampion36",
                 "url": "https://github.com/KingChampion36"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46881869?u=ccbfc374166fa543dc97ce9fa1b343c233489f01&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Some fixes in live sample blocks.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/26882",
-            "title": "Result block added",
-            "date_modified": "2023-05-22T13:52:54.000Z",
-            "date_published": "2023-05-21T13:43:32.000Z",
-            "author": {
-                "name": "Mehrm0",
-                "url": "https://github.com/Mehrm0"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "dipikabh",
                 "url": "https://github.com/dipikabh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71678062?u=e6267721ca4f486490d1ab58059c4a910fb3f1fb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I update part of the example code that was using deprecated methods from the <code class=\"notranslate\">express-validator</code> package</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I simply felt that its best to use the recommended methods and not the deprecated ones.</p>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/26798",
+            "title": "Express-validator: Updates for 7.0",
+            "date_modified": "2023-05-22T08:26:54.000Z",
+            "date_published": "2023-05-16T08:37:32.000Z",
+            "author": {
+                "name": "TruePadawan",
+                "url": "https://github.com/TruePadawan"
             }
         }
     ]
