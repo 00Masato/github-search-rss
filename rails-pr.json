@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We want a way to be able to audit the public API of Rails, and find things that are missing <code class=\"notranslate\">:nodoc:</code>.</p>\n<p dir=\"auto\">This was implemented in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1707161137\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/sdoc/issues/222\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/sdoc/pull/222/hovercard\" href=\"https://github.com/rails/sdoc/pull/222\">rails/sdoc#222</a>, and we're pulling in the latest branch to use it here.</p>\n<p dir=\"auto\">In the future we might want a way to diff this data in some way, for example to provide PRs with feedback that introduce new classes or methods for reviewers to quickly check.</p>",
             "url": "https://github.com/rails/rails/pull/48202",
             "title": "Add namelist rake task",
-            "date_modified": "2023-05-12T08:19:46.000Z",
+            "date_modified": "2023-05-23T11:31:42.000Z",
             "date_published": "2023-05-12T08:19:42.000Z",
             "author": {
                 "name": "zzak",
