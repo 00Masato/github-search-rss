@@ -6,6 +6,127 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1944556?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>JavaScript lightweight reactivity lib inspired by Vue</div>",
+            "url": "https://github.com/NesCafe62/pozitron",
+            "title": "NesCafe62/pozitron: JavaScript lightweight reactivity lib inspired by Vue",
+            "date_modified": "2023-05-23T22:22:51.000Z",
+            "date_published": "2023-05-23T22:20:26.000Z",
+            "author": {
+                "name": "NesCafe62",
+                "url": "https://github.com/NesCafe62"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30959108?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>API server for Lad</div>",
+            "url": "https://github.com/ladjs/api",
+            "title": "ladjs/api: API server for Lad",
+            "date_modified": "2022-01-07T17:57:31.000Z",
+            "date_published": "2017-11-26T12:36:35.000Z",
+            "author": {
+                "name": "ladjs",
+                "url": "https://github.com/ladjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5264309?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"axe\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1fa93.png\">🪓</g-emoji> Logger-agnostic wrapper that normalizes logs regardless of arg style. Great for large dev teams, old/new projects, and works w/Pino, Bunyan, Winston, console, and more. It is lightweight, performant, highly-configurable, and automatically adds OS, CPU, and Git information to your logs. Hooks, dot-notation remap, omit, and pick of metadata.</div>",
+            "url": "https://github.com/cabinjs/axe",
+            "title": "cabinjs/axe: :axe: Logger-agnostic wrapper that normalizes logs regardless of arg style. Great for large dev teams, old/new projects, and works w/Pino, Bunyan, Winston, console, and more. It is lightweight, performant, highly-configurable, and automatically adds OS, CPU, and Git information to your logs. Hooks, dot-notation remap, omit, and pick of metadata.",
+            "date_modified": "2023-05-12T17:19:43.000Z",
+            "date_published": "2017-09-07T06:49:17.000Z",
+            "author": {
+                "name": "cabinjs",
+                "url": "https://github.com/cabinjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
+            "url": "https://github.com/emberjs/data",
+            "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
+            "date_modified": "2023-05-12T14:34:16.000Z",
+            "date_published": "2011-12-20T01:50:40.000Z",
+            "author": {
+                "name": "emberjs",
+                "url": "https://github.com/emberjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1263515?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>CalcScript; a lightweight scripting and expression language</div>",
+            "url": "https://github.com/craigahobbs/calc-script",
+            "title": "craigahobbs/calc-script: CalcScript; a lightweight scripting and expression language",
+            "date_modified": "2023-04-01T17:27:48.000Z",
+            "date_published": "2022-01-31T23:48:25.000Z",
+            "author": {
+                "name": "craigahobbs",
+                "url": "https://github.com/craigahobbs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32807631?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple &amp; lightweight AES (Advanced Encryption Standard) module. Wrapper for Node.js crypto module.</div>",
+            "url": "https://github.com/Hazmi35/nano-aes",
+            "title": "Hazmi35/nano-aes: Simple & lightweight AES (Advanced Encryption Standard) module. Wrapper for Node.js crypto module.",
+            "date_modified": "2023-04-03T04:09:39.000Z",
+            "date_published": "2023-03-31T17:53:42.000Z",
+            "author": {
+                "name": "Hazmi35",
+                "url": "https://github.com/Hazmi35"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3246342?u=fa231643816f147cb54f24bd79245fb7ba9c4425&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Calendly-esque appointment booker, using Next 13</div>",
+            "url": "https://github.com/timfee/meet",
+            "title": "timfee/meet: A lightweight Calendly-esque appointment booker, using Next 13",
+            "date_modified": "2023-05-23T23:09:57.000Z",
+            "date_published": "2023-03-14T03:51:09.000Z",
+            "author": {
+                "name": "timfee",
+                "url": "https://github.com/timfee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95766532?u=65ab2c2297f184fd4a6a2184dc49a6ad462dcbf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Santi's Assertion Library. Official repo for NPM package @santi100/assertion-lib.</div>",
+            "url": "https://github.com/santi100a/assertion-lib",
+            "title": "santi100a/assertion-lib: Santi's Assertion Library. Official repo for NPM package @santi100/assertion-lib.",
+            "date_modified": "2023-04-01T01:24:21.000Z",
+            "date_published": "2022-12-07T00:49:18.000Z",
+            "author": {
+                "name": "santi100a",
+                "url": "https://github.com/santi100a"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2023-05-23T18:28:10.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7534274?u=4e7d61e109f1b8419af30c9de5daec6c9d585a6f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight plug &amp; play, self-hosted, zeroconfig node.js chat.</div>",
+            "url": "https://github.com/m1k1o/chat",
+            "title": "m1k1o/chat: Lightweight plug & play, self-hosted, zeroconfig node.js chat.",
+            "date_modified": "2023-05-22T11:59:59.000Z",
+            "date_published": "2018-03-18T14:09:23.000Z",
+            "author": {
+                "name": "m1k1o",
+                "url": "https://github.com/m1k1o"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6097850?u=f5c80e4a3cc9468bcf8bd2723356a0ff0dabc79d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight abstract and polymorphic MongoDB repository implementation for Node.js apps</div>",
+            "url": "https://github.com/Josuto/node-abstract-repository",
+            "title": "Josuto/node-abstract-repository: Lightweight abstract and polymorphic MongoDB repository implementation for Node.js apps",
+            "date_modified": "2023-05-23T23:15:26.000Z",
+            "date_published": "2022-10-04T16:46:31.000Z",
+            "author": {
+                "name": "Josuto",
+                "url": "https://github.com/Josuto"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/65926741?u=7282b6934f358a2fb159335e22018473b2e760fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Node.js wrapper for the PokéAPI with built-in types.</div>",
             "url": "https://github.com/Gabb-c/pokenode-ts",
             "title": "Gabb-c/pokenode-ts: A lightweight Node.js wrapper for the PokéAPI with built-in types.",
@@ -25,28 +146,6 @@
             "author": {
                 "name": "danielbrendel",
                 "url": "https://github.com/danielbrendel"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6097850?u=f5c80e4a3cc9468bcf8bd2723356a0ff0dabc79d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight abstract and polymorphic MongoDB repository implementation for Node.js apps</div>",
-            "url": "https://github.com/Josuto/node-abstract-repository",
-            "title": "Josuto/node-abstract-repository: Lightweight abstract and polymorphic MongoDB repository implementation for Node.js apps",
-            "date_modified": "2023-05-21T03:46:45.000Z",
-            "date_published": "2022-10-04T16:46:31.000Z",
-            "author": {
-                "name": "Josuto",
-                "url": "https://github.com/Josuto"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1944556?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>JavaScript lightweight reactivity lib inspired by Vue</div>",
-            "url": "https://github.com/NesCafe62/pozitron",
-            "title": "NesCafe62/pozitron: JavaScript lightweight reactivity lib inspired by Vue",
-            "date_modified": "2023-05-23T22:22:51.000Z",
-            "date_published": "2023-05-23T22:20:26.000Z",
-            "author": {
-                "name": "NesCafe62",
-                "url": "https://github.com/NesCafe62"
             }
         },
         {
@@ -124,105 +223,6 @@
             "author": {
                 "name": "jens-maus",
                 "url": "https://github.com/jens-maus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99691591?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight development environment for Tableland databases. Start a locally running Tableland Validator connected to a local Hardhat blockchain</div>",
-            "url": "https://github.com/tablelandnetwork/local-tableland",
-            "title": "tablelandnetwork/local-tableland: A lightweight development environment for Tableland databases. Start a locally running Tableland Validator connected to a local Hardhat blockchain",
-            "date_modified": "2023-05-12T14:11:42.000Z",
-            "date_published": "2022-05-19T16:03:38.000Z",
-            "author": {
-                "name": "tablelandnetwork",
-                "url": "https://github.com/tablelandnetwork"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
-            "url": "https://github.com/lit/lit",
-            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
-            "date_modified": "2023-05-23T18:28:10.000Z",
-            "date_published": "2017-06-29T16:27:16.000Z",
-            "author": {
-                "name": "lit",
-                "url": "https://github.com/lit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1444266?u=5b8abde7832dfbd4a5c720494b75c0d4a4c92356&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight extension for monaco-editor to allow commenting off code.</div>",
-            "url": "https://github.com/jburrow/monaco-editor-code-review",
-            "title": "jburrow/monaco-editor-code-review: Lightweight extension for monaco-editor to allow commenting off code.",
-            "date_modified": "2023-04-26T10:35:20.000Z",
-            "date_published": "2019-05-09T08:17:28.000Z",
-            "author": {
-                "name": "jburrow",
-                "url": "https://github.com/jburrow"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132421698?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"gem\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f48e.png\">💎</g-emoji> A lightweight, modular, and extendable 3D game engine built for the web.</div>",
-            "url": "https://github.com/lattice-engine/lattice",
-            "title": "lattice-engine/lattice: 💎 A lightweight, modular, and extendable 3D game engine built for the web.",
-            "date_modified": "2023-05-19T16:34:05.000Z",
-            "date_published": "2023-05-03T03:24:34.000Z",
-            "author": {
-                "name": "lattice-engine",
-                "url": "https://github.com/lattice-engine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12916656?u=2a7f8e9fa36795c269ed3f642dd6840fb68b4b72&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"book\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png\">📖</g-emoji> A lightweight, modern documentation theme for Hugo [WIP]</div>",
-            "url": "https://github.com/colinwilson/lotusdocs",
-            "title": "colinwilson/lotusdocs: 📖 A lightweight, modern documentation theme for Hugo [WIP]",
-            "date_modified": "2023-05-12T17:09:50.000Z",
-            "date_published": "2022-10-23T03:00:45.000Z",
-            "author": {
-                "name": "colinwilson",
-                "url": "https://github.com/colinwilson"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19840930?u=78fe7f3e2274bb19fb58dd45e9318240836261bc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight javascript library to summarize long texts using GPT model</div>",
-            "url": "https://github.com/devojoyti/gpt-summarizer-javascript",
-            "title": "devojoyti/gpt-summarizer-javascript: Lightweight javascript library to summarize long texts using GPT model",
-            "date_modified": "2023-05-23T20:09:21.000Z",
-            "date_published": "2023-05-23T09:34:10.000Z",
-            "author": {
-                "name": "devojoyti",
-                "url": "https://github.com/devojoyti"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
-            "url": "https://github.com/verdaccio/verdaccio",
-            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
-            "date_modified": "2023-05-23T15:48:50.000Z",
-            "date_published": "2016-04-15T16:21:12.000Z",
-            "author": {
-                "name": "verdaccio",
-                "url": "https://github.com/verdaccio"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/35782?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, reusable, cross-browser graphical settings framework for inclusion in user scripts.</div>",
-            "url": "https://github.com/sizzlemctwizzle/GM_config",
-            "title": "sizzlemctwizzle/GM_config: A lightweight, reusable, cross-browser graphical settings framework for inclusion in user scripts.",
-            "date_modified": "2023-05-23T02:45:28.000Z",
-            "date_published": "2010-04-05T19:22:25.000Z",
-            "author": {
-                "name": "sizzlemctwizzle",
-                "url": "https://github.com/sizzlemctwizzle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19650412?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Reference implementation of a ChartFactor Node server running ChartFactor data providers on the server-side to power lightweight visual analytics.</div>",
-            "url": "https://github.com/Aktiun/chartfactor-node",
-            "title": "Aktiun/chartfactor-node: Reference implementation of a ChartFactor Node server running ChartFactor data providers on the server-side to power lightweight visual analytics.",
-            "date_modified": "2021-12-23T00:10:31.000Z",
-            "date_published": "2021-11-08T01:13:07.000Z",
-            "author": {
-                "name": "Aktiun",
-                "url": "https://github.com/Aktiun"
             }
         }
     ]
