@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Before this commit, some calls to render were hard-coding error highlight as \"not available\".  This was causing some error pages to show the \"you should install error highlight\" message even though the right version of error highlight was installed.</p>\n<p dir=\"auto\">This commit adds a delegate method to the DebugView class so that the debugging related templates can just ask whether or not error highlight is available via a method call.  That way we don't need to rely on passing locals everywhere.  The down side is that this change requires all \"rescue\" templates to be rendered within the context of a DebugView class (but I think that's OK)</p>",
-            "url": "https://github.com/rails/rails/pull/48299",
-            "title": "Refactor error highlight detection",
-            "date_modified": "2023-05-25T16:30:56.000Z",
-            "date_published": "2023-05-25T16:30:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1080678?u=b6e211b7766e6aa01e794067f67dd65d419c0150&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This deprecation was added in main as of 7.1 so the message shouldn't mention 7.1, it should mention the next version of Rails.</p>",
+            "url": "https://github.com/rails/rails/pull/48300",
+            "title": "Fix deprecation message for connection pool methods",
+            "date_modified": "2023-05-25T17:42:27.000Z",
+            "date_published": "2023-05-25T17:42:23.000Z",
             "author": {
-                "name": "tenderlove",
-                "url": "https://github.com/tenderlove"
+                "name": "eileencodes",
+                "url": "https://github.com/eileencodes"
             }
         },
         {
