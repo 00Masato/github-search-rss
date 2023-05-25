@@ -6,6 +6,39 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/65455664?u=62de200d904ff1f719f515fa1d1631ae280a798e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>View and control your 2DOF motion simulator in a lightweight application.</div>",
+            "url": "https://github.com/colemaring/Motion-Master",
+            "title": "colemaring/Motion-Master: View and control your 2DOF motion simulator in a lightweight application.",
+            "date_modified": "2023-04-03T17:24:24.000Z",
+            "date_published": "2023-03-28T00:27:07.000Z",
+            "author": {
+                "name": "colemaring",
+                "url": "https://github.com/colemaring"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107406373?u=64be03bd812be328b743ae255107f1e30aec4085&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A secure, lightweight and easy-to-use webserver powered by ExpressJS</div>",
+            "url": "https://github.com/Lillious/Node-Webserver",
+            "title": "Lillious/Node-Webserver: A secure, lightweight and easy-to-use webserver powered by ExpressJS",
+            "date_modified": "2023-05-18T15:33:39.000Z",
+            "date_published": "2023-02-25T23:25:29.000Z",
+            "author": {
+                "name": "Lillious",
+                "url": "https://github.com/Lillious"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1325249?u=3943afbe9aae269d0b1442ab8a01b9468408d602&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Modern lightweight portals for Ember</div>",
+            "url": "https://github.com/simonihmig/ember-stargate",
+            "title": "simonihmig/ember-stargate: Modern lightweight portals for Ember",
+            "date_modified": "2023-03-28T15:40:26.000Z",
+            "date_published": "2020-06-17T20:02:07.000Z",
+            "author": {
+                "name": "simonihmig",
+                "url": "https://github.com/simonihmig"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5804246?u=e04a79edf4dca95b669171fbb6acd74aae09ff7f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, Typescript REST library powered by Koa 2+. Use classes and decorators to define your API. Inject arguments from ctx. Supports API versioning. Future support for OpenAPI3. Works with koa-router.</div>",
             "url": "https://github.com/iyobo/amala",
             "title": "iyobo/amala: Lightweight, Typescript REST library powered by Koa 2+. Use classes and decorators to define your API. Inject arguments from ctx. Supports API versioning. Future support for OpenAPI3. Works with koa-router.",
@@ -97,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101519684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Google-searchable Slack alternative for Communities</div>",
             "url": "https://github.com/Linen-dev/linen.dev",
             "title": "Linen-dev/linen.dev: Lightweight Google-searchable Slack alternative for Communities",
-            "date_modified": "2023-05-25T14:54:29.000Z",
+            "date_modified": "2023-05-25T19:27:41.000Z",
             "date_published": "2022-02-15T15:03:37.000Z",
             "author": {
                 "name": "Linen-dev",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "exadel-inc",
                 "url": "https://github.com/exadel-inc"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22015497?u=c7ae6a3dab6973b031f291e2a9e25a3d88afa59a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"milky_way\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f30c.png\">🌌</g-emoji> React Aurora background component. Lightweight, customizable, beautiful.</div>",
-            "url": "https://github.com/TheNaubit/react-aurora-background",
-            "title": "TheNaubit/react-aurora-background: 🌌 React Aurora background component. Lightweight, customizable, beautiful.",
-            "date_modified": "2023-05-25T15:38:24.000Z",
-            "date_published": "2022-12-08T16:55:29.000Z",
-            "author": {
-                "name": "TheNaubit",
-                "url": "https://github.com/TheNaubit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58381667?u=eb19ca2768fdd5c227ba89f29b96b328948d06d6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, lightweight, and fast event emitter.</div>",
-            "url": "https://github.com/so1ve/lite-emit",
-            "title": "so1ve/lite-emit: A simple, lightweight, and fast event emitter.",
-            "date_modified": "2023-04-28T07:15:52.000Z",
-            "date_published": "2022-08-10T03:41:06.000Z",
-            "author": {
-                "name": "so1ve",
-                "url": "https://github.com/so1ve"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7339257?u=95b6f43aa782ecd92c91ec9a9cdbb55a5ecb7dcb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and easy-to-use event library for React applications to manage events in a centralized manner and ensures that components can communicate with each other efficiently. <g-emoji class=\"g-emoji\" alias=\"rocket\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f680.png\">🚀</g-emoji></div>",
-            "url": "https://github.com/eljonathas/react-eventify",
-            "title": "eljonathas/react-eventify: A lightweight and easy-to-use event library for React applications to manage events in a centralized manner and ensures that components can communicate with each other efficiently. 🚀",
-            "date_modified": "2023-01-30T00:41:03.000Z",
-            "date_published": "2023-01-29T20:50:16.000Z",
-            "author": {
-                "name": "eljonathas",
-                "url": "https://github.com/eljonathas"
             }
         }
     ]
