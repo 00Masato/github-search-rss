@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=9531927576dae8d2a9b8a9c5ebea42db423c01c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/export/text/0000-export.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3435",
             "title": "RFC: `#[export]` (dynamically linked crates)",
-            "date_modified": "2023-05-25T00:29:10.000Z",
+            "date_modified": "2023-05-25T01:59:27.000Z",
             "date_published": "2023-05-23T13:06:18.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2280544?u=7f0df5aa9d0c05db41776dcfacedc8bbc2098746&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Permit <code class=\"notranslate\">impl Trait</code> in fn return position within traits and trait impls.</li>\n<li>Allow <code class=\"notranslate\">async fn</code> in traits and trait impls to be used interchangeably with its equivalent <code class=\"notranslate\">impl Trait</code> desugaring.</li>\n<li>Allow trait impls to <code class=\"notranslate\">#[refine]</code> an <code class=\"notranslate\">impl Trait</code> return type with added bounds or a concrete type.</li>\n</ul>\n<h2 dir=\"auto\">Background</h2>\n<p dir=\"auto\">This RFC is a collaboration between myself and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/compiler-errors/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/compiler-errors\">@compiler-errors</a>, and is based on an <a href=\"https://github.com/rust-lang/rfcs/pull/3193\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3193/hovercard\">earlier RFC</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nikomatsakis/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nikomatsakis\">@nikomatsakis</a>.</p>\n<p dir=\"auto\">The primary changes from that RFC are:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">async fn</code> is now allowed to be used interchangeably with its equivalent <code class=\"notranslate\">impl Trait</code> desugaring.</li>\n<li><code class=\"notranslate\">#[refine]</code> is now included as a way to add more information about the returned type in an impl, either by adding bounds to the <code class=\"notranslate\">impl Trait</code> type, or by using a concrete type. <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177047240\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3245\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3245/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3245\">#3245</a> did not exist at the time of the previous RFC (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1049875633\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3193\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3193/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3193\">#3193</a>), and was added partly in response to discussion there.</li>\n<li>You are now allowed to use <code class=\"notranslate\">dyn Trait</code> on a trait with a method returning <code class=\"notranslate\">impl Trait</code>, as long as that method has a <code class=\"notranslate\">where Self: Sized</code> bound.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/tmandry/rfcs/blob/rpitit/text/0000-return-position-impl-trait-in-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3425",
             "title": "Return position `impl Trait` in traits",
-            "date_modified": "2023-05-25T00:33:54.000Z",
+            "date_modified": "2023-05-25T01:06:32.000Z",
             "date_published": "2023-04-27T18:25:57.000Z",
             "author": {
                 "name": "tmandry",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This <em>experimental RFC</em> adds unstable support for single-file<br>\npackages in cargo so we can explore the design and resolve<br>\nquestions with an implementation to collect feedback on.</p>\n<p dir=\"auto\">Single-file packages are <code class=\"notranslate\">.rs</code> files with an embedded<br>\nmanifest.  These will be accepted with just like <code class=\"notranslate\">Cargo.toml</code> files with<br>\n<code class=\"notranslate\">--manifest-path</code>.  <code class=\"notranslate\">cargo</code> will be modified to accept <code class=\"notranslate\">cargo &lt;file&gt;.rs</code> as a<br>\nshortcut to <code class=\"notranslate\">cargo run --manifest-path &lt;file&gt;.rs</code>.  This allows placing<br>\n<code class=\"notranslate\">cargo</code> in a <code class=\"notranslate\">#!</code> line for directly running these files.</p>\n<p dir=\"auto\">Example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#!/usr/bin/env cargo\n\n//! ```cargo\n//! [dependencies]\n//! clap = { version = &quot;4.2&quot;, features = [&quot;derive&quot;] }\n//! ```\n\nuse clap::Parser;\n\n#[derive(Parser, Debug)]\n#[clap(version)]\nstruct Args {\n    #[clap(short, long, help = &quot;Path to config&quot;)]\n    config: Option&lt;std::path::PathBuf&gt;,\n}\n\nfn main() {\n    let args = Args::parse();\n    println!(&quot;{:?}&quot;, args);\n}\"><pre class=\"notranslate\">#!/usr/bin/env cargo\n\n<span class=\"pl-c\">//! ```cargo</span>\n<span class=\"pl-c\">//! [dependencies]</span>\n<span class=\"pl-c\">//! clap = { version = \"4.2\", features = [\"derive\"] }</span>\n<span class=\"pl-c\">//! ```</span>\n\nuse clap<span class=\"pl-kos\">::</span><span class=\"pl-v\">Parser</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>derive<span class=\"pl-kos\">(</span><span class=\"pl-v\">Parser</span><span class=\"pl-kos\">,</span> <span class=\"pl-v\">Debug</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>clap<span class=\"pl-kos\">(</span>version<span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">Args</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>clap<span class=\"pl-kos\">(</span>short, long, help = <span class=\"pl-s\">\"Path to config\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n    <span class=\"pl-c1\">config</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span>std<span class=\"pl-kos\">::</span>path<span class=\"pl-kos\">::</span><span class=\"pl-smi\">PathBuf</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">main</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">let</span> args = <span class=\"pl-smi\">Args</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">parse</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n    <span class=\"pl-en\">println</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{:?}\"</span>, args<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<div class=\"highlight highlight-text-shell-session notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ ./prog --config file.toml\nArgs { config: Some(&quot;file.toml&quot;) }\"><pre class=\"notranslate\">$ <span class=\"pl-s1\">./prog --config file.toml</span>\n<span class=\"pl-c1\">Args { config: Some(\"file.toml\") }</span></pre></div>\n<p dir=\"auto\">See <a href=\"https://crates.io/crates/cargo-script-mvs\" rel=\"nofollow\"><code class=\"notranslate\">cargo-script-mvs</code></a> for a demo.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/cargo-script/text/3424-cargo-script.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3424",
             "title": "eRFC: single-file packages (\"cargo script\") integration",
-            "date_modified": "2023-05-21T08:55:21.000Z",
+            "date_modified": "2023-05-25T00:59:32.000Z",
             "date_published": "2023-04-26T21:37:43.000Z",
             "author": {
                 "name": "epage",
@@ -135,17 +135,6 @@
             "author": {
                 "name": "SoniEx2",
                 "url": "https://github.com/SoniEx2"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This fixes the 404 not-found handling so that the not-found page can load javascript/css resources. Otherwise pages like <a href=\"https://rust-lang.github.io/rfcs/foo\" rel=\"nofollow\">https://rust-lang.github.io/rfcs/foo</a> do not render correctly.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3411",
-            "title": "Fix 404 handling",
-            "date_modified": "2023-05-25T00:08:12.000Z",
-            "date_published": "2023-04-09T20:05:53.000Z",
-            "author": {
-                "name": "ehuss",
-                "url": "https://github.com/ehuss"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "GuillaumeGomez",
                 "url": "https://github.com/GuillaumeGomez"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3080863?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Define types external to Rust and introduce syntax to declare them.<br>\nThis additionally introduces the <code class=\"notranslate\">MetaSized</code> trait to allow these types to be interacted with in a generic context.<br>\nThis supersedes <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"202310123\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1861\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1861/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/1861\">#1861</a>, and is related to the open RFCs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"697630044\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2984\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2984/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2984\">#2984</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1384735968\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3319\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3319/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3319\">#3319</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Skepfyr/rfcs/blob/extern-types-v2/text/3396-extern-types-v2.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3396",
+            "title": "Extern types v2",
+            "date_modified": "2023-03-21T16:06:46.000Z",
+            "date_published": "2023-02-26T00:42:42.000Z",
+            "author": {
+                "name": "Skepfyr",
+                "url": "https://github.com/Skepfyr"
             }
         }
     ]
