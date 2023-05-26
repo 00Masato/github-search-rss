@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1280419?u=b60c47c211e15d9d69cd3bc5fe3d45e8136410d7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Browsers don't block all popups, only those which occur outside the context of \"user activation\" (eg. a click).</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">It's incorrect. Popups are used ALL across the web (eg. many login buttons) and they don't require the user to modify their browser settings. There's no reason to discourage this type of popup.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">See <a href=\"https://html.spec.whatwg.org/#tracking-user-activation\" rel=\"nofollow\">https://html.spec.whatwg.org/#tracking-user-activation</a> for details</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>",
+            "url": "https://github.com/mdn/content/pull/26997",
+            "title": "Fix popup blocker description",
+            "date_modified": "2023-05-26T20:03:51.000Z",
+            "date_published": "2023-05-26T20:03:37.000Z",
+            "author": {
+                "name": "RByers",
+                "url": "https://github.com/RByers"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13788140?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This provides a clarification on how navigaton.navigate()'s url parameter behaves when calling navigate() on another window's navigation interface.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">If a web developer is migrating to the navigation API from the location API, this may cause unexpected behavior.  I hit a case like this while writing conformance tests during implementation of the navigation API.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Spec PR for the navigation API: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1447758651\" data-permission-text=\"Title is private\" data-url=\"https://github.com/whatwg/html/issues/8502\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/whatwg/html/pull/8502/hovercard\" href=\"https://github.com/whatwg/html/pull/8502\">whatwg/html#8502</a><br>\nExplainer of the API: <a href=\"https://github.com/WICG/navigation-api\">https://github.com/WICG/navigation-api</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">N/A</p>",
             "url": "https://github.com/mdn/content/pull/26993",
             "title": "Add a note on how navigation.navigate()'s url parameter is resolved.",
@@ -64,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105481?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Replace occurrences of \"offsetleft\" (erroneous property name) with \"offsetLeft\" (correct property name).</p>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I corrected the capitalization of the <code class=\"notranslate\">VisualViewport.offsetLeft</code> property (i.e., <code class=\"notranslate\">offsetleft</code> to <code class=\"notranslate\">offsetLeft</code>).</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I thought it would be a good idea to have the name of the property, as displayed on MDN, match that of the property as it is defined in the specification. (I’m assuming <code class=\"notranslate\">offsetleft</code> was simply a typo.)</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Here’s <a href=\"https://drafts.csswg.org/cssom-view/#dom-visualviewport-offsetleft\" rel=\"nofollow\"><code class=\"notranslate\">offsetLeft</code> in the spec</a>.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/26980",
             "title": "Fix VisualViewport offsetLeft property name in index.md",
-            "date_modified": "2023-05-26T05:45:16.000Z",
+            "date_modified": "2023-05-26T19:05:06.000Z",
             "date_published": "2023-05-26T05:45:01.000Z",
             "author": {
                 "name": "benstockdesign",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "maximtop",
                 "url": "https://github.com/maximtop"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15844309?u=008f65848dd592799cd1d72033096baa1cbc88ce&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">correct the description and make the context consistent</p>",
-            "url": "https://github.com/mdn/content/pull/26899",
-            "title": "correct the description and make the context consistent",
-            "date_modified": "2023-05-22T11:18:28.000Z",
-            "date_published": "2023-05-22T11:16:07.000Z",
-            "author": {
-                "name": "yin1999",
-                "url": "https://github.com/yin1999"
             }
         }
     ]
