@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48304.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1726605158\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48304\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48304/hovercard\" href=\"https://github.com/rails/rails/issues/48304\">#48304</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/48309",
+            "title": "Preserve existing column default functions when altering table in SQLite",
+            "date_modified": "2023-05-26T11:11:02.000Z",
+            "date_published": "2023-05-26T11:10:58.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request for backporting has been created because I think <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1687425654\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48085\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48085/hovercard\" href=\"https://github.com/rails/rails/pull/48085\">#48085</a> deserves to be backported to 7-0-stable branch for fixing the Guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48308",
             "title": "[ci-skip]Backport 48085 to 7-0-stable branch for updating Migration Guide",
@@ -209,17 +220,6 @@
             "title": "Import rails-bin linter to rails internal tools lib",
             "date_modified": "2023-05-16T17:36:25.000Z",
             "date_published": "2023-05-13T06:53:46.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We want a way to be able to audit the public API of Rails, and find things that are missing <code class=\"notranslate\">:nodoc:</code>.</p>\n<p dir=\"auto\">This was implemented in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1707161137\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/sdoc/issues/222\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/sdoc/pull/222/hovercard\" href=\"https://github.com/rails/sdoc/pull/222\">rails/sdoc#222</a>, and we're pulling in the latest branch to use it here.</p>\n<p dir=\"auto\">In the future we might want a way to diff this data in some way, for example to provide PRs with feedback that introduce new classes or methods for reviewers to quickly check.</p>",
-            "url": "https://github.com/rails/rails/pull/48202",
-            "title": "Add namelist rake task",
-            "date_modified": "2023-05-23T11:31:42.000Z",
-            "date_published": "2023-05-12T08:19:42.000Z",
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
