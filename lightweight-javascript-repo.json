@@ -6,6 +6,17 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9626630?u=9194d520e32a11d1a6a523cddbd8ac620d3fdd97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight  dependency injection container</div>",
+            "url": "https://github.com/AEPKILL/husky-di",
+            "title": "AEPKILL/husky-di: lightweight  dependency injection container",
+            "date_modified": "2023-05-27T02:12:33.000Z",
+            "date_published": "2023-05-27T02:11:07.000Z",
+            "author": {
+                "name": "AEPKILL",
+                "url": "https://github.com/AEPKILL"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111009970?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
             "url": "https://github.com/akpi816218/pronouns.js",
             "title": "akpi816218/pronouns.js",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "express-promise-router",
                 "url": "https://github.com/express-promise-router"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6810270?u=02b162df72e612a058aa0cbddcbd18a36501eaf6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An extremely lightweight HTTP request client. Supports: http, https, redirects, cookies, content-encoding, multipart/form-data. Returns: Promise.</div>",
-            "url": "https://github.com/warren-bank/node-request",
-            "title": "warren-bank/node-request: An extremely lightweight HTTP request client. Supports: http, https, redirects, cookies, content-encoding, multipart/form-data. Returns: Promise.",
-            "date_modified": "2022-04-02T02:27:32.000Z",
-            "date_published": "2017-06-05T03:48:02.000Z",
-            "author": {
-                "name": "warren-bank",
-                "url": "https://github.com/warren-bank"
             }
         }
     ]
