@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Not sure if it was still in development when this was written, but regardless, <a href=\"https://github.com/basecamp/console1984\">such auditable console system</a> exists and we should reference it where mentioned in the Active Record Encryption guide.</p>",
-            "url": "https://github.com/rails/rails/pull/48335",
-            "title": "Link console1984 where mentioned in ARE guide",
-            "date_modified": "2023-05-29T18:09:06.000Z",
-            "date_published": "2023-05-29T18:09:02.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Maybe this is just my <g-emoji class=\"g-emoji\" alias=\"coffee\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/2615.png\">☕</g-emoji> brain this morning, but when looking at this made me think it could be misunderstood.</p>\n<p dir=\"auto\">When I see the x though, I just think of <g-emoji class=\"g-emoji\" alias=\"no_good_man\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f645-2642.png\">🙅‍♂️</g-emoji> .. but maybe we could replace it with a unicode check mark instead? <g-emoji class=\"g-emoji\" alias=\"white_check_mark\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/2705.png\">✅</g-emoji></p>\n<hr>\n<p dir=\"auto\">I've updated the PR to use emoji instead!</p>\n<p dir=\"auto\">Before</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/277819/241811070-52277857-4536-423f-aef2-58f4237b2fd6.png\"><img src=\"https://user-images.githubusercontent.com/277819/241811070-52277857-4536-423f-aef2-58f4237b2fd6.png\" alt=\"Screenshot 2023-05-30 at 6 53 44\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">After</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/277819/241811083-8365a729-85f7-4d47-8895-06a732839ee0.png\"><img src=\"https://user-images.githubusercontent.com/277819/241811083-8365a729-85f7-4d47-8895-06a732839ee0.png\" alt=\"Screenshot 2023-05-30 at 6 53 26\" style=\"max-width: 100%;\"></a></p>\n<hr>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a> FYI, this is another case where markdown would actually be nice here and output an html table instead of this giant code blob <g-emoji class=\"g-emoji\" alias=\"wink\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f609.png\">😉</g-emoji></p>",
+            "url": "https://github.com/rails/rails/pull/48336",
+            "title": "Use ✅ emoji instead of \"X\" for support table",
+            "date_modified": "2023-05-29T21:56:14.000Z",
+            "date_published": "2023-05-29T21:37:21.000Z",
             "author": {
-                "name": "northeastprince",
-                "url": "https://github.com/northeastprince"
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         },
         {
