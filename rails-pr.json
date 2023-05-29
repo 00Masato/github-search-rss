@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Not sure if it was still in development when this was written, but regardless, <a href=\"https://github.com/basecamp/console1984\">such auditable console system</a> exists and we should reference it where mentioned in the Active Record Encryption guide.</p>",
+            "url": "https://github.com/rails/rails/pull/48335",
+            "title": "Link console1984 where mentioned in ARE guide",
+            "date_modified": "2023-05-29T18:09:06.000Z",
+            "date_published": "2023-05-29T18:09:02.000Z",
+            "author": {
+                "name": "northeastprince",
+                "url": "https://github.com/northeastprince"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When working on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730091371\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48327\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48327/hovercard\" href=\"https://github.com/rails/rails/pull/48327\">#48327</a>, I noticed the comment for this class references a method which has moved to the <a href=\"https://github.com/heartcombo/responders\">responders gem</a>. Nothing else in Rails uses it internally, so I think we can move it to that gem and deprecate it from Rails.</p>\n<p dir=\"auto\">I've opened a PR to move it in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730121732\" data-permission-text=\"Title is private\" data-url=\"https://github.com/heartcombo/responders/issues/245\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/heartcombo/responders/pull/245/hovercard\" href=\"https://github.com/heartcombo/responders/pull/245\">heartcombo/responders#245</a>.</p>\n<p dir=\"auto\">Inspiration for the constant deprecation path came from <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/3e2552db899160266f175f2fda61e44be258aecd/hovercard\" href=\"https://github.com/rails/rails/commit/3e2552db899160266f175f2fda61e44be258aecd\"><tt>3e2552d</tt></a> but LMK if there is a better way! <g-emoji class=\"g-emoji\" alias=\"bow\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f647.png\">🙇</g-emoji></p>",
             "url": "https://github.com/rails/rails/pull/48328",
             "title": "Deprecate ActionController::MissingRenderer",
@@ -209,17 +220,6 @@
             "title": "Import rails-bin linter to rails internal tools lib",
             "date_modified": "2023-05-16T17:36:25.000Z",
             "date_published": "2023-05-13T06:53:46.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We want a way to be able to audit the public API of Rails, and find things that are missing <code class=\"notranslate\">:nodoc:</code>.</p>\n<p dir=\"auto\">This was implemented in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1707161137\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/sdoc/issues/222\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/sdoc/pull/222/hovercard\" href=\"https://github.com/rails/sdoc/pull/222\">rails/sdoc#222</a>, and we're pulling in the latest branch to use it here.</p>\n<p dir=\"auto\">In the future we might want a way to diff this data in some way, for example to provide PRs with feedback that introduce new classes or methods for reviewers to quickly check.</p>",
-            "url": "https://github.com/rails/rails/pull/48202",
-            "title": "Add namelist rake task",
-            "date_modified": "2023-05-23T11:31:42.000Z",
-            "date_published": "2023-05-12T08:19:42.000Z",
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
