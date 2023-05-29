@@ -6,6 +6,17 @@
     "description": "mdn/browser-compat-data update data on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #26994.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1727998536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/26994\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/26994/hovercard\" href=\"https://github.com/mdn/content/issues/26994\">mdn/content#26994</a></p>\n<p dir=\"auto\">In <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1807685\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1807685</a> the pref <code class=\"notranslate\">layout.css.scroll-linked-animations.enabled</code> was changed to <code class=\"notranslate\">layout.css.scroll-driven-animations.enabled</code>.</p>\n<p dir=\"auto\">This adds a new item for the new pref (if there isn't already a record) and makes the record with the the old pref as version removed. In some cases the old pref had different notes than the new pref, so I duplicated the note from the old pref to the new pref to make it clear the information still applies.</p>\n<p dir=\"auto\">Hopefully this will ship soon and we can remove all this detail.</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19982",
+            "title": "Name change for pref for scroll linked animations",
+            "date_modified": "2023-05-29T00:15:43.000Z",
+            "date_published": "2023-05-29T00:15:31.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32498324?u=6ff39af834311a2dbeefc3c3071dde7eeb6d5a0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Removed a note about macOS and Firefox.</p>\n<p dir=\"auto\">This note is outdated overlay scrollbars are correctly themed in Firefox. I'm not aware of the exact version but I believe it was long enough ago to not worry about keeping the note for the appropriate version range.</p>\n\n<h4 dir=\"auto\">Test results and supporting details</h4>\n\n\n<p dir=\"auto\">Always:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/32498324/241566312-3b7565f1-b952-4889-a760-f61c2b139ddc.png\"><img src=\"https://user-images.githubusercontent.com/32498324/241566312-3b7565f1-b952-4889-a760-f61c2b139ddc.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">Overflow (when scrolling):</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/32498324/241566362-083ae534-1a26-43a9-b874-52c454057a96.png\"><img src=\"https://user-images.githubusercontent.com/32498324/241566362-083ae534-1a26-43a9-b874-52c454057a96.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<h4 dir=\"auto\">Related issues</h4>\n\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #19495.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1683768677\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/19495\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/19495/hovercard\" href=\"https://github.com/mdn/browser-compat-data/issues/19495\">#19495</a></p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/19981",
             "title": "Removed outdated Firefox note from scrollbar-color",
@@ -168,17 +179,6 @@
             "author": {
                 "name": "queengooborg",
                 "url": "https://github.com/queengooborg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/mdn/browser-compat-data/pull/19573",
-            "title": "new bcd: line-style enumerated type",
-            "date_modified": "2023-05-09T23:19:09.000Z",
-            "date_published": "2023-04-28T02:27:45.000Z",
-            "author": {
-                "name": "estelle",
-                "url": "https://github.com/estelle"
             }
         }
     ]
