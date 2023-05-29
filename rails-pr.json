@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Removes unnecessary autolinks from the <code class=\"notranslate\">ActionController::Metal</code> class, also add fixed-width to application controllers mentioned in the doc for <code class=\"notranslate\">::controller_name</code>.</p>",
+            "url": "https://github.com/rails/rails/pull/48331",
+            "title": "Fix RDoc autolinks in ActionController::Metal",
+            "date_modified": "2023-05-29T07:04:22.000Z",
+            "date_published": "2023-05-29T07:04:19.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When working on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730091371\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48327\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48327/hovercard\" href=\"https://github.com/rails/rails/pull/48327\">#48327</a>, I noticed the comment for this class references a method which has moved to the <a href=\"https://github.com/heartcombo/responders\">responders gem</a>. Nothing else in Rails uses it internally, so I think we can move it to that gem and deprecate it from Rails.</p>\n<p dir=\"auto\">I've opened a PR to move it in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730121732\" data-permission-text=\"Title is private\" data-url=\"https://github.com/heartcombo/responders/issues/245\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/heartcombo/responders/pull/245/hovercard\" href=\"https://github.com/heartcombo/responders/pull/245\">heartcombo/responders#245</a>.</p>\n<p dir=\"auto\">Inspiration for the constant deprecation path came from <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/3e2552db899160266f175f2fda61e44be258aecd/hovercard\" href=\"https://github.com/rails/rails/commit/3e2552db899160266f175f2fda61e44be258aecd\"><tt>3e2552d</tt></a> but LMK if there is a better way! <g-emoji class=\"g-emoji\" alias=\"bow\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f647.png\">🙇</g-emoji></p>",
             "url": "https://github.com/rails/rails/pull/48328",
             "title": "Deprecate ActionController::MissingRenderer",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "nicholasdower",
                 "url": "https://github.com/nicholasdower"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48185.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1703067636\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48185\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48185/hovercard\" href=\"https://github.com/rails/rails/issues/48185\">#48185</a></p>\n<p dir=\"auto\">Action Cable can be mounted standalone, but it loses the health check route provided by the railties.<br>\nThis change adds configuration for a health check rack app and a health check route to \"mount\" the rack app.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48222",
-            "title": "Add health check on standalone Action Cable",
-            "date_modified": "2023-05-28T00:03:03.000Z",
-            "date_published": "2023-05-13T23:44:05.000Z",
-            "author": {
-                "name": "JoeDupuis",
-                "url": "https://github.com/JoeDupuis"
             }
         }
     ]
