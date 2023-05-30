@@ -6,6 +6,72 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) <g-emoji class=\"g-emoji\" alias=\"balloon\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f388.png\">🎈</g-emoji></div>",
+            "url": "https://github.com/nestjs/cqrs",
+            "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
+            "date_modified": "2023-05-27T12:07:05.000Z",
+            "date_published": "2017-05-06T18:08:10.000Z",
+            "author": {
+                "name": "nestjs",
+                "url": "https://github.com/nestjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10584189?u=a0b8c08e22b1fe39937135ce121654a058c3e480&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"leaves\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f343.png\">🍃</g-emoji> Fully typed, lightweight query builder</div>",
+            "url": "https://github.com/benmerckx/rado",
+            "title": "benmerckx/rado: 🍃 Fully typed, lightweight query builder",
+            "date_modified": "2023-05-11T17:49:50.000Z",
+            "date_published": "2022-12-21T11:37:05.000Z",
+            "author": {
+                "name": "benmerckx",
+                "url": "https://github.com/benmerckx"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26519165?u=fb35551465f283eefa36184bfc0b892116f82d4a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>webfunny是一款轻量级的前端性能监控系统，也是一款埋点系统，私有化部署，简单易用。Webfunny is a lightweight front-end performance monitoring system and a burying point system, which is privatized and easy to use.</div>",
+            "url": "https://github.com/a597873885/webfunny_monitor",
+            "title": "a597873885/webfunny_monitor: webfunny是一款轻量级的前端性能监控系统，也是一款埋点系统，私有化部署，简单易用。Webfunny is a lightweight front-end performance monitoring system and a burying point system, which is privatized and easy to use.",
+            "date_modified": "2023-05-30T03:01:44.000Z",
+            "date_published": "2018-07-04T03:08:02.000Z",
+            "author": {
+                "name": "a597873885",
+                "url": "https://github.com/a597873885"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9626630?u=9194d520e32a11d1a6a523cddbd8ac620d3fdd97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight  dependency injection container</div>",
+            "url": "https://github.com/AEPKILL/husky-di",
+            "title": "AEPKILL/husky-di: lightweight  dependency injection container",
+            "date_modified": "2023-05-30T09:33:04.000Z",
+            "date_published": "2023-05-27T02:11:07.000Z",
+            "author": {
+                "name": "AEPKILL",
+                "url": "https://github.com/AEPKILL"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18660708?u=1b3c35590a65d1e558fc41c2035fbeff879e3558&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Super lightweight typescript function to convert hexes of format #RRGGBB to rgb of value rgb(x,y,z) or rgba(x,y,z,a).</div>",
+            "url": "https://github.com/flofehrenbacher/hex-2-rgb",
+            "title": "flofehrenbacher/hex-2-rgb: Super lightweight typescript function to convert hexes of format #RRGGBB to rgb of value rgb(x,y,z) or rgba(x,y,z,a).",
+            "date_modified": "2023-01-31T19:06:32.000Z",
+            "date_published": "2021-08-26T10:33:49.000Z",
+            "author": {
+                "name": "flofehrenbacher",
+                "url": "https://github.com/flofehrenbacher"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/594124?u=44f84123b64809d45ed543535950e7bd6d168837&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Jest runner creator</div>",
+            "url": "https://github.com/keplersj/create-lite-jest-runner",
+            "title": "keplersj/create-lite-jest-runner: A lightweight Jest runner creator",
+            "date_modified": "2022-03-10T21:05:05.000Z",
+            "date_published": "2022-03-10T18:36:08.000Z",
+            "author": {
+                "name": "keplersj",
+                "url": "https://github.com/keplersj"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108532180?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight bi-directional conversion between DUIS and JSON</div>",
             "url": "https://github.com/SmartDCCInnovation/duis-parser",
             "title": "SmartDCCInnovation/duis-parser: Lightweight bi-directional conversion between DUIS and JSON",
@@ -83,17 +149,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9626630?u=9194d520e32a11d1a6a523cddbd8ac620d3fdd97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight  dependency injection container</div>",
-            "url": "https://github.com/AEPKILL/husky-di",
-            "title": "AEPKILL/husky-di: lightweight  dependency injection container",
-            "date_modified": "2023-05-30T09:33:04.000Z",
-            "date_published": "2023-05-27T02:11:07.000Z",
-            "author": {
-                "name": "AEPKILL",
-                "url": "https://github.com/AEPKILL"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11557446?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, lightweight JavaScript API for handling browser cookies</div>",
             "url": "https://github.com/js-cookie/js-cookie",
             "title": "js-cookie/js-cookie: A simple, lightweight JavaScript API for handling browser cookies",
@@ -124,17 +179,6 @@
             "author": {
                 "name": "imhvost",
                 "url": "https://github.com/imhvost"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26519165?u=fb35551465f283eefa36184bfc0b892116f82d4a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>webfunny是一款轻量级的前端性能监控系统，也是一款埋点系统，私有化部署，简单易用。Webfunny is a lightweight front-end performance monitoring system and a burying point system, which is privatized and easy to use.</div>",
-            "url": "https://github.com/a597873885/webfunny_monitor",
-            "title": "a597873885/webfunny_monitor: webfunny是一款轻量级的前端性能监控系统，也是一款埋点系统，私有化部署，简单易用。Webfunny is a lightweight front-end performance monitoring system and a burying point system, which is privatized and easy to use.",
-            "date_modified": "2023-05-30T03:01:44.000Z",
-            "date_published": "2018-07-04T03:08:02.000Z",
-            "author": {
-                "name": "a597873885",
-                "url": "https://github.com/a597873885"
             }
         },
         {
@@ -179,50 +223,6 @@
             "author": {
                 "name": "mozilla",
                 "url": "https://github.com/mozilla"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106929622?u=e58a07d4d3424678892318e9e47ba94601caaa04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and modular Tailwind CSS styled components, and vanilla JavaScript plugins for developing web interfaces faster.</div>",
-            "url": "https://github.com/variablesign/uikit",
-            "title": "variablesign/uikit: A lightweight and modular Tailwind CSS styled components, and vanilla JavaScript plugins for developing web interfaces faster.",
-            "date_modified": "2023-04-19T19:34:24.000Z",
-            "date_published": "2023-02-17T12:08:19.000Z",
-            "author": {
-                "name": "variablesign",
-                "url": "https://github.com/variablesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8112215?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"cookie\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f36a.png\">🍪</g-emoji> Lightweight, user-friendly and customizable cookie consent banner to help you comply with the EU GDPR cookie law and CCPA regulations.</div>",
-            "url": "https://github.com/pressidium/pressidium-cookie-consent",
-            "title": "pressidium/pressidium-cookie-consent: 🍪 Lightweight, user-friendly and customizable cookie consent banner to help you comply with the EU GDPR cookie law and CCPA regulations.",
-            "date_modified": "2023-05-30T08:35:12.000Z",
-            "date_published": "2023-05-15T16:46:26.000Z",
-            "author": {
-                "name": "pressidium",
-                "url": "https://github.com/pressidium"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14338007?u=f3f98b96dc619176260a91079dec7025e135343b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Envelop is a lightweight library allowing developers to easily develop, share, collaborate and extend their GraphQL execution layer. Envelop is the missing GraphQL plugin system. </div>",
-            "url": "https://github.com/n1ru4l/envelop",
-            "title": "n1ru4l/envelop: Envelop is a lightweight library allowing developers to easily develop, share, collaborate and extend their GraphQL execution layer. Envelop is the missing GraphQL plugin system. ",
-            "date_modified": "2023-05-29T07:46:37.000Z",
-            "date_published": "2021-02-17T09:42:09.000Z",
-            "author": {
-                "name": "n1ru4l",
-                "url": "https://github.com/n1ru4l"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21335119?u=c70ffc495b48d4d5be098d8f2ca0ff325f052417&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fully type-safe and lightweight internationalization library for all your TypeScript and JavaScript projects.</div>",
-            "url": "https://github.com/ivanhofer/typesafe-i18n",
-            "title": "ivanhofer/typesafe-i18n: A fully type-safe and lightweight internationalization library for all your TypeScript and JavaScript projects.",
-            "date_modified": "2023-05-30T08:34:11.000Z",
-            "date_published": "2020-12-28T10:50:32.000Z",
-            "author": {
-                "name": "ivanhofer",
-                "url": "https://github.com/ivanhofer"
             }
         }
     ]
