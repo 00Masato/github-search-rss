@@ -6,6 +6,39 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100199692?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"jigsaw\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f9e9.png\">🧩</g-emoji> Capacitor CodePush with GitHub! Very simple and lightweight.</div>",
+            "url": "https://github.com/rhea-so-lab/capacitor-codepush-boilerplate",
+            "title": "rhea-so-lab/capacitor-codepush-boilerplate: 🧩 Capacitor CodePush with GitHub! Very simple and lightweight.",
+            "date_modified": "2023-05-26T01:36:42.000Z",
+            "date_published": "2023-05-25T15:45:21.000Z",
+            "author": {
+                "name": "rhea-so-lab",
+                "url": "https://github.com/rhea-so-lab"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3919433?u=c60def132f216d819f166c823838573e0005ce08&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library for creating user interfaces in a declarative way</div>",
+            "url": "https://github.com/HelloWorld017/suisei",
+            "title": "HelloWorld017/suisei: A lightweight library for creating user interfaces in a declarative way",
+            "date_modified": "2023-03-30T01:39:27.000Z",
+            "date_published": "2022-03-03T16:02:15.000Z",
+            "author": {
+                "name": "HelloWorld017",
+                "url": "https://github.com/HelloWorld017"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15149071?u=a138d4af60d5751e572fd47f4ca40358e7338766&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The axios-queue-js is a lightweight wrapper of axios that enables you to make requests using a queue.</div>",
+            "url": "https://github.com/AndersonSMed/axios-queue-js",
+            "title": "AndersonSMed/axios-queue-js: The axios-queue-js is a lightweight wrapper of axios that enables you to make requests using a queue.",
+            "date_modified": "2023-05-30T01:16:54.000Z",
+            "date_published": "2021-09-10T21:49:05.000Z",
+            "author": {
+                "name": "AndersonSMed",
+                "url": "https://github.com/AndersonSMed"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132421698?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"gem\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f48e.png\">💎</g-emoji> A lightweight, modular, and extendable 3D game engine built for the web.</div>",
             "url": "https://github.com/lattice-engine/lattice",
             "title": "lattice-engine/lattice: 💎 A lightweight, modular, and extendable 3D game engine built for the web.",
@@ -14,6 +47,17 @@
             "author": {
                 "name": "lattice-engine",
                 "url": "https://github.com/lattice-engine"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
+            "url": "https://github.com/verdaccio/verdaccio",
+            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
+            "date_modified": "2023-05-30T01:55:53.000Z",
+            "date_published": "2016-04-15T16:21:12.000Z",
+            "author": {
+                "name": "verdaccio",
+                "url": "https://github.com/verdaccio"
             }
         },
         {
@@ -75,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63165028?u=7be1e59fc9acfdf86a15ec15f45dd52276c12a9f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and customizable React component for smoothly animating numbers, ideal for creating captivating odometers and counters in web applications.</div>",
             "url": "https://github.com/realAndi/EZOdometer-react",
             "title": "realAndi/EZOdometer-react: A lightweight and customizable React component for smoothly animating numbers, ideal for creating captivating odometers and counters in web applications.",
-            "date_modified": "2023-05-29T22:38:43.000Z",
+            "date_modified": "2023-05-30T01:52:40.000Z",
             "date_published": "2023-05-29T17:30:03.000Z",
             "author": {
                 "name": "realAndi",
@@ -116,17 +160,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38636025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Mobile &amp; desktop-friendly, tiny, efficient carousel which takes advantage of CSS snap points (or polyfills it)!</div>",
-            "url": "https://github.com/FRSOURCE/tiny-carousel",
-            "title": "FRSOURCE/tiny-carousel: Mobile & desktop-friendly, tiny, efficient carousel which takes advantage of CSS snap points (or polyfills it)!",
-            "date_modified": "2023-04-08T15:34:47.000Z",
-            "date_published": "2018-07-28T11:40:44.000Z",
-            "author": {
-                "name": "FRSOURCE",
-                "url": "https://github.com/FRSOURCE"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) <g-emoji class=\"g-emoji\" alias=\"balloon\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f388.png\">🎈</g-emoji></div>",
             "url": "https://github.com/nestjs/cqrs",
             "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
@@ -152,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
             "url": "https://github.com/WhiskeySockets/Baileys",
             "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
-            "date_modified": "2023-05-29T21:34:36.000Z",
+            "date_modified": "2023-05-30T01:50:33.000Z",
             "date_published": "2022-01-12T20:38:14.000Z",
             "author": {
                 "name": "WhiskeySockets",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "liihuu",
                 "url": "https://github.com/liihuu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
-            "url": "https://github.com/verdaccio/verdaccio",
-            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
-            "date_modified": "2023-05-29T21:34:12.000Z",
-            "date_published": "2016-04-15T16:21:12.000Z",
-            "author": {
-                "name": "verdaccio",
-                "url": "https://github.com/verdaccio"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/458096?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Feature-rich lightweight WAMP (WebSocket Application Messaging Protocol) Javascript implementation</div>",
-            "url": "https://github.com/KSDaemon/wampy.js",
-            "title": "KSDaemon/wampy.js: Feature-rich lightweight WAMP (WebSocket Application Messaging Protocol) Javascript implementation",
-            "date_modified": "2023-04-26T13:37:03.000Z",
-            "date_published": "2014-01-31T20:36:19.000Z",
-            "author": {
-                "name": "KSDaemon",
-                "url": "https://github.com/KSDaemon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6319414?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Angular component that loads async data, handles errors and switches templates based on loading state.</div>",
-            "url": "https://github.com/rensjaspers/ngx-data-loader",
-            "title": "rensjaspers/ngx-data-loader: Lightweight Angular component that loads async data, handles errors and switches templates based on loading state.",
-            "date_modified": "2023-05-05T19:46:51.000Z",
-            "date_published": "2022-10-13T15:29:58.000Z",
-            "author": {
-                "name": "rensjaspers",
-                "url": "https://github.com/rensjaspers"
             }
         }
     ]
