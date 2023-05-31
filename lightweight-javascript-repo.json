@@ -6,14 +6,47 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58822198?u=8c9f0735d1b5c6a6160c474e62b7ed135b3e9eca&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PondLive is a lightweight, and easy to use serverside only web framework, leveraging the power of PondSocket to create a simple, yet powerful, SPA framework.</div>",
-            "url": "https://github.com/Eleven-am/pondLive",
-            "title": "Eleven-am/pondLive: PondLive is a lightweight, and easy to use serverside only web framework, leveraging the power of PondSocket to create a simple, yet powerful, SPA framework.",
-            "date_modified": "2023-05-23T09:22:53.000Z",
-            "date_published": "2022-08-21T17:02:12.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38800446?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript library for efficient line-by-line virtual scrolling in terminal-like displays, designed to optimise performance and resource usage in web applications.</div>",
+            "url": "https://github.com/playforest/terminal-virtual-scroll",
+            "title": "playforest/terminal-virtual-scroll: A lightweight TypeScript library for efficient line-by-line virtual scrolling in terminal-like displays, designed to optimise performance and resource usage in web applications.",
+            "date_modified": "2023-05-29T13:23:53.000Z",
+            "date_published": "2023-05-29T08:46:51.000Z",
             "author": {
-                "name": "Eleven-am",
-                "url": "https://github.com/Eleven-am"
+                "name": "playforest",
+                "url": "https://github.com/playforest"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3494069?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well</div>",
+            "url": "https://github.com/primefaces/primeflex",
+            "title": "primefaces/primeflex: PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well",
+            "date_modified": "2023-05-30T08:09:57.000Z",
+            "date_published": "2018-09-01T08:53:42.000Z",
+            "author": {
+                "name": "primefaces",
+                "url": "https://github.com/primefaces"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6526075?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight web wallet for Cardano cryptocurrency with Trezor, Ledger and BitBox02 support. Please note that the only valid domain for our wallet is adalite.io</div>",
+            "url": "https://github.com/vacuumlabs/adalite",
+            "title": "vacuumlabs/adalite: A lightweight web wallet for Cardano cryptocurrency with Trezor, Ledger and BitBox02 support. Please note that the only valid domain for our wallet is adalite.io",
+            "date_modified": "2023-04-13T13:05:58.000Z",
+            "date_published": "2018-01-03T12:24:41.000Z",
+            "author": {
+                "name": "vacuumlabs",
+                "url": "https://github.com/vacuumlabs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61698774?u=caaefd8d69f0525eb4f87e2f3ad17af2a42f2407&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is a lightweight JavaScript module that provides a simple input controller class for loop-based game development. It supports keyboard, mouse, and gamepad.</div>",
+            "url": "https://github.com/gukisan/guki-input-controller",
+            "title": "gukisan/guki-input-controller: This is a lightweight JavaScript module that provides a simple input controller class for loop-based game development. It supports keyboard, mouse, and gamepad.",
+            "date_modified": "2023-03-25T17:15:32.000Z",
+            "date_published": "2023-03-23T09:13:17.000Z",
+            "author": {
+                "name": "gukisan",
+                "url": "https://github.com/gukisan"
             }
         },
         {
@@ -28,14 +61,14 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6844498?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight server clone of Azure Storage that simulates most of the commands supported by it with minimal dependencies</div>",
-            "url": "https://github.com/Azure/Azurite",
-            "title": "Azure/Azurite: A lightweight server clone of Azure Storage that simulates most of the commands supported by it with minimal dependencies",
-            "date_modified": "2023-05-30T02:18:52.000Z",
-            "date_published": "2018-02-20T23:29:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6039631?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight ant-design-pro based on create-react-app.</div>",
+            "url": "https://github.com/sunnut/react-easy-start",
+            "title": "sunnut/react-easy-start: A lightweight ant-design-pro based on create-react-app.",
+            "date_modified": "2023-05-31T10:15:54.000Z",
+            "date_published": "2018-11-27T15:12:32.000Z",
             "author": {
-                "name": "Azure",
-                "url": "https://github.com/Azure"
+                "name": "sunnut",
+                "url": "https://github.com/sunnut"
             }
         },
         {
@@ -47,6 +80,28 @@
             "author": {
                 "name": "rensjaspers",
                 "url": "https://github.com/rensjaspers"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58822198?u=8c9f0735d1b5c6a6160c474e62b7ed135b3e9eca&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PondLive is a lightweight, and easy to use serverside only web framework, leveraging the power of PondSocket to create a simple, yet powerful, SPA framework.</div>",
+            "url": "https://github.com/Eleven-am/pondLive",
+            "title": "Eleven-am/pondLive: PondLive is a lightweight, and easy to use serverside only web framework, leveraging the power of PondSocket to create a simple, yet powerful, SPA framework.",
+            "date_modified": "2023-05-23T09:22:53.000Z",
+            "date_published": "2022-08-21T17:02:12.000Z",
+            "author": {
+                "name": "Eleven-am",
+                "url": "https://github.com/Eleven-am"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6844498?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight server clone of Azure Storage that simulates most of the commands supported by it with minimal dependencies</div>",
+            "url": "https://github.com/Azure/Azurite",
+            "title": "Azure/Azurite: A lightweight server clone of Azure Storage that simulates most of the commands supported by it with minimal dependencies",
+            "date_modified": "2023-05-30T02:18:52.000Z",
+            "date_published": "2018-02-20T23:29:37.000Z",
+            "author": {
+                "name": "Azure",
+                "url": "https://github.com/Azure"
             }
         },
         {
@@ -105,6 +160,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2023-05-31T10:27:26.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72122827?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight NodeJS library to integrate Netopia mobilPay payment gateway in your projects</div>",
             "url": "https://github.com/chesscoders/netopia-card",
             "title": "chesscoders/netopia-card: Lightweight NodeJS library to integrate Netopia mobilPay payment gateway in your projects",
@@ -157,72 +223,6 @@
             "author": {
                 "name": "fluidweb-co",
                 "url": "https://github.com/fluidweb-co"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/89012686?u=b4c7a82953d9ca0ec20fefd6aa52c7e7faa53bd5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight State management for Vanilla JS</div>",
-            "url": "https://github.com/hoverek-yt/statilla",
-            "title": "hoverek-yt/statilla: Lightweight State management for Vanilla JS",
-            "date_modified": "2023-05-31T07:23:08.000Z",
-            "date_published": "2023-05-29T16:56:19.000Z",
-            "author": {
-                "name": "hoverek-yt",
-                "url": "https://github.com/hoverek-yt"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3073826?u=6a21671985cca1a6eaa91f8f86a949991a88e337&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"eyes\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f440.png\">👀</g-emoji>  Easily apply tilt hover effect on React components - lightweight/zero dependencies (3kB)</div>",
-            "url": "https://github.com/mkosir/react-parallax-tilt",
-            "title": "mkosir/react-parallax-tilt: 👀  Easily apply tilt hover effect on React components - lightweight/zero dependencies (3kB)",
-            "date_modified": "2023-05-29T16:08:16.000Z",
-            "date_published": "2019-08-07T09:32:52.000Z",
-            "author": {
-                "name": "mkosir",
-                "url": "https://github.com/mkosir"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17825870?u=0ea20b09c8c2f2633ed351d5391558b9c0d4fff0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight package to scrape and parse captions (subtitles) from YouTube videos, supporting both user-submitted and auto-generated captions with language options.</div>",
-            "url": "https://github.com/devhims/youtube-caption-extractor",
-            "title": "devhims/youtube-caption-extractor: A lightweight package to scrape and parse captions (subtitles) from YouTube videos, supporting both user-submitted and auto-generated captions with language options.",
-            "date_modified": "2023-05-04T11:05:01.000Z",
-            "date_published": "2023-05-04T05:48:00.000Z",
-            "author": {
-                "name": "devhims",
-                "url": "https://github.com/devhims"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26519165?u=fb35551465f283eefa36184bfc0b892116f82d4a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>webfunny是一款轻量级的前端性能监控系统，也是一款埋点系统，私有化部署，简单易用。Webfunny is a lightweight front-end performance monitoring system and a burying point system, which is privatized and easy to use.</div>",
-            "url": "https://github.com/a597873885/webfunny_monitor",
-            "title": "a597873885/webfunny_monitor: webfunny是一款轻量级的前端性能监控系统，也是一款埋点系统，私有化部署，简单易用。Webfunny is a lightweight front-end performance monitoring system and a burying point system, which is privatized and easy to use.",
-            "date_modified": "2023-05-31T02:57:30.000Z",
-            "date_published": "2018-07-04T03:08:02.000Z",
-            "author": {
-                "name": "a597873885",
-                "url": "https://github.com/a597873885"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/729118?u=cd7201eb37268489fe7e05b1fa2122f8806d2485&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Flatten-ts is a lightweight TypeScript library for easily flattening and unflattening nested objects and arrays with customizable options and fast performance.</div>",
-            "url": "https://github.com/physio/flatten-ts",
-            "title": "physio/flatten-ts: Flatten-ts is a lightweight TypeScript library for easily flattening and unflattening nested objects and arrays with customizable options and fast performance.",
-            "date_modified": "2023-05-03T21:48:41.000Z",
-            "date_published": "2023-04-27T07:43:50.000Z",
-            "author": {
-                "name": "physio",
-                "url": "https://github.com/physio"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49300088?u=af2207b411cb0e59287c7a672e41d504a6b5aad2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Project dedicated to fight Layer 7 DDoS with proof of work, with an additional WAF and controller. Completed with full set of features and containerized for rapid and lightweight deployment.</div>",
-            "url": "https://github.com/RuiSiang/PoW-Shield",
-            "title": "RuiSiang/PoW-Shield: Project dedicated to fight Layer 7 DDoS with proof of work, with an additional WAF and controller. Completed with full set of features and containerized for rapid and lightweight deployment.",
-            "date_modified": "2023-05-30T11:27:34.000Z",
-            "date_published": "2021-03-08T09:12:20.000Z",
-            "author": {
-                "name": "RuiSiang",
-                "url": "https://github.com/RuiSiang"
             }
         }
     ]
