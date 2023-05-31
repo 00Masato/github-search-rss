@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1754975?u=4b8b13de0db447aa28cfa297dbb0c14876bd525a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48350",
+            "title": "Commit on branch ply-plly-request-92",
+            "date_modified": "2023-05-31T07:06:11.000Z",
+            "date_published": "2023-05-31T07:06:11.000Z",
+            "author": {
+                "name": "carlad",
+                "url": "https://github.com/carlad"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Preview (<a href=\"https://bbe6dd3e.zzak-rails.pages.dev\" rel=\"nofollow\">link</a>)</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/277819/242134684-6cedecc4-f8c8-4677-9496-f57139743f4d.png\"><img src=\"https://user-images.githubusercontent.com/277819/242134684-6cedecc4-f8c8-4677-9496-f57139743f4d.png\" alt=\"Screenshot 2023-05-31 at 10 26 38\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">How to test:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"export GITHUB_SERVER_URL=&quot;https://github.com&quot;\nexport GITHUB_REPOSITORY=&quot;zzak/rails&quot;\nexport GITHUB_REF_NAME=&quot;cf-pages&quot;\nexport GITHUB_SHA=&quot;45efdc016e00a79861527a87e341a2d57badee55&quot;\nexport GITHUB_RUN_ID=&quot;5127901781&quot;\nexport GITHUB_ACTOR=&quot;zzak&quot;\n\nbundle exec rake preview_docs\"><pre class=\"notranslate\"><span class=\"pl-k\">export</span> GITHUB_SERVER_URL=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>https://github.com<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-k\">export</span> GITHUB_REPOSITORY=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>zzak/rails<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-k\">export</span> GITHUB_REF_NAME=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>cf-pages<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-k\">export</span> GITHUB_SHA=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>45efdc016e00a79861527a87e341a2d57badee55<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-k\">export</span> GITHUB_RUN_ID=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>5127901781<span class=\"pl-pds\">\"</span></span>\n<span class=\"pl-k\">export</span> GITHUB_ACTOR=<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>zzak<span class=\"pl-pds\">\"</span></span>\n\nbundle <span class=\"pl-c1\">exec</span> rake preview_docs</pre></div>",
             "url": "https://github.com/rails/rails/pull/48349",
             "title": "📜 Preview Docs with Cloudflare Pages ☁️ ",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "nicholasdower",
                 "url": "https://github.com/nicholasdower"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1646855043\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47813\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47813/hovercard\" href=\"https://github.com/rails/rails/pull/47813\">#47813</a> to import the linter files directly to Rails source tree</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ zzak@mbp16 rails % ruby -v\nruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-changelogs .\n.............\n\n13 changelogs inspected, 0 offenses detected\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-config-docs .\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-links .\nhttps://edgeapi.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html#method-i-encrypt_and_sign\"><pre class=\"notranslate\">$ zzak@mbp16 rails % ruby -v\nruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-changelogs <span class=\"pl-c1\">.</span>\n.............\n\n13 changelogs inspected, 0 offenses detected\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-config-docs <span class=\"pl-c1\">.</span>\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-links <span class=\"pl-c1\">.</span>\nhttps://edgeapi.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html#method-i-encrypt_and_sign</pre></div>",
-            "url": "https://github.com/rails/rails/pull/48216",
-            "title": "Import rails-bin linter to rails internal tools lib",
-            "date_modified": "2023-05-16T17:36:25.000Z",
-            "date_published": "2023-05-13T06:53:46.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
