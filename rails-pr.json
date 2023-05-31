@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48343.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1731799289\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48343\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48343/hovercard\" href=\"https://github.com/rails/rails/issues/48343\">#48343</a>.</p>\n<p dir=\"auto\">The regression was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"799192310\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/41305\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/41305/hovercard\" href=\"https://github.com/rails/rails/pull/41305\">#41305</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
-            "url": "https://github.com/rails/rails/pull/48348",
-            "title": "Fix `humanize` for strings ending with ` id`",
-            "date_modified": "2023-05-30T23:19:40.000Z",
-            "date_published": "2023-05-30T23:17:13.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48346.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1732951081\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48346\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48346/hovercard\" href=\"https://github.com/rails/rails/issues/48346\">#48346</a>.</p>\n<p dir=\"auto\">The regression was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1263057967\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45285\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45285/hovercard\" href=\"https://github.com/rails/rails/pull/45285\">#45285</a>, while trying to fix another issue.<br>\nI returned back original condition <a href=\"https://github.com/rails/rails/pull/45285/files#diff-c6072f5254f1d8f3ba21a2b028367140e67974ed9e8616117ba6821df0cacdc2L16\">https://github.com/rails/rails/pull/45285/files#diff-c6072f5254f1d8f3ba21a2b028367140e67974ed9e8616117ba6821df0cacdc2L16</a> from.</p>",
             "url": "https://github.com/rails/rails/pull/48347",
             "title": "Preserve timestamp when setting an `ActiveSupport::TimeWithZone` value to `timestamptz` attribute",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "nicholasdower",
                 "url": "https://github.com/nicholasdower"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1646855043\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47813\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47813/hovercard\" href=\"https://github.com/rails/rails/pull/47813\">#47813</a> to import the linter files directly to Rails source tree</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ zzak@mbp16 rails % ruby -v\nruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-changelogs .\n.............\n\n13 changelogs inspected, 0 offenses detected\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-config-docs .\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-links .\nhttps://edgeapi.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html#method-i-encrypt_and_sign\"><pre class=\"notranslate\">$ zzak@mbp16 rails % ruby -v\nruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-changelogs <span class=\"pl-c1\">.</span>\n.............\n\n13 changelogs inspected, 0 offenses detected\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-config-docs <span class=\"pl-c1\">.</span>\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-links <span class=\"pl-c1\">.</span>\nhttps://edgeapi.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html#method-i-encrypt_and_sign</pre></div>",
+            "url": "https://github.com/rails/rails/pull/48216",
+            "title": "Import rails-bin linter to rails internal tools lib",
+            "date_modified": "2023-05-16T17:36:25.000Z",
+            "date_published": "2023-05-13T06:53:46.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
