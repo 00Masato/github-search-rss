@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/90790555?u=d879791fb9d64d1e385f31fd59b6a94c705ceffd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">At this pull request I fixed the back-to-top button on guides</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">guides/assets/stylesheets/main.css</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48367",
+            "title": "Fixing fetch image on 'back-to-top' button",
+            "date_modified": "2023-06-01T12:55:40.000Z",
+            "date_published": "2023-06-01T12:55:31.000Z",
+            "author": {
+                "name": "ally1002",
+                "url": "https://github.com/ally1002"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48319.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1729039100\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48319\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48319/hovercard\" href=\"https://github.com/rails/rails/issues/48319\">#48319</a><br>\nFollowup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1702975773\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48184\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48184/hovercard\" href=\"https://github.com/rails/rails/pull/48184\">#48184</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zarqman/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zarqman\">@zarqman</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tenderlove/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tenderlove\">@tenderlove</a></p>",
             "url": "https://github.com/rails/rails/pull/48365",
             "title": "Cleanly fallback when failing to tokenize ERB templates",
@@ -209,17 +220,6 @@
             "title": "Support batching using composite primary keys and multiple column ordering",
             "date_modified": "2023-06-01T00:25:56.000Z",
             "date_published": "2023-05-21T08:49:23.000Z",
-            "author": {
-                "name": "TakuyaKurimoto",
-                "url": "https://github.com/TakuyaKurimoto"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75765648?u=1dc3ffb2f347af44627baa665b1b2dff0abd7dd1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixed incorrect sorting using order keyword in in_batches method</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Fix incorrect sorting using order keyword in in_batches method.</p>\n<p dir=\"auto\">example (posts table has id as the primary key)</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Post.in_batches(order: :desc, use_ranges: false).first.pluck(:id)\n:actual =&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\n:expected  =&gt; [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]\"><pre class=\"notranslate\"><code class=\"notranslate\">Post.in_batches(order: :desc, use_ranges: false).first.pluck(:id)\n:actual =&gt; [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\n:expected  =&gt; [11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">if use_ranges keyword is true, the sorting does not work either, but I am not sure if this is the expected behavior</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48267",
-            "title": "FIX correctly sort records with the in_batches method",
-            "date_modified": "2023-05-21T06:18:07.000Z",
-            "date_published": "2023-05-21T06:17:51.000Z",
             "author": {
                 "name": "TakuyaKurimoto",
                 "url": "https://github.com/TakuyaKurimoto"
