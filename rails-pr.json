@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">After merging <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1734940101\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48357\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48357/hovercard\" href=\"https://github.com/rails/rails/pull/48357\">#48357</a>, CI periodically started to fail.<br>\nExample - <a href=\"https://buildkite.com/rails/rails/builds/96894\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/96894</a>.</p>\n<p dir=\"auto\">Since such CI failures (for missing requires of models) are not for the first time, I am wondering, why not every model requires all the other model files it depends on, or an alternative, why not all models are loaded in a single file, which is the included everywhere?</p>",
-            "url": "https://github.com/rails/rails/pull/48384",
-            "title": "Require missing models in ActiveRecord tests",
-            "date_modified": "2023-06-02T18:38:00.000Z",
-            "date_published": "2023-06-02T18:37:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22918438?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR handles destroying CPK associations when autosave is set and the parent association is marked for destruction.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the codepath in <code class=\"notranslate\">#save_belongs_to_association</code> that handles destroying the parent association to handle a composite foreign key (the parent having a composite primary key).  It does so by ensuring that all parts of the foreign key (the parent's CPK) are set to nil before destroying the parent record.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48385",
+            "title": "Fix destroying belongs_to associations for CPK",
+            "date_modified": "2023-06-02T19:43:46.000Z",
+            "date_published": "2023-06-02T19:43:42.000Z",
             "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
+                "name": "adrianna-chang-shopify",
+                "url": "https://github.com/adrianna-chang-shopify"
             }
         },
         {
