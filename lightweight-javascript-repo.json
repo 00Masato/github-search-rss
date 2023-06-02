@@ -6,6 +6,83 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21099176?u=288be8bd952a3a10948d24016e8bb73484366948&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and extensible dependency injection container for TypeScript/JavaScript for constructor injection as functional.</div>",
+            "url": "https://github.com/siyul-park/cheeket.js",
+            "title": "siyul-park/cheeket.js: A lightweight and extensible dependency injection container for TypeScript/JavaScript for constructor injection as functional.",
+            "date_modified": "2022-12-14T23:27:23.000Z",
+            "date_published": "2020-10-24T10:51:53.000Z",
+            "author": {
+                "name": "siyul-park",
+                "url": "https://github.com/siyul-park"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803674?u=271c4734f399a30a6b8718fde8639af1c12c2755&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A a lightweight npm package designed to simplify the process of creating CSS class chains based on a key-value object.</div>",
+            "url": "https://github.com/monolithed/class-toggler",
+            "title": "monolithed/class-toggler: A a lightweight npm package designed to simplify the process of creating CSS class chains based on a key-value object.",
+            "date_modified": "2023-06-02T11:49:49.000Z",
+            "date_published": "2023-06-02T11:37:09.000Z",
+            "author": {
+                "name": "monolithed",
+                "url": "https://github.com/monolithed"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33135183?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and customizable starter kit for building TypeScript libraries. It comes with ESM support, flexible configuration options, extensive ESLint rules, and built-in Github Actions integration.</div>",
+            "url": "https://github.com/2BAD/ts-lib-starter",
+            "title": "2BAD/ts-lib-starter: A lightweight and customizable starter kit for building TypeScript libraries. It comes with ESM support, flexible configuration options, extensive ESLint rules, and built-in Github Actions integration.",
+            "date_modified": "2023-06-02T12:05:30.000Z",
+            "date_published": "2023-05-23T02:41:00.000Z",
+            "author": {
+                "name": "2BAD",
+                "url": "https://github.com/2BAD"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49926816?u=f4525f37e94c4d310d4d2e95a2bdf760dbd1e660&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>typure.js is a lightweight typescript library for building user interfaces. Based on native web components. Efficient, simple, flexible and no virtual DOM, no compile-time.</div>",
+            "url": "https://github.com/wangyewei/Typurejs",
+            "title": "wangyewei/Typurejs: typure.js is a lightweight typescript library for building user interfaces. Based on native web components. Efficient, simple, flexible and no virtual DOM, no compile-time.",
+            "date_modified": "2023-06-02T11:38:47.000Z",
+            "date_published": "2023-05-17T17:10:25.000Z",
+            "author": {
+                "name": "wangyewei",
+                "url": "https://github.com/wangyewei"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20356443?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight framework for creating reliable REST HTTP clients in TypeScript</div>",
+            "url": "https://github.com/Coreoz/simple-http-rest-client",
+            "title": "Coreoz/simple-http-rest-client: A lightweight framework for creating reliable REST HTTP clients in TypeScript",
+            "date_modified": "2022-11-21T19:54:08.000Z",
+            "date_published": "2022-03-30T12:07:36.000Z",
+            "author": {
+                "name": "Coreoz",
+                "url": "https://github.com/Coreoz"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3501930?u=4bc64553c78294e985c33212a77ff95fe141a1e4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple &amp; intuitive way to manage collections of data.</div>",
+            "url": "https://github.com/TarekRaafat/skalex",
+            "title": "TarekRaafat/skalex: Simple & intuitive way to manage collections of data.",
+            "date_modified": "2023-06-02T11:30:56.000Z",
+            "date_published": "2023-05-20T07:59:55.000Z",
+            "author": {
+                "name": "TarekRaafat",
+                "url": "https://github.com/TarekRaafat"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120167340?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight blog system, with bullet comments.</div>",
+            "url": "https://github.com/bullet-art/web-app",
+            "title": "bullet-art/web-app: lightweight blog system, with bullet comments.",
+            "date_modified": "2023-05-30T16:41:40.000Z",
+            "date_published": "2023-05-30T16:14:08.000Z",
+            "author": {
+                "name": "bullet-art",
+                "url": "https://github.com/bullet-art"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108532180?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight bi-directional conversion between DUIS and JSON</div>",
             "url": "https://github.com/SmartDCCInnovation/duis-parser",
             "title": "SmartDCCInnovation/duis-parser: Lightweight bi-directional conversion between DUIS and JSON",
@@ -39,17 +116,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21099176?u=288be8bd952a3a10948d24016e8bb73484366948&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and extensible dependency injection container for TypeScript/JavaScript for constructor injection as functional.</div>",
-            "url": "https://github.com/siyul-park/cheeket.js",
-            "title": "siyul-park/cheeket.js: A lightweight and extensible dependency injection container for TypeScript/JavaScript for constructor injection as functional.",
-            "date_modified": "2022-12-14T23:27:23.000Z",
-            "date_published": "2020-10-24T10:51:53.000Z",
-            "author": {
-                "name": "siyul-park",
-                "url": "https://github.com/siyul-park"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52915358?u=8044ed097d81592c832ed7ef39122dacd426fc6a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The Firefox tab extension is a lightweight tool that enables users to quickly and easily extract the title and URL of each open tab in their Chrome browser. This extension is perfect for anyone who wants to save their current browsing session or keep a record of the websites they visit.</div>",
             "url": "https://github.com/alwaz-shahid/extension-firefox-get-tabs",
             "title": "alwaz-shahid/extension-firefox-get-tabs: The Firefox tab extension is a lightweight tool that enables users to quickly and easily extract the title and URL of each open tab in their Chrome browser. This extension is perfect for anyone who wants to save their current browsing session or keep a record of the websites they visit.",
@@ -75,22 +141,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1030579?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast and lightweight JavaScript game engine built on WebGL and glTF</div>",
             "url": "https://github.com/playcanvas/engine",
             "title": "playcanvas/engine: Fast and lightweight JavaScript game engine built on WebGL and glTF",
-            "date_modified": "2023-06-02T10:59:40.000Z",
+            "date_modified": "2023-06-02T11:06:03.000Z",
             "date_published": "2014-05-12T11:24:30.000Z",
             "author": {
                 "name": "playcanvas",
                 "url": "https://github.com/playcanvas"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49926816?u=f4525f37e94c4d310d4d2e95a2bdf760dbd1e660&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Typure is a lightweight TypeScript library that focuses on native HTML development and componentization.</div>",
-            "url": "https://github.com/wangyewei/Typurejs",
-            "title": "wangyewei/Typurejs: Typure is a lightweight TypeScript library that focuses on native HTML development and componentization.",
-            "date_modified": "2023-05-29T06:15:30.000Z",
-            "date_published": "2023-05-17T17:10:25.000Z",
-            "author": {
-                "name": "wangyewei",
-                "url": "https://github.com/wangyewei"
             }
         },
         {
@@ -168,61 +223,6 @@
             "author": {
                 "name": "a597873885",
                 "url": "https://github.com/a597873885"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25509135?u=e6396a2b6143fb94ba1bfcb9e9c872295f30d1fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>React Virtual Keyboard - Customizable, responsive and lightweight</div>",
-            "url": "https://github.com/hodgef/react-simple-keyboard",
-            "title": "hodgef/react-simple-keyboard: React Virtual Keyboard - Customizable, responsive and lightweight",
-            "date_modified": "2023-05-30T17:31:55.000Z",
-            "date_published": "2018-04-20T14:28:27.000Z",
-            "author": {
-                "name": "hodgef",
-                "url": "https://github.com/hodgef"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/581999?u=da379f8a537c24f895587ea2500fd32ab12111f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight yet customizable context-menu for your Mantine applications, with a succinct API and dark-theme support.</div>",
-            "url": "https://github.com/icflorescu/mantine-contextmenu",
-            "title": "icflorescu/mantine-contextmenu: A lightweight yet customizable context-menu for your Mantine applications, with a succinct API and dark-theme support.",
-            "date_modified": "2023-06-01T05:57:45.000Z",
-            "date_published": "2023-04-11T15:56:19.000Z",
-            "author": {
-                "name": "icflorescu",
-                "url": "https://github.com/icflorescu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19235522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"notes\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f3b6.png\">🎶</g-emoji><g-emoji class=\"g-emoji\" alias=\"arrow_forward\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/25b6.png\">▶</g-emoji> [WIP] A New Simple and lightweight crossplatform client/frontend for bandcamp.com</div>",
-            "url": "https://github.com/LaineZ/bc_rs",
-            "title": "LaineZ/bc_rs: 🎶▶ [WIP] A New Simple and lightweight crossplatform client/frontend for bandcamp.com",
-            "date_modified": "2023-05-31T18:43:02.000Z",
-            "date_published": "2020-01-26T07:51:26.000Z",
-            "author": {
-                "name": "LaineZ",
-                "url": "https://github.com/LaineZ"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3494069?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well</div>",
-            "url": "https://github.com/primefaces/primeflex",
-            "title": "primefaces/primeflex: PrimeFlex is a lightweight responsive CSS utility library to accompany Prime UI libraries and static webpages as well",
-            "date_modified": "2023-06-02T08:37:14.000Z",
-            "date_published": "2018-09-01T08:53:42.000Z",
-            "author": {
-                "name": "primefaces",
-                "url": "https://github.com/primefaces"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5486989?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Modular lightweight request library extendable by plugins.</div>",
-            "url": "https://github.com/Tinkoff/tinkoff-request",
-            "title": "Tinkoff/tinkoff-request: Modular lightweight request library extendable by plugins.",
-            "date_modified": "2023-03-28T11:54:39.000Z",
-            "date_published": "2018-10-26T07:42:43.000Z",
-            "author": {
-                "name": "Tinkoff",
-                "url": "https://github.com/Tinkoff"
             }
         }
     ]
