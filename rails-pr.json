@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3414795?u=f40b7e0ce2902c65ed78284b790eaffaff8b59d7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I would like to use accepts_nested_attributes_for and fields_for with public_ids instead of the PK. fields_for doesnt seem to honor to_param because it continues to place the PK in the hidden ID field.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes<code class=\"notranslate\"> accepts_nested_attributes_for</code> and <code class=\"notranslate\">fields_for</code> behaviour by adding an additional option to <code class=\"notranslate\">accepts_nested_attributes_for</code> called <code class=\"notranslate\">:public_id_column</code></p>\n<p dir=\"auto\">This new argument is intended to allow to specify a public ID column to use for the value of the forms <code class=\"notranslate\">[id]</code> rather than the default public key.</p>\n<p dir=\"auto\">I chose add an option to <code class=\"notranslate\">accepts_nested_attributes_for</code> because its a lot simpler to add an argument to this method rather than to change the basics of ActiveRecord::Base by adding a new method similar to how <code class=\"notranslate\">to_param</code> works. Looking for productive feedback here if we want to take the route of defining a class method or something instead.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Discussion on reddit: <a href=\"https://www.reddit.com/r/rails/comments/13xulzr/how_can_i_use_accepts_nested_attributes_for/\" rel=\"nofollow\">https://www.reddit.com/r/rails/comments/13xulzr/how_can_i_use_accepts_nested_attributes_for/</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48390",
+            "title": "Add :public_id_column option to accepts_nested_attributes_for",
+            "date_modified": "2023-06-02T23:27:08.000Z",
+            "date_published": "2023-06-02T23:25:48.000Z",
+            "author": {
+                "name": "westonganger",
+                "url": "https://github.com/westonganger"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48387.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1738909240\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48387\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48387/hovercard\" href=\"https://github.com/rails/rails/issues/48387\">#48387</a></p>\n<p dir=\"auto\">There are several changes in the diff, so I'm not sure which one, but this fixes things.<br>\n<a class=\"commit-link\" href=\"https://github.com/ruby-i18n/i18n/compare/v1.13.0...v1.14.0\">ruby-i18n/i18n@<tt>v1.13.0...v1.14.0</tt></a></p>",
             "url": "https://github.com/rails/rails/pull/48389",
             "title": "Fix AV:TranslationHelperTest due to i18n v1.14.0 changes",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adrianna-chang-shopify",
                 "url": "https://github.com/adrianna-chang-shopify"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110363331?u=c550f969fbc210d0495a428fa75e6bb29b3ea029&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is what the file said.</p>\n<p dir=\"auto\"><code class=\"notranslate\">TODO: Consider renaming this method, as it only conditionally extends keys, not always</code>,</p>\n<p dir=\"auto\">so I changed the method name.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the <code class=\"notranslate\">TODO:</code> and renamed it to the <code class=\"notranslate\">append_if_exist_keys_including_timestamps</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48244",
-            "title": "Fix method name for `InsertAll#keys_including_timestamps`",
-            "date_modified": "2023-05-18T00:34:49.000Z",
-            "date_published": "2023-05-17T10:32:51.000Z",
-            "author": {
-                "name": "asberel",
-                "url": "https://github.com/asberel"
             }
         }
     ]
