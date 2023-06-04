@@ -6,17 +6,6 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132421698?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"gem\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f48e.png\">💎</g-emoji> A lightweight, modular, and extendable 3D game engine built for the web.</div>",
-            "url": "https://github.com/lattice-engine/lattice",
-            "title": "lattice-engine/lattice: 💎 A lightweight, modular, and extendable 3D game engine built for the web.",
-            "date_modified": "2023-05-29T21:52:25.000Z",
-            "date_published": "2023-05-03T03:24:34.000Z",
-            "author": {
-                "name": "lattice-engine",
-                "url": "https://github.com/lattice-engine"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5470780?u=6bbe4327bf20246631d5129de8895fccb4806544&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Very simple and lightweight AJAX implementation for Nette</div>",
             "url": "https://github.com/matronator/axette",
             "title": "matronator/axette: Very simple and lightweight AJAX implementation for Nette",
@@ -25,6 +14,17 @@
             "author": {
                 "name": "matronator",
                 "url": "https://github.com/matronator"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132421698?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"gem\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f48e.png\">💎</g-emoji> A lightweight, modular, and extendable 3D game engine built for the web.</div>",
+            "url": "https://github.com/lattice-engine/lattice",
+            "title": "lattice-engine/lattice: 💎 A lightweight, modular, and extendable 3D game engine built for the web.",
+            "date_modified": "2023-05-29T21:52:25.000Z",
+            "date_published": "2023-05-03T03:24:34.000Z",
+            "author": {
+                "name": "lattice-engine",
+                "url": "https://github.com/lattice-engine"
             }
         },
         {
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2776142?u=97f92cdcd20c19e1a0059492d9a28c14390ae2eb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Super lightweight SVG identicon (pixelated avatar) generator</div>",
             "url": "https://github.com/laurentpayot/minidenticons",
             "title": "laurentpayot/minidenticons: Super lightweight SVG identicon (pixelated avatar) generator",
-            "date_modified": "2023-06-04T00:00:17.000Z",
+            "date_modified": "2023-06-04T03:19:55.000Z",
             "date_published": "2021-03-16T07:55:04.000Z",
             "author": {
                 "name": "laurentpayot",
