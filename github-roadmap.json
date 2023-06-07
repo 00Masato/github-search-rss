@@ -6,6 +6,17 @@
     "description": "github/roadmap Issues on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\"><a href=\"https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#fine-grained-personal-access-tokens\">Fine-grained PATs</a> today are limited to only the user or organization namespace they are created for. This hinders inner-source use, where repositories in another organization in your enterprise are marked <a href=\"https://docs.github.com/en/enterprise-cloud@latest/repositories/creating-and-managing-repositories/about-repositories#about-internal-repositories\"><code class=\"notranslate\">internal</code> </a>.  With this change, fine-grained PATs will optionally be able to access <code class=\"notranslate\">internal</code> repositories from the same enterprise, if the token is scoped to an enterprise-owned organization.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Inner-source is a critical feature for enterprise developers collaborating on GitHub, allowing them to share code and dependencies within their enterprise freely. Supporting that in fine-grained PATs makes it easier to use these tokens in inner-source scenarios.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">A checkbox will appear in the fine-grained PAT creation settings when an enterprise-owned organization is chosen as the resource owner. This checkbox will be checked by default, and when checked, indicates that the token is allowed to access inner-sourced data in the enterprise that owns the chosen organization.</p>",
+            "url": "https://github.com/github/roadmap/issues/790",
+            "title": "Fine-grained PAT support for inner-source repositories",
+            "date_modified": "2023-06-07T19:06:48.000Z",
+            "date_published": "2023-06-07T19:06:22.000Z",
+            "author": {
+                "name": "github-product-roadmap",
+                "url": "https://github.com/github-product-roadmap"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">You'll gain an enhanced view of the security risk page allowing you to see a count per repository of security alerts by alert severity or security feature.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Today, enterprises users need to be able to view a total count of alerts by severity or by security feature for a group of repositories.</p>\n<p dir=\"auto\">This feature aims to give users dynamic views to enable users to quickly and easily identify the most critical security risks and prioritize their remediation efforts.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">Users will be presented with a toggle on the security risk page to switch between two different row-level presentations: a sum of alerts by alert severity across all security features, and a sum of alerts by security feature across all alert severities.</p>",
             "url": "https://github.com/github/roadmap/issues/789",
             "title": "Enhancing the security risk page with grouped alert counts",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">At both the enterprise and organization levels, you will be able to easily filter the security overview data by repository properties, giving you the ability to more efficiently analyze and manage security risks.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Enterprises users have long-requested the ability to group their repositories for easier monitoring of code security status within security overview. Users have specifically requested the ability to filter the risk and coverage views and alert-centric view in security overview by a specific subset of repositories, rather than having to look at all repositories at once.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">With this feature, repository properties will be automatically available for filtering via the search bar. This means that you can easily search for specific repositories and filter results based on various repository properties you have setup.</p>",
             "url": "https://github.com/github/roadmap/issues/785",
             "title": "Repository properties integration with security overview",
-            "date_modified": "2023-05-12T19:19:50.000Z",
+            "date_modified": "2023-06-07T19:06:46.000Z",
             "date_published": "2023-05-12T17:00:49.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -64,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">At the organization level, you will be able to enhance the security of your repositories by easily choosing the <code class=\"notranslate\">security-extended</code> query suite when enabling code scanning default setup for multiple repositories.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Enterprises users have requested the ability to enable CodeQL at scale and use the <code class=\"notranslate\">security-extended</code> query suite. Currently, the only way to enable CodeQL with the <code class=\"notranslate\">security-extended</code> query suite is at the repository level. This creates a significant workload for users and leads to dissatisfaction with the process.</p>\n<p dir=\"auto\">This feature makes that job easier.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">With this feature, you will be able choose between the <code class=\"notranslate\">security-extended</code>  and the <code class=\"notranslate\">default</code> query suite when enabling repositories at the organization level when using the \"enable all\" feature or the multi-repo enablement feature on the security coverage page.</p>",
             "url": "https://github.com/github/roadmap/issues/784",
             "title": "Code scanning default setup makes it possible to use security-extended CodeQL query suite across your organization",
-            "date_modified": "2023-05-12T16:58:47.000Z",
+            "date_modified": "2023-06-07T19:06:45.000Z",
             "date_published": "2023-05-12T16:58:03.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -75,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">At the enterprise level, you will be able to view a trend of security feature enablement and security alerts in order to analyze your security program's performance.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Today, enterprise users can see only the current status of security alerts and security feature enablement at the enterprise level.  It's not possible to get a historical view of trends across your enterprise.  With this feature, users will be able to see a trend of security feature enablement and security alerts at the enterprise level.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">We will offer two new pages in security overview at the enterprise level similar to what we'll offer at the organization level: security coverage trends and risk trends that will house trends graphs for the following security features:</p>\n<ul dir=\"auto\">\n<li>Dependabot alerts</li>\n<li>Code scanning alerts</li>\n<li>Secret scanning alerts</li>\n<li>Push protection <em>(enablement trends graph only)</em></li>\n<li>GitHub Advanced Security <em>(enablement trends graph only)</em></li>\n</ul>",
             "url": "https://github.com/github/roadmap/issues/783",
             "title": "View a trend of security feature enablement/security alerts for your enterprise",
-            "date_modified": "2023-05-12T16:58:45.000Z",
+            "date_modified": "2023-06-07T19:06:44.000Z",
             "date_published": "2023-05-12T16:58:00.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -152,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">Currently, projects can only support 1200 active items and 10,000 archived items but we've heard from many larger teams that these limits are too low for the work they need to track such as long-running backlogs. While we can't completely remove the limit for projects, we will raise the limit to approximately 50k active items to better support this scenario.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">For long running projects or all-encompassing backlogs for companies, the current limit for project items is too constricting. In order to better serve our large team and enterprise customers, we need to increase this limit so that their projects can grow as they do.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">Projects will work as they do now, just with a higher upper limit on active items.</p>",
             "url": "https://github.com/github/roadmap/issues/776",
             "title": "Projects: Increase project item limit ",
-            "date_modified": "2023-05-10T18:09:48.000Z",
+            "date_modified": "2023-06-07T19:11:19.000Z",
             "date_published": "2023-05-10T18:09:01.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -163,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">When upgrading to a new version of GHES we do not provide any information about how the upgrade is progressing. We know that running the necessary database migrations is one of the longest parts of any upgrade, so we want to provide more insight into how this step of the upgrade is progressing.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Starting in GitHub Enterprise Server 3.9, enterprise administrators will be able to see the progress of the migrations that are running as part of an upgrade <strong>in real time</strong>.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">We will print concise and easy-to-read information to the SSH console about the migrations that are running during an upgrade. Administrators will be able to monitor this information <strong>in real time</strong> to see how the migrations are progressing.</p>",
             "url": "https://github.com/github/roadmap/issues/775",
             "title": "GitHub Enterprise Server: See how migrations are progressing during an upgrade",
-            "date_modified": "2023-05-10T18:09:46.000Z",
+            "date_modified": "2023-06-07T19:08:47.000Z",
             "date_published": "2023-05-10T18:08:56.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -174,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">Today, there is no way for consumer of individual actions to determine its trustworthiness and quality, other than analyzing whether it comes from a verified creator. Enterprises have been asking for actions that follow standards (e.g: CodeQL, timely dependency updates, etc.).</p>\n<p dir=\"auto\">When this work is complete, we will automatically run checks on repositories hosting published Actions to determine if the repository where the Action is hosted follows security best practices. We use a subset of OpenSSF (Open Source Security Foundation) scorecard checks to make this determination and publish that metadata as part of the Action listing page and details.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">We are building this to continue our credibility with customers that GitHub is serious about security. With 17K actions on the Marketplace and more getting added every day, it's imperative that we surface the necessary metadata for  consumers to be able to make decisions about what actions they can rely on.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">Whenever there's a state change in a repository (based on certain rules) a dynamic workflow is kicked off to run the checks. The results from the scoring are then surfaced on to the listing page. Since it's a new change, once we go GA, we will give action creators a grace period to make any desired changes, after which the results will be automatically published to the listing details page. New actions authored and published after the GA date will automatically get graded.</p>\n<p dir=\"auto\">These checks against a repository that's hosting the action will evaluate holistic security practices, source risk assessment and build risk assessment.</p>",
             "url": "https://github.com/github/roadmap/issues/774",
             "title": "Automatic security check information on each Actions listing",
-            "date_modified": "2023-05-10T18:05:57.000Z",
+            "date_modified": "2023-06-07T19:08:46.000Z",
             "date_published": "2023-05-10T18:05:20.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -185,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">Previously, customers needed to store this configuration data as encrypted secrets in order to reuse values in Actions features like reusable workflows. While extremely secure, this method did not allow for easy storage and retrieval of non-sensitive configuration data such as compiler flags, usernames, or server names.</p>\n<p dir=\"auto\">Configuration variables allow you to store your non sensitive data as plain text variables that can be reused across your workflows in your repository or organization. You can define variables at Organization, Repository, or Environment level based on your requirement.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<ul dir=\"auto\">\n<li>Configuration variables help developers define their non-sensitive information as plain text variables that can be consumed across multiple workflows in the repository.</li>\n<li>Configuration variables allows you to define default parameters for tools like our Java compiler at an organization level, but permit individual development teams to override them as they see fit.</li>\n<li>Configuration variables help DevOps team to provide a ‘golden path’ for build and deployment patterns while still allowing customization and control by the developers we support.</li>\n</ul>\n<h3 dir=\"auto\">How will it work?</h3>\n<ul dir=\"auto\">\n<li>Customer can create new Variables at Organization, Repository and Environment level.</li>\n<li>Customers can refer to the value of the variable in the workflow documents using the contruct <code class=\"notranslate\">${{vars.&lt;variable name&gt;}}</code></li>\n<li>The inheritance model for variables i.e. Org, Repo, Env work similar to secrets.</li>\n</ul>",
             "url": "https://github.com/github/roadmap/issues/773",
             "title": "GitHub Actions configuration variables - GA",
-            "date_modified": "2023-05-10T18:05:56.000Z",
+            "date_modified": "2023-06-07T19:08:45.000Z",
             "date_published": "2023-05-10T18:05:16.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -196,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">Previously, to create a <a href=\"https://docs.github.com/en/actions/using-workflows/creating-starter-workflows-for-your-organization#creating-a-starter-workflow\">custom starter workflow</a>, customers needed to add their starter workflows to a public .github repository in their organization. However, organizations don't want to maintain their custom starter workflows in a public repository. Now, org admins have control to choose their own repository(s) (public/private/internal) in the organization to store their custom starter workflows. Any workflow stored in starter-workflows folder in the chosen repositories will be shown as a org suggested starter workflows for the developer.</p>\n<p dir=\"auto\">And we are also enhancing the new workflow experience in the repository. You will see a dedicated page for showing organization starter workflows.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Org admins can choose specific repositories (public, private, internal) of their choice to maintain their custom starter workflows. Developers can see the org suggested starter workflows when they try to create a new workflow.</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<ul dir=\"auto\">\n<li>Org admin configures the set of repositories to use for storing starter workflows.</li>\n<li>Team members can contribute and store the starter workflows in the starter-workflows folder in the chosen repositories.</li>\n<li>The visibility of the repository decides in what repositories the starter workflow shows up as a suggestion.</li>\n<li>When a developer clicks on new workflow in a repository, he/she can see the org suggested starter workflows in a separate section.</li>\n</ul>",
             "url": "https://github.com/github/roadmap/issues/772",
             "title": "GitHub Actions Starter workflow improvements",
-            "date_modified": "2023-05-10T18:05:55.000Z",
+            "date_modified": "2023-06-07T19:08:44.000Z",
             "date_published": "2023-05-10T18:05:13.000Z",
             "author": {
                 "name": "github-product-roadmap",
@@ -207,19 +218,8 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">We are now adding support for built-in protection rules which can be natively enabled on all environments. These would compliment the community powered custom protection rules which are powered by GitHub Apps.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<p dir=\"auto\">Built-in protection rules enable us to provide key CD capabilities within \"environments\" by default. These preempt the experience for “discovery” and “installation” needed by custom rules powered by \"GitHub Apps\".</p>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">Built-in protection rules make “Environments” more robust with native gating capabilities which tie into the other GitHub features that we support across our product.</p>",
             "url": "https://github.com/github/roadmap/issues/771",
             "title": "Actions: Built-in deployment protection rules (gates)",
-            "date_modified": "2023-05-12T17:01:20.000Z",
+            "date_modified": "2023-06-07T19:08:43.000Z",
             "date_published": "2023-05-10T18:05:10.000Z",
-            "author": {
-                "name": "github-product-roadmap",
-                "url": "https://github.com/github-product-roadmap"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67656570?u=71034939d8d88be6d9b9068038dfdc8158fa69c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">GitHub Actions Importer helps users plan, forecast, and automate the migration of their existing CI/CD pipelines to GitHub Actions. With this update, we will be adding support for Bamboo. Bamboo users can migrate their pipelines to GitHub Actions easily and for free using the official GitHub CLI.</p>\n<h3 dir=\"auto\">Intended Outcome</h3>\n<ul dir=\"auto\">\n<li>Simplify the pipeline migration process for Bamboo users by automating manual and tedious steps</li>\n<li>Reduce the potential for errors during migration and speed up development teams</li>\n</ul>\n<h3 dir=\"auto\">How will it work?</h3>\n<p dir=\"auto\">Users will be able to migrate existing Bamboo pipelines to GitHub Actions using the <code class=\"notranslate\">audit</code>, <code class=\"notranslate\">forecast</code>, <code class=\"notranslate\">dry-run</code>, and <code class=\"notranslate\">migrate</code> subcommands of <code class=\"notranslate\">gh actions-importer</code></p>",
-            "url": "https://github.com/github/roadmap/issues/770",
-            "title": "GitHub Actions Importer - Bamboo Migrations",
-            "date_modified": "2023-05-25T22:47:38.000Z",
-            "date_published": "2023-05-10T18:05:07.000Z",
             "author": {
                 "name": "github-product-roadmap",
                 "url": "https://github.com/github-product-roadmap"

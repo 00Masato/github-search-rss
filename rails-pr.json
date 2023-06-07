@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The most recent <a href=\"https://buildkite.com/rails/rails/builds/97003\" rel=\"nofollow\">build</a> of 7-0-stable is still failing due to the i18n issue.</p>",
-            "url": "https://github.com/rails/rails/pull/48417",
-            "title": "Bump i18n to fix actionview failures",
-            "date_modified": "2023-06-07T09:29:34.000Z",
-            "date_published": "2023-06-07T08:42:49.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730182935\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48330\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48330/hovercard\" href=\"https://github.com/rails/rails/issues/48330\">#48330</a></p>\n<p dir=\"auto\">When replacing the has_one target, it seems more correct to first delete the old record, so that if the associated model has a uniqueness validator, it won't fail.</p>\n<p dir=\"auto\">Both the delete and the insert are in a single transaction, so if the new record fail to be saved, the transaction will be rolled back, which seems correct.</p>\n<p dir=\"auto\">If <code class=\"notranslate\">dependent: :destroy</code> isn't set, Active Record will try to orphan the record, which may or may not be valid depending on the schema and validators.</p>\n<p dir=\"auto\">Co-Authored-By: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nov/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nov\">@nov</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a></p>",
             "url": "https://github.com/rails/rails/pull/48416",
             "title": "Add tests around has_one changing the target and validators",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "adrianna-chang-shopify",
                 "url": "https://github.com/adrianna-chang-shopify"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110363331?u=c550f969fbc210d0495a428fa75e6bb29b3ea029&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is what the file said.</p>\n<p dir=\"auto\"><code class=\"notranslate\">TODO: Consider renaming this method, as it only conditionally extends keys, not always</code>,</p>\n<p dir=\"auto\">so I changed the method name.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the <code class=\"notranslate\">TODO:</code> and renamed it to the <code class=\"notranslate\">append_if_exist_keys_including_timestamps</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48244",
+            "title": "Fix method name for `InsertAll#keys_including_timestamps`",
+            "date_modified": "2023-05-18T00:34:49.000Z",
+            "date_published": "2023-05-17T10:32:51.000Z",
+            "author": {
+                "name": "asberel",
+                "url": "https://github.com/asberel"
             }
         }
     ]
