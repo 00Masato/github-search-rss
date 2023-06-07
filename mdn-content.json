@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #12741.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1124695775\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/12741\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/12741/hovercard\" href=\"https://github.com/mdn/content/issues/12741\">#12741</a>, <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27007.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1728820912\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27007\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27007/hovercard\" href=\"https://github.com/mdn/content/issues/27007\">#27007</a>.</p>\n<p dir=\"auto\">As far as I can tell there was never a \"Monitoring attribute values\" section: the link was added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"743819745\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/110\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/110/hovercard\" href=\"https://github.com/mdn/content/pull/110\">#110</a>, and at that point the linked content did not AFAICT exist, and it has never existed since. So this PR adds a live sample showing how to use this feature, instead.</p>",
-            "url": "https://github.com/mdn/content/pull/27193",
-            "title": "Fix issue 12741: add a live example that gets attribute old values",
-            "date_modified": "2023-06-07T06:53:20.000Z",
-            "date_published": "2023-06-07T06:51:23.000Z",
-            "author": {
-                "name": "wbamberg",
-                "url": "https://github.com/wbamberg"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF82 and earlier lack of support for a feature is old news and is no longer needed in note format.</p>",
             "url": "https://github.com/mdn/content/pull/27191",
             "title": "comment re < FF83 edited out",
@@ -119,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">These glossary entries are designed to make it easier to talk about setlike and maplike objects, and what APIs might be present in both readonly and read/write versions.</p>\n<p dir=\"auto\">I've listed the items I could find in both types in the appropriate entries.</p>\n<p dir=\"auto\">I also added a comment about the IDL.</p>\n<p dir=\"auto\">Follows on from comment in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730232976\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27028\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/27028/hovercard?comment_id=1218633996&amp;comment_type=review_comment\" href=\"https://github.com/mdn/content/pull/27028#discussion_r1218633996\">#27028 (comment)</a></p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wbamberg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wbamberg\">@wbamberg</a></p>",
             "url": "https://github.com/mdn/content/pull/27160",
             "title": "Glossary - new entries for Maplike and Setlike objects",
-            "date_modified": "2023-06-06T21:53:25.000Z",
+            "date_modified": "2023-06-07T12:16:15.000Z",
             "date_published": "2023-06-06T05:21:45.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "0h4crying0utloud",
                 "url": "https://github.com/0h4crying0utloud"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes instances of broken Specifications macros.</p>\n<ul dir=\"auto\">\n<li>Escaping instances of usage in a template</li>\n<li>Adding <code class=\"notranslate\">spec_urls</code> in guides where appropriate</li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/27113",
+            "title": "fix(macros): Broken Specifications macros fixed by escaping or adding spec URLs",
+            "date_modified": "2023-06-05T15:27:59.000Z",
+            "date_published": "2023-06-02T11:21:21.000Z",
+            "author": {
+                "name": "bsmth",
+                "url": "https://github.com/bsmth"
             }
         }
     ]
