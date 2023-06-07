@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">exec_insert</code> and <code class=\"notranslate\">insert</code> methods accept a <code class=\"notranslate\">returning</code> argument, however only PostgreSQL adapter fully supports it. This commit adds a validation that raises in case if value passed as <code class=\"notranslate\">returning</code> is not supported by the adapter.</p>\n<p dir=\"auto\">The check allows to supply one-sized Array for the \"unsupported\" case as technically SQLite and MySQL can return the inserted row id, but no more than that, at least at this moment.</p>\n<h3 dir=\"auto\">Implementation details</h3>\n<p dir=\"auto\">Since <code class=\"notranslate\">insert</code> method eventually calls into <code class=\"notranslate\">exec_insert</code> the validation only exists in the <code class=\"notranslate\">exec_insert</code> method. Validation is extracted into a separate method so both default and Trilogy's <code class=\"notranslate\">exec_insert</code> implementation can share it</p>",
             "url": "https://github.com/rails/rails/pull/48418",
             "title": "Raise if `exec_insert` and `insert` are used with an unsupported `returning` value",
-            "date_modified": "2023-06-07T14:44:46.000Z",
+            "date_modified": "2023-06-07T15:18:50.000Z",
             "date_published": "2023-06-07T14:44:41.000Z",
             "author": {
                 "name": "nvasilevski",
