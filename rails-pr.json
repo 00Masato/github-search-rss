@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48402.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1742847168\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48402\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48402/hovercard\" href=\"https://github.com/rails/rails/issues/48402\">#48402</a></p>\n<p dir=\"auto\">Some HTTP client and proxies have a 4kiB header limit, but more importantly including preload links has diminishing returns so it's best to not go overboard</p>\n<p dir=\"auto\">1kB worth of preload links should be plenty.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nateberkopec/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nateberkopec\">@nateberkopec</a></p>",
             "url": "https://github.com/rails/rails/pull/48405",
             "title": "Stop appending preload links once the head is already 1kB",
-            "date_modified": "2023-06-07T05:35:41.000Z",
+            "date_modified": "2023-06-07T06:48:23.000Z",
             "date_published": "2023-06-06T12:21:40.000Z",
             "author": {
                 "name": "casperisfine",
