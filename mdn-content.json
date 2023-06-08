@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10350960?u=c22553d591adbe2aa0afa991ff83759db21c2eea&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the specified username in CODEOWNERS to mdn-bot. I believe the PAT listed in the repo already uses the one from the <code class=\"notranslate\">mdn-bot</code> account. If the auto merge fails, a new PAT token will need to be generated and added.</p>",
-            "url": "https://github.com/mdn/content/pull/27220",
-            "title": "Update CODEOWNERS",
-            "date_modified": "2023-06-08T12:05:33.000Z",
-            "date_published": "2023-06-08T12:05:32.000Z",
-            "author": {
-                "name": "schalkneethling",
-                "url": "https://github.com/schalkneethling"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11002344?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Clarify <code class=\"notranslate\">aciveTab</code> permission effect on <code class=\"notranslate\">executeScript</code> when context menu is opened for a subframe.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Developers may expect that acquiring the <code class=\"notranslate\">activeTab</code> permission though add-on's context menu item gives access to the frame where the menu is opened, but actually content script may be injected into the top tab page.</p>\n<p dir=\"auto\">My confusion led to creation of the <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1736127544\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27098\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/27098/hovercard\" href=\"https://github.com/mdn/content/pull/27098\">#27098</a> wrong pull request.</p>",
             "url": "https://github.com/mdn/content/pull/27219",
             "title": "webext permissions: activeTab and menu for a subframe",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Snowyamur",
                 "url": "https://github.com/Snowyamur"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Django 4.0 updated to 4.0.10 - this updates the text.</p>\n<p dir=\"auto\">Note, Django itself is up to 4.2. It is about time to update this to the new version, but that requires a little time and planning. So for now, just doing minimal tidy.</p>",
+            "url": "https://github.com/mdn/content/pull/27145",
+            "title": "Update to Django 4.0.10",
+            "date_modified": "2023-06-04T23:31:38.000Z",
+            "date_published": "2023-06-04T23:29:33.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
             }
         }
     ]
