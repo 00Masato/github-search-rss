@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/116599673?u=92c23164153d27f37d8b09ac0f4ad752020f25a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A (small) layer on top of phaser w/ utils for tilemap and lazy loading. Shamlessly ripped off (and a v lightweight alternative to) from @latticexyz/phaserx.</div>",
+            "url": "https://github.com/smallbraingames/small-phaser",
+            "title": "smallbraingames/small-phaser: A (small) layer on top of phaser w/ utils for tilemap and lazy loading. Shamlessly ripped off (and a v lightweight alternative to) from @latticexyz/phaserx.",
+            "date_modified": "2023-06-08T03:39:25.000Z",
+            "date_published": "2023-06-05T21:00:51.000Z",
+            "author": {
+                "name": "smallbraingames",
+                "url": "https://github.com/smallbraingames"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
+            "url": "https://github.com/WhiskeySockets/Baileys",
+            "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
+            "date_modified": "2023-06-09T02:54:22.000Z",
+            "date_published": "2022-01-12T20:38:14.000Z",
+            "author": {
+                "name": "WhiskeySockets",
+                "url": "https://github.com/WhiskeySockets"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45546819?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight online IDE to write JS SPA prototypes in your own GitHub gists.</div>",
             "url": "https://github.com/dumberjs/dumber-gist",
             "title": "dumberjs/dumber-gist: A lightweight online IDE to write JS SPA prototypes in your own GitHub gists.",
@@ -86,22 +108,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"icecream\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f366.png\">🍦</g-emoji>VanJS: World's smallest reactive UI framework - Everyone can build a useful UI app in an hour</div>",
             "url": "https://github.com/vanjs-org/van",
             "title": "vanjs-org/van: 🍦VanJS: World's smallest reactive UI framework - Everyone can build a useful UI app in an hour",
-            "date_modified": "2023-06-09T01:19:52.000Z",
+            "date_modified": "2023-06-09T03:14:24.000Z",
             "date_published": "2023-05-08T05:45:31.000Z",
             "author": {
                 "name": "vanjs-org",
                 "url": "https://github.com/vanjs-org"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/116599673?u=92c23164153d27f37d8b09ac0f4ad752020f25a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A (small) layer on top of phaser w/ utils for tilemap and lazy loading. Shamlessly ripped off (and a v lightweight alternative to) from @latticexyz/phaserx.</div>",
-            "url": "https://github.com/smallbraingames/small-phaser",
-            "title": "smallbraingames/small-phaser: A (small) layer on top of phaser w/ utils for tilemap and lazy loading. Shamlessly ripped off (and a v lightweight alternative to) from @latticexyz/phaserx.",
-            "date_modified": "2023-06-08T03:39:25.000Z",
-            "date_published": "2023-06-05T21:00:51.000Z",
-            "author": {
-                "name": "smallbraingames",
-                "url": "https://github.com/smallbraingames"
             }
         },
         {
@@ -152,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
             "url": "https://github.com/lit/lit",
             "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
-            "date_modified": "2023-06-09T01:23:03.000Z",
+            "date_modified": "2023-06-09T03:04:46.000Z",
             "date_published": "2017-06-29T16:27:16.000Z",
             "author": {
                 "name": "lit",
@@ -193,17 +204,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
-            "url": "https://github.com/WhiskeySockets/Baileys",
-            "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
-            "date_modified": "2023-06-09T01:45:21.000Z",
-            "date_published": "2022-01-12T20:38:14.000Z",
-            "author": {
-                "name": "WhiskeySockets",
-                "url": "https://github.com/WhiskeySockets"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/53829896?u=5f4fc4b86c81036f67488acc58298498250963ce&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight state management library with validation support</div>",
             "url": "https://github.com/adv0cat/renewx",
             "title": "adv0cat/renewx: Lightweight state management library with validation support",
@@ -215,14 +215,14 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52702476?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Bugsnag client</div>",
-            "url": "https://github.com/birchill/bugsnag-zero",
-            "title": "birchill/bugsnag-zero: Lightweight Bugsnag client",
-            "date_modified": "2023-04-25T12:17:47.000Z",
-            "date_published": "2021-07-23T08:05:41.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60198665?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, open source, stateless, and self-hosted alternative to linktree in a Docker container!</div>",
+            "url": "https://github.com/techno-tim/littlelink-server",
+            "title": "techno-tim/littlelink-server: A lightweight, open source, stateless, and self-hosted alternative to linktree in a Docker container!",
+            "date_modified": "2023-06-09T03:10:27.000Z",
+            "date_published": "2021-08-10T02:53:44.000Z",
             "author": {
-                "name": "birchill",
-                "url": "https://github.com/birchill"
+                "name": "techno-tim",
+                "url": "https://github.com/techno-tim"
             }
         }
     ]
