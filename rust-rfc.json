@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding a (defaulted) generic parameter to the <code class=\"notranslate\">core::future::Future</code> trait to allow more flexibility in <code class=\"notranslate\">Future::poll</code>'s second argument (<code class=\"notranslate\">context</code>).</p>\n<p dir=\"auto\">This is would allow new <code class=\"notranslate\">Waker</code>s to be created, that may be used to:</p>\n<ul dir=\"auto\">\n<li>Allow the creation of ABI-stable wakers, allowing futures constructed by a shared object to be run on another's executor.</li>\n<li>Allow wakers to adopt other structures that that of vtable/pointer pairs, which may be desirable to certain domains.</li>\n<li>Allow specific futures to rely on additional behaviour of specific wakers that certain executors may provide.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/generic-futures/text/3434-generic-futures.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3434",
             "title": "Generic Futures",
-            "date_modified": "2023-06-08T19:23:44.000Z",
+            "date_modified": "2023-06-09T13:49:40.000Z",
             "date_published": "2023-05-22T08:17:38.000Z",
             "author": {
                 "name": "p-avital",
