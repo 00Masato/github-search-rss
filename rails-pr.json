@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1395795206\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46187\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46187/hovercard\" href=\"https://github.com/rails/rails/pull/46187\">#46187</a> to<code class=\"notranslate\">6-1-stable</code> branch.</p>\n<p dir=\"auto\">Same as <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1749370288\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48431\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48431/hovercard\" href=\"https://github.com/rails/rails/pull/48431\">#48431</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/48432",
+            "title": "[6-1-stable] Backport flakey fix for EncodedKeyCacheBehavior",
+            "date_modified": "2023-06-09T08:26:59.000Z",
+            "date_published": "2023-06-09T08:26:23.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A recent <a href=\"https://buildkite.com/rails/rails/builds/97039#01889f1c-a6b7-4a6d-8182-a2530e75abe6/1186-1197\" rel=\"nofollow\">build failed</a> due to this, which looks like the same reason <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1395795206\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46187\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46187/hovercard\" href=\"https://github.com/rails/rails/pull/46187\">#46187</a> was merged to main.</p>",
             "url": "https://github.com/rails/rails/pull/48431",
             "title": "[7-0-stable] Backport flakey fix for EncodedKeyCacheBehavior",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "goulvench",
                 "url": "https://github.com/goulvench"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22918438?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Certain applications (e.g. Shopify, GitHub), retry all database queries and have been patching <code class=\"notranslate\">#execute</code> / <code class=\"notranslate\">#raw_execute</code> to change the <code class=\"notranslate\">allow_retry</code> kwarg to true. This is brittle. Enabling retries globally should be an option for apps that are willing to accept the risks.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Wondering if it's safe to retry transaction-related db methods (e.g. <code class=\"notranslate\">#commit_db_transaction</code>, <code class=\"notranslate\">#exec_restart_db_transaction</code>). As it stands, Shopify's retry patch <em>will</em> retry all of these queries, but our retry patch used to be transaction-aware. Should we stick to avoiding retries, even if the the application has configured retries globally, with these methods or are they fine to retry?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eileencodes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eileencodes\">@eileencodes</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
-            "url": "https://github.com/rails/rails/pull/48247",
-            "title": "Introduce Active Record config to enable database queries to be retried",
-            "date_modified": "2023-05-22T16:04:21.000Z",
-            "date_published": "2023-05-17T15:26:51.000Z",
-            "author": {
-                "name": "adrianna-chang-shopify",
-                "url": "https://github.com/adrianna-chang-shopify"
             }
         }
     ]
