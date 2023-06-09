@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes a couple things:</p>\n<ul dir=\"auto\">\n<li>Backports <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/ba97e9f918bc2ffe8ed351a0e0b8d75b67d26086/hovercard\" href=\"https://github.com/rails/rails/commit/ba97e9f918bc2ffe8ed351a0e0b8d75b67d26086\"><tt>ba97e9f</tt></a> to get rubocop green</li>\n<li>Fixes setup-ruby caching of bundler</li>\n<li>Updates the Gemfile.lock to work with Ruby 2.7 and Bundler 2.3.17 (bundled with)</li>\n</ul>\n<p dir=\"auto\">The motivation here is that when this job fails, it can be surprising to contributors who want to backport a change to this stable branch and it fails. This change could also make a positive impact in the event of a release of this stable branch, for example see also (<a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/c9bacd293e10a084beec59ca18ba4223d4c79ab2/hovercard\" href=\"https://github.com/rails/rails/commit/c9bacd293e10a084beec59ca18ba4223d4c79ab2\"><tt>c9bacd2</tt></a>, <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/107423677b8b9acdcf9709cff205b43209962842/hovercard\" href=\"https://github.com/rails/rails/commit/107423677b8b9acdcf9709cff205b43209962842\"><tt>1074236</tt></a>) where there is still an effort to make stable branches green.</p>\n<p dir=\"auto\">You can also see that the bundler cache for the rubocop workflow never worked, as there are no caches:<br>\n<a href=\"https://github.com/rails/rails/actions/caches?query=branch%3A6-1-stable++\">https://github.com/rails/rails/actions/caches?query=branch%3A6-1-stable++</a></p>\n<p dir=\"auto\">By specifying <code class=\"notranslate\">cache-version</code> we also ensure that we don't accidentally pick up the bundler cache from another stable branch. For example, if you look at the most <a href=\"https://github.com/rails/rails/actions/caches\">recent caches</a>, you will see the only difference is the ruby version number. (<code class=\"notranslate\">setup-ruby-bundler-cache-v6-ubuntu-22.04-x64-ruby-3.1.4-wd-/home/runner/work/rails/rails-with--without-default doc job cable storage ujs test db-Gemfile.lock-&lt;md5sha&gt;</code>).<br>\nSo we may want to backport a similar change to <code class=\"notranslate\">7-0-stable</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/48426",
-            "title": "[6-1-stable] Fix rubocop workflow",
-            "date_modified": "2023-06-08T22:48:34.000Z",
-            "date_published": "2023-06-08T22:48:33.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">exec_insert</code> and <code class=\"notranslate\">insert</code> methods accept a <code class=\"notranslate\">returning</code> argument, however only PostgreSQL adapter fully supports it. This commit adds a validation that raises in case if value passed as <code class=\"notranslate\">returning</code> is not supported by the adapter.</p>\n<p dir=\"auto\">The check allows to supply one-sized Array for the \"unsupported\" case as technically SQLite and MySQL can return the inserted row id, but no more than that, at least at this moment.</p>\n<h3 dir=\"auto\">Implementation details</h3>\n<p dir=\"auto\">Since <code class=\"notranslate\">insert</code> method eventually calls into <code class=\"notranslate\">exec_insert</code> the validation only exists in the <code class=\"notranslate\">exec_insert</code> method. Validation is extracted into a separate method so both default and Trilogy's <code class=\"notranslate\">exec_insert</code> implementation can share it</p>",
             "url": "https://github.com/rails/rails/pull/48418",
             "title": "Raise if `exec_insert` and `insert` are used with an unsupported `returning` value",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "nicholasdower",
                 "url": "https://github.com/nicholasdower"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1646855043\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47813\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47813/hovercard\" href=\"https://github.com/rails/rails/pull/47813\">#47813</a> to import the linter files directly to Rails source tree</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ zzak@mbp16 rails % ruby -v\nruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-changelogs .\n.............\n\n13 changelogs inspected, 0 offenses detected\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-config-docs .\n\n\n\n$ zzak@mbp16 rails % bundle exec tools/check-links .\nhttps://edgeapi.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html#method-i-encrypt_and_sign\"><pre class=\"notranslate\">$ zzak@mbp16 rails % ruby -v\nruby 3.2.2 (2023-03-30 revision e51014f9c0) [arm64-darwin22]\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-changelogs <span class=\"pl-c1\">.</span>\n.............\n\n13 changelogs inspected, 0 offenses detected\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-config-docs <span class=\"pl-c1\">.</span>\n\n\n\n$ zzak@mbp16 rails % bundle <span class=\"pl-c1\">exec</span> tools/check-links <span class=\"pl-c1\">.</span>\nhttps://edgeapi.rubyonrails.org/classes/ActiveSupport/MessageEncryptor.html#method-i-encrypt_and_sign</pre></div>",
+            "url": "https://github.com/rails/rails/pull/48216",
+            "title": "Import rails-bin linter to rails internal tools lib",
+            "date_modified": "2023-06-07T22:43:11.000Z",
+            "date_published": "2023-05-13T06:53:46.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
