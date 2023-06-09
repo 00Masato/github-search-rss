@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A recent <a href=\"https://buildkite.com/rails/rails/builds/97039#01889f1c-a6b7-4a6d-8182-a2530e75abe6/1186-1197\" rel=\"nofollow\">build failed</a> due to this, which looks like the same reason <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1395795206\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46187\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46187/hovercard\" href=\"https://github.com/rails/rails/pull/46187\">#46187</a> was merged to main.</p>",
+            "url": "https://github.com/rails/rails/pull/48431",
+            "title": "[7-0-stable] Backport flakey fix for EncodedKeyCacheBehavior",
+            "date_modified": "2023-06-09T08:08:48.000Z",
+            "date_published": "2023-06-09T08:08:44.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This catches <code class=\"notranslate\">6-1-stable</code> branch up on <code class=\"notranslate\">AS::EventedFileUpdateChecker</code> flakiness patches.</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1109871265\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44220\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44220/hovercard\" href=\"https://github.com/rails/rails/pull/44220\">#44220</a></li>\n</ul>\n<p dir=\"auto\">Plus:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1232079681\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45061\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45061/hovercard\" href=\"https://github.com/rails/rails/pull/45061\">#45061</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1641130636\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47774\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47774/hovercard\" href=\"https://github.com/rails/rails/pull/47774\">#47774</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1637487468\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47748\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47748/hovercard\" href=\"https://github.com/rails/rails/pull/47748\">#47748</a></li>\n</ul>\n<p dir=\"auto\">Backported from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1748899125\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48427\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48427/hovercard\" href=\"https://github.com/rails/rails/pull/48427\">#48427</a></p>",
+            "url": "https://github.com/rails/rails/pull/48430",
+            "title": "[6-1-stable] Fix flakey AS::EventedFileUpdateChecker",
+            "date_modified": "2023-06-09T07:49:21.000Z",
+            "date_published": "2023-06-09T07:49:18.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Trilogy</code> adapter has a custom implementation of <code class=\"notranslate\">exec_insert</code> method which is a complete duplication of the abstract <code class=\"notranslate\">exec_insert</code> with the <strong>only difference</strong>:  Trilogy's exec insert used to return an unwrapped result while abstract implementation returns <code class=\"notranslate\">ActiveRecord::Result</code>. Though we believe it goes against the method signature as trilogy result and <code class=\"notranslate\">AR::Result</code> do not implement the same interface. Changing the result type to be Active Record result causes only one issue - <code class=\"notranslate\">last_insert_method</code> can not fetch the last inserted id value from <code class=\"notranslate\">ActiveRecord::Result</code> as it doesn't provide such value.  In order to address it we are introducing a new <code class=\"notranslate\">ActiveRecord::TrilogyResult</code> class which is a child class of <code class=\"notranslate\">Result</code> with the only difference - it implements <code class=\"notranslate\">last_insert_id</code> to be used by the <code class=\"notranslate\">last_inserted_id</code> method. The <code class=\"notranslate\">Result</code> itself had to be extended to store the reference to the <code class=\"notranslate\">raw_result</code></p>\n<h3 dir=\"auto\">Alternative solutions for <code class=\"notranslate\">last_inserted_id</code></h3>\n<ol dir=\"auto\">\n<li>Instead of introducing new <code class=\"notranslate\">TrilogyResult</code> class we could have added <code class=\"notranslate\">last_inserted_id</code> method directly to the <code class=\"notranslate\">Result</code> but it doesn't seem correct as not every adapter has such concept as <code class=\"notranslate\">last_inserted_id</code>. For example being able to call <code class=\"notranslate\">last_inserted_id</code> when using <code class=\"notranslate\">PostgresqlAdapter</code> won't make much sense.</li>\n<li>We could have done the same what <code class=\"notranslate\">mysql2</code> adapter does - reach into <code class=\"notranslate\">@connection</code> to get the value:<br>\n<div class=\"Box Box--condensed my-2\">\n  <div class=\"Box-header f6\">\n    <p class=\"mb-0 text-bold\">\n      <a href=\"https://github.com/rails/rails/blob/2a904bf58828e79c10e7838cb5a7550f8a1b5581/activerecord/lib/active_record/connection_adapters/mysql2/database_statements.rb#L69\">rails/activerecord/lib/active_record/connection_adapters/mysql2/database_statements.rb</a>\n    </p>\n    <p class=\"mb-0 color-fg-muted\">\n         Line 69\n      in\n      <a data-pjax=\"true\" class=\"commit-tease-sha\" href=\"/rails/rails/commit/2a904bf58828e79c10e7838cb5a7550f8a1b5581\">2a904bf</a>\n    </p>\n  </div>\n  <div itemprop=\"text\" class=\"Box-body p-0 blob-wrapper blob-wrapper-embedded data\">\n    <table class=\"highlight tab-size mb-0 js-file-line-container\" data-tab-size=\"8\" data-paste-markdown-skip=\"\">\n\n        <tbody><tr class=\"border-0\">\n          <td id=\"L69\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"69\"></td>\n          <td id=\"LC69\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\"> <span class=\"pl-c1\">@raw_connection</span>&amp;.<span class=\"pl-en\">last_id</span> </td>\n        </tr>\n    </tbody></table>\n  </div>\n</div>\n as Trilogy raw connection also provides <code class=\"notranslate\">last_insert_id</code> method. Though it feels much lower-level to reach into the raw connection and relying on <code class=\"notranslate\">Result</code> seems to be a much better abstraction</li>\n</ol>",
             "url": "https://github.com/rails/rails/pull/48428",
             "title": "Remove custom `exec_insert` method from Trilogy adapter",
@@ -14,17 +36,6 @@
             "author": {
                 "name": "nvasilevski",
                 "url": "https://github.com/nvasilevski"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This catches the <code class=\"notranslate\">7-0-stable</code> branch up on <code class=\"notranslate\">AS::EventedFileUpdateChecker</code> flakiness tests fixes.</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1109871265\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44220\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44220/hovercard\" href=\"https://github.com/rails/rails/pull/44220\">#44220</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1641130636\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47774\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47774/hovercard\" href=\"https://github.com/rails/rails/pull/47774\">#47774</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1637487468\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47748\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47748/hovercard\" href=\"https://github.com/rails/rails/pull/47748\">#47748</a></li>\n</ul>\n<p dir=\"auto\">Will also make a similar PR for <code class=\"notranslate\">6-1-stable</code> since <a href=\"https://buildkite.com/rails/rails/builds/97030#01889d9b-37bd-4c16-8eda-609ff559509d/1096-1363\" rel=\"nofollow\">that build</a> is also failing for the same reasons.</p>",
-            "url": "https://github.com/rails/rails/pull/48427",
-            "title": "[7-0-stable] Fix flakey AS::EventedFileUpdateChecker",
-            "date_modified": "2023-06-09T06:48:45.000Z",
-            "date_published": "2023-06-09T01:04:46.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adrianna-chang-shopify",
                 "url": "https://github.com/adrianna-chang-shopify"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110363331?u=c550f969fbc210d0495a428fa75e6bb29b3ea029&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is what the file said.</p>\n<p dir=\"auto\"><code class=\"notranslate\">TODO: Consider renaming this method, as it only conditionally extends keys, not always</code>,</p>\n<p dir=\"auto\">so I changed the method name.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the <code class=\"notranslate\">TODO:</code> and renamed it to the <code class=\"notranslate\">append_if_exist_keys_including_timestamps</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48244",
-            "title": "Fix method name for `InsertAll#keys_including_timestamps`",
-            "date_modified": "2023-05-18T00:34:49.000Z",
-            "date_published": "2023-05-17T10:32:51.000Z",
-            "author": {
-                "name": "asberel",
-                "url": "https://github.com/asberel"
             }
         }
     ]
