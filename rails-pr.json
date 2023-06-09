@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42748004?u=a2f943e4a20b708d6e082b99f8ee277189dce7cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">From <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1692891902\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48111\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48111/hovercard\" href=\"https://github.com/rails/rails/pull/48111\">#48111</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a> and I are working to add tests for the connection error handling paths of the database adapters. During that process, we came across <code class=\"notranslate\">ER_DBACCESS_DENIED_ERROR</code> which was not handled.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">ER_DBACCESS_DENIED_ERROR</code> is the same as <code class=\"notranslate\">ER_ACCESS_DENIED_ERROR</code> except that a database has been given (<a href=\"https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_dbaccess_denied_error\" rel=\"nofollow\">docs</a>), so they will be raising the same Active Record error. When adding this, I also refactored the conditional to a case statement.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48433",
+            "title": "Handle `ER_DBACCESS_DENIED_ERROR` in mysql2 adapter",
+            "date_modified": "2023-06-09T14:41:36.000Z",
+            "date_published": "2023-06-09T14:41:32.000Z",
+            "author": {
+                "name": "jenshenny",
+                "url": "https://github.com/jenshenny"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1395795206\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46187\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46187/hovercard\" href=\"https://github.com/rails/rails/pull/46187\">#46187</a> to<code class=\"notranslate\">6-1-stable</code> branch.</p>\n<p dir=\"auto\">Same as <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1749370288\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48431\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48431/hovercard\" href=\"https://github.com/rails/rails/pull/48431\">#48431</a>.</p>",
             "url": "https://github.com/rails/rails/pull/48432",
             "title": "[6-1-stable] Backport flakey fix for EncodedKeyCacheBehavior",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adrianna-chang-shopify",
                 "url": "https://github.com/adrianna-chang-shopify"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110363331?u=c550f969fbc210d0495a428fa75e6bb29b3ea029&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is what the file said.</p>\n<p dir=\"auto\"><code class=\"notranslate\">TODO: Consider renaming this method, as it only conditionally extends keys, not always</code>,</p>\n<p dir=\"auto\">so I changed the method name.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the <code class=\"notranslate\">TODO:</code> and renamed it to the <code class=\"notranslate\">append_if_exist_keys_including_timestamps</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48244",
-            "title": "Fix method name for `InsertAll#keys_including_timestamps`",
-            "date_modified": "2023-05-18T00:34:49.000Z",
-            "date_published": "2023-05-17T10:32:51.000Z",
-            "author": {
-                "name": "asberel",
-                "url": "https://github.com/asberel"
             }
         }
     ]
