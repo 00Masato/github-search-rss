@@ -6,14 +6,25 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">These CSS pseudo-classes have been supported for a while in Fx, this PR removes references to the deprecated and non-standard <code class=\"notranslate\">-moz</code> prefixes.</p>\n<p dir=\"auto\"><strong>Bugzilla:</strong></p>\n<ul dir=\"auto\">\n<li>Implementation ticket: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1694141\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1694141</a></li>\n</ul>\n<p dir=\"auto\"><strong>Related issues and pull requests:</strong></p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"747522303\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/7431\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/7431/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/7431\">mdn/browser-compat-data#7431</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"839952046\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/3455\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/3455/hovercard\" href=\"https://github.com/mdn/content/issues/3455\">#3455</a></li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/27273",
-            "title": "docs(css): remove `-moz` vendor-prefixed :user-valid and :user-invalid pseudos",
-            "date_modified": "2023-06-12T14:21:46.000Z",
-            "date_published": "2023-06-12T14:18:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR fills out the content for the <a href=\"https://wicg.github.io/web-otp/\" rel=\"nofollow\">WebOTP API</a>. You can find more information about this API at <a href=\"https://developer.chrome.com/articles/web-otp/\" rel=\"nofollow\">Verify phone numbers on the web with the WebOTP API</a>,</p>\n<p dir=\"auto\">Also see my <a href=\"https://docs.google.com/document/d/1vPnLk_CF4LNc0AVl5ieqRv5TKqCroJ8hPCPp9rfTaxw/edit#\" rel=\"nofollow\">research document</a> for details of exactly what changes have been made in this PR.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27278",
+            "title": "Update WebOTP API docs",
+            "date_modified": "2023-06-12T17:48:29.000Z",
+            "date_published": "2023-06-12T17:45:56.000Z",
             "author": {
-                "name": "bsmth",
-                "url": "https://github.com/bsmth"
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1746697948\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27206\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/27206/hovercard?comment_id=1587540841&amp;comment_type=issue_comment\" href=\"https://github.com/mdn/content/pull/27206#issuecomment-1587540841\">#27206 (comment)</a>.</p>",
+            "url": "https://github.com/mdn/content/pull/27277",
+            "title": "Use lowercase for filenames",
+            "date_modified": "2023-06-12T17:12:54.000Z",
+            "date_published": "2023-06-12T17:07:23.000Z",
+            "author": {
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
             }
         },
         {
@@ -130,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/mdn/browser-compat-data/releases/tag/v5.2.63\">BCD release v5.2.63</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/queengooborg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/queengooborg\">@queengooborg</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/sideshowbarker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sideshowbarker\">@sideshowbarker</a></p>",
             "url": "https://github.com/mdn/content/pull/27243",
             "title": "Synchronize with BCD v5.2.63",
-            "date_modified": "2023-06-12T15:58:53.000Z",
+            "date_modified": "2023-06-12T18:06:57.000Z",
             "date_published": "2023-06-10T00:37:52.000Z",
             "author": {
                 "name": "OnkarRuikar",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "wbamberg",
                 "url": "https://github.com/wbamberg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34807039?u=7ee5a501cc6d6cb1c4e0de0a41db70eedcfaa616&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More precise semantics and naming</p>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><code class=\"notranslate\">logJSONData()</code> looks like a name of generic function. We have a function that specifically goes and fetches information about movies. At the moment of logging, the data is not JSON anymore. It's a data structure, which happens to be parsed from JSON. Hence, <code class=\"notranslate\">logMovies()</code>.</p>",
-            "url": "https://github.com/mdn/content/pull/27221",
-            "title": "Update index.md",
-            "date_modified": "2023-06-08T12:10:49.000Z",
-            "date_published": "2023-06-08T12:07:53.000Z",
-            "author": {
-                "name": "ilyash-b",
-                "url": "https://github.com/ilyash-b"
             }
         }
     ]
