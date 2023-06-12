@@ -6,17 +6,6 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7398079?u=27c46bb5c3bc043d05a95612b473ed77597a5d28&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The search collation (activated by the <code class=\"notranslate\">search</code> value for the <code class=\"notranslate\">usage</code> option) should not be used for anything but search. Added note to this effect.</p>",
-            "url": "https://github.com/mdn/content/pull/27274",
-            "title": "Added explanatory note on search vs. sort collations in Intl.Collator.compare",
-            "date_modified": "2023-06-12T15:33:56.000Z",
-            "date_published": "2023-06-12T15:33:42.000Z",
-            "author": {
-                "name": "ben-allen",
-                "url": "https://github.com/ben-allen"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">These CSS pseudo-classes have been supported for a while in Fx, this PR removes references to the deprecated and non-standard <code class=\"notranslate\">-moz</code> prefixes.</p>\n<p dir=\"auto\"><strong>Bugzilla:</strong></p>\n<ul dir=\"auto\">\n<li>Implementation ticket: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1694141\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1694141</a></li>\n</ul>\n<p dir=\"auto\"><strong>Related issues and pull requests:</strong></p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"747522303\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/7431\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/7431/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/7431\">mdn/browser-compat-data#7431</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"839952046\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/3455\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/3455/hovercard\" href=\"https://github.com/mdn/content/issues/3455\">#3455</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/27273",
             "title": "docs(css): remove `-moz` vendor-prefixed :user-valid and :user-invalid pseudos",
@@ -25,17 +14,6 @@
             "author": {
                 "name": "bsmth",
                 "url": "https://github.com/bsmth"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76149603?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The given example cannot work because of the space in the rule. Either has to be as proposed or with the space moved one character to the left.<br>\nGiven the following sentence, I think as proposed is correct.</p>\n<p dir=\"auto\">Also exchanges the semicolon for brackets.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Previous was wrong.</p>\n<h3 dir=\"auto\"><del>Additional details</del></h3>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Didn't check for any</p>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27271",
-            "title": "Fix CSS example for the `of <selector>` syntax",
-            "date_modified": "2023-06-12T12:08:42.000Z",
-            "date_published": "2023-06-12T12:06:17.000Z",
-            "author": {
-                "name": "rb-ar",
-                "url": "https://github.com/rb-ar"
             }
         },
         {
@@ -64,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF115 adds support for <code class=\"notranslate\">URL.canParse()</code>. This just adds the release note.</p>\n<p dir=\"auto\">Other docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1744133960\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27170\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27170/hovercard\" href=\"https://github.com/mdn/content/issues/27170\">#27170</a></p>",
             "url": "https://github.com/mdn/content/pull/27267",
             "title": "FF115 Relnote: URL.canParse() supported",
-            "date_modified": "2023-06-12T06:27:44.000Z",
+            "date_modified": "2023-06-12T16:15:23.000Z",
             "date_published": "2023-06-12T06:25:09.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -124,17 +102,6 @@
             "author": {
                 "name": "estelle",
                 "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11516302?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Exchange element and attribute names</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Because they are misexchanged.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27255",
-            "title": "Fix element and attribute names misexchanged",
-            "date_modified": "2023-06-11T02:17:45.000Z",
-            "date_published": "2023-06-11T02:14:53.000Z",
-            "author": {
-                "name": "mfuji09",
-                "url": "https://github.com/mfuji09"
             }
         },
         {
@@ -223,6 +190,39 @@
             "author": {
                 "name": "hamishwillee",
                 "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25839.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1650570238\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25839\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25839/hovercard\" href=\"https://github.com/mdn/content/issues/25839\">#25839</a>.</p>\n<p dir=\"auto\">Add a line giving a reason for the <code class=\"notranslate\">observer</code> callback parameter, and replace the current example with a live one that uses the <code class=\"notranslate\">observer</code> callback parameter to disconnect the observer.</p>",
+            "url": "https://github.com/mdn/content/pull/27226",
+            "title": "Fix 25839: replace example with one that uses the observer param",
+            "date_modified": "2023-06-09T06:51:02.000Z",
+            "date_published": "2023-06-08T22:39:53.000Z",
+            "author": {
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27143.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1740535938\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27143\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27143/hovercard\" href=\"https://github.com/mdn/content/issues/27143\">#27143</a> , by using a different event that macOS doesn't intercept.</p>",
+            "url": "https://github.com/mdn/content/pull/27224",
+            "title": "Fix 27143: use a different mouse event",
+            "date_modified": "2023-06-09T17:56:22.000Z",
+            "date_published": "2023-06-08T21:04:59.000Z",
+            "author": {
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34807039?u=7ee5a501cc6d6cb1c4e0de0a41db70eedcfaa616&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More precise semantics and naming</p>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><code class=\"notranslate\">logJSONData()</code> looks like a name of generic function. We have a function that specifically goes and fetches information about movies. At the moment of logging, the data is not JSON anymore. It's a data structure, which happens to be parsed from JSON. Hence, <code class=\"notranslate\">logMovies()</code>.</p>",
+            "url": "https://github.com/mdn/content/pull/27221",
+            "title": "Update index.md",
+            "date_modified": "2023-06-08T12:10:49.000Z",
+            "date_published": "2023-06-08T12:07:53.000Z",
+            "author": {
+                "name": "ilyash-b",
+                "url": "https://github.com/ilyash-b"
             }
         }
     ]
