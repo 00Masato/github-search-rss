@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR corrects the data for the Storage Access API for Chrome.  This feature is reserved to Chrome's proprietary first-party sets and is not available to all websites, so it is marked as partial implementation.</p>\n<p dir=\"auto\">Additionally, this removes the <code class=\"notranslate\">version_removed</code> set on the flags.  Not only were they incorrect (they were off by one), but the flag still enables the feature for websites not within first-party sets.  (Although keeping the flag is technically against our irrelevant flag data policy, I feel that it is still worthwhile to retain as I personally don't consider gated access like first-party sets or origin trials to be \"supported\".)</p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/20094",
             "title": "Correct data for Storage Access API",
-            "date_modified": "2023-06-12T08:42:49.000Z",
+            "date_modified": "2023-06-12T09:12:58.000Z",
             "date_published": "2023-06-12T05:35:51.000Z",
             "author": {
                 "name": "queengooborg",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5543595?u=21820b6f5512fa6c3051e40e73360a732440b412&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Masonry layout is now supported and enabled by default in Safari Technology Preview</p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<p dir=\"auto\"><a href=\"https://developer.apple.com/videos/play/wwdc2023/10121\" rel=\"nofollow\">https://developer.apple.com/videos/play/wwdc2023/10121</a></p>\n<h4 dir=\"auto\">Related issues</h4>\n\n",
             "url": "https://github.com/mdn/browser-compat-data/pull/20084",
             "title": "Update masonry support on Safari TP",
-            "date_modified": "2023-06-09T15:26:25.000Z",
+            "date_modified": "2023-06-12T09:07:52.000Z",
             "date_published": "2023-06-09T11:07:45.000Z",
             "author": {
                 "name": "Th3S4mur41",
