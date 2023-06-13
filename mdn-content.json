@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97270539?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Just changing the singular \"parenthesis\" to the plural \"parentheses\"</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27305",
-            "title": "Fix typo in index.md",
-            "date_modified": "2023-06-13T17:36:11.000Z",
-            "date_published": "2023-06-13T17:35:58.000Z",
-            "author": {
-                "name": "amorphedstar",
-                "url": "https://github.com/amorphedstar"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14862687?u=837ee644eec256f26de9c4c9c7ec0fa92f162c97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Added example for fallback content</p>\n<p dir=\"auto\">\"<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27300.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1755061718\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27300\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27300/hovercard\" href=\"https://github.com/mdn/content/issues/27300\">#27300</a>\"</p>",
             "url": "https://github.com/mdn/content/pull/27304",
             "title": "Update index.md",
@@ -196,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The MDN <a href=\"https://developer.mozilla.org/en-US/docs/Web/Security\" rel=\"nofollow\">Security</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/Privacy\" rel=\"nofollow\">Privacy</a> pages are not currently finished, have missing details, and don't really present a cohesive story of what the key topics are in this area. This PR intends to provide an update to these pages.</p>\n<p dir=\"auto\">Note - this is nowhere near finished yet, do not review for now</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27268",
             "title": "Update privacy landing page",
-            "date_modified": "2023-06-12T06:51:28.000Z",
+            "date_modified": "2023-06-13T20:04:36.000Z",
             "date_published": "2023-06-12T06:48:54.000Z",
             "author": {
                 "name": "chrisdavidmills",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "NGPixel",
                 "url": "https://github.com/NGPixel"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <a href=\"/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers\"><code class=\"notranslate\">Access-Control-Allow-Headers</code></a> is a response header to a <a href=\"/en-US/docs/Glossary/Preflight_request\">CORS preflight request</a>, which indicates what request headers may be included in the final request.<br>\nAccording to the spec, the response directive can contain a wildcard (<code class=\"notranslate\">*</code>) indicating all headers except the <code class=\"notranslate\">Authorization</code> header are allowed.</p>\n<p dir=\"auto\">Browsers have been ignoring this and including the Authorization header, but FF and Chrome (at least) are now looking to deprecate the old behaviour. FF115 adds the  spec behaviour behind a preference.<br>\nNote that the preference is negative - i.e. normally you enable a feature by setting it <code class=\"notranslate\">true</code>, but in this case the preference is true by default and you have to set to <code class=\"notranslate\">false</code> to get the new/spec behaviour.</p>\n<p dir=\"auto\">Other docs work for this can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1749159520\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27230\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27230/hovercard\" href=\"https://github.com/mdn/content/issues/27230\">#27230</a></p>",
+            "url": "https://github.com/mdn/content/pull/27264",
+            "title": "ExprFeat: Access-Control-Allow-Headers wildcard disallow Authorization header",
+            "date_modified": "2023-06-12T02:41:22.000Z",
+            "date_published": "2023-06-12T02:39:18.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
             }
         }
     ]
