@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52702476?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Bugsnag client</div>",
+            "url": "https://github.com/birchill/bugsnag-zero",
+            "title": "birchill/bugsnag-zero: Lightweight Bugsnag client",
+            "date_modified": "2023-04-25T12:17:47.000Z",
+            "date_published": "2021-07-23T08:05:41.000Z",
+            "author": {
+                "name": "birchill",
+                "url": "https://github.com/birchill"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2489845?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and dependency free input masking library created specific for Vue</div>",
+            "url": "https://github.com/RonaldJerez/vue-input-facade",
+            "title": "RonaldJerez/vue-input-facade: A lightweight and dependency free input masking library created specific for Vue",
+            "date_modified": "2023-06-11T16:55:39.000Z",
+            "date_published": "2019-12-12T18:05:42.000Z",
+            "author": {
+                "name": "RonaldJerez",
+                "url": "https://github.com/RonaldJerez"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
             "url": "https://github.com/lit/lit",
             "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
@@ -20,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
             "url": "https://github.com/usememos/memos",
             "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
-            "date_modified": "2023-06-14T04:06:07.000Z",
+            "date_modified": "2023-06-14T04:10:26.000Z",
             "date_published": "2021-12-08T15:30:18.000Z",
             "author": {
                 "name": "usememos",
@@ -97,11 +119,22 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
             "url": "https://github.com/WhiskeySockets/Baileys",
             "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
-            "date_modified": "2023-06-14T03:02:09.000Z",
+            "date_modified": "2023-06-14T05:04:57.000Z",
             "date_published": "2022-01-12T20:38:14.000Z",
             "author": {
                 "name": "WhiskeySockets",
                 "url": "https://github.com/WhiskeySockets"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75623219?u=bf1acd25c9ab0cfa8bbb3b41d16245243a010295&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
+            "url": "https://github.com/zennn08/Baileys-2",
+            "title": "zennn08/Baileys-2: Lightweight full-featured typescript/javascript WhatsApp Web API",
+            "date_modified": "2023-06-14T04:36:44.000Z",
+            "date_published": "2023-06-14T03:01:52.000Z",
+            "author": {
+                "name": "zennn08",
+                "url": "https://github.com/zennn08"
             }
         },
         {
@@ -190,39 +223,6 @@
             "author": {
                 "name": "YDtheFoo",
                 "url": "https://github.com/YDtheFoo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/88813519?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Reservoir Sync-Node is a customizable lightweight indexer based on the Reservoir indexer. It's easy to set up, customizable, and fast.</div>",
-            "url": "https://github.com/reservoirprotocol/reservoir-sync-node",
-            "title": "reservoirprotocol/reservoir-sync-node: Reservoir Sync-Node is a customizable lightweight indexer based on the Reservoir indexer. It's easy to set up, customizable, and fast.",
-            "date_modified": "2023-06-09T13:04:11.000Z",
-            "date_published": "2023-04-20T15:05:51.000Z",
-            "author": {
-                "name": "reservoirprotocol",
-                "url": "https://github.com/reservoirprotocol"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1428790?u=91684cf69589f3ad99122bd4e4058c5419dde751&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Full feature, lightweight, dependency injection container</div>",
-            "url": "https://github.com/IgorBabkin/ts-ioc-container",
-            "title": "IgorBabkin/ts-ioc-container: Full feature, lightweight, dependency injection container",
-            "date_modified": "2023-03-03T15:21:21.000Z",
-            "date_published": "2020-10-24T13:32:09.000Z",
-            "author": {
-                "name": "IgorBabkin",
-                "url": "https://github.com/IgorBabkin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/129597179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Modularity for TypeScript applications</div>",
-            "url": "https://github.com/softarc-consulting/sheriff",
-            "title": "softarc-consulting/sheriff: Lightweight Modularity for TypeScript applications",
-            "date_modified": "2023-06-14T02:17:44.000Z",
-            "date_published": "2023-04-01T13:03:55.000Z",
-            "author": {
-                "name": "softarc-consulting",
-                "url": "https://github.com/softarc-consulting"
             }
         }
     ]
