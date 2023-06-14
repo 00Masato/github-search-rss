@@ -6,10 +6,43 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27313",
+            "title": "removed \"on\" from \"onEvent\"",
+            "date_modified": "2023-06-14T01:14:57.000Z",
+            "date_published": "2023-06-14T01:12:42.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">the install event is not exactly deprecated, but the <code class=\"notranslate\">oninstall</code> is. added note to see the valid page and added link in see also as well.</p>",
+            "url": "https://github.com/mdn/content/pull/27312",
+            "title": "added link to non-deprecated resource",
+            "date_modified": "2023-06-14T01:16:06.000Z",
+            "date_published": "2023-06-14T00:53:34.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Not sure why we have two pages on the same topic. Will discuss deleting this page. In the meantime, linking to the more updated fetch event page.</p>",
+            "url": "https://github.com/mdn/content/pull/27311",
+            "title": "Add see also link",
+            "date_modified": "2023-06-14T00:50:08.000Z",
+            "date_published": "2023-06-14T00:47:54.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/mdn/browser-compat-data/releases/tag/v5.2.64\">BCD release v5.2.64</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/queengooborg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/queengooborg\">@queengooborg</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/sideshowbarker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sideshowbarker\">@sideshowbarker</a></p>",
             "url": "https://github.com/mdn/content/pull/27310",
             "title": "Synchronize with BCD v5.2.64",
-            "date_modified": "2023-06-14T00:38:16.000Z",
+            "date_modified": "2023-06-14T00:40:08.000Z",
             "date_published": "2023-06-14T00:37:59.000Z",
             "author": {
                 "name": "OnkarRuikar",
@@ -47,17 +80,6 @@
             "author": {
                 "name": "estelle",
                 "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is yet another attempt to improve <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-alternates</a>.</p>\n<p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1746697948\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27206\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/27206/hovercard?comment_id=1588133715&amp;comment_type=issue_comment\" href=\"https://github.com/mdn/content/pull/27206#issuecomment-1588133715\">#27206 (comment)</a> etc.</p>\n<p dir=\"auto\">This PR:</p>\n<ul dir=\"auto\">\n<li>removes the redundant <code class=\"notranslate\">font-feature-settings: \"swsh\" 1;</code></li>\n<li>explains a bit about how this property works alongside <code class=\"notranslate\">@font-feature-values</code> and how it relates to <code class=\"notranslate\">font-feature-settings</code>, and what the example is doing</li>\n<li>add some links to See also</li>\n</ul>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/drott/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/drott\">@drott</a> , if you would like to check this for accuracy I would appreciate it!</p>",
-            "url": "https://github.com/mdn/content/pull/27306",
-            "title": "Better explanation of font-variant-alternates versus font-feature-set…",
-            "date_modified": "2023-06-13T17:50:52.000Z",
-            "date_published": "2023-06-13T17:36:00.000Z",
-            "author": {
-                "name": "wbamberg",
-                "url": "https://github.com/wbamberg"
             }
         },
         {
@@ -160,17 +182,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10562319?u=6575194a13e312d3d1aeabe67ebde47eb624c892&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The SharedWorker() constructor creates a SharedWorker object that executes a script at a specified URL, adhering to the same-origin policy. It has three possible syntaxes and takes parameters such as the URL and optional name and options. The name parameter allows multiple instances of a shared worker to be started, providing an identifying name for the worker's scope. The options parameter can specify the worker type, credentials, and name. Exceptions like SecurityError, NetworkError, and SyntaxError may be thrown based on certain conditions. The example demonstrates how to create and use a SharedWorker object, including message posting and handling. Additional examples and a full shared worker example are available on the MDN website.</p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25636.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1640605359\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25636\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25636/hovercard\" href=\"https://github.com/mdn/content/issues/25636\">#25636</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27285",
-            "title": "Update index.md FIXED: #25636 ",
-            "date_modified": "2023-06-13T03:58:37.000Z",
-            "date_published": "2023-06-13T02:28:35.000Z",
-            "author": {
-                "name": "PixelJunkie33",
-                "url": "https://github.com/PixelJunkie33"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">these links are relevant, but only the Service Worker API is linked to from the sidebar; so added that when i added the other two</p>",
             "url": "https://github.com/mdn/content/pull/27283",
             "title": "Added see also to service worker register method",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "chrisdavidmills",
                 "url": "https://github.com/chrisdavidmills"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Response/json_static\" rel=\"nofollow\">Response: json() static method</a> close to the template.<br>\nFor example, it adds the bcd, exceptions, and it will add more examples. BCD doesn't appear to have synced yet though.</p>\n<p dir=\"auto\">This is part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1744132850\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27169/hovercard\" href=\"https://github.com/mdn/content/issues/27169\">#27169</a></p>",
-            "url": "https://github.com/mdn/content/pull/27269",
-            "title": "Response json() static method improvements",
-            "date_modified": "2023-06-13T23:54:57.000Z",
-            "date_published": "2023-06-12T07:33:22.000Z",
-            "author": {
-                "name": "hamishwillee",
-                "url": "https://github.com/hamishwillee"
             }
         }
     ]
