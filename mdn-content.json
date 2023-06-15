@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27134.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1740224040\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27134\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27134/hovercard\" href=\"https://github.com/mdn/content/issues/27134\">#27134</a></p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27345",
+            "title": "Document nested and cyclic array stringification",
+            "date_modified": "2023-06-15T11:26:17.000Z",
+            "date_published": "2023-06-15T11:24:13.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Removing the <code class=\"notranslate\">charset</code> prop page and redirecting to <code class=\"notranslate\">&lt;meta charset=</code>.</p>\n<p dir=\"auto\"><strong>Changes:</strong></p>\n<ul dir=\"auto\">\n<li>Removed <code class=\"notranslate\">&lt;script charset=</code> from attributes page as this is deprecated (see <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#deprecated_attributes\" rel=\"nofollow\"><code class=\"notranslate\">&lt;script&gt;</code> page</a>)</li>\n</ul>\n<p dir=\"auto\"><strong>Related issues and pull requests:</strong></p>\n<ul dir=\"auto\">\n<li>Introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1406365534\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/21511\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/21511/hovercard\" href=\"https://github.com/mdn/content/pull/21511\">#21511</a></li>\n<li><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27339.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1758262932\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27339\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27339/hovercard\" href=\"https://github.com/mdn/content/issues/27339\">#27339</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/27342",
             "title": "docs(html): delete HTMLMetaElement.charset prop, redirecting to meta's 'charset' attr",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Josh-Cena",
                 "url": "https://github.com/Josh-Cena"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Chrome 115 adds the <a href=\"https://gpuweb.github.io/gpuweb/#gpuwgsllanguagefeatures\" rel=\"nofollow\"><code class=\"notranslate\">WGSLLanguageFeatures</code></a> feature of WebGPU. See <a href=\"https://chromestatus.com/feature/5149681044160512\" rel=\"nofollow\">https://chromestatus.com/feature/5149681044160512</a>.</p>\n<p dir=\"auto\">This PR adds content for the following items:</p>\n<ul dir=\"auto\">\n<li>The <code class=\"notranslate\">GPU.wgslLanguageFeatures</code> property</li>\n<li>The <code class=\"notranslate\">WGSLLanguageFeatures</code> class</li>\n</ul>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27295",
-            "title": "Add WGSLLanguageFeatures content",
-            "date_modified": "2023-06-13T10:58:32.000Z",
-            "date_published": "2023-06-13T10:56:19.000Z",
-            "author": {
-                "name": "chrisdavidmills",
-                "url": "https://github.com/chrisdavidmills"
             }
         }
     ]
