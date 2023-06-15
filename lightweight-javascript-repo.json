@@ -6,6 +6,39 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112355225?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div> Nevar is a simple, lightweight, and fast discord bot built with discord.js and typescript</div>",
+            "url": "https://github.com/nevar-bot/nevar-ts",
+            "title": "nevar-bot/nevar-ts:  Nevar is a simple, lightweight, and fast discord bot built with discord.js and typescript",
+            "date_modified": "2023-06-10T17:17:23.000Z",
+            "date_published": "2023-06-10T17:06:31.000Z",
+            "author": {
+                "name": "nevar-bot",
+                "url": "https://github.com/nevar-bot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17280617?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight and fast library to format CSS with some very basic rules.</div>",
+            "url": "https://github.com/projectwallace/format-css",
+            "title": "projectwallace/format-css: Lightweight and fast library to format CSS with some very basic rules.",
+            "date_modified": "2023-06-15T21:57:04.000Z",
+            "date_published": "2023-05-26T07:43:19.000Z",
+            "author": {
+                "name": "projectwallace",
+                "url": "https://github.com/projectwallace"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3748807?u=83addcee7d7c3a309bf0f544c853da700eafe285&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and accessible UI component library based on Material Design 3.</div>",
+            "url": "https://github.com/thang2162/m3r",
+            "title": "thang2162/m3r: A lightweight and accessible UI component library based on Material Design 3.",
+            "date_modified": "2023-05-24T22:09:18.000Z",
+            "date_published": "2023-05-19T02:38:37.000Z",
+            "author": {
+                "name": "thang2162",
+                "url": "https://github.com/thang2162"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14338007?u=f3f98b96dc619176260a91079dec7025e135343b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Envelop is a lightweight library allowing developers to easily develop, share, collaborate and extend their GraphQL execution layer. Envelop is the missing GraphQL plugin system. </div>",
             "url": "https://github.com/n1ru4l/envelop",
             "title": "n1ru4l/envelop: Envelop is a lightweight library allowing developers to easily develop, share, collaborate and extend their GraphQL execution layer. Envelop is the missing GraphQL plugin system. ",
@@ -171,6 +204,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/284476?u=ba8631af34e60c326d81db7bd339108f16019f20&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Minimal GraphQL client supporting Node and browsers for scripts or simple apps</div>",
+            "url": "https://github.com/jasonkuhrt/graphql-request",
+            "title": "jasonkuhrt/graphql-request: Minimal GraphQL client supporting Node and browsers for scripts or simple apps",
+            "date_modified": "2023-06-15T10:35:43.000Z",
+            "date_published": "2017-05-10T20:05:07.000Z",
+            "author": {
+                "name": "jasonkuhrt",
+                "url": "https://github.com/jasonkuhrt"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118384270?u=81a0353fff201d2bfad2c4ef9fa112a8b603a240&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Telegramsjs - is a lightweight Node.js library for creating Telegram bots. It is designed to be a framework and does not rely on third-party libraries such as Telegraf.js or node-telegram-bot-api. The library has a syntax that is similar to Discord.js. This library provides a way to create Telegram bots with ease and flexibility.</div>",
             "url": "https://github.com/Sempai-07/Telegramsjs",
             "title": "Sempai-07/Telegramsjs: Telegramsjs - is a lightweight Node.js library for creating Telegram bots. It is designed to be a framework and does not rely on third-party libraries such as Telegraf.js or node-telegram-bot-api. The library has a syntax that is similar to Discord.js. This library provides a way to create Telegram bots with ease and flexibility.",
@@ -179,50 +223,6 @@
             "author": {
                 "name": "Sempai-07",
                 "url": "https://github.com/Sempai-07"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/115743639?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The lightweight markdwon parser for js/ts</div>",
-            "url": "https://github.com/nitono/aeromd",
-            "title": "nitono/aeromd: The lightweight markdwon parser for js/ts",
-            "date_modified": "2023-06-15T15:14:15.000Z",
-            "date_published": "2023-06-15T14:39:57.000Z",
-            "author": {
-                "name": "nitono",
-                "url": "https://github.com/nitono"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
-            "url": "https://github.com/WhiskeySockets/Baileys",
-            "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
-            "date_modified": "2023-06-15T18:51:20.000Z",
-            "date_published": "2022-01-12T20:38:14.000Z",
-            "author": {
-                "name": "WhiskeySockets",
-                "url": "https://github.com/WhiskeySockets"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
-            "url": "https://github.com/usememos/memos",
-            "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
-            "date_modified": "2023-06-15T21:04:18.000Z",
-            "date_published": "2021-12-08T15:30:18.000Z",
-            "author": {
-                "name": "usememos",
-                "url": "https://github.com/usememos"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44549046?u=ce0f22036003835521d75c14635c42605d1e2a88&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, easy-to-use &amp; web-based Gym Progress Tracker <g-emoji class=\"g-emoji\" alias=\"weight_lifting\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f3cb.png\">🏋️</g-emoji></div>",
-            "url": "https://github.com/bentindal/gym-tracker",
-            "title": "bentindal/gym-tracker: A lightweight, easy-to-use & web-based Gym Progress Tracker 🏋️",
-            "date_modified": "2023-06-14T17:30:17.000Z",
-            "date_published": "2022-05-27T23:03:28.000Z",
-            "author": {
-                "name": "bentindal",
-                "url": "https://github.com/bentindal"
             }
         }
     ]
