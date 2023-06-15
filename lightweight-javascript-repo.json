@@ -6,10 +6,76 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118299968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight JavaScript UI library built for the Onsight Editor.</div>",
+            "url": "https://github.com/onsightengine/osui",
+            "title": "onsightengine/osui: Lightweight JavaScript UI library built for the Onsight Editor.",
+            "date_modified": "2023-01-19T02:24:07.000Z",
+            "date_published": "2022-12-16T19:13:08.000Z",
+            "author": {
+                "name": "onsightengine",
+                "url": "https://github.com/onsightengine"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/117127451?u=94cf4271acec7f6297f623ce475ade1175acc64b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A React client for BLEST (Batch-able, Lightweight, Encrypted State Transfer), an improved communication protocol for web APIs which leverages JSON, supports request batching and selective returns, and provides a modern alternative to REST.</div>",
+            "url": "https://github.com/jhuntdev/blest-react",
+            "title": "jhuntdev/blest-react: A React client for BLEST (Batch-able, Lightweight, Encrypted State Transfer), an improved communication protocol for web APIs which leverages JSON, supports request batching and selective returns, and provides a modern alternative to REST.",
+            "date_modified": "2023-06-11T21:17:14.000Z",
+            "date_published": "2023-06-11T21:16:54.000Z",
+            "author": {
+                "name": "jhuntdev",
+                "url": "https://github.com/jhuntdev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52702476?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Bugsnag client</div>",
+            "url": "https://github.com/birchill/bugsnag-zero",
+            "title": "birchill/bugsnag-zero: Lightweight Bugsnag client",
+            "date_modified": "2023-04-25T12:17:47.000Z",
+            "date_published": "2021-07-23T08:05:41.000Z",
+            "author": {
+                "name": "birchill",
+                "url": "https://github.com/birchill"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12740883?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple and lightweight javascript library to create a toast on your website</div>",
+            "url": "https://github.com/togihon/TToast",
+            "title": "togihon/TToast: A simple and lightweight javascript library to create a toast on your website",
+            "date_modified": "2023-06-12T00:57:34.000Z",
+            "date_published": "2023-05-31T15:52:07.000Z",
+            "author": {
+                "name": "togihon",
+                "url": "https://github.com/togihon"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93839494?u=39a3f59a05e7c4e68e66040686b2529013a6b39b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Firn's untrusted, lightweight transaction-forwarding service.</div>",
+            "url": "https://github.com/firnprotocol/relay",
+            "title": "firnprotocol/relay: Firn's untrusted, lightweight transaction-forwarding service.",
+            "date_modified": "2023-06-06T22:06:06.000Z",
+            "date_published": "2023-06-06T22:05:47.000Z",
+            "author": {
+                "name": "firnprotocol",
+                "url": "https://github.com/firnprotocol"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/35982346?u=46fe8713471535bfb8bc4050ef580f6abeb87798&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Typescript - Lightweights WhatsApp bot <g-emoji class=\"g-emoji\" alias=\"robot\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f916.png\">🤖</g-emoji> made to response only self message with Baileys <g-emoji class=\"g-emoji\" alias=\"sparkles\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/2728.png\">✨</g-emoji></div>",
+            "url": "https://github.com/dngda/self-bot",
+            "title": "dngda/self-bot: Typescript - Lightweights WhatsApp bot 🤖 made to response only self message with Baileys ✨",
+            "date_modified": "2023-06-15T01:49:48.000Z",
+            "date_published": "2023-03-15T10:20:27.000Z",
+            "author": {
+                "name": "dngda",
+                "url": "https://github.com/dngda"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11404085?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, customizable Vue UI library for mobile web apps.</div>",
             "url": "https://github.com/youzan/vant",
             "title": "youzan/vant: A lightweight, customizable Vue UI library for mobile web apps.",
-            "date_modified": "2023-06-15T01:08:38.000Z",
+            "date_modified": "2023-06-15T02:15:55.000Z",
             "date_published": "2017-04-19T07:55:31.000Z",
             "author": {
                 "name": "youzan",
@@ -25,17 +91,6 @@
             "author": {
                 "name": "n1ru4l",
                 "url": "https://github.com/n1ru4l"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118299968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight JavaScript UI library built for the Onsight Editor.</div>",
-            "url": "https://github.com/onsightengine/osui",
-            "title": "onsightengine/osui: Lightweight JavaScript UI library built for the Onsight Editor.",
-            "date_modified": "2023-01-19T02:24:07.000Z",
-            "date_published": "2022-12-16T19:13:08.000Z",
-            "author": {
-                "name": "onsightengine",
-                "url": "https://github.com/onsightengine"
             }
         },
         {
@@ -105,6 +160,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25012217?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight CSS extraction plugin</div>",
+            "url": "https://github.com/webpack-contrib/mini-css-extract-plugin",
+            "title": "webpack-contrib/mini-css-extract-plugin: Lightweight CSS extraction plugin",
+            "date_modified": "2023-06-15T02:19:19.000Z",
+            "date_published": "2018-02-28T08:33:28.000Z",
+            "author": {
+                "name": "webpack-contrib",
+                "url": "https://github.com/webpack-contrib"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/85463808?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The Tailwind Theme Manager is a lightweight JavaScript module that allows you to effortlessly manage the theme of your web application built with the Tailwind CSS framework. It provides functionality to initialize the theme based on user preferences and local storage, as well as toggle between dark and light themes.</div>",
             "url": "https://github.com/ercodr/tailwind-theme-manager",
             "title": "ercodr/tailwind-theme-manager: The Tailwind Theme Manager is a lightweight JavaScript module that allows you to effortlessly manage the theme of your web application built with the Tailwind CSS framework. It provides functionality to initialize the theme based on user preferences and local storage, as well as toggle between dark and light themes.",
@@ -157,72 +223,6 @@
             "author": {
                 "name": "bentindal",
                 "url": "https://github.com/bentindal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/128604676?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Quickv is a lightweight form validation library for web applications</div>",
-            "url": "https://github.com/quick-v/quickv",
-            "title": "quick-v/quickv: Quickv is a lightweight form validation library for web applications",
-            "date_modified": "2023-06-14T05:00:15.000Z",
-            "date_published": "2023-04-24T03:04:06.000Z",
-            "author": {
-                "name": "quick-v",
-                "url": "https://github.com/quick-v"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45284565?u=42cf38bb93f83dcceb85a300ff1e574b153bb66a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library to color Node.js terminal output.</div>",
-            "url": "https://github.com/jrson83/colorize-node",
-            "title": "jrson83/colorize-node: A lightweight library to color Node.js terminal output.",
-            "date_modified": "2023-03-15T02:26:53.000Z",
-            "date_published": "2022-04-06T14:48:06.000Z",
-            "author": {
-                "name": "jrson83",
-                "url": "https://github.com/jrson83"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/35706430?u=663a395862864e7d11c619ee7bb5ac8054100710&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight sqlite3 ORM</div>",
-            "url": "https://github.com/scassius/lil-orm",
-            "title": "scassius/lil-orm: A lightweight sqlite3 ORM",
-            "date_modified": "2023-06-13T22:03:08.000Z",
-            "date_published": "2023-06-13T17:16:46.000Z",
-            "author": {
-                "name": "scassius",
-                "url": "https://github.com/scassius"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4947671?u=20b91fe505f91cca66d93d4f2683c84e301594df&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight dependency-free collection of React hooks for Firebase</div>",
-            "url": "https://github.com/andipaetzold/react-firehooks",
-            "title": "andipaetzold/react-firehooks: Lightweight dependency-free collection of React hooks for Firebase",
-            "date_modified": "2023-02-20T16:30:14.000Z",
-            "date_published": "2021-10-14T09:27:08.000Z",
-            "author": {
-                "name": "andipaetzold",
-                "url": "https://github.com/andipaetzold"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4947671?u=20b91fe505f91cca66d93d4f2683c84e301594df&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, dependency-free and well-typed React internationalization library</div>",
-            "url": "https://github.com/andipaetzold/react-hooklation",
-            "title": "andipaetzold/react-hooklation: Lightweight, dependency-free and well-typed React internationalization library",
-            "date_modified": "2022-12-31T00:40:14.000Z",
-            "date_published": "2022-12-30T20:40:19.000Z",
-            "author": {
-                "name": "andipaetzold",
-                "url": "https://github.com/andipaetzold"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3895928?u=27b46ab5d423e524258d4163cda58ab71060db76&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>touch-friendly lightweight chalkboard</div>",
-            "url": "https://github.com/r0d1on/chalkboard",
-            "title": "r0d1on/chalkboard: touch-friendly lightweight chalkboard",
-            "date_modified": "2023-02-16T23:40:22.000Z",
-            "date_published": "2020-06-07T22:20:52.000Z",
-            "author": {
-                "name": "r0d1on",
-                "url": "https://github.com/r0d1on"
             }
         }
     ]
