@@ -6,14 +6,25 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Under \"Examples\", <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Response/error_static\" rel=\"nofollow\">the page for <code class=\"notranslate\">Response.error()</code></a> says:</p>\n<blockquote>\n<p dir=\"auto\">TBD (does not yet appear to be supported anywhere).</p>\n</blockquote>\n<p dir=\"auto\">This is wrong. This PR adds an example, and a bit of clarity about what this method does.</p>",
-            "url": "https://github.com/mdn/content/pull/27354",
-            "title": "Add an example for Response.error()",
-            "date_modified": "2023-06-15T17:12:46.000Z",
-            "date_published": "2023-06-15T17:09:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Addresses feedback provided in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1755825570\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27309\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/27309/hovercard?comment_id=1231639293&amp;comment_type=review_comment\" href=\"https://github.com/mdn/content/pull/27309#discussion_r1231639293\">#27309 (comment)</a></p>",
+            "url": "https://github.com/mdn/content/pull/27359",
+            "title": "setUninstallURL to 1023 update",
+            "date_modified": "2023-06-16T00:22:35.000Z",
+            "date_published": "2023-06-16T00:20:40.000Z",
             "author": {
-                "name": "wbamberg",
-                "url": "https://github.com/wbamberg"
+                "name": "rebloor",
+                "url": "https://github.com/rebloor"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108879845?u=eeb9306682180ab80521c80fd8f46609fe3c6770&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">All issues auto-fixed</p>",
+            "url": "https://github.com/mdn/content/pull/27358",
+            "title": "Markdownlint auto-cleanup",
+            "date_modified": "2023-06-16T00:19:40.000Z",
+            "date_published": "2023-06-16T00:17:57.000Z",
+            "author": {
+                "name": "mdn-bot",
+                "url": "https://github.com/mdn-bot"
             }
         },
         {
@@ -64,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds the <code class=\"notranslate\">{{XsltSidebar}}</code> to pages under <code class=\"notranslate\">files/en-us/web/xpath</code> and <code class=\"notranslate\">files/en-us/web/xslt/</code> which were mostly missing sidebar navigation.</p>\n<h2 dir=\"auto\">Screenshots</h2>\n<h3 dir=\"auto\">Before</h3>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/43580235/243382813-a01b3bfb-ad53-4163-ac62-a174372c34f3.png\"><img src=\"https://user-images.githubusercontent.com/43580235/243382813-a01b3bfb-ad53-4163-ac62-a174372c34f3.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<h3 dir=\"auto\">After</h3>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/43580235/243382982-2c5e2122-1a99-44b3-b36e-b588b099a8cb.png\"><img src=\"https://user-images.githubusercontent.com/43580235/243382982-2c5e2122-1a99-44b3-b36e-b588b099a8cb.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\"><strong>Related issues and pull requests:</strong></p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1741922144\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/yari/issues/9021\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/yari/pull/9021/hovercard\" href=\"https://github.com/mdn/yari/pull/9021\">mdn/yari#9021</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/27328",
             "title": "feat(sidebars): Add XSLT and XPATH sidebar navigation",
-            "date_modified": "2023-06-14T15:37:52.000Z",
+            "date_modified": "2023-06-16T00:11:20.000Z",
             "date_published": "2023-06-14T15:33:59.000Z",
             "author": {
                 "name": "bsmth",
@@ -160,21 +171,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Provide the documentation for <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1835723\" rel=\"nofollow\">Bug 1835723</a> setUninstallURL should be updated to 1023</p>",
-            "url": "https://github.com/mdn/content/pull/27309",
-            "title": "setUninstallURL to 1023",
-            "date_modified": "2023-06-15T21:49:28.000Z",
-            "date_published": "2023-06-14T00:17:13.000Z",
-            "author": {
-                "name": "rebloor",
-                "url": "https://github.com/rebloor"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Went in to improve the see also links<br>\nRemoved marketing creepiness from the definition</p>",
             "url": "https://github.com/mdn/content/pull/27307",
             "title": "updated PWA glossary definition",
-            "date_modified": "2023-06-13T23:45:18.000Z",
+            "date_modified": "2023-06-16T00:39:30.000Z",
             "date_published": "2023-06-13T23:42:58.000Z",
             "author": {
                 "name": "estelle",
@@ -215,14 +215,14 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF115 adds support for <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Response/json_static\" rel=\"nofollow\"><code class=\"notranslate\">Response: json()</code> static method</a> in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1758943\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1758943</a></p>\n<p dir=\"auto\">This adds a a release note.</p>\n<p dir=\"auto\">Related tracking doc in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1744132850\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27169/hovercard\" href=\"https://github.com/mdn/content/issues/27169\">#27169</a></p>",
-            "url": "https://github.com/mdn/content/pull/27289",
-            "title": "FF115Relnote: Response: json() static method supported",
-            "date_modified": "2023-06-14T15:44:31.000Z",
-            "date_published": "2023-06-13T05:59:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">these links are relevant, but only the Service Worker API is linked to from the sidebar; so added that when i added the other two</p>",
+            "url": "https://github.com/mdn/content/pull/27283",
+            "title": "Added see also to service worker register method",
+            "date_modified": "2023-06-13T00:36:41.000Z",
+            "date_published": "2023-06-13T00:34:42.000Z",
             "author": {
-                "name": "hamishwillee",
-                "url": "https://github.com/hamishwillee"
+                "name": "estelle",
+                "url": "https://github.com/estelle"
             }
         }
     ]
