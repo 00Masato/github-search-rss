@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48485.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1759188604\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48485\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48485/hovercard\" href=\"https://github.com/rails/rails/issues/48485\">#48485</a></p>",
+            "url": "https://github.com/rails/rails/pull/48494",
+            "title": "Support beginless and endless ranges in `to_fs`",
+            "date_modified": "2023-06-16T06:48:00.000Z",
+            "date_published": "2023-06-16T06:35:34.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5279284?u=40cbc3d0cb818159797fa8856c88c9e87fd8bd49&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Update NOTE for add_enum_value - Enum values can be renamed.<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1204835730\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44898\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44898/hovercard\" href=\"https://github.com/rails/rails/pull/44898\">#44898</a></p>\n<p dir=\"auto\">cc: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rayfaddis/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rayfaddis\">@rayfaddis</a></p>",
             "url": "https://github.com/rails/rails/pull/48492",
             "title": "Update NOTE for add_enum_value [ci skip] ",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "westonganger",
                 "url": "https://github.com/westonganger"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I recently had a need to specify an alternative name for the key when used ActiveModel's <code class=\"notranslate\">as_json</code> method with <code class=\"notranslate\">:methods</code> option. For example, I have a <code class=\"notranslate\">User</code> model and I want to render its <code class=\"notranslate\">nick</code> as a <code class=\"notranslate\">unique_id</code>.</p>\n<p dir=\"auto\">While this can be achieved by using <code class=\"notranslate\">alias</code>/<code class=\"notranslate\">alias_method</code> for methods (and <code class=\"notranslate\">alias_attribute</code> for attributes) in the model itself, it does not always makes sense to have them in the model, because the name can be from a different domain (vocabulary etc) and so be confusing when defined there.</p>\n<p dir=\"auto\">Now, this is possible with the following syntax:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"user.as_json(methods: [:permalink, { unique_id: :nick }])\n# =&gt; { &quot;id&quot; =&gt; 1, &quot;name&quot; =&gt; &quot;Konata Izumi&quot;, &quot;age&quot; =&gt; 16, &quot;nick&quot; =&gt; &quot;kozumi&quot;,\n#      &quot;permalink&quot; =&gt; &quot;1-konata-izumi&quot;, &quot;unique_id&quot; =&gt; &quot;kozumi&quot; }\"><pre class=\"notranslate\"><span class=\"pl-en\">user</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">as_json</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">methods</span>: <span class=\"pl-kos\">[</span><span class=\"pl-pds\">:permalink</span><span class=\"pl-kos\">,</span> <span class=\"pl-kos\">{</span> <span class=\"pl-pds\">unique_id</span>: <span class=\"pl-pds\">:nick</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; { \"id\" =&gt; 1, \"name\" =&gt; \"Konata Izumi\", \"age\" =&gt; 16, \"nick\" =&gt; \"kozumi\",</span>\n<span class=\"pl-c\">#      \"permalink\" =&gt; \"1-konata-izumi\", \"unique_id\" =&gt; \"kozumi\" }</span></pre></div>\n<p dir=\"auto\">This works for attributes too:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"user.as_json(except: [:name], methods: { nickname: :name })\"><pre class=\"notranslate\"><span class=\"pl-en\">user</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">as_json</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">except</span>: <span class=\"pl-kos\">[</span><span class=\"pl-pds\">:name</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">methods</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-pds\">nickname</span>: <span class=\"pl-pds\">:name</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span></pre></div>",
-            "url": "https://github.com/rails/rails/pull/48386",
-            "title": "Add ability to specify resulting key names for `as_json` `:methods` option",
-            "date_modified": "2023-06-02T21:18:11.000Z",
-            "date_published": "2023-06-02T20:50:53.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
