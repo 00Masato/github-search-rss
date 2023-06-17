@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3446",
+            "title": "Introduce the Store API for great good.",
+            "date_modified": "2023-06-17T13:43:08.000Z",
+            "date_published": "2023-06-17T13:40:53.000Z",
+            "author": {
+                "name": "matthieu-m",
+                "url": "https://github.com/matthieu-m"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36625023?u=dba7deb4fbb4c429e08b309e3e3f9feba236ae28&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is my RFC! It was disccused in a <a href=\"https://internals.rust-lang.org/t/idea-implied-enum-types/18349\" rel=\"nofollow\">forum thread</a> and a <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/122651-general/topic/RFC.20inferred.20types\" rel=\"nofollow\">zulip</a> thread.</p>\n<p dir=\"auto\"><a href=\"https://github.com/JoshuaBrest/rfcs/blob/master/text/0000-infered-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3444",
             "title": "Infered types",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "recatek",
                 "url": "https://github.com/recatek"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3050060?u=6ca85464b07c5464a052250a4fc3e3f9c03c97ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rust/issues/32104\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/32104/hovercard\">Tracking issue</a></p>\n<p dir=\"auto\">cc @rust-lang/rustdoc</p>\n<p dir=\"auto\"><a href=\"https://github.com/GuillaumeGomez/rfcs/blob/rustdoc-bundle-local-images/text/000-rustdoc-bundle-local-resources.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3397",
-            "title": "Bundle local images in rustdoc output",
-            "date_modified": "2023-06-02T10:07:14.000Z",
-            "date_published": "2023-02-27T09:58:56.000Z",
-            "author": {
-                "name": "GuillaumeGomez",
-                "url": "https://github.com/GuillaumeGomez"
             }
         }
     ]
