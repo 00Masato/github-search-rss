@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/451321?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new syntax for multi-line string literals designed to contain code and play nicely with <code class=\"notranslate\">rustfmt</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Diggsey/rfcs/blob/code-string-literals/text/0000-code-literals.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3450",
+            "title": "Propose code string literals",
+            "date_modified": "2023-06-18T17:01:29.000Z",
+            "date_published": "2023-06-18T17:01:25.000Z",
+            "author": {
+                "name": "Diggsey",
+                "url": "https://github.com/Diggsey"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/563826?u=a408b5784df40b974e45854386172e7e7ebc1797&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add new <code class=\"notranslate\">is_{arch}_feature_enabled</code> macros for detecting at compile time if a target feature is enabled in a context.</p>\n<p dir=\"auto\"><a href=\"https://github.com/calebzulawski/rfcs/blob/target-feature-enabled/text/3449-target-feature-enabled.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3449",
             "title": "Contextual target feature detection",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3446",
             "title": "Introduce the Store API for great good.",
-            "date_modified": "2023-06-18T15:38:28.000Z",
+            "date_modified": "2023-06-18T17:05:12.000Z",
             "date_published": "2023-06-17T13:40:53.000Z",
             "author": {
                 "name": "matthieu-m",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "lulf",
                 "url": "https://github.com/lulf"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656507?u=6660e21862872967475a54df58143d25987e350b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes extending the <code class=\"notranslate\">expect</code> attribute` from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"310615309\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2383\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2383/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2383\">#2383</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/JarredAllen/rust-lang-rfcs/blob/expect-attribute-count-parameter/text/0000-expect-attribute-count-parameter.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3400",
-            "title": "Add a count parameter to the expect attribute",
-            "date_modified": "2023-03-17T16:50:26.000Z",
-            "date_published": "2023-03-13T21:46:30.000Z",
-            "author": {
-                "name": "JarredAllen",
-                "url": "https://github.com/JarredAllen"
             }
         }
     ]
