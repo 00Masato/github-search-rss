@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/563826?u=a408b5784df40b974e45854386172e7e7ebc1797&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add new <code class=\"notranslate\">is_{arch}_feature_enabled</code> macros for detecting at compile time if a target feature is enabled in a context.</p>\n<p dir=\"auto\"><a href=\"https://github.com/calebzulawski/rfcs/blob/target-feature-enabled/text/3449-target-feature-enabled.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3449",
+            "title": "Contextual target feature detection",
+            "date_modified": "2023-06-18T03:01:05.000Z",
+            "date_published": "2023-06-18T02:46:56.000Z",
+            "author": {
+                "name": "calebzulawski",
+                "url": "https://github.com/calebzulawski"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3446",
             "title": "Introduce the Store API for great good.",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "JarredAllen",
                 "url": "https://github.com/JarredAllen"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22198616?u=38fc398a34cdd9e77a0de8733826dc59e6cd5fb9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Let's make it more elegant to conditionally compile trait bounds by allowing cfg-attributes directly in where clauses.</p>\n<p dir=\"auto\"><a href=\"https://github.com/recatek/rfcs/blob/cfg-attribute-in-where/text/3399-cfg-attribute-in-where.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3399",
-            "title": "Allow cfg-attributes in where clauses",
-            "date_modified": "2023-03-17T19:41:33.000Z",
-            "date_published": "2023-03-11T18:44:58.000Z",
-            "author": {
-                "name": "recatek",
-                "url": "https://github.com/recatek"
             }
         }
     ]
