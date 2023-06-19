@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5279284?u=40cbc3d0cb818159797fa8856c88c9e87fd8bd49&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Update doc to use <code class=\"notranslate\">to_fs</code> over deprecated <code class=\"notranslate\">to_s</code></p>",
-            "url": "https://github.com/rails/rails/pull/48518",
-            "title": "update doc to use to_fs over deprecated to_s [ci-skip]",
-            "date_modified": "2023-06-19T07:50:13.000Z",
-            "date_published": "2023-06-19T07:50:10.000Z",
-            "author": {
-                "name": "sampatbadhe",
-                "url": "https://github.com/sampatbadhe"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75765648?u=1dc3ffb2f347af44627baa665b1b2dff0abd7dd1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Currently, insert_all/upsert_all only accept array of hashes, so I want to make it accept array of models as well.<br>\nExample:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Book.insert_all([\n  Book.new(title: &quot;Rework&quot;, author: &quot;David&quot;),\n  Book.new(title: &quot;Eloquent Ruby&quot;, author: &quot;Russ&quot;)\n])\"><pre class=\"notranslate\"><code class=\"notranslate\">Book.insert_all([\n  Book.new(title: \"Rework\", author: \"David\"),\n  Book.new(title: \"Eloquent Ruby\", author: \"Russ\")\n])\n</code></pre></div>\n\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">If you do not want timestamp values to be updated automatically, you must set record_timestamps to false.<br>\nExample:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Book.insert_all([Book.new(title: &quot;Rework&quot;, author: &quot;David&quot;)])\nBook.last.updated_at = '2023-05-23 20:37:10.97 UTC'\n\nBook.insert_all([Book.new(title: &quot;Rework&quot;, author: &quot;David&quot;)], record_timestamps: false)\nBook.last.updated_at = nil\"><pre class=\"notranslate\"><code class=\"notranslate\">Book.insert_all([Book.new(title: \"Rework\", author: \"David\")])\nBook.last.updated_at = '2023-05-23 20:37:10.97 UTC'\n\nBook.insert_all([Book.new(title: \"Rework\", author: \"David\")], record_timestamps: false)\nBook.last.updated_at = nil\n</code></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48513",
             "title": "Allow insert_all/upsert_all to use an array of models",
-            "date_modified": "2023-06-19T07:14:50.000Z",
+            "date_modified": "2023-06-19T11:10:53.000Z",
             "date_published": "2023-06-18T13:30:51.000Z",
             "author": {
                 "name": "TakuyaKurimoto",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "nvasilevski",
                 "url": "https://github.com/nvasilevski"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18366969?u=e6919af135d360a17f71ab7380f0d57fe08be21a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because there is no explanation of <code class=\"notranslate\">ActiveRecord::Relation#pick</code> in the guide.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes to add the documentation for <code class=\"notranslate\">ActiveRecord::Relation#pick</code> to the guide.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<ul dir=\"auto\">\n<li>api url: <a href=\"https://edgeapi.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-pluck\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActiveRecord/Calculations.html#method-i-pluck</a></li>\n<li>edge guide url: <a href=\"https://edgeguides.rubyonrails.org/active_record_querying.html#pluck\" rel=\"nofollow\">https://edgeguides.rubyonrails.org/active_record_querying.html#pluck</a></li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48404",
+            "title": "Added documentation for `ActiveRecord::Relation#pick` [skip ci]",
+            "date_modified": "2023-06-19T08:43:03.000Z",
+            "date_published": "2023-06-06T07:02:14.000Z",
+            "author": {
+                "name": "soartec-lab",
+                "url": "https://github.com/soartec-lab"
             }
         }
     ]
