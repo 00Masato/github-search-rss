@@ -6,11 +6,33 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5426924?u=03386b83e4af77776e3758e83837cf429e8da886&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/mdn/content/pull/27422",
+            "title": "Fix typo in article on 'header' element",
+            "date_modified": "2023-06-20T00:39:59.000Z",
+            "date_published": "2023-06-20T00:39:37.000Z",
+            "author": {
+                "name": "adrian5",
+                "url": "https://github.com/adrian5"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/mdn/browser-compat-data/releases/tag/v5.2.65\">BCD release v5.2.65</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/queengooborg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/queengooborg\">@queengooborg</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/sideshowbarker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sideshowbarker\">@sideshowbarker</a></p>",
+            "url": "https://github.com/mdn/content/pull/27421",
+            "title": "Synchronize with BCD v5.2.65",
+            "date_modified": "2023-06-20T00:39:17.000Z",
+            "date_published": "2023-06-20T00:37:28.000Z",
+            "author": {
+                "name": "OnkarRuikar",
+                "url": "https://github.com/OnkarRuikar"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94019930?u=84d0553408369d9e4e7adf33fafb4ace4c19fdc3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">the xample code work but catch the error and validate a \"ConstraintNotSatisfiedError\" that not exist and can be confused to people. I change the error name in the catch part</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27419",
-            "title": "ConstraintNotSatisfiedError not exist, \"OverconstrainedError\" is the error name.",
-            "date_modified": "2023-06-19T22:55:44.000Z",
-            "date_published": "2023-06-19T22:55:31.000Z",
+            "url": "https://github.com/mdn/content/pull/27420",
+            "title": "ConstraintNotSatisfiedError not exist, \"OverconstrainedError\" is the …",
+            "date_modified": "2023-06-20T00:37:42.000Z",
+            "date_published": "2023-06-20T00:35:46.000Z",
             "author": {
                 "name": "evazquezb",
                 "url": "https://github.com/evazquezb"
@@ -50,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11516302?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Some markups of HTML in this article are broken.<br>\nFix them to be correct markup.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27410",
-            "title": "Fix some broken HTML",
-            "date_modified": "2023-06-19T16:04:22.000Z",
-            "date_published": "2023-06-19T16:01:30.000Z",
-            "author": {
-                "name": "mfuji09",
-                "url": "https://github.com/mfuji09"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=de6bd3d5d570d97e4c15ba2b0e774f3ebd2456ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">For <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1760451769\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/20143\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/20143/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/20143\">mdn/browser-compat-data#20143</a></p>",
             "url": "https://github.com/mdn/content/pull/27406",
             "title": "Remove line-height: -moz-block-height",
@@ -91,17 +102,6 @@
             "author": {
                 "name": "mikecat",
                 "url": "https://github.com/mikecat"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73958752?u=5e3abed7500199bc1bc25faeeeaa2168ec09a1a3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The repetition of the article \"the\" before \"a network request\" is incorrect and creates a grammatical error. It should be corrected to: \"Fired when the network request has finished and its details are available to the extension.\"</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I appreciate the detailed design of MDN docs, and as a responsible reader of those docs, I am motivated to make this change.</p>\n\n",
-            "url": "https://github.com/mdn/content/pull/27400",
-            "title": "Fix a typo in `devtools.network.onRequestFinished` docs",
-            "date_modified": "2023-06-19T07:48:19.000Z",
-            "date_published": "2023-06-19T07:48:06.000Z",
-            "author": {
-                "name": "celestix",
-                "url": "https://github.com/celestix"
             }
         },
         {
