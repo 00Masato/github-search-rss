@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/127672622?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/48529",
+            "title": "Update security.md",
+            "date_modified": "2023-06-20T07:02:00.000Z",
+            "date_published": "2023-06-20T07:02:00.000Z",
+            "author": {
+                "name": "Pedro923",
+                "url": "https://github.com/Pedro923"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The testing guide for Active Job currently implies that when you queue a job it will be performed:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/509837/246954363-c864a0c2-ec53-45bb-9991-e8f55fb74ce6.png\"><img src=\"https://user-images.githubusercontent.com/509837/246954363-c864a0c2-ec53-45bb-9991-e8f55fb74ce6.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">This isn't true; by default jobs are enqueued, not performed.</p>\n<p dir=\"auto\">This PR fleshes out the docs a bit to show both examples, and adds a test to confirm the default behaviour.</p>",
             "url": "https://github.com/rails/rails/pull/48526",
             "title": "Update Active Job testing guide",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR makes a couple of changes, so I've broken them down atomically.</p>\n<p dir=\"auto\">Based on what I've found from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1624211690\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47675\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47675/hovercard\" href=\"https://github.com/rails/rails/pull/47675\">#47675</a>, there were a couple of improvements to be made.</p>\n<p dir=\"auto\">Please feel free to review them on a per-commit basis, starting:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/rails/rails/commit/7552929471c77cafacd988aff031dd6394e653cc\">Make ActionMailer::TestCase#read_fixture public</a>\n<ul dir=\"auto\">\n<li>Perhaps a bit controversial, but since it's been documented in the <a href=\"https://guides.rubyonrails.org/testing.html#revenge-of-the-fixtures\" rel=\"nofollow\">guides</a> for ages, why not?</li>\n</ul>\n</li>\n<li><a href=\"https://github.com/rails/rails/commit/6dfdb5e1bcfd42a29348490ef5512bd5f8703d7c\">Fix AR::TestFixtures.fixture_paths= docs</a>\n<ul dir=\"auto\">\n<li>Remove deprecated method and add docs for the new plural forms</li>\n</ul>\n</li>\n<li><a href=\"https://github.com/rails/rails/commit/387970fdec4d2147c2e71e0c510cffbf1c17091e\">Document ActiveSupport::TestCase.fixture_paths= and getter</a>\n<ul dir=\"auto\">\n<li>Also document them where they are intended to be used, when requiring \"rails/test_help\"</li>\n</ul>\n</li>\n<li><a href=\"https://github.com/rails/rails/commit/c1db265021e02279f8bcf087f49bd569db93623d\">Fixup AR::FixtureSet docs</a>\n<ul dir=\"auto\">\n<li>Linkify the <code class=\"notranslate\">fixture_paths=</code> setter now that it's documented, and other small cleanups</li>\n</ul>\n</li>\n</ul>\n<p dir=\"auto\">Planning to not merge this one without feedback, since it's changing the public visibility of a method and adding other possibly controversial docs.</p>",
             "url": "https://github.com/rails/rails/pull/48512",
             "title": "Update documentation around fixture paths",
-            "date_modified": "2023-06-20T00:05:20.000Z",
+            "date_modified": "2023-06-20T06:47:32.000Z",
             "date_published": "2023-06-18T08:57:31.000Z",
             "author": {
                 "name": "zzak",
@@ -75,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11679928?u=cda9703c49801755597161a69ed96a87c27b4a0d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48486.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1759285533\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48486\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48486/hovercard\" href=\"https://github.com/rails/rails/issues/48486\">#48486</a></p>\n<p dir=\"auto\">Saving ranges with an empty range</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Simply return if the string is empty, the same as it's being done for an \"empty\" string.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48507",
             "title": "Fix empty string saving for ranges",
-            "date_modified": "2023-06-19T23:14:27.000Z",
+            "date_modified": "2023-06-20T06:59:54.000Z",
             "date_published": "2023-06-16T19:10:35.000Z",
             "author": {
                 "name": "szymonlipka",
@@ -209,17 +220,6 @@
             "title": "Remove custom `exec_insert` method from Trilogy adapter",
             "date_modified": "2023-06-12T18:52:17.000Z",
             "date_published": "2023-06-09T01:16:25.000Z",
-            "author": {
-                "name": "nvasilevski",
-                "url": "https://github.com/nvasilevski"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">exec_insert</code> and <code class=\"notranslate\">insert</code> methods accept a <code class=\"notranslate\">returning</code> argument, however only PostgreSQL adapter fully supports it. This commit adds a validation that raises in case if value passed as <code class=\"notranslate\">returning</code> is not supported by the adapter.</p>\n<p dir=\"auto\">The check allows to supply one-sized Array for the \"unsupported\" case as technically SQLite and MySQL can return the inserted row id, but no more than that, at least at this moment.</p>\n<h3 dir=\"auto\">Implementation details</h3>\n<p dir=\"auto\">Since <code class=\"notranslate\">insert</code> method eventually calls into <code class=\"notranslate\">exec_insert</code> the validation only exists in the <code class=\"notranslate\">exec_insert</code> method. Validation is extracted into a separate method so both default and Trilogy's <code class=\"notranslate\">exec_insert</code> implementation can share it</p>",
-            "url": "https://github.com/rails/rails/pull/48418",
-            "title": "Raise if `exec_insert` and `insert` are used with an unsupported `returning` value",
-            "date_modified": "2023-06-09T01:17:14.000Z",
-            "date_published": "2023-06-07T14:44:41.000Z",
             "author": {
                 "name": "nvasilevski",
                 "url": "https://github.com/nvasilevski"
