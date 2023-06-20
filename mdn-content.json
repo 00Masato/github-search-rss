@@ -6,21 +6,10 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27443",
-            "title": "Estelle patch 3",
-            "date_modified": "2023-06-20T18:07:13.000Z",
-            "date_published": "2023-06-20T18:07:12.000Z",
-            "author": {
-                "name": "estelle",
-                "url": "https://github.com/estelle"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">...</p>",
             "url": "https://github.com/mdn/content/pull/27442",
             "title": "Add a guide to PWA caching strategies",
-            "date_modified": "2023-06-20T18:02:18.000Z",
+            "date_modified": "2023-06-20T18:09:41.000Z",
             "date_published": "2023-06-20T18:02:02.000Z",
             "author": {
                 "name": "wbamberg",
@@ -97,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1767796?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I reviewed <a href=\"https://w3c.github.io/mediacapture-screen-share/#dfn-displaysurface\" rel=\"nofollow\">https://w3c.github.io/mediacapture-screen-share/#dfn-displaysurface</a> and did the best I could.  The spec \"document is not complete. It is subject to major changes and, while early experimentations are encouraged, it is therefore not intended for implementation.\"</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The issue is old and the spec it addresses is still incomplete, but since the issue was open, I took a look and believe my changes will help to explain how the displaySurface property can be used to enhance screen sharing through browsers.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">See <a href=\"https://w3c.github.io/mediacapture-screen-share/#dfn-displaysurface\" rel=\"nofollow\">https://w3c.github.io/mediacapture-screen-share/#dfn-displaysurface</a> as mentioned above.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">This might <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #1456.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"788367520\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/1456\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/1456/hovercard\" href=\"https://github.com/mdn/content/issues/1456\">#1456</a></p>",
             "url": "https://github.com/mdn/content/pull/27429",
             "title": "Update index.md",
-            "date_modified": "2023-06-20T03:26:10.000Z",
+            "date_modified": "2023-06-20T18:11:43.000Z",
             "date_published": "2023-06-20T03:25:58.000Z",
             "author": {
                 "name": "dscotese",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "hamishwillee",
                 "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1767796?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I added some context and help to identify what PCs should be.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I am trying to prove myself because I need a job.  This page needed to provide information on what the PCs variable should have contained, and now it does.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">I used <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Simple_RTCDataChannel_sample\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Simple_RTCDataChannel_sample</a> both in my changes and to pull sample code that shows what PCs should be.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #1406.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"787755640\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/1406\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/1406/hovercard\" href=\"https://github.com/mdn/content/issues/1406\">#1406</a></p>",
+            "url": "https://github.com/mdn/content/pull/27398",
+            "title": "Update index.md",
+            "date_modified": "2023-06-19T03:28:01.000Z",
+            "date_published": "2023-06-19T03:27:50.000Z",
+            "author": {
+                "name": "dscotese",
+                "url": "https://github.com/dscotese"
             }
         }
     ]
