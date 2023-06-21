@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21099176?u=288be8bd952a3a10948d24016e8bb73484366948&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and extensible dependency injection container for TypeScript/JavaScript for constructor injection as functional.</div>",
+            "url": "https://github.com/siyul-park/cheeket.js",
+            "title": "siyul-park/cheeket.js: A lightweight and extensible dependency injection container for TypeScript/JavaScript for constructor injection as functional.",
+            "date_modified": "2022-12-14T23:27:23.000Z",
+            "date_published": "2020-10-24T10:51:53.000Z",
+            "author": {
+                "name": "siyul-park",
+                "url": "https://github.com/siyul-park"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3653879?u=fde8b0e3332730d97ab66025e13f73c1c2a1c18e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A super lightweight TS-based capture tool encapsulating playwright.dev</div>",
+            "url": "https://github.com/Nucleotic/wright-a-play",
+            "title": "Nucleotic/wright-a-play: A super lightweight TS-based capture tool encapsulating playwright.dev",
+            "date_modified": "2023-06-21T20:18:41.000Z",
+            "date_published": "2023-01-31T12:33:14.000Z",
+            "author": {
+                "name": "Nucleotic",
+                "url": "https://github.com/Nucleotic"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118299968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight JavaScript UI library built for the Onsight Editor.</div>",
             "url": "https://github.com/onsightengine/osui",
             "title": "onsightengine/osui: Lightweight JavaScript UI library built for the Onsight Editor.",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "vidterra",
                 "url": "https://github.com/vidterra"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10871267?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight wrapper around the DynamoDB DocumentClient class.</div>",
-            "url": "https://github.com/qloan/dynamodb-wrapper",
-            "title": "qloan/dynamodb-wrapper: A lightweight wrapper around the DynamoDB DocumentClient class.",
-            "date_modified": "2023-06-21T16:18:44.000Z",
-            "date_published": "2016-09-27T20:39:17.000Z",
-            "author": {
-                "name": "qloan",
-                "url": "https://github.com/qloan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11557446?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, lightweight JavaScript API for handling browser cookies</div>",
-            "url": "https://github.com/js-cookie/js-cookie",
-            "title": "js-cookie/js-cookie: A simple, lightweight JavaScript API for handling browser cookies",
-            "date_modified": "2023-06-21T08:55:51.000Z",
-            "date_published": "2015-03-19T15:57:47.000Z",
-            "author": {
-                "name": "js-cookie",
-                "url": "https://github.com/js-cookie"
             }
         }
     ]
