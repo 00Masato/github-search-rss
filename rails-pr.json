@@ -20,22 +20,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2651240?u=97e6903620ef2874e2231cee9eb2654b7811d750&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Support queries with regular expressions on supported databases. (PostgreSQL/MySQL)</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Post.where(title: /ThInKiNg/)\n#=&gt; SELECT * FROM posts WHERE title REGEXP 'ThInKiNg'; --MySQL\n#=&gt; SELECT * FROM posts WHERE title ~* 'ThInKiNg'; --PostgreSQL\n\nPost.where.not(title: /ThInKiNg/)\n#=&gt; SELECT * FROM posts WHERE title NOT REGEXP 'ThInKiNg'; --MySQL\n#=&gt; SELECT * FROM posts WHERE title !~* 'ThInKiNg'; --PostgreSQL    \"><pre class=\"notranslate\"><span class=\"pl-v\">Post</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">title</span>: <span class=\"pl-pds\">/ThInKiNg/</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\">#=&gt; SELECT * FROM posts WHERE title REGEXP 'ThInKiNg'; --MySQL</span>\n<span class=\"pl-c\">#=&gt; SELECT * FROM posts WHERE title ~* 'ThInKiNg'; --PostgreSQL</span>\n\n<span class=\"pl-v\">Post</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">not</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">title</span>: <span class=\"pl-pds\">/ThInKiNg/</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\">#=&gt; SELECT * FROM posts WHERE title NOT REGEXP 'ThInKiNg'; --MySQL</span>\n<span class=\"pl-c\">#=&gt; SELECT * FROM posts WHERE title !~* 'ThInKiNg'; --PostgreSQL    </span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48538",
             "title": "Support queries with regular expressions",
-            "date_modified": "2023-06-21T04:09:20.000Z",
+            "date_modified": "2023-06-21T05:16:41.000Z",
             "date_published": "2023-06-21T03:57:38.000Z",
             "author": {
                 "name": "lazaronixon",
                 "url": "https://github.com/lazaronixon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9854?u=9dfb8be264190cc22d0e4b5a5d3a686a4f678576&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This corrects <code class=\"notranslate\">intersect</code> with <code class=\"notranslate\">intersects</code> (the actual name of the method) as per this comment here: <a href=\"https://github.com/rails/rails/pull/47670/files#r1236168967\">https://github.com/rails/rails/pull/47670/files#r1236168967</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The method is incorrectly listed in the change log without an 's'.  This is likely to cause bugs as people look at documentation more frequently than source code for method names.</p>\n<p dir=\"auto\"><a href=\"https://github.com/john-h-k/rails/blob/c837ae624bc96f46b49f4656c76cd935591a8a3f/activerecord/lib/active_record/relation/delegation.rb\">https://github.com/john-h-k/rails/blob/c837ae624bc96f46b49f4656c76cd935591a8a3f/activerecord/lib/active_record/relation/delegation.rb</a></p>",
-            "url": "https://github.com/rails/rails/pull/48537",
-            "title": "Update CHANGELOG.md",
-            "date_modified": "2023-06-21T01:44:27.000Z",
-            "date_published": "2023-06-21T01:32:14.000Z",
-            "author": {
-                "name": "brandondrew",
-                "url": "https://github.com/brandondrew"
             }
         },
         {
@@ -69,17 +58,6 @@
             "author": {
                 "name": "jorgemanrubia",
                 "url": "https://github.com/jorgemanrubia"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The testing guide for Active Job currently implies that when you queue a job it will be performed:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/509837/246954363-c864a0c2-ec53-45bb-9991-e8f55fb74ce6.png\"><img src=\"https://user-images.githubusercontent.com/509837/246954363-c864a0c2-ec53-45bb-9991-e8f55fb74ce6.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">This isn't true; by default jobs are enqueued, not performed.</p>\n<p dir=\"auto\">This PR fleshes out the docs a bit to show both examples, and adds a test to confirm the default behaviour.</p>",
-            "url": "https://github.com/rails/rails/pull/48526",
-            "title": "Update Active Job testing guide",
-            "date_modified": "2023-06-21T05:00:30.000Z",
-            "date_published": "2023-06-19T23:59:49.000Z",
-            "author": {
-                "name": "ghiculescu",
-                "url": "https://github.com/ghiculescu"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "r3trofitted",
                 "url": "https://github.com/r3trofitted"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6142?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It can remove hundreds of lines of deprecation warning backtraces from spamming the console or the logs.  It maintains forward compatibility with the <code class=\"notranslate\">pg</code> gem, which will eventually require the new behavior.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">It's very small: just a single <code class=\"notranslate\">**</code> for some keyword args.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<ul dir=\"auto\">\n<li>See the original issue for more context: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1680963007\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48046\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48046/hovercard\" href=\"https://github.com/rails/rails/issues/48046\">#48046</a></li>\n<li>Backported PR: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1681132170\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48048\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48048/hovercard\" href=\"https://github.com/rails/rails/pull/48048\">#48048</a> (from tiramizoo/pg-1-5-warning)</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48435",
+            "title": "Backport: Fix the pg 1.5.0 deprecation warning",
+            "date_modified": "2023-06-09T16:59:32.000Z",
+            "date_published": "2023-06-09T16:55:15.000Z",
+            "author": {
+                "name": "nevans",
+                "url": "https://github.com/nevans"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15172605?u=c9831ccf188358c7be46eb4c634002b47ebb1068&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1712735611\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48241\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48241/hovercard\" href=\"https://github.com/rails/rails/pull/48241\">#48241</a> detects when certain auto-populated columns should be appended to a <code class=\"notranslate\">RETURNING</code> clause. However, in certain cases it may be necessary for the application to explicitly specify additional columns. e.g. Database Triggers.</p>\n<p dir=\"auto\">This feature was discussed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1326221102\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45736\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/45736/hovercard\" href=\"https://github.com/rails/rails/issues/45736\">#45736</a> and briefly with Matthew Draper in the Discord channel.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR adds the ability for the application to specify those attributes with the <code class=\"notranslate\">reload_attributes</code> class method.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Additionally a very minor edge case was handled. The application could try to assign a value to a virtual column which essentially results in a no-op. The values persisted in the database would be the same regardless. However, in doing so the value from <code class=\"notranslate\">RETURNING</code> wasn't being reflected on the instance attributes after create. See the newly added test and removal of the <code class=\"notranslate\">_read_attribute</code> check.</p>\n<p dir=\"auto\">Performing this nil check with <code class=\"notranslate\">_read_attribute</code> will also not be compatible when <code class=\"notranslate\">RETURNING</code> is implemented on <code class=\"notranslate\">UPDATE</code>.  As it is expected that the instance's attributes will be prepopulated with non-nil values. (WIP here: <a href=\"https://github.com/abaldwin88/rails/tree/virtual_stored_column_returning_on_update\">https://github.com/abaldwin88/rails/tree/virtual_stored_column_returning_on_update</a>)</p>\n<hr>\n<p dir=\"auto\">Paging: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a></p>",
+            "url": "https://github.com/rails/rails/pull/48434",
+            "title": "Add `ActiveRecord.reload_attributes`",
+            "date_modified": "2023-06-17T16:58:30.000Z",
+            "date_published": "2023-06-09T16:30:33.000Z",
+            "author": {
+                "name": "abaldwin88",
+                "url": "https://github.com/abaldwin88"
             }
         }
     ]
