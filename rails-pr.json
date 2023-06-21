@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The testing guide for Active Job currently implies that when you queue a job it will be performed:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/509837/246954363-c864a0c2-ec53-45bb-9991-e8f55fb74ce6.png\"><img src=\"https://user-images.githubusercontent.com/509837/246954363-c864a0c2-ec53-45bb-9991-e8f55fb74ce6.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">This isn't true; by default jobs are enqueued, not performed.</p>\n<p dir=\"auto\">This PR fleshes out the docs a bit to show both examples, and adds a test to confirm the default behaviour.</p>",
             "url": "https://github.com/rails/rails/pull/48526",
             "title": "Update Active Job testing guide",
-            "date_modified": "2023-06-21T03:37:42.000Z",
+            "date_modified": "2023-06-21T05:00:30.000Z",
             "date_published": "2023-06-19T23:59:49.000Z",
             "author": {
                 "name": "ghiculescu",
