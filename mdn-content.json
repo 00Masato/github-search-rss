@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77909827?u=46a69ddca710c87b4cd760ad87ab2a36f72f5f56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">book.genre.indexOf(<code class=\"notranslate\">genres._id</code>)</p>\n<p dir=\"auto\">will be</p>\n<p dir=\"auto\">book.genre.indexOf(<code class=\"notranslate\">genre._id</code>)</p>\n<p dir=\"auto\"><code class=\"notranslate\">genres</code> is undefined.</p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27476",
+            "title": "Fix variable name (  ReferenceError  )",
+            "date_modified": "2023-06-22T11:06:02.000Z",
+            "date_published": "2023-06-22T11:05:48.000Z",
+            "author": {
+                "name": "Tribhuwan-Joshi",
+                "url": "https://github.com/Tribhuwan-Joshi"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77909827?u=46a69ddca710c87b4cd760ad87ab2a36f72f5f56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>You can also daisy chain different validators, and add messages that are displayed if the preceding validators are <code class=\"notranslate\">true</code>.</li>\n</ul>\n<p dir=\"auto\">Messages are only displayed when preceding validators are <code class=\"notranslate\">false</code>.</p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27474",
             "title": "Fix the validation statement",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "Tribhuwan-Joshi",
                 "url": "https://github.com/Tribhuwan-Joshi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83200533?u=4adff16a22d3d120b5a3de71378e76ecfcaff66b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">Changing the Return into Return or Enter for better understanding especially for beginners</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27473",
-            "title": "changed Return into Return or Enter",
-            "date_modified": "2023-06-22T10:05:49.000Z",
-            "date_published": "2023-06-22T03:45:52.000Z",
-            "author": {
-                "name": "ilanchezhian-m",
-                "url": "https://github.com/ilanchezhian-m"
             }
         },
         {
@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The Chrome product team requested a standalone article covering the Origin Private File System (OPFS) feature of the File System Access API. This made sense, as our existing coverage was a bit thin on the ground and didn't really cover the feature accurately or in an in-depth fashion.</p>\n<p dir=\"auto\">The first commit adds a separate article to cover it. Subsequent commits will make improvements to existing reference pages.</p>\n<p dir=\"auto\">See my <a href=\"https://docs.google.com/document/d/1NtirvHrMgd27jQ4GYc9c2bzH705psGLXVdjOPkcAuFA/edit\" rel=\"nofollow\">research document</a> for my notes on what these updates should be.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27440",
             "title": "Add OPFS standalone article",
-            "date_modified": "2023-06-22T10:05:54.000Z",
+            "date_modified": "2023-06-22T10:30:09.000Z",
             "date_published": "2023-06-20T17:16:54.000Z",
             "author": {
                 "name": "chrisdavidmills",
