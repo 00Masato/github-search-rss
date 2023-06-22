@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15172605?u=c9831ccf188358c7be46eb4c634002b47ebb1068&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #46653.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1478822248\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46653\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/46653/hovercard\" href=\"https://github.com/rails/rails/issues/46653\">#46653</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">becomes</code> is coping the <code class=\"notranslate\">@attributes</code> from the original instance but the defaults are not being applied from the target class during initialization. Following the comments from the linked issue this PR will apply the default value if an attribute is nil and hasn't been changed.</p>",
             "url": "https://github.com/rails/rails/pull/48562",
             "title": "[Fix #46653] `becomes` losing target class default value",
-            "date_modified": "2023-06-22T21:07:08.000Z",
+            "date_modified": "2023-06-22T21:38:22.000Z",
             "date_published": "2023-06-22T21:07:04.000Z",
             "author": {
                 "name": "abaldwin88",
