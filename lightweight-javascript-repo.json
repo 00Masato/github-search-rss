@@ -6,6 +6,61 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86664715?u=443d5e36af2c0b576818c6dbf2dc445b65d55b49&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Node. js is an open source cross-platform runtime environment written in JavaScript. It is built on Chrome's V8 JavaScript engine, which parses and executes the JavaScript code. Node uses an event-driven, non-blocking I/O model, which makes it fast and lightweight.</div>",
+            "url": "https://github.com/PrajayGoyani/nodejs-learning",
+            "title": "PrajayGoyani/nodejs-learning: Node. js is an open source cross-platform runtime environment written in JavaScript. It is built on Chrome's V8 JavaScript engine, which parses and executes the JavaScript code. Node uses an event-driven, non-blocking I/O model, which makes it fast and lightweight.",
+            "date_modified": "2023-06-23T06:10:02.000Z",
+            "date_published": "2023-06-23T05:33:57.000Z",
+            "author": {
+                "name": "PrajayGoyani",
+                "url": "https://github.com/PrajayGoyani"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101519684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Google-searchable Slack alternative for Communities</div>",
+            "url": "https://github.com/Linen-dev/linen.dev",
+            "title": "Linen-dev/linen.dev: Lightweight Google-searchable Slack alternative for Communities",
+            "date_modified": "2023-06-23T05:44:17.000Z",
+            "date_published": "2022-02-15T15:03:37.000Z",
+            "author": {
+                "name": "Linen-dev",
+                "url": "https://github.com/Linen-dev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/546312?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"sauropod\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f995.png\">🦕</g-emoji> A lightweight utility pack for handling unknown type</div>",
+            "url": "https://github.com/lambdalisue/deno-unknownutil",
+            "title": "lambdalisue/deno-unknownutil: 🦕 A lightweight utility pack for handling unknown type",
+            "date_modified": "2023-06-21T19:26:44.000Z",
+            "date_published": "2021-06-12T16:09:55.000Z",
+            "author": {
+                "name": "lambdalisue",
+                "url": "https://github.com/lambdalisue"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"icecream\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f366.png\">🍦</g-emoji>VanJS: World's smallest reactive UI framework - Everyone can build a useful UI app in an hour</div>",
+            "url": "https://github.com/vanjs-org/van",
+            "title": "vanjs-org/van: 🍦VanJS: World's smallest reactive UI framework - Everyone can build a useful UI app in an hour",
+            "date_modified": "2023-06-23T06:04:25.000Z",
+            "date_published": "2023-05-08T05:45:31.000Z",
+            "author": {
+                "name": "vanjs-org",
+                "url": "https://github.com/vanjs-org"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121999074?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight multi-language, multi-purpose bot for Discord made with Deno</div>",
+            "url": "https://github.com/tapris-bot/tapris",
+            "title": "tapris-bot/tapris: Lightweight multi-language, multi-purpose bot for Discord made with Deno",
+            "date_modified": "2023-04-27T10:17:25.000Z",
+            "date_published": "2023-01-05T05:12:05.000Z",
+            "author": {
+                "name": "tapris-bot",
+                "url": "https://github.com/tapris-bot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113836621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Git-based lightweight headless CMS. A modern, open source alternative to Netlify CMS &amp; Decap CMS.</div>",
             "url": "https://github.com/sveltia/sveltia-cms",
             "title": "sveltia/sveltia-cms: A Git-based lightweight headless CMS. A modern, open source alternative to Netlify CMS & Decap CMS.",
@@ -28,6 +83,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2023-06-23T06:07:24.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/53557742?u=feb14263e8d6370d9e1d01995f25bb1861884dd5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Hourglass is a simple and lightweight command-line interface (CLI) timer application. This tool lets you set a timer and receive notifications when the time is up. It is useful for productivity or any scenarios where a quick timer is needed</div>",
             "url": "https://github.com/Ad-h0c/hourglass-timer-cli",
             "title": "Ad-h0c/hourglass-timer-cli: Hourglass is a simple and lightweight command-line interface (CLI) timer application. This tool lets you set a timer and receive notifications when the time is up. It is useful for productivity or any scenarios where a quick timer is needed",
@@ -47,17 +113,6 @@
             "author": {
                 "name": "jens-maus",
                 "url": "https://github.com/jens-maus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101519684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Google-searchable Slack alternative for Communities</div>",
-            "url": "https://github.com/Linen-dev/linen.dev",
-            "title": "Linen-dev/linen.dev: Lightweight Google-searchable Slack alternative for Communities",
-            "date_modified": "2023-06-23T05:04:23.000Z",
-            "date_published": "2022-02-15T15:03:37.000Z",
-            "author": {
-                "name": "Linen-dev",
-                "url": "https://github.com/Linen-dev"
             }
         },
         {
@@ -168,61 +223,6 @@
             "author": {
                 "name": "icoretech",
                 "url": "https://github.com/icoretech"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/117127451?u=94cf4271acec7f6297f623ce475ade1175acc64b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The NodeJS reference implementation of BLEST (Batch-able, Lightweight, Encrypted State Transfer), an improved communication protocol for web APIs which leverages JSON, supports request batching and selective returns, and provides a modern alternative to REST.</div>",
-            "url": "https://github.com/jhuntdev/blest-js",
-            "title": "jhuntdev/blest-js: The NodeJS reference implementation of BLEST (Batch-able, Lightweight, Encrypted State Transfer), an improved communication protocol for web APIs which leverages JSON, supports request batching and selective returns, and provides a modern alternative to REST.",
-            "date_modified": "2023-06-19T16:27:06.000Z",
-            "date_published": "2023-06-02T17:35:35.000Z",
-            "author": {
-                "name": "jhuntdev",
-                "url": "https://github.com/jhuntdev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99691591?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight development environment for Tableland databases. Start a locally running Tableland Validator connected to a local Hardhat blockchain</div>",
-            "url": "https://github.com/tablelandnetwork/local-tableland",
-            "title": "tablelandnetwork/local-tableland: A lightweight development environment for Tableland databases. Start a locally running Tableland Validator connected to a local Hardhat blockchain",
-            "date_modified": "2023-05-12T14:11:42.000Z",
-            "date_published": "2022-05-19T16:03:38.000Z",
-            "author": {
-                "name": "tablelandnetwork",
-                "url": "https://github.com/tablelandnetwork"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22987140?u=009d3f7771943f1d28f40b362c1df8e22d31f77e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight node server meant to act as a hub for smart-light.ga</div>",
-            "url": "https://github.com/adrianjost/SmartLight-Hub-Node",
-            "title": "adrianjost/SmartLight-Hub-Node: A lightweight node server meant to act as a hub for smart-light.ga",
-            "date_modified": "2022-01-10T01:30:11.000Z",
-            "date_published": "2021-04-26T19:19:56.000Z",
-            "author": {
-                "name": "adrianjost",
-                "url": "https://github.com/adrianjost"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"icecream\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f366.png\">🍦</g-emoji>VanJS: World's smallest reactive UI framework - Everyone can build a useful UI app in an hour</div>",
-            "url": "https://github.com/vanjs-org/van",
-            "title": "vanjs-org/van: 🍦VanJS: World's smallest reactive UI framework - Everyone can build a useful UI app in an hour",
-            "date_modified": "2023-06-23T04:17:24.000Z",
-            "date_published": "2023-05-08T05:45:31.000Z",
-            "author": {
-                "name": "vanjs-org",
-                "url": "https://github.com/vanjs-org"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73146062?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight typescript library for cross-chain wallets. Connect with multiple blockchains via a common interface, with support for the minimum features necessary. </div>",
-            "url": "https://github.com/xchainjs/xchainjs-lib",
-            "title": "xchainjs/xchainjs-lib: Lightweight typescript library for cross-chain wallets. Connect with multiple blockchains via a common interface, with support for the minimum features necessary. ",
-            "date_modified": "2023-06-12T20:51:58.000Z",
-            "date_published": "2020-10-04T12:33:02.000Z",
-            "author": {
-                "name": "xchainjs",
-                "url": "https://github.com/xchainjs"
             }
         }
     ]
