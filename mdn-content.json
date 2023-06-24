@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97945148?u=a6895a737c183867bcc85b3dcb06c625158d1701&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds documentations for <a href=\"https://drafts.csswg.org/css-color-4/#missing\" rel=\"nofollow\">missing color components</a>.</p>\n<p dir=\"auto\">The key point to this PR is to explain missing components while shielding all the technicalities of <a href=\"https://drafts.csswg.org/css-color/#powerless\" rel=\"nofollow\">powerless components</a> (also the last <a href=\"https://drafts.csswg.org/css-color/#ex-analogous-hue\" rel=\"nofollow\">sentence</a> under Example 30).</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bsmth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bsmth\">@bsmth</a></p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">This is a useful feature introduced in <a href=\"https://drafts.csswg.org/css-color/#changes-from-20210601\" rel=\"nofollow\">CSS Color 4</a>.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Mozilla bug:<br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1813481\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1813481</a><br>\n<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1822041\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1822041</a></p>\n<p dir=\"auto\">Webkit bug:<br>\n<a href=\"https://bugs.webkit.org/show_bug.cgi?id=233526\" rel=\"nofollow\">https://bugs.webkit.org/show_bug.cgi?id=233526</a></p>\n<p dir=\"auto\">I wanted to add an entry to BCD, but there's only an indirect evidence from the <a href=\"https://developer.apple.com/documentation/safari-release-notes/safari-17-release-notes#Resolved-Issues\" rel=\"nofollow\">release notes</a> of Safari 17 Beta that Safari has supported this feature before Safari 17.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27218.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1747621233\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27218\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27218/hovercard\" href=\"https://github.com/mdn/content/issues/27218\">#27218</a>.</p>",
+            "url": "https://github.com/mdn/content/pull/27523",
+            "title": "Document missing color components",
+            "date_modified": "2023-06-24T14:02:40.000Z",
+            "date_published": "2023-06-24T14:02:26.000Z",
+            "author": {
+                "name": "yarusome",
+                "url": "https://github.com/yarusome"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102621548?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The return value is a promise and the word <code class=\"notranslate\">result</code> is already used in the page to talk about the resolved value.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The example code was, in a way, broken.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27521",
             "title": "Update index.md: Add missing await",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "keithamus",
                 "url": "https://github.com/keithamus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33548838?u=ea609280f61608dd20c0388e0a41c695cec12dd0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/mdn/content/pull/27461",
-            "title": "Fix number of round trips in TLS handshake",
-            "date_modified": "2023-06-21T17:28:45.000Z",
-            "date_published": "2023-06-21T12:55:17.000Z",
-            "author": {
-                "name": "geryogam",
-                "url": "https://github.com/geryogam"
             }
         }
     ]
