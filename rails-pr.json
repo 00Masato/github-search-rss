@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2651240?u=97e6903620ef2874e2231cee9eb2654b7811d750&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Add <code class=\"notranslate\">chronologically</code> and <code class=\"notranslate\">reverse_chronologically</code> scopes to <code class=\"notranslate\">ActiveRecord::Base</code>.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Author.chronologically\n#=&gt; SELECT * FROM authors ORDER BY authors.id ASC\n\nAuthor.reverse_chronologically\n#=&gt; SELECT * FROM authors ORDER BY authors.id DESC\"><pre class=\"notranslate\"><span class=\"pl-v\">Author</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">chronologically</span>\n<span class=\"pl-c\">#=&gt; SELECT * FROM authors ORDER BY authors.id ASC</span>\n\n<span class=\"pl-v\">Author</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">reverse_chronologically</span>\n<span class=\"pl-c\">#=&gt; SELECT * FROM authors ORDER BY authors.id DESC</span></pre></div>\n<p dir=\"auto\">It uses the same logic as <code class=\"notranslate\">first</code> and <code class=\"notranslate\">last</code>, the order is defined based on <code class=\"notranslate\">implicit_order_column || query_constraints_list || primary_key</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48570",
             "title": "Implement default chronologically scopes",
-            "date_modified": "2023-06-24T19:17:34.000Z",
+            "date_modified": "2023-06-24T21:48:56.000Z",
             "date_published": "2023-06-24T18:55:05.000Z",
             "author": {
                 "name": "lazaronixon",
@@ -36,17 +36,6 @@
             "author": {
                 "name": "thukim",
                 "url": "https://github.com/thukim"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The method name <code class=\"notranslate\">Range#overlaps?</code> uses a 3rd person verb which is inconsistent with e.g. <code class=\"notranslate\">Range#include?</code> and <code class=\"notranslate\">Range#cover?</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request renames <code class=\"notranslate\">Range#overlaps?</code> to <code class=\"notranslate\">Range#overlap?</code> and adds an alias for backwards compatibility (similar to <code class=\"notranslate\">String#starts_with?</code>).</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48565",
-            "title": "Rename `Range#overlaps?` to `Range#overlap?`",
-            "date_modified": "2023-06-23T08:29:02.000Z",
-            "date_published": "2023-06-23T08:28:58.000Z",
-            "author": {
-                "name": "c960657",
-                "url": "https://github.com/c960657"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "TakuyaKurimoto",
                 "url": "https://github.com/TakuyaKurimoto"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48463.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1755595459\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48463\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48463/hovercard\" href=\"https://github.com/rails/rails/issues/48463\">#48463</a></p>\n<p dir=\"auto\">Since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"998126151\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43227\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43227/hovercard\" href=\"https://github.com/rails/rails/pull/43227\">#43227</a>, the default CSP suggested in the initializer does not work with empty sessions. See <a href=\"https://github.com/rails/rails/pull/43227#issuecomment-1191692615\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43227/hovercard\">this comment</a> for an example issue and workaround.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR just adds a fallback in case the session has not been loaded. I also updated the railties test to match the config in the default initializer.</p>",
+            "url": "https://github.com/rails/rails/pull/48510",
+            "title": "Allow default CSP setup to work with empty sessions",
+            "date_modified": "2023-06-20T12:40:04.000Z",
+            "date_published": "2023-06-18T07:50:25.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
             }
         }
     ]
