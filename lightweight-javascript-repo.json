@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11557446?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, lightweight JavaScript API for handling browser cookies</div>",
+            "url": "https://github.com/js-cookie/js-cookie",
+            "title": "js-cookie/js-cookie: A simple, lightweight JavaScript API for handling browser cookies",
+            "date_modified": "2023-06-25T07:30:26.000Z",
+            "date_published": "2015-03-19T15:57:47.000Z",
+            "author": {
+                "name": "js-cookie",
+                "url": "https://github.com/js-cookie"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7056989?u=5aae685d297776a646101618095f4223cf6e3f0a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Flexible and lightweight React Native component for UITableView made with pure CSS</div>",
+            "url": "https://github.com/Purii/react-native-tableview-simple",
+            "title": "Purii/react-native-tableview-simple: Flexible and lightweight React Native component for UITableView made with pure CSS",
+            "date_modified": "2023-06-20T21:46:46.000Z",
+            "date_published": "2015-10-25T21:05:29.000Z",
+            "author": {
+                "name": "Purii",
+                "url": "https://github.com/Purii"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/135557241?u=edc583378be5511d0984800550b9b933777b8165&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple (but maybe not lightweight) simulation of Bash in JavaScript</div>",
             "url": "https://github.com/barreltaru/bash-js",
             "title": "barreltaru/bash-js: A simple (but maybe not lightweight) simulation of Bash in JavaScript",
@@ -86,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
             "url": "https://github.com/usememos/memos",
             "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
-            "date_modified": "2023-06-25T06:15:33.000Z",
+            "date_modified": "2023-06-25T07:36:06.000Z",
             "date_published": "2021-12-08T15:30:18.000Z",
             "author": {
                 "name": "usememos",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "xavierbriole",
                 "url": "https://github.com/xavierbriole"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68025869?u=a0c49e8f161589aa241e5b02930f8094d8a42de1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"whale\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f433.png\">🐳</g-emoji> Simple lightweight GUI application for working with Docker</div>",
-            "url": "https://github.com/AbduazizZiyodov/docker-dashboard",
-            "title": "AbduazizZiyodov/docker-dashboard: 🐳 Simple lightweight GUI application for working with Docker",
-            "date_modified": "2023-05-25T05:40:53.000Z",
-            "date_published": "2022-05-22T12:53:35.000Z",
-            "author": {
-                "name": "AbduazizZiyodov",
-                "url": "https://github.com/AbduazizZiyodov"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2634142?u=808424db4fd6dbdf4b7b22018dae6806e0e2b76f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight GraphQL &amp; Prisma.io node.js backend</div>",
-            "url": "https://github.com/uxname/liteend",
-            "title": "uxname/liteend: Lightweight GraphQL & Prisma.io node.js backend",
-            "date_modified": "2023-05-05T11:38:46.000Z",
-            "date_published": "2020-03-08T18:38:22.000Z",
-            "author": {
-                "name": "uxname",
-                "url": "https://github.com/uxname"
             }
         }
     ]
