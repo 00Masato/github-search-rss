@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29676413?u=56eddcdb7bf6f3d6a9cce4f6c06f602befcf3f25&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27571",
+            "title": "Removed stray bullet. Fixed grammar.",
+            "date_modified": "2023-06-26T22:04:36.000Z",
+            "date_published": "2023-06-26T22:04:25.000Z",
+            "author": {
+                "name": "Brian-Pob",
+                "url": "https://github.com/Brian-Pob"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I heard <a href=\"https://github.com/mdn/content/issues/14157\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/14157/hovercard\">we are phasing out Ajax</a>. This PR does some work in that direction.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27568",
             "title": "Move/merge AJAX guide subpages",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "yarusome",
                 "url": "https://github.com/yarusome"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102621548?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">The return value is a promise and the word <code class=\"notranslate\">result</code> is already used in the page to talk about the resolved value.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The example code was, in a way, broken.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27521",
-            "title": "Update index.md: Add missing await",
-            "date_modified": "2023-06-24T07:10:59.000Z",
-            "date_published": "2023-06-24T07:10:48.000Z",
-            "author": {
-                "name": "shoo8eem1A",
-                "url": "https://github.com/shoo8eem1A"
             }
         }
     ]
