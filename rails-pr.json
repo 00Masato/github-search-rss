@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This commit adds a rake task that checks various utilities are working before releasing Rails.  The problem we're trying to avoid is commands failing halfway through the release (for example maybe you're not logged in to npmjs). The check task is fairly opinionated, it requires that:</p>\n<ul dir=\"auto\">\n<li>Use a YubiKey for storing OTPs\n<ul dir=\"auto\">\n<li>The <code class=\"notranslate\">ykman</code> utility is installed</li>\n<li>The OTP name for RubyGems has <code class=\"notranslate\">rubygems.org</code> in the name</li>\n<li>The OTP name for NPM has <code class=\"notranslate\">npmjs.com</code> in the name</li>\n</ul>\n</li>\n<li>You are logged in to RubyGems</li>\n<li>You are logged in to npmjs</li>\n<li>You are logged in to the <code class=\"notranslate\">gh</code> utility</li>\n</ul>\n<p dir=\"auto\">If the task fails, then no gems will be pushed and it gives you an opportunity to fix your environment.  Basically I want to automate <a href=\"https://github.com/rails/rails/blob/main/RELEASING_RAILS.md#check-credentials-for-rubygems-npm-and-github\">this section</a> in our release documentation.</p>\n<p dir=\"auto\">See <a href=\"https://tenderlovemaking.com/2021/10/26/publishing-gems-with-your-yubikey.html\" rel=\"nofollow\">this blog post</a> for configuring your YubiKey.</p>",
+            "url": "https://github.com/rails/rails/pull/48583",
+            "title": "Add a rake task for checking various release related utilities",
+            "date_modified": "2023-06-26T22:30:18.000Z",
+            "date_published": "2023-06-26T22:26:30.000Z",
+            "author": {
+                "name": "tenderlove",
+                "url": "https://github.com/tenderlove"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/522155?u=2e71ed2ab56545207a94b885fafc434ee7350cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Sometimes you might want to <code class=\"notranslate\">preload</code> relations for a record that has already been loaded.<br>\nIf you were to do it today, you'd either have to use private API (<code class=\"notranslate\">ActiveRecord::Associations::Preloader</code>) or do something like</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"def method_that_wants_to_preload_and_receives_record(user)\n  user = User.preload(:address, friends: [:address, :followers]).find(user.id)\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">def method_that_wants_to_preload_and_receives_record(user)\n  user = User.preload(:address, friends: [:address, :followers]).find(user.id)\nend\n</code></pre></div>\n<p dir=\"auto\">However, that seems ugly and may result to unnecessary (but probably cached) query on <code class=\"notranslate\">users</code> to find a record by a primary key.</p>\n<p dir=\"auto\">It seems like an simple addition to introduce <code class=\"notranslate\">preload</code> on a record that has already been loaded. That's what this PR does.</p>",
             "url": "https://github.com/rails/rails/pull/48582",
             "title": "Introduce ActiveRecord::Base#preload on a record",
-            "date_modified": "2023-06-26T21:38:08.000Z",
+            "date_modified": "2023-06-26T22:26:32.000Z",
             "date_published": "2023-06-26T21:32:12.000Z",
             "author": {
                 "name": "kirs",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "TakuyaKurimoto",
                 "url": "https://github.com/TakuyaKurimoto"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48463.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1755595459\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48463\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48463/hovercard\" href=\"https://github.com/rails/rails/issues/48463\">#48463</a></p>\n<p dir=\"auto\">Since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"998126151\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43227\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43227/hovercard\" href=\"https://github.com/rails/rails/pull/43227\">#43227</a>, the default CSP suggested in the initializer does not work with empty sessions. See <a href=\"https://github.com/rails/rails/pull/43227#issuecomment-1191692615\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43227/hovercard\">this comment</a> for an example issue and workaround.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR just adds a fallback in case the session has not been loaded. I also updated the railties test to match the config in the default initializer.</p>",
-            "url": "https://github.com/rails/rails/pull/48510",
-            "title": "Allow default CSP setup to work with empty sessions",
-            "date_modified": "2023-06-20T12:40:04.000Z",
-            "date_published": "2023-06-18T07:50:25.000Z",
-            "author": {
-                "name": "ghiculescu",
-                "url": "https://github.com/ghiculescu"
             }
         }
     ]
