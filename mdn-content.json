@@ -6,14 +6,14 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/mdn/content/pull/27555",
-            "title": "Fix typos",
-            "date_modified": "2023-06-26T03:22:59.000Z",
-            "date_published": "2023-06-26T03:20:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27522.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1772579987\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27522\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27522/hovercard\" href=\"https://github.com/mdn/content/issues/27522\">#27522</a></p>\n<p dir=\"auto\">The update adds a new method to format dates in YYYY-MM-DD format, which is required when setting the form value of the input of type=date. If you don't set with this format, you lose the value if you have to re-render the page.</p>\n<p dir=\"auto\">This is what <a href=\"https://github.com/mdn/express-locallibrary-tutorial/\">https://github.com/mdn/express-locallibrary-tutorial/</a> already does and is tested. No idea why it wasn't documented. Probably because most of the time this works.</p>",
+            "url": "https://github.com/mdn/content/pull/27556",
+            "title": "BookInstanceSchema - Add virtual method to set date input in correct format",
+            "date_modified": "2023-06-26T04:06:00.000Z",
+            "date_published": "2023-06-26T04:04:18.000Z",
             "author": {
-                "name": "OnkarRuikar",
-                "url": "https://github.com/OnkarRuikar"
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
             }
         },
         {
