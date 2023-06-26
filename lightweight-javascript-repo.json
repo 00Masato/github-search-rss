@@ -6,6 +6,83 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60198665?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, open source, stateless, and self-hosted alternative to linktree in a Docker container!</div>",
+            "url": "https://github.com/techno-tim/littlelink-server",
+            "title": "techno-tim/littlelink-server: A lightweight, open source, stateless, and self-hosted alternative to linktree in a Docker container!",
+            "date_modified": "2023-06-22T01:33:46.000Z",
+            "date_published": "2021-08-10T02:53:44.000Z",
+            "author": {
+                "name": "techno-tim",
+                "url": "https://github.com/techno-tim"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/458096?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Feature-rich lightweight WAMP (WebSocket Application Messaging Protocol) Javascript implementation</div>",
+            "url": "https://github.com/KSDaemon/wampy.js",
+            "title": "KSDaemon/wampy.js: Feature-rich lightweight WAMP (WebSocket Application Messaging Protocol) Javascript implementation",
+            "date_modified": "2023-06-24T11:29:06.000Z",
+            "date_published": "2014-01-31T20:36:19.000Z",
+            "author": {
+                "name": "KSDaemon",
+                "url": "https://github.com/KSDaemon"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2023-06-26T19:53:49.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33001894?u=7d7e1b21ca443b41fb4aa004889160c8b5832aba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight in-memory graph database, written in TypeScript.</div>",
+            "url": "https://github.com/JyotinderSingh/graphene",
+            "title": "JyotinderSingh/graphene: A lightweight in-memory graph database, written in TypeScript.",
+            "date_modified": "2023-05-23T15:47:15.000Z",
+            "date_published": "2022-01-13T16:33:20.000Z",
+            "author": {
+                "name": "JyotinderSingh",
+                "url": "https://github.com/JyotinderSingh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112355225?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div> Nevar is a simple, lightweight, and fast discord bot built with discord.js and typescript</div>",
+            "url": "https://github.com/nevar-bot/nevar-ts",
+            "title": "nevar-bot/nevar-ts:  Nevar is a simple, lightweight, and fast discord bot built with discord.js and typescript",
+            "date_modified": "2023-06-10T17:17:23.000Z",
+            "date_published": "2023-06-10T17:06:31.000Z",
+            "author": {
+                "name": "nevar-bot",
+                "url": "https://github.com/nevar-bot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101519684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Google-searchable Slack alternative for Communities</div>",
+            "url": "https://github.com/Linen-dev/linen.dev",
+            "title": "Linen-dev/linen.dev: Lightweight Google-searchable Slack alternative for Communities",
+            "date_modified": "2023-06-26T19:49:07.000Z",
+            "date_published": "2022-02-15T15:03:37.000Z",
+            "author": {
+                "name": "Linen-dev",
+                "url": "https://github.com/Linen-dev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37396659?u=65e34b97849774bc9f81f20bbd4eaccb682345ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"jigsaw\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f9e9.png\">🧩</g-emoji> Lightweight &amp; Powerful framework</div>",
+            "url": "https://github.com/zhzLuke96/rh.js",
+            "title": "zhzLuke96/rh.js: 🧩 Lightweight & Powerful framework",
+            "date_modified": "2023-04-16T14:10:34.000Z",
+            "date_published": "2022-06-28T09:48:35.000Z",
+            "author": {
+                "name": "zhzLuke96",
+                "url": "https://github.com/zhzLuke96"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9898422?u=785e103727a9697e827e58102c8521f1b3590276&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An extensible virtual DOM library for lightweight use in a variety of environments</div>",
             "url": "https://github.com/superlucky84/lithent",
             "title": "superlucky84/lithent: An extensible virtual DOM library for lightweight use in a variety of environments",
@@ -47,17 +124,6 @@
             "author": {
                 "name": "int128",
                 "url": "https://github.com/int128"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37396659?u=65e34b97849774bc9f81f20bbd4eaccb682345ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"jigsaw\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f9e9.png\">🧩</g-emoji> Lightweight &amp; Powerful framework</div>",
-            "url": "https://github.com/zhzLuke96/rh.js",
-            "title": "zhzLuke96/rh.js: 🧩 Lightweight & Powerful framework",
-            "date_modified": "2023-04-16T14:10:34.000Z",
-            "date_published": "2022-06-28T09:48:35.000Z",
-            "author": {
-                "name": "zhzLuke96",
-                "url": "https://github.com/zhzLuke96"
             }
         },
         {
@@ -127,17 +193,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112355225?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div> Nevar is a simple, lightweight, and fast discord bot built with discord.js and typescript</div>",
-            "url": "https://github.com/nevar-bot/nevar-ts",
-            "title": "nevar-bot/nevar-ts:  Nevar is a simple, lightweight, and fast discord bot built with discord.js and typescript",
-            "date_modified": "2023-06-10T17:17:23.000Z",
-            "date_published": "2023-06-10T17:06:31.000Z",
-            "author": {
-                "name": "nevar-bot",
-                "url": "https://github.com/nevar-bot"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3440094?u=da686402140b5b093549e42fbb05d73ea51621ba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"fox_face\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f98a.png\">🦊</g-emoji> A simple, lightweight &amp; framework agnostic JSON:API client</div>",
             "url": "https://github.com/wopian/kitsu",
             "title": "wopian/kitsu: 🦊 A simple, lightweight & framework agnostic JSON:API client",
@@ -168,61 +223,6 @@
             "author": {
                 "name": "so1ve",
                 "url": "https://github.com/so1ve"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/945577?u=4421bda7673b81e1870899be93a214256717babc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight but powerful S3 client for Deno</div>",
-            "url": "https://github.com/bradenmacdonald/deno-s3-lite-client",
-            "title": "bradenmacdonald/deno-s3-lite-client: A lightweight but powerful S3 client for Deno",
-            "date_modified": "2023-06-24T20:38:26.000Z",
-            "date_published": "2021-10-27T17:31:08.000Z",
-            "author": {
-                "name": "bradenmacdonald",
-                "url": "https://github.com/bradenmacdonald"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41121717?u=c423b1bc6f35ae7127e3b66a62b20cde59393205&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight package with functions and hooks for masking data inputs and outputs for Node.JS projects</div>",
-            "url": "https://github.com/guilhermeasn/mask-hooks",
-            "title": "guilhermeasn/mask-hooks: Lightweight package with functions and hooks for masking data inputs and outputs for Node.JS projects",
-            "date_modified": "2023-06-21T09:27:32.000Z",
-            "date_published": "2021-03-16T20:59:34.000Z",
-            "author": {
-                "name": "guilhermeasn",
-                "url": "https://github.com/guilhermeasn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44892233?u=ae0202b738d3de450c227740a7b68232c6cdaf02&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>High degree of freedom and Lightweight dynamic form Engine(高自由度、轻量级动态表单引擎，高端的方案往往只需要简单的设计)</div>",
-            "url": "https://github.com/mezhanglei/react-easy-formrender",
-            "title": "mezhanglei/react-easy-formrender: High degree of freedom and Lightweight dynamic form Engine(高自由度、轻量级动态表单引擎，高端的方案往往只需要简单的设计)",
-            "date_modified": "2023-04-13T02:56:46.000Z",
-            "date_published": "2021-12-12T02:28:30.000Z",
-            "author": {
-                "name": "mezhanglei",
-                "url": "https://github.com/mezhanglei"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10601911?u=233abe193317a8084508404735239b0c4d42a48c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Beautiful react forms with built-in validation </div>",
-            "url": "https://github.com/PeterKottas/guestbell-forms",
-            "title": "PeterKottas/guestbell-forms: Beautiful react forms with built-in validation ",
-            "date_modified": "2023-03-24T03:58:08.000Z",
-            "date_published": "2017-08-05T14:48:28.000Z",
-            "author": {
-                "name": "PeterKottas",
-                "url": "https://github.com/PeterKottas"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33135183?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and customizable starter kit for building TypeScript libraries. It comes with ESM support, flexible configuration options, extensive ESLint rules, and built-in Github Actions integration.</div>",
-            "url": "https://github.com/2BAD/ts-lib-starter",
-            "title": "2BAD/ts-lib-starter: A lightweight and customizable starter kit for building TypeScript libraries. It comes with ESM support, flexible configuration options, extensive ESLint rules, and built-in Github Actions integration.",
-            "date_modified": "2023-06-02T12:05:30.000Z",
-            "date_published": "2023-05-23T02:41:00.000Z",
-            "author": {
-                "name": "2BAD",
-                "url": "https://github.com/2BAD"
             }
         }
     ]
