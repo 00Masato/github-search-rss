@@ -6,6 +6,28 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16910748?u=18191c556dff0aa936d10c073ae5297c4716431d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">Remove unused variable <code class=\"notranslate\">sab</code> in the first code example.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">Make the example concise.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27595",
+            "title": "refactor: remove unused variable in Atomics example",
+            "date_modified": "2023-06-27T12:09:55.000Z",
+            "date_published": "2023-06-27T12:09:41.000Z",
+            "author": {
+                "name": "wtlin1228",
+                "url": "https://github.com/wtlin1228"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76149603?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">Slightly improves grammar</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">Grammar is slightly better.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27594",
+            "title": "Improve grammar slightly",
+            "date_modified": "2023-06-27T11:43:13.000Z",
+            "date_published": "2023-06-27T11:40:21.000Z",
+            "author": {
+                "name": "rb-ar",
+                "url": "https://github.com/rb-ar"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces a link to the dom-examples repository with the live example on the <code class=\"notranslate\">SpeechSynthesisUtterance</code> page, making it much easier to test the interface.</p>",
             "url": "https://github.com/mdn/content/pull/27591",
             "title": "Use the live example for Speech synthesizer demo",
@@ -94,17 +116,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #22271.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1447045473\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/22271\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/22271/hovercard\" href=\"https://github.com/mdn/content/issues/22271\">#22271</a></p>",
-            "url": "https://github.com/mdn/content/pull/27581",
-            "title": "fix: add multiple specs to CSS `caption-side` page to cover all values mentioned in specs",
-            "date_modified": "2023-06-27T09:37:23.000Z",
-            "date_published": "2023-06-27T03:31:52.000Z",
-            "author": {
-                "name": "OnkarRuikar",
-                "url": "https://github.com/OnkarRuikar"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While mentioned on the universal selector page and type selector pages, there was no documentation for this namespace separator, which is a type of CSS combinator.</p>",
             "url": "https://github.com/mdn/content/pull/27580",
             "title": "New page: namespace combinator",
@@ -179,17 +190,6 @@
             "author": {
                 "name": "captainbrosset",
                 "url": "https://github.com/captainbrosset"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">&lt;canvas&gt;</code> documentation, we should mention <code class=\"notranslate\">OffscreenCanvas</code> and link to documentation pages where appropriate.</p>\n<ul dir=\"auto\">\n<li>Link to <code class=\"notranslate\">DedicatedWorkerGlobalScope</code> for workers (<code class=\"notranslate\">requestAnimationFrame()</code>)</li>\n<li>Make see also sections adhere to guidelines</li>\n<li>Give embedded examples proper height attrs</li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/27563",
-            "title": "docs(API): Add links to OffscreenCanvas in canvas pages",
-            "date_modified": "2023-06-27T08:55:01.000Z",
-            "date_published": "2023-06-26T15:10:01.000Z",
-            "author": {
-                "name": "bsmth",
-                "url": "https://github.com/bsmth"
             }
         },
         {
