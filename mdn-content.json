@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Nightly provides the pref <code class=\"notranslate\">javascript.options.experimental.well_formed_unicode_strings</code> set to false (disabled) by default.</p>\n<p dir=\"auto\">This allows for using the following methods:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/isWellFormed\" rel=\"nofollow\"><code class=\"notranslate\">String.prototype.isWellFormed()</code></a></li>\n<li><a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toWellFormed\" rel=\"nofollow\"><code class=\"notranslate\">String.prototype.toWellFormed()</code></a></li>\n</ul>\n<p dir=\"auto\"><strong>Related issues and pull requests:</strong></p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Parent issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1744140902\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27173/hovercard\" href=\"https://github.com/mdn/content/issues/27173\">#27173</a></li>\n<li>BCD <strong>TODO</strong></li>\n</ul>\n<p dir=\"auto\"><strong>Bugzilla:</strong></p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link notranslate\" rel=\"noopener noreferrer nofollow\" href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1825005\">BUG-1825005</a></li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/27600",
+            "title": "relnote(Fx115): String isWellFormed() and toWellFormed() behind pref in nightly",
+            "date_modified": "2023-06-27T15:54:16.000Z",
+            "date_published": "2023-06-27T15:51:40.000Z",
+            "author": {
+                "name": "bsmth",
+                "url": "https://github.com/bsmth"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97945148?u=a6895a737c183867bcc85b3dcb06c625158d1701&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PRs mainly removes the \"Interpolation\" section from the <code class=\"notranslate\">shape-outside</code> property's page as it is duplicate from <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape#interpolation_of_basic_shapes\" rel=\"nofollow\"><code class=\"notranslate\">&lt;basic-shape&gt;</code></a>.</p>\n<p dir=\"auto\">It also corrects the casing used in links.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<h3 dir=\"auto\">Additional details</h3>\n<h3 dir=\"auto\">Related issues and pull requests</h3>",
             "url": "https://github.com/mdn/content/pull/27598",
             "title": "Update `shape-outside`",
@@ -174,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR removes a list of tools relating to IndexedDB, and prefers internal links to related concepts. The rationale for removal is that the external tools and libraries are difficult to maintain, especially when it comes to assessing and assuring quality for our readers.</p>\n<p dir=\"auto\"><strong>Additional fixes:</strong></p>\n<ul dir=\"auto\">\n<li>Flaw in <a href=\"https://github.com/mdn/content/blob/main/files/en-us/_redirects.txt#L12684\">redirected URL</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/27565",
             "title": "docs(API): remove list of IDB tools, point to storage APIs instead",
-            "date_modified": "2023-06-27T15:07:45.000Z",
+            "date_modified": "2023-06-27T15:09:33.000Z",
             "date_published": "2023-06-26T16:09:29.000Z",
             "author": {
                 "name": "bsmth",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "hamishwillee",
                 "url": "https://github.com/hamishwillee"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5875645?u=26d966760c9e968c0f30e8d76b61145a6c3e1692&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fix the description of the <code class=\"notranslate\">DocumentType.after()</code> in the <code class=\"notranslate\">DocumentType</code> page.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I ofter read MDN, I would like to improve it.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Link to the issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1764549722\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27428\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27428/hovercard\" href=\"https://github.com/mdn/content/issues/27428\">#27428</a></p>\n",
-            "url": "https://github.com/mdn/content/pull/27553",
-            "title": "Fixed description for DocumentType.after() method",
-            "date_modified": "2023-06-26T07:06:26.000Z",
-            "date_published": "2023-06-26T01:35:56.000Z",
-            "author": {
-                "name": "yangzhanxi",
-                "url": "https://github.com/yangzhanxi"
             }
         }
     ]
