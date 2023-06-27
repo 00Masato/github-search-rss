@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37917867?u=6cc9b0dd35724bbc9c7517161234b41c7a64826f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I found a reference to Django within the Express Library tutorial documentation. I updated the reference to refer to the Express Github repository instead.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I'm making this changes to fix a typo.</p>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27574",
+            "title": "Update index.md to reference Express repository instead of Django",
+            "date_modified": "2023-06-27T00:26:11.000Z",
+            "date_published": "2023-06-27T00:25:58.000Z",
+            "author": {
+                "name": "alxbaker",
+                "url": "https://github.com/alxbaker"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We found some old docs on responsive design hiding in the PWA directory. They are not findable in our nav and are very out of date: they predate <code class=\"notranslate\">grid</code> and build on long-dead projects like <a href=\"https://github.com/mozilla/mortar\"><code class=\"notranslate\">mortar</code></a> and <a href=\"https://github.com/mozbrick/brick\"><code class=\"notranslate\">brick</code></a>.</p>\n<p dir=\"auto\">I asked around and the only response was from <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/captainbrosset/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/captainbrosset\">@captainbrosset</a> who agreed we should delete them and redirect to <a href=\"https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design</a>.</p>\n<p dir=\"auto\">Note that there is an issue referring to these docs: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1428984267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/21950\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/21950/hovercard\" href=\"https://github.com/mdn/content/issues/21950\">#21950</a> - I think if we merge this PR we will just close that one.</p>",
             "url": "https://github.com/mdn/content/pull/27573",
             "title": "Remove old responsive design docs",
@@ -28,17 +39,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29676413?u=56eddcdb7bf6f3d6a9cce4f6c06f602befcf3f25&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27571",
-            "title": "Removed stray bullet. Fixed grammar.",
-            "date_modified": "2023-06-26T22:45:07.000Z",
-            "date_published": "2023-06-26T22:04:25.000Z",
-            "author": {
-                "name": "Brian-Pob",
-                "url": "https://github.com/Brian-Pob"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I heard <a href=\"https://github.com/mdn/content/issues/14157\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/14157/hovercard\">we are phasing out Ajax</a>. This PR does some work in that direction.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27568",
             "title": "Move/merge AJAX guide subpages",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/207002?u=43418d0ff5849f7dbb2b8b1510d8a3fd1b8ba895&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Add additional clarification about current behavior in browsers, and advice for developers how to handle possible install flows.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">We've seen many instances of developer's confusion about browser behavior, and how to handle different cases.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Firefox addons blog with some of these details: <a href=\"https://blog.mozilla.org/addons/2022/11/17/unified-extensions-button-and-how-to-handle-permissions-in-manifest-v3/\" rel=\"nofollow\">https://blog.mozilla.org/addons/2022/11/17/unified-extensions-button-and-how-to-handle-permissions-in-manifest-v3/</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">None that I know of.</p>",
             "url": "https://github.com/mdn/content/pull/27566",
             "title": "Explain requesting and prompting users for host_permissions",
-            "date_modified": "2023-06-26T17:30:33.000Z",
+            "date_modified": "2023-06-26T23:29:18.000Z",
             "date_published": "2023-06-26T16:35:25.000Z",
             "author": {
                 "name": "zombie",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=a7abf92f16a0e563130967aef2beb65cbf9cf882&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">&lt;canvas&gt;</code> documentation, we should mention <code class=\"notranslate\">OffscreenCanvas</code> and link to documentation pages where appropriate.</p>\n<ul dir=\"auto\">\n<li>Link to <code class=\"notranslate\">DedicatedWorkerGlobalScope</code> for workers (<code class=\"notranslate\">requestAnimationFrame()</code>)</li>\n<li>Make see also sections adhere to guidelines</li>\n<li>Give embedded examples proper height attrs</li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/27563",
             "title": "docs(API): Add links to OffscreenCanvas in canvas pages",
-            "date_modified": "2023-06-26T15:13:53.000Z",
+            "date_modified": "2023-06-27T00:14:52.000Z",
             "date_published": "2023-06-26T15:10:01.000Z",
             "author": {
                 "name": "bsmth",
