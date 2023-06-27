@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/522155?u=2e71ed2ab56545207a94b885fafc434ee7350cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Sometimes you might want to <code class=\"notranslate\">preload</code> relations for a record that has already been loaded.<br>\nIf you were to do it today, you'd either have to use private API (<code class=\"notranslate\">ActiveRecord::Associations::Preloader</code>) or do something like</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"def method_that_wants_to_preload_and_receives_record(user)\n  user = User.preload(:address, friends: [:address, :followers]).find(user.id)\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">def method_that_wants_to_preload_and_receives_record(user)\n  user = User.preload(:address, friends: [:address, :followers]).find(user.id)\nend\n</code></pre></div>\n<p dir=\"auto\">However, that seems ugly and may result to unnecessary (but probably cached) query on <code class=\"notranslate\">users</code> to find a record by a primary key.</p>\n<p dir=\"auto\">It seems like an simple addition to introduce <code class=\"notranslate\">preload</code> on a record that has already been loaded. That's what this PR does.</p>",
             "url": "https://github.com/rails/rails/pull/48582",
             "title": "Introduce ActiveRecord::Base#preload on a record",
-            "date_modified": "2023-06-27T09:05:24.000Z",
+            "date_modified": "2023-06-27T13:04:20.000Z",
             "date_published": "2023-06-26T21:32:12.000Z",
             "author": {
                 "name": "kirs",
