@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Compatibility data for changes made in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1814905\" rel=\"nofollow\">Bug 1814905</a> Implement chrome.action.getUserSettings</p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/20244",
             "title": "Implementation of action.getUserSettings",
-            "date_modified": "2023-06-28T09:06:20.000Z",
+            "date_modified": "2023-06-28T11:50:49.000Z",
             "date_published": "2023-06-27T22:46:28.000Z",
             "author": {
                 "name": "rebloor",
@@ -105,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Addresses the documentation needs of <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1606862\" rel=\"nofollow\">Bug 1606862</a> Make devtools an optional permission.</p>\n<p dir=\"auto\">No reference found to this permission in the Chrome documentation e.g. <a href=\"https://developer.chrome.com/docs/extensions/mv3/declare_permissions/#permissions\" rel=\"nofollow\">https://developer.chrome.com/docs/extensions/mv3/declare_permissions/#permissions</a> or <a href=\"https://developer.chrome.com/docs/extensions/reference/devtools_inspectedWindow/\" rel=\"nofollow\">https://developer.chrome.com/docs/extensions/reference/devtools_inspectedWindow/</a></p>\n<p dir=\"auto\">Confirmed as included in Safari on this page: <a href=\"https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector#3966899\" rel=\"nofollow\">https://developer.apple.com/documentation/safariservices/safari_web_extensions/adding_a_web_development_tool_to_safari_web_inspector#3966899</a></p>",
-            "url": "https://github.com/mdn/browser-compat-data/pull/20107",
-            "title": "devtools as optional permission",
-            "date_modified": "2023-06-28T09:02:49.000Z",
-            "date_published": "2023-06-12T23:04:18.000Z",
-            "author": {
-                "name": "rebloor",
-                "url": "https://github.com/rebloor"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">This PR adds some compat data that was missing for the <a href=\"https://wicg.github.io/web-otp/\" rel=\"nofollow\">WebOTP API</a>. You can find more information about this API at <a href=\"https://developer.chrome.com/articles/web-otp/\" rel=\"nofollow\">Verify phone numbers on the web with the WebOTP API</a>,</p>\n<p dir=\"auto\">Also see my <a href=\"https://docs.google.com/document/d/1vPnLk_CF4LNc0AVl5ieqRv5TKqCroJ8hPCPp9rfTaxw/edit#\" rel=\"nofollow\">research document</a> for details of exactly what changes have been made in this PR.</p>\n\n<h4 dir=\"auto\">Test results and supporting details</h4>\n\n\n<h4 dir=\"auto\">Related issues</h4>\n\n",
             "url": "https://github.com/mdn/browser-compat-data/pull/20101",
             "title": "Update data for WebOTP API",
@@ -190,6 +179,17 @@
             "author": {
                 "name": "queengooborg",
                 "url": "https://github.com/queengooborg"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67439340?u=24651373b4efdd248b1e8ae4cbff9bd2bfcc54f1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n\n<h4 dir=\"auto\">Test results and supporting details</h4>\n\n\n<h4 dir=\"auto\">Related issues</h4>\n\n",
+            "url": "https://github.com/mdn/browser-compat-data/pull/19265",
+            "title": "Fixes #18934",
+            "date_modified": "2023-06-01T11:05:33.000Z",
+            "date_published": "2023-03-29T00:48:59.000Z",
+            "author": {
+                "name": "Tunzeki",
+                "url": "https://github.com/Tunzeki"
             }
         }
     ]
