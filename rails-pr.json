@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The 6.1 format directly Marshal the AS::Cache::Entry class which prevent us from changing its internal representation.</p>\n<p dir=\"auto\">Removing support for it would unblock various refactors and cleanup.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonathanhefner/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonathanhefner\">@jonathanhefner</a></p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a>: do you think we need to go through a deprecation for this? (I assume so but not 100% sure).</p>\n<p dir=\"auto\">If we can't remove it right now, we should deprecate is ASAP so this stop hindering us.</p>",
             "url": "https://github.com/rails/rails/pull/48586",
             "title": "Remove support for Rails 6.1 cache format",
-            "date_modified": "2023-06-28T01:44:00.000Z",
+            "date_modified": "2023-06-28T07:20:04.000Z",
             "date_published": "2023-06-27T07:59:46.000Z",
             "author": {
                 "name": "casperisfine",
