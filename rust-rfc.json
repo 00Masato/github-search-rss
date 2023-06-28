@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/additional-floats/text/3451-additional-float-types.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3451",
+            "title": "Additional float types",
+            "date_modified": "2023-06-28T18:08:24.000Z",
+            "date_published": "2023-06-28T17:45:07.000Z",
+            "author": {
+                "name": "ecnelises",
+                "url": "https://github.com/ecnelises"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/451321?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new syntax for multi-line string literals designed to contain code and play nicely with <code class=\"notranslate\">rustfmt</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Diggsey/rfcs/blob/code-string-literals/text/0000-code-literals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3450",
             "title": "Propose code string literals",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "p-avital",
                 "url": "https://github.com/p-avital"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19670?u=d7df321e1e8f2ee042f53aa8990a319210e82534&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Summary:</p>\n<p dir=\"auto\">This proposal will enhance cargo and crates.io through adoption of the Sigstore capabilities and workflows as described in the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/trustification/rust-rfcs/blob/sigstore-rfc/text/0000-sigstore-integration.md\">Rendered</a></p>\n<p dir=\"auto\">For reference: <a href=\"https://internals.rust-lang.org/t/pre-rfc-using-sigstore-for-signing-and-verifying-crates/18115\" rel=\"nofollow\">pre-RFC discussions</a></p>\n<p dir=\"auto\">Made in collaboration with Tim Pletcher (HPE) and feedback from the community and RFCs from other package ecosystems.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3403",
-            "title": "RFC: sigstore and cargo/crates.io",
-            "date_modified": "2023-06-07T23:32:15.000Z",
-            "date_published": "2023-03-27T11:11:01.000Z",
-            "author": {
-                "name": "lulf",
-                "url": "https://github.com/lulf"
             }
         }
     ]
