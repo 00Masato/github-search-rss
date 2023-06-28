@@ -6,14 +6,14 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16294331?u=fbad3f0cce03ed4428ddc81ed080f1da94a16dfd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Add the fact that image data is stored in row-major order.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Image data can be stored in row-major or column-major order. This extra comment should remove any confusion.</p>\n<h3 dir=\"auto\">Additional details</h3>",
-            "url": "https://github.com/mdn/content/pull/27633",
-            "title": "Add explanation that data is in row-major order.",
-            "date_modified": "2023-06-28T18:43:52.000Z",
-            "date_published": "2023-06-28T17:20:19.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds the caching guide to the landing page, and retitles the main page to omit the acronym.</p>",
+            "url": "https://github.com/mdn/content/pull/27635",
+            "title": "Add caching guide to landing page; retitle landing page",
+            "date_modified": "2023-06-28T20:59:02.000Z",
+            "date_published": "2023-06-28T20:56:40.000Z",
             "author": {
-                "name": "bricksphd",
-                "url": "https://github.com/bricksphd"
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
             }
         },
         {
