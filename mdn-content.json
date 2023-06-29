@@ -116,17 +116,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177408050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/91\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/91/hovercard\" href=\"https://github.com/openwebdocs/project/issues/91\">openwebdocs/project#91</a>, we want to add page-types to the WebDriver.</p>\n<p dir=\"auto\">I propose to add 3 different page types:</p>\n<table role=\"table\">\n<thead>\n<tr>\n<th>Page type</th>\n<th>meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>webdriver-command</td>\n<td>A webdriver command</td>\n</tr>\n<tr>\n<td>webdriver-capability</td>\n<td>A webdriver capability</td>\n</tr>\n<tr>\n<td>webdriver-error</td>\n<td>A webdriver error</td>\n</tr>\n</tbody>\n</table>\n<p dir=\"auto\">This area of MDN is still a bit crude, so this list may be extended once more pages are written, but this cover all of them for now.</p>",
-            "url": "https://github.com/mdn/content/pull/27622",
-            "title": "Add page-types for WebDriver",
-            "date_modified": "2023-06-29T05:16:27.000Z",
-            "date_published": "2023-06-28T13:37:55.000Z",
-            "author": {
-                "name": "teoli2003",
-                "url": "https://github.com/teoli2003"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27356.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1759292946\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27356\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27356/hovercard\" href=\"https://github.com/mdn/content/issues/27356\">#27356</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/WebReflection/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/WebReflection\">@WebReflection</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Kaiido/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Kaiido\">@Kaiido</a></p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27619",
             "title": "Improve Atomics.wait(Async) parameter description",
@@ -196,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Two new pages:</p>\n<ul dir=\"auto\">\n<li>CSS selectors and combinators</li>\n<li>CSS selector structure</li>\n</ul>\n<p dir=\"auto\">The other 23 pages touched? edited link to those two pages and a few letter casings in module links.</p>\n<p dir=\"auto\">Part of the larger project - <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1775798991\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/164\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/164/hovercard\" href=\"https://github.com/openwebdocs/project/issues/164\">openwebdocs/project#164</a></p>",
             "url": "https://github.com/mdn/content/pull/27601",
             "title": "2 New pages: selectors and combinators & selector structure",
-            "date_modified": "2023-06-29T05:42:49.000Z",
+            "date_modified": "2023-06-29T20:09:14.000Z",
             "date_published": "2023-06-27T18:55:10.000Z",
             "author": {
                 "name": "estelle",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "estelle",
                 "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF115 adds support for spec compliant prefetch, following a round of standardization. Essentially this is a <code class=\"notranslate\">Sec-Purpose: prefetch</code> header, requirement that the <code class=\"notranslate\">Accept</code> header matches the normal navigation request, and <code class=\"notranslate\">Sec-Fetch-Dest</code> must be empty.</p>\n<p dir=\"auto\">No one else complies yet, and the others are a bit of a hodge-podge in terms of the HTTP backend. What I have already done is added the  <code class=\"notranslate\">Sec-Purpose: prefetch</code> header doc and that is where compatibility will be tracked as we head towards it.</p>\n<p dir=\"auto\">This PR updates the glossary for Prefetch (and the prerrendering too). What it aims to do is make this new specification behaviour clear. I have also made it clear in a note that this is new behaviour and hinted at the old behaviour. But I have deliberately not tried to describe that behaviour in detail - Chrome does some \"interesting\" stuff with the HTTP cache and ignores the requirement for the <code class=\"notranslate\">Sec-Fetch-Dest</code> to be empty.</p>\n<p dir=\"auto\">It also deletes the old link handling FAQ, which was mostly \"old behaviour\".</p>\n<p dir=\"auto\">Related docs work in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1744134977\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27171\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27171/hovercard\" href=\"https://github.com/mdn/content/issues/27171\">#27171</a></p>",
+            "url": "https://github.com/mdn/content/pull/27589",
+            "title": "Prefetch glossary + prerendering",
+            "date_modified": "2023-06-28T17:17:40.000Z",
+            "date_published": "2023-06-27T07:55:40.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
             }
         }
     ]
