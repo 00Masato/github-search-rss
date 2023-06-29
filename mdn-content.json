@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51082452?u=5dd13c7f31eec3bb2b416da23c7596a50abad97b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Explicitly mention the transition delay in the example</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Clarify that on hover, nothing is supposed to happen initially.</p>",
+            "url": "https://github.com/mdn/content/pull/27641",
+            "title": "explicitly mention transition delay in example",
+            "date_modified": "2023-06-29T05:04:55.000Z",
+            "date_published": "2023-06-29T05:03:01.000Z",
+            "author": {
+                "name": "ctstacey",
+                "url": "https://github.com/ctstacey"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">and other minor changes</p>",
             "url": "https://github.com/mdn/content/pull/27639",
             "title": "remove 5 in html5",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Browser compat shows this has full support. All browsers tested support <code class=\"notranslate\">datetime-local</code>, including min and max. So, removed lingo and fallback, and jquery plugin, etc.</p>",
             "url": "https://github.com/mdn/content/pull/27637",
             "title": "Removed \"no support\" language from supported input type",
-            "date_modified": "2023-06-29T04:06:15.000Z",
+            "date_modified": "2023-06-29T04:34:23.000Z",
             "date_published": "2023-06-28T22:59:56.000Z",
             "author": {
                 "name": "estelle",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a long tail of scattered guides on MDN.</p>\n<p dir=\"auto\">I used <code class=\"notranslate\">guide</code> and <code class=\"notranslate\">landing-pages</code>.</p>\n<p dir=\"auto\">Note: Under the PWA section, there are a few pages that match the modern docs structures. So I created the page types <code class=\"notranslate\">howto</code> and <code class=\"notranslate\">tutorial</code>, but used them ONLY for places where the 4-types-of-doc structure have been used.</p>\n<p dir=\"auto\">This is part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177408050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/91\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/91/hovercard\" href=\"https://github.com/openwebdocs/project/issues/91\">openwebdocs/project#91</a></p>",
             "url": "https://github.com/mdn/content/pull/27624",
             "title": "Add page-types for guide areas of MDN",
-            "date_modified": "2023-06-28T18:01:58.000Z",
+            "date_modified": "2023-06-29T04:58:41.000Z",
             "date_published": "2023-06-28T14:19:11.000Z",
             "author": {
                 "name": "teoli2003",
@@ -50,10 +61,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177408050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/91\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/91/hovercard\" href=\"https://github.com/openwebdocs/project/issues/91\">openwebdocs/project#91</a>, we want to add page-types to the WebDriver.</p>\n<p dir=\"auto\">I propose to add 3 different page types:</p>\n<table role=\"table\">\n<thead>\n<tr>\n<th>Page type</th>\n<th>meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>webdriver-command</td>\n<td>A webdriver command</td>\n</tr>\n<tr>\n<td>webdriver-capability</td>\n<td>A webdriver capability</td>\n</tr>\n<tr>\n<td>webdriver-type</td>\n<td>A webdriver error</td>\n</tr>\n</tbody>\n</table>\n<p dir=\"auto\">This area of MDN is still a bit crude, so this list may be extended once more pages are written, but this cover all of them for now.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177408050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/91\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/91/hovercard\" href=\"https://github.com/openwebdocs/project/issues/91\">openwebdocs/project#91</a>, we want to add page-types to the WebDriver.</p>\n<p dir=\"auto\">I propose to add 3 different page types:</p>\n<table role=\"table\">\n<thead>\n<tr>\n<th>Page type</th>\n<th>meaning</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>webdriver-command</td>\n<td>A webdriver command</td>\n</tr>\n<tr>\n<td>webdriver-capability</td>\n<td>A webdriver capability</td>\n</tr>\n<tr>\n<td>webdriver-error</td>\n<td>A webdriver error</td>\n</tr>\n</tbody>\n</table>\n<p dir=\"auto\">This area of MDN is still a bit crude, so this list may be extended once more pages are written, but this cover all of them for now.</p>",
             "url": "https://github.com/mdn/content/pull/27622",
             "title": "Add page-types for WebDriver",
-            "date_modified": "2023-06-28T16:45:03.000Z",
+            "date_modified": "2023-06-29T05:05:56.000Z",
             "date_published": "2023-06-28T13:37:55.000Z",
             "author": {
                 "name": "teoli2003",
@@ -201,17 +212,6 @@
             "author": {
                 "name": "estelle",
                 "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #19522.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1338096887\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/19522\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/19522/hovercard\" href=\"https://github.com/mdn/content/issues/19522\">#19522</a></p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27586",
-            "title": "Rewrite callback glossary entry",
-            "date_modified": "2023-06-27T06:44:03.000Z",
-            "date_published": "2023-06-27T06:41:47.000Z",
-            "author": {
-                "name": "Josh-Cena",
-                "url": "https://github.com/Josh-Cena"
             }
         },
         {
