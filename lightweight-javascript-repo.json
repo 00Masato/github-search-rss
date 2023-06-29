@@ -6,6 +6,94 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10815566?u=a5562439dacecd7e029d6095bfb157f211f4b448&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript library for working with tabular data, inspired by pandas in Python.</div>",
+            "url": "https://github.com/rajnish93/js-df",
+            "title": "rajnish93/js-df: A lightweight JavaScript library for working with tabular data, inspired by pandas in Python.",
+            "date_modified": "2023-06-29T19:02:59.000Z",
+            "date_published": "2023-06-28T19:56:53.000Z",
+            "author": {
+                "name": "rajnish93",
+                "url": "https://github.com/rajnish93"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48122861?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, lightweight model-based validation for Vue.js</div>",
+            "url": "https://github.com/vuelidate/vuelidate",
+            "title": "vuelidate/vuelidate: Simple, lightweight model-based validation for Vue.js",
+            "date_modified": "2023-06-29T04:07:59.000Z",
+            "date_published": "2016-11-05T14:30:37.000Z",
+            "author": {
+                "name": "vuelidate",
+                "url": "https://github.com/vuelidate"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
+            "url": "https://github.com/emberjs/data",
+            "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
+            "date_modified": "2023-06-27T02:57:13.000Z",
+            "date_published": "2011-12-20T01:50:40.000Z",
+            "author": {
+                "name": "emberjs",
+                "url": "https://github.com/emberjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) 🎈</div>",
+            "url": "https://github.com/nestjs/cqrs",
+            "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
+            "date_modified": "2023-06-27T17:53:00.000Z",
+            "date_published": "2017-05-06T18:08:10.000Z",
+            "author": {
+                "name": "nestjs",
+                "url": "https://github.com/nestjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60230259?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Hosting the lightweightPWA for demo</div>",
+            "url": "https://github.com/PharmaLedger-IMI/lightweightPWA",
+            "title": "PharmaLedger-IMI/lightweightPWA: Hosting the lightweightPWA for demo",
+            "date_modified": "2023-01-31T19:55:33.000Z",
+            "date_published": "2022-06-08T13:45:14.000Z",
+            "author": {
+                "name": "PharmaLedger-IMI",
+                "url": "https://github.com/PharmaLedger-IMI"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67316958?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"globe_with_meridians\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f310.png\">🌐</g-emoji> Lightweight internationalization plugin for Vue</div>",
+            "url": "https://github.com/leanera/vue-i18n",
+            "title": "leanera/vue-i18n: 🌐 Lightweight internationalization plugin for Vue",
+            "date_modified": "2023-05-10T09:53:58.000Z",
+            "date_published": "2022-08-02T09:14:24.000Z",
+            "author": {
+                "name": "leanera",
+                "url": "https://github.com/leanera"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112293999?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
+            "url": "https://github.com/broplsss/ElderlyDarkturquoiseLightweightprocess-1",
+            "title": "broplsss/ElderlyDarkturquoiseLightweightprocess-1",
+            "date_modified": "2023-06-29T18:12:50.000Z",
+            "date_published": "2023-06-29T18:11:24.000Z",
+            "author": {
+                "name": "broplsss",
+                "url": "https://github.com/broplsss"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/109933208?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Discord client mod focused on simplicity and performance.</div>",
+            "url": "https://github.com/replugged-org/replugged",
+            "title": "replugged-org/replugged: A lightweight Discord client mod focused on simplicity and performance.",
+            "date_modified": "2023-06-29T00:03:57.000Z",
+            "date_published": "2022-07-25T02:30:30.000Z",
+            "author": {
+                "name": "replugged-org",
+                "url": "https://github.com/replugged-org"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12916656?u=2a7f8e9fa36795c269ed3f642dd6840fb68b4b72&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"book\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png\">📖</g-emoji> A lightweight, modern documentation theme for Hugo [WIP]</div>",
             "url": "https://github.com/colinwilson/lotusdocs",
             "title": "colinwilson/lotusdocs: 📖 A lightweight, modern documentation theme for Hugo [WIP]",
@@ -135,94 +223,6 @@
             "author": {
                 "name": "theritikchoure",
                 "url": "https://github.com/theritikchoure"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34121275?u=c2527556282d35f60c1d773bc5486dda2fe76ef9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
-            "url": "https://github.com/JUSTLOVELE/lightweight-y-flowengine",
-            "title": "JUSTLOVELE/lightweight-y-flowengine",
-            "date_modified": "2023-02-06T07:49:07.000Z",
-            "date_published": "2023-01-18T07:27:10.000Z",
-            "author": {
-                "name": "JUSTLOVELE",
-                "url": "https://github.com/JUSTLOVELE"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
-            "url": "https://github.com/usememos/memos",
-            "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
-            "date_modified": "2023-06-29T15:41:29.000Z",
-            "date_published": "2021-12-08T15:30:18.000Z",
-            "author": {
-                "name": "usememos",
-                "url": "https://github.com/usememos"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13395944?u=140e6b2a4239c980769a10b9618c31d4480651df&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, 0 config Nuxt Module for Vue Query.</div>",
-            "url": "https://github.com/Hebilicious/vue-query-nuxt",
-            "title": "Hebilicious/vue-query-nuxt: A lightweight, 0 config Nuxt Module for Vue Query.",
-            "date_modified": "2023-06-04T14:58:32.000Z",
-            "date_published": "2023-05-31T12:27:42.000Z",
-            "author": {
-                "name": "Hebilicious",
-                "url": "https://github.com/Hebilicious"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1416436?u=10d4e0a90e238720d1b7407a48345de0c74aef04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The modern, lightweight, performant, accessible and extensible drag &amp; drop toolkit for React.</div>",
-            "url": "https://github.com/clauderic/dnd-kit",
-            "title": "clauderic/dnd-kit: The modern, lightweight, performant, accessible and extensible drag & drop toolkit for React.",
-            "date_modified": "2023-06-29T15:44:38.000Z",
-            "date_published": "2020-11-26T00:46:52.000Z",
-            "author": {
-                "name": "clauderic",
-                "url": "https://github.com/clauderic"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/789478?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍪 Lightweight (~16kB gzip) and customisable GDPR cookie manager</div>",
-            "url": "https://github.com/antistatique/leckerli",
-            "title": "antistatique/leckerli: 🍪 Lightweight (~16kB gzip) and customisable GDPR cookie manager",
-            "date_modified": "2023-06-29T12:58:03.000Z",
-            "date_published": "2023-06-26T11:33:56.000Z",
-            "author": {
-                "name": "antistatique",
-                "url": "https://github.com/antistatique"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29232478?u=e978b6650a792fd54f2b634339c6562af9bbf68d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight front-end monitoring sdk/一款简单易用、轻量化、插件化的前端监控sdk</div>",
-            "url": "https://github.com/LuciferHuang/heimdallr-sdk",
-            "title": "LuciferHuang/heimdallr-sdk: A lightweight front-end monitoring sdk/一款简单易用、轻量化、插件化的前端监控sdk",
-            "date_modified": "2023-06-29T14:33:57.000Z",
-            "date_published": "2022-09-01T06:36:37.000Z",
-            "author": {
-                "name": "LuciferHuang",
-                "url": "https://github.com/LuciferHuang"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/31461480?u=9313cc549453b10679050f7b59ff79df793e6c37&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Nuxt theme to build your portfolio in minutes.</div>",
-            "url": "https://github.com/Phyrom/content-wind",
-            "title": "Phyrom/content-wind: A lightweight Nuxt theme to build your portfolio in minutes.",
-            "date_modified": "2023-06-29T09:58:15.000Z",
-            "date_published": "2023-06-29T09:58:06.000Z",
-            "author": {
-                "name": "Phyrom",
-                "url": "https://github.com/Phyrom"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4363158?u=ed3c43dacc5650bd9a6394280eac263dbe664631&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, functional and robust library for creating reactive web components. Written completely in TypeScript.</div>",
-            "url": "https://github.com/joelek/bonsai",
-            "title": "joelek/bonsai: Lightweight, functional and robust library for creating reactive web components. Written completely in TypeScript.",
-            "date_modified": "2023-06-29T14:27:18.000Z",
-            "date_published": "2022-08-09T08:56:42.000Z",
-            "author": {
-                "name": "joelek",
-                "url": "https://github.com/joelek"
             }
         }
     ]
