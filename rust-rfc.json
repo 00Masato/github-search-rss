@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/779501?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kpreid/rust-rfcs/blob/nested-publish/text/0000-nested-publish.md\">Rendered</a></p>\n<p dir=\"auto\">This is my first Rust RFC. The idea was previously discussed on IRLO (<a href=\"https://internals.rust-lang.org/t/private-nested-cargo-packages/19042\" rel=\"nofollow\">Private nested Cargo packages</a>), and the feedback was generally positive except for confusion about exactly what was being changed, which I believe I have now precisely defined in this RFC draft.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3452",
+            "title": "RFC: Nested Cargo packages",
+            "date_modified": "2023-07-01T00:50:11.000Z",
+            "date_published": "2023-07-01T00:50:11.000Z",
+            "author": {
+                "name": "kpreid",
+                "url": "https://github.com/kpreid"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/additional-floats/text/3451-additional-float-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3451",
             "title": "Additional float types",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "phi-go",
                 "url": "https://github.com/phi-go"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Implementing FFI-safe futures for <a href=\"https://crates.io/crates/stabby\" rel=\"nofollow\"><code class=\"notranslate\">stabby</code></a> has given me the opportunity to find out just how hard <code class=\"notranslate\">Waker</code>s are to deal with when attempting to pass futures across the FFI boundary.</p>\n<p dir=\"auto\">This RFC aims to make dealing with them not only much easier, but also much more performant than currently possible, removing a tree-sized splinter from the thumb of projects that need to pass futures across the FFI boundary.</p>\n<p dir=\"auto\">Disclaimer: this RFC proposes breaking API for completeness' sake only: my firm opinion is that Rust's backward compatibility guarantees should be protected, and the proposed non-breaking solution's runtime cost, while existent, is likely to become negligible as soon as the common executors switch to the newly proposed constructor for waker vtables.</p>\n<p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/stable-wakers/text/0000-stable-wakers.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3404",
-            "title": "ABI-stabilize `core::task::Waker`",
-            "date_modified": "2023-03-31T08:40:50.000Z",
-            "date_published": "2023-03-28T19:07:22.000Z",
-            "author": {
-                "name": "p-avital",
-                "url": "https://github.com/p-avital"
             }
         }
     ]
