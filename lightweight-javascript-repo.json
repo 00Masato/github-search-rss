@@ -6,14 +6,14 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12916656?u=2a7f8e9fa36795c269ed3f642dd6840fb68b4b72&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📖 A lightweight, modern documentation theme for Hugo [WIP]</div>",
-            "url": "https://github.com/colinwilson/lotusdocs",
-            "title": "colinwilson/lotusdocs: 📖 A lightweight, modern documentation theme for Hugo [WIP]",
-            "date_modified": "2023-06-29T16:42:32.000Z",
-            "date_published": "2022-10-23T03:00:45.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5887769?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"house\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png\">🏠</g-emoji> A lightweight, buildroot-based Linux operating system alternative for your CCU3, ELV-Charly or for running your \"HomeMatic CCU\" IoT central as a pure virtual appliance (using Proxmox VE, VirtualBox, Docker/OCI, Kubernetes/K8s, Home Assistant, vmWare ESXi, etc.) or on your own RaspberryPi, Tinkerboard, ODROID, etc. SBC device...</div>",
+            "url": "https://github.com/jens-maus/RaspberryMatic",
+            "title": "jens-maus/RaspberryMatic: :house: A lightweight, buildroot-based Linux operating system alternative for your CCU3, ELV-Charly or for running your \"HomeMatic CCU\" IoT central as a pure virtual appliance (using Proxmox VE, VirtualBox, Docker/OCI, Kubernetes/K8s, Home Assistant, vmWare ESXi, etc.) or on your own RaspberryPi, Tinkerboard, ODROID, etc. SBC device...",
+            "date_modified": "2023-06-28T13:40:37.000Z",
+            "date_published": "2016-06-22T13:33:04.000Z",
             "author": {
-                "name": "colinwilson",
-                "url": "https://github.com/colinwilson"
+                "name": "jens-maus",
+                "url": "https://github.com/jens-maus"
             }
         },
         {
@@ -25,6 +25,39 @@
             "author": {
                 "name": "mscharley",
                 "url": "https://github.com/mscharley"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12916656?u=2a7f8e9fa36795c269ed3f642dd6840fb68b4b72&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📖 A lightweight, modern documentation theme for Hugo [WIP]</div>",
+            "url": "https://github.com/colinwilson/lotusdocs",
+            "title": "colinwilson/lotusdocs: 📖 A lightweight, modern documentation theme for Hugo [WIP]",
+            "date_modified": "2023-06-29T16:42:32.000Z",
+            "date_published": "2022-10-23T03:00:45.000Z",
+            "author": {
+                "name": "colinwilson",
+                "url": "https://github.com/colinwilson"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57367161?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>With ngx-french-toast, you have a lightweight and customizable toast library for your Angular 14+ applications. Show informative toast messages to enhance user experience and provide important feedback or collect data with dynamically imported components.</div>",
+            "url": "https://github.com/thiagopg84/ngx-french-toast",
+            "title": "thiagopg84/ngx-french-toast: With ngx-french-toast, you have a lightweight and customizable toast library for your Angular 14+ applications. Show informative toast messages to enhance user experience and provide important feedback or collect data with dynamically imported components.",
+            "date_modified": "2023-06-10T00:14:22.000Z",
+            "date_published": "2023-06-04T23:57:29.000Z",
+            "author": {
+                "name": "thiagopg84",
+                "url": "https://github.com/thiagopg84"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/31971465?u=cbee89d25a5a792153d16119d6bf441ccf69dd9d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight math library.</div>",
+            "url": "https://github.com/Lakuna/umath",
+            "title": "Lakuna/umath: A lightweight math library.",
+            "date_modified": "2023-05-01T09:50:48.000Z",
+            "date_published": "2023-05-01T09:39:25.000Z",
+            "author": {
+                "name": "Lakuna",
+                "url": "https://github.com/Lakuna"
             }
         },
         {
@@ -108,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
             "url": "https://github.com/lit/lit",
             "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
-            "date_modified": "2023-06-30T23:46:41.000Z",
+            "date_modified": "2023-07-01T03:14:38.000Z",
             "date_published": "2017-06-29T16:27:16.000Z",
             "author": {
                 "name": "lit",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "variablesign",
                 "url": "https://github.com/variablesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26560610?u=db9506a497bb04eb73894a1116f11414ad5121c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight powerful popup library</div>",
-            "url": "https://github.com/lyove/next-popover",
-            "title": "lyove/next-popover: A lightweight powerful popup library",
-            "date_modified": "2023-06-30T19:24:59.000Z",
-            "date_published": "2023-06-30T11:15:41.000Z",
-            "author": {
-                "name": "lyove",
-                "url": "https://github.com/lyove"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8112215?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍪 Lightweight, user-friendly and customizable cookie consent banner to help you comply with the EU GDPR cookie law and CCPA regulations.</div>",
-            "url": "https://github.com/pressidium/pressidium-cookie-consent",
-            "title": "pressidium/pressidium-cookie-consent: 🍪 Lightweight, user-friendly and customizable cookie consent banner to help you comply with the EU GDPR cookie law and CCPA regulations.",
-            "date_modified": "2023-06-30T11:41:22.000Z",
-            "date_published": "2023-05-15T16:46:26.000Z",
-            "author": {
-                "name": "pressidium",
-                "url": "https://github.com/pressidium"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12518378?u=2fb87fa1b633f3587176bf30cb039138a041b9fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Free lightweight dynamic component rendering framework.</div>",
-            "url": "https://github.com/RmbRT/renderable.js",
-            "title": "RmbRT/renderable.js: Free lightweight dynamic component rendering framework.",
-            "date_modified": "2023-04-30T22:50:38.000Z",
-            "date_published": "2019-03-12T21:36:42.000Z",
-            "author": {
-                "name": "RmbRT",
-                "url": "https://github.com/RmbRT"
             }
         }
     ]
