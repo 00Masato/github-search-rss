@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1646875?u=24618295fece29a0bf5c850faf2555985232f5f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aaronfranke/rfcs/tree/fix-readme-indent#what-the-process-is\">Rendered</a></p>\n<p dir=\"auto\">Based on the positions of the <code class=\"notranslate\">-</code> symbols, and <a href=\"https://github.com/rust-lang/rfcs#what-the-process-is\">how it is currently rendered</a>, these are sub-points. However, the text was not indented properly in 2 out of 3 of the sub-points. This PR fixes the indentation of the text in the sub-points.</p>\n<p dir=\"auto\">Also, a stray trailing space character was removed on line 6, my text editor did this automatically.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3454",
+            "title": "Fix indentation of sub-points in the RFC process list in the README",
+            "date_modified": "2023-07-02T07:20:03.000Z",
+            "date_published": "2023-07-02T07:18:59.000Z",
+            "author": {
+                "name": "aaronfranke",
+                "url": "https://github.com/aaronfranke"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1646875?u=24618295fece29a0bf5c850faf2555985232f5f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aaronfranke/rfcs/blob/3453-f16-and-f128/text/3453-f16-and-f128.md\">Rendered</a></p>\n<p dir=\"auto\">See also <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"403493179\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2629\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2629/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2629\">#2629</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3453",
             "title": "Add `f16` and `f128` float types",
-            "date_modified": "2023-07-02T06:39:53.000Z",
+            "date_modified": "2023-07-02T08:05:17.000Z",
             "date_published": "2023-07-02T06:39:53.000Z",
             "author": {
                 "name": "aaronfranke",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Aloso",
                 "url": "https://github.com/Aloso"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48802534?u=fa54658fd8bcc8eb724b7785b3abccd253d54bc9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC suggests using the <code class=\"notranslate\">move</code> keyword to explicitly specify the moving binding mode to override match ergonomics</p>\n<p dir=\"auto\"><a href=\"https://github.com/schuelermine/rfcs/blob/explicit-move-binding-mode/text/3410-explicit-move-binding-mode.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3410",
-            "title": "Explicit move binding mode",
-            "date_modified": "2023-05-17T11:02:12.000Z",
-            "date_published": "2023-04-07T21:32:47.000Z",
-            "author": {
-                "name": "schuelermine",
-                "url": "https://github.com/schuelermine"
             }
         }
     ]
