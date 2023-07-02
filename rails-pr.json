@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">has_one_attached</code> and <code class=\"notranslate\">has_many_attached</code> generate several scopes and relations:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">with_attached_*</code></li>\n<li><code class=\"notranslate\">*_attachment</code></li>\n<li><code class=\"notranslate\">*_attachments</code></li>\n<li><code class=\"notranslate\">*_blob</code></li>\n<li><code class=\"notranslate\">*_blobs</code></li>\n</ul>\n<p dir=\"auto\">But these are all undocumented.</p>\n<p dir=\"auto\">We can document these methods similar to <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/ee58c8e6bec781dbbb3478f38fbe466984da9575/hovercard\" href=\"https://github.com/rails/rails/commit/ee58c8e6bec781dbbb3478f38fbe466984da9575\"><tt>ee58c8e</tt></a> using the <code class=\"notranslate\">:method:</code> directive.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48627",
+            "title": "Document generated scopes for `has_one_attached` and `has_many_attached`",
+            "date_modified": "2023-07-02T09:06:58.000Z",
+            "date_published": "2023-07-02T09:06:55.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an internal fix, not user facing. I noticed it while working on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1775913042\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48585\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48585/hovercard\" href=\"https://github.com/rails/rails/pull/48585\">#48585</a>.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">async</code> adapter has an <code class=\"notranslate\">immediate</code> option, which should only be used in tests. This option should tell the adapter to run jobs inline. This works correctly with <code class=\"notranslate\">perform_later</code>, but it does not work with <code class=\"notranslate\">enqueue_at</code>, which is what other internal mechanisms such as <code class=\"notranslate\">retry_job</code> use.</p>\n<p dir=\"auto\">This PR fixes this bug.</p>",
             "url": "https://github.com/rails/rails/pull/48626",
             "title": "Active Job: `async` adapter should always run jobs immediately if `immediate` set",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76848245?u=fbf230f4fe1bc9f7a0e3a404eeb20e2a333cbcfd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48548.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1767971401\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48548\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48548/hovercard\" href=\"https://github.com/rails/rails/issues/48548\">#48548</a></p>",
-            "url": "https://github.com/rails/rails/pull/48549",
-            "title": "Qualify association unscope values with table names",
-            "date_modified": "2023-06-25T21:21:18.000Z",
-            "date_published": "2023-06-21T16:24:58.000Z",
-            "author": {
-                "name": "philip-maina",
-                "url": "https://github.com/philip-maina"
             }
         }
     ]
