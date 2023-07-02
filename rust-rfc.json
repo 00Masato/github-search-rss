@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1646875?u=24618295fece29a0bf5c850faf2555985232f5f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aaronfranke/rfcs/tree/fix-readme-indent#what-the-process-is\">Rendered</a></p>\n<p dir=\"auto\">Based on the positions of the <code class=\"notranslate\">-</code> symbols, and <a href=\"https://github.com/rust-lang/rfcs#what-the-process-is\">how it is currently rendered</a>, these are sub-points. However, the text was not indented properly in 2 out of 3 of the sub-points. This PR fixes the indentation of the text in the sub-points.</p>\n<p dir=\"auto\">Also, a stray trailing space character was removed on line 6, my text editor did this automatically.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3454",
             "title": "Fix indentation of sub-points in the RFC process list in the README",
-            "date_modified": "2023-07-02T07:20:03.000Z",
+            "date_modified": "2023-07-02T12:36:36.000Z",
             "date_published": "2023-07-02T07:18:59.000Z",
             "author": {
                 "name": "aaronfranke",
