@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an internal fix, not user facing. I noticed it while working on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1775913042\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48585\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48585/hovercard\" href=\"https://github.com/rails/rails/pull/48585\">#48585</a>.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">async</code> adapter has an <code class=\"notranslate\">immediate</code> option, which should only be used in tests. This option should tell the adapter to run jobs inline. This works correctly with <code class=\"notranslate\">perform_later</code>, but it does not work with <code class=\"notranslate\">enqueue_at</code>, which is what other internal mechanisms such as <code class=\"notranslate\">retry_job</code> use.</p>\n<p dir=\"auto\">This PR fixes this bug.</p>",
             "url": "https://github.com/rails/rails/pull/48626",
             "title": "Active Job: `async` adapter should always run jobs immediately if `immediate` set",
-            "date_modified": "2023-07-02T10:41:59.000Z",
+            "date_modified": "2023-07-02T13:29:57.000Z",
             "date_published": "2023-07-02T07:39:17.000Z",
             "author": {
                 "name": "ghiculescu",
