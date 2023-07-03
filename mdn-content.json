@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR lists the page types used in the Learning Area.</p>\n<p dir=\"auto\">It is a part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177408050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/91\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/91/hovercard\" href=\"https://github.com/openwebdocs/project/issues/91\">openwebdocs/project#91</a> and of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1778874665\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27620\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27620/hovercard\" href=\"https://github.com/mdn/content/issues/27620\">#27620</a></p>",
+            "url": "https://github.com/mdn/content/pull/27710",
+            "title": "Add meta-docs about page-type in LA",
+            "date_modified": "2023-07-03T08:06:16.000Z",
+            "date_published": "2023-07-03T08:04:22.000Z",
+            "author": {
+                "name": "teoli2003",
+                "url": "https://github.com/teoli2003"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15844309?u=008f65848dd592799cd1d72033096baa1cbc88ce&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">fix: remove tailing '_' in slug</p>",
             "url": "https://github.com/mdn/content/pull/27708",
             "title": "fix: remove tailing '_' in slug",
@@ -64,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72331432?u=3a395bfb44b52134a7585afc7a12712b15186fe9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27686.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1783644362\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27686\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27686/hovercard\" href=\"https://github.com/mdn/content/issues/27686\">#27686</a></p>\n<p dir=\"auto\">I have added the info as a Note, if anyone feels they have a better way to add this , please let me know</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Josh-Cena/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Josh-Cena\">@Josh-Cena</a></p>",
             "url": "https://github.com/mdn/content/pull/27699",
             "title": "Added Note for the synchoronous Nature of the Web Storage API",
-            "date_modified": "2023-07-01T18:57:03.000Z",
+            "date_modified": "2023-07-03T08:01:12.000Z",
             "date_published": "2023-07-01T18:55:16.000Z",
             "author": {
                 "name": "Biki-das",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "teoli2003",
                 "url": "https://github.com/teoli2003"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF115 supports <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel/modulepreload\" rel=\"nofollow\"><code class=\"notranslate\">rel=\"modulepreload\"</code></a> on the link element in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1425310\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1425310</a>.</p>\n<p dir=\"auto\">This adds the release note.</p>\n<p dir=\"auto\">FWIW a pretty cool feature because loading static module scripts is otherwise blocking until the full module graph is downloaded, while this allows the module to be loaded as soon as the tag is encountered, and since modules include their dependencies, those can then be downloaded in parallel too. It should be lots faster in most cases.</p>\n<p dir=\"auto\">Other docs work tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1744149755\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27177\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/27177/hovercard\" href=\"https://github.com/mdn/content/issues/27177\">#27177</a></p>",
-            "url": "https://github.com/mdn/content/pull/27671",
-            "title": "FF115Relnote: link rel='modulepreload' supported",
-            "date_modified": "2023-07-03T05:25:42.000Z",
-            "date_published": "2023-06-30T06:08:07.000Z",
-            "author": {
-                "name": "hamishwillee",
-                "url": "https://github.com/hamishwillee"
             }
         }
     ]
