@@ -6,6 +6,61 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52950129?u=c5a8528751f01a523b66b18b63670ee0e27cc3f6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and user-friendly tool for analyzing and identifying the causes of software regressions in JavaScript.</div>",
+            "url": "https://github.com/IceFox99/Bugfox",
+            "title": "IceFox99/Bugfox: A lightweight and user-friendly tool for analyzing and identifying the causes of software regressions in JavaScript.",
+            "date_modified": "2023-06-20T08:09:23.000Z",
+            "date_published": "2023-05-06T20:15:18.000Z",
+            "author": {
+                "name": "IceFox99",
+                "url": "https://github.com/IceFox99"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96450945?u=09f1396ce5e2ee21e145ad6fa0c9732653161fd7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A unique javascript library for creating, composing and rendering HTML Element. Based on ES5 (EcmaScript 2009) that can support old web browsers!</div>",
+            "url": "https://github.com/equneko/elode",
+            "title": "equneko/elode: A unique javascript library for creating, composing and rendering HTML Element. Based on ES5 (EcmaScript 2009) that can support old web browsers!",
+            "date_modified": "2023-06-22T00:41:01.000Z",
+            "date_published": "2022-11-12T23:22:51.000Z",
+            "author": {
+                "name": "equneko",
+                "url": "https://github.com/equneko"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50690169?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight library for HTML form fields validation</div>",
+            "url": "https://github.com/asaje379/form-validator",
+            "title": "asaje379/form-validator: Lightweight library for HTML form fields validation",
+            "date_modified": "2023-07-02T10:47:22.000Z",
+            "date_published": "2023-06-12T12:42:57.000Z",
+            "author": {
+                "name": "asaje379",
+                "url": "https://github.com/asaje379"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5470780?u=6bbe4327bf20246631d5129de8895fccb4806544&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Very simple and lightweight AJAX implementation for Nette</div>",
+            "url": "https://github.com/matronator/axette",
+            "title": "matronator/axette: Very simple and lightweight AJAX implementation for Nette",
+            "date_modified": "2023-05-25T09:05:01.000Z",
+            "date_published": "2021-06-16T23:20:25.000Z",
+            "author": {
+                "name": "matronator",
+                "url": "https://github.com/matronator"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21136293?u=3386c1d2f711769b37c26654e73c983ba5e3891d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight vanilla Minecraft modpack for DSRVMC project.</div>",
+            "url": "https://github.com/dsrkafuu/dsr-vmc",
+            "title": "dsrkafuu/dsr-vmc: Lightweight vanilla Minecraft modpack for DSRVMC project.",
+            "date_modified": "2022-06-15T09:32:33.000Z",
+            "date_published": "2022-06-15T09:32:08.000Z",
+            "author": {
+                "name": "dsrkafuu",
+                "url": "https://github.com/dsrkafuu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19397451?u=7daec48cd564b378aaa84c0766344d2b89db8aac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Typing animation library that mimics the flaws of a human typist</div>",
             "url": "https://github.com/ccmars/typecadence",
             "title": "ccmars/typecadence: Typing animation library that mimics the flaws of a human typist",
@@ -53,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2433219?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript gaming micro-library, optimized for js13kGames.</div>",
             "url": "https://github.com/straker/kontra",
             "title": "straker/kontra: A lightweight JavaScript gaming micro-library, optimized for js13kGames.",
-            "date_modified": "2023-07-02T13:35:25.000Z",
+            "date_modified": "2023-07-03T04:50:22.000Z",
             "date_published": "2015-03-08T03:45:20.000Z",
             "author": {
                 "name": "straker",
@@ -75,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
             "url": "https://github.com/usememos/memos",
             "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
-            "date_modified": "2023-07-03T03:16:07.000Z",
+            "date_modified": "2023-07-03T04:26:25.000Z",
             "date_published": "2021-12-08T15:30:18.000Z",
             "author": {
                 "name": "usememos",
@@ -168,61 +223,6 @@
             "author": {
                 "name": "wp-strap",
                 "url": "https://github.com/wp-strap"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5472995?u=31920266fc664bd86b6dc3d311ccdd5460ad7af2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight ORM and UI framework for React based on KnockoutJS observables</div>",
-            "url": "https://github.com/mark-archer/peers-kore",
-            "title": "mark-archer/peers-kore: Lightweight ORM and UI framework for React based on KnockoutJS observables",
-            "date_modified": "2023-02-25T17:32:58.000Z",
-            "date_published": "2023-01-21T17:19:05.000Z",
-            "author": {
-                "name": "mark-archer",
-                "url": "https://github.com/mark-archer"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/24397291?u=ccc3133b08f61b9d93191b695b2cdf2bbdab495b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Horizontally.js is a lightweight JavaScript library that creates full page, responsive, slideshow/carousel web applications with mouse and touch scroll support.</div>",
-            "url": "https://github.com/MatthewBleUK/horizontally.js",
-            "title": "MatthewBleUK/horizontally.js: Horizontally.js is a lightweight JavaScript library that creates full page, responsive, slideshow/carousel web applications with mouse and touch scroll support.",
-            "date_modified": "2023-07-02T12:02:06.000Z",
-            "date_published": "2022-09-09T13:36:14.000Z",
-            "author": {
-                "name": "MatthewBleUK",
-                "url": "https://github.com/MatthewBleUK"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30513719?u=7735496ab8c63276a2fb1daa322df00015f96a51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React scan library based on modern API</div>",
-            "url": "https://github.com/preflower/react-barcode-scanner",
-            "title": "preflower/react-barcode-scanner: A lightweight React scan library based on modern API",
-            "date_modified": "2023-06-14T12:47:21.000Z",
-            "date_published": "2022-03-30T07:44:45.000Z",
-            "author": {
-                "name": "preflower",
-                "url": "https://github.com/preflower"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
-            "url": "https://github.com/verdaccio/verdaccio",
-            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
-            "date_modified": "2023-07-02T19:31:06.000Z",
-            "date_published": "2016-04-15T16:21:12.000Z",
-            "author": {
-                "name": "verdaccio",
-                "url": "https://github.com/verdaccio"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18533006?u=8668a1a981361bee5008f91aa227d0a1ddcaf5ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight package to help you find the perfect emoji based on contextual analysis. Returns set of emojis that closely match the intended sentiment or meaning. Ideal for social media posts, chat bots, or any other text that can benefit with expressive emojis. Start transforming your text into a more engaging and emotive form with emoji-whisperer</div>",
-            "url": "https://github.com/MagnusCardell/emoji-whisperer",
-            "title": "MagnusCardell/emoji-whisperer: lightweight package to help you find the perfect emoji based on contextual analysis. Returns set of emojis that closely match the intended sentiment or meaning. Ideal for social media posts, chat bots, or any other text that can benefit with expressive emojis. Start transforming your text into a more engaging and emotive form with emoji-whisperer",
-            "date_modified": "2023-07-02T23:20:17.000Z",
-            "date_published": "2023-06-24T18:49:24.000Z",
-            "author": {
-                "name": "MagnusCardell",
-                "url": "https://github.com/MagnusCardell"
             }
         }
     ]
