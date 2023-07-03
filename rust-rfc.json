@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/additional-floats/text/3451-additional-float-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3451",
             "title": "Additional float types",
-            "date_modified": "2023-07-02T17:23:44.000Z",
+            "date_modified": "2023-07-02T23:21:47.000Z",
             "date_published": "2023-06-28T17:45:07.000Z",
             "author": {
                 "name": "ecnelises",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3446",
             "title": "Introduce the Store API for great good.",
-            "date_modified": "2023-07-02T23:05:46.000Z",
+            "date_modified": "2023-07-02T23:11:57.000Z",
             "date_published": "2023-06-17T13:40:53.000Z",
             "author": {
                 "name": "matthieu-m",
