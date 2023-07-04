@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13217751?u=8153ef11ecc15e3149ee294396358371f91f45c2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Micro optimization for ActionView.<br>\nRemove extra <code class=\"notranslate\">layout_name</code> check on the <code class=\"notranslate\">render_template</code> method. At that point, <code class=\"notranslate\">layout_name</code> due to the condition <code class=\"notranslate\">layout_name &amp;&amp; template.supports_streaming?</code> so there's no need to check for it once again when creating the <code class=\"notranslate\">layout</code> variable.</p>",
+            "url": "https://github.com/rails/rails/pull/48646",
+            "title": "Update streaming_template_renderer.rb",
+            "date_modified": "2023-07-04T13:23:56.000Z",
+            "date_published": "2023-07-04T13:23:52.000Z",
+            "author": {
+                "name": "RicardoTrindade",
+                "url": "https://github.com/RicardoTrindade"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1780472225\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48611\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48611/hovercard\" href=\"https://github.com/rails/rails/issues/48611\">#48611</a></p>\n<p dir=\"auto\">Individual fragments have been cached as bare string since forever, but somehow fragment cached via collection caching were stored as <code class=\"notranslate\">ActionView::OutputBuffer</code> instances.</p>\n<p dir=\"auto\">This is both bad for performance, but also can cause issues on Rails upgrades if the internal representation of <code class=\"notranslate\">AV::OutputBuffer</code> changes.</p>\n<p dir=\"auto\">I think we should consider this PR as a bug fix, and backport it accordingly.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthutchinson/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthutchinson\">@matthutchinson</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a></p>",
             "url": "https://github.com/rails/rails/pull/48645",
             "title": "Fix Action View collection caching to store fragments as bare strings",
-            "date_modified": "2023-07-04T13:16:21.000Z",
+            "date_modified": "2023-07-04T13:56:47.000Z",
             "date_published": "2023-07-04T13:16:17.000Z",
             "author": {
                 "name": "casperisfine",
@@ -72,10 +83,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Rails.cache.delete('key')</code> is supposed to return <code class=\"notranslate\">true</code> if an entry exists and <code class=\"notranslate\">false</code> otherwise. This is how most stores behave.</p>\n<p dir=\"auto\">However, the <code class=\"notranslate\">RedisCacheStore</code> would return a <code class=\"notranslate\">1</code> when deleting an entry that does exist and a <code class=\"notranslate\">0</code> otherwise.<br>\nAs <code class=\"notranslate\">0</code> is truthy this is unexpected behaviour.</p>\n<p dir=\"auto\">RedisCacheStore now returns true if the entry exists and false otherwise, making it consistent with the other cache stores.</p>\n<p dir=\"auto\">A test is added to make sure this behaviour applies to all stores</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Rails.cache.delete('key')</code> is supposed to return <code class=\"notranslate\">true</code> if an entry exists and <code class=\"notranslate\">false</code> otherwise. This is how most stores behave.</p>\n<p dir=\"auto\">However, the <code class=\"notranslate\">RedisCacheStore</code> would return a <code class=\"notranslate\">1</code> when deleting an entry that does exist and a <code class=\"notranslate\">0</code> otherwise.<br>\nAs <code class=\"notranslate\">0</code> is truthy this is unexpected behaviour.</p>\n<p dir=\"auto\"><code class=\"notranslate\">RedisCacheStore</code> now returns <code class=\"notranslate\">true</code> if the entry exists and <code class=\"notranslate\">false</code> otherwise, making it consistent with the other cache stores.</p>\n<p dir=\"auto\">Similarly the <code class=\"notranslate\">FileCacheStore</code> now returns <code class=\"notranslate\">false</code> instead of <code class=\"notranslate\">nil</code> if the entry doesn't exist.</p>\n<p dir=\"auto\">A test is added to make sure this behaviour applies to all stores.</p>\n<p dir=\"auto\">The documentation for <code class=\"notranslate\">delete</code> has been updated to make the behaviour explicit.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48638",
             "title": "Ensure `Rails.cache.delete('key')` returns a boolean",
-            "date_modified": "2023-07-04T08:08:43.000Z",
+            "date_modified": "2023-07-04T13:24:59.000Z",
             "date_published": "2023-07-03T13:55:16.000Z",
             "author": {
                 "name": "p8",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tenderlove",
                 "url": "https://github.com/tenderlove"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/522155?u=2e71ed2ab56545207a94b885fafc434ee7350cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Sometimes you might want to <code class=\"notranslate\">preload</code> relations for a record that has already been loaded.<br>\nIf you were to do it today, you'd either have to use private API (<code class=\"notranslate\">ActiveRecord::Associations::Preloader</code>) or do something like</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"def method_that_wants_to_preload_and_receives_record(user)\n  user = User.preload(:address, friends: [:address, :followers]).find(user.id)\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">def method_that_wants_to_preload_and_receives_record(user)\n  user = User.preload(:address, friends: [:address, :followers]).find(user.id)\nend\n</code></pre></div>\n<p dir=\"auto\">However, that seems ugly and may result to unnecessary (but probably cached) query on <code class=\"notranslate\">users</code> to find a record by a primary key.</p>\n<p dir=\"auto\">It seems like an simple addition to introduce <code class=\"notranslate\">preload</code> on a record that has already been loaded. That's what this PR does.</p>",
-            "url": "https://github.com/rails/rails/pull/48582",
-            "title": "Introduce ActiveRecord::Base#preload on a record",
-            "date_modified": "2023-06-27T22:32:32.000Z",
-            "date_published": "2023-06-26T21:32:12.000Z",
-            "author": {
-                "name": "kirs",
-                "url": "https://github.com/kirs"
             }
         }
     ]
