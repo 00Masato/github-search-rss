@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1600208255\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47509\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47509/hovercard\" href=\"https://github.com/rails/rails/pull/47509\">#47509</a> to <code class=\"notranslate\">7-0-stable</code> branch</p>\n<p dir=\"auto\">Fixes: <a title=\"CVE-2013-0276\" data-hovercard-type=\"advisory\" data-hovercard-url=\"/advisories/GHSA-gr44-7grc-37vq/hovercard\" href=\"https://github.com/advisories/GHSA-gr44-7grc-37vq\">CVE-2013-0276</a></p>",
-            "url": "https://github.com/rails/rails/pull/48642",
-            "title": "[7-0-stable] Backport: \"Fix issue with attr_protected where malformed input could circumvent protection\"",
-            "date_modified": "2023-07-04T00:22:35.000Z",
-            "date_published": "2023-07-04T00:22:32.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ensure <code class=\"notranslate\">ActiveRecord::Encryption.config.previous_schemes.clear</code> is called after setting it to downcase.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48641",
             "title": "Fix flaky encryption tests",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "thukim",
                 "url": "https://github.com/thukim"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15172605?u=c9831ccf188358c7be46eb4c634002b47ebb1068&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #46653.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1478822248\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46653\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/46653/hovercard\" href=\"https://github.com/rails/rails/issues/46653\">#46653</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">becomes</code> is coping the <code class=\"notranslate\">@attributes</code> from the original instance but the defaults are not being applied from the target class during initialization. Following the comments from the linked issue this PR will apply the default value if an attribute is nil and hasn't been changed.</p>",
+            "url": "https://github.com/rails/rails/pull/48562",
+            "title": "[Fix #46653] `becomes` losing target class default value",
+            "date_modified": "2023-06-22T21:38:22.000Z",
+            "date_published": "2023-06-22T21:07:04.000Z",
+            "author": {
+                "name": "abaldwin88",
+                "url": "https://github.com/abaldwin88"
             }
         }
     ]
