@@ -6,10 +6,87 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75213105?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight starter kit to use ViteJS 4 for WordPress plugin and theme development.  Includes frontend and backend (PHP) utilities</div>",
+            "url": "https://github.com/wp-strap/wp-vite-starter",
+            "title": "wp-strap/wp-vite-starter: Lightweight starter kit to use ViteJS 4 for WordPress plugin and theme development.  Includes frontend and backend (PHP) utilities",
+            "date_modified": "2023-07-04T01:49:49.000Z",
+            "date_published": "2023-06-30T04:31:12.000Z",
+            "author": {
+                "name": "wp-strap",
+                "url": "https://github.com/wp-strap"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113836621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Git-based lightweight headless CMS. A modern, free, open source alternative to Netlify CMS &amp; Decap CMS.</div>",
+            "url": "https://github.com/sveltia/sveltia-cms",
+            "title": "sveltia/sveltia-cms: A Git-based lightweight headless CMS. A modern, free, open source alternative to Netlify CMS & Decap CMS.",
+            "date_modified": "2023-07-02T14:43:42.000Z",
+            "date_published": "2023-03-06T15:09:55.000Z",
+            "author": {
+                "name": "sveltia",
+                "url": "https://github.com/sveltia"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10875360?u=7b7d67fd262aed0140b01c17f8000292ca69f7b1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An extremely lightweight but powerful Node.js logger that's great for modern cloud/serverless applications.</div>",
+            "url": "https://github.com/chriswells0/node-sitka",
+            "title": "chriswells0/node-sitka: An extremely lightweight but powerful Node.js logger that's great for modern cloud/serverless applications.",
+            "date_modified": "2023-07-03T06:57:00.000Z",
+            "date_published": "2018-09-08T20:19:41.000Z",
+            "author": {
+                "name": "chriswells0",
+                "url": "https://github.com/chriswells0"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted memo hub. Open Source and Free forever.</div>",
+            "url": "https://github.com/usememos/memos",
+            "title": "usememos/memos: A lightweight, self-hosted memo hub. Open Source and Free forever.",
+            "date_modified": "2023-07-04T02:05:25.000Z",
+            "date_published": "2021-12-08T15:30:18.000Z",
+            "author": {
+                "name": "usememos",
+                "url": "https://github.com/usememos"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12916656?u=2a7f8e9fa36795c269ed3f642dd6840fb68b4b72&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"book\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png\">📖</g-emoji> A lightweight, modern documentation theme for Hugo [WIP]</div>",
+            "url": "https://github.com/colinwilson/lotusdocs",
+            "title": "colinwilson/lotusdocs: 📖 A lightweight, modern documentation theme for Hugo [WIP]",
+            "date_modified": "2023-07-02T12:11:11.000Z",
+            "date_published": "2022-10-23T03:00:45.000Z",
+            "author": {
+                "name": "colinwilson",
+                "url": "https://github.com/colinwilson"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/579995?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a fresh, modern &amp; lightweight HTML5 game engine</div>",
+            "url": "https://github.com/melonjs/melonJS",
+            "title": "melonjs/melonJS: a fresh, modern & lightweight HTML5 game engine",
+            "date_modified": "2023-07-04T00:38:42.000Z",
+            "date_published": "2011-04-11T07:03:14.000Z",
+            "author": {
+                "name": "melonjs",
+                "url": "https://github.com/melonjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49566968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight server-side and client-side caching layer for GraphQL to increase the performance of your queries.</div>",
+            "url": "https://github.com/oslabs-beta/MagniCache",
+            "title": "oslabs-beta/MagniCache: A lightweight server-side and client-side caching layer for GraphQL to increase the performance of your queries.",
+            "date_modified": "2023-07-04T00:54:39.000Z",
+            "date_published": "2023-02-17T21:10:16.000Z",
+            "author": {
+                "name": "oslabs-beta",
+                "url": "https://github.com/oslabs-beta"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20414672?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"deciduous_tree\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f333.png\">🌳</g-emoji>  Modern, lightweight &amp; modulable page builder</div>",
             "url": "https://github.com/p3ol/oak",
             "title": "p3ol/oak: 🌳  Modern, lightweight & modulable page builder",
-            "date_modified": "2023-07-02T01:15:27.000Z",
+            "date_modified": "2023-07-04T00:55:02.000Z",
             "date_published": "2020-08-12T10:09:32.000Z",
             "author": {
                 "name": "p3ol",
@@ -86,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) <g-emoji class=\"g-emoji\" alias=\"balloon\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f388.png\">🎈</g-emoji></div>",
             "url": "https://github.com/nestjs/cqrs",
             "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
-            "date_modified": "2023-06-30T12:27:05.000Z",
+            "date_modified": "2023-07-04T01:43:09.000Z",
             "date_published": "2017-05-06T18:08:10.000Z",
             "author": {
                 "name": "nestjs",
@@ -146,83 +223,6 @@
             "author": {
                 "name": "leeoniya",
                 "url": "https://github.com/leeoniya"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49367587?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>CreateCore is a lightweight modpack designed to help you get through the basic vanilla game faster and focus your time and creativity solely on the amazing Create mod.</div>",
-            "url": "https://github.com/SajmonOriginal/CreateCore-Reforged",
-            "title": "SajmonOriginal/CreateCore-Reforged: CreateCore is a lightweight modpack designed to help you get through the basic vanilla game faster and focus your time and creativity solely on the amazing Create mod.",
-            "date_modified": "2023-07-03T21:39:10.000Z",
-            "date_published": "2023-05-13T13:53:30.000Z",
-            "author": {
-                "name": "SajmonOriginal",
-                "url": "https://github.com/SajmonOriginal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/74655120?u=aef63f31efcda44fe39240cf0a32411b28f5b744&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast, Lightweight and efficient BSON Database Module.</div>",
-            "url": "https://github.com/MegalithOffical/meg.db",
-            "title": "MegalithOffical/meg.db: Fast, Lightweight and efficient BSON Database Module.",
-            "date_modified": "2023-07-03T16:14:26.000Z",
-            "date_published": "2023-07-03T08:40:21.000Z",
-            "author": {
-                "name": "MegalithOffical",
-                "url": "https://github.com/MegalithOffical"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2894615?u=cf0fba8b48b57c8c4cf9595fcb195e763ef12a7b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>HTML Parser for NodeJS providing a lightweight object oriented interface</div>",
-            "url": "https://github.com/stfsy/node-html-light",
-            "title": "stfsy/node-html-light: HTML Parser for NodeJS providing a lightweight object oriented interface",
-            "date_modified": "2022-01-03T16:30:30.000Z",
-            "date_published": "2016-08-03T19:50:24.000Z",
-            "author": {
-                "name": "stfsy",
-                "url": "https://github.com/stfsy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37396659?u=65e34b97849774bc9f81f20bbd4eaccb682345ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"jigsaw\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f9e9.png\">🧩</g-emoji> Lightweight &amp; Powerful framework</div>",
-            "url": "https://github.com/zhzLuke96/rh.js",
-            "title": "zhzLuke96/rh.js: 🧩 Lightweight & Powerful framework",
-            "date_modified": "2023-04-16T14:10:34.000Z",
-            "date_published": "2022-06-28T09:48:35.000Z",
-            "author": {
-                "name": "zhzLuke96",
-                "url": "https://github.com/zhzLuke96"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60230259?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Hosting the lightweightPWA for demo</div>",
-            "url": "https://github.com/PharmaLedger-IMI/lightweightPWA",
-            "title": "PharmaLedger-IMI/lightweightPWA: Hosting the lightweightPWA for demo",
-            "date_modified": "2023-01-31T19:55:33.000Z",
-            "date_published": "2022-06-08T13:45:14.000Z",
-            "author": {
-                "name": "PharmaLedger-IMI",
-                "url": "https://github.com/PharmaLedger-IMI"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108700777?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🦋 vLitejs is a fast and lightweight Javascript library for customizing video and audio player in Javascript with a minimalist theme (HTML5, Youtube, Vimeo, Dailymotion)</div>",
-            "url": "https://github.com/vlitejs/vlite",
-            "title": "vlitejs/vlite: 🦋 vLitejs is a fast and lightweight Javascript library for customizing video and audio player in Javascript with a minimalist theme (HTML5, Youtube, Vimeo, Dailymotion)",
-            "date_modified": "2023-06-27T06:40:52.000Z",
-            "date_published": "2018-04-22T20:47:43.000Z",
-            "author": {
-                "name": "vlitejs",
-                "url": "https://github.com/vlitejs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/119041528?u=ab7e49e78e23ba95ce2478230c25baded146ddb2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>routine reminder – your lightweight habit tracker</div>",
-            "url": "https://github.com/okelukas/routine-reminder-backend",
-            "title": "okelukas/routine-reminder-backend: routine reminder – your lightweight habit tracker",
-            "date_modified": "2023-07-03T20:25:03.000Z",
-            "date_published": "2023-06-26T15:05:37.000Z",
-            "author": {
-                "name": "okelukas",
-                "url": "https://github.com/okelukas"
             }
         }
     ]
