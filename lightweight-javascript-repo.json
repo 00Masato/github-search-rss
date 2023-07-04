@@ -6,6 +6,50 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25509135?u=e6396a2b6143fb94ba1bfcb9e9c872295f30d1fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>React Virtual Keyboard - Customizable, responsive and lightweight</div>",
+            "url": "https://github.com/hodgef/react-simple-keyboard",
+            "title": "hodgef/react-simple-keyboard: React Virtual Keyboard - Customizable, responsive and lightweight",
+            "date_modified": "2023-07-04T01:59:33.000Z",
+            "date_published": "2018-04-20T14:28:27.000Z",
+            "author": {
+                "name": "hodgef",
+                "url": "https://github.com/hodgef"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75213105?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight starter kit to use ViteJS 4 for WordPress plugin and theme development.  Includes frontend and backend (PHP) utilities</div>",
+            "url": "https://github.com/wp-strap/wp-vite-starter",
+            "title": "wp-strap/wp-vite-starter: Lightweight starter kit to use ViteJS 4 for WordPress plugin and theme development.  Includes frontend and backend (PHP) utilities",
+            "date_modified": "2023-07-04T01:49:49.000Z",
+            "date_published": "2023-06-30T04:31:12.000Z",
+            "author": {
+                "name": "wp-strap",
+                "url": "https://github.com/wp-strap"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93467040?u=a4206966bd71895cbcf643ed42610f7f5745ac5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is a simple and lightweight web-based video calling application built using modern web technologies. It allows users to initiate real-time video calls directly from their web browsers, enabling seamless communication and collaboration between individuals or groups.</div>",
+            "url": "https://github.com/devesh-y/Video-Calling-Application",
+            "title": "devesh-y/Video-Calling-Application: This is a simple and lightweight web-based video calling application built using modern web technologies. It allows users to initiate real-time video calls directly from their web browsers, enabling seamless communication and collaboration between individuals or groups.",
+            "date_modified": "2023-06-11T19:15:10.000Z",
+            "date_published": "2023-05-27T11:59:31.000Z",
+            "author": {
+                "name": "devesh-y",
+                "url": "https://github.com/devesh-y"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/116446996?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Particularly simple old school single page lightweight web framework for clever javascript developers.</div>",
+            "url": "https://github.com/simpartic/simpartic",
+            "title": "simpartic/simpartic: Particularly simple old school single page lightweight web framework for clever javascript developers.",
+            "date_modified": "2023-01-22T18:39:43.000Z",
+            "date_published": "2021-01-25T20:08:16.000Z",
+            "author": {
+                "name": "simpartic",
+                "url": "https://github.com/simpartic"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69189073?u=2ea2cababb40e1249ff472d56c8ef3ecda7087c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Easy and Lightweight State Management for React</div>",
             "url": "https://github.com/gabrielyoon7/external-state",
             "title": "gabrielyoon7/external-state: Easy and Lightweight State Management for React",
@@ -179,50 +223,6 @@
             "author": {
                 "name": "colinwilson",
                 "url": "https://github.com/colinwilson"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/594124?u=44f84123b64809d45ed543535950e7bd6d168837&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Jest runner creator</div>",
-            "url": "https://github.com/keplersj/create-lite-jest-runner",
-            "title": "keplersj/create-lite-jest-runner: A lightweight Jest runner creator",
-            "date_modified": "2022-03-10T21:05:05.000Z",
-            "date_published": "2022-03-10T18:36:08.000Z",
-            "author": {
-                "name": "keplersj",
-                "url": "https://github.com/keplersj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75213105?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight starter kit to use ViteJS 4 for WordPress plugin and theme development.  Includes frontend and backend (PHP) utilities</div>",
-            "url": "https://github.com/wp-strap/wp-vite-starter",
-            "title": "wp-strap/wp-vite-starter: Lightweight starter kit to use ViteJS 4 for WordPress plugin and theme development.  Includes frontend and backend (PHP) utilities",
-            "date_modified": "2023-07-04T01:49:49.000Z",
-            "date_published": "2023-06-30T04:31:12.000Z",
-            "author": {
-                "name": "wp-strap",
-                "url": "https://github.com/wp-strap"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7956947?u=2f956b4252ef740a9135dafa492ece88391863cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight package to support running an SMTP server in parallel with tests sending emails.</div>",
-            "url": "https://github.com/webstech/test-smtp-server",
-            "title": "webstech/test-smtp-server: Lightweight package to support running an SMTP server in parallel with tests sending emails.",
-            "date_modified": "2023-06-28T16:44:51.000Z",
-            "date_published": "2021-11-02T04:45:35.000Z",
-            "author": {
-                "name": "webstech",
-                "url": "https://github.com/webstech"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
-            "url": "https://github.com/WhiskeySockets/Baileys",
-            "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
-            "date_modified": "2023-07-04T07:02:55.000Z",
-            "date_published": "2022-01-12T20:38:14.000Z",
-            "author": {
-                "name": "WhiskeySockets",
-                "url": "https://github.com/WhiskeySockets"
             }
         }
     ]
