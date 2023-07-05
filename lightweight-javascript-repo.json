@@ -6,6 +6,39 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13839271?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Puppeteer &amp; Node.js 18 Docker Compose. Lightweight &amp; optimized. </div>",
+            "url": "https://github.com/rcormie/puppeteer-nodejs-18-docker",
+            "title": "rcormie/puppeteer-nodejs-18-docker: Puppeteer & Node.js 18 Docker Compose. Lightweight & optimized. ",
+            "date_modified": "2023-07-05T00:19:06.000Z",
+            "date_published": "2023-07-03T02:46:38.000Z",
+            "author": {
+                "name": "rcormie",
+                "url": "https://github.com/rcormie"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7112345?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight and intuitive HTTP utility leveraging native modules for effortless cross-platform compatibility.</div>",
+            "url": "https://github.com/codingfriend1/minimal-universal-requester",
+            "title": "codingfriend1/minimal-universal-requester: Lightweight and intuitive HTTP utility leveraging native modules for effortless cross-platform compatibility.",
+            "date_modified": "2023-07-03T21:48:58.000Z",
+            "date_published": "2023-07-03T21:34:11.000Z",
+            "author": {
+                "name": "codingfriend1",
+                "url": "https://github.com/codingfriend1"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101519684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Google-searchable Slack alternative for Communities</div>",
+            "url": "https://github.com/Linen-dev/linen.dev",
+            "title": "Linen-dev/linen.dev: Lightweight Google-searchable Slack alternative for Communities",
+            "date_modified": "2023-07-04T23:46:54.000Z",
+            "date_published": "2022-02-15T15:03:37.000Z",
+            "author": {
+                "name": "Linen-dev",
+                "url": "https://github.com/Linen-dev"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26602940?u=3c52ce6393bb547c97e6380ccdee03e0c64152c6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight validator function for GTINs</div>",
             "url": "https://github.com/0xflotus/valid-gtin",
             "title": "0xflotus/valid-gtin: A lightweight validator function for GTINs",
@@ -25,17 +58,6 @@
             "author": {
                 "name": "wp-strap",
                 "url": "https://github.com/wp-strap"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101519684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Google-searchable Slack alternative for Communities</div>",
-            "url": "https://github.com/Linen-dev/linen.dev",
-            "title": "Linen-dev/linen.dev: Lightweight Google-searchable Slack alternative for Communities",
-            "date_modified": "2023-07-04T19:13:41.000Z",
-            "date_published": "2022-02-15T15:03:37.000Z",
-            "author": {
-                "name": "Linen-dev",
-                "url": "https://github.com/Linen-dev"
             }
         },
         {
@@ -97,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
             "url": "https://github.com/emberjs/data",
             "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
-            "date_modified": "2023-07-04T22:25:48.000Z",
+            "date_modified": "2023-07-05T00:44:15.000Z",
             "date_published": "2011-12-20T01:50:40.000Z",
             "author": {
                 "name": "emberjs",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "RadoslavBoyanov",
                 "url": "https://github.com/RadoslavBoyanov"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18660708?u=1b3c35590a65d1e558fc41c2035fbeff879e3558&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Super lightweight typescript function to convert hexes of format #RRGGBB to rgb of value rgb(x,y,z) or rgba(x,y,z,a).</div>",
-            "url": "https://github.com/flofehrenbacher/hex-2-rgb",
-            "title": "flofehrenbacher/hex-2-rgb: Super lightweight typescript function to convert hexes of format #RRGGBB to rgb of value rgb(x,y,z) or rgba(x,y,z,a).",
-            "date_modified": "2023-01-31T19:06:32.000Z",
-            "date_published": "2021-08-26T10:33:49.000Z",
-            "author": {
-                "name": "flofehrenbacher",
-                "url": "https://github.com/flofehrenbacher"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6793008?u=0b6652c08c4abb9f8c3345bcbed58e38335bc74f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight CSS-in-JS for Preact based on BauCSS</div>",
-            "url": "https://github.com/ndrean/bau-preat-css",
-            "title": "ndrean/bau-preat-css: Lightweight CSS-in-JS for Preact based on BauCSS",
-            "date_modified": "2023-07-04T17:27:18.000Z",
-            "date_published": "2023-07-04T16:18:29.000Z",
-            "author": {
-                "name": "ndrean",
-                "url": "https://github.com/ndrean"
             }
         }
     ]
