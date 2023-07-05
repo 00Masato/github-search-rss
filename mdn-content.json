@@ -6,21 +6,21 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12981278?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">Commit 1:<br>\nIf you try the \"media\" link in <a href=\"https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers#layer_creation_and_media_queries\" rel=\"nofollow\">this section</a> or <a href=\"https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_layers#importing_style_sheets_into_named_and_anonymous_layers_with_import\" rel=\"nofollow\">this section</a>, they're broken -- looks like they had zero width spaces at the beginning of the URLs. Commit fixes both links -- removed zero-width spaces, and linked to the new folder/URL.</p>\n<p dir=\"auto\">Commit 2:<br>\nWas curious, so checked if there were any other occurrences in <code class=\"notranslate\">files/</code> -- I'm not a grep expert but used <code class=\"notranslate\">grep -rl $'\\u200b' files/</code>. Looks like there was only one noteworthy file (ignoring GIFs, PNGs, JPGs, and the actual doc explaining the character):<br>\n<code class=\"notranslate\">files/en-us/web/api/publickeycredential/isconditionalmediationavailable/index.md</code> -- so I removed them as well.</p>\n\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">N/A -- could not find any.</p>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/27770",
-            "title": "Fix broken links & remove zero-width spaces",
-            "date_modified": "2023-07-05T04:50:59.000Z",
-            "date_published": "2023-07-05T04:50:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add the following page types:</p>\n<h3 dir=\"auto\">XPath page types</h3>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">xpath-function</code>: a function, like <code class=\"notranslate\">ceiling()</code>.</li>\n</ul>\n<h3 dir=\"auto\">XSLT page types</h3>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">xslt-element</code>: an element of XSLT, like <code class=\"notranslate\">&lt;xsl:message&gt;</code>.</li>\n<li><code class=\"notranslate\">xslt-axis</code>: an axis of XSLT, like <code class=\"notranslate\">ancestor</code>.</li>\n</ul>\n<h3 dir=\"auto\">EXSLT page types</h3>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">xslt-function</code>: a function of EXSLT, like <code class=\"notranslate\">exsl:node-set()</code>.</li>\n</ul>\n<p dir=\"auto\">This is part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177408050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/91\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/91/hovercard\" href=\"https://github.com/openwebdocs/project/issues/91\">openwebdocs/project#91</a></p>",
+            "url": "https://github.com/mdn/content/pull/27773",
+            "title": "Add page types for Web/XML, Web/XPath, Web/(E)XSLT",
+            "date_modified": "2023-07-05T06:08:33.000Z",
+            "date_published": "2023-07-05T06:05:50.000Z",
             "author": {
-                "name": "thmschn",
-                "url": "https://github.com/thmschn"
+                "name": "teoli2003",
+                "url": "https://github.com/teoli2003"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/413984?u=012448231c2fec9e7d4ee03a1c62f09d28cffb0d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">change <code class=\"notranslate\">URL.canParse()</code> to <code class=\"notranslate\">URL: canParse()</code>.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">to make it clear the method is a static method, not an instant method</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">this also aligns with the <code class=\"notranslate\">Response: json()</code> item listed above</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27769",
             "title": "firefox-115: update `canParse()` method name to follow the current convention",
-            "date_modified": "2023-07-05T03:53:43.000Z",
+            "date_modified": "2023-07-05T05:32:32.000Z",
             "date_published": "2023-07-05T03:51:28.000Z",
             "author": {
                 "name": "myakura",
@@ -28,21 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8973864?u=626f6c1fafb3a5155d653fd9967dd9d8a66af9fb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Very small amendment to the content.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I am making this change as I was enjoying reading the article, but felt this might be an improvement.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">I've double checked and don't think there are any related issues for this pull request.</p>\n",
-            "url": "https://github.com/mdn/content/pull/27766",
-            "title": "Update index.md",
-            "date_modified": "2023-07-04T19:06:33.000Z",
-            "date_published": "2023-07-04T19:06:22.000Z",
-            "author": {
-                "name": "suemcmahon",
-                "url": "https://github.com/suemcmahon"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71223183?u=4f68bbcf9fe0e2e0750a8a18226cca4fb3e3078a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If the direction of ul or ol element is set to rtl the padding will be padding-right, not padding left. So it's good to mention that.</p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/27765",
             "title": "Update index.md",
-            "date_modified": "2023-07-04T20:39:35.000Z",
+            "date_modified": "2023-07-05T05:43:45.000Z",
             "date_published": "2023-07-04T18:30:15.000Z",
             "author": {
                 "name": "dv3lah",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ilanchezhian-m",
                 "url": "https://github.com/ilanchezhian-m"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23692842?u=a6483dfd5b09be0cc096e7d48645340ac081ff4e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">On line 14 removed:<br>\n\"(except when the latter sibling needs to be <a href=\"/en-US/docs/Web/CSS/clear\">cleared</a> past floats)\" I was unable to replicate the case where a latter sibling clearing past floats would not collapse the margin.  The only way I could force this was by floating the latter sibling, too.</p>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">modify margin collapsing case dealing with adjacent siblings</p>\n\n<p dir=\"auto\">I was unable to replicate the case where a latter sibling clearing past floats would not collapse the margin.  The only way I could force this was by floating the latter sibling, too.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I would like for others to not get confused.</p>\n\n<p dir=\"auto\">The readers will not get stuck when trying to understand margin collapsing.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/27700",
+            "title": "modify margin collapsing case dealing with adjacent siblings",
+            "date_modified": "2023-07-01T21:52:26.000Z",
+            "date_published": "2023-07-01T21:50:23.000Z",
+            "author": {
+                "name": "TazExprez",
+                "url": "https://github.com/TazExprez"
             }
         }
     ]
