@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48611.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1780472225\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48611\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48611/hovercard\" href=\"https://github.com/rails/rails/issues/48611\">#48611</a></p>\n<p dir=\"auto\">This help treating caches entries as expandable.</p>\n<p dir=\"auto\">Because Marshal will hapily serialize almost everything, It's not uncommon to inadvertently cache a class that's not particularly stable, and cause deserialization errors on rollout when the implementation changes.</p>\n<p dir=\"auto\">E.g. <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1686765909\" data-permission-text=\"Title is private\" data-url=\"https://github.com/sporkmonger/addressable/issues/508\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/sporkmonger/addressable/pull/508/hovercard\" href=\"https://github.com/sporkmonger/addressable/pull/508\">sporkmonger/addressable#508</a></p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonathanhefner/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonathanhefner\">@jonathanhefner</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthutchinson/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthutchinson\">@matthutchinson</a></p>",
+            "url": "https://github.com/rails/rails/pull/48663",
+            "title": "Make Active Support Cache treat deserialization errors like cache misses",
+            "date_modified": "2023-07-05T14:37:51.000Z",
+            "date_published": "2023-07-05T14:37:47.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While working on fixing some deprecation warnings introduced when the 6.1 cache_format deprecation was <a href=\"https://github.com/rails/rails/commit/088551c802bb4005a667aaa33814cfbb1feb3927\">moved</a> to be on usage, I found that the MemCacheStore actually has its own <code class=\"notranslate\">default_coder</code> method.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This adds the warning to MemCacheStore's <code class=\"notranslate\">default_coder</code> method so that every cache store will warn on using the 6.1 format.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48662",
             "title": "Fix MemCacheStore not warning on 6.1 cache format",
-            "date_modified": "2023-07-05T14:01:08.000Z",
+            "date_modified": "2023-07-05T14:21:51.000Z",
             "date_published": "2023-07-05T14:01:04.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -168,17 +179,6 @@
             "author": {
                 "name": "lazaronixon",
                 "url": "https://github.com/lazaronixon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5162312?u=e1b3c0f7c6dc600253bf15c99f618b9b2d39c500&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because stale stack checking for <code class=\"notranslate\">has_many</code> / <code class=\"notranslate\">has_one</code> through relations doesn't currently work for composite primary key relations.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes stale states so that they are tracked as an array of columns to properly check through associations with composite primary keys.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">My tests might be too close to the implementation. Let me know if I should improve that.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48606",
-            "title": "Support stale state detections in CPK through associations",
-            "date_modified": "2023-07-04T07:14:41.000Z",
-            "date_published": "2023-06-29T02:21:02.000Z",
-            "author": {
-                "name": "gmcgibbon",
-                "url": "https://github.com/gmcgibbon"
             }
         },
         {
