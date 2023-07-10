@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/bf16_f64f64_f80/text/add-bf16-f64f64-and-f80-type.md\">Rendered</a></p>\n<p dir=\"auto\">Previous RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a> mixes proposal for IEEE-754 compliant <code class=\"notranslate\">f16</code>/<code class=\"notranslate\">f128</code> and such non-standard types, split this off from it to focus on the target related ones.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3456",
             "title": "Add `bf16`, `f64f64` and `f80` types",
-            "date_modified": "2023-07-10T16:49:48.000Z",
+            "date_modified": "2023-07-10T17:43:32.000Z",
             "date_published": "2023-07-10T16:48:54.000Z",
             "author": {
                 "name": "ecnelises",
