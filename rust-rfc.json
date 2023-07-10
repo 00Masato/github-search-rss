@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/bf16_f64f64_f80/text/add-bf16-f64f64-and-f80-type.md\">Rendered</a></p>\n<p dir=\"auto\">Previous RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a> mixes proposal for IEEE-754 compliant <code class=\"notranslate\">f16</code>/<code class=\"notranslate\">f128</code> and such non-standard types, split this off from it to focus on the target related ones.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3456",
+            "title": "Add `bf16`, `f64f64` and `f80` types",
+            "date_modified": "2023-07-10T16:49:48.000Z",
+            "date_published": "2023-07-10T16:48:54.000Z",
+            "author": {
+                "name": "ecnelises",
+                "url": "https://github.com/ecnelises"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes creating a new sub-team for shepherding improvements to the end-user experience (wider Rust development community) for verifying their Rust code.  For example, this team would be overseeing improvements to <code class=\"notranslate\">cargo test</code> (owned by T-cargo under T-devtools) and lib<code class=\"notranslate\">test</code> (owned by T-libs).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/test/text/3455-t-test.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3455",
             "title": "Create a Testing sub-team",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/additional-floats/text/3451-additional-float-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3451",
             "title": "Additional float types",
-            "date_modified": "2023-07-10T08:13:25.000Z",
+            "date_modified": "2023-07-10T16:49:18.000Z",
             "date_published": "2023-06-28T17:45:07.000Z",
             "author": {
                 "name": "ecnelises",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/451321?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new syntax for multi-line string literals designed to contain code and play nicely with <code class=\"notranslate\">rustfmt</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Diggsey/rfcs/blob/code-string-literals/text/0000-code-literals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3450",
             "title": "Propose code string literals",
-            "date_modified": "2023-07-10T00:04:05.000Z",
+            "date_modified": "2023-07-10T16:49:52.000Z",
             "date_published": "2023-06-18T17:01:25.000Z",
             "author": {
                 "name": "Diggsey",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tgross35",
                 "url": "https://github.com/tgross35"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15658558?u=0864056b73954e3020796850188876984dcb71f4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add lossy numeric conversions as an alternative to the <code class=\"notranslate\">as</code> operator, and deprecate <code class=\"notranslate\">as</code> for lossy numeric casts in a future edition, so</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let n = f64::PI as usize;\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> n = f64<span class=\"pl-kos\">::</span><span class=\"pl-v\">PI</span> <span class=\"pl-k\">as</span> <span class=\"pl-smi\">usize</span><span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\">becomes</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let n: usize = f64::PI.approx();\n// or\nlet n = f64::PI.approx::&lt;usize&gt;();\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> n<span class=\"pl-kos\">:</span> <span class=\"pl-smi\">usize</span> = f64<span class=\"pl-kos\">::</span><span class=\"pl-v\">PI</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">approx</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-c\">// or</span>\n<span class=\"pl-k\">let</span> n = f64<span class=\"pl-kos\">::</span><span class=\"pl-v\">PI</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">approx</span><span class=\"pl-kos\">::</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">usize</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/Aloso/rfcs/blob/lossy-conversion-traits/0000-lossy-conversions.md\"><strong>RENDERED</strong></a></p>\n<p dir=\"auto\">This solves the problem that when you see <code class=\"notranslate\">as</code>, you don't know what it does. Does it truncate? saturate? round towards zero? lose numeric precision? Or is it lossless? When <code class=\"notranslate\">as</code> for lossy conversions is deprecated, <code class=\"notranslate\">as</code> is guaranteed to be lossless.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3415",
-            "title": "Traits for lossy conversions",
-            "date_modified": "2023-05-06T08:50:14.000Z",
-            "date_published": "2023-04-14T21:21:38.000Z",
-            "author": {
-                "name": "Aloso",
-                "url": "https://github.com/Aloso"
             }
         }
     ]
