@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/bf16_f64f64_f80/text/add-bf16-f64f64-and-f80-type.md\">Rendered</a></p>\n<p dir=\"auto\">Previous RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a> mixes proposal for IEEE-754 compliant <code class=\"notranslate\">f16</code>/<code class=\"notranslate\">f128</code> and such non-standard types, split this off from it to focus on the target related ones.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3456",
             "title": "Add `bf16`, `f64f64` and `f80` types",
-            "date_modified": "2023-07-10T20:53:39.000Z",
+            "date_modified": "2023-07-10T21:23:03.000Z",
             "date_published": "2023-07-10T16:48:54.000Z",
             "author": {
                 "name": "ecnelises",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/451321?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new syntax for multi-line string literals designed to contain code and play nicely with <code class=\"notranslate\">rustfmt</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Diggsey/rfcs/blob/code-string-literals/text/0000-code-literals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3450",
             "title": "Propose code string literals",
-            "date_modified": "2023-07-10T18:42:04.000Z",
+            "date_modified": "2023-07-10T21:58:58.000Z",
             "date_published": "2023-06-18T17:01:25.000Z",
             "author": {
                 "name": "Diggsey",
