@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1530175?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR documents how to handle a couple of common situations with ActiveStorage that I always have to look up.</p>\n<ul dir=\"auto\">\n<li>How to keep existing attachments on a <code class=\"notranslate\">has_many_attached</code> when uploading new ones</li>\n<li>How to retain uploaded files when a form submission fails validation</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48722",
+            "title": "Document common ActiveStorage issues",
+            "date_modified": "2023-07-12T19:44:04.000Z",
+            "date_published": "2023-07-12T19:44:00.000Z",
+            "author": {
+                "name": "thedanbob",
+                "url": "https://github.com/thedanbob"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1798866939\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48712\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48712/hovercard\" href=\"https://github.com/rails/rails/issues/48712\">#48712</a>.</p>\n<p dir=\"auto\">The problem was that <code class=\"notranslate\">.first</code> method call, used in the condition, evaluated lazy enumerator, and thus lead to the problematic behavior.</p>",
             "url": "https://github.com/rails/rails/pull/48720",
             "title": "Fix `Enumerable#sum` for `Enumerator#lazy`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25950768?u=056c73263e9916cea227c9a58ea5106d0cf8c09e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The current <a href=\"https://api.rubyonrails.org/v7.0.4/classes/ActionView/Helpers/FormHelper.html#method-i-file_field\" rel=\"nofollow\">documentation</a> implies calling <code class=\"notranslate\">multiple: true</code> and <code class=\"notranslate\">include_hidden: true</code> will stop existing files from being replaced when saving a record that has ActiveStorage attached. However it appears <code class=\"notranslate\">include_hidden: false</code> is needed to achieve this functionality.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48006.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1677646911\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48006\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48006/hovercard\" href=\"https://github.com/rails/rails/issues/48006\">#48006</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Updating documentation to reflect the current functionality of <code class=\"notranslate\">multiple: true</code> and <code class=\"notranslate\">include_hidden: false</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48658",
-            "title": "Fix `include_hidden` documentation for File Upload",
-            "date_modified": "2023-07-12T14:36:43.000Z",
-            "date_published": "2023-07-05T08:34:27.000Z",
-            "author": {
-                "name": "alexpapworth",
-                "url": "https://github.com/alexpapworth"
             }
         }
     ]
