@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4473199?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Prior this change <code class=\"notranslate\">rails generate migration drop_users</code> generated migration file with empty <code class=\"notranslate\">def change</code> body.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n  end\nend\n</code></pre></div>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This PR improve codebase in order to generate proper drop migration:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n     drop_table :users\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n     drop_table :users\n  end\nend\n</code></pre></div>",
             "url": "https://github.com/rails/rails/pull/48729",
             "title": "Add migration generator for drop table action",
-            "date_modified": "2023-07-13T12:32:24.000Z",
+            "date_modified": "2023-07-13T13:29:17.000Z",
             "date_published": "2023-07-13T08:25:55.000Z",
             "author": {
                 "name": "knagode",
@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1530175?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR documents how to handle a couple of common situations with ActiveStorage that I always have to look up.</p>\n<ul dir=\"auto\">\n<li>How to keep existing attachments on a <code class=\"notranslate\">has_many_attached</code> when uploading new ones</li>\n<li>How to retain uploaded files when a form submission fails validation</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48722",
             "title": "Document common ActiveStorage issues",
-            "date_modified": "2023-07-12T20:21:11.000Z",
+            "date_modified": "2023-07-13T13:58:34.000Z",
             "date_published": "2023-07-12T19:44:00.000Z",
             "author": {
                 "name": "thedanbob",
