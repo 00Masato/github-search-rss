@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4473199?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Prior this change <code class=\"notranslate\">rails generate migration drop_users</code> generated migration file with empty <code class=\"notranslate\">def change</code> body.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n  end\nend\n</code></pre></div>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This PR improve codebase in order to generate proper drop migration:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n     drop_table :users\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n     drop_table :users\n  end\nend\n</code></pre></div>",
             "url": "https://github.com/rails/rails/pull/48729",
             "title": "Add migration generator for drop table action",
-            "date_modified": "2023-07-13T08:25:58.000Z",
+            "date_modified": "2023-07-13T12:32:24.000Z",
             "date_published": "2023-07-13T08:25:55.000Z",
             "author": {
                 "name": "knagode",
