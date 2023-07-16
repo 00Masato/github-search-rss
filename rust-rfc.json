@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/unsafe-fields/text/0000-unsafe-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3458",
             "title": "Unsafe fields",
-            "date_modified": "2023-07-16T19:12:18.000Z",
+            "date_modified": "2023-07-16T22:40:46.000Z",
             "date_published": "2023-07-13T04:45:33.000Z",
             "author": {
                 "name": "jhpratt",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes creating a new sub-team for shepherding improvements to the end-user experience (wider Rust development community) for verifying their Rust code.  For example, this team would be overseeing improvements to <code class=\"notranslate\">cargo test</code> (owned by T-cargo under T-devtools) and lib<code class=\"notranslate\">test</code> (owned by T-libs).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/test/text/3455-t-test.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3455",
             "title": "Create a Testing sub-team",
-            "date_modified": "2023-07-16T13:26:19.000Z",
+            "date_modified": "2023-07-16T22:38:17.000Z",
             "date_published": "2023-07-03T18:39:27.000Z",
             "author": {
                 "name": "epage",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/563826?u=a408b5784df40b974e45854386172e7e7ebc1797&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add new <code class=\"notranslate\">is_{arch}_feature_enabled</code> macros for detecting at compile time if a target feature is enabled in a context.</p>\n<p dir=\"auto\"><a href=\"https://github.com/calebzulawski/rfcs/blob/target-feature-enabled/text/3449-target-feature-enabled.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3449",
             "title": "Contextual target feature detection",
-            "date_modified": "2023-07-16T21:58:43.000Z",
+            "date_modified": "2023-07-16T22:30:55.000Z",
             "date_published": "2023-06-18T02:46:56.000Z",
             "author": {
                 "name": "calebzulawski",
