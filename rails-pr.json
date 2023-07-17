@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1799258482\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48716\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48716/hovercard\" href=\"https://github.com/rails/rails/pull/48716\">#48716</a></p>\n<p dir=\"auto\"><code class=\"notranslate\">model.connection_pool.schema_reflection</code> is never falsy, so that <code class=\"notranslate\">if</code> was pointless.</p>\n<p dir=\"auto\">Instead we more properly check if the schema cache contains that table.</p>\n<p dir=\"auto\">I also added some more comments to explain why the initializer tries so hard not to touch the database.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
             "url": "https://github.com/rails/rails/pull/48743",
             "title": "Cleanup `define_attribute_methods` initializer",
-            "date_modified": "2023-07-17T11:58:57.000Z",
+            "date_modified": "2023-07-17T12:11:16.000Z",
             "date_published": "2023-07-17T11:15:07.000Z",
             "author": {
                 "name": "casperisfine",
