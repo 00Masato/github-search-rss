@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds an optimization for cache format version 7.1 such that expired and version-mismatched cache entries do not deserialize their values.</p>\n<hr>\n<p dir=\"auto\">This is extracted from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1751610988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48451/hovercard\" href=\"https://github.com/rails/rails/pull/48451\">#48451</a>.  See the 2nd commit for the relevant changes.</p>",
             "url": "https://github.com/rails/rails/pull/48754",
             "title": "Lazily deserialize cache entries",
-            "date_modified": "2023-07-18T08:26:59.000Z",
+            "date_modified": "2023-07-18T16:35:31.000Z",
             "date_published": "2023-07-17T21:30:19.000Z",
             "author": {
                 "name": "jonathanhefner",
