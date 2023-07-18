@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/48755",
+            "title": "Try out rack head (3.1).",
+            "date_modified": "2023-07-17T23:20:40.000Z",
+            "date_published": "2023-07-17T23:16:40.000Z",
+            "author": {
+                "name": "ioquatix",
+                "url": "https://github.com/ioquatix"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds an optimization for cache format version 7.1 such that expired and version-mismatched cache entries do not deserialize their values.</p>\n<hr>\n<p dir=\"auto\">This is extracted from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1751610988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48451/hovercard\" href=\"https://github.com/rails/rails/pull/48451\">#48451</a>.  See the 2nd commit for the relevant changes.</p>",
             "url": "https://github.com/rails/rails/pull/48754",
             "title": "Lazily deserialize cache entries",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15572959?u=524a32c40db55e38d5fd9b1e6920e2a157998a12&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes <code class=\"notranslate\">AbstractController#internal_methods</code> to exclude <code class=\"notranslate\">action_methods</code>.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I tried enabling <a href=\"https://github.com/rails/rails/pull/43487\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43487/hovercard\"><code class=\"notranslate\">raise_on_missing_callback_actions</code></a> and I found out that <code class=\"notranslate\">MyController#action_methods</code> is missing a method that <code class=\"notranslate\">MyController</code> actually defines. It only happens when a method is also defined by an ancestor abstract controller.</p>\n<p dir=\"auto\">xref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1769404472\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48559\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48559/hovercard?comment_id=1624321279&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/48559#issuecomment-1624321279\">#48559 (comment)</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48699",
-            "title": "AbstractController#internal_methods: ignore action_methods",
-            "date_modified": "2023-07-10T17:11:50.000Z",
-            "date_published": "2023-07-09T19:03:22.000Z",
-            "author": {
-                "name": "kamil-gwozdz",
-                "url": "https://github.com/kamil-gwozdz"
             }
         }
     ]
