@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2090772?u=517ee1e56d9df10ff7fc4f5e9ca781e06841c84e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ijackson/rust-rfcs/blob/error/text/0000-error-display.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3459",
+            "title": "Error Display (std::error::Error::fmt_error)",
+            "date_modified": "2023-07-19T15:57:37.000Z",
+            "date_published": "2023-07-19T15:57:37.000Z",
+            "author": {
+                "name": "ijackson",
+                "url": "https://github.com/ijackson"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/unsafe-fields/text/0000-unsafe-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3458",
             "title": "Unsafe fields",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "pommicket",
                 "url": "https://github.com/pommicket"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29864074?u=133f9259e09c1bc34f6f4dd2451554472abddfff&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">based on the discussion from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1419486184\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/103413\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/103413/hovercard\" href=\"https://github.com/rust-lang/rust/pull/103413\">rust-lang/rust#103413</a> and <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/deprecating.20spooky-dropck-at-a-distance/near/349392447\" rel=\"nofollow\">https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/deprecating.20spooky-dropck-at-a-distance/near/349392447</a>. A big thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/SoniEx2/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/SoniEx2\">@SoniEx2</a> for their valuable input in these threads.</p>\n<p dir=\"auto\">I consider this to be solely the responsibility of t-types, but cc @rust-lang/lang, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/RalfJung/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/RalfJung\">@RalfJung</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/lcnr/rfcs/blob/bb-may-dangle/text/3417-dropck-eyepatch-v3.md\">rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3417",
-            "title": "improve `#[may_dangle]` for type parameters",
-            "date_modified": "2023-04-29T03:40:42.000Z",
-            "date_published": "2023-04-17T11:53:28.000Z",
-            "author": {
-                "name": "lcnr",
-                "url": "https://github.com/lcnr"
             }
         }
     ]
