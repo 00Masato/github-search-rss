@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1441126?u=673c0269338267eb09ccf9a8350ab9e55da4904e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR addresses the decision by the libs team not to proceed with the <code class=\"notranslate\">Provider</code> trait and to merge what's left of RFC 3192 minus <code class=\"notranslate\">Provider</code> (ie the <code class=\"notranslate\">Request</code> aka <code class=\"notranslate\">Demand</code> type) into <a href=\"https://github.com/rust-lang/rfcs/pull/2895\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2895/hovercard\">the WIP RFC 2895</a>.</p>\n<p dir=\"auto\">For reference to these decisions, please see the following starting points:</p>\n<ul dir=\"auto\">\n<li>see the <a href=\"https://github.com/rust-lang/rust/issues/96024#issuecomment-1554773172\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/96024/hovercard\">May 2023 <code class=\"notranslate\">provide_any</code> tracking issue</a> comment</li>\n<li>see the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/219381-t-libs/topic/error_generic_member_access/near/373733742\" rel=\"nofollow\">July 9 2023 zulip discussion</a></li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/waynr/rust-rfcs/blob/remove-rfc-3912/text/3192-dyno.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3460",
+            "title": "remove RFC-3192, aka the 'provide_any' feature",
+            "date_modified": "2023-07-19T20:52:50.000Z",
+            "date_published": "2023-07-19T20:49:40.000Z",
+            "author": {
+                "name": "waynr",
+                "url": "https://github.com/waynr"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2090772?u=517ee1e56d9df10ff7fc4f5e9ca781e06841c84e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ijackson/rust-rfcs/blob/error/text/0000-error-display.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3459",
             "title": "Error Display (std::error::Error::fmt_error)",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tgross35",
                 "url": "https://github.com/tgross35"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12226503?u=261e4d3e8648e7cfa2c203d5d71ea58f7f97bed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">for reference I created an issue about this here: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1668184055\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/libs-team/issues/210\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/libs-team/issues/210/hovercard\" href=\"https://github.com/rust-lang/libs-team/issues/210\">rust-lang/libs-team#210</a> &amp; a rust internals thread here: <a href=\"https://internals.rust-lang.org/t/should-pi-be-available-as-f32-pi-etc/18670\" rel=\"nofollow\">https://internals.rust-lang.org/t/should-pi-be-available-as-f32-pi-etc/18670</a></p>\n<p dir=\"auto\">it's my first time writing an rfc so please let me know if there's anything that can be improved :)</p>\n<p dir=\"auto\"><a href=\"https://github.com/pommicket/rfcs/blob/associated-math-constants/text/0000-associated-math-constants.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3418",
-            "title": "RFC: Associated mathematical constants",
-            "date_modified": "2023-04-21T18:55:22.000Z",
-            "date_published": "2023-04-17T13:47:12.000Z",
-            "author": {
-                "name": "pommicket",
-                "url": "https://github.com/pommicket"
             }
         }
     ]
