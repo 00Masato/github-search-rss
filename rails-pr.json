@@ -28,10 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A few small changes required for Rack 3.1, which removed deprecated code paths and introduced some changes that affect Rails:</p>\n<ul dir=\"auto\">\n<li>Optional <code class=\"notranslate\">rack.input</code> (which also implies optional <code class=\"notranslate\">CONTENT_LENGTH</code>).</li>\n<li>JavaScript's mime type was updated to reflect the latest standards.</li>\n<li><code class=\"notranslate\">rack-cache</code> was updated for Rack 3+.</li>\n<li><code class=\"notranslate\">rack/file.rb</code> was finally removed.</li>\n</ul>\n<p dir=\"auto\">I have tested this locally. We could introduce tests for <code class=\"notranslate\">RACK=head</code> if that seems reasonable, but I'm sure we can release Rack 3.1 soon.</p>",
             "url": "https://github.com/rails/rails/pull/48755",
-            "title": "Try out rack head (3.1).",
-            "date_modified": "2023-07-19T03:12:06.000Z",
+            "title": "Update tests to support changes in Rack 3.1 (head).",
+            "date_modified": "2023-07-19T03:56:16.000Z",
             "date_published": "2023-07-17T23:16:40.000Z",
             "author": {
                 "name": "ioquatix",
