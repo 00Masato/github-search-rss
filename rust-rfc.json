@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1441126?u=673c0269338267eb09ccf9a8350ab9e55da4904e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR is a duplicate of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"592267297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2895\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2895/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2895\">#2895</a>, which I have agreed to take over for <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yaahc/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yaahc\">@yaahc</a>. The idea is to close that in favor of this PR so I can drive additional changes as feedback comes in.</p>\n<p dir=\"auto\">The current state of this proposal is as follows:</p>\n<ul dir=\"auto\">\n<li>A <a href=\"nightly_implementation\">implementation</a> gated by the <code class=\"notranslate\">error_generic_member_access</code> feature flag is available in nightly.</li>\n<li>There is an <a href=\"feedback_pr\">open PR</a> to address feedback from the <a href=\"provide_any_tracking\"><code class=\"notranslate\">provide_any</code> tracking issue</a> in nightly.</li>\n<li>It has been proposed to supercede the <a href=\"provide_any\"><code class=\"notranslate\">provide_any</code> feature</a> by taking on the <code class=\"notranslate\">Demand</code>/<code class=\"notranslate\">Request</code> API (minus the <code class=\"notranslate\">Provider</code> trait) for the sake of generic member access on <code class=\"notranslate\">dyn Error</code>.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/waynr/rust-rfcs/blob/error_generic_member_access/text/0000-dyn-error-generic-member-access.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3461",
+            "title": "RFC: Generic member access for dyn Error trait objects",
+            "date_modified": "2023-07-20T22:34:05.000Z",
+            "date_published": "2023-07-20T22:32:41.000Z",
+            "author": {
+                "name": "waynr",
+                "url": "https://github.com/waynr"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1441126?u=673c0269338267eb09ccf9a8350ab9e55da4904e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR addresses the decision by the libs team not to proceed with the <code class=\"notranslate\">Provider</code> trait and to merge what's left of RFC 3192 minus <code class=\"notranslate\">Provider</code> (ie the <code class=\"notranslate\">Request</code> aka <code class=\"notranslate\">Demand</code> type) into <a href=\"https://github.com/rust-lang/rfcs/pull/2895\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2895/hovercard\">the WIP RFC 2895</a>.</p>\n<p dir=\"auto\">For reference to these decisions, please see the following starting points:</p>\n<ul dir=\"auto\">\n<li>see the <a href=\"https://github.com/rust-lang/rust/issues/96024#issuecomment-1554773172\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/96024/hovercard\">May 2023 <code class=\"notranslate\">provide_any</code> tracking issue</a> comment</li>\n<li>see the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/219381-t-libs/topic/error_generic_member_access/near/373733742\" rel=\"nofollow\">July 9 2023 zulip discussion</a></li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/waynr/rust-rfcs/blob/remove-rfc-3912/text/3192-dyno.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3460",
-            "title": "remove RFC-3192, aka the 'provide_any' feature",
-            "date_modified": "2023-07-20T20:29:33.000Z",
+            "title": "mark RFC-3192 (aka the 'provide_any' feature) as rejected",
+            "date_modified": "2023-07-20T22:35:38.000Z",
             "date_published": "2023-07-19T20:49:40.000Z",
             "author": {
                 "name": "waynr",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "jmillikin",
                 "url": "https://github.com/jmillikin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC for rustdoc-cargo-configuration</p>\n<p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/rustdoc-cargo-config/text/0000-rustdoc-cargo-configuration.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC describes a way for <code class=\"notranslate\">rustdoc</code> to get information from <code class=\"notranslate\">Cargo.toml</code>. Its main use case is the Cargo feature descriptions RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1669093537\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3416\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3416/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3416\">#3416</a>.</p>\n<p dir=\"auto\">The implementation goal of this RFC is <em>only</em> to get <code class=\"notranslate\">rustdoc</code> working. However, it describes a flexible configuration that could be implemented for other tools (<code class=\"notranslate\">rustfmt</code>, <code class=\"notranslate\">clippy</code>, or any of the <code class=\"notranslate\">cargo-xyz</code> tools) and can be used by build systems other than Cargo (e.g. <code class=\"notranslate\">Make</code> or some WASM extensions of <code class=\"notranslate\">npm</code>)</p>\n<p dir=\"auto\">Related:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1586028300\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3389\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3389/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3389\">#3389</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"258689168\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/44690\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/44690/hovercard\" href=\"https://github.com/rust-lang/rust/issues/44690\">rust-lang/rust#44690</a></li>\n</ul>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3421",
-            "title": "RFC: Rustdoc configuration via Cargo (includes feature descriptions)",
-            "date_modified": "2023-04-24T20:23:17.000Z",
-            "date_published": "2023-04-20T09:15:25.000Z",
-            "author": {
-                "name": "tgross35",
-                "url": "https://github.com/tgross35"
             }
         }
     ]
