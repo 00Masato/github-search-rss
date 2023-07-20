@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1798866939\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48712\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48712/hovercard\" href=\"https://github.com/rails/rails/issues/48712\">#48712</a>.</p>\n<p dir=\"auto\">The problem was that <code class=\"notranslate\">.first</code> method call, used in the condition, evaluated lazy enumerator, and thus lead to the problematic behavior.</p>",
             "url": "https://github.com/rails/rails/pull/48720",
             "title": "Fix `Enumerable#sum` for `Enumerator#lazy`",
-            "date_modified": "2023-07-20T17:37:29.000Z",
+            "date_modified": "2023-07-20T18:37:43.000Z",
             "date_published": "2023-07-12T12:03:02.000Z",
             "author": {
                 "name": "fatkodima",
