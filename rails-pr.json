@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11965368?u=7c85497dee3f07446e7f22f874367fa42f0e0650&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Add <code class=\"notranslate\">.idea</code> folder to <code class=\"notranslate\">.gitignore</code></li>\n<li>Add <code class=\"notranslate\">.vscode</code> folder to <code class=\"notranslate\">.gitignore</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48778",
+            "title": "Add '.idea' and '.vscode' to '.gitignore'",
+            "date_modified": "2023-07-20T23:49:58.000Z",
+            "date_published": "2023-07-20T23:23:26.000Z",
+            "author": {
+                "name": "majidalaeinia",
+                "url": "https://github.com/majidalaeinia"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4978418?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This pull request is meant to improve the readability and grammar of the paragraph explaining case sensitivity with regards to uniqueness constraints as part of the validations guide.</p>",
             "url": "https://github.com/rails/rails/pull/48774",
             "title": "Improve readability of case sensitivity description",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "shouichi",
                 "url": "https://github.com/shouichi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/380564?u=2c5759e8d2dfc73b598bd6f8baaabbcc1517aa8a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because providing developer friendly security and privacy tooling is so important.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adding <a href=\"https://github.com/Bearer/bearer\">Bearer</a> open-source tool to the resources section as an alternative to Brakeman. It covers both Ruby and JS code, which is practical for modern Rails application.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This tool is also referenced by OWASP in the <a href=\"https://cheatsheetseries.owasp.org/cheatsheets/Ruby_on_Rails_Cheat_Sheet.html#tools\" rel=\"nofollow\">Rails cheat sheet</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48703",
-            "title": "Adding a new resource to the Security documentation",
-            "date_modified": "2023-07-13T09:12:03.000Z",
-            "date_published": "2023-07-10T11:25:04.000Z",
-            "author": {
-                "name": "gmontard",
-                "url": "https://github.com/gmontard"
             }
         }
     ]
