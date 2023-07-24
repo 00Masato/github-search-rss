@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io-policy-update/text/3463-crates-io-policy-update.md\">Rendered</a></p>\n<p dir=\"auto\">/cc @rust-lang/crates-io</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3463",
+            "title": "Add \"crates.io Policy Update\" RFC",
+            "date_modified": "2023-07-24T13:59:30.000Z",
+            "date_published": "2023-07-24T13:37:52.000Z",
+            "author": {
+                "name": "Turbo87",
+                "url": "https://github.com/Turbo87"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1441126?u=673c0269338267eb09ccf9a8350ab9e55da4904e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR is a duplicate of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"592267297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2895\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2895/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2895\">#2895</a>, which I have agreed to take over for <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yaahc/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yaahc\">@yaahc</a>. The idea is to close that in favor of this PR so I can drive additional changes as feedback comes in.</p>\n<p dir=\"auto\">The current state of this proposal is as follows:</p>\n<ul dir=\"auto\">\n<li>A <a href=\"nightly_implementation\">implementation</a> gated by the <code class=\"notranslate\">error_generic_member_access</code> feature flag is available in nightly.</li>\n<li>There is an <a href=\"feedback_pr\">open PR</a> to address feedback from the <a href=\"provide_any_tracking\"><code class=\"notranslate\">provide_any</code> tracking issue</a> in nightly.</li>\n<li>It has been proposed to supercede the <a href=\"provide_any\"><code class=\"notranslate\">provide_any</code> feature</a> by taking on the <code class=\"notranslate\">Demand</code>/<code class=\"notranslate\">Request</code> API (minus the <code class=\"notranslate\">Provider</code> trait) for the sake of generic member access on <code class=\"notranslate\">dyn Error</code>.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/waynr/rust-rfcs/blob/error_generic_member_access/text/0000-dyn-error-generic-member-access.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3461",
             "title": "RFC: Generic member access for dyn Error trait objects",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "p-avital",
                 "url": "https://github.com/p-avital"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/646128?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jmillikin/upstream__rust-rfcs/blob/unix-socket-ancillary-data/text/3430-unix-socket-ancillary-data-v2.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3430",
-            "title": "RFC: Unix socket ancillary data v2",
-            "date_modified": "2023-05-16T03:29:58.000Z",
-            "date_published": "2023-05-10T08:25:04.000Z",
-            "author": {
-                "name": "jmillikin",
-                "url": "https://github.com/jmillikin"
             }
         }
     ]
