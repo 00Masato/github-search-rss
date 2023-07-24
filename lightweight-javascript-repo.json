@@ -6,17 +6,6 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38636025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Easy &amp; lightweight solution for cross-browser scrollbar hiding. Built for performance &amp; minimal package size.</div>",
-            "url": "https://github.com/FRSOURCE/FRS-hide-scrollbar",
-            "title": "FRSOURCE/FRS-hide-scrollbar: Easy & lightweight solution for cross-browser scrollbar hiding. Built for performance & minimal package size.",
-            "date_modified": "2022-12-09T01:36:01.000Z",
-            "date_published": "2018-08-02T23:27:39.000Z",
-            "author": {
-                "name": "FRSOURCE",
-                "url": "https://github.com/FRSOURCE"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/124537431?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Typescript + Node.js lightweight framework for quick building scalable, easy to read and maintain, server-side applications <g-emoji class=\"g-emoji\" alias=\"racehorse\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f40e.png\">🐎</g-emoji></div>",
             "url": "https://github.com/expressots/expressots",
             "title": "expressots/expressots: A Typescript + Node.js lightweight framework for quick building scalable, easy to read and maintain, server-side applications 🐎",
@@ -28,6 +17,28 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.</div>",
+            "url": "https://github.com/usememos/memos",
+            "title": "usememos/memos: A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.",
+            "date_modified": "2023-07-24T05:57:42.000Z",
+            "date_published": "2021-12-08T15:30:18.000Z",
+            "author": {
+                "name": "usememos",
+                "url": "https://github.com/usememos"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38636025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Easy &amp; lightweight solution for cross-browser scrollbar hiding. Built for performance &amp; minimal package size.</div>",
+            "url": "https://github.com/FRSOURCE/FRS-hide-scrollbar",
+            "title": "FRSOURCE/FRS-hide-scrollbar: Easy & lightweight solution for cross-browser scrollbar hiding. Built for performance & minimal package size.",
+            "date_modified": "2022-12-09T01:36:01.000Z",
+            "date_published": "2018-08-02T23:27:39.000Z",
+            "author": {
+                "name": "FRSOURCE",
+                "url": "https://github.com/FRSOURCE"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112485117?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight WhoIs client</div>",
             "url": "https://github.com/xeptagondev/xep-whois",
             "title": "xeptagondev/xep-whois: Lightweight WhoIs client",
@@ -36,17 +47,6 @@
             "author": {
                 "name": "xeptagondev",
                 "url": "https://github.com/xeptagondev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.</div>",
-            "url": "https://github.com/usememos/memos",
-            "title": "usememos/memos: A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.",
-            "date_modified": "2023-07-24T04:27:58.000Z",
-            "date_published": "2021-12-08T15:30:18.000Z",
-            "author": {
-                "name": "usememos",
-                "url": "https://github.com/usememos"
             }
         },
         {
@@ -105,28 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/117127451?u=94cf4271acec7f6297f623ce475ade1175acc64b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The NodeJS reference implementation of BLEST (Batch-able, Lightweight, Encrypted State Transfer), an improved communication protocol for web APIs which leverages JSON, supports request batching and selective returns, and provides a modern alternative to REST.</div>",
-            "url": "https://github.com/jhuntdev/blest-js",
-            "title": "jhuntdev/blest-js: The NodeJS reference implementation of BLEST (Batch-able, Lightweight, Encrypted State Transfer), an improved communication protocol for web APIs which leverages JSON, supports request batching and selective returns, and provides a modern alternative to REST.",
-            "date_modified": "2023-06-26T16:14:40.000Z",
-            "date_published": "2023-06-02T17:35:35.000Z",
-            "author": {
-                "name": "jhuntdev",
-                "url": "https://github.com/jhuntdev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12165287?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>SRS Cloud is a video cloud solution that is lightweight, open-source, and based on Go, Reactjs, SRS, FFmpeg, WebRTC, etc.</div>",
-            "url": "https://github.com/ossrs/srs-cloud",
-            "title": "ossrs/srs-cloud: SRS Cloud is a video cloud solution that is lightweight, open-source, and based on Go, Reactjs, SRS, FFmpeg, WebRTC, etc.",
-            "date_modified": "2023-07-24T01:41:04.000Z",
-            "date_published": "2022-01-06T14:24:09.000Z",
-            "author": {
-                "name": "ossrs",
-                "url": "https://github.com/ossrs"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10691724?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>exploring lightweight knit stitch simulation</div>",
             "url": "https://github.com/branchwelder/stitchsim",
             "title": "branchwelder/stitchsim: exploring lightweight knit stitch simulation",
@@ -157,17 +135,6 @@
             "author": {
                 "name": "adrianjost",
                 "url": "https://github.com/adrianjost"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
-            "url": "https://github.com/verdaccio/verdaccio",
-            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
-            "date_modified": "2023-07-24T01:45:44.000Z",
-            "date_published": "2016-04-15T16:21:12.000Z",
-            "author": {
-                "name": "verdaccio",
-                "url": "https://github.com/verdaccio"
             }
         },
         {
@@ -204,25 +171,58 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130202746?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AI companions with memory: a lightweight stack to create and host your own AI companions</div>",
-            "url": "https://github.com/a16z-infra/companion-app",
-            "title": "a16z-infra/companion-app: AI companions with memory: a lightweight stack to create and host your own AI companions",
-            "date_modified": "2023-07-24T04:57:01.000Z",
-            "date_published": "2023-06-22T04:25:35.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77025415?u=b90832e57f7c978510eb722f15d912509d49c085&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple and lightweight library for managing and interacting with LocalStorage in JavaScript applications.</div>",
+            "url": "https://github.com/GabrielAlonsoCabral/localstorage-js",
+            "title": "GabrielAlonsoCabral/localstorage-js: A simple and lightweight library for managing and interacting with LocalStorage in JavaScript applications.",
+            "date_modified": "2023-07-23T23:12:13.000Z",
+            "date_published": "2023-07-23T20:11:29.000Z",
             "author": {
-                "name": "a16z-infra",
-                "url": "https://github.com/a16z-infra"
+                "name": "GabrielAlonsoCabral",
+                "url": "https://github.com/GabrielAlonsoCabral"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6039926?u=c64c7a896925558663c8acee498fc64de50af299&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Modern and lightweight GDPR-compliant tracking management tool that focuses on simplicity and flexibility.</div>",
-            "url": "https://github.com/mekkanix/owntrack",
-            "title": "mekkanix/owntrack: Modern and lightweight GDPR-compliant tracking management tool that focuses on simplicity and flexibility.",
-            "date_modified": "2023-07-23T23:06:34.000Z",
-            "date_published": "2023-07-13T17:05:30.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73286100?u=456fe37db3031fd5daa43bba7d933b5550b7ec9a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Citation picker &amp; lightweight reference manager for BibTeX files, via Alfred.</div>",
+            "url": "https://github.com/chrisgrieser/alfred-bibtex-citation-picker",
+            "title": "chrisgrieser/alfred-bibtex-citation-picker: Citation picker & lightweight reference manager for BibTeX files, via Alfred.",
+            "date_modified": "2023-07-21T04:26:06.000Z",
+            "date_published": "2022-03-04T11:19:45.000Z",
             "author": {
-                "name": "mekkanix",
-                "url": "https://github.com/mekkanix"
+                "name": "chrisgrieser",
+                "url": "https://github.com/chrisgrieser"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
+            "url": "https://github.com/emberjs/data",
+            "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
+            "date_modified": "2023-07-23T10:42:53.000Z",
+            "date_published": "2011-12-20T01:50:40.000Z",
+            "author": {
+                "name": "emberjs",
+                "url": "https://github.com/emberjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/109933208?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Discord client mod focused on simplicity and performance.</div>",
+            "url": "https://github.com/replugged-org/replugged",
+            "title": "replugged-org/replugged: A lightweight Discord client mod focused on simplicity and performance.",
+            "date_modified": "2023-07-23T04:52:32.000Z",
+            "date_published": "2022-07-25T02:30:30.000Z",
+            "author": {
+                "name": "replugged-org",
+                "url": "https://github.com/replugged-org"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61093173?u=ddd966ac8a605dcca6859f7ecce22173f9e62da8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>jsx template engine for Node.js</div>",
+            "url": "https://github.com/ghtx280/wolt",
+            "title": "ghtx280/wolt: jsx template engine for Node.js",
+            "date_modified": "2023-07-22T20:17:44.000Z",
+            "date_published": "2023-07-22T16:58:09.000Z",
+            "author": {
+                "name": "ghtx280",
+                "url": "https://github.com/ghtx280"
             }
         }
     ]
