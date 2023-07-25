@@ -6,10 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2661?u=7639a5a525578b2a1cb4231a04e720645eeec96b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Motivation</h4>\n<p dir=\"auto\">I was bitten by a subtle bug where code was depending on the order of records being returned by <code class=\"notranslate\">.find</code>, however turns out <code class=\"notranslate\">reorder(\"\")</code> is not the same as <code class=\"notranslate\">reorder()</code>, which meant that the order of results was not the order of the ids being passed in.</p>\n<p dir=\"auto\">This change makes it clear what is required to have records be returned in order.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2661?u=7639a5a525578b2a1cb4231a04e720645eeec96b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Motivation</h4>\n<p dir=\"auto\">I was bitten by a subtle bug where code was depending on the order of records being returned by <code class=\"notranslate\">.find</code>, however turns out <code class=\"notranslate\">reorder(\"\")</code> does not actually clear the order scope, which meant that the order of results was not the order of the ids being passed in.</p>\n<p dir=\"auto\">This change makes it clearer what is required to have records be returned in order.</p>",
             "url": "https://github.com/rails/rails/pull/48799",
             "title": "Clarify on how to return records in order of ids in ActiveRecord",
-            "date_modified": "2023-07-25T07:01:33.000Z",
+            "date_modified": "2023-07-25T07:11:35.000Z",
             "date_published": "2023-07-25T07:01:29.000Z",
             "author": {
                 "name": "chendo",
