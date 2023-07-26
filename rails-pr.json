@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes a bug introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1812036086\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48761\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48761/hovercard\" href=\"https://github.com/rails/rails/pull/48761\">#48761</a> which leads to a <code class=\"notranslate\">NoMethodError</code> when a non Active Record object passed to <code class=\"notranslate\">include?</code> or <code class=\"notranslate\">member?</code> since only Active Record objects respond to <code class=\"notranslate\">composite_primary_key?</code>.</p>\n<h3 dir=\"auto\">Alternative solution</h3>\n<p dir=\"auto\">I decided to put the early <code class=\"notranslate\">return</code> at the top before even performing the <code class=\"notranslate\">loaded? || offset_value || limit_value || having_clause.any?</code> checks. I don't think this will impact performance in any noticeable way but if you have concerns feel free to speak up and we will move the check to the <code class=\"notranslate\">else</code> branch</p>",
             "url": "https://github.com/rails/rails/pull/48817",
             "title": "Return `false` early when a non-AR object passed to `FinderMethods#include?`",
-            "date_modified": "2023-07-26T17:20:50.000Z",
+            "date_modified": "2023-07-26T18:06:42.000Z",
             "date_published": "2023-07-26T17:05:32.000Z",
             "author": {
                 "name": "nvasilevski",
