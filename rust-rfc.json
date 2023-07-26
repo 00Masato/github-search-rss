@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3446",
             "title": "Introduce the Store API for great good.",
-            "date_modified": "2023-07-25T21:27:06.000Z",
+            "date_modified": "2023-07-26T05:31:54.000Z",
             "date_published": "2023-06-17T13:40:53.000Z",
             "author": {
                 "name": "matthieu-m",
