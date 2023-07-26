@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/779501?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kpreid/rust-rfcs/blob/nested-publish/text/0000-nested-publish.md\">Rendered</a></p>\n<p dir=\"auto\">This is my first Rust RFC. The idea was previously discussed on IRLO (<a href=\"https://internals.rust-lang.org/t/private-nested-cargo-packages/19042\" rel=\"nofollow\">Private nested Cargo packages</a>), and the feedback was generally positive except for confusion about exactly what was being changed, which I believe I have now precisely defined in this RFC draft.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3452",
             "title": "RFC: Nested Cargo packages",
-            "date_modified": "2023-07-21T15:45:01.000Z",
+            "date_modified": "2023-07-26T03:22:45.000Z",
             "date_published": "2023-07-01T00:50:11.000Z",
             "author": {
                 "name": "kpreid",
