@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io-policy-update/text/3463-crates-io-policy-update.md\">Rendered</a></p>\n<p dir=\"auto\">/cc @rust-lang/crates-io</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3463",
             "title": "Add \"crates.io Policy Update\" RFC",
-            "date_modified": "2023-07-29T12:52:57.000Z",
+            "date_modified": "2023-07-29T13:30:48.000Z",
             "date_published": "2023-07-24T13:37:52.000Z",
             "author": {
                 "name": "Turbo87",
@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3446",
             "title": "Introduce the Store API for great good.",
-            "date_modified": "2023-07-27T07:12:26.000Z",
+            "date_modified": "2023-07-29T13:26:00.000Z",
             "date_published": "2023-06-17T13:40:53.000Z",
             "author": {
                 "name": "matthieu-m",
