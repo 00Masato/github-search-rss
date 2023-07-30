@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18366969?u=e6919af135d360a17f71ab7380f0d57fe08be21a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the documentation specifies 3.3 as the minimum version of the <code class=\"notranslate\">listen</code> gem, but according to <a href=\"https://github.com/rails/rails/pull/48622\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48622/hovercard\">this PR</a>, modern <code class=\"notranslate\">rails</code> requires the <code class=\"notranslate\">listen</code> gem to be version 3.5 or higher.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the version of <code class=\"notranslate\">listen</code> gem described in the document to 3.5</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Referred PR: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1784286124\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48622\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48622/hovercard\" href=\"https://github.com/rails/rails/pull/48622\">#48622</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48851",
+            "title": "Update `listen` gem version in guide [skip ci]",
+            "date_modified": "2023-07-30T04:21:54.000Z",
+            "date_published": "2023-07-30T04:21:50.000Z",
+            "author": {
+                "name": "soartec-lab",
+                "url": "https://github.com/soartec-lab"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1823880068\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48824\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48824/hovercard\" href=\"https://github.com/rails/rails/pull/48824\">#48824</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
             "url": "https://github.com/rails/rails/pull/48850",
             "title": "Add test covering SchemaCache members are sorted",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "reid-rigo",
                 "url": "https://github.com/reid-rigo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The SMTP envelope recipient usually reflects the <code class=\"notranslate\">To</code>, <code class=\"notranslate\">Cc</code> and <code class=\"notranslate\">Bcc</code> email headers. The mailer preview only shows SMTP the envelope recipient (SMTP-To) if it differs from <code class=\"notranslate\">To</code>, but it does not take Cc and Bcc into account.</p>\n<p dir=\"auto\">Screenshot:<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/111346/255164062-5ea59067-4c5c-480e-b550-e22ecfdc306c.png\"><img src=\"https://user-images.githubusercontent.com/111346/255164062-5ea59067-4c5c-480e-b550-e22ecfdc306c.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request extends the check for SMTP-To to cover also <code class=\"notranslate\">Cc</code> and <code class=\"notranslate\">Bcc</code>, so it is only displayed in the rare event that the envelope recipient has been manually overriden.</p>\n<p dir=\"auto\">Also, show the list of email addresses without array brackets and quotes.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48782",
-            "title": "Only show SMTP envelope recipient when relevant",
-            "date_modified": "2023-07-25T11:18:47.000Z",
-            "date_published": "2023-07-21T17:03:49.000Z",
-            "author": {
-                "name": "c960657",
-                "url": "https://github.com/c960657"
             }
         }
     ]
