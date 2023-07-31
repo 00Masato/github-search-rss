@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If you scroll through <a href=\"https://edgeguides.rubyonrails.org/\" rel=\"nofollow\">https://edgeguides.rubyonrails.org/</a> currently, you'd get the impression that <em>lots</em> of guides are still in progress. This isn't accurate. Most of the guides marked \"in progress\" are thorough, and don't seem to be under active development right now.</p>\n<p dir=\"auto\">This PR makes a few changes:</p>\n<ul dir=\"auto\">\n<li>Removes \"in progress\" warning from every guide except two: the 7.1 release notes, and \"Action View Helpers\", since this is <a href=\"https://edgeguides.rubyonrails.org/action_view_helpers.html\" rel=\"nofollow\">marked as in progress</a> in the guide.</li>\n<li>Removes Webpacker from the guides index. Now that Webpacker is deprecated it should not be referenced from the guides homepage. The guide itself is not deleted.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48854",
+            "title": "Update \"work in progress\" status on guides",
+            "date_modified": "2023-07-31T05:56:58.000Z",
+            "date_published": "2023-07-31T05:27:44.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48841.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1826860569\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48841\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48841/hovercard\" href=\"https://github.com/rails/rails/issues/48841\">#48841</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates <code class=\"notranslate\">#destroy</code> to only run <code class=\"notranslate\">before</code> and <code class=\"notranslate\">around</code> destroy callbacks when destroying a non-persisted record.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">None.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48853",
             "title": "[Fix #48841] Skip after destroy callbacks on non-persisted records",
-            "date_modified": "2023-07-31T04:37:09.000Z",
+            "date_modified": "2023-07-31T05:07:57.000Z",
             "date_published": "2023-07-31T02:49:00.000Z",
             "author": {
                 "name": "joshuay03",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "c960657",
                 "url": "https://github.com/c960657"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/282447?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The current code for commands such as <code class=\"notranslate\">credentials:edit</code> detects whether $EDITOR or $VISUAL are set, and tells the developer to set them to something like <code class=\"notranslate\">EDITOR=mate --wait</code> if they are not. On systems where $EDITOR is set, but it launches a forking process, the message is not displayed and may never be seen by the developer.</p>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This change detects whether the editor for commands like <code class=\"notranslate\">credentials:edit</code> exits in less than one second, such as when <code class=\"notranslate\">EDITOR</code> is set to <code class=\"notranslate\">mate</code> without the wait flag. This is a sign that the editor process is forking and exited immediately, and that the developer didn't have a chance to edit the file.</p>\n<p dir=\"auto\">If an immediate exit is detected, a message is printed that the editor command should be changed to wait instead of exiting.</p>",
-            "url": "https://github.com/rails/rails/pull/48781",
-            "title": "Detect if the editor is missing a wait flag and print a warning",
-            "date_modified": "2023-07-21T16:40:49.000Z",
-            "date_published": "2023-07-21T16:37:31.000Z",
-            "author": {
-                "name": "LukasSkywalker",
-                "url": "https://github.com/LukasSkywalker"
             }
         }
     ]
