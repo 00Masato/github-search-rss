@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48853",
+            "title": "Skip after destroy callbacks on unpersisted records",
+            "date_modified": "2023-07-31T02:49:04.000Z",
+            "date_published": "2023-07-31T02:49:00.000Z",
+            "author": {
+                "name": "joshuay03",
+                "url": "https://github.com/joshuay03"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/740289?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><strong>[ This PR replaces <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"528227540\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/37797\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/37797/hovercard\" href=\"https://github.com/rails/rails/pull/37797\">#37797</a> which atrophied over the years. ]</strong></p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #37779.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"527448792\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/37779\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/37779/hovercard\" href=\"https://github.com/rails/rails/issues/37779\">#37779</a>.</p>\n<p dir=\"auto\">This PR simply allows the ability to escape literal colons in SQL when using named bind params. See the above issue for a detailed description of the problem.</p>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48852",
             "title": "Allow escaping of literal colons in `ActionRecord::Sanitization#replace_named_bind_variables`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "LukasSkywalker",
                 "url": "https://github.com/LukasSkywalker"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3387?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Docs improvements for <code class=\"notranslate\">ActiveRecord::TransactionRollbackError</code> and subclasses after some discussions today.</p>",
-            "url": "https://github.com/rails/rails/pull/48780",
-            "title": "Improve the docs of ActiveRecord::TransactionRollbackError",
-            "date_modified": "2023-07-24T17:31:42.000Z",
-            "date_published": "2023-07-21T16:07:39.000Z",
-            "author": {
-                "name": "fxn",
-                "url": "https://github.com/fxn"
             }
         }
     ]
