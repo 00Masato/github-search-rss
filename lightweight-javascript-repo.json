@@ -6,6 +6,50 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18660708?u=1b3c35590a65d1e558fc41c2035fbeff879e3558&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Super lightweight typescript function to convert hexes of format #RRGGBB to rgb of value rgb(x,y,z) or rgba(x,y,z,a).</div>",
+            "url": "https://github.com/flofehrenbacher/hex-2-rgb",
+            "title": "flofehrenbacher/hex-2-rgb: Super lightweight typescript function to convert hexes of format #RRGGBB to rgb of value rgb(x,y,z) or rgba(x,y,z,a).",
+            "date_modified": "2023-01-31T19:06:32.000Z",
+            "date_published": "2021-08-26T10:33:49.000Z",
+            "author": {
+                "name": "flofehrenbacher",
+                "url": "https://github.com/flofehrenbacher"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1030579?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast and lightweight JavaScript game engine built on WebGL and glTF</div>",
+            "url": "https://github.com/playcanvas/engine",
+            "title": "playcanvas/engine: Fast and lightweight JavaScript game engine built on WebGL and glTF",
+            "date_modified": "2023-08-01T10:55:30.000Z",
+            "date_published": "2014-05-12T11:24:30.000Z",
+            "author": {
+                "name": "playcanvas",
+                "url": "https://github.com/playcanvas"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108532180?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight bi-directional conversion between DUIS and JSON</div>",
+            "url": "https://github.com/SmartDCCInnovation/duis-parser",
+            "title": "SmartDCCInnovation/duis-parser: Lightweight bi-directional conversion between DUIS and JSON",
+            "date_modified": "2023-07-18T09:14:42.000Z",
+            "date_published": "2022-07-20T14:55:42.000Z",
+            "author": {
+                "name": "SmartDCCInnovation",
+                "url": "https://github.com/SmartDCCInnovation"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106109182?u=fd028367e47671f14ede3a1d507dd50bdeed315c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>JavaScript (JS) is the most popular lightweight, interpreted compiled programming language. It can be used for both Client-side as well as Server-side developments. JavaScript also known as a scripting language for web pages.</div>",
+            "url": "https://github.com/RadoslavBoyanov/JS-Front-End",
+            "title": "RadoslavBoyanov/JS-Front-End: JavaScript (JS) is the most popular lightweight, interpreted compiled programming language. It can be used for both Client-side as well as Server-side developments. JavaScript also known as a scripting language for web pages.",
+            "date_modified": "2023-06-29T14:00:24.000Z",
+            "date_published": "2023-06-24T17:50:56.000Z",
+            "author": {
+                "name": "RadoslavBoyanov",
+                "url": "https://github.com/RadoslavBoyanov"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8694124?u=ad81ac01cf90986b2174ca6dc6852bd920b083a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The RxPlayer's Able Inspector for REmote Debugging - A very lightweight,  RxPlayer-specialized, remote inspector </div>",
             "url": "https://github.com/peaBerberian/RxPaired",
             "title": "peaBerberian/RxPaired: The RxPlayer's Able Inspector for REmote Debugging - A very lightweight,  RxPlayer-specialized, remote inspector ",
@@ -17,10 +61,32 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/124537431?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Typescript + Node.js lightweight framework for quick building scalable, easy to read and maintain, server-side applications <g-emoji class=\"g-emoji\" alias=\"racehorse\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f40e.png\">🐎</g-emoji></div>",
+            "url": "https://github.com/expressots/expressots",
+            "title": "expressots/expressots: A Typescript + Node.js lightweight framework for quick building scalable, easy to read and maintain, server-side applications 🐎",
+            "date_modified": "2023-08-01T10:28:36.000Z",
+            "date_published": "2021-03-21T06:32:07.000Z",
+            "author": {
+                "name": "expressots",
+                "url": "https://github.com/expressots"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60230259?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Hosting the lightweightPWA for demo</div>",
+            "url": "https://github.com/PharmaLedger-IMI/lightweightPWA",
+            "title": "PharmaLedger-IMI/lightweightPWA: Hosting the lightweightPWA for demo",
+            "date_modified": "2023-01-31T19:55:33.000Z",
+            "date_published": "2022-06-08T13:45:14.000Z",
+            "author": {
+                "name": "PharmaLedger-IMI",
+                "url": "https://github.com/PharmaLedger-IMI"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/139374188?u=44204495a7043730ac50ea9fe3592c779f0b88af&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight library for prototyping Single Page Applications</div>",
             "url": "https://github.com/EngosSoftware/simpa",
             "title": "EngosSoftware/simpa: Lightweight library for prototyping Single Page Applications",
-            "date_modified": "2023-08-01T09:59:42.000Z",
+            "date_modified": "2023-08-01T10:07:16.000Z",
             "date_published": "2023-08-01T09:03:16.000Z",
             "author": {
                 "name": "EngosSoftware",
@@ -53,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131354555?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-featured typescript/javascript WhatsApp Web API</div>",
             "url": "https://github.com/WhiskeySockets/Baileys",
             "title": "WhiskeySockets/Baileys: Lightweight full-featured typescript/javascript WhatsApp Web API",
-            "date_modified": "2023-08-01T10:00:20.000Z",
+            "date_modified": "2023-08-01T10:58:52.000Z",
             "date_published": "2022-01-12T20:38:14.000Z",
             "author": {
                 "name": "WhiskeySockets",
@@ -157,72 +223,6 @@
             "author": {
                 "name": "Deivu",
                 "url": "https://github.com/Deivu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97262778?u=e874e8af0d03ec8075a0d82eb093000d7cd880e6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📝 Monitor and analyze your Express applications with ease using this lightweight npm package.</div>",
-            "url": "https://github.com/PedroFnseca/logger-endpoints-api",
-            "title": "PedroFnseca/logger-endpoints-api: 📝 Monitor and analyze your Express applications with ease using this lightweight npm package.",
-            "date_modified": "2023-08-01T05:54:22.000Z",
-            "date_published": "2023-07-27T19:44:23.000Z",
-            "author": {
-                "name": "PedroFnseca",
-                "url": "https://github.com/PedroFnseca"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118299968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight JavaScript UI library built for the Onsight Editor.</div>",
-            "url": "https://github.com/onsightengine/osui",
-            "title": "onsightengine/osui: Lightweight JavaScript UI library built for the Onsight Editor.",
-            "date_modified": "2023-07-20T02:58:23.000Z",
-            "date_published": "2022-12-16T19:13:08.000Z",
-            "author": {
-                "name": "onsightengine",
-                "url": "https://github.com/onsightengine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"icecream\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f366.png\">🍦</g-emoji>VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour</div>",
-            "url": "https://github.com/vanjs-org/van",
-            "title": "vanjs-org/van: 🍦VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour",
-            "date_modified": "2023-08-01T09:44:24.000Z",
-            "date_published": "2023-05-08T05:45:31.000Z",
-            "author": {
-                "name": "vanjs-org",
-                "url": "https://github.com/vanjs-org"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95046178?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Knowledge Base and Feed Reader.</div>",
-            "url": "https://github.com/mdSilo/mdSilo-app",
-            "title": "mdSilo/mdSilo-app: Lightweight Knowledge Base and Feed Reader.",
-            "date_modified": "2023-08-01T06:57:34.000Z",
-            "date_published": "2022-02-17T03:06:55.000Z",
-            "author": {
-                "name": "mdSilo",
-                "url": "https://github.com/mdSilo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/21335119?u=c70ffc495b48d4d5be098d8f2ca0ff325f052417&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fully type-safe and lightweight internationalization library for all your TypeScript and JavaScript projects.</div>",
-            "url": "https://github.com/ivanhofer/typesafe-i18n",
-            "title": "ivanhofer/typesafe-i18n: A fully type-safe and lightweight internationalization library for all your TypeScript and JavaScript projects.",
-            "date_modified": "2023-08-01T08:45:30.000Z",
-            "date_published": "2020-12-28T10:50:32.000Z",
-            "author": {
-                "name": "ivanhofer",
-                "url": "https://github.com/ivanhofer"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84311327?u=5a01cd78178086294ffb1ad5aefe375f9d679d9c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Musicard is a lightweight and futuristic music card library designed for Discord bots.</div>",
-            "url": "https://github.com/A3PIRE/musicard",
-            "title": "A3PIRE/musicard: Musicard is a lightweight and futuristic music card library designed for Discord bots.",
-            "date_modified": "2023-08-01T04:23:49.000Z",
-            "date_published": "2023-07-30T11:38:05.000Z",
-            "author": {
-                "name": "A3PIRE",
-                "url": "https://github.com/A3PIRE"
             }
         }
     ]
