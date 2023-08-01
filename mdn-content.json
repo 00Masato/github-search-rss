@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33158502?u=da2253b8471f8844932aeeab6f578bf086917748&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fix typos in the get credentials example.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">This fix makes the example work.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/28317",
+            "title": "✏️ credentialscontainer/get example typos",
+            "date_modified": "2023-08-01T09:18:58.000Z",
+            "date_published": "2023-08-01T09:18:46.000Z",
+            "author": {
+                "name": "qd-qd",
+                "url": "https://github.com/qd-qd"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds docs for the new <code class=\"notranslate\">ReadableStream.from()</code> static method, added in FF117 in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1772772\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1772772</a></p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1828737112\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/28282\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/28282/hovercard\" href=\"https://github.com/mdn/content/issues/28282\">#28282</a></p>",
             "url": "https://github.com/mdn/content/pull/28316",
             "title": "ReadableStream.from() static method",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds FF117 release note for support of <code class=\"notranslate\">CanvasRenderingContext2D.getContextAttributes()</code>.</p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1828741559\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/28283\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/28283/hovercard\" href=\"https://github.com/mdn/content/issues/28283\">#28283</a></p>",
             "url": "https://github.com/mdn/content/pull/28314",
             "title": "FF117 Relnote: CanvasRenderingContext2D.getContextAttributes() supported",
-            "date_modified": "2023-08-01T03:43:18.000Z",
+            "date_modified": "2023-08-01T09:35:25.000Z",
             "date_published": "2023-08-01T03:41:09.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -75,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/755354?u=7e7c1abdb78aea9b0b6b14e40544503f72b34789&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Prevent possible race condition between prettier and markdownlint in lint-staged, changed to use the order defined already in the package.json fix:md and lint:md commands.</p>\n<p dir=\"auto\">I don't believe the other rules will race, since:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">yarn test:front-matter-linter</code> doesn't appear to change the files, just runs jest on them</li>\n<li>prettier wouldn't run anyway on <code class=\"notranslate\">*.{svg,png,jpeg,jpg,gif}</code></li>\n</ul>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/OnkarRuikar/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/OnkarRuikar\">@OnkarRuikar</a> I don't seem to be able to assign you as a reviewer, but it would be great if you can take a look :)</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://github.com/okonet/lint-staged#task-concurrency\">https://github.com/okonet/lint-staged#task-concurrency</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Relates to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1804101392\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/27936\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/27936/hovercard\" href=\"https://github.com/mdn/content/pull/27936\">#27936</a></p>",
             "url": "https://github.com/mdn/content/pull/28306",
             "title": "fix(lint-staged): markdownlint and prettier can race on md files",
-            "date_modified": "2023-08-01T07:30:51.000Z",
+            "date_modified": "2023-08-01T09:41:18.000Z",
             "date_published": "2023-07-31T16:10:38.000Z",
             "author": {
                 "name": "LeoMcA",
@@ -86,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/578107?u=840abb68c60c24a23d0e55203f1524a944043c10&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/mdn/content/pull/28300",
             "title": "Add DevTools data for 116 release notes",
-            "date_modified": "2023-07-31T12:46:14.000Z",
+            "date_modified": "2023-08-01T09:49:18.000Z",
             "date_published": "2023-07-31T12:44:20.000Z",
             "author": {
                 "name": "nchevobbe",
@@ -124,17 +135,6 @@
             "author": {
                 "name": "hamishwillee",
                 "url": "https://github.com/hamishwillee"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The workflow checks only <code class=\"notranslate\">files/en-us/_redirects.txt</code> file. <a href=\"https://github.com/mdn/yari/blob/65f1e4b793f5ce7fd0d4a4a0a2b623db67af336d/tool/cli.ts#L257C51-L257C65\"><em>It doesn't work on any other file</em></a>.</p>\n<p dir=\"auto\">It is not required to run this workflow in every PR. This PR reduces the workflows scope to only the <code class=\"notranslate\">_redirects.txt</code> file and the workflow file.</p>\n<p dir=\"auto\"><del>Also, there is no point in making this workflow \"required\" in settings.</del></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bsmth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bsmth\">@bsmth</a></p>",
-            "url": "https://github.com/mdn/content/pull/28277",
-            "title": "CI: Avoid path filtering in \"required\" workflows",
-            "date_modified": "2023-08-01T09:01:05.000Z",
-            "date_published": "2023-07-31T06:45:57.000Z",
-            "author": {
-                "name": "OnkarRuikar",
-                "url": "https://github.com/OnkarRuikar"
             }
         },
         {
