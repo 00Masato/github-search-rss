@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110610266?u=2a99662c5492836da7d975f072bb50febc09372e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A simple feature for generic markup types.</p>\n<p dir=\"auto\"><a href=\"https://github.com/hydroper/rust-rfcs/blob/master/text/0000-markup-macro.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3468",
+            "title": "markup_macro",
+            "date_modified": "2023-08-02T00:02:50.000Z",
+            "date_published": "2023-08-02T00:02:39.000Z",
+            "author": {
+                "name": "hydroper",
+                "url": "https://github.com/hydroper"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a type <code class=\"notranslate\">UnsafeAliased</code> that acts on <code class=\"notranslate\">&amp;mut</code> in a similar way to how <code class=\"notranslate\">UnsafeCell</code> acts on <code class=\"notranslate\">&amp;</code>: it opts-out of the aliasing guarantees.<br>\nHowever, <code class=\"notranslate\">&amp;mut UnsafeAliased</code> can still be <code class=\"notranslate\">mem::swap</code>ed, so this is not a free ticket for arbitrary aliasing of mutable references.<br>\nAbstractions built on top of <code class=\"notranslate\">UnsafeAliased</code> must ensure proper encapsulation when handing such aliases references to clients (e.g. via pinning).</p>\n<p dir=\"auto\">This type is then used in generator lowering, finally fixing <a href=\"https://github.com/rust-lang/rust/issues/63818\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/63818/hovercard\">#63818</a>.</p>\n<p dir=\"auto\">Thanks to @rust-lang/opsem for a bunch of useful feedback!</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/unsafe-aliased/text/0000-unsafe-aliased.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3467",
             "title": "UnsafeAliased: allow aliasing of mutable references",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io-policy-update/text/3463-crates-io-policy-update.md\">Rendered</a></p>\n<p dir=\"auto\">/cc @rust-lang/crates-io</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3463",
             "title": "Add \"crates.io Policy Update\" RFC",
-            "date_modified": "2023-08-01T23:01:09.000Z",
+            "date_modified": "2023-08-01T23:52:03.000Z",
             "date_published": "2023-07-24T13:37:52.000Z",
             "author": {
                 "name": "Turbo87",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Lokathor",
                 "url": "https://github.com/Lokathor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/implementable-trait-alias/text/3437-implementable-trait-alias.md\">Rendered</a></p>\n<p dir=\"auto\">Allow writing <code class=\"notranslate\">impl</code> blocks for certain trait aliases.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/implementable-trait-aliases/18806/\" rel=\"nofollow\">Prior discussion on Internals</a></p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label A-traits</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3437",
-            "title": "RFC: Implementable trait aliases",
-            "date_modified": "2023-06-15T17:54:10.000Z",
-            "date_published": "2023-05-24T23:54:47.000Z",
-            "author": {
-                "name": "Jules-Bertholet",
-                "url": "https://github.com/Jules-Bertholet"
             }
         }
     ]
