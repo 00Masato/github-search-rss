@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/core-detect/text/0000-core_detect.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC moves the <code class=\"notranslate\">is_*_feature_detected</code> macros into <code class=\"notranslate\">core</code>, but keeps the logic for actually doing feature detection (which requires OS support) in <code class=\"notranslate\">std</code>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3469",
             "title": "CPU feature detection in core",
-            "date_modified": "2023-08-04T03:07:20.000Z",
+            "date_modified": "2023-08-04T10:34:25.000Z",
             "date_published": "2023-08-03T23:03:30.000Z",
             "author": {
                 "name": "Amanieu",
