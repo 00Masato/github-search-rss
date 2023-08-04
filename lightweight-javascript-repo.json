@@ -6,6 +6,61 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15065065?u=0f051b29e90ea8b70d1b81aed9f07a7706cf48ba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight tool built on top of Node.js worker_threads, enabling multithreading.</div>",
+            "url": "https://github.com/nairihar/funthreads",
+            "title": "nairihar/funthreads: A lightweight tool built on top of Node.js worker_threads, enabling multithreading.",
+            "date_modified": "2023-08-04T19:16:08.000Z",
+            "date_published": "2018-08-04T15:41:59.000Z",
+            "author": {
+                "name": "nairihar",
+                "url": "https://github.com/nairihar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45178251?u=7caf57dff377a2e88a9524eee11e85498285977d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>YAUL (Yet another ui library). This time I'm trying to achieve a pretty lightweight library built around SSR and hydration!</div>",
+            "url": "https://github.com/sawcce/soquette",
+            "title": "sawcce/soquette: YAUL (Yet another ui library). This time I'm trying to achieve a pretty lightweight library built around SSR and hydration!",
+            "date_modified": "2023-08-04T20:22:02.000Z",
+            "date_published": "2023-08-04T20:20:18.000Z",
+            "author": {
+                "name": "sawcce",
+                "url": "https://github.com/sawcce"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59150794?u=e8559d812fc59ba92f1587521084c33595a475ee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>UX Select is a lightweight Native JavaScript plugin that replace native select elements with customization</div>",
+            "url": "https://github.com/afonja14755/ux-select",
+            "title": "afonja14755/ux-select: UX Select is a lightweight Native JavaScript plugin that replace native select elements with customization",
+            "date_modified": "2023-08-01T13:42:27.000Z",
+            "date_published": "2023-07-21T13:20:52.000Z",
+            "author": {
+                "name": "afonja14755",
+                "url": "https://github.com/afonja14755"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
+            "url": "https://github.com/emberjs/data",
+            "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
+            "date_modified": "2023-08-04T15:34:05.000Z",
+            "date_published": "2011-12-20T01:50:40.000Z",
+            "author": {
+                "name": "emberjs",
+                "url": "https://github.com/emberjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11529148?u=94446866c576d620cbd33e62834c480091fedcf0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><a href=\"http://www.embla-carousel.com\" rel=\"nofollow\">www.embla-carousel.com</a> — A lightweight carousel library with fluid motion and great swipe precision.</div>",
+            "url": "https://github.com/davidjerleke/embla-carousel",
+            "title": "davidjerleke/embla-carousel: www.embla-carousel.com — A lightweight carousel library with fluid motion and great swipe precision.",
+            "date_modified": "2023-08-04T01:19:57.000Z",
+            "date_published": "2019-03-18T18:34:50.000Z",
+            "author": {
+                "name": "davidjerleke",
+                "url": "https://github.com/davidjerleke"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/514870?u=fc3b6b20f25c37865ed361478a48bd632a5150b9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Query parser and cast lightweight library</div>",
             "url": "https://github.com/RomiC/query-cast",
             "title": "RomiC/query-cast: Query parser and cast lightweight library",
@@ -25,17 +80,6 @@
             "author": {
                 "name": "matheustrres",
                 "url": "https://github.com/matheustrres"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59150794?u=e8559d812fc59ba92f1587521084c33595a475ee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>UX Select is a lightweight Native JavaScript plugin that replace native select elements with customization</div>",
-            "url": "https://github.com/afonja14755/ux-select",
-            "title": "afonja14755/ux-select: UX Select is a lightweight Native JavaScript plugin that replace native select elements with customization",
-            "date_modified": "2023-08-01T13:42:27.000Z",
-            "date_published": "2023-07-21T13:20:52.000Z",
-            "author": {
-                "name": "afonja14755",
-                "url": "https://github.com/afonja14755"
             }
         },
         {
@@ -179,50 +223,6 @@
             "author": {
                 "name": "jens-maus",
                 "url": "https://github.com/jens-maus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66440980?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight express-handlebars server using notion databases.</div>",
-            "url": "https://github.com/Rickaym/web-notion",
-            "title": "Rickaym/web-notion: Lightweight express-handlebars server using notion databases.",
-            "date_modified": "2023-08-01T08:31:11.000Z",
-            "date_published": "2023-01-18T16:48:10.000Z",
-            "author": {
-                "name": "Rickaym",
-                "url": "https://github.com/Rickaym"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95764151?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.</div>",
-            "url": "https://github.com/usememos/memos",
-            "title": "usememos/memos: A privacy-first, lightweight note-taking service. Easily capture and share your great thoughts.",
-            "date_modified": "2023-08-04T17:20:47.000Z",
-            "date_published": "2021-12-08T15:30:18.000Z",
-            "author": {
-                "name": "usememos",
-                "url": "https://github.com/usememos"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13393021?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Testcontainers is a NodeJS library that supports tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.</div>",
-            "url": "https://github.com/testcontainers/testcontainers-node",
-            "title": "testcontainers/testcontainers-node: Testcontainers is a NodeJS library that supports tests, providing lightweight, throwaway instances of common databases, Selenium web browsers, or anything else that can run in a Docker container.",
-            "date_modified": "2023-08-04T15:19:16.000Z",
-            "date_published": "2018-01-05T18:23:43.000Z",
-            "author": {
-                "name": "testcontainers",
-                "url": "https://github.com/testcontainers"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33459274?u=9071137bbaa13670881def388cd38a97526d8d8c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"art\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f3a8.png\">🎨</g-emoji> Lightweight Color Picker component for React.</div>",
-            "url": "https://github.com/Wondermarin/react-color-palette",
-            "title": "Wondermarin/react-color-palette: 🎨 Lightweight Color Picker component for React.",
-            "date_modified": "2023-08-03T20:27:20.000Z",
-            "date_published": "2020-07-21T22:51:01.000Z",
-            "author": {
-                "name": "Wondermarin",
-                "url": "https://github.com/Wondermarin"
             }
         }
     ]
