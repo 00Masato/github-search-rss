@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48892",
+            "title": "Draft | Investigate implicit recall usage in url helpers",
+            "date_modified": "2023-08-05T10:42:58.000Z",
+            "date_published": "2023-08-05T10:42:54.000Z",
+            "author": {
+                "name": "joshuay03",
+                "url": "https://github.com/joshuay03"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This will not only match most of the CI configuration but will provide better experience for users of those containers.</p>\n<p dir=\"auto\">Before after the first time the container was created, if it was restarted you needed to run the boot.sh script manually to start those services. Now, docker compose will make sure the services are running and there is no need to run. <code class=\"notranslate\">boot.sh</code> again.</p>",
             "url": "https://github.com/rails/rails/pull/48891",
             "title": "Change the devcontainer configuration to use docker compose instead of collocated services",
@@ -209,17 +220,6 @@
             "title": "Prevent extra newlines after table generation block in shema.rb",
             "date_modified": "2023-07-13T15:56:45.000Z",
             "date_published": "2023-07-13T10:26:54.000Z",
-            "author": {
-                "name": "knagode",
-                "url": "https://github.com/knagode"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4473199?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Prior this change <code class=\"notranslate\">rails generate migration drop_users</code> generated migration file with empty <code class=\"notranslate\">def change</code> body. <a href=\"https://stackoverflow.com/questions/4020131/rails-db-migration-how-to-drop-a-table\" rel=\"nofollow\">A lot of users are surprised</a> about this not yet being implemented.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n  end\nend\n</code></pre></div>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This PR improve codebase in order to generate proper drop migration:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n     drop_table :users\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class DropUsers&lt; ActiveRecord::Migration[7.0]\n  def change\n     drop_table :users\n  end\nend\n</code></pre></div>\n<p dir=\"auto\">Note: Implementation does not contain tests because there is no base code for migration generators yet - it would require quite some efforts to add this. If someone knows how test for such a thing should be written, please give me some hints.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\">  This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\">  Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\">  Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\">  CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48729",
-            "title": "Add migration generator for drop table action",
-            "date_modified": "2023-07-20T11:15:47.000Z",
-            "date_published": "2023-07-13T08:25:55.000Z",
             "author": {
                 "name": "knagode",
                 "url": "https://github.com/knagode"
