@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/manuallydrop-deref-move/text/3466-manuallydrop-deref-move.md\"><strong>Rendered</strong></a></p>\n<p dir=\"auto\">Pre-RFC discussion on <a href=\"https://internals.rust-lang.org/t/move-out-of-deref-for-manuallydrop/19216/\" rel=\"nofollow\">Internals</a></p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label A-drop</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3466",
             "title": "Move out of deref for `ManuallyDrop`",
-            "date_modified": "2023-08-06T17:00:08.000Z",
+            "date_modified": "2023-08-07T13:03:08.000Z",
             "date_published": "2023-07-30T22:00:54.000Z",
             "author": {
                 "name": "Jules-Bertholet",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229984?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io, @rust-lang/cargo, @rust-lang/mods</p>\n<p dir=\"auto\"><a href=\"https://github.com/LawnGnome/rfcs/blob/crate-quarantine/text/0000-crate-quarantine.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3464",
             "title": "Crate quarantine",
-            "date_modified": "2023-08-03T18:56:34.000Z",
+            "date_modified": "2023-08-07T12:30:22.000Z",
             "date_published": "2023-07-25T18:53:10.000Z",
             "author": {
                 "name": "LawnGnome",
@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1646875?u=24618295fece29a0bf5c850faf2555985232f5f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aaronfranke/rfcs/blob/3453-f16-and-f128/text/3453-f16-and-f128.md\">Rendered</a></p>\n<p dir=\"auto\">See the discussion leading up to this RFC in issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"403493179\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2629\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2629/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2629\">#2629</a>, and see the RFC for further floating point types at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>. This RFC is mostly a subset of what was originally proposed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>, and was split off to provide an easier path to consensus for types that don't have as many debatable implementation aspects.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3453",
             "title": "Add `f16` and `f128` float types",
-            "date_modified": "2023-08-07T10:32:41.000Z",
+            "date_modified": "2023-08-07T12:59:10.000Z",
             "date_published": "2023-07-02T06:39:53.000Z",
             "author": {
                 "name": "aaronfranke",
