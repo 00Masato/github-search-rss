@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229984?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io, @rust-lang/cargo, @rust-lang/mods</p>\n<p dir=\"auto\"><a href=\"https://github.com/LawnGnome/rfcs/blob/crate-quarantine/text/0000-crate-quarantine.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3464",
             "title": "Crate quarantine",
-            "date_modified": "2023-08-07T12:30:22.000Z",
+            "date_modified": "2023-08-07T21:05:00.000Z",
             "date_published": "2023-07-25T18:53:10.000Z",
             "author": {
                 "name": "LawnGnome",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10329663?u=f631a737c2d7865f5c69ef694f23645b9a97705c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ecnelises/rust-rfcs/blob/bf16_f64f64_f80/text/add-bf16-f64f64-and-f80-type.md\">Rendered</a></p>\n<p dir=\"auto\">Previous RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a> mixes proposal for IEEE-754 compliant <code class=\"notranslate\">f16</code>/<code class=\"notranslate\">f128</code> and such non-standard types, split this off from it to focus on the target related ones.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3456",
             "title": "Add `bf16`, `f64f64` and `f80` types",
-            "date_modified": "2023-08-07T19:18:19.000Z",
+            "date_modified": "2023-08-07T22:01:12.000Z",
             "date_published": "2023-07-10T16:48:54.000Z",
             "author": {
                 "name": "ecnelises",
@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1646875?u=24618295fece29a0bf5c850faf2555985232f5f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aaronfranke/rfcs/blob/3453-f16-and-f128/text/3453-f16-and-f128.md\">Rendered</a></p>\n<p dir=\"auto\">See the discussion leading up to this RFC in issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"403493179\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2629\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2629/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2629\">#2629</a>, and see the RFC for further floating point types at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>. This RFC is mostly a subset of what was originally proposed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>, and was split off to provide an easier path to consensus for types that don't have as many debatable implementation aspects.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3453",
             "title": "Add `f16` and `f128` float types",
-            "date_modified": "2023-08-07T17:14:53.000Z",
+            "date_modified": "2023-08-07T21:37:49.000Z",
             "date_published": "2023-07-02T06:39:53.000Z",
             "author": {
                 "name": "aaronfranke",
@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3446",
             "title": "Introduce the Store API for great good.",
-            "date_modified": "2023-08-07T16:18:18.000Z",
+            "date_modified": "2023-08-07T21:50:07.000Z",
             "date_published": "2023-06-17T13:40:53.000Z",
             "author": {
                 "name": "matthieu-m",
