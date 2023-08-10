@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This removes the writer method for table_alias from <code class=\"notranslate\">Arel::Table</code>.  Since arel_table is a private API of the framework, no one should be modifying it. It addresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1814805867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48775\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48775/hovercard\" href=\"https://github.com/rails/rails/issues/48775\">#48775</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ X] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ X] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ X] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48927",
+            "title": "This removes the writer method for table_alias from Arel::Table.",
+            "date_modified": "2023-08-10T20:34:33.000Z",
+            "date_published": "2023-08-10T20:33:51.000Z",
+            "author": {
+                "name": "paulreece",
+                "url": "https://github.com/paulreece"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pluses cannot be used to create code blocks when the content includes a space.</p>\n<p dir=\"auto\">Found using a regular expression:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ rg '#\\s[^+]*\\+[^+]*\\s[^+]*\\S\\+'\"><pre class=\"notranslate\">$ rg <span class=\"pl-s\"><span class=\"pl-pds\">'</span>#\\s[^+]*\\+[^+]*\\s[^+]*\\S\\+<span class=\"pl-pds\">'</span></span></pre></div>",
             "url": "https://github.com/rails/rails/pull/48924",
             "title": "Fix code blocks using + instead of <tt> [ci skip]",
@@ -86,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This removes the writer method for table_alias from <code class=\"notranslate\">Arel::Table</code>.  Since arel_table is a private API of the framework, no one should be modifying it. It addresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1814805867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48775\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48775/hovercard\" href=\"https://github.com/rails/rails/issues/48775\">#48775</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ X] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ X] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ X] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48905",
             "title": "Use Arel table alias with insert, update, and delete statements. Fixes #48775 ",
-            "date_modified": "2023-08-10T19:57:19.000Z",
+            "date_modified": "2023-08-10T20:34:57.000Z",
             "date_published": "2023-08-08T01:07:03.000Z",
             "author": {
                 "name": "paulreece",
@@ -130,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7958278?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because you couldn't change the <code class=\"notranslate\">ActiveRecord::Persistence</code> exception message, meaning the message was <code class=\"notranslate\">\"Failed to destroy #{model} with #{key}\"</code> even if it wasn't an english language app.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the <code class=\"notranslate\">ActiveRecord::Persistence</code> exception message to allow i18n on it.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48885",
             "title": "I18n record not destroyed",
-            "date_modified": "2023-08-10T20:01:17.000Z",
+            "date_modified": "2023-08-10T20:41:06.000Z",
             "date_published": "2023-08-04T10:39:19.000Z",
             "author": {
                 "name": "enmy",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fxn",
                 "url": "https://github.com/fxn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In the all header view in email previews, header names may wrap if the header value is very long (see screenshot). Header names are usually short, so I suggest we don't wrap those.</p>\n<h3 dir=\"auto\">Screenshot</h3>\n<h4 dir=\"auto\">Before</h4>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/111346/254726207-d1949ad5-2a3d-4c3a-9f25-cd55b3b272a4.png\"><img width=\"668\" alt=\"image\" src=\"https://user-images.githubusercontent.com/111346/254726207-d1949ad5-2a3d-4c3a-9f25-cd55b3b272a4.png\" style=\"max-width: 100%;\"></a>\n<h4 dir=\"auto\">After</h4>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/111346/254726146-72cb2aea-55bd-4e38-8e78-307d500dc512.png\"><img width=\"731\" alt=\"image\" src=\"https://user-images.githubusercontent.com/111346/254726146-72cb2aea-55bd-4e38-8e78-307d500dc512.png\" style=\"max-width: 100%;\"></a>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[n/a] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[n/a] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48767",
-            "title": "Prevent header wrapping in email preview",
-            "date_modified": "2023-07-21T11:40:33.000Z",
-            "date_published": "2023-07-19T22:33:35.000Z",
-            "author": {
-                "name": "c960657",
-                "url": "https://github.com/c960657"
             }
         }
     ]
