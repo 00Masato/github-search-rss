@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12101536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Lightweight Editor UI Framework</div>",
+            "url": "https://github.com/ant-design/pro-editor",
+            "title": "ant-design/pro-editor: A Lightweight Editor UI Framework",
+            "date_modified": "2023-08-01T05:42:33.000Z",
+            "date_published": "2023-05-08T02:46:22.000Z",
+            "author": {
+                "name": "ant-design",
+                "url": "https://github.com/ant-design"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"icecream\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f366.png\">🍦</g-emoji>VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour</div>",
+            "url": "https://github.com/vanjs-org/van",
+            "title": "vanjs-org/van: 🍦VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour",
+            "date_modified": "2023-08-11T22:57:51.000Z",
+            "date_published": "2023-05-08T05:45:31.000Z",
+            "author": {
+                "name": "vanjs-org",
+                "url": "https://github.com/vanjs-org"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100628678?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"page_with_curl\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4c3.png\">📃</g-emoji> A lightweight Pagination module for Necord</div>",
             "url": "https://github.com/necordjs/pagination",
             "title": "necordjs/pagination: 📃 A lightweight Pagination module for Necord",
@@ -36,28 +58,6 @@
             "author": {
                 "name": "gXLg",
                 "url": "https://github.com/gXLg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"icecream\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f366.png\">🍦</g-emoji>VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour</div>",
-            "url": "https://github.com/vanjs-org/van",
-            "title": "vanjs-org/van: 🍦VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour",
-            "date_modified": "2023-08-11T22:57:51.000Z",
-            "date_published": "2023-05-08T05:45:31.000Z",
-            "author": {
-                "name": "vanjs-org",
-                "url": "https://github.com/vanjs-org"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71161397?u=ed786e511a9bb9745a3567aabe41a29f7c6ad530&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>personal website and portfolio aiming to be lightweight, simple, and accessible</div>",
-            "url": "https://github.com/charliekozey/charliekozey.github.io",
-            "title": "charliekozey/charliekozey.github.io: personal website and portfolio aiming to be lightweight, simple, and accessible",
-            "date_modified": "2023-02-13T18:33:50.000Z",
-            "date_published": "2022-02-17T14:49:57.000Z",
-            "author": {
-                "name": "charliekozey",
-                "url": "https://github.com/charliekozey"
             }
         },
         {
@@ -113,17 +113,6 @@
             "author": {
                 "name": "matheustrres",
                 "url": "https://github.com/matheustrres"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1812093?u=0d6a92ea991be8b4d893c64f017d10b26d60e581&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight prompting library for terminal apps.</div>",
-            "url": "https://github.com/fabiospampinato/prask",
-            "title": "fabiospampinato/prask: Lightweight prompting library for terminal apps.",
-            "date_modified": "2023-08-11T21:18:15.000Z",
-            "date_published": "2023-08-10T17:05:51.000Z",
-            "author": {
-                "name": "fabiospampinato",
-                "url": "https://github.com/fabiospampinato"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Mistyerious",
                 "url": "https://github.com/Mistyerious"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) <g-emoji class=\"g-emoji\" alias=\"balloon\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f388.png\">🎈</g-emoji></div>",
+            "url": "https://github.com/nestjs/cqrs",
+            "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
+            "date_modified": "2023-08-08T16:29:35.000Z",
+            "date_published": "2017-05-06T18:08:10.000Z",
+            "author": {
+                "name": "nestjs",
+                "url": "https://github.com/nestjs"
             }
         }
     ]
