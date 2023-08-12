@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3470",
             "title": "crABI v1",
-            "date_modified": "2023-08-11T07:59:32.000Z",
+            "date_modified": "2023-08-12T16:49:03.000Z",
             "date_published": "2023-08-11T05:05:41.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a type <code class=\"notranslate\">UnsafeAliased</code> that acts on <code class=\"notranslate\">&amp;mut</code> in a similar way to how <code class=\"notranslate\">UnsafeCell</code> acts on <code class=\"notranslate\">&amp;</code>: it opts-out of the aliasing guarantees.<br>\nHowever, <code class=\"notranslate\">&amp;mut UnsafeAliased</code> can still be <code class=\"notranslate\">mem::swap</code>ed, so this is not a free ticket for arbitrary aliasing of mutable references.<br>\nAbstractions built on top of <code class=\"notranslate\">UnsafeAliased</code> must ensure proper encapsulation when handing such aliases references to clients (e.g. via pinning).</p>\n<p dir=\"auto\">This type is then used in generator lowering, finally fixing <a href=\"https://github.com/rust-lang/rust/issues/63818\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/63818/hovercard\">#63818</a>.</p>\n<p dir=\"auto\">Thanks to @rust-lang/opsem for a bunch of useful feedback!</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/unsafe-aliased/text/0000-unsafe-aliased.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3467",
             "title": "UnsafeAliased: allow aliasing of mutable references",
-            "date_modified": "2023-08-12T10:47:14.000Z",
+            "date_modified": "2023-08-12T16:04:54.000Z",
             "date_published": "2023-08-01T10:14:20.000Z",
             "author": {
                 "name": "RalfJung",
