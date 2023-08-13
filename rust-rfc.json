@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40202897?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fix start date accoding to the format of <code class=\"notranslate\">YYYY-MM-DD</code> in <code class=\"notranslate\">0000-template.md</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/xzmeng/rfcs/blob/fix-start-date-format-0201/text/0201-error-chaining.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3472",
+            "title": "Fix start date format in RFC 0201",
+            "date_modified": "2023-08-13T20:15:43.000Z",
+            "date_published": "2023-08-13T20:14:49.000Z",
+            "author": {
+                "name": "xzmeng",
+                "url": "https://github.com/xzmeng"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39023054?u=ee39bf2d108882dbfecf15b3635ca3a383554a4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/HTGAzureX1212/rfcs/blob/rfc-20230813-deprecated-scheduled-removal/text/0000-deprecated-scheduled-removal.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the addition of a <code class=\"notranslate\">scheduled_removal</code> parameter to the <code class=\"notranslate\">deprecated</code> attribute to optionally specify when the deprecated item will be removed from the public API, making it easier for users of libraries to prepare for migration beforehand.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-scheduled-removal-parameter-for-deprecated-attribute/19324\" rel=\"nofollow\">Prior Discussion on Rust Internals</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3471",
             "title": "RFC: `scheduled_removal` Parameter for `deprecated` Attribute",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3470",
             "title": "crABI v1",
-            "date_modified": "2023-08-13T18:48:53.000Z",
+            "date_modified": "2023-08-13T20:02:53.000Z",
             "date_published": "2023-08-11T05:05:41.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -130,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes creating a new sub-team for shepherding improvements to the end-user experience (wider Rust development community) for verifying their Rust code.  For example, this team would be overseeing improvements to <code class=\"notranslate\">cargo test</code> (owned by T-cargo under T-devtools) and lib<code class=\"notranslate\">test</code> (owned by T-libs).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/test/text/3455-t-test.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3455",
             "title": "Create a Testing sub-team",
-            "date_modified": "2023-08-07T23:54:48.000Z",
+            "date_modified": "2023-08-13T20:19:27.000Z",
             "date_published": "2023-07-03T18:39:27.000Z",
             "author": {
                 "name": "epage",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "JarredAllen",
                 "url": "https://github.com/JarredAllen"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/127629827?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/blagowtf/rust-rfcs-virt-self/blob/master/text/3440-virt-self.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3440",
-            "title": "Virtually dispatched trait methods",
-            "date_modified": "2023-07-29T18:44:03.000Z",
-            "date_published": "2023-05-30T15:37:37.000Z",
-            "author": {
-                "name": "blagowtf",
-                "url": "https://github.com/blagowtf"
             }
         }
     ]
