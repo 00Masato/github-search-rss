@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39023054?u=ee39bf2d108882dbfecf15b3635ca3a383554a4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/HTGAzureX1212/rfcs/blob/rfc-20230813-deprecated-scheduled-removal/text/0000-deprecated-scheduled-removal.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the addition of a <code class=\"notranslate\">scheduled_removal</code> parameter to the <code class=\"notranslate\">deprecated</code> attribute to optionally specify when the deprecated item will be removed from the public API, making it easier for users of libraries to prepare for migration beforehand.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-scheduled-removal-parameter-for-deprecated-attribute/19324\" rel=\"nofollow\">Prior Discussion on Rust Internals</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3471",
+            "title": "RFC: `scheduled_removal` Parameter for `deprecated` Attribute",
+            "date_modified": "2023-08-13T06:07:52.000Z",
+            "date_published": "2023-08-13T06:06:04.000Z",
+            "author": {
+                "name": "HTGAzureX1212",
+                "url": "https://github.com/HTGAzureX1212"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3470",
             "title": "crABI v1",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "blagowtf",
                 "url": "https://github.com/blagowtf"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5456384?u=19311cf017def31e83f6c871095f201625f4fb7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Lokathor/rfcs/blob/Lokathor-patch-1/text/0000-unsafe_extern.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3439",
-            "title": "Unsafe Extern Blocks",
-            "date_modified": "2023-06-22T09:08:24.000Z",
-            "date_published": "2023-05-29T05:32:21.000Z",
-            "author": {
-                "name": "Lokathor",
-                "url": "https://github.com/Lokathor"
             }
         }
     ]
