@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=a2dd8dd1835679cfd6b1924ef63a6e61ea62fa2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This extends the check introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1729552267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48323\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48323/hovercard\" href=\"https://github.com/rails/rails/pull/48323\">#48323</a> to prevent loading fixtures from gem paths instead of just the vendor folder.</p>\n<p dir=\"auto\">Some tools like devenv install gems in the root of the app, but outside of the vendor folder (<code class=\"notranslate\">.devenv/state</code>).<br>\nThis change prevents automatically loading fixtures from gems.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I run rails using devenv and after updating rails, my test suite started to complain about fixtures from rails internal tests.<br>\nThe current check doesn't fix the issue for all situations. This new check <em>should</em>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48933",
+            "title": "Prevent autoloading fixtures in gem paths.",
+            "date_modified": "2023-08-13T04:34:07.000Z",
+            "date_published": "2023-08-13T04:24:10.000Z",
+            "author": {
+                "name": "JoeDupuis",
+                "url": "https://github.com/JoeDupuis"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">…tom set a table alias.  It then accounts for the SQL needed for this in the AST.  It addresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1814805867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48775\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48775/hovercard\" href=\"https://github.com/rails/rails/issues/48775\">#48775</a>.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48932",
             "title": "This branch allows a user to set self.table_alias in the model to cus…",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "LukasSkywalker",
                 "url": "https://github.com/LukasSkywalker"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3387?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Docs improvements for <code class=\"notranslate\">ActiveRecord::TransactionRollbackError</code> and subclasses after some discussions today.</p>",
-            "url": "https://github.com/rails/rails/pull/48780",
-            "title": "Improve the docs of ActiveRecord::TransactionRollbackError",
-            "date_modified": "2023-07-24T17:31:42.000Z",
-            "date_published": "2023-07-21T16:07:39.000Z",
-            "author": {
-                "name": "fxn",
-                "url": "https://github.com/fxn"
             }
         }
     ]
