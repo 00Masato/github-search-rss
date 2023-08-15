@@ -9,22 +9,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/1a392007564d0bc8ffc62ad4d1fc133ec5fc433d/text/0000-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
-            "date_modified": "2023-08-15T03:50:53.000Z",
+            "date_modified": "2023-08-15T05:51:35.000Z",
             "date_published": "2023-08-15T03:45:27.000Z",
             "author": {
                 "name": "pitaj",
                 "url": "https://github.com/pitaj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40202897?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/xzmeng/rfcs/blob/fix-typos/text/0446-es6-unicode-escapes.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3474",
-            "title": "Fix typos",
-            "date_modified": "2023-08-14T23:16:36.000Z",
-            "date_published": "2023-08-14T23:04:15.000Z",
-            "author": {
-                "name": "xzmeng",
-                "url": "https://github.com/xzmeng"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "JoshuaBrest",
                 "url": "https://github.com/JoshuaBrest"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656507?u=6660e21862872967475a54df58143d25987e350b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I wrote up my thoughts from <a href=\"https://internals.rust-lang.org/t/macro-rules-metavariable-for-generic/18889\" rel=\"nofollow\">this rust-internals thread</a> into an RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/JarredAllen/rust-lang-rfcs/blob/fragment-specifiers-for-generic-arguments/text/0000-fragment-specifiers-for-generic-arguments.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3442",
+            "title": "Fragment Specifiers for Generic Arguments",
+            "date_modified": "2023-06-06T00:15:21.000Z",
+            "date_published": "2023-06-01T20:44:34.000Z",
+            "author": {
+                "name": "JarredAllen",
+                "url": "https://github.com/JarredAllen"
             }
         }
     ]
