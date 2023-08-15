@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/1a392007564d0bc8ffc62ad4d1fc133ec5fc433d/text/0000-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
-            "date_modified": "2023-08-15T18:57:51.000Z",
+            "date_modified": "2023-08-15T19:52:47.000Z",
             "date_published": "2023-08-15T03:45:27.000Z",
             "author": {
                 "name": "pitaj",
