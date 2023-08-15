@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39023054?u=ee39bf2d108882dbfecf15b3635ca3a383554a4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/HTGAzureX1212/rfcs/blob/rfc-20230813-deprecated-scheduled-removal/text/0000-deprecated-scheduled-removal.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the addition of a <code class=\"notranslate\">scheduled_removal</code> parameter to the <code class=\"notranslate\">deprecated</code> attribute to optionally specify when the deprecated item will be removed from the public API, making it easier for users of libraries to prepare for migration beforehand.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-scheduled-removal-parameter-for-deprecated-attribute/19324\" rel=\"nofollow\">Prior Discussion on Rust Internals</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3471",
             "title": "RFC: `scheduled_removal` Parameter for `deprecated` Attribute",
-            "date_modified": "2023-08-14T23:22:43.000Z",
+            "date_modified": "2023-08-15T20:45:56.000Z",
             "date_published": "2023-08-13T06:06:04.000Z",
             "author": {
                 "name": "HTGAzureX1212",
