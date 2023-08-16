@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">My main motivation was to remove <code class=\"notranslate\">git_source</code> from the <code class=\"notranslate\">bug_report_templates</code>, which is possible by <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rubygems/rubygems/commit/c2e81f8ff6/hovercard\" href=\"https://github.com/rubygems/rubygems/commit/c2e81f8ff6\">rubygems/rubygems@<tt>c2e81f8ff6</tt></a></p>\n<p dir=\"auto\">In general, I'm curious what is preventing us from upgrading <code class=\"notranslate\">bundler</code> and probably the <code class=\"notranslate\">required_rubygems_version</code> should be increased at some point?</p>\n<p dir=\"auto\">Seems like <code class=\"notranslate\">git_source</code> was removed from the generated <code class=\"notranslate\">Gemfile</code> (but not templates) in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1741432682\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48396\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48396/hovercard\" href=\"https://github.com/rails/rails/pull/48396\">#48396</a>.</p>",
             "url": "https://github.com/rails/rails/pull/48951",
             "title": "Bump bundler requirement to >= 2.2.0",
-            "date_modified": "2023-08-16T10:27:37.000Z",
+            "date_modified": "2023-08-16T15:39:35.000Z",
             "date_published": "2023-08-16T09:39:54.000Z",
             "author": {
                 "name": "zzak",
