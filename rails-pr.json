@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">My main motivation was to remove <code class=\"notranslate\">git_source</code> from the <code class=\"notranslate\">bug_report_templates</code>, which is possible by <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rubygems/rubygems/commit/c2e81f8ff6/hovercard\" href=\"https://github.com/rubygems/rubygems/commit/c2e81f8ff6\">rubygems/rubygems@<tt>c2e81f8ff6</tt></a></p>\n<p dir=\"auto\">In general, I'm curious what is preventing us from upgrading <code class=\"notranslate\">bundler</code> and probably the <code class=\"notranslate\">required_rubygems_version</code> should be increased at some point?</p>",
+            "url": "https://github.com/rails/rails/pull/48951",
+            "title": "Bump bundler requirement to >= 2.2.0",
+            "date_modified": "2023-08-16T09:39:58.000Z",
+            "date_published": "2023-08-16T09:39:54.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/386234?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a href=\"https://playwright.dev/\" rel=\"nofollow\">Playwright</a> is getting popularity as a new browser automation tool. There is a community-maintained Ruby client (<a href=\"https://github.com/YusukeIwaki/playwright-ruby-client\">client</a> and <a href=\"https://github.com/YusukeIwaki/capybara-playwright-driver\">capybara driver</a>) as well. I have been using it for a while now and it works great, and it would be great if we could add support for it to Rails.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR adds support for the Playwright driver to Rails.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48950",
             "title": "Add support for Playwright as a driver for system tests",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "macuk",
                 "url": "https://github.com/macuk"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This address the bug identified in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1561049658\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47171\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/47171/hovercard\" href=\"https://github.com/rails/rails/issues/47171\">#47171</a>, which is occurs when an autosave is triggered in a before_create, resulting in a the create callbacks occurring twice. The second time on a record that was already persisted, but since there are no attributes changed (it's a clean record), the new record receives the default values.</p>\n<p dir=\"auto\">Now when an autosave occurs in a before_create, we run the update callbacks as well as any create callbacks to avoid confusing situation.</p>\n<h3 dir=\"auto\">Alternatives Considered</h3>\n<h4 dir=\"auto\">1) Call an aliased method <code class=\"notranslate\">_update_record_without_callbacks</code> and return</h4>\n<p dir=\"auto\">This would avoid creating the duplicate record, but may surprise the developer if any <code class=\"notranslate\">after_*</code> callbacks they were expecting didn't occur.</p>\n<p dir=\"auto\">We wanted to retain that same guarantee.</p>\n<h4 dir=\"auto\">2) Raise if the record is already persisted</h4>\n<p dir=\"auto\">The previous behavior of creating multiple records may have simply gone unnoticed to users, and raising would be a breaking change.</p>\n<p dir=\"auto\">We could roll out that behavior behind a flag and deprecation warning, but we wanted to try and solve for this edge-case.</p>\n<h4 dir=\"auto\">3) Return if record is already persisted and no dirty changes</h4>\n<p dir=\"auto\">Similar to the second option, silently allowing this behavior to change could have unexpected consequences.</p>\n<p dir=\"auto\">The interesting thing was also non of the Active Record tests failed if we just stopped the callback chain there.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #47171.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1561049658\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47171\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/47171/hovercard\" href=\"https://github.com/rails/rails/issues/47171\">#47171</a></p>",
-            "url": "https://github.com/rails/rails/pull/48804",
-            "title": "Change lanes to update callbacks when an autosaved record already exists",
-            "date_modified": "2023-07-26T04:24:53.000Z",
-            "date_published": "2023-07-26T04:05:40.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
