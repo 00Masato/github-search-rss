@@ -6,28 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">TODO: write this</p>\n<p dir=\"auto\">I was pushing to a branch on <code class=\"notranslate\">upstream</code> but that fills discord with notifications everytime I try to run a build, so I just opened a PR instead 🙈</p>",
-            "url": "https://github.com/rails/rails/pull/48963",
-            "title": "Test `rails new` docker workflow on a rubies matrix",
-            "date_modified": "2023-08-17T06:47:25.000Z",
-            "date_published": "2023-08-17T06:08:46.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Reverts <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1370297791\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46009\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46009/hovercard\" href=\"https://github.com/rails/rails/pull/46009\">#46009</a></p>\n<p dir=\"auto\">This change breaks building Rails source on Ruby 3.0.</p>\n<p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1852875529\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48951\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48951/hovercard\" href=\"https://github.com/rails/rails/pull/48951\">#48951</a>, we found that <code class=\"notranslate\">gem install rails</code> and <code class=\"notranslate\">rails new</code> must work on the currently supported Ruby versions default available rubygems&amp;bundler.</p>\n<p dir=\"auto\">The reason this feature passed CI was because we always update to the latest rubygems and bundler in our build images, including Ruby 2.7 and up.</p>\n<p dir=\"auto\">Through experimenting on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1854143545\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/buildkite-config/issues/65\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/buildkite-config/pull/65/hovercard\" href=\"https://github.com/rails/buildkite-config/pull/65\">rails/buildkite-config#65</a>, I realized that the two are mutually exclusive, and there are things in the test suite that we may want to make exceptions for in order to keep builds green -- if that means a developer who wants to contribute to rails/rails also has to update to the latest version.</p>\n<p dir=\"auto\">All of that said, this feature breaks that guarantee that we will support the default available rubygems and bundler for each version of Ruby we support.</p>",
-            "url": "https://github.com/rails/rails/pull/48962",
-            "title": "Revert \"Bundler should use platform :windows instead of :mingw, etc.\"",
-            "date_modified": "2023-08-17T06:18:21.000Z",
-            "date_published": "2023-08-17T05:16:03.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1833726665\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48874\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48874/hovercard\" href=\"https://github.com/rails/rails/issues/48874\">#48874</a></p>\n<p dir=\"auto\">This adds additional coverage to ActionCable::Server to validate that its output follow the Rack SPEC.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In addition to using Rack::CONTENT_TYPE for the Content-Type header, there was another change required: the Content-Type header cannot be specified when the Response status is 204, so the default health check status was updated to 200</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48961",
             "title": "Add Rack::Lint to ActionCable::Server health tests",
@@ -113,17 +91,6 @@
             "author": {
                 "name": "jdelStrother",
                 "url": "https://github.com/jdelStrother"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">My main motivation was to remove <code class=\"notranslate\">git_source</code> from the <code class=\"notranslate\">bug_report_templates</code>, which is possible by <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rubygems/rubygems/commit/c2e81f8ff6/hovercard\" href=\"https://github.com/rubygems/rubygems/commit/c2e81f8ff6\">rubygems/rubygems@<tt>c2e81f8ff6</tt></a></p>\n<p dir=\"auto\">In general, I'm curious what is preventing us from upgrading <code class=\"notranslate\">bundler</code> and probably the <code class=\"notranslate\">required_rubygems_version</code> should be increased at some point?</p>\n<p dir=\"auto\">Seems like <code class=\"notranslate\">git_source</code> was removed from the generated <code class=\"notranslate\">Gemfile</code> (but not templates) in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1741432682\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48396\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48396/hovercard\" href=\"https://github.com/rails/rails/pull/48396\">#48396</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/48951",
-            "title": "Bump bundler requirement to >= 2.2.0",
-            "date_modified": "2023-08-17T01:17:41.000Z",
-            "date_published": "2023-08-16T09:39:54.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         },
         {
@@ -223,6 +190,39 @@
             "author": {
                 "name": "maximerety",
                 "url": "https://github.com/maximerety"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142914?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If this looks good, I'll fill in the gaps in documentation and respond<br>\nto feedback in a timely manner.</p>\n<p dir=\"auto\">Is a simpler version of what's in<br>\n<a href=\"https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb#L373-L396\">https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb#L373-L396</a></p>\n<p dir=\"auto\">I'm using this in our application and thought I'd share back.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We using ActiveModel::Model to build plain-old-ruby<br>\nobjects for things like API clients.  When I use<br>\nthe Attributes API to define secrets like <code class=\"notranslate\">attribute :api_key, :string</code><br>\nI don't want the <code class=\"notranslate\">api_key</code> to show up anywhere.</p>\n<p dir=\"auto\">This Pull Request has been created because ActiveModel::Model<br>\nis missing the <code class=\"notranslate\">filter_attributes</code> behavior present in<br>\nActiveRecord::Core.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes adds <code class=\"notranslate\">filter_attributes</code> to ActiveModel::API</p>\n<p dir=\"auto\">I added it to ActiveModel::API so that it does not interfere with<br>\nActiveRecord.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">We're using this in our app.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48921",
+            "title": "feat: Add ActiveModel::Model.filter_attributes",
+            "date_modified": "2023-08-13T16:33:55.000Z",
+            "date_published": "2023-08-10T14:03:53.000Z",
+            "author": {
+                "name": "bf4",
+                "url": "https://github.com/bf4"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22743?u=e50ea34a823df4b4f098a77e63c67b043847b06c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because it's not intuitive how we should match the arguments passed to an ActiveJob job when using keyword arguments.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit adds an example to the <code class=\"notranslate\">assert_enqueued_with</code> method documentation, demonstrating how to use it with keyword arguments. The example clarifies that keyword arguments should be specified as a hash inside an array, guiding developers to write tests for jobs that use keyword arguments.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48920",
+            "title": "[docs] Update assert_enqueued_with documentation with keyword arguments example",
+            "date_modified": "2023-08-11T07:55:37.000Z",
+            "date_published": "2023-08-10T12:38:36.000Z",
+            "author": {
+                "name": "fidalgo",
+                "url": "https://github.com/fidalgo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This flattens our workflow graph pretty much in half.</p>\n<p dir=\"auto\">By compacting the lint jobs into a single job inside a single workflow, we maybe lose some readability -- but since the cost to maintain those files is already really low, they are rarely changed, versus the number of checks on each PR makes for a worse experience IMO.</p>\n<p dir=\"auto\">This also means that all of those separate checks can be found on a single page (e.g. <a href=\"https://github.com/zzak/rails/actions/runs/5820736204/job/15781737808?pr=20\">here</a>), for better or worse.. navigating the actions UI across multiple workflows and jobs is already strenuous. There is an argument that if one of these steps fails, debugging it there may be difficult, but I've tried to order them in terms of priority of \"if this step fails it should fail first\".</p>\n<p dir=\"auto\">If any of the <code class=\"notranslate\">Lint</code> steps fails, figuring out which one and why may not be as straight-forward, that maybe the only downside here. There are plans to move this workflow entirely to Buildkite at some point, probably after a refactor (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1804093901\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/buildkite-config/issues/62\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/buildkite-config/pull/62/hovercard\" href=\"https://github.com/rails/buildkite-config/pull/62\">rails/buildkite-config#62</a>, where they can go back to being separate \"jobs\" in that context and all of the important stuff is in a single place.</p>\n<p dir=\"auto\">So this is more of an intermediary step to improve the PR page and hopefully make reviewing them and deciding which checks failed matters, more efficient.</p>",
+            "url": "https://github.com/rails/rails/pull/48919",
+            "title": "Refactor actions to make fewer status checks",
+            "date_modified": "2023-08-10T23:05:09.000Z",
+            "date_published": "2023-08-10T12:10:24.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
