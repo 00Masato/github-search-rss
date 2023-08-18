@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1080678?u=b6e211b7766e6aa01e794067f67dd65d419c0150&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I'm working on an enhancement to query constraints that will require me to know when we have query constraints but not a composite key. Currently if you have a composite key it will be included in the query constraints list. There's not a way to differentiate between the two which means that we're forced into setting the query constraints on the associations for the primary key.</p>\n<p dir=\"auto\">This change adds a <code class=\"notranslate\">has_query_constraints?</code> method so we can check the class for query constraints. The options still work as well but we can be sure we're always picking up the query constraints when they're present.</p>\n<p dir=\"auto\">cc/ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a></p>",
+            "url": "https://github.com/rails/rails/pull/48971",
+            "title": "Add method for accessing only query constraints",
+            "date_modified": "2023-08-18T16:59:02.000Z",
+            "date_published": "2023-08-18T16:08:15.000Z",
+            "author": {
+                "name": "eileencodes",
+                "url": "https://github.com/eileencodes"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48965.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1854697972\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48965\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48965/hovercard\" href=\"https://github.com/rails/rails/issues/48965\">#48965</a></p>\n<p dir=\"auto\">This is already the case for add_column and create_table, but change_column was missed</p>\n<h3 dir=\"auto\">Additional Information</h3>\n<p dir=\"auto\">This needs to be backported to 7.0, but the test change won't backport cleanly because the Migrator signature in the test changed. I'll make a PR for 7-0-stable as well if that would be easier</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/48969",
             "title": "Fix 6.1 change_column setting datetime precision",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "RobertChang0722",
                 "url": "https://github.com/RobertChang0722"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7958278?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because you couldn't change the <code class=\"notranslate\">ActiveRecord::Persistence</code> exception message, meaning the message was <code class=\"notranslate\">\"Failed to destroy #{model} with #{key}\"</code> even if it wasn't an english language app.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the <code class=\"notranslate\">ActiveRecord::Persistence</code> exception message to allow i18n on it.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48885",
-            "title": "I18n record not destroyed",
-            "date_modified": "2023-08-10T20:41:06.000Z",
-            "date_published": "2023-08-04T10:39:19.000Z",
-            "author": {
-                "name": "enmy",
-                "url": "https://github.com/enmy"
             }
         }
     ]
