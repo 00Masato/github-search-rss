@@ -6,10 +6,54 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42146674?u=43b8e048fce6df33bd2a8c0dd04ba12c28c0d267&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍞 Lightweight, user-friendly toast message library for React applications. Add beautiful notifications to your React apps.</div>",
+            "url": "https://github.com/almond-bongbong/react-simple-toasts",
+            "title": "almond-bongbong/react-simple-toasts: 🍞 Lightweight, user-friendly toast message library for React applications. Add beautiful notifications to your React apps.",
+            "date_modified": "2023-08-18T09:17:21.000Z",
+            "date_published": "2019-09-29T06:03:04.000Z",
+            "author": {
+                "name": "almond-bongbong",
+                "url": "https://github.com/almond-bongbong"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121693662?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Jellycat is a lightweight js framework for creating web components based on html custom elements interface.</div>",
+            "url": "https://github.com/jellycat-js/jellycat",
+            "title": "jellycat-js/jellycat: Jellycat is a lightweight js framework for creating web components based on html custom elements interface.",
+            "date_modified": "2023-01-31T22:53:30.000Z",
+            "date_published": "2022-12-30T20:21:43.000Z",
+            "author": {
+                "name": "jellycat-js",
+                "url": "https://github.com/jellycat-js"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9765?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Key-value storage with built-in TTL expiration management</div>",
+            "url": "https://github.com/kawanet/timed-kvs",
+            "title": "kawanet/timed-kvs: Lightweight Key-value storage with built-in TTL expiration management",
+            "date_modified": "2023-02-19T09:01:40.000Z",
+            "date_published": "2021-04-24T13:34:05.000Z",
+            "author": {
+                "name": "kawanet",
+                "url": "https://github.com/kawanet"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106644?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast &amp; Lightweight Zola Theme</div>",
+            "url": "https://github.com/Jieiku/abridge",
+            "title": "Jieiku/abridge: Fast & Lightweight Zola Theme",
+            "date_modified": "2023-08-18T14:59:43.000Z",
+            "date_published": "2022-03-28T02:06:00.000Z",
+            "author": {
+                "name": "Jieiku",
+                "url": "https://github.com/Jieiku"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11404085?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, customizable Vue UI library for mobile web apps.</div>",
             "url": "https://github.com/youzan/vant",
             "title": "youzan/vant: A lightweight, customizable Vue UI library for mobile web apps.",
-            "date_modified": "2023-08-20T07:05:06.000Z",
+            "date_modified": "2023-08-20T12:09:37.000Z",
             "date_published": "2017-04-19T07:55:31.000Z",
             "author": {
                 "name": "youzan",
@@ -61,6 +105,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
+            "url": "https://github.com/verdaccio/verdaccio",
+            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
+            "date_modified": "2023-08-20T12:46:02.000Z",
+            "date_published": "2016-04-15T16:21:12.000Z",
+            "author": {
+                "name": "verdaccio",
+                "url": "https://github.com/verdaccio"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26671540?u=2a9fc74d3b50f1e256ce60b5e36f464784880913&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ultra lightweight browser extension</div>",
             "url": "https://github.com/yarichsa/previewdownloader",
             "title": "yarichsa/previewdownloader: Ultra lightweight browser extension",
@@ -80,17 +135,6 @@
             "author": {
                 "name": "SimonCodess",
                 "url": "https://github.com/SimonCodess"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"package\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f4e6.png\">📦</g-emoji><g-emoji class=\"g-emoji\" alias=\"closed_lock_with_key\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/1f510.png\">🔐</g-emoji> A lightweight Node.js private proxy registry</div>",
-            "url": "https://github.com/verdaccio/verdaccio",
-            "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
-            "date_modified": "2023-08-20T05:53:13.000Z",
-            "date_published": "2016-04-15T16:21:12.000Z",
-            "author": {
-                "name": "verdaccio",
-                "url": "https://github.com/verdaccio"
             }
         },
         {
@@ -149,17 +193,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42146674?u=43b8e048fce6df33bd2a8c0dd04ba12c28c0d267&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍞 Lightweight, user-friendly toast message library for React applications. Add beautiful notifications to your React apps.</div>",
-            "url": "https://github.com/almond-bongbong/react-simple-toasts",
-            "title": "almond-bongbong/react-simple-toasts: 🍞 Lightweight, user-friendly toast message library for React applications. Add beautiful notifications to your React apps.",
-            "date_modified": "2023-08-18T09:17:21.000Z",
-            "date_published": "2019-09-29T06:03:04.000Z",
-            "author": {
-                "name": "almond-bongbong",
-                "url": "https://github.com/almond-bongbong"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49127376?u=d4726d070ee1a0abd9b09a3e723caccd8072d21e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><g-emoji class=\"g-emoji\" alias=\"stopwatch\" fallback-src=\"https://github.githubassets.com/images/icons/emoji/unicode/23f1.png\">⏱️</g-emoji> Fast, accurate and lightweight countdown &amp; stopwatch written in Typescript.</div>",
             "url": "https://github.com/IgorKowalczyk/countdown",
             "title": "IgorKowalczyk/countdown: ⏱️ Fast, accurate and lightweight countdown & stopwatch written in Typescript.",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "bomzj",
                 "url": "https://github.com/bomzj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/265510?u=f0e81bc898040ebf8ea7291a7084f3e54919d2f7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript library for extracting transaction IDs from Apple's ASN.1 encoded receipts.</div>",
-            "url": "https://github.com/tamtamchik/app-store-receipt-parser",
-            "title": "tamtamchik/app-store-receipt-parser: A lightweight TypeScript library for extracting transaction IDs from Apple's ASN.1 encoded receipts.",
-            "date_modified": "2023-08-19T09:19:56.000Z",
-            "date_published": "2023-08-19T07:31:55.000Z",
-            "author": {
-                "name": "tamtamchik",
-                "url": "https://github.com/tamtamchik"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1730018?u=dcf43757a9371860614ecefced7b088b1f349e13&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, composable validation and serialization library</div>",
-            "url": "https://github.com/gordonmleigh/decoders",
-            "title": "gordonmleigh/decoders: Lightweight, composable validation and serialization library",
-            "date_modified": "2023-08-14T17:00:06.000Z",
-            "date_published": "2020-10-12T13:24:14.000Z",
-            "author": {
-                "name": "gordonmleigh",
-                "url": "https://github.com/gordonmleigh"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96450945?u=09f1396ce5e2ee21e145ad6fa0c9732653161fd7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Unique JavaScript Library For Creating, Composing And Rendering HTML Element. Based On ES5 (EcmaScript 2009) That Can Support Old Web Browsers!</div>",
-            "url": "https://github.com/equneko/elode",
-            "title": "equneko/elode: A Unique JavaScript Library For Creating, Composing And Rendering HTML Element. Based On ES5 (EcmaScript 2009) That Can Support Old Web Browsers!",
-            "date_modified": "2023-08-20T07:34:15.000Z",
-            "date_published": "2022-11-12T23:22:51.000Z",
-            "author": {
-                "name": "equneko",
-                "url": "https://github.com/equneko"
             }
         }
     ]
