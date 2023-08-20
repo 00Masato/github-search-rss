@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82600264?u=ba5af4aa760f6b5bd3265bf03021c5748988394b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds the possibility to implement traits directly for a specific function next to generic implementation based on function signatures.</p>\n<p dir=\"auto\"><a href=\"https://github.com/DasLixou/rust-rfcs/blob/master/text/3476-impl-trait-for-fn.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3476",
+            "title": "RFC: `impl-trait-for-fn`",
+            "date_modified": "2023-08-20T16:49:18.000Z",
+            "date_published": "2023-08-20T16:47:40.000Z",
+            "author": {
+                "name": "DasLixou",
+                "url": "https://github.com/DasLixou"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/master/text/3475-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "JoshuaBrest",
                 "url": "https://github.com/JoshuaBrest"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656507?u=6660e21862872967475a54df58143d25987e350b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I wrote up my thoughts from <a href=\"https://internals.rust-lang.org/t/macro-rules-metavariable-for-generic/18889\" rel=\"nofollow\">this rust-internals thread</a> into an RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/JarredAllen/rust-lang-rfcs/blob/fragment-specifiers-for-generic-arguments/text/0000-fragment-specifiers-for-generic-arguments.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3442",
-            "title": "Fragment Specifiers for Generic Arguments",
-            "date_modified": "2023-06-06T00:15:21.000Z",
-            "date_published": "2023-06-01T20:44:34.000Z",
-            "author": {
-                "name": "JarredAllen",
-                "url": "https://github.com/JarredAllen"
             }
         }
     ]
