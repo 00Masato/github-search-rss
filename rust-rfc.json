@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3470",
             "title": "crABI v1",
-            "date_modified": "2023-08-19T18:33:51.000Z",
+            "date_modified": "2023-08-20T21:21:47.000Z",
             "date_published": "2023-08-11T05:05:41.000Z",
             "author": {
                 "name": "joshtriplett",
