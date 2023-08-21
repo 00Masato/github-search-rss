@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3470",
             "title": "crABI v1",
-            "date_modified": "2023-08-20T21:21:47.000Z",
+            "date_modified": "2023-08-21T16:59:26.000Z",
             "date_published": "2023-08-11T05:05:41.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/core-detect/text/0000-core_detect.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC moves the <code class=\"notranslate\">is_*_feature_detected</code> macros into <code class=\"notranslate\">core</code>, but keeps the logic for actually doing feature detection (which requires OS support) in <code class=\"notranslate\">std</code>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3469",
             "title": "CPU feature detection in core",
-            "date_modified": "2023-08-15T00:20:24.000Z",
+            "date_modified": "2023-08-21T16:19:20.000Z",
             "date_published": "2023-08-03T23:03:30.000Z",
             "author": {
                 "name": "Amanieu",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io-policy-update/text/3463-crates-io-policy-update.md\">Rendered</a></p>\n<p dir=\"auto\">/cc @rust-lang/crates-io</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3463",
             "title": "Add \"crates.io Policy Update\" RFC",
-            "date_modified": "2023-08-21T15:57:05.000Z",
+            "date_modified": "2023-08-21T16:42:25.000Z",
             "date_published": "2023-07-24T13:37:52.000Z",
             "author": {
                 "name": "Turbo87",
