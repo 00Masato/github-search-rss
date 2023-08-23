@@ -171,17 +171,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes creating a new sub-team for shepherding improvements to the end-user experience (wider Rust development community) for verifying their Rust code.  For example, this team would be overseeing improvements to <code class=\"notranslate\">cargo test</code> (owned by T-cargo under T-devtools) and lib<code class=\"notranslate\">test</code> (owned by T-libs).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/test/text/3455-t-test.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3455",
-            "title": "Create a Testing sub-team",
-            "date_modified": "2023-08-23T20:40:12.000Z",
-            "date_published": "2023-07-03T18:39:27.000Z",
-            "author": {
-                "name": "epage",
-                "url": "https://github.com/epage"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1646875?u=24618295fece29a0bf5c850faf2555985232f5f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aaronfranke/rfcs/blob/3453-f16-and-f128/text/3453-f16-and-f128.md\">Rendered</a></p>\n<p dir=\"auto\">See the discussion leading up to this RFC in issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"403493179\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2629\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2629/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2629\">#2629</a>, and see the RFC for further floating point types at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>. This RFC is mostly a subset of what was originally proposed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1779419348\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3451\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3451/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3451\">#3451</a>, and was split off to provide an easier path to consensus for types that don't have as many debatable implementation aspects.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3453",
             "title": "Add `f16` and `f128` float types",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "calebzulawski",
                 "url": "https://github.com/calebzulawski"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2420441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The Store offers a more flexible allocation API, suitable for in-line memory store, shared memory store, compact \"pointers\", const/static use, and more.</p>\n<p dir=\"auto\">Adoption of this API, and its use in standard collections, would render a number of specialized crates obsolete in full or in part, such as StackFuture.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthieu-m/rfcs/blob/store/text/3446-store.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3446",
+            "title": "Introduce the Store API for great good.",
+            "date_modified": "2023-08-14T13:20:47.000Z",
+            "date_published": "2023-06-17T13:40:53.000Z",
+            "author": {
+                "name": "matthieu-m",
+                "url": "https://github.com/matthieu-m"
             }
         }
     ]
