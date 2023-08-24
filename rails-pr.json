@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR added the description for <a href=\"#46762\">Default docker files</a> to the rails 7.1 release note.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49026",
             "title": "Add default docker files description to 7.1 release note [skip ci]",
-            "date_modified": "2023-08-24T16:01:38.000Z",
+            "date_modified": "2023-08-24T16:17:13.000Z",
             "date_published": "2023-08-24T12:07:24.000Z",
             "author": {
                 "name": "akhilgkrishnan",
@@ -25,17 +25,6 @@
             "author": {
                 "name": "AlexB52",
                 "url": "https://github.com/AlexB52"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR adds the the Removal, deprecated and notable changes of railties to release notes 7.1.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49022",
-            "title": "[skip ci] Added changes of railties to release notes for 7.1",
-            "date_modified": "2023-08-24T15:53:56.000Z",
-            "date_published": "2023-08-24T07:21:03.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2661?u=7639a5a525578b2a1cb4231a04e720645eeec96b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Motivation</h4>\n<p dir=\"auto\">I was bitten by a subtle bug where code was depending on the order of records being returned by <code class=\"notranslate\">.find</code>, however turns out <code class=\"notranslate\">reorder(\"\")</code> does not actually clear the order scope, which meant that the order of results was not the order of the ids being passed in.</p>\n<p dir=\"auto\">This change makes it clearer what is required to have records be returned in order.</p>",
+            "url": "https://github.com/rails/rails/pull/48799",
+            "title": "Clarify on how to return records in order of ids in ActiveRecord",
+            "date_modified": "2023-08-02T15:59:42.000Z",
+            "date_published": "2023-07-25T07:01:29.000Z",
+            "author": {
+                "name": "chendo",
+                "url": "https://github.com/chendo"
             }
         }
     ]
