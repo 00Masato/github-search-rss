@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/92828847?u=5ccc509ab188fddac7b61dd8c33945d8ba70bda0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC improves and extends the spread operator to support spreading fields from a different type, and allow partial field spreading.</p>\n<p dir=\"auto\"><a href=\"https://github.com/coffee-is-power/rust-rfcs/blob/master/text/3478-better-spread-operator.md\">RFC File Link</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3478",
-            "title": "RFC: Add better spread operator",
-            "date_modified": "2023-08-23T13:05:22.000Z",
-            "date_published": "2023-08-23T01:35:40.000Z",
-            "author": {
-                "name": "coffee-is-power",
-                "url": "https://github.com/coffee-is-power"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5456384?u=19311cf017def31e83f6c871095f201625f4fb7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Lokathor/rfcs/blob/check-vs-build/text/0000-cargo-check-lang-policy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3477",
             "title": "Cargo Check T-lang Policy",
@@ -42,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/master/text/3475-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
-            "date_modified": "2023-08-24T13:58:38.000Z",
+            "date_modified": "2023-08-24T14:35:55.000Z",
             "date_published": "2023-08-15T03:45:27.000Z",
             "author": {
                 "name": "pitaj",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "matthieu-m",
                 "url": "https://github.com/matthieu-m"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36625023?u=dba7deb4fbb4c429e08b309e3e3f9feba236ae28&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is all about allowing types to be inferred without any compromises. The syntax is as follows. For additional information, please read the bellow.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"struct MyStruct {\n    value: usize\n}\n\nimpl MyStruct {\n    fn new(value: usize) -&gt; Self {\n        Self {\n            value\n        }\n    }\n}\n\nfn my_func(data: MyStruct) { /* ... */ }\n\nmy_func(_::new(1));\"><pre class=\"notranslate\"><span class=\"pl-k\">struct</span> <span class=\"pl-smi\">MyStruct</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">value</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">usize</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">MyStruct</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">fn</span> <span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">value</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">usize</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-smi\">Self</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-smi\">Self</span> <span class=\"pl-kos\">{</span>\n            value\n        <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">my_func</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">data</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">MyStruct</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span>\n\n<span class=\"pl-en\">my_func</span><span class=\"pl-kos\">(</span>_<span class=\"pl-kos\">::</span><span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">1</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\">I think this is a much better and more concise syntax.</p>\n<blockquote>\n<p dir=\"auto\">If you plan on pressing the dislike button, please leave a comment explaining your disproval. Every piece of constructive feedback helps.</p>\n</blockquote>\n<p dir=\"auto\"><a href=\"https://github.com/JoshuaBrest/rfcs/blob/master/text/0000-inferred-types.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3444",
+            "title": "Inferred types `_::Enum`",
+            "date_modified": "2023-08-02T20:52:21.000Z",
+            "date_published": "2023-06-07T05:01:10.000Z",
+            "author": {
+                "name": "JoshuaBrest",
+                "url": "https://github.com/JoshuaBrest"
             }
         }
     ]
