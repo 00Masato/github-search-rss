@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/722037?u=d152fb740fcbc6bcf101ebc9852fc058a1438eee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">ActionText uses a separate table to store HTML data. WIth advanced RDBMS like Postgres, it's not necessary as the database optimization engine will manage storage of columns with large data on its own.</p>\n\n<p dir=\"auto\">This PR introduces the possibility of using ActionText with only a 'string' column in the model table itself as storage.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a new features to ActionText, without any change to the existing ones. Code not explicitly choosing to use the new feature won't be affected in any way.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49036",
+            "title": "ActionText now supports storage in text column instead of separate table",
+            "date_modified": "2023-08-25T14:02:23.000Z",
+            "date_published": "2023-08-25T14:02:19.000Z",
+            "author": {
+                "name": "brunoenten",
+                "url": "https://github.com/brunoenten"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds ActionMailer notable features and deprecations to the 7.1 release note</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49035",
             "title": "[skip ci] Added ActionMailer notable features and deprecations to 7.1 release note",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2661?u=7639a5a525578b2a1cb4231a04e720645eeec96b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Motivation</h4>\n<p dir=\"auto\">I was bitten by a subtle bug where code was depending on the order of records being returned by <code class=\"notranslate\">.find</code>, however turns out <code class=\"notranslate\">reorder(\"\")</code> does not actually clear the order scope, which meant that the order of results was not the order of the ids being passed in.</p>\n<p dir=\"auto\">This change makes it clearer what is required to have records be returned in order.</p>",
-            "url": "https://github.com/rails/rails/pull/48799",
-            "title": "Clarify on how to return records in order of ids in ActiveRecord",
-            "date_modified": "2023-08-02T15:59:42.000Z",
-            "date_published": "2023-07-25T07:01:29.000Z",
-            "author": {
-                "name": "chendo",
-                "url": "https://github.com/chendo"
             }
         }
     ]
