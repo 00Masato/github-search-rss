@@ -6,21 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request added the notable changes for the <code class=\"notranslate\">ActiveStorage</code> in the Rails 7.1 release note.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49074",
-            "title": "[skip ci] ActiveStorage notable changes added to 7.1 release note",
-            "date_modified": "2023-08-29T14:57:52.000Z",
-            "date_published": "2023-08-29T09:18:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23303727?u=4fd059af7ca73c1d07c439c6729c9ad66c5518cc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes generated SQL querty in docs for code sample of using .unscoped method with block as it was producing invalid one</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49078",
+            "title": "Fix generated SQL in code example using .unscoped with block",
+            "date_modified": "2023-08-29T15:34:27.000Z",
+            "date_published": "2023-08-29T15:28:01.000Z",
             "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
+                "name": "ilyaabramovich",
+                "url": "https://github.com/ilyaabramovich"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR adds the description for <code class=\"notranslate\">Rails.application.deprecators</code> in the Rails 7.1 release note.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49073",
             "title": "[skip ci] Rails.application.deprecators description added for rails 7.1 release note",
-            "date_modified": "2023-08-29T14:34:01.000Z",
+            "date_modified": "2023-08-29T15:05:17.000Z",
             "date_published": "2023-08-29T07:29:53.000Z",
             "author": {
                 "name": "akhilgkrishnan",
@@ -58,17 +58,6 @@
             "author": {
                 "name": "RuhmUndAnsehen",
                 "url": "https://github.com/RuhmUndAnsehen"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14993828?u=8ed3978d4be4f3a0ed1eb48dc0e5e039b5f885e7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49059",
-            "title": "[skip ci] Add ActiveRecord::Base.normalizes to 7.1 release notes",
-            "date_modified": "2023-08-29T13:26:27.000Z",
-            "date_published": "2023-08-28T07:50:59.000Z",
-            "author": {
-                "name": "deepakmahakale",
-                "url": "https://github.com/deepakmahakale"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "maximerety",
                 "url": "https://github.com/maximerety"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142914?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If this looks good, I'll fill in the gaps in documentation and respond<br>\nto feedback in a timely manner.</p>\n<p dir=\"auto\">Is a simpler version of what's in<br>\n<a href=\"https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb#L373-L396\">https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb#L373-L396</a></p>\n<p dir=\"auto\">I'm using this in our application and thought I'd share back.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We using ActiveModel::Model to build plain-old-ruby<br>\nobjects for things like API clients.  When I use<br>\nthe Attributes API to define secrets like <code class=\"notranslate\">attribute :api_key, :string</code><br>\nI don't want the <code class=\"notranslate\">api_key</code> to show up anywhere.</p>\n<p dir=\"auto\">This Pull Request has been created because ActiveModel::Model<br>\nis missing the <code class=\"notranslate\">filter_attributes</code> behavior present in<br>\nActiveRecord::Core.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes adds <code class=\"notranslate\">filter_attributes</code> to ActiveModel::API</p>\n<p dir=\"auto\">I added it to ActiveModel::API so that it does not interfere with<br>\nActiveRecord.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">We're using this in our app.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/48921",
+            "title": "feat: Add ActiveModel::Model.filter_attributes",
+            "date_modified": "2023-08-13T16:33:55.000Z",
+            "date_published": "2023-08-10T14:03:53.000Z",
+            "author": {
+                "name": "bf4",
+                "url": "https://github.com/bf4"
             }
         }
     ]
