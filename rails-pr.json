@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">By transforming the values hash and adding in the type from the table it's being added to it ensures that the correct Type is used for the table.  This enables a user to make sure the specified type is used if one is set in the model.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ X] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ X] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ X] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49079",
+            "title": "Make sure values have the correct type in _update_record. Fixes #49009.",
+            "date_modified": "2023-08-29T17:00:38.000Z",
+            "date_published": "2023-08-29T16:47:38.000Z",
+            "author": {
+                "name": "paulreece",
+                "url": "https://github.com/paulreece"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23303727?u=4fd059af7ca73c1d07c439c6729c9ad66c5518cc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes generated SQL querty in docs for code sample of using .unscoped method with block as it was producing invalid one</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49078",
             "title": "Fix generated SQL in code example using .unscoped with block",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "maximerety",
                 "url": "https://github.com/maximerety"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142914?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If this looks good, I'll fill in the gaps in documentation and respond<br>\nto feedback in a timely manner.</p>\n<p dir=\"auto\">Is a simpler version of what's in<br>\n<a href=\"https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb#L373-L396\">https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb#L373-L396</a></p>\n<p dir=\"auto\">I'm using this in our application and thought I'd share back.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We using ActiveModel::Model to build plain-old-ruby<br>\nobjects for things like API clients.  When I use<br>\nthe Attributes API to define secrets like <code class=\"notranslate\">attribute :api_key, :string</code><br>\nI don't want the <code class=\"notranslate\">api_key</code> to show up anywhere.</p>\n<p dir=\"auto\">This Pull Request has been created because ActiveModel::Model<br>\nis missing the <code class=\"notranslate\">filter_attributes</code> behavior present in<br>\nActiveRecord::Core.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes adds <code class=\"notranslate\">filter_attributes</code> to ActiveModel::API</p>\n<p dir=\"auto\">I added it to ActiveModel::API so that it does not interfere with<br>\nActiveRecord.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">We're using this in our app.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/48921",
-            "title": "feat: Add ActiveModel::Model.filter_attributes",
-            "date_modified": "2023-08-13T16:33:55.000Z",
-            "date_published": "2023-08-10T14:03:53.000Z",
-            "author": {
-                "name": "bf4",
-                "url": "https://github.com/bf4"
             }
         }
     ]
