@@ -8,8 +8,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">By transforming the values hash and adding in the type from the table it's being added to it ensures that the correct Type is used for the table.  This enables a user to make sure the specified type is used if one is set in the model.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ X] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ X] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ X] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49079",
-            "title": "Make sure values have the correct type in _update_record. Fixes #49009.",
-            "date_modified": "2023-08-29T17:00:38.000Z",
+            "title": "Makes sure values have the correct type in _update_record. Fixes #49009.",
+            "date_modified": "2023-08-29T17:48:26.000Z",
             "date_published": "2023-08-29T16:47:38.000Z",
             "author": {
                 "name": "paulreece",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR adds the description for <code class=\"notranslate\">Rails.application.deprecators</code> in the Rails 7.1 release note.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49073",
             "title": "[skip ci] Rails.application.deprecators description added for rails 7.1 release note",
-            "date_modified": "2023-08-29T15:05:17.000Z",
+            "date_modified": "2023-08-29T18:00:19.000Z",
             "date_published": "2023-08-29T07:29:53.000Z",
             "author": {
                 "name": "akhilgkrishnan",
