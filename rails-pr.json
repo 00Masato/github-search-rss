@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds the notable changes for <code class=\"notranslate\">ActiveJob</code> in the rails 7.1 release notes.</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49094",
+            "title": "[skip ci] ActionJob notable changes added to 7.1 release note",
+            "date_modified": "2023-08-31T06:03:21.000Z",
+            "date_published": "2023-08-31T06:03:17.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request added the notable changes of <code class=\"notranslate\">ActionView</code> in the rails 7.1 release note</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49093",
             "title": "[skip ci] ActionView notable changes  added to 7.1 release note",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1709692?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48326.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730003454\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48326\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48326/hovercard\" href=\"https://github.com/rails/rails/issues/48326\">#48326</a></p>\n<p dir=\"auto\">This Pull Request has been created to fix an issue where syntax errors generated inside an eval method cause an Internal Server Error due to a TypeError.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In order to display the extraced source of a syntax error, we try to locate the node id for the backtrace location. The call to RubyVM::AbstractSyntaxTree.node_id_for_backtrace_location is expecting a Thread::Backtrace::Location object, but we are passing a SourceMapLocation instead.</p>\n<p dir=\"auto\">Once this is fixed, another issue then appears. The first location of the backtrace for an eval error does not include the filename of where eval is called, so we can't extract the source. This means that the development view fails to show the extracted source because it is hard-coded to show the source extracted for the first location.</p>\n<p dir=\"auto\">This commit does two things:</p>\n<ol dir=\"auto\">\n<li>it addresses the issue by making sure that we are always passing a Thread::Backtrace::Location instead</li>\n<li>it allows the development view to show the extracted source fragment by ensuring the first location of the backtrace for a syntax error coming from eval includes the name of the file where eval is called</li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I have tried to keep the changes consistent with the approach introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1393581431\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46171\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46171/hovercard\" href=\"https://github.com/rails/rails/pull/46171\">#46171</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/48957",
-            "title": "Better handle SyntaxError in Action View",
-            "date_modified": "2023-08-28T13:21:07.000Z",
-            "date_published": "2023-08-16T20:32:54.000Z",
-            "author": {
-                "name": "cmaruz",
-                "url": "https://github.com/cmaruz"
             }
         }
     ]
