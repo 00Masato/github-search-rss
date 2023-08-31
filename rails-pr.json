@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I noticed that some of the code blocks are not highlighted in the guides, So this  Pull Request added the missing code block highlighting in the guides.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49097",
+            "title": "[skip ci] Added the missing code block highlights in guides",
+            "date_modified": "2023-08-31T14:59:08.000Z",
+            "date_published": "2023-08-31T14:59:04.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15172605?u=c9831ccf188358c7be46eb4c634002b47ebb1068&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1185054594\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44792\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/44792/hovercard\" href=\"https://github.com/rails/rails/issues/44792\">#44792</a> was originally filed as a bug but ultimately is unavoidable as the ongoing behavior moving forward. <code class=\"notranslate\">scope</code> can start a new clean chain against the model it is defined on. Class methods will never support this behavior.</p>\n<p dir=\"auto\">This PR documents that behavior in a public place to help with awareness.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #44792.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1185054594\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44792\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/44792/hovercard\" href=\"https://github.com/rails/rails/issues/44792\">#44792</a></p>",
             "url": "https://github.com/rails/rails/pull/49096",
             "title": "Document clean chain behavior for ActiveRecord scope",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Kernel#caller</code> has linear performance based on how deep the stack is. While this is a development only feature, it can end up being quite slow.</p>\n<p dir=\"auto\">Ruby 3.2 introduced <code class=\"notranslate\">Thread.each_caller_location</code>, which lazily yield <code class=\"notranslate\">Backtrace::Location</code> objects.</p>\n<p dir=\"auto\">Ref: <a href=\"https://bugs.ruby-lang.org/issues/16663\" rel=\"nofollow\">https://bugs.ruby-lang.org/issues/16663</a></p>\n<p dir=\"auto\">This is perfect for this use case as we are searching for the closest frame that matches a pattern, saving us from collecting the entire backtrace.</p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/natematykiewicz/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/natematykiewicz\">@natematykiewicz</a></p>",
             "url": "https://github.com/rails/rails/pull/49095",
             "title": "Optimize ActiveRecord::LogSubscriber#query_source_location",
-            "date_modified": "2023-08-31T11:11:52.000Z",
+            "date_modified": "2023-08-31T14:56:20.000Z",
             "date_published": "2023-08-31T10:00:48.000Z",
             "author": {
                 "name": "casperisfine",
@@ -58,17 +69,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13253769?u=72bf3edc0195583f5ecfcac8c406baea24dfb91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1867761107\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49042\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49042/hovercard\" href=\"https://github.com/rails/rails/pull/49042\">#49042</a>, the method <code class=\"notranslate\">ActionController::Parameters#extract_value</code> promises to replace utility methods that were previously defined as private methods in controllers.<br>\nHowever, it currently throws a <code class=\"notranslate\">NoMethodError</code> when passed a non-existent key.</p>\n<p dir=\"auto\"><code class=\"notranslate\">params</code> is dependent on client requests and is thus beyond the application's control.<br>\nRather than throwing a <code class=\"notranslate\">NoMethodError</code>, it would be more convenient for the method to return <code class=\"notranslate\">nil</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49091",
-            "title": "Prevent `NoMethodError` in extract_value when specifying non-existent keys",
-            "date_modified": "2023-08-31T13:32:39.000Z",
-            "date_published": "2023-08-31T03:24:35.000Z",
-            "author": {
-                "name": "euglena1215",
-                "url": "https://github.com/euglena1215"
             }
         },
         {
