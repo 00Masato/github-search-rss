@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82600264?u=ba5af4aa760f6b5bd3265bf03021c5748988394b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds the syntax <code class=\"notranslate\">fn &lt;fn_path&gt;</code> to get the exposed type behind a function.</p>\n<p dir=\"auto\"><a href=\"https://github.com/DasLixou/rust-rfcs/blob/master/text/3476-expose-fn-type.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3476",
             "title": "RFC: `expose-fn-type`",
-            "date_modified": "2023-08-28T09:35:59.000Z",
+            "date_modified": "2023-09-01T10:27:04.000Z",
             "date_published": "2023-08-20T16:47:40.000Z",
             "author": {
                 "name": "DasLixou",
@@ -149,10 +149,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/unsafe-fields/text/0000-unsafe-fields.md\">Rendered</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #381.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"45423146\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/381\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/381/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/381\">#381</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/unsafe-fields/text/0000-unsafe-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3458",
             "title": "Unsafe fields",
-            "date_modified": "2023-08-14T21:20:53.000Z",
+            "date_modified": "2023-09-01T10:26:19.000Z",
             "date_published": "2023-07-13T04:45:33.000Z",
             "author": {
                 "name": "jhpratt",
