@@ -6,14 +6,25 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Either we are on a modern Ruby with <code class=\"notranslate\">Class#subclass</code>, in which case <code class=\"notranslate\">DescendantsTracker#subclass</code> isn't defined, so we don't need the filtering module.</p>\n<p dir=\"auto\">Or we're on an old Ruby, and <code class=\"notranslate\">DescendantsTracker.subclass</code> already does the filtering.</p>",
-            "url": "https://github.com/rails/rails/pull/49108",
-            "title": "Remove useless include in DescendantsTracker",
-            "date_modified": "2023-09-01T14:54:41.000Z",
-            "date_published": "2023-09-01T14:54:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1861816297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48998\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48998/hovercard\" href=\"https://github.com/rails/rails/pull/48998\">#48998</a> made changes to <code class=\"notranslate\">to_key</code> in order to support composite identifiers. This commit adds CHANGELOG entries for those.</p>",
+            "url": "https://github.com/rails/rails/pull/49110",
+            "title": "Add CHANGELOG entries for `ActiveModel::Conversion#to_key` changes",
+            "date_modified": "2023-09-01T15:43:08.000Z",
+            "date_published": "2023-09-01T15:43:04.000Z",
             "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
+                "name": "nvasilevski",
+                "url": "https://github.com/nvasilevski"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support has been added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1622330999\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47664\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47664/hovercard\" href=\"https://github.com/rails/rails/pull/47664\">#47664</a><br>\nThis PR adds documentation to the method</p>",
+            "url": "https://github.com/rails/rails/pull/49109",
+            "title": "[Docs] Document using `FinderMethods.find` on composite primary key models",
+            "date_modified": "2023-09-01T15:55:16.000Z",
+            "date_published": "2023-09-01T15:26:13.000Z",
+            "author": {
+                "name": "nvasilevski",
+                "url": "https://github.com/nvasilevski"
             }
         },
         {
@@ -28,21 +39,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1653894046\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47856\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47856/hovercard\" href=\"https://github.com/rails/rails/pull/47856\">#47856</a></p>\n<p dir=\"auto\">I'd would also like to add some <code class=\"notranslate\">connect_all!</code> of some sort, as establishing the connection can take a bit of time, which tend to cause latency spikes post deploy. But I'm not too sure how to handle it for multi-threaded apps. We could pre-connect the whole pool, but in many case the pool size is much higher than how much connection are actually used. So this needs a bit more thoughts.</p>",
-            "url": "https://github.com/rails/rails/pull/49106",
-            "title": "Fix `ActiveRecord.disconnect_all!` to not disable reconnect on pools",
-            "date_modified": "2023-09-01T14:59:27.000Z",
-            "date_published": "2023-09-01T14:29:08.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=8c175f24a06517bd8038a7e81c28ec368393c336&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Reading through the changelog for <code class=\"notranslate\">normalized</code> made me wonder if it also works with <code class=\"notranslate\">where</code>.  It says it works  with finder methods, but I don't think <code class=\"notranslate\">where</code> is one of those. It works regardless, so I added it to the changelog and made some tests for it.</p>\n<p dir=\"auto\">I also noticed some inconsistencies in the changelog, fixed those up too. I hope that's ok to put in one PR.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49105",
             "title": "Document `where` support for AR `normalizes`",
-            "date_modified": "2023-09-01T15:00:23.000Z",
+            "date_modified": "2023-09-01T15:05:59.000Z",
             "date_published": "2023-09-01T14:03:23.000Z",
             "author": {
                 "name": "Earlopain",
