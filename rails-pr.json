@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49132.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1880021482\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49132\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49132/hovercard\" href=\"https://github.com/rails/rails/issues/49132\">#49132</a>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">_counter_cache_columns</code> class attribute is defined on <code class=\"notranslate\">ActiveRecord::Base</code> class and all models share its value. We should not modify it in place, but reassign to it.</p>",
             "url": "https://github.com/rails/rails/pull/49136",
             "title": "Fix in-place modification of shared `_counter_cache_columns` class attribute",
-            "date_modified": "2023-09-04T16:58:43.000Z",
+            "date_modified": "2023-09-04T17:12:11.000Z",
             "date_published": "2023-09-04T16:38:13.000Z",
             "author": {
                 "name": "fatkodima",
