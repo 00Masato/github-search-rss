@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1667397527\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47942\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47942/hovercard\" href=\"https://github.com/rails/rails/pull/47942\">#47942</a></p>\n<p dir=\"auto\">This PR fixes some things that were missed in first PR.</p>\n<ol dir=\"auto\">\n<li><code class=\"notranslate\">Minitest::Spec</code> doesn't extend <code class=\"notranslate\">Rails::LineFiltering</code>, so <code class=\"notranslate\">compose_filter</code> (and thus <code class=\"notranslate\">escape_declarative_test_filter</code>) were not being called in the tests we added. This PR adds a new test case with <code class=\"notranslate\">Rails::LineFiltering</code> included to confirm behaviour is the same either way.</li>\n<li>The filter in <code class=\"notranslate\">escape_declarative_test_filter</code> didn't work on regexes that had passed through <code class=\"notranslate\">Regexp#escape</code>. Now it supports that too.</li>\n</ol>",
+            "url": "https://github.com/rails/rails/pull/49141",
+            "title": "Fix more bugs in declarative specs filter",
+            "date_modified": "2023-09-05T01:15:14.000Z",
+            "date_published": "2023-09-05T01:14:13.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45173523?u=50739ee5f0d1e6112446518b5ad89acc8a00f363&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49140",
             "title": "Test unit (テスティングライブラリー毎に Adapter を用意して ActiveSupport::TestCase から呼ぶ形にしたい)",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "1st8",
                 "url": "https://github.com/1st8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">By transforming the values hash and adding in the type from the table it's being added to it ensures that the correct Type is used for the table.  This enables a user to make sure the specified type is used if one is set in the model.</p>\n<p dir=\"auto\">Fixes #<a href=\"https://github.com/rails/rails/issues/49009\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49009/hovercard\">49009</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ X] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ X] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ X] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49079",
-            "title": "Makes sure values have the correct type in _update_record. Fixes #49009.",
-            "date_modified": "2023-09-01T14:58:27.000Z",
-            "date_published": "2023-08-29T16:47:38.000Z",
-            "author": {
-                "name": "paulreece",
-                "url": "https://github.com/paulreece"
             }
         }
     ]
