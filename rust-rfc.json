@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/147966?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes a mechanism to allow <code class=\"notranslate\">impl</code>s for a type or trait to be in a<br>\nseparate crate, while still meeting the soundness guarantees currently enforced<br>\nby the orphan rule. With this, the crate structure (and thus build system<br>\ndependency graph) can be decoupled from the actual implementations.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jsgf/rfcs/blob/extern-impl/text/0000-extern-impl.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3482",
             "title": "Pre-RFC describing mechanism to remove orphan rule constraints",
-            "date_modified": "2023-09-04T22:54:10.000Z",
+            "date_modified": "2023-09-04T23:20:17.000Z",
             "date_published": "2023-09-03T01:56:17.000Z",
             "author": {
                 "name": "jsgf",
