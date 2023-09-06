@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request fixes the indentation issue of the ruby code block in markdown files</p>",
+            "url": "https://github.com/rails/rails/pull/49172",
+            "title": "[skip ci] Ruby code block indentation issue fix",
+            "date_modified": "2023-09-06T18:42:31.000Z",
+            "date_published": "2023-09-06T18:05:27.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64581?u=d8cec29b4b85089fa2c833d59f2f3c3cb9f9705d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I believe the guide around the initial setup of Active Record Encryption could be improved by giving an example of explicitly setting the encryption keys. When setting this up myself, it took a minute to understand the <code class=\"notranslate\">bin/rails db:encryption:init</code> just output the keys and then they had to be copy and pasted into the credentials. I also wasn't sure how I could set those values using environment variables instead. Maybe this is an improvement for others!</p>",
             "url": "https://github.com/rails/rails/pull/49170",
             "title": "Improving the setup for the Active Record Encryption Guide",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1667397527\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47942\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47942/hovercard\" href=\"https://github.com/rails/rails/pull/47942\">#47942</a></p>\n<p dir=\"auto\">This PR fixes some things that were missed in first PR.</p>\n<ol dir=\"auto\">\n<li><code class=\"notranslate\">Minitest::Spec</code> doesn't extend <code class=\"notranslate\">Rails::LineFiltering</code>, so <code class=\"notranslate\">compose_filter</code> (and thus <code class=\"notranslate\">escape_declarative_test_filter</code>) were not being called in the tests we added. This PR adds a new test case with <code class=\"notranslate\">Rails::LineFiltering</code> included to confirm behaviour is the same either way.</li>\n<li>The filter in <code class=\"notranslate\">escape_declarative_test_filter</code> didn't work on regexes that had passed through <code class=\"notranslate\">Regexp#escape</code>. Now it supports that too.</li>\n</ol>",
             "url": "https://github.com/rails/rails/pull/49141",
             "title": "Fix more bugs in declarative specs filter",
-            "date_modified": "2023-09-06T07:33:11.000Z",
+            "date_modified": "2023-09-06T18:44:05.000Z",
             "date_published": "2023-09-05T01:14:13.000Z",
             "author": {
                 "name": "ghiculescu",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1709692?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48326.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730003454\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48326\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48326/hovercard\" href=\"https://github.com/rails/rails/issues/48326\">#48326</a></p>\n<p dir=\"auto\">This Pull Request has been created to fix an issue where syntax errors generated inside an eval method cause an Internal Server Error due to a TypeError.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In order to display the extraced source of a syntax error, we try to locate the node id for the backtrace location. The call to RubyVM::AbstractSyntaxTree.node_id_for_backtrace_location is expecting a Thread::Backtrace::Location object, but we are passing a SourceMapLocation instead.</p>\n<p dir=\"auto\">Once this is fixed, another issue then appears. The first location of the backtrace for an eval error does not include the filename of where eval is called, so we can't extract the source. This means that the development view fails to show the extracted source because it is hard-coded to show the source extracted for the first location.</p>\n<p dir=\"auto\">This commit does two things:</p>\n<ol dir=\"auto\">\n<li>it addresses the issue by making sure that we are always passing a Thread::Backtrace::Location instead</li>\n<li>it allows the development view to show the extracted source fragment by ensuring the first location of the backtrace for a syntax error coming from eval includes the name of the file where eval is called</li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I have tried to keep the changes consistent with the approach introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1393581431\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46171\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46171/hovercard\" href=\"https://github.com/rails/rails/pull/46171\">#46171</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/48957",
-            "title": "Better handle SyntaxError in Action View",
-            "date_modified": "2023-08-28T13:21:07.000Z",
-            "date_published": "2023-08-16T20:32:54.000Z",
-            "author": {
-                "name": "cmaruz",
-                "url": "https://github.com/cmaruz"
             }
         }
     ]
