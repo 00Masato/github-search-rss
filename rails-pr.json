@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22918438?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Added additional docs about ordering on the <code class=\"notranslate\">#first</code> and <code class=\"notranslate\">#last</code> methods for CPK models, as well as docs on the tuple-like syntax for hash conditions on the <code class=\"notranslate\">#where</code> method.</p>",
+            "url": "https://github.com/rails/rails/pull/49188",
+            "title": "Add additional docs to Query Interface guide about composite primary key models [ci skip]",
+            "date_modified": "2023-09-07T15:49:17.000Z",
+            "date_published": "2023-09-07T15:49:12.000Z",
+            "author": {
+                "name": "adrianna-chang-shopify",
+                "url": "https://github.com/adrianna-chang-shopify"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191320?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The docs already talk about how to set up deferrable constraints, but then rely on tthe user crafting custom SQL to actually use the feature. The helpers makes it easier to handle juggling multiple specific constraints, quoting issues, and automatically resetting to immediate if desired.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49187",
             "title": "Add `set_constraints` and `defer_constraints` helpers for PostgreSQL",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22918438?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Adds documentation for associations between models with composite primary keys to the \"Association Basics\" Active Record guide. Documents how Rails infers the primary key / foreign key if no option is specified on the association, and how to use the <code class=\"notranslate\">query_constraints</code> option on associations.</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49182",
             "title": "Document associations between models with composite primary keys in guides [ci skip]",
-            "date_modified": "2023-09-07T14:30:09.000Z",
+            "date_modified": "2023-09-07T15:14:05.000Z",
             "date_published": "2023-09-07T00:53:40.000Z",
             "author": {
                 "name": "adrianna-chang-shopify",
@@ -102,17 +113,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64581?u=d8cec29b4b85089fa2c833d59f2f3c3cb9f9705d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I believe the guide around the initial setup of Active Record Encryption could be improved by giving an example of explicitly setting the encryption keys. When setting this up myself, it took a minute to understand the <code class=\"notranslate\">bin/rails db:encryption:init</code> just output the keys and then they had to be copy and pasted into the credentials. I also wasn't sure how I could set those values using environment variables instead. Maybe this is an improvement for others!</p>",
-            "url": "https://github.com/rails/rails/pull/49170",
-            "title": "Improving the setup for the Active Record Encryption Guide",
-            "date_modified": "2023-09-07T12:11:30.000Z",
-            "date_published": "2023-09-06T15:18:11.000Z",
-            "author": {
-                "name": "tomrossi7",
-                "url": "https://github.com/tomrossi7"
             }
         },
         {
