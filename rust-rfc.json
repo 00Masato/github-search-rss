@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5456384?u=19311cf017def31e83f6c871095f201625f4fb7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Lokathor/rfcs/blob/unsafe-extern-blocks/text/0000-unsafe-extern-blocks.md\">Rendered</a></p>\n<hr>\n<p dir=\"auto\">Continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730097805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3439\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3439/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3439\">#3439</a>, very sorry for the mix up, but when I went to make <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1862201012\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3477\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3477/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3477\">#3477</a> I deleted my <code class=\"notranslate\">rfcs</code> repo fork and re-forked. I had forgotten that there was an open PR at the time.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3484",
+            "title": "Unsafe Extern Blocks",
+            "date_modified": "2023-09-07T01:19:07.000Z",
+            "date_published": "2023-09-07T01:15:50.000Z",
+            "author": {
+                "name": "Lokathor",
+                "url": "https://github.com/Lokathor"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/147966?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes a mechanism to allow <code class=\"notranslate\">impl</code>s for a type or trait to be in a<br>\nseparate crate, while still meeting the soundness guarantees currently enforced<br>\nby the orphan rule. With this, the crate structure (and thus build system<br>\ndependency graph) can be decoupled from the actual implementations.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jsgf/rfcs/blob/extern-impl/text/0000-extern-impl.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3482",
             "title": "Pre-RFC describing mechanism to optionally loosen some orphan rule constraints",
-            "date_modified": "2023-09-06T23:49:28.000Z",
+            "date_modified": "2023-09-07T00:31:22.000Z",
             "date_published": "2023-09-03T01:56:17.000Z",
             "author": {
                 "name": "jsgf",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Diggsey",
                 "url": "https://github.com/Diggsey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/563826?u=a408b5784df40b974e45854386172e7e7ebc1797&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add new <code class=\"notranslate\">is_{arch}_feature_enabled</code> macros for detecting at compile time if a target feature is enabled in a context.</p>\n<p dir=\"auto\"><a href=\"https://github.com/calebzulawski/rfcs/blob/target-feature-enabled/text/3449-target-feature-enabled.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3449",
-            "title": "Contextual target feature detection",
-            "date_modified": "2023-07-17T06:55:41.000Z",
-            "date_published": "2023-06-18T02:46:56.000Z",
-            "author": {
-                "name": "calebzulawski",
-                "url": "https://github.com/calebzulawski"
             }
         }
     ]
