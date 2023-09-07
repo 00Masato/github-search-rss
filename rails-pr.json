@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1667397527\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47942\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47942/hovercard\" href=\"https://github.com/rails/rails/pull/47942\">#47942</a></p>\n<p dir=\"auto\">This PR fixes some things that were missed in first PR.</p>\n<ol dir=\"auto\">\n<li><code class=\"notranslate\">Minitest::Spec</code> doesn't extend <code class=\"notranslate\">Rails::LineFiltering</code>, so <code class=\"notranslate\">compose_filter</code> (and thus <code class=\"notranslate\">escape_declarative_test_filter</code>) were not being called in the tests we added. This PR adds a new test case with <code class=\"notranslate\">Rails::LineFiltering</code> included to confirm behaviour is the same either way.</li>\n<li>The filter in <code class=\"notranslate\">escape_declarative_test_filter</code> didn't work on regexes that had passed through <code class=\"notranslate\">Regexp#escape</code>. Now it supports that too.</li>\n</ol>",
             "url": "https://github.com/rails/rails/pull/49141",
             "title": "Fix more bugs in declarative specs filter",
-            "date_modified": "2023-09-06T18:44:05.000Z",
+            "date_modified": "2023-09-06T23:35:20.000Z",
             "date_published": "2023-09-05T01:14:13.000Z",
             "author": {
                 "name": "ghiculescu",
