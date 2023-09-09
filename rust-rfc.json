@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC goals: add a way to write feature descriptions in Cargo.toml</p>\n<p dir=\"auto\">This was split from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1669093537\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3416\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3416/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3416\">#3416</a></p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[features]\n# current configuration\nfoo = []\n# Add a description to the feature\nbar = { enables = [&quot;foo&quot;], doc = &quot;simple docstring here&quot;}\n\n# Features can also be full tables if descriptions are longer\n[features.qux]\nenables = [&quot;bar&quot;, &quot;baz&quot;]\ndoc = &quot;&quot;&quot;\n# qux\n\nThis could be a longer description of this feature\n&quot;&quot;&quot;\"><pre class=\"notranslate\">[<span class=\"pl-en\">features</span>]\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> current configuration</span>\n<span class=\"pl-smi\">foo</span> = []\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> Add a description to the feature</span>\n<span class=\"pl-smi\">bar</span> = { <span class=\"pl-smi\">enables</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>foo<span class=\"pl-pds\">\"</span></span>], <span class=\"pl-smi\">doc</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>simple docstring here<span class=\"pl-pds\">\"</span></span>}\n\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> Features can also be full tables if descriptions are longer</span>\n[<span class=\"pl-en\">features</span>.<span class=\"pl-en\">qux</span>]\n<span class=\"pl-smi\">enables</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>bar<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>baz<span class=\"pl-pds\">\"</span></span>]\n<span class=\"pl-smi\">doc</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"\"\"</span></span>\n<span class=\"pl-s\"># qux</span>\n<span class=\"pl-s\"></span>\n<span class=\"pl-s\">This could be a longer description of this feature</span>\n<span class=\"pl-s\"><span class=\"pl-pds\">\"\"\"</span></span></pre></div>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #4956.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"289747867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/4956\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/4956/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/4956\">rust-lang/cargo#4956</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/feature-documentation/text/0000-feature-documentation.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3485",
+            "title": "RFC: Cargo feature descriptions",
+            "date_modified": "2023-09-09T23:00:32.000Z",
+            "date_published": "2023-09-09T22:59:28.000Z",
+            "author": {
+                "name": "tgross35",
+                "url": "https://github.com/tgross35"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5456384?u=19311cf017def31e83f6c871095f201625f4fb7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Lokathor/rfcs/blob/unsafe-extern-blocks/text/0000-unsafe-extern-blocks.md\">Rendered</a></p>\n<hr>\n<p dir=\"auto\">Continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730097805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3439\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3439/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3439\">#3439</a>, very sorry for the mix up, but when I went to make <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1862201012\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3477\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3477/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3477\">#3477</a> I deleted my <code class=\"notranslate\">rfcs</code> repo fork and re-forked. I had forgotten that there was an open PR at the time.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3484",
             "title": "Unsafe Extern Blocks",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "kpreid",
                 "url": "https://github.com/kpreid"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/451321?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new syntax for multi-line string literals designed to contain code and play nicely with <code class=\"notranslate\">rustfmt</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Diggsey/rfcs/blob/code-string-literals/text/0000-code-literals.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3450",
-            "title": "Propose code string literals",
-            "date_modified": "2023-07-29T07:20:28.000Z",
-            "date_published": "2023-06-18T17:01:25.000Z",
-            "author": {
-                "name": "Diggsey",
-                "url": "https://github.com/Diggsey"
             }
         }
     ]
