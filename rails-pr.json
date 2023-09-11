@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">NOTE: Active Record does not support using non-primary key columns named id.</code> is a little bit misleading.<br>\nIt is possible to have a model backed by a db table with <code class=\"notranslate\">id</code> column which is not being used a sole primary key. The model can either use a different column as a PK or use a composite primary key. However it will lead to an additional complexity related to inability to keep accessing <code class=\"notranslate\">id</code> column value using <code class=\"notranslate\">PrimaryKey#id</code> method since the method returns the value of the primary key.</p>\n<h3 dir=\"auto\">Question for reviewers</h3>\n<p dir=\"auto\">I'm not 100% confident about changing the current note. At one hand this note is false as Active Record won't stop working for a model with a non-PK <code class=\"notranslate\">id</code> column. At the same time Rails should discourage schema designs like this due to unnecessary complexities associated with <code class=\"notranslate\">id</code> attribute access.<br>\nSo maybe we should actually keep the stronger wording even though it may be a little falsey</p>",
+            "url": "https://github.com/rails/rails/pull/49219",
+            "title": "Rails supports but does not recommend non-PK `id` column",
+            "date_modified": "2023-09-11T14:34:18.000Z",
+            "date_published": "2023-09-11T14:34:14.000Z",
+            "author": {
+                "name": "nvasilevski",
+                "url": "https://github.com/nvasilevski"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It returns true if the content type is \"application/pdf\".<br>\nSimilar to the existing <code class=\"notranslate\">audio?</code>, <code class=\"notranslate\">image?</code>, <code class=\"notranslate\">video?</code> and <code class=\"notranslate\">text?</code><br>\nmethods.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49217",
             "title": "Add `ActiveStorage::Blob#pdf?`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "1st8",
                 "url": "https://github.com/1st8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96156234?u=9ced8d6ac6128a8dea78e7f0d9233669ff0ffecf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">By transforming the values hash and adding in the type from the table it's being added to it ensures that the correct Type is used for the table.  This enables a user to make sure the specified type is used if one is set in the model.</p>\n<p dir=\"auto\">Fixes #<a href=\"https://github.com/rails/rails/issues/49009\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49009/hovercard\">49009</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ X] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ X] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ X] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49079",
-            "title": "Makes sure values have the correct type in _update_record. Fixes #49009.",
-            "date_modified": "2023-09-01T14:58:27.000Z",
-            "date_published": "2023-08-29T16:47:38.000Z",
-            "author": {
-                "name": "paulreece",
-                "url": "https://github.com/paulreece"
             }
         }
     ]
