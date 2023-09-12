@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1324513272\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45722\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45722/hovercard\" href=\"https://github.com/rails/rails/pull/45722\">#45722</a> to <code class=\"notranslate\">7-0-stable</code></p>",
-            "url": "https://github.com/rails/rails/pull/49233",
-            "title": "Backport #45722 to 7-0-stable",
-            "date_modified": "2023-09-12T07:00:08.000Z",
-            "date_published": "2023-09-12T06:56:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/49235",
+            "title": "Fix reversed exp/act args for assert_equal",
+            "date_modified": "2023-09-12T07:27:59.000Z",
+            "date_published": "2023-09-12T07:27:55.000Z",
             "author": {
-                "name": "ghiculescu",
-                "url": "https://github.com/ghiculescu"
+                "name": "shouichi",
+                "url": "https://github.com/shouichi"
             }
         },
         {
