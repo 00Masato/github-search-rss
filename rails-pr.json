@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The change was added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1872480900\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49082\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49082/hovercard\" href=\"https://github.com/rails/rails/pull/49082\">#49082</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/49257",
+            "title": "Add changelog entry for profiling slow tests",
+            "date_modified": "2023-09-13T18:45:08.000Z",
+            "date_published": "2023-09-13T18:42:48.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1688137?u=6e2ec05e392b37648521c2f1cd824a9bf4415b8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">follow-up <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1396155024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46192/hovercard\" href=\"https://github.com/rails/rails/pull/46192\">#46192</a></p>\n<p dir=\"auto\">Fixed a bug where <code class=\"notranslate\">unique_keys</code> returned the old column name after the column<br>\nspecified in add_unique_key was renamed.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Since <code class=\"notranslate\">pg_attribute.attname</code> may return the old column name after renaming a column,<br>\nmatch <code class=\"notranslate\">attrelid, attnum</code> in the process of getting the list of column names.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49251",
             "title": "`#unique_keys` returns the renamed column name",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "lsylvester",
                 "url": "https://github.com/lsylvester"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188464?u=a22a695eff61e658a728d3274adcc09f4b55c883&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Currently, if we call <code class=\"notranslate\">save</code> or <code class=\"notranslate\">save!</code> in an object that was already destroyed, <code class=\"notranslate\">save</code> returns <code class=\"notranslate\">false</code> and <code class=\"notranslate\">save!</code> raises an exception, but there's no information about why the save failed.</p>\n<p dir=\"auto\">I ran into this issue with a legacy app that, because of a complicated set of callbacks, was destroying an object at some point and then calling <code class=\"notranslate\">save!</code> somewhere else. This produced an exception, but there was no information about the reason.</p>\n<p dir=\"auto\">After a lot of research I realized that the issue was the record was destroyed (so <code class=\"notranslate\">.destroyed?</code> was <code class=\"notranslate\">true</code>), but I think it will help a lot to have an error added to avoid having to find this out.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR updates the <code class=\"notranslate\">create_or_update</code> method to add a <code class=\"notranslate\">:base</code> error message for this specific scenario.</p>\n<p dir=\"auto\">I added a configuration for this to keep the old behavior if needed and during upgrades, since I imagine some apps may rely on the errors hash being empty.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">No additional information.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49160",
-            "title": "Add an error when saving a record that was previously destroyed",
-            "date_modified": "2023-09-08T18:44:40.000Z",
-            "date_published": "2023-09-05T18:40:38.000Z",
-            "author": {
-                "name": "arielj",
-                "url": "https://github.com/arielj"
             }
         }
     ]
