@@ -6,14 +6,36 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The change was added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1872480900\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49082\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49082/hovercard\" href=\"https://github.com/rails/rails/pull/49082\">#49082</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/49257",
-            "title": "Add changelog entry for profiling slow tests",
-            "date_modified": "2023-09-13T18:45:08.000Z",
-            "date_published": "2023-09-13T18:42:48.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6826778?u=f003e43af6f187f1ff48cfb577150c77a54f4138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Following up on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1886527188\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49192/hovercard\" href=\"https://github.com/rails/rails/pull/49192\">#49192</a>, this commit adds the transaction <code class=\"notranslate\">outcome</code> to the payload, helpful for collecting stats on how many transactions commit, rollback, restart, or (perhaps most interestingly) are incomplete because of an error.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">One quirk here is that we have to modify the payload on finish. It's not the only place this sort of thing happens (instrument mutates the payload with exceptions, for example), but it does mean we need to dup the payload we initialize with to avoid mutating it for other tracking.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1886527188\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49192/hovercard\" href=\"https://github.com/rails/rails/pull/49192\">#49192</a> linked above</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49262",
+            "title": "Add outcome to transaction tracking payload",
+            "date_modified": "2023-09-13T20:00:50.000Z",
+            "date_published": "2023-09-13T20:00:45.000Z",
             "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
+                "name": "ipc103",
+                "url": "https://github.com/ipc103"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3025661?u=02cdc736af0c8b8128d174c92c1bcdbbb7665f97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">New alphanumeric arguments aren't avaiable on Ruby 3.3.0preview1: <a href=\"https://github.com/ruby/ruby/blob/v3_3_0_preview1/lib/random/formatter.rb#L241\">https://github.com/ruby/ruby/blob/v3_3_0_preview1/lib/random/formatter.rb#L241</a></p>\n<p dir=\"auto\">SecureRandom <code class=\"notranslate\">.alphanumeric</code> (which is used by <code class=\"notranslate\">.base36</code> and <code class=\"notranslate\">.base58</code> methods) accepts two arguments on Ruby 3.3.0, but on Ruby 3.3.0preview1 <code class=\"notranslate\">alphanumeric</code> accepts only one argument, breaking Rails 7.1 + Ruby 3.3.0preview1 compatibility.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49260.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1895152548\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49260\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49260/hovercard\" href=\"https://github.com/rails/rails/issues/49260\">#49260</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes check new <code class=\"notranslate\">base36</code>/<code class=\"notranslate\">base58</code> method definition, using Ruby release date, since we could not get <code class=\"notranslate\">preview1</code> from <code class=\"notranslate\">RUBY_VERSION</code> string.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Current tests are fine, I think this bug could be avoided with more ruby versions on CI matrix.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49261",
+            "title": "Fix SecureRandom `base36`/`base58` on Ruby 3.3.0preview1",
+            "date_modified": "2023-09-13T19:58:13.000Z",
+            "date_published": "2023-09-13T19:48:36.000Z",
+            "author": {
+                "name": "stephannv",
+                "url": "https://github.com/stephannv"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Deleting all books should not effect the inclusion validation and can be safely deleted.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49258",
+            "title": "Remove unused delete_all from test",
+            "date_modified": "2023-09-13T19:33:42.000Z",
+            "date_published": "2023-09-13T19:29:21.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
             }
         },
         {
@@ -201,28 +223,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13851881?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR is a fix for this issue described and closed due to inactivity here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"907682056\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42336\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/42336/hovercard\" href=\"https://github.com/rails/rails/issues/42336\">#42336</a><br>\nIt still happens in apps with rails 7.0.7.2, ruby 3.2.2 and @rails/actioncable 7.0.4: when large number of events is sent via actioncable (in our case they are turbo broadcast messages) it prevents ping messages from coming in time (currently ping threshold is 6 seconds), so actioncable assumes connection as stale and creates a new one. However, during a downtime between closing/opening connections events could (and are) miss(ed).</p>\n<p dir=\"auto\">In this PR pings are also recorded on every normal message coming to the client.</p>\n<h3 dir=\"auto\">Expected behavior</h3>\n<p dir=\"auto\">Connection does not become stale and does not get reconnected when ping messages are delayed due to large number of normal messages.</p>\n<h3 dir=\"auto\">Actual behavior</h3>\n<p dir=\"auto\">The client is disconnected if it doesn't receive ping events within the staleThreshold even though it's receiving other events.</p>",
-            "url": "https://github.com/rails/rails/pull/49168",
-            "title": "Record ping on every actioncable message",
-            "date_modified": "2023-09-07T07:38:39.000Z",
-            "date_published": "2023-09-06T13:14:51.000Z",
-            "author": {
-                "name": "yauhenininjia",
-                "url": "https://github.com/yauhenininjia"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191128?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As part of Active Record migrations, there are methods to create and drop PostgreSQL schemas.</p>\n<p dir=\"auto\">However, when you dump the schema for a database that uses the PostgreSQL schemas into the schema.rb file, there are not methods to create the schemas, so when you try to load this schema into a new database, a <code class=\"notranslate\">ActiveRecord::StatementInvalid: PG::InvalidSchemaName</code> can be raised.</p>\n<p dir=\"auto\">This PR adds <code class=\"notranslate\">create_schema</code> statements to the schema.rb file so that is can load schemas that use PostgreSQL schemas.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\">  Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49164",
-            "title": "dump PostgreSQL schemas as part of the schema dump",
-            "date_modified": "2023-09-06T21:37:30.000Z",
-            "date_published": "2023-09-06T09:00:12.000Z",
-            "author": {
-                "name": "lsylvester",
-                "url": "https://github.com/lsylvester"
             }
         }
     ]
