@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10388273?u=2d38a69383088625e6e471a3896f18f4ca115893&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">the type of *p is Foo, so here use p or *q.</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidyangss/rfcs/blob/patch-1/text/2094-nll.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3489",
-            "title": "Update 2094-nll.md",
-            "date_modified": "2023-09-12T03:30:51.000Z",
-            "date_published": "2023-09-10T10:19:16.000Z",
-            "author": {
-                "name": "davidyangss",
-                "url": "https://github.com/davidyangss"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Categories and keywords for crates are now deprecated, replaced by a unified \"tags\" instead. A new set of policies is added to allow the crates.io team to curate the way tags are presented, replacing features such as the \"Popular Categories\" list on crates.io with a \"Popular Tags\" instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/cargo-tags/text/0000-cargo-tags.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3488",
             "title": "Unify crate categories and keywords as tags",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ijackson",
                 "url": "https://github.com/ijackson"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #381.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"45423146\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/381\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/381/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/381\">#381</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/unsafe-fields/text/0000-unsafe-fields.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3458",
+            "title": "Unsafe fields",
+            "date_modified": "2023-09-01T11:19:10.000Z",
+            "date_published": "2023-07-13T04:45:33.000Z",
+            "author": {
+                "name": "jhpratt",
+                "url": "https://github.com/jhpratt"
             }
         }
     ]
