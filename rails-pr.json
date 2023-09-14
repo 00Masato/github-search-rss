@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1708385308\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48215\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48215/hovercard\" href=\"https://github.com/rails/rails/pull/48215\">#48215</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds the missing dollar sign to bash code blocks in 7.1 release note.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49275",
+            "title": "Add missing dollar sign to bash scripts [skip ci]",
+            "date_modified": "2023-09-14T16:58:51.000Z",
+            "date_published": "2023-09-14T16:58:47.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52599949?u=1760b036d3c7541f6947088385784714acfc770e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The as_json method in <code class=\"notranslate\">ActiveModel</code> accepts the only option to restrict the keys that are included in the JSON output. However, when including <code class=\"notranslate\">ActionText::Attachable</code>, this behavior is overridden, and an additional <code class=\"notranslate\">attachable_sgid</code> key is unconditionally added to the JSON output.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class User &lt; ActiveRecord\n   include ActionText::Attachable\nend\n\nuser = User.new(name: &quot;Dave&quot;)\nuser.as_json(only: :name)\n#=&gt; { &quot;name&quot; =&gt; &quot;Dave&quot;, &quot;attachable_sgid&quot; =&gt; &quot;...&quot; }\"><pre class=\"notranslate\"><code class=\"notranslate\">class User &lt; ActiveRecord\n   include ActionText::Attachable\nend\n\nuser = User.new(name: \"Dave\")\nuser.as_json(only: :name)\n#=&gt; { \"name\" =&gt; \"Dave\", \"attachable_sgid\" =&gt; \"...\" }\n</code></pre></div>\n<p dir=\"auto\">I am not sure if applying the only option in ActionText::Attachable's as_json method was the correct approach, but I made that modification.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49272",
             "title": "Fix as_json behavior in ActionText::Attachable",
-            "date_modified": "2023-09-14T14:22:51.000Z",
+            "date_modified": "2023-09-14T16:02:57.000Z",
             "date_published": "2023-09-14T14:22:18.000Z",
             "author": {
                 "name": "a5-stable",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13851881?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR is a fix for this issue described and closed due to inactivity here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"907682056\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42336\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/42336/hovercard\" href=\"https://github.com/rails/rails/issues/42336\">#42336</a><br>\nIt still happens in apps with rails 7.0.7.2, ruby 3.2.2 and @rails/actioncable 7.0.4: when large number of events is sent via actioncable (in our case they are turbo broadcast messages) it prevents ping messages from coming in time (currently ping threshold is 6 seconds), so actioncable assumes connection as stale and creates a new one. However, during a downtime between closing/opening connections events could (and are) miss(ed).</p>\n<p dir=\"auto\">In this PR pings are also recorded on every normal message coming to the client.</p>\n<h3 dir=\"auto\">Expected behavior</h3>\n<p dir=\"auto\">Connection does not become stale and does not get reconnected when ping messages are delayed due to large number of normal messages.</p>\n<h3 dir=\"auto\">Actual behavior</h3>\n<p dir=\"auto\">The client is disconnected if it doesn't receive ping events within the staleThreshold even though it's receiving other events.</p>",
-            "url": "https://github.com/rails/rails/pull/49168",
-            "title": "Record ping on every actioncable message",
-            "date_modified": "2023-09-07T07:38:39.000Z",
-            "date_published": "2023-09-06T13:14:51.000Z",
-            "author": {
-                "name": "yauhenininjia",
-                "url": "https://github.com/yauhenininjia"
             }
         }
     ]
