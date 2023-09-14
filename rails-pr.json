@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1887987517\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49205\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49205/hovercard\" href=\"https://github.com/rails/rails/pull/49205\">#49205</a> to the index:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/509837/267835215-b275eb0d-d16a-419e-8a6a-c8eab0094e81.png\"><img src=\"https://user-images.githubusercontent.com/509837/267835215-b275eb0d-d16a-419e-8a6a-c8eab0094e81.png\" alt=\"image\" style=\"max-width: 100%;\"></a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/509837/267835227-97665e2a-6620-4e28-91a1-416fcff73559.png\"><img src=\"https://user-images.githubusercontent.com/509837/267835227-97665e2a-6620-4e28-91a1-416fcff73559.png\" alt=\"image\" style=\"max-width: 100%;\"></a></p>",
+            "url": "https://github.com/rails/rails/pull/49268",
+            "title": "Add Composite Primary Keys guide to guides index",
+            "date_modified": "2023-09-14T02:36:39.000Z",
+            "date_published": "2023-09-14T02:33:02.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1518299?u=d3dda61ebb16317ded64f166b59e35e1e160b9b1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">save_and_open_page</code> is a capybara helper that lets developers inspect the status of the page at any given point in their tests. This is helpful when trying to keep a short feedback loop while working on a test.</p>\n<p dir=\"auto\">This change adds a similar helper with a matching signature to integration tests.</p>\n<details open=\"\" class=\"details-reset border rounded-2\">\n  <summary class=\"px-3 py-2\">\n    <svg aria-hidden=\"true\" height=\"16\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" data-view-component=\"true\" class=\"octicon octicon-device-camera-video\">\n    <path d=\"M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z\"></path>\n</svg>\n    <span aria-label=\"Video description 20230913155205_0fccdf93e5.mp4\" class=\"m-1\">20230913155205_0fccdf93e5.mp4</span>\n    <span class=\"dropdown-caret\"></span>\n  </summary>\n\n  <video src=\"https://user-images.githubusercontent.com/1518299/267807273-8137fa68-619b-4673-bd95-495f56eb0984.mp4\" data-canonical-src=\"https://user-images.githubusercontent.com/1518299/267807273-8137fa68-619b-4673-bd95-495f56eb0984.mp4\" controls=\"controls\" muted=\"muted\" class=\"d-block rounded-bottom-2 border-top width-fit\" style=\"max-height:640px; min-height: 200px\">\n\n  </video>\n</details>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I have seen similar helpers defined in a number of projects in their <code class=\"notranslate\">test_helper.rb</code>.<br>\nI figured this would be a good candidate to upstream as we already have the same helper for system tests.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Launchy is required to automatically open the dump in a browser, but the helper still works without. Without launchy it prints a warning along with the path to the dump for manual review.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<ul dir=\"auto\">\n<li>I wasn't sure where to put the changelog notice. I've put it above the Rails 7.1 release header as I assume this won't make the cut for the release</li>\n<li>I did not add launchy to the <a href=\"https://github.com/rails/rails/blob/bb2fedbf013d2a087087c6456f3c54bc74d3e609/railties/lib/rails/generators/rails/app/templates/Gemfile.tt\">Gemfile template</a>. Maybe I should?</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49267",
             "title": "Add `save_and_open_page` helper to IntegrationTest",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "deepakmahakale",
                 "url": "https://github.com/deepakmahakale"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/496367?u=e3a63a2f7db3bea0507f2a6bcc6650db58a96e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is useful to configure multiple disk services for parallel testing without having to resort to something like <code class=\"notranslate\">ActiveStorage::Blob.services.send(:configurations).keys</code> to get this information.</p>",
-            "url": "https://github.com/rails/rails/pull/49181",
-            "title": "Expose Active Storage service names",
-            "date_modified": "2023-09-06T21:44:15.000Z",
-            "date_published": "2023-09-06T21:24:20.000Z",
-            "author": {
-                "name": "bdewater",
-                "url": "https://github.com/bdewater"
             }
         }
     ]
