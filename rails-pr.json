@@ -61,17 +61,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Deleting all books should not effect the inclusion validation and can be safely deleted.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49258",
-            "title": "Remove unused delete_all from test",
-            "date_modified": "2023-09-13T19:33:42.000Z",
-            "date_published": "2023-09-13T19:29:21.000Z",
-            "author": {
-                "name": "p8",
-                "url": "https://github.com/p8"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1688137?u=6e2ec05e392b37648521c2f1cd824a9bf4415b8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">follow-up <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1396155024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46192/hovercard\" href=\"https://github.com/rails/rails/pull/46192\">#46192</a></p>\n<p dir=\"auto\">Fixed a bug where <code class=\"notranslate\">unique_keys</code> returned the old column name after the column<br>\nspecified in add_unique_key was renamed.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Since <code class=\"notranslate\">pg_attribute.attname</code> may return the old column name after renaming a column,<br>\nmatch <code class=\"notranslate\">attrelid, attnum</code> in the process of getting the list of column names.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49251",
             "title": "`#unique_keys` returns the renamed column name",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "deepakmahakale",
                 "url": "https://github.com/deepakmahakale"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/496367?u=e3a63a2f7db3bea0507f2a6bcc6650db58a96e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is useful to configure multiple disk services for parallel testing without having to resort to something like <code class=\"notranslate\">ActiveStorage::Blob.services.send(:configurations).keys</code> to get this information.</p>",
+            "url": "https://github.com/rails/rails/pull/49181",
+            "title": "Expose Active Storage service names",
+            "date_modified": "2023-09-06T21:44:15.000Z",
+            "date_published": "2023-09-06T21:24:20.000Z",
+            "author": {
+                "name": "bdewater",
+                "url": "https://github.com/bdewater"
             }
         }
     ]
