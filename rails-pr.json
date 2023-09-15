@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Since the methods are private they weren't documented.</p>",
+            "url": "https://github.com/rails/rails/pull/49281",
+            "title": "Make ErrorReporterAssertions methods public",
+            "date_modified": "2023-09-15T08:58:09.000Z",
+            "date_published": "2023-09-15T08:58:06.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If GeneratedAttribute is used in a project that doesn't require ActiveRecord, it should still work.</p>\n<p dir=\"auto\">Fixes the issue mentioned here:<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1637896235\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47752\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47752/hovercard?comment_id=1720256371&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/47752#issuecomment-1720256371\">#47752 (comment)</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49280",
             "title": "Make GeneratedAttribute work without ActiveRecord",
-            "date_modified": "2023-09-15T08:01:54.000Z",
+            "date_modified": "2023-09-15T08:15:19.000Z",
             "date_published": "2023-09-15T07:40:59.000Z",
             "author": {
                 "name": "p8",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13851881?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR is a fix for this issue described and closed due to inactivity here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"907682056\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42336\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/42336/hovercard\" href=\"https://github.com/rails/rails/issues/42336\">#42336</a><br>\nIt still happens in apps with rails 7.0.7.2, ruby 3.2.2 and @rails/actioncable 7.0.4: when large number of events is sent via actioncable (in our case they are turbo broadcast messages) it prevents ping messages from coming in time (currently ping threshold is 6 seconds), so actioncable assumes connection as stale and creates a new one. However, during a downtime between closing/opening connections events could (and are) miss(ed).</p>\n<p dir=\"auto\">In this PR pings are also recorded on every normal message coming to the client.</p>\n<h3 dir=\"auto\">Expected behavior</h3>\n<p dir=\"auto\">Connection does not become stale and does not get reconnected when ping messages are delayed due to large number of normal messages.</p>\n<h3 dir=\"auto\">Actual behavior</h3>\n<p dir=\"auto\">The client is disconnected if it doesn't receive ping events within the staleThreshold even though it's receiving other events.</p>",
-            "url": "https://github.com/rails/rails/pull/49168",
-            "title": "Record ping on every actioncable message",
-            "date_modified": "2023-09-07T07:38:39.000Z",
-            "date_published": "2023-09-06T13:14:51.000Z",
-            "author": {
-                "name": "yauhenininjia",
-                "url": "https://github.com/yauhenininjia"
             }
         }
     ]
