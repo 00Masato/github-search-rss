@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a backport of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1332247157\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45790\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45790/hovercard\" href=\"https://github.com/rails/rails/pull/45790\">#45790</a> to <code class=\"notranslate\">7-0-stable</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1898957883\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49293\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49293/hovercard\" href=\"https://github.com/rails/rails/issues/49293\">#49293</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a></p>",
+            "url": "https://github.com/rails/rails/pull/49300",
+            "title": "[AR] Fix uniqueness validation on association not using overridden PK",
+            "date_modified": "2023-09-16T09:38:15.000Z",
+            "date_published": "2023-09-16T09:38:12.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11378424?u=e191dea6cb43893d94b12914d637005f5b08bbb0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Dependent gems using this test suit may override further the default methods.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49274.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1896926233\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49274\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49274/hovercard\" href=\"https://github.com/rails/rails/issues/49274\">#49274</a></p>",
             "url": "https://github.com/rails/rails/pull/49299",
             "title": "Loosen test condition `Arel::Nodes::Node` descendants",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191320?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This allows a fuller feature set for managing and interacting with PostgreSQL extensions.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49189",
-            "title": "Allow access to the full set of options when managing PostgreSQL extensions",
-            "date_modified": "2023-09-07T20:10:12.000Z",
-            "date_published": "2023-09-07T16:33:18.000Z",
-            "author": {
-                "name": "ccutrer",
-                "url": "https://github.com/ccutrer"
             }
         }
     ]
