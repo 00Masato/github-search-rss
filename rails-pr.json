@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3387?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Let's document <code class=\"notranslate\">with</code> with more detail.</p>\n<p dir=\"auto\">The examples above already document usage with lambdas, I believe once that has been demonstrated, wording can be more technical/generic here.</p>",
-            "url": "https://github.com/rails/rails/pull/49309",
-            "title": "Document any callable can normalize AR attributes",
-            "date_modified": "2023-09-17T16:54:46.000Z",
-            "date_published": "2023-09-17T08:30:19.000Z",
-            "author": {
-                "name": "fxn",
-                "url": "https://github.com/fxn"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107635?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I've been stuck on a failing test about a job that was supposed to be rescued from exceptions, and after an embarrassing amount of time I came to realise that using <code class=\"notranslate\">perform</code> shortcuts all of the ActiveJob niceties.</p>\n<p dir=\"auto\">This Pull Request has been created because I don't want other people to confuse the <code class=\"notranslate\">perform</code>, <code class=\"notranslate\">perform_now</code> or <code class=\"notranslate\">perform_later</code> altogether and waste valuable time trying to understand why the first one doesn't behave like the two others.</p>\n<p dir=\"auto\">Feel free to challenge the wording as you please ✌️</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the ActiveJob guide.</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49301",
             "title": "[ci skip] clarify the benefits of using ActiveJob's execution wrappers",
-            "date_modified": "2023-09-16T10:36:48.000Z",
+            "date_modified": "2023-09-17T17:33:54.000Z",
             "date_published": "2023-09-16T10:36:45.000Z",
             "author": {
                 "name": "freesteph",
@@ -160,17 +149,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6373536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because there have always been lots of complains about <code class=\"notranslate\">ActiveStorage::Current</code> not being set, especially in tests. While there are always suggestions like:</p>\n<ol dir=\"auto\">\n<li>set it in the test setup</li>\n<li>use Rails' <code class=\"notranslate\">url_for</code> instead of service urls</li>\n</ol>\n<p dir=\"auto\">there is <a href=\"https://github.com/rails/rails/issues/40855#issuecomment-1711683168\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/40855/hovercard\">another case</a> where the setting is being cleared because the way <code class=\"notranslate\">ActiveSupport::CurrentAttributes</code> work.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveStorage::Current</code> (thread-level config for the DiskService) for configs at the service level (<code class=\"notranslate\">config/storage.yml</code> or similar).</p>\n<p dir=\"auto\">Q: Is there any reason why it needs to be a thread-level config?</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">If the solution is accepted I can add more tests, a CHANGELOG entry, and we'll probably want to deprecate the old behavior rather than replacing it just like I did.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49226",
-            "title": "Replace problematic `ActiveStorage::Current` for a service-level config",
-            "date_modified": "2023-09-17T04:46:39.000Z",
-            "date_published": "2023-09-11T20:44:59.000Z",
-            "author": {
-                "name": "santib",
-                "url": "https://github.com/santib"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1297651?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Originally Rails::Paths::Root supported multiple directories simply by appenending them to it (path &lt;&lt; 'lib/something'), or a specific directory like:<br>\n<code class=\"notranslate\">path.add 'app/helpers', with: 'app/helpers', eager_load: true</code><br>\nwhich is the default for 'app/helpers'.</p>\n<p dir=\"auto\">As a complex app may has a complex directory layout, sometimes it's better to let add an array of directories, as the underlying Path object already supports it, and also Rails code, like: abstract_controller/helper.rb, def all_helpers_from_path</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">Rails::Paths::Root.add</code>.</p>\n<p dir=\"auto\">While the change is backward-compatible, it enables the full potential of the Path class:<br>\n<code class=\"notranslate\">path.add 'app/helpers', with: ['app/helpers', 'lib/helpers'], eager_load: true</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49223",
             "title": "Rails::Paths::Root can contains multiple directories",
@@ -223,6 +201,28 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191320?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This allows a fuller feature set for managing and interacting with PostgreSQL extensions.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49189",
+            "title": "Allow access to the full set of options when managing PostgreSQL extensions",
+            "date_modified": "2023-09-07T20:10:12.000Z",
+            "date_published": "2023-09-07T16:33:18.000Z",
+            "author": {
+                "name": "ccutrer",
+                "url": "https://github.com/ccutrer"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191320?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The docs already talk about how to set up deferrable constraints, but then rely on tthe user crafting custom SQL to actually use the feature. The helpers makes it easier to handle juggling multiple specific constraints, quoting issues, and automatically resetting to immediate if desired.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49187",
+            "title": "Add `set_constraints` and `defer_constraints` helpers for PostgreSQL",
+            "date_modified": "2023-09-08T13:11:39.000Z",
+            "date_published": "2023-09-07T14:49:09.000Z",
+            "author": {
+                "name": "ccutrer",
+                "url": "https://github.com/ccutrer"
             }
         }
     ]
