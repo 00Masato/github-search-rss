@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a backport of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1332247157\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45790\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45790/hovercard\" href=\"https://github.com/rails/rails/pull/45790\">#45790</a> to <code class=\"notranslate\">7-0-stable</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1898957883\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49293\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49293/hovercard\" href=\"https://github.com/rails/rails/issues/49293\">#49293</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a></p>",
-            "url": "https://github.com/rails/rails/pull/49300",
-            "title": "[AR] Fix uniqueness validation on association not using overridden PK",
-            "date_modified": "2023-09-16T09:38:15.000Z",
-            "date_published": "2023-09-16T09:38:12.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the tests for exclusion validation is missing in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1239433073\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45123\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45123/hovercard\" href=\"https://github.com/rails/rails/pull/45123\">#45123</a> and I had to check the exclusivity of the beginless/endless validations as the change for 7.1.0beta1.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds tests for exclusion validation with beginless/endless range, based on the ones for inclusion validation.<br>\nAnd updates 7_1_release_notes.md and CHANGELOG.md for Active Model for conveniences.</p>\n<p dir=\"auto\">The behavior has not been changed.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49298",
             "title": "[Docs][Tests] Add tests for validates_exclusion_of to 7.1.0beta1 Active Model (#45123)",
@@ -220,6 +209,17 @@
             "title": "Allow access to the full set of options when managing PostgreSQL extensions",
             "date_modified": "2023-09-07T20:10:12.000Z",
             "date_published": "2023-09-07T16:33:18.000Z",
+            "author": {
+                "name": "ccutrer",
+                "url": "https://github.com/ccutrer"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191320?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The docs already talk about how to set up deferrable constraints, but then rely on tthe user crafting custom SQL to actually use the feature. The helpers makes it easier to handle juggling multiple specific constraints, quoting issues, and automatically resetting to immediate if desired.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49187",
+            "title": "Add `set_constraints` and `defer_constraints` helpers for PostgreSQL",
+            "date_modified": "2023-09-08T13:11:39.000Z",
+            "date_published": "2023-09-07T14:49:09.000Z",
             "author": {
                 "name": "ccutrer",
                 "url": "https://github.com/ccutrer"
