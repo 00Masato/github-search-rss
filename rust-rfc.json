@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15088501?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">the PR and issue have been updated with different semantics</p>\n<p dir=\"auto\"><a href=\"https://github.com/chris-ha458/rfcs/blob/patch-1/text/2495-min-rust-version.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3492",
+            "title": "Update 2495-min-rust-version.md links",
+            "date_modified": "2023-09-19T10:12:29.000Z",
+            "date_published": "2023-09-19T10:05:52.000Z",
+            "author": {
+                "name": "chris-ha458",
+                "url": "https://github.com/chris-ha458"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/implicit/text/3491-remove-implicit-features.md\">Rendered</a></p>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #12173.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1723060490\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/12173/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/12173\">rust-lang/cargo#12173</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3491",
             "title": "RFC: Remove implicit features in a new edition",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Turbo87",
                 "url": "https://github.com/Turbo87"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1441126?u=673c0269338267eb09ccf9a8350ab9e55da4904e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR is a duplicate of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"592267297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2895\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2895/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2895\">#2895</a>, which I have agreed to take over for <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yaahc/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yaahc\">@yaahc</a>. The idea is to close that in favor of this PR so I can drive additional changes as feedback comes in.</p>\n<p dir=\"auto\">The current state of this proposal is as follows:</p>\n<ul dir=\"auto\">\n<li>A <a href=\"nightly_implementation\">implementation</a> gated by the <code class=\"notranslate\">error_generic_member_access</code> feature flag is available in nightly.</li>\n<li>There is an <a href=\"feedback_pr\">open PR</a> to address feedback from the <a href=\"provide_any_tracking\"><code class=\"notranslate\">provide_any</code> tracking issue</a> in nightly.</li>\n<li>It has been proposed to supercede the <a href=\"provide_any\"><code class=\"notranslate\">provide_any</code> feature</a> by taking on the <code class=\"notranslate\">Demand</code>/<code class=\"notranslate\">Request</code> API (minus the <code class=\"notranslate\">Provider</code> trait) for the sake of generic member access on <code class=\"notranslate\">dyn Error</code>.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/waynr/rust-rfcs/blob/error_generic_member_access/text/0000-dyn-error-generic-member-access.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3461",
-            "title": "RFC: Generic member access for dyn Error trait objects",
-            "date_modified": "2023-07-21T01:17:48.000Z",
-            "date_published": "2023-07-20T22:32:41.000Z",
-            "author": {
-                "name": "waynr",
-                "url": "https://github.com/waynr"
             }
         }
     ]
