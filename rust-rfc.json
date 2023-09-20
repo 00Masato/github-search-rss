@@ -6,21 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8074468?u=3f93edb8a0cb1046224faa47b587bc0e89ae266d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is allowed in <a href=\"https://github.com/rust-lang/rust/blob/62d9034a0d571b78e518727d6cb4b090569e5238/triagebot.toml#L12\"><code class=\"notranslate\">rust-lang/rust</code></a>.</p>\n<p dir=\"auto\">Others have also expected it to work in this repo:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1900116736\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3490\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3490/hovercard?comment_id=1722720545&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3490#issuecomment-1722720545\">#3490 (comment)</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1888897733\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3485\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3485/hovercard?comment_id=1712657835&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3485#issuecomment-1712657835\">#3485 (comment)</a></li>\n</ul>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label not-rfc</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3494",
-            "title": "unauthenticated @rustbot label T-*",
-            "date_modified": "2023-09-20T10:15:07.000Z",
-            "date_published": "2023-09-20T10:15:05.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds it so that Zulip messages will be posted when the corresponding labels are added.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3495",
+            "title": "Add Zulip notifications for cargo and crates-io",
+            "date_modified": "2023-09-20T17:52:18.000Z",
+            "date_published": "2023-09-20T17:47:27.000Z",
             "author": {
-                "name": "eopb",
-                "url": "https://github.com/eopb"
+                "name": "ehuss",
+                "url": "https://github.com/ehuss"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8074468?u=3f93edb8a0cb1046224faa47b587bc0e89ae266d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/eopb/rfcs/blob/precise-pre-release-cargo-update/text/3493-precise-pre-release-cargo-update.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes extending <code class=\"notranslate\">cargo update</code> to allow updates to pre-release versions when requested with <code class=\"notranslate\">--precise</code>. For example, a <code class=\"notranslate\">cargo</code> user would be able to call <code class=\"notranslate\">cargo update -p dep --precise 0.1.1-pre.0</code> as long as the version of <code class=\"notranslate\">dep</code> requested by their project and its dependencies are semver compatible with <code class=\"notranslate\">0.1.1</code>. This effectively splits the notion of compatibility in <code class=\"notranslate\">cargo</code>. A pre-release version may be considered compatible when the version is explicitly requested with <code class=\"notranslate\">--precise</code>. Cargo will not automatically select that version via a basic <code class=\"notranslate\">cargo update</code>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3493",
             "title": "RFC: Precise Pre-release `cargo update`",
-            "date_modified": "2023-09-20T16:42:02.000Z",
+            "date_modified": "2023-09-20T17:15:03.000Z",
             "date_published": "2023-09-20T08:09:57.000Z",
             "author": {
                 "name": "eopb",
