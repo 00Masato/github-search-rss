@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8074468?u=3f93edb8a0cb1046224faa47b587bc0e89ae266d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/eopb/rfcs/blob/precise-pre-release-cargo-update/text/3493-precise-pre-release-cargo-update.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes extending <code class=\"notranslate\">cargo update</code> to allow updates to pre-release versions when requested with <code class=\"notranslate\">--precise</code>. For example, a <code class=\"notranslate\">cargo</code> user would be able to call <code class=\"notranslate\">cargo update -p dep --precise 0.1.1-pre0</code> as long as the version of <code class=\"notranslate\">dep</code> requested by their project and its dependencies are semver compatible with <code class=\"notranslate\">0.1.1</code>. This effectively splits the notion of compatibility in <code class=\"notranslate\">cargo</code>. A pre-release version may be considered compatible when the version is explicitly requested with <code class=\"notranslate\">--precise</code>. Cargo will not automatically select that version via a basic <code class=\"notranslate\">cargo update</code>.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3493",
+            "title": "RFC: Precise Pre-release `cargo update`",
+            "date_modified": "2023-09-20T08:11:49.000Z",
+            "date_published": "2023-09-20T08:09:57.000Z",
+            "author": {
+                "name": "eopb",
+                "url": "https://github.com/eopb"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15088501?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">the PR and issue have been updated with different semantics</p>\n<p dir=\"auto\"><a href=\"https://github.com/chris-ha458/rfcs/blob/patch-1/text/2495-min-rust-version.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3492",
             "title": "Update 2495-min-rust-version.md links",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Turbo87",
                 "url": "https://github.com/Turbo87"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1441126?u=673c0269338267eb09ccf9a8350ab9e55da4904e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR is a duplicate of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"592267297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2895\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2895/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2895\">#2895</a>, which I have agreed to take over for <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yaahc/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yaahc\">@yaahc</a>. The idea is to close that in favor of this PR so I can drive additional changes as feedback comes in.</p>\n<p dir=\"auto\">The current state of this proposal is as follows:</p>\n<ul dir=\"auto\">\n<li>A <a href=\"nightly_implementation\">implementation</a> gated by the <code class=\"notranslate\">error_generic_member_access</code> feature flag is available in nightly.</li>\n<li>There is an <a href=\"feedback_pr\">open PR</a> to address feedback from the <a href=\"provide_any_tracking\"><code class=\"notranslate\">provide_any</code> tracking issue</a> in nightly.</li>\n<li>It has been proposed to supercede the <a href=\"provide_any\"><code class=\"notranslate\">provide_any</code> feature</a> by taking on the <code class=\"notranslate\">Demand</code>/<code class=\"notranslate\">Request</code> API (minus the <code class=\"notranslate\">Provider</code> trait) for the sake of generic member access on <code class=\"notranslate\">dyn Error</code>.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/waynr/rust-rfcs/blob/error_generic_member_access/text/0000-dyn-error-generic-member-access.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3461",
-            "title": "RFC: Generic member access for dyn Error trait objects",
-            "date_modified": "2023-07-21T01:17:48.000Z",
-            "date_published": "2023-07-20T22:32:41.000Z",
-            "author": {
-                "name": "waynr",
-                "url": "https://github.com/waynr"
             }
         }
     ]
