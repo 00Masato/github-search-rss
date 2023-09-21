@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1558372?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I'd like to get the label of the fixture that created a record.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">When working with fixtures, it inserts records in the database at the beginning of the test suite. I like to validate those fixtures to avoid inserting invalid data for testing. In case of validation error, I need to find out which fixture created the failing record. For some models it's easy to go from one record  to the fixture that created it, for other models it can be more complicated, for example a join model with an id and foreign_keys.</p>\n<p dir=\"auto\">This PR introduces <code class=\"notranslate\">ActiveRecord::FixtureSet.label_of(record)</code> which will return the fixture label of the record if it was created by a fixture.</p>\n<p dir=\"auto\">I'd like to get feedback regarding this PR and could it be useful in the project ?<br>\nThis is working for records with primary_key.<br>\nComposite primary keys are not supported, should it be supported in this PR ?</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49348",
+            "title": "Get fixture label from a record",
+            "date_modified": "2023-09-21T21:33:23.000Z",
+            "date_published": "2023-09-21T21:27:36.000Z",
+            "author": {
+                "name": "jean-francois-labbe",
+                "url": "https://github.com/jean-francois-labbe"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91473?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Looking at the list and description, it's not very clear that the filter_parameters are partial matches. For example I was wondering why password wasn't on the list and if I needed to add it or if there was a default list somewhere and this initializer was just adding to the default list.</p>",
             "url": "https://github.com/rails/rails/pull/49347",
             "title": "Update description for filter_parameter_logging",
@@ -152,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76922290?u=43264c7b0c15885c082eb8f7570643015f7a49fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It was great to see <code class=\"notranslate\">ActionController::Live#send_stream</code> introduced in Rails 7.0. We'd like to collect information on <code class=\"notranslate\">send_stream</code> events by adding instrumentation for it.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adds instrumentation for <code class=\"notranslate\">ActionController::Live#send_stream</code>. The event payload contains the filename, disposition, and type.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49297",
             "title": "Add instrumentation for ActionController::Live#send_stream",
-            "date_modified": "2023-09-21T03:00:16.000Z",
+            "date_modified": "2023-09-21T21:36:26.000Z",
             "date_published": "2023-09-15T22:29:31.000Z",
             "author": {
                 "name": "hannahramadan",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "LA-Toth",
                 "url": "https://github.com/LA-Toth"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It returns true if the content type is \"application/pdf\".<br>\nSimilar to the existing <code class=\"notranslate\">audio?</code>, <code class=\"notranslate\">image?</code>, <code class=\"notranslate\">video?</code> and <code class=\"notranslate\">text?</code><br>\nmethods.</p>\n<p dir=\"auto\">We probably don't want to add methods for every content type,<br>\nbut pdf is pretty common and it's also used internally by Rails for<br>\nthe Previewers.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49217",
-            "title": "Add `ActiveStorage::Blob#pdf?`",
-            "date_modified": "2023-09-11T17:26:40.000Z",
-            "date_published": "2023-09-11T12:08:55.000Z",
-            "author": {
-                "name": "p8",
-                "url": "https://github.com/p8"
             }
         }
     ]
