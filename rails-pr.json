@@ -61,17 +61,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1558372?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I never remember how to create a new rails application using a beta or rc release.<br>\n<code class=\"notranslate\">gem install rails --pre </code>installs the latest prerelease version, currently this is <code class=\"notranslate\">7.1.0.beta1</code>.<br>\nThen which command should I type to generate a new project using <code class=\"notranslate\">7.1.0.beta1</code>, I never remember.<br>\nrails --help gives me no clue.</p>\n<p dir=\"auto\">I'd like to avoid googling this next time.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds few lines to the helper text displayed when running <code class=\"notranslate\">rails --help</code> describing how to create a new rails application using a prerelease or specific version.</p>",
-            "url": "https://github.com/rails/rails/pull/49338",
-            "title": "[ci skip] Document how to rails new with a specific version",
-            "date_modified": "2023-09-21T18:01:55.000Z",
-            "date_published": "2023-09-20T20:51:36.000Z",
-            "author": {
-                "name": "jean-francois-labbe",
-                "url": "https://github.com/jean-francois-labbe"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49331.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1905093936\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49331\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49331/hovercard\" href=\"https://github.com/rails/rails/issues/49331\">#49331</a>.</p>",
             "url": "https://github.com/rails/rails/pull/49337",
             "title": "Include connection specification name into `ActiveRecord::StatementInvalid` errors",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "LA-Toth",
                 "url": "https://github.com/LA-Toth"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It returns true if the content type is \"application/pdf\".<br>\nSimilar to the existing <code class=\"notranslate\">audio?</code>, <code class=\"notranslate\">image?</code>, <code class=\"notranslate\">video?</code> and <code class=\"notranslate\">text?</code><br>\nmethods.</p>\n<p dir=\"auto\">We probably don't want to add methods for every content type,<br>\nbut pdf is pretty common and it's also used internally by Rails for<br>\nthe Previewers.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49217",
+            "title": "Add `ActiveStorage::Blob#pdf?`",
+            "date_modified": "2023-09-11T17:26:40.000Z",
+            "date_published": "2023-09-11T12:08:55.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
             }
         }
     ]
