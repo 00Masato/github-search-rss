@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1769416?u=786458082f04393c2a84cd8bd1eaf04cb5e38a56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Added checks to tests that rely on the database adapter supporting <code class=\"notranslate\">supports_insert_on_duplicate_update?</code>. The tests involved use the <code class=\"notranslate\">insert</code>/<code class=\"notranslate\">insert_all</code> ActiveRecord methods, which require the adapter to support <code class=\"notranslate\">supports_insert_on_duplicate_update?</code>.</p>\n<p dir=\"auto\">Found the issues as the SQL Server adapter (<a href=\"https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/\">https://github.com/rails-sqlserver/activerecord-sqlserver-adapter/</a>) does not support upsert and without the checks we need to coerce the tests.</p>\n<p dir=\"auto\">This PR is very similar to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1092522657\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44050\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44050/hovercard\" href=\"https://github.com/rails/rails/pull/44050\">#44050</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49344",
+            "title": "Skip unless adapter supports insert on duplicate update",
+            "date_modified": "2023-09-21T09:50:37.000Z",
+            "date_published": "2023-09-21T09:50:33.000Z",
+            "author": {
+                "name": "aidanharan",
+                "url": "https://github.com/aidanharan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Reading this doc left me confused where PersonRecord was defined, this commit is intended to make it easier to find where it is.</p>",
             "url": "https://github.com/rails/rails/pull/49342",
             "title": "Add links to Callbacks, note example definition [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7942714?u=ed2384a07edc1a042b5a01ccb1cfd2cb9f63442a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because when I called <code class=\"notranslate\">render_to_string(partial: 'foo')</code> in an API controller, I got back <code class=\"notranslate\">\" \"</code> whether or not the partial existed.</p>\n<p dir=\"auto\">It turns out that in API controllers, the <code class=\"notranslate\">partial</code> option on <code class=\"notranslate\">render</code> does nothing, so it's equivalent to calling <code class=\"notranslate\">render</code> with no arguments. I learned that in API controllers, calling <code class=\"notranslate\">render</code> with no arguments has the surprising response of 200 OK with a body of <code class=\"notranslate\">\" \"</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This change deprecates that surprising behavior and proposes that in the future, calling <code class=\"notranslate\">render</code> with no arguments in API controllers will raise an error.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I'm open to other approaches here! Just trying to help other developers avoid this head-scratching behavior. 😅</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49212",
-            "title": "Deprecate calling `render` with no arguments in API controllers",
-            "date_modified": "2023-09-10T15:42:40.000Z",
-            "date_published": "2023-09-10T01:05:59.000Z",
-            "author": {
-                "name": "nholden",
-                "url": "https://github.com/nholden"
             }
         }
     ]
