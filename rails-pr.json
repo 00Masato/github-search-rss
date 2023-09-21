@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was added back in 0.9.5 because at the time single associations (e.g. has_one) didn't directly return the record but a proxy</p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/97849debf33/hovercard\" href=\"https://github.com/rails/rails/commit/97849debf33\"><tt>97849debf33</tt></a></p>\n<p dir=\"auto\">But toaward 3.1, we got rid of that proxy: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/1644663ba7f678d178deab2bf1629dc05626f85b/hovercard\" href=\"https://github.com/rails/rails/commit/1644663ba7f678d178deab2bf1629dc05626f85b\"><tt>1644663</tt></a> and the associated test was deleted.</p>\n<p dir=\"auto\">However the <code class=\"notranslate\">===</code> method stayed.</p>\n<p dir=\"auto\">This has been around for so long that removing it may break some rare applications, but I doubt it would be hard to fix, and this isn't a documented behavior.</p>",
             "url": "https://github.com/rails/rails/pull/49335",
             "title": "Get rid of ActiveRecord::Core#===",
-            "date_modified": "2023-09-20T16:40:09.000Z",
+            "date_modified": "2023-09-21T06:53:44.000Z",
             "date_published": "2023-09-20T16:40:05.000Z",
             "author": {
                 "name": "casperisfine",
