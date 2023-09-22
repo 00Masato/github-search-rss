@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10578060?u=3dcc4eb09694defa49036f93cf4d1f04120a6cbb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Radbuglet/rfcs-typed_context_injection/blob/master/text/0000-typed-context-injection.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the introduction of the <code class=\"notranslate\">Cx</code> structure to the <code class=\"notranslate\">core</code> standard library alongside corresponding compiler support to allow Rust users to conveniently pass \"bundles of context\" around their applications. <code class=\"notranslate\">Cx</code> is a thin wrapper around tuples of references which adorn the wrapped tuples with the ability to coerce into other <code class=\"notranslate\">Cx</code> objects containing a subset of their references.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3496",
             "title": "RFC: `typed-context-injection`",
-            "date_modified": "2023-09-22T01:37:03.000Z",
+            "date_modified": "2023-09-22T03:43:06.000Z",
             "date_published": "2023-09-22T01:37:03.000Z",
             "author": {
                 "name": "Radbuglet",
