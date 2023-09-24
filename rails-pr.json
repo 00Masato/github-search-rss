@@ -8,8 +8,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the new config entry for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1441155267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46453\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46453/hovercard\" href=\"https://github.com/rails/rails/pull/46453\">#46453</a> is missing in configuring.md guide.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds <code class=\"notranslate\">config.active_record.encryption.add_to_filter_parameters</code> to configuring.md.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49364",
-            "title": "[ci-skip][Docs]Add missing entry for encryption.add_to_filter_paramters",
-            "date_modified": "2023-09-24T01:24:53.000Z",
+            "title": "[Docs]Add missing entry for encryption.add_to_filter_paramters",
+            "date_modified": "2023-09-24T02:07:20.000Z",
             "date_published": "2023-09-24T01:08:39.000Z",
             "author": {
                 "name": "hachi8833",
