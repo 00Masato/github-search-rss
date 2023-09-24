@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62179149?u=64884e6afc5e4296590b70e844446df9ee1cbc61&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>This RFC proposes the introduction of lambda expressions (anonymous functions) in Rust using <code class=\"notranslate\">(arg1, arg2, ..., argn) -&gt; { // code block }</code> notation.</li>\n<li>Lambda expressions provide a concise syntax for defining small, inline functions that can capture surrounding scope variables.</li>\n<li>The feature aims to improve code readability and expressiveness, especially for short, one-time-use functions.</li>\n<li>It aligns with the trend of incorporating functional programming features into modern languages.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/wiseaidev/rfcs/blob/rust_lambda/rfc/text/0000-rust-lambdas.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3497",
-            "title": "Expressive Lambda Expressions",
-            "date_modified": "2023-09-24T17:01:10.000Z",
-            "date_published": "2023-09-24T16:50:54.000Z",
-            "author": {
-                "name": "wiseaidev",
-                "url": "https://github.com/wiseaidev"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10578060?u=3dcc4eb09694defa49036f93cf4d1f04120a6cbb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Radbuglet/rfcs-typed_context_injection/blob/master/text/0000-typed-context-injection.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the introduction of the <code class=\"notranslate\">Cx</code> structure to the <code class=\"notranslate\">core</code> standard library alongside corresponding compiler support to allow Rust users to conveniently pass \"bundles of context\" around their applications. <code class=\"notranslate\">Cx</code> is a thin wrapper around tuples of references which adorn the wrapped tuples with the ability to coerce into other <code class=\"notranslate\">Cx</code> objects containing a subset of their references.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3496",
             "title": "RFC: `typed-context-injection`",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Jules-Bertholet",
                 "url": "https://github.com/Jules-Bertholet"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229984?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io, @rust-lang/cargo, @rust-lang/mods</p>\n<p dir=\"auto\"><a href=\"https://github.com/LawnGnome/rfcs/blob/crate-quarantine/text/0000-crate-quarantine.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3464",
+            "title": "Crate quarantine",
+            "date_modified": "2023-08-07T21:05:00.000Z",
+            "date_published": "2023-07-25T18:53:10.000Z",
+            "author": {
+                "name": "LawnGnome",
+                "url": "https://github.com/LawnGnome"
             }
         }
     ]
