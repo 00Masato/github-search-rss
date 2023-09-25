@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14913065?u=cc1e5b3e40f11b172f19d354f3fac9bedd107ae3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Implements <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/144729-t-types/topic/types-nominated.20rfcs\" rel=\"nofollow\">#t-types/types-nominated rfcs</a>.</p>\n<p dir=\"auto\">I've just copied the relevant entry from the <code class=\"notranslate\">triagebot.toml</code> in <code class=\"notranslate\">rust-lang/rust</code> and tweaked it slightly: <a href=\"https://github.com/rust-lang/rust/blob/af685931799459879b2a8995524755a06ffb5eec/triagebot.toml#L387-L395\">https://github.com/rust-lang/rust/blob/af685931799459879b2a8995524755a06ffb5eec/triagebot.toml#L387-L395</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3499",
-            "title": "Notify Zulip stream on types nominations",
-            "date_modified": "2023-09-25T15:41:59.000Z",
-            "date_published": "2023-09-25T15:41:59.000Z",
-            "author": {
-                "name": "fmease",
-                "url": "https://github.com/fmease"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In Rust 2024 and later editions, return position <code class=\"notranslate\">impl Trait</code> (RPIT) opaque types will automatically capture all in-scope type <em>and</em> lifetime parameters.  In preparation for this, new RPIT-like <code class=\"notranslate\">impl Trait</code> features introduced into the Rust 2021 edition will also automatically capture all in-scope type and lifetime parameters.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/lifetime-capture-rules-2024/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3498",
             "title": "Lifetime Capture Rules 2024",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "RalfJung",
                 "url": "https://github.com/RalfJung"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/manuallydrop-deref-move/text/3466-manuallydrop-deref-move.md\"><strong>Rendered</strong></a></p>\n<p dir=\"auto\">Pre-RFC discussion on <a href=\"https://internals.rust-lang.org/t/move-out-of-deref-for-manuallydrop/19216/\" rel=\"nofollow\">Internals</a></p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label A-drop</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3466",
+            "title": "Move out of deref for `ManuallyDrop`",
+            "date_modified": "2023-08-07T13:03:08.000Z",
+            "date_published": "2023-07-30T22:00:54.000Z",
+            "author": {
+                "name": "Jules-Bertholet",
+                "url": "https://github.com/Jules-Bertholet"
             }
         }
     ]
