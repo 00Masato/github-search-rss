@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In Rust 2024 and later editions, return position <code class=\"notranslate\">impl Trait</code> (RPIT) opaque types will automatically capture all in-scope type <em>and</em> lifetime parameters.  In preparation for this, new RPIT-like <code class=\"notranslate\">impl Trait</code> features introduced into the Rust 2021 edition will also automatically capture all in-scope type and lifetime parameters.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/lifetime-capture-rules-2024/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3498",
+            "title": "Lifetime Capture Rules 2024",
+            "date_modified": "2023-09-25T07:31:09.000Z",
+            "date_published": "2023-09-25T07:06:08.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10578060?u=3dcc4eb09694defa49036f93cf4d1f04120a6cbb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Radbuglet/rfcs-typed_context_injection/blob/master/text/0000-typed-context-injection.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the introduction of the <code class=\"notranslate\">Cx</code> structure to the <code class=\"notranslate\">core</code> standard library alongside corresponding compiler support to allow Rust users to conveniently pass \"bundles of context\" around their applications. <code class=\"notranslate\">Cx</code> is a thin wrapper around tuples of references which adorn the wrapped tuples with the ability to coerce into other <code class=\"notranslate\">Cx</code> objects containing a subset of their references.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3496",
             "title": "RFC: `typed-context-injection`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Jules-Bertholet",
                 "url": "https://github.com/Jules-Bertholet"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229984?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io, @rust-lang/cargo, @rust-lang/mods</p>\n<p dir=\"auto\"><a href=\"https://github.com/LawnGnome/rfcs/blob/crate-quarantine/text/0000-crate-quarantine.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3464",
-            "title": "Crate quarantine",
-            "date_modified": "2023-08-07T21:05:00.000Z",
-            "date_published": "2023-07-25T18:53:10.000Z",
-            "author": {
-                "name": "LawnGnome",
-                "url": "https://github.com/LawnGnome"
             }
         }
     ]
