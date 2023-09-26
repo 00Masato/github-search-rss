@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Reverts <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1875442802\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49096\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49096/hovercard\" href=\"https://github.com/rails/rails/pull/49096\">#49096</a></p>\n<p dir=\"auto\">This was requested by RF, and I think we just forgot.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a></p>",
-            "url": "https://github.com/rails/rails/pull/49386",
-            "title": "Revert \"Document clean chain behavior for ActiveRecord scope\"",
-            "date_modified": "2023-09-26T11:45:08.000Z",
-            "date_published": "2023-09-26T11:44:30.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It is not removing all the shards connections when we call it.</p>\n<p dir=\"auto\">It is because the first time we call it we are resetting the <code class=\"notranslate\">connection_specification_name</code> so the next call doesn't find the right connection pool.</p>",
             "url": "https://github.com/rails/rails/pull/49382",
             "title": "Add failing test for remove_connection",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "nkondratyev",
                 "url": "https://github.com/nkondratyev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?u=bb262553df264faad2f515f6ea75067266e0d129&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Many apps use the <a href=\"https://github.com/rmm5t/strip_attributes\">https://github.com/rmm5t/strip_attributes</a> gem to strip most string attributes.<br>\nThe new <code class=\"notranslate\">normalizes</code> API is a perfect fit for this. One \"downside\" in contrast to the strip_attributes gem, is that you have to explicitly list all attributes you want to normalize. It would be nice to have a simple way to e.g. \"strip all string attributes in most models\".</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49314",
+            "title": "Add normalizes_type to apply common normalizations",
+            "date_modified": "2023-09-20T18:57:04.000Z",
+            "date_published": "2023-09-18T22:00:16.000Z",
+            "author": {
+                "name": "codergeek121",
+                "url": "https://github.com/codergeek121"
             }
         }
     ]
