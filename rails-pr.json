@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It is not removing all the shards connections when we call it.</p>\n<p dir=\"auto\">It is because the first time we call it we are resetting the <code class=\"notranslate\">connection_specification_name</code> so the next call doesn't find the right connection pool.</p>",
             "url": "https://github.com/rails/rails/pull/49382",
             "title": "Add failing test for remove_connection",
-            "date_modified": "2023-09-26T00:16:33.000Z",
+            "date_modified": "2023-09-26T01:45:29.000Z",
             "date_published": "2023-09-26T00:16:29.000Z",
             "author": {
                 "name": "rafaelfranca",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Follow-up to <a href=\"https://github.com/rails/rails/pull/49371\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49371/hovercard\">#49371</a></p>\n<p dir=\"auto\">In the wake of the deprecation of <code class=\"notranslate\">tag(:div)</code> in favor of <code class=\"notranslate\">tag.div</code>, this commit replaces all calls made internally with the more modern syntax.</p>\n<p dir=\"auto\">This change is separate from the deprecation cycle, since there are <strong>slight</strong> behavioral changes, since the HTML output changes from self-closing elements like <code class=\"notranslate\">&lt;input /&gt;</code> to open void elements like <code class=\"notranslate\">&lt;input&gt;</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49377",
             "title": "Action View: Remove internal calls to `tag` with positional arguments",
-            "date_modified": "2023-09-25T23:20:32.000Z",
+            "date_modified": "2023-09-26T02:05:33.000Z",
             "date_published": "2023-09-25T13:10:59.000Z",
             "author": {
                 "name": "seanpdoyle",
