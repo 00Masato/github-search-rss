@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Just a small fix:</p>\n<div class=\"highlight highlight-source-diff notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"- url: rediss://10.10.3.153:tls_port\n+ url: redis://10.10.3.153:tls_port\"><pre class=\"notranslate\"><span class=\"pl-md\"><span class=\"pl-md\">-</span> url: rediss://10.10.3.153:tls_port</span>\n<span class=\"pl-mi1\"><span class=\"pl-mi1\">+</span> url: redis://10.10.3.153:tls_port</span></pre></div>\n<p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1898655298\" data-permission-text=\"Title is private\" data-url=\"https://github.com/yasslab/railsguides.jp/issues/1507\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/yasslab/railsguides.jp/pull/1507/hovercard\" href=\"https://github.com/yasslab/railsguides.jp/pull/1507\">yasslab/railsguides.jp#1507</a></p>",
-            "url": "https://github.com/rails/rails/pull/49401",
-            "title": "[ci-skip][docs]Fix typo on action_cable_overview.md",
-            "date_modified": "2023-09-27T06:35:24.000Z",
-            "date_published": "2023-09-27T06:35:20.000Z",
-            "author": {
-                "name": "hachi8833",
-                "url": "https://github.com/hachi8833"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1792146155\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48681\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48681/hovercard\" href=\"https://github.com/rails/rails/pull/48681\">#48681</a> The <code class=\"notranslate\">name</code> argument has been deprecated on <code class=\"notranslate\">#remove_connection</code> without any replacement.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In this PR removes the deprecated <code class=\"notranslate\">name</code> argument from <code class=\"notranslate\">#remove_connection</code></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eileencodes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eileencodes\">@eileencodes</a></p>",
             "url": "https://github.com/rails/rails/pull/49400",
             "title": "Remove deprecated name argument from remove_connection",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49331.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1905093936\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49331\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49331/hovercard\" href=\"https://github.com/rails/rails/issues/49331\">#49331</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/49337",
+            "title": "Include connection specification name into `ActiveRecord::StatementInvalid` errors",
+            "date_modified": "2023-09-25T16:32:34.000Z",
+            "date_published": "2023-09-20T20:12:27.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
