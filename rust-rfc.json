@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is an amendment to <a href=\"https://rust-lang.github.io/rfcs/3085-edition-2021.html\" rel=\"nofollow\">RFC 3085</a> to declare that the Rust Project intends to produce a new edition in 2024, to set up a project group to deliver the edition, and to establish a tentative cadence for future editions.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/edition-2024/text/0000-edition-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3501",
             "title": "2024 Edition",
-            "date_modified": "2023-09-27T13:01:08.000Z",
+            "date_modified": "2023-09-28T15:05:52.000Z",
             "date_published": "2023-09-26T18:58:15.000Z",
             "author": {
                 "name": "ehuss",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10578060?u=3dcc4eb09694defa49036f93cf4d1f04120a6cbb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Radbuglet/rfcs-typed_context_injection/blob/master/text/0000-typed-context-injection.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the introduction of the <code class=\"notranslate\">Cx</code> structure to the <code class=\"notranslate\">core</code> standard library alongside corresponding compiler support to allow Rust users to conveniently pass \"bundles of context\" around their applications. <code class=\"notranslate\">Cx</code> is a thin wrapper around tuples of references which adorn the wrapped tuples with the ability to coerce into other <code class=\"notranslate\">Cx</code> objects containing a subset of their references.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3496",
             "title": "RFC: `typed-context-injection`",
-            "date_modified": "2023-09-28T06:04:57.000Z",
+            "date_modified": "2023-09-28T15:57:38.000Z",
             "date_published": "2023-09-22T01:37:03.000Z",
             "author": {
                 "name": "Radbuglet",
