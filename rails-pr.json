@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1911553395\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49378\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49378/hovercard\" href=\"https://github.com/rails/rails/pull/49378\">#49378</a></p>\n<p dir=\"auto\">As discussed with <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a> , we have a bit of a chicken and egg problem with the schema cache and the database version.</p>\n<p dir=\"auto\">The database version is stored in the cache to avoid a query, but the schema cache need to query the schema version in the database to be revalidated.</p>\n<p dir=\"auto\">So <code class=\"notranslate\">check_version</code> depends on <code class=\"notranslate\">schema_cache</code>, which depends on <code class=\"notranslate\">Migrator.current_version</code>, which depends on <code class=\"notranslate\">configure_connection</code> which depends on <code class=\"notranslate\">check_version</code>.</p>\n<p dir=\"auto\">But ultimately, we think storing the server version in the cache is incorrect, because upgrading a DB server is orthogonal from regenerating the schema cache.</p>\n<p dir=\"auto\">So not persisting the version in cache is better. Instead we store it in the pool config, so that we only check it once per process and per database.</p>",
+            "url": "https://github.com/rails/rails/pull/49415",
+            "title": "Move the database version cache from schema cache to pool config",
+            "date_modified": "2023-09-28T12:00:56.000Z",
+            "date_published": "2023-09-28T11:59:46.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The intent is to skip them if you don't have PG running locally but on CI it's supposed to be running.</p>\n<p dir=\"auto\">If we fail to connect, we should fail CI, not skip these tests.</p>",
             "url": "https://github.com/rails/rails/pull/49414",
             "title": "Do not skip Action Cable PG tests on CI",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49331.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1905093936\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49331\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49331/hovercard\" href=\"https://github.com/rails/rails/issues/49331\">#49331</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/49337",
-            "title": "Include connection specification name into `ActiveRecord::StatementInvalid` errors",
-            "date_modified": "2023-09-25T16:32:34.000Z",
-            "date_published": "2023-09-20T20:12:27.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
