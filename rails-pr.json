@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ideally we should be able to checkout an Adapter instance without triggering a connection to the server.</p>\n<p dir=\"auto\">For some adapters like Trilogy that is the case today, but only if you have a schema cache loaded, otherwise <code class=\"notranslate\">check_version</code> will trigger a query.</p>\n<p dir=\"auto\">I think this check can be delayed to when we actually use the connection.</p>",
             "url": "https://github.com/rails/rails/pull/49378",
             "title": "Delay Adapter#check_version to #configure_connection",
-            "date_modified": "2023-09-28T08:36:47.000Z",
+            "date_modified": "2023-09-28T09:42:49.000Z",
             "date_published": "2023-09-25T13:47:30.000Z",
             "author": {
                 "name": "casperisfine",
