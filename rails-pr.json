@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3153380?u=64d7e2eb60d27ff064dbccc83e60ea491b24b464&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><code class=\"notranslate\">gem \"error_highlight\", \"&gt;= 0.4.0\"</code>  was added as a work around for ruby 3.1 since it included error_highlight v0.3.0 while rails needed at least v0.4.0.</p>\n<p dir=\"auto\">Since ruby 3.2 already include v0.5.1, adding <code class=\"notranslate\">gem \"error_highlight\", \"&gt;= 0.4.0\"</code> is no longer needed when already using ruby 3.2 or above.</p>\n<p dir=\"auto\">This Pull Request has been created because generating a new rails app with ruby 3.2 and above unnecessarily adds this to gem file which is not needed.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49428",
+            "title": "No need to include error_highlight when ruby version >= 3.2",
+            "date_modified": "2023-09-29T08:22:57.000Z",
+            "date_published": "2023-09-29T08:22:53.000Z",
+            "author": {
+                "name": "uxxman",
+                "url": "https://github.com/uxxman"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We use <code class=\"notranslate\">klass</code> because <code class=\"notranslate\">class</code> is a reserved word in Ruby.</p>\n<p dir=\"auto\">But, any word ending with the suffix <code class=\"notranslate\">_class</code> isn't reserved, so we don't need to use the suffix <code class=\"notranslate\">_klass</code> anywhere.</p>",
             "url": "https://github.com/rails/rails/pull/49425",
             "title": "No more _klass",
-            "date_modified": "2023-09-29T01:12:12.000Z",
+            "date_modified": "2023-09-29T08:54:06.000Z",
             "date_published": "2023-09-29T00:36:08.000Z",
             "author": {
                 "name": "rafaelfranca",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49331.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1905093936\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49331\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49331/hovercard\" href=\"https://github.com/rails/rails/issues/49331\">#49331</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/49337",
-            "title": "Include connection specification name into `ActiveRecord::StatementInvalid` errors",
-            "date_modified": "2023-09-25T16:32:34.000Z",
-            "date_published": "2023-09-20T20:12:27.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
