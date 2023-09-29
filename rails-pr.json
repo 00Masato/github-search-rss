@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?u=bb262553df264faad2f515f6ea75067266e0d129&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Dropping SQLite databases now removes the -shm and -wal files as well, if present.</p>\n<p dir=\"auto\"><span class=\"issue-keyword\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1919747491\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49435\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49435/hovercard\" href=\"https://github.com/rails/rails/issues/49435\">#49435</a></p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/fractaledmind/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/fractaledmind\">@fractaledmind</a>, I did not see you wanted to work on this 🙈 Thank you for your recent SQLite contributions ✌️</p>",
             "url": "https://github.com/rails/rails/pull/49436",
             "title": "rails db:drop now removes -shm and -wal sqlite files",
-            "date_modified": "2023-09-29T21:42:49.000Z",
+            "date_modified": "2023-09-29T22:19:11.000Z",
             "date_published": "2023-09-29T21:42:45.000Z",
             "author": {
                 "name": "codergeek121",
