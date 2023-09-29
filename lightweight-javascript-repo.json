@@ -6,6 +6,72 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99768546?u=8c25a6dc47251fcc8b65279247b395c8d61f55f6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Spotify API wrapper, offering easy-to-use methods for common Spotify API functionalities.</div>",
+            "url": "https://github.com/destu3/spotify-api-wrapper",
+            "title": "destu3/spotify-api-wrapper: A lightweight Spotify API wrapper, offering easy-to-use methods for common Spotify API functionalities.",
+            "date_modified": "2023-09-24T16:48:46.000Z",
+            "date_published": "2023-09-21T11:30:59.000Z",
+            "author": {
+                "name": "destu3",
+                "url": "https://github.com/destu3"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18208729?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A collection of lightweight, single-purpose React hooks designed to supercharge your components</div>",
+            "url": "https://github.com/Keized/react-hooks-hub",
+            "title": "Keized/react-hooks-hub: A collection of lightweight, single-purpose React hooks designed to supercharge your components",
+            "date_modified": "2023-08-21T07:34:02.000Z",
+            "date_published": "2023-08-19T21:24:57.000Z",
+            "author": {
+                "name": "Keized",
+                "url": "https://github.com/Keized"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120647852?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight and secure database schema migration tool 🎯</div>",
+            "url": "https://github.com/podiljs/podil",
+            "title": "podiljs/podil: Lightweight and secure database schema migration tool 🎯",
+            "date_modified": "2023-08-03T15:21:04.000Z",
+            "date_published": "2022-12-15T11:52:38.000Z",
+            "author": {
+                "name": "podiljs",
+                "url": "https://github.com/podiljs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114530840?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)</div>",
+            "url": "https://github.com/usebruno/bruno",
+            "title": "usebruno/bruno: Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)",
+            "date_modified": "2023-09-29T14:00:11.000Z",
+            "date_published": "2022-09-27T20:51:45.000Z",
+            "author": {
+                "name": "usebruno",
+                "url": "https://github.com/usebruno"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11404085?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, customizable Vue UI library for mobile web apps.</div>",
+            "url": "https://github.com/youzan/vant",
+            "title": "youzan/vant: A lightweight, customizable Vue UI library for mobile web apps.",
+            "date_modified": "2023-09-29T03:23:08.000Z",
+            "date_published": "2017-04-19T07:55:31.000Z",
+            "author": {
+                "name": "youzan",
+                "url": "https://github.com/youzan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2776142?u=c21b687ecf6d209f4df5b50c2987a729038ac524&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A pipe-like function to verticalize your JavaScript code</div>",
+            "url": "https://github.com/laurentpayot/verticalize",
+            "title": "laurentpayot/verticalize: A pipe-like function to verticalize your JavaScript code",
+            "date_modified": "2023-09-29T14:01:39.000Z",
+            "date_published": "2023-09-20T10:05:47.000Z",
+            "author": {
+                "name": "laurentpayot",
+                "url": "https://github.com/laurentpayot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34249391?u=fcf2863945851b41bdb24cd54e1925091b4519a8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Typedown is a lightweight, user-friendly JavaScript library designed to enhance text inputs and textareas with powerful markdown shortcuts. This package provides an intuitive way to format text using keyboard shortcuts, making it easier and faster for users to apply markdown formatting as they type.</div>",
             "url": "https://github.com/dedeard/typedown",
             "title": "dedeard/typedown: Typedown is a lightweight, user-friendly JavaScript library designed to enhance text inputs and textareas with powerful markdown shortcuts. This package provides an intuitive way to format text using keyboard shortcuts, making it easier and faster for users to apply markdown formatting as they type.",
@@ -39,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11404085?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, customizable Vue UI library for mobile web apps.</div>",
-            "url": "https://github.com/youzan/vant",
-            "title": "youzan/vant: A lightweight, customizable Vue UI library for mobile web apps.",
-            "date_modified": "2023-09-29T03:23:08.000Z",
-            "date_published": "2017-04-19T07:55:31.000Z",
-            "author": {
-                "name": "youzan",
-                "url": "https://github.com/youzan"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/336509?u=bae96eaeac1167beb692f2ca76b3a479800cf99f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight inversion of control framework for JavaScript and TypeScript</div>",
             "url": "https://github.com/mscharley/ioc-deco",
             "title": "mscharley/ioc-deco: A lightweight inversion of control framework for JavaScript and TypeScript",
@@ -58,17 +113,6 @@
             "author": {
                 "name": "mscharley",
                 "url": "https://github.com/mscharley"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114530840?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)</div>",
-            "url": "https://github.com/usebruno/bruno",
-            "title": "usebruno/bruno: Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)",
-            "date_modified": "2023-09-29T12:40:19.000Z",
-            "date_published": "2022-09-27T20:51:45.000Z",
-            "author": {
-                "name": "usebruno",
-                "url": "https://github.com/usebruno"
             }
         },
         {
@@ -97,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73512480?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bullheaded and lightweight UnoCSS ui library.</div>",
             "url": "https://github.com/onu-ui/onu-ui",
             "title": "onu-ui/onu-ui: Bullheaded and lightweight UnoCSS ui library.",
-            "date_modified": "2023-09-29T05:11:56.000Z",
+            "date_modified": "2023-09-29T13:13:46.000Z",
             "date_published": "2022-07-21T14:43:39.000Z",
             "author": {
                 "name": "onu-ui",
@@ -179,50 +223,6 @@
             "author": {
                 "name": "mkosir",
                 "url": "https://github.com/mkosir"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25509135?u=e6396a2b6143fb94ba1bfcb9e9c872295f30d1fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Javascript Virtual Keyboard - Customizable, responsive and lightweight</div>",
-            "url": "https://github.com/hodgef/simple-keyboard",
-            "title": "hodgef/simple-keyboard: Javascript Virtual Keyboard - Customizable, responsive and lightweight",
-            "date_modified": "2023-09-29T06:29:06.000Z",
-            "date_published": "2018-03-02T16:25:36.000Z",
-            "author": {
-                "name": "hodgef",
-                "url": "https://github.com/hodgef"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4365095?u=aa36a7d192bd910b90011a4c8fa3b18fbe5a36bf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight simple translation platform to manage your localizations</div>",
-            "url": "https://github.com/timokoenig/translate",
-            "title": "timokoenig/translate: Lightweight simple translation platform to manage your localizations",
-            "date_modified": "2023-07-21T11:15:06.000Z",
-            "date_published": "2023-04-30T23:51:35.000Z",
-            "author": {
-                "name": "timokoenig",
-                "url": "https://github.com/timokoenig"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36467630?u=496b4b0dc918cf27e36bed85f735867d4279097e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>chart-ease is a lightweight and highly customizable web component designed for creating small and precise charts. </div>",
-            "url": "https://github.com/n-yousefi/chart-ease",
-            "title": "n-yousefi/chart-ease: chart-ease is a lightweight and highly customizable web component designed for creating small and precise charts. ",
-            "date_modified": "2023-08-11T18:20:32.000Z",
-            "date_published": "2023-02-04T10:10:59.000Z",
-            "author": {
-                "name": "n-yousefi",
-                "url": "https://github.com/n-yousefi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1413883?u=26d868782657acb79bcf9292751cfd4124056468&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Schemy is an extremely simple, lightweight schema validation library.</div>",
-            "url": "https://github.com/aeberdinelli/schemy",
-            "title": "aeberdinelli/schemy: Schemy is an extremely simple, lightweight schema validation library.",
-            "date_modified": "2022-12-14T23:19:58.000Z",
-            "date_published": "2020-06-29T01:03:30.000Z",
-            "author": {
-                "name": "aeberdinelli",
-                "url": "https://github.com/aeberdinelli"
             }
         }
     ]
