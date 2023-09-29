@@ -6,22 +6,22 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">assert_error_reported</code> and <code class=\"notranslate\">assert_no_error_reported</code> have been merged in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1372728221\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46029\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46029/hovercard\" href=\"https://github.com/rails/rails/pull/46029\">#46029</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49431",
+            "title": "[ci-skip][Docs]Add assert_error_reported and assert_no_error_reported to testing.md",
+            "date_modified": "2023-09-29T10:42:17.000Z",
+            "date_published": "2023-09-29T10:42:13.000Z",
+            "author": {
+                "name": "hachi8833",
+                "url": "https://github.com/hachi8833"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Backport of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1918932995\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49429\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49429/hovercard\" href=\"https://github.com/rails/rails/pull/49429\">#49429</a> to 7.1 stable</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49430",
             "title": "Backport #49429",
             "date_modified": "2023-09-29T09:56:14.000Z",
             "date_published": "2023-09-29T09:45:14.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Before:<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/14981592/271531166-922b62da-5dc0-41c2-98f4-a7ba207b49e0.png\"><img src=\"https://user-images.githubusercontent.com/14981592/271531166-922b62da-5dc0-41c2-98f4-a7ba207b49e0.png\" alt=\"grafik\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">After:<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/14981592/271531234-312a0a75-6afb-4c25-ac9e-cd042d954e9f.png\"><img src=\"https://user-images.githubusercontent.com/14981592/271531234-312a0a75-6afb-4c25-ac9e-cd042d954e9f.png\" alt=\"grafik\" style=\"max-width: 100%;\"></a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49429",
-            "title": "Fix formatting of two configs in configuration guide",
-            "date_modified": "2023-09-29T09:35:59.000Z",
-            "date_published": "2023-09-29T09:35:55.000Z",
             "author": {
                 "name": "Earlopain",
                 "url": "https://github.com/Earlopain"
