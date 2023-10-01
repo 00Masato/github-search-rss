@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">encryption.add_to_filter_paramters</code> has been merged by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1441155267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46453\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46453/hovercard\" href=\"https://github.com/rails/rails/pull/46453\">#46453</a>.</p>\n<p dir=\"auto\">(This PR is a second try of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1910052308\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49364\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49364/hovercard\" href=\"https://github.com/rails/rails/pull/49364\">#49364</a> )</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49443",
+            "title": "[ci-skip][Docs]Add encryption.add_to_filter_parameters to configuring.md",
+            "date_modified": "2023-10-01T05:27:40.000Z",
+            "date_published": "2023-10-01T05:27:37.000Z",
+            "author": {
+                "name": "hachi8833",
+                "url": "https://github.com/hachi8833"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It seems these weren't tested before.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49442",
             "title": "Add tests for send_file and redirect_to instrumentation",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49331.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1905093936\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49331\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49331/hovercard\" href=\"https://github.com/rails/rails/issues/49331\">#49331</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/49337",
-            "title": "Include connection specification name into `ActiveRecord::StatementInvalid` errors",
-            "date_modified": "2023-09-25T16:32:34.000Z",
-            "date_published": "2023-09-20T20:12:27.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
