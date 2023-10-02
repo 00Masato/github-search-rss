@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432189?u=506d1970ba73221b27c114e09ac18fc34a1dccc0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1917633125\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49417\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49417/hovercard\" href=\"https://github.com/rails/rails/pull/49417\">#49417</a>.</p>\n<p dir=\"auto\">When a method called on a broadcast logger is passed a block, it should be forwarded to all subscribed loggers. For example, calling <code class=\"notranslate\">Rails.logger.tagged { }</code> currently returns a new tagged logger instead of running the given block.</p>",
             "url": "https://github.com/rails/rails/pull/49458",
             "title": "Delegate block in broadcast logger method_missing",
-            "date_modified": "2023-10-02T15:43:15.000Z",
+            "date_modified": "2023-10-02T21:12:55.000Z",
             "date_published": "2023-10-02T15:43:11.000Z",
             "author": {
                 "name": "eugeneius",
