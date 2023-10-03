@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28781354?u=2a9bab4b2219431526d70e5ed6444e72512206cd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aDotInTheVoid/rfcs/blob/rustdoc-types-maintainers/text/0000-rustdoc-types-maintainers.md\">rendered</a></p>\n<p dir=\"auto\">CC @rust-lang/rustdoc @rust-lang/infra</p>\n<p dir=\"auto\"><a href=\"https://github.com/aDotInTheVoid/rfcs/blob/rustdoc-types-maintainers/text/0000-rustdoc-types-maintainers.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3505",
+            "title": "Move `rustdoc-types` to T-Rustdoc ownership.",
+            "date_modified": "2023-10-03T10:27:43.000Z",
+            "date_published": "2023-10-03T10:27:17.000Z",
+            "author": {
+                "name": "aDotInTheVoid",
+                "url": "https://github.com/aDotInTheVoid"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/frontmatter/text/3503-frontmatter.md\">Rendered</a></p>\n<p dir=\"auto\">This is for the T-lang side of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1914174424\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3502\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3502/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3502\">#3502</a></p>\n<p dir=\"auto\">Example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#!/usr/bin/env cargo\n```cargo\n[dependencies]\nclap = { version = &quot;4.2&quot;, features = [&quot;derive&quot;] }\n```\n\nuse clap::Parser;\n\n#[derive(Parser, Debug)]\n#[clap(version)]\nstruct Args {\n    #[clap(short, long, help = &quot;Path to config&quot;)]\n    config: Option&lt;std::path::PathBuf&gt;,\n}\n\nfn main() {\n    let args = Args::parse();\n    println!(&quot;{:?}&quot;, args);\n}\"><pre class=\"notranslate\">#!/usr/bin/env cargo\n```cargo\n<span class=\"pl-kos\">[</span>dependencies<span class=\"pl-kos\">]</span>\nclap = <span class=\"pl-kos\">{</span> version = <span class=\"pl-s\">\"4.2\"</span><span class=\"pl-kos\">,</span> features = <span class=\"pl-kos\">[</span><span class=\"pl-s\">\"derive\"</span><span class=\"pl-kos\">]</span> <span class=\"pl-kos\">}</span>\n```\n\n<span class=\"pl-k\">use</span> clap<span class=\"pl-kos\">::</span><span class=\"pl-v\">Parser</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>derive<span class=\"pl-kos\">(</span><span class=\"pl-v\">Parser</span><span class=\"pl-kos\">,</span> <span class=\"pl-v\">Debug</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>clap<span class=\"pl-kos\">(</span>version<span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">Args</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>clap<span class=\"pl-kos\">(</span>short, long, help = <span class=\"pl-s\">\"Path to config\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n    <span class=\"pl-c1\">config</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span>std<span class=\"pl-kos\">::</span>path<span class=\"pl-kos\">::</span><span class=\"pl-smi\">PathBuf</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">main</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">let</span> args = <span class=\"pl-smi\">Args</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">parse</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n    <span class=\"pl-en\">println</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{:?}\"</span>, args<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>",
             "url": "https://github.com/rust-lang/rfcs/pull/3503",
             "title": "RFC: Syntax for embedding cargo-script manifests",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "HTGAzureX1212",
                 "url": "https://github.com/HTGAzureX1212"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3470",
-            "title": "crABI v1",
-            "date_modified": "2023-08-24T16:26:14.000Z",
-            "date_published": "2023-08-11T05:05:41.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
             }
         }
     ]
