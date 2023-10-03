@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In Rust 2024 and later editions, return position <code class=\"notranslate\">impl Trait</code> (RPIT) opaque types will automatically capture all in-scope type <em>and</em> lifetime parameters.  In preparation for this, new RPIT-like <code class=\"notranslate\">impl Trait</code> features introduced into the Rust 2021 edition will also automatically capture all in-scope type and lifetime parameters.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/lifetime-capture-rules-2024/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3498",
             "title": "Lifetime Capture Rules 2024",
-            "date_modified": "2023-09-30T17:12:59.000Z",
+            "date_modified": "2023-10-03T18:08:09.000Z",
             "date_published": "2023-09-25T07:06:08.000Z",
             "author": {
                 "name": "traviscross",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/implicit/text/3491-remove-implicit-features.md\">Rendered</a></p>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #12173.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1723060490\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/12173/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/12173\">rust-lang/cargo#12173</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3491",
             "title": "RFC: Remove implicit features in a new edition",
-            "date_modified": "2023-09-29T18:44:51.000Z",
+            "date_modified": "2023-10-03T18:53:32.000Z",
             "date_published": "2023-09-19T02:04:11.000Z",
             "author": {
                 "name": "epage",
@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Categories for crates are now deprecated and implicitly added as keywords instead. A new set of policies is added to allow the crates.io team to curate the way keywords are presented, replacing features such as the \"Popular Categories\" list on crates.io with a \"Popular Keywords\" instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/cargo-tags/text/0000-deprecate-cargo-categories.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3488",
             "title": "Deprecate crate categories and allow metadata on keywords",
-            "date_modified": "2023-09-30T18:03:59.000Z",
+            "date_modified": "2023-10-03T18:19:54.000Z",
             "date_published": "2023-09-10T03:37:24.000Z",
             "author": {
                 "name": "clarfonthey",
@@ -130,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/feature-visibility/text/3487-feature-visibility.md\">Rendered</a></p>\n<p dir=\"auto\">RFC for <code class=\"notranslate\">feature-visibility</code><br>\nRFC goals: add a way to make Cargo features private</p>\n<p dir=\"auto\">This was split from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1669093537\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3416\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3416/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3416\">#3416</a></p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[features]\nfoo = { enables = [], public = false}\"><pre class=\"notranslate\">[<span class=\"pl-en\">features</span>]\n<span class=\"pl-smi\">foo</span> = { <span class=\"pl-smi\">enables</span> = [], <span class=\"pl-smi\">public</span> = <span class=\"pl-c1\">false</span>}</pre></div>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #10882.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1310055999\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/10882\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/10882/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/10882\">rust-lang/cargo#10882</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3487",
             "title": "RFC: Cargo feature visibility (private/public)",
-            "date_modified": "2023-10-03T17:16:49.000Z",
+            "date_modified": "2023-10-03T18:33:57.000Z",
             "date_published": "2023-09-09T23:11:39.000Z",
             "author": {
                 "name": "tgross35",
