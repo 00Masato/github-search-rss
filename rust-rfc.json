@@ -53,22 +53,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In Rust 2024 and later editions, return position <code class=\"notranslate\">impl Trait</code> (RPIT) opaque types will automatically capture all in-scope type <em>and</em> lifetime parameters.  In preparation for this, new RPIT-like <code class=\"notranslate\">impl Trait</code> features introduced into the Rust 2021 edition will also automatically capture all in-scope type and lifetime parameters.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/lifetime-capture-rules-2024/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3498",
             "title": "Lifetime Capture Rules 2024",
-            "date_modified": "2023-10-04T17:20:27.000Z",
+            "date_modified": "2023-10-04T23:00:23.000Z",
             "date_published": "2023-09-25T07:06:08.000Z",
             "author": {
                 "name": "traviscross",
                 "url": "https://github.com/traviscross"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10578060?u=3dcc4eb09694defa49036f93cf4d1f04120a6cbb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Radbuglet/rfcs-typed_context_injection/blob/master/text/0000-typed-context-injection.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the introduction of the <code class=\"notranslate\">Cx</code> structure to the <code class=\"notranslate\">core</code> standard library alongside corresponding compiler support to allow Rust users to conveniently pass \"bundles of context\" around their applications. <code class=\"notranslate\">Cx</code> is a thin wrapper around tuples of references which adorn the wrapped tuples with the ability to coerce into other <code class=\"notranslate\">Cx</code> objects containing a subset of their references.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3496",
-            "title": "RFC: `typed-context-injection`",
-            "date_modified": "2023-09-29T02:00:02.000Z",
-            "date_published": "2023-09-22T01:37:03.000Z",
-            "author": {
-                "name": "Radbuglet",
-                "url": "https://github.com/Radbuglet"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "HTGAzureX1212",
                 "url": "https://github.com/HTGAzureX1212"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3470",
+            "title": "crABI v1",
+            "date_modified": "2023-08-24T16:26:14.000Z",
+            "date_published": "2023-08-11T05:05:41.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
             }
         }
     ]
