@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In Rust 2024 and later editions, return position <code class=\"notranslate\">impl Trait</code> (RPIT) opaque types will automatically capture all in-scope type <em>and</em> lifetime parameters.  In preparation for this, new RPIT-like <code class=\"notranslate\">impl Trait</code> features introduced into the Rust 2021 edition will also automatically capture all in-scope type and lifetime parameters.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/lifetime-capture-rules-2024/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3498",
             "title": "Lifetime Capture Rules 2024",
-            "date_modified": "2023-10-04T16:25:25.000Z",
+            "date_modified": "2023-10-04T17:20:27.000Z",
             "date_published": "2023-09-25T07:06:08.000Z",
             "author": {
                 "name": "traviscross",
@@ -163,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5456384?u=19311cf017def31e83f6c871095f201625f4fb7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Lokathor/rfcs/blob/unsafe-extern-blocks/text/0000-unsafe-extern-blocks.md\">Rendered</a></p>\n<hr>\n<p dir=\"auto\">Continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730097805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3439\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3439/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3439\">#3439</a>, very sorry for the mix up, but when I went to make <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1862201012\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3477\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3477/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3477\">#3477</a> I deleted my <code class=\"notranslate\">rfcs</code> repo fork and re-forked. I had forgotten that there was an open PR at the time.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3484",
             "title": "Unsafe Extern Blocks",
-            "date_modified": "2023-09-15T17:17:18.000Z",
+            "date_modified": "2023-10-04T17:34:08.000Z",
             "date_published": "2023-09-07T01:15:50.000Z",
             "author": {
                 "name": "Lokathor",
@@ -207,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/master/text/3475-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
-            "date_modified": "2023-09-03T05:38:23.000Z",
+            "date_modified": "2023-10-04T17:55:19.000Z",
             "date_published": "2023-08-15T03:45:27.000Z",
             "author": {
                 "name": "pitaj",
