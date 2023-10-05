@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49502.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1928943686\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49502\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49502/hovercard\" href=\"https://github.com/rails/rails/issues/49502\">#49502</a>.</p>\n<p dir=\"auto\">This bug was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1712735611\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48241\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48241/hovercard\" href=\"https://github.com/rails/rails/pull/48241\">#48241</a>. Since <code class=\"notranslate\">IDENTITY</code> columns in PostgreSQL do not have defaults, they are not auto populated via the changes made in that PR. Thus we need to consider them separately.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a></p>",
+            "url": "https://github.com/rails/rails/pull/49504",
+            "title": "Fix auto populating `IDENTITY` columns for PostgreSQL",
+            "date_modified": "2023-10-05T20:43:31.000Z",
+            "date_published": "2023-10-05T20:43:28.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/717637?u=685121f22ceb01c9e4650173c8eedae4cd070aa9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Backports the fix from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1419232597\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46305\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46305/hovercard\" href=\"https://github.com/rails/rails/pull/46305\">#46305</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Calling <code class=\"notranslate\">Rails.cache.increment</code> drops the existing TTL, which is an issue on the current release of Rails, 7.0.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Some of the changes introduced in <a href=\"https://github.com/rails/rails/pull/46305\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46305/hovercard\">the original<br>\nPR</a> were discarded, such as the <code class=\"notranslate\">normalize_</code> methods, as well as the change that originated in <a href=\"https://github.com/rails/rails/pull/45068\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45068/hovercard\">that PR</a> that sets a value if none exists.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49503",
-            "title": "MemoryStore: preserve entry ttl when incrementing",
-            "date_modified": "2023-10-05T19:56:29.000Z",
+            "title": "Backport to 7-0-stable: MemoryStore: preserve entry ttl when incrementing",
+            "date_modified": "2023-10-05T20:12:12.000Z",
             "date_published": "2023-10-05T19:56:25.000Z",
             "author": {
                 "name": "pjambet",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1558372?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I'd like to get the label of the fixture that created a record.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">When working with fixtures, it inserts records in the database at the beginning of the test suite. I like to validate those fixtures to avoid inserting invalid data for testing. In case of validation error, I need to find out which fixture created the failing record. For some models it's easy to go from one record  to the fixture that created it, for other models it can be more complicated, for example a join model with an id and foreign_keys.</p>\n<p dir=\"auto\">This PR introduces <code class=\"notranslate\">ActiveRecord::FixtureSet.label_of(record)</code> which will return the fixture label of the record if it was created by a fixture.</p>\n<p dir=\"auto\">I'd like to get feedback regarding this PR and could it be useful in the project ?<br>\nThis is working for records with primary_key.<br>\nComposite primary keys are not supported, should it be supported in this PR ?</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49348",
-            "title": "Get fixture label from a record",
-            "date_modified": "2023-09-21T23:43:41.000Z",
-            "date_published": "2023-09-21T21:27:36.000Z",
-            "author": {
-                "name": "jean-francois-labbe",
-                "url": "https://github.com/jean-francois-labbe"
             }
         }
     ]
