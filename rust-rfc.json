@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28781354?u=2a9bab4b2219431526d70e5ed6444e72512206cd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aDotInTheVoid/rfcs/blob/rustdoc-types-maintainers/text/0000-rustdoc-types-maintainers.md\">Rendered</a></p>\n<p dir=\"auto\">CC @rust-lang/rustdoc @rust-lang/infra</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3505",
             "title": "Move `rustdoc-types` to T-Rustdoc ownership.",
-            "date_modified": "2023-10-03T16:06:46.000Z",
+            "date_modified": "2023-10-05T17:58:12.000Z",
             "date_published": "2023-10-03T10:27:17.000Z",
             "author": {
                 "name": "aDotInTheVoid",
@@ -196,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/master/text/3475-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
-            "date_modified": "2023-10-05T16:33:23.000Z",
+            "date_modified": "2023-10-05T17:32:04.000Z",
             "date_published": "2023-08-15T03:45:27.000Z",
             "author": {
                 "name": "pitaj",
