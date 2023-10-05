@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/315873?u=52b76f091e0935033c5fbe055005c63d5a6466ca&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49505.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1929048677\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49505\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49505/hovercard\" href=\"https://github.com/rails/rails/issues/49505\">#49505</a></p>\n<p dir=\"auto\">When <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a> introduced <a href=\"https://github.com/rails/rails/pull/39313\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/39313/hovercard\">signed_ids </a> he likely always intended them to be url safe.</p>\n<p dir=\"auto\">Since the intent of signed_ids is to be included in things like URL params, we should be passing <code class=\"notranslate\">url_safe: true</code> option to <code class=\"notranslate\">MessageVerifier</code>.</p>\n<p dir=\"auto\">This PR does exactly that.</p>",
+            "url": "https://github.com/rails/rails/pull/49507",
+            "title": "Ensure `#signed_id` outputs `url_safe` strings",
+            "date_modified": "2023-10-05T21:21:51.000Z",
+            "date_published": "2023-10-05T21:21:06.000Z",
+            "author": {
+                "name": "terracatta",
+                "url": "https://github.com/terracatta"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49502.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1928943686\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49502\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49502/hovercard\" href=\"https://github.com/rails/rails/issues/49502\">#49502</a>.</p>\n<p dir=\"auto\">This bug was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1712735611\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48241\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48241/hovercard\" href=\"https://github.com/rails/rails/pull/48241\">#48241</a>. Since <code class=\"notranslate\">IDENTITY</code> columns in PostgreSQL do not have defaults, they are not auto populated via the changes made in that PR. Thus we need to consider them separately.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a></p>",
             "url": "https://github.com/rails/rails/pull/49504",
             "title": "Fix auto populating `IDENTITY` columns for PostgreSQL",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "julianfssen",
                 "url": "https://github.com/julianfssen"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Previously, new apps would have a Ruby version set in both the Gemfile and the .ruby-version file. This duplication makes it more difficult to quickly change an application's ruby version as users must remember to update multiple files.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit updates the app generator's Gemfile to read the Ruby version from the .ruby-version file. Since this feature was introduced in the latest version of Bundler, it will only be enabled if a supported version of Bundler is used.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Alternatively, another solution mentioned on the original PR adding .ruby-version was that the .ruby-version file could be removed once rvm/rbenv support reading the Ruby version from the Gemfile. This has a downside that many other tools like chruby do not have plans to support reading a Ruby version from the Gemfile, and so users of those tools would have a worse experience if the .ruby-version file is removed.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49360",
-            "title": "Use `ruby file: \".ruby-version\"` for new apps",
-            "date_modified": "2023-09-24T07:34:16.000Z",
-            "date_published": "2023-09-23T20:06:37.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
             }
         }
     ]
