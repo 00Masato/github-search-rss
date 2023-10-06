@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the links to the changelogs in 7_1_release_notes.md have not been updated.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The PR updates the links to changelogs to be consistent with the <a href=\"https://github.com/rails/rails/blob/main/guides/source/7_0_release_notes.md?plain=1#L354-L366\">previous 7.0 release notes</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49511",
             "title": "[ci-skip][Docs]Update changelog links to 7-1-stable",
-            "date_modified": "2023-10-06T10:15:31.000Z",
+            "date_modified": "2023-10-06T11:26:05.000Z",
             "date_published": "2023-10-06T10:08:02.000Z",
             "author": {
                 "name": "hachi8833",
