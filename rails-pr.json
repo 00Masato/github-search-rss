@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add doc to explain how to migrate to the new BroadcastLogger:</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">This should make it easier for apps or libraries that were previously relying on the private API. Also took the opportunity to tweak the doc of the BroadcastLogger to mention what happens when calling a non-standard method.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49494.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1927900439\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49494\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49494/hovercard\" href=\"https://github.com/rails/rails/issues/49494\">#49494</a></p>\n</li>\n</ul>\n<p dir=\"auto\">cc/ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mensfeld/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mensfeld\">@mensfeld</a> Hopefully this should make it clearer!</p>",
+            "url": "https://github.com/rails/rails/pull/49518",
+            "title": "Add doc to explain how to migrate to the new BroadcastLogger:",
+            "date_modified": "2023-10-06T17:11:02.000Z",
+            "date_published": "2023-10-06T17:10:58.000Z",
+            "author": {
+                "name": "Edouard-chin",
+                "url": "https://github.com/Edouard-chin"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14923?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49516.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1930611803\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49516\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49516/hovercard\" href=\"https://github.com/rails/rails/issues/49516\">#49516</a></p>\n<p dir=\"auto\">This Pull Request has been created because it clarifies instructions</p>",
             "url": "https://github.com/rails/rails/pull/49517",
             "title": "Fix typo in exception message re: raise_on_missing_callback_actions",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fractaledmind",
                 "url": "https://github.com/fractaledmind"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">The bulk of this diff is related to indentation changes, so it's best reviewed <a href=\"https://github.com/rails/rails/pull/49371/files?w=1\">ignoring spacing changes</a></h2>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Modern evolutions of the <code class=\"notranslate\">ActionView::Helpers::TagHelper#tag</code> method are intended to be called <em>on</em> the <code class=\"notranslate\">TagBuilder</code> instance itself instead of with positional arguments.</p>\n<p dir=\"auto\">For example, <code class=\"notranslate\">tag(\"div\")</code> would be called with <code class=\"notranslate\">tag.div</code>.</p>\n<p dir=\"auto\">According to the <a href=\"https://api.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-tag-label-Legacy+syntax\" rel=\"nofollow\">Legacy Syntax</a> heading of the <a href=\"https://api.rubyonrails.org/classes/ActionView/Helpers/TagHelper.html#method-i-tag\" rel=\"nofollow\">ActionView::Helpers::TagHelper#tag</a> guides:</p>\n<blockquote>\n<p dir=\"auto\">The following format is for legacy syntax support. It will be deprecated in future versions of Rails.</p>\n</blockquote>\n<p dir=\"auto\">Since deprecations must occur during releases, this commit proposes that 7.2 be the release to start the deprecation process so that a subsequent release can remove \"Legacy syntax\" support entirely.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit adds a deprecation warning to encourage callers to invoke the helper in the more modern style.</p>\n<p dir=\"auto\">Internally, Rails utilizes the positional argument syntax in several places. Since deprecations must be part of minor version releases, this commit wraps the internal invocations in <code class=\"notranslate\">ActionView.deprecator.silence</code> blocks so that they can remain while the deprecation is made public. This compromise buys the framework time to re-structure those invocations to be compatible with the more modern syntax before the next major release.</p>\n<p dir=\"auto\">There are several calls to <code class=\"notranslate\">tag</code> with positional arguments in the test suite. This commit wraps those as well. In the future, some of those tests will be able to remove those blocks, while other tests will be able to be removed entirely once that style of invocation is no longer supported.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49371",
-            "title": "Deprecate `tag` with positional arguments",
-            "date_modified": "2023-10-05T23:46:14.000Z",
-            "date_published": "2023-09-25T00:50:17.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
