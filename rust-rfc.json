@@ -9,22 +9,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2467194?u=300b3913e0e77f925f7116f4830098725a03629f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">This RFC describes the inclusion of the <code class=\"notranslate\">Future</code> and <code class=\"notranslate\">IntoFuture</code> traits in  the 2024 edition prelude.</p>\n<p dir=\"auto\"><a href=\"https://github.com/yoshuawuyts/rfcs/blob/prelude-2024-future/0000-prelude-2024-future.md\">Rendered</a></p>\n<hr>\n<p dir=\"auto\">This is a continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1638077837\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/wg-async/issues/310\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/wg-async/issues/310/hovercard\" href=\"https://github.com/rust-lang/wg-async/issues/310\">rust-lang/wg-async#310</a>. It depends on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1914123291\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3501\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3501/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3501\">#3501</a> being accepted first.</p>\n<p dir=\"auto\">cc/ @rust-lang/wg-async @rust-lang/libs-api</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3509",
             "title": "RFC: Include `Future` and `IntoFuture` in the 2024 prelude",
-            "date_modified": "2023-10-07T13:42:38.000Z",
+            "date_modified": "2023-10-07T14:17:21.000Z",
             "date_published": "2023-10-07T12:17:13.000Z",
             "author": {
                 "name": "yoshuawuyts",
                 "url": "https://github.com/yoshuawuyts"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1940490?u=42777c8876d7b6591798df666a82057394b8b0c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Found by searching every document for one of the following formats:</p>\n<div class=\"highlight highlight-text-md notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"RFC PR: [rust-lang/rfcs#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR: [#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR: [N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR: https://github.com/rust-lang/rfcs/pull/N\nRFC PR: (https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: [rust-lang/rfcs#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: [#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: [N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: https://github.com/rust-lang/rfcs/pull/N\nRFC PR #: (https://github.com/rust-lang/rfcs/pull/N)\"><pre class=\"notranslate\">RFC PR: <span class=\"pl-s\">[</span>rust-lang/rfcs#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR: <span class=\"pl-s\">[</span>#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR: <span class=\"pl-s\">[</span>N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR: <span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>\nRFC PR: (<span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>)\nRFC PR #: <span class=\"pl-s\">[</span>rust-lang/rfcs#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR #: <span class=\"pl-s\">[</span>#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR #: <span class=\"pl-s\">[</span>N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR #: <span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>\nRFC PR #: (<span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>)</pre></div>\n<p dir=\"auto\"><code class=\"notranslate\">for n in $(ls text/[0-9][0-9][0-9][0-9]-*.md | sed 's,text/\\(....\\).*,\\1,' | sort -u); do rg --files-without-match \"RFC PR( #)?: (\\[((rust-lang/rfcs)?#)?${n##+(0)}\\]\\(https://github\\.com/rust-lang/rfcs/pull/${n##+(0)}\\)|https://github\\.com/rust-lang/rfcs/pull/${n##+(0)}\\b|\\(https://github\\.com/rust-lang/rfcs/pull/${n##+(0)}\\))\" text/$n-*.md; done</code></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3507",
-            "title": "Fix RFC numbers and pull request links",
-            "date_modified": "2023-10-07T00:04:01.000Z",
-            "date_published": "2023-10-07T00:03:38.000Z",
-            "author": {
-                "name": "dtolnay",
-                "url": "https://github.com/dtolnay"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "pitaj",
                 "url": "https://github.com/pitaj"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39023054?u=ee39bf2d108882dbfecf15b3635ca3a383554a4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/HTGAzureX1212/rfcs/blob/rfc-20230813-deprecated-scheduled-removal/text/0000-deprecated-scheduled-removal.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes the addition of a <code class=\"notranslate\">scheduled_removal</code> parameter to the <code class=\"notranslate\">deprecated</code> attribute to optionally specify when the deprecated item will be removed from the public API, making it easier for users of libraries to prepare for migration beforehand.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-scheduled-removal-parameter-for-deprecated-attribute/19324\" rel=\"nofollow\">Prior Discussion on Rust Internals</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3471",
+            "title": "RFC: `scheduled_removal` Parameter for `deprecated` Attribute",
+            "date_modified": "2023-09-14T03:56:19.000Z",
+            "date_published": "2023-08-13T06:06:04.000Z",
+            "author": {
+                "name": "HTGAzureX1212",
+                "url": "https://github.com/HTGAzureX1212"
             }
         }
     ]
