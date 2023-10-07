@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1940490?u=42777c8876d7b6591798df666a82057394b8b0c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Found by searching every document for one of the following formats:</p>\n<div class=\"highlight highlight-text-md notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"RFC PR: [rust-lang/rfcs#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR: [#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR: [N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR: https://github.com/rust-lang/rfcs/pull/N\nRFC PR: (https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: [rust-lang/rfcs#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: [#N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: [N](https://github.com/rust-lang/rfcs/pull/N)\nRFC PR #: https://github.com/rust-lang/rfcs/pull/N\nRFC PR #: (https://github.com/rust-lang/rfcs/pull/N)\"><pre class=\"notranslate\">RFC PR: <span class=\"pl-s\">[</span>rust-lang/rfcs#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR: <span class=\"pl-s\">[</span>#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR: <span class=\"pl-s\">[</span>N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR: <span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>\nRFC PR: (<span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>)\nRFC PR #: <span class=\"pl-s\">[</span>rust-lang/rfcs#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR #: <span class=\"pl-s\">[</span>#N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR #: <span class=\"pl-s\">[</span>N<span class=\"pl-s\">]</span><span class=\"pl-s\">(</span><span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span><span class=\"pl-s\">)</span>\nRFC PR #: <span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>\nRFC PR #: (<span class=\"pl-corl\">https://github.com/rust-lang/rfcs/pull/N</span>)</pre></div>\n<p dir=\"auto\"><code class=\"notranslate\">for n in $(ls text/[0-9][0-9][0-9][0-9]-*.md | sed 's,text/\\(....\\).*,\\1,' | sort -u); do rg --files-without-match \"RFC PR( #)?: (\\[((rust-lang/rfcs)?#)?${n##+(0)}\\]\\(https://github\\.com/rust-lang/rfcs/pull/${n##+(0)}\\)|https://github\\.com/rust-lang/rfcs/pull/${n##+(0)}\\b|\\(https://github\\.com/rust-lang/rfcs/pull/${n##+(0)}\\))\" text/$n-*.md; done</code></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3507",
+            "title": "Fix RFC numbers and pull request links",
+            "date_modified": "2023-10-07T00:04:01.000Z",
+            "date_published": "2023-10-07T00:03:38.000Z",
+            "author": {
+                "name": "dtolnay",
+                "url": "https://github.com/dtolnay"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28781354?u=2a9bab4b2219431526d70e5ed6444e72512206cd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aDotInTheVoid/rfcs/blob/rustdoc-types-maintainers/text/0000-rustdoc-types-maintainers.md\">Rendered</a></p>\n<p dir=\"auto\">CC @rust-lang/rustdoc @rust-lang/infra</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3505",
             "title": "Move `rustdoc-types` to T-Rustdoc ownership.",
@@ -196,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/master/text/3475-unified-string-literals.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC proposes to unify the syntax of the existing <em>string literal</em> and <em>raw string literal</em> forms, supporting both the use of escape sequences and avoiding the need to escape backslashes and quotation marks. This proposal also uses the new syntax to improve format string ergonomics, reducing the need for double-brace escapes.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3475",
             "title": "Unified String Literals",
-            "date_modified": "2023-10-05T17:32:04.000Z",
+            "date_modified": "2023-10-06T23:36:39.000Z",
             "date_published": "2023-08-15T03:45:27.000Z",
             "author": {
                 "name": "pitaj",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "HTGAzureX1212",
                 "url": "https://github.com/HTGAzureX1212"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the most eminently bikesheddable portion of this proposal is the<br>\nhandling of niches, and the crABI <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> types built around<br>\nthat. There are multiple open questions specifically about that.</p>\n<p dir=\"auto\">I've also listed an open question about how to represent owned crABI<br>\npointers as Rust types: <code class=\"notranslate\">Box&lt;T&gt;</code> versus <code class=\"notranslate\">Box&lt;T, NoDeallocate&gt;</code> versus<br>\n<code class=\"notranslate\">Box&lt;T, FFIDeallocate&lt;obj_free&gt;&gt;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/crabi-v1/text/3470-crabi-v1.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3470",
-            "title": "crABI v1",
-            "date_modified": "2023-08-24T16:26:14.000Z",
-            "date_published": "2023-08-11T05:05:41.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
             }
         }
     ]
