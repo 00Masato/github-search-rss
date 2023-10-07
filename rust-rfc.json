@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2467194?u=300b3913e0e77f925f7116f4830098725a03629f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">This RFC describes the inclusion of the <code class=\"notranslate\">Future</code> and <code class=\"notranslate\">IntoFuture</code> traits in  the 2024 edition prelude.</p>\n<p dir=\"auto\"><a href=\"https://github.com/yoshuawuyts/rfcs/blob/prelude-2024-future/0000-prelude-2024-future.md\">Rendered</a></p>\n<hr>\n<p dir=\"auto\">This is a continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1638077837\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/wg-async/issues/310\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/wg-async/issues/310/hovercard\" href=\"https://github.com/rust-lang/wg-async/issues/310\">rust-lang/wg-async#310</a>. It depends on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1914123291\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3501\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3501/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3501\">#3501</a> being accepted first.</p>\n<p dir=\"auto\">cc/ @rust-lang/wg-async @rust-lang/libs-api</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3509",
             "title": "RFC: Include `Future` and `IntoFuture` in the 2024 prelude",
-            "date_modified": "2023-10-07T16:28:52.000Z",
+            "date_modified": "2023-10-07T19:40:18.000Z",
             "date_published": "2023-10-07T12:17:13.000Z",
             "author": {
                 "name": "yoshuawuyts",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is an amendment to <a href=\"https://rust-lang.github.io/rfcs/3085-edition-2021.html\" rel=\"nofollow\">RFC 3085</a> to declare that the Rust Project intends to produce a new edition in 2024, to set up a project group to deliver the edition, and to establish a tentative cadence for future editions.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/edition-2024/text/3501-edition-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3501",
             "title": "2024 Edition",
-            "date_modified": "2023-10-03T21:15:35.000Z",
+            "date_modified": "2023-10-07T19:10:47.000Z",
             "date_published": "2023-09-26T18:58:15.000Z",
             "author": {
                 "name": "ehuss",
