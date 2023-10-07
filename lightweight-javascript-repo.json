@@ -6,6 +6,39 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) 🎈</div>",
+            "url": "https://github.com/nestjs/cqrs",
+            "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
+            "date_modified": "2023-10-03T16:59:02.000Z",
+            "date_published": "2017-05-06T18:08:10.000Z",
+            "author": {
+                "name": "nestjs",
+                "url": "https://github.com/nestjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/594124?u=44f84123b64809d45ed543535950e7bd6d168837&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Jest runner creator</div>",
+            "url": "https://github.com/keplersj/create-lite-jest-runner",
+            "title": "keplersj/create-lite-jest-runner: A lightweight Jest runner creator",
+            "date_modified": "2022-03-10T21:05:05.000Z",
+            "date_published": "2022-03-10T18:36:08.000Z",
+            "author": {
+                "name": "keplersj",
+                "url": "https://github.com/keplersj"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120519153?u=66c6a589185a1f8aff8ba7cf2fb47e351cfbd14c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library for custom react hooks 🚀</div>",
+            "url": "https://github.com/franco4457/use-simple-ts",
+            "title": "franco4457/use-simple-ts: A lightweight library for custom react hooks 🚀",
+            "date_modified": "2023-09-12T00:39:42.000Z",
+            "date_published": "2023-06-24T19:29:37.000Z",
+            "author": {
+                "name": "franco4457",
+                "url": "https://github.com/franco4457"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/143744?u=1426cc72e6858364971e280555e7e1f9fd0ef323&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎮 A collection of lightweight, up-to-date, pre-generated, specification compliant, localized emoji JSON datasets, regex patterns, and more.</div>",
             "url": "https://github.com/milesj/emojibase",
             "title": "milesj/emojibase: 🎮 A collection of lightweight, up-to-date, pre-generated, specification compliant, localized emoji JSON datasets, regex patterns, and more.",
@@ -108,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114530840?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)</div>",
             "url": "https://github.com/usebruno/bruno",
             "title": "usebruno/bruno: Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)",
-            "date_modified": "2023-10-06T23:59:43.000Z",
+            "date_modified": "2023-10-07T01:19:21.000Z",
             "date_published": "2022-09-27T20:51:45.000Z",
             "author": {
                 "name": "usebruno",
@@ -119,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3194553?u=25bbad57af1b021ef4be6c863eebd75d6cde42f5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript library for measuring and comparing the dimensions and distances of DOM elements.</div>",
             "url": "https://github.com/niklasramo/mezr",
             "title": "niklasramo/mezr: A lightweight JavaScript library for measuring and comparing the dimensions and distances of DOM elements.",
-            "date_modified": "2023-10-06T21:47:24.000Z",
+            "date_modified": "2023-10-07T00:31:23.000Z",
             "date_published": "2014-12-19T05:42:06.000Z",
             "author": {
                 "name": "niklasramo",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "nuxy",
                 "url": "https://github.com/nuxy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
-            "url": "https://github.com/emberjs/data",
-            "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
-            "date_modified": "2023-10-05T05:59:43.000Z",
-            "date_published": "2011-12-20T01:50:40.000Z",
-            "author": {
-                "name": "emberjs",
-                "url": "https://github.com/emberjs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106929622?u=e58a07d4d3424678892318e9e47ba94601caaa04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and modular Tailwind CSS styled components, and vanilla JavaScript plugins for developing web interfaces faster.</div>",
-            "url": "https://github.com/variablesign/uikit",
-            "title": "variablesign/uikit: A lightweight and modular Tailwind CSS styled components, and vanilla JavaScript plugins for developing web interfaces faster.",
-            "date_modified": "2023-04-19T19:34:24.000Z",
-            "date_published": "2023-02-17T12:08:19.000Z",
-            "author": {
-                "name": "variablesign",
-                "url": "https://github.com/variablesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42701866?u=4f44a133e097796fd37d4abc6b1fea0f2a3410db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JSON-based database for data management with CRUD query APIs functionality.</div>",
-            "url": "https://github.com/abubalo/lux-db",
-            "title": "abubalo/lux-db: A lightweight JSON-based database for data management with CRUD query APIs functionality.",
-            "date_modified": "2023-09-28T23:08:33.000Z",
-            "date_published": "2023-03-14T10:10:22.000Z",
-            "author": {
-                "name": "abubalo",
-                "url": "https://github.com/abubalo"
             }
         }
     ]
