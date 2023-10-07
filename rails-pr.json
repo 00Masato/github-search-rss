@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49523.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931121895\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49523\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49523/hovercard\" href=\"https://github.com/rails/rails/issues/49523\">#49523</a>.</p>\n<p dir=\"auto\">Previously, when reversing arguments (<code class=\"notranslate\">args.reverse</code>) if we had options (for example, it is set via compatibility migration for 7.0), it will incorrectly become the first argument.</p>",
+            "url": "https://github.com/rails/rails/pull/49526",
+            "title": "Fix reverting `rename_table` for older migrations",
+            "date_modified": "2023-10-07T08:56:17.000Z",
+            "date_published": "2023-10-07T08:55:19.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7736232?u=0b01e8186f848b1a1c4e6291d57f1abd5c848701&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I was trying out the new Rails 7.1 version and found<br>\nthe docker build was failing due to a mismatch in the<br>\nruby version in the Gemfile and Dockerfile.</p>\n<h4 dir=\"auto\">Generated Dockerfile</h4>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"# syntax = docker/dockerfile:1\n\n# Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile\nARG RUBY_VERSION=3.0.4.208\nFROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base\"><pre class=\"notranslate\"><code class=\"notranslate\"># syntax = docker/dockerfile:1\n\n# Make sure RUBY_VERSION matches the Ruby version in .ruby-version and Gemfile\nARG RUBY_VERSION=3.0.4.208\nFROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base\n</code></pre></div>\n<h4 dir=\"auto\">Generated Gemfile</h4>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"source &quot;https://rubygems.org&quot;\n\nruby &quot;3.0.4&quot;\"><pre class=\"notranslate\"><code class=\"notranslate\">source \"https://rubygems.org\"\n\nruby \"3.0.4\"\n</code></pre></div>\n<h4 dir=\"auto\">Error Screenshot</h4>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/7736232/273365803-ef961e07-d64d-4547-91f2-a9110203bacc.png\"><img width=\"935\" alt=\"image\" src=\"https://user-images.githubusercontent.com/7736232/273365803-ef961e07-d64d-4547-91f2-a9110203bacc.png\" style=\"max-width: 100%;\"></a>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This Pull Request ensures the ruby version set<br>\nin the Gemfile and Dockerfile are the same.</p>",
             "url": "https://github.com/rails/rails/pull/49525",
             "title": "Ensures the Rails generated Dockerfile uses correct ruby version and matches Gemfile",
@@ -75,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49502.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1928943686\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49502\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49502/hovercard\" href=\"https://github.com/rails/rails/issues/49502\">#49502</a>.</p>\n<p dir=\"auto\">This bug was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1712735611\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48241\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48241/hovercard\" href=\"https://github.com/rails/rails/pull/48241\">#48241</a>. Since <code class=\"notranslate\">IDENTITY</code> columns in PostgreSQL do not have defaults, they are not auto populated via the changes made in that PR. Thus we need to consider them separately.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a></p>",
             "url": "https://github.com/rails/rails/pull/49504",
             "title": "Fix auto populating `IDENTITY` columns for PostgreSQL",
-            "date_modified": "2023-10-06T07:37:29.000Z",
+            "date_modified": "2023-10-07T08:57:04.000Z",
             "date_published": "2023-10-05T20:43:28.000Z",
             "author": {
                 "name": "fatkodima",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "rafaelfranca",
                 "url": "https://github.com/rafaelfranca"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Follow-up to <a href=\"https://github.com/rails/rails/pull/49371\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49371/hovercard\">#49371</a></p>\n<p dir=\"auto\">In the wake of the deprecation of <code class=\"notranslate\">tag(:div)</code> in favor of <code class=\"notranslate\">tag.div</code>, this commit replaces all calls made internally with the more modern syntax.</p>\n<p dir=\"auto\">This change is separate from the deprecation cycle, since there are <strong>slight</strong> behavioral changes, since the HTML output changes from self-closing elements like <code class=\"notranslate\">&lt;input /&gt;</code> to open void elements like <code class=\"notranslate\">&lt;input&gt;</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49377",
-            "title": "Action View: Remove internal calls to `tag` with positional arguments",
-            "date_modified": "2023-10-05T23:47:01.000Z",
-            "date_published": "2023-09-25T13:10:59.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
