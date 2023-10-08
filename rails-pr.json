@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/49536",
+            "title": "Update gem bug report templates to 7.1",
+            "date_modified": "2023-10-08T01:16:54.000Z",
+            "date_published": "2023-10-08T00:52:12.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/545604?u=f4a12e38b365d7686f15e93391b6ffa88c0545cd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the <code class=\"notranslate\">--database</code>, <code class=\"notranslate\">--asset-pipeline</code>, <code class=\"notranslate\">--css</code>, and <code class=\"notranslate\">--javascript</code> flags for <code class=\"notranslate\">rails new</code> can all take different options. However, only <code class=\"notranslate\">--database</code> has a check to make sure the correct option is given.</p>\n<p dir=\"auto\">If someone where to fat-finger a value, for example <code class=\"notranslate\">--javascript=esbuiild</code>, they most likely would be left with either importmaps used or some other undefined behavior.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes adds similar checks as the <code class=\"notranslate\">--database</code> flag for the other four options to make sure the user enters the correct value.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I'm open to suggestions regarding the naming and placement of the three new constants listing out the options.</p>\n<p dir=\"auto\">As it stands, this change loses the mentioning of which option is the default in the help text. That said, the database list doesn't list it as well. One option could be to have, by convention, the first element in the array be the default and output the help text accordingly.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49535",
             "title": "Disallow invalid values for rails new options",
-            "date_modified": "2023-10-07T23:38:26.000Z",
+            "date_modified": "2023-10-08T00:50:11.000Z",
             "date_published": "2023-10-07T21:22:36.000Z",
             "author": {
                 "name": "t27duck",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds the base template (Notable Changes, Removals and Deprecations) to the rails 7.2 release note.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49532",
             "title": "Added base template for rails 7.2 release note [skip ci]",
-            "date_modified": "2023-10-07T17:37:51.000Z",
+            "date_modified": "2023-10-08T00:24:09.000Z",
             "date_published": "2023-10-07T17:37:48.000Z",
             "author": {
                 "name": "akhilgkrishnan",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We use <code class=\"notranslate\">klass</code> because <code class=\"notranslate\">class</code> is a reserved word in Ruby.</p>\n<p dir=\"auto\">But, any word ending with the suffix <code class=\"notranslate\">_class</code> isn't reserved, so we don't need to use the suffix <code class=\"notranslate\">_klass</code> anywhere.</p>",
-            "url": "https://github.com/rails/rails/pull/49425",
-            "title": "No more _klass",
-            "date_modified": "2023-09-29T20:21:39.000Z",
-            "date_published": "2023-09-29T00:36:08.000Z",
-            "author": {
-                "name": "rafaelfranca",
-                "url": "https://github.com/rafaelfranca"
             }
         }
     ]
