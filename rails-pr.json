@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the rails version from 7.0 to 7.1.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49539",
+            "title": "Updated the rails version in 7.0 to 7.1 in guide [skip ci]",
+            "date_modified": "2023-10-08T05:41:00.000Z",
+            "date_published": "2023-10-08T05:40:56.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/ed08eea99f1f4d1bcf0cc46b41b724e9c2d44c36/hovercard\" href=\"https://github.com/rails/rails/commit/ed08eea99f1f4d1bcf0cc46b41b724e9c2d44c36\"><tt>ed08eea</tt></a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request capitalize the framework names.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49538",
+            "title": "Capitalize framework names [skip ci]",
+            "date_modified": "2023-10-08T05:53:14.000Z",
+            "date_published": "2023-10-08T05:21:48.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ForkTracker has beed autoloaded since <a href=\"https://github.com/rails/rails/commit/78b9580e5f3208c7048659de24f2220693afb23c\">before</a> the <a href=\"https://github.com/rails/rails/commit/eba1534939fe1cf005746f12446235bdd52014c1\">require</a> was added.</p>",
             "url": "https://github.com/rails/rails/pull/49537",
             "title": "Remove require of ActiveSupport::ForkTracker",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "yahonda",
                 "url": "https://github.com/yahonda"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14188887?u=3dde79468bf488ae7744ccb72af99477151f9c4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49327.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1904264534\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49327\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49327/hovercard\" href=\"https://github.com/rails/rails/issues/49327\">#49327</a></p>\n<p dir=\"auto\">This Pull Request simply changes the wording around the definition of what are resource routes and, specifically, what's a \"resourceful controller\", by calling it a \"resource controller\" instead.</p>\n<p dir=\"auto\">As discussed in the issue, although the previous term was fine given the context of the guide, it was probably an improper term, since the meaning seems to be \"the controller for a given resource\" rather than a special type of controller that is said to be resourceful. Furthermore, the term itself, as far as I know, I've only ever seen in the rails guides, whereas <code class=\"notranslate\">resource controller</code> seems to be of more common use.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">As stated above, I change here <code class=\"notranslate\">resourceful controller</code> to <code class=\"notranslate\">resource controller</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49472",
-            "title": "[ci skip] Change `resourceful` to `resource` for clarity",
-            "date_modified": "2023-10-04T10:46:14.000Z",
-            "date_published": "2023-10-03T13:50:48.000Z",
-            "author": {
-                "name": "mateusdeap",
-                "url": "https://github.com/mateusdeap"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We had a few cases of tests being skipped accidentally on CI hence not being ran for a long time (e.g. <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1916984752\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49414\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49414/hovercard\" href=\"https://github.com/rails/rails/pull/49414\">#49414</a>).</p>\n<p dir=\"auto\">Skipping make sense when running the test suite locally, e.g. you may not have Redis or some other dependency running.</p>\n<p dir=\"auto\">But on CI, a test not being ran should be considered an error.</p>",
-            "url": "https://github.com/rails/rails/pull/49455",
-            "title": "Turn skips into errors on Rails CI",
-            "date_modified": "2023-10-02T12:01:52.000Z",
-            "date_published": "2023-10-02T11:26:57.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         }
     ]
