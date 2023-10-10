@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19623715?u=8fc1200ecfbd85a03c59f998f50ee2822ee45e20&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As per discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"315709580\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2407\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2407/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2407\">#2407</a>, adds the <code class=\"notranslate\">move(y=f(x)) || {}</code>/<code class=\"notranslate\">move(x) || {}</code> syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/SOF3/rfcs/blob/closure-move-bindings/text/3512-closure-move-bindings.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3512",
             "title": "Add closure-move-bindings RFC",
-            "date_modified": "2023-10-10T15:10:33.000Z",
+            "date_modified": "2023-10-10T17:52:02.000Z",
             "date_published": "2023-10-10T15:02:14.000Z",
             "author": {
                 "name": "SOF3",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is an amendment to <a href=\"https://rust-lang.github.io/rfcs/3085-edition-2021.html\" rel=\"nofollow\">RFC 3085</a> to declare that the Rust Project intends to produce a new edition in 2024, to set up a project group to deliver the edition, and to establish a tentative cadence for future editions.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/edition-2024/text/3501-edition-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3501",
             "title": "2024 Edition",
-            "date_modified": "2023-10-09T09:42:37.000Z",
+            "date_modified": "2023-10-10T17:15:31.000Z",
             "date_published": "2023-09-26T18:58:15.000Z",
             "author": {
                 "name": "ehuss",
