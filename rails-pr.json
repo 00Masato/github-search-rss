@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"311814194\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32471\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32471/hovercard\" href=\"https://github.com/rails/rails/pull/32471\">#32471</a> Added <code class=\"notranslate\">image_processing</code> gem for Active Storage variants. After that we haven't updated the version.<br>\nThe latest image_processing version is 1.12.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the <code class=\"notranslate\">image_processing</code> gem version to 1.12 for the rails new applications.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49560",
+            "title": "Updated the image_processing gem version for new rails apps",
+            "date_modified": "2023-10-10T07:51:41.000Z",
+            "date_published": "2023-10-10T07:41:13.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153388?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49559",
             "title": "Test run",
-            "date_modified": "2023-10-10T04:31:44.000Z",
+            "date_modified": "2023-10-10T07:13:40.000Z",
             "date_published": "2023-10-10T03:55:42.000Z",
             "author": {
                 "name": "ojab",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12369886?u=b8ac0fb17d308a25bf11ad82332b36ba4b3eed77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49557.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1934228154\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49557\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49557/hovercard\" href=\"https://github.com/rails/rails/issues/49557\">#49557</a></p>\n<p dir=\"auto\">Makes it explicit why the enforced limit for max table name length is less than the default Postgres limit.</p>",
             "url": "https://github.com/rails/rails/pull/49558",
             "title": "Make the table name too long error message more explicit for Postgres",
-            "date_modified": "2023-10-10T05:02:12.000Z",
+            "date_modified": "2023-10-10T07:23:56.000Z",
             "date_published": "2023-10-10T03:42:07.000Z",
             "author": {
                 "name": "adampal",
@@ -185,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">attributes_of_type</code> returns the names of attributes that are of a specified type.  Using this method in conjunction with <code class=\"notranslate\">normalizes</code>, you can write something like:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Post &lt; ActiveRecord::Base\n  normalizes attributes_of_type(:string), with: -&gt; { _1.strip }\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Post</span> &lt; <span class=\"pl-v\">ActiveRecord</span>::<span class=\"pl-v\">Base</span>\n  <span class=\"pl-en\">normalizes</span> <span class=\"pl-en\">attributes_of_type</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:string</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">with</span>: <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">_1</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">strip</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">which will strip all string attributes.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #49314.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1901813639\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49314\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49314/hovercard\" href=\"https://github.com/rails/rails/pull/49314\">#49314</a>.</p>",
             "url": "https://github.com/rails/rails/pull/49519",
             "title": "Add `ActiveRecord::Base::attributes_of_type`",
-            "date_modified": "2023-10-09T09:22:51.000Z",
+            "date_modified": "2023-10-10T07:48:35.000Z",
             "date_published": "2023-10-06T18:47:49.000Z",
             "author": {
                 "name": "jonathanhefner",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Prior to this commit, calls to <code class=\"notranslate\">gem_group</code> would amend the <code class=\"notranslate\">Gemfile</code> even if there was an existing <a href=\"https://bundler.io/guides/groups.html\" rel=\"nofollow\">gem group</a>, resulting in duplication.</p>\n<p dir=\"auto\">This commit prepends existing gem groups with the added gem.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Because <code class=\"notranslate\">gem_group</code> invokes <code class=\"notranslate\">instance_eval(&amp;block)</code> via <code class=\"notranslate\">with_indentation</code>, a call to <code class=\"notranslate\">gem</code> is made. This means we needed to do the following:</p>\n<ol dir=\"auto\">\n<li>Check if the <code class=\"notranslate\">Gemfile</code> contains an existing gem group in <code class=\"notranslate\">gem_group</code>.</li>\n<li>Pass information about that  existing gem group to the <code class=\"notranslate\">gem</code> method.</li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Because the <code class=\"notranslate\">Gemfile</code> used in existing tests has a <code class=\"notranslate\">:test</code> and <code class=\"notranslate\">:development, :test</code> groups, we modify the existing tests to use groups not used in the <code class=\"notranslate\">Gemfile</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49512",
-            "title": "`Rails::Generators::Actions#gem_group`: Prepend existing gem groups",
-            "date_modified": "2023-10-06T13:21:46.000Z",
-            "date_published": "2023-10-06T12:55:22.000Z",
-            "author": {
-                "name": "stevepolitodesign",
-                "url": "https://github.com/stevepolitodesign"
             }
         }
     ]
