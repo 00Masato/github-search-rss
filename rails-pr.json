@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12369886?u=b8ac0fb17d308a25bf11ad82332b36ba4b3eed77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49557.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1934228154\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49557\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49557/hovercard\" href=\"https://github.com/rails/rails/issues/49557\">#49557</a></p>\n<p dir=\"auto\">Makes it explicit why the enforced limit for max table name length is less than the default Postgres limit.</p>",
             "url": "https://github.com/rails/rails/pull/49558",
             "title": "Make the table name too long error message more explicit for Postgres",
-            "date_modified": "2023-10-10T05:01:06.000Z",
+            "date_modified": "2023-10-10T05:02:12.000Z",
             "date_published": "2023-10-10T03:42:07.000Z",
             "author": {
                 "name": "adampal",
