@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes a flaky test from <a href=\"https://buildkite.com/rails/rails/builds/100641#018b1f83-1783-4108-aec6-2b0404b36ba7\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/100641#018b1f83-1783-4108-aec6-2b0404b36ba7</a>.</p>\n<p dir=\"auto\">To reproduce, on ruby 2.7 run</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ cd activerecord\n$ SEED=20774 rake test:sqlite3\"><pre class=\"notranslate\">$ <span class=\"pl-c1\">cd</span> activerecord\n$ SEED=20774 rake test:sqlite3</pre></div>\n<p dir=\"auto\">The problem is the same as in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1882533451\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49159\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49159/hovercard\" href=\"https://github.com/rails/rails/pull/49159\">#49159</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/49589",
+            "title": "Load `author_addresses` fixtures for `ActiveRecordMessagePackTest`",
+            "date_modified": "2023-10-11T20:01:02.000Z",
+            "date_published": "2023-10-11T20:00:58.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2377?u=d3cff5e4910d850a36ced404d0a45304547f88f8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is currently documented in new_framework_defaults, but deserves highlighting more explicitly to help anyone upgrading from older versions.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because upgrading to rails 7.1 can result in decryption errors unless you've already explicitly set the hash algorithm</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">There’s also lengthy discussion at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1707228995\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48204\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48204/hovercard\" href=\"https://github.com/rails/rails/issues/48204\">#48204</a> , though as I understand it the conclusion boils down the the advice I’ve added in this PR</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49587",
             "title": "Advise upgraders to set active_record.encryption.hash_digest_class",
@@ -25,17 +36,6 @@
             "author": {
                 "name": "zetter",
                 "url": "https://github.com/zetter"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931656005\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49539\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49539/hovercard\" href=\"https://github.com/rails/rails/pull/49539\">#49539</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the rails version from 7.1 to 7.2 in the main.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49585",
-            "title": "Updated the rails version in 7.1 to 7.2 in guide [skip ci]",
-            "date_modified": "2023-10-11T14:57:57.000Z",
-            "date_published": "2023-10-11T14:57:52.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
             }
         },
         {
