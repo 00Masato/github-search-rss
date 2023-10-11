@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">npm</code> and <code class=\"notranslate\">NPM</code> are mixed up in current guides and <code class=\"notranslate\">npm</code> is official.</p>\n<p dir=\"auto\"><a href=\"https://en.wikipedia.org/wiki/Npm\" rel=\"nofollow\">https://en.wikipedia.org/wiki/Npm</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes \"NPM\" to \"npm\".</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49581",
+            "title": "[ci-skip][Docs]Update guide: NPM -> npm",
+            "date_modified": "2023-10-11T10:12:56.000Z",
+            "date_published": "2023-10-11T10:12:51.000Z",
+            "author": {
+                "name": "hachi8833",
+                "url": "https://github.com/hachi8833"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1933967732\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49556\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49556/hovercard\" href=\"https://github.com/rails/rails/pull/49556\">#49556</a> fixed-width fonts were added to the <code class=\"notranslate\">contenteditable</code> HTML attribute.<br>\nWe should probably add HTML and CSS to the list of fixed-width fonts.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonathanhefner/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonathanhefner\">@jonathanhefner</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>",
             "url": "https://github.com/rails/rails/pull/49580",
             "title": "Recommend fixed-width fonts for HTML and CSS as well in documentation [ci-skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Prior to this commit, calls to <code class=\"notranslate\">gem_group</code> would amend the <code class=\"notranslate\">Gemfile</code> even if there was an existing <a href=\"https://bundler.io/guides/groups.html\" rel=\"nofollow\">gem group</a>, resulting in duplication.</p>\n<p dir=\"auto\">This commit prepends existing gem groups with the added gem.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Because <code class=\"notranslate\">gem_group</code> invokes <code class=\"notranslate\">instance_eval(&amp;block)</code> via <code class=\"notranslate\">with_indentation</code>, a call to <code class=\"notranslate\">gem</code> is made. This means we needed to do the following:</p>\n<ol dir=\"auto\">\n<li>Check if the <code class=\"notranslate\">Gemfile</code> contains an existing gem group in <code class=\"notranslate\">gem_group</code>.</li>\n<li>Pass information about that  existing gem group to the <code class=\"notranslate\">gem</code> method.</li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Because the <code class=\"notranslate\">Gemfile</code> used in existing tests has a <code class=\"notranslate\">:test</code> and <code class=\"notranslate\">:development, :test</code> groups, we modify the existing tests to use groups not used in the <code class=\"notranslate\">Gemfile</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49512",
-            "title": "`Rails::Generators::Actions#gem_group`: Prepend existing gem groups",
-            "date_modified": "2023-10-06T13:21:46.000Z",
-            "date_published": "2023-10-06T12:55:22.000Z",
-            "author": {
-                "name": "stevepolitodesign",
-                "url": "https://github.com/stevepolitodesign"
             }
         }
     ]
