@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In Rust 2024 and later editions, return position <code class=\"notranslate\">impl Trait</code> (RPIT) opaque types will automatically capture all in-scope type <em>and</em> lifetime parameters.  In preparation for this, new RPIT-like <code class=\"notranslate\">impl Trait</code> features introduced into the Rust 2021 edition will also automatically capture all in-scope type and lifetime parameters.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/lifetime-capture-rules-2024/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3498",
             "title": "Lifetime Capture Rules 2024",
-            "date_modified": "2023-10-12T18:56:55.000Z",
+            "date_modified": "2023-10-12T19:11:21.000Z",
             "date_published": "2023-09-25T07:06:08.000Z",
             "author": {
                 "name": "traviscross",
