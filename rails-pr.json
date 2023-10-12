@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <a href=\"https://github.com/rails/rails/blob/7-1-stable/railties/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_7_1.rb.tt\">new framework defaults file</a> for 7.1 is very long. There's 25 different configs you have to decide on, and some of the explanations are multiple paragraphs. In some cases, there's a few different choices you have available for the same config (eg. <code class=\"notranslate\">hash_digest_class</code>).</p>\n<p dir=\"auto\">To make the file easier to read, I propose we add a separator between each default. I did this locally when working through the file and it made it much easier to visually scan.</p>\n<p dir=\"auto\">I realise 7.1 has shipped, but I think we should do this in the 7.2 new framework defaults too, but I didn't make a PR there because that file <a href=\"https://github.com/rails/rails/blob/main/railties/lib/rails/generators/rails/app/templates/config/initializers/new_framework_defaults_7_2.rb.tt\">doesn't have anything in it yet</a>. I figure if we agree this is a good idea for 7.1 we can do the same in 7.2 once a config gets added.</p>",
             "url": "https://github.com/rails/rails/pull/49546",
             "title": "Add separators between new framework defaults",
-            "date_modified": "2023-10-11T23:23:11.000Z",
+            "date_modified": "2023-10-12T02:51:21.000Z",
             "date_published": "2023-10-08T23:35:24.000Z",
             "author": {
                 "name": "ghiculescu",
