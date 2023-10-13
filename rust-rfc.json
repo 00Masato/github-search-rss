@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19623715?u=8fc1200ecfbd85a03c59f998f50ee2822ee45e20&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As per discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"315709580\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2407\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2407/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2407\">#2407</a>, adds the <code class=\"notranslate\">move(y=f(x)) || {}</code>/<code class=\"notranslate\">move(x) || {}</code> syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/SOF3/rfcs/blob/closure-move-bindings/text/3512-closure-move-bindings.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3512",
             "title": "Add closure-move-bindings RFC",
-            "date_modified": "2023-10-13T14:29:18.000Z",
+            "date_modified": "2023-10-13T15:35:10.000Z",
             "date_published": "2023-10-10T15:02:14.000Z",
             "author": {
                 "name": "SOF3",
@@ -105,10 +105,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/implicit/text/3491-remove-implicit-features.md\">Rendered</a></p>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #12173.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1723060490\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/12173/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/12173\">rust-lang/cargo#12173</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/implicit/text/3491-remove-implicit-features.md\">Rendered</a></p>\n<p dir=\"auto\">This would resolve issues like <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1723060490\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12173\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/12173/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/12173\">rust-lang/cargo#12173</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3491",
             "title": "RFC: Remove implicit features in a new edition",
-            "date_modified": "2023-10-03T21:05:38.000Z",
+            "date_modified": "2023-10-13T15:41:03.000Z",
             "date_published": "2023-09-19T02:04:11.000Z",
             "author": {
                 "name": "epage",
