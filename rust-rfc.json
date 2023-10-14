@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust's floating point operations follow IEEE 754-2008 -- with some caveats around operations producing NaNs: IEEE makes almost no guarantees about the sign and payload bits of the NaN; however, actual hardware does not pick those bits completely arbitrarily, and Rust will expose some of those hardware-provided guarantees to programmers.<br>\nOn the flip side, NaN generation is non-deterministic: running the same operation on the same inputs several times can produce different results.<br>\nAnd there is a caveat: while IEEE specifies that float operations can never output a signaling NaN, Rust float operations <em>can</em> produce signaling NaNs, <em>but only if</em> an input is signaling.<br>\nThat means the only way to ever see a signaling NaN in a program is to create one with <code class=\"notranslate\">from_bits</code> (or equivalent unsafe operations).</p>\n<p dir=\"auto\">Floating-point operations at compile-time follow the same specification. In particular, since operations are non-deterministic, the same operation can lead to different bit-patterns when executed at compile-time (in a <code class=\"notranslate\">const</code> context) vs at run-time.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/float-semantics/text/0000-float-semantics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3514",
             "title": "add float semantics RFC",
-            "date_modified": "2023-10-14T12:29:18.000Z",
+            "date_modified": "2023-10-14T13:36:03.000Z",
             "date_published": "2023-10-14T07:52:34.000Z",
             "author": {
                 "name": "RalfJung",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19623715?u=8fc1200ecfbd85a03c59f998f50ee2822ee45e20&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As per discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"315709580\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2407\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2407/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2407\">#2407</a>, adds the <code class=\"notranslate\">move(y=f(x)) || {}</code>/<code class=\"notranslate\">move(x) || {}</code> syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/SOF3/rfcs/blob/closure-move-bindings/text/3512-closure-move-bindings.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3512",
             "title": "Add closure-move-bindings RFC",
-            "date_modified": "2023-10-14T03:15:24.000Z",
+            "date_modified": "2023-10-14T13:26:06.000Z",
             "date_published": "2023-10-10T15:02:14.000Z",
             "author": {
                 "name": "SOF3",
