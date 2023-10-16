@@ -6,11 +6,22 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Fix <a href=\"https://github.com/rails/rails/actions/runs/6539678344/job/17758241844?pr=49486#step:4:12\">Failing CI Lint</a></p>\n<p dir=\"auto\">Adds a missing comma to make an example Ruby block syntactically valid.</p>",
-            "url": "https://github.com/rails/rails/pull/49660",
-            "title": "Fix failing linter in `guides/source`",
-            "date_modified": "2023-10-16T22:01:11.000Z",
-            "date_published": "2023-10-16T21:59:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Imports <code class=\"notranslate\">ActiveModel::AttributeAssignment.build</code> implementation from <code class=\"notranslate\">ActiveRecord::Persistence.build</code> to make individual and bulk construction of both <code class=\"notranslate\">ActiveModel</code> and <code class=\"notranslate\">ActiveRecord</code> objects share the same code.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Opened as a complementary pull request alongside <a href=\"https://github.com/rails/rails/pull/49661\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49661/hovercard\">#49661</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49662",
+            "title": "Backport `ActiveRecord::Persistence.build` to Active Model from Active Record",
+            "date_modified": "2023-10-16T22:54:02.000Z",
+            "date_published": "2023-10-16T22:53:38.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Extend the constructor defined by <code class=\"notranslate\">ActiveModel::API</code> so that its interface matches match <a href=\"https://guides.rubyonrails.org/active_record_basics.html#create\" rel=\"nofollow\">ActiveRecord::Base#new</a>'s -- namely the support for yielding the new instance its block argument.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"person = Person.new { |person| person.name = &quot;Ruby&quot; }\nperson.name # =&gt; &quot;Ruby&quot;\"><pre class=\"notranslate\"><span class=\"pl-s1\">person</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">new</span> <span class=\"pl-kos\">{</span> |<span class=\"pl-s1\">person</span>| <span class=\"pl-s1\">person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">name</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s\">\"Ruby\"</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-s1\">person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">name</span> <span class=\"pl-c\"># =&gt; \"Ruby\"</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49661",
+            "title": "Accept `&block` in `ActiveModel::API` constructor",
+            "date_modified": "2023-10-16T22:31:32.000Z",
+            "date_published": "2023-10-16T22:31:27.000Z",
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
@@ -212,17 +223,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Trix also defines the same constant, so if both Trix and Action Cable files and minified with Terser, we will get an error.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49599.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1939804222\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49599\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49599/hovercard\" href=\"https://github.com/rails/rails/issues/49599\">#49599</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/49615",
-            "title": "Don't define global const `extend` in Action Cable JS",
-            "date_modified": "2023-10-13T13:10:03.000Z",
-            "date_published": "2023-10-12T23:17:00.000Z",
-            "author": {
-                "name": "rafaelfranca",
-                "url": "https://github.com/rafaelfranca"
             }
         }
     ]
