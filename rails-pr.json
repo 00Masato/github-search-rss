@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1780472225\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48611\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48611/hovercard\" href=\"https://github.com/rails/rails/issues/48611\">#48611</a><br>\nFollowup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1789707176\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48663\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48663/hovercard\" href=\"https://github.com/rails/rails/pull/48663\">#48663</a></p>\n<p dir=\"auto\">If the payload is compressed, and we use the 6.1 cache format then it's deserialized elsewhere, we need to handle it there too.</p>",
             "url": "https://github.com/rails/rails/pull/49716",
             "title": "Handle outdated Marshal payloads in Cache::Entry with 6.1 cache_format",
-            "date_modified": "2023-10-20T07:58:15.000Z",
+            "date_modified": "2023-10-20T08:21:49.000Z",
             "date_published": "2023-10-20T07:39:33.000Z",
             "author": {
                 "name": "casperisfine",
