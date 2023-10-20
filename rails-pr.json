@@ -28,21 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Ruby 3.3.0 is going to start warning for racc not being specififed as a dependency, and Ruby 3.4.0 will raise if it is not specified.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit prevents those issues by adding racc to the Action Pack gemspec, since <code class=\"notranslate\">racc/parser</code> is a runtime dependency of the Journey parser.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Ref <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/ruby/ruby/commit/2a56a6c3af9b36bc762855995723a23f9f5bd4d8/hovercard\" href=\"https://github.com/ruby/ruby/commit/2a56a6c3af9b36bc762855995723a23f9f5bd4d8\">ruby/ruby@<tt>2a56a6c</tt></a><br>\nRef <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1733717180\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/ruby/issues/7877\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/ruby/ruby/pull/7877/hovercard\" href=\"https://github.com/ruby/ruby/pull/7877\">ruby/ruby#7877</a></p>\n<p dir=\"auto\">Alternatively, we could vendor <code class=\"notranslate\">racc/parser</code> into Journey's generated parser but that then requires the parser to be regenerated to get any upstream improvements</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49722",
-            "title": "Add racc dependency because it will be bundled",
-            "date_modified": "2023-10-20T17:41:23.000Z",
-            "date_published": "2023-10-20T17:38:30.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because, I want to easily duplicate instances of <code class=\"notranslate\">BroadcastLogger</code> in my app. Just calling <code class=\"notranslate\">dup</code> is no good because it does not duplicate the <code class=\"notranslate\">broadcasts</code>. So I believe we could use a <code class=\"notranslate\">deep_dup</code> method.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a <code class=\"notranslate\">ActiveSupport::BroadcastLogger#deep_dup</code>. Calling <code class=\"notranslate\">deep_dup</code> dups the broadcast logger, and then iterates through each of it's broadcasts and duplicates them.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49720",
             "title": "Add `BroadcastLogger#deep_dup`",
-            "date_modified": "2023-10-20T17:01:20.000Z",
+            "date_modified": "2023-10-20T22:20:02.000Z",
             "date_published": "2023-10-20T14:42:03.000Z",
             "author": {
                 "name": "andrewn617",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "nvasilevski",
                 "url": "https://github.com/nvasilevski"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/674321?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Per PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1705439324\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48189\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48189/hovercard\" href=\"https://github.com/rails/rails/pull/48189\">#48189</a> , can we just merge this simple changes first? then I can customize my own validation with module prepending, otherwise I have to link gem to github repo.</p>",
+            "url": "https://github.com/rails/rails/pull/49654",
+            "title": "kill activestorage blob's anonymous validation",
+            "date_modified": "2023-10-16T16:50:45.000Z",
+            "date_published": "2023-10-16T16:50:41.000Z",
+            "author": {
+                "name": "xiaohui-zhangxh",
+                "url": "https://github.com/xiaohui-zhangxh"
             }
         }
     ]
