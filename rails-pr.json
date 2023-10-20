@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7480?u=7e61e73cc5bdaed0e4c654b640f3d02956e280a1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I would like to be able to serve precompiled and compressed WASM files with ActionDispatch::Static.</p>\n<p dir=\"auto\">This Pull Request has been created because I currently don't see how to customize the list of <code class=\"notranslate\">compressible_content_types</code> without monkey-patching the middleware. The PR simply adds <code class=\"notranslate\">application/wasm</code> to the matched content types.</p>\n<p dir=\"auto\">I was wondering if this simple approach is good enough or if you see a better way to support his. If yes I am happy to add a test with a <code class=\"notranslate\">.wasm</code> file-fixture.</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49719",
+            "title": "Add application/wasm to the compressible content types",
+            "date_modified": "2023-10-20T10:51:05.000Z",
+            "date_published": "2023-10-20T10:46:35.000Z",
+            "author": {
+                "name": "haberbyte",
+                "url": "https://github.com/haberbyte"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1780472225\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48611\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48611/hovercard\" href=\"https://github.com/rails/rails/issues/48611\">#48611</a><br>\nFollowup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1789707176\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48663\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48663/hovercard\" href=\"https://github.com/rails/rails/pull/48663\">#48663</a></p>\n<p dir=\"auto\">If the payload is compressed, and we use the 6.1 cache format then it's deserialized elsewhere, we need to handle it there too.</p>",
             "url": "https://github.com/rails/rails/pull/49716",
             "title": "Handle outdated Marshal payloads in Cache::Entry with 6.1 cache_format",
@@ -113,17 +124,6 @@
             "author": {
                 "name": "suwyn",
                 "url": "https://github.com/suwyn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created as a POC for a new feature <code class=\"notranslate\">ActiveRecord::Base.required_columns</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49681",
-            "title": "Draft | Implement `ActiveRecord::Base.required_columns`",
-            "date_modified": "2023-10-18T19:48:42.000Z",
-            "date_published": "2023-10-18T03:31:40.000Z",
-            "author": {
-                "name": "joshuay03",
-                "url": "https://github.com/joshuay03"
             }
         },
         {
