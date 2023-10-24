@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Italian translation is not accessible.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes the broken italian translation reference from rails guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49760",
+            "title": "Remove broken external guide translation reference [ci skip]",
+            "date_modified": "2023-10-24T10:57:48.000Z",
+            "date_published": "2023-10-24T10:55:17.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">STATS_DIRECTORIES</code> is used by third parties to add directories to the statistics output. It's a global constant defined in a Rake file, that gets loaded anytime a rails command is executed.</p>\n<p dir=\"auto\">To remove the dependency on Rake and avoid a global constant we can move the constant to the CodeStatistics class.<br>\nThis also makes it more inline with <code class=\"notranslate\">CodeStatistics::TEST_TYPES</code> constant which is also used by third parties.</p>\n<p dir=\"auto\"><code class=\"notranslate\">deprecate_constant</code> couldn't be used here as that doesn't seem to work for the root namespace.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49759",
             "title": "Deprecate `STATS_DIRECTORIES` in favor of `CodeStatistics::DIRECTORIES`",
-            "date_modified": "2023-10-24T08:59:33.000Z",
+            "date_modified": "2023-10-24T10:11:16.000Z",
             "date_published": "2023-10-24T08:59:21.000Z",
             "author": {
                 "name": "p8",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8207?u=519e0cd2eb38c2b5c30ce471f5801c3b77b37f31&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">All of the following were deprecated in 7.1 and scheduled for removal in 7.2.</p>\n<p dir=\"auto\">Removing deprecated methods:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">SafeBuffer#clone_empty</code></li>\n<li><code class=\"notranslate\">Rails::DBConsole#find_cmd_and_exec</code></li>\n<li><code class=\"notranslate\">ActiveRecord::LogSubscriber.runtime</code></li>\n<li><code class=\"notranslate\">ActiveRecord::LogSubscriber.runtime=</code></li>\n<li><code class=\"notranslate\">ActiveRecord::LogSubscriber.reset_runtime</code></li>\n<li><code class=\"notranslate\">ActiveRecord</code> connection adapters' <code class=\"notranslate\">#quote_bound_value</code></li>\n</ul>\n<p dir=\"auto\">Removing deprecated rake tasks:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">secrets:edit</code></li>\n<li><code class=\"notranslate\">secrets:show</code></li>\n</ul>\n<p dir=\"auto\">Removing deprecated config:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">config.action_mailer.preview_path</code></li>\n</ul>\n<p dir=\"auto\">I've noted most of these removals in CHANGELOGs though I'm not positive all of them merit mention.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49753",
             "title": "remove some deprecations scheduled for removal in 7.2",
-            "date_modified": "2023-10-24T04:51:40.000Z",
+            "date_modified": "2023-10-24T10:29:50.000Z",
             "date_published": "2023-10-24T01:38:59.000Z",
             "author": {
                 "name": "flavorjones",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1753245?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Data encoded using a non-String purpose and <code class=\"notranslate\">use_message_serializer_for_metadata == false</code> was incorrectly decoded,<br>\ntriggering a \"mismatched purpose\" error during decode.<br>\nFix this by ensuring that we compare both sides as a String.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49669",
-            "title": "Fix decoding data encoded using a non-String purpose",
-            "date_modified": "2023-10-18T17:50:02.000Z",
-            "date_published": "2023-10-17T08:01:17.000Z",
-            "author": {
-                "name": "intrip",
-                "url": "https://github.com/intrip"
             }
         }
     ]
