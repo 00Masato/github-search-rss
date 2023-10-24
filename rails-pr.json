@@ -63,8 +63,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">STATS_DIRECTORIES</code> is used by third parties to add directories to the statistics output. It's a global constant defined in a Rake file, that gets loaded anytime a rails command is executed.</p>\n<p dir=\"auto\">To remove the dependency on Rake and avoid a global constant we can move<br>\nthe constant to the Rails.application.configuration.</p>\n<p dir=\"auto\"><code class=\"notranslate\">deprecate_constant</code> couldn't be used here as that doesn't seem to work for the root namespace.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49759",
-            "title": "Deprecate `STATS_DIRECTORIES` in favor of `CodeStatistics::DIRECTORIES`",
-            "date_modified": "2023-10-24T17:57:20.000Z",
+            "title": "Deprecate `STATS_DIRECTORIES` in favor of `config.code_statistics.directories`",
+            "date_modified": "2023-10-24T18:37:20.000Z",
             "date_published": "2023-10-24T08:59:21.000Z",
             "author": {
                 "name": "p8",
@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20938712?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49656.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1946035487\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49656\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49656/hovercard\" href=\"https://github.com/rails/rails/issues/49656\">#49656</a></p>\n<p dir=\"auto\">Unlike controllers, mailers can't infer the protocol from the request, so users need to specify it.</p>",
             "url": "https://github.com/rails/rails/pull/49712",
             "title": "[ci skip] Update Action Mailer guide on how to add images",
-            "date_modified": "2023-10-24T16:49:44.000Z",
+            "date_modified": "2023-10-24T18:04:10.000Z",
             "date_published": "2023-10-20T02:18:34.000Z",
             "author": {
                 "name": "MatheusRich",
@@ -218,7 +218,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR addressed several unrelated issues in the Railties test suite, in order to reduce the amount of noise.</p>\n<p dir=\"auto\"><strong>After</strong></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ bundle exec rake test &gt;&gt; railties_output_patched 2&gt;&amp;1\n$ wc -l railties_output_patched\n    1491 railties_output_patched\"><pre class=\"notranslate\"><code class=\"notranslate\">$ bundle exec rake test &gt;&gt; railties_output_patched 2&gt;&amp;1\n$ wc -l railties_output_patched\n    1491 railties_output_patched\n</code></pre></div>\n<p dir=\"auto\"><strong>Before</strong></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ bundle exec rake test &gt;&gt; railties_output_unpatched 2&gt;&amp;1\n$ wc -l railties_output_unpatched\n   19023 railties_output_unpatched\"><pre class=\"notranslate\"><code class=\"notranslate\">$ bundle exec rake test &gt;&gt; railties_output_unpatched 2&gt;&amp;1\n$ wc -l railties_output_unpatched\n   19023 railties_output_unpatched\n</code></pre></div>\n<p dir=\"auto\">I've kept the commits separate as they are intended to be atomic and preserve context for the git history. It's preferred to review them by commit.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/pull/49679/commits\">https://github.com/rails/rails/pull/49679/commits</a></p>",
             "url": "https://github.com/rails/rails/pull/49679",
             "title": "🤫 Quiet down railties tests",
-            "date_modified": "2023-10-23T21:53:12.000Z",
+            "date_modified": "2023-10-24T18:50:00.000Z",
             "date_published": "2023-10-17T23:01:18.000Z",
             "author": {
                 "name": "zzak",
