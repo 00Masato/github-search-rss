@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49273.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1896689507\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49273\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49273/hovercard\" href=\"https://github.com/rails/rails/issues/49273\">#49273</a>.</p>\n<p dir=\"auto\">We can remove some code by refactoring <code class=\"notranslate\">db:migrate</code> for multiple dbs to use individual database rake tasks.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/sobrinho/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/sobrinho\">@sobrinho</a></p>",
+            "url": "https://github.com/rails/rails/pull/49787",
+            "title": "Refactor `db:migrate` task for multiple dbs to use per-database rake tasks",
+            "date_modified": "2023-10-25T22:47:12.000Z",
+            "date_published": "2023-10-25T22:28:41.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1003663049\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43282\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43282/hovercard\" href=\"https://github.com/rails/rails/pull/43282\">#43282</a>, which shipped with Rails 7.0, we added the guarantee that if an exception occurred within an ActiveSupport::Notificaitons subscriber that the remaining subscribers would still be run.</p>\n<p dir=\"auto\">This was broken in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1141875314\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44469\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44469/hovercard\" href=\"https://github.com/rails/rails/pull/44469\">#44469</a> (oops 😳), where the different types of subscribers were broken into groups by type for performance. Although we would guard exceptions and always run all (or none) of the same group, that didn't work cross-group with different types of subscriber.</p>",
             "url": "https://github.com/rails/rails/pull/49784",
             "title": "Fix exception guards on multiple subscriber types",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44107?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">gsub!</code> returns nil for me (on Ruby 3.2)</p>\n<p dir=\"auto\">I guess we should fix this.<br>\nSimple enough or please make a proper fix!</p>\n<p dir=\"auto\">Is there no unit test for this?</p>",
             "url": "https://github.com/rails/rails/pull/49779",
             "title": "Fix (2) case in money.rb",
-            "date_modified": "2023-10-25T21:46:08.000Z",
+            "date_modified": "2023-10-25T22:58:43.000Z",
             "date_published": "2023-10-25T09:34:47.000Z",
             "author": {
                 "name": "arBmind",
@@ -119,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The translation references cited in the documentation are no longer actively maintained, and some of them no longer exist. Therefore, it is not worthwhile to include these guides as references in our documentation.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes rails guides translation references from the guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49760",
             "title": "Remove rails guides translation references [ci skip]",
-            "date_modified": "2023-10-25T12:09:10.000Z",
+            "date_modified": "2023-10-25T22:47:01.000Z",
             "date_published": "2023-10-24T10:55:17.000Z",
             "author": {
                 "name": "akhilgkrishnan",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "paulreece",
                 "url": "https://github.com/paulreece"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2651240?u=97e6903620ef2874e2231cee9eb2654b7811d750&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It is a very common pattern to replace the title in other views, I find myself doing it on every single new project I create.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49702",
-            "title": "Use content_for for titles in the application layout",
-            "date_modified": "2023-10-20T15:46:42.000Z",
-            "date_published": "2023-10-19T17:04:29.000Z",
-            "author": {
-                "name": "lazaronixon",
-                "url": "https://github.com/lazaronixon"
             }
         }
     ]
