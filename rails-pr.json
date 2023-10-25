@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44107?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">gsub!</code> returns nil for me (on Ruby 3.2)</p>\n<p dir=\"auto\">I guess we should fix this.<br>\nSimple enough or please make a proper fix!</p>\n<p dir=\"auto\">Is there no unit test for this?</p>",
+            "url": "https://github.com/rails/rails/pull/49779",
+            "title": "Fix (2) case in money.rb",
+            "date_modified": "2023-10-25T09:34:51.000Z",
+            "date_published": "2023-10-25T09:34:47.000Z",
+            "author": {
+                "name": "arBmind",
+                "url": "https://github.com/arBmind"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When Trix was <a href=\"https://github.com/rails/rails/commit/fab1b522cd11696c7330028fcc7bf25a8a109f5f\">updated</a> from 1.3.1 to 2.0.4, the ESM bundle of 2.0.4 was used instead of the UMD bundle (the vendored 1.3.1 file used the UMD bundle). This leads to issues when trying to use Trix with sprockets because the ESM bundle declares variables like they are scoped to the file but sprockets will see them as scoped globally.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit fixes the issue by replacing the Trix ESM bundle with the UMD bundle (and upgrades it from 2.0.4 to 2.0.7). Additionally, a Rake task has been added similar to one previously <a href=\"https://github.com/rails/rails/commit/a42863f514e726b864f60ad10e79002fe2b39f5a\">added</a> to the guides for automatic vendoring using Importmap::Packager.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49599.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1939804222\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49599\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49599/hovercard\" href=\"https://github.com/rails/rails/issues/49599\">#49599</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #49615.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1940940514\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49615\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49615/hovercard\" href=\"https://github.com/rails/rails/pull/49615\">#49615</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49778",
             "title": "Fix using trix in sprockets",
@@ -75,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49767.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1959594919\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49767\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49767/hovercard\" href=\"https://github.com/rails/rails/issues/49767\">#49767</a>.</p>\n<p dir=\"auto\">All other enum-related methods are already reloading type map.<br>\nI am not sure are tests needed for this?</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> (as implementor of the PostgreSQL <code class=\"notranslate\">enum</code>)</p>",
             "url": "https://github.com/rails/rails/pull/49772",
             "title": "Reload type map when creating or dropping PostgreSQL enums",
-            "date_modified": "2023-10-25T03:01:06.000Z",
+            "date_modified": "2023-10-25T09:19:35.000Z",
             "date_published": "2023-10-24T20:33:09.000Z",
             "author": {
                 "name": "fatkodima",
@@ -141,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">STATS_DIRECTORIES</code> is used by third parties to add directories to the statistics output. It's a global constant defined in a Rake file, that gets loaded anytime a rails command is executed.</p>\n<p dir=\"auto\">To remove the dependency on Rake and avoid a global constant we can move<br>\nthe constant to the Rails.application.configuration.</p>\n<p dir=\"auto\"><code class=\"notranslate\">deprecate_constant</code> couldn't be used here as that doesn't seem to work for the root namespace.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49759",
             "title": "Deprecate `STATS_DIRECTORIES` in favor of `config.code_statistics.directories`",
-            "date_modified": "2023-10-24T18:37:20.000Z",
+            "date_modified": "2023-10-25T09:16:35.000Z",
             "date_published": "2023-10-24T08:59:21.000Z",
             "author": {
                 "name": "p8",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "intrip",
                 "url": "https://github.com/intrip"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20938712?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49656.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1946035487\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49656\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49656/hovercard\" href=\"https://github.com/rails/rails/issues/49656\">#49656</a></p>\n<p dir=\"auto\">Unlike controllers, mailers can't infer the protocol from the request, so users need to specify it.</p>",
-            "url": "https://github.com/rails/rails/pull/49712",
-            "title": "[ci skip] Update Action Mailer guide on how to add images",
-            "date_modified": "2023-10-24T18:04:10.000Z",
-            "date_published": "2023-10-20T02:18:34.000Z",
-            "author": {
-                "name": "MatheusRich",
-                "url": "https://github.com/MatheusRich"
             }
         }
     ]
