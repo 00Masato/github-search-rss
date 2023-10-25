@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3747961?u=cf6ca1839f9a078c7f42f58cc7209f925387ce17&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Follow-up to <a href=\"https://github.com/rails/rails/pull/49769\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49769/hovercard\">#49769</a>.<br>\nThis PR fixes the generation of scope definitions for non-column-backed enums.</p>",
-            "url": "https://github.com/rails/rails/pull/49777",
-            "title": "skip scopes definition for non-column-backed enum",
-            "date_modified": "2023-10-25T04:11:59.000Z",
-            "date_published": "2023-10-25T04:11:55.000Z",
-            "author": {
-                "name": "songjiz",
-                "url": "https://github.com/songjiz"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Any classes that don't implement #blank? will fall back to Object's implementation, which checks whether #empty? is defined before either using #empty? or implicit truthiness. Since checking whether #empty? is defined is expensive, some core classes (Array/Hash) alias #blank? directly to #empty? to skip the respond_to? check.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit applies the alias optimization to Symbol. #blank? is called on Symbols for many Active Record query methods (select, includes, group, order, joins, etc.) so it seems reasonable to define the #blank? alias on Symbol as well.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49776",
             "title": "Add Symbol#blank? to skip respond_to?(:empty?)",
@@ -50,21 +39,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13696143?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Prior to this commit we were using the <a href=\"https://github.com/rails/rails/blob/4c5c904a212a850c43adb7a3c3a719ca3d2b9159/activerecord/lib/active_record/connection_adapters/abstract_adapter.rb#L128\">older, soft-deprecated arguments</a> to initialize a Trilogy adapter.</p>\n<p dir=\"auto\">I don't think the <a href=\"https://github.com/rails/rails/blob/4c5c904a212a850c43adb7a3c3a719ca3d2b9159/activerecord/lib/active_record/connection_adapters/trilogy_adapter.rb#L24-L32\">options array</a> we were passing in made any sense anyway. It becomes <code class=\"notranslate\">@connection_options</code>, which Trilogy doesn't appear to use. Trilogy expects hash args so I'm not sure how an array of args would help us anyway. I think we were building that array for no reason.</p>\n<p dir=\"auto\">This commit switches over to the newer single-argument construction that the other adapters are already using.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49775",
-            "title": "Build trilogy adapter with newer API",
-            "date_modified": "2023-10-25T01:31:52.000Z",
-            "date_published": "2023-10-25T01:31:48.000Z",
-            "author": {
-                "name": "composerinteralia",
-                "url": "https://github.com/composerinteralia"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the current <a href=\"https://guides.rubyonrails.org/association_basics.html#single-table-inheritance-sti\" rel=\"nofollow\">STI Guides</a> don't document how to override or disable the <a href=\"https://api.rubyonrails.org/classes/ActiveRecord/ModelSchema.html#method-c-inheritance_column\" rel=\"nofollow\">inheritance_column</a>.</p>\n<p dir=\"auto\">Additionally, it's not clear that you can set <code class=\"notranslate\">inheritance_column = :disabled</code>. Initially, I had tried  <code class=\"notranslate\">inheritance_column = nil</code> which had the same behavior, but is not as clear as the former.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Add new sections to <a href=\"https://guides.rubyonrails.org/association_basics.html#single-table-inheritance-sti\" rel=\"nofollow\">STI Guides</a> demonstrating how to override or disable the <a href=\"https://api.rubyonrails.org/classes/ActiveRecord/ModelSchema.html#method-c-inheritance_column\" rel=\"nofollow\">inheritance_column</a>.</p>\n<p dir=\"auto\">Also improve error message when <code class=\"notranslate\">ActiveRecord::SubclassNotFound</code> is raised.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49774",
             "title": "Improve STI documentation",
-            "date_modified": "2023-10-25T00:50:02.000Z",
+            "date_modified": "2023-10-25T16:23:51.000Z",
             "date_published": "2023-10-25T00:49:57.000Z",
             "author": {
                 "name": "stevepolitodesign",
@@ -223,6 +201,28 @@
             "author": {
                 "name": "paulreece",
                 "url": "https://github.com/paulreece"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2651240?u=97e6903620ef2874e2231cee9eb2654b7811d750&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It is a very common pattern to replace the title in other views, I find myself doing it on every single new project I create.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49702",
+            "title": "Use content_for for titles in the application layout",
+            "date_modified": "2023-10-20T15:46:42.000Z",
+            "date_published": "2023-10-19T17:04:29.000Z",
+            "author": {
+                "name": "lazaronixon",
+                "url": "https://github.com/lazaronixon"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add documentation for <code class=\"notranslate\">ActionText::RichText#to_s</code> and <code class=\"notranslate\">ActionText::Content#to_s</code> that demonstrates Action Text's ability to sanitize and scrub its content.</p>",
+            "url": "https://github.com/rails/rails/pull/49696",
+            "title": "Document Action Text Sanitization",
+            "date_modified": "2023-10-23T17:50:39.000Z",
+            "date_published": "2023-10-19T13:56:51.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
