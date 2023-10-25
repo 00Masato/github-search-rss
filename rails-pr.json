@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1003663049\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43282\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43282/hovercard\" href=\"https://github.com/rails/rails/pull/43282\">#43282</a>, which shipped with Rails 7.0, we added the guarantee that if an exception occurred within an ActiveSupport::Notificaitons subscriber that the remaining subscribers would still be run.</p>\n<p dir=\"auto\">This was broken in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1141875314\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44469\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44469/hovercard\" href=\"https://github.com/rails/rails/pull/44469\">#44469</a> (oops 😳), where the different types of subscribers were broken into groups by type for performance. Although we would guard exceptions and always run all (or none) of the same group, that didn't work cross-group with different types of subscriber.</p>",
+            "url": "https://github.com/rails/rails/pull/49784",
+            "title": "Fix exception guards on multiple subscriber types",
+            "date_modified": "2023-10-25T21:01:08.000Z",
+            "date_published": "2023-10-25T21:01:04.000Z",
+            "author": {
+                "name": "jhawthorn",
+                "url": "https://github.com/jhawthorn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44107?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">gsub!</code> returns nil for me (on Ruby 3.2)</p>\n<p dir=\"auto\">I guess we should fix this.<br>\nSimple enough or please make a proper fix!</p>\n<p dir=\"auto\">Is there no unit test for this?</p>",
             "url": "https://github.com/rails/rails/pull/49779",
             "title": "Fix (2) case in money.rb",
-            "date_modified": "2023-10-25T13:39:15.000Z",
+            "date_modified": "2023-10-25T20:33:01.000Z",
             "date_published": "2023-10-25T09:34:47.000Z",
             "author": {
                 "name": "arBmind",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When Trix was <a href=\"https://github.com/rails/rails/commit/fab1b522cd11696c7330028fcc7bf25a8a109f5f\">updated</a> from 1.3.1 to 2.0.4, the ESM bundle of 2.0.4 was used instead of the UMD bundle (the vendored 1.3.1 file used the UMD bundle). This leads to issues when trying to use Trix with sprockets because the ESM bundle declares variables like they are scoped to the file but sprockets will see them as scoped globally.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit fixes the issue by replacing the Trix ESM bundle with the UMD bundle (and upgrades it from 2.0.4 to 2.0.7). Additionally, a Rake task has been added similar to one previously <a href=\"https://github.com/rails/rails/commit/a42863f514e726b864f60ad10e79002fe2b39f5a\">added</a> to the guides for automatic vendoring using Importmap::Packager.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49599.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1939804222\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49599\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49599/hovercard\" href=\"https://github.com/rails/rails/issues/49599\">#49599</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #49615.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1940940514\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49615\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49615/hovercard\" href=\"https://github.com/rails/rails/pull/49615\">#49615</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49778",
             "title": "Fix using trix in sprockets",
-            "date_modified": "2023-10-25T04:26:29.000Z",
+            "date_modified": "2023-10-25T20:05:21.000Z",
             "date_published": "2023-10-25T04:26:06.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -86,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49707.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1953127535\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49707\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49707/hovercard\" href=\"https://github.com/rails/rails/issues/49707\">#49707</a></p>\n<p dir=\"auto\">This Pull Request has been created because we noticed that <code class=\"notranslate\">ActiveRecord::Core#inspect</code> was taking &gt;9s to run for some large objects in production. This is because the parameter filter is be executed for every attribute.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request introduces configuration for <code class=\"notranslate\">ActiveRecord::Core#inspect</code>. By default, <code class=\"notranslate\">inspect</code> just returns the object with its id (eg <code class=\"notranslate\">#&lt;Post id: 1&gt;</code>. The attributes to include can be configured with <code class=\"notranslate\">Post.attributes_to_inspect=</code>. If you want to full output with all the attributes you can call <code class=\"notranslate\">Post.full_inspect</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">In my first draft I had a config to disable this, if you just always want to use <code class=\"notranslate\">full_inspect</code>. But it seems easy enough just to do <code class=\"notranslate\">alias_method :inspect, :full_inspect</code> on the model, or in <code class=\"notranslate\">ApplicationRecord</code> if you want to disable it globally. So the config didn't seem worth it to me.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49765",
             "title": "Make the output of `ActiveRecord::Core#inspect` configurable.",
-            "date_modified": "2023-10-25T19:35:35.000Z",
+            "date_modified": "2023-10-25T20:50:04.000Z",
             "date_published": "2023-10-24T14:20:10.000Z",
             "author": {
                 "name": "andrewn617",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "lazaronixon",
                 "url": "https://github.com/lazaronixon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add documentation for <code class=\"notranslate\">ActionText::RichText#to_s</code> and <code class=\"notranslate\">ActionText::Content#to_s</code> that demonstrates Action Text's ability to sanitize and scrub its content.</p>",
-            "url": "https://github.com/rails/rails/pull/49696",
-            "title": "Document Action Text Sanitization",
-            "date_modified": "2023-10-23T17:50:39.000Z",
-            "date_published": "2023-10-19T13:56:51.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
