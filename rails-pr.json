@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49767.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1959594919\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49767\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49767/hovercard\" href=\"https://github.com/rails/rails/issues/49767\">#49767</a>.</p>\n<p dir=\"auto\">All other enum-related methods are already reloading type map.<br>\nI am not sure are tests needed for this?</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> (as implementor of the PostgreSQL <code class=\"notranslate\">enum</code>)</p>",
             "url": "https://github.com/rails/rails/pull/49772",
             "title": "Reload type map when creating or dropping PostgreSQL enums",
-            "date_modified": "2023-10-24T20:37:15.000Z",
+            "date_modified": "2023-10-25T03:01:06.000Z",
             "date_published": "2023-10-24T20:33:09.000Z",
             "author": {
                 "name": "fatkodima",
