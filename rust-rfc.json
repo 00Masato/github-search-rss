@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust's floating point operations follow IEEE 754-2008 -- with some caveats around operations producing NaNs: IEEE makes almost no guarantees about the sign and payload bits of the NaN; however, actual hardware does not pick those bits completely arbitrarily, and Rust will expose some of those hardware-provided guarantees to programmers.<br>\nOn the flip side, NaN generation is non-deterministic: running the same operation on the same inputs several times can produce different results.<br>\nAnd there is a caveat: while IEEE specifies that float operations can never output a signaling NaN, Rust float operations <em>can</em> produce signaling NaNs, <em>but only if</em> an input is signaling.<br>\nThat means the only way to ever see a signaling NaN in a program is to create one with <code class=\"notranslate\">from_bits</code> (or equivalent unsafe operations).</p>\n<p dir=\"auto\">Floating-point operations at compile-time follow the same specification. In particular, since operations are non-deterministic, the same operation can lead to different bit-patterns when executed at compile-time (in a <code class=\"notranslate\">const</code> context) vs at run-time.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/float-semantics/text/0000-float-semantics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3514",
             "title": "add float semantics RFC",
-            "date_modified": "2023-10-25T05:36:04.000Z",
+            "date_modified": "2023-10-26T20:59:14.000Z",
             "date_published": "2023-10-14T07:52:34.000Z",
             "author": {
                 "name": "RalfJung",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is an amendment to <a href=\"https://rust-lang.github.io/rfcs/3085-edition-2021.html\" rel=\"nofollow\">RFC 3085</a> to declare that the Rust Project intends to produce a new edition in 2024, to set up a project group to deliver the edition, and to establish a tentative cadence for future editions.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/edition-2024/text/3501-edition-2024.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3501",
             "title": "2024 Edition",
-            "date_modified": "2023-10-16T20:50:40.000Z",
+            "date_modified": "2023-10-26T20:08:18.000Z",
             "date_published": "2023-09-26T18:58:15.000Z",
             "author": {
                 "name": "ehuss",
