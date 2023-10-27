@@ -7,6 +7,17 @@
     "items": [
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/49804",
+            "title": "[7-1-stable] Quiet deprecated cache_format_version = 6.1 warnings",
+            "date_modified": "2023-10-27T05:11:54.000Z",
+            "date_published": "2023-10-27T05:02:54.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/49803",
             "title": "Railties TestHelper remove_from_config should remove all occurrences",
             "date_modified": "2023-10-27T02:04:51.000Z",
@@ -61,10 +72,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">ActionMailer::InlinePreviewInterceptor</code> is useful not only for previewing the template but also for displaying actual emails loaded from a string. For example, you might want to archive all outgoing emails to the database/filesystem and display these emails in a browser.</p>\n<p dir=\"auto\">The interceptor assumes that attachments are represented as binary data. But if an email is loaded from string, the attachments have already been encoded as base64, so they end up being encoded twice.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">ActionMailer::InlinePreviewInterceptor</code> is useful not only for previewing the template but also for displaying actual emails loaded from a string/file using <code class=\"notranslate\">Mail.read_from_string</code>. For example, you might want to archive all outgoing emails to the database/filesystem and display these emails in a browser.</p>\n<p dir=\"auto\">The interceptor assumes that attachments are represented as binary data. But if an email is loaded from string, the attachments have already been encoded as base64, so they end up being encoded twice.</p>",
             "url": "https://github.com/rails/rails/pull/49797",
             "title": "Fix double-encoding in `InlinePreviewInterceptor`",
-            "date_modified": "2023-10-26T16:34:27.000Z",
+            "date_modified": "2023-10-27T05:29:07.000Z",
             "date_published": "2023-10-26T13:43:42.000Z",
             "author": {
                 "name": "c960657",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">STATS_DIRECTORIES</code> is used by third parties to add directories to the statistics output. It's a global constant defined in a Rake file, that gets loaded anytime a rails command is executed.</p>\n<p dir=\"auto\">To remove the dependency on Rake and avoid a global constant we can move<br>\nthe constant to the Rails.application.configuration.</p>\n<p dir=\"auto\"><code class=\"notranslate\">deprecate_constant</code> couldn't be used here as that doesn't seem to work for the root namespace.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49759",
-            "title": "Deprecate `STATS_DIRECTORIES` in favor of `config.code_statistics.directories`",
-            "date_modified": "2023-10-25T09:16:35.000Z",
-            "date_published": "2023-10-24T08:59:21.000Z",
-            "author": {
-                "name": "p8",
-                "url": "https://github.com/p8"
             }
         }
     ]
