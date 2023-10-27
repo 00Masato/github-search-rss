@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #49798.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1963746565\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49798\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49798/hovercard\" href=\"https://github.com/rails/rails/pull/49798\">#49798</a></p>\n<p dir=\"auto\">Having to check on every access whether the model has a composite primary key adds a small but non-negligible overhead, even though CPK is envisoned as the exception, not the rule.</p>\n<p dir=\"auto\">By moving all the CPK support in a dedicated module, we can late-include it when a CPK is defined on a model. This is essentially a \"de-optimization\" phase.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ptolts/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ptolts\">@ptolts</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
+            "url": "https://github.com/rails/rails/pull/49808",
+            "title": "Optimize ActiveRecord::AttributeMethods::PrimaryKey",
+            "date_modified": "2023-10-27T08:35:53.000Z",
+            "date_published": "2023-10-27T08:24:08.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49805.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1964827007\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49805\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49805/hovercard\" href=\"https://github.com/rails/rails/issues/49805\">#49805</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/49807",
+            "title": "Fix `ActiveRecord::Promise` example [skip ci]",
+            "date_modified": "2023-10-27T08:02:53.000Z",
+            "date_published": "2023-10-27T08:02:48.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/49804",
             "title": "[7-1-stable] Quiet deprecated cache_format_version = 6.1 warnings",
@@ -86,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5279284?u=40cbc3d0cb818159797fa8856c88c9e87fd8bd49&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">ActionMailer Email Preview - show date header when present or fallback to Time.current.rfc2822</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49788.\">Resolves</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1962469818\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49788\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49788/hovercard\" href=\"https://github.com/rails/rails/issues/49788\">#49788</a></p>\n<p dir=\"auto\">Co-authored-by: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/allisonphillips/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/allisonphillips\">@allisonphillips</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49790",
             "title": "ActionMailer Email Preview - show date header when present ",
-            "date_modified": "2023-10-27T07:56:29.000Z",
+            "date_modified": "2023-10-27T08:34:23.000Z",
             "date_published": "2023-10-26T01:42:47.000Z",
             "author": {
                 "name": "sampatbadhe",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1100970?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background + Detail</h3>\n<p dir=\"auto\">Currently, the default option for <code class=\"notranslate\">order</code> is <code class=\"notranslate\">asc</code> and can also be set to <code class=\"notranslate\">desc</code> or passed an array with those values. This works great in most cases, however sometimes forcing the <code class=\"notranslate\">ORDER</code> clause for the primary key can result into a sort + heap scan in Postgresql, by passing an index lookup and may cause a performance tax and in those situations where we don't care about order, it'd be lovely to continue using <code class=\"notranslate\">in_batches</code> with no order instead of having to write custom SQL. Example usage</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Event\n  .where(story_run_id: ids)\n  .lock(&quot;FOR UPDATE SKIP LOCKED&quot;)\n  .in_batches(of: 1000, order: nil, &amp;:delete_all)\"><pre class=\"notranslate\"><span class=\"pl-v\">Event</span>\n  <span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">story_run_id</span>: <span class=\"pl-en\">ids</span><span class=\"pl-kos\">)</span>\n  <span class=\"pl-kos\">.</span><span class=\"pl-en\">lock</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"FOR UPDATE SKIP LOCKED\"</span><span class=\"pl-kos\">)</span>\n  <span class=\"pl-kos\">.</span><span class=\"pl-en\">in_batches</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">of</span>: <span class=\"pl-c1\">1000</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">order</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span> &amp;<span class=\"pl-pds\">:delete_all</span><span class=\"pl-kos\">)</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Chose to support <code class=\"notranslate\">nil</code> for the <code class=\"notranslate\">order</code> option over coming up with a new function like <code class=\"notranslate\">find_in_unordered_batches</code> or similar.</p>\n<p dir=\"auto\">Curious to hear more. For instance, this works for when <code class=\"notranslate\">delete_all</code> is passed, but may not work as expected if <code class=\"notranslate\">order: nil</code>, in any other case because the offset would be off?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49764",
-            "title": "Support the ability to run find_each/find_in_batches queries without order",
-            "date_modified": "2023-10-24T15:16:51.000Z",
-            "date_published": "2023-10-24T13:28:48.000Z",
-            "author": {
-                "name": "shayonj",
-                "url": "https://github.com/shayonj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The translation references cited in the documentation are no longer actively maintained, and some of them no longer exist. Therefore, it is not worthwhile to include these guides as references in our documentation.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes rails guides translation references from the guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49760",
-            "title": "Remove rails guides translation references [ci skip]",
-            "date_modified": "2023-10-26T16:44:35.000Z",
-            "date_published": "2023-10-24T10:55:17.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
             }
         }
     ]
