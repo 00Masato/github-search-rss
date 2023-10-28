@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds a special attribute <code class=\"notranslate\">#[should_move]</code> that can be applied to function arguments which implement <code class=\"notranslate\">Copy</code>. This allows \"opting into\" move semantics for types that implement <code class=\"notranslate\">Copy</code> to avoid mistakes.</p>\n<p dir=\"auto\">This is marked as an \"experimental\" RFC since the end goal of this feature, allowing API authors to implement <code class=\"notranslate\">Copy</code> without fear of causing bugs, may not actually be achieved by the feature as described alone. A follow-up RFC will likely be written for the final version of this attribute if it ends up being substantially different than the one described.</p>\n<p dir=\"auto\">A good benchmark for when this feature is good enough is being able to implement <code class=\"notranslate\">Copy</code> for standard library iterators (like the <code class=\"notranslate\">Range</code> types) and to retire the <code class=\"notranslate\">clippy::copy_iterator</code> lint for good.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/pls-no-copy/text/0000-pls-no-copy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3518",
             "title": "eRFC: `#[should_move]` attribute for per-function opting out of `Copy` semantics",
-            "date_modified": "2023-10-28T15:51:15.000Z",
+            "date_modified": "2023-10-28T18:41:21.000Z",
             "date_published": "2023-10-21T19:05:37.000Z",
             "author": {
                 "name": "clarfonthey",
