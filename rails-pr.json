@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/567626?u=21feddf6c972d874e08c32536e09d0812a7df59c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I can understand why this was avoided in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1562090099\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47186\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47186/hovercard\" href=\"https://github.com/rails/rails/pull/47186\">#47186</a>, currently docs and guides don't use this consistently. As well as this is a big change.</p>\n<p dir=\"auto\">At the same time we also have <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1966522354\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49824\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49824/hovercard\" href=\"https://github.com/rails/rails/pull/49824\">#49824</a></p>\n<p dir=\"auto\">Longer run, the codebase will prefer double quotes now that we use it at most places. We might as well enforce them, instead of repeat PRs fixing at different places.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a>  / <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a> / <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>\n<p dir=\"auto\">PS: This might affect diffs in upgrades guides comparison, but not sure the gains of not doing it 🤔</p>",
+            "url": "https://github.com/rails/rails/pull/49829",
+            "title": "Enable String Literal rule styles in guides to be more consistent with codebase styles",
+            "date_modified": "2023-10-28T15:31:34.000Z",
+            "date_published": "2023-10-28T15:29:44.000Z",
+            "author": {
+                "name": "vipulnsward",
+                "url": "https://github.com/vipulnsward"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes two issues with the mailer preview:</p>\n<ul dir=\"auto\">\n<li>Do not list inline attachments in the attachment list. This is similar to what most email clients do.</li>\n<li>Show attached emails in the attachment list. TIL that <code class=\"notranslate\">mail.attachments</code> includes any files attached inside the attached email, but it does not include the message/rfc822 part itself.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49828",
-            "title": "Ignore inline attachments in attachment list",
-            "date_modified": "2023-10-28T14:42:17.000Z",
+            "title": "Ignore inline attachments and show attached emails in attachment list",
+            "date_modified": "2023-10-28T15:02:33.000Z",
             "date_published": "2023-10-28T14:24:23.000Z",
             "author": {
                 "name": "c960657",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1100970?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background + Detail</h3>\n<p dir=\"auto\">Currently, the default option for <code class=\"notranslate\">order</code> is <code class=\"notranslate\">asc</code> and can also be set to <code class=\"notranslate\">desc</code> or passed an array with those values. This works great in most cases, however sometimes forcing the <code class=\"notranslate\">ORDER</code> clause for the primary key can result into a sort + heap scan in Postgresql, by passing an index lookup and may cause a performance tax and in those situations where we don't care about order, it'd be lovely to continue using <code class=\"notranslate\">in_batches</code> with no order instead of having to write custom SQL. Example usage</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Event\n  .where(story_run_id: ids)\n  .lock(&quot;FOR UPDATE SKIP LOCKED&quot;)\n  .in_batches(of: 1000, order: nil, &amp;:delete_all)\"><pre class=\"notranslate\"><span class=\"pl-v\">Event</span>\n  <span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">story_run_id</span>: <span class=\"pl-en\">ids</span><span class=\"pl-kos\">)</span>\n  <span class=\"pl-kos\">.</span><span class=\"pl-en\">lock</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"FOR UPDATE SKIP LOCKED\"</span><span class=\"pl-kos\">)</span>\n  <span class=\"pl-kos\">.</span><span class=\"pl-en\">in_batches</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">of</span>: <span class=\"pl-c1\">1000</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">order</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span> &amp;<span class=\"pl-pds\">:delete_all</span><span class=\"pl-kos\">)</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Chose to support <code class=\"notranslate\">nil</code> for the <code class=\"notranslate\">order</code> option over coming up with a new function like <code class=\"notranslate\">find_in_unordered_batches</code> or similar.</p>\n<p dir=\"auto\">Curious to hear more. For instance, this works for when <code class=\"notranslate\">delete_all</code> is passed, but may not work as expected if <code class=\"notranslate\">order: nil</code>, in any other case because the offset would be off?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49764",
-            "title": "Support the ability to run find_each/find_in_batches queries without order",
-            "date_modified": "2023-10-24T15:16:51.000Z",
-            "date_published": "2023-10-24T13:28:48.000Z",
-            "author": {
-                "name": "shayonj",
-                "url": "https://github.com/shayonj"
             }
         }
     ]
