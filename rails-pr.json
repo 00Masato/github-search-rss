@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This indentation does not feel natural, and is often trimmed by linters.</p>\n<div class=\"highlight highlight-source-diff notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"- config.consider_all_requests_local       = true\n+ config.consider_all_requests_local = true\"><pre class=\"notranslate\"><span class=\"pl-md\"><span class=\"pl-md\">-</span> config.consider_all_requests_local       = true</span>\n<span class=\"pl-mi1\"><span class=\"pl-mi1\">+</span> config.consider_all_requests_local = true</span></pre></div>",
+            "url": "https://github.com/rails/rails/pull/49865",
+            "title": "Reset indentation of equals assignation",
+            "date_modified": "2023-10-31T13:01:16.000Z",
+            "date_published": "2023-10-31T13:00:17.000Z",
+            "author": {
+                "name": "guillaumewrobel",
+                "url": "https://github.com/guillaumewrobel"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">@</code> prefix is always stripped, so might as well not require it.</p>\n<p dir=\"auto\">For backward compatibility reasons we still handle the prefix for now, but we eagerly strip it and emit a deprecation.</p>",
+            "url": "https://github.com/rails/rails/pull/49864",
+            "title": "Simplify attr_internal_define",
+            "date_modified": "2023-10-31T12:43:10.000Z",
+            "date_published": "2023-10-31T12:07:08.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6301525?u=dcbf7e6eec3f6fe171da0aa8acb29ebd8fdd4d95&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">service</code> kwarg in <code class=\"notranslate\">has_one_attached</code> and <code class=\"notranslate\">has_many_attached</code> methods accepts only symbols as values. It allows to define a <code class=\"notranslate\">service</code> at a class-level context. But in one of our requirements, we wanted to upload files based on user's region due to some regulations. So in order to allow defining a <code class=\"notranslate\">service</code> at instance-level context, this PR makes the changes to accept <code class=\"notranslate\">service</code> as a Proc as well.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">has_one_attached</code> and <code class=\"notranslate\">has_many_attached</code> logic where:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">service</code> can be accepted either as a symbol or a proc</li>\n<li>Service configuration for symbols is validated on application boot but for procs, it'll validated at runtime.</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49863",
             "title": "Allow accepting `service` as a proc in `has_one_attached` and `has_many_attached`",
@@ -97,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1734607?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">SQLite3 supports three different transaction modes - DEFERRED, IMMEDIATE and EXCLUSIVE, see<br>\n<a href=\"https://www.sqlite.org/lang_transaction.html\" rel=\"nofollow\">https://www.sqlite.org/lang_transaction.html</a>.</p>\n<p dir=\"auto\">Rails currently uses the default which is DEFERRED. While this is best for read concurrency, it can lead to <code class=\"notranslate\">SQLite3::BusyException</code>s when you read first and then write in the transaction.</p>\n<p dir=\"auto\">If you only create transactions when you are planning to write, then IMMEDIATE may be a better choice, as it will block all other write transactions and prevent stale reads.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Add a <code class=\"notranslate\">transaction_mode</code> option to the SQLite database configuration to allow the transaction mode to be changed:</p>\n<div class=\"highlight highlight-source-yaml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"development:\n  adapter: sqlite3\n  database: storage/development.sqlite3\n  transaction_mode: immediate\"><pre class=\"notranslate\"><span class=\"pl-ent\">development</span>:\n  <span class=\"pl-ent\">adapter</span>: <span class=\"pl-s\">sqlite3</span>\n  <span class=\"pl-ent\">database</span>: <span class=\"pl-s\">storage/development.sqlite3</span>\n  <span class=\"pl-ent\">transaction_mode</span>: <span class=\"pl-s\">immediate</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">SQLite3 transaction docs: <a href=\"https://www.sqlite.org/lang_transaction.html\" rel=\"nofollow\">https://www.sqlite.org/lang_transaction.html</a><br>\nSQLIte3 gem transaction method: <a href=\"https://github.com/sparklemotion/sqlite3-ruby/blob/e60035e8f01c13ee986ddfee501a93bd6d6394a2/lib/sqlite3/database.rb#L637-L653\">https://github.com/sparklemotion/sqlite3-ruby/blob/e60035e8f01c13ee986ddfee501a93bd6d6394a2/lib/sqlite3/database.rb#L637-L653</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49849",
             "title": "SQLite3 transaction modes",
-            "date_modified": "2023-10-30T14:28:58.000Z",
+            "date_modified": "2023-10-31T12:54:10.000Z",
             "date_published": "2023-10-30T14:28:54.000Z",
             "author": {
                 "name": "djmb",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "dhavalsingh",
                 "url": "https://github.com/dhavalsingh"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/567626?u=21feddf6c972d874e08c32536e09d0812a7df59c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I can understand why this was avoided in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1562090099\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47186\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47186/hovercard\" href=\"https://github.com/rails/rails/pull/47186\">#47186</a>, currently docs and guides don't use this consistently. As well as this is a big change.</p>\n<p dir=\"auto\">At the same time we also have <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1966522354\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49824\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49824/hovercard\" href=\"https://github.com/rails/rails/pull/49824\">#49824</a></p>\n<p dir=\"auto\">Longer run, the codebase will prefer double quotes now that we use it at most places. We might as well enforce them, instead of repeat PRs fixing at different places.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a>  / <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a> / <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>\n<p dir=\"auto\">PS: This might affect diffs in upgrades guides comparison, but not sure the gains of not doing it 🤔</p>",
-            "url": "https://github.com/rails/rails/pull/49829",
-            "title": "Enable String Literal rule styles in guides to be more consistent with codebase styles",
-            "date_modified": "2023-10-28T15:31:34.000Z",
-            "date_published": "2023-10-28T15:29:44.000Z",
-            "author": {
-                "name": "vipulnsward",
-                "url": "https://github.com/vipulnsward"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes two issues with the mailer preview:</p>\n<ul dir=\"auto\">\n<li>Do not list inline attachments in the attachment list. This is similar to what most email clients do.</li>\n<li>Show attached emails in the attachment list. TIL that <code class=\"notranslate\">mail.attachments</code> includes any files attached inside the attached email, but it does not include the message/rfc822 part itself.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49828",
-            "title": "Ignore inline attachments and show attached emails in attachment list",
-            "date_modified": "2023-10-28T15:02:33.000Z",
-            "date_published": "2023-10-28T14:24:23.000Z",
-            "author": {
-                "name": "c960657",
-                "url": "https://github.com/c960657"
             }
         }
     ]
