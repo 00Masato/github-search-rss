@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5864726?u=e92ece760a4f05c73e36340e2e4ea3abdfc7e128&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I'm trying to use memcached to de-duplicate some work. When I start the work, I want to write a key with a 5s TTL and if the key already exists, someone else is already doing the work and started at most 5s ago, so I don't have to start it again. To avoid a race condition, I'd like to use the <code class=\"notranslate\">unless_exist: true</code> option for this. If <code class=\"notranslate\">write(..., unless_exist: true)</code> returns <code class=\"notranslate\">false</code>, the key was already there and we don't need to do the work.</p>\n<p dir=\"auto\">The only problem with this approach is that the <code class=\"notranslate\">write</code> method also returns <code class=\"notranslate\">false</code> if there is some error with memcached. But in that case I do want to do the work, to ensure it gets done at least once.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR enables us to distinguish the case where the key already exists from the case where there was a memcached error, by making the fallback value returned on an error configurable.</p>\n<p dir=\"auto\">Now <code class=\"notranslate\">write(..., unless_exist: true, fallback: true)</code> will return <code class=\"notranslate\">true</code> on a memcached error and only returns <code class=\"notranslate\">false</code> when the key actually already exists.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Does it make sense to add this to more / all cache stores? Or should this be just for MemCachStore, as it makes the most sense when combined with <code class=\"notranslate\">unless_exist: true</code>?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49873",
+            "title": "Add fallback option to MemCacheStore#write",
+            "date_modified": "2023-10-31T20:27:16.000Z",
+            "date_published": "2023-10-31T20:23:06.000Z",
+            "author": {
+                "name": "Mangara",
+                "url": "https://github.com/Mangara"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This moves most of the implementation of ActiveRecord::Enum to ActiveModel::Enum. This excludes:</p>\n<ul dir=\"auto\">\n<li>scopes, as scopes aren't supported by ActiveModel.</li>\n<li>method conflict detection, as this is difficult to implement in ActiveModel.</li>\n</ul>\n<p dir=\"auto\">The current implementation supports using for example integers for values and strings for labels, if defined. This required moving ActiveRecord::AttributeMethods::BeforeTypeCast to ActiveModel as well.</p>\n<p dir=\"auto\">The tests were copied from ActiveRecord and modified for ActiveModel. Scoping and method conflict detection tests were excluded.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49872",
+            "title": "Introduce `ActiveModel::Enum`",
+            "date_modified": "2023-10-31T20:28:59.000Z",
+            "date_published": "2023-10-31T20:20:51.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49867.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1970789509\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49867\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49867/hovercard\" href=\"https://github.com/rails/rails/issues/49867\">#49867</a>.</p>\n<p dir=\"auto\">Before, when <code class=\"notranslate\">@on_duplicate = :skip if @on_duplicate == :update &amp;&amp; updatable_columns.empty?</code> line run, it incorrectly ignores the fact that custom <code class=\"notranslate\">:on_duplicate</code> was passed and <code class=\"notranslate\">@on_duplicate</code> is already configured in the <code class=\"notranslate\">configure_on_duplicate_update_logic</code> method. So I moved that logic into that method.</p>",
             "url": "https://github.com/rails/rails/pull/49870",
             "title": "Fix upserting for custom `:on_duplicate` and `:unique_by` consisting of all inserts keys",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1964634708\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49803\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49803/hovercard\" href=\"https://github.com/rails/rails/pull/49803\">#49803</a> to <code class=\"notranslate\">7-0-stable</code> from <code class=\"notranslate\">zzak/railties/remove_from_file-gsub</code></p>",
-            "url": "https://github.com/rails/rails/pull/49835",
-            "title": "[7-0-stable] Railties TestHelper remove_from_config should remove all occurrences",
-            "date_modified": "2023-10-29T10:53:12.000Z",
-            "date_published": "2023-10-29T10:53:08.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16350274?u=1a4e57ba26ff3044cc2150e1fe28453a03a5b8b7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because touch is used in a lot of places but it's interaction is not documented anywhere wrt transactions. Bot how the queries are coalesced and the order in which callbacks are fired can be very confusing if not mentioned.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Rdoc of touch.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"54832242\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/18606\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/18606/hovercard\" href=\"https://github.com/rails/rails/issues/18606\">#18606</a> coalesce PR<br>\n<a href=\"https://gist.github.com/dhavalsingh/0b353121345b1b74f6d16a41afb1bc5e\">https://gist.github.com/dhavalsingh/0b353121345b1b74f6d16a41afb1bc5e</a> Github gist for how callbacks are executed with touch and transaction blocks.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ x] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[x ] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[x ] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[x ] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49833",
-            "title": "Clarify behavior of touch in transactions with callbacks in RDoc [ci skip]",
-            "date_modified": "2023-10-31T08:24:15.000Z",
-            "date_published": "2023-10-28T21:28:31.000Z",
-            "author": {
-                "name": "dhavalsingh",
-                "url": "https://github.com/dhavalsingh"
             }
         }
     ]
