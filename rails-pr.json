@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When <code class=\"notranslate\">ActiveRecord.marshalling_format_version</code> is set to <code class=\"notranslate\">6.1</code>, <code class=\"notranslate\">Marshal</code> will try to serialize attribute types along with the model, causing a <code class=\"notranslate\">TypeError</code> if the model uses <code class=\"notranslate\">ActiveRecord::Base.normalizes</code> with a normalization <code class=\"notranslate\">Proc</code>.</p>\n<p dir=\"auto\">This commit adds a caveat to the <code class=\"notranslate\">normalizes</code> API documentation to warn users that they should set <code class=\"notranslate\">marshalling_format_version</code> to <code class=\"notranslate\">7.1</code> if they are using <code class=\"notranslate\">normalizes</code> and marshalling the targeted model.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49871.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1970922894\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49871\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49871/hovercard\" href=\"https://github.com/rails/rails/issues/49871\">#49871</a>.</p>\n<hr>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mjankowski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mjankowski\">@mjankowski</a> Do you feel like this would have prevented the issue you encountered?</p>",
-            "url": "https://github.com/rails/rails/pull/49876",
-            "title": "Add caveat about `normalizes` / `Marshal` interaction [ci-skip]",
-            "date_modified": "2023-11-01T00:38:39.000Z",
-            "date_published": "2023-10-31T21:23:55.000Z",
-            "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5864726?u=e92ece760a4f05c73e36340e2e4ea3abdfc7e128&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I'm trying to use memcached to de-duplicate some work. When I start the work, I want to write a key with a 5s TTL and if the key already exists, someone else is already doing the work and started at most 5s ago, so I don't have to start it again. To avoid a race condition, I'd like to use the <code class=\"notranslate\">unless_exist: true</code> option for this. If <code class=\"notranslate\">write(..., unless_exist: true)</code> returns <code class=\"notranslate\">false</code>, the key was already there and we don't need to do the work.</p>\n<p dir=\"auto\">The only problem with this approach is that the <code class=\"notranslate\">write</code> method also returns <code class=\"notranslate\">false</code> if there is some error with memcached. But in that case I do want to do the work, to ensure it gets done at least once.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR enables us to distinguish the case where the key already exists from the case where there was a memcached error, by making the fallback value returned on an error configurable.</p>\n<p dir=\"auto\">Now <code class=\"notranslate\">write(..., unless_exist: true, fallback: true)</code> will return <code class=\"notranslate\">true</code> on a memcached error and only returns <code class=\"notranslate\">false</code> when the key actually already exists.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Does it make sense to add this to more / all cache stores? Or should this be just for MemCachStore, as it makes the most sense when combined with <code class=\"notranslate\">unless_exist: true</code>?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49873",
             "title": "Add fallback option to MemCacheStore#write",
@@ -36,17 +25,6 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This indentation does not feel natural, and is often trimmed by linters.</p>\n<div class=\"highlight highlight-source-diff notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"- config.consider_all_requests_local       = true\n+ config.consider_all_requests_local = true\"><pre class=\"notranslate\"><span class=\"pl-md\"><span class=\"pl-md\">-</span> config.consider_all_requests_local       = true</span>\n<span class=\"pl-mi1\"><span class=\"pl-mi1\">+</span> config.consider_all_requests_local = true</span></pre></div>",
-            "url": "https://github.com/rails/rails/pull/49865",
-            "title": "Reset indentation of equals assignation",
-            "date_modified": "2023-10-31T14:29:12.000Z",
-            "date_published": "2023-10-31T13:00:17.000Z",
-            "author": {
-                "name": "guillaumewrobel",
-                "url": "https://github.com/guillaumewrobel"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16350274?u=1a4e57ba26ff3044cc2150e1fe28453a03a5b8b7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because touch is used in a lot of places but it's interaction is not documented anywhere wrt transactions. Bot how the queries are coalesced and the order in which callbacks are fired can be very confusing if not mentioned.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Rdoc of touch.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"54832242\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/18606\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/18606/hovercard\" href=\"https://github.com/rails/rails/issues/18606\">#18606</a> coalesce PR<br>\n<a href=\"https://gist.github.com/dhavalsingh/0b353121345b1b74f6d16a41afb1bc5e\">https://gist.github.com/dhavalsingh/0b353121345b1b74f6d16a41afb1bc5e</a> Github gist for how callbacks are executed with touch and transaction blocks.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ x] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[x ] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[x ] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[x ] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49833",
+            "title": "Clarify behavior of touch in transactions with callbacks in RDoc [ci skip]",
+            "date_modified": "2023-10-31T08:24:15.000Z",
+            "date_published": "2023-10-28T21:28:31.000Z",
+            "author": {
+                "name": "dhavalsingh",
+                "url": "https://github.com/dhavalsingh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16350274?u=1a4e57ba26ff3044cc2150e1fe28453a03a5b8b7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">… multiple instances of the same model</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because this is a pretty nuanced case that can come up in complex applications. We had a bug due to this and I couldn't find any other source specifying this behavior. The rails guides should be clear on this case so folks can avoid this and be mindful of this behavior when designing or maintaining systems.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the AR Callback Docs.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"623545878\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/39400\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/39400/hovercard\" href=\"https://github.com/rails/rails/issues/39400\">#39400</a> This is the only place that references this.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49831",
+            "title": "Update Callbacks Documentation: Specify 'after_commit' and 'after_rollback' Behavior for Multiple Objects of the Same Record [ci skip]",
+            "date_modified": "2023-10-31T20:03:20.000Z",
+            "date_published": "2023-10-28T17:45:53.000Z",
+            "author": {
+                "name": "dhavalsingh",
+                "url": "https://github.com/dhavalsingh"
             }
         }
     ]
