@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52599949?u=1760b036d3c7541f6947088385784714acfc770e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">I have updated the guide to include the use of zettabytes in ActiveSupport#Numeric.<br>\nI would appreciate it if somebody could take a look.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49882",
+            "title": "Add zettabytes documentation to the guide",
+            "date_modified": "2023-11-01T07:55:09.000Z",
+            "date_published": "2023-11-01T07:55:05.000Z",
+            "author": {
+                "name": "a5-stable",
+                "url": "https://github.com/a5-stable"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR removes the unwanted period added to the headings.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49880",
             "title": "Remove period from title [skip ci]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16350274?u=1a4e57ba26ff3044cc2150e1fe28453a03a5b8b7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because touch is used in a lot of places but it's interaction is not documented anywhere wrt transactions. Bot how the queries are coalesced and the order in which callbacks are fired can be very confusing if not mentioned.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Rdoc of touch.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"54832242\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/18606\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/18606/hovercard\" href=\"https://github.com/rails/rails/issues/18606\">#18606</a> coalesce PR<br>\n<a href=\"https://gist.github.com/dhavalsingh/0b353121345b1b74f6d16a41afb1bc5e\">https://gist.github.com/dhavalsingh/0b353121345b1b74f6d16a41afb1bc5e</a> Github gist for how callbacks are executed with touch and transaction blocks.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ x] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[x ] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[x ] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[x ] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49833",
-            "title": "Clarify behavior of touch in transactions with callbacks in RDoc [ci skip]",
-            "date_modified": "2023-10-31T08:24:15.000Z",
-            "date_published": "2023-10-28T21:28:31.000Z",
-            "author": {
-                "name": "dhavalsingh",
-                "url": "https://github.com/dhavalsingh"
             }
         }
     ]
