@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?u=bb262553df264faad2f515f6ea75067266e0d129&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I got confused by all the supported options of <code class=\"notranslate\">ActionView::RoutingUrlFor#url_for</code>, because it listed an incomplete list of options under the <code class=\"notranslate\">==== Options</code> section. I know that if I had read the general description carefully, I would have seen the reference to <code class=\"notranslate\">ActionDispatch::Routing::UrlFor#url_for</code> 🤦, but I just looked at the options.</p>\n<p dir=\"auto\">I think it would be clearer to directly link to the more complete list of options, similar to what other <code class=\"notranslate\">==== Options</code> sections do in various other places. Furthermore this also means that we don't need to maintain two separate lists of options, making the docs more complete with less code.</p>\n<p dir=\"auto\">One downside would be the additional click required to get to the options. If you think this is not optimal, I'd be happy to sync both options lists.</p>",
             "url": "https://github.com/rails/rails/pull/49899",
             "title": "[ci skip] Simplify and sync url_for options docs",
-            "date_modified": "2023-11-03T17:40:42.000Z",
+            "date_modified": "2023-11-03T22:19:05.000Z",
             "date_published": "2023-11-02T21:54:47.000Z",
             "author": {
                 "name": "codergeek121",
