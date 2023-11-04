@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">(In Basecamp) Campfire is now called simply called Chat, but to make it more clear I just renamed the reference of it to Basecamp.</p>",
+            "url": "https://github.com/rails/rails/pull/49921",
+            "title": "Campfire -> Basecamp in RELEASING_RAILS.md [ci skip]",
+            "date_modified": "2023-11-04T21:59:34.000Z",
+            "date_published": "2023-11-04T21:59:34.000Z",
+            "author": {
+                "name": "northeastprince",
+                "url": "https://github.com/northeastprince"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <code class=\"notranslate\">picture_tag</code> feature (<a href=\"https://github.com/rails/rails/pull/48100/files#diff-5337574dfb11b221d0eff970db44926331da327e16bdaa39c3effb6a34474b0b\">https://github.com/rails/rails/pull/48100/files#diff-5337574dfb11b221d0eff970db44926331da327e16bdaa39c3effb6a34474b0b</a>) into Guides documentation.</p>",
             "url": "https://github.com/rails/rails/pull/49920",
             "title": "Add picture_tag to ActionView helpers documentation [ci skip]",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3474627?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When saving a record with a float infinite value, it shouldn't mark as changed. This can be annoying when using with <a href=\"https://github.com/paper-trail-gem/paper_trail\">papertrail</a> or any other auditing system, since it creates a new version each time you save the record without real changes.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">How to reproduce:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"record = MyRecord.create!(float_field: Float::INFINITY)\nrecord.reload\nrecord.float_field = Float::INFINITY\nrecord.changed? # returns true when it should be false\"><pre class=\"notranslate\"><span class=\"pl-s1\">record</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">MyRecord</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">float_field</span>: <span class=\"pl-v\">Float</span>::<span class=\"pl-c1\">INFINITY</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-s1\">record</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">reload</span>\n<span class=\"pl-s1\">record</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">float_field</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Float</span>::<span class=\"pl-c1\">INFINITY</span>\n<span class=\"pl-s1\">record</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">changed?</span> <span class=\"pl-c\"># returns true when it should be false</span></pre></div>\n<p dir=\"auto\">Detail of the change:</p>\n<ul dir=\"auto\">\n<li>The problem was when transforming the number to string, the regex <code class=\"notranslate\">/\\A\\s*[+-]?\\d/</code> didn't match as numeric since <code class=\"notranslate\">Infinity</code> is not a number. I don't think is a good idea to add that word to the regex since we can have the <code class=\"notranslate\">Infinity</code> word and will be a false positive. However, let me know if you have a better approach.</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49904",
             "title": "Don't mark Float::INFINITY as changed if didn't",
-            "date_modified": "2023-11-03T15:35:34.000Z",
+            "date_modified": "2023-11-04T21:04:35.000Z",
             "date_published": "2023-11-03T15:34:15.000Z",
             "author": {
                 "name": "MaicolBen",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "mguan2020",
                 "url": "https://github.com/mguan2020"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49818.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1966229536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49818\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49818/hovercard\" href=\"https://github.com/rails/rails/issues/49818\">#49818</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Renames the <code class=\"notranslate\">ActionView::TestCase::Behavior</code> module's <code class=\"notranslate\">Content</code> to <code class=\"notranslate\">RenderedViewContent</code>, with the goal of making it more of an internal implementation detail that's unlikely to collide with an application-side <code class=\"notranslate\">Content</code> class.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">RenderedView</code>-prefix mirrors the module's <code class=\"notranslate\">RenderedViewsCollection</code> class.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Is this worth backporting into a <code class=\"notranslate\">7.1</code> release?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49856",
-            "title": "Rename `ActionView::TestCase::Behavior::{Content,RenderedViewContent}`",
-            "date_modified": "2023-11-04T02:40:02.000Z",
-            "date_published": "2023-10-30T22:00:32.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
