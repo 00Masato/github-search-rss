@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <code class=\"notranslate\">picture_tag</code> feature (<a href=\"https://github.com/rails/rails/pull/48100/files#diff-5337574dfb11b221d0eff970db44926331da327e16bdaa39c3effb6a34474b0b\">https://github.com/rails/rails/pull/48100/files#diff-5337574dfb11b221d0eff970db44926331da327e16bdaa39c3effb6a34474b0b</a>) into Guides documentation.</p>",
+            "url": "https://github.com/rails/rails/pull/49920",
+            "title": "Add picture_tag to ActionView helpers documentation [ci skip]",
+            "date_modified": "2023-11-04T19:48:39.000Z",
+            "date_published": "2023-11-04T19:47:52.000Z",
+            "author": {
+                "name": "guillaumewrobel",
+                "url": "https://github.com/guillaumewrobel"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This fixes the <code class=\"notranslate\">CHANGELOG</code> linter to accept usernames that include digits as valid author names.</p>\n<hr>\n<p dir=\"auto\">Example failure addressed by this change: <a href=\"https://github.com/rails/rails/actions/runs/6756217672/job/18365428846#step:8:13\">https://github.com/rails/rails/actions/runs/6756217672/job/18365428846#step:8:13</a></p>\n<p dir=\"auto\">Even though the entry has an author:</p>\n<p dir=\"auto\"></p><div class=\"Box Box--condensed my-2\">\n  <div class=\"Box-header f6\">\n    <p class=\"mb-0 text-bold\">\n      <a href=\"https://github.com/rails/rails/blob/6c5890ad3920deb2d6be844f6044886629a2f3e3/activerecord/CHANGELOG.md?plain=1#L1-L4\">rails/activerecord/CHANGELOG.md</a>\n    </p>\n    <p class=\"mb-0 color-fg-muted\">\n        Lines 1 to 4\n      in\n      <a data-pjax=\"true\" class=\"commit-tease-sha Link--inTextBlock\" href=\"/rails/rails/commit/6c5890ad3920deb2d6be844f6044886629a2f3e3\">6c5890a</a>\n    </p>\n  </div>\n  <div itemprop=\"text\" class=\"Box-body p-0 blob-wrapper blob-wrapper-embedded data\">\n    <table class=\"highlight tab-size mb-0 js-file-line-container\" data-tab-size=\"8\" data-paste-markdown-skip=\"\">\n\n        <tbody><tr class=\"border-0\">\n          <td id=\"L1\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"1\"></td>\n          <td id=\"LC1\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\"> <span class=\"pl-v\">*</span>   <span class=\"pl-s\">`</span><span class=\"pl-c1\">ActiveRecord::Base.table_name</span><span class=\"pl-s\">`</span> now returns <span class=\"pl-s\">`</span><span class=\"pl-c1\">nil</span><span class=\"pl-s\">`</span> instead of raising </td>\n        </tr>\n\n        <tr class=\"border-0\">\n          <td id=\"L2\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"2\"></td>\n          <td id=\"LC2\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\">     \"undefined method <span class=\"pl-s\">`</span><span class=\"pl-c1\">abstract_class?</span><span class=\"pl-s\">`</span> for Object<span class=\"pl-s\">:</span><span class=\"pl-en\">Class</span>\". </td>\n        </tr>\n\n        <tr class=\"border-0\">\n          <td id=\"L3\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"3\"></td>\n          <td id=\"LC3\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\">  </td>\n        </tr>\n\n        <tr class=\"border-0\">\n          <td id=\"L4\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"4\"></td>\n          <td id=\"LC4\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\">     <span class=\"pl-s\">*</span>a5-stable<span class=\"pl-s\">*</span> </td>\n        </tr>\n    </tbody></table>\n  </div>\n</div>\n<p></p>",
             "url": "https://github.com/rails/rails/pull/49919",
             "title": "Accept username as valid author name in `CHANGELOG`",
@@ -58,17 +69,6 @@
             "author": {
                 "name": "brunoprietog",
                 "url": "https://github.com/brunoprietog"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <code class=\"notranslate\">picture_tag</code> feature (<a href=\"https://github.com/rails/rails/pull/48100/files#diff-5337574dfb11b221d0eff970db44926331da327e16bdaa39c3effb6a34474b0b\">https://github.com/rails/rails/pull/48100/files#diff-5337574dfb11b221d0eff970db44926331da327e16bdaa39c3effb6a34474b0b</a>) into Guides documentation</p>",
-            "url": "https://github.com/rails/rails/pull/49902",
-            "title": "Add picture_tag to ActionView helpers documentation",
-            "date_modified": "2023-11-03T17:34:32.000Z",
-            "date_published": "2023-11-03T15:06:15.000Z",
-            "author": {
-                "name": "guillaumewrobel",
-                "url": "https://github.com/guillaumewrobel"
             }
         },
         {
