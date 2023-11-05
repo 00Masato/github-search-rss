@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds audio_tag, favicon_link_tag and video_tag in ActionView helper method guide.</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49925",
+            "title": "Add missing audio_tag, favicon_link_tag, video_tag methods in ActionView helper guide [ci skip]",
+            "date_modified": "2023-11-05T05:10:40.000Z",
+            "date_published": "2023-11-05T05:08:12.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">(In Basecamp) Campfire is now called simply called Chat, but to make it more clear I just renamed the reference of it to Basecamp.</p>",
             "url": "https://github.com/rails/rails/pull/49921",
             "title": "Campfire -> Basecamp in RELEASING_RAILS.md [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99301559?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created in order to fix issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1959655377\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49768\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49768/hovercard\" href=\"https://github.com/rails/rails/issues/49768\">#49768</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the documentation in the Rails migration guide from version 7.0 to 7.1. It documents a breaking change regarding @rails/ujs imports in Rails 7.1. The syntax for imports from @rails/ujs is modified in Rails 7.1.</p>\n<p dir=\"auto\">Specifically, users can no longer directly import modules from @rails/ujs in their JavaScript code.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49857",
-            "title": "Documented a breaking change regarding imports in @rails/ujs 7.1.0 [ci skip]",
-            "date_modified": "2023-11-04T17:53:13.000Z",
-            "date_published": "2023-10-30T22:48:17.000Z",
-            "author": {
-                "name": "mguan2020",
-                "url": "https://github.com/mguan2020"
             }
         }
     ]
