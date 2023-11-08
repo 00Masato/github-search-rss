@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This cache is used when url_for is called without a named route (ie. when it's called with hash options). Eager loading avoids building the cache on the first call and potentially allows the memory to be shared via CoW on forking servers.</p>",
+            "url": "https://github.com/rails/rails/pull/49965",
+            "title": "Eager load Journey Formatter cache",
+            "date_modified": "2023-11-08T04:39:43.000Z",
+            "date_published": "2023-11-08T04:39:39.000Z",
+            "author": {
+                "name": "jhawthorn",
+                "url": "https://github.com/jhawthorn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19525237?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>how Minitest works and names tests</li>\n<li>how to use <code class=\"notranslate\">--name</code> and <code class=\"notranslate\">--exclude</code> in a Rails app</li>\n</ul>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the testing guide isn't clear on how to filter Rails tests. Technically this is a minitest documentation issue but I've tried to tie it in with how Rails testing works.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>Tests are added or updated if you fix a bug or add a feature</del></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature</del></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49964",
             "title": "Add info to Testing Guide on filtering Rails tests [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "paulreece",
                 "url": "https://github.com/paulreece"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99301559?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created in order to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49877.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1971376588\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49877\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49877/hovercard\" href=\"https://github.com/rails/rails/issues/49877\">#49877</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request modifies the controller_helper.rb code to remove cookies from the delegation list. The reason is that helper_method already defines cookie for Action View.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49887",
-            "title": "Fix issue with defined?(cookies) returning nil in view context in Rails 7+/Ruby 3+",
-            "date_modified": "2023-11-02T21:42:14.000Z",
-            "date_published": "2023-11-01T18:11:53.000Z",
-            "author": {
-                "name": "mguan2020",
-                "url": "https://github.com/mguan2020"
             }
         }
     ]
