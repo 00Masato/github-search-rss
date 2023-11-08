@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54157657?u=9229fda3ec04d21a738cb5202df57f5a10879f16&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because in working on another PR I encountered a duplicate test. As you can see in the screenshot below the two tests are the same and the title for the duplicate test doesn't match the method that is actually being tested:<br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/54157657/281552899-1b590ccf-a876-479a-8c2f-481e7803f221.png\"><img src=\"https://user-images.githubusercontent.com/54157657/281552899-1b590ccf-a876-479a-8c2f-481e7803f221.png\" alt=\"CleanShot 2023-11-08 at 15 49 10\" style=\"max-width: 100%;\"></a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes the duplicate test.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49975",
+            "title": "remove duplicate test whose name doesn't match the tested method",
+            "date_modified": "2023-11-08T21:52:44.000Z",
+            "date_published": "2023-11-08T21:51:42.000Z",
+            "author": {
+                "name": "cjilbert504",
+                "url": "https://github.com/cjilbert504"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This section describes replacing UJS attributes with Turbo.<br>\nFor example replacing <code class=\"notranslate\">method</code> with <code class=\"notranslate\">turbo_method</code>.<br>\nHowever, for <code class=\"notranslate\">button_to</code> <code class=\"notranslate\">method</code> should not be replaced with <code class=\"notranslate\">turbo_method</code>,<br>\nas it's unrelated to UJS.<br>\nThis could avoid some confusion.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49966",
             "title": "Add note for `method` argument in `button_to` in js guide",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This cache is used when url_for is called without a named route (ie. when it's called with hash options). Eager loading avoids building the cache on the first call and potentially allows the memory to be shared via CoW on forking servers.</p>",
-            "url": "https://github.com/rails/rails/pull/49965",
-            "title": "Eager load Journey Formatter cache",
-            "date_modified": "2023-11-08T20:10:16.000Z",
-            "date_published": "2023-11-08T04:39:39.000Z",
-            "author": {
-                "name": "jhawthorn",
-                "url": "https://github.com/jhawthorn"
             }
         },
         {
