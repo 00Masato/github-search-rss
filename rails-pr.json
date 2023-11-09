@@ -9,22 +9,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/496367?u=e3a63a2f7db3bea0507f2a6bcc6650db58a96e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Wrapping code in a block is not always possible, this way it behaves more like stdlib Tempfile that can be unlinked manually.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Tempfile.create is recommended over Tempfile.new/open per the documentation: <a href=\"https://docs.ruby-lang.org/en/3.2/Tempfile.html\" rel=\"nofollow\">https://docs.ruby-lang.org/en/3.2/Tempfile.html</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49990",
             "title": "Let ActiveStorage::Blob#open return a tempfile for manual unlinking",
-            "date_modified": "2023-11-09T18:30:29.000Z",
+            "date_modified": "2023-11-09T19:19:31.000Z",
             "date_published": "2023-11-09T18:25:15.000Z",
             "author": {
                 "name": "bdewater",
                 "url": "https://github.com/bdewater"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">On the first call it can be a bit slow because it needs to load a bunch of data. It's also better to do it as part of boot so that some of that data is shared via Copy-on-Write</p>",
-            "url": "https://github.com/rails/rails/pull/49987",
-            "title": "Automatically eager load TZInfo",
-            "date_modified": "2023-11-09T17:44:54.000Z",
-            "date_published": "2023-11-09T15:56:24.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ybiquitous",
                 "url": "https://github.com/ybiquitous"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7312369?u=daea7ee0f26174732b3dc0c7199fc3b697507e21&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Sometimes we need to know if variant is ready or not, without triggering the transform.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"variant.processed? ? variant.image : original_attachment\"><pre class=\"notranslate\"><span class=\"pl-en\">variant</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">processed?</span> ? <span class=\"pl-en\">variant</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">image</span> : <span class=\"pl-en\">original_attachment</span></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request exposes <code class=\"notranslate\">#processed?</code> check for ActiveStorage::Variant(WithRecord) to public.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49893",
+            "title": "Move method `#processed?` to public for Variant(WithRecord) and Preview.",
+            "date_modified": "2023-11-02T16:14:03.000Z",
+            "date_published": "2023-11-02T11:49:05.000Z",
+            "author": {
+                "name": "balbesina",
+                "url": "https://github.com/balbesina"
             }
         }
     ]
