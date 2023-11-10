@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17757590?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Sample bug reproduction template is missing a gem it relies on (minitest)</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50002",
+            "title": "Add all required gems to template",
+            "date_modified": "2023-11-10T14:49:21.000Z",
+            "date_published": "2023-11-10T14:42:02.000Z",
+            "author": {
+                "name": "mylesboone",
+                "url": "https://github.com/mylesboone"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17757590?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><code class=\"notranslate\">ActiveRecord::Relation</code> <code class=\"notranslate\">where</code> has a nice hash-style interface for forming the <code class=\"notranslate\">where</code> clause.<br>\nThis PR enables a similar style for <code class=\"notranslate\">order</code>, while maintaining all existing functionality.</p>\n<p dir=\"auto\">ActiveRecord::Relation can take a hash where keys are table name, value is a hash of key (column name) and value (order direction). For example:</p>\n<p dir=\"auto\"><code class=\"notranslate\">Topic.includes(:posts).order(posts: { created_at: :desc })</code></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Order can be passed several different arguments today:</p>\n<p dir=\"auto\">a) <code class=\"notranslate\">Topic.includes(:posts).order('posts.created_at')</code><br>\nb) <code class=\"notranslate\">Topic.includes(:posts).order('posts.created_at': :asc)</code><br>\nc) <code class=\"notranslate\">Topic.includes(:posts).order('posts.created_at', { follower_count: :desc }, 'posts.user_id desc' )</code><br>\nd) <code class=\"notranslate\">Topic.includes(:posts).order('posts.user_id', Post.arel_table[:created_at].desc)</code></p>\n<p dir=\"auto\">Each can be written re-written as a more structured hash:</p>\n<p dir=\"auto\">a) <code class=\"notranslate\">Topic.includes(:posts).order(posts: { created_at: :asc })</code><br>\nb) <code class=\"notranslate\">Topic.includes(:posts).order(posts: { created_at: :asc })</code><br>\nc) <code class=\"notranslate\">Topic.includes(:posts).order({ posts: { created_at: :asc } }, { topics: { follower_count: :desc } }, { posts: { user_id: :desc } })</code><br>\nd) <code class=\"notranslate\">Topic.includes(:posts).order(posts: { user_id: :asc, created_at: :desc })</code></p>\n<p dir=\"auto\">Or written in combination with the other existing strategies:</p>\n<p dir=\"auto\">c) <code class=\"notranslate\">Topic.includes(:posts).order('posts.created_at', { follower_count: :desc }, posts: { user_id: :desc})</code><br>\nd) <code class=\"notranslate\">Topic.includes(:posts).order({ posts: { user_id: :asc }}, Post.arel_table[:created_at].desc)</code></p>\n<p dir=\"auto\">It will properly reference table-name keys and maintains checks for directional keywords.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50000",
             "title": "`ActiveRecord::Relation#order` supports hash like `ActiveRecord::Relation#where`",
-            "date_modified": "2023-11-10T13:54:16.000Z",
+            "date_modified": "2023-11-10T14:37:57.000Z",
             "date_published": "2023-11-10T13:08:53.000Z",
             "author": {
                 "name": "mylesboone",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds audio_tag, favicon_link_tag and video_tag in ActionView helper method guide.</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49925",
-            "title": "Add missing audio_tag, favicon_link_tag, video_tag methods in ActionView helper guide [ci skip]",
-            "date_modified": "2023-11-10T09:46:11.000Z",
-            "date_published": "2023-11-05T05:08:12.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
             }
         }
     ]
