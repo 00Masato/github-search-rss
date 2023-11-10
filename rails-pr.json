@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54147006?u=9cf41cf0e4e58fc70f414d77e65e57a5a3e897dc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This Pull Request has been created because there was a typo</p>\n<p dir=\"auto\">This Pull Request changes \"an short-hand\" to \"a short-hand\"</p>",
-            "url": "https://github.com/rails/rails/pull/49997",
-            "title": "[ci skip] Typo a/an",
-            "date_modified": "2023-11-10T11:52:39.000Z",
-            "date_published": "2023-11-10T11:52:35.000Z",
-            "author": {
-                "name": "y0608",
-                "url": "https://github.com/y0608"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/259568?u=088346ff0867534d6f143c32b5486953e158a6e4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR adds support for the WITH PARSER option when creating a fulltext index in MYSQL.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes activerecord in order to support passing a <code class=\"notranslate\">with_parser</code> option when creating an index.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49996",
             "title": "Add support for WITH PARSER for full text search indexes",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <code class=\"notranslate\">picture_tag</code> feature <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1690011462\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48100\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48100/hovercard\" href=\"https://github.com/rails/rails/pull/48100\">#48100</a> into Guides documentation.</p>\n<div class=\"highlight highlight-text-md notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#### picture_tag\n\nReturns an HTML picture tag for the source. It supports passing a String, an Array or a Block.\n\n```ruby\npicture_tag(&quot;icon.webp&quot;, &quot;icon.png&quot;)\"><pre class=\"notranslate\"><span class=\"pl-mh\">#### <span class=\"pl-en\">picture_tag</span></span>\n\nReturns an HTML picture tag for the source. It supports passing a String, an Array or a Block.\n\n<span class=\"pl-s\">```</span><span class=\"pl-en\">ruby</span>\npicture_tag(<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>icon.webp<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>icon.png<span class=\"pl-pds\">\"</span></span>)</pre></div>\n<p dir=\"auto\">This generates the following HTML:</p>\n<div class=\"highlight highlight-text-html-basic notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"&lt;picture&gt;\n  &lt;source srcset=&quot;/assets/icon.webp&quot; type=&quot;image/webp&quot; /&gt;\n  &lt;source srcset=&quot;/assets/icon.png&quot; type=&quot;image/png&quot; /&gt;\n  &lt;img src=&quot;/assets/icon.png&quot; /&gt;\n&lt;/picture&gt;\"><pre class=\"notranslate\"><span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">picture</span><span class=\"pl-kos\">&gt;</span>\n  <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">source</span> <span class=\"pl-c1\">srcset</span>=\"<span class=\"pl-s\">/assets/icon.webp</span>\" <span class=\"pl-c1\">type</span>=\"<span class=\"pl-s\">image/webp</span>\" /&gt;\n  <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">source</span> <span class=\"pl-c1\">srcset</span>=\"<span class=\"pl-s\">/assets/icon.png</span>\" <span class=\"pl-c1\">type</span>=\"<span class=\"pl-s\">image/png</span>\" /&gt;\n  <span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">img</span> <span class=\"pl-c1\">src</span>=\"<span class=\"pl-s\">/assets/icon.png</span>\" /&gt;\n<span class=\"pl-kos\">&lt;/</span><span class=\"pl-ent\">picture</span><span class=\"pl-kos\">&gt;</span></pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\nFor memory, the changelog item (below) is very detailed. In Guides documentation, the philosophy seems to be very concise.\n\n\n\n![CleanShot 2023-11-06 at 09 24 50@2x](https://github.com/rails/rails/assets/20317297/dff500c8-683b-41a1-bed8-005946f80f50)\"><pre class=\"notranslate\"><code class=\"notranslate\">\nFor memory, the changelog item (below) is very detailed. In Guides documentation, the philosophy seems to be very concise.\n\n\n\n![CleanShot 2023-11-06 at 09 24 50@2x](https://github.com/rails/rails/assets/20317297/dff500c8-683b-41a1-bed8-005946f80f50)\n</code></pre></div>",
+            "url": "https://github.com/rails/rails/pull/49920",
+            "title": "Add picture_tag to ActionView helpers documentation [ci skip]",
+            "date_modified": "2023-11-10T10:11:32.000Z",
+            "date_published": "2023-11-04T19:47:52.000Z",
+            "author": {
+                "name": "guillaumewrobel",
+                "url": "https://github.com/guillaumewrobel"
             }
         }
     ]
