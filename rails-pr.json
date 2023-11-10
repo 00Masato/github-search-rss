@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds audio_tag, favicon_link_tag and video_tag in ActionView helper method guide.</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/49925",
             "title": "Add missing audio_tag, favicon_link_tag, video_tag methods in ActionView helper guide [ci skip]",
-            "date_modified": "2023-11-09T20:48:56.000Z",
+            "date_modified": "2023-11-10T02:55:34.000Z",
             "date_published": "2023-11-05T05:08:12.000Z",
             "author": {
                 "name": "akhilgkrishnan",
@@ -163,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20317297?u=177bd9e550568864a33a7745a8cac192849d185a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <code class=\"notranslate\">picture_tag</code> feature <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1690011462\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48100\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48100/hovercard\" href=\"https://github.com/rails/rails/pull/48100\">#48100</a> into Guides documentation.</p>\n<p dir=\"auto\">For memory, the changelog item (below) is very detailed. In Guides documentation, the philosophy seems to be very concise.</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://user-images.githubusercontent.com/20317297/280638442-dff500c8-683b-41a1-bed8-005946f80f50.png\"><img src=\"https://user-images.githubusercontent.com/20317297/280638442-dff500c8-683b-41a1-bed8-005946f80f50.png\" alt=\"CleanShot 2023-11-06 at 09 24 50@2x\" style=\"max-width: 100%;\"></a></p>",
             "url": "https://github.com/rails/rails/pull/49920",
             "title": "Add picture_tag to ActionView helpers documentation [ci skip]",
-            "date_modified": "2023-11-09T21:34:32.000Z",
+            "date_modified": "2023-11-10T02:52:43.000Z",
             "date_published": "2023-11-04T19:47:52.000Z",
             "author": {
                 "name": "guillaumewrobel",
