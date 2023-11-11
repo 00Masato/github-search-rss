@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39745401?u=9eaf4226dadc5c7ffe8b445aaec72d3bca59bada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Possible typo, as <code class=\"notranslate\">User-Agent: reqwest/0.9.1</code> is used further down.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jiftoo/rfcs/blob/jiftoo-patch-1/text/3463-crates-io-policy-update.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3524",
+            "title": "request/0.9.1 -> reqwest/0.9.1",
+            "date_modified": "2023-11-11T19:45:50.000Z",
+            "date_published": "2023-11-11T19:45:47.000Z",
+            "author": {
+                "name": "jiftoo",
+                "url": "https://github.com/jiftoo"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110610266?u=42b7bc3f053263f9d3d6fdda0df7569902274389&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/hydroper/rust-rfcs/blob/master/text/0000-cargo-dns.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3523",
             "title": "Create 0000-cargo-dns.md",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Lokathor",
                 "url": "https://github.com/Lokathor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/147966?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes a mechanism to allow <code class=\"notranslate\">impl</code>s for a type or trait to be in a<br>\nseparate crate, while still meeting the soundness guarantees currently enforced<br>\nby the orphan rule. With this, the crate structure (and thus build system<br>\ndependency graph) can be decoupled from the actual implementations.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jsgf/rfcs/blob/extern-impl/text/0000-extern-impl.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3482",
-            "title": "Pre-RFC describing mechanism to optionally loosen some orphan rule constraints",
-            "date_modified": "2023-09-21T19:48:05.000Z",
-            "date_published": "2023-09-03T01:56:17.000Z",
-            "author": {
-                "name": "jsgf",
-                "url": "https://github.com/jsgf"
             }
         }
     ]
