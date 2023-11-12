@@ -6,6 +6,28 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1940490?u=42777c8876d7b6591798df666a82057394b8b0c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow <code class=\"notranslate\">_</code> for the name of associated constants. This RFC builds on <a href=\"https://github.com/rust-lang/rfcs/pull/2526\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2526/hovercard\">RFC 2526</a> which added support for free <code class=\"notranslate\">const</code> items with the name <code class=\"notranslate\">_</code>, but not associated consts.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"// RFC 2526 (stable in Rust 1.37)\nconst _: () = { /* ... */ };\n\nimpl Thing {\n    // this RFC\n    const _: () = { /* ... */ };\n}\"><pre class=\"notranslate\"><span class=\"pl-c\">// RFC 2526 (stable in Rust 1.37)</span>\n<span class=\"pl-k\">const</span> _<span class=\"pl-kos\">:</span> <span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> = <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">Thing</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c\">// this RFC</span>\n    <span class=\"pl-k\">const</span> _<span class=\"pl-kos\">:</span> <span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> = <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Constants named <code class=\"notranslate\">_</code> are not nameable by other code and do not appear in documentation, but are useful when macro-generated code must typecheck some expression in the context of a specific choice of <code class=\"notranslate\">Self</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dtolnay/rfcs/blob/assocunderscore/text/0000-associated-const-underscore.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3527",
+            "title": "RFC: Associated const underscore",
+            "date_modified": "2023-11-12T20:55:10.000Z",
+            "date_published": "2023-11-12T20:53:33.000Z",
+            "author": {
+                "name": "dtolnay",
+                "url": "https://github.com/dtolnay"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38225716?u=0fc3039b6035c3bc51804a8a47c50981cd5c4778&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to forbid function -&gt; integer <code class=\"notranslate\">as</code> casts, since they have surprising aspects and are error prone.</p>\n<p dir=\"auto\"><a href=\"https://github.com/WaffleLapkin/rfcs/blob/forbidden-function-casts/text/3521-forbidden-function-casts.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3526",
+            "title": " Add forbidden function casts RFC",
+            "date_modified": "2023-11-12T20:32:49.000Z",
+            "date_published": "2023-11-12T20:15:21.000Z",
+            "author": {
+                "name": "WaffleLapkin",
+                "url": "https://github.com/WaffleLapkin"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40109184?u=3b8c1fe0674113dbbb6d3a38f9a3efc70d2f5bb5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/98a175fe69e26a242bca0c4e72a176f5c5e1f584/text/3525-struct-target-feature.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3525",
             "title": "Struct target features RFC",
@@ -198,28 +220,6 @@
             "title": "RFC: Cargo feature visibility (private/public)",
             "date_modified": "2023-10-18T13:32:19.000Z",
             "date_published": "2023-09-09T23:11:39.000Z",
-            "author": {
-                "name": "tgross35",
-                "url": "https://github.com/tgross35"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/feature-deprecation/text/3486-feature-deprecation.md\">Rendered</a></p>\n<p dir=\"auto\">RFC for <code class=\"notranslate\">feature-deprecation</code><br>\nRFC goals: add a way to deprecate Cargo features</p>\n<p dir=\"auto\">This was split from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1669093537\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3416\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3416/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3416\">#3416</a></p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[features]\nfoo = { enables = [], deprecated = true }\nfoo = { enables = [], deprecated = &quot;this works as a note&quot; }\nbar = { enables = [], deprecated = { since = &quot;1.2.3&quot;, note = &quot;don't use this!&quot; } }\"><pre class=\"notranslate\">[<span class=\"pl-en\">features</span>]\n<span class=\"pl-smi\">foo</span> = { <span class=\"pl-smi\">enables</span> = [], <span class=\"pl-smi\">deprecated</span> = <span class=\"pl-c1\">true</span> }\n<span class=\"pl-smi\">foo</span> = { <span class=\"pl-smi\">enables</span> = [], <span class=\"pl-smi\">deprecated</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>this works as a note<span class=\"pl-pds\">\"</span></span> }\n<span class=\"pl-smi\">bar</span> = { <span class=\"pl-smi\">enables</span> = [], <span class=\"pl-smi\">deprecated</span> = { <span class=\"pl-smi\">since</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>1.2.3<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-smi\">note</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>don't use this!<span class=\"pl-pds\">\"</span></span> } }</pre></div>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #7130.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"467830911\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7130\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7130/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7130\">rust-lang/cargo#7130</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3486",
-            "title": "RFC: Cargo feature deprecation",
-            "date_modified": "2023-09-10T07:38:09.000Z",
-            "date_published": "2023-09-09T23:06:09.000Z",
-            "author": {
-                "name": "tgross35",
-                "url": "https://github.com/tgross35"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/feature-documentation/text/3485-feature-documentation.md\">Rendered</a></p>\n<p dir=\"auto\">RFC for <code class=\"notranslate\">feature-documentation</code><br>\nRFC goals: add a way to write feature descriptions in Cargo.toml</p>\n<p dir=\"auto\">This was split from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1669093537\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3416\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3416/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3416\">#3416</a></p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[features]\n# current configuration\nfoo = []\n# Add a description to the feature\nbar = { enables = [&quot;foo&quot;], doc = &quot;simple docstring here&quot;}\n\n# Features can also be full tables if descriptions are longer\n[features.qux]\nenables = [&quot;bar&quot;, &quot;baz&quot;]\ndoc = &quot;&quot;&quot;\n# qux\n\nThis could be a longer description of this feature\n&quot;&quot;&quot;\"><pre class=\"notranslate\">[<span class=\"pl-en\">features</span>]\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> current configuration</span>\n<span class=\"pl-smi\">foo</span> = []\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> Add a description to the feature</span>\n<span class=\"pl-smi\">bar</span> = { <span class=\"pl-smi\">enables</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>foo<span class=\"pl-pds\">\"</span></span>], <span class=\"pl-smi\">doc</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>simple docstring here<span class=\"pl-pds\">\"</span></span>}\n\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> Features can also be full tables if descriptions are longer</span>\n[<span class=\"pl-en\">features</span>.<span class=\"pl-en\">qux</span>]\n<span class=\"pl-smi\">enables</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>bar<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>baz<span class=\"pl-pds\">\"</span></span>]\n<span class=\"pl-smi\">doc</span> = <span class=\"pl-s\"><span class=\"pl-pds\">\"\"\"</span></span>\n<span class=\"pl-s\"># qux</span>\n<span class=\"pl-s\"></span>\n<span class=\"pl-s\">This could be a longer description of this feature</span>\n<span class=\"pl-s\"><span class=\"pl-pds\">\"\"\"</span></span></pre></div>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #4956.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"289747867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/4956\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/4956/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/4956\">rust-lang/cargo#4956</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3485",
-            "title": "RFC: Cargo feature descriptions",
-            "date_modified": "2023-09-15T21:27:34.000Z",
-            "date_published": "2023-09-09T22:59:28.000Z",
             "author": {
                 "name": "tgross35",
                 "url": "https://github.com/tgross35"
