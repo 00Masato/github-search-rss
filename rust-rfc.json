@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40109184?u=3b8c1fe0674113dbbb6d3a38f9a3efc70d2f5bb5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/98a175fe69e26a242bca0c4e72a176f5c5e1f584/text/3525-struct-target-feature.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3525",
+            "title": "Struct target features RFC",
+            "date_modified": "2023-11-12T14:15:28.000Z",
+            "date_published": "2023-11-12T14:09:10.000Z",
+            "author": {
+                "name": "sarah-ek",
+                "url": "https://github.com/sarah-ek"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39745401?u=9eaf4226dadc5c7ffe8b445aaec72d3bca59bada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Possible typo, as <code class=\"notranslate\">User-Agent: reqwest/0.9.1</code> is used further down.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jiftoo/rfcs/blob/jiftoo-patch-1/text/3463-crates-io-policy-update.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3524",
             "title": "request/0.9.1 -> reqwest/0.9.1",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tgross35",
                 "url": "https://github.com/tgross35"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5456384?u=19311cf017def31e83f6c871095f201625f4fb7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Lokathor/rfcs/blob/unsafe-extern-blocks/text/0000-unsafe-extern-blocks.md\">Rendered</a></p>\n<hr>\n<p dir=\"auto\">Continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1730097805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3439\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3439/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3439\">#3439</a>, very sorry for the mix up, but when I went to make <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1862201012\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3477\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3477/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3477\">#3477</a> I deleted my <code class=\"notranslate\">rfcs</code> repo fork and re-forked. I had forgotten that there was an open PR at the time.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3484",
-            "title": "Unsafe Extern Blocks",
-            "date_modified": "2023-10-12T15:28:44.000Z",
-            "date_published": "2023-09-07T01:15:50.000Z",
-            "author": {
-                "name": "Lokathor",
-                "url": "https://github.com/Lokathor"
             }
         }
     ]
