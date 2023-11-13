@@ -6,25 +6,25 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51182?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In the debugging_rails_applications.md in the docs, a link to a post about Valgrind and Ruby by Evan Weaver isn't available anymore.</p>\n<p dir=\"auto\">This minor change simply links to an archived version of the post.</p>\n<p dir=\"auto\">Btw: I checked all other external links on that specific page about debugging rails apps, and they still work.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Prior to this commit, <code class=\"notranslate\">ActiveStorage::Preview#processed</code> would only process the preview image, not the specified variant of the preview image.  For example, <code class=\"notranslate\">thumb = attached_pdf.preview(:thumb).processed</code> would only generate the full-sized preview image, not the <code class=\"notranslate\">:thumb</code> variant of it, until e.g. <code class=\"notranslate\">thumb.url</code> was called.</p>\n<p dir=\"auto\">This commit updates <code class=\"notranslate\">ActiveStorage::Preview#processed</code> to generate both the full-sized preview image and the requested variant.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #50026.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1989381992\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50026\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50026/hovercard\" href=\"https://github.com/rails/rails/pull/50026\">#50026</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/50044",
+            "title": "Process preview variant when processing preview",
+            "date_modified": "2023-11-13T17:17:55.000Z",
+            "date_published": "2023-11-13T17:17:51.000Z",
+            "author": {
+                "name": "jonathanhefner",
+                "url": "https://github.com/jonathanhefner"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51182?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In the debugging_rails_applications.md in the docs, a link to a post about Valgrind and Ruby by Evan Weaver isn't available anymore.</p>\n<p dir=\"auto\">This minor change simply links to an archived version of the post.</p>\n<p dir=\"auto\">Btw: I checked all other external links on that specific page about debugging rails apps (and many more ext. links for the current docs), and they still work.</p>",
             "url": "https://github.com/rails/rails/pull/50042",
-            "title": "minor: fixes a link to an old blog post about Valgring in the docs [ci skip]",
-            "date_modified": "2023-11-13T16:59:11.000Z",
+            "title": "minor: fixes a link to an old blog post about Valgrind in the docs [ci skip]",
+            "date_modified": "2023-11-13T17:21:43.000Z",
             "date_published": "2023-11-13T16:59:07.000Z",
             "author": {
                 "name": "MichaelWhi",
                 "url": "https://github.com/MichaelWhi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This ensures <code class=\"notranslate\">ActiveRecord::Base.strict_loading_by_default</code> and <code class=\"notranslate\">ActiveStorage.track_variants</code> are reset to their original values even when an error (e.g. an assertion failure) is raised inside <code class=\"notranslate\">with_strict_loading_by_default</code> and <code class=\"notranslate\">without_variant_tracking</code> blocks.</p>",
-            "url": "https://github.com/rails/rails/pull/50041",
-            "title": "Ensure globals reset after Active Storage tests",
-            "date_modified": "2023-11-13T16:54:12.000Z",
-            "date_published": "2023-11-13T16:54:08.000Z",
-            "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
             }
         },
         {
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1371733?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1987937005\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50006\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50006/hovercard\" href=\"https://github.com/rails/rails/pull/50006\">#50006</a> cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonathanhefner/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonathanhefner\">@jonathanhefner</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nicowenterodt/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nicowenterodt\">@nicowenterodt</a></p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">TransformJob</code> for previewable files only preprocess the preview image, but not the associated preview_image variant.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveStorage::TransformJob</code> to also trigger the preprocessing of the variant. It is also compatible with both previewable and variable records, as they both implement the <code class=\"notranslate\">#key</code> method</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">Every <code class=\"notranslate\">ActiveStorage::Blob</code> has a <code class=\"notranslate\">has_one_attached :preview_image</code> which is technically another AS blob.</p>\n<p dir=\"auto\">Right now <code class=\"notranslate\">ActiveStorage::Preview#processed</code> only generates the <code class=\"notranslate\">preview_image</code> blob, but not the variant that's associated with it (with transformations available in the <code class=\"notranslate\">@variation</code> instance variable)</p>\n<p dir=\"auto\">One way to solve this is to force the <code class=\"notranslate\">ActiveStorage::TransformJob</code> to preprocess the variant as well by calling <code class=\"notranslate\">ActiveStorage::Preview#key</code> ( or <code class=\"notranslate\">ActiveStorage::Variant#key</code> but it just calculates a key here)  this would return the key value that's inside the variant, which can be safely discarded in the context of <code class=\"notranslate\">ActiveStorage::TransformJob</code></p>\n<p dir=\"auto\">The <code class=\"notranslate\">ActiveStorage::Preview#processed</code> method can be subject to a refactor to handle multiple transformations depending on the <code class=\"notranslate\">@variation</code> instance variable ( which might require refactoring the <code class=\"notranslate\">#processed?</code> method )</p>\n<p dir=\"auto\">the <code class=\"notranslate\">ActiveStorage::Preview#key</code>, as well as <code class=\"notranslate\">ActiveStorage::Preview#url</code>, also can be refactored, because right now they perform two things:</p>\n<ol dir=\"auto\">\n<li>Generate a variant ( System and network calls )</li>\n<li>return the key or url</li>\n</ol>\n<p dir=\"auto\">Compared to the <code class=\"notranslate\">ActiveStorage::Variant#key</code> that simply calculates a key</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50026",
             "title": "[ActiveStorage] Fix TransformJob to preprocess preview image variant",
-            "date_modified": "2023-11-13T16:48:36.000Z",
+            "date_modified": "2023-11-13T17:19:18.000Z",
             "date_published": "2023-11-12T12:30:41.000Z",
             "author": {
                 "name": "chaadow",
