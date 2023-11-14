@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39745401?u=9eaf4226dadc5c7ffe8b445aaec72d3bca59bada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Possible typo, as <code class=\"notranslate\">User-Agent: reqwest/0.9.1</code> is used further down.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jiftoo/rfcs/blob/jiftoo-patch-1/text/3463-crates-io-policy-update.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3524",
-            "title": "request/0.9.1 -> reqwest/0.9.1",
-            "date_modified": "2023-11-13T20:52:37.000Z",
-            "date_published": "2023-11-11T19:45:47.000Z",
-            "author": {
-                "name": "jiftoo",
-                "url": "https://github.com/jiftoo"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110610266?u=42b7bc3f053263f9d3d6fdda0df7569902274389&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/hydroper/rust-rfcs/blob/master/text/0000-cargo-dns.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3523",
             "title": "Create 0000-cargo-dns.md",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "clarfonthey",
                 "url": "https://github.com/clarfonthey"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/feature-visibility/text/3487-feature-visibility.md\">Rendered</a></p>\n<p dir=\"auto\">RFC for <code class=\"notranslate\">feature-visibility</code><br>\nRFC goals: add a way to make Cargo features private</p>\n<p dir=\"auto\">This was split from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1669093537\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3416\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3416/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3416\">#3416</a></p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[features]\nfoo = { enables = [], public = false}\"><pre class=\"notranslate\">[<span class=\"pl-en\">features</span>]\n<span class=\"pl-smi\">foo</span> = { <span class=\"pl-smi\">enables</span> = [], <span class=\"pl-smi\">public</span> = <span class=\"pl-c1\">false</span>}</pre></div>\n<p dir=\"auto\">This would <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #10882.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1310055999\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/10882\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/10882/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/10882\">rust-lang/cargo#10882</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3487",
+            "title": "RFC: Cargo feature visibility (private/public)",
+            "date_modified": "2023-10-18T13:32:19.000Z",
+            "date_published": "2023-09-09T23:11:39.000Z",
+            "author": {
+                "name": "tgross35",
+                "url": "https://github.com/tgross35"
             }
         }
     ]
