@@ -6,6 +6,28 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20714883?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>GenerateBlocks is a small collection of lightweight WordPress blocks that can accomplish nearly anything.</div>",
+            "url": "https://github.com/tomusborne/generateblocks",
+            "title": "tomusborne/generateblocks: GenerateBlocks is a small collection of lightweight WordPress blocks that can accomplish nearly anything.",
+            "date_modified": "2023-10-29T01:19:12.000Z",
+            "date_published": "2018-12-19T08:24:49.000Z",
+            "author": {
+                "name": "tomusborne",
+                "url": "https://github.com/tomusborne"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188930?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔥 Airbroke: Lightweight, Airbrake-compatible, PostgreSQL-based Open Source Error Catcher</div>",
+            "url": "https://github.com/icoretech/airbroke",
+            "title": "icoretech/airbroke: 🔥 Airbroke: Lightweight, Airbrake-compatible, PostgreSQL-based Open Source Error Catcher",
+            "date_modified": "2023-10-08T04:27:42.000Z",
+            "date_published": "2023-05-05T14:20:57.000Z",
+            "author": {
+                "name": "icoretech",
+                "url": "https://github.com/icoretech"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63401712?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A small, simple and lightweight nostr timeline feed.</div>",
             "url": "https://github.com/Yonle/nostr-feed",
             "title": "Yonle/nostr-feed: A small, simple and lightweight nostr timeline feed.",
@@ -17,10 +39,21 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86611436?u=1cc8b4fa4f77cf0b2fc974deebede26d4b435e97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast and lightweight file explorer in early development.</div>",
+            "url": "https://github.com/keelus/gyozora",
+            "title": "keelus/gyozora: A fast and lightweight file explorer in early development.",
+            "date_modified": "2023-11-09T19:07:01.000Z",
+            "date_published": "2023-10-10T12:13:17.000Z",
+            "author": {
+                "name": "keelus",
+                "url": "https://github.com/keelus"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62741287?u=829b6cbd906a58e6ed330b05139f68b2754a2827&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>  A VDOM framework for lightweight web apps, ideal for simplicity. Fast as react, it excels for straightforward sites, offering a user-friendly approach without complex setups.</div>",
             "url": "https://github.com/babymonie/sprintui",
             "title": "babymonie/sprintui:   A VDOM framework for lightweight web apps, ideal for simplicity. Fast as react, it excels for straightforward sites, offering a user-friendly approach without complex setups.",
-            "date_modified": "2023-11-12T09:43:06.000Z",
+            "date_modified": "2023-11-14T15:03:53.000Z",
             "date_published": "2023-11-09T07:52:19.000Z",
             "author": {
                 "name": "babymonie",
@@ -72,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4982482?u=c5d2dd1ce0350e3208c89d552b8c263d12687373&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>wc-hash-router is a lightweight and versatile hash-based router library designed specifically for web components. Empower your web applications with seamless navigation and dynamic content loading, all while maintaining clean and modular code with the power of web components.</div>",
-            "url": "https://github.com/gen2tech/wc-hash-router",
-            "title": "gen2tech/wc-hash-router: wc-hash-router is a lightweight and versatile hash-based router library designed specifically for web components. Empower your web applications with seamless navigation and dynamic content loading, all while maintaining clean and modular code with the power of web components.",
-            "date_modified": "2023-11-14T12:04:27.000Z",
-            "date_published": "2023-11-14T11:52:56.000Z",
-            "author": {
-                "name": "gen2tech",
-                "url": "https://github.com/gen2tech"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8504419?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Linked Data Server and Proxy</div>",
             "url": "https://github.com/zazuko/trifid",
             "title": "zazuko/trifid: Lightweight Linked Data Server and Proxy",
@@ -102,17 +124,6 @@
             "author": {
                 "name": "francesco-ascenzi",
                 "url": "https://github.com/francesco-ascenzi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2940127?u=9c157511b23855a57dbcd617ac9d234242766ce6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A super lightweight router (1.0K) with middleware support and ZERO dependencies for Cloudflare Workers.</div>",
-            "url": "https://github.com/tsndr/cloudflare-worker-router",
-            "title": "tsndr/cloudflare-worker-router: A super lightweight router (1.0K) with middleware support and ZERO dependencies for Cloudflare Workers.",
-            "date_modified": "2023-11-09T05:19:20.000Z",
-            "date_published": "2021-02-13T00:22:34.000Z",
-            "author": {
-                "name": "tsndr",
-                "url": "https://github.com/tsndr"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "maks-io",
                 "url": "https://github.com/maks-io"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49724027?u=7946371e66748abfd026510669a1dbf9020c2e7e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight and flexible Vue 3 library for creating PixiJS applications.</div>",
-            "url": "https://github.com/hairyf/vue3-pixi",
-            "title": "hairyf/vue3-pixi: Lightweight and flexible Vue 3 library for creating PixiJS applications.",
-            "date_modified": "2023-11-14T13:28:50.000Z",
-            "date_published": "2023-05-07T04:08:35.000Z",
-            "author": {
-                "name": "hairyf",
-                "url": "https://github.com/hairyf"
             }
         }
     ]
