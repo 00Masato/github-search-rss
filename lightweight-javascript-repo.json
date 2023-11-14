@@ -6,6 +6,61 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10508024?u=ceb6a6fd7cec33002ebaca402c7e62b41f70c3a3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📈Lightweight k-line chart that can be highly customized. Zero dependencies. Support mobile.（可高度自定义的轻量级k线图，无第三方依赖，支持移动端）</div>",
+            "url": "https://github.com/liihuu/KLineChart",
+            "title": "liihuu/KLineChart: 📈Lightweight k-line chart that can be highly customized. Zero dependencies. Support mobile.（可高度自定义的轻量级k线图，无第三方依赖，支持移动端）",
+            "date_modified": "2023-11-14T18:13:44.000Z",
+            "date_published": "2019-05-19T09:04:23.000Z",
+            "author": {
+                "name": "liihuu",
+                "url": "https://github.com/liihuu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍦 VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour.</div>",
+            "url": "https://github.com/vanjs-org/van",
+            "title": "vanjs-org/van: 🍦 VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour.",
+            "date_modified": "2023-11-14T17:21:48.000Z",
+            "date_published": "2023-05-08T05:45:31.000Z",
+            "author": {
+                "name": "vanjs-org",
+                "url": "https://github.com/vanjs-org"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120526796?u=2cd1481795ea843610285034a0faa24269e7bfe5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Micro Reddit: A lightweight, open-source Reddit clone built with Go and TypeScript, featuring threaded comments, user authentication, voting, and more.</div>",
+            "url": "https://github.com/Childebrand94/micro-reddit",
+            "title": "Childebrand94/micro-reddit: Micro Reddit: A lightweight, open-source Reddit clone built with Go and TypeScript, featuring threaded comments, user authentication, voting, and more.",
+            "date_modified": "2023-11-14T18:38:57.000Z",
+            "date_published": "2023-10-07T10:54:24.000Z",
+            "author": {
+                "name": "Childebrand94",
+                "url": "https://github.com/Childebrand94"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47280851?u=9ec3b0f6b053398ddc463abb75ee469de5bbb103&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, fast and extensible Svelte Markdown editor and viewer.</div>",
+            "url": "https://github.com/BearToCode/carta",
+            "title": "BearToCode/carta: A lightweight, fast and extensible Svelte Markdown editor and viewer.",
+            "date_modified": "2023-11-11T15:33:33.000Z",
+            "date_published": "2023-04-27T12:51:17.000Z",
+            "author": {
+                "name": "BearToCode",
+                "url": "https://github.com/BearToCode"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86611436?u=1cc8b4fa4f77cf0b2fc974deebede26d4b435e97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast and lightweight file explorer in early development.</div>",
+            "url": "https://github.com/keelus/gyozora",
+            "title": "keelus/gyozora: A fast and lightweight file explorer in early development.",
+            "date_modified": "2023-11-09T19:07:01.000Z",
+            "date_published": "2023-10-10T12:13:17.000Z",
+            "author": {
+                "name": "keelus",
+                "url": "https://github.com/keelus"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/733364?u=b2cb1f7bb505fe44787ad334ccf0e682c2361758&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Glicko-2 implementation.</div>",
             "url": "https://github.com/kenany/glicko2-lite",
             "title": "kenany/glicko2-lite: Lightweight Glicko-2 implementation.",
@@ -36,39 +91,6 @@
             "author": {
                 "name": "abubalo",
                 "url": "https://github.com/abubalo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47280851?u=9ec3b0f6b053398ddc463abb75ee469de5bbb103&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, fast and extensible Svelte Markdown editor and viewer.</div>",
-            "url": "https://github.com/BearToCode/carta",
-            "title": "BearToCode/carta: A lightweight, fast and extensible Svelte Markdown editor and viewer.",
-            "date_modified": "2023-11-11T15:33:33.000Z",
-            "date_published": "2023-04-27T12:51:17.000Z",
-            "author": {
-                "name": "BearToCode",
-                "url": "https://github.com/BearToCode"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86611436?u=1cc8b4fa4f77cf0b2fc974deebede26d4b435e97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast and lightweight file explorer in early development.</div>",
-            "url": "https://github.com/keelus/gyozora",
-            "title": "keelus/gyozora: A fast and lightweight file explorer in early development.",
-            "date_modified": "2023-11-09T19:07:01.000Z",
-            "date_published": "2023-10-10T12:13:17.000Z",
-            "author": {
-                "name": "keelus",
-                "url": "https://github.com/keelus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132869025?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍦 VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour.</div>",
-            "url": "https://github.com/vanjs-org/van",
-            "title": "vanjs-org/van: 🍦 VanJS: World's smallest reactive UI framework. Incredibly Powerful, Insanely Small - Everyone can build a useful UI app in an hour.",
-            "date_modified": "2023-11-14T17:21:48.000Z",
-            "date_published": "2023-05-08T05:45:31.000Z",
-            "author": {
-                "name": "vanjs-org",
-                "url": "https://github.com/vanjs-org"
             }
         },
         {
@@ -160,6 +182,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2023-11-14T18:47:16.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101931215?u=e3029a1d0ddd6b42a0ba77acc5eeda80e47c1f2c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>💫 A simple, lightweight, and easy-to-use web client for the [Matrix] protocol.</div>",
             "url": "https://github.com/yurixander/mirage",
             "title": "yurixander/mirage: 💫 A simple, lightweight, and easy-to-use web client for the [Matrix] protocol.",
@@ -185,44 +218,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114530840?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)</div>",
             "url": "https://github.com/usebruno/bruno",
             "title": "usebruno/bruno: Opensource IDE For Exploring and Testing Api's (lightweight alternative to postman/insomnia)",
-            "date_modified": "2023-11-14T17:08:38.000Z",
+            "date_modified": "2023-11-14T18:27:57.000Z",
             "date_published": "2022-09-27T20:51:45.000Z",
             "author": {
                 "name": "usebruno",
                 "url": "https://github.com/usebruno"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188930?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔥 Airbroke: Lightweight, Airbrake-compatible, PostgreSQL-based Open Source Error Catcher</div>",
-            "url": "https://github.com/icoretech/airbroke",
-            "title": "icoretech/airbroke: 🔥 Airbroke: Lightweight, Airbrake-compatible, PostgreSQL-based Open Source Error Catcher",
-            "date_modified": "2023-10-08T04:27:42.000Z",
-            "date_published": "2023-05-05T14:20:57.000Z",
-            "author": {
-                "name": "icoretech",
-                "url": "https://github.com/icoretech"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63401712?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A small, simple and lightweight nostr timeline feed.</div>",
-            "url": "https://github.com/Yonle/nostr-feed",
-            "title": "Yonle/nostr-feed: A small, simple and lightweight nostr timeline feed.",
-            "date_modified": "2023-06-24T18:26:26.000Z",
-            "date_published": "2023-06-24T10:07:13.000Z",
-            "author": {
-                "name": "Yonle",
-                "url": "https://github.com/Yonle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62741287?u=829b6cbd906a58e6ed330b05139f68b2754a2827&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>  A VDOM framework for lightweight web apps, ideal for simplicity. Fast as react, it excels for straightforward sites, offering a user-friendly approach without complex setups.</div>",
-            "url": "https://github.com/babymonie/sprintui",
-            "title": "babymonie/sprintui:   A VDOM framework for lightweight web apps, ideal for simplicity. Fast as react, it excels for straightforward sites, offering a user-friendly approach without complex setups.",
-            "date_modified": "2023-11-14T15:03:53.000Z",
-            "date_published": "2023-11-09T07:52:19.000Z",
-            "author": {
-                "name": "babymonie",
-                "url": "https://github.com/babymonie"
             }
         }
     ]

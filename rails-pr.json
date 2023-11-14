@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As Active Record relations respond to <code class=\"notranslate\">include?</code>, calling <code class=\"notranslate\">in?</code> will perform a query if the relation hasn't been loaded yet:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"mary = Person.create(name: &quot;Mary&quot;)\n# =&gt; #&lt;Person id: 654, name: &quot;Mary&quot;&gt;\nmary.in?(Person.where(name: &quot;Alice&quot;))\n# SELECT 1 AS one FROM &quot;people&quot; WHERE &quot;people&quot;.&quot;name&quot; =&quot;Alice&quot; ...\"><pre class=\"notranslate\"><span class=\"pl-s1\">mary</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"Mary\"</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; #&lt;Person id: 654, name: \"Mary\"&gt;</span>\n<span class=\"pl-s1\">mary</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">in?</span><span class=\"pl-kos\">(</span><span class=\"pl-v\">Person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"Alice\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># SELECT 1 AS one FROM \"people\" WHERE \"people\".\"name\" =\"Alice\" ...</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50059",
             "title": "Document `#in?` can perform queries for Active Record relations",
-            "date_modified": "2023-11-14T17:27:47.000Z",
+            "date_modified": "2023-11-14T18:25:17.000Z",
             "date_published": "2023-11-14T17:27:09.000Z",
             "author": {
                 "name": "p8",
@@ -64,22 +64,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1371733?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1991103105\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50044\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50044/hovercard\" href=\"https://github.com/rails/rails/pull/50044\">#50044</a> cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonathanhefner/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonathanhefner\">@jonathanhefner</a></p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">if an empty hash is passed to a preview call (<code class=\"notranslate\">blob.preview({})</code>) We go through the original preview instead of regenerating a variation based on the original preview image which would result in a performance penalty.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Calls to <code class=\"notranslate\">#url</code> or <code class=\"notranslate\">#key</code> would now use the original <code class=\"notranslate\">blob.preview_image</code> instead of generating a variant that has an empty transformation.</p>\n<p dir=\"auto\">==&gt; Resulting in saving both a <code class=\"notranslate\">MiniMagic/vips</code> call. + a network/IO call to the storage service</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50046",
             "title": "[ActiveStorage] Prevent `AS::Preview#processed` to generate a variant for an empty transformation",
-            "date_modified": "2023-11-13T23:41:27.000Z",
+            "date_modified": "2023-11-14T18:40:03.000Z",
             "date_published": "2023-11-13T19:24:53.000Z",
             "author": {
                 "name": "chaadow",
                 "url": "https://github.com/chaadow"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51182?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In the debugging_rails_applications.md in the docs, a link to a post about Valgrind and Ruby by Evan Weaver isn't available anymore.</p>\n<p dir=\"auto\">This minor change simply links to an archived version of the post.</p>\n<p dir=\"auto\">Btw: I checked all other external links on that specific page about debugging rails apps (and many more ext. links for the current docs), and they still work.</p>",
-            "url": "https://github.com/rails/rails/pull/50042",
-            "title": "minor: fixes a link to an old blog post about Valgrind in the docs [ci skip]",
-            "date_modified": "2023-11-13T17:21:43.000Z",
-            "date_published": "2023-11-13T16:59:07.000Z",
-            "author": {
-                "name": "MichaelWhi",
-                "url": "https://github.com/MichaelWhi"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Nerian",
                 "url": "https://github.com/Nerian"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/53355525?u=10a9e3a54c30ab19bac03c95acfb7ff211949b1b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">While I was reading the documentation of ActiveRecord I noticed that the links are not working.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR addresses that issue and changes the links to the right page of the API documentation.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/49995",
+            "title": "Fix links for the ActiveRecord readme [ci-skip]",
+            "date_modified": "2023-11-10T11:10:39.000Z",
+            "date_published": "2023-11-10T10:53:06.000Z",
+            "author": {
+                "name": "laicuRoot",
+                "url": "https://github.com/laicuRoot"
             }
         }
     ]
