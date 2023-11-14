@@ -61,17 +61,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12209111?u=4abe39c251fbcc52b8dc7e2455b36ea1932cf514&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Since Node.js version 20.x (now LTS), Node.js returns a <code class=\"notranslate\">string</code> instead of a <code class=\"notranslate\">Promise&lt;string&gt;</code> for <code class=\"notranslate\">import.meta.resolve()</code> and doesn't require the flag anymore.</p>\n<h3 dir=\"auto\">Summary</h3>\n<ul dir=\"auto\">\n<li>Removes the statement about Node.js returning a promise for <code class=\"notranslate\">import.meta.resolve()</code>.</li>\n<li>Adds a link to the Node.js documentation about the <code class=\"notranslate\">import.meta.resolve()</code> function.</li>\n<li>Adds a statement about an additional <code class=\"notranslate\">parent</code> parameter when using the experimental flag.</li>\n</ul>\n\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#custom-esm-loader-hooks-run-on-dedicated-thread\">Node.js v20 release notes mentioning this change</a>.</p>",
-            "url": "https://github.com/mdn/content/pull/30264",
-            "title": "Remove statement about Node.js returning a promise for `import.meta.resolve()`",
-            "date_modified": "2023-11-14T12:39:25.000Z",
-            "date_published": "2023-11-14T12:22:52.000Z",
-            "author": {
-                "name": "LuudJanssen",
-                "url": "https://github.com/LuudJanssen"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=de6bd3d5d570d97e4c15ba2b0e774f3ebd2456ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Firefox 119 added support for Element(Internals).aria[Col/Row]IndexText. See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1986834932\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/21207\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/21207/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/21207\">mdn/browser-compat-data#21207</a></p>\n<p dir=\"auto\">Reverts <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1525468587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/23489\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/23489/hovercard\" href=\"https://github.com/mdn/content/pull/23489\">#23489</a> (originally these docs were removed because no browser had support)</p>",
             "url": "https://github.com/mdn/content/pull/30261",
             "title": "Add documentation for Element(Internals).aria[Col/Row]IndexText",
@@ -163,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This update includes:</p>\n<ul dir=\"auto\">\n<li>removing the note about the content being incomplete, and replacing it with one mentioning Manifest V2 and Manifest V3</li>\n<li>note about Chrome's MV3 support for promises.</li>\n<li>section about the differences between content script execution contexts</li>\n<li>section mentioning differences in background script support.</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #20779.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1374926849\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/20779\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/20779/hovercard\" href=\"https://github.com/mdn/content/issues/20779\">#20779</a></p>",
             "url": "https://github.com/mdn/content/pull/30228",
             "title": "Cross-browser extension article update",
-            "date_modified": "2023-11-14T15:07:56.000Z",
+            "date_modified": "2023-11-14T17:38:53.000Z",
             "date_published": "2023-11-13T01:48:47.000Z",
             "author": {
                 "name": "rebloor",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "superpotato9",
                 "url": "https://github.com/superpotato9"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32661241?u=f8e0256b8bb5e87e6d3b5612d3d0619420bf745e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This pull request adds a footnote regarding <code class=\"notranslate\">Referer</code> header specification. In practice, <code class=\"notranslate\">Referer</code> can actually be modified, for example with the <code class=\"notranslate\">fetch()</code> API using <code class=\"notranslate\">referer</code> option.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">This pull request clears the confusion of immutability of forbidden header names and the actual behavior of <code class=\"notranslate\">Referer</code> header.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://fetch.spec.whatwg.org/#forbidden-header-name\" rel=\"nofollow\">WHATWG Specification</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #29100.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1895317796\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/29100\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/29100/hovercard\" href=\"https://github.com/mdn/content/issues/29100\">#29100</a></p>",
+            "url": "https://github.com/mdn/content/pull/30200",
+            "title": "feat: add footnote regarding Referer mutability",
+            "date_modified": "2023-11-11T03:01:48.000Z",
+            "date_published": "2023-11-11T02:59:42.000Z",
+            "author": {
+                "name": "Namchee",
+                "url": "https://github.com/Namchee"
             }
         }
     ]

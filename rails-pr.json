@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50051.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1991817449\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50051\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50051/hovercard\" href=\"https://github.com/rails/rails/issues/50051\">#50051</a>.</p>\n<p dir=\"auto\">The test case is a preceding test case, adapted for this change.</p>",
+            "url": "https://github.com/rails/rails/pull/50060",
+            "title": "Fix permitting arrays in numbered parameters for `StrongParameters`",
+            "date_modified": "2023-11-14T18:00:25.000Z",
+            "date_published": "2023-11-14T18:00:21.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As Active Record relations respond to <code class=\"notranslate\">include?</code>, calling <code class=\"notranslate\">in?</code> will perform a query if the relation hasn't been loaded yet:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"mary = Person.create(name: &quot;Mary&quot;)\n# =&gt; #&lt;Person id: 654, name: &quot;Mary&quot;&gt;\nmary.in?(Person.where(name: &quot;Alice&quot;))\n# SELECT 1 AS one FROM &quot;people&quot; WHERE &quot;people&quot;.&quot;name&quot; =&quot;Alice&quot; ...\"><pre class=\"notranslate\"><span class=\"pl-s1\">mary</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"Mary\"</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; #&lt;Person id: 654, name: \"Mary\"&gt;</span>\n<span class=\"pl-s1\">mary</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">in?</span><span class=\"pl-kos\">(</span><span class=\"pl-v\">Person</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"Alice\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># SELECT 1 AS one FROM \"people\" WHERE \"people\".\"name\" =\"Alice\" ...</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50059",
+            "title": "Document `#in?` can perform queries for Active Record relations",
+            "date_modified": "2023-11-14T17:27:47.000Z",
+            "date_published": "2023-11-14T17:27:09.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Saves a lot of allocations. It's development only though.</p>",
             "url": "https://github.com/rails/rails/pull/50057",
             "title": "Routing::Mapper: Use Thread.each_caller_location if available",
@@ -14,17 +36,6 @@
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1990624638\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50038\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50038/hovercard\" href=\"https://github.com/rails/rails/issues/50038\">#50038</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/50055",
-            "title": "Fix `rails db:create:all` to not touch databases before they are created",
-            "date_modified": "2023-11-14T15:29:01.000Z",
-            "date_published": "2023-11-14T10:23:06.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Nerian",
                 "url": "https://github.com/Nerian"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/53355525?u=10a9e3a54c30ab19bac03c95acfb7ff211949b1b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">While I was reading the documentation of ActiveRecord I noticed that the links are not working.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR addresses that issue and changes the links to the right page of the API documentation.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49995",
-            "title": "Fix links for the ActiveRecord readme [ci-skip]",
-            "date_modified": "2023-11-10T11:10:39.000Z",
-            "date_published": "2023-11-10T10:53:06.000Z",
-            "author": {
-                "name": "laicuRoot",
-                "url": "https://github.com/laicuRoot"
             }
         }
     ]
