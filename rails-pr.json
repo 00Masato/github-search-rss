@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Some of these were specifically mentioned earlier in the Metal docs (response_body=, content_type=, status=) but were not linked because the methods were not documented (due to being part of a delegation).</p>\n<p dir=\"auto\">This commit separates all of the delegated methods so that they can be documented, adds links for the mentioned methods, and additionally documents two methods on Response that are mentioned in the new Metal documentation, but were not previously documented.</p>",
+            "url": "https://github.com/rails/rails/pull/50063",
+            "title": "Add documentation for delegated methods on Metal",
+            "date_modified": "2023-11-15T04:42:26.000Z",
+            "date_published": "2023-11-15T04:36:15.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because I am changing usages of <code class=\"notranslate\">find_db_config</code> to <code class=\"notranslate\">configs_for</code> in my app. I noticed that while you can pass a symbol to <code class=\"notranslate\">find_db_config</code> you cannot for <code class=\"notranslate\">configs_for</code>, meaning I have to add <code class=\"notranslate\">.to_s</code> at call sites where I might be passing a symbol in. I think it would be nice if <code class=\"notranslate\">configs_for</code>'s <code class=\"notranslate\">name</code> parameter worked with a symbol or a string.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the <code class=\"notranslate\">ActiveRecord::DatabaseConfigurations#configs_for</code> method to accept a symbol for the <code class=\"notranslate\">name</code> parameter. The <code class=\"notranslate\">name</code> parameter is used for comparison in one place, so I just call <code class=\"notranslate\">to_s</code> on it there.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50061",
             "title": "DatabaseConfigurations#configs_for can accept a symbol in the name param",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "mylesboone",
                 "url": "https://github.com/mylesboone"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/259568?u=088346ff0867534d6f143c32b5486953e158a6e4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR adds support for the WITH PARSER option when creating a fulltext index in MYSQL.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes activerecord in order to support passing a <code class=\"notranslate\">with_parser</code> option when creating an index.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49996",
-            "title": "Add support for WITH PARSER for full text search indexes",
-            "date_modified": "2023-11-10T11:56:43.000Z",
-            "date_published": "2023-11-10T11:22:49.000Z",
-            "author": {
-                "name": "Nerian",
-                "url": "https://github.com/Nerian"
             }
         }
     ]
