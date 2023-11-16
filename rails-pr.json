@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Right now adapters have to expose a rather byzantine API:</p>\n<ul dir=\"auto\">\n<li>They must be defined in <code class=\"notranslate\">active_record/connection_adapters/&lt;name&gt;_adapter</code></li>\n<li>They must define <code class=\"notranslate\">ConnectionHandling.&lt;name&gt;_adapter_class</code></li>\n<li>They must define <code class=\"notranslate\">ConnectionHandling.&lt;name&gt;_connection</code></li>\n</ul>\n<p dir=\"auto\">All this is not very DRY and a bit annoying. Additionally it makes it very hard to define aliases (e.g. <code class=\"notranslate\">mysql</code> =&gt; <code class=\"notranslate\">trilogy</code>), or to substitute a default adapter for a specialized one.</p>\n<p dir=\"auto\">This refactor aims at making all this easier by exposing a simple <code class=\"notranslate\">register</code> method, that third party adapters can call from a Railtie.</p>",
             "url": "https://github.com/rails/rails/pull/50064",
             "title": "Refactor lookup of connection adapters",
-            "date_modified": "2023-11-16T08:46:08.000Z",
+            "date_modified": "2023-11-16T11:32:59.000Z",
             "date_published": "2023-11-15T10:41:03.000Z",
             "author": {
                 "name": "casperisfine",
