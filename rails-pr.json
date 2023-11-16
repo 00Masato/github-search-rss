@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1530604?u=ce3bcded6b07f96722f7b3a0201a41002a314dff&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add base62 to SecureRandom</p>",
+            "url": "https://github.com/rails/rails/pull/50073",
+            "title": "Add base62 to SecureRandom",
+            "date_modified": "2023-11-16T16:00:25.000Z",
+            "date_published": "2023-11-16T16:00:20.000Z",
+            "author": {
+                "name": "valenciaj",
+                "url": "https://github.com/valenciaj"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/660706?u=19410c942e0efecfa563a274074ddcc521846fde&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Before this PR, subscribing to <code class=\"notranslate\">cache_*.active_support</code> notifications and performing Rails.cache#fetch_multi calls, it would seem as if the resulting write_multi operations happens <em>before</em> the read_multi operations. That's not true, it's just a side-effect of the write_multi call being nested inside the instrumentation block for read_multi.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This moves the write_multi out of the read_multi instrumentation block, to make the order of operations make sense.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I found this when writing a test helper to check what cache operations are performed in a test.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">Should this be in the CHANGELOG?</p>",
             "url": "https://github.com/rails/rails/pull/50071",
             "title": "Adjust instr. for Cache::Store#fetch_multi so writes are after reads",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/159?u=36438d464451d200a47a38f51180656aeb9a44d5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This was added in back in bootsnap 1.15.0 (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1463505600\" data-permission-text=\"Title is private\" data-url=\"https://github.com/Shopify/bootsnap/issues/428\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/Shopify/bootsnap/pull/428/hovercard\" href=\"https://github.com/Shopify/bootsnap/pull/428\">Shopify/bootsnap#428</a>). This can save extra work and IO when the cache won't be changed, like is the case for docker containers</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Dockerfile template used when creating a new application to add <code class=\"notranslate\">BOOTSNAP_READONLY=1</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50065",
             "title": "Add BOOTSNAP_READONLY to Dockerfile template for production",
-            "date_modified": "2023-11-16T13:54:08.000Z",
+            "date_modified": "2023-11-16T15:15:35.000Z",
             "date_published": "2023-11-15T19:19:44.000Z",
             "author": {
                 "name": "technicalpickles",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "KessaPassa",
                 "url": "https://github.com/KessaPassa"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/496367?u=e3a63a2f7db3bea0507f2a6bcc6650db58a96e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Wrapping code in a block is not always possible, this way it behaves more like stdlib Tempfile that can be unlinked manually.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Tempfile.create is recommended over Tempfile.new/open per the documentation: <a href=\"https://docs.ruby-lang.org/en/3.2/Tempfile.html\" rel=\"nofollow\">https://docs.ruby-lang.org/en/3.2/Tempfile.html</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/49990",
-            "title": "Let ActiveStorage::Blob#open return a tempfile for manual unlinking",
-            "date_modified": "2023-11-09T19:19:31.000Z",
-            "date_published": "2023-11-09T18:25:15.000Z",
-            "author": {
-                "name": "bdewater",
-                "url": "https://github.com/bdewater"
             }
         }
     ]
