@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Recently T-lang discussed the issue of macro matcher fragment specifiers, e.g. <code class=\"notranslate\">expr</code>, falling out of sync with the underlying grammar of Rust.  The consensus of the meeting was that it would be proper to set out a policy for how these divergences might be reconciled over edition boundaries.</p>\n<p dir=\"auto\">The purpose of this RFC is to memorialize the resulting consensus.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/macro-fragment-policy/text/3531-macro-fragment-policy.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3531",
+            "title": "Macro fragment specifiers edition policy",
+            "date_modified": "2023-11-16T05:04:56.000Z",
+            "date_published": "2023-11-16T05:02:06.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5751617?u=33b44cbfd337b51814048a70b4a0ba677d39a3b8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Process disclaimer</h1>\n<p dir=\"auto\">In <a href=\"https://github.com/rust-lang/rfcs/pull/3513#issuecomment-1771113458\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3513/hovercard\">this comment</a> nikomatsakis says that the eRFC process is dead and the <a href=\"https://dead-link-to-lang-team-site\" rel=\"nofollow\">experimental feature gates</a> process should be preferred for proposals like this.</p>\n<p dir=\"auto\">I'll submit the \"experimental feature gate\" PR to rust-lang/rust as well, but I'm also submitting a markdown document to this repo to have git history, inline comments, etc.<br>\nThis document will be linked from that PR.</p>\n<h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">This RFC proposes a syntactic sugar for delegating implementations of functions to other already implemented functions.</p>\n<p dir=\"auto\">There were two major delegation RFCs in the past, the first RFC in 2015 (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"121890018\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1406\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1406/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/1406\">#1406</a>) and the second one in 2018 (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"311919999\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2393\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2393/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2393\">#2393</a>).</p>\n<p dir=\"auto\">The second RFC was postponed by the language team in 2021 (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"311919999\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2393\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2393/hovercard?comment_id=816822011&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/2393#issuecomment-816822011\">#2393 (comment)</a>).<br>\nWe hope to revive that work again.</p>\n<p dir=\"auto\">How this proposal is different from the previous ones:</p>\n<ul dir=\"auto\">\n<li>This proposal follows the \"prototype first, finalized design later\" approach, so it's oriented towards compiler team as well, not just language team.<br>\nThe prototyping is already <a href=\"https://github.com/Bryanskiy/rust/tree/delegImpl\">in progress</a> and we are ready to provide resources for getting the feature to production quality if accepted.</li>\n<li>This proposal takes a more data driven approach, and builds the initial design on relatively detailed statistics about use of delegation-like patterns collected from code in the wild. The resulting design turns out closer in spirit to the<br>\n<a href=\"https://github.com/rust-lang/rfcs/pull/1406\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1406/hovercard\">original proposal</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/contactomorph/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/contactomorph\">@contactomorph</a> than to later iterations.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/petrochenkov/rfcs/blob/delegation/text/0000-fn-delegation.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3530",
             "title": "eRFC: Implement function delegation in rustc",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tgross35",
                 "url": "https://github.com/tgross35"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Categories for crates are now deprecated and implicitly added as keywords instead. A new set of policies is added to allow the crates.io team to curate the way keywords are presented, replacing features such as the \"Popular Categories\" list on crates.io with a \"Popular Keywords\" instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/cargo-tags/text/3488-deprecate-cargo-categories.md\">Rendered</a></p>\n<p dir=\"auto\">Special thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Turbo87/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Turbo87\">@Turbo87</a> from the crates.io team for cleaning up this RFC and adding extra context.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3488",
-            "title": "Deprecate crate categories and allow metadata on keywords",
-            "date_modified": "2023-10-28T06:49:59.000Z",
-            "date_published": "2023-09-10T03:37:24.000Z",
-            "author": {
-                "name": "clarfonthey",
-                "url": "https://github.com/clarfonthey"
             }
         }
     ]
