@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Recently T-lang discussed the issue of macro matcher fragment specifiers, e.g. <code class=\"notranslate\">expr</code>, falling out of sync with the underlying grammar of Rust.  The consensus of the meeting was that it would be proper to set out a policy for how these divergences might be reconciled over edition boundaries.</p>\n<p dir=\"auto\">The purpose of this RFC is to memorialize the resulting consensus.</p>\n<p dir=\"auto\"><a href=\"https://github.com/traviscross/rfcs/blob/TC/macro-fragment-policy/text/3531-macro-fragment-policy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3531",
             "title": "Macro fragment specifiers edition policy",
-            "date_modified": "2023-11-16T16:33:45.000Z",
+            "date_modified": "2023-11-17T08:57:26.000Z",
             "date_published": "2023-11-16T05:02:06.000Z",
             "author": {
                 "name": "traviscross",
