@@ -105,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"222328882\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1977\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1977/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/1977\">#1977</a> has languished for 6 years, mostly due to the cargo resolver design section.</p>\n<p dir=\"auto\">This updates the RFC by</p>\n<ul dir=\"auto\">\n<li>Removing non-essential parts, particularly minimal-version resolution and pub-aware version resolution</li>\n<li>Updating the template</li>\n<li>Taking into account new designs that impact it (<code class=\"notranslate\">cfg</code> dependencies, workspace inheritance, renamed dependencies, etc)</li>\n<li>Updates the rustc design for how it evolved in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"258341882\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/44663\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/44663/hovercard\" href=\"https://github.com/rust-lang/rust/issues/44663\">rust-lang/rust#44663</a></li>\n<li>Fully specifies cargo's behavior</li>\n</ul>\n<p dir=\"auto\">Pub-aware version resolution was such a large part of the previous RFC, that we felt this needed the wider input of an RFC, rather than addressing these in stabilization FCP.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/pub/text/3516-public-private-dependencies.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3516",
-            "title": "RFC: Superseding public/private dependencies",
-            "date_modified": "2023-11-18T17:18:47.000Z",
-            "date_published": "2023-10-16T19:01:46.000Z",
-            "author": {
-                "name": "epage",
-                "url": "https://github.com/epage"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust's floating point operations follow IEEE 754-2008 -- with some caveats around operations producing NaNs: IEEE makes almost no guarantees about the sign and payload bits of the NaN; however, actual hardware does not pick those bits completely arbitrarily, and Rust will expose some of those hardware-provided guarantees to programmers.<br>\nOn the flip side, NaN generation is non-deterministic: running the same operation on the same inputs several times can produce different results.<br>\nAnd there is a caveat: while IEEE specifies that float operations can never output a signaling NaN, Rust float operations <em>can</em> produce signaling NaNs, <em>but only if</em> an input is signaling.<br>\nThat means the only way to ever see a signaling NaN in a program is to create one with <code class=\"notranslate\">from_bits</code> (or equivalent unsafe operations).</p>\n<p dir=\"auto\">Floating-point operations at compile-time follow the same specification. In particular, since operations are non-deterministic, the same operation can lead to different bit-patterns when executed at compile-time (in a <code class=\"notranslate\">const</code> context) vs at run-time.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/float-semantics/text/0000-float-semantics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3514",
             "title": "add float semantics RFC",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "tgross35",
                 "url": "https://github.com/tgross35"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Categories for crates are now deprecated and implicitly added as keywords instead. A new set of policies is added to allow the crates.io team to curate the way keywords are presented, replacing features such as the \"Popular Categories\" list on crates.io with a \"Popular Keywords\" instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/cargo-tags/text/3488-deprecate-cargo-categories.md\">Rendered</a></p>\n<p dir=\"auto\">Special thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Turbo87/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Turbo87\">@Turbo87</a> from the crates.io team for cleaning up this RFC and adding extra context.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3488",
+            "title": "Deprecate crate categories and allow metadata on keywords",
+            "date_modified": "2023-10-28T06:49:59.000Z",
+            "date_published": "2023-09-10T03:37:24.000Z",
+            "author": {
+                "name": "clarfonthey",
+                "url": "https://github.com/clarfonthey"
             }
         }
     ]
