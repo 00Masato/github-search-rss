@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2000791600\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50104\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50104/hovercard\" href=\"https://github.com/rails/rails/pull/50104\">#50104</a>.</p>\n<p dir=\"auto\">The error conditions are that the adapter is spelled incorrectly <strong>or</strong> the necessary gem isn't in the <code class=\"notranslate\">Gemfile</code>.  Therefore, to fix the error, the user must ensure that the adapter is spelled correctly <strong>and</strong> the gem is in the <code class=\"notranslate\">Gemfile</code>.</p>\n<p dir=\"auto\">This commit also adds <code class=\"notranslate\">require \"active_support/core_ext/string/filters\"</code>, which technically should be included for <code class=\"notranslate\">String#squish</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/50108",
-            "title": "Change disjunction to conjunction in suggestion",
-            "date_modified": "2023-11-19T21:51:10.000Z",
-            "date_published": "2023-11-19T21:51:06.000Z",
-            "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1371733?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonathanhefner/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonathanhefner\">@jonathanhefner</a></p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">ActiveStorage::Variant</code>, the class used to handle untracked variants, is lacking some methods to make it compliant with<br>\n<code class=\"notranslate\">ActiveStorage::Representations::ProxyController#send_blob_stream</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit fixes the proxying of untracked variants by adding the missing methods to <code class=\"notranslate\">ActiveStorage::Preview</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2000596287\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50098\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50098/hovercard\" href=\"https://github.com/rails/rails/pull/50098\">#50098</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50107",
             "title": "[ActiveStorage] Fix Non tracked variants not working with `ActiveStorage::Representations::ProxyController`",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49926.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1977782020\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49926\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49926/hovercard\" href=\"https://github.com/rails/rails/issues/49926\">#49926</a>.</p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">ActiveRecord.dump_schemas</code> (introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"61916304\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/19347\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/19347/hovercard\" href=\"https://github.com/rails/rails/pull/19347\">#19347</a>) is only considered when dumping schema in a <code class=\"notranslate\">:sql</code> format. This PR fixes that by considering it also when dumping in a <code class=\"notranslate\">:ruby</code> format.</p>",
+            "url": "https://github.com/rails/rails/pull/50020",
+            "title": "Fix schema dumper to account for `ActiveRecord.dump_schemas` when dumping in `:ruby` format",
+            "date_modified": "2023-11-13T21:39:15.000Z",
+            "date_published": "2023-11-11T19:51:48.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
