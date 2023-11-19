@@ -6,21 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds the docker related file documentation in the rails app folder structure guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50101",
-            "title": "Document docker related files in app folder structure [ci skip]",
-            "date_modified": "2023-11-19T05:02:35.000Z",
-            "date_published": "2023-11-19T05:02:31.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50099.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2000622165\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50099\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50099/hovercard\" href=\"https://github.com/rails/rails/issues/50099\">#50099</a> (see there for the description).</p>\n<p dir=\"auto\">Tested locally - works as expected. I am struggling to write a test for this. But since this change already was caught by existing tests and the change to the test code was needed, maybe it is not even necessary.</p>",
+            "url": "https://github.com/rails/rails/pull/50105",
+            "title": "Fix `run_generator` to work for generators calling other generators",
+            "date_modified": "2023-11-19T16:46:30.000Z",
+            "date_published": "2023-11-19T16:46:25.000Z",
             "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Ref: <a href=\"https://www.rubydoc.info/gems/rubocop/0.61.1/RuboCop/Cop/Performance/UnfreezeString\" rel=\"nofollow\">https://www.rubydoc.info/gems/rubocop/0.61.1/RuboCop/Cop/Performance/UnfreezeString</a><br>\nFollow up: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"326005531\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32971\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32971/hovercard\" href=\"https://github.com/rails/rails/pull/32971\">#32971</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request used unary plus operator to unfreeze a string literal instead of <code class=\"notranslate\">String#dup</code></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50100",
             "title": "Updated String#dup with Performance::UnfreezeString",
-            "date_modified": "2023-11-19T07:43:52.000Z",
+            "date_modified": "2023-11-19T16:57:33.000Z",
             "date_published": "2023-11-19T03:51:32.000Z",
             "author": {
                 "name": "akhilgkrishnan",
