@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1327285?u=c3fbb622b1cdadc1e48f65ed7760d1e004dff189&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes combining the Infra and Release teams into one team. This change has very little impact outside of the removal of the Release Council representative. Release team interests will be represented by the Infra team representative.</p>\n<p dir=\"auto\"><a href=\"https://rust-lang.zulipchat.com/#narrow/stream/392734-council/topic/Rough.20draft.20proposal.20merging.20Infra.20and.20Release.20teams\" rel=\"nofollow\">[Zulip Discussion]</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/rylev/rust-rfcs/blob/combine-infra-release/text/3533-combine-infra-and-release-teams.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3533",
+            "title": "Add RFC combining Infra and Release teams",
+            "date_modified": "2023-11-23T09:03:26.000Z",
+            "date_published": "2023-11-23T09:03:22.000Z",
+            "author": {
+                "name": "rylev",
+                "url": "https://github.com/rylev"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22198616?u=38fc398a34cdd9e77a0de8733826dc59e6cd5fb9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Let's make it more elegant to conditionally compile tuple type declarations by allowing cfg-attributes directly on their element types.</p>\n<p dir=\"auto\"><a href=\"https://github.com/recatek/rfcs/blob/cfg-attribute-in-tuple-type/text/3532-cfg-attribute-in-tuple-type.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3532",
             "title": "RFC: Allow cfg-attributes on elements of tuple type declarations",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "chris-ha458",
                 "url": "https://github.com/chris-ha458"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/const-fn-in-trait/text/0000-const-fn-in-trait.md\">Rendered</a></p>\n<p dir=\"auto\">This RFC allows marking methods in traits as <code class=\"notranslate\">const</code>.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"trait Foo {\n    const fn bar(a: i32) -&gt; i32;\n}\n\nimpl Foo for MyStruct {\n    // Implementation must provide a const function\n    const fn bar(a: i32) -&gt; i32 {\n        a + 100\n    }\n}\n\n// `&lt;T as Foo&gt;::bar` can then be used in const contexts\nconst fn use_foo&lt;T: Foo&gt;(a: i32) -&gt; i32 {\n    T::bar(a) * 50\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">trait</span> <span class=\"pl-smi\">Foo</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">const</span> <span class=\"pl-k\">fn</span> <span class=\"pl-en\">bar</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">Foo</span> <span class=\"pl-k\">for</span> <span class=\"pl-smi\">MyStruct</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c\">// Implementation must provide a const function</span>\n    <span class=\"pl-k\">const</span> <span class=\"pl-k\">fn</span> <span class=\"pl-en\">bar</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-smi\">i32</span> <span class=\"pl-kos\">{</span>\n        a + <span class=\"pl-c1\">100</span>\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-c\">// `&lt;T as Foo&gt;::bar` can then be used in const contexts</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-k\">fn</span> <span class=\"pl-en\">use_foo</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">T</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Foo</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-smi\">i32</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-smi\">T</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">bar</span><span class=\"pl-kos\">(</span>a<span class=\"pl-kos\">)</span> <span class=\"pl-c1\">*</span> <span class=\"pl-c1\">50</span>\n<span class=\"pl-kos\">}</span></pre></div>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3490",
-            "title": "RFC: `const` functions in traits",
-            "date_modified": "2023-10-07T11:48:01.000Z",
-            "date_published": "2023-09-18T03:53:32.000Z",
-            "author": {
-                "name": "tgross35",
-                "url": "https://github.com/tgross35"
             }
         }
     ]
