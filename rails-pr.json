@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a flaky test from <a href=\"https://buildkite.com/rails/rails/builds/102185#018bf92f-d565-4801-9355-953b2132e421\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/102185#018bf92f-d565-4801-9355-953b2132e421</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/50149",
+            "title": "Fix flaky db warnings test",
+            "date_modified": "2023-11-23T11:29:25.000Z",
+            "date_published": "2023-11-23T11:29:21.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes the ActiveStorage backported changelogs. The removed changelogs are already in <a href=\"https://github.com/rails/rails/blob/7-1-stable/activestorage/CHANGELOG.md\">7-1-stable CHANGELOG</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50148",
+            "title": "Remove ActiveStorage backported changelogs [skip ci]",
+            "date_modified": "2023-11-23T11:07:26.000Z",
+            "date_published": "2023-11-23T11:07:14.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50125.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2003526083\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50125\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50125/hovercard\" href=\"https://github.com/rails/rails/issues/50125\">#50125</a>.</p>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"645515028\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/39723\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/39723/hovercard\" href=\"https://github.com/rails/rails/pull/39723\">#39723</a> changed bad connection related errors so that we now have some (useful for debugging) details from the original database exceptions lost.</p>\n<p dir=\"auto\">This PR adds original database errors to these new exceptions classes, so we can get the exception details. It also prints these added exceptions messages by default as part of the new exceptions messages.</p>",
             "url": "https://github.com/rails/rails/pull/50145",
             "title": "Include original database errors into connection related errors",
-            "date_modified": "2023-11-23T10:25:08.000Z",
+            "date_modified": "2023-11-23T11:30:51.000Z",
             "date_published": "2023-11-23T00:02:56.000Z",
             "author": {
                 "name": "fatkodima",
@@ -53,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Implements <a href=\"https://discuss.rubyonrails.org/t/add-multiple-of-option-to-activemodel-numericalityvalidator/84263\" rel=\"nofollow\">https://discuss.rubyonrails.org/t/add-multiple-of-option-to-activemodel-numericalityvalidator/84263</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a new <code class=\"notranslate\">multiple_of</code> option to <code class=\"notranslate\">ActiveModel::Validations::NumericalityValidator</code> which uses <code class=\"notranslate\">Integer#multiple_of?</code> defined by <code class=\"notranslate\">ActiveSupport</code> to validate that an attribute (integer only) is a multiple of another value (any numeric).</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">One gotcha of this implementation is that the attribute needs to be an integer. For example, this will raise an error:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class MyModel\n  validates_numericality_of :offset, multiple_of: 7\nend\n\nmodel = MyModel.new\nmodel.offset = 7.0\nmodel.valid? # =&gt; NoMethodError: undefined method `multiple_of?' for 0.7e1:BigDecimal\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">MyModel</span>\n  <span class=\"pl-en\">validates_numericality_of</span> <span class=\"pl-pds\">:offset</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">multiple_of</span>: <span class=\"pl-c1\">7</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-s1\">model</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">MyModel</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">new</span>\n<span class=\"pl-s1\">model</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">offset</span> <span class=\"pl-c1\">=</span> <span class=\"pl-c1\">7.0</span>\n<span class=\"pl-s1\">model</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">valid?</span> <span class=\"pl-c\"># =&gt; NoMethodError: undefined method `multiple_of?' for 0.7e1:BigDecimal</span></pre></div>\n<p dir=\"auto\">I wonder if it's worth updating <code class=\"notranslate\">ActiveSupport</code>'s <code class=\"notranslate\">#multiple_of</code> to be defined on <code class=\"notranslate\">Numeric</code> instead? 🤔 But I'm guessing there's gonna be some issues with precision...</p>\n<p dir=\"auto\">Alternatively, we could also validate that the attribute is an integer only for this specific case (i.e. force <code class=\"notranslate\">integer_only: true</code>)?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50132",
             "title": "Add `multiple_of` option to `ActiveModel::Validations::NumericalityValidator`",
-            "date_modified": "2023-11-23T09:00:37.000Z",
+            "date_modified": "2023-11-23T11:48:20.000Z",
             "date_published": "2023-11-22T11:54:45.000Z",
             "author": {
                 "name": "joshuay03",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "tttffff",
                 "url": "https://github.com/tttffff"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1530604?u=ce3bcded6b07f96722f7b3a0201a41002a314dff&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add base62 method to SecureRandom</p>",
-            "url": "https://github.com/rails/rails/pull/50073",
-            "title": "Add base62 method to SecureRandom",
-            "date_modified": "2023-11-18T12:26:22.000Z",
-            "date_published": "2023-11-16T16:00:20.000Z",
-            "author": {
-                "name": "valenciaj",
-                "url": "https://github.com/valenciaj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/159?u=36438d464451d200a47a38f51180656aeb9a44d5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This was added in back in bootsnap 1.15.0 (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1463505600\" data-permission-text=\"Title is private\" data-url=\"https://github.com/Shopify/bootsnap/issues/428\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/Shopify/bootsnap/pull/428/hovercard\" href=\"https://github.com/Shopify/bootsnap/pull/428\">Shopify/bootsnap#428</a>). This can save extra work and IO when the cache won't be changed, like is the case for docker containers</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Dockerfile template used when creating a new application to add <code class=\"notranslate\">BOOTSNAP_READONLY=1</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50065",
-            "title": "Add BOOTSNAP_READONLY to Dockerfile template for production",
-            "date_modified": "2023-11-16T17:27:05.000Z",
-            "date_published": "2023-11-15T19:19:44.000Z",
-            "author": {
-                "name": "technicalpickles",
-                "url": "https://github.com/technicalpickles"
             }
         }
     ]
