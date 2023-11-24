@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">According to the <a href=\"https://html.spec.whatwg.org/multipage/syntax.html#void-elements\" rel=\"nofollow\">HTML5 Spec</a></p>\n<blockquote>\n<p dir=\"auto\">Void elements can't have any contents (since there's no end tag, no<br>\ncontent can be put between the start tag and the end tag).</p>\n</blockquote>\n<p dir=\"auto\">Up to this point, the only special handling of void elements has been to use \"&gt;\" to close them instead of \"/&gt;\" (which is optional but valid according to the spec)</p>\n<blockquote>\n<p dir=\"auto\">Then, if the element is one of the void elements, ... , then there may<br>\nbe a single U+002F SOLIDUS character (/), ... . On void elements, it<br>\ndoes not mark the start tag as self-closing but instead is unnecessary<br>\nand has no effect of any kind.</p>\n</blockquote>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit deprecates the ability to pass content (either through the positional \"content\" parameter or a block) to a void element since it is not valid according to the Spec. This has the benefit of both encouraging more correct HTML generation, and also simplifying the method definition of void elements once the deprecation has been removed.</p>\n<p dir=\"auto\">This commit additionally tweaks the signature of \"void_tag_string\" slightly with two changes. The first change is renaming it to be \"self_closing_tag_string\". This is more accurate than \"void_tag_string\" because the definition of \"void element\" is more specific and has more requirements than \"self closing element\". For example, tags in the SVG namespace <em>can</em> be self closing but the \"/\" at the end of the start tag is <em>not</em> optional because they are not void elements. The second change to this method is swapping from a boolean \"self_closing\" parameter to a string \"tag_suffix\" parameter. This enables the void element method definition to specialize the tag_suffix (to just \"&gt;\") without either void elements or self closing elements having to pay the runtime cost of the self_closing conditional since we know at method definition time which suffix each type of tag should use.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50159",
+            "title": "Deprecate content for void elements in TagBuilder",
+            "date_modified": "2023-11-24T16:46:12.000Z",
+            "date_published": "2023-11-24T16:46:08.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50154.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2009113153\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50154\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50154/hovercard\" href=\"https://github.com/rails/rails/issues/50154\">#50154</a>.</p>",
             "url": "https://github.com/rails/rails/pull/50158",
             "title": "Fix defining `alias_attribute` for STI classes with abstract class in the inheritance chain",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12038583?u=ac2f7ffc061e858f2281a4c11cc06dcb0e77e690&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">On platforms without a high-resolution (nanosecond) clock, it is likely that the processing of an event will take less time than one complete clock resolution cycle, which means that the start and end times will be equal and the duration zero, failing these tests.  Usually these issues are fixed by adding a sleep of equal to one clock resolution cycle, but that is not applicable here since the duration measurement occurs in the actual library code rather than the test code, so just skip these tests on such platforms.  Also tested and confirmed that the tests are not skipped under normal platforms with a highres clock.</p>",
-            "url": "https://github.com/rails/rails/pull/50097",
-            "title": "Skip activesupport event processing tests on platforms w/o highres clock",
-            "date_modified": "2023-11-18T17:53:01.000Z",
-            "date_published": "2023-11-18T17:52:57.000Z",
-            "author": {
-                "name": "matoro",
-                "url": "https://github.com/matoro"
             }
         }
     ]
