@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the the <code class=\"notranslate\">excerpt</code> text helper documentation. Separated the options and examples in different section as same as <code class=\"notranslate\">simple_format</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50153",
+            "title": "Improve documentation for excerpt text helper [skip ci]",
+            "date_modified": "2023-11-24T04:26:50.000Z",
+            "date_published": "2023-11-24T04:16:05.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84159?u=611f8cb6bdccc221b89e645b60cb8471d9269ada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Problem</h2>\n<p dir=\"auto\">Some behaviours for <code class=\"notranslate\">ActiveSupport::InheritableOptions</code> are unintuitive because it implements hash lookup like so:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"def initialize\n  super() { |h, k| parent[k] }\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">def</span> <span class=\"pl-en\">initialize</span>\n  <span class=\"pl-smi\">super</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> |<span class=\"pl-s1\">h</span><span class=\"pl-kos\">,</span> <span class=\"pl-s1\">k</span>| <span class=\"pl-en\">parent</span><span class=\"pl-kos\">[</span><span class=\"pl-s1\">k</span><span class=\"pl-kos\">]</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">Because of this, lookups work because they fall through to the block which is stored in the closure. But if you try to do any hash-like behaviour it only operates on the keys added after inheritance, and ignores the parent hash. So when attempting to <code class=\"notranslate\">to_h</code> and compare the results are silently wrong and confusing.</p>\n<p dir=\"auto\">Specifically:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"&gt; object = ActiveSupport::InheritableOptions.new(key: :value)\n=&gt; {}\n&gt; object.to_h\n=&gt; {}\n&gt; object[:key]\n=&gt; :value\"><pre class=\"notranslate\">&gt; <span class=\"pl-s1\">object</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">ActiveSupport</span>::<span class=\"pl-v\">InheritableOptions</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">key</span>: <span class=\"pl-pds\">:value</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span><span class=\"pl-en\"></span>\n&gt; <span class=\"pl-s1\">object</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_h</span>\n<span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span><span class=\"pl-en\"></span>\n&gt; <span class=\"pl-s1\">object</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:key</span><span class=\"pl-kos\">]</span>\n<span class=\"pl-c1\">=&gt;</span> <span class=\"pl-pds\">:value</span></pre></div>\n<h2 dir=\"auto\">Solution</h2>\n<p dir=\"auto\">Override <code class=\"notranslate\">to_h</code>, <code class=\"notranslate\">inspect</code>, and <code class=\"notranslate\">==</code> in order to merge the parent hash and self hash, and then behave like a hash.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
             "url": "https://github.com/rails/rails/pull/50151",
             "title": "Improve `ActiveSupport::InheritableOptions` hash-like behaviour",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tttffff",
                 "url": "https://github.com/tttffff"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1530604?u=ce3bcded6b07f96722f7b3a0201a41002a314dff&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add base62 method to SecureRandom</p>",
-            "url": "https://github.com/rails/rails/pull/50073",
-            "title": "Add base62 method to SecureRandom",
-            "date_modified": "2023-11-18T12:26:22.000Z",
-            "date_published": "2023-11-16T16:00:20.000Z",
-            "author": {
-                "name": "valenciaj",
-                "url": "https://github.com/valenciaj"
             }
         }
     ]
