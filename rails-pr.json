@@ -163,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6090?u=90ecdaa75b7e5aa0be2d4352c07c843c22450ac7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I was looking at the ActionPack test suite and found a few fixture files that are not used anymore.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[ X ] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li>[ N/A ] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[ N/A ] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[ N/A ] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50128",
             "title": "Removing not used fixtures from ActionPack test suite",
-            "date_modified": "2023-11-22T02:02:16.000Z",
+            "date_modified": "2023-11-25T09:34:53.000Z",
             "date_published": "2023-11-22T02:02:12.000Z",
             "author": {
                 "name": "thiagopradi",
