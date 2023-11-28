@@ -6,6 +6,94 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108140208?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Lightweight client for the Kamino lending market</div>",
+            "url": "https://github.com/rathe-tech/klend-lite",
+            "title": "rathe-tech/klend-lite: A Lightweight client for the Kamino lending market",
+            "date_modified": "2023-11-24T21:10:04.000Z",
+            "date_published": "2023-11-22T13:07:16.000Z",
+            "author": {
+                "name": "rathe-tech",
+                "url": "https://github.com/rathe-tech"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61983402?u=e5ce70b810224522e2a2abe75c993685b850ef5b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and secure implementation of user authentication using Nest.js. Demonstrates JWT authentication and data validation with a focus on security and simplicity.</div>",
+            "url": "https://github.com/Da4ndo/NestAuthFlow",
+            "title": "Da4ndo/NestAuthFlow: A lightweight and secure implementation of user authentication using Nest.js. Demonstrates JWT authentication and data validation with a focus on security and simplicity.",
+            "date_modified": "2023-09-11T20:13:13.000Z",
+            "date_published": "2023-07-22T16:55:16.000Z",
+            "author": {
+                "name": "Da4ndo",
+                "url": "https://github.com/Da4ndo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105451929?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Vue composition utilities for Axios. Lightweight, cancelable and less change</div>",
+            "url": "https://github.com/axios-use/axios-use-vue",
+            "title": "axios-use/axios-use-vue: A Vue composition utilities for Axios. Lightweight, cancelable and less change",
+            "date_modified": "2023-05-22T08:03:10.000Z",
+            "date_published": "2022-07-25T03:54:09.000Z",
+            "author": {
+                "name": "axios-use",
+                "url": "https://github.com/axios-use"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94165729?u=50c02c7e61328ef9d5b76276e3f811759a51b3f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple and lightweight module system for JavaScript</div>",
+            "url": "https://github.com/GregoireCiles/modular",
+            "title": "GregoireCiles/modular: A simple and lightweight module system for JavaScript",
+            "date_modified": "2023-11-26T20:28:50.000Z",
+            "date_published": "2023-11-17T05:24:31.000Z",
+            "author": {
+                "name": "GregoireCiles",
+                "url": "https://github.com/GregoireCiles"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28507035?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CQRS module for Nest framework (node.js) 🎈</div>",
+            "url": "https://github.com/nestjs/cqrs",
+            "title": "nestjs/cqrs: A lightweight CQRS module for Nest framework (node.js) :balloon:",
+            "date_modified": "2023-11-27T14:30:43.000Z",
+            "date_published": "2017-05-06T18:08:10.000Z",
+            "author": {
+                "name": "nestjs",
+                "url": "https://github.com/nestjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20292346?u=c5e029da05cb99c42b32c1af939b184961ec6b0e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight method to run Cypress spec files in multiple threads, with built-in support for Allure report generation</div>",
+            "url": "https://github.com/benchesh/cypress-multithreaded-runner",
+            "title": "benchesh/cypress-multithreaded-runner: A lightweight method to run Cypress spec files in multiple threads, with built-in support for Allure report generation",
+            "date_modified": "2023-09-20T19:41:45.000Z",
+            "date_published": "2023-09-20T15:59:17.000Z",
+            "author": {
+                "name": "benchesh",
+                "url": "https://github.com/benchesh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1030579?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast and lightweight JavaScript game engine built on WebGL and glTF</div>",
+            "url": "https://github.com/playcanvas/engine",
+            "title": "playcanvas/engine: Fast and lightweight JavaScript game engine built on WebGL and glTF",
+            "date_modified": "2023-11-28T12:54:02.000Z",
+            "date_published": "2014-05-12T11:24:30.000Z",
+            "author": {
+                "name": "playcanvas",
+                "url": "https://github.com/playcanvas"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41121717?u=c423b1bc6f35ae7127e3b66a62b20cde59393205&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight package with functions and hooks for masking data inputs and outputs for Node.JS projects</div>",
+            "url": "https://github.com/guilhermeasn/mask-hooks",
+            "title": "guilhermeasn/mask-hooks: Lightweight package with functions and hooks for masking data inputs and outputs for Node.JS projects",
+            "date_modified": "2023-11-13T15:32:39.000Z",
+            "date_published": "2021-03-16T20:59:34.000Z",
+            "author": {
+                "name": "guilhermeasn",
+                "url": "https://github.com/guilhermeasn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36735501?u=8e93f809522831771aab98cbb2a67c5e67e673d5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>zero-dependency, lightweight finite state machine  in Typescript</div>",
             "url": "https://github.com/marco-ippolito/fiume",
             "title": "marco-ippolito/fiume: zero-dependency, lightweight finite state machine  in Typescript",
@@ -14,17 +102,6 @@
             "author": {
                 "name": "marco-ippolito",
                 "url": "https://github.com/marco-ippolito"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1030579?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast and lightweight JavaScript game engine built on WebGL and glTF</div>",
-            "url": "https://github.com/playcanvas/engine",
-            "title": "playcanvas/engine: Fast and lightweight JavaScript game engine built on WebGL and glTF",
-            "date_modified": "2023-11-28T11:43:19.000Z",
-            "date_published": "2014-05-12T11:24:30.000Z",
-            "author": {
-                "name": "playcanvas",
-                "url": "https://github.com/playcanvas"
             }
         },
         {
@@ -39,14 +116,25 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41121717?u=c423b1bc6f35ae7127e3b66a62b20cde59393205&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight package with functions and hooks for masking data inputs and outputs for Node.JS projects</div>",
-            "url": "https://github.com/guilhermeasn/mask-hooks",
-            "title": "guilhermeasn/mask-hooks: Lightweight package with functions and hooks for masking data inputs and outputs for Node.JS projects",
-            "date_modified": "2023-11-13T15:32:39.000Z",
-            "date_published": "2021-03-16T20:59:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62813747?u=fad90320cb07811df0c8b9dbc8a4e3733bff3d31&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Docker simplifies data analysts' workflows with a lightweight, portable, and consistent environment. It streamlines setup, boosts scalability, and eliminates challenges. Analysts bundle their stack into a container for seamless sharing, collaboration, and deployment, enabling focus on insights, not dependencies—fostering efficiency.</div>",
+            "url": "https://github.com/AmrElsayed14/docker_projects",
+            "title": "AmrElsayed14/docker_projects: Docker simplifies data analysts' workflows with a lightweight, portable, and consistent environment. It streamlines setup, boosts scalability, and eliminates challenges. Analysts bundle their stack into a container for seamless sharing, collaboration, and deployment, enabling focus on insights, not dependencies—fostering efficiency.",
+            "date_modified": "2023-11-27T10:39:03.000Z",
+            "date_published": "2023-11-22T10:03:25.000Z",
             "author": {
-                "name": "guilhermeasn",
-                "url": "https://github.com/guilhermeasn"
+                "name": "AmrElsayed14",
+                "url": "https://github.com/AmrElsayed14"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23085816?u=753b5ff9e374cc21210f2809e2d26a86142436e7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The frontend for a lightweight low-code development platform</div>",
+            "url": "https://github.com/assalielmehdi/go-eventify-ui",
+            "title": "assalielmehdi/go-eventify-ui: The frontend for a lightweight low-code development platform",
+            "date_modified": "2023-11-26T14:56:02.000Z",
+            "date_published": "2023-11-22T15:13:08.000Z",
+            "author": {
+                "name": "assalielmehdi",
+                "url": "https://github.com/assalielmehdi"
             }
         },
         {
@@ -94,6 +182,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22097635?u=5d417b036b394290c6a50148ec27935ac16bce9f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Skeemex is a simple and lightweight wrapper around express that infers routers configurations and types from an OpenApi schema specification.</div>",
+            "url": "https://github.com/nik2o/skeemex",
+            "title": "nik2o/skeemex: Skeemex is a simple and lightweight wrapper around express that infers routers configurations and types from an OpenApi schema specification.",
+            "date_modified": "2023-11-28T10:29:49.000Z",
+            "date_published": "2023-11-25T18:23:57.000Z",
+            "author": {
+                "name": "nik2o",
+                "url": "https://github.com/nik2o"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5887769?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🏠 A lightweight, buildroot-based Linux operating system alternative for your CCU3, ELV-Charly or for running your \"HomeMatic CCU\" IoT central as a pure virtual appliance (using Proxmox VE, VirtualBox, Docker/OCI, Kubernetes/K8s, Home Assistant, vmWare ESXi, etc.) or on your own RaspberryPi, Tinkerboard, ODROID, etc. SBC device...</div>",
             "url": "https://github.com/jens-maus/RaspberryMatic",
             "title": "jens-maus/RaspberryMatic: :house: A lightweight, buildroot-based Linux operating system alternative for your CCU3, ELV-Charly or for running your \"HomeMatic CCU\" IoT central as a pure virtual appliance (using Proxmox VE, VirtualBox, Docker/OCI, Kubernetes/K8s, Home Assistant, vmWare ESXi, etc.) or on your own RaspberryPi, Tinkerboard, ODROID, etc. SBC device...",
@@ -124,105 +223,6 @@
             "author": {
                 "name": "sveltia",
                 "url": "https://github.com/sveltia"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82662379?u=1fc7fdee4d227c451aa15420d34200e6100cf900&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Vanilla Calendar is a versatile JavaScript date and time picker with TypeScript support, making it compatible with any JavaScript framework or library. It is designed to be lightweight, simple to use, and feature-rich without relying on external dependencies.</div>",
-            "url": "https://github.com/uvarov-frontend/vanilla-calendar",
-            "title": "uvarov-frontend/vanilla-calendar: Vanilla Calendar is a versatile JavaScript date and time picker with TypeScript support, making it compatible with any JavaScript framework or library. It is designed to be lightweight, simple to use, and feature-rich without relying on external dependencies.",
-            "date_modified": "2023-11-26T11:53:28.000Z",
-            "date_published": "2022-05-02T12:30:03.000Z",
-            "author": {
-                "name": "uvarov-frontend",
-                "url": "https://github.com/uvarov-frontend"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/814325?u=0946032d7c1d46eaa291f4355670b07eaad0171d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern and lightweight URL shortener using Node.js, Fastify, Postgres and Redis.</div>",
-            "url": "https://github.com/pinceladasdaweb/node-url-shortener",
-            "title": "pinceladasdaweb/node-url-shortener: A modern and lightweight URL shortener using Node.js, Fastify, Postgres and Redis.",
-            "date_modified": "2023-03-07T12:30:38.000Z",
-            "date_published": "2021-05-29T15:22:35.000Z",
-            "author": {
-                "name": "pinceladasdaweb",
-                "url": "https://github.com/pinceladasdaweb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11529148?u=94446866c576d620cbd33e62834c480091fedcf0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div><a href=\"http://www.embla-carousel.com\" rel=\"nofollow\">www.embla-carousel.com</a> — A lightweight carousel library with fluid motion and great swipe precision.</div>",
-            "url": "https://github.com/davidjerleke/embla-carousel",
-            "title": "davidjerleke/embla-carousel: www.embla-carousel.com — A lightweight carousel library with fluid motion and great swipe precision.",
-            "date_modified": "2023-11-27T15:39:00.000Z",
-            "date_published": "2019-03-18T18:34:50.000Z",
-            "author": {
-                "name": "davidjerleke",
-                "url": "https://github.com/davidjerleke"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132461205?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight simple easy too use chatting website.</div>",
-            "url": "https://github.com/mightbuild/mightbuild-chat-client",
-            "title": "mightbuild/mightbuild-chat-client: A lightweight simple easy too use chatting website.",
-            "date_modified": "2023-11-27T11:42:00.000Z",
-            "date_published": "2023-11-27T11:40:29.000Z",
-            "author": {
-                "name": "mightbuild",
-                "url": "https://github.com/mightbuild"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49127376?u=d4726d070ee1a0abd9b09a3e723caccd8072d21e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⏱️ Fast, accurate and lightweight countdown &amp; stopwatch written in Typescript.</div>",
-            "url": "https://github.com/IgorKowalczyk/countdown",
-            "title": "IgorKowalczyk/countdown: ⏱️ Fast, accurate and lightweight countdown & stopwatch written in Typescript.",
-            "date_modified": "2023-11-11T15:30:57.000Z",
-            "date_published": "2020-03-17T19:54:06.000Z",
-            "author": {
-                "name": "IgorKowalczyk",
-                "url": "https://github.com/IgorKowalczyk"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108140208?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Lightweight client for the Kamino lending market</div>",
-            "url": "https://github.com/rathe-tech/klend-lite",
-            "title": "rathe-tech/klend-lite: A Lightweight client for the Kamino lending market",
-            "date_modified": "2023-11-24T21:10:04.000Z",
-            "date_published": "2023-11-22T13:07:16.000Z",
-            "author": {
-                "name": "rathe-tech",
-                "url": "https://github.com/rathe-tech"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20905937?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight fitness app</div>",
-            "url": "https://github.com/PebbleHearts/ProFit",
-            "title": "PebbleHearts/ProFit: lightweight fitness app",
-            "date_modified": "2023-10-24T13:16:38.000Z",
-            "date_published": "2023-10-24T13:14:52.000Z",
-            "author": {
-                "name": "PebbleHearts",
-                "url": "https://github.com/PebbleHearts"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/27507836?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight wrapper for Express 4's Router that allows middleware to return promises</div>",
-            "url": "https://github.com/express-promise-router/express-promise-router",
-            "title": "express-promise-router/express-promise-router: A lightweight wrapper for Express 4's Router that allows middleware to return promises",
-            "date_modified": "2023-11-27T12:17:23.000Z",
-            "date_published": "2014-05-17T01:02:57.000Z",
-            "author": {
-                "name": "express-promise-router",
-                "url": "https://github.com/express-promise-router"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84993125?u=67f043fcc666bf3d80d3b7a2bbe0703f1c8c9585&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ultra lightweight JavaScript library that simplifies state management in your Stimulus-powered web applications.</div>",
-            "url": "https://github.com/omarluq/stimulus-store",
-            "title": "omarluq/stimulus-store: Ultra lightweight JavaScript library that simplifies state management in your Stimulus-powered web applications.",
-            "date_modified": "2023-11-28T09:59:47.000Z",
-            "date_published": "2023-11-22T17:51:10.000Z",
-            "author": {
-                "name": "omarluq",
-                "url": "https://github.com/omarluq"
             }
         }
     ]
