@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84159?u=611f8cb6bdccc221b89e645b60cb8471d9269ada&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A small followup to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2008637655\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50151\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50151/hovercard\" href=\"https://github.com/rails/rails/pull/50151\">#50151</a>, adds <code class=\"notranslate\">#to_s</code> and <code class=\"notranslate\">#pretty_print</code> to make <code class=\"notranslate\">ActiveSupport::InheritableOptions</code> match the output for <code class=\"notranslate\">Hash</code>.</p>\n<h3 dir=\"auto\">Before</h3>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"&gt; object = ActiveSupport::InheritableOptions.new(a: &quot;aaa&quot;)\n=&gt; {}\n&gt; object.to_s\n=&gt; &quot;{}&quot;\n&gt; object.b = &quot;bbb&quot;\n=&gt; &quot;bbb&quot;\n&gt; object.to_s\n=&gt; &quot;{:b=&gt;\\&quot;bbb\\&quot;}&quot;\"><pre class=\"notranslate\"><code class=\"notranslate\">&gt; object = ActiveSupport::InheritableOptions.new(a: \"aaa\")\n=&gt; {}\n&gt; object.to_s\n=&gt; \"{}\"\n&gt; object.b = \"bbb\"\n=&gt; \"bbb\"\n&gt; object.to_s\n=&gt; \"{:b=&gt;\\\"bbb\\\"}\"\n</code></pre></div>\n<h3 dir=\"auto\">After</h3>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"&gt; object = ActiveSupport::InheritableOptions.new(a: &quot;aaa&quot;)\n=&gt; {:a=&gt;&quot;aaa&quot;}\n&gt; object.to_s\n=&gt; &quot;{:a=&gt;\\&quot;aaa\\&quot;}&quot;\n&gt; object.b = &quot;bbb&quot;\n=&gt; &quot;bbb&quot;\n&gt; object.to_s\n=&gt; &quot;{:a=&gt;\\&quot;aaa\\&quot;, :b=&gt;\\&quot;bbb\\&quot;}&quot;\"><pre class=\"notranslate\"><code class=\"notranslate\">&gt; object = ActiveSupport::InheritableOptions.new(a: \"aaa\")\n=&gt; {:a=&gt;\"aaa\"}\n&gt; object.to_s\n=&gt; \"{:a=&gt;\\\"aaa\\\"}\"\n&gt; object.b = \"bbb\"\n=&gt; \"bbb\"\n&gt; object.to_s\n=&gt; \"{:a=&gt;\\\"aaa\\\", :b=&gt;\\\"bbb\\\"}\"\n</code></pre></div>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
+            "url": "https://github.com/rails/rails/pull/50208",
+            "title": "Add #to_s and pretty print for `ActiveSupport::InheritableOptions`",
+            "date_modified": "2023-11-28T22:59:01.000Z",
+            "date_published": "2023-11-28T22:49:40.000Z",
+            "author": {
+                "name": "kmcphillips",
+                "url": "https://github.com/kmcphillips"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/809707?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50187.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2013105687\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50187\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50187/hovercard\" href=\"https://github.com/rails/rails/issues/50187\">#50187</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Some delegated methods in <code class=\"notranslate\">ActiveModel::Errors</code> weren't documented. And <code class=\"notranslate\">each</code> seems to have been documented without the proper RDoc syntax which would explain why it's not showing up in the docs.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50206",
             "title": "Document delegated methods in `ActiveModel::Errors` [ci skip]",
-            "date_modified": "2023-11-28T21:24:49.000Z",
+            "date_modified": "2023-11-28T22:19:30.000Z",
             "date_published": "2023-11-28T21:24:45.000Z",
             "author": {
                 "name": "orhantoy",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50154.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2009113153\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50154\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50154/hovercard\" href=\"https://github.com/rails/rails/issues/50154\">#50154</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/50158",
-            "title": "Fix defining `alias_attribute` for STI classes with abstract class in the inheritance chain",
-            "date_modified": "2023-11-25T00:24:25.000Z",
-            "date_published": "2023-11-24T12:22:57.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
