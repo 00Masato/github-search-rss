@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The CI env var was recently <a href=\"https://github.com/rails/rails/commit/1f0262aa2b768b14de5e6ef29d0e547628f570ee\">changed</a> to be specific for the application being tested instead of the framework tests. Because of this, these lines which should have been true before are now false.</p>\n<p dir=\"auto\">Note: I expect this to fail CI because <code class=\"notranslate\">skip</code>s will raise now, I'll update with the fixes</p>",
             "url": "https://github.com/rails/rails/pull/50188",
             "title": "Fix test infra depending on CI=true",
-            "date_modified": "2023-11-29T01:28:25.000Z",
+            "date_modified": "2023-11-29T02:53:19.000Z",
             "date_published": "2023-11-27T22:43:32.000Z",
             "author": {
                 "name": "skipkayhil",
