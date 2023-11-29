@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/646128?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jmillikin/upstream__rust-rfcs/blob/unsized-thin-pointers/text/3536-unsized-thin-pointers.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3536",
+            "title": "RFC: Trait for `!Sized` thin pointers",
+            "date_modified": "2023-11-29T04:36:01.000Z",
+            "date_published": "2023-11-29T04:20:36.000Z",
+            "author": {
+                "name": "jmillikin",
+                "url": "https://github.com/jmillikin"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When a constant appears as a pattern, this is syntactic sugar for writing a pattern that corresponds to the constant's value by hand. This operation is only allowed when (a) the type of the constant implements <code class=\"notranslate\">PartialEq</code>, and (b) the <em>value</em> of the constant being matched on has \"structural equality\", which means that <code class=\"notranslate\">PartialEq</code> behaves the same way as that desugared pattern.</p>\n<p dir=\"auto\">Thanks a lot to everyone who gave feedback in the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/RFC.20for.20constants.20in.20patterns\" rel=\"nofollow\">Zulip discussion</a>!</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/constants-in-patterns/text/0000-constants-in-patterns.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3535",
             "title": "RFC: constants in patterns",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "eopb",
                 "url": "https://github.com/eopb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15088501?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">the PR and issue have been updated with different semantics</p>\n<p dir=\"auto\"><a href=\"https://github.com/chris-ha458/rfcs/blob/patch-1/text/2495-min-rust-version.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3492",
-            "title": "Update 2495-min-rust-version.md links",
-            "date_modified": "2023-09-19T12:46:15.000Z",
-            "date_published": "2023-09-19T10:05:52.000Z",
-            "author": {
-                "name": "chris-ha458",
-                "url": "https://github.com/chris-ha458"
             }
         }
     ]
