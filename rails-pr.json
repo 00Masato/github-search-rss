@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Several code samples for <code class=\"notranslate\">field_id</code> and <code class=\"notranslate\">field_name</code> cite the use of <a href=\"https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-text_field_tag\" rel=\"nofollow\">text_field_tag</a>-style helper. That usage is incorrect. The helper interface that <code class=\"notranslate\">field_id</code> and <code class=\"notranslate\">field_name</code> mimic is the <a href=\"https://edgeapi.rubyonrails.org/classes/ActionView/Helpers/FormHelper.html#method-i-text_field\" rel=\"nofollow\">text_field</a>-style helper, without the <code class=\"notranslate\">_tag</code> suffix.</p>",
+            "url": "https://github.com/rails/rails/pull/50245",
+            "title": "Action View Docs: `field_id` and `field_name` examples [ci skip]",
+            "date_modified": "2023-12-02T14:06:55.000Z",
+            "date_published": "2023-12-02T14:06:39.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50230.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021165413\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50230\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50230/hovercard\" href=\"https://github.com/rails/rails/issues/50230\">#50230</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveJob::Serializers::TimeWithZoneSerializer</code> to include the time zone of the provided time with zone object in the serialized hash which is then used during deserialization.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">A side effect of this change is that <code class=\"notranslate\">ActiveJob::Serializers::TimeWithZoneSerializer</code> now inherits directly from <code class=\"notranslate\">ActiveJob::Serializers::ObjectSerializer</code> instead of <code class=\"notranslate\">ActiveJob::Serializers::TimeObjectSerializer</code> in order to define it's own <code class=\"notranslate\">#serialize</code>. I don't see another way to implement this while preserving the current inheritance.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50240",
             "title": "[Fix #50230] Preserve serialized timezone when deserializing with `ActiveJob::Serializers::TimeWithZoneSerializer`",
-            "date_modified": "2023-12-02T14:00:53.000Z",
+            "date_modified": "2023-12-02T14:40:01.000Z",
             "date_published": "2023-12-02T06:02:46.000Z",
             "author": {
                 "name": "joshuay03",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "matiassalles99",
                 "url": "https://github.com/matiassalles99"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As per the discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1977635925\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49925\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49925/hovercard?comment_id=1819025503&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/49925#issuecomment-1819025503\">#49925 (comment)</a>, noticed that its more appropriate to link the api documentation for the each of the action view helper methods to get more information about the methods.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request added the link to the api documentation for action view helpers.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>",
-            "url": "https://github.com/rails/rails/pull/50171",
-            "title": "Add link to API documentation for ActionView helper method [skip ci]",
-            "date_modified": "2023-11-28T17:33:10.000Z",
-            "date_published": "2023-11-26T05:22:44.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
             }
         }
     ]
