@@ -6,6 +6,17 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101931215?u=e3029a1d0ddd6b42a0ba77acc5eeda80e47c1f2c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>💫 A simple, lightweight, and easy-to-use web client for the [Matrix] protocol.</div>",
+            "url": "https://github.com/yurixander/mirage",
+            "title": "yurixander/mirage: 💫 A simple, lightweight, and easy-to-use web client for the [Matrix] protocol.",
+            "date_modified": "2023-12-03T04:07:57.000Z",
+            "date_published": "2023-11-05T22:00:06.000Z",
+            "author": {
+                "name": "yurixander",
+                "url": "https://github.com/yurixander"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113836621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Git-based headless CMS. A modern, free alternative to Netlify CMS &amp; Decap CMS. Open source. Lightweight. UX-driven development. Made with Svelte.</div>",
             "url": "https://github.com/sveltia/sveltia-cms",
             "title": "sveltia/sveltia-cms: Git-based headless CMS. A modern, free alternative to Netlify CMS & Decap CMS. Open source. Lightweight. UX-driven development. Made with Svelte.",
@@ -196,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📦🔐 A lightweight Node.js private proxy registry</div>",
             "url": "https://github.com/verdaccio/verdaccio",
             "title": "verdaccio/verdaccio: 📦🔐 A lightweight Node.js private proxy registry",
-            "date_modified": "2023-12-03T02:23:31.000Z",
+            "date_modified": "2023-12-03T05:05:22.000Z",
             "date_published": "2016-04-15T16:21:12.000Z",
             "author": {
                 "name": "verdaccio",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "maks-io",
                 "url": "https://github.com/maks-io"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32807631?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple &amp; lightweight AES (Advanced Encryption Standard) module. Wrapper for Node.js crypto module.</div>",
-            "url": "https://github.com/Hazmi35/nano-aes",
-            "title": "Hazmi35/nano-aes: Simple & lightweight AES (Advanced Encryption Standard) module. Wrapper for Node.js crypto module.",
-            "date_modified": "2023-04-03T04:09:39.000Z",
-            "date_published": "2023-03-31T17:53:42.000Z",
-            "author": {
-                "name": "Hazmi35",
-                "url": "https://github.com/Hazmi35"
             }
         }
     ]
