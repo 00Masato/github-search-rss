@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/373675?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Like <code class=\"notranslate\">console.log(errorObj)</code>, <code class=\"notranslate\">console.assert(condition, errorObj)</code> prints a stack trace. But <code class=\"notranslate\">console log</code>'s summary doesn't mention this detail, nor does the API for <code class=\"notranslate\">console.assert</code>. Therefore, it felt more consistent to remove it here.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">See above</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Modified page: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/console#instance_methods\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/console#instance_methods</a><br>\nconsole.assert page: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/console/assert_static\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/console/assert_static</a><br>\nconsole.log page: <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/console/log_static\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/console/log_static</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/30725",
             "title": "Change `console.assert` summary to match API summary",
-            "date_modified": "2023-12-02T02:55:13.000Z",
+            "date_modified": "2023-12-02T23:09:29.000Z",
             "date_published": "2023-12-01T23:09:48.000Z",
             "author": {
                 "name": "DanKaplanSES",
