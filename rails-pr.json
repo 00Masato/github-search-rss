@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1835765?u=bfaa67be6e0851a2336006665307daceb075aa59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/50262",
+            "title": "Use RedCloth GitHub instead of an expired domain",
+            "date_modified": "2023-12-04T13:45:17.000Z",
+            "date_published": "2023-12-04T13:45:12.000Z",
+            "author": {
+                "name": "Techbrunch",
+                "url": "https://github.com/Techbrunch"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Attempts to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50260.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2023770652\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50260\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50260/hovercard\" href=\"https://github.com/rails/rails/issues/50260\">#50260</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Introduces <code class=\"notranslate\">ActiveRecord::Transactions::ClassMethods#set_callback</code> which behaves like <code class=\"notranslate\">ActiveSupport::Callbacks::ClassMethods#set_callback</code> with support for the <code class=\"notranslate\">:on</code> option available on <code class=\"notranslate\">#after_commit</code> and <code class=\"notranslate\">#after_rollback</code> callbacks.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50261",
             "title": "Fix [#50260] Support `:on` option in `#set_callback`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "sarcilav",
                 "url": "https://github.com/sarcilav"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57004457?u=2190df7e9f78739609f69d2c4b786662b1a29121&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I've been running into some issues in some projects when calling <code class=\"notranslate\">in_time_zone</code> which behind the scenes calls <code class=\"notranslate\">find_zone!</code>. The cause was always the zone being an empty string, which I would've expected the method to behave in the same way as when passing nil as a parameter.</p>\n<p dir=\"auto\">This Pull Request has been created because in my opinion instead of calling <code class=\"notranslate\">.presence</code> each time we call <code class=\"notranslate\">in_time_zone</code> the <code class=\"notranslate\">find_zone!</code> method should check for the presence of the argument, making sure that what we just passed is not \"equivalent\" to nil.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the <code class=\"notranslate\">find_zone!</code> method to check the <code class=\"notranslate\">zone</code> argument presence before actually trying to find the corresponding time zone.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included. -&gt; Not sure if this counts as a minor bug fix, open to add the CHANGELOG file changes too</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50172",
-            "title": "Check zone presence in find_zone!",
-            "date_modified": "2023-11-27T02:50:46.000Z",
-            "date_published": "2023-11-26T05:37:46.000Z",
-            "author": {
-                "name": "matiassalles99",
-                "url": "https://github.com/matiassalles99"
             }
         }
     ]
