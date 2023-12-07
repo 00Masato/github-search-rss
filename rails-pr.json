@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, the description of this configuration value explains that this configuration controls what part of the Content-Type header is returned by #content_type, but it doesn't explain what the header looks like or what the returned value looks like.</p>\n<p dir=\"auto\">This commit adds examples for what the Content-Type header looks like and what #content_type returns in both configurations. Additionally, it adds context that this configuration is meant to be a transition between behavior in Rails 7.0 and Rails 7.1 which was previously not explained.</p>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021508693\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50238\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50238/hovercard\" href=\"https://github.com/rails/rails/issues/50238\">#50238</a></p>",
+            "url": "https://github.com/rails/rails/pull/50290",
+            "title": "Improve doc for content_type new framework default [ci-skip]",
+            "date_modified": "2023-12-07T01:31:29.000Z",
+            "date_published": "2023-12-07T01:31:24.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the Testing Guide to emphasize that <code class=\"notranslate\">session</code>, <code class=\"notranslate\">flash</code>, and <code class=\"notranslate\">cookies</code> helpers are only available to be read from <strong>after</strong> a request has been made.</p>\n<p dir=\"auto\">This is a break from <code class=\"notranslate\">ActionController::TestCase</code> support for writing to these Hash helpers <strong>before</strong> a request has been made, so it's worth emphasizing to avoid confusing the two practices.</p>",
             "url": "https://github.com/rails/rails/pull/50289",
             "title": "Elaborate on support for hash helpers in Integration Tests [ci skip]",
-            "date_modified": "2023-12-07T01:08:06.000Z",
+            "date_modified": "2023-12-07T01:28:59.000Z",
             "date_published": "2023-12-06T22:53:46.000Z",
             "author": {
                 "name": "seanpdoyle",
@@ -74,8 +85,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Explain the purpose of wrap_parameters_by_default and how it replaces the wrap_parameters initializer.</li>\n<li>Explain why action_mailer.smtp_timeout exists and why its useful</li>\n<li>Add example to action_view.button_to_generates_button_tag</li>\n</ul>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021508693\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50238\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50238/hovercard\" href=\"https://github.com/rails/rails/issues/50238\">#50238</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/BenSandeen/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/BenSandeen\">@BenSandeen</a></p>",
             "url": "https://github.com/rails/rails/pull/50279",
-            "title": "More improvements to new framework defaults doc",
-            "date_modified": "2023-12-06T00:20:20.000Z",
+            "title": "More improvements to new framework defaults doc [ci-skip]",
+            "date_modified": "2023-12-07T01:35:47.000Z",
             "date_published": "2023-12-06T00:20:15.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "octokatherine",
                 "url": "https://github.com/octokatherine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #50136.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2006751957\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50136\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50136/hovercard\" href=\"https://github.com/rails/rails/pull/50136\">#50136</a></p>\n<p dir=\"auto\">Using delegate saves on the <code class=\"notranslate\">method_missing + public_send</code> combo.</p>\n<p dir=\"auto\">I chose to delegate to all the methods I saw called in Rails own test suite, but there is likely a handful more candidates for explicit delegation.</p>\n<p dir=\"auto\">But also this rely on a new (private) parameter in <code class=\"notranslate\">Module#delegate</code> to provide the expected delegated type and use that to define delegators with the extact required signature. This saves on array and hash allocations caused by splatting.</p>\n<p dir=\"auto\">In some ways it's a continuation of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1517530718\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46875\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46875/hovercard\" href=\"https://github.com/rails/rails/pull/46875\">#46875</a></p>\n<p dir=\"auto\">Note that I didn't make the new <code class=\"notranslate\">as:</code> parameter public, as I fear it's a bit too brittle to be used. For the same reason I'm considering reverting the optimized path behavior on <code class=\"notranslate\">to: :class</code> and requiring to explictly pass <code class=\"notranslate\">as: self</code> for that optimized path. (FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/amatsuda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/amatsuda\">@amatsuda</a>)</p>\n<p dir=\"auto\">Co-Authored-By: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Morriar/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Morriar\">@Morriar</a></p>",
-            "url": "https://github.com/rails/rails/pull/50211",
-            "title": "Optimize many delegated methods on ActiveSupport::Duration",
-            "date_modified": "2023-12-04T10:05:09.000Z",
-            "date_published": "2023-11-29T16:34:47.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         }
     ]
