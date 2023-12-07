@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, the description of this configuration value explains that this configuration controls what part of the Content-Type header is returned by #content_type, but it doesn't explain what the header looks like or what the returned value looks like.</p>\n<p dir=\"auto\">This commit adds examples for what the Content-Type header looks like and what #content_type returns in both configurations. Additionally, it adds context that this configuration is meant to be a transition between behavior in Rails 7.0 and Rails 7.1 which was previously not explained.</p>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021508693\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50238\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50238/hovercard\" href=\"https://github.com/rails/rails/issues/50238\">#50238</a></p>",
             "url": "https://github.com/rails/rails/pull/50290",
             "title": "Improve doc for content_type new framework default [ci-skip]",
-            "date_modified": "2023-12-07T12:29:02.000Z",
+            "date_modified": "2023-12-07T16:03:44.000Z",
             "date_published": "2023-12-07T01:31:24.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Explain the purpose of wrap_parameters_by_default and how it replaces the wrap_parameters initializer.</li>\n<li>Explain why action_mailer.smtp_timeout exists and why its useful</li>\n<li>Add example to action_view.button_to_generates_button_tag</li>\n</ul>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021508693\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50238\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50238/hovercard\" href=\"https://github.com/rails/rails/issues/50238\">#50238</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/BenSandeen/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/BenSandeen\">@BenSandeen</a></p>",
             "url": "https://github.com/rails/rails/pull/50279",
             "title": "More improvements to new framework defaults doc [ci-skip]",
-            "date_modified": "2023-12-07T01:35:47.000Z",
+            "date_modified": "2023-12-07T16:05:41.000Z",
             "date_published": "2023-12-06T00:20:15.000Z",
             "author": {
                 "name": "skipkayhil",
