@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the Testing Guide to emphasize that <code class=\"notranslate\">session</code>, <code class=\"notranslate\">flash</code>, and <code class=\"notranslate\">cookies</code> helpers are only available to be read from <strong>after</strong> a request has been made.</p>\n<p dir=\"auto\">This is a break from <code class=\"notranslate\">ActionController::TestCase</code> support for writing to these Hash helpers <strong>before</strong> a request has been made, so it's worth emphasizing to avoid confusing the two practices.</p>",
             "url": "https://github.com/rails/rails/pull/50289",
             "title": "Elaborate on support for hash helpers in Integration Tests [ci skip]",
-            "date_modified": "2023-12-06T22:59:49.000Z",
+            "date_modified": "2023-12-06T23:14:16.000Z",
             "date_published": "2023-12-06T22:53:46.000Z",
             "author": {
                 "name": "seanpdoyle",
