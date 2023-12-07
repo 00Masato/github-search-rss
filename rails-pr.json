@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the Testing Guide to emphasize that <code class=\"notranslate\">session</code>, <code class=\"notranslate\">flash</code>, and <code class=\"notranslate\">cookies</code> helpers are only available to be read from <strong>after</strong> a request has been made.</p>\n<p dir=\"auto\">This is a break from <code class=\"notranslate\">ActionController::TestCase</code> support for writing to these Hash helpers <strong>before</strong> a request has been made, so it's worth emphasizing to avoid confusing the two practices.</p>",
             "url": "https://github.com/rails/rails/pull/50289",
             "title": "Elaborate on support for hash helpers in Integration Tests [ci skip]",
-            "date_modified": "2023-12-06T23:14:16.000Z",
+            "date_modified": "2023-12-07T01:08:06.000Z",
             "date_published": "2023-12-06T22:53:46.000Z",
             "author": {
                 "name": "seanpdoyle",
@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64807335?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ol dir=\"auto\">\n<li>This request needs to be combined, as it corrects the error when losing context for node when working with the next 3.7+ version in conjunction with vite. The context for self is undefined, in the code I change it to global, which exists in node</li>\n<li>I added a section of code that determines whether there is a context for global, otherwise self</li>\n</ol>\n<h3 dir=\"auto\">Checklist</h3>\n<ul dir=\"auto\">\n<li>[+] This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n</ul>\n<ul dir=\"auto\">\n<li>Yes</li>\n</ul>\n<h3 dir=\"auto\"></h3>\n<ul dir=\"auto\">\n<li>[ +] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021326872\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50232\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50232/hovercard\" href=\"https://github.com/rails/rails/issues/50232\">#50232</a></li>\n</ul>\n<ul dir=\"auto\">\n<li>[+ ] Tests are added or updated if you fix a bug or add a feature.</li>\n</ul>\n<h3 dir=\"auto\"></h3>\n<ul dir=\"auto\">\n<li>[ +] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50235",
             "title": "Fixed getting context for nuxt 3.7+ in conjunction with vite",
-            "date_modified": "2023-12-02T09:37:08.000Z",
+            "date_modified": "2023-12-07T01:00:19.000Z",
             "date_published": "2023-12-01T18:39:04.000Z",
             "author": {
                 "name": "bananchill",
