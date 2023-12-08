@@ -185,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add guidance to the Association Basics and <code class=\"notranslate\">.belongs_to</code> method<br>\ndocumentation to encourage the renaming of a model's Ruby class to<br>\ncoincide with updates to the existing data in the database.</p>\n<p dir=\"auto\">Since Action Text and Active Storage rely on polymorphic associations,<br>\nadd similar warnings to their guides.</p>\n<p dir=\"auto\">Co-authored-by: Petrik de Heus <a href=\"mailto:petrik@deheus.net\">petrik@deheus.net</a></p>",
             "url": "https://github.com/rails/rails/pull/50275",
             "title": "Provide guidance for renaming classes in polymorphic associations [ci skip]",
-            "date_modified": "2023-12-08T10:28:12.000Z",
+            "date_modified": "2023-12-08T12:53:45.000Z",
             "date_published": "2023-12-05T19:43:49.000Z",
             "author": {
                 "name": "seanpdoyle",
