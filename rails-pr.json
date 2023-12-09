@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Storing attributes in database columns via the <code class=\"notranslate\">.store</code> and <code class=\"notranslate\">.store_accessor</code> class methods generates a collection of methods, including an attribute reader.</p>\n<p dir=\"auto\">The methods are similar to the ones generated from <code class=\"notranslate\">ActiveRecord::AttributeMethods</code> (and transitively <code class=\"notranslate\">ActiveModel::AttributeMethods</code>), but do not include a presence predicate method (like<br>\n<code class=\"notranslate\">ActiveModel::AttributeMethods#attribute_present?</code>).</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit generates an <code class=\"notranslate\">#{attribute}?</code> method that reads from the store attribute, then chains a <code class=\"notranslate\">#present?</code> predicate method on the return value.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50309",
+            "title": "`ActiveRecord::Store`: define predicate attribute method",
+            "date_modified": "2023-12-09T05:03:39.000Z",
+            "date_published": "2023-12-09T05:03:34.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">For <code class=\"notranslate\">.sort_by!</code> we avoid allocating an extra array and the code gets shorter and simpler.<br>\nFor <code class=\"notranslate\">.each_slice</code> the code is simpler and so easier to understand.</p>",
             "url": "https://github.com/rails/rails/pull/50308",
             "title": "Small refactoring of batching over loaded relation",
@@ -209,17 +220,6 @@
             "title": "Provide guidance for renaming classes in polymorphic associations [ci skip]",
             "date_modified": "2023-12-08T14:19:34.000Z",
             "date_published": "2023-12-05T19:43:49.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Add prose and code samples for:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">request.variant=</code></li>\n<li><code class=\"notranslate\">request.variant</code></li>\n</ul>\n<p dir=\"auto\">Add sections to the Action View and Action Controller guides, along with some code samples.</p>\n<p dir=\"auto\">The majority of these changes were excised from past pull requests, such as <a href=\"https://github.com/rails/rails/pull/12977\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/12977/hovercard\">#12977</a> and <a href=\"https://github.com/rails/rails/pull/18939\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/18939/hovercard\">#18939</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50273",
-            "title": "Add `request.variant` API and guides documentation",
-            "date_modified": "2023-12-09T01:04:47.000Z",
-            "date_published": "2023-12-05T19:04:03.000Z",
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
