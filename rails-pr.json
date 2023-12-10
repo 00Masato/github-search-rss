@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50311.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2033866460\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50311\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50311/hovercard\" href=\"https://github.com/rails/rails/issues/50311\">#50311</a>.</p>\n<p dir=\"auto\">Due to race conditions, it is possible to get a negative number of counter cache values.<br>\nWhen we are in this situation, we should actually query the association to check if there are any records.</p>",
             "url": "https://github.com/rails/rails/pull/50313",
             "title": "Ignore negative counter caches when checking for existence of the association",
-            "date_modified": "2023-12-09T16:19:51.000Z",
+            "date_modified": "2023-12-10T09:02:48.000Z",
             "date_published": "2023-12-09T16:19:47.000Z",
             "author": {
                 "name": "fatkodima",
