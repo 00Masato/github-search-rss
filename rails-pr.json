@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111689?u=64ab12304da52634277b04537b8c4260affa2b4e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is a simple documentation correction.</p>\n<p dir=\"auto\">From what I've read, this was probably a miswritten <code class=\"notranslate\">active_support.message_serializer</code> rather than <code class=\"notranslate\">active_job.message_serializer</code>.</p>\n<p dir=\"auto\">Sorry if I misunderstood something.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">It appears that this example was originally added in the following pull request:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1671686920\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47963\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47963/hovercard\" href=\"https://github.com/rails/rails/pull/47963\">#47963</a></li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li><del>[ ] Tests are added or updated if you fix a bug or add a feature.</del></li>\n<li><del>[ ] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50322",
-            "title": "Fix wrong example code: `active_job.message_serializer`",
-            "date_modified": "2023-12-11T05:19:54.000Z",
-            "date_published": "2023-12-11T05:19:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Rack was recently <a href=\"https://github.com/rack/rack/commit/64ad26e3381da2ce1853638a2c4ea241c2ad3729\">updated</a> with a deprecation for some status codes that have been renamed (most notably, Unprocessable Entity was renamed to Unprocessable Content). Since the deprecation was only added to the <code class=\"notranslate\">#status_code</code> method, this has caused test failures for some tests that depend on the <code class=\"notranslate\">SYMBOLS_TO_STATUS_CODE</code> hash.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit replaces the usage of <code class=\"notranslate\">SYMBOLS_TO_STATUS_CODE</code> with <code class=\"notranslate\">#status_code</code> so that we get the deprecation message instead of a test failure.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50323",
+            "title": "Fix tests for status code change on Rack HEAD",
+            "date_modified": "2023-12-11T06:25:17.000Z",
+            "date_published": "2023-12-11T06:19:04.000Z",
             "author": {
-                "name": "r7kamura",
-                "url": "https://github.com/r7kamura"
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
             }
         },
         {
@@ -215,14 +215,14 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, the description of this configuration value explains that this configuration controls what part of the Content-Type header is returned by #content_type, but it doesn't explain what the header looks like or what the returned value looks like.</p>\n<p dir=\"auto\">This commit adds examples for what the Content-Type header looks like and what #content_type returns in both configurations. Additionally, it adds context that this configuration is meant to be a transition between behavior in Rails 7.0 and Rails 7.1 which was previously not explained.</p>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2021508693\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50238\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50238/hovercard\" href=\"https://github.com/rails/rails/issues/50238\">#50238</a></p>",
-            "url": "https://github.com/rails/rails/pull/50290",
-            "title": "Improve doc for content_type new framework default [ci-skip]",
-            "date_modified": "2023-12-07T22:45:55.000Z",
-            "date_published": "2023-12-07T01:31:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the Testing Guide to emphasize that <code class=\"notranslate\">session</code>, <code class=\"notranslate\">flash</code>, and <code class=\"notranslate\">cookies</code> helpers are only available to be read from <strong>after</strong> a request has been made.</p>\n<p dir=\"auto\">This is a break from <code class=\"notranslate\">ActionController::TestCase</code> support for writing to these Hash helpers <strong>before</strong> a request has been made, so it's worth emphasizing to avoid confusing the two practices.</p>",
+            "url": "https://github.com/rails/rails/pull/50289",
+            "title": "Elaborate on support for hash helpers in Integration Tests [ci skip]",
+            "date_modified": "2023-12-08T09:57:11.000Z",
+            "date_published": "2023-12-06T22:53:46.000Z",
             "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
