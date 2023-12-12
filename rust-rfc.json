@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/136037?u=9c6024454f25b07e5b71b85fe88523197bdcf476&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for the <code class=\"notranslate\">patchable-function-entry</code> family of flags and attributes from <code class=\"notranslate\">clang</code> and <code class=\"notranslate\">gcc</code> in order to support instrumentation and patching as done in the Linux kernel.</p>\n<p dir=\"auto\">I have a <a href=\"https://github.com/maurer/rust/tree/patchable-function-entries\">candidate implementation</a> and a <a href=\"https://github.com/rust-lang/compiler-team/issues/704\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/704/hovercard\">MCP</a> to cover just the compiler flag.</p>\n<p dir=\"auto\"><a href=\"https://github.com/maurer/rust-rfcs/blob/patchable-function-entry/text/3543-patchable-function-entry.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3543",
+            "title": "RFC: patchable-function-entry",
+            "date_modified": "2023-12-12T22:29:11.000Z",
+            "date_published": "2023-12-12T22:26:47.000Z",
+            "author": {
+                "name": "maurer",
+                "url": "https://github.com/maurer"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62179149?u=64884e6afc5e4296590b70e844446df9ee1cbc61&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Introduction</h2>\n<p dir=\"auto\">This PR proposes the introduction of native async drop support in Rust by adding the <code class=\"notranslate\">async fn drop</code> method to the <code class=\"notranslate\">Drop</code> trait. Additionally, it suggests the creation of an <code class=\"notranslate\">AsyncDrop</code> trait, allowing us to define custom asynchronous cleanup logic.</p>\n<h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">The primary motivation is to standardize asynchronous resource cleanup in Rust, streamlining adoption and reducing dependency management overhead. This enhancement addresses the current gap in Rust's support for async lifetimes, making the language more versatile for modern asynchronous applications.</p>\n<h2 dir=\"auto\">Implementation and Benefits</h2>\n<p dir=\"auto\">The design introduces native async drop support through the <code class=\"notranslate\">async fn drop</code> method, providing a standardized way to handle asynchronous cleanup. The proposal also outlines an <code class=\"notranslate\">AsyncDrop</code> trait, enabling us to define custom asynchronous cleanup logic for our types. This native support simplifies codebases, reduces external dependencies, and fosters a more consistent and streamlined experience for us working with asynchronous resource management.</p>\n<p dir=\"auto\"><a href=\"https://github.com/wiseaidev/rfcs/blob/async-drop/text/3541-async-drop.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3541",
             "title": "Async Drop",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/msrv/text/3537-msrv-resolver.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3537",
             "title": "RFC: Make Cargo respect minimum supported Rust version (MSRV) when selecting dependencies",
-            "date_modified": "2023-12-12T12:06:48.000Z",
+            "date_modified": "2023-12-12T23:01:33.000Z",
             "date_published": "2023-11-29T19:14:32.000Z",
             "author": {
                 "name": "epage",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "aDotInTheVoid",
                 "url": "https://github.com/aDotInTheVoid"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/frontmatter/text/3503-frontmatter.md\">Rendered</a></p>\n<p dir=\"auto\">This is for the T-lang side of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1914174424\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3502\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3502/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3502\">#3502</a></p>\n<p dir=\"auto\">Example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#!/usr/bin/env cargo\n```cargo\n[dependencies]\nclap = { version = &quot;4.2&quot;, features = [&quot;derive&quot;] }\n```\n\nuse clap::Parser;\n\n#[derive(Parser, Debug)]\n#[clap(version)]\nstruct Args {\n    #[clap(short, long, help = &quot;Path to config&quot;)]\n    config: Option&lt;std::path::PathBuf&gt;,\n}\n\nfn main() {\n    let args = Args::parse();\n    println!(&quot;{:?}&quot;, args);\n}\"><pre class=\"notranslate\">#!/usr/bin/env cargo\n```cargo\n<span class=\"pl-kos\">[</span>dependencies<span class=\"pl-kos\">]</span>\nclap = <span class=\"pl-kos\">{</span> version = <span class=\"pl-s\">\"4.2\"</span><span class=\"pl-kos\">,</span> features = <span class=\"pl-kos\">[</span><span class=\"pl-s\">\"derive\"</span><span class=\"pl-kos\">]</span> <span class=\"pl-kos\">}</span>\n```\n\n<span class=\"pl-k\">use</span> clap<span class=\"pl-kos\">::</span><span class=\"pl-v\">Parser</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>derive<span class=\"pl-kos\">(</span><span class=\"pl-v\">Parser</span><span class=\"pl-kos\">,</span> <span class=\"pl-v\">Debug</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>clap<span class=\"pl-kos\">(</span>version<span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">Args</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>clap<span class=\"pl-kos\">(</span>short, long, help = <span class=\"pl-s\">\"Path to config\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n    <span class=\"pl-c1\">config</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span>std<span class=\"pl-kos\">::</span>path<span class=\"pl-kos\">::</span><span class=\"pl-smi\">PathBuf</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">main</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">let</span> args = <span class=\"pl-smi\">Args</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">parse</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n    <span class=\"pl-en\">println</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{:?}\"</span>, args<span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3503",
-            "title": "RFC: Syntax for embedding cargo-script manifests",
-            "date_modified": "2023-12-12T02:16:15.000Z",
-            "date_published": "2023-09-26T19:40:34.000Z",
-            "author": {
-                "name": "epage",
-                "url": "https://github.com/epage"
             }
         }
     ]
