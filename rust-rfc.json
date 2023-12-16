@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Editorial change:<br>\nThe t-opsem RFC references the t-types RFC, but doesn't actually link to it. The RFC is not called \"t-types\" so searching for that won't even bring it up. Let's do the internet thing and put in a hyperlink. :)</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/t-opsem-link/text/3346-t-opsem.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3544",
             "title": "t-opsem RFC: link to t-types RFC",
-            "date_modified": "2023-12-16T09:33:52.000Z",
+            "date_modified": "2023-12-16T11:39:43.000Z",
             "date_published": "2023-12-16T09:33:48.000Z",
             "author": {
                 "name": "RalfJung",
