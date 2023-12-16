@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Editorial change:<br>\nThe t-opsem RFC references the t-types RFC, but doesn't actually link to it. The RFC is not called \"t-types\" so searching for that won't even bring it up. Let's do the internet thing and put in a hyperlink. :)</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/t-opsem-link/text/3346-t-opsem.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3544",
+            "title": "t-opsem RFC: link to t-types RFC",
+            "date_modified": "2023-12-16T09:33:52.000Z",
+            "date_published": "2023-12-16T09:33:48.000Z",
+            "author": {
+                "name": "RalfJung",
+                "url": "https://github.com/RalfJung"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/136037?u=9c6024454f25b07e5b71b85fe88523197bdcf476&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for the <code class=\"notranslate\">patchable-function-entry</code> family of flags and attributes from <code class=\"notranslate\">clang</code> and <code class=\"notranslate\">gcc</code> in order to support instrumentation and patching as done in the Linux kernel.</p>\n<p dir=\"auto\">I have a <a href=\"https://github.com/maurer/rust/tree/patchable-function-entries\">candidate implementation</a> and a <a href=\"https://github.com/rust-lang/compiler-team/issues/704\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/704/hovercard\">MCP</a> to cover just the compiler flag.</p>\n<p dir=\"auto\"><a href=\"https://github.com/maurer/rust-rfcs/blob/patchable-function-entry/text/3543-patchable-function-entry.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3543",
             "title": "RFC: patchable-function-entry",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62179149?u=64884e6afc5e4296590b70e844446df9ee1cbc61&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Introduction</h2>\n<p dir=\"auto\">This PR proposes the introduction of native async drop support in Rust by adding the <code class=\"notranslate\">async fn drop</code> method to the <code class=\"notranslate\">Drop</code> trait. Additionally, it suggests the creation of an <code class=\"notranslate\">AsyncDrop</code> trait, allowing us to define custom asynchronous cleanup logic.</p>\n<h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">The primary motivation is to standardize asynchronous resource cleanup in Rust, streamlining adoption and reducing dependency management overhead. This enhancement addresses the current gap in Rust's support for async lifetimes, making the language more versatile for modern asynchronous applications.</p>\n<h2 dir=\"auto\">Implementation and Benefits</h2>\n<p dir=\"auto\">The design introduces native async drop support through the <code class=\"notranslate\">async fn drop</code> method, providing a standardized way to handle asynchronous cleanup. The proposal also outlines an <code class=\"notranslate\">AsyncDrop</code> trait, enabling us to define custom asynchronous cleanup logic for our types. This native support simplifies codebases, reduces external dependencies, and fosters a more consistent and streamlined experience for us working with asynchronous resource management.</p>\n<p dir=\"auto\"><a href=\"https://github.com/wiseaidev/rfcs/blob/async-drop/text/3541-async-drop.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3541",
             "title": "Async Drop",
-            "date_modified": "2023-12-15T21:36:56.000Z",
+            "date_modified": "2023-12-16T09:49:30.000Z",
             "date_published": "2023-12-12T15:24:03.000Z",
             "author": {
                 "name": "wiseaidev",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "yoshuawuyts",
                 "url": "https://github.com/yoshuawuyts"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28781354?u=2a9bab4b2219431526d70e5ed6444e72512206cd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/aDotInTheVoid/rfcs/blob/rustdoc-types-maintainers/text/0000-rustdoc-types-maintainers.md\">Rendered</a></p>\n<p dir=\"auto\">CC @rust-lang/rustdoc @rust-lang/infra</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3505",
-            "title": "Move `rustdoc-types` crate to T-Rustdoc ownership.",
-            "date_modified": "2023-10-17T11:49:55.000Z",
-            "date_published": "2023-10-03T10:27:17.000Z",
-            "author": {
-                "name": "aDotInTheVoid",
-                "url": "https://github.com/aDotInTheVoid"
             }
         }
     ]
