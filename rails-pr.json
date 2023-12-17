@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2034134891\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50317\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50317/hovercard\" href=\"https://github.com/rails/rails/pull/50317\">#50317</a></p>\n<p dir=\"auto\">The sqlite3 gem was removed during the merging of main and gem templates, but the resulting templates still depend on it.</p>",
+            "url": "https://github.com/rails/rails/pull/50376",
+            "title": "Add sqlite3 back to bug templates that need it",
+            "date_modified": "2023-12-17T05:15:24.000Z",
+            "date_published": "2023-12-17T05:15:20.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99301559?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created in order to fix issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2039162101\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50345\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50345/hovercard\" href=\"https://github.com/rails/rails/issues/50345\">#50345</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request solves the problem in Rails 7.1 where providing as: :html in the integration test for ActionDispatch causes a \"undefined method to_html\" error to be thrown.</p>\n<p dir=\"auto\">To solve this issue, this Pull Request registers a param_encoder in addition to a HTML encoder in order to perform the request to the controller.</p>\n<p dir=\"auto\">As a result, both the new tests provided in content_type_test.rb as well as the original tests for ActionDispatch are working.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50375",
             "title": "Fix issue with regression in integration tests when providing as: :html",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "mguan2020",
                 "url": "https://github.com/mguan2020"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13253769?u=72bf3edc0195583f5ecfcac8c406baea24dfb91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The changes to <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/860ab28ff5ebfe78e0b2e259ce4db743a77f5e8b/hovercard\" href=\"https://github.com/rails/rails/commit/860ab28ff5ebfe78e0b2e259ce4db743a77f5e8b\"><tt>860ab28</tt></a> have merged the bug report templates into one.<br>\nSince the template for the main branch has been removed, the link that was previously in CONTRIBUTING.md is invalid.</p>\n<p dir=\"auto\">So I replaced them with the changed links.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>Tests are added or updated if you fix a bug or add a feature.</del></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50374",
-            "title": "Replace outdated links with correct links",
-            "date_modified": "2023-12-17T05:01:21.000Z",
-            "date_published": "2023-12-17T04:52:01.000Z",
-            "author": {
-                "name": "euglena1215",
-                "url": "https://github.com/euglena1215"
             }
         },
         {
