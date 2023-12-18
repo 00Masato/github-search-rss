@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">One of the original goals of these checks was to validate that configuration stays in alphabetical order, as this provides a deterministic order for the configuration to be validated against.</p>\n<p dir=\"auto\">However, it appears there has been a regression in that check and it has only been validating that configurations are present. This commit restores the ordering check and then uses <code class=\"notranslate\">railspect configuration . -a</code> to fix the configurations that ended up out of order.</p>\n<p dir=\"auto\">This should be backported to 7-1-stable</p>",
             "url": "https://github.com/rails/rails/pull/50384",
             "title": "Fix railspect not validating alphabetical order",
-            "date_modified": "2023-12-17T22:09:36.000Z",
+            "date_modified": "2023-12-18T07:25:14.000Z",
             "date_published": "2023-12-17T22:09:32.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -102,17 +102,6 @@
             "author": {
                 "name": "fractaledmind",
                 "url": "https://github.com/fractaledmind"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77895?u=63c0c4c7523235f9d8af198fe276f52a68dd29c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I checked <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2035947623\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50327\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50327/hovercard\" href=\"https://github.com/rails/rails/issues/50327\">#50327</a> and noticed that clear API docs are needed. Some developers are using these methods incorrectly, thinking they're only for Active Record Relation and pass condition argument, but they actually work with Enumerable. These methods treat that argument as a pattern argument.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I have added required API doc for these methods so developers won't get confused with the argument meaning.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Original <a href=\"https://github.com/rails/rails/pull/46728\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46728/hovercard\">PR</a> which updated these methods to support pattern argument.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> [N/A] Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> [N/A]  CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50367",
-            "title": "Update API doc for ActiveRecord::Relation#none?/#any?/#one? [ci-skip]",
-            "date_modified": "2023-12-18T06:15:50.000Z",
-            "date_published": "2023-12-15T18:06:35.000Z",
-            "author": {
-                "name": "mechanicles",
-                "url": "https://github.com/mechanicles"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While <a href=\"https://stimulus.hotwired.dev\" rel=\"nofollow\">Stimulus</a> and <a href=\"https://turbo.hotwired.dev\" rel=\"nofollow\">Turbo</a> rely on values encoded into <code class=\"notranslate\">data</code>-prefixed HTML attributes present in the document, other frameworks like <a href=\"https://alpinejs.dev\" rel=\"nofollow\">Alpine.js</a> and <a href=\"https://htmx.org\" rel=\"nofollow\">htmx</a> rely on different prefixes (<code class=\"notranslate\">x</code> and <code class=\"notranslate\">hx</code>, respectively).</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">To add support for those frameworks and others like them, this commit introduces the <code class=\"notranslate\">config.action_view.nest_html_attributes_within</code> value to expose a value for consumer applications to add to.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50320",
+            "title": "Add `config.action_view.nest_html_attributes_within`",
+            "date_modified": "2023-12-14T10:12:51.000Z",
+            "date_published": "2023-12-10T17:17:03.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
