@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, because the 7.2 header was missing from configuring.md, railspect was not checking that newly introduced 7.2 framework defaults are listed.</p>\n<p dir=\"auto\">This commit adds the header to ensure they get checked, and then also fixes an issue that occurs if a versioned section has no defaults listed.</p>",
+            "url": "https://github.com/rails/rails/pull/50408",
+            "title": "Fix ensuring 7.2 defaults listed in configuring",
+            "date_modified": "2023-12-20T19:04:09.000Z",
+            "date_published": "2023-12-20T19:04:06.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Previously, this value was listed as a regular configuration that could be applied by uncommenting a line in new_framework_defaults. However, the autoloader is configured before initializers run so configuring this value here will have no effect.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit fixes the issue by suggesting to add the configuration to config/application.rb instead of new_framework_defaults.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50407",
             "title": "Fix NFD for add_autoload_paths_to_load_path",
@@ -97,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99301559?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created in order to fix issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2038038338\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50338\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50338/hovercard\" href=\"https://github.com/rails/rails/issues/50338\">#50338</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request provides a working solution for the destroy function for the cases of RestartParentTransaction and SavepointTransaction.</p>\n<p dir=\"auto\">Previously, the destroy function was not properly removing entries from the database for the RestartParentTransaction and SavepointTransaction. If @_trigger_destroy_callback is true at the beginning of the destroy function, destroy_row would never be invoked.</p>\n<p dir=\"auto\">This Pull Request will ensure destroy_row is invoked when @_trigger_destroy_callback is true at the beginning of the destroy function. This will remove the corresponding row from the database. Otherwise, if @_trigger_destroy_callback is false, destroy_row is only invoked if persisted? is true.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50386",
             "title": "Fix issue with destroy after RestartParentTransaction and SavepointTransaction rollback",
-            "date_modified": "2023-12-19T16:55:57.000Z",
+            "date_modified": "2023-12-20T19:10:50.000Z",
             "date_published": "2023-12-18T00:03:36.000Z",
             "author": {
                 "name": "mguan2020",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "alpaca-tc",
                 "url": "https://github.com/alpaca-tc"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1709692?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The current implementation does not respect the layout parameter in case of mixed collections.</p>\n<p dir=\"auto\">This commit fixes the issue by ensuring that the code path for mixed collections render the partial inside the provided layout.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49590.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1938859635\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49590\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49590/hovercard\" href=\"https://github.com/rails/rails/issues/49590\">#49590</a></p>\n<p dir=\"auto\">The current implementation of <code class=\"notranslate\">render_collection_derive_partial</code> ignores the layout parameter in case of mixed collections.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes<code class=\"notranslate\">render_collection_derive_partial</code> to call a new <code class=\"notranslate\">render_collection_with_no_partial</code> method which renders the partial inside the specified layout.</p>\n<h3 dir=\"auto\">Additional information</h3>\n",
-            "url": "https://github.com/rails/rails/pull/50348",
-            "title": "Render Partial Collection with a layout parameter",
-            "date_modified": "2023-12-18T20:36:54.000Z",
-            "date_published": "2023-12-13T14:08:48.000Z",
-            "author": {
-                "name": "cmaruz",
-                "url": "https://github.com/cmaruz"
             }
         }
     ]
