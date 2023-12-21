@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/204146?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When View tests were added to rails, the directory containing them was not added to the list of directories that are analyzed by the <code class=\"notranslate\">stats</code> task. This adds them to the list.</p>\n<p dir=\"auto\">There are no tests covering the set of directories analyzed or such, so no additional tests are added in this.</p>",
+            "url": "https://github.com/rails/rails/pull/50422",
+            "title": "Include view tests in rake stats",
+            "date_modified": "2023-12-21T16:47:10.000Z",
+            "date_published": "2023-12-21T16:47:06.000Z",
+            "author": {
+                "name": "nhorton",
+                "url": "https://github.com/nhorton"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13457494?u=fb7971eda2d2680c27e7d2e5a4db7b430745f04d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">While debugging the memory issue in our app, we noticed that a large amount of strings were generated and then thrown away when uploading the file. It was done while generating the checksum for the blob.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Optimize memory utilization by using a buffer while reading in chunks.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">Benchmark on a new rails project, while uploading 500 mb file on disk storage.</p>\n<p dir=\"auto\">Before:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Total allocated: 527552462 bytes (24333 objects)\nTotal retained:  460335 bytes (3386 objects)\"><pre class=\"notranslate\"><code class=\"notranslate\">Total allocated: 527552462 bytes (24333 objects)\nTotal retained:  460335 bytes (3386 objects)\n</code></pre></div>\n<p dir=\"auto\">After:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Total allocated: 8503524 bytes (24239 objects)\nTotal retained:  460367 bytes (3386 objects)\"><pre class=\"notranslate\"><code class=\"notranslate\">Total allocated: 8503524 bytes (24239 objects)\nTotal retained:  460367 bytes (3386 objects)\n</code></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50418",
             "title": "Use buffered read while generating Blob checksum to improve memory",
-            "date_modified": "2023-12-21T15:00:31.000Z",
+            "date_modified": "2023-12-21T16:10:10.000Z",
             "date_published": "2023-12-21T14:54:58.000Z",
             "author": {
                 "name": "the-spectator",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fractaledmind",
                 "url": "https://github.com/fractaledmind"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4400771?u=7a6b509621cc140edb9aaeeac75ab9ae6d6e6a9a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While these are currently equivalent in <code class=\"notranslate\">csrf_meta_tags</code>, it's safer for potential future code. It also helps communicate to users that <code class=\"notranslate\">html_safe</code> can be a dangerous method and that there are safer alternatives to it.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50366",
-            "title": "`csrf_meta_tags`: use `safe_join` instead of `html_safe`",
-            "date_modified": "2023-12-15T18:20:45.000Z",
-            "date_published": "2023-12-15T17:05:41.000Z",
-            "author": {
-                "name": "smmr0",
-                "url": "https://github.com/smmr0"
             }
         }
     ]
