@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/204146?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When View tests were added to rails, the directory containing them was not added to the list of directories that are analyzed by the <code class=\"notranslate\">stats</code> task. This adds them to the list.</p>\n<p dir=\"auto\">There are no tests covering the set of directories analyzed or such, so no additional tests are added in this.</p>",
             "url": "https://github.com/rails/rails/pull/50422",
             "title": "Include view tests in rake stats",
-            "date_modified": "2023-12-21T17:50:41.000Z",
+            "date_modified": "2023-12-22T01:03:43.000Z",
             "date_published": "2023-12-21T16:47:06.000Z",
             "author": {
                 "name": "nhorton",
