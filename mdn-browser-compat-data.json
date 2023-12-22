@@ -6,6 +6,17 @@
     "description": "mdn/browser-compat-data update data on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Element.checkVisibility</code> has an <code class=\"notranslate\">options</code> object parameter. In the spec this has two options, <code class=\"notranslate\">checkOpacity</code> and <code class=\"notranslate\">checkVisibilityCSS</code>, both of which are implemented AFAIK in Chrome (105) and Firefox (106) on first release of the method.</p>\n<p dir=\"auto\">The spec has an unmerged PR <a href=\"https://github.com/w3c/csswg-drafts/pull/9549\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/w3c/csswg-drafts/pull/9549/hovercard\">csswg-drafts#9549</a> to add three more options.</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">opacityProperty</code> and <code class=\"notranslate\">visibilityProperty</code> are aliases for the original names with a new naming convention. The old names are not yet \"deprecated\" in the spec.</li>\n<li><code class=\"notranslate\">contentVisibilityAuto</code> allows you to check if an element is being skipped for layout because it is not in the view.</li>\n</ul>\n<p dir=\"auto\">Even though the spec change hasn't merged, Chrome has implemented the <a href=\"https://groups.google.com/a/chromium.org/g/blink-dev/c/ruNqbP3wDSY/m/JZUK92gsAwAJ\" rel=\"nofollow\">change in 121</a> and Firefox has implemented it in nightly in FF122 (<a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1859852\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1859852</a>).</p>\n<ul dir=\"auto\">\n<li>This adds all the options as subfeatures. For FF the new options are marked as preview. For Chrome as 121.</li>\n<li>The new options are marked as experimental because FF is still in nightly</li>\n<li>The new options are marked as <code class=\"notranslate\">standard</code> even though the spec change has not merged. You might argue that.</li>\n<li>The old options are included because at some point they are going to be deprecated. TO me it makes sense to include them here so that when it is time to remove them that becomes easy.</li>\n</ul>\n<p dir=\"auto\">Other docs work for this can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2046498384\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/31107\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/31107/hovercard\" href=\"https://github.com/mdn/content/issues/31107\">mdn/content#31107</a></p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/21715",
+            "title": "Ff122 Element.checkVisibily options",
+            "date_modified": "2023-12-22T04:01:38.000Z",
+            "date_published": "2023-12-22T04:01:21.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF122 ships support for <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/transfer\" rel=\"nofollow\"><code class=\"notranslate\">ArrayBuffer.prototype.transfer()</code></a>, <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/transferToFixedLength\" rel=\"nofollow\"><code class=\"notranslate\">ArrayBuffer.prototype.transferToFixedLength()</code></a>,<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer/detached\" rel=\"nofollow\"><code class=\"notranslate\">ArrayBuffer.prototype.detached</code></a> in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1865103\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1865103</a></p>\n<p dir=\"auto\">This adds a the version and changes the APIs to experimental \"false\"</p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2046484533\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/31101\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/31101/hovercard\" href=\"https://github.com/mdn/content/issues/31101\">mdn/content#31101</a></p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/21714",
             "title": "FF122 ArrayBuffer.transfer() et al",
@@ -179,17 +190,6 @@
             "author": {
                 "name": "keithamus",
                 "url": "https://github.com/keithamus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5179191?u=6717e5ff89d22ac777c8bebbf54e89ed0fbf81e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR updates and corrects version values for Firefox and Firefox Android for the <code class=\"notranslate\">datalist</code> HTML element. This adds a note that the describes the behavior I discovered during testing, which is important to mention as developers may think the feature is unsupported otherwise.  <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #17753.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1368708435\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/17753\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/17753/hovercard\" href=\"https://github.com/mdn/browser-compat-data/issues/17753\">#17753</a>.</p>",
-            "url": "https://github.com/mdn/browser-compat-data/pull/21533",
-            "title": "Update Firefox data for datalist HTML element",
-            "date_modified": "2023-12-08T09:32:12.000Z",
-            "date_published": "2023-12-08T07:31:15.000Z",
-            "author": {
-                "name": "queengooborg",
-                "url": "https://github.com/queengooborg"
             }
         }
     ]
