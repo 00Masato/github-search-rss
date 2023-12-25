@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Migrations are not run on replicas, so there is no need to configure <code class=\"notranslate\">migrations_paths</code> on them.</p>",
             "url": "https://github.com/rails/rails/pull/50439",
             "title": "Remove setting `migrations_paths` for replicas from the docs [skip ci]",
-            "date_modified": "2023-12-25T13:00:50.000Z",
+            "date_modified": "2023-12-25T14:06:39.000Z",
             "date_published": "2023-12-25T13:00:46.000Z",
             "author": {
                 "name": "fatkodima",
