@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5148?u=16a958717ad4cf89b260916f4ef52a9ef4aff433&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Round mode option was added in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/7905bdfd8b2ae50319cd7a9a74ee1f8c865d648d/hovercard\" href=\"https://github.com/rails/rails/commit/7905bdfd8b2ae50319cd7a9a74ee1f8c865d648d\"><tt>7905bdf</tt></a> and it was documented in <a href=\"https://github.com/vlado/rails/blob/main/activesupport/lib/active_support/number_helper.rb\">active supports number helper</a> only.</p>\n<p dir=\"auto\"><a href=\"https://github.com/vlado/rails/blob/main/actionview/lib/action_view/helpers/number_helper.rb\">Action views number helper</a> is using active supports helper and accepts <code class=\"notranslate\">round_mode</code> option so it should be documented there also.</p>\n<h3 dir=\"auto\">Additional info</h3>\n<p dir=\"auto\">I've also took time to unify examples and to make it clear that they return string and not a number.</p>",
+            "url": "https://github.com/rails/rails/pull/50464",
+            "title": "Document `round_mode` option in action view's number helper [ci skip]",
+            "date_modified": "2023-12-27T21:08:40.000Z",
+            "date_published": "2023-12-27T21:08:35.000Z",
+            "author": {
+                "name": "vlado",
+                "url": "https://github.com/vlado"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #49715.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1953711265\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49715\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49715/hovercard\" href=\"https://github.com/rails/rails/pull/49715\">#49715</a></p>\n<p dir=\"auto\">There are valid use cases for running SQLite in production, however it must be done with care, so instead of a warning most users won't see anyway, it's preferable to leave the configuration commented out to force them to think about having the database on a persistent volume etc.</p>\n<p dir=\"auto\">Co-Authored-By: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/intrip/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/intrip\">@intrip</a></p>",
             "url": "https://github.com/rails/rails/pull/50463",
             "title": "Remove SQLite production warning but leave production config disabled",
-            "date_modified": "2023-12-27T20:38:49.000Z",
+            "date_modified": "2023-12-27T21:47:22.000Z",
             "date_published": "2023-12-27T20:11:44.000Z",
             "author": {
                 "name": "byroot",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, because the 7.2 header was missing from configuring.md, railspect was not checking that newly introduced 7.2 framework defaults are listed.</p>\n<p dir=\"auto\">This commit adds the header to ensure they get checked, and then also fixes an issue that occurs if a versioned section has no defaults listed.</p>",
-            "url": "https://github.com/rails/rails/pull/50408",
-            "title": "Fix ensuring 7.2 defaults listed in configuring",
-            "date_modified": "2023-12-21T22:20:20.000Z",
-            "date_published": "2023-12-20T19:04:06.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
             }
         }
     ]
