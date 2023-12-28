@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1234607?u=b263cd8501925887c84957a613f8a3a2b2f20292&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a typo in the Strong Parameters an example of the documentation</p>",
             "url": "https://github.com/rails/rails/pull/50471",
             "title": "[ci skip] Fix strong param example typo",
-            "date_modified": "2023-12-28T16:57:05.000Z",
+            "date_modified": "2023-12-28T17:18:16.000Z",
             "date_published": "2023-12-28T13:23:08.000Z",
             "author": {
                 "name": "san650",
@@ -47,17 +47,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5077225?u=e9f968c9eb790ee7734442f6b7998155400ad1d8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1898859181\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49290\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49290/hovercard\" href=\"https://github.com/rails/rails/pull/49290\">#49290</a> I failed to update the documentation of the <code class=\"notranslate\">insert_all</code>, <code class=\"notranslate\">insert_all!</code>, and <code class=\"notranslate\">upsert_all</code> methods to note that the <code class=\"notranslate\">returning</code> keyword argument works for the SQLite3 adapter now.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This is the only detail from PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"962668332\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42955\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42955/hovercard\" href=\"https://github.com/rails/rails/pull/42955\">#42955</a> that is left unresolved. Thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/OuYangJinTing/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/OuYangJinTing\">@OuYangJinTing</a> for reminding me of this detail. <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nvasilevski/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nvasilevski\">@nvasilevski</a>, we can merge this PR and close that one.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50468",
-            "title": "SQLite3 +returning+ documentation additions",
-            "date_modified": "2023-12-28T08:56:27.000Z",
-            "date_published": "2023-12-28T08:56:23.000Z",
-            "author": {
-                "name": "fractaledmind",
-                "url": "https://github.com/fractaledmind"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow <code class=\"notranslate\">explain</code> to take an operation and column name as argument:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"User.all.explain(:count)\n# =&gt; &quot;EXPLAIN SELECT COUNT(*) FROM `users`&quot;\n\nUser.all.explain(:maximum, :id)\n# =&gt; &quot;EXPLAIN SELECT MAX(`users`.`id`) FROM `users`&quot;\"><pre class=\"notranslate\"><span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">all</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">explain</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:count</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; \"EXPLAIN SELECT COUNT(*) FROM `users`\"</span>\n\n<span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">all</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">explain</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:maximum</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:id</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; \"EXPLAIN SELECT MAX(`users`.`id`) FROM `users`\"</span></pre></div>\n<p dir=\"auto\">This breaks passing options like <code class=\"notranslate\">:analyze</code> and <code class=\"notranslate\">:buffers</code> as arguments.<br>\nThese can be passed as named argument instead:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"User.all.explain(options: [:analyze, :buffers])\n# =&gt; &quot;EXPLAIN ANALYZE BUFFERS SELECT ...\"><pre class=\"notranslate\"><span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">all</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">explain</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">options</span>: <span class=\"pl-kos\">[</span><span class=\"pl-pds\">:analyze</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:buffers</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; \"EXPLAIN ANALYZE BUFFERS SELECT ...</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50424",
+            "title": "Add `explain` support for calculation methods like `count`",
+            "date_modified": "2023-12-21T21:17:40.000Z",
+            "date_published": "2023-12-21T19:56:56.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
             }
         }
     ]
