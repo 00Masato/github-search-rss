@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1234607?u=b263cd8501925887c84957a613f8a3a2b2f20292&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a typo in the Strong Parameters an example of the documentation</p>",
-            "url": "https://github.com/rails/rails/pull/50471",
-            "title": "[ci skip] Fix strong param example typo",
-            "date_modified": "2023-12-28T17:18:16.000Z",
-            "date_published": "2023-12-28T13:23:08.000Z",
-            "author": {
-                "name": "san650",
-                "url": "https://github.com/san650"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The introduction of the block argument means that <code class=\"notranslate\">Object#with</code> can now accept a <code class=\"notranslate\">Symbol#to_proc</code> as the block argument:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"client.with(timeout: 5_000, &amp;:ping)\"><pre class=\"notranslate\"><span class=\"pl-en\">client</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">with</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">timeout</span>: <span class=\"pl-c1\">5_000</span><span class=\"pl-kos\">,</span> &amp;<span class=\"pl-pds\">:ping</span><span class=\"pl-kos\">)</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50470",
             "title": "Yield instance to `Object#with` block",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/204146?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When View tests were added to rails, the directory containing them was not added to the list of directories that are analyzed by the <code class=\"notranslate\">stats</code> task. This adds them to the list.</p>\n<p dir=\"auto\">There are no tests covering the set of directories analyzed or such, so no additional tests are added in this.</p>",
+            "url": "https://github.com/rails/rails/pull/50422",
+            "title": "Include view tests in rake stats",
+            "date_modified": "2023-12-28T18:04:19.000Z",
+            "date_published": "2023-12-21T16:47:06.000Z",
+            "author": {
+                "name": "nhorton",
+                "url": "https://github.com/nhorton"
             }
         }
     ]
