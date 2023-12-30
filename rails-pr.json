@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50456.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056929694\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50456\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50456/hovercard\" href=\"https://github.com/rails/rails/issues/50456\">#50456</a></p>\n<p dir=\"auto\">This setups a basic rubocop config for new rails apps using the <code class=\"notranslate\">rubocop-rails-omakase</code> gem: <a href=\"https://github.com/rails/rubocop-rails-omakase\">https://github.com/rails/rubocop-rails-omakase</a></p>\n<p dir=\"auto\">It can be skipped with the <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
             "url": "https://github.com/rails/rails/pull/50486",
             "title": "Add rubocop-rails-omakase to new Rails applications",
-            "date_modified": "2023-12-30T09:26:46.000Z",
+            "date_modified": "2023-12-30T10:12:41.000Z",
             "date_published": "2023-12-29T22:42:23.000Z",
             "author": {
                 "name": "zzak",
