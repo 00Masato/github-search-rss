@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When using async queries inside controllers, I noticed too large db runtime values and negative view runtime values in the logs, something like:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Completed 200 OK in 133ms (Views: -25271.4ms | ActiveRecord: 25329.3ms | Allocations: 29036)\"><pre class=\"notranslate\"><code class=\"notranslate\">Completed 200 OK in 133ms (Views: -25271.4ms | ActiveRecord: 25329.3ms | Allocations: 29036)\n</code></pre></div>\n<p dir=\"auto\">Turned out, that the problem is in a recent change from <a class=\"commit-link\" href=\"https://github.com/rails/rails/commit/f56b4187be56304857b57ec7159a8e2dc2b91dea#diff-fc921d14f4dc8556c4b8cd785f350ec728fe07c8b884fbc3a0b4cbc9ec5eafffR28\"><tt>f56b418</tt>#diff-fc921d14f4dc8556c4b8cd785f350ec728fe07c8b884fbc3a0b4cbc9ec5eafffR28</a><br>\nThere is no need to multiply by <code class=\"notranslate\">1000</code>, because the values are already in milliseconds.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
+            "url": "https://github.com/rails/rails/pull/50493",
+            "title": "Fix calculation of Active Record :db_runtime metric",
+            "date_modified": "2023-12-30T22:14:40.000Z",
+            "date_published": "2023-12-30T22:14:36.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">After the <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2051330057\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50410\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50410/hovercard\" href=\"https://github.com/rails/rails/pull/50410\">#50410</a> merge, now <code class=\"notranslate\">load_async</code> is not working.<br>\nFor simple <code class=\"notranslate\">@users = User.all.load_async</code> int the controller and <code class=\"notranslate\">@users.each</code> in the view I got</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"undefined method `column_types' for #&lt;ActiveRecord::FutureResult::SelectAll:0x000000010b18abf8\"><pre class=\"notranslate\"><code class=\"notranslate\">undefined method `column_types' for #&lt;ActiveRecord::FutureResult::SelectAll:0x000000010b18abf8\n</code></pre></div>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
+            "url": "https://github.com/rails/rails/pull/50492",
+            "title": "Fix `load_async` to work with query cache",
+            "date_modified": "2023-12-30T22:14:33.000Z",
+            "date_published": "2023-12-30T22:14:29.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Until now, Rails only droped compatibility with older rubies on new majors, but I propose to change this policy because it causes us to either keep compatibility with long EOLed rubies or to bump the Rails major more often, and to drop multiple Ruby versions at once when we bump the major.</p>\n<p dir=\"auto\">In my opinion it's a bad alignments of incentives. And we'd be much better to just drop support in new minors whenever they go EOL (so 3 years).</p>\n<p dir=\"auto\">Also Ruby being an upstream dependency, it's not even a semver violation AFAICT.</p>\n<p dir=\"auto\">Since Rails 7.2 isn't planned before a few months, we can already drop Ruby 3.0 as it will be EOL in March.</p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a> since I think I remember you having opinions about this.</p>",
             "url": "https://github.com/rails/rails/pull/50491",
             "title": "Bump the required Ruby version to 3.1.0",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1334409?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to set <code class=\"notranslate\">config.action_view.annotate_rendered_view_with_filenames</code> to <code class=\"notranslate\">true</code> in development.<br>\nThis is such a powerful tool, and I find myself (and probably <a href=\"https://twitter.com/adrianthedev/status/1738841172506788193\" rel=\"nofollow\">others too</a>) turning it on for every project in the development environment.</p>\n<p dir=\"auto\">This also disables the feature in tests, so users can test views without having the comments muddy up the output.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">development.rb.tt</code> and un-comments the line that sets this setting to true.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. Not needed.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50436",
-            "title": "refactor: default annotate_rendered_view_with_filenames to true in development",
-            "date_modified": "2023-12-27T18:13:19.000Z",
-            "date_published": "2023-12-25T10:38:44.000Z",
-            "author": {
-                "name": "adrianthedev",
-                "url": "https://github.com/adrianthedev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a>.<br>\n<code class=\"notranslate\">add_exclusion_constraint</code> supports <code class=\"notranslate\">:using</code> and <code class=\"notranslate\">:where</code> options, but these were missing from the documentation.</p>",
-            "url": "https://github.com/rails/rails/pull/50432",
-            "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
-            "date_modified": "2023-12-22T22:37:55.000Z",
-            "date_published": "2023-12-22T22:37:51.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
