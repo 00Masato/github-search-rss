@@ -6,10 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9440?u=a4eb4f17b0cb1b0ebe33461a97590fdc0340ba7f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ActiveSupport::Deprecation used to <code class=\"notranslate\">include Singleton</code> which is why the require is here, but it was removed in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/9812641891f1c9ba4c3f8ffb8549ec26fc2668c4/hovercard\" href=\"https://github.com/rails/rails/commit/9812641891f1c9ba4c3f8ffb8549ec26fc2668c4\"><tt>9812641</tt></a> (June 5 2023). Leaving the require seems to have been an oversight.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9440?u=a4eb4f17b0cb1b0ebe33461a97590fdc0340ba7f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ActiveSupport::Deprecation used to <code class=\"notranslate\">include Singleton</code> which is why the require is here, but it was removed in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/9812641891f1c9ba4c3f8ffb8549ec26fc2668c4/hovercard\" href=\"https://github.com/rails/rails/commit/9812641891f1c9ba4c3f8ffb8549ec26fc2668c4\"><tt>9812641</tt></a> (June 5 2023). Leaving the require seems to have been an oversight.</p>\n<p dir=\"auto\">However, module ActiveJob::Serializers::ObjectSerializer does require Singleton and was relying on AS:Deprecation to require it. This PR just moves the require to the place it's actually used, this is way less confusing.</p>\n<p dir=\"auto\">The case for moving it is that it's confusing where it is, and it requires additional code that isn't needed if people are just requiring activesupport. The require where it was may also have prevented activejob from being required independently.</p>\n<p dir=\"auto\">The danger is that people have code running out there that uses Singleton but are leaning on the require in activesupport to load it, and removing the require will break that code. They /shouldn't/ be doing this, but it's possible.</p>",
             "url": "https://github.com/rails/rails/pull/50488",
-            "title": "Remove unnecessary singleton require.",
-            "date_modified": "2023-12-30T11:53:45.000Z",
+            "title": "Move singleton require",
+            "date_modified": "2023-12-30T12:47:13.000Z",
             "date_published": "2023-12-30T11:53:41.000Z",
             "author": {
                 "name": "wjessop",
