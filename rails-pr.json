@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add rate limiting API using Redis and the <a href=\"https://github.com/rails/kredis/blob/main/lib/kredis/types/limiter.rb\">Kredis limiter type</a>.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class SessionsController &lt; ApplicationController\n  rate_limit to: 10, within: 3.minutes, only: :create\nend\n\nclass SignupsController &lt; ApplicationController\n  rate_limit to: 1000, within: 10.seconds,\n    by: -&gt; { request.domain }, with: -&gt; { redirect_to busy_controller_url, alert: &quot;Too many signups!&quot; }, only: :new\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">SessionsController</span> &lt; <span class=\"pl-v\">ApplicationController</span>\n  <span class=\"pl-en\">rate_limit</span> <span class=\"pl-pds\">to</span>: <span class=\"pl-c1\">10</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">within</span>: <span class=\"pl-c1\">3</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">minutes</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">only</span>: <span class=\"pl-pds\">:create</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-k\">class</span> <span class=\"pl-v\">SignupsController</span> &lt; <span class=\"pl-v\">ApplicationController</span>\n  <span class=\"pl-en\">rate_limit</span> <span class=\"pl-pds\">to</span>: <span class=\"pl-c1\">1000</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">within</span>: <span class=\"pl-c1\">10</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">seconds</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-pds\">by</span>: <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">request</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">domain</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">with</span>: <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">redirect_to</span> <span class=\"pl-en\">busy_controller_url</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">alert</span>: <span class=\"pl-s\">\"Too many signups!\"</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">only</span>: <span class=\"pl-pds\">:new</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">Note: Rate limiting relies on the application having an accessible Redis server and on Kredis 1.7.0+ being available in the bundle.</p>",
             "url": "https://github.com/rails/rails/pull/50490",
             "title": "Add rate limiting to Action Controller via the Kredis limiter type",
-            "date_modified": "2023-12-30T18:46:06.000Z",
+            "date_modified": "2023-12-30T20:51:07.000Z",
             "date_published": "2023-12-30T15:29:22.000Z",
             "author": {
                 "name": "dhh",
@@ -47,17 +47,6 @@
             "author": {
                 "name": "jprosevear",
                 "url": "https://github.com/jprosevear"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50456.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056929694\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50456\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50456/hovercard\" href=\"https://github.com/rails/rails/issues/50456\">#50456</a></p>\n<p dir=\"auto\">This setups a basic rubocop config for new rails apps using the <code class=\"notranslate\">rubocop-rails-omakase</code> gem: <a href=\"https://github.com/rails/rubocop-rails-omakase\">https://github.com/rails/rubocop-rails-omakase</a></p>\n<p dir=\"auto\">It can be skipped with the <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
-            "url": "https://github.com/rails/rails/pull/50486",
-            "title": "Add rubocop-rails-omakase to new Rails applications",
-            "date_modified": "2023-12-30T20:00:56.000Z",
-            "date_published": "2023-12-29T22:42:23.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "adrianthedev",
                 "url": "https://github.com/adrianthedev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a>.<br>\n<code class=\"notranslate\">add_exclusion_constraint</code> supports <code class=\"notranslate\">:using</code> and <code class=\"notranslate\">:where</code> options, but these were missing from the documentation.</p>",
+            "url": "https://github.com/rails/rails/pull/50432",
+            "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
+            "date_modified": "2023-12-22T22:37:55.000Z",
+            "date_published": "2023-12-22T22:37:51.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
