@@ -9,22 +9,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a flaky test from <a href=\"https://buildkite.com/rails/rails/builds/103104#018cbef2-ddda-4c0d-b30d-70d5d55cff93\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/103104#018cbef2-ddda-4c0d-b30d-70d5d55cff93</a></p>\n<p dir=\"auto\">To reproduce:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ rake test:postgresql SEED=64665\"><pre class=\"notranslate\"><code class=\"notranslate\">$ rake test:postgresql SEED=64665\n</code></pre></div>\n<p dir=\"auto\">I wasn't able to reduce it and to find the exact preceding test case that makes this test to fail. Seems like somewhere the connection is reset/etc and so is reestablished in this test case and thus generates extra queries.</p>\n<p dir=\"auto\">Changing this test case to be less strict makes it pass.</p>",
             "url": "https://github.com/rails/rails/pull/50503",
             "title": "Fix a flaky test in `query_assertions_test.rb`",
-            "date_modified": "2023-12-31T14:24:19.000Z",
+            "date_modified": "2023-12-31T15:58:01.000Z",
             "date_published": "2023-12-31T14:23:46.000Z",
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/890117?u=daf06f9b440341f7850bfaab74b48001acf4a41a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1556988869\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47139\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47139/hovercard\" href=\"https://github.com/rails/rails/pull/47139\">#47139</a>. I stumbled upon these typos while reading through <a href=\"https://world.hey.com/this.week.in.rails/this-year-in-rails-a-summary-of-2023-f11c4b13\" rel=\"nofollow\">This year in Rails, a summary of 2023</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/50500",
-            "title": "Fix a couple of typos [ci skip]",
-            "date_modified": "2023-12-31T11:43:38.000Z",
-            "date_published": "2023-12-31T11:43:33.000Z",
-            "author": {
-                "name": "matthieuprat",
-                "url": "https://github.com/matthieuprat"
             }
         },
         {
@@ -64,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50448.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056748267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50448\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50448/hovercard\" href=\"https://github.com/rails/rails/issues/50448\">#50448</a></p>\n<p dir=\"auto\">NOTE: This is a proof-of-concept, that I came up with based on my understanding of ActiveRecord::DatabaseConfigurations and try to find a tiny seam to add support for this feature. Open to feedback and suggestions, but wanted to take a stab at this while it was fresh in my head.</p>",
             "url": "https://github.com/rails/rails/pull/50477",
             "title": "Active Storage can be configured by STORAGE_URL",
-            "date_modified": "2023-12-29T06:38:11.000Z",
+            "date_modified": "2023-12-31T15:44:37.000Z",
             "date_published": "2023-12-29T06:36:26.000Z",
             "author": {
                 "name": "zzak",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Creates parity between scopes and instances of records, similar to how <a href=\"https://guides.rubyonrails.org/active_record_querying.html#enums\" rel=\"nofollow\">enums</a> automatically create instance methods that query whether the model belongs to that scope.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Book &lt; ApplicationRecord\n  scope :out_of_print, -&gt; { where(out_of_print: true) }, predicate: true\n  # Creates instance method named `within_out_of_print?`\n\n  scope :in_print, -&gt; { where(out_of_print: false) }, predicate: :in_print\n  # Creates instance method named `in_print?`\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Book</span> &lt; <span class=\"pl-v\">ApplicationRecord</span>\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">:out_of_print</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">out_of_print</span>: <span class=\"pl-c1\">true</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">predicate</span>: <span class=\"pl-c1\">true</span>\n  <span class=\"pl-c\"># Creates instance method named `within_out_of_print?`</span>\n\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">:in_print</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">out_of_print</span>: <span class=\"pl-c1\">false</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">predicate</span>: <span class=\"pl-pds\">:in_print</span>\n  <span class=\"pl-c\"># Creates instance method named `in_print?`</span>\n<span class=\"pl-k\">end</span></pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"irb&gt; Book.out_of_print.first.within_out_of_print?\n=&gt; true\n\nirb&gt; Book.in_print.first.in_print?\n=&gt; true\"><pre lang=\"irb\" class=\"notranslate\"><code class=\"notranslate\">irb&gt; Book.out_of_print.first.within_out_of_print?\n=&gt; true\n\nirb&gt; Book.in_print.first.in_print?\n=&gt; true\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adds <code class=\"notranslate\">**options</code> argument to <code class=\"notranslate\">scope</code> definition, allowing caller to optionally pass <code class=\"notranslate\">predicate: true</code> or <code class=\"notranslate\">predicate: :desired_predicate_name</code>.</p>\n<p dir=\"auto\">The goal is to keep this feature opt-in to avoid automatically creating a method for each and every scope.</p>\n<p dir=\"auto\">Additionally, we default to <code class=\"notranslate\">within_&lt;scope_name&gt;</code> as to not conflict with the instance methods generated by <a href=\"https://guides.rubyonrails.org/active_record_querying.html#enums\" rel=\"nofollow\">enums</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This should be compatible with <a href=\"https://guides.rubyonrails.org/active_record_composite_primary_keys.html\" rel=\"nofollow\">Composite Primary Keys</a>, but existing fixtures did not exist (as far as I could tell).</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50430",
+            "title": "Introduce predicate definition when defining scopes",
+            "date_modified": "2023-12-24T01:55:51.000Z",
+            "date_published": "2023-12-22T18:05:28.000Z",
+            "author": {
+                "name": "stevepolitodesign",
+                "url": "https://github.com/stevepolitodesign"
             }
         }
     ]
