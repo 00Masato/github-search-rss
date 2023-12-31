@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Until now, Rails only droped compatibility with older rubies on new majors, but I propose to change this policy because it causes us to either keep compatibility with long EOLed rubies or to bump the Rails major more often, and to drop multiple Ruby versions at once when we bump the major.</p>\n<p dir=\"auto\">In my opinion it's a bad alignments of incentives. And we'd be much better to just drop support in new minors whenever they go EOL (so 3 years).</p>\n<p dir=\"auto\">Also Ruby being an upstream dependency, it's not even a semver violation AFAICT.</p>\n<p dir=\"auto\">Since Rails 7.2 isn't planned before a few months, we can already drop Ruby 3.0 as it will be EOL in March.</p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a> since I think I remember you having opinions about this.</p>",
             "url": "https://github.com/rails/rails/pull/50491",
             "title": "Bump the required Ruby version to 3.1.0",
-            "date_modified": "2023-12-31T01:13:40.000Z",
+            "date_modified": "2023-12-31T01:32:33.000Z",
             "date_published": "2023-12-30T18:56:03.000Z",
             "author": {
                 "name": "byroot",
