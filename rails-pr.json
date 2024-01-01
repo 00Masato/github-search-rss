@@ -6,32 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/567626?u=21feddf6c972d874e08c32536e09d0812a7df59c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add changelog entry for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061123087\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50505\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50505/hovercard\" href=\"https://github.com/rails/rails/pull/50505\">#50505</a></p>",
-            "url": "https://github.com/rails/rails/pull/50513",
-            "title": "Add changelog entry for #50505 [ci skip]",
-            "date_modified": "2023-12-31T23:42:54.000Z",
-            "date_published": "2023-12-31T23:42:42.000Z",
-            "author": {
-                "name": "vipulnsward",
-                "url": "https://github.com/vipulnsward"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">So it'll work out of the box with cloud CI.</p>",
-            "url": "https://github.com/rails/rails/pull/50512",
-            "title": "Switch to headless chrome by default",
-            "date_modified": "2023-12-31T23:40:13.000Z",
-            "date_published": "2023-12-31T23:40:09.000Z",
-            "author": {
-                "name": "dhh",
-                "url": "https://github.com/dhh"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16840674?u=1209e142ce2fe178204d82cba339c99291ed8d51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Now that we have Rubocop by default, it's worth it to have a basic git pre-commit config by default for new rails apps unless it's created with <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
             "url": "https://github.com/rails/rails/pull/50511",
             "title": "Default to creating git pre-commit",
-            "date_modified": "2023-12-31T22:12:16.000Z",
+            "date_modified": "2024-01-01T01:04:16.000Z",
             "date_published": "2023-12-31T21:54:24.000Z",
             "author": {
                 "name": "faqndo97",
@@ -53,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12740?u=334294a0f17ff1044b837804468aedad6cbe917d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Getting started rails edge guide is missing details about Docker.</p>\n<p dir=\"auto\">This Pull Request has been created because developers are opening issues due to lack of documentation on how to use it to run their Rails app.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes guides/source/getting_started.md</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">The section is based on Rafael's post: <a href=\"https://rubyonrails.org/2023/10/5/Rails-7-1-0-has-been-released\" rel=\"nofollow\">https://rubyonrails.org/2023/10/5/Rails-7-1-0-has-been-released</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50509",
             "title": "Add Dockerfile section in the docs [skip ci]",
-            "date_modified": "2023-12-31T20:15:57.000Z",
+            "date_modified": "2024-01-01T00:12:43.000Z",
             "date_published": "2023-12-31T20:15:53.000Z",
             "author": {
                 "name": "bparanj",
@@ -64,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13203?u=60f42a553b09bc71f5e399845142fba0ca9e9bb5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation / Background</h2>\n<p dir=\"auto\">RuboCop has now been included by default (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056929694\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50456\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50456/hovercard\" href=\"https://github.com/rails/rails/issues/50456\">#50456</a>). By adding the following tip to the default configuration, user can apply RuboCop's autocorrection to code generated by <code class=\"notranslate\">bin/rails generate</code> (e.g., migration file):</p>\n<p dir=\"auto\"><a href=\"https://github.com/rubocop/rubocop-rails#rails-configuration-tip\">https://github.com/rubocop/rubocop-rails#rails-configuration-tip</a></p>\n<p dir=\"auto\">This means that the generated files will be formatted according to user's .rubocop.yml custom configuration.</p>\n<h2 dir=\"auto\">Detail</h2>\n<p dir=\"auto\">Since <code class=\"notranslate\">bin/rails generate</code> and <code class=\"notranslate\">bin/rubocop</code> are used only in the development environment, the target files are limited to only <code class=\"notranslate\">config/environments/development.rb</code>.</p>\n<h2 dir=\"auto\">Additional information</h2>\n<p dir=\"auto\">This feature was introduced in Rails 6.1 by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"593360802\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/38870\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/38870/hovercard\" href=\"https://github.com/rails/rails/pull/38870\">#38870</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50506",
             "title": "Apply autocorrection by RuboCop to files generated by `bin/rails generate`",
-            "date_modified": "2023-12-31T18:37:53.000Z",
+            "date_modified": "2024-01-01T00:26:54.000Z",
             "date_published": "2023-12-31T17:27:29.000Z",
             "author": {
                 "name": "koic",
@@ -223,6 +201,28 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1334409?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to set <code class=\"notranslate\">config.action_view.annotate_rendered_view_with_filenames</code> to <code class=\"notranslate\">true</code> in development.<br>\nThis is such a powerful tool, and I find myself (and probably <a href=\"https://twitter.com/adrianthedev/status/1738841172506788193\" rel=\"nofollow\">others too</a>) turning it on for every project in the development environment.</p>\n<p dir=\"auto\">This also disables the feature in tests, so users can test views without having the comments muddy up the output.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">development.rb.tt</code> and un-comments the line that sets this setting to true.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. Not needed.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50436",
+            "title": "refactor: default annotate_rendered_view_with_filenames to true in development",
+            "date_modified": "2023-12-31T22:16:55.000Z",
+            "date_published": "2023-12-25T10:38:44.000Z",
+            "author": {
+                "name": "adrianthedev",
+                "url": "https://github.com/adrianthedev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a>.<br>\n<code class=\"notranslate\">add_exclusion_constraint</code> supports <code class=\"notranslate\">:using</code> and <code class=\"notranslate\">:where</code> options, but these were missing from the documentation.</p>",
+            "url": "https://github.com/rails/rails/pull/50432",
+            "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
+            "date_modified": "2023-12-22T22:37:55.000Z",
+            "date_published": "2023-12-22T22:37:51.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
