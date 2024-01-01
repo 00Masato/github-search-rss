@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Having the PWA manifest and service-worker.js files under <code class=\"notranslate\">app/views/pwa</code> means we can work on them dynamically with ERB and other techniques. They're mounted via a built-in Rails controller and explicitly revealed in the routes.rb file to ensure there are no surprises.</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Consider adding <code class=\"notranslate\">--skip-pwa</code>, although I'm not sure that's needed. This feels like default files akin to 404.html and icon.png.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add some tests?</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Explain the example code in service-worker.js better? Or wait for Action Notifier to drop to integrate it out the box?</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50528",
+            "title": "Add default pwa manifest and service worker file",
+            "date_modified": "2024-01-01T22:57:06.000Z",
+            "date_published": "2024-01-01T22:57:02.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Good pattern that most applications should be using. It allows templates rendered inside of the application layout to add tags to the head. Like additional meta tags. Used by turbo-rails, for example.</p>",
+            "url": "https://github.com/rails/rails/pull/50527",
+            "title": "Add a default yield :head to layouts/application.html.erb",
+            "date_modified": "2024-01-01T22:10:22.000Z",
+            "date_published": "2024-01-01T22:10:18.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We don't need to ship the outdated favicons and other variety icons any more. With the new meta tags, we can point to a single logo.png that the developer can easily replace.</p>",
             "url": "https://github.com/rails/rails/pull/50526",
             "title": "Replace old placeholder icon variants with a single one",
-            "date_modified": "2024-01-01T21:58:29.000Z",
+            "date_modified": "2024-01-01T22:14:26.000Z",
             "date_published": "2024-01-01T21:58:24.000Z",
             "author": {
                 "name": "dhh",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"946523283\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42804\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42804/hovercard\" href=\"https://github.com/rails/rails/pull/42804\">#42804</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1035540671\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43530\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43530/hovercard\" href=\"https://github.com/rails/rails/pull/43530\">#43530</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eileencodes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eileencodes\">@eileencodes</a></p>",
-            "url": "https://github.com/rails/rails/pull/50438",
-            "title": "Add `schema_dump` docs to the multiple databases docs [skip ci]",
-            "date_modified": "2023-12-25T20:46:36.000Z",
-            "date_published": "2023-12-25T12:43:33.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was the first approach that came to mind, maybe would be interesting to demonstrate using the built-in <a href=\"https://edgeapi.rubyonrails.org/classes/ActionCable/TestHelper.html\" rel=\"nofollow\">TestHelper</a>.</p>\n<p dir=\"auto\">There is probably some work to get this passing in CI, similar to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931267992\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49527\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49527/hovercard\" href=\"https://github.com/rails/rails/pull/49527\">#49527</a>, too.</p>",
-            "url": "https://github.com/rails/rails/pull/50437",
-            "title": "Add a bug report for Action Cable",
-            "date_modified": "2023-12-25T12:47:23.000Z",
-            "date_published": "2023-12-25T12:05:15.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
