@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Added missing changelog entry for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061191326\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50512\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50512/hovercard\" href=\"https://github.com/rails/rails/pull/50512\">#50512</a></p>",
+            "url": "https://github.com/rails/rails/pull/50514",
+            "title": "Add changelog entry for #50512 [skip ci]",
+            "date_modified": "2024-01-01T04:06:03.000Z",
+            "date_published": "2024-01-01T04:05:29.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16840674?u=1209e142ce2fe178204d82cba339c99291ed8d51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Now that we have Rubocop by default, it's worth it to have a basic git pre-commit config by default for new rails apps unless it's created with <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
             "url": "https://github.com/rails/rails/pull/50511",
             "title": "Default to creating git pre-commit",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6373536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/10c64a472f2f19a5e485bdac7d5106a76aeb29a5/hovercard\" href=\"https://github.com/rails/rails/commit/10c64a472f2f19a5e485bdac7d5106a76aeb29a5\"><tt>10c64a4</tt></a> removed the usage of <code class=\"notranslate\">Concurrent::Hash</code> in <a href=\"https://github.com/rails/rails/commit/10c64a472f2f19a5e485bdac7d5106a76aeb29a5#diff-fbb409271b9a1f69a3c2cdd5d7671c5ac6ce8dadf4c6b7b6e4cfb0e4b9ef127e\">ActiveSupport::ExecutionWrapper</a> so now the <code class=\"notranslate\">require</code> statement is no longer necessary.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveSupport::ExecutionWrapper</code> to not require <code class=\"notranslate\">concurrent/hash</code> anymore.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50510",
             "title": "Remove unnecessary require",
-            "date_modified": "2023-12-31T20:16:40.000Z",
+            "date_modified": "2024-01-01T04:31:59.000Z",
             "date_published": "2023-12-31T20:16:35.000Z",
             "author": {
                 "name": "santib",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adrianthedev",
                 "url": "https://github.com/adrianthedev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a>.<br>\n<code class=\"notranslate\">add_exclusion_constraint</code> supports <code class=\"notranslate\">:using</code> and <code class=\"notranslate\">:where</code> options, but these were missing from the documentation.</p>",
-            "url": "https://github.com/rails/rails/pull/50432",
-            "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
-            "date_modified": "2023-12-22T22:37:55.000Z",
-            "date_published": "2023-12-22T22:37:51.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
