@@ -17,28 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the <code class=\"notranslate\">bin/rails server</code> log output with latest puma message.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50518",
-            "title": "Update the puma startup message [skip ci]",
-            "date_modified": "2024-01-01T06:09:33.000Z",
-            "date_published": "2024-01-01T06:09:29.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/418747?u=8d6da26893f2ffae6c8f0ddd759198ca39fcc6a5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request standardizes the Markdown code blocks.</p>\n<p dir=\"auto\">Saw we now have a markdown linter so this pr fixes markdown</p>\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50517",
-            "title": "docs: remove unneeded whitespace from start of code blocks",
-            "date_modified": "2024-01-01T05:55:45.000Z",
-            "date_published": "2024-01-01T05:55:45.000Z",
-            "author": {
-                "name": "jbampton",
-                "url": "https://github.com/jbampton"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Based on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061324113\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50515\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50515/hovercard\" href=\"https://github.com/rails/rails/pull/50515\">#50515</a></p>\n<hr>\n<p dir=\"auto\">This commit is meant to accomplish two things:</p>\n<ul dir=\"auto\">\n<li>update gems with precompiled C extensions (nokogiri) so that Rails'<br>\nlockfile can be <code class=\"notranslate\">bundle install</code>d on Ruby 3.3</li>\n<li>remove some Gemfile conditionals for Ruby &lt; 3 now that 3.1 is the<br>\nminimum version</li>\n</ul>\n<p dir=\"auto\">Additionally, a requirement is added to ignore mdl 0.13.0 because it<br>\nraises false positive warnings. The commit introducing those warnings<br>\nhas been reverted but there has not been a release since the revert.</p>",
             "url": "https://github.com/rails/rails/pull/50516",
             "title": "Update Gemfile.lock for Ruby 3.3.0",
@@ -58,39 +36,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Added missing changelog entry for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061191326\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50512\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50512/hovercard\" href=\"https://github.com/rails/rails/pull/50512\">#50512</a></p>",
-            "url": "https://github.com/rails/rails/pull/50514",
-            "title": "Add changelog entry for #50512 [skip ci]",
-            "date_modified": "2024-01-01T04:06:03.000Z",
-            "date_published": "2024-01-01T04:05:29.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16840674?u=1209e142ce2fe178204d82cba339c99291ed8d51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Now that we have Rubocop by default, it's worth it to have a basic git pre-commit config by default for new rails apps unless it's created with <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
-            "url": "https://github.com/rails/rails/pull/50511",
-            "title": "Default to creating git pre-commit",
-            "date_modified": "2024-01-01T05:09:54.000Z",
-            "date_published": "2023-12-31T21:54:24.000Z",
-            "author": {
-                "name": "faqndo97",
-                "url": "https://github.com/faqndo97"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6373536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/10c64a472f2f19a5e485bdac7d5106a76aeb29a5/hovercard\" href=\"https://github.com/rails/rails/commit/10c64a472f2f19a5e485bdac7d5106a76aeb29a5\"><tt>10c64a4</tt></a> removed the usage of <code class=\"notranslate\">Concurrent::Hash</code> in <a href=\"https://github.com/rails/rails/commit/10c64a472f2f19a5e485bdac7d5106a76aeb29a5#diff-fbb409271b9a1f69a3c2cdd5d7671c5ac6ce8dadf4c6b7b6e4cfb0e4b9ef127e\">ActiveSupport::ExecutionWrapper</a> so now the <code class=\"notranslate\">require</code> statement is no longer necessary.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveSupport::ExecutionWrapper</code> to not require <code class=\"notranslate\">concurrent/hash</code> anymore.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50510",
-            "title": "Remove unnecessary require",
-            "date_modified": "2024-01-01T04:31:59.000Z",
-            "date_published": "2023-12-31T20:16:35.000Z",
-            "author": {
-                "name": "santib",
-                "url": "https://github.com/santib"
             }
         },
         {
@@ -223,6 +168,61 @@
             "author": {
                 "name": "vlado",
                 "url": "https://github.com/vlado"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5077225?u=e9f968c9eb790ee7734442f6b7998155400ad1d8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Any PRAGMA configuration set under the <code class=\"notranslate\">pragmas</code> key in the configuration file take precedence over Rails' defaults, and additional PRAGMAs can be set as well.</p>\n<div class=\"highlight highlight-source-yaml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"database: storage/development.sqlite3\ntimeout: 5000\npragmas:\n  journal_mode: off\n  temp_store: memory\"><pre class=\"notranslate\"><span class=\"pl-ent\">database</span>: <span class=\"pl-s\">storage/development.sqlite3</span>\n<span class=\"pl-ent\">timeout</span>: <span class=\"pl-c1\">5000</span>\n<span class=\"pl-ent\">pragmas</span>:\n  <span class=\"pl-ent\">journal_mode</span>: <span class=\"pl-s\">off</span>\n  <span class=\"pl-ent\">temp_store</span>: <span class=\"pl-s\">memory</span></pre></div>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1950437094\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49691\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49691/hovercard\" href=\"https://github.com/rails/rails/pull/49691\">#49691</a>, following <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a>'s suggestions.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request allows the 7.1 default SQLite configuration to be overridden via values set under the <code class=\"notranslate\">pragmas</code> key in the <code class=\"notranslate\">database.yml</code> file. Moreover, it allows other SQLite PRAGMAs to be set via the <code class=\"notranslate\">pragmas</code> key, and will ignore and warn for any unknown pragmas.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50460",
+            "title": "Allow overriding SQLite defaults from `database.yml`",
+            "date_modified": "2023-12-31T23:03:41.000Z",
+            "date_published": "2023-12-27T14:52:19.000Z",
+            "author": {
+                "name": "fractaledmind",
+                "url": "https://github.com/fractaledmind"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Migrations are not run on replicas, so there is no need to configure <code class=\"notranslate\">migrations_paths</code> on them.</p>",
+            "url": "https://github.com/rails/rails/pull/50439",
+            "title": "Remove setting `migrations_paths` for replicas from the docs [skip ci]",
+            "date_modified": "2023-12-25T22:30:21.000Z",
+            "date_published": "2023-12-25T13:00:46.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"946523283\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42804\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42804/hovercard\" href=\"https://github.com/rails/rails/pull/42804\">#42804</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1035540671\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43530\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43530/hovercard\" href=\"https://github.com/rails/rails/pull/43530\">#43530</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eileencodes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eileencodes\">@eileencodes</a></p>",
+            "url": "https://github.com/rails/rails/pull/50438",
+            "title": "Add `schema_dump` docs to the multiple databases docs [skip ci]",
+            "date_modified": "2023-12-25T20:46:36.000Z",
+            "date_published": "2023-12-25T12:43:33.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was the first approach that came to mind, maybe would be interesting to demonstrate using the built-in <a href=\"https://edgeapi.rubyonrails.org/classes/ActionCable/TestHelper.html\" rel=\"nofollow\">TestHelper</a>.</p>\n<p dir=\"auto\">There is probably some work to get this passing in CI, similar to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931267992\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49527\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49527/hovercard\" href=\"https://github.com/rails/rails/pull/49527\">#49527</a>, too.</p>",
+            "url": "https://github.com/rails/rails/pull/50437",
+            "title": "Add a bug report for Action Cable",
+            "date_modified": "2023-12-25T12:47:23.000Z",
+            "date_published": "2023-12-25T12:05:15.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1334409?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to set <code class=\"notranslate\">config.action_view.annotate_rendered_view_with_filenames</code> to <code class=\"notranslate\">true</code> in development.<br>\nThis is such a powerful tool, and I find myself (and probably <a href=\"https://twitter.com/adrianthedev/status/1738841172506788193\" rel=\"nofollow\">others too</a>) turning it on for every project in the development environment.</p>\n<p dir=\"auto\">This also disables the feature in tests, so users can test views without having the comments muddy up the output.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">development.rb.tt</code> and un-comments the line that sets this setting to true.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. Not needed.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50436",
+            "title": "refactor: default annotate_rendered_view_with_filenames to true in development",
+            "date_modified": "2023-12-31T22:16:55.000Z",
+            "date_published": "2023-12-25T10:38:44.000Z",
+            "author": {
+                "name": "adrianthedev",
+                "url": "https://github.com/adrianthedev"
             }
         }
     ]
