@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/418747?u=8d6da26893f2ffae6c8f0ddd759198ca39fcc6a5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/koalaman/shellcheck/wiki/SC2164\">https://github.com/koalaman/shellcheck/wiki/SC2164</a></p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to fix a ShellCheck warning.</p>\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50539",
+            "title": "devcontainer: use `cd ... || exit` in case `cd` fails",
+            "date_modified": "2024-01-02T17:49:34.000Z",
+            "date_published": "2024-01-02T17:49:34.000Z",
+            "author": {
+                "name": "jbampton",
+                "url": "https://github.com/jbampton"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The issue was raised years ago at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"190679691\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/27128\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/27128/hovercard\" href=\"https://github.com/rails/rails/issues/27128\">#27128</a> where everyone involved agreed that the documentation should be worked on, only to leave it forgotten.</p>\n<p dir=\"auto\">I believe it is still relevant as the ambiguity remains ever since.</p>\n<p dir=\"auto\">Also, two of exceptions which have a seat in the current default have been missing in the documentation so this commit aligns them.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50538",
             "title": "Resolve documentational ambiguity over `rescue_responses` [ci-skip]",
@@ -209,17 +220,6 @@
             "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
             "date_modified": "2023-12-22T22:37:55.000Z",
             "date_published": "2023-12-22T22:37:51.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a> and unique constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1396155024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46192/hovercard\" href=\"https://github.com/rails/rails/pull/46192\">#46192</a>.</p>\n<p dir=\"auto\">Both lacks an ability to check if the constraint already exists, to make, for example, adding constraints idempotent.<br>\nThis ability already exists for check constraints, for example (same for foreign keys, indexes etc).</p>",
-            "url": "https://github.com/rails/rails/pull/50431",
-            "title": "Add `exclusion_constraint_exists?` and `unique_constraint_exists?` helpers",
-            "date_modified": "2023-12-22T22:18:45.000Z",
-            "date_published": "2023-12-22T22:18:21.000Z",
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
