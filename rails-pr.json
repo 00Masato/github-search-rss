@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We will still have the official package at @rails/ujs and also leave the final compiled targets for the asset pipeline. But everything else ought to go.</p>",
             "url": "https://github.com/rails/rails/pull/50535",
             "title": "Rails UJS has been deprecated since Rails 7, time to die",
-            "date_modified": "2024-01-02T11:54:17.000Z",
+            "date_modified": "2024-01-02T12:42:33.000Z",
             "date_published": "2024-01-02T11:08:43.000Z",
             "author": {
                 "name": "dhh",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Having the PWA manifest and service-worker.js files under <code class=\"notranslate\">app/views/pwa</code> means we can work on them dynamically with ERB and other techniques. They're mounted via a built-in Rails controller and explicitly revealed in the routes.rb file to ensure there are no surprises.</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Consider adding <code class=\"notranslate\">--skip-pwa</code>, although I'm not sure that's needed. This feels like default files akin to 404.html and icon.png.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add some tests?</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Explain the example code in service-worker.js better? Or wait for Action Notifier to drop to integrate it out the box?</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50528",
             "title": "Add default pwa manifest and service worker file",
-            "date_modified": "2024-01-02T11:36:54.000Z",
+            "date_modified": "2024-01-02T12:56:11.000Z",
             "date_published": "2024-01-01T22:57:02.000Z",
             "author": {
                 "name": "dhh",
