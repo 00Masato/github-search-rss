@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We will still have the official package at @rails/ujs and also leave the final compiled targets for the asset pipeline. But everything else ought to go.</p>",
-            "url": "https://github.com/rails/rails/pull/50535",
-            "title": "Rails UJS has been deprecated since Rails 7, time to die",
-            "date_modified": "2024-01-02T12:42:33.000Z",
-            "date_published": "2024-01-02T11:08:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The issue was raised years ago at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"190679691\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/27128\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/27128/hovercard\" href=\"https://github.com/rails/rails/issues/27128\">#27128</a> where everyone involved agreed that the documentation should be worked on, only to leave it forgotten.</p>\n<p dir=\"auto\">I believe it is still relevant as the ambiguity remains ever since.</p>\n<p dir=\"auto\">Also, two of exceptions which have a seat in the current default have been missing in the documentation so this commit aligns them.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50538",
+            "title": "Resolve documentational ambiguity over `rescue_responses` [ci-skip]",
+            "date_modified": "2024-01-02T15:09:01.000Z",
+            "date_published": "2024-01-02T15:08:56.000Z",
             "author": {
-                "name": "dhh",
-                "url": "https://github.com/dhh"
+                "name": "sato11",
+                "url": "https://github.com/sato11"
             }
         },
         {
@@ -50,21 +50,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><del>Based on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061324113\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50515\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50515/hovercard\" href=\"https://github.com/rails/rails/pull/50515\">#50515</a></del> Merged 👍</p>\n<hr>\n<p dir=\"auto\">This commit is meant to accomplish two things:</p>\n<ul dir=\"auto\">\n<li>update gems with precompiled C extensions (nokogiri) so that Rails'<br>\nlockfile can be <code class=\"notranslate\">bundle install</code>d on Ruby 3.3</li>\n<li>remove some Gemfile conditionals for Ruby &lt; 3 now that 3.1 is the<br>\nminimum version</li>\n</ul>\n<p dir=\"auto\">Additionally, a requirement is added to ignore mdl 0.13.0 because it<br>\nraises false positive warnings. The commit introducing those warnings<br>\nhas been reverted but there has not been a release since the revert.</p>",
-            "url": "https://github.com/rails/rails/pull/50516",
-            "title": "Update Gemfile.lock for Ruby 3.3.0",
-            "date_modified": "2024-01-02T14:29:42.000Z",
-            "date_published": "2024-01-01T05:34:28.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16840674?u=1209e142ce2fe178204d82cba339c99291ed8d51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Now that we have Rubocop by default, it's worth it to have a basic git pre-commit config by default for new rails apps unless it's created with <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
             "url": "https://github.com/rails/rails/pull/50511",
             "title": "Default to creating git pre-commit",
-            "date_modified": "2024-01-02T11:46:39.000Z",
+            "date_modified": "2024-01-02T15:16:46.000Z",
             "date_published": "2023-12-31T21:54:24.000Z",
             "author": {
                 "name": "faqndo97",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "adrianthedev",
                 "url": "https://github.com/adrianthedev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a>.<br>\n<code class=\"notranslate\">add_exclusion_constraint</code> supports <code class=\"notranslate\">:using</code> and <code class=\"notranslate\">:where</code> options, but these were missing from the documentation.</p>",
+            "url": "https://github.com/rails/rails/pull/50432",
+            "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
+            "date_modified": "2023-12-22T22:37:55.000Z",
+            "date_published": "2023-12-22T22:37:51.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
