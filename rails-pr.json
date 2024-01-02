@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">followup: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/ad2354e6c6fc12134c240b7af16169624f365f87/hovercard\" href=\"https://github.com/rails/rails/commit/ad2354e6c6fc12134c240b7af16169624f365f87\"><tt>ad2354e</tt></a><br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"800975888\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/41328\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/41328/hovercard\" href=\"https://github.com/rails/rails/pull/41328\">#41328</a> Added new syntax for enum for removing the leading '_`.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates all the old enum syntax with new syntax.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50534",
-            "title": "Updated the code with new enum syntax",
-            "date_modified": "2024-01-02T15:01:02.000Z",
-            "date_published": "2024-01-02T07:08:07.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Having the PWA manifest and service-worker.js files under <code class=\"notranslate\">app/views/pwa</code> means we can work on them dynamically with ERB and other techniques. They're mounted via a built-in Rails controller and explicitly revealed in the routes.rb file to ensure there are no surprises.</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Consider adding <code class=\"notranslate\">--skip-pwa</code>, although I'm not sure that's needed. This feels like default files akin to 404.html and icon.png.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add some tests?</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Explain the example code in service-worker.js better? Or wait for Action Notifier to drop to integrate it out the box?</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50528",
             "title": "Add default pwa manifest and service worker file",
@@ -64,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12740?u=334294a0f17ff1044b837804468aedad6cbe917d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Getting started rails edge guide is missing details about Docker.</p>\n<p dir=\"auto\">This Pull Request has been created because developers are opening issues due to lack of documentation on how to use it to run their Rails app.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes guides/source/getting_started.md</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">The section is based on Rafael's post: <a href=\"https://rubyonrails.org/2023/10/5/Rails-7-1-0-has-been-released\" rel=\"nofollow\">https://rubyonrails.org/2023/10/5/Rails-7-1-0-has-been-released</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50509",
             "title": "Add Dockerfile section in the docs [skip ci]",
-            "date_modified": "2024-01-01T00:12:43.000Z",
+            "date_modified": "2024-01-02T16:09:26.000Z",
             "date_published": "2023-12-31T20:15:53.000Z",
             "author": {
                 "name": "bparanj",
@@ -220,6 +209,17 @@
             "title": "Document missing `:using` and `:where` options for `add_exclusion_constraint` [skip ci]",
             "date_modified": "2023-12-22T22:37:55.000Z",
             "date_published": "2023-12-22T22:37:51.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a> and unique constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1396155024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46192/hovercard\" href=\"https://github.com/rails/rails/pull/46192\">#46192</a>.</p>\n<p dir=\"auto\">Both lacks an ability to check if the constraint already exists, to make, for example, adding constraints idempotent.<br>\nThis ability already exists for check constraints, for example (same for foreign keys, indexes etc).</p>",
+            "url": "https://github.com/rails/rails/pull/50431",
+            "title": "Add `exclusion_constraint_exists?` and `unique_constraint_exists?` helpers",
+            "date_modified": "2023-12-22T22:18:45.000Z",
+            "date_published": "2023-12-22T22:18:21.000Z",
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
