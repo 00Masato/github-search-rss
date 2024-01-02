@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=387c085565dc648f11d835558ad1b6d524ddc91d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Good pattern that most applications should be using. It allows templates rendered inside of the application layout to add tags to the head. Like additional meta tags. Used by turbo-rails, for example.</p>",
             "url": "https://github.com/rails/rails/pull/50527",
             "title": "Add a default yield :head to layouts/application.html.erb",
-            "date_modified": "2024-01-01T22:10:22.000Z",
+            "date_modified": "2024-01-01T23:13:52.000Z",
             "date_published": "2024-01-01T22:10:18.000Z",
             "author": {
                 "name": "dhh",
@@ -80,6 +80,17 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16840674?u=1209e142ce2fe178204d82cba339c99291ed8d51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Now that we have Rubocop by default, it's worth it to have a basic git pre-commit config by default for new rails apps unless it's created with <code class=\"notranslate\">--skip-rubocop</code> flag.</p>",
+            "url": "https://github.com/rails/rails/pull/50511",
+            "title": "Default to creating git pre-commit",
+            "date_modified": "2024-01-01T23:32:15.000Z",
+            "date_published": "2023-12-31T21:54:24.000Z",
+            "author": {
+                "name": "faqndo97",
+                "url": "https://github.com/faqndo97"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fractaledmind",
                 "url": "https://github.com/fractaledmind"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Migrations are not run on replicas, so there is no need to configure <code class=\"notranslate\">migrations_paths</code> on them.</p>",
-            "url": "https://github.com/rails/rails/pull/50439",
-            "title": "Remove setting `migrations_paths` for replicas from the docs [skip ci]",
-            "date_modified": "2023-12-25T22:30:21.000Z",
-            "date_published": "2023-12-25T13:00:46.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
