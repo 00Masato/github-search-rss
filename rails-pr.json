@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a flaky test from <a href=\"https://buildkite.com/rails/rails/builds/103104#018cbef2-ddda-4c0d-b30d-70d5d55cff93\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/103104#018cbef2-ddda-4c0d-b30d-70d5d55cff93</a></p>\n<p dir=\"auto\">To reproduce:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ rake test:postgresql SEED=64665\"><pre class=\"notranslate\"><code class=\"notranslate\">$ rake test:postgresql SEED=64665\n</code></pre></div>\n<p dir=\"auto\">I wasn't able to reduce it and to find the exact preceding test case that makes this test to fail. Seems like somewhere the connection is reset/etc and so is reestablished in this test case and thus generates extra queries.</p>\n<p dir=\"auto\">Changing this test case to be less strict makes it pass.</p>",
             "url": "https://github.com/rails/rails/pull/50503",
             "title": "Fix a flaky test in `query_assertions_test.rb`",
-            "date_modified": "2023-12-31T17:50:54.000Z",
+            "date_modified": "2024-01-02T05:21:37.000Z",
             "date_published": "2023-12-31T14:23:46.000Z",
             "author": {
                 "name": "fatkodima",
