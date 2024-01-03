@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=0d3a33cf526c152a32b3a27ffc688e8575b03dc8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Lots of this is very outdated, mentioning IRC (:D) and not mentioning MCPs, which are very significant. I adjusted it to something that I feel like is roughly true today. I don't know whether it's fully accurate, but it's definitely more accurate than before.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #708.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2054925417\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/compiler-team/issues/708\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/708/hovercard\" href=\"https://github.com/rust-lang/compiler-team/issues/708\">rust-lang/compiler-team#708</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/davidtwco/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/davidtwco\">@davidtwco</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wesleywiser/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wesleywiser\">@wesleywiser</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3551",
-            "title": "Update guide on compiler RFCs",
-            "date_modified": "2024-01-03T14:54:52.000Z",
-            "date_published": "2023-12-30T12:17:47.000Z",
-            "author": {
-                "name": "Nilstrieb",
-                "url": "https://github.com/Nilstrieb"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3550",
             "title": "RFC: New range types for Edition 2024",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "oli-obk",
                 "url": "https://github.com/oli-obk"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19623715?u=8fc1200ecfbd85a03c59f998f50ee2822ee45e20&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As per discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"315709580\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2407\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2407/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2407\">#2407</a>, adds the <code class=\"notranslate\">move(y=f(x)) || {}</code>/<code class=\"notranslate\">move(x) || {}</code> syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/SOF3/rfcs/blob/closure-move-bindings/text/3512-closure-move-bindings.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3512",
+            "title": "Add closure-move-bindings RFC",
+            "date_modified": "2023-12-18T02:46:42.000Z",
+            "date_published": "2023-10-10T15:02:14.000Z",
+            "author": {
+                "name": "SOF3",
+                "url": "https://github.com/SOF3"
             }
         }
     ]
