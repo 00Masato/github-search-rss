@@ -6,14 +6,25 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50440.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056730265\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50440\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50440/hovercard\" href=\"https://github.com/rails/rails/issues/50440\">#50440</a></p>\n<p dir=\"auto\">Do <code class=\"notranslate\">BACKTRACE=1 bin/rails server</code> to run the Rails server without the backtrace cleaner, so you can more easily debug framework code.</p>\n<p dir=\"auto\">Prior art: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f4c9d0b014e3c1c27c3d5db73dbf42c48733a1b6/hovercard\" href=\"https://github.com/rails/rails/commit/f4c9d0b014e3c1c27c3d5db73dbf42c48733a1b6\"><tt>f4c9d0b</tt></a></p>",
-            "url": "https://github.com/rails/rails/pull/50563",
-            "title": "Add `BACKTRACE` env variable to turn off backtrace",
-            "date_modified": "2024-01-03T21:26:11.000Z",
-            "date_published": "2024-01-03T21:14:27.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Opening per recommendation in discord</p>",
+            "url": "https://github.com/rails/rails/pull/50567",
+            "title": "Backport adding dependencies for gems that warn in Ruby 3.3",
+            "date_modified": "2024-01-03T22:58:23.000Z",
+            "date_published": "2024-01-03T22:58:19.000Z",
             "author": {
-                "name": "ghiculescu",
-                "url": "https://github.com/ghiculescu"
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This changes the default number of workers when parallelizing tests to be based on logical core count instead of physical core count.  This may provide a performance boost for parallelized tests.</p>\n<p dir=\"auto\">This also reverts <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2063030317\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50545\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50545/hovercard\" href=\"https://github.com/rails/rails/pull/50545\">#50545</a> in favor of using the default worker count.</p>",
+            "url": "https://github.com/rails/rails/pull/50564",
+            "title": "Use logical core count for test parallelization",
+            "date_modified": "2024-01-03T22:51:01.000Z",
+            "date_published": "2024-01-03T22:23:17.000Z",
+            "author": {
+                "name": "jonathanhefner",
+                "url": "https://github.com/jonathanhefner"
             }
         },
         {
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26396425?u=f660166a92539f1b136d99aeb7332b34dc4c34f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2060964035\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50499\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50499/hovercard\" href=\"https://github.com/rails/rails/issues/50499\">#50499</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Previously, querying from the base class resulted in an object of the inherited type, with 'ignored_columns' included in the 'attributes' method.</p>\n<p dir=\"auto\">This behavior was inconsistent, as it did not occur when querying directly from the inherited class. This fix ensures consistent behavior in the attributes between the two ways of instantiate inherited classes during querying.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50553",
             "title": "Fix instantiation of inherited classes when querying",
-            "date_modified": "2024-01-03T18:40:04.000Z",
+            "date_modified": "2024-01-03T22:47:47.000Z",
             "date_published": "2024-01-03T12:49:56.000Z",
             "author": {
                 "name": "jvlara",
@@ -160,28 +171,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Migrations are not run on replicas, so there is no need to configure <code class=\"notranslate\">migrations_paths</code> on them.</p>",
-            "url": "https://github.com/rails/rails/pull/50439",
-            "title": "Remove setting `migrations_paths` for replicas from the docs [skip ci]",
-            "date_modified": "2024-01-02T20:52:12.000Z",
-            "date_published": "2023-12-25T13:00:46.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"946523283\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42804\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42804/hovercard\" href=\"https://github.com/rails/rails/pull/42804\">#42804</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1035540671\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43530\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43530/hovercard\" href=\"https://github.com/rails/rails/pull/43530\">#43530</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eileencodes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eileencodes\">@eileencodes</a></p>",
-            "url": "https://github.com/rails/rails/pull/50438",
-            "title": "Add `schema_dump` docs to the multiple databases docs [skip ci]",
-            "date_modified": "2024-01-02T20:37:27.000Z",
-            "date_published": "2023-12-25T12:43:33.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was the first approach that came to mind, maybe would be interesting to demonstrate using the built-in <a href=\"https://edgeapi.rubyonrails.org/classes/ActionCable/TestHelper.html\" rel=\"nofollow\">TestHelper</a>.</p>\n<p dir=\"auto\">There is probably some work to get this passing in CI, similar to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931267992\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49527\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49527/hovercard\" href=\"https://github.com/rails/rails/pull/49527\">#49527</a>, too.</p>",
             "url": "https://github.com/rails/rails/pull/50437",
             "title": "Add a bug report for Action Cable",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Creates parity between scopes and instances of records, similar to how <a href=\"https://guides.rubyonrails.org/active_record_querying.html#enums\" rel=\"nofollow\">enums</a> automatically create instance methods that query whether the model belongs to that scope.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Book &lt; ApplicationRecord\n  scope :out_of_print, -&gt; { where(out_of_print: true) }, predicate: true\n  # Creates instance method named `within_out_of_print?`\n\n  scope :in_print, -&gt; { where(out_of_print: false) }, predicate: :in_print\n  # Creates instance method named `in_print?`\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Book</span> &lt; <span class=\"pl-v\">ApplicationRecord</span>\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">:out_of_print</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">out_of_print</span>: <span class=\"pl-c1\">true</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">predicate</span>: <span class=\"pl-c1\">true</span>\n  <span class=\"pl-c\"># Creates instance method named `within_out_of_print?`</span>\n\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">:in_print</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">out_of_print</span>: <span class=\"pl-c1\">false</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">predicate</span>: <span class=\"pl-pds\">:in_print</span>\n  <span class=\"pl-c\"># Creates instance method named `in_print?`</span>\n<span class=\"pl-k\">end</span></pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"irb&gt; Book.out_of_print.first.within_out_of_print?\n=&gt; true\n\nirb&gt; Book.in_print.first.in_print?\n=&gt; true\"><pre lang=\"irb\" class=\"notranslate\"><code class=\"notranslate\">irb&gt; Book.out_of_print.first.within_out_of_print?\n=&gt; true\n\nirb&gt; Book.in_print.first.in_print?\n=&gt; true\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adds <code class=\"notranslate\">**options</code> argument to <code class=\"notranslate\">scope</code> definition, allowing caller to optionally pass <code class=\"notranslate\">predicate: true</code> or <code class=\"notranslate\">predicate: :desired_predicate_name</code>.</p>\n<p dir=\"auto\">The goal is to keep this feature opt-in to avoid automatically creating a method for each and every scope.</p>\n<p dir=\"auto\">Additionally, we default to <code class=\"notranslate\">within_&lt;scope_name&gt;</code> as to not conflict with the instance methods generated by <a href=\"https://guides.rubyonrails.org/active_record_querying.html#enums\" rel=\"nofollow\">enums</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This should be compatible with <a href=\"https://guides.rubyonrails.org/active_record_composite_primary_keys.html\" rel=\"nofollow\">Composite Primary Keys</a>, but existing fixtures did not exist (as far as I could tell).</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50430",
+            "title": "Introduce predicate definition when defining scopes",
+            "date_modified": "2023-12-24T01:55:51.000Z",
+            "date_published": "2023-12-22T18:05:28.000Z",
+            "author": {
+                "name": "stevepolitodesign",
+                "url": "https://github.com/stevepolitodesign"
             }
         }
     ]
