@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/136037?u=9c6024454f25b07e5b71b85fe88523197bdcf476&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for the <code class=\"notranslate\">patchable-function-entry</code> family of flags and attributes from <code class=\"notranslate\">clang</code> and <code class=\"notranslate\">gcc</code> in order to support instrumentation and patching as done in the Linux kernel.</p>\n<p dir=\"auto\">I have a <a href=\"https://github.com/maurer/rust/tree/patchable-function-entries\">candidate implementation</a> and a <a href=\"https://github.com/rust-lang/compiler-team/issues/704\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/704/hovercard\">MCP</a> to cover just the compiler flag.</p>\n<p dir=\"auto\"><a href=\"https://github.com/maurer/rust-rfcs/blob/patchable-function-entry/text/3543-patchable-function-entry.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3543",
             "title": "RFC: patchable-function-entry",
-            "date_modified": "2024-01-03T17:20:40.000Z",
+            "date_modified": "2024-01-03T22:00:23.000Z",
             "date_published": "2023-12-12T22:26:47.000Z",
             "author": {
                 "name": "maurer",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1327285?u=c3fbb622b1cdadc1e48f65ed7760d1e004dff189&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes combining the Infra and Release teams into one team. This change has very little impact outside of the removal of the Release Council representative. Release team interests will be represented by the Infra team representative.</p>\n<p dir=\"auto\"><a href=\"https://rust-lang.zulipchat.com/#narrow/stream/392734-council/topic/Rough.20draft.20proposal.20merging.20Infra.20and.20Release.20teams\" rel=\"nofollow\">[Zulip Discussion]</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/rylev/rust-rfcs/blob/combine-infra-release/text/3533-combine-infra-and-release-teams.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3533",
             "title": "Add RFC combining Infra and Release teams",
-            "date_modified": "2024-01-03T19:08:15.000Z",
+            "date_modified": "2024-01-03T22:00:49.000Z",
             "date_published": "2023-11-23T09:03:22.000Z",
             "author": {
                 "name": "rylev",
