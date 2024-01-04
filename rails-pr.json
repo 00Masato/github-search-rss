@@ -9,22 +9,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Opening per recommendation in discord</p>",
             "url": "https://github.com/rails/rails/pull/50567",
             "title": "Backport adding dependencies for gems that warn in Ruby 3.3",
-            "date_modified": "2024-01-03T22:58:23.000Z",
+            "date_modified": "2024-01-03T23:29:20.000Z",
             "date_published": "2024-01-03T22:58:19.000Z",
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This changes the default number of workers when parallelizing tests to be based on logical core count instead of physical core count.  This may provide a performance boost for parallelized tests.</p>\n<p dir=\"auto\">This also reverts <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2063030317\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50545\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50545/hovercard\" href=\"https://github.com/rails/rails/pull/50545\">#50545</a> in favor of using the default worker count.</p>",
-            "url": "https://github.com/rails/rails/pull/50564",
-            "title": "Use logical core count for test parallelization",
-            "date_modified": "2024-01-03T22:51:01.000Z",
-            "date_published": "2024-01-03T22:23:17.000Z",
-            "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2053506521\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50427\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50427/hovercard\" href=\"https://github.com/rails/rails/pull/50427\">#50427</a> for context.</p>",
+            "url": "https://github.com/rails/rails/pull/50429",
+            "title": "[ActionMailbox] Replace test/dummy with railtie-like test harness",
+            "date_modified": "2023-12-22T07:30:56.000Z",
+            "date_published": "2023-12-22T07:30:52.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
