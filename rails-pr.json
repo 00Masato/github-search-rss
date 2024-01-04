@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/986290?u=4d733016cf0aff060b84f4084595e5ace35d3b42&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">rubocop-rails-omakase</code> is offended by migrations installed by ActiveStorage and ActionText.</p>\n<p dir=\"auto\">I noticed when a newly created project was failing GitHub CI (added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061145004\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50508\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50508/hovercard\" href=\"https://github.com/rails/rails/pull/50508\">#50508</a>).</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds space inside array literal brackets in ActiveStorage/ActionText migrations.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">The simplest reproduction is</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"&gt; rails new --main blog \n&gt; cd blog\n&gt; bin/rails action_text:install\n&gt; bin/rubocop\nInspecting 31 files\n.........................CC....\n\nOffenses:\ndb/migrate/20240104075942_create_active_storage_tables.active_storage.rb:55:7: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n      ^\ndb/migrate/20240104075942_create_active_storage_tables.active_storage.rb:55:42: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n                                         ^\ndb/migrate/20240104075943_create_action_text_tables.action_text.rb:24:7: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n      ^\ndb/migrate/20240104075943_create_action_text_tables.action_text.rb:24:42: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n                                         ^\n\n31 files inspected, 4 offenses detected, 2 offenses autocorrectable\"><pre class=\"notranslate\"><span class=\"pl-k\">&gt;</span> rails new --main blog \n<span class=\"pl-k\">&gt;</span> <span class=\"pl-c1\">cd</span> blog\n<span class=\"pl-k\">&gt;</span> bin/rails action_text:install\n<span class=\"pl-k\">&gt;</span> bin/rubocop\nInspecting 31 files\n.........................CC....\n\nOffenses:\ndb/migrate/20240104075942_create_active_storage_tables.active_storage.rb:55:7: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n      ^\ndb/migrate/20240104075942_create_active_storage_tables.active_storage.rb:55:42: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n                                         ^\ndb/migrate/20240104075943_create_action_text_tables.action_text.rb:24:7: C: [Correctable] Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n      ^\ndb/migrate/20240104075943_create_action_text_tables.action_text.rb:24:42: C: Layout/SpaceInsideArrayLiteralBrackets: Use space inside array brackets.\n      [primary_key_type, foreign_key_type]\n                                         ^\n\n31 files inspected, 4 offenses detected, 2 offenses autocorrectable</pre></div>",
+            "url": "https://github.com/rails/rails/pull/50576",
+            "title": "Ensure migrations installed by ActiveStorage/ActionText comply with `rubocop-rails-omakase`",
+            "date_modified": "2024-01-04T08:12:11.000Z",
+            "date_published": "2024-01-04T08:12:06.000Z",
+            "author": {
+                "name": "zachasme",
+                "url": "https://github.com/zachasme"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2064984900\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50572\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50572/hovercard\" href=\"https://github.com/rails/rails/pull/50572\">#50572</a></p>\n<p dir=\"auto\">The <code class=\"notranslate\">main</code> templates having been failing in CI for Ruby 2.7 and Ruby 3.0 since the minimum Ruby version was bumped to 3.1</p>",
             "url": "https://github.com/rails/rails/pull/50574",
             "title": "Backport bug report template refactor to 7-0-stable",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2053506521\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50427\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50427/hovercard\" href=\"https://github.com/rails/rails/pull/50427\">#50427</a> for context.</p>",
-            "url": "https://github.com/rails/rails/pull/50429",
-            "title": "[ActionMailbox] Replace test/dummy with railtie-like test harness",
-            "date_modified": "2023-12-22T07:30:56.000Z",
-            "date_published": "2023-12-22T07:30:52.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
