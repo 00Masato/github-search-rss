@@ -6,6 +6,39 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2064984900\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50572\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50572/hovercard\" href=\"https://github.com/rails/rails/pull/50572\">#50572</a></p>\n<p dir=\"auto\">The <code class=\"notranslate\">main</code> templates having been failing in CI for Ruby 2.7 and Ruby 3.0 since the minimum Ruby version was bumped to 3.1</p>",
+            "url": "https://github.com/rails/rails/pull/50574",
+            "title": "Backport bug report template refactor to 7-0-stable",
+            "date_modified": "2024-01-04T04:52:14.000Z",
+            "date_published": "2024-01-04T04:52:10.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1418177?u=dc49ad1adab8df31f34121febc5fc8808beda02f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">Rails::Rack::Logger</code> middleware defers finishing the request.action_dispatch notification until the body is written. However, it calls <code class=\"notranslate\">ActiveSupport::LogSubscriber.flush_all!</code> immediately once the headers are written, before the body is closed.</p>\n<p dir=\"auto\">This means that if you have a custom <code class=\"notranslate\">ActiveSupport::LogSubscriber</code> attached to <code class=\"notranslate\">request.action_dispatch</code>, any logs you write there are NOT flushed until the <em>next</em> request finishes (or something else calls <code class=\"notranslate\">Rails.logger.flush</code> or some such).</p>\n<p dir=\"auto\">I mostly care about this because I'm experimenting with a custom <code class=\"notranslate\">Rails.logger</code> implementation which buffers all logs for a request into a single object, which can be sent to our structured logging platform as one log entry. I was hoping to use <code class=\"notranslate\">#flush</code> as the signal to write out that completed event, but because it happens too early in Rack, I can't (I have to define <code class=\"notranslate\">#flush</code> as a no-op on my custom logger, and implement a <code class=\"notranslate\">#real_flush</code> which is called from a <code class=\"notranslate\">request.action_dispatch</code> handler).</p>\n<p dir=\"auto\">But even outside exotic logger implementations like this, I think \"flush\" should happen after <code class=\"notranslate\">request.action_dispatch</code> is done.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR fixes the issue by simply ensuring that <code class=\"notranslate\">ActiveSupport::LogSubscriber.flush_all!</code> is called in the same circumstances as <code class=\"notranslate\">handle.finish</code> is in the <code class=\"notranslate\">Rails::Rack::Logger</code> middleware.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50573",
+            "title": "Ensure that LogSubscriber.flush_all! is called after LogSubscribers run",
+            "date_modified": "2024-01-04T04:58:15.000Z",
+            "date_published": "2024-01-04T04:47:13.000Z",
+            "author": {
+                "name": "KJTsanaktsidis",
+                "url": "https://github.com/KJTsanaktsidis"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2063080682\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/buildkite-config/issues/80\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/buildkite-config/pull/80/hovercard\" href=\"https://github.com/rails/buildkite-config/pull/80\">rails/buildkite-config#80</a></p>\n<p dir=\"auto\">The <code class=\"notranslate\">main</code> templates having been failing in CI for Ruby 2.7 and Ruby 3.0 since the minimum Ruby version was bumped to 3.1</p>",
+            "url": "https://github.com/rails/rails/pull/50572",
+            "title": "Backport bug report template refactor to 7-1-stable",
+            "date_modified": "2024-01-04T04:55:08.000Z",
+            "date_published": "2024-01-04T04:33:41.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Opening per recommendation in discord</p>",
             "url": "https://github.com/rails/rails/pull/50567",
             "title": "Backport adding dependencies for gems that warn in Ruby 3.3",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Exclusion constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"700465388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/40224\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/40224/hovercard\" href=\"https://github.com/rails/rails/pull/40224\">#40224</a> and unique constraints were added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1396155024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46192/hovercard\" href=\"https://github.com/rails/rails/pull/46192\">#46192</a>.</p>\n<p dir=\"auto\">Both lacks an ability to check if the constraint already exists, to make, for example, adding constraints idempotent.<br>\nThis ability already exists for check constraints, for example (same for foreign keys, indexes etc).</p>",
-            "url": "https://github.com/rails/rails/pull/50431",
-            "title": "Add `exclusion_constraint_exists?` and `unique_constraint_exists?` helpers",
-            "date_modified": "2023-12-22T22:18:45.000Z",
-            "date_published": "2023-12-22T22:18:21.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Creates parity between scopes and instances of records, similar to how <a href=\"https://guides.rubyonrails.org/active_record_querying.html#enums\" rel=\"nofollow\">enums</a> automatically create instance methods that query whether the model belongs to that scope.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Book &lt; ApplicationRecord\n  scope :out_of_print, -&gt; { where(out_of_print: true) }, predicate: true\n  # Creates instance method named `within_out_of_print?`\n\n  scope :in_print, -&gt; { where(out_of_print: false) }, predicate: :in_print\n  # Creates instance method named `in_print?`\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Book</span> &lt; <span class=\"pl-v\">ApplicationRecord</span>\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">:out_of_print</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">out_of_print</span>: <span class=\"pl-c1\">true</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">predicate</span>: <span class=\"pl-c1\">true</span>\n  <span class=\"pl-c\"># Creates instance method named `within_out_of_print?`</span>\n\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">:in_print</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">-&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">out_of_print</span>: <span class=\"pl-c1\">false</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">predicate</span>: <span class=\"pl-pds\">:in_print</span>\n  <span class=\"pl-c\"># Creates instance method named `in_print?`</span>\n<span class=\"pl-k\">end</span></pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"irb&gt; Book.out_of_print.first.within_out_of_print?\n=&gt; true\n\nirb&gt; Book.in_print.first.in_print?\n=&gt; true\"><pre lang=\"irb\" class=\"notranslate\"><code class=\"notranslate\">irb&gt; Book.out_of_print.first.within_out_of_print?\n=&gt; true\n\nirb&gt; Book.in_print.first.in_print?\n=&gt; true\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adds <code class=\"notranslate\">**options</code> argument to <code class=\"notranslate\">scope</code> definition, allowing caller to optionally pass <code class=\"notranslate\">predicate: true</code> or <code class=\"notranslate\">predicate: :desired_predicate_name</code>.</p>\n<p dir=\"auto\">The goal is to keep this feature opt-in to avoid automatically creating a method for each and every scope.</p>\n<p dir=\"auto\">Additionally, we default to <code class=\"notranslate\">within_&lt;scope_name&gt;</code> as to not conflict with the instance methods generated by <a href=\"https://guides.rubyonrails.org/active_record_querying.html#enums\" rel=\"nofollow\">enums</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This should be compatible with <a href=\"https://guides.rubyonrails.org/active_record_composite_primary_keys.html\" rel=\"nofollow\">Composite Primary Keys</a>, but existing fixtures did not exist (as far as I could tell).</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50430",
-            "title": "Introduce predicate definition when defining scopes",
-            "date_modified": "2023-12-24T01:55:51.000Z",
-            "date_published": "2023-12-22T18:05:28.000Z",
-            "author": {
-                "name": "stevepolitodesign",
-                "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2053506521\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50427\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50427/hovercard\" href=\"https://github.com/rails/rails/pull/50427\">#50427</a> for context.</p>",
-            "url": "https://github.com/rails/rails/pull/50429",
-            "title": "[ActionMailbox] Replace test/dummy with railtie-like test harness",
-            "date_modified": "2023-12-22T07:30:56.000Z",
-            "date_published": "2023-12-22T07:30:52.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
