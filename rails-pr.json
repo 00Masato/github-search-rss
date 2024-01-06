@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If app uses MSSQL Server we can configure Github CI to use sql server for the tests.<br>\nHere is the <a href=\"https://github.com/dixpac/demo_ms/actions/runs/7433034257\">link to working CI</a> that uses same config</p>",
+            "url": "https://github.com/rails/rails/pull/50619",
+            "title": "Add support for MSSQLServer on the CI",
+            "date_modified": "2024-01-06T17:53:49.000Z",
+            "date_published": "2024-01-06T17:53:45.000Z",
+            "author": {
+                "name": "dixpac",
+                "url": "https://github.com/dixpac"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87183507?u=1374c66fb72815a8d824ed1a4b80b9f0ebc2d72e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I fixed <a href=\"https://github.com/rails/rails/blob/fb5687491254511bc8e0d330adfeef4c1a8a7289/railties/lib/rails/generators/named_base.rb#L37\">FIXME</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">singular_name</code> method in <code class=\"notranslate\">railties/lib/rails/generators/named_base.rb</code> is an alias for <code class=\"notranslate\">file_name</code>. But we are avoiding to use alias because a bug on thor that make this method public and add it to the task list. So, I replaced <code class=\"notranslate\">singular_name</code> method with <code class=\"notranslate\">file_name</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50616",
             "title": "Delete singular_name method in named_base.rb",
@@ -209,17 +220,6 @@
             "title": "Read `ActionText::Attachment.tag_name` in Action Text Fixtures",
             "date_modified": "2024-01-02T00:11:59.000Z",
             "date_published": "2023-12-28T13:54:36.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The introduction of the block argument means that <code class=\"notranslate\">Object#with</code> can now accept a <code class=\"notranslate\">Symbol#to_proc</code> as the block argument:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"client.with(timeout: 5_000, &amp;:ping)\"><pre class=\"notranslate\"><span class=\"pl-en\">client</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">with</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">timeout</span>: <span class=\"pl-c1\">5_000</span><span class=\"pl-kos\">,</span> &amp;<span class=\"pl-pds\">:ping</span><span class=\"pl-kos\">)</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50470",
-            "title": "Yield instance to `Object#with` block",
-            "date_modified": "2024-01-06T00:03:34.000Z",
-            "date_published": "2023-12-28T13:12:43.000Z",
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
