@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The guidelines are explicit about how we should start sentences with \"Returns\" rather than \"Return.\" So these instances should follow that way.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">See also the enhancements made at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067272847\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50595\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50595/hovercard\" href=\"https://github.com/rails/rails/pull/50595\">#50595</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50613",
-            "title": "Replace \"Return\" with \"Returns\" in API documentations",
-            "date_modified": "2024-01-06T04:32:06.000Z",
-            "date_published": "2024-01-06T01:10:20.000Z",
-            "author": {
-                "name": "sato11",
-                "url": "https://github.com/sato11"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because  the documentation guidelines favor the use of \"an\" for \"SQL\" and there are a handful of instances which go against it.</p>\n<h3 dir=\"auto\">Detail</h3>\n<blockquote>\n<p dir=\"auto\">Use the article \"an\" for \"SQL\", as in \"an SQL statement\". Also \"an SQLite database\".</p>\n</blockquote>\n<p dir=\"auto\"><a href=\"https://guides.rubyonrails.org/api_documentation_guidelines.html\" rel=\"nofollow\">https://guides.rubyonrails.org/api_documentation_guidelines.html</a>.</p>\n<p dir=\"auto\">So I followed it.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50612",
             "title": "Use the article \"an\" for \"SQL\"",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was the first approach that came to mind, maybe would be interesting to demonstrate using the built-in <a href=\"https://edgeapi.rubyonrails.org/classes/ActionCable/TestHelper.html\" rel=\"nofollow\">TestHelper</a>.</p>\n<p dir=\"auto\">There is probably some work to get this passing in CI, similar to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931267992\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49527\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49527/hovercard\" href=\"https://github.com/rails/rails/pull/49527\">#49527</a>, too.</p>",
+            "url": "https://github.com/rails/rails/pull/50437",
+            "title": "Add a bug report for Action Cable",
+            "date_modified": "2023-12-25T12:47:23.000Z",
+            "date_published": "2023-12-25T12:05:15.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
