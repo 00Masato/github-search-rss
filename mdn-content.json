@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1466293?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Non-standard and long-gone broken links will never be added, no need to keep them as links.</p>",
-            "url": "https://github.com/mdn/content/pull/31537",
-            "title": "Remove broken links to long gone non-standard features",
-            "date_modified": "2024-01-06T09:33:29.000Z",
-            "date_published": "2024-01-06T09:32:07.000Z",
-            "author": {
-                "name": "teoli2003",
-                "url": "https://github.com/teoli2003"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95597335?u=8d74d22178f21abb716e97df0752093cf31ea013&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">part of <a href=\"https://github.com/orgs/mdn/discussions/476\">https://github.com/orgs/mdn/discussions/476</a></p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/31529",
             "title": "init docs for `HTMLScriptElement.crossOrigin`",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ramiy",
                 "url": "https://github.com/ramiy"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95597335?u=8d74d22178f21abb716e97df0752093cf31ea013&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/31397",
+            "title": "MediaDevices | fix apiref & add securecontext_header & some other fix",
+            "date_modified": "2024-01-02T05:15:19.000Z",
+            "date_published": "2023-12-30T06:22:38.000Z",
+            "author": {
+                "name": "skyclouds2001",
+                "url": "https://github.com/skyclouds2001"
             }
         }
     ]
