@@ -6,36 +6,25 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the python and github action versions on lint workflow.</p>",
-            "url": "https://github.com/rails/rails/pull/50649",
-            "title": "Bump lint codespell dependencies versions in workflow",
-            "date_modified": "2024-01-08T19:01:18.000Z",
-            "date_published": "2024-01-08T17:55:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071085252\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50656\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50656/hovercard\" href=\"https://github.com/rails/rails/pull/50656\">#50656</a> to 7-1-stable</p>",
+            "url": "https://github.com/rails/rails/pull/50658",
+            "title": "Do not automatically require minitest-bisect (7-1-stable)",
+            "date_modified": "2024-01-08T19:57:43.000Z",
+            "date_published": "2024-01-08T19:57:43.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As per the discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2070961128\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50649\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50649/hovercard?comment_id=1881656477&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/50649#issuecomment-1881656477\">#50649 (comment)</a>, decided to not add codespell as a step in CI. Sometime its failed to identify regex, and some intended typo. which leads to exclude more words.</p>",
+            "url": "https://github.com/rails/rails/pull/50657",
+            "title": "Remove codespell step from CI",
+            "date_modified": "2024-01-08T19:53:26.000Z",
+            "date_published": "2024-01-08T19:30:46.000Z",
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5294464?u=e2754ad8dcc82f6e65b07bac4a31928faf3df6fe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2069138478\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50628\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50628/hovercard\" href=\"https://github.com/rails/rails/pull/50628\">#50628</a>.</p>\n<p dir=\"auto\">When running Rails applications with Docker containers may fail to restart if they crashed (e.g. because of OOM). This is because the <code class=\"notranslate\">/rails/tmp/pids/server.pid</code> file is already present.</p>\n<p dir=\"auto\">Such failed containers will require manual intervention (e.g. remove the faulty container) to get up and running again. To allow containers to restart the server.pid file must be deleted on container start. As suggested in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2069138478\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50628\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50628/hovercard\" href=\"https://github.com/rails/rails/pull/50628\">#50628</a>, rather than removing the file in the <code class=\"notranslate\">docker-entrypoint</code>, the default for new Rails applications should be not to create PIDs in the first place in production.</p>\n<p dir=\"auto\">This Pull Request has been created to not create pidfiles in production.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This makes the <code class=\"notranslate\">pidfile</code> instruction from the default <code class=\"notranslate\">puma.tt</code> template conditional. The puma files in the respective dummy / test apps have been updated for consistency. The default path for the pidfile in the server command has also been made conditional.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I opted for making pidfile generation conditional rather than removing it outright as it has its uses in development (e.g. when not running with Docker per default). Might be though that this conditional behaviour ends up causing some confusion. Thoughts?</p>",
-            "url": "https://github.com/rails/rails/pull/50644",
-            "title": "Do not generate pidfile in production environments",
-            "date_modified": "2024-01-08T18:01:54.000Z",
-            "date_published": "2024-01-08T12:50:58.000Z",
-            "author": {
-                "name": "hschne",
-                "url": "https://github.com/hschne"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">With <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067986059\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50609\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50609/hovercard\" href=\"https://github.com/rails/rails/pull/50609\">#50609</a> it makes sense to enable this here as well I think.</p>",
-            "url": "https://github.com/rails/rails/pull/50639",
-            "title": "Enable `Style/ArrayIntersect` rubocop cop",
-            "date_modified": "2024-01-08T08:25:01.000Z",
-            "date_published": "2024-01-08T08:25:01.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
             }
         },
         {
@@ -53,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2259834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When generating an app with bun, GitHub CI test fails with <code class=\"notranslate\">Command install failed, ensure bun is installed</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds <code class=\"notranslate\">oven-sh/setup-bun</code> to <code class=\"notranslate\">ci.yml</code> when generating an app with bun.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">See also:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://bun.sh/guides/runtime/cicd\" rel=\"nofollow\">https://bun.sh/guides/runtime/cicd</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061064996\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50502\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50502/hovercard\" href=\"https://github.com/rails/rails/issues/50502\">#50502</a></li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50636",
             "title": "Add `oven-sh/setup-bun` to GitHub CI when generating an app with bun",
-            "date_modified": "2024-01-08T02:41:45.000Z",
+            "date_modified": "2024-01-08T19:50:40.000Z",
             "date_published": "2024-01-08T02:41:41.000Z",
             "author": {
                 "name": "TangRufus",
@@ -119,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?u=bb262553df264faad2f515f6ea75067266e0d129&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50600.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067401862\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50600\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50600/hovercard\" href=\"https://github.com/rails/rails/issues/50600\">#50600</a> by parsing the string content-type before comparing it to the <code class=\"notranslate\">Mime::Type</code>. This comparison will ignore the parameters.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/alexandergitter/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/alexandergitter\">@alexandergitter</a> I added you as co-author for the reproduction test case.</p>",
             "url": "https://github.com/rails/rails/pull/50610",
             "title": "Don't fail for uploads with content-type parameters in the ActiveStorage::DiskController",
-            "date_modified": "2024-01-08T18:43:12.000Z",
+            "date_modified": "2024-01-08T19:20:36.000Z",
             "date_published": "2024-01-05T23:32:34.000Z",
             "author": {
                 "name": "codergeek121",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "jprosevear",
                 "url": "https://github.com/jprosevear"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50448.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056748267\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50448\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50448/hovercard\" href=\"https://github.com/rails/rails/issues/50448\">#50448</a></p>\n<p dir=\"auto\">NOTE: This is a proof-of-concept, that I came up with based on my understanding of ActiveRecord::DatabaseConfigurations and try to find a tiny seam to add support for this feature. Open to feedback and suggestions, but wanted to take a stab at this while it was fresh in my head.</p>",
+            "url": "https://github.com/rails/rails/pull/50477",
+            "title": "Active Storage can be configured by STORAGE_URL",
+            "date_modified": "2023-12-31T23:17:14.000Z",
+            "date_published": "2023-12-29T06:36:26.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
