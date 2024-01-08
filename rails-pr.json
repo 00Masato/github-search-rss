@@ -6,10 +6,43 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the python and github action versions on lint workflow.</p>",
+            "url": "https://github.com/rails/rails/pull/50649",
+            "title": "Bump lint codespell dependencies versions in workflow",
+            "date_modified": "2024-01-08T18:00:09.000Z",
+            "date_published": "2024-01-08T17:55:50.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Using Symbol#name allows to hit two birds with one stone.</p>\n<p dir=\"auto\">First it will return a pre-existing string, so will save one allocation per key.</p>\n<p dir=\"auto\">Second, that string will be already interned, so it will save the internal <code class=\"notranslate\">Hash</code> implementation the work of looking up the interned strings table to deduplicate the key.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x86_64-darwin21]\nWarming up --------------------------------------\n                to_s    17.768k i/100ms\n                cond    23.703k i/100ms\nCalculating -------------------------------------\n                to_s    169.830k (±10.4%) i/s -    852.864k in   5.088377s\n                cond    236.803k (± 7.9%) i/s -      1.185M in   5.040945s\n\nComparison:\n                to_s:   169830.3 i/s\n                cond:   236803.4 i/s - 1.39x  faster\"><pre class=\"notranslate\"><code class=\"notranslate\">ruby 3.3.0 (2023-12-25 revision 5124f9ac75) [x86_64-darwin21]\nWarming up --------------------------------------\n                to_s    17.768k i/100ms\n                cond    23.703k i/100ms\nCalculating -------------------------------------\n                to_s    169.830k (±10.4%) i/s -    852.864k in   5.088377s\n                cond    236.803k (± 7.9%) i/s -      1.185M in   5.040945s\n\nComparison:\n                to_s:   169830.3 i/s\n                cond:   236803.4 i/s - 1.39x  faster\n</code></pre></div>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"require 'bundler/inline'\n\ngemfile do\n  source 'https://rubygems.org'\n  gem 'benchmark-ips', require: false\nend\n\nHASH = {\n  first_name: nil,\n  last_name: nil,\n  country: nil,\n  profession: nil,\n  language: nil,\n  hobby: nil,\n  pet: nil,\n  longer_name: nil,\n  occupation: nil,\n  mailing_address: nil,\n}.freeze\n\nrequire 'benchmark/ips'\n\nBenchmark.ips do |x|\n  x.report(&quot;to_s&quot;) { HASH.transform_keys(&amp;:to_s) }\n  x.report(&quot;cond&quot;) { HASH.transform_keys { |k| Symbol === k ? k.name : k.to_s } }\n  x.compare!(order: :baseline)\nend\"><pre class=\"notranslate\"><span class=\"pl-en\">require</span> <span class=\"pl-s\">'bundler/inline'</span>\n\n<span class=\"pl-en\">gemfile</span> <span class=\"pl-k\">do</span>\n  <span class=\"pl-en\">source</span> <span class=\"pl-s\">'https://rubygems.org'</span>\n  <span class=\"pl-en\">gem</span> <span class=\"pl-s\">'benchmark-ips'</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">require</span>: <span class=\"pl-c1\">false</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-c1\">HASH</span> <span class=\"pl-c1\">=</span> <span class=\"pl-kos\">{</span>\n  <span class=\"pl-pds\">first_name</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">last_name</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">country</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">profession</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">language</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">hobby</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">pet</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">longer_name</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">occupation</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-pds\">mailing_address</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">freeze</span>\n\n<span class=\"pl-en\">require</span> <span class=\"pl-s\">'benchmark/ips'</span>\n\n<span class=\"pl-v\">Benchmark</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">ips</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">x</span>|\n  <span class=\"pl-s1\">x</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">report</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"to_s\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">HASH</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">transform_keys</span><span class=\"pl-kos\">(</span>&amp;<span class=\"pl-pds\">:to_s</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span>\n  <span class=\"pl-s1\">x</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">report</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"cond\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">HASH</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">transform_keys</span> <span class=\"pl-kos\">{</span> |<span class=\"pl-s1\">k</span>| <span class=\"pl-v\">Symbol</span> === <span class=\"pl-s1\">k</span> ? <span class=\"pl-s1\">k</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">name</span> : <span class=\"pl-s1\">k</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_s</span> <span class=\"pl-kos\">}</span> <span class=\"pl-kos\">}</span>\n  <span class=\"pl-s1\">x</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">compare!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">order</span>: <span class=\"pl-pds\">:baseline</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-k\">end</span></pre></div>",
+            "url": "https://github.com/rails/rails/pull/50648",
+            "title": "Optimize Hash#stringify_keys",
+            "date_modified": "2024-01-08T17:55:58.000Z",
+            "date_published": "2024-01-08T17:47:56.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100725?u=f814728f5d5be106120815f6728242be95132129&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Made Brakeman execution stricter:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">--ensure-latest</code> ensures that the latest version of Brakeman is used</li>\n<li><code class=\"notranslate\">--no-pager</code> is better for CI execution</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50647",
+            "title": "Made Brakeman CI config stricter",
+            "date_modified": "2024-01-08T17:53:07.000Z",
+            "date_published": "2024-01-08T17:20:47.000Z",
+            "author": {
+                "name": "igor-alexandrov",
+                "url": "https://github.com/igor-alexandrov"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5294464?u=e2754ad8dcc82f6e65b07bac4a31928faf3df6fe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2069138478\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50628\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50628/hovercard\" href=\"https://github.com/rails/rails/pull/50628\">#50628</a>.</p>\n<p dir=\"auto\">When running Rails applications with Docker containers may fail to restart if they crashed (e.g. because of OOM). This is because the <code class=\"notranslate\">/rails/tmp/pids/server.pid</code> file is already present.</p>\n<p dir=\"auto\">Such failed containers will require manual intervention (e.g. remove the faulty container) to get up and running again. To allow containers to restart the server.pid file must be deleted on container start. As suggested in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2069138478\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50628\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50628/hovercard\" href=\"https://github.com/rails/rails/pull/50628\">#50628</a>, rather than removing the file in the <code class=\"notranslate\">docker-entrypoint</code>, the default for new Rails applications should be not to create PIDs in the first place in production.</p>\n<p dir=\"auto\">This Pull Request has been created to not create pidfiles in production.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This makes the <code class=\"notranslate\">pidfile</code> instruction from the default <code class=\"notranslate\">puma.tt</code> template conditional. The puma files in the respective dummy / test apps have been updated for consistency. The default path for the pidfile in the server command has also been made conditional.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I opted for making pidfile generation conditional rather than removing it outright as it has its uses in development (e.g. when not running with Docker per default). Might be though that this conditional behaviour ends up causing some confusion. Thoughts?</p>",
             "url": "https://github.com/rails/rails/pull/50644",
             "title": "Do not generate pidfile in production environments",
-            "date_modified": "2024-01-08T16:46:59.000Z",
+            "date_modified": "2024-01-08T18:01:50.000Z",
             "date_published": "2024-01-08T12:50:58.000Z",
             "author": {
                 "name": "hschne",
@@ -69,17 +102,6 @@
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87183507?u=1374c66fb72815a8d824ed1a4b80b9f0ebc2d72e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I deleted a FIXME annotation that did not need to be corrected.</p>\n<h3 dir=\"auto\">Detail</h3>\n<blockquote>\n<p dir=\"auto\">FIXME: is this a desired behavior?</p>\n</blockquote>\n<p dir=\"auto\">I think YES!</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50627",
-            "title": "Delete FIXME annotation in dispatch/mapper_test.rb",
-            "date_modified": "2024-01-07T14:39:45.000Z",
-            "date_published": "2024-01-07T12:51:46.000Z",
-            "author": {
-                "name": "koya1616",
-                "url": "https://github.com/koya1616"
             }
         },
         {
@@ -193,17 +215,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Opening per recommendation in discord</p>",
-            "url": "https://github.com/rails/rails/pull/50567",
-            "title": "Backport adding dependencies for gems that warn in Ruby 3.3",
-            "date_modified": "2024-01-07T21:58:39.000Z",
-            "date_published": "2024-01-03T22:58:19.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">First, mimic the documentation and guidance provided for the <code class=\"notranslate\">active_storage:install</code> task, including nudges the execute the command when tables are missing.</p>\n<p dir=\"auto\">Similarly, adjust the source code text in the generator itself. By removing the newlines, the generator won't inject the JS and CSS source more than once if it already exists.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This commit includes a diff scoped to <code class=\"notranslate\">test/dummy</code> that was generated by executing the following:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"cd test/dummy\nbin/rails action_text:install\nbin/rails db:migrate\"><pre class=\"notranslate\"><span class=\"pl-c1\">cd</span> test/dummy\nbin/rails action_text:install\nbin/rails db:migrate</pre></div>",
             "url": "https://github.com/rails/rails/pull/50557",
             "title": "Improve documentation for `action_text:install` task",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26396425?u=f660166a92539f1b136d99aeb7332b34dc4c34f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2060964035\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50499\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50499/hovercard\" href=\"https://github.com/rails/rails/issues/50499\">#50499</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Previously, querying from the base class resulted in an object of the inherited type, with 'ignored_columns' included in the 'attributes' method.</p>\n<p dir=\"auto\">This behavior was inconsistent, as it did not occur when querying directly from the inherited class. This fix ensures consistent behavior in the attributes between the two ways of instantiate inherited classes during querying.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50553",
-            "title": "Fix instantiation of inherited classes when querying",
-            "date_modified": "2024-01-05T17:42:12.000Z",
-            "date_published": "2024-01-03T12:49:56.000Z",
-            "author": {
-                "name": "jvlara",
-                "url": "https://github.com/jvlara"
             }
         }
     ]
