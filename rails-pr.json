@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1082082292\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43899\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43899/hovercard?comment_id=1444101987&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/43899#discussion_r1444101987\">#43899 (comment)</a></p>",
+            "url": "https://github.com/rails/rails/pull/50664",
+            "title": "Add an example to the `global_executor_concurrency` docs",
+            "date_modified": "2024-01-09T02:58:07.000Z",
+            "date_published": "2024-01-09T02:47:41.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12301?u=ff463d5b4856759aeb902725ad89b4392442077d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a></p>\n<p dir=\"auto\">Followed up <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2064756760\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50567\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50567/hovercard\" href=\"https://github.com/rails/rails/pull/50567\">#50567</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">drb-2.0.6</code> has <code class=\"notranslate\">ruby2_keywords</code> dependency itself. We don't need to add it to <code class=\"notranslate\">activesupport</code>.</p>\n<p dir=\"auto\">see <a href=\"https://rubygems.org/gems/drb/versions/2.0.6\" rel=\"nofollow\">https://rubygems.org/gems/drb/versions/2.0.6</a></p>",
             "url": "https://github.com/rails/rails/pull/50663",
             "title": "Remove ruby2_keywords dependency from `6-1-stable`",
-            "date_modified": "2024-01-09T01:59:20.000Z",
+            "date_modified": "2024-01-09T02:21:57.000Z",
             "date_published": "2024-01-09T01:59:15.000Z",
             "author": {
                 "name": "hsbt",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/923418?u=adac721c7f9d008c9dedd36b7197c6a1e7e042a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background &amp; Detail</h3>\n<p dir=\"auto\"><a href=\"https://api.rubyonrails.org/v7.1.2/classes/ActiveRecord/ConnectionAdapters/SchemaStatements.html#method-i-create_table\" rel=\"nofollow\"><code class=\"notranslate\">create_table</code></a> provides an <code class=\"notranslate\">options:</code> key that allows you to append options to your table definition. One of the things you can do this way with PostgreSQL 10+ is use <a href=\"https://www.postgresql.org/docs/current/ddl-partitioning.html\" rel=\"nofollow\">native partitioning</a> to declare partitioning definitions:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"create_table :events, id: false, options: &quot;PARTITION BY LIST (account_id)&quot; do |t|\n  t.bigint :account_id, null: false\n  t.integer :kind, null: false\n  t.datetime :occurred_at, null: false\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">create_table :events, id: false, options: \"PARTITION BY LIST (account_id)\" do |t|\n  t.bigint :account_id, null: false\n  t.integer :kind, null: false\n  t.datetime :occurred_at, null: false\nend\n</code></pre></div>\n<p dir=\"auto\">Adding this to a migration and running it will properly create the partitioned table in development, but the dumped schema will not persist the specified partitioning options. Therefore, if you run your test suite which loads from <code class=\"notranslate\">schema.rb</code>, your test database's table won't be properly partitioned.</p>\n<p dir=\"auto\">This PR extends the PostgeSQL adapter's schema statements so that it can dump this partitioning definition as defined in the relevant system tables.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50475",
-            "title": "support dumping PostgreSQL partitioning options to `schema.rb`",
-            "date_modified": "2024-01-08T23:25:55.000Z",
-            "date_published": "2023-12-28T21:23:47.000Z",
-            "author": {
-                "name": "waymondo",
-                "url": "https://github.com/waymondo"
             }
         }
     ]
