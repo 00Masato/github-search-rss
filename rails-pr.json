@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1094599484\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44083\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44083/hovercard\" href=\"https://github.com/rails/rails/pull/44083\">#44083</a> introduced a workaround with the <code class=\"notranslate\">mail</code> gem for Ruby 3.1 support. Since then, the gem itself has solved this issue: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mikel/mail/commit/d9d8dcc6bae1774a033ad488cea6217db3a3ebf3/hovercard\" href=\"https://github.com/mikel/mail/commit/d9d8dcc6bae1774a033ad488cea6217db3a3ebf3\">mikel/mail@<tt>d9d8dcc</tt></a>.</p>\n<p dir=\"auto\">Since <code class=\"notranslate\">mail</code> 2.8.0 is the first version to properly support 3.1 and rails itself doesn't support anything below 3.1 on main the workaround can be removed and the required mail version bumped.</p>",
+            "url": "https://github.com/rails/rails/pull/50668",
+            "title": "Remove workaround for `mail` gem dependencies",
+            "date_modified": "2024-01-09T09:30:35.000Z",
+            "date_published": "2024-01-09T09:30:29.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removed the extra blank line on github ci, when skipping brakeman.</p>",
             "url": "https://github.com/rails/rails/pull/50667",
             "title": "Fix extra blank line on CI when skipping brakeman",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "bparanj",
                 "url": "https://github.com/bparanj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/699616?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In Rails 7.0 despite api documention, <code class=\"notranslate\">readonly_attributes</code> returned a set:<br>\n<a href=\"https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/readonly_attributes.rb#L26\">https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/readonly_attributes.rb#L26</a></p>\n<p dir=\"auto\">This was fixed in 7.1:<br>\n<a href=\"https://github.com/rails/rails/blob/7-1-stable/activerecord/lib/active_record/readonly_attributes.rb#L31\">https://github.com/rails/rails/blob/7-1-stable/activerecord/lib/active_record/readonly_attributes.rb#L31</a></p>\n<p dir=\"auto\">However the usage of <code class=\"notranslate\">readonly_attributes</code> was guarded with a .to_a which is now no longer needed </p><div class=\"Box Box--condensed my-2\">\n  <div class=\"Box-header f6\">\n    <p class=\"mb-0 text-bold\">\n      <a href=\"https://github.com/rails/rails/blob/590a675c4ecfaa9b7b06787a30adeb0136524879/activerecord/lib/active_record/insert_all.rb#L195\">rails/activerecord/lib/active_record/insert_all.rb</a>\n    </p>\n    <p class=\"mb-0 color-fg-muted\">\n         Line 195\n      in\n      <a data-pjax=\"true\" class=\"commit-tease-sha Link--inTextBlock\" href=\"/rails/rails/commit/590a675c4ecfaa9b7b06787a30adeb0136524879\">590a675</a>\n    </p>\n  </div>\n  <div itemprop=\"text\" class=\"Box-body p-0 blob-wrapper blob-wrapper-embedded data\">\n    <table class=\"highlight tab-size mb-0 js-file-line-container\" data-tab-size=\"8\" data-paste-markdown-skip=\"\">\n\n        <tbody><tr class=\"border-0\">\n          <td id=\"L195\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"195\"></td>\n          <td id=\"LC195\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\"> <span class=\"pl-en\">primary_keys</span> + <span class=\"pl-en\">model</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">readonly_attributes</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_a</span> </td>\n        </tr>\n    </tbody></table>\n  </div>\n</div>\n<p></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes an unnecessary to_a call</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>\n<p dir=\"auto\">NA:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50487",
-            "title": "Remove unnecessary to_a conversion for readonly_attributes method call",
-            "date_modified": "2023-12-30T04:06:54.000Z",
-            "date_published": "2023-12-30T04:06:50.000Z",
-            "author": {
-                "name": "jprosevear",
-                "url": "https://github.com/jprosevear"
             }
         }
     ]
