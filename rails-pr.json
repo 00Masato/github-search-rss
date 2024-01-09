@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removed the extra blank line on github ci, when skipping brakeman.</p>",
+            "url": "https://github.com/rails/rails/pull/50667",
+            "title": "Fix extra blank line on CI when skipping brakeman",
+            "date_modified": "2024-01-09T06:57:43.000Z",
+            "date_published": "2024-01-09T06:57:39.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">When calling <code class=\"notranslate\">render</code> with a <code class=\"notranslate\">:renderable</code> argument, ensure that the object responds to <code class=\"notranslate\">#render_in</code>. If it doesn't, raise an <code class=\"notranslate\">ArgumentError</code>.</p>\n<h3 dir=\"auto\">Additional Information</h3>\n<p dir=\"auto\">This commit also adjusts the <code class=\"notranslate\">ArgumentError</code> that when a <code class=\"notranslate\">:partial</code> argument isn't Active Model compatible. Prior to this commit, the message used <code class=\"notranslate\">:</code> as a prefix to <code class=\"notranslate\">to_partial_path</code>. This commit replaces that with a <code class=\"notranslate\">#</code> prefix to denote that it's expected to be an instance method on the object.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50665",
             "title": "Raise `ArgumentError` if `:renderable` object does not respond to `#render_in`",
@@ -20,22 +31,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1082082292\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43899\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43899/hovercard?comment_id=1444101987&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/43899#discussion_r1444101987\">#43899 (comment)</a></p>",
             "url": "https://github.com/rails/rails/pull/50664",
             "title": "Add an example to the `global_executor_concurrency` docs",
-            "date_modified": "2024-01-09T05:25:41.000Z",
+            "date_modified": "2024-01-09T06:04:05.000Z",
             "date_published": "2024-01-09T02:47:41.000Z",
             "author": {
                 "name": "ghiculescu",
                 "url": "https://github.com/ghiculescu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12301?u=ff463d5b4856759aeb902725ad89b4392442077d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a></p>\n<p dir=\"auto\">Followed up <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2064756760\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50567\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50567/hovercard\" href=\"https://github.com/rails/rails/pull/50567\">#50567</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">drb-2.0.6</code> has <code class=\"notranslate\">ruby2_keywords</code> dependency itself. We don't need to add it to <code class=\"notranslate\">activesupport</code>.</p>\n<p dir=\"auto\">see <a href=\"https://rubygems.org/gems/drb/versions/2.0.6\" rel=\"nofollow\">https://rubygems.org/gems/drb/versions/2.0.6</a></p>",
-            "url": "https://github.com/rails/rails/pull/50663",
-            "title": "Remove ruby2_keywords dependency from `6-1-stable`",
-            "date_modified": "2024-01-09T02:21:57.000Z",
-            "date_published": "2024-01-09T01:59:15.000Z",
-            "author": {
-                "name": "hsbt",
-                "url": "https://github.com/hsbt"
             }
         },
         {
