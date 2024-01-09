@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Now that we require Ruby 3.1, we can assume <code class=\"notranslate\">Process._fork</code> is defined on MRI, hence we can trust that our decorator will reliably detect forks so we no longer need to check the if the pid changed in critical spots.</p>",
+            "url": "https://github.com/rails/rails/pull/50670",
+            "title": "Get rid of `ForkTracker.check!`",
+            "date_modified": "2024-01-09T10:19:29.000Z",
+            "date_published": "2024-01-09T10:19:25.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50450.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056777001\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50450\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50450/hovercard\" href=\"https://github.com/rails/rails/issues/50450\">#50450</a></p>\n<p dir=\"auto\">The main change is the default number of threads<br>\nis reduced from 5 to 3 as discussed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056777001\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50450\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50450/hovercard\" href=\"https://github.com/rails/rails/issues/50450\">#50450</a></p>\n<p dir=\"auto\">Pending a potential future \"Rails tuning\" guide, I tried to include in comments the gist of the tradeoffs involved.</p>\n<p dir=\"auto\">I also removed the pidfile except for development. It's useful to prevent booting the server twice there but I don't think it makes much sense in production, especially <a href=\"https://github.com/puma/puma/blob/99f83c50fbb712b0987667f3533cce4ea925b2da/docs/deployment.md#should-i-daemonize\">since Puma no longer supports daemonization and instead recommend using a process<br>\nmonitor</a>. And it makes even less sense in a PaaS or containerized world.</p>",
+            "url": "https://github.com/rails/rails/pull/50669",
+            "title": "Update the default Puma configuration",
+            "date_modified": "2024-01-09T10:55:27.000Z",
+            "date_published": "2024-01-09T10:10:32.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1094599484\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44083\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44083/hovercard\" href=\"https://github.com/rails/rails/pull/44083\">#44083</a> introduced a workaround with the <code class=\"notranslate\">mail</code> gem for Ruby 3.1 support. Since then, the gem itself has solved this issue: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mikel/mail/commit/d9d8dcc6bae1774a033ad488cea6217db3a3ebf3/hovercard\" href=\"https://github.com/mikel/mail/commit/d9d8dcc6bae1774a033ad488cea6217db3a3ebf3\">mikel/mail@<tt>d9d8dcc</tt></a>.</p>\n<p dir=\"auto\">Since <code class=\"notranslate\">mail</code> 2.8.0 is the first version to properly support 3.1 and rails itself doesn't support anything below 3.1 on main the workaround can be removed and the required mail version bumped.</p>",
             "url": "https://github.com/rails/rails/pull/50668",
             "title": "Remove workaround for `mail` gem dependencies",
@@ -42,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1082082292\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43899\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43899/hovercard?comment_id=1444101987&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/43899#discussion_r1444101987\">#43899 (comment)</a></p>",
             "url": "https://github.com/rails/rails/pull/50664",
             "title": "Add an example to the `global_executor_concurrency` docs",
-            "date_modified": "2024-01-09T06:04:05.000Z",
+            "date_modified": "2024-01-09T10:29:13.000Z",
             "date_published": "2024-01-09T02:47:41.000Z",
             "author": {
                 "name": "ghiculescu",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26396425?u=f660166a92539f1b136d99aeb7332b34dc4c34f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2060964035\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50499\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50499/hovercard\" href=\"https://github.com/rails/rails/issues/50499\">#50499</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Previously, querying from the base class resulted in an object of the inherited type, with 'ignored_columns' included in the 'attributes' method.</p>\n<p dir=\"auto\">This behavior was inconsistent, as it did not occur when querying directly from the inherited class. This fix ensures consistent behavior in the attributes between the two ways of instantiate inherited classes during querying.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50553",
-            "title": "Fix instantiation of inherited classes when querying",
-            "date_modified": "2024-01-05T17:42:12.000Z",
-            "date_published": "2024-01-03T12:49:56.000Z",
-            "author": {
-                "name": "jvlara",
-                "url": "https://github.com/jvlara"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12740?u=334294a0f17ff1044b837804468aedad6cbe917d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Getting started rails edge guide is missing details about Docker.</p>\n<p dir=\"auto\">This Pull Request has been created because developers are opening issues due to lack of documentation on how to use it to run their Rails app.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes guides/source/getting_started.md</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">The section is based on Rafael's post: <a href=\"https://rubyonrails.org/2023/10/5/Rails-7-1-0-has-been-released\" rel=\"nofollow\">https://rubyonrails.org/2023/10/5/Rails-7-1-0-has-been-released</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50509",
-            "title": "Add Dockerfile section in the docs [skip ci]",
-            "date_modified": "2024-01-03T00:26:24.000Z",
-            "date_published": "2023-12-31T20:15:53.000Z",
-            "author": {
-                "name": "bparanj",
-                "url": "https://github.com/bparanj"
             }
         }
     ]
