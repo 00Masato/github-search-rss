@@ -6,11 +6,11 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1340957718\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45837\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45837/hovercard\" href=\"https://github.com/rails/rails/pull/45837\">#45837</a> to <code class=\"notranslate\">6-1-stable</code></p>\n<p dir=\"auto\">To fix failing Active Storage tests: <a href=\"https://buildkite.com/rails/rails/builds/103644#018cece2-9c4a-4988-ba46-754af5dfa47c\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/103644#018cece2-9c4a-4988-ba46-754af5dfa47c</a></p>",
-            "url": "https://github.com/rails/rails/pull/50687",
-            "title": "Backport 45837 to 6-1-stable",
-            "date_modified": "2024-01-09T22:51:10.000Z",
-            "date_published": "2024-01-09T22:51:06.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1702886100\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48183\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48183/hovercard\" href=\"https://github.com/rails/rails/pull/48183\">#48183</a> to <code class=\"notranslate\">6-1-stable</code></p>\n<hr>\n<p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"991424613\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43188\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43188/hovercard\" href=\"https://github.com/rails/rails/pull/43188\">#43188</a> to <code class=\"notranslate\">6-1-stable</code></p>\n<hr>\n<p dir=\"auto\">🤞 I think this will get it green</p>",
+            "url": "https://github.com/rails/rails/pull/50688",
+            "title": "Fix 6-1-stable CI",
+            "date_modified": "2024-01-09T23:51:42.000Z",
+            "date_published": "2024-01-09T23:39:34.000Z",
             "author": {
                 "name": "skipkayhil",
                 "url": "https://github.com/skipkayhil"
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This change changes the <code class=\"notranslate\">#method_missing</code> implementation to forward the<br>\nmethod invocation to the <code class=\"notranslate\">#instance</code> <strong>without</strong> defining the delegation<br>\nin the hopes that the method missing path will be more JIT-friendly.</p>",
             "url": "https://github.com/rails/rails/pull/50686",
             "title": "Replace `CurrentAttributes#method_missing` with delegation",
-            "date_modified": "2024-01-09T22:51:21.000Z",
+            "date_modified": "2024-01-09T23:09:29.000Z",
             "date_published": "2024-01-09T21:46:21.000Z",
             "author": {
                 "name": "seanpdoyle",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Extend the <code class=\"notranslate\">.attribute</code> class method to accept a <code class=\"notranslate\">:default</code> option for its list of attributes:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Current &lt; ActiveSupport::CurrentAttributes\n  attribute :counter, default: 0\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Current</span> &lt; <span class=\"pl-v\">ActiveSupport</span>::<span class=\"pl-v\">CurrentAttributes</span>\n  <span class=\"pl-en\">attribute</span> <span class=\"pl-pds\">:counter</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">default</span>: <span class=\"pl-c1\">0</span>\n<span class=\"pl-k\">end</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50677",
             "title": "Add `default:` support for `ActiveSupport::CurrentAttributes.attribute`",
-            "date_modified": "2024-01-09T21:04:57.000Z",
+            "date_modified": "2024-01-09T23:54:10.000Z",
             "date_published": "2024-01-09T18:46:54.000Z",
             "author": {
                 "name": "seanpdoyle",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50450.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056777001\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50450\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50450/hovercard\" href=\"https://github.com/rails/rails/issues/50450\">#50450</a></p>\n<p dir=\"auto\">The main change is the default number of threads<br>\nis reduced from 5 to 3 as discussed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056777001\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50450\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50450/hovercard\" href=\"https://github.com/rails/rails/issues/50450\">#50450</a></p>\n<p dir=\"auto\">Pending a potential future \"Rails tuning\" guide, I tried to include in comments the gist of the tradeoffs involved.</p>\n<p dir=\"auto\">I also removed the pidfile except for development. It's useful to prevent booting the server twice there but I don't think it makes much sense in production, especially <a href=\"https://github.com/puma/puma/blob/99f83c50fbb712b0987667f3533cce4ea925b2da/docs/deployment.md#should-i-daemonize\">since Puma no longer supports daemonization and instead recommend using a process<br>\nmonitor</a>. And it makes even less sense in a PaaS or containerized world.</p>",
             "url": "https://github.com/rails/rails/pull/50669",
             "title": "Update the default Puma configuration",
-            "date_modified": "2024-01-09T21:36:45.000Z",
+            "date_modified": "2024-01-09T23:56:45.000Z",
             "date_published": "2024-01-09T10:10:32.000Z",
             "author": {
                 "name": "byroot",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1082082292\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/43899\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/43899/hovercard?comment_id=1444101987&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/43899#discussion_r1444101987\">#43899 (comment)</a></p>",
             "url": "https://github.com/rails/rails/pull/50664",
             "title": "Add an example to the `global_executor_concurrency` docs",
-            "date_modified": "2024-01-09T12:06:44.000Z",
+            "date_modified": "2024-01-09T23:59:16.000Z",
             "date_published": "2024-01-09T02:47:41.000Z",
             "author": {
                 "name": "ghiculescu",
