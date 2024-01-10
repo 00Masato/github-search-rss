@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60669983?u=31e825708e6f1782c6b09a99405bd5b7f4d78ee2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR proposes the creation of an external stand-alone test suite and associated tools for verifying the Rust toolchain that also fits into existing Rust development workflows.</p>\n<p dir=\"auto\"><a href=\"https://github.com/kirtchev-adacore/kirtchev-adacore-rust-lang-rfcs/blob/wip/add-out-of-tree-test-suite-rfc/text/3557-out-of-tree-test-suite.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3557",
+            "title": "RFC: Out-of-tree test suite",
+            "date_modified": "2024-01-10T14:37:56.000Z",
+            "date_published": "2024-01-10T14:31:27.000Z",
+            "author": {
+                "name": "kirtchev-adacore",
+                "url": "https://github.com/kirtchev-adacore"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1050652?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">cc <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"496718321\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2771\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2771/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2771\">#2771</a>, <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1722049304\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3435\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3435/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3435\">#3435</a>, <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1677424706\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/110624\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/110624/hovercard\" href=\"https://github.com/rust-lang/rust/issues/110624\">rust-lang/rust#110624</a></p>\n<p dir=\"auto\">Not sure if compiler team or lang team owns this.</p>\n<p dir=\"auto\"><a href=\"https://github.com/aidanhs/rfcs/blob/aphs-re-export/text/3556-re-export-symbols.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3556",
             "title": "RFC: Allow symbol re-export in cdylib crate from linked staticlib",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "clarfonthey",
                 "url": "https://github.com/clarfonthey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust's floating point operations follow IEEE 754-2008 -- with some caveats around operations producing NaNs: IEEE makes almost no guarantees about the sign and payload bits of the NaN; however, actual hardware does not pick those bits completely arbitrarily, and Rust will expose some of those hardware-provided guarantees to programmers.<br>\nOn the flip side, NaN generation is non-deterministic: running the same operation on the same inputs several times can produce different results.<br>\nAnd there is a caveat: while IEEE specifies that float operations can never output a signaling NaN, Rust float operations <em>can</em> produce signaling NaNs, <em>but only if</em> an input is signaling.<br>\nThat means the only way to ever see a signaling NaN in a program is to create one with <code class=\"notranslate\">from_bits</code> (or equivalent unsafe operations).</p>\n<p dir=\"auto\">Floating-point operations at compile-time follow the same specification. In particular, since operations are non-deterministic, the same operation can lead to different bit-patterns when executed at compile-time (in a <code class=\"notranslate\">const</code> context) vs at run-time.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/float-semantics/text/0000-float-semantics.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3514",
-            "title": "add float semantics RFC",
-            "date_modified": "2024-01-06T10:17:41.000Z",
-            "date_published": "2023-10-14T07:52:34.000Z",
-            "author": {
-                "name": "RalfJung",
-                "url": "https://github.com/RalfJung"
             }
         }
     ]
