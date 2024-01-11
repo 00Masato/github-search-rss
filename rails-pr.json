@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Before this change <code class=\"notranslate\">attribute_aliases</code> would be empty if the model class didn't define any attribute yet.</p>\n<p dir=\"auto\">This partially revert the changes made in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2009641871\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50158\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50158/hovercard\" href=\"https://github.com/rails/rails/pull/50158\">#50158</a>, but as you can notice the test wasn't removed, so moving the <code class=\"notranslate\">alias_method</code> call wasn't necessary to fix the issue. I also run the test on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2009113153\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50154\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50154/hovercard\" href=\"https://github.com/rails/rails/issues/50154\">#50154</a> to make sure the issue was fixed and I got all tests passing.</p>",
             "url": "https://github.com/rails/rails/pull/50701",
             "title": "Make sure attribute_aliases is consistent",
-            "date_modified": "2024-01-11T00:32:57.000Z",
+            "date_modified": "2024-01-11T15:56:01.000Z",
             "date_published": "2024-01-11T00:32:52.000Z",
             "author": {
                 "name": "rafaelfranca",
