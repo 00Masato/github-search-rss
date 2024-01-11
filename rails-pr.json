@@ -6,25 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2045326554\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50382\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50382/hovercard\" href=\"https://github.com/rails/rails/pull/50382\">#50382</a>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">assert_queries</code> was renamed to <code class=\"notranslate\">assert_queries_count</code> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2044970287\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50373\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50373/hovercard\" href=\"https://github.com/rails/rails/pull/50373\">#50373</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/50716",
-            "title": "Fix assertion method call",
-            "date_modified": "2024-01-11T18:59:14.000Z",
-            "date_published": "2024-01-11T18:57:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Splits the examples for <code class=\"notranslate\">#clone</code> into separate sections for easier scanability.</p>\n<p dir=\"auto\">Adds examples to <code class=\"notranslate\">#dup</code> to clarify the difference with <code class=\"notranslate\">#clone</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50717",
+            "title": "Expand documentation for ActiveRecord::Core #dup and #clone",
+            "date_modified": "2024-01-11T19:46:57.000Z",
+            "date_published": "2024-01-11T19:46:53.000Z",
             "author": {
-                "name": "jonathanhefner",
-                "url": "https://github.com/jonathanhefner"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58582?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to avoid the immediate loading of <code class=\"notranslate\">ActiveJob::Base</code> when loading <code class=\"notranslate\">ActiveJob::TestHelper</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50713.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2077355553\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50713\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50713/hovercard\" href=\"https://github.com/rails/rails/issues/50713\">#50713</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request wraps a modification on <code class=\"notranslate\">ActiveJob::Base</code> in an <code class=\"notranslate\">ActiveSupport.on_load(:active_job)</code> hook, to defer loading until absolutely necessary.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50715",
-            "title": "[Fix #50713] Do not trigger loading of ActiveJob::Base in ActiveJob::TestHelper",
-            "date_modified": "2024-01-11T18:53:00.000Z",
-            "date_published": "2024-01-11T18:42:58.000Z",
-            "author": {
-                "name": "maximerety",
-                "url": "https://github.com/maximerety"
+                "name": "p8",
+                "url": "https://github.com/p8"
             }
         },
         {
@@ -47,17 +36,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4468155?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As commented in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"483953181\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/37011\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/37011/hovercard?comment_id=1322560651&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/issues/37011#issuecomment-1322560651\">#37011 (comment)</a>,<br>\npreviously, changes in some files outside the autoload paths triggered reloading application.</p>\n<p dir=\"auto\">For instance, editing <code class=\"notranslate\">app/README.md</code> would trigger a reload,<br>\neven though the reloaded classes and modules, which were under autoload paths,<br>\nwere identical to those loaded previously.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR fixes this issue by ensuring the application reloads correctly<br>\naccording to <code class=\"notranslate\">Rails.autoloaders.main.dirs</code>, thereby preventing unnecessary reloads.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I have fixed the issue according to the above comment.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50708",
-            "title": "Prevent unnecessary application reloads in development",
-            "date_modified": "2024-01-11T12:37:18.000Z",
-            "date_published": "2024-01-11T12:37:14.000Z",
-            "author": {
-                "name": "aeroastro",
-                "url": "https://github.com/aeroastro"
             }
         },
         {
@@ -91,17 +69,6 @@
             "author": {
                 "name": "aeroastro",
                 "url": "https://github.com/aeroastro"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Before this change <code class=\"notranslate\">attribute_aliases</code> would be empty if the model class didn't define any attribute yet.</p>\n<p dir=\"auto\">This partially revert the changes made in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2009641871\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50158\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50158/hovercard\" href=\"https://github.com/rails/rails/pull/50158\">#50158</a>, but as you can notice the test wasn't removed, so moving the <code class=\"notranslate\">alias_method</code> call wasn't necessary to fix the issue. I also run the test on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2009113153\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50154\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50154/hovercard\" href=\"https://github.com/rails/rails/issues/50154\">#50154</a> to make sure the issue was fixed and I got all tests passing.</p>",
-            "url": "https://github.com/rails/rails/pull/50701",
-            "title": "Make sure attribute_aliases is consistent",
-            "date_modified": "2024-01-11T17:09:08.000Z",
-            "date_published": "2024-01-11T00:32:52.000Z",
-            "author": {
-                "name": "rafaelfranca",
-                "url": "https://github.com/rafaelfranca"
             }
         },
         {
@@ -223,6 +190,39 @@
             "author": {
                 "name": "codergeek121",
                 "url": "https://github.com/codergeek121"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/820759?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Context</h1>\n<p dir=\"auto\">See also: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1766292000\" data-permission-text=\"Title is private\" data-url=\"https://github.com/hotwired/turbo-rails/issues/476\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/hotwired/turbo-rails/pull/476/hovercard\" href=\"https://github.com/hotwired/turbo-rails/pull/476\">hotwired/turbo-rails#476</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/hotwired/turbo-rails/pull/476\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/hotwired/turbo-rails/pull/476/hovercard\">hotwired/turbo-rails/pull/476</a> removed the ability to pass multiple ids/models to the <code class=\"notranslate\">turbo_frame_tag</code> helper method. In that PR it was suggested by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a> that this ability be passed down to the <code class=\"notranslate\">dom_id</code> method (which is a part of rails core) method rather than the <code class=\"notranslate\">turbo_frame_tag</code> helper (which is a part of turbo-rails).</p>\n<p dir=\"auto\">ref: <a href=\"https://discuss.rubyonrails.org/t/allow-dom-id-method-to-accept-multiple-ids-models/84408\" rel=\"nofollow\">https://discuss.rubyonrails.org/t/allow-dom-id-method-to-accept-multiple-ids-models/84408</a></p>\n<h1 dir=\"auto\">Changes</h1>\n<p dir=\"auto\">If the first argument of the <code class=\"notranslate\">dom_id</code> is an array, this change will loop through each value and form a singular dom ID, then join the parts together. This change will allow turbo frame tags to accept multiple models (similar to the <code class=\"notranslate\">cache</code> helper from ActionView).</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"&lt;%= turbo_frame_tag [customer, field] do %&gt;\n  &lt;!-- code --&gt;\n&lt;% end %&gt;\"><pre class=\"notranslate\"><code class=\"notranslate\">&lt;%= turbo_frame_tag [customer, field] do %&gt;\n  &lt;!-- code --&gt;\n&lt;% end %&gt;\n</code></pre></div>\n<hr>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50608",
+            "title": "allow dom_id method to accept an array of records_or_classes",
+            "date_modified": "2024-01-08T14:17:58.000Z",
+            "date_published": "2024-01-05T19:12:49.000Z",
+            "author": {
+                "name": "jwilsjustin",
+                "url": "https://github.com/jwilsjustin"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58582?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50604.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067789909\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50604\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50604/hovercard\" href=\"https://github.com/rails/rails/issues/50604\">#50604</a></p>\n<p dir=\"auto\">This Pull Request fixes a source of incompatibility between the loading order of Active Record Encryption configs and the loading of AR models in eager loading mode.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes an occurrence of <code class=\"notranslate\">after_initialize</code> introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1765439665\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48530\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48530/hovercard\" href=\"https://github.com/rails/rails/pull/48530\">#48530</a>, which is not fully compatible with the eager loading mode.</p>\n<p dir=\"auto\">Previous concerns were raised in <a href=\"https://github.com/rails/rails/pull/48530/files#r1237624233\">a discussion from the same PR</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50606",
+            "title": "[Fix #50604] Restore compatibility of Active Record Encryption configs with eager loading mode",
+            "date_modified": "2024-01-10T22:28:08.000Z",
+            "date_published": "2024-01-05T18:03:09.000Z",
+            "author": {
+                "name": "maximerety",
+                "url": "https://github.com/maximerety"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/80978?u=1793cf2a2945d245ee5c1ce7d64cafa7856497f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I've stumbled on this when writing an <code class=\"notranslate\">upsert</code> call that must produce a <code class=\"notranslate\">ON CONFLICT () DO NOTHING</code> fragment.</p>\n<p dir=\"auto\">Using <code class=\"notranslate\">update_only: []</code> didn't worked as it does update all columns on the table, but reading <code class=\"notranslate\">InsertAll</code> I noticed the use of <code class=\"notranslate\">:skip</code> internally that worked for this scenario, but it isn't mentioned on the public docs.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50598",
+            "title": "Document `upsert`/`upsert_all` `on_duplicate: :skip` option",
+            "date_modified": "2024-01-09T13:38:24.000Z",
+            "date_published": "2024-01-05T13:49:07.000Z",
+            "author": {
+                "name": "lucasmazza",
+                "url": "https://github.com/lucasmazza"
             }
         }
     ]
