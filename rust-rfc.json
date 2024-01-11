@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/704597?u=15e04047ef09260a4861c1c9622e1e6fd3898161&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC adds an option to Cargo that emits a Software Bill of Materials (SBOM) alongside compiled artifacts. Similar to how Cargo emits split debug info or \"dep-info\" (.d) files, this change emits an SBOM in a Cargo-specific format alongside outputs in the target directory. External tooling or Cargo subcommands can consume this Cargo SBOM file and transform it into other SBOM formats such as SPDX or CycloneDX.</p>\n<p dir=\"auto\">Originally posted on internals as a <a href=\"https://internals.rust-lang.org/t/pre-rfc-cargo-sbom/19842\" rel=\"nofollow\">pre-RFC</a>, now moved to an RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/arlosi/rfcs/blob/sbom/text/0000-cargo-sbom.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3553",
             "title": "RFC: cargo-sbom",
-            "date_modified": "2024-01-11T06:32:00.000Z",
+            "date_modified": "2024-01-11T07:17:11.000Z",
             "date_published": "2024-01-04T18:57:29.000Z",
             "author": {
                 "name": "arlosi",
