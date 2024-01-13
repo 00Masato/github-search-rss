@@ -127,17 +127,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1327285?u=c3fbb622b1cdadc1e48f65ed7760d1e004dff189&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes combining the Infra and Release teams into one team. This change has very little impact outside of the removal of the Release Council representative. Release team interests will be represented by the Infra team representative.</p>\n<p dir=\"auto\"><a href=\"https://rust-lang.zulipchat.com/#narrow/stream/392734-council/topic/Rough.20draft.20proposal.20merging.20Infra.20and.20Release.20teams\" rel=\"nofollow\">[Zulip Discussion]</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/rylev/rust-rfcs/blob/combine-infra-release/text/3533-combine-infra-and-release-teams.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3533",
-            "title": "Add RFC combining Infra and Release teams",
-            "date_modified": "2024-01-13T14:47:30.000Z",
-            "date_published": "2023-11-23T09:03:22.000Z",
-            "author": {
-                "name": "rylev",
-                "url": "https://github.com/rylev"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22198616?u=38fc398a34cdd9e77a0de8733826dc59e6cd5fb9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Let's make it more elegant to conditionally compile tuple type declarations by allowing cfg-attributes directly on their element types.</p>\n<p dir=\"auto\"><a href=\"https://github.com/recatek/rfcs/blob/cfg-attribute-in-tuple-type/text/3532-cfg-attribute-in-tuple-type.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3532",
             "title": "RFC: Allow cfg-attributes on elements of tuple type declarations",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "clarfonthey",
                 "url": "https://github.com/clarfonthey"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust's floating point operations follow IEEE 754-2008 -- with some caveats around operations producing NaNs: IEEE makes almost no guarantees about the sign and payload bits of the NaN; however, actual hardware does not pick those bits completely arbitrarily, and Rust will expose some of those hardware-provided guarantees to programmers.<br>\nOn the flip side, NaN generation is non-deterministic: running the same operation on the same inputs several times can produce different results.<br>\nAnd there is a caveat: while IEEE specifies that float operations can never output a signaling NaN, Rust float operations <em>can</em> produce signaling NaNs, <em>but only if</em> an input is signaling.<br>\nThat means the only way to ever see a signaling NaN in a program is to create one with <code class=\"notranslate\">from_bits</code> (or equivalent unsafe operations).</p>\n<p dir=\"auto\">Floating-point operations at compile-time follow the same specification. In particular, since operations are non-deterministic, the same operation can lead to different bit-patterns when executed at compile-time (in a <code class=\"notranslate\">const</code> context) vs at run-time.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/float-semantics/text/0000-float-semantics.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3514",
+            "title": "add float semantics RFC",
+            "date_modified": "2024-01-06T10:17:41.000Z",
+            "date_published": "2023-10-14T07:52:34.000Z",
+            "author": {
+                "name": "RalfJung",
+                "url": "https://github.com/RalfJung"
             }
         }
     ]
