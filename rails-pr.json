@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1333232195\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45796\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45796/hovercard\" href=\"https://github.com/rails/rails/pull/45796\">#45796</a></p>\n<p dir=\"auto\">Previously, the <code class=\"notranslate\">start.action_view</code> event would always be handled as if it had subscribers even if the log level of its subscribers result in nothing being logged. For regular <code class=\"notranslate\">LogSubscriber</code>s, <code class=\"notranslate\">subscribe_log_level</code> could be used to optimize these cases but the Start subscriber is not a subclass of <code class=\"notranslate\">LogSubscriber</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit implements a <code class=\"notranslate\">#subscribed?</code> method for the Start subscriber so that it can also benefit from the <code class=\"notranslate\">subscribe_log_level</code> optimization.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50751",
+            "title": "Add silenced? for Action View Start subscriber",
+            "date_modified": "2024-01-14T16:27:47.000Z",
+            "date_published": "2024-01-14T16:27:43.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071093065\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50657\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50657/hovercard\" href=\"https://github.com/rails/rails/pull/50657\">#50657</a> to <code class=\"notranslate\">7-0-stable</code></p>\n<p dir=\"auto\">Note: In <code class=\"notranslate\">7-0-stable</code> the lint is only used for checking the codespell, so we can completely remove the lint.yml</p>\n<p dir=\"auto\">cc\\ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>",
             "url": "https://github.com/rails/rails/pull/50750",
             "title": "Backport: Remove codespell step from CI",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport to 7.1 as well because <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f06d5838a476c6cb8ed27084f29e61f1e949257e/hovercard\" href=\"https://github.com/rails/rails/commit/f06d5838a476c6cb8ed27084f29e61f1e949257e\"><tt>f06d583</tt></a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/907th/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/907th\">@907th</a> for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2030009131\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50292\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50292/hovercard\" href=\"https://github.com/rails/rails/pull/50292\">#50292</a> which contains this for 7.0 but hasn't been merged yet.</p>",
-            "url": "https://github.com/rails/rails/pull/50749",
-            "title": "Fix typo in ActiveSupport changelog",
-            "date_modified": "2024-01-14T14:36:56.000Z",
-            "date_published": "2024-01-14T13:20:40.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
             }
         },
         {
