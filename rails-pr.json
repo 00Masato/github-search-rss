@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071093065\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50657\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50657/hovercard\" href=\"https://github.com/rails/rails/pull/50657\">#50657</a> to <code class=\"notranslate\">7-0-stable</code></p>\n<p dir=\"auto\">Note: In <code class=\"notranslate\">7-0-stable</code> the lint is only used for checking the codespell, so we can completely remove the lint.yml</p>\n<p dir=\"auto\">cc\\ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>",
+            "url": "https://github.com/rails/rails/pull/50750",
+            "title": "Backport: Remove codespell step from CI",
+            "date_modified": "2024-01-14T14:35:30.000Z",
+            "date_published": "2024-01-14T14:35:17.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport to 7.1 as well because <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f06d5838a476c6cb8ed27084f29e61f1e949257e/hovercard\" href=\"https://github.com/rails/rails/commit/f06d5838a476c6cb8ed27084f29e61f1e949257e\"><tt>f06d583</tt></a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/907th/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/907th\">@907th</a> for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2030009131\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50292\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50292/hovercard\" href=\"https://github.com/rails/rails/pull/50292\">#50292</a> which contains this for 7.0 but hasn't been merged yet.</p>",
             "url": "https://github.com/rails/rails/pull/50749",
             "title": "Fix typo in ActiveSupport changelog",
-            "date_modified": "2024-01-14T13:20:45.000Z",
+            "date_modified": "2024-01-14T14:36:56.000Z",
             "date_published": "2024-01-14T13:20:40.000Z",
             "author": {
                 "name": "Earlopain",
@@ -209,17 +220,6 @@
             "title": "Handle alternative base classes in `define_attribute_methods`",
             "date_modified": "2024-01-11T22:57:08.000Z",
             "date_published": "2024-01-11T08:31:42.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067221565\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50594\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50594/hovercard\" href=\"https://github.com/rails/rails/pull/50594\">#50594</a></p>\n<p dir=\"auto\">Opening a PR because the backport is non-trivial, so I want CI coverage. Also <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> pointed a possible issue in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f/hovercard\" href=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f\"><tt>d429bfb</tt></a> so I'd like to get to the bottom of that before merging the backport.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
-            "url": "https://github.com/rails/rails/pull/50705",
-            "title": "Backport: Define missing attribute methods from `method_missing`",
-            "date_modified": "2024-01-11T08:26:29.000Z",
-            "date_published": "2024-01-11T08:26:24.000Z",
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
