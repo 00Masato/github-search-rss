@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We recently removed codespell from the CI <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071093065\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50657\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50657/hovercard\" href=\"https://github.com/rails/rails/pull/50657\">#50657</a>, python was configured for running the codespell.</p>",
+            "url": "https://github.com/rails/rails/pull/50747",
+            "title": "Remove python setup from CI",
+            "date_modified": "2024-01-14T05:03:22.000Z",
+            "date_published": "2024-01-14T05:03:01.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=fc75f9764434943effe06d6c1dc48d40a5003b0c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071093065\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50657\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50657/hovercard\" href=\"https://github.com/rails/rails/pull/50657\">#50657</a> to <code class=\"notranslate\">7-1-stable</code></p>",
             "url": "https://github.com/rails/rails/pull/50746",
             "title": "Backport: Remove codespell step from CI from 7-1-stable",
-            "date_modified": "2024-01-14T04:55:53.000Z",
+            "date_modified": "2024-01-14T05:08:20.000Z",
             "date_published": "2024-01-14T04:54:32.000Z",
             "author": {
                 "name": "akhilgkrishnan",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"commit-link\" href=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f#r136670440\"><tt>d429bfb</tt>#r136670440</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>\n<p dir=\"auto\">Before merging, I'd like a repro, so I can include a test case though.</p>",
-            "url": "https://github.com/rails/rails/pull/50706",
-            "title": "Handle alternative base classes in `define_attribute_methods`",
-            "date_modified": "2024-01-11T22:57:08.000Z",
-            "date_published": "2024-01-11T08:31:42.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         }
     ]
