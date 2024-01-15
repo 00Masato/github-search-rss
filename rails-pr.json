@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140281190?u=6cf5ab673ff117a6711ca41493b1258a7db44d9c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I've been following the <a href=\"https://edgeguides.rubyonrails.org/getting_started.html\" rel=\"nofollow\">getting started guide</a>. Upon reaching the end of section 8.4, I noticed several differences between the output displayed in the guide's screenshot and what appeared on my computer (rails version: Rails 7.1.2, ruby version: ruby 3.2.2):</p>\n<ul dir=\"auto\">\n<li>The positioning of \"Edit/Back\" differs.</li>\n<li>While the guide provides an explanation for \"Destroy,\" it doesn't offer one for \"Back.\"</li>\n<li>My output lacked the \"Title:\" and \"Text:\" elements.</li>\n<li>The text \"Rails is Awesome!\" appeared larger due to the h1 tag.</li>\n</ul>\n<p dir=\"auto\">I would like to update the existing screenshot.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes article_with_comments.png in /guides/assets/images/getting_started.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: [Fix #issue-number]</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50756",
             "title": "Update the screenshot in the section 8.4 of Getting Started with Rails [ci skip]",
-            "date_modified": "2024-01-15T12:52:58.000Z",
+            "date_modified": "2024-01-15T14:04:41.000Z",
             "date_published": "2024-01-15T12:52:53.000Z",
             "author": {
                 "name": "Angy-h",
@@ -53,22 +53,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071093065\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50657\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50657/hovercard\" href=\"https://github.com/rails/rails/pull/50657\">#50657</a> to <code class=\"notranslate\">7-0-stable</code></p>\n<p dir=\"auto\">Note: In <code class=\"notranslate\">7-0-stable</code> the lint is only used for checking the codespell, so we can completely remove the lint.yml</p>\n<p dir=\"auto\">cc\\ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>",
             "url": "https://github.com/rails/rails/pull/50750",
             "title": "Backport: Remove codespell step from CI",
-            "date_modified": "2024-01-15T03:54:40.000Z",
+            "date_modified": "2024-01-15T14:03:24.000Z",
             "date_published": "2024-01-14T14:35:17.000Z",
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155044?u=5bb56a809d3086e37beb824d67f444432621ecfe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">database.yml</code>, <code class=\"notranslate\">schema_dump</code> can currently be set to <code class=\"notranslate\">false</code>, <code class=\"notranslate\">nil</code> or a file path.</p>\n<p dir=\"auto\">I found that if you configure your database via DATABASE_URL, the false value does not work because it comes through as a string.</p>\n<p dir=\"auto\">This change allows <code class=\"notranslate\">?schema_dump=false</code> to disable the dump via database_url.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Original PR for <code class=\"notranslate\">schema_dump</code> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"946523283\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42804\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42804/hovercard\" href=\"https://github.com/rails/rails/pull/42804\">#42804</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50745",
-            "title": "Allow `schema_dump` database config to be set via DATABASE_URL",
-            "date_modified": "2024-01-14T20:29:54.000Z",
-            "date_published": "2024-01-13T20:59:48.000Z",
-            "author": {
-                "name": "mscoutermarsh",
-                "url": "https://github.com/mscoutermarsh"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"commit-link\" href=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f#r136670440\"><tt>d429bfb</tt>#r136670440</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>\n<p dir=\"auto\">Before merging, I'd like a repro, so I can include a test case though.</p>",
+            "url": "https://github.com/rails/rails/pull/50706",
+            "title": "Handle alternative base classes in `define_attribute_methods`",
+            "date_modified": "2024-01-11T22:57:08.000Z",
+            "date_published": "2024-01-11T08:31:42.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
             }
         }
     ]
