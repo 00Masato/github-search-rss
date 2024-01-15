@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71096653?u=8e378a47b4b27ca3baf112dd3020ba0e1c198565&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Other I would get errors like:</p>\n<p dir=\"auto\">LoadError: cannot load such file -- rails/api/generator (LoadError)</p>\n<p dir=\"auto\">We were loading the installed rails gem and not the current subdirectories</p>\n<p dir=\"auto\">This can be reproduced by doing <code class=\"notranslate\">bundle clean --force</code> then <code class=\"notranslate\">rake</code></p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50739.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2080216563\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50739\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50739/hovercard\" href=\"https://github.com/rails/rails/issues/50739\">#50739</a></p>",
             "url": "https://github.com/rails/rails/pull/50740",
             "title": "Fix $LOAD_PATH to correctly require files",
-            "date_modified": "2024-01-14T10:05:51.000Z",
+            "date_modified": "2024-01-15T10:39:49.000Z",
             "date_published": "2024-01-13T12:17:26.000Z",
             "author": {
                 "name": "dorianmarie",
