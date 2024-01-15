@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow-up to <a href=\"https://github.com/rails/rails/pull/49856#discussion_r1451634684\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49856/hovercard\">#49856</a></p>\n<p dir=\"auto\">Replace shell word expansion with full English. In addition to that change, elaborate on the changes with more detailed explanation.</p>",
-            "url": "https://github.com/rails/rails/pull/50752",
-            "title": "Re-word #49856 CHANGELOG entry [ci skip]",
-            "date_modified": "2024-01-14T20:21:20.000Z",
-            "date_published": "2024-01-14T20:20:28.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1333232195\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45796\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45796/hovercard\" href=\"https://github.com/rails/rails/pull/45796\">#45796</a></p>\n<p dir=\"auto\">Previously, the <code class=\"notranslate\">start.action_view</code> event would always be handled as if it had subscribers even if the log level of its subscribers result in nothing being logged. For regular <code class=\"notranslate\">LogSubscriber</code>s, <code class=\"notranslate\">subscribe_log_level</code> could be used to optimize these cases but the Start subscriber is not a subclass of <code class=\"notranslate\">LogSubscriber</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit implements a <code class=\"notranslate\">#subscribed?</code> method for the Start subscriber so that it can also benefit from the <code class=\"notranslate\">subscribe_log_level</code> optimization.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50751",
             "title": "Add silenced? for Action View Start subscriber",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"commit-link\" href=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f#r136670440\"><tt>d429bfb</tt>#r136670440</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>\n<p dir=\"auto\">Before merging, I'd like a repro, so I can include a test case though.</p>",
+            "url": "https://github.com/rails/rails/pull/50706",
+            "title": "Handle alternative base classes in `define_attribute_methods`",
+            "date_modified": "2024-01-11T22:57:08.000Z",
+            "date_published": "2024-01-11T08:31:42.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
             }
         }
     ]
