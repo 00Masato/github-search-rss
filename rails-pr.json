@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101501?u=b9368cd286f05d7b8998746f81d8cb3c2bd247c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In these last years we have been using a monkey patch at our company that smartly detects domain and subdomains according to the <a href=\"https://publicsuffix.org/\" rel=\"nofollow\">Public Suffix database</a>. There are a few gems in our ecosystems like <a href=\"https://github.com/weppos/publicsuffix-ruby\">public_suffix</a> and <a href=\"https://github.com/discourse/mini_suffix\">mini_suffix</a> that does exactly that. But Rails uses an older and primitive method that splits the domain tld using <code class=\"notranslate\">config.action_dispatch.tld_length</code> option. This pull request changes that by allowing developers to specify a custom domain extractor class.</p>\n<p dir=\"auto\">This is really useful for any SaaS company that offers custom domain and subdomains.</p>",
             "url": "https://github.com/rails/rails/pull/50763",
             "title": "Allow custom domain extractor class on ActionDispatch::Http::URL",
-            "date_modified": "2024-01-15T23:33:51.000Z",
+            "date_modified": "2024-01-16T00:04:27.000Z",
             "date_published": "2024-01-15T23:32:04.000Z",
             "author": {
                 "name": "rainerborene",
