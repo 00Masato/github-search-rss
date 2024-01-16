@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101501?u=b9368cd286f05d7b8998746f81d8cb3c2bd247c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In these last years we have been using a monkey patch at our company that smartly detects domain and subdomains according to the <a href=\"https://publicsuffix.org/\" rel=\"nofollow\">Public Suffix database</a>. There are a few gems in our ecosystems like <a href=\"https://github.com/weppos/publicsuffix-ruby\">public_suffix</a> and <a href=\"https://github.com/discourse/mini_suffix\">mini_suffix</a> that does exactly that. But Rails uses an older and primitive method that splits the domain tld using <code class=\"notranslate\">config.action_dispatch.tld_length</code> option. This pull request changes that by allowing developers to specify a custom domain extractor class.</p>\n<p dir=\"auto\">This is really useful for any SaaS company that offers custom domain and subdomains.</p>",
+            "url": "https://github.com/rails/rails/pull/50763",
+            "title": "Allow custom domain extractor class on ActionDispatch::Http::URL",
+            "date_modified": "2024-01-15T23:33:51.000Z",
+            "date_published": "2024-01-15T23:32:04.000Z",
+            "author": {
+                "name": "rainerborene",
+                "url": "https://github.com/rainerborene"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50762",
             "title": "Document some ActionText methods [ci-skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067221565\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50594\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50594/hovercard\" href=\"https://github.com/rails/rails/pull/50594\">#50594</a></p>\n<p dir=\"auto\">Opening a PR because the backport is non-trivial, so I want CI coverage. Also <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ghiculescu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ghiculescu\">@ghiculescu</a> pointed a possible issue in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f/hovercard\" href=\"https://github.com/rails/rails/commit/d429bfb3b6fd2794f0d859b68e5dee24578d405f\"><tt>d429bfb</tt></a> so I'd like to get to the bottom of that before merging the backport.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
-            "url": "https://github.com/rails/rails/pull/50705",
-            "title": "Backport: Define missing attribute methods from `method_missing`",
-            "date_modified": "2024-01-11T08:26:29.000Z",
-            "date_published": "2024-01-11T08:26:24.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         }
     ]
