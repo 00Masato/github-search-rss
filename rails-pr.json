@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">For non-image attachments (like videos), generated representations are<br>\ncreated as a preview_image_attachment instead of as normal variants, and<br>\nas a result aren't included in the <code class=\"notranslate\">with_attached_</code> scopes. This adds<br>\nthose preview image attachments to the <code class=\"notranslate\">includes</code> of these scopes to<br>\navoid an N+1 when iterating over a collection of attachments and<br>\nfetching the key of their representation (variants).</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50560.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2064535826\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50560\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50560/hovercard\" href=\"https://github.com/rails/rails/issues/50560\">#50560</a></p>",
-            "url": "https://github.com/rails/rails/pull/50758",
-            "title": "Eagerly load preview images (N+1)",
-            "date_modified": "2024-01-16T17:36:53.000Z",
-            "date_published": "2024-01-15T19:03:14.000Z",
-            "author": {
-                "name": "tenderlove",
-                "url": "https://github.com/tenderlove"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140281190?u=6cf5ab673ff117a6711ca41493b1258a7db44d9c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I've been following the <a href=\"https://edgeguides.rubyonrails.org/getting_started.html\" rel=\"nofollow\">getting started guide</a>. Upon reaching the end of section 8.4, I noticed several differences between the output displayed in the guide's screenshot and what appeared on my computer (rails version: Rails 7.1.2, ruby version: ruby 3.2.2):</p>\n<ul dir=\"auto\">\n<li>The positioning of \"Edit/Back\" differs.</li>\n<li>While the guide provides an explanation for \"Destroy,\" it doesn't offer one for \"Back.\"</li>\n<li>My output lacked the \"Title:\" and \"Text:\" elements.</li>\n<li>The text \"Rails is Awesome!\" appeared larger due to the h1 tag.</li>\n</ul>\n<p dir=\"auto\">I would like to update the existing screenshot.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes article_with_comments.png in /guides/assets/images/getting_started.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: [Fix #issue-number]</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50756",
             "title": "Update the screenshot in the section 8.4 of Getting Started with Rails [ci skip]",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "aeroastro",
                 "url": "https://github.com/aeroastro"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59310?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Make it more clear that the Rails runner is run within the Rails application. Without the word <code class=\"notranslate\">application</code> it's unclear what the Rails context is.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50697",
+            "title": "docs: improve runner documentation [ci skip]",
+            "date_modified": "2024-01-16T12:09:39.000Z",
+            "date_published": "2024-01-10T15:51:50.000Z",
+            "author": {
+                "name": "avanderpluijm",
+                "url": "https://github.com/avanderpluijm"
             }
         }
     ]
