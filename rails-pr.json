@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50776.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2085259587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50776\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50776/hovercard\" href=\"https://github.com/rails/rails/issues/50776\">#50776</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/50778",
-            "title": "Fix async queries to work with query cache and other cached async queries",
-            "date_modified": "2024-01-17T18:51:06.000Z",
-            "date_published": "2024-01-17T09:46:01.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/80543?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50774.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2085173685\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50774\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50774/hovercard\" href=\"https://github.com/rails/rails/issues/50774\">#50774</a></p>\n<p dir=\"auto\">When the server boots up, 2 threads hit the same <code class=\"notranslate\">UnboundTemplate</code><br>\ninstance before it has set up <code class=\"notranslate\">@templates</code>. Both threads get past the<br>\n<code class=\"notranslate\">unless template = @templates[locals]</code> check because<br>\n<code class=\"notranslate\">@templates[locals]</code> isn't set yet. However, with <code class=\"notranslate\">@write_lock</code>, one<br>\nthread waits while the other one proceeds, setting <code class=\"notranslate\">@templates</code> to a<br>\nfrozen hash. The second thread then gets the write lock and tries to<br>\nmodify <code class=\"notranslate\">@templates</code> but it has been frozen.</p>",
             "url": "https://github.com/rails/rails/pull/50775",
             "title": "Fix threading issue with strict locals",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "aeroastro",
                 "url": "https://github.com/aeroastro"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59310?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Make it more clear that the Rails runner is run within the Rails application. Without the word <code class=\"notranslate\">application</code> it's unclear what the Rails context is.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50697",
+            "title": "docs: improve runner documentation [ci skip]",
+            "date_modified": "2024-01-16T12:09:39.000Z",
+            "date_published": "2024-01-10T15:51:50.000Z",
+            "author": {
+                "name": "avanderpluijm",
+                "url": "https://github.com/avanderpluijm"
             }
         }
     ]
