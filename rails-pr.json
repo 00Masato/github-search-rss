@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50776.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2085259587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50776\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50776/hovercard\" href=\"https://github.com/rails/rails/issues/50776\">#50776</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/50778",
+            "title": "Fix async queries to work with query cache and other cached async queries",
+            "date_modified": "2024-01-17T09:46:05.000Z",
+            "date_published": "2024-01-17T09:46:01.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/80543?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50774.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2085173685\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50774\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50774/hovercard\" href=\"https://github.com/rails/rails/issues/50774\">#50774</a></p>\n<p dir=\"auto\">When the server boots up, 2 threads hit the same <code class=\"notranslate\">UnboundTemplate</code><br>\ninstance before it has set up <code class=\"notranslate\">@templates</code>. Both threads get past the<br>\n<code class=\"notranslate\">unless template = @templates[locals]</code> check because<br>\n<code class=\"notranslate\">@templates[locals]</code> isn't set yet. However, with <code class=\"notranslate\">@write_lock</code>, one<br>\nthread waits while the other one proceeds, setting <code class=\"notranslate\">@templates</code> to a<br>\nfrozen hash. The second thread then gets the write lock and tries to<br>\nmodify <code class=\"notranslate\">@templates</code> but it has been frozen.</p>",
             "url": "https://github.com/rails/rails/pull/50775",
             "title": "Fix threading issue with strict locals",
@@ -47,17 +58,6 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140281190?u=6cf5ab673ff117a6711ca41493b1258a7db44d9c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I've been following the <a href=\"https://edgeguides.rubyonrails.org/getting_started.html\" rel=\"nofollow\">getting started guide</a>. Upon reaching the end of section 8.4, I noticed several differences between the output displayed in the guide's screenshot and what appeared on my computer (rails version: Rails 7.1.2, ruby version: ruby 3.2.2):</p>\n<ul dir=\"auto\">\n<li>The positioning of \"Edit/Back\" differs.</li>\n<li>While the guide provides an explanation for \"Destroy,\" it doesn't offer one for \"Back.\"</li>\n<li>My output lacked the \"Title:\" and \"Text:\" elements.</li>\n<li>The text \"Rails is Awesome!\" appeared larger due to the h1 tag.</li>\n</ul>\n<p dir=\"auto\">I would like to update the existing screenshot.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes article_with_comments.png in /guides/assets/images/getting_started.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: [Fix #issue-number]</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50756",
-            "title": "Update the screenshot in the section 8.4 of Getting Started with Rails [ci skip]",
-            "date_modified": "2024-01-15T14:04:41.000Z",
-            "date_published": "2024-01-15T12:52:53.000Z",
-            "author": {
-                "name": "Angy-h",
-                "url": "https://github.com/Angy-h"
             }
         },
         {
