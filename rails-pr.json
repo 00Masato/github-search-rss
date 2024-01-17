@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Given that the limiter implementation provided by Kredis is a simple increment with a limit, all <code class=\"notranslate\">ActiveSupport::Cache</code> already provide that same capability, with a wide range of backing stores, and not just Redis.</p>\n<p dir=\"auto\">This even allow to use SolidCache has a backend if you so desire.</p>\n<p dir=\"auto\">If we feel particularly fancy, we could also accept a more generic limiter interface to better allow users to swap the implementation for better algorithms such as leaky-bucket etc.</p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
-            "url": "https://github.com/rails/rails/pull/50781",
-            "title": "Refactor `ActionController::RateLimiting` to use `AS::Cache`",
-            "date_modified": "2024-01-17T15:52:39.000Z",
-            "date_published": "2024-01-17T14:32:07.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/986290?u=4d733016cf0aff060b84f4084595e5ace35d3b42&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">skip_sprockets?</code> wasn't being preserved when running <code class=\"notranslate\">app:update</code> in a project using <code class=\"notranslate\">propshaft</code>. Helpful when <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2056739647\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50444\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50444/hovercard\" href=\"https://github.com/rails/rails/issues/50444\">#50444</a> lands.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request sets <code class=\"notranslate\">options[:asset_pipeline]</code> in <code class=\"notranslate\">AppUpdater</code> based on whether Sprockets/Propshaft Railtie is defined.</p>\n<p dir=\"auto\">Without this change, <code class=\"notranslate\">app:update</code> will suggest injecting sprocket configuration in a propshaft project.</p>",
             "url": "https://github.com/rails/rails/pull/50780",
             "title": "Preserve `--asset-pipeline propshaft` when running `app:update`",
@@ -31,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50776.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2085259587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50776\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50776/hovercard\" href=\"https://github.com/rails/rails/issues/50776\">#50776</a>.</p>",
             "url": "https://github.com/rails/rails/pull/50778",
             "title": "Fix async queries to work with query cache and other cached async queries",
-            "date_modified": "2024-01-17T15:17:41.000Z",
+            "date_modified": "2024-01-17T16:25:38.000Z",
             "date_published": "2024-01-17T09:46:01.000Z",
             "author": {
                 "name": "fatkodima",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "aeroastro",
                 "url": "https://github.com/aeroastro"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59310?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Make it more clear that the Rails runner is run within the Rails application. Without the word <code class=\"notranslate\">application</code> it's unclear what the Rails context is.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50697",
+            "title": "docs: improve runner documentation [ci skip]",
+            "date_modified": "2024-01-16T12:09:39.000Z",
+            "date_published": "2024-01-10T15:51:50.000Z",
+            "author": {
+                "name": "avanderpluijm",
+                "url": "https://github.com/avanderpluijm"
             }
         }
     ]
