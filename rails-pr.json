@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Given that the limiter implementation provided by Kredis is a simple increment with a limit, all <code class=\"notranslate\">ActiveSupport::Cache</code> already provide that same capability, with a wide range of backing stores, and not just Redis.</p>\n<p dir=\"auto\">This even allow to use SolidCache has a backend if you so desire.</p>\n<p dir=\"auto\">If we feel particularly fancy, we could also accept a more generic limiter interface to better allow users to swap the implementation for better algorithms such as leaky-bucket etc.</p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
             "url": "https://github.com/rails/rails/pull/50781",
             "title": "Refactor `ActionController::RateLimiting` to use `AS::Cache`",
-            "date_modified": "2024-01-17T14:40:56.000Z",
+            "date_modified": "2024-01-17T15:52:39.000Z",
             "date_published": "2024-01-17T14:32:07.000Z",
             "author": {
                 "name": "casperisfine",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50776.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2085259587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50776\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50776/hovercard\" href=\"https://github.com/rails/rails/issues/50776\">#50776</a>.</p>",
             "url": "https://github.com/rails/rails/pull/50778",
             "title": "Fix async queries to work with query cache and other cached async queries",
-            "date_modified": "2024-01-17T14:22:50.000Z",
+            "date_modified": "2024-01-17T15:17:41.000Z",
             "date_published": "2024-01-17T09:46:01.000Z",
             "author": {
                 "name": "fatkodima",
