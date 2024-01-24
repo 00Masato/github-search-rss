@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60669983?u=31e825708e6f1782c6b09a99405bd5b7f4d78ee2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR proposes the creation of an external stand-alone test suite and associated tools for verifying the Rust toolchain that also fits into existing Rust development workflows.</p>\n<p dir=\"auto\"><a href=\"https://github.com/kirtchev-adacore/kirtchev-adacore-rust-lang-rfcs/blob/wip/add-out-of-tree-test-suite-rfc/text/3557-out-of-tree-test-suite.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3557",
             "title": "RFC: Out-of-tree test suite",
-            "date_modified": "2024-01-18T09:53:55.000Z",
+            "date_modified": "2024-01-24T10:52:21.000Z",
             "date_published": "2024-01-10T14:31:27.000Z",
             "author": {
                 "name": "kirtchev-adacore",
@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/136037?u=9c6024454f25b07e5b71b85fe88523197bdcf476&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for the <code class=\"notranslate\">patchable-function-entry</code> family of flags and attributes from <code class=\"notranslate\">clang</code> and <code class=\"notranslate\">gcc</code> in order to support instrumentation and patching as done in the Linux kernel.</p>\n<p dir=\"auto\">I have a <a href=\"https://github.com/maurer/rust/tree/patchable-function-entries\">candidate implementation</a> and a <a href=\"https://github.com/rust-lang/compiler-team/issues/704\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/704/hovercard\">MCP</a> to cover just the compiler flag.</p>\n<p dir=\"auto\"><a href=\"https://github.com/maurer/rust-rfcs/blob/patchable-function-entry/text/3543-patchable-function-entry.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3543",
             "title": "RFC: patchable-function-entry",
-            "date_modified": "2024-01-23T22:58:11.000Z",
+            "date_modified": "2024-01-24T10:10:14.000Z",
             "date_published": "2023-12-12T22:26:47.000Z",
             "author": {
                 "name": "maurer",
