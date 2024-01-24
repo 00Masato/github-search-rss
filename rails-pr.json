@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation / Background</h2>\n<p dir=\"auto\">Strict Locals support was introduced in <a href=\"https://github.com/rails/rails/pull/45727\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45727/hovercard\">#45727</a> and announced as part of the <a href=\"https://edgeguides.rubyonrails.org/7_1_release_notes.html#allow-templates-to-set-strict-locals\" rel=\"nofollow\">7.1 Release</a>. There are several mentions across the Guides, but support is rarely mentioned in the API documentation.</p>\n<h2 dir=\"auto\">Detail</h2>\n<p dir=\"auto\">This commit adds two test cases to ensure support for splatting additional arguments, and for forbidding block and positional arguments.</p>\n<p dir=\"auto\">It also makes mention of strict locals in more places, and links to the guides.</p>",
+            "url": "https://github.com/rails/rails/pull/50864",
+            "title": "Mention Strict Locals in more documentation",
+            "date_modified": "2024-01-24T13:33:41.000Z",
+            "date_published": "2024-01-24T13:33:36.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">File</code> is already accepted as an attachable, so why not?</p>",
             "url": "https://github.com/rails/rails/pull/50862",
             "title": "Accept Tempfile as ActiveStorage attachable",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11673?u=ef80073b0bb2ee07a241e85af0bb51e892955811&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As a followup to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061815924\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50528\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50528/hovercard\" href=\"https://github.com/rails/rails/pull/50528\">#50528</a>, which added default pwa manifest and service worker routes and files to the new app generator, I'd like to associate the new routes with the expected mime types.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">We expect the <code class=\"notranslate\">pwa#manifest</code> request to be limited to json, i.e. <code class=\"notranslate\">manifest.json</code> and we expect the <code class=\"notranslate\">pwa#service_worker</code> request to be limited to js, i.e. <code class=\"notranslate\">service-worker.js</code>. This change adds format constraints to the generated routes.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I didn't see associated tests with the previous change but would be open to adding some if desired.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50815",
-            "title": "Add format constraints for generated pwa routes",
-            "date_modified": "2024-01-22T12:00:23.000Z",
-            "date_published": "2024-01-19T23:10:41.000Z",
-            "author": {
-                "name": "rossta",
-                "url": "https://github.com/rossta"
             }
         }
     ]
