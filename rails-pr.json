@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation / Background</h2>\n<p dir=\"auto\">Strict Locals support was introduced in <a href=\"https://github.com/rails/rails/pull/45727\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45727/hovercard\">#45727</a> and announced as part of the <a href=\"https://edgeguides.rubyonrails.org/7_1_release_notes.html#allow-templates-to-set-strict-locals\" rel=\"nofollow\">7.1 Release</a>. There are several mentions across the Guides, but support is rarely mentioned in the API documentation.</p>\n<h2 dir=\"auto\">Detail</h2>\n<p dir=\"auto\">This commit adds two test cases to ensure support for splatting additional arguments, and for forbidding block and positional arguments.</p>\n<p dir=\"auto\">It also makes mention of strict locals in more places, and links to the guides.</p>",
             "url": "https://github.com/rails/rails/pull/50864",
             "title": "Mention Strict Locals in more documentation",
-            "date_modified": "2024-01-24T13:33:41.000Z",
+            "date_modified": "2024-01-24T15:36:21.000Z",
             "date_published": "2024-01-24T13:33:36.000Z",
             "author": {
                 "name": "seanpdoyle",
