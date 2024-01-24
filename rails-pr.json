@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Strict template locals were introduced as part of the <a href=\"https://edgeguides.rubyonrails.org/7_1_release_notes.html#allow-templates-to-set-strict-locals\" rel=\"nofollow\">7.1 Release</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">To encourage their use within new applications and files, this commit changes scaffolded (for example, <code class=\"notranslate\">_form.html.erb</code> and <code class=\"notranslate\">_$MODEL.html.erb</code>) templates to use <a href=\"https://guides.rubyonrails.org/v7.1.0/action_view_overview.html#strict-locals\" rel=\"nofollow\">Strict Locals</a>.</p>\n<p dir=\"auto\">In addition to scaffolds, this commit includes<br>\n<code class=\"notranslate\">app/views/active_storage/blobs/_blob.html.erb</code>, since it's copied into host applications as part of <code class=\"notranslate\">rails actiontext:install</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50865",
+            "title": "Scaffold view templates using Strict Locals",
+            "date_modified": "2024-01-24T15:01:00.000Z",
+            "date_published": "2024-01-24T15:00:56.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation / Background</h2>\n<p dir=\"auto\">Strict Locals support was introduced in <a href=\"https://github.com/rails/rails/pull/45727\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45727/hovercard\">#45727</a> and announced as part of the <a href=\"https://edgeguides.rubyonrails.org/7_1_release_notes.html#allow-templates-to-set-strict-locals\" rel=\"nofollow\">7.1 Release</a>. There are several mentions across the Guides, but support is rarely mentioned in the API documentation.</p>\n<h2 dir=\"auto\">Detail</h2>\n<p dir=\"auto\">This commit adds two test cases to ensure support for splatting additional arguments, and for forbidding block and positional arguments.</p>\n<p dir=\"auto\">It also makes mention of strict locals in more places, and links to the guides.</p>",
             "url": "https://github.com/rails/rails/pull/50864",
             "title": "Mention Strict Locals in more documentation",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "MONSURU-rgb",
                 "url": "https://github.com/MONSURU-rgb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=be8de5137bf940532cddd05aff823129ab8a39db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Adds a <code class=\"notranslate\">Queue Priority</code> section to <code class=\"notranslate\">active_job_basics.md</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><a href=\"https://edgeguides.rubyonrails.org/active_job_basics.html\" rel=\"nofollow\">Active Job Basics</a> contains a <a href=\"https://edgeguides.rubyonrails.org/active_job_basics.html#queues\" rel=\"nofollow\">section on queues</a>, but doesn't have one on queue priority (using <code class=\"notranslate\">queue_with_priority</code> or <code class=\"notranslate\">set(priority: priority)</code>).</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">None.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50817",
-            "title": "[Docs] Add section on Queue Priority to `ActiveJob` docs",
-            "date_modified": "2024-01-24T11:30:03.000Z",
-            "date_published": "2024-01-20T01:34:27.000Z",
-            "author": {
-                "name": "joshuay03",
-                "url": "https://github.com/joshuay03"
             }
         }
     ]
