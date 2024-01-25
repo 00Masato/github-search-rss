@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pointers (this includes values of reference type) in Rust have <strong>two</strong> components.</p>\n<ul dir=\"auto\">\n<li>The pointer's \"address\" says where in memory the pointer is currently pointing.</li>\n<li>The pointer's \"provenance\" says where in memory the pointer is allowed to access when.</li>\n</ul>\n<p dir=\"auto\">(This is disregarding any \"metadata\" that may come with wide pointers, it only talks about thin pointers / the data part of a wide pointer.)</p>\n<p dir=\"auto\">Accessing memory using a pointer with incorrect provenance causes undefined behavior (UB), regardless of the address value of the pointer.</p>\n<p dir=\"auto\">In contrast, integers do <strong>not</strong> have a provenance component.</p>\n<p dir=\"auto\">Most of the rest of the details, such as a specific provenance model, are intentionally left unspecified.</p>\n<p dir=\"auto\">This RFC very deliberately aims to be as <strong>minimal</strong> as possible, to just get the entire Rust Project on the \"same page\" about the long-term future development of the language.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/provenance/text/0000-rust-has-provenance.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3559",
             "title": "RFC: Rust Has Provenance",
-            "date_modified": "2024-01-25T09:04:39.000Z",
+            "date_modified": "2024-01-25T10:16:02.000Z",
             "date_published": "2024-01-25T09:00:23.000Z",
             "author": {
                 "name": "RalfJung",
