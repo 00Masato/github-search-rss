@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Only the last five entries have two newlines between them and I can't see a good reason for that, see <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1932108407\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49546\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49546/hovercard\" href=\"https://github.com/rails/rails/pull/49546\">#49546</a>.</p>\n<p dir=\"auto\">In addition to being inconsistent this trips RuboCop with <code class=\"notranslate\">Layout/EmptyLines</code> which is enabled by default.</p>",
+            "url": "https://github.com/rails/rails/pull/50880",
+            "title": "Use uniform spacing in 7.1 new framework defaults",
+            "date_modified": "2024-01-25T21:18:28.000Z",
+            "date_published": "2024-01-25T21:18:24.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2082675602\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50759\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50759/hovercard\" href=\"https://github.com/rails/rails/issues/50759\">#50759</a></p>\n<p dir=\"auto\"><code class=\"notranslate\">./tools/rdoc-to-md -a --only=actionpack</code> to reproduce the results.</p>",
             "url": "https://github.com/rails/rails/pull/50879",
             "title": "Transform actionpack documentation to Markdown",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "rafaelfranca",
                 "url": "https://github.com/rafaelfranca"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13696143?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">1053 is the server shutdown error code. We see these fairly often at GitHub when, for example, shutting down Vitess vtage processes for maintenance. Translating the error to <code class=\"notranslate\">ConnectionFailed</code> allows us to treat these as retryable connection errors, so we can reconnect and hit a new vtage process.</p>\n<p dir=\"auto\">This is all true regardless of whether the adapter is trilogy or mysql2 or whatever, so this commit moves the translation out into the abstract mysql adapter.</p>",
-            "url": "https://github.com/rails/rails/pull/50877",
-            "title": "Move server shutdown translation to abstract mysql adapter",
-            "date_modified": "2024-01-25T18:07:33.000Z",
-            "date_published": "2024-01-25T18:04:43.000Z",
-            "author": {
-                "name": "composerinteralia",
-                "url": "https://github.com/composerinteralia"
             }
         },
         {
