@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2082675602\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50759\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50759/hovercard\" href=\"https://github.com/rails/rails/issues/50759\">#50759</a></p>\n<p dir=\"auto\">Generally the idea is:</p>\n<ul dir=\"auto\">\n<li>use Prism to parse the file into AST + Comments</li>\n<li>transform each comment block into plain RDoc (instead of RDoc in a<br>\ncomment)</li>\n<li>use RDoc's ToMarkdown class to get a Markdown representation of the<br>\ncomment</li>\n<li>transform the Markdown representation back into a comment</li>\n<li>write a new file, skipping the lines that were previously RDoc<br>\ncomments and instead inserting the new Markdown comments</li>\n</ul>\n<p dir=\"auto\">A little extra work has to be down for metaprogrammed documentation<br>\nbecause ToMarkdown turns RDoc directives into H1s. So for these cases,<br>\nthe directive is first split off the top before doing the ToMarkdown<br>\ntransformation and then added back afterwards.</p>",
+            "url": "https://github.com/rails/rails/pull/50870",
+            "title": "Add tools/rdoc-to-md script",
+            "date_modified": "2024-01-25T00:12:30.000Z",
+            "date_published": "2024-01-25T00:12:26.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Previously, only the PrismRenderParser or RipperRenderParser would be tested depending on if the Prism gem is available. This meant that PrismRenderParser was being tested on Ruby 3.3 and RipperRenderParser was tested on Ruby &lt; 3.3. Additionally, if someone were to add prism to the rails/rails Gemfile because they wrote a tool that uses it then the RipperRenderParser would end up completely untested.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit is a small refactor to enable testing both RenderParsers in all Ruby versions so that the prism gem can be added to the Gemfile.</p>",
             "url": "https://github.com/rails/rails/pull/50869",
             "title": "Ensure all RubyTracker RenderParsers are tested",
-            "date_modified": "2024-01-24T23:47:41.000Z",
+            "date_modified": "2024-01-25T00:17:18.000Z",
             "date_published": "2024-01-24T23:44:59.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "ezekg",
                 "url": "https://github.com/ezekg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request add examples for <code class=\"notranslate\">FormTagHelper</code> methods.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50828",
-            "title": "Add examples for form helper tags [ci skip]",
-            "date_modified": "2024-01-23T14:39:15.000Z",
-            "date_published": "2024-01-21T05:48:04.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
             }
         }
     ]
