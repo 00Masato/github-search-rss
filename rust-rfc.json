@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pointers (this includes values of reference type) in Rust have <strong>two</strong> components.</p>\n<ul dir=\"auto\">\n<li>The pointer's \"address\" says where in memory the pointer is currently pointing.</li>\n<li>The pointer's \"provenance\" says where in memory the pointer is allowed to access when.</li>\n</ul>\n<p dir=\"auto\">(This is disregarding any \"metadata\" that may come with wide pointers, it only talks about thin pointers / the data part of a wide pointer.)</p>\n<p dir=\"auto\">Accessing memory using a pointer with incorrect provenance causes undefined behavior (UB), regardless of the address value of the pointer.</p>\n<p dir=\"auto\">In contrast, integers do <strong>not</strong> have a provenance component.</p>\n<p dir=\"auto\">Most of the rest of the details, such as a specific provenance model, are intentionally left unspecified.</p>\n<p dir=\"auto\">This RFC very deliberately aims to be as <strong>minimal</strong> as possible, to just get the entire Rust Project on the \"same page\" about the long-term future development of the language.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/provenance/text/0000-rust-has-provenance.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3559",
+            "title": "Rust Has Provenance",
+            "date_modified": "2024-01-25T09:00:27.000Z",
+            "date_published": "2024-01-25T09:00:23.000Z",
+            "author": {
+                "name": "RalfJung",
+                "url": "https://github.com/RalfJung"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This eRFC lays out a path for <a href=\"https://github.com/rust-lang/rust/issues/49359\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/49359/hovercard\">stabilizing programmatic output for libtest</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/libtest-json/text/3558-libtest-json.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3558",
             "title": "eRFC: Iterate on and stabilize libtest's programmatic output",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "clarfonthey",
                 "url": "https://github.com/clarfonthey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust's floating point operations follow IEEE 754-2008 -- with some caveats around operations producing NaNs: IEEE makes almost no guarantees about the sign and payload bits of the NaN; however, actual hardware does not pick those bits completely arbitrarily, and Rust will expose some of those hardware-provided guarantees to programmers.<br>\nOn the flip side, NaN generation is non-deterministic: running the same operation on the same inputs several times can produce different results.<br>\nAnd there is a caveat: while IEEE specifies that float operations can never output a signaling NaN, Rust float operations <em>can</em> produce signaling NaNs, <em>but only if</em> an input is signaling.<br>\nThat means the only way to ever see a signaling NaN in a program is to create one with <code class=\"notranslate\">from_bits</code> (or equivalent unsafe operations).</p>\n<p dir=\"auto\">Floating-point operations at compile-time follow the same specification. In particular, since operations are non-deterministic, the same operation can lead to different bit-patterns when executed at compile-time (in a <code class=\"notranslate\">const</code> context) vs at run-time.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/float-semantics/text/0000-float-semantics.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3514",
-            "title": "add float semantics RFC",
-            "date_modified": "2024-01-06T10:17:41.000Z",
-            "date_published": "2023-10-14T07:52:34.000Z",
-            "author": {
-                "name": "RalfJung",
-                "url": "https://github.com/RalfJung"
             }
         }
     ]
