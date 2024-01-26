@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Strict template locals were introduced as part of the <a href=\"https://edgeguides.rubyonrails.org/7_1_release_notes.html#allow-templates-to-set-strict-locals\" rel=\"nofollow\">7.1 Release</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">To encourage their use within new applications and files, this commit changes scaffolded (for example, <code class=\"notranslate\">_form.html.erb</code> and <code class=\"notranslate\">_$MODEL.html.erb</code>) templates to use <a href=\"https://guides.rubyonrails.org/v7.1.0/action_view_overview.html#strict-locals\" rel=\"nofollow\">Strict Locals</a>.</p>\n<p dir=\"auto\">In addition to scaffolds, this commit includes<br>\n<code class=\"notranslate\">app/views/active_storage/blobs/_blob.html.erb</code>, since it's copied into host applications as part of <code class=\"notranslate\">rails actiontext:install</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50865",
-            "title": "Scaffold view templates using Strict Locals",
-            "date_modified": "2024-01-25T20:56:18.000Z",
-            "date_published": "2024-01-24T15:00:56.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">File</code> is already accepted as an attachable, so why not?</p>",
             "url": "https://github.com/rails/rails/pull/50862",
             "title": "Accept Tempfile as ActiveStorage attachable",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "jordinl",
                 "url": "https://github.com/jordinl"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/78952006?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This Pull Request has been created to enlighten users that validations are enabled by default when autosave is True for the  <code class=\"notranslate\">has_one</code> and <code class=\"notranslate\">belongs_to</code>.</p>",
+            "url": "https://github.com/rails/rails/pull/50820",
+            "title": "docs: Update validation status based on autosave status",
+            "date_modified": "2024-01-22T07:16:22.000Z",
+            "date_published": "2024-01-20T09:24:46.000Z",
+            "author": {
+                "name": "MONSURU-rgb",
+                "url": "https://github.com/MONSURU-rgb"
             }
         }
     ]
