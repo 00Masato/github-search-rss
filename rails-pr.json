@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1734607?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">ActiveRecord Encryption doesn't prevent you from encrypting binary columns but it doesn't have proper support for it either.</p>\n<p dir=\"auto\">When the data is fed through encrypt/decrypt it is converted to a String. This means that the the encryption layer is not transparent to binary data - which should be passed as Type::Binary::Data.</p>\n<p dir=\"auto\">As a result the data is not properly escaped in the SQL queries or deserialized correctly after decryption.</p>\n<p dir=\"auto\">However it just happens to work fine for MySQL and SQLite because the MessageSerializer doesn't use any characters that need to be encoded. However if you try to use a custom serializer that does then it breaks.</p>\n<p dir=\"auto\">PostgreSQL on the other hand does not work - because the Bytea type is passed a String rather than a Type::Binary::Data to deserialize, it attempts to unescape the data and either mangles it or raises an error if it contains null bytes.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The commit fixes the issue, by reserializing the data after encryption and decryption. For text data that's a no-op, but for binary data we'll convert it back to a Type::Binary::Data.</p>",
             "url": "https://github.com/rails/rails/pull/50920",
             "title": "Support encrypting binary columns",
-            "date_modified": "2024-01-30T10:53:38.000Z",
+            "date_modified": "2024-01-30T13:43:35.000Z",
             "date_published": "2024-01-30T10:53:34.000Z",
             "author": {
                 "name": "djmb",
