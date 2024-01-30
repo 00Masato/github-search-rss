@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Not that <code class=\"notranslate\">inspect</code> is anywhere close to be a hostspot, but just to not allow a less defficient pattern.</p>\n<p dir=\"auto\">Instead of allocating an UnboundMethod and bind_call it, we can directly replace the method.</p>",
-            "url": "https://github.com/rails/rails/pull/50918",
-            "title": "More efficiently reset inspect implementation",
-            "date_modified": "2024-01-30T07:36:17.000Z",
-            "date_published": "2024-01-30T07:36:13.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because using <code class=\"notranslate\">falcon</code> (or indeed, any other server, e.g. <code class=\"notranslate\">pitchfork</code>) should be easy.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">rails new</code> and adds support for <code class=\"notranslate\">--server puma</code> or <code class=\"notranslate\">--server falcon</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50917",
             "title": "Add support for `rails new --server falcon ...`.",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fsateler",
                 "url": "https://github.com/fsateler"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">File</code> is already accepted as an attachable, so why not?</p>",
+            "url": "https://github.com/rails/rails/pull/50862",
+            "title": "Accept Tempfile as ActiveStorage attachable",
+            "date_modified": "2024-01-29T23:50:09.000Z",
+            "date_published": "2024-01-24T10:31:28.000Z",
+            "author": {
+                "name": "shouichi",
+                "url": "https://github.com/shouichi"
             }
         }
     ]
