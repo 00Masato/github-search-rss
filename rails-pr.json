@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12777550?u=415303ec1c626279c440cf729435fc0ee833d1c9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">In certain situation, we might need to store and query <code class=\"notranslate\">negative</code> values. Having the option to bypass the auto-generated negative scopes can avoid the conflicts.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Add <code class=\"notranslate\">negative_scopes</code> option to <code class=\"notranslate\">ActiveRecord::Enum#enum</code>, this offers the flexibility to optionally skip the creation of negative scopes.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/50919",
+            "title": "Add negative_scopes option to ActiveRecord's enum method",
+            "date_modified": "2024-01-30T09:40:23.000Z",
+            "date_published": "2024-01-30T09:11:41.000Z",
+            "author": {
+                "name": "Jay0921",
+                "url": "https://github.com/Jay0921"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Not that <code class=\"notranslate\">inspect</code> is anywhere close to be a hostspot, but just to not allow a less defficient pattern.</p>\n<p dir=\"auto\">Instead of allocating an UnboundMethod and bind_call it, we can directly replace the method.</p>",
             "url": "https://github.com/rails/rails/pull/50918",
             "title": "More efficiently reset inspect implementation",
@@ -97,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140453075?u=8d64b0326624236f7b4bc49b3c68a80b1f2db877&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Give further context about the requirements for using the has_one_attached method.</p>\n<p dir=\"auto\">I have an application that does not have an ActiveJob::Backend queue adapter. When I tried to destroy a record, it raised an error that I needed a queue adapter. There is a dependency between the has_one_attached method and a queue adapter.</p>\n<p dir=\"auto\">That is why adding more context about the functionality and requirements about using the has_one_attached method is important.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/50892",
             "title": "Documentation: Expand documentation on has_one_attached method [ci-skip].",
-            "date_modified": "2024-01-29T21:26:58.000Z",
+            "date_modified": "2024-01-30T09:16:55.000Z",
             "date_published": "2024-01-26T20:02:30.000Z",
             "author": {
                 "name": "Takahashi-Seiji",
@@ -146,17 +157,6 @@
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/853015?u=7a457811f0ebec8f47bc83ee39021835888a5955&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the documentation is out-of-sync.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"613078684\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/39164\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/39164/hovercard\" href=\"https://github.com/rails/rails/pull/39164\">#39164</a> extension in filename are deprecated (shipped with Rails 6.1)<br>\nAnd has been removed in Rails 7.0.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[N/A] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[N/A] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50881",
-            "title": "Update caching_with_rails.md regarding extension in filename [ci skip]",
-            "date_modified": "2024-01-30T00:35:51.000Z",
-            "date_published": "2024-01-26T03:51:09.000Z",
-            "author": {
-                "name": "D-system",
-                "url": "https://github.com/D-system"
             }
         },
         {
