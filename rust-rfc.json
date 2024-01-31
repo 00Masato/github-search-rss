@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49301588?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pre-RFC on <a href=\"https://internals.rust-lang.org/t/pre-rfc-deprecate-then-remove-static-mut/20072\" rel=\"nofollow\">IRLO</a>.</p>\n<p dir=\"auto\"><a href=\"https://www.surveyhero.com/results/1749245/qsry7n7amfk9t2dbanw15vfyo0x06tzj\" rel=\"nofollow\">Results</a> from research survey to inform discussion with respect to perception of the feature. (JS required)</p>\n<p dir=\"auto\"><a href=\"https://github.com/dyslexicsteak/rfcs/blob/master/text/3560-deprecate-then-remove-static-mut.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3560",
             "title": "Deprecate then remove `static mut`",
-            "date_modified": "2024-01-31T05:18:54.000Z",
+            "date_modified": "2024-01-31T16:59:09.000Z",
             "date_published": "2024-01-26T09:59:12.000Z",
             "author": {
                 "name": "dyslexicsteak",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This eRFC lays out a path for <a href=\"https://github.com/rust-lang/rust/issues/49359\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/49359/hovercard\">stabilizing programmatic output for libtest</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/libtest-json/text/3558-libtest-json.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3558",
             "title": "eRFC: Iterate on and stabilize libtest's programmatic output",
-            "date_modified": "2024-01-31T15:57:30.000Z",
+            "date_modified": "2024-01-31T16:04:36.000Z",
             "date_published": "2024-01-19T19:36:16.000Z",
             "author": {
                 "name": "epage",
