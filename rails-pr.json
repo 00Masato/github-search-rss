@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43969?u=affd1e9b6b8cfede8dadd327f35e260b594ebb81&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50924.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2107856333\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50924\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50924/hovercard\" href=\"https://github.com/rails/rails/issues/50924\">#50924</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Big thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a> for explaining the anomaly with <code class=\"notranslate\">ffprobe</code> <code class=\"notranslate\">v4.2.2</code> versus <code class=\"notranslate\">v6.0.6</code>. This change ensures the test works with both versions, similar to how we handle it in <code class=\"notranslate\">test_analyzing_a_rotated_video</code>.</p>",
             "url": "https://github.com/rails/rails/pull/50929",
             "title": "Fix VideoAnalyzerTest#test_analyzing_a_rotated_HDR_video failure with ffmpeg < 5.0",
-            "date_modified": "2024-01-31T22:51:15.000Z",
+            "date_modified": "2024-01-31T23:08:32.000Z",
             "date_published": "2024-01-31T22:51:11.000Z",
             "author": {
                 "name": "railsbob",
