@@ -74,8 +74,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, neither the PrismRenderParser nor the RipperRenderParser would consider an interpolated string as a dependency. The RubyTracker even included a line to explcitly filter out interpolated paths returned from the RipperRenderParser since they would end in a \"/\". However, the RubyTracker does include the ability to evaluate explicit \"Template Dependency\" comments with wildcard nodes.</p>\n<p dir=\"auto\">This commit extends the RipperRenderParser and PrismRenderParser to convert interpolated strings into wildcard globs. Additionally, it changes the RubyTracker to evaluate wildcards the same for both implicit and explicit dependencies. This enables the RubyTracker to identify potential dependencies for interpolated renders, which it was previously unable to do.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jhawthorn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jhawthorn\">@jhawthorn</a> if you think this is a good idea I can try to apply it to ActionView::Precompiler as well</p>",
             "url": "https://github.com/rails/rails/pull/50944",
-            "title": "Enable RubyTracker to evaluate interpolated paths",
-            "date_modified": "2024-02-02T00:53:50.000Z",
+            "title": "Enable DependencyTracker to evaluate interpolated paths",
+            "date_modified": "2024-02-02T19:50:39.000Z",
             "date_published": "2024-02-01T23:46:28.000Z",
             "author": {
                 "name": "skipkayhil",
