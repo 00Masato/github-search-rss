@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://www.speedshop.co/2017/12/04/malloc-doubles-ruby-memory.html\" rel=\"nofollow\">Ruby's use of <code class=\"notranslate\">malloc</code> can create memory fragmentation problems, especially when using multiple threads</a> like Puma does. Switching to an allocator that uses different patterns to avoid fragmentation can decrease memory usage by a substantial margin.</p>",
             "url": "https://github.com/rails/rails/pull/50943",
             "title": "Setup jemalloc in default Dockerfile to optimize memory allocation",
-            "date_modified": "2024-02-03T18:46:27.000Z",
+            "date_modified": "2024-02-03T19:51:18.000Z",
             "date_published": "2024-02-01T22:55:15.000Z",
             "author": {
                 "name": "northeastprince",
