@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This change is an up-port of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2087434730\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50787\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50787/hovercard\" href=\"https://github.com/rails/rails/pull/50787\">#50787</a> which applied a similar fix to 7-1-stable.</p>\n<p dir=\"auto\">Since these tests weren't running before, we didn't notice when the DirectUploads controller tests were broken. My theory is that it has something to do with changing <code class=\"notranslate\">response.parsed_body</code> to return a HWIA (in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1862118814\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49003\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49003/hovercard\" href=\"https://github.com/rails/rails/pull/49003\">#49003</a>).</p>\n<p dir=\"auto\">The differences in the 7-1-stable was to remove both <code class=\"notranslate\">deep_stringify_keys</code> in stead a single <code class=\"notranslate\">Hash#with_indifferent_access</code> on the metadata.</p>\n<p dir=\"auto\">I'm open to suggestions on the best way to make that assertion look right, and we can backport that to 7-1-stable as well.</p>\n<p dir=\"auto\">This PR came out of the work in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2053506521\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50427\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50427/hovercard\" href=\"https://github.com/rails/rails/pull/50427\">#50427</a>, but since I was able to reproduce these failures on main, I wanted to fix them first.</p>",
+            "url": "https://github.com/rails/rails/pull/50967",
+            "title": "Fix Active Storage test configurations for CI",
+            "date_modified": "2024-02-05T11:47:33.000Z",
+            "date_published": "2024-02-05T11:47:28.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2107745328\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50923\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50923/hovercard\" href=\"https://github.com/rails/rails/pull/50923\">#50923</a></p>\n<p dir=\"auto\">Instead of stopping on the first frame that isn't in Action Dispatch, we should return the first frame that isn't filtered by the backtrace cleaner.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a></p>",
             "url": "https://github.com/rails/rails/pull/50964",
             "title": "Improve routes source location detection",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "t27duck",
                 "url": "https://github.com/t27duck"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140453075?u=31aa0dde240c10a498b4e951209be7ae12efb191&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Give further context about the requirements for using the has_one_attached method.</p>\n<p dir=\"auto\">I have an application that does not have an ActiveJob::Backend queue adapter. When I tried to destroy a record, it raised an error that I needed a queue adapter. There is a dependency between the has_one_attached method and a queue adapter.</p>\n<p dir=\"auto\">That is why adding more context about the functionality and requirements about using the has_one_attached method is important.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/50892",
-            "title": "Documentation: Expand documentation on has_one_attached method [ci-skip].",
-            "date_modified": "2024-01-30T18:45:39.000Z",
-            "date_published": "2024-01-26T20:02:30.000Z",
-            "author": {
-                "name": "Takahashi-Seiji",
-                "url": "https://github.com/Takahashi-Seiji"
             }
         }
     ]
