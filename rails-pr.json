@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2117969578\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50964\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50964/hovercard\" href=\"https://github.com/rails/rails/pull/50964\">#50964</a></p>\n<p dir=\"auto\">Opening a PR because the patch didn't apply cleanly. This should make ruby-head pass on Ruby <code class=\"notranslate\">3.4-dev</code>.</p>",
+            "url": "https://github.com/rails/rails/pull/50970",
+            "title": "Backport #50964 to 7-1-stable",
+            "date_modified": "2024-02-05T15:59:14.000Z",
+            "date_published": "2024-02-05T15:59:10.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"893709388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42240\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42240/hovercard\" href=\"https://github.com/rails/rails/pull/42240\">#42240</a> (as discussed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"893709388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42240\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42240/hovercard?comment_id=1926446571&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/42240#issuecomment-1926446571\">#42240 (comment)</a>).</p>\n<p dir=\"auto\">We lost the ability to use the <code class=\"notranslate\">:line</code> option with QueryLogs (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"893709388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42240\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42240/hovercard?comment_id=898668464&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/42240#issuecomment-898668464\">#42240 (comment)</a>), while there is one in the marginalia. It was costly to use it before in the gem, but we made it fast (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2075236301\" data-permission-text=\"Title is private\" data-url=\"https://github.com/basecamp/marginalia/issues/138\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/basecamp/marginalia/pull/138/hovercard\" href=\"https://github.com/basecamp/marginalia/pull/138\">basecamp/marginalia#138</a>), so it is not <em>that</em> costly and people deliberately decide if they want to use it.</p>\n<p dir=\"auto\">I would like to have the <code class=\"notranslate\">:line</code> option, it is very much useful. Without it, if we have a slow db query log, for example, it is very hard to know from which part of the codebase the query was generated. Even having an <code class=\"notranslate\">:action</code> component, you need to investigate the unfamiliar codebase to find out where the query was triggered.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
             "url": "https://github.com/rails/rails/pull/50969",
             "title": "Support `:line` tag option for query log tags",
-            "date_modified": "2024-02-05T14:06:35.000Z",
+            "date_modified": "2024-02-05T15:02:20.000Z",
             "date_published": "2024-02-05T14:06:30.000Z",
             "author": {
                 "name": "fatkodima",
@@ -20,22 +31,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This change is an up-port of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2087434730\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50787\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50787/hovercard\" href=\"https://github.com/rails/rails/pull/50787\">#50787</a> which applied a similar fix to 7-1-stable.</p>\n<p dir=\"auto\">Since these tests weren't running before, we didn't notice when the DirectUploads controller tests were broken. My theory is that it has something to do with changing <code class=\"notranslate\">response.parsed_body</code> to return a HWIA (in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1862118814\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49003\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49003/hovercard\" href=\"https://github.com/rails/rails/pull/49003\">#49003</a>).</p>\n<p dir=\"auto\">The differences in the 7-1-stable was to remove both <code class=\"notranslate\">deep_stringify_keys</code> in stead a single <code class=\"notranslate\">Hash#with_indifferent_access</code> on the metadata.</p>\n<p dir=\"auto\">I'm open to suggestions on the best way to make that assertion look right, and we can backport that to 7-1-stable as well.</p>\n<p dir=\"auto\">This PR came out of the work in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2053506521\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50427\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50427/hovercard\" href=\"https://github.com/rails/rails/pull/50427\">#50427</a>, but since I was able to reproduce these failures on main, I wanted to fix them first.</p>",
             "url": "https://github.com/rails/rails/pull/50967",
             "title": "Fix Active Storage test configurations for CI",
-            "date_modified": "2024-02-05T13:46:09.000Z",
+            "date_modified": "2024-02-05T15:13:57.000Z",
             "date_published": "2024-02-05T11:47:28.000Z",
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2107745328\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50923\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50923/hovercard\" href=\"https://github.com/rails/rails/pull/50923\">#50923</a></p>\n<p dir=\"auto\">Instead of stopping on the first frame that isn't in Action Dispatch, we should return the first frame that isn't filtered by the backtrace cleaner.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a></p>",
-            "url": "https://github.com/rails/rails/pull/50964",
-            "title": "Improve routes source location detection",
-            "date_modified": "2024-02-05T14:51:45.000Z",
-            "date_published": "2024-02-05T08:40:28.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         },
         {
