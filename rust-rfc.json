@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/704597?u=15e04047ef09260a4861c1c9622e1e6fd3898161&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC adds an option to Cargo that emits a Software Bill of Materials (SBOM) alongside compiled artifacts. Similar to how Cargo emits split debug info or \"dep-info\" (.d) files, this change emits an SBOM in a Cargo-specific format alongside outputs in the target directory. External tooling or Cargo subcommands can consume this Cargo SBOM file and transform it into other SBOM formats such as SPDX or CycloneDX.</p>\n<p dir=\"auto\">Originally posted on internals as a <a href=\"https://internals.rust-lang.org/t/pre-rfc-cargo-sbom/19842\" rel=\"nofollow\">pre-RFC</a>, now moved to an RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/arlosi/rfcs/blob/sbom/text/0000-cargo-sbom.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3553",
             "title": "RFC: cargo-sbom",
-            "date_modified": "2024-01-16T17:25:12.000Z",
+            "date_modified": "2024-02-09T00:09:08.000Z",
             "date_published": "2024-01-04T18:57:29.000Z",
             "author": {
                 "name": "arlosi",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3550",
             "title": "RFC: New range types for Edition 2024",
-            "date_modified": "2024-02-09T00:01:34.000Z",
+            "date_modified": "2024-02-09T00:18:21.000Z",
             "date_published": "2023-12-28T05:10:59.000Z",
             "author": {
                 "name": "pitaj",
