@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates the GitHub actions to their latest versions. This should remove the warnings that are displayed with the old versions. From testing on my fork, it seems to work.</p>\n<p dir=\"auto\">checkout changelog: <a href=\"https://github.com/actions/checkout/blob/main/CHANGELOG.md#v410\">https://github.com/actions/checkout/blob/main/CHANGELOG.md#v410</a><br>\nupload-pages-artifact changes: <a href=\"https://github.com/actions/upload-pages-artifact/releases\">https://github.com/actions/upload-pages-artifact/releases</a><br>\ndeploy-pages changes: <a href=\"https://github.com/actions/deploy-pages/releases\">https://github.com/actions/deploy-pages/releases</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3566",
+            "title": "Update actions versions",
+            "date_modified": "2024-02-08T23:18:39.000Z",
+            "date_published": "2024-02-08T23:18:39.000Z",
+            "author": {
+                "name": "ehuss",
+                "url": "https://github.com/ehuss"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates mdbook to the latest version, which has had a large number of small changes since 0.4.26.<br>\nChangelog: <a href=\"https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-0437\">https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-0437</a></p>\n<p dir=\"auto\">Additionally this enables the curly-quotes feature, which enables <a href=\"https://rust-lang.github.io/mdBook/format/markdown.html#smart-punctuation\" rel=\"nofollow\">smart punctuation</a>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3565",
             "title": "Update mdbook to 0.4.37",
@@ -97,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3550",
             "title": "RFC: New range types for Edition 2024",
-            "date_modified": "2024-02-03T18:58:01.000Z",
+            "date_modified": "2024-02-09T00:01:34.000Z",
             "date_published": "2023-12-28T05:10:59.000Z",
             "author": {
                 "name": "pitaj",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "WaffleLapkin",
                 "url": "https://github.com/WaffleLapkin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40109184?u=3b8c1fe0674113dbbb6d3a38f9a3efc70d2f5bb5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/98a175fe69e26a242bca0c4e72a176f5c5e1f584/text/3525-struct-target-feature.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3525",
-            "title": "Struct target features RFC",
-            "date_modified": "2023-12-21T13:54:26.000Z",
-            "date_published": "2023-11-12T14:09:10.000Z",
-            "author": {
-                "name": "sarah-ek",
-                "url": "https://github.com/sarah-ek"
             }
         }
     ]
