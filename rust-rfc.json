@@ -6,25 +6,14 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates the GitHub actions to their latest versions. This should remove the warnings that are displayed with the old versions. From testing on my fork, it seems to work.</p>\n<p dir=\"auto\">checkout changelog: <a href=\"https://github.com/actions/checkout/blob/main/CHANGELOG.md#v410\">https://github.com/actions/checkout/blob/main/CHANGELOG.md#v410</a><br>\nupload-pages-artifact changes: <a href=\"https://github.com/actions/upload-pages-artifact/releases\">https://github.com/actions/upload-pages-artifact/releases</a><br>\ndeploy-pages changes: <a href=\"https://github.com/actions/deploy-pages/releases\">https://github.com/actions/deploy-pages/releases</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3566",
-            "title": "Update actions versions",
-            "date_modified": "2024-02-12T16:00:29.000Z",
-            "date_published": "2024-02-08T23:18:39.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">see <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2126221774\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3566\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3566/hovercard?comment_id=1939074653&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3566#issuecomment-1939074653\">#3566 (comment)</a></p>\n<p dir=\"auto\">This adds a basic config file with updates throttled to once-per-month. Once this is merged the corresponding GitHub App needs to be enabled by the infra team for this repo.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3568",
+            "title": "Add renovatebot config file",
+            "date_modified": "2024-02-12T16:51:18.000Z",
+            "date_published": "2024-02-12T16:48:21.000Z",
             "author": {
-                "name": "ehuss",
-                "url": "https://github.com/ehuss"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates mdbook to the latest version, which has had a large number of small changes since 0.4.26.<br>\nChangelog: <a href=\"https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-0437\">https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-0437</a></p>\n<p dir=\"auto\">Additionally this enables the curly-quotes feature, which enables <a href=\"https://rust-lang.github.io/mdBook/format/markdown.html#smart-punctuation\" rel=\"nofollow\">smart punctuation</a>.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3565",
-            "title": "Update mdbook to 0.4.37",
-            "date_modified": "2024-02-12T16:00:36.000Z",
-            "date_published": "2024-02-08T22:56:29.000Z",
-            "author": {
-                "name": "ehuss",
-                "url": "https://github.com/ehuss"
+                "name": "Turbo87",
+                "url": "https://github.com/Turbo87"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "sarah-ek",
                 "url": "https://github.com/sarah-ek"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/145740?u=c075676a94db020428cf67bc832a006f1f9d8410&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR suggests small changes to the existing unstable \"aribtrary self types\" feature to make it more flexible. In particular, it suggests driving this feature from a new (ish) <code class=\"notranslate\">Receiver</code> trait instead of from <code class=\"notranslate\">Deref</code>, but to maintain compatibility by having a blanket implementation for all <code class=\"notranslate\">Deref</code> types.</p>\n<p dir=\"auto\">This is a squashed commit of many edits by various folks including <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Urhengulas/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Urhengulas\">@Urhengulas</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Veykril/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Veykril\">@Veykril</a> , <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/madsmtm/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/madsmtm\">@madsmtm</a> and myself. Thanks also to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/davidhewitt/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/davidhewitt\">@davidhewitt</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Manishearth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Manishearth\">@Manishearth</a> and many folks over on Zulip for feedback.</p>\n<p dir=\"auto\"><a href=\"https://github.com/adetaylor/rfcs/blob/arbitrary-self-types-v2/text/3519-arbitrary-self-types-v2.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3519",
+            "title": "Arbitrary self types v2",
+            "date_modified": "2024-02-01T12:01:24.000Z",
+            "date_published": "2023-11-01T18:11:19.000Z",
+            "author": {
+                "name": "adetaylor",
+                "url": "https://github.com/adetaylor"
             }
         }
     ]
