@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates the GitHub actions to their latest versions. This should remove the warnings that are displayed with the old versions. From testing on my fork, it seems to work.</p>\n<p dir=\"auto\">checkout changelog: <a href=\"https://github.com/actions/checkout/blob/main/CHANGELOG.md#v410\">https://github.com/actions/checkout/blob/main/CHANGELOG.md#v410</a><br>\nupload-pages-artifact changes: <a href=\"https://github.com/actions/upload-pages-artifact/releases\">https://github.com/actions/upload-pages-artifact/releases</a><br>\ndeploy-pages changes: <a href=\"https://github.com/actions/deploy-pages/releases\">https://github.com/actions/deploy-pages/releases</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3566",
             "title": "Update actions versions",
-            "date_modified": "2024-02-08T23:18:39.000Z",
+            "date_modified": "2024-02-12T16:00:29.000Z",
             "date_published": "2024-02-08T23:18:39.000Z",
             "author": {
                 "name": "ehuss",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates mdbook to the latest version, which has had a large number of small changes since 0.4.26.<br>\nChangelog: <a href=\"https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-0437\">https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-0437</a></p>\n<p dir=\"auto\">Additionally this enables the curly-quotes feature, which enables <a href=\"https://rust-lang.github.io/mdBook/format/markdown.html#smart-punctuation\" rel=\"nofollow\">smart punctuation</a>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3565",
             "title": "Update mdbook to 0.4.37",
-            "date_modified": "2024-02-08T22:56:29.000Z",
+            "date_modified": "2024-02-12T16:00:36.000Z",
             "date_published": "2024-02-08T22:56:29.000Z",
             "author": {
                 "name": "ehuss",
@@ -58,17 +58,6 @@
             "author": {
                 "name": "RalfJung",
                 "url": "https://github.com/RalfJung"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This eRFC lays out a path for <a href=\"https://github.com/rust-lang/rust/issues/49359\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/49359/hovercard\">stabilizing programmatic output for libtest</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/libtest-json/text/3558-libtest-json.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3558",
-            "title": "eRFC: Iterate on and stabilize libtest's programmatic output",
-            "date_modified": "2024-02-10T16:04:52.000Z",
-            "date_published": "2024-01-19T19:36:16.000Z",
-            "author": {
-                "name": "epage",
-                "url": "https://github.com/epage"
             }
         },
         {
@@ -130,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/136037?u=9c6024454f25b07e5b71b85fe88523197bdcf476&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for the <code class=\"notranslate\">patchable-function-entry</code> family of flags and attributes from <code class=\"notranslate\">clang</code> and <code class=\"notranslate\">gcc</code> in order to support instrumentation and patching as done in the Linux kernel.</p>\n<p dir=\"auto\">I have a <a href=\"https://github.com/maurer/rust/tree/patchable-function-entries\">candidate implementation</a> and a <a href=\"https://github.com/rust-lang/compiler-team/issues/704\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/704/hovercard\">MCP</a> to cover just the compiler flag.</p>\n<p dir=\"auto\"><a href=\"https://github.com/maurer/rust-rfcs/blob/patchable-function-entry/text/3543-patchable-function-entry.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3543",
             "title": "RFC: patchable-function-entry",
-            "date_modified": "2024-01-31T15:50:09.000Z",
+            "date_modified": "2024-02-12T15:05:08.000Z",
             "date_published": "2023-12-12T22:26:47.000Z",
             "author": {
                 "name": "maurer",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "WaffleLapkin",
                 "url": "https://github.com/WaffleLapkin"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40109184?u=3b8c1fe0674113dbbb6d3a38f9a3efc70d2f5bb5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/98a175fe69e26a242bca0c4e72a176f5c5e1f584/text/3525-struct-target-feature.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3525",
+            "title": "Struct target features RFC",
+            "date_modified": "2023-12-21T13:54:26.000Z",
+            "date_published": "2023-11-12T14:09:10.000Z",
+            "author": {
+                "name": "sarah-ek",
+                "url": "https://github.com/sarah-ek"
             }
         }
     ]
