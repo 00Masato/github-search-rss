@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1080678?u=b6e211b7766e6aa01e794067f67dd65d419c0150&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Trilogy doesn't currently support prepared statements. The error that applications would see is a <code class=\"notranslate\">StatementInvalid</code> error. This doesn't quite point you to the fact this isn't supported. So raise a more appropriate error pointing to what to change.</p>",
-            "url": "https://github.com/rails/rails/pull/51072",
-            "title": "Raise error for Trilogy when `prepared_statements` is `true`",
-            "date_modified": "2024-02-13T19:47:54.000Z",
-            "date_published": "2024-02-13T19:23:59.000Z",
-            "author": {
-                "name": "eileencodes",
-                "url": "https://github.com/eileencodes"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8813886?u=ee98f4955f20293ff922bdc55d7ee1945e365fcb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Solving <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2132791988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51067\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51067/hovercard\" href=\"https://github.com/rails/rails/issues/51067\">#51067</a></p>\n<p dir=\"auto\">I'm only familiar with writing rails tests in rspec, I wrote a test after skimming the other syntax in the file but please let me know if there is a better way. <code class=\"notranslate\">record.reload</code> should raise an exception if the record was deleted by <code class=\"notranslate\">create_table</code> dropping the table.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2132791988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51067\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51067/hovercard\" href=\"https://github.com/rails/rails/issues/51067\">#51067</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">create_table</code> to ignore the <code class=\"notranslate\">force</code> option (which drops the table) if the <code class=\"notranslate\">if_not_exists</code> option is present</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">If you copy a <code class=\"notranslate\">create_table</code> migration from a schema dump and add the <code class=\"notranslate\">if_not_exists</code> guard but forget to remove <code class=\"notranslate\">force</code>, it will drop your table when you migrate it.</p>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51071",
             "title": "Fix #51067 create_table if_not_exists guard S prevent force drop_table",
@@ -86,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12214617?u=36443f71d6ba951652ddf7301ec814e605e0af64&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While I was reading the Debugging Rails Applications guide, this typo threw me off and I had to re-read it to understand the intended meaning, so it seems like it's worth fixing. One of the parameter names to the <code class=\"notranslate\">break</code> method in the debug gem was incorrect (badly copy/pasted, I think) in the guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">N/A</p>",
             "url": "https://github.com/rails/rails/pull/51064",
             "title": "Fix typo in Debugging Guide [ciskip]",
-            "date_modified": "2024-02-13T15:49:57.000Z",
+            "date_modified": "2024-02-13T20:37:46.000Z",
             "date_published": "2024-02-13T15:29:00.000Z",
             "author": {
                 "name": "mkasberg",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2082675602\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50759\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50759/hovercard\" href=\"https://github.com/rails/rails/issues/50759\">#50759</a></p>\n<p dir=\"auto\"><code class=\"notranslate\">./tools/rdoc-to-md -a --only=actioncable</code> to reproduce the results.</p>",
+            "url": "https://github.com/rails/rails/pull/51035",
+            "title": "Transform actioncable documentation to Markdown",
+            "date_modified": "2024-02-10T00:11:33.000Z",
+            "date_published": "2024-02-10T00:05:21.000Z",
+            "author": {
+                "name": "rafaelfranca",
+                "url": "https://github.com/rafaelfranca"
             }
         }
     ]
