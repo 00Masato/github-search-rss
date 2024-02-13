@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12214617?u=36443f71d6ba951652ddf7301ec814e605e0af64&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While I was reading the Debugging Rails Applications guide, this typo threw me off and I had to re-read it to understand the intended meaning, so it seems like it's worth fixing. One of the parameter names to the <code class=\"notranslate\">break</code> method in the debug gem was incorrect (badly copy/pasted, I think) in the guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">N/A</p>",
+            "url": "https://github.com/rails/rails/pull/51064",
+            "title": "Fix typo in Debugging Guide [ciskip]",
+            "date_modified": "2024-02-13T15:49:57.000Z",
+            "date_published": "2024-02-13T15:29:00.000Z",
+            "author": {
+                "name": "mkasberg",
+                "url": "https://github.com/mkasberg"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41361100?u=cd2a9b0270a884579970aa58d204befb6d0d9f86&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This pull request aims to reduce Docker build time within the Rails codebase by eliminating redundant operations. impacting development efficiency and productivity.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Previously individual layers within the Dockerfile installed some same dependencies repeatedly, causing redundancy and build time increase.</p>\n<p dir=\"auto\">This change:<br>\nMoves commonly used dependencies to the base layer of the Dockerfile.<br>\nOther layers now inherit these dependencies from the base layer, avoiding redundant installations.<br>\nThis approach leverages Docker's layering mechanism to ensure all layers have access to required dependencies while eliminating unnecessary repetition.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51063",
             "title": "Speedup Docker Build Time",
-            "date_modified": "2024-02-13T13:41:34.000Z",
+            "date_modified": "2024-02-13T15:19:23.000Z",
             "date_published": "2024-02-13T13:41:30.000Z",
             "author": {
                 "name": "anonychun",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58582?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067810728\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50606\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50606/hovercard\" href=\"https://github.com/rails/rails/pull/50606\">#50606</a></p>\n<p dir=\"auto\">Opening a PR because the patch didn't apply cleanly.</p>",
             "url": "https://github.com/rails/rails/pull/51061",
             "title": "Backport #50606 to 7-1-stable",
-            "date_modified": "2024-02-13T12:28:39.000Z",
+            "date_modified": "2024-02-13T15:35:52.000Z",
             "date_published": "2024-02-13T12:28:27.000Z",
             "author": {
                 "name": "maximerety",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "HeyNonster",
                 "url": "https://github.com/HeyNonster"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91577?u=33435d1886c47d8579ecb440d872811acbe72a2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Deprecate config.active_record.warn_on_records_fetched_greater_than setting in favor of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2102256404\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50887\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50887/hovercard\" href=\"https://github.com/rails/rails/pull/50887\">#50887</a>.</p>\n<p dir=\"auto\">The same functionality (and more) can now be achieved by subscribing to sql.active_record notifications:</p>\n<p dir=\"auto\"><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/91577/303223098-b6501bca-405c-417c-864d-b016b2db0abc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc4MzY4MDMsIm5iZiI6MTcwNzgzNjUwMywicGF0aCI6Ii85MTU3Ny8zMDMyMjMwOTgtYjY1MDFiY2EtNDA1Yy00MTdjLTg2NGQtYjAxNmIyZGIwYWJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjEzVDE1MDE0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc1ZjA5MGM4ZjY0MmNhZWNmODViZWI0MDliNGNjY2RmNTNjZTUxMGQ4MGRmNjBhMjYzMzUwOTc2YzA5OTJhMmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.q8_tZ_0eI7gDt-B4BSdNSUlFk6FQjwa1Qt7JoK41VJA\"><img src=\"https://private-user-images.githubusercontent.com/91577/303223098-b6501bca-405c-417c-864d-b016b2db0abc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc4MzY4MDMsIm5iZiI6MTcwNzgzNjUwMywicGF0aCI6Ii85MTU3Ny8zMDMyMjMwOTgtYjY1MDFiY2EtNDA1Yy00MTdjLTg2NGQtYjAxNmIyZGIwYWJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAyMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMjEzVDE1MDE0M1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc1ZjA5MGM4ZjY0MmNhZWNmODViZWI0MDliNGNjY2RmNTNjZTUxMGQ4MGRmNjBhMjYzMzUwOTc2YzA5OTJhMmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.q8_tZ_0eI7gDt-B4BSdNSUlFk6FQjwa1Qt7JoK41VJA\" alt=\"image\" style=\"max-width: 100%;\"></a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51007",
-            "title": "Deprecate config.active_record.warn_on_records_fetched_greater_than",
-            "date_modified": "2024-02-13T02:53:19.000Z",
-            "date_published": "2024-02-08T05:34:25.000Z",
-            "author": {
-                "name": "hundredwatt",
-                "url": "https://github.com/hundredwatt"
             }
         }
     ]
