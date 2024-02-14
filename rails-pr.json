@@ -6,21 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Extracted from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2088694143\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50793\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50793/hovercard\" href=\"https://github.com/rails/rails/pull/50793\">#50793</a></p>\n<p dir=\"auto\">The leased connection is yielded, and for the duration of the block, any call to <code class=\"notranslate\">ActiveRecord::Base.connection</code> will yield that same connection.</p>\n<p dir=\"auto\">This is useful to perform a few database operations without causing a connection to be leased for the entire duration of the request or job.</p>",
-            "url": "https://github.com/rails/rails/pull/51083",
-            "title": "Add `ActiveRecord::Base.with_connection` as a shortcut",
-            "date_modified": "2024-02-14T12:58:06.000Z",
-            "date_published": "2024-02-14T12:58:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41361100?u=cd2a9b0270a884579970aa58d204befb6d0d9f86&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Prevents conflicts by only setting LD_PRELOAD if it's not already defined, the script avoids potential issues with overriding existing values and ensures compatibility with other tools or libraries that might rely on specific LD_PRELOAD settings.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request proposes a change to the Docker entrypoint script in the Rails codebase to prevent potential issues with overriding the LD_PRELOAD environment variable if it's already set.</p>\n<p dir=\"auto\">The current script includes a line that sets LD_PRELOAD to include the path to libjemalloc.so.2 if the library exists. However, this approach doesn't consider the possibility that LD_PRELOAD might already be defined with other values for different purposes. In such cases, blindly appending libjemalloc.so.2 could lead to unexpected behavior or conflicts.</p>\n<p dir=\"auto\">To address this concern, the pull request introduces a modification that checks if LD_PRELOAD is already set before adding libjemalloc.so.2. This ensures that the existing value remains intact while still allowing the inclusion of jemalloc if it's not already present.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51084",
+            "title": "Dont override LD_PRELOAD value",
+            "date_modified": "2024-02-14T13:27:03.000Z",
+            "date_published": "2024-02-14T13:26:59.000Z",
             "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
+                "name": "anonychun",
+                "url": "https://github.com/anonychun"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><del>Debugging why a CI job get stuck is particularly painful as the output doesn't contain any information whatsoever.</del></p>\n<p dir=\"auto\"><del>By enabling <code class=\"notranslate\">--verbose</code> we ensure the last line of the CI job is the name of the test that got stuck, helping debug.</del></p>\n<p dir=\"auto\">Similarly, it's hard to figure out why a particular job is slow, so enabling <code class=\"notranslate\">--profile</code> would make it easy to spot some low hanging fruits to improve CI speed.</p>\n<p dir=\"auto\">Edit: <code class=\"notranslate\">--verbose</code> is a bit too much, so leaving it out for now.</p>",
             "url": "https://github.com/rails/rails/pull/51080",
             "title": "Run tests with `--profile` on CI",
-            "date_modified": "2024-02-14T12:42:31.000Z",
+            "date_modified": "2024-02-14T13:18:21.000Z",
             "date_published": "2024-02-14T10:30:08.000Z",
             "author": {
                 "name": "casperisfine",
