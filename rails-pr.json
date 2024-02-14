@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Another refactoring in relation to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2088694143\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50793\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50793/hovercard\" href=\"https://github.com/rails/rails/pull/50793\">#50793</a> but it makes sense even without it.</p>\n<p dir=\"auto\">Also ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1799258482\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48716\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48716/hovercard\" href=\"https://github.com/rails/rails/pull/48716\">#48716</a></p>\n<p dir=\"auto\">Rather than each connection having its own <code class=\"notranslate\">BoundSchemaReflection</code>, we can instead have <code class=\"notranslate\">BoundSchemaReflection</code> hold a <code class=\"notranslate\">ConnectionPool</code>, from which it can checkout a connection to perform queries when needed.</p>\n<p dir=\"auto\">If the current thread already leased a connection, it will be used.</p>\n<p dir=\"auto\">This simplifies the interface quite a bit.</p>",
+            "url": "https://github.com/rails/rails/pull/51091",
+            "title": "Refactor SchemaCache to hold a ConnectionPool",
+            "date_modified": "2024-02-14T18:51:46.000Z",
+            "date_published": "2024-02-14T18:18:09.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><del>Debugging why a CI job get stuck is particularly painful as the output doesn't contain any information whatsoever.</del></p>\n<p dir=\"auto\"><del>By enabling <code class=\"notranslate\">--verbose</code> we ensure the last line of the CI job is the name of the test that got stuck, helping debug.</del></p>\n<p dir=\"auto\">Similarly, it's hard to figure out why a particular job is slow, so enabling <code class=\"notranslate\">--profile</code> would make it easy to spot some low hanging fruits to improve CI speed.</p>\n<p dir=\"auto\">Edit: <code class=\"notranslate\">--verbose</code> is a bit too much, so leaving it out for now.</p>",
             "url": "https://github.com/rails/rails/pull/51080",
             "title": "Run tests with `--profile` on CI",
@@ -58,17 +69,6 @@
             "author": {
                 "name": "malomalo",
                 "url": "https://github.com/malomalo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12214617?u=36443f71d6ba951652ddf7301ec814e605e0af64&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While I was reading the Debugging Rails Applications guide, this typo threw me off and I had to re-read it to understand the intended meaning, so it seems like it's worth fixing. One of the parameter names to the <code class=\"notranslate\">break</code> method in the debug gem was incorrect (badly copy/pasted, I think) in the guide.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">N/A</p>",
-            "url": "https://github.com/rails/rails/pull/51064",
-            "title": "Fix typo in Debugging Guide [ciskip]",
-            "date_modified": "2024-02-13T20:37:46.000Z",
-            "date_published": "2024-02-13T15:29:00.000Z",
-            "author": {
-                "name": "mkasberg",
-                "url": "https://github.com/mkasberg"
             }
         },
         {
