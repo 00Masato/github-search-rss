@@ -138,17 +138,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19203626?u=e9d0dc7269240fa39ab2e382b47f1615c8487925&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As seen in <a href=\"https://buildkite.com/rails/rails/builds/104749#018d92dc-79b9-42bc-9a8c-bbcf5681f9eb/1165-1176\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/104749#018d92dc-79b9-42bc-9a8c-bbcf5681f9eb/1165-1176</a> breakOnWarning does not seem to be a valid option for Rollup and causes a Warning <code class=\"notranslate\">Unknown input options: breakOnWarning.</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I cannot find the option in the official <a href=\"https://rollupjs.org/configuration-options/\" rel=\"nofollow\">documentation,</a> and therefore I think it can safely be removed</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51040",
-            "title": "remove unknown rollup input option breakOnWarning",
-            "date_modified": "2024-02-10T13:10:32.000Z",
-            "date_published": "2024-02-10T13:10:16.000Z",
-            "author": {
-                "name": "hendrixfan",
-                "url": "https://github.com/hendrixfan"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Trying to debug <code class=\"notranslate\">reaper_test.rb</code>.</p>",
             "url": "https://github.com/rails/rails/pull/51038",
             "title": "Debug CI flaky test",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1966473?u=fe117732163d3610f051fca80df4e04c1b91335d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Overview</h2>\n<p dir=\"auto\">Add documentation related to <code class=\"notranslate\">perform_all_later</code> for bulk enqueuing jobs.</p>\n<h2 dir=\"auto\">Testing</h2>\n<p dir=\"auto\">Tested the new method in-app using sidekiq locally. Also tested documentation by running <code class=\"notranslate\">guides:generate</code>, <code class=\"notranslate\">guides:validate</code> and <code class=\"notranslate\">guides:lint</code> locally.</p>",
+            "url": "https://github.com/rails/rails/pull/51004",
+            "title": "[RF DOCS] Add documentation for `perform_all_later` to Active Job Basics guide [ci-skip]",
+            "date_modified": "2024-02-10T00:28:00.000Z",
+            "date_published": "2024-02-07T19:27:15.000Z",
+            "author": {
+                "name": "bhumi1102",
+                "url": "https://github.com/bhumi1102"
             }
         }
     ]
