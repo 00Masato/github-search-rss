@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Debugging why a CI job get stuck is particularly painful as the output doesn't contain any information whatsoever.</p>\n<p dir=\"auto\">By enabling <code class=\"notranslate\">--verbose</code> we ensure the last line of the CI job is the name of the test that got stuck, helping debug.</p>\n<p dir=\"auto\">Similarly, it's hard to figure out why a particular job is slow, so enabling <code class=\"notranslate\">--profile</code> would make it easy to spot some low hanging fruits to improve CI speed.</p>",
+            "url": "https://github.com/rails/rails/pull/51080",
+            "title": "Run tests with `--verbose` and `--profile` on CI",
+            "date_modified": "2024-02-14T10:59:02.000Z",
+            "date_published": "2024-02-14T10:30:08.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60958871?u=6bb040ef46f49caf975a7d884ff0951b56134008&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><strong>Motivation / Background</strong><br>\nCurrently, the <code class=\"notranslate\">where.associated</code> method in Rails allows filtering associated records but only with an inner join. This Pull Request aims to enhance <code class=\"notranslate\">where.associated</code> by supporting additional join types, namely <code class=\"notranslate\">joins, left_joins and left_outer_joins</code></p>\n<p dir=\"auto\"><code class=\"notranslate\">Post.where.associated(join_type: :left_joins, :author)</code></p>\n<p dir=\"auto\">This will provide developers with increased flexibility when querying associated data. It enables scenarios like:</p>\n<p dir=\"auto\">Fetching posts with authors, even if some posts have no author assigned. (left_joins)<br>\nRetrieving comments associated with specific users, including orphaned comments without a user. (using multiple joins with different types).</p>\n<p dir=\"auto\"><strong>Detail</strong><br>\nThis Pull Request proposes modifications to:</p>\n<p dir=\"auto\">Extend <code class=\"notranslate\">where.associated</code> to accept a <code class=\"notranslate\">join_type</code> argument along with the association names.<br>\nImplement logic for handling different join types.</p>\n<p dir=\"auto\"><strong>Additional Information</strong><br>\nThis change aligns with common needs expressed by Rails developers on forums and discussions. Similar functionality exists in some popular ORM extensions, demonstrating its usefulness. The implementation strives to maintain clarity and consistency within the existing codebase.</p>\n<p dir=\"auto\">Note: This is a draft description and should be adapted to your specific implementation details and the project's context.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51078",
             "title": "Add support join types in where.associated method",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "HeyNonster",
                 "url": "https://github.com/HeyNonster"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">For example, if you run <code class=\"notranslate\">rails test test/models/usr_tsst.rb</code> and the file does not exist, Rails will suggest <code class=\"notranslate\">test/models/users_test.rb</code> as a possible file.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Could not load test file: test/models/usr_tsst.rb. Did you mean? test/models/user_test.rb\"><pre class=\"notranslate\"><code class=\"notranslate\">Could not load test file: test/models/usr_tsst.rb. Did you mean? test/models/user_test.rb\n</code></pre></div>\n<p dir=\"auto\">After investigating <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2119751080\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50978\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50978/hovercard\" href=\"https://github.com/rails/rails/pull/50978\">#50978</a>, I was inspired to add this feature to Rails.</p>\n<p dir=\"auto\">Credit to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tenderlove/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tenderlove\">@tenderlove</a> for the minitest implementation.</p>",
-            "url": "https://github.com/rails/rails/pull/51005",
-            "title": "Rails test command suggests similar test files when the given file is not found",
-            "date_modified": "2024-02-13T23:09:35.000Z",
-            "date_published": "2024-02-08T00:58:58.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
