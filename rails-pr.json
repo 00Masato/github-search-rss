@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><del>Debugging why a CI job get stuck is particularly painful as the output doesn't contain any information whatsoever.</del></p>\n<p dir=\"auto\"><del>By enabling <code class=\"notranslate\">--verbose</code> we ensure the last line of the CI job is the name of the test that got stuck, helping debug.</del></p>\n<p dir=\"auto\">Similarly, it's hard to figure out why a particular job is slow, so enabling <code class=\"notranslate\">--profile</code> would make it easy to spot some low hanging fruits to improve CI speed.</p>\n<p dir=\"auto\">Edit: <code class=\"notranslate\">--verbose</code> is a bit too much, so leaving it out for now.</p>",
             "url": "https://github.com/rails/rails/pull/51080",
             "title": "Run tests with `--profile` on CI",
-            "date_modified": "2024-02-14T13:18:21.000Z",
+            "date_modified": "2024-02-14T21:57:13.000Z",
             "date_published": "2024-02-14T10:30:08.000Z",
             "author": {
                 "name": "casperisfine",
@@ -69,17 +69,6 @@
             "author": {
                 "name": "malomalo",
                 "url": "https://github.com/malomalo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://60ed10f7.zzak-rails.pages.dev/\" rel=\"nofollow\">Example deploy</a> made with <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2131421226\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/buildkite-config/issues/89\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/buildkite-config/pull/89/hovercard\" href=\"https://github.com/rails/buildkite-config/pull/89\">rails/buildkite-config#89</a></p>",
-            "url": "https://github.com/rails/rails/pull/51055",
-            "title": "Add preview_docs rake task for generating API and Guides static site",
-            "date_modified": "2024-02-13T04:05:56.000Z",
-            "date_published": "2024-02-13T03:56:04.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1966473?u=fe117732163d3610f051fca80df4e04c1b91335d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Overview</h2>\n<p dir=\"auto\">Add documentation related to <code class=\"notranslate\">perform_all_later</code> for bulk enqueuing jobs.</p>\n<h2 dir=\"auto\">Testing</h2>\n<p dir=\"auto\">Tested the new method in-app using sidekiq locally. Also tested documentation by running <code class=\"notranslate\">guides:generate</code>, <code class=\"notranslate\">guides:validate</code> and <code class=\"notranslate\">guides:lint</code> locally.</p>",
+            "url": "https://github.com/rails/rails/pull/51004",
+            "title": "[RF DOCS] Add documentation for `perform_all_later` to Active Job Basics guide [ci-skip]",
+            "date_modified": "2024-02-10T00:28:00.000Z",
+            "date_published": "2024-02-07T19:27:15.000Z",
+            "author": {
+                "name": "bhumi1102",
+                "url": "https://github.com/bhumi1102"
             }
         }
     ]
