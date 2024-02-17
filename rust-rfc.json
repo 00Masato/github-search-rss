@@ -39,17 +39,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pointers (this includes values of reference type) in Rust have <strong>two</strong> components.</p>\n<ul dir=\"auto\">\n<li>The pointer's \"address\" says where in memory the pointer is currently pointing.</li>\n<li>The pointer's \"provenance\" says where and when the pointer is allowed to access memory.</li>\n</ul>\n<p dir=\"auto\">(This is disregarding any \"metadata\" that may come with wide pointers, it only talks about thin pointers / the data part of a wide pointer.)</p>\n<p dir=\"auto\">Whether a memory access with a given pointer causes undefined behavior (UB) depends on both the address and the provenance:<br>\nthe same address may be fine to access with one provenance, and UB to access with another provenance.</p>\n<p dir=\"auto\">In contrast, integers do <strong>not</strong> have a provenance component.</p>\n<p dir=\"auto\">Most of the rest of the details, such as a specific provenance model, are intentionally left unspecified.</p>\n<p dir=\"auto\">This RFC very deliberately aims to be as <strong>minimal</strong> as possible, to just get the entire Rust Project on the \"same page\" about the long-term future development of the language.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/provenance/text/0000-rust-has-provenance.md\">Rendered</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rust/issues/121243\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/121243/hovercard\">Tracking issue</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3559",
-            "title": "RFC: Rust Has Provenance",
-            "date_modified": "2024-02-17T20:00:54.000Z",
-            "date_published": "2024-01-25T09:00:23.000Z",
-            "author": {
-                "name": "RalfJung",
-                "url": "https://github.com/RalfJung"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60669983?u=31e825708e6f1782c6b09a99405bd5b7f4d78ee2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR proposes the creation of an external stand-alone test suite and associated tools for verifying the Rust toolchain that also fits into existing Rust development workflows.</p>\n<p dir=\"auto\"><a href=\"https://github.com/kirtchev-adacore/kirtchev-adacore-rust-lang-rfcs/blob/wip/add-out-of-tree-test-suite-rfc/text/3557-out-of-tree-test-suite.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3557",
             "title": "RFC: Out-of-tree test suite",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "adetaylor",
                 "url": "https://github.com/adetaylor"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds a special attribute <code class=\"notranslate\">#[should_move]</code> that can be applied to function arguments which implement <code class=\"notranslate\">Copy</code>. This allows \"opting into\" move semantics for types that implement <code class=\"notranslate\">Copy</code> to avoid mistakes.</p>\n<p dir=\"auto\">This is marked as an \"experimental\" RFC since the end goal of this feature, allowing API authors to implement <code class=\"notranslate\">Copy</code> without fear of causing bugs, may not actually be achieved by the feature as described alone. A follow-up RFC will likely be written for the final version of this attribute if it ends up being substantially different than the one described.</p>\n<p dir=\"auto\">A good benchmark for when this feature is good enough is being able to implement <code class=\"notranslate\">Copy</code> for standard library iterators (like the <code class=\"notranslate\">Range</code> types) and to retire the <code class=\"notranslate\">clippy::copy_iterator</code> lint for good.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/pls-no-copy/text/0000-pls-no-copy.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3518",
+            "title": "eRFC: `#[should_move]` attribute for per-function opting out of `Copy` semantics",
+            "date_modified": "2023-10-29T18:15:04.000Z",
+            "date_published": "2023-10-21T19:05:37.000Z",
+            "author": {
+                "name": "clarfonthey",
+                "url": "https://github.com/clarfonthey"
             }
         }
     ]
