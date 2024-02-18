@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2467194?u=300b3913e0e77f925f7116f4830098725a03629f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This updates the text of RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1931329319\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3509\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3509/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3509\">#3509</a> with <a href=\"https://github.com/rust-lang/rfcs/pull/3509#discussion_r1463621319\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3509/hovercard\">this</a> and <a href=\"https://github.com/rust-lang/rfcs/pull/3509#discussion_r1463631711\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3509/hovercard\">this</a> suggestion from review. Thanks!</p>\n<p dir=\"auto\"><a href=\"https://github.com/yoshuawuyts/rfcs/blob/update-future-prelude-rfc/text/3509-prelude-2024-future.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3574",
+            "title": "update future prelude RFC with feedback from review",
+            "date_modified": "2024-02-18T01:51:26.000Z",
+            "date_published": "2024-02-18T01:51:24.000Z",
+            "author": {
+                "name": "yoshuawuyts",
+                "url": "https://github.com/yoshuawuyts"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce an <code class=\"notranslate\">is</code> operator in Rust 2024, to test if an expression matches a<br>\npattern and bind the variables in the pattern. This is in <em>addition</em> to<br>\n<code class=\"notranslate\">let</code>-chaining; this RFC proposes that we allow both <code class=\"notranslate\">let</code>-chaining <em>and</em> the<br>\n<code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">Previous discussions around <code class=\"notranslate\">let</code>-chains have treated the <code class=\"notranslate\">is</code> operator as an<br>\nalternative on the basis that they serve similar functions, rather than<br>\nproposing that they can and should coexist. This RFC proposes that we allow<br>\n<code class=\"notranslate\">let</code>-chaining <em>and</em> add the <code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">is</code> operator allows developers to chain multiple matching-and-binding<br>\noperations and simplify what would otherwise require complex nested<br>\nconditionals. The <code class=\"notranslate\">is</code> operator allows writing and reading a pattern match from<br>\nleft-to-right, which reads more naturally in many circumstances. For instance,<br>\nconsider an expression like <code class=\"notranslate\">x is Some(y) &amp;&amp; y &gt; 5</code>; that boolean expression<br>\nreads more naturally from left-to-right than <code class=\"notranslate\">let Some(y) = x &amp;&amp; y &gt; 5</code>.</p>\n<p dir=\"auto\">This is even more true at the end of a longer expression chain, such as<br>\n<code class=\"notranslate\">x.method()?.another_method().await? is Some(y)</code>. Rust method chaining and <code class=\"notranslate\">?</code><br>\nand <code class=\"notranslate\">.await</code> all encourage writing code that reads in operation order from left<br>\nto right, and <code class=\"notranslate\">is</code> fits naturally at the end of such a sequence.</p>\n<p dir=\"auto\">Having an <code class=\"notranslate\">is</code> operator would also help to reduce the demand for methods on<br>\ntypes such as <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> (e.g. <code class=\"notranslate\">Option::is_some_and</code> and<br>\n<code class=\"notranslate\">Result::is_ok_and</code> and <code class=\"notranslate\">Result::is_err_and</code>), by allowing prospective users of<br>\nthose methods to write a natural-looking condition using <code class=\"notranslate\">is</code> instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/is/text/3573-is.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3573",
             "title": "`is` operator for pattern-matching and binding",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adetaylor",
                 "url": "https://github.com/adetaylor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds a special attribute <code class=\"notranslate\">#[should_move]</code> that can be applied to function arguments which implement <code class=\"notranslate\">Copy</code>. This allows \"opting into\" move semantics for types that implement <code class=\"notranslate\">Copy</code> to avoid mistakes.</p>\n<p dir=\"auto\">This is marked as an \"experimental\" RFC since the end goal of this feature, allowing API authors to implement <code class=\"notranslate\">Copy</code> without fear of causing bugs, may not actually be achieved by the feature as described alone. A follow-up RFC will likely be written for the final version of this attribute if it ends up being substantially different than the one described.</p>\n<p dir=\"auto\">A good benchmark for when this feature is good enough is being able to implement <code class=\"notranslate\">Copy</code> for standard library iterators (like the <code class=\"notranslate\">Range</code> types) and to retire the <code class=\"notranslate\">clippy::copy_iterator</code> lint for good.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/pls-no-copy/text/0000-pls-no-copy.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3518",
-            "title": "eRFC: `#[should_move]` attribute for per-function opting out of `Copy` semantics",
-            "date_modified": "2023-10-29T18:15:04.000Z",
-            "date_published": "2023-10-21T19:05:37.000Z",
-            "author": {
-                "name": "clarfonthey",
-                "url": "https://github.com/clarfonthey"
             }
         }
     ]
