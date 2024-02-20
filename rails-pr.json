@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4252?u=73373e114f50427ad4d8bc42f6a3516d2403819d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Offenses:\n\ntest/application_system_test_case.rb:9:49: C: [Correctable] Style/TrailingCommaInHashLiteral: Avoid comma after the last item of a hash.\n      url: &quot;http://#{ENV[&quot;SELENIUM_HOST&quot;]}:4444&quot;,\"><pre class=\"notranslate\"><code class=\"notranslate\">Offenses:\n\ntest/application_system_test_case.rb:9:49: C: [Correctable] Style/TrailingCommaInHashLiteral: Avoid comma after the last item of a hash.\n      url: \"http://#{ENV[\"SELENIUM_HOST\"]}:4444\",\n</code></pre></div>",
             "url": "https://github.com/rails/rails/pull/51141",
             "title": "Fix linting error for generated system test case.",
-            "date_modified": "2024-02-20T13:44:25.000Z",
+            "date_modified": "2024-02-20T16:11:03.000Z",
             "date_published": "2024-02-20T13:44:21.000Z",
             "author": {
                 "name": "peterberkenbosch",
@@ -69,17 +69,6 @@
             "author": {
                 "name": "viktorianer",
                 "url": "https://github.com/viktorianer"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7190681?u=2d6f050dc3d66da04d8df3fb62ed1df570bca4ee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Must specify <code class=\"notranslate\">account</code> parameter because of the association defined in <code class=\"notranslate\">Entry</code>.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because I believe (at least based on my testing) that the example of creating an Entry using the delegated type is incorrect because it is missing a parameter. In the example, the <code class=\"notranslate\">Entry</code> model has a <code class=\"notranslate\">belongs_to :account</code> association declared, however the example of creating an Entry with a Comment <code class=\"notranslate\">Entry.create! entryable: Comment.new(content: \"Hello!\"), creator: Current.user</code> provides a Creator but no Account. The factory models below that example also require modification.</p>\n<p dir=\"auto\">Appreciate this may have been written this way for specific reasons, or I maybe incorrect in my understanding. I do think most lesser-experienced developers (myself included) appreciate when provided examples more-or-less work as defined (i.e. can be copied and pasted in the console and work without modification).</p>\n<p dir=\"auto\">Thanks!</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Include the <code class=\"notranslate\">account</code> kwarg in the <code class=\"notranslate\">Entry.create!</code> example</li>\n<li>Include the <code class=\"notranslate\">account</code> kwarg in the <code class=\"notranslate\">Entry::create_with_comment</code> example.</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Changes that are unrelated should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51133",
-            "title": "Fix delegated type example [ci skip]",
-            "date_modified": "2024-02-20T04:53:53.000Z",
-            "date_published": "2024-02-20T04:53:38.000Z",
-            "author": {
-                "name": "johnpitchko",
-                "url": "https://github.com/johnpitchko"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1870707368\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49072\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49072/hovercard\" href=\"https://github.com/rails/rails/pull/49072\">#49072</a> allowed you to turn <code class=\"notranslate\">support_unencrypted_data</code> on a global level, then turn it off for specific attributes. But it didn't allow the inverse: you couldn't turn the config off globally, and then turn it on for a specific attribute.</p>\n<p dir=\"auto\">This PR adds support for that, which should make the setting's behaviour less surprising.</p>",
+            "url": "https://github.com/rails/rails/pull/51100",
+            "title": "Encryption: allow turning on `support_unencrypted_data` at a per-attribute level",
+            "date_modified": "2024-02-16T05:59:34.000Z",
+            "date_published": "2024-02-16T05:58:33.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
             }
         }
     ]
