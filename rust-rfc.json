@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I know we usually don't edit accepted RFCs, but this one is a pretty useful resource and collection of links right now (and it's been accepted very recently) so it seems worth the effort.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/provenance-upd/text/3559-rust-has-provenance.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3580",
+            "title": "provenance RFC: add link to alternative LLVM proposal",
+            "date_modified": "2024-03-01T07:16:42.000Z",
+            "date_published": "2024-03-01T07:15:35.000Z",
+            "author": {
+                "name": "RalfJung",
+                "url": "https://github.com/RalfJung"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/123987141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is the first of a series for a PKI model for Rust; includes the design and implementation for a PKI CA and a resilient Quorum model for the project to implement, and next steps for signing across the project. Crate and release signing will follow in a subsequent separate RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/walterhpearce/rfcs/blob/master/text/3579-pki.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3579",
             "title": "Public Key Infrastructure for Rust Project",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce an <code class=\"notranslate\">is</code> operator in Rust 2024, to test if an expression matches a<br>\npattern and bind the variables in the pattern. This is in <em>addition</em> to<br>\n<code class=\"notranslate\">let</code>-chaining; this RFC proposes that we allow both <code class=\"notranslate\">let</code>-chaining <em>and</em> the<br>\n<code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">Previous discussions around <code class=\"notranslate\">let</code>-chains have treated the <code class=\"notranslate\">is</code> operator as an<br>\nalternative on the basis that they serve similar functions, rather than<br>\nproposing that they can and should coexist. This RFC proposes that we allow<br>\n<code class=\"notranslate\">let</code>-chaining <em>and</em> add the <code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">is</code> operator allows developers to chain multiple matching-and-binding<br>\noperations and simplify what would otherwise require complex nested<br>\nconditionals. The <code class=\"notranslate\">is</code> operator allows writing and reading a pattern match from<br>\nleft-to-right, which reads more naturally in many circumstances. For instance,<br>\nconsider an expression like <code class=\"notranslate\">x is Some(y) &amp;&amp; y &gt; 5</code>; that boolean expression<br>\nreads more naturally from left-to-right than <code class=\"notranslate\">let Some(y) = x &amp;&amp; y &gt; 5</code>.</p>\n<p dir=\"auto\">This is even more true at the end of a longer expression chain, such as<br>\n<code class=\"notranslate\">x.method()?.another_method().await? is Some(y)</code>. Rust method chaining and <code class=\"notranslate\">?</code><br>\nand <code class=\"notranslate\">.await</code> all encourage writing code that reads in operation order from left<br>\nto right, and <code class=\"notranslate\">is</code> fits naturally at the end of such a sequence.</p>\n<p dir=\"auto\">Having an <code class=\"notranslate\">is</code> operator would also help to reduce the demand for methods on<br>\ntypes such as <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> (e.g. <code class=\"notranslate\">Option::is_some_and</code> and<br>\n<code class=\"notranslate\">Result::is_ok_and</code> and <code class=\"notranslate\">Result::is_err_and</code>), by allowing prospective users of<br>\nthose methods to write a natural-looking condition using <code class=\"notranslate\">is</code> instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/is/text/3573-is.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3573",
             "title": "`is` operator for pattern-matching and binding",
-            "date_modified": "2024-03-01T06:25:24.000Z",
+            "date_modified": "2024-03-01T07:22:34.000Z",
             "date_published": "2024-02-16T11:43:05.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "sarah-ek",
                 "url": "https://github.com/sarah-ek"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/145740?u=c075676a94db020428cf67bc832a006f1f9d8410&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR suggests small changes to the existing unstable \"aribtrary self types\" feature to make it more flexible. In particular, it suggests driving this feature from a new (ish) <code class=\"notranslate\">Receiver</code> trait instead of from <code class=\"notranslate\">Deref</code>, but to maintain compatibility by having a blanket implementation for all <code class=\"notranslate\">Deref</code> types.</p>\n<p dir=\"auto\">This is a squashed commit of many edits by various folks including <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Urhengulas/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Urhengulas\">@Urhengulas</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Veykril/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Veykril\">@Veykril</a> , <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/madsmtm/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/madsmtm\">@madsmtm</a> and myself. Thanks also to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/davidhewitt/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/davidhewitt\">@davidhewitt</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Manishearth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Manishearth\">@Manishearth</a> and many folks over on Zulip for feedback.</p>\n<p dir=\"auto\"><a href=\"https://github.com/adetaylor/rfcs/blob/arbitrary-self-types-v2/text/3519-arbitrary-self-types-v2.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3519",
-            "title": "Arbitrary self types v2",
-            "date_modified": "2024-02-24T16:24:20.000Z",
-            "date_published": "2023-11-01T18:11:19.000Z",
-            "author": {
-                "name": "adetaylor",
-                "url": "https://github.com/adetaylor"
             }
         }
     ]
