@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134899215?u=dbd15740f37368d3f8c3e2b97554c3791b1eae8a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pengqiseven/rfcs/blob/master/text/0458-send-improvements.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3584",
+            "title": "remove repetitive words",
+            "date_modified": "2024-03-10T03:33:46.000Z",
+            "date_published": "2024-03-10T03:33:44.000Z",
+            "author": {
+                "name": "pengqiseven",
+                "url": "https://github.com/pengqiseven"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134893?u=940724c499b98313ee519a69a725d26908685e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The existing RFC does not give sufficient attention to parametrized types and traits.</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/dhardy/rfcs/blob/revise-nonlocal-defns/text/3373-avoid-nonlocal-definitions-in-fns.md\">Rendered</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3373#issuecomment-1975065275\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3373/hovercard\">Original RFC</a></li>\n<li><a href=\"https://github.com/rust-lang/rust/issues/120363\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/120363/hovercard\">Tracking issue</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3581",
             "title": "Update non-local-defns regarding parameterized traits and types",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "dtolnay",
                 "url": "https://github.com/dtolnay"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38225716?u=83b61e79cd926e97b75668e0967f814fb91cd22d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to forbid function -&gt; integer <code class=\"notranslate\">as</code> casts, since they have surprising aspects and are error prone.</p>\n<p dir=\"auto\"><a href=\"https://github.com/WaffleLapkin/rfcs/blob/forbidden-function-casts/text/3521-forbidden-function-casts.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3526",
-            "title": " Add forbidden function casts RFC",
-            "date_modified": "2024-01-22T19:00:29.000Z",
-            "date_published": "2023-11-12T20:15:21.000Z",
-            "author": {
-                "name": "WaffleLapkin",
-                "url": "https://github.com/WaffleLapkin"
             }
         }
     ]
