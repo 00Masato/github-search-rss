@@ -6,6 +6,17 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/826219?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fully portable &amp; lightweight ZIM reader in Javascript</div>",
+            "url": "https://github.com/kiwix/kiwix-js",
+            "title": "kiwix/kiwix-js: Fully portable & lightweight ZIM reader in Javascript",
+            "date_modified": "2024-03-10T09:12:27.000Z",
+            "date_published": "2012-12-08T18:34:41.000Z",
+            "author": {
+                "name": "kiwix",
+                "url": "https://github.com/kiwix"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44894906?u=d56a271a246486d266de6864deded59d201676a4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is a lightweight rich text editor that allows the user to make a high degree of customization of the editor's behavior.</div>",
             "url": "https://github.com/EmptyDreams/krich",
             "title": "EmptyDreams/krich: This is a lightweight rich text editor that allows the user to make a high degree of customization of the editor's behavior.",
@@ -14,6 +25,50 @@
             "author": {
                 "name": "EmptyDreams",
                 "url": "https://github.com/EmptyDreams"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17500430?u=24ff06a935acf56fe06678874e2b297debb66fac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight cross-platform javascript module to easily call java from node sources. Automatically install java if not present</div>",
+            "url": "https://github.com/nvuillam/node-java-caller",
+            "title": "nvuillam/node-java-caller: Lightweight cross-platform javascript module to easily call java from node sources. Automatically install java if not present",
+            "date_modified": "2024-03-02T20:03:41.000Z",
+            "date_published": "2020-08-09T08:51:14.000Z",
+            "author": {
+                "name": "nvuillam",
+                "url": "https://github.com/nvuillam"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37080003?u=d76b1e4c9c612b13736e29de84c209f28927c94a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>CMless is a lightweight headless Content Management System</div>",
+            "url": "https://github.com/Ahmedsaed/cmless",
+            "title": "Ahmedsaed/cmless: CMless is a lightweight headless Content Management System",
+            "date_modified": "2024-02-20T18:03:58.000Z",
+            "date_published": "2024-02-20T13:42:18.000Z",
+            "author": {
+                "name": "Ahmedsaed",
+                "url": "https://github.com/Ahmedsaed"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/65926741?u=7282b6934f358a2fb159335e22018473b2e760fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Node.js wrapper for the PokéAPI with built-in types.</div>",
+            "url": "https://github.com/Gabb-c/pokenode-ts",
+            "title": "Gabb-c/pokenode-ts: A lightweight Node.js wrapper for the PokéAPI with built-in types.",
+            "date_modified": "2024-03-08T18:50:13.000Z",
+            "date_published": "2021-04-24T00:09:42.000Z",
+            "author": {
+                "name": "Gabb-c",
+                "url": "https://github.com/Gabb-c"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22725193?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight browser digital audio workstation based on Tone.js</div>",
+            "url": "https://github.com/merkwur/ohrwurm.io_the-alchemist-den",
+            "title": "merkwur/ohrwurm.io_the-alchemist-den: lightweight browser digital audio workstation based on Tone.js",
+            "date_modified": "2024-03-02T08:57:43.000Z",
+            "date_published": "2024-01-31T17:13:45.000Z",
+            "author": {
+                "name": "merkwur",
+                "url": "https://github.com/merkwur"
             }
         },
         {
@@ -28,6 +83,17 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162686413?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and versatile String Utility Package for Node.js &amp; Browser.</div>",
+            "url": "https://github.com/full-pack/string-pack",
+            "title": "full-pack/string-pack: A lightweight and versatile String Utility Package for Node.js & Browser.",
+            "date_modified": "2024-03-08T11:23:55.000Z",
+            "date_published": "2024-03-08T11:17:17.000Z",
+            "author": {
+                "name": "full-pack",
+                "url": "https://github.com/full-pack"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94903799?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Node.js package for scheduling tasks at specific intervals</div>",
             "url": "https://github.com/Makar2212/supersimpltaskschedulerbyantoniuk",
             "title": "Makar2212/supersimpltaskschedulerbyantoniuk: A lightweight Node.js package for scheduling tasks at specific intervals",
@@ -36,17 +102,6 @@
             "author": {
                 "name": "Makar2212",
                 "url": "https://github.com/Makar2212"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37080003?u=d76b1e4c9c612b13736e29de84c209f28927c94a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>CMless is a lightweight headless Content Management System</div>",
-            "url": "https://github.com/Ahmedsaed/cmless",
-            "title": "Ahmedsaed/cmless: CMless is a lightweight headless Content Management System",
-            "date_modified": "2024-02-20T18:03:58.000Z",
-            "date_published": "2024-02-20T13:42:18.000Z",
-            "author": {
-                "name": "Ahmedsaed",
-                "url": "https://github.com/Ahmedsaed"
             }
         },
         {
@@ -116,17 +171,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22725193?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>lightweight browser digital audio workstation based on Tone.js</div>",
-            "url": "https://github.com/merkwur/ohrwurm.io_the-alchemist-den",
-            "title": "merkwur/ohrwurm.io_the-alchemist-den: lightweight browser digital audio workstation based on Tone.js",
-            "date_modified": "2024-03-02T08:57:43.000Z",
-            "date_published": "2024-01-31T17:13:45.000Z",
-            "author": {
-                "name": "merkwur",
-                "url": "https://github.com/merkwur"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75273648?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>jSuites is a collection of lightweight common required javascript web components. It is composed of fully responsive vanilla plugins to help you bring the best user experience to your projects, independent of the platform. Same JS codebase across different platforms.</div>",
             "url": "https://github.com/jsuites/jsuites",
             "title": "jsuites/jsuites: jSuites is a collection of lightweight common required javascript web components. It is composed of fully responsive vanilla plugins to help you bring the best user experience to your projects, independent of the platform. Same JS codebase across different platforms.",
@@ -152,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/138402195?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, lightweight, and powerful TypeScript framework for building alt:V servers.</div>",
             "url": "https://github.com/altv-mango/altv-mango",
             "title": "altv-mango/altv-mango: A simple, lightweight, and powerful TypeScript framework for building alt:V servers.",
-            "date_modified": "2024-02-24T07:25:43.000Z",
+            "date_modified": "2024-03-10T13:13:20.000Z",
             "date_published": "2024-02-24T07:21:19.000Z",
             "author": {
                 "name": "altv-mango",
@@ -179,50 +223,6 @@
             "author": {
                 "name": "ACP-CODE",
                 "url": "https://github.com/ACP-CODE"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11049203?u=e4a5e5572ccbca0825f474e0606436717cc9156e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and user-friendly Node.js ORM module for MySQL databases. Inspired by Eloquent in Laravel.</div>",
-            "url": "https://github.com/uziins/letsql",
-            "title": "uziins/letsql: A lightweight and user-friendly Node.js ORM module for MySQL databases. Inspired by Eloquent in Laravel.",
-            "date_modified": "2024-03-09T14:26:03.000Z",
-            "date_published": "2024-03-09T14:25:19.000Z",
-            "author": {
-                "name": "uziins",
-                "url": "https://github.com/uziins"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight reactive data library for javascript applications. Designed over composable primitives.</div>",
-            "url": "https://github.com/emberjs/data",
-            "title": "emberjs/data: A lightweight reactive data library for javascript applications. Designed over composable primitives.",
-            "date_modified": "2024-03-07T21:49:43.000Z",
-            "date_published": "2011-12-20T01:50:40.000Z",
-            "author": {
-                "name": "emberjs",
-                "url": "https://github.com/emberjs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/143133652?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>  good.db is a lightweight Node.js library for simple local database operations with JSON files. Organize, manage, and manipulate data easily. </div>",
-            "url": "https://github.com/good-db/good.db",
-            "title": "good-db/good.db:   good.db is a lightweight Node.js library for simple local database operations with JSON files. Organize, manage, and manipulate data easily. ",
-            "date_modified": "2023-09-22T00:24:55.000Z",
-            "date_published": "2023-08-24T20:49:08.000Z",
-            "author": {
-                "name": "good-db",
-                "url": "https://github.com/good-db"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1918251?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, dependency-free JavaScript datepicker.</div>",
-            "url": "https://github.com/t1m0n/air-datepicker",
-            "title": "t1m0n/air-datepicker: Lightweight, dependency-free JavaScript datepicker.",
-            "date_modified": "2024-03-10T11:59:57.000Z",
-            "date_published": "2015-11-28T16:48:12.000Z",
-            "author": {
-                "name": "t1m0n",
-                "url": "https://github.com/t1m0n"
             }
         }
     ]
