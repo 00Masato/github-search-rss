@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3585",
+            "title": "Make `cargo install` respect lockfiles by default",
+            "date_modified": "2024-03-10T23:35:39.000Z",
+            "date_published": "2024-03-10T23:24:47.000Z",
+            "author": {
+                "name": "casey",
+                "url": "https://github.com/casey"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134899215?u=dbd15740f37368d3f8c3e2b97554c3791b1eae8a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pengqiseven/rfcs/blob/master/text/0458-send-improvements.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3584",
             "title": "remove repetitive words",
@@ -64,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce an <code class=\"notranslate\">is</code> operator in Rust 2024, to test if an expression matches a<br>\npattern and bind the variables in the pattern. This is in <em>addition</em> to<br>\n<code class=\"notranslate\">let</code>-chaining; this RFC proposes that we allow both <code class=\"notranslate\">let</code>-chaining <em>and</em> the<br>\n<code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">Previous discussions around <code class=\"notranslate\">let</code>-chains have treated the <code class=\"notranslate\">is</code> operator as an<br>\nalternative on the basis that they serve similar functions, rather than<br>\nproposing that they can and should coexist. This RFC proposes that we allow<br>\n<code class=\"notranslate\">let</code>-chaining <em>and</em> add the <code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">is</code> operator allows developers to chain multiple matching-and-binding<br>\noperations and simplify what would otherwise require complex nested<br>\nconditionals. The <code class=\"notranslate\">is</code> operator allows writing and reading a pattern match from<br>\nleft-to-right, which reads more naturally in many circumstances. For instance,<br>\nconsider an expression like <code class=\"notranslate\">x is Some(y) &amp;&amp; y &gt; 5</code>; that boolean expression<br>\nreads more naturally from left-to-right than <code class=\"notranslate\">let Some(y) = x &amp;&amp; y &gt; 5</code>.</p>\n<p dir=\"auto\">This is even more true at the end of a longer expression chain, such as<br>\n<code class=\"notranslate\">x.method()?.another_method().await? is Some(y)</code>. Rust method chaining and <code class=\"notranslate\">?</code><br>\nand <code class=\"notranslate\">.await</code> all encourage writing code that reads in operation order from left<br>\nto right, and <code class=\"notranslate\">is</code> fits naturally at the end of such a sequence.</p>\n<p dir=\"auto\">Having an <code class=\"notranslate\">is</code> operator would also help to reduce the demand for methods on<br>\ntypes such as <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> (e.g. <code class=\"notranslate\">Option::is_some_and</code> and<br>\n<code class=\"notranslate\">Result::is_ok_and</code> and <code class=\"notranslate\">Result::is_err_and</code>), by allowing prospective users of<br>\nthose methods to write a natural-looking condition using <code class=\"notranslate\">is</code> instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/is/text/3573-is.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3573",
             "title": "`is` operator for pattern-matching and binding",
-            "date_modified": "2024-03-10T19:05:47.000Z",
+            "date_modified": "2024-03-10T23:12:02.000Z",
             "date_published": "2024-02-16T11:43:05.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "dpaoliello",
                 "url": "https://github.com/dpaoliello"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1940490?u=42777c8876d7b6591798df666a82057394b8b0c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow <code class=\"notranslate\">_</code> for the name of associated constants. This RFC builds on <a href=\"https://github.com/rust-lang/rfcs/pull/2526\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2526/hovercard\">RFC 2526</a> which added support for free <code class=\"notranslate\">const</code> items with the name <code class=\"notranslate\">_</code>, but not associated consts.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"// RFC 2526 (stable in Rust 1.37)\nconst _: () = { /* ... */ };\n\nimpl Thing {\n    // this RFC\n    const _: () = { /* ... */ };\n}\"><pre class=\"notranslate\"><span class=\"pl-c\">// RFC 2526 (stable in Rust 1.37)</span>\n<span class=\"pl-k\">const</span> _<span class=\"pl-kos\">:</span> <span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> = <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">Thing</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c\">// this RFC</span>\n    <span class=\"pl-k\">const</span> _<span class=\"pl-kos\">:</span> <span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> = <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Constants named <code class=\"notranslate\">_</code> are not nameable by other code and do not appear in documentation, but are useful when macro-generated code must typecheck some expression in the context of a specific choice of <code class=\"notranslate\">Self</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dtolnay/rfcs/blob/assocunderscore/text/0000-associated-const-underscore.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3527",
-            "title": "RFC: Associated const underscore",
-            "date_modified": "2024-01-10T18:31:21.000Z",
-            "date_published": "2023-11-12T20:53:33.000Z",
-            "author": {
-                "name": "dtolnay",
-                "url": "https://github.com/dtolnay"
             }
         }
     ]
