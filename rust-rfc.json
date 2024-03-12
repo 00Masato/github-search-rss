@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1617736?u=3c160b4a66ca211ea091b90c00252f4561582680&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">oopsie</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/oli-obk/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/oli-obk\">@oli-obk</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/Manishearth-patch-1/text/3243-packages-as-optional-namespaces.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3586",
+            "title": "Fix date on RFC 3243",
+            "date_modified": "2024-03-12T09:24:12.000Z",
+            "date_published": "2024-03-12T09:24:09.000Z",
+            "author": {
+                "name": "Manishearth",
+                "url": "https://github.com/Manishearth"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3585",
             "title": "Make `cargo install` respect lockfiles by default",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134899215?u=dbd15740f37368d3f8c3e2b97554c3791b1eae8a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/pengqiseven/rfcs/blob/master/text/0458-send-improvements.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3584",
             "title": "remove repetitive words",
-            "date_modified": "2024-03-10T21:31:04.000Z",
+            "date_modified": "2024-03-12T09:45:15.000Z",
             "date_published": "2024-03-10T03:33:44.000Z",
             "author": {
                 "name": "pengqiseven",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "petrochenkov",
                 "url": "https://github.com/petrochenkov"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10580822?u=2905c8dd9367f6bf4ab8fc2cf62ae4acbb01786a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce shared base directories in Cargo configuration files that in turn enable base-relative path dependencies.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dpaoliello/rfcs/blob/basepath/text/3529-cargo-path-bases.md\">Rendered</a></p>\n<p dir=\"auto\">Draft Implementation PR: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1993320171\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12974\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/cargo/pull/12974/hovercard\" href=\"https://github.com/rust-lang/cargo/pull/12974\">rust-lang/cargo#12974</a></p>\n<p dir=\"auto\">This is a resurrection of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonhoo/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonhoo\">@jonhoo</a>'s RFC (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"804056819\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3074\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3074/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3074\">#3074</a>). Many thanks and kudos to him for the idea, original RFC text and <a href=\"https://github.com/rust-lang/cargo/pull/9144\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/cargo/pull/9144/hovercard\">original implementation</a>.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3529",
-            "title": "Add named path bases to cargo (v2)",
-            "date_modified": "2024-01-08T20:18:43.000Z",
-            "date_published": "2023-11-14T00:43:04.000Z",
-            "author": {
-                "name": "dpaoliello",
-                "url": "https://github.com/dpaoliello"
             }
         }
     ]
