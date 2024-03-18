@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73709188?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Updates type name in the JSON to correctly reflect the code snippet.</p>\n<p dir=\"auto\"><a href=\"https://github.com/HigherOrderLogic/rust-rfcs/blob/master/text/2963-rustdoc-json.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3589",
-            "title": "Correct rustdoc JSON example",
-            "date_modified": "2024-03-18T14:39:06.000Z",
-            "date_published": "2024-03-18T14:39:06.000Z",
-            "author": {
-                "name": "HigherOrderLogic",
-                "url": "https://github.com/HigherOrderLogic"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3585",
             "title": "Make `cargo install` respect lockfiles by default",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "dpaoliello",
                 "url": "https://github.com/dpaoliello"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1940490?u=42777c8876d7b6591798df666a82057394b8b0c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow <code class=\"notranslate\">_</code> for the name of associated constants. This RFC builds on <a href=\"https://github.com/rust-lang/rfcs/pull/2526\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2526/hovercard\">RFC 2526</a> which added support for free <code class=\"notranslate\">const</code> items with the name <code class=\"notranslate\">_</code>, but not associated consts.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"// RFC 2526 (stable in Rust 1.37)\nconst _: () = { /* ... */ };\n\nimpl Thing {\n    // this RFC\n    const _: () = { /* ... */ };\n}\"><pre class=\"notranslate\"><span class=\"pl-c\">// RFC 2526 (stable in Rust 1.37)</span>\n<span class=\"pl-k\">const</span> _<span class=\"pl-kos\">:</span> <span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> = <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">Thing</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c\">// this RFC</span>\n    <span class=\"pl-k\">const</span> _<span class=\"pl-kos\">:</span> <span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> = <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Constants named <code class=\"notranslate\">_</code> are not nameable by other code and do not appear in documentation, but are useful when macro-generated code must typecheck some expression in the context of a specific choice of <code class=\"notranslate\">Self</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dtolnay/rfcs/blob/assocunderscore/text/0000-associated-const-underscore.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3527",
+            "title": "RFC: Associated const underscore",
+            "date_modified": "2024-01-10T18:31:21.000Z",
+            "date_published": "2023-11-12T20:53:33.000Z",
+            "author": {
+                "name": "dtolnay",
+                "url": "https://github.com/dtolnay"
             }
         }
     ]
