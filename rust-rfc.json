@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In RFC 3498 \"Lifetime Capture Rules 2024\" we specify that lifetime parameters from <code class=\"notranslate\">for&lt;..&gt;</code> binders are captured under the rules.</p>\n<p dir=\"auto\">Currently opaque types in Rust do not support capturing these.  In early drafts of the document, we had called the missing feature \"higher ranked lifetime bounds on nested opaque types\".  However, we had then noticed that the relevant error message in <code class=\"notranslate\">rustc</code> called these \"higher kinded\" instead:</p>\n<blockquote>\n<p dir=\"auto\">error: higher kinded lifetime bounds on nested opaque types are not supported yet</p>\n</blockquote>\n<p dir=\"auto\">We changed later drafts to follow that language.  But that language was wrong.  These are definitely \"higher ranked\" lifetime bounds, not \"higher kinded\" ones, whatever that might mean.  We've now fixed the error message emitted by <code class=\"notranslate\">rustc</code> in:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2172170285\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/122100\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/122100/hovercard\" href=\"https://github.com/rust-lang/rust/pull/122100\">rust-lang/rust#122100</a></li>\n</ul>\n<p dir=\"auto\">Correspondingly, let's now fix this error in the RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/TC/fix-higher-ranked-not-higher-kinded/text/3498-lifetime-capture-rules-2024.md\">Rendered</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/oli-obk/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/oli-obk\">@oli-obk</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/compiler-errors/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/compiler-errors\">@compiler-errors</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3590",
+            "title": "Fix \"higher kinded\" -> \"higher ranked\" in RFC 3498",
+            "date_modified": "2024-03-19T16:52:55.000Z",
+            "date_published": "2024-03-19T16:52:15.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3585",
             "title": "Make `cargo install` respect lockfiles by default",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "dtolnay",
                 "url": "https://github.com/dtolnay"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38225716?u=83b61e79cd926e97b75668e0967f814fb91cd22d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to forbid function -&gt; integer <code class=\"notranslate\">as</code> casts, since they have surprising aspects and are error prone.</p>\n<p dir=\"auto\"><a href=\"https://github.com/WaffleLapkin/rfcs/blob/forbidden-function-casts/text/3521-forbidden-function-casts.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3526",
-            "title": " Add forbidden function casts RFC",
-            "date_modified": "2024-01-22T19:00:29.000Z",
-            "date_published": "2023-11-12T20:15:21.000Z",
-            "author": {
-                "name": "WaffleLapkin",
-                "url": "https://github.com/WaffleLapkin"
             }
         }
     ]
