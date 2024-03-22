@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1409672?u=f0b699309f88f9289bfabab2547530aaf4f8627e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I couldn't find documentation about <code class=\"notranslate\">Rails.env.local?</code>, so people don't know it exists.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds documentation about <code class=\"notranslate\">Rails.env.local?</code>.</p>",
+            "url": "https://github.com/rails/rails/pull/51389",
+            "title": "[ci skip] Documentation for `Rails.env.local?`",
+            "date_modified": "2024-03-22T12:23:40.000Z",
+            "date_published": "2024-03-22T12:23:36.000Z",
+            "author": {
+                "name": "lxxxvi",
+                "url": "https://github.com/lxxxvi"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/27179786?u=835183e7dbda589294d25d54fb007fd4210744a1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because; I couldn't find the <code class=\"notranslate\">:variants</code> option in the API documentation. I noticed it was covered in the guidelines, but it didn't go over that render can intake a singular version of <code class=\"notranslate\">:variant</code> and partial rendering should only intake a plural version of the option.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">:variants</code> documentation to <code class=\"notranslate\">ActionView::PartialRenderer</code></li>\n<li><code class=\"notranslate\">:variants</code> and <code class=\"notranslate\">:variant</code> to <code class=\"notranslate\">ActionController::Rendering</code></li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">It's not clear to me what areas should also include the as an available option, any insights would be helpful! 🙂</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51382",
-            "title": "Add :variant option to render-related documentation [ci skip]",
-            "date_modified": "2024-03-21T19:10:19.000Z",
+            "title": "Add :variants option to render-related documentation [ci skip]",
+            "date_modified": "2024-03-22T12:58:05.000Z",
             "date_published": "2024-03-21T18:30:04.000Z",
             "author": {
                 "name": "dylhack",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "adityapandit17",
                 "url": "https://github.com/adityapandit17"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/505427?u=d6f9feb614d4641e87a2df6e4da6ed4c44ece004&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Expanding the <code class=\"notranslate\">Model.insert_all</code> functionality to receive an array containing records and column names separately. This improvement eliminates the need for records to be in the hash format, providing a more streamlined approach, especially useful for handling large datasets when both the order of attributes and their alignment with the table structure are known in advance.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"column_names = [:name, :author_id]\nbook_batches.each do |book_batch|\n\tBook.insert_all(book_batch, column_names: column_names)\nend\"><pre class=\"notranslate\"><span class=\"pl-s1\">column_names</span> <span class=\"pl-c1\">=</span> <span class=\"pl-kos\">[</span><span class=\"pl-pds\">:name</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:author_id</span><span class=\"pl-kos\">]</span>\n<span class=\"pl-en\">book_batches</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">each</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">book_batch</span>|\n\t<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">insert_all</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">book_batch</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">column_names</span>: <span class=\"pl-s1\">column_names</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">This update enables users to provide an array of arrays for the records, while also specifying the column names separately. This enhancement enhances code flexibility and readability, simplifying data insertion without requiring pre-formatting into hashes.</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Modified insert_all method to accept an array of arrays for records.</li>\n<li>Added support for specifying column names separately using the columns option.</li>\n</ul>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Book.insert_all([\n  [&quot;Rework&quot;, 1],\n  [&quot;Patterns of Enterprise Application Architecture&quot;, 1]\n], column_names: [:name, :author_id])\"><pre class=\"notranslate\"><span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">insert_all</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">[</span>\n  <span class=\"pl-kos\">[</span><span class=\"pl-s\">\"Rework\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">1</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">,</span>\n  <span class=\"pl-kos\">[</span><span class=\"pl-s\">\"Patterns of Enterprise Application Architecture\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">1</span><span class=\"pl-kos\">]</span>\n<span class=\"pl-kos\">]</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">column_names</span>: <span class=\"pl-kos\">[</span><span class=\"pl-pds\">:name</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:author_id</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\">To showcase the API proposal, I opted for the simplest approach, which involved converting the array of records and column names into a Hash, as it aligns with the existing code.</p>",
-            "url": "https://github.com/rails/rails/pull/51307",
-            "title": "Model.insert_all can accept an array of records with separate column names",
-            "date_modified": "2024-03-12T13:54:34.000Z",
-            "date_published": "2024-03-12T13:54:28.000Z",
-            "author": {
-                "name": "robertomiranda",
-                "url": "https://github.com/robertomiranda"
             }
         }
     ]
