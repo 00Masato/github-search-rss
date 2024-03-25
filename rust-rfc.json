@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Beginning with the 2024 edition, reserve the syntax <code class=\"notranslate\">#\"foo\"#</code>, as a way of future-proofing against future language changes.</p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/unprefixed-strings/text/3593-unprefixed_guarded_strings.md\">Rendered</a></p>\n<p dir=\"auto\">Note: much of the text of this RFC is directly adapted from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"848793381\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3101\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3101/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3101\">#3101</a>. Thank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bstrie/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bstrie\">@bstrie</a> and all other contributors there for paving the path.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3593",
             "title": "RFC: Reserve unprefixed guarded string literals in Edition 2024",
-            "date_modified": "2024-03-25T03:52:22.000Z",
+            "date_modified": "2024-03-25T06:42:41.000Z",
             "date_published": "2024-03-25T03:47:02.000Z",
             "author": {
                 "name": "pitaj",
