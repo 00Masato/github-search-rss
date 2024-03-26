@@ -39,17 +39,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR fixes the typo</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51417",
-            "title": "Fix Typo: belong_to updated to belongs_to",
-            "date_modified": "2024-03-25T15:56:26.000Z",
-            "date_published": "2024-03-25T15:56:23.000Z",
-            "author": {
-                "name": "akhilgkrishnan",
-                "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, <code class=\"notranslate\">DestroyAssociationAsyncJob</code> does not work when we have an owner with a composite primary key.<br>\nThis PR fixes that.</p>",
             "url": "https://github.com/rails/rails/pull/51409",
             "title": "Fix `destroy_async` job for owners with composite primary keys",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "MatheusRich",
                 "url": "https://github.com/MatheusRich"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64050?u=e41ff60552c0dcda088e5c5c3ed1e3bf34f37dcc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">I was reading through <a href=\"https://jordanhollinger.com/2023/11/11/rails-strict-loading/\" rel=\"nofollow\">this summary of Rails' strict loading</a> and came across this paragraph:</p>\n<blockquote>\n<p dir=\"auto\">If you’re very brave, you can opt your entire application into strict loading. (Oddly, there doesn’t seem to be an equivalent of :n_plus_one_only here. I can’t imagine using this.)</p>\n</blockquote>\n<p dir=\"auto\">In my app, we're setting <code class=\"notranslate\">strict_loading!(mode: :n_plus_one_only)</code> on individual records; this paragraph made me realize it didn't have to be this way.</p>\n<p dir=\"auto\">This Pull Request has been created because currently, <code class=\"notranslate\">strict_loading_mode</code> is always set to <code class=\"notranslate\">:all</code>. It may be preferable for users to have <code class=\"notranslate\">:n_plus_one_only</code> on an individual model, or even on the entire app.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a new class_attribute <code class=\"notranslate\">:strict_loading_mode</code>, defaulted to <code class=\"notranslate\">:all</code>.  If it's set to <code class=\"notranslate\">:n_plus_one_only</code>, that mode is used by default when doing strict loading checks.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">n/a</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51339",
+            "title": "Allow one to set `strict_loading_mode` globally",
+            "date_modified": "2024-03-19T17:44:42.000Z",
+            "date_published": "2024-03-17T16:45:34.000Z",
+            "author": {
+                "name": "gjtorikian",
+                "url": "https://github.com/gjtorikian"
             }
         }
     ]
