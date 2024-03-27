@@ -72,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I know we usually don't edit accepted RFCs, but this one is a pretty useful resource and collection of links right now (and it's been accepted very recently) so it seems worth the effort.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/provenance-upd/text/3559-rust-has-provenance.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3580",
-            "title": "provenance RFC: add link to alternative LLVM proposal",
-            "date_modified": "2024-03-03T22:02:42.000Z",
-            "date_published": "2024-03-01T07:15:35.000Z",
-            "author": {
-                "name": "RalfJung",
-                "url": "https://github.com/RalfJung"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/123987141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is the first of a series for a PKI model for Rust; includes the design and implementation for a PKI CA and a resilient Quorum model for the project to implement, and next steps for signing across the project. Crate and release signing will follow in a subsequent separate RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/walterhpearce/rfcs/blob/master/text/3579-pki.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3579",
             "title": "Public Key Infrastructure for Rust Project",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "petrochenkov",
                 "url": "https://github.com/petrochenkov"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10580822?u=2905c8dd9367f6bf4ab8fc2cf62ae4acbb01786a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce shared base directories in Cargo configuration files that in turn enable base-relative path dependencies.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dpaoliello/rfcs/blob/basepath/text/3529-cargo-path-bases.md\">Rendered</a></p>\n<p dir=\"auto\">Draft Implementation PR: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1993320171\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12974\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/cargo/pull/12974/hovercard\" href=\"https://github.com/rust-lang/cargo/pull/12974\">rust-lang/cargo#12974</a></p>\n<p dir=\"auto\">This is a resurrection of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonhoo/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonhoo\">@jonhoo</a>'s RFC (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"804056819\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3074\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3074/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3074\">#3074</a>). Many thanks and kudos to him for the idea, original RFC text and <a href=\"https://github.com/rust-lang/cargo/pull/9144\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/cargo/pull/9144/hovercard\">original implementation</a>.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3529",
+            "title": "Add named path bases to cargo (v2)",
+            "date_modified": "2024-01-08T20:18:43.000Z",
+            "date_published": "2023-11-14T00:43:04.000Z",
+            "author": {
+                "name": "dpaoliello",
+                "url": "https://github.com/dpaoliello"
             }
         }
     ]
