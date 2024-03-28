@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/165029498?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/JohnEndson/rfcs/blob/master/text/0461-tls-overhaul.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3598",
+            "title": "chore: fix some comments",
+            "date_modified": "2024-03-28T11:55:09.000Z",
+            "date_published": "2024-03-28T11:55:06.000Z",
+            "author": {
+                "name": "JohnEndson",
+                "url": "https://github.com/JohnEndson"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes moving the Crates.io Team under the Dev Tools Team. This change has very little impact outside of the removal of the Crates.io Council representative. Crates.io Team interests will be represented by the Dev Tools team representative.</p>\n<p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/move-crates-io-under-dev-tools/text/3595-move-crates-io-team-under-dev-tools.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3595",
             "title": "Move the Crates.io Team under the Dev Tools team",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "petrochenkov",
                 "url": "https://github.com/petrochenkov"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10580822?u=2905c8dd9367f6bf4ab8fc2cf62ae4acbb01786a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce shared base directories in Cargo configuration files that in turn enable base-relative path dependencies.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dpaoliello/rfcs/blob/basepath/text/3529-cargo-path-bases.md\">Rendered</a></p>\n<p dir=\"auto\">Draft Implementation PR: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1993320171\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/12974\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/cargo/pull/12974/hovercard\" href=\"https://github.com/rust-lang/cargo/pull/12974\">rust-lang/cargo#12974</a></p>\n<p dir=\"auto\">This is a resurrection of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jonhoo/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jonhoo\">@jonhoo</a>'s RFC (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"804056819\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3074\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3074/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3074\">#3074</a>). Many thanks and kudos to him for the idea, original RFC text and <a href=\"https://github.com/rust-lang/cargo/pull/9144\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/cargo/pull/9144/hovercard\">original implementation</a>.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3529",
-            "title": "Add named path bases to cargo (v2)",
-            "date_modified": "2024-01-08T20:18:43.000Z",
-            "date_published": "2023-11-14T00:43:04.000Z",
-            "author": {
-                "name": "dpaoliello",
-                "url": "https://github.com/dpaoliello"
             }
         }
     ]
