@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/146410045?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I think this a good quality of life proposal similar to the <a href=\"https://rust-lang.github.io/rfcs/3107-derive-default-enum.html\" rel=\"nofollow\">proposal to add a derive Default for enums</a>, not big in scope or magnitude.<br>\nTLDR:<br>\nI want to make a derive macro for TryFrom and Into, that generate an impl of TryFrom and Into for any C-Style Enum:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"//using these two macros\n#[derive(FromInt, IntoInt)] // names subject to change\nenum CStyleEnum {\n   Variant1 = 10,\n   Variant2 = 20,\n   ...\n}\n\n//convert from a number to the C-style enum easily\nlet from_num = CStyleEnum::try_from(10); // Ok(CStyleEnum::Variant1)\nlet failed_from = CStyleEnum::try_from(21); // Err(())\n//convert into a number from a C-style enum more generically\nlet into_num = CStyleEnum::Variant2.into(); //20\"><pre class=\"notranslate\"><span class=\"pl-c\">//using these two macros</span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>derive<span class=\"pl-kos\">(</span><span class=\"pl-v\">FromInt</span><span class=\"pl-kos\">,</span> <span class=\"pl-v\">IntoInt</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span> <span class=\"pl-c\">// names subject to change</span>\n<span class=\"pl-k\">enum</span> <span class=\"pl-smi\">CStyleEnum</span> <span class=\"pl-kos\">{</span>\n   <span class=\"pl-v\">Variant1</span> = <span class=\"pl-c1\">10</span><span class=\"pl-kos\">,</span>\n   <span class=\"pl-v\">Variant2</span> = <span class=\"pl-c1\">20</span><span class=\"pl-kos\">,</span>\n   ...\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-c\">//convert from a number to the C-style enum easily</span>\n<span class=\"pl-k\">let</span> from_num = <span class=\"pl-smi\">CStyleEnum</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">try_from</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">10</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// Ok(CStyleEnum::Variant1)</span>\n<span class=\"pl-k\">let</span> failed_from = <span class=\"pl-smi\">CStyleEnum</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">try_from</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">21</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// Err(())</span>\n<span class=\"pl-c\">//convert into a number from a C-style enum more generically</span>\n<span class=\"pl-k\">let</span> into_num = <span class=\"pl-smi\">CStyleEnum</span><span class=\"pl-kos\">::</span><span class=\"pl-v\">Variant2</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">into</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">//20</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/agreyyy/rfcs-c_style_enums/blob/master/text/0000-derive_c-enum_integer_conversions.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3604",
+            "title": "RFC: Add a special TryFrom and Into derive macro, specifically for C-Style enums",
+            "date_modified": "2024-04-01T13:48:09.000Z",
+            "date_published": "2024-04-01T13:10:56.000Z",
+            "author": {
+                "name": "agreyyy",
+                "url": "https://github.com/agreyyy"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=0d3a33cf526c152a32b3a27ffc688e8575b03dc8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Nilstrieb/rfcs/blob/large-language-modelling/text/0000-rust-llm.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3603",
             "title": "RFC: Add large language models to Rust",
-            "date_modified": "2024-04-01T13:00:11.000Z",
+            "date_modified": "2024-04-01T13:52:47.000Z",
             "date_published": "2024-04-01T09:20:18.000Z",
             "author": {
                 "name": "Nilstrieb",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "jmillikin",
                 "url": "https://github.com/jmillikin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22198616?u=38fc398a34cdd9e77a0de8733826dc59e6cd5fb9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Let's make it more elegant to conditionally compile tuple type declarations by allowing cfg-attributes directly on their element types.</p>\n<p dir=\"auto\"><a href=\"https://github.com/recatek/rfcs/blob/cfg-attribute-in-tuple-type/text/3532-cfg-attribute-in-tuple-type.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3532",
-            "title": "RFC: Allow cfg-attributes on elements of tuple type declarations",
-            "date_modified": "2024-04-01T02:48:23.000Z",
-            "date_published": "2023-11-23T07:05:27.000Z",
-            "author": {
-                "name": "recatek",
-                "url": "https://github.com/recatek"
             }
         }
     ]
