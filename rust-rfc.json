@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5026283?u=5904dba48d84a78b16221f9d91cfdd86c4985e5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/chorman0773/rust-rfcs/blob/freeze-uninit/text/0000-freeze-uninit.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3605",
             "title": "RFC: Add `freeze` intrinsic and related library functions",
-            "date_modified": "2024-04-02T10:10:41.000Z",
+            "date_modified": "2024-04-02T12:56:34.000Z",
             "date_published": "2024-04-02T04:01:02.000Z",
             "author": {
                 "name": "chorman0773",
@@ -28,21 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=0d3a33cf526c152a32b3a27ffc688e8575b03dc8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Nilstrieb/rfcs/blob/large-language-modelling/text/0000-rust-llm.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3603",
-            "title": "RFC: Add large language models to Rust",
-            "date_modified": "2024-04-02T11:02:43.000Z",
-            "date_published": "2024-04-01T09:20:18.000Z",
-            "author": {
-                "name": "Nilstrieb",
-                "url": "https://github.com/Nilstrieb"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Re-organise the compiler team:</p>\n<ul dir=\"auto\">\n<li>Re-define and rename the tiers of membership</li>\n<li>Change how team members and contributors are promoted</li>\n<li>Document expectations of team members</li>\n<li>Establish mechanism for scaling additional responsibilities that team members take on and recognising these contributions</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/compiler-team-trusted-contrib-maintainer/text/0000-compiler-team-trusted-contrib-maintainer.md\">Rendered text</a></p>\n<p dir=\"auto\">@rust-lang/compiler @rust-lang/compiler-contributors</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3599",
             "title": "re-organise the compiler team",
-            "date_modified": "2024-04-01T02:38:32.000Z",
+            "date_modified": "2024-04-02T12:50:17.000Z",
             "date_published": "2024-03-28T15:14:51.000Z",
             "author": {
                 "name": "davidtwco",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ColonelThirtyTwo",
                 "url": "https://github.com/ColonelThirtyTwo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/646128?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jmillikin/upstream__rust-rfcs/blob/unsized-thin-pointers/text/3536-unsized-thin-pointers.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3536",
+            "title": "RFC: Trait for `!Sized` thin pointers",
+            "date_modified": "2024-04-02T12:28:50.000Z",
+            "date_published": "2023-11-29T04:20:36.000Z",
+            "author": {
+                "name": "jmillikin",
+                "url": "https://github.com/jmillikin"
             }
         }
     ]
