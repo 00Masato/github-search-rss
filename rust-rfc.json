@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=9531927576dae8d2a9b8a9c5ebea42db423c01c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is one of the results of the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/403629-t-lang.2Ftemporary-lifetimes-2024\" rel=\"nofollow\">temporary lifetimes effort</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nikomatsakis/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nikomatsakis\">@nikomatsakis</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dingxiangfei2009/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dingxiangfei2009\">@dingxiangfei2009</a> and me.</p>\n<p dir=\"auto\">Originally, we were working on a much larger RFC with several changes, but decided to not block small things on big things.</p>\n<p dir=\"auto\">This part is quite small, but requires an edition change.</p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/tailtemp/text/3606-temporary-lifetimes-in-tail-expressions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3606",
             "title": "RFC: Drop temporaries in tail expressions before local variables",
-            "date_modified": "2024-04-02T14:49:07.000Z",
+            "date_modified": "2024-04-02T17:58:07.000Z",
             "date_published": "2024-04-02T14:34:50.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Re-organise the compiler team:</p>\n<ul dir=\"auto\">\n<li>Re-define and rename the tiers of membership</li>\n<li>Change how team members and contributors are promoted</li>\n<li>Document expectations of team members</li>\n<li>Establish mechanism for scaling additional responsibilities that team members take on and recognising these contributions</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/compiler-team-trusted-contrib-maintainer/text/0000-compiler-team-trusted-contrib-maintainer.md\">Rendered text</a></p>\n<p dir=\"auto\">@rust-lang/compiler @rust-lang/compiler-contributors</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3599",
             "title": "re-organise the compiler team",
-            "date_modified": "2024-04-02T15:49:13.000Z",
+            "date_modified": "2024-04-02T17:08:02.000Z",
             "date_published": "2024-03-28T15:14:51.000Z",
             "author": {
                 "name": "davidtwco",
@@ -196,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3550",
             "title": "RFC: New range types for Edition 2024",
-            "date_modified": "2024-04-01T02:47:48.000Z",
+            "date_modified": "2024-04-02T17:42:44.000Z",
             "date_published": "2023-12-28T05:10:59.000Z",
             "author": {
                 "name": "pitaj",
