@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=9531927576dae8d2a9b8a9c5ebea42db423c01c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is one of the results of the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/403629-t-lang.2Ftemporary-lifetimes-2024\" rel=\"nofollow\">temporary lifetimes effort</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nikomatsakis/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nikomatsakis\">@nikomatsakis</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dingxiangfei2009/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dingxiangfei2009\">@dingxiangfei2009</a> and me.</p>\n<p dir=\"auto\">Originally, we were working on a much larger RFC with several changes, but decided to not block small things on big things.</p>\n<p dir=\"auto\">This part is quite small, but requires an edition change.</p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/tailtemp/text/3606-temporary-lifetimes-in-tail-expressions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3606",
             "title": "RFC: Drop temporaries in tail expressions before local variables",
-            "date_modified": "2024-04-02T17:58:07.000Z",
+            "date_modified": "2024-04-03T06:29:06.000Z",
             "date_published": "2024-04-02T14:34:50.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5026283?u=5904dba48d84a78b16221f9d91cfdd86c4985e5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/chorman0773/rust-rfcs/blob/freeze-uninit/text/0000-freeze-uninit.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3605",
             "title": "RFC: Add `freeze` intrinsic and related library functions",
-            "date_modified": "2024-04-03T03:19:18.000Z",
+            "date_modified": "2024-04-03T06:25:41.000Z",
             "date_published": "2024-04-02T04:01:02.000Z",
             "author": {
                 "name": "chorman0773",
