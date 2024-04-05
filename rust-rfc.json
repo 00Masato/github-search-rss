@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=9531927576dae8d2a9b8a9c5ebea42db423c01c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is one of the results of the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/403629-t-lang.2Ftemporary-lifetimes-2024\" rel=\"nofollow\">temporary lifetimes effort</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nikomatsakis/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nikomatsakis\">@nikomatsakis</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dingxiangfei2009/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dingxiangfei2009\">@dingxiangfei2009</a> and me.</p>\n<p dir=\"auto\">Originally, we were working on a much larger RFC with several changes, but decided to not block small things on big things.</p>\n<p dir=\"auto\">This part is quite small, but requires an edition change.</p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/tailtemp/text/3606-temporary-lifetimes-in-tail-expressions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3606",
             "title": "RFC: Drop temporaries in tail expressions before local variables",
-            "date_modified": "2024-04-04T21:47:26.000Z",
+            "date_modified": "2024-04-05T11:10:58.000Z",
             "date_published": "2024-04-02T14:34:50.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5026283?u=5904dba48d84a78b16221f9d91cfdd86c4985e5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/chorman0773/rust-rfcs/blob/freeze-uninit/text/0000-freeze-uninit.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3605",
             "title": "RFC: Add `freeze` intrinsic and related library functions",
-            "date_modified": "2024-04-04T23:34:56.000Z",
+            "date_modified": "2024-04-05T11:23:31.000Z",
             "date_published": "2024-04-02T04:01:02.000Z",
             "author": {
                 "name": "chorman0773",
@@ -196,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3550",
             "title": "RFC: New range types for Edition 2024",
-            "date_modified": "2024-04-05T00:15:50.000Z",
+            "date_modified": "2024-04-05T11:59:51.000Z",
             "date_published": "2023-12-28T05:10:59.000Z",
             "author": {
                 "name": "pitaj",
