@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Third-party <code class=\"notranslate\">derive</code> macros want to be able to use the same direct discriminant access to the <code class=\"notranslate\">enum</code> for which they're implementing a trait that the core derive macro does, which seems entirely reasonable.</p>\n<p dir=\"auto\">To allow that without imposing a new category of major breaking changes on library authors, this proposes a <em>safe</em> built-in way for getting the discriminant as a primitive integer -- not an opaque <code class=\"notranslate\">mem::Discriminant</code> -- for anything on which you can see private fields.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/enum-discriminant/text/3607-enum-discriminant.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3607",
             "title": "Add an expression for direct access to an enum's discriminant",
-            "date_modified": "2024-04-10T10:30:54.000Z",
+            "date_modified": "2024-04-10T18:36:21.000Z",
             "date_published": "2024-04-07T04:18:53.000Z",
             "author": {
                 "name": "scottmcm",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is one of the results of the <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/403629-t-lang.2Ftemporary-lifetimes-2024\" rel=\"nofollow\">temporary lifetimes effort</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/nikomatsakis/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/nikomatsakis\">@nikomatsakis</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dingxiangfei2009/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dingxiangfei2009\">@dingxiangfei2009</a> and me.</p>\n<p dir=\"auto\">Originally, we were working on a much larger RFC with several changes, but decided to not block small things on big things.</p>\n<p dir=\"auto\">This part is quite small, but requires an edition change.</p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/tailtemp/text/3606-temporary-lifetimes-in-tail-expressions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3606",
             "title": "RFC: Drop temporaries in tail expressions before local variables",
-            "date_modified": "2024-04-10T16:29:28.000Z",
+            "date_modified": "2024-04-10T18:52:43.000Z",
             "date_published": "2024-04-02T14:34:50.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164242179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More details are in the MD himself.<br>\nFor more possible info see:<br>\n<a href=\"https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050\" rel=\"nofollow\">https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050</a><br>\n<a href=\"https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer\" rel=\"nofollow\">https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/benisxdxd/rfcs/blob/master/text/3594-expose-stackrealign-attribute.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3594",
             "title": "RFC: Add realign_stack attribute to rustc",
-            "date_modified": "2024-04-08T20:13:16.000Z",
+            "date_modified": "2024-04-10T18:48:03.000Z",
             "date_published": "2024-03-26T00:19:11.000Z",
             "author": {
                 "name": "benisxdxd",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Beginning with the 2024 edition, reserve the syntax <code class=\"notranslate\">#\"foo\"#</code>, as a way of future-proofing against future language changes.</p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/unprefixed-strings/text/3593-unprefixed_guarded_strings.md\">Rendered</a></p>\n<p dir=\"auto\">Note: much of the text of this RFC is directly adapted from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"848793381\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3101\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3101/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3101\">#3101</a>. Thank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bstrie/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bstrie\">@bstrie</a> and all other contributors there for paving the path.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3593",
             "title": "RFC: Reserve unprefixed guarded string literals in Edition 2024",
-            "date_modified": "2024-04-05T10:52:40.000Z",
+            "date_modified": "2024-04-10T18:40:59.000Z",
             "date_published": "2024-03-25T03:47:02.000Z",
             "author": {
                 "name": "pitaj",
