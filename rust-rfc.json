@@ -6,21 +6,10 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10987206?u=0a2aeab54da3948862fcbab5cb991ff8b191bc21&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ol dir=\"auto\">\n<li><code class=\"notranslate\">2071-impl-trait-type-alias.md</code> has been moved to another file;</li>\n<li>Use relative path to make it works better on <a href=\"https://rust-lang.github.io/rfcs/\" rel=\"nofollow\">https://rust-lang.github.io/rfcs/</a>.</li>\n</ol>\n<p dir=\"auto\"><a href=\"https://github.com/slanterns/rfcs/blob/patch-1/text/2289-associated-type-bounds.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3612",
-            "title": "Update 2289-associated-type-bounds.md",
-            "date_modified": "2024-04-12T09:23:33.000Z",
-            "date_published": "2024-04-12T09:20:14.000Z",
-            "author": {
-                "name": "slanterns",
-                "url": "https://github.com/slanterns"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Third-party <code class=\"notranslate\">derive</code> macros want to be able to use the same direct discriminant access to the <code class=\"notranslate\">enum</code> for which they're implementing a trait that the core derive macro does, which seems entirely reasonable.</p>\n<p dir=\"auto\">To allow that without imposing a new category of major breaking changes on library authors, this proposes a <em>safe</em> built-in way for getting the discriminant as a primitive integer -- not an opaque <code class=\"notranslate\">mem::Discriminant</code> -- for anything on which you can see private fields.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/enum-discriminant/text/3607-enum-discriminant.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3607",
             "title": "Add an expression for direct access to an enum's discriminant",
-            "date_modified": "2024-04-12T06:41:03.000Z",
+            "date_modified": "2024-04-12T15:58:57.000Z",
             "date_published": "2024-04-07T04:18:53.000Z",
             "author": {
                 "name": "scottmcm",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "pitaj",
                 "url": "https://github.com/pitaj"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8980455?u=67104ddb0b6105cb807a4cfa7c052bd7cc29963b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow type inference for <code class=\"notranslate\">const</code> or <code class=\"notranslate\">static</code> when the RHS is known.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"const PI = 3.1415; // inferred as f64\nstatic MESSAGE = &quot;Hello, World!&quot;; // inferred as &amp;'static str\nconst FN = std::string::String::default; // Inferred as the unnamable type of ZST closure associated with this item. Its type is reported by `type_name_of_val` as ::std::string::String::default\"><pre class=\"notranslate\"><span class=\"pl-k\">const</span> <span class=\"pl-v\">PI</span> = <span class=\"pl-c1\">3.1415</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// inferred as f64</span>\n<span class=\"pl-k\">static</span> <span class=\"pl-v\">MESSAGE</span> = <span class=\"pl-s\">\"Hello, World!\"</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// inferred as &amp;'static str</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-v\">FN</span> = std<span class=\"pl-kos\">:</span><span class=\"pl-kos\">:</span>string<span class=\"pl-kos\">::</span><span class=\"pl-smi\">String</span><span class=\"pl-kos\">::</span><span class=\"pl-smi\">default</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// Inferred as the unnamable type of ZST closure associated with this item. Its type is reported by `type_name_of_val` as ::std::string::String::default</span></pre></div>\n<p dir=\"auto\">Pre-RFC discussion: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"114409804\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1349\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/1349/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/1349\">#1349</a></p>\n<p dir=\"auto\">cc <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"156003349\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1623\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1623/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/1623\">#1623</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Neo-Zhixing/rfcs/blob/const_type_inference/text/0000-const-type-inference.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3546",
+            "title": "RFC: Allow type inference for const or static",
+            "date_modified": "2024-04-08T03:32:12.000Z",
+            "date_published": "2023-12-21T12:19:16.000Z",
+            "author": {
+                "name": "Neo-Zhixing",
+                "url": "https://github.com/Neo-Zhixing"
             }
         }
     ]
