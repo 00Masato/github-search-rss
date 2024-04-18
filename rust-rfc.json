@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/167077685?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/growfrow/rfcs/blob/master/text/1298-incremental-compilation.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3613",
-            "title": "chore: remove repetitive words",
-            "date_modified": "2024-04-18T09:05:42.000Z",
-            "date_published": "2024-04-18T09:05:38.000Z",
-            "author": {
-                "name": "growfrow",
-                "url": "https://github.com/growfrow"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Third-party <code class=\"notranslate\">derive</code> macros want to be able to use the same direct discriminant access to the <code class=\"notranslate\">enum</code> for which they're implementing a trait that the core derive macro does, which seems entirely reasonable.</p>\n<p dir=\"auto\">To allow that without imposing a new category of major breaking changes on library authors, this proposes a <em>safe</em> built-in way for getting the discriminant as a primitive integer -- not an opaque <code class=\"notranslate\">mem::Discriminant</code> -- for anything on which you can see private fields.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/enum-discriminant/text/3607-enum-discriminant.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3607",
             "title": "Add an expression for direct access to an enum's discriminant",
@@ -75,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Re-organise the compiler team:</p>\n<ul dir=\"auto\">\n<li>Re-define and rename the tiers of membership</li>\n<li>Change how team members and contributors are promoted</li>\n<li>Document expectations of team members</li>\n<li>Establish mechanism for scaling additional responsibilities that team members take on and recognising these contributions</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/compiler-team-trusted-contrib-maintainer/text/0000-compiler-team-trusted-contrib-maintainer.md\">Rendered text</a></p>\n<p dir=\"auto\">@rust-lang/compiler @rust-lang/compiler-contributors</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3599",
             "title": "re-organise the compiler team",
-            "date_modified": "2024-04-18T13:47:08.000Z",
+            "date_modified": "2024-04-18T14:54:56.000Z",
             "date_published": "2024-03-28T15:14:51.000Z",
             "author": {
                 "name": "davidtwco",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "arlosi",
                 "url": "https://github.com/arlosi"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3550",
+            "title": "RFC: New range types for Edition 2024",
+            "date_modified": "2024-04-17T17:11:40.000Z",
+            "date_published": "2023-12-28T05:10:59.000Z",
+            "author": {
+                "name": "pitaj",
+                "url": "https://github.com/pitaj"
             }
         }
     ]
