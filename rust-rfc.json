@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/167498142?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/toofooboo/rfcs/blob/master/text/0235-collections-conventions.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3616",
+            "title": "text: fix typos in comments",
+            "date_modified": "2024-04-19T11:48:15.000Z",
+            "date_published": "2024-04-19T11:48:13.000Z",
+            "author": {
+                "name": "toofooboo",
+                "url": "https://github.com/toofooboo"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155238?u=c09aaff33aa53ea99359e53bef06aa5058ac8d15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to run an experimental goal program during the second half of 2024 with nikomatsakis as owner/organizer. This program is a first step towards an ongoing Rust roadmap. The proposed outcomes for 2024 are (1) select an initial slate of goals using an experimental process; (2) track progress over the year; (3) drawing on the lessons from that, propose a durable process in the form of an RFC to be accepted by the leadership council.</p>\n<p dir=\"auto\"><a href=\"https://github.com/nikomatsakis/rfcs/blob/project-goals/text/0000-project-goals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3614",
             "title": "experimental project goal program for 2024 H2",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "arlosi",
                 "url": "https://github.com/arlosi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3550",
-            "title": "RFC: New range types for Edition 2024",
-            "date_modified": "2024-04-17T17:11:40.000Z",
-            "date_published": "2023-12-28T05:10:59.000Z",
-            "author": {
-                "name": "pitaj",
-                "url": "https://github.com/pitaj"
             }
         }
     ]
