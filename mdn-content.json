@@ -6,14 +6,14 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8850606?u=2db5ac5f1323ca56da4a03442b17deb8621de5c6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">I have fixed a small typo.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">I think those dots should be outside of brackets in case to end sentencies.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
-            "url": "https://github.com/mdn/content/pull/33213",
-            "title": "Fix minor typo",
-            "date_modified": "2024-04-22T12:51:14.000Z",
-            "date_published": "2024-04-22T12:50:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=cae42d5a371dd041072ce6d85a1808de05535be8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I'm reflecting some changes that landed in the DOM examples repo already.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Get rid of some redundant info in the request, add in some practical options for cache control preferences, linking to Cache-Control header.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Related changes: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2243535547\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/dom-examples/issues/270\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/dom-examples/pull/270/hovercard\" href=\"https://github.com/mdn/dom-examples/pull/270\">mdn/dom-examples#270</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Original issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1339386379\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/dom-examples/issues/151\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/dom-examples/issues/151/hovercard\" href=\"https://github.com/mdn/dom-examples/issues/151\">mdn/dom-examples#151</a></li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/33214",
+            "title": "fix: Tidy up fetch with init examples on Request and Fetch pages",
+            "date_modified": "2024-04-22T16:01:57.000Z",
+            "date_published": "2024-04-22T16:01:43.000Z",
             "author": {
-                "name": "splincool",
-                "url": "https://github.com/splincool"
+                "name": "bsmth",
+                "url": "https://github.com/bsmth"
             }
         },
         {
