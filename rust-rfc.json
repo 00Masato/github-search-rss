@@ -72,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes moving the Crates.io Team under the Dev Tools Team. This change has very little impact outside of the removal of the Crates.io Council representative. Crates.io Team interests will be represented by the Dev Tools team representative.</p>\n<p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/move-crates-io-under-dev-tools/text/3595-move-crates-io-team-under-dev-tools.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3595",
-            "title": "Move the Crates.io Team under the Dev Tools team",
-            "date_modified": "2024-04-22T19:07:23.000Z",
-            "date_published": "2024-03-26T01:00:33.000Z",
-            "author": {
-                "name": "carols10cents",
-                "url": "https://github.com/carols10cents"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164242179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More details are in the MD himself.<br>\nFor more possible info see:<br>\n<a href=\"https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050\" rel=\"nofollow\">https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050</a><br>\n<a href=\"https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer\" rel=\"nofollow\">https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/benisxdxd/rfcs/blob/master/text/3594-expose-stackrealign-attribute.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3594",
             "title": "RFC: Add realign_stack attribute to rustc",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Neo-Zhixing",
                 "url": "https://github.com/Neo-Zhixing"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/692896?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pre-RFC Discussion: <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/PartialEq.2FEq.20for.20Closures.3F/near/399369137\" rel=\"nofollow\">https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/PartialEq.2FEq.20for.20Closures.3F/near/399369137</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/ColonelThirtyTwo/rfcs/blob/closure-eq/text/3538-closure-eq.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3538",
+            "title": "Closure PartialEq and Eq",
+            "date_modified": "2023-12-29T15:02:11.000Z",
+            "date_published": "2023-12-07T01:16:39.000Z",
+            "author": {
+                "name": "ColonelThirtyTwo",
+                "url": "https://github.com/ColonelThirtyTwo"
             }
         }
     ]
