@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">To fully stabilize, in Rust 2024, the Lifetime Capture Rules 2024 that we accepted in RFC 3498, we need to stabilize some means of precise capturing.  This RFC provides that means.</p>\n<p dir=\"auto\">This RFC adds <code class=\"notranslate\">use&lt;..&gt;</code> syntax for specifying which generic parameters should be captured in an opaque RPIT-like <code class=\"notranslate\">impl Trait</code> type, e.g. <code class=\"notranslate\">impl use&lt;'t, T&gt; Trait</code>.  This solves the problem of overcapturing and will allow the Lifetime Capture Rules 2024 to be fully stabilized for RPIT in Rust 2024.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/TC/precise-capturing/text/3617-precise-capturing.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3617",
+            "title": "Precise capturing",
+            "date_modified": "2024-04-24T08:01:32.000Z",
+            "date_published": "2024-04-24T07:57:17.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155238?u=c09aaff33aa53ea99359e53bef06aa5058ac8d15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to run an experimental goal program during the second half of 2024 with nikomatsakis as owner/organizer. This program is a first step towards an ongoing Rust roadmap. The proposed outcomes for 2024 are (1) select an initial slate of goals using an experimental process; (2) track progress over the year; (3) drawing on the lessons from that, propose a durable process in the form of an RFC to be accepted by the leadership council.</p>\n<p dir=\"auto\"><a href=\"https://github.com/nikomatsakis/rfcs/blob/project-goals/text/0000-project-goals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3614",
             "title": "experimental project goal program for 2024 H2",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Neo-Zhixing",
                 "url": "https://github.com/Neo-Zhixing"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/692896?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pre-RFC Discussion: <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/PartialEq.2FEq.20for.20Closures.3F/near/399369137\" rel=\"nofollow\">https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/PartialEq.2FEq.20for.20Closures.3F/near/399369137</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/ColonelThirtyTwo/rfcs/blob/closure-eq/text/3538-closure-eq.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3538",
-            "title": "Closure PartialEq and Eq",
-            "date_modified": "2023-12-29T15:02:11.000Z",
-            "date_published": "2023-12-07T01:16:39.000Z",
-            "author": {
-                "name": "ColonelThirtyTwo",
-                "url": "https://github.com/ColonelThirtyTwo"
             }
         }
     ]
