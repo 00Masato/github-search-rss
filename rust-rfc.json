@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164242179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More details are in the MD himself.<br>\nFor more possible info see:<br>\n<a href=\"https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050\" rel=\"nofollow\">https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050</a><br>\n<a href=\"https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer\" rel=\"nofollow\">https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/benisxdxd/rfcs/blob/master/text/3594-expose-stackrealign-attribute.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3594",
             "title": "RFC: Add realign_stack attribute to rustc",
-            "date_modified": "2024-04-26T07:15:50.000Z",
+            "date_modified": "2024-04-26T16:56:38.000Z",
             "date_published": "2024-03-26T00:19:11.000Z",
             "author": {
                 "name": "benisxdxd",
@@ -130,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134893?u=940724c499b98313ee519a69a725d26908685e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The existing RFC does not give sufficient attention to parametrized types and traits.</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/dhardy/rfcs/blob/revise-nonlocal-defns/text/3373-avoid-nonlocal-definitions-in-fns.md\">Rendered</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3373#issuecomment-1975065275\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3373/hovercard\">Original RFC</a></li>\n<li><a href=\"https://github.com/rust-lang/rust/issues/120363\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/120363/hovercard\">Tracking issue</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3581",
             "title": "Update non-local-defns regarding parameterized traits and types",
-            "date_modified": "2024-04-06T08:45:30.000Z",
+            "date_modified": "2024-04-26T16:10:30.000Z",
             "date_published": "2024-03-03T14:58:17.000Z",
             "author": {
                 "name": "dhardy",
