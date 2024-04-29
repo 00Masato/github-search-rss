@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155238?u=c09aaff33aa53ea99359e53bef06aa5058ac8d15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to run an experimental goal program during the second half of 2024 with nikomatsakis as owner/organizer. This program is a first step towards an ongoing Rust roadmap. The proposed outcomes for 2024 are (1) select an initial slate of goals using an experimental process; (2) track progress over the year; (3) drawing on the lessons from that, propose a durable process in the form of an RFC to be accepted by the leadership council.</p>\n<p dir=\"auto\"><a href=\"https://github.com/nikomatsakis/rfcs/blob/project-goals/text/0000-project-goals.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3614",
-            "title": "experimental project goal program for 2024 H2",
-            "date_modified": "2024-04-29T15:33:10.000Z",
-            "date_published": "2024-04-18T12:47:58.000Z",
-            "author": {
-                "name": "nikomatsakis",
-                "url": "https://github.com/nikomatsakis"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Third-party <code class=\"notranslate\">derive</code> macros want to be able to use the same direct discriminant access to the <code class=\"notranslate\">enum</code> for which they're implementing a trait that the core derive macro does, which seems entirely reasonable.</p>\n<p dir=\"auto\">To allow that without imposing a new category of major breaking changes on library authors, this proposes a <em>safe</em> built-in way for getting the discriminant as a primitive integer -- not an opaque <code class=\"notranslate\">mem::Discriminant</code> -- for anything on which you can see private fields.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/enum-discriminant/text/3607-enum-discriminant.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3607",
             "title": "Add an expression for direct access to an enum's discriminant",
@@ -86,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164242179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More details are in the MD himself.<br>\nFor more possible info see:<br>\n<a href=\"https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050\" rel=\"nofollow\">https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050</a><br>\n<a href=\"https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer\" rel=\"nofollow\">https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/benisxdxd/rfcs/blob/master/text/3594-expose-stackrealign-attribute.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3594",
             "title": "RFC: Add realign_stack attribute to rustc",
-            "date_modified": "2024-04-29T15:29:45.000Z",
+            "date_modified": "2024-04-29T16:05:42.000Z",
             "date_published": "2024-03-26T00:19:11.000Z",
             "author": {
                 "name": "benisxdxd",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Neo-Zhixing",
                 "url": "https://github.com/Neo-Zhixing"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/692896?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pre-RFC Discussion: <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/PartialEq.2FEq.20for.20Closures.3F/near/399369137\" rel=\"nofollow\">https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/PartialEq.2FEq.20for.20Closures.3F/near/399369137</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/ColonelThirtyTwo/rfcs/blob/closure-eq/text/3538-closure-eq.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3538",
+            "title": "Closure PartialEq and Eq",
+            "date_modified": "2023-12-29T15:02:11.000Z",
+            "date_published": "2023-12-07T01:16:39.000Z",
+            "author": {
+                "name": "ColonelThirtyTwo",
+                "url": "https://github.com/ColonelThirtyTwo"
             }
         }
     ]
