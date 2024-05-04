@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"545842586\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2845/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2845\">#2845</a> which aims to resolve the <a href=\"https://github.com/rust-lang/rust/issues/88967\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/88967/hovercard\">issues</a> surrounding the stabilization of <code class=\"notranslate\">Iterator::intersperse</code>.</p>\n<h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">When name resolution encounters an ambiguity between 2 trait methods, if one trait is a sub-trait of the other then select that method instead of reporting an ambiguity error.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/item-shadowing/text/0000-supertrait-item-shadowing-v2.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3624",
+            "title": "Supertrait item shadowing v2",
+            "date_modified": "2024-05-03T23:39:13.000Z",
+            "date_published": "2024-05-03T23:39:09.000Z",
+            "author": {
+                "name": "Amanieu",
+                "url": "https://github.com/Amanieu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Use custom smart pointers with trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/derive-smart-pointer/text/3621-derive-smart-pointer.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2223882107\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/123430\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/123430/hovercard\" href=\"https://github.com/rust-lang/rust/issues/123430\">rust-lang/rust#123430</a></p>\n<hr>\n<p dir=\"auto\">Co-authored by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Darksonn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Darksonn\">@Darksonn</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Veykril/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Veykril\">@Veykril</a><br>\nThank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/compiler-errors/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/compiler-errors\">@compiler-errors</a> for <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/410673-t-lang.2Fmeetings/topic/RfL.20meeting.202024-02-21/near/422701742\" rel=\"nofollow\">the original idea</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3621",
             "title": "RFC: #[derive(SmartPointer)]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "arlosi",
                 "url": "https://github.com/arlosi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803701?u=ebadc7c37e0aea6c03a620fcdc9533ddf632e587&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Change the range operators <code class=\"notranslate\">a..b</code>, <code class=\"notranslate\">a..</code>, and <code class=\"notranslate\">a..=b</code> to resolve to new types <code class=\"notranslate\">ops::range::Range</code>, <code class=\"notranslate\">ops::range::RangeFrom</code>, and <code class=\"notranslate\">ops::range::RangeInclusive</code> in Edition 2024. These new types will not implement <code class=\"notranslate\">Iterator</code>, instead implementing <code class=\"notranslate\">Copy</code> and <code class=\"notranslate\">IntoIterator</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2848.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"548525650\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2848\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/2848/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/2848\">#2848</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-fixing-range-by-2027/19936\" rel=\"nofollow\">Pre-RFC discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/pitaj/rfcs/blob/new-range/text/3550-new-range.md\">🖥️ Rendered</a></p>\n<p dir=\"auto\"><a href=\"https://hackmd.io/@uhs6rVdLTSS0gnie4q0fqA/ryjYJW2pa\" rel=\"nofollow\">Analysis of impact on crates in the wild</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3550",
-            "title": "RFC: New range types for Edition 2024",
-            "date_modified": "2024-05-01T14:45:14.000Z",
-            "date_published": "2023-12-28T05:10:59.000Z",
-            "author": {
-                "name": "pitaj",
-                "url": "https://github.com/pitaj"
             }
         }
     ]
