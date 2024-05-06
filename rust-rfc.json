@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3626",
+            "title": "RFC to extend format_args implicit arguments to allow field access",
+            "date_modified": "2024-05-06T10:59:02.000Z",
+            "date_published": "2024-05-06T10:21:50.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"545842586\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2845/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2845\">#2845</a> which aims to resolve the <a href=\"https://github.com/rust-lang/rust/issues/88967\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/88967/hovercard\">issues</a> surrounding the stabilization of <code class=\"notranslate\">Iterator::intersperse</code>.</p>\n<h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">When name resolution encounters an ambiguity between 2 trait methods, if one trait is a sub-trait of the other then select that method instead of reporting an ambiguity error.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/item-shadowing/text/0000-supertrait-item-shadowing-v2.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3624",
             "title": "Supertrait item shadowing v2",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Use custom smart pointers with trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/derive-smart-pointer/text/3621-derive-smart-pointer.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2223882107\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/123430\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/123430/hovercard\" href=\"https://github.com/rust-lang/rust/issues/123430\">rust-lang/rust#123430</a></p>\n<hr>\n<p dir=\"auto\">Co-authored by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Darksonn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Darksonn\">@Darksonn</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Veykril/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Veykril\">@Veykril</a><br>\nThank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/compiler-errors/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/compiler-errors\">@compiler-errors</a> for <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/410673-t-lang.2Fmeetings/topic/RfL.20meeting.202024-02-21/near/422701742\" rel=\"nofollow\">the original idea</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3621",
             "title": "RFC: #[derive(SmartPointer)]",
-            "date_modified": "2024-05-06T09:22:34.000Z",
+            "date_modified": "2024-05-06T10:39:38.000Z",
             "date_published": "2024-05-02T07:49:52.000Z",
             "author": {
                 "name": "Darksonn",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "pitaj",
                 "url": "https://github.com/pitaj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8980455?u=67104ddb0b6105cb807a4cfa7c052bd7cc29963b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow type inference for <code class=\"notranslate\">const</code> or <code class=\"notranslate\">static</code> when the RHS is known.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"const PI = 3.1415; // inferred as f64\nstatic MESSAGE = &quot;Hello, World!&quot;; // inferred as &amp;'static str\nconst FN = std::string::String::default; // Inferred as the unnamable type of ZST closure associated with this item. Its type is reported by `type_name_of_val` as ::std::string::String::default\"><pre class=\"notranslate\"><span class=\"pl-k\">const</span> <span class=\"pl-v\">PI</span> = <span class=\"pl-c1\">3.1415</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// inferred as f64</span>\n<span class=\"pl-k\">static</span> <span class=\"pl-v\">MESSAGE</span> = <span class=\"pl-s\">\"Hello, World!\"</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// inferred as &amp;'static str</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-v\">FN</span> = std<span class=\"pl-kos\">:</span><span class=\"pl-kos\">:</span>string<span class=\"pl-kos\">::</span><span class=\"pl-smi\">String</span><span class=\"pl-kos\">::</span><span class=\"pl-smi\">default</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// Inferred as the unnamable type of ZST closure associated with this item. Its type is reported by `type_name_of_val` as ::std::string::String::default</span></pre></div>\n<p dir=\"auto\">Pre-RFC discussion: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"114409804\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1349\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/1349/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/1349\">#1349</a></p>\n<p dir=\"auto\">cc <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"156003349\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1623\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/1623/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/1623\">#1623</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Neo-Zhixing/rfcs/blob/const_type_inference/text/0000-const-type-inference.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3546",
-            "title": "RFC: Allow type inference for const or static",
-            "date_modified": "2024-04-30T05:39:32.000Z",
-            "date_published": "2023-12-21T12:19:16.000Z",
-            "author": {
-                "name": "Neo-Zhixing",
-                "url": "https://github.com/Neo-Zhixing"
             }
         }
     ]
