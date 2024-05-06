@@ -8,8 +8,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3626",
-            "title": "RFC to extend format_args implicit arguments to allow field access",
-            "date_modified": "2024-05-06T10:59:02.000Z",
+            "title": "Extend format_args implicit arguments to allow field access",
+            "date_modified": "2024-05-06T11:59:05.000Z",
             "date_published": "2024-05-06T10:21:50.000Z",
             "author": {
                 "name": "joshtriplett",
