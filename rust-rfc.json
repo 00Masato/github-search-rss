@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/match-ergonomics-2024/text/3627-match-ergonomics-2024.md\">Rendered</a></p>\n<p dir=\"auto\">Changes to match ergonomics for the 2024 edition.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang A-patterns A-edition-2024</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3627",
             "title": "Match ergonomics 2024",
-            "date_modified": "2024-05-06T21:01:10.000Z",
+            "date_modified": "2024-05-06T21:44:05.000Z",
             "date_published": "2024-05-06T20:46:23.000Z",
             "author": {
                 "name": "Jules-Bertholet",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3626",
             "title": "Extend format_args implicit arguments to allow field access",
-            "date_modified": "2024-05-06T20:42:42.000Z",
+            "date_modified": "2024-05-06T22:01:02.000Z",
             "date_published": "2024-05-06T10:21:50.000Z",
             "author": {
                 "name": "joshtriplett",
