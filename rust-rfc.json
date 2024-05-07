@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Co-authored-by: Eric Holk <a href=\"mailto:eric.holk@gmail.com\">eric.holk@gmail.com</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/fn-body-blocks/text/3629-fn-body-blocks.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3629",
             "title": "Function body blocks",
-            "date_modified": "2024-05-07T17:44:30.000Z",
+            "date_modified": "2024-05-07T18:59:17.000Z",
             "date_published": "2024-05-07T08:42:43.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk <a href=\"mailto:eric.holk@gmail.com\">eric.holk@gmail.com</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3628",
             "title": "`async T` and `gen T` types",
-            "date_modified": "2024-05-07T17:42:07.000Z",
+            "date_modified": "2024-05-07T18:45:12.000Z",
             "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/match-ergonomics-2024/text/3627-match-ergonomics-2024.md\">Rendered</a></p>\n<p dir=\"auto\">Changes to match ergonomics for the 2024 edition.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang A-patterns A-edition-2024</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3627",
             "title": "Match ergonomics 2024",
-            "date_modified": "2024-05-07T17:46:03.000Z",
+            "date_modified": "2024-05-07T18:59:00.000Z",
             "date_published": "2024-05-06T20:46:23.000Z",
             "author": {
                 "name": "Jules-Bertholet",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3626",
             "title": "Extend format_args implicit arguments to allow field access",
-            "date_modified": "2024-05-07T17:45:32.000Z",
+            "date_modified": "2024-05-07T18:34:45.000Z",
             "date_published": "2024-05-06T10:21:50.000Z",
             "author": {
                 "name": "joshtriplett",
