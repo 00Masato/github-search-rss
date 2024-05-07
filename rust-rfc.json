@@ -4,5 +4,226 @@
     "home_page_url": "https://00masato.github.io/github-search-rss/rust-rfc.json",
     "feed_url": "https://00masato.github.io/github-search-rss/rust-rfc.json",
     "description": "rust-lang/rfcs pr on GitHub",
-    "items": []
+    "items": [
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Co-authored-by: Eric Holk <a href=\"mailto:eric.holk@gmail.com\">eric.holk@gmail.com</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/fn-body-blocks/text/3629-fn-body-blocks.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3629",
+            "title": "Function body blocks",
+            "date_modified": "2024-05-07T16:01:32.000Z",
+            "date_published": "2024-05-07T08:42:43.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk <a href=\"mailto:eric.holk@gmail.com\">eric.holk@gmail.com</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3628",
+            "title": "`async T` and `gen T` types",
+            "date_modified": "2024-05-07T12:47:38.000Z",
+            "date_published": "2024-05-07T08:33:00.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/match-ergonomics-2024/text/3627-match-ergonomics-2024.md\">Rendered</a></p>\n<p dir=\"auto\">Changes to match ergonomics for the 2024 edition.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang A-patterns A-edition-2024</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3627",
+            "title": "Match ergonomics 2024",
+            "date_modified": "2024-05-07T15:51:01.000Z",
+            "date_published": "2024-05-06T20:46:23.000Z",
+            "author": {
+                "name": "Jules-Bertholet",
+                "url": "https://github.com/Jules-Bertholet"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3626",
+            "title": "Extend format_args implicit arguments to allow field access",
+            "date_modified": "2024-05-07T08:16:12.000Z",
+            "date_published": "2024-05-06T10:21:50.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"545842586\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2845/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2845\">#2845</a> which aims to resolve the <a href=\"https://github.com/rust-lang/rust/issues/88967\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/88967/hovercard\">issues</a> surrounding the stabilization of <code class=\"notranslate\">Iterator::intersperse</code>.</p>\n<h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">When name resolution encounters an ambiguity between 2 trait methods, if one trait is a sub-trait of the other then select that method instead of reporting an ambiguity error.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/item-shadowing/text/0000-supertrait-item-shadowing-v2.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3624",
+            "title": "Supertrait item shadowing v2",
+            "date_modified": "2024-05-07T15:56:31.000Z",
+            "date_published": "2024-05-03T23:39:09.000Z",
+            "author": {
+                "name": "Amanieu",
+                "url": "https://github.com/Amanieu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Use custom smart pointers with trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/derive-smart-pointer/text/3621-derive-smart-pointer.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2223882107\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/123430\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/123430/hovercard\" href=\"https://github.com/rust-lang/rust/issues/123430\">rust-lang/rust#123430</a></p>\n<hr>\n<p dir=\"auto\">Co-authored by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Darksonn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Darksonn\">@Darksonn</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Veykril/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Veykril\">@Veykril</a><br>\nThank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/compiler-errors/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/compiler-errors\">@compiler-errors</a> for <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/410673-t-lang.2Fmeetings/topic/RfL.20meeting.202024-02-21/near/422701742\" rel=\"nofollow\">the original idea</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3621",
+            "title": "RFC: #[derive(SmartPointer)]",
+            "date_modified": "2024-05-06T18:10:25.000Z",
+            "date_published": "2024-05-02T07:49:52.000Z",
+            "author": {
+                "name": "Darksonn",
+                "url": "https://github.com/Darksonn"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43425812?u=f2f8ffc3e131abd598a2ae1b7832c1657ddef687&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #3618.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2272444805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3618\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/3618/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/3618\">#3618</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/hamirmahal/rfcs/blob/patch-2/text/0344-conventions-galore.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3619",
+            "title": "docs: `0344-conventions-galore.md` should use `_`",
+            "date_modified": "2024-05-02T13:12:25.000Z",
+            "date_published": "2024-04-30T21:02:18.000Z",
+            "author": {
+                "name": "hamirmahal",
+                "url": "https://github.com/hamirmahal"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">To fully stabilize, in Rust 2024, the Lifetime Capture Rules 2024 that we accepted in RFC 3498, we need to stabilize some means of precise capturing.  This RFC provides that means.</p>\n<p dir=\"auto\">This RFC adds <code class=\"notranslate\">use&lt;..&gt;</code> syntax for specifying which generic parameters should be captured in an opaque RPIT-like <code class=\"notranslate\">impl Trait</code> type, e.g. <code class=\"notranslate\">impl use&lt;'t, T&gt; Trait</code>.  This solves the problem of overcapturing and will allow the Lifetime Capture Rules 2024 to be fully stabilized for RPIT in Rust 2024.</p>\n<p dir=\"auto\">One way to think about <code class=\"notranslate\">use&lt;..&gt;</code> is that, in Rust <code class=\"notranslate\">use</code> brings things <em>into scope</em>, and here we are bringing certain generic parameters into scope for the hidden type.</p>\n<p dir=\"auto\">For some history about the progress toward this feature predating this RFC, see <a href=\"https://github.com/rust-lang/rfcs/pull/3617#issuecomment-2076349223\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3617/hovercard\">this comment</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/TC/precise-capturing/text/3617-precise-capturing.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3617",
+            "title": "Precise capturing",
+            "date_modified": "2024-05-06T09:04:25.000Z",
+            "date_published": "2024-04-24T07:57:17.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Third-party <code class=\"notranslate\">derive</code> macros want to be able to use the same direct discriminant access to the <code class=\"notranslate\">enum</code> for which they're implementing a trait that the core derive macro does, which seems entirely reasonable.</p>\n<p dir=\"auto\">To allow that without imposing a new category of major breaking changes on library authors, this proposes a <em>safe</em> built-in way for getting the discriminant as a primitive integer -- not an opaque <code class=\"notranslate\">mem::Discriminant</code> -- for anything on which you can see private fields.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/enum-discriminant/text/3607-enum-discriminant.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3607",
+            "title": "Add an expression for direct access to an enum's discriminant",
+            "date_modified": "2024-05-07T07:57:56.000Z",
+            "date_published": "2024-04-07T04:18:53.000Z",
+            "author": {
+                "name": "scottmcm",
+                "url": "https://github.com/scottmcm"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5026283?u=5904dba48d84a78b16221f9d91cfdd86c4985e5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/chorman0773/rust-rfcs/blob/freeze-uninit/text/0000-freeze-uninit.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3605",
+            "title": "RFC: Add `freeze` intrinsic and related library functions",
+            "date_modified": "2024-04-19T07:51:25.000Z",
+            "date_published": "2024-04-02T04:01:02.000Z",
+            "author": {
+                "name": "chorman0773",
+                "url": "https://github.com/chorman0773"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/146410045?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I think this a good quality of life proposal similar to the <a href=\"https://rust-lang.github.io/rfcs/3107-derive-default-enum.html\" rel=\"nofollow\">proposal to add a derive Default for enums</a>, not big in scope or magnitude.<br>\nTLDR:<br>\nI want to make a derive macro for TryFrom and Into, that generate an impl of TryFrom and Into for any C-Style Enum:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"//using these two macros\n#[derive(FromInt, IntoInt)] // names subject to change\nenum CStyleEnum {\n   Variant1 = 10,\n   Variant2 = 20,\n   ...\n}\n\n//convert from a number to the C-style enum easily\nlet from_num = CStyleEnum::try_from(10); // Ok(CStyleEnum::Variant1)\nlet failed_from = CStyleEnum::try_from(21); // Err(())\n//convert into a number from a C-style enum more generically\nlet into_num = CStyleEnum::Variant2.into(); //20\"><pre class=\"notranslate\"><span class=\"pl-c\">//using these two macros</span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>derive<span class=\"pl-kos\">(</span><span class=\"pl-v\">FromInt</span><span class=\"pl-kos\">,</span> <span class=\"pl-v\">IntoInt</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span> <span class=\"pl-c\">// names subject to change</span>\n<span class=\"pl-k\">enum</span> <span class=\"pl-smi\">CStyleEnum</span> <span class=\"pl-kos\">{</span>\n   <span class=\"pl-v\">Variant1</span> = <span class=\"pl-c1\">10</span><span class=\"pl-kos\">,</span>\n   <span class=\"pl-v\">Variant2</span> = <span class=\"pl-c1\">20</span><span class=\"pl-kos\">,</span>\n   ...\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-c\">//convert from a number to the C-style enum easily</span>\n<span class=\"pl-k\">let</span> from_num = <span class=\"pl-smi\">CStyleEnum</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">try_from</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">10</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// Ok(CStyleEnum::Variant1)</span>\n<span class=\"pl-k\">let</span> failed_from = <span class=\"pl-smi\">CStyleEnum</span><span class=\"pl-kos\">::</span><span class=\"pl-en\">try_from</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">21</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">// Err(())</span>\n<span class=\"pl-c\">//convert into a number from a C-style enum more generically</span>\n<span class=\"pl-k\">let</span> into_num = <span class=\"pl-smi\">CStyleEnum</span><span class=\"pl-kos\">::</span><span class=\"pl-v\">Variant2</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">into</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-c\">//20</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/agreyyy/rfcs-c_style_enums/blob/master/text/3604-derive_c-enum_integer_conversions.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3604",
+            "title": "RFC: Add a special TryFrom and Into derive macro, specifically for C-Style enums",
+            "date_modified": "2024-04-14T10:40:08.000Z",
+            "date_published": "2024-04-01T13:10:56.000Z",
+            "author": {
+                "name": "agreyyy",
+                "url": "https://github.com/agreyyy"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Re-organise the compiler team:</p>\n<ul dir=\"auto\">\n<li>Re-define and rename the tiers of membership</li>\n<li>Change how team members and contributors are promoted</li>\n<li>Document expectations of team members</li>\n<li>Establish mechanism for scaling additional responsibilities that team members take on and recognising these contributions</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/compiler-team-trusted-contrib-maintainer/text/0000-compiler-team-trusted-contrib-maintainer.md\">Rendered text</a></p>\n<p dir=\"auto\">@rust-lang/compiler @rust-lang/compiler-contributors</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3599",
+            "title": "re-organise the compiler team",
+            "date_modified": "2024-04-29T10:50:01.000Z",
+            "date_published": "2024-03-28T15:14:51.000Z",
+            "author": {
+                "name": "davidtwco",
+                "url": "https://github.com/davidtwco"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164242179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More details are in the MD himself.<br>\nFor more possible info see:<br>\n<a href=\"https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050\" rel=\"nofollow\">https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050</a><br>\n<a href=\"https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer\" rel=\"nofollow\">https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/benisxdxd/rfcs/blob/master/text/3594-expose-stackrealign-attribute.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3594",
+            "title": "RFC: Add realign_stack attribute to rustc",
+            "date_modified": "2024-05-06T19:46:45.000Z",
+            "date_published": "2024-03-26T00:19:11.000Z",
+            "author": {
+                "name": "benisxdxd",
+                "url": "https://github.com/benisxdxd"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1786500?u=9d2e4fd7ebf17905de63ea2f3b6dc4e67bc446ba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/obsgolem/rfcs/blob/master/text/0000-import-trait-methods.md\">Rendered</a></p>\n<p dir=\"auto\">This feature fully supplants <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"631148470\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/73001\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/73001/hovercard\" href=\"https://github.com/rust-lang/rust/pull/73001\">rust-lang/rust#73001</a>, allowing you to do things like:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"use Default::default;\n\nstruct S {\n    a: HashMap&lt;i32, i32&gt;,\n}\n\nimpl S {\n    fn new() -&gt; S {\n        S {\n            a: default()\n        }\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">use</span> <span class=\"pl-smi\">Default</span><span class=\"pl-kos\">::</span>default<span class=\"pl-kos\">;</span>\n\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">HashMap</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">,</span> <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">fn</span> <span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n            <span class=\"pl-c1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-en\">default</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span>\n        <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">and more.</p>\n<p dir=\"auto\">This is my first RFC, please forgive any missteps I make in the process.</p>\n<p dir=\"auto\">Partially completes <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"226922754\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1995\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/1995/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/1995\">#1995</a>.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3591",
+            "title": "Add support for `use Trait::func`",
+            "date_modified": "2024-03-31T03:16:03.000Z",
+            "date_published": "2024-03-19T21:57:05.000Z",
+            "author": {
+                "name": "obsgolem",
+                "url": "https://github.com/obsgolem"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3585",
+            "title": "Make `cargo install` respect lockfiles by default",
+            "date_modified": "2024-03-17T19:36:50.000Z",
+            "date_published": "2024-03-10T23:24:47.000Z",
+            "author": {
+                "name": "casey",
+                "url": "https://github.com/casey"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134893?u=940724c499b98313ee519a69a725d26908685e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The existing RFC does not give sufficient attention to parametrized types and traits.</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/dhardy/rfcs/blob/revise-nonlocal-defns/text/3373-avoid-nonlocal-definitions-in-fns.md\">Rendered</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3373#issuecomment-1975065275\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3373/hovercard\">Original RFC</a></li>\n<li><a href=\"https://github.com/rust-lang/rust/issues/120363\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/120363/hovercard\">Tracking issue</a></li>\n</ul>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3581",
+            "title": "Update non-local-defns regarding parameterized traits and types",
+            "date_modified": "2024-04-27T08:10:13.000Z",
+            "date_published": "2024-03-03T14:58:17.000Z",
+            "author": {
+                "name": "dhardy",
+                "url": "https://github.com/dhardy"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/123987141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is the first of a series for a PKI model for Rust; includes the design and implementation for a PKI CA and a resilient Quorum model for the project to implement, and next steps for signing across the project. Crate and release signing will follow in a subsequent separate RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/walterhpearce/rfcs/blob/master/text/3579-pki.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3579",
+            "title": "Public Key Infrastructure for Rust Project",
+            "date_modified": "2024-03-21T22:26:37.000Z",
+            "date_published": "2024-02-27T21:03:20.000Z",
+            "author": {
+                "name": "walterhpearce",
+                "url": "https://github.com/walterhpearce"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/160595697?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC improves ergonomics for pointers in unsafe Rust. It adds the RArrow token as a single-dereference member access operator. <code class=\"notranslate\">x-&gt;field</code> desugars to <code class=\"notranslate\">(*x).field</code>, and <code class=\"notranslate\">x-&gt;method()</code> desugars to <code class=\"notranslate\">(*x).method()</code>.</p>\n<p dir=\"auto\">Before:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"(*(*(*pointer.add(5)).some_field).method_returning_pointer()).other_method()\"><pre class=\"notranslate\"><span class=\"pl-kos\">(</span><span class=\"pl-c1\">*</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">*</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">*</span>pointer<span class=\"pl-kos\">.</span><span class=\"pl-en\">add</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">5</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">some_field</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">method_returning_pointer</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">other_method</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\"></span></pre></div>\n<p dir=\"auto\">After:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"pointer.add(5)-&gt;some_field-&gt;method_returning_pointer()-&gt;other_method()\"><pre class=\"notranslate\">pointer<span class=\"pl-kos\">.</span><span class=\"pl-en\">add</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">5</span><span class=\"pl-kos\">)</span>-&gt;some_field-&gt;<span class=\"pl-en\">method_returning_pointer</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span>-&gt;<span class=\"pl-en\">other_method</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/EEliisaa/arrow_deref/blob/master/text/0000-arrow-deref.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3577",
+            "title": "RFC: RArrow Dereference for Pointer Ergonomics ",
+            "date_modified": "2024-04-10T09:48:45.000Z",
+            "date_published": "2024-02-20T23:18:09.000Z",
+            "author": {
+                "name": "EEliisaa",
+                "url": "https://github.com/EEliisaa"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce an <code class=\"notranslate\">is</code> operator in Rust 2024, to test if an expression matches a<br>\npattern and bind the variables in the pattern. This is in <em>addition</em> to<br>\n<code class=\"notranslate\">let</code>-chaining; this RFC proposes that we allow both <code class=\"notranslate\">let</code>-chaining <em>and</em> the<br>\n<code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">Previous discussions around <code class=\"notranslate\">let</code>-chains have treated the <code class=\"notranslate\">is</code> operator as an<br>\nalternative on the basis that they serve similar functions, rather than<br>\nproposing that they can and should coexist. This RFC proposes that we allow<br>\n<code class=\"notranslate\">let</code>-chaining <em>and</em> add the <code class=\"notranslate\">is</code> operator.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">is</code> operator allows developers to chain multiple matching-and-binding<br>\noperations and simplify what would otherwise require complex nested<br>\nconditionals. The <code class=\"notranslate\">is</code> operator allows writing and reading a pattern match from<br>\nleft-to-right, which reads more naturally in many circumstances. For instance,<br>\nconsider an expression like <code class=\"notranslate\">x is Some(y) &amp;&amp; y &gt; 5</code>; that boolean expression<br>\nreads more naturally from left-to-right than <code class=\"notranslate\">let Some(y) = x &amp;&amp; y &gt; 5</code>.</p>\n<p dir=\"auto\">This is even more true at the end of a longer expression chain, such as<br>\n<code class=\"notranslate\">x.method()?.another_method().await? is Some(y)</code>. Rust method chaining and <code class=\"notranslate\">?</code><br>\nand <code class=\"notranslate\">.await</code> all encourage writing code that reads in operation order from left<br>\nto right, and <code class=\"notranslate\">is</code> fits naturally at the end of such a sequence.</p>\n<p dir=\"auto\">Having an <code class=\"notranslate\">is</code> operator would also help to reduce the demand for methods on<br>\ntypes such as <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Result</code> (e.g. <code class=\"notranslate\">Option::is_some_and</code> and<br>\n<code class=\"notranslate\">Result::is_ok_and</code> and <code class=\"notranslate\">Result::is_err_and</code>), by allowing prospective users of<br>\nthose methods to write a natural-looking condition using <code class=\"notranslate\">is</code> instead.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/is/text/3573-is.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3573",
+            "title": "`is` operator for pattern-matching and binding",
+            "date_modified": "2024-05-02T08:26:39.000Z",
+            "date_published": "2024-02-16T11:43:05.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49301588?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Pre-RFC on <a href=\"https://internals.rust-lang.org/t/pre-rfc-deprecate-then-remove-static-mut/20072\" rel=\"nofollow\">IRLO</a>.</p>\n<p dir=\"auto\"><a href=\"https://www.surveyhero.com/results/1749245/qsry7n7amfk9t2dbanw15vfyo0x06tzj\" rel=\"nofollow\">Results</a> from research survey to inform discussion with respect to perception of the feature. (JS required)</p>\n<p dir=\"auto\"><a href=\"https://github.com/dyslexicsteak/rfcs/blob/master/text/3560-deprecate-static-mut.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3560",
+            "title": "Deprecate `static mut`",
+            "date_modified": "2024-04-10T19:39:47.000Z",
+            "date_published": "2024-01-26T09:59:12.000Z",
+            "author": {
+                "name": "dyslexicsteak",
+                "url": "https://github.com/dyslexicsteak"
+            }
+        }
+    ]
 }
