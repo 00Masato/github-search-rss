@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3050060?u=6ca85464b07c5464a052250a4fc3e3f9c03c97ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rust/issues/43781\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/43781/hovercard\">tracking issue</a></p>\n<p dir=\"auto\">cc @rust-lang/rustdoc</p>\n<p dir=\"auto\"><a href=\"https://github.com/GuillaumeGomez/rfcs/blob/doc-cfg/text/000-rustdoc-cfgs-handling.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3631",
             "title": "RFC for doc_cfg, doc_cfg_auto, doc_cfg_hide and doc_cfg_show features",
-            "date_modified": "2024-05-09T16:16:52.000Z",
+            "date_modified": "2024-05-09T19:56:19.000Z",
             "date_published": "2024-05-09T14:08:45.000Z",
             "author": {
                 "name": "GuillaumeGomez",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3628",
             "title": "`async T` and `gen T` types",
-            "date_modified": "2024-05-09T18:53:23.000Z",
+            "date_modified": "2024-05-09T19:47:31.000Z",
             "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
