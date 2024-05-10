@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-impl-fn/text/0000-externally-implementable-functions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3632",
             "title": "[RFC] externally implementable functions",
-            "date_modified": "2024-05-10T11:47:26.000Z",
+            "date_modified": "2024-05-10T12:59:42.000Z",
             "date_published": "2024-05-10T09:40:13.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3626",
             "title": "Extend format_args implicit arguments to allow field access",
-            "date_modified": "2024-05-08T23:09:27.000Z",
+            "date_modified": "2024-05-10T12:53:28.000Z",
             "date_published": "2024-05-06T10:21:50.000Z",
             "author": {
                 "name": "joshtriplett",
