@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/stabilize-marker-freeze/text/0000-stabilize-marker-freeze.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3633",
+            "title": "Stabilization RFC for `core::marker::Freeze` in bounds",
+            "date_modified": "2024-05-10T17:00:43.000Z",
+            "date_published": "2024-05-10T17:00:40.000Z",
+            "author": {
+                "name": "p-avital",
+                "url": "https://github.com/p-avital"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-impl-fn/text/0000-externally-implementable-functions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3632",
             "title": "[RFC] externally implementable functions",
-            "date_modified": "2024-05-10T15:31:51.000Z",
+            "date_modified": "2024-05-10T16:18:36.000Z",
             "date_published": "2024-05-10T09:40:13.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3628",
             "title": "`async T` and `gen T` types",
-            "date_modified": "2024-05-10T00:37:55.000Z",
+            "date_modified": "2024-05-10T16:11:51.000Z",
             "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "walterhpearce",
                 "url": "https://github.com/walterhpearce"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/160595697?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC improves ergonomics for pointers in unsafe Rust. It adds the RArrow token as a single-dereference member access operator. <code class=\"notranslate\">x-&gt;field</code> desugars to <code class=\"notranslate\">(*x).field</code>, and <code class=\"notranslate\">x-&gt;method()</code> desugars to <code class=\"notranslate\">(*x).method()</code>.</p>\n<p dir=\"auto\">Before:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"(*(*(*pointer.add(5)).some_field).method_returning_pointer()).other_method()\"><pre class=\"notranslate\"><span class=\"pl-kos\">(</span><span class=\"pl-c1\">*</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">*</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">*</span>pointer<span class=\"pl-kos\">.</span><span class=\"pl-en\">add</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">5</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">some_field</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">method_returning_pointer</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">other_method</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\"></span></pre></div>\n<p dir=\"auto\">After:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"pointer.add(5)-&gt;some_field-&gt;method_returning_pointer()-&gt;other_method()\"><pre class=\"notranslate\">pointer<span class=\"pl-kos\">.</span><span class=\"pl-en\">add</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">5</span><span class=\"pl-kos\">)</span>-&gt;some_field-&gt;<span class=\"pl-en\">method_returning_pointer</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span>-&gt;<span class=\"pl-en\">other_method</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/EEliisaa/arrow_deref/blob/master/text/0000-arrow-deref.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3577",
-            "title": "RFC: RArrow Dereference for Pointer Ergonomics ",
-            "date_modified": "2024-04-10T09:48:45.000Z",
-            "date_published": "2024-02-20T23:18:09.000Z",
-            "author": {
-                "name": "EEliisaa",
-                "url": "https://github.com/EEliisaa"
             }
         }
     ]
