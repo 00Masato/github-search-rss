@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Recently rediscovered, that <code class=\"notranslate\">create_schema</code> for PostgreSQL does not support convenient <code class=\"notranslate\">:force</code> and <code class=\"notranslate\">:if_not_exists</code> options. While <code class=\"notranslate\">drop_schema</code> supports <code class=\"notranslate\">:if_exists</code>.</p>",
+            "url": "https://github.com/rails/rails/pull/51790",
+            "title": "Add support for `:if_not_exists` and `:force` options to `create_schema`",
+            "date_modified": "2024-05-11T13:42:53.000Z",
+            "date_published": "2024-05-11T13:42:49.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2282598999\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51751\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51751/hovercard\" href=\"https://github.com/rails/rails/pull/51751\">#51751</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Now that the dev container guide is merged let's reference it in this comment to help people go in the right direction.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51789",
+            "title": "Reference the dev container guides in a comment in the production doc…",
+            "date_modified": "2024-05-11T13:27:02.000Z",
+            "date_published": "2024-05-11T13:26:56.000Z",
+            "author": {
+                "name": "andrewn617",
+                "url": "https://github.com/andrewn617"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, <code class=\"notranslate\">ActiveRecord::Relation.destroy_all</code> returns all the affected records, so users can implement some custom logic based on that without querying the database prior to the <code class=\"notranslate\">destroy_all</code> call.</p>\n<p dir=\"auto\">But, <code class=\"notranslate\">in_batches.destroy_all</code> always returns <code class=\"notranslate\">nil</code>, which is not very much useful. And in this case, to implement some custom logic based on the affected rows, we actually need to query the database prior to the operation.</p>\n<p dir=\"auto\">This PR changes that method to always return the number of destroyed records.</p>",
             "url": "https://github.com/rails/rails/pull/51788",
             "title": "Change `BatchEnumerator#destroy_all` to return the total number of affected rows",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "calleluks",
                 "url": "https://github.com/calleluks"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This pull request adds a changelog entry for PostgreSQL <code class=\"notranslate\">Cidr#change?</code> behavior change.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Follow up <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2256689926\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51633\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51633/hovercard\" href=\"https://github.com/rails/rails/pull/51633\">#51633</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">None</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51742",
-            "title": "Add changelog entry for PostgreSQL `Cidr#change?` behavior change",
-            "date_modified": "2024-05-06T04:45:07.000Z",
-            "date_published": "2024-05-06T04:33:20.000Z",
-            "author": {
-                "name": "yahonda",
-                "url": "https://github.com/yahonda"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8207?u=519e0cd2eb38c2b5c30ce471f5801c3b77b37f31&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1942177428\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49624\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49624/hovercard\" href=\"https://github.com/rails/rails/pull/49624\">#49624</a> contained commit <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/0c76f17f2dbf0d7ad90c890e6f334743cacce41f/hovercard\" href=\"https://github.com/rails/rails/commit/0c76f17f2dbf0d7ad90c890e6f334743cacce41f\"><tt>0c76f17</tt></a> which mistakenly used backticks instead of normal string quotes. This is easy to miss, but is a bug-without-test-failures at best and an opportunity for an attack vector at worst.</p>\n<p dir=\"auto\">Forcing the use of <code class=\"notranslate\">%x()</code> should make it more obvious visually where the command literals are.</p>\n<p dir=\"auto\">See related <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2279392482\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51739\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51739/hovercard\" href=\"https://github.com/rails/rails/pull/51739\">#51739</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>Tests are added or updated if you fix a bug or add a feature.</del></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> <del>CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</del></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51741",
-            "title": "Enable `Style/CommandLiteral` cop",
-            "date_modified": "2024-05-09T06:10:58.000Z",
-            "date_published": "2024-05-05T15:03:59.000Z",
-            "author": {
-                "name": "flavorjones",
-                "url": "https://github.com/flavorjones"
             }
         }
     ]
