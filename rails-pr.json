@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, <code class=\"notranslate\">ActiveRecord::Relation.destroy_all</code> returns all the affected records, so users can implement some custom logic based on that without querying the database prior to the <code class=\"notranslate\">destroy_all</code> call.</p>\n<p dir=\"auto\">But, <code class=\"notranslate\">in_batches.destroy_all</code> always returns <code class=\"notranslate\">nil</code>, which is not very much useful. And in this case, to implement some custom logic based on the affected rows, we actually need to query the database prior to the operation.</p>\n<p dir=\"auto\">This PR changes that method to always return the number of destroyed records.</p>",
+            "url": "https://github.com/rails/rails/pull/51788",
+            "title": "Change `BatchEnumerator#destroy_all` to return the total number of affected rows",
+            "date_modified": "2024-05-11T12:44:42.000Z",
+            "date_published": "2024-05-11T12:44:38.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If we have something like</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"create_table :users do |t|\n  t.timestamp :legacy_updated_at\nend\n\nclass User &lt; ActiveRecord::Base\n  alias_attribute :updated_at, :legacy_updated_at\nend\n\nUser.touch_all(:updated_at)\"><pre class=\"notranslate\"><span class=\"pl-en\">create_table</span> <span class=\"pl-pds\">:users</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">t</span>|\n  <span class=\"pl-s1\">t</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">timestamp</span> <span class=\"pl-pds\">:legacy_updated_at</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-k\">class</span> <span class=\"pl-v\">User</span> &lt; <span class=\"pl-v\">ActiveRecord</span>::<span class=\"pl-v\">Base</span>\n  <span class=\"pl-en\">alias_attribute</span> <span class=\"pl-pds\">:updated_at</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:legacy_updated_at</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">touch_all</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:updated_at</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\">then ActiveRecord will not resolve <code class=\"notranslate\">updated_at</code> to its alias correctly and result to a query that updates the same column twice.</p>\n<p dir=\"auto\">For PostgreSQL, this produces an error similar to this:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  multiple assignments to same column &quot;legacy_updated_at&quot;\"><pre class=\"notranslate\"><code class=\"notranslate\">ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  multiple assignments to same column \"legacy_updated_at\"\n</code></pre></div>",
             "url": "https://github.com/rails/rails/pull/51787",
             "title": "Fix `ActiveRecord::Relation#touch_all` with custom attribute aliased as attribute for update",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "flavorjones",
                 "url": "https://github.com/flavorjones"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44280450?u=5d0b7f0d7535c39131a9d2d513cbf4691236b6e4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created to remove <code class=\"notranslate\">FIXME</code> comment of <code class=\"notranslate\">ActiveStorage::Service::MirrorService</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request use thread pool to parallelize <code class=\"notranslate\">delete</code> and <code class=\"notranslate\">delete_prefixed</code> in <code class=\"notranslate\">ActiveStorage::Service::MirrorService</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">If this is a nit performance boost than complexity, how about remove comment?</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51740",
-            "title": "Improve performance in `ActiveStorage::Service::MirrorService`",
-            "date_modified": "2024-05-05T15:15:22.000Z",
-            "date_published": "2024-05-05T08:34:21.000Z",
-            "author": {
-                "name": "heka1024",
-                "url": "https://github.com/heka1024"
             }
         }
     ]
