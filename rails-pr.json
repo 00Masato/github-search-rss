@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, ActiveRecord is missing the ability to run <code class=\"notranslate\">touch_all</code> via batches (compared to <code class=\"notranslate\">update_all</code>/<code class=\"notranslate\">delete_all</code>/etc).</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Post.in_batches.touch_all\"><pre class=\"notranslate\"><span class=\"pl-v\">Post</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">in_batches</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">touch_all</span></pre></div>",
             "url": "https://github.com/rails/rails/pull/51785",
             "title": "Support `touch_all` in batches",
-            "date_modified": "2024-05-11T08:47:24.000Z",
+            "date_modified": "2024-05-11T09:41:48.000Z",
             "date_published": "2024-05-11T08:47:20.000Z",
             "author": {
                 "name": "fatkodima",
