@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If we have something like</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"create_table :users do |t|\n  t.timestamp :legacy_updated_at\nend\n\nclass User &lt; ActiveRecord::Base\n  alias_attribute :updated_at, :legacy_updated_at\nend\n\nUser.touch_all(:updated_at)\"><pre class=\"notranslate\"><span class=\"pl-en\">create_table</span> <span class=\"pl-pds\">:users</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">t</span>|\n  <span class=\"pl-s1\">t</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">timestamp</span> <span class=\"pl-pds\">:legacy_updated_at</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-k\">class</span> <span class=\"pl-v\">User</span> &lt; <span class=\"pl-v\">ActiveRecord</span>::<span class=\"pl-v\">Base</span>\n  <span class=\"pl-en\">alias_attribute</span> <span class=\"pl-pds\">:updated_at</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:legacy_updated_at</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">touch_all</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:updated_at</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\">then ActiveRecord will not resolve <code class=\"notranslate\">updated_at</code> to its alias correctly and result to a query that updates the same column twice.</p>\n<p dir=\"auto\">For PostgreSQL, this produces an error similar to this:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  multiple assignments to same column &quot;legacy_updated_at&quot;\"><pre class=\"notranslate\"><code class=\"notranslate\">ActiveRecord::StatementInvalid: PG::SyntaxError: ERROR:  multiple assignments to same column \"legacy_updated_at\"\n</code></pre></div>",
+            "url": "https://github.com/rails/rails/pull/51787",
+            "title": "Fix `ActiveRecord::Relation#touch_all` with custom attribute aliased as attribute for update",
+            "date_modified": "2024-05-11T11:19:54.000Z",
+            "date_published": "2024-05-11T11:19:50.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, ActiveRecord is missing the ability to run <code class=\"notranslate\">touch_all</code> via batches (compared to <code class=\"notranslate\">update_all</code>/<code class=\"notranslate\">delete_all</code>/etc).</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Post.in_batches.touch_all\"><pre class=\"notranslate\"><span class=\"pl-v\">Post</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">in_batches</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">touch_all</span></pre></div>",
             "url": "https://github.com/rails/rails/pull/51785",
             "title": "Support `touch_all` in batches",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "heka1024",
                 "url": "https://github.com/heka1024"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5104186?u=c6802aa87b5de2965f8269a3798d468a08a2843b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When using a polymorphic belongs_to, I usually have a list of allowed classes that I expect this association to use. Oftentimes there's even certain views that need to handle each expected option. Unexpected types in the table would cause problems and potentially pose a security risk.</p>\n<p dir=\"auto\">I've manually added an inclusion validator before, but wished I could just tell the association what the allowed options are.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">belongs_to</code>'s <code class=\"notranslate\">polymorphic</code> option to allow a String, Symbol, or array of Strings/Symbols of allowed model names. When provided, an inclusion validator is added to the model to ensure the <code class=\"notranslate\">_type</code> field is in the list of allowed class names.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51738",
-            "title": "Added option to validate which models are allowed to be associated to a polymorphic belongs_to",
-            "date_modified": "2024-05-09T17:53:46.000Z",
-            "date_published": "2024-05-05T05:12:41.000Z",
-            "author": {
-                "name": "natematykiewicz",
-                "url": "https://github.com/natematykiewicz"
             }
         }
     ]
