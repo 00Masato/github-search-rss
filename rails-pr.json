@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/basecamp/thruster/\">Thruster</a> is an HTTP/2 proxy for simple production-ready deployments of Rails applications. It runs alongside the Puma webserver to provide a few additional features that help your app run efficiently and safely on the open Internet:</p>\n<ul dir=\"auto\">\n<li>HTTP/2 support</li>\n<li>Automatic TLS certificate management with Let's Encrypt</li>\n<li>Basic HTTP caching of public assets</li>\n<li>X-Sendfile support and compression, to efficiently serve static files</li>\n</ul>\n<p dir=\"auto\">Rails 8 is going to configure the use of Thruster in the Dockerfile by default.</p>",
             "url": "https://github.com/rails/rails/pull/51793",
             "title": "Use Thruster by default",
-            "date_modified": "2024-05-12T17:37:37.000Z",
+            "date_modified": "2024-05-12T19:54:34.000Z",
             "date_published": "2024-05-12T02:48:53.000Z",
             "author": {
                 "name": "dhh",
