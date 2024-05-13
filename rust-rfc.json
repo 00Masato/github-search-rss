@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/stabilize-marker-freeze/text/0000-stabilize-marker-freeze.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3633",
             "title": "[RFC] `core::marker::Freeze` in bounds",
-            "date_modified": "2024-05-11T20:04:06.000Z",
+            "date_modified": "2024-05-13T09:52:04.000Z",
             "date_published": "2024-05-10T17:00:40.000Z",
             "author": {
                 "name": "p-avital",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-impl-fn/text/0000-externally-implementable-functions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3632",
             "title": "[RFC] externally implementable functions",
-            "date_modified": "2024-05-11T12:06:34.000Z",
+            "date_modified": "2024-05-13T09:59:03.000Z",
             "date_published": "2024-05-10T09:40:13.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Re-organise the compiler team:</p>\n<ul dir=\"auto\">\n<li>Re-define and rename the tiers of membership</li>\n<li>Change how team members and contributors are promoted</li>\n<li>Document expectations of team members</li>\n<li>Establish mechanism for scaling additional responsibilities that team members take on and recognising these contributions</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/compiler-team-trusted-contrib-maintainer/text/0000-compiler-team-trusted-contrib-maintainer.md\">Rendered text</a></p>\n<p dir=\"auto\">@rust-lang/compiler @rust-lang/compiler-contributors</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3599",
             "title": "re-organise the compiler team",
-            "date_modified": "2024-05-08T14:29:22.000Z",
+            "date_modified": "2024-05-13T09:27:57.000Z",
             "date_published": "2024-03-28T15:14:51.000Z",
             "author": {
                 "name": "davidtwco",
@@ -196,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1786500?u=9d2e4fd7ebf17905de63ea2f3b6dc4e67bc446ba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/obsgolem/rfcs/blob/master/text/0000-import-trait-methods.md\">Rendered</a></p>\n<p dir=\"auto\">This feature fully supplants <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"631148470\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/73001\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/73001/hovercard\" href=\"https://github.com/rust-lang/rust/pull/73001\">rust-lang/rust#73001</a>, allowing you to do things like:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"use Default::default;\n\nstruct S {\n    a: HashMap&lt;i32, i32&gt;,\n}\n\nimpl S {\n    fn new() -&gt; S {\n        S {\n            a: default()\n        }\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">use</span> <span class=\"pl-smi\">Default</span><span class=\"pl-kos\">::</span>default<span class=\"pl-kos\">;</span>\n\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">HashMap</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">,</span> <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">impl</span> <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">fn</span> <span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-smi\">S</span> <span class=\"pl-kos\">{</span>\n            <span class=\"pl-c1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-en\">default</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span>\n        <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">and more.</p>\n<p dir=\"auto\">This is my first RFC, please forgive any missteps I make in the process.</p>\n<p dir=\"auto\">Partially completes <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"226922754\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/1995\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/1995/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/1995\">#1995</a>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3591",
             "title": "Add support for `use Trait::func`",
-            "date_modified": "2024-05-13T08:58:08.000Z",
+            "date_modified": "2024-05-13T09:34:04.000Z",
             "date_published": "2024-03-19T21:57:05.000Z",
             "author": {
                 "name": "obsgolem",
