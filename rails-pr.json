@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rails should have a default answer to deploying applications out of the box to cloud or bare metal. Kamal is that answer. We'll configure it automatically as far as we can, but allow an opt-out with <code class=\"notranslate\">--skip-kamal</code>.</p>",
             "url": "https://github.com/rails/rails/pull/51798",
             "title": "Add Kamal by default to Rails 8",
-            "date_modified": "2024-05-13T20:00:55.000Z",
+            "date_modified": "2024-05-13T21:46:32.000Z",
             "date_published": "2024-05-12T20:16:46.000Z",
             "author": {
                 "name": "dhh",
@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/564142?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because fixes an error.</p>\n<p dir=\"auto\">Steps to reproduce are below comments.<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2256689926\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51633\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51633/hovercard?comment_id=2098218748&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/51633#issuecomment-2098218748\">#51633 (comment)</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">PostgreSQL Cidr#change? raise an error of NoMethodError: undefined method `prefix' for nil, when creating a record with an empty value of inet/cidr column.</p>\n<p dir=\"auto\">This Pull Request changes fixes the error and adds a test case.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51758",
             "title": "Fix PostgreSQL Cidr#change?: NoMethodError: undefined method `prefix' for nil",
-            "date_modified": "2024-05-07T14:31:47.000Z",
+            "date_modified": "2024-05-13T21:52:34.000Z",
             "date_published": "2024-05-07T14:31:41.000Z",
             "author": {
                 "name": "taketo1113",
