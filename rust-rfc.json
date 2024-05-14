@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This diagram was silently removed in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rust-lang/rfcs/commit/929c584a28012c2ba843099ec7b468d0d4730094/hovercard\" href=\"https://github.com/rust-lang/rfcs/commit/929c584a28012c2ba843099ec7b468d0d4730094\"><tt>929c584</tt></a>, but it's an important part of the summary. This puts the diagram back. (This time hosted on github.)</p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/3606-diagram/text/3606-temporary-lifetimes-in-tail-expressions.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3636",
+            "title": "Add diagram back to RFC 3606.",
+            "date_modified": "2024-05-14T12:55:53.000Z",
+            "date_published": "2024-05-14T12:05:29.000Z",
+            "author": {
+                "name": "m-ou-se",
+                "url": "https://github.com/m-ou-se"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2289380504\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3632\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3632/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3632\">#3632</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-static/text/0000-externally-definable-statics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3635",
             "title": " [RFC] externally definable statics",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/stabilize-marker-freeze/text/0000-stabilize-marker-freeze.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3633",
             "title": "[RFC] `core::marker::Freeze` in bounds",
-            "date_modified": "2024-05-14T08:05:40.000Z",
+            "date_modified": "2024-05-14T13:01:49.000Z",
             "date_published": "2024-05-10T17:00:40.000Z",
             "author": {
                 "name": "p-avital",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "obsgolem",
                 "url": "https://github.com/obsgolem"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3585",
-            "title": "Make `cargo install` respect lockfiles by default",
-            "date_modified": "2024-03-17T19:36:50.000Z",
-            "date_published": "2024-03-10T23:24:47.000Z",
-            "author": {
-                "name": "casey",
-                "url": "https://github.com/casey"
             }
         }
     ]
