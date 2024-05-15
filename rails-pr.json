@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the 7.2 release notes, to point <code class=\"notranslate\">7-2-stable</code> instead of <code class=\"notranslate\">main</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51834",
+            "title": "Point 7-2-stable branch CHANGELOGS in rails 7-2 release note [ci skip]",
+            "date_modified": "2024-05-15T03:50:37.000Z",
+            "date_published": "2024-05-15T03:49:30.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22231095?u=4b9ed50e760e192f3d22f1327a15326e70eb5ed4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes the accidentally added Rails 7.2 release note changes from Rails 8 release note</p>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc/ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
+            "url": "https://github.com/rails/rails/pull/51833",
+            "title": "Remove 7.2 release changes from Rails 8.0 release note [ci skip]",
+            "date_modified": "2024-05-15T03:17:40.000Z",
+            "date_published": "2024-05-15T03:17:36.000Z",
+            "author": {
+                "name": "akhilgkrishnan",
+                "url": "https://github.com/akhilgkrishnan"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We have too many controls in the default environment files. Only levers that are likely to be moved early or are integral to the specific environment should be there. Deprecation controls do not meet either of those standards.</p>",
             "url": "https://github.com/rails/rails/pull/51831",
             "title": "Don't expose deprecation controls for new apps",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "heka1024",
                 "url": "https://github.com/heka1024"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5104186?u=c6802aa87b5de2965f8269a3798d468a08a2843b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When using a polymorphic belongs_to, I usually have a list of allowed classes that I expect this association to use. Oftentimes there's even certain views that need to handle each expected option. Unexpected types in the table would cause problems and potentially pose a security risk.</p>\n<p dir=\"auto\">I've manually added an inclusion validator before, but wished I could just tell the association what the allowed options are.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">belongs_to</code>'s <code class=\"notranslate\">polymorphic</code> option to allow a String, Symbol, or array of Strings/Symbols of allowed model names. When provided, an inclusion validator is added to the model to ensure the <code class=\"notranslate\">_type</code> field is in the list of allowed class names.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51738",
-            "title": "Added option to validate which models are allowed to be associated to a polymorphic belongs_to",
-            "date_modified": "2024-05-13T15:21:54.000Z",
-            "date_published": "2024-05-05T05:12:41.000Z",
-            "author": {
-                "name": "natematykiewicz",
-                "url": "https://github.com/natematykiewicz"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16205473?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51737",
-            "title": "Update links from release notes [ci skip]",
-            "date_modified": "2024-05-05T03:30:12.000Z",
-            "date_published": "2024-05-04T17:38:00.000Z",
-            "author": {
-                "name": "nisusam",
-                "url": "https://github.com/nisusam"
             }
         }
     ]
