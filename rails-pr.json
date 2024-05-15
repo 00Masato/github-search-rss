@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5079556?u=d571676cb19b50ef19ea0dcd2f2b66a2d38dd574&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Those files were removed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2283902744\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51760\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51760/hovercard\" href=\"https://github.com/rails/rails/pull/51760\">#51760</a>, but gems like <code class=\"notranslate\">console1984</code> depend on these files for legacy Rails console command extensions. So keeping files around is required for backward-compatibility.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The files were added back and just require <code class=\"notranslate\">rails/console/methods.rb</code> instead.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51839",
             "title": "Add app.rb and helpers.rb back for backward compatibility",
-            "date_modified": "2024-05-15T12:41:58.000Z",
+            "date_modified": "2024-05-15T15:12:26.000Z",
             "date_published": "2024-05-15T04:34:07.000Z",
             "author": {
                 "name": "st0012",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We have too many controls in the default environment files. Only levers that are likely to be moved early or are integral to the specific environment should be there. Deprecation controls do not meet either of those standards.</p>",
             "url": "https://github.com/rails/rails/pull/51831",
             "title": "Don't expose deprecation controls for new apps",
-            "date_modified": "2024-05-15T00:22:34.000Z",
+            "date_modified": "2024-05-15T15:20:26.000Z",
             "date_published": "2024-05-14T23:44:20.000Z",
             "author": {
                 "name": "dhh",
