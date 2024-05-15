@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The secret_key_base necessary for running the app is already encrypted behind the master key. So if this is not turned on, you just get a nonsensical error message. Better to fail fast with a good error message when the master key is missing.</p>",
+            "url": "https://github.com/rails/rails/pull/51832",
+            "title": "Require master key by default in production",
+            "date_modified": "2024-05-15T00:01:12.000Z",
+            "date_published": "2024-05-14T23:50:45.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We have too many controls in the default environment files. Only levers that are likely to be moved early or are integral to the specific environment should be there. Deprecation controls do not meet either of those standards.</p>",
+            "url": "https://github.com/rails/rails/pull/51831",
+            "title": "Don't expose deprecation controls for new apps",
+            "date_modified": "2024-05-14T23:57:46.000Z",
+            "date_published": "2024-05-14T23:44:20.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">More clean up based on removing support for Oracle, SQLServer and Jbdc adapters.</p>\n<p dir=\"auto\">Previous work:<br>\n<a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/8eae75379cf3156228028006c54c82f5cf6c712d/hovercard\" href=\"https://github.com/rails/rails/commit/8eae75379cf3156228028006c54c82f5cf6c712d\"><tt>8eae753</tt></a><br>\n<a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/5b91084f20ed9a15c3137e5c84c09edc1b81ba3d/hovercard\" href=\"https://github.com/rails/rails/commit/5b91084f20ed9a15c3137e5c84c09edc1b81ba3d\"><tt>5b91084</tt></a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Remove all the branching from tests where we have specific logic for those adapters. And I removed all the test db configs for those adapters.</p>\n<p dir=\"auto\"><del>I also removed the <code class=\"notranslate\">database.yml.tt</code> for those adapters, which I missed doing in my previous PR.</del></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51826",
             "title": "Remove oracle sqlserver from tests",
@@ -69,17 +91,6 @@
             "author": {
                 "name": "akhilgkrishnan",
                 "url": "https://github.com/akhilgkrishnan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/basecamp/thruster/\">Thruster</a> is an HTTP/2 proxy for simple production-ready deployments of Rails applications. It runs alongside the Puma webserver to provide a few additional features that help your app run efficiently and safely on the open Internet:</p>\n<ul dir=\"auto\">\n<li>HTTP/2 support</li>\n<li>Automatic TLS certificate management with Let's Encrypt</li>\n<li>Basic HTTP caching of public assets</li>\n<li>X-Sendfile support and compression, to efficiently serve static files</li>\n</ul>\n<p dir=\"auto\">Rails 8 is going to configure the use of Thruster in the Dockerfile by default.</p>",
-            "url": "https://github.com/rails/rails/pull/51793",
-            "title": "Use Thruster by default to Rails 8",
-            "date_modified": "2024-05-14T19:02:16.000Z",
-            "date_published": "2024-05-12T02:48:53.000Z",
-            "author": {
-                "name": "dhh",
-                "url": "https://github.com/dhh"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "natematykiewicz",
                 "url": "https://github.com/natematykiewicz"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16205473?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51737",
-            "title": "Update links from release notes [ci skip]",
-            "date_modified": "2024-05-05T03:30:12.000Z",
-            "date_published": "2024-05-04T17:38:00.000Z",
-            "author": {
-                "name": "nisusam",
-                "url": "https://github.com/nisusam"
             }
         }
     ]
