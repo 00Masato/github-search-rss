@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19580458?u=1884c67cfdf07c9cdcd4edbe3532aa770aba55af&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/max-niederman/rust-rfcs/blob/guard-patterns/text/3637-guard-patterns.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3637",
+            "title": "Guard Patterns",
+            "date_modified": "2024-05-15T07:57:10.000Z",
+            "date_published": "2024-05-15T07:03:42.000Z",
+            "author": {
+                "name": "max-niederman",
+                "url": "https://github.com/max-niederman"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2289380504\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3632\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3632/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3632\">#3632</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-static/text/0000-externally-definable-statics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3635",
             "title": " [RFC] externally definable statics",
@@ -185,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Re-organise the compiler team:</p>\n<ul dir=\"auto\">\n<li>Re-define and rename the tiers of membership</li>\n<li>Change how team members and contributors are promoted</li>\n<li>Document expectations of team members</li>\n<li>Establish mechanism for scaling additional responsibilities that team members take on and recognising these contributions</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/compiler-team-trusted-contrib-maintainer/text/0000-compiler-team-trusted-contrib-maintainer.md\">Rendered text</a></p>\n<p dir=\"auto\">@rust-lang/compiler @rust-lang/compiler-contributors</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3599",
             "title": "re-organise the compiler team",
-            "date_modified": "2024-05-13T09:27:57.000Z",
+            "date_modified": "2024-05-15T07:11:20.000Z",
             "date_published": "2024-03-28T15:14:51.000Z",
             "author": {
                 "name": "davidtwco",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "obsgolem",
                 "url": "https://github.com/obsgolem"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1945?u=15e6bc170aee701847bbac4062aca05ed99cbf77&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/casey/rfcs/blob/respect-lockfiles/text/0000-respect-lockfiles.md\">Rendered</a></p>\n<p dir=\"auto\">Currently, <code class=\"notranslate\">cargo install</code> does not respect lockfiles by default, which causes breakages when dependencies release breaking but semver-compatible versions. This RFC proposes to change <code class=\"notranslate\">cargo install</code> to respect lockfiles by default.</p>\n<p dir=\"auto\">There's been a lot of discussion on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"471876873\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/7169\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/7169/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/7169\">rust-lang/cargo#7169</a> without much progress, so I thought it would be productive to open an RFC proposing changing the default behavior of <code class=\"notranslate\">cargo install</code> to respect lockfiles by default, to provide a concrete proposal that can be discussed.</p>\n<p dir=\"auto\">Even if this RFC is ultimately rejected, it will provide some forward progress on the issue, since we can then focus on an alternative to changing the default behavior.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3585",
-            "title": "Make `cargo install` respect lockfiles by default",
-            "date_modified": "2024-03-17T19:36:50.000Z",
-            "date_published": "2024-03-10T23:24:47.000Z",
-            "author": {
-                "name": "casey",
-                "url": "https://github.com/casey"
             }
         }
     ]
