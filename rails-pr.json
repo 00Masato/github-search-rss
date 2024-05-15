@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>monospace some constants/methods/etc.</li>\n<li>split some long introductory lines into multiple lines.</li>\n<li>consistently end introductory lines with puncuation. That style was far more common than just ending like this</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51841",
+            "title": "7-2-stable changelog pass [ci skip]",
+            "date_modified": "2024-05-15T12:41:38.000Z",
+            "date_published": "2024-05-15T12:41:33.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The repository got moved to the <code class=\"notranslate\">ruby-i18n</code> organization.</p>",
+            "url": "https://github.com/rails/rails/pull/51840",
+            "title": "Update link to `i18n` gem repository [ci-skip]",
+            "date_modified": "2024-05-15T13:00:11.000Z",
+            "date_published": "2024-05-15T12:34:29.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5079556?u=d571676cb19b50ef19ea0dcd2f2b66a2d38dd574&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Those files were removed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2283902744\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51760\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51760/hovercard\" href=\"https://github.com/rails/rails/pull/51760\">#51760</a>, but gems like <code class=\"notranslate\">console1984</code> depend on these files for legacy Rails console command extensions. So keeping files around is required for backward-compatibility.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The files were added back and just require <code class=\"notranslate\">rails/console/methods.rb</code> instead.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51839",
             "title": "Add app.rb and helpers.rb back for backward compatibility",
-            "date_modified": "2024-05-15T05:01:11.000Z",
+            "date_modified": "2024-05-15T12:41:58.000Z",
             "date_published": "2024-05-15T04:34:07.000Z",
             "author": {
                 "name": "st0012",
@@ -86,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67093?u=ae38721048300d0786fffecd87c5651a4ab67c35&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As I was working on my RailsConf 2024 talk, I realized the Rails plugin generator had not been updated to include the new rubocop and GitHub Actions files that ship with the app generator. These are particularly useful for plugin developers to make it easier to get started.</p>\n<p dir=\"auto\">I spoke briefly with <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> about making these additions which he agreed was a good idea. I also asked about brakeman, but he said that didn't make sense.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates the plugin generator to include templates for GitHub Actions and rubocop. It also updated a couple of files to ensure they pass the rubocop linting.</p>\n<p dir=\"auto\">I have kept these templates separate from the app templates as they are likely to diverge slightly over time.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I decided not to include any functionality for testing CI against multiple Rails versions, but this could be added in the future.<br>\nSame for testing multiple Ruby versions. This could be added later.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51822",
             "title": "Add rubocop and GitHub Actions to plugin generator",
-            "date_modified": "2024-05-14T18:56:33.000Z",
+            "date_modified": "2024-05-15T12:57:37.000Z",
             "date_published": "2024-05-14T16:19:04.000Z",
             "author": {
                 "name": "excid3",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "igordepolli",
                 "url": "https://github.com/igordepolli"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/104796188?u=f55da8c2af2ac5d2031ccae15167032aa923d44b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds information about how to pass additional arguments to transformations.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the right syntax for passing optional arguments for transformation methods in an attachment variant call is not documented anywhere and it is not intuitive. Yet, it is probably needed by many people who use ActiveStorage to create variants of attachments.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a few lines to the ActiveStorage guide showing how to pass additional arguments to a transformation method in an attachment variant call.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Doesn't apply.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51759",
-            "title": "Update active_storage_overview.md",
-            "date_modified": "2024-05-07T17:17:29.000Z",
-            "date_published": "2024-05-07T17:17:25.000Z",
-            "author": {
-                "name": "trebeil",
-                "url": "https://github.com/trebeil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5238698?u=891eeb449bcb179b920fd08ed86c18eb6d477a04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51606.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2252182200\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51606\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51606/hovercard\" href=\"https://github.com/rails/rails/issues/51606\">#51606</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51746",
-            "title": "Use the given `form` in `html_options` for the hidden field in `collection_check_boxes`",
-            "date_modified": "2024-05-06T12:36:57.000Z",
-            "date_published": "2024-05-06T09:41:35.000Z",
-            "author": {
-                "name": "3v0k4",
-                "url": "https://github.com/3v0k4"
             }
         }
     ]
