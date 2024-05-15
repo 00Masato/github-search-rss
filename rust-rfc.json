@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19580458?u=1884c67cfdf07c9cdcd4edbe3532aa770aba55af&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/max-niederman/rust-rfcs/blob/guard-patterns/text/3637-guard-patterns.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3637",
             "title": "Guard Patterns",
-            "date_modified": "2024-05-15T12:32:19.000Z",
+            "date_modified": "2024-05-15T13:51:51.000Z",
             "date_published": "2024-05-15T07:03:42.000Z",
             "author": {
                 "name": "max-niederman",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/stabilize-marker-freeze/text/0000-stabilize-marker-freeze.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3633",
             "title": "[RFC] `core::marker::Freeze` in bounds",
-            "date_modified": "2024-05-14T13:19:43.000Z",
+            "date_modified": "2024-05-15T13:43:01.000Z",
             "date_published": "2024-05-10T17:00:40.000Z",
             "author": {
                 "name": "p-avital",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3626",
             "title": "Extend format_args implicit arguments to allow field access",
-            "date_modified": "2024-05-11T15:51:53.000Z",
+            "date_modified": "2024-05-15T13:55:51.000Z",
             "date_published": "2024-05-06T10:21:50.000Z",
             "author": {
                 "name": "joshtriplett",
