@@ -8,8 +8,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1107956?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created to add a clarification note about Rails cache versioning when following the upgrade guides to update from 6.1.latest to 7.0.latest.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Following the official upgrade guide, the step <a href=\"https://guides.rubyonrails.org/upgrading_ruby_on_rails.html#new-activesupport-cache-serialization-format\" rel=\"nofollow\">3.12 - New ActiveSupport::Cache serialization format</a> provide 2 options in which the <code class=\"notranslate\">config.load_defaults</code> will be 6.1 or above.</p>\n<p dir=\"auto\">By following this, Rails apps not yet loading defaults from 6.0 and above but still using <code class=\"notranslate\">redis-rails</code> gem will faill and throw an error message.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request follow the guidelines available in <a href=\"https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#contributing-to-the-rails-documentation\" rel=\"nofollow\">contributing to the rails documentation guide</a></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51848",
-            "title": "Add a note about Cache Versioning [ci skip]",
-            "date_modified": "2024-05-17T02:10:00.000Z",
+            "title": "Add a note about Cache Versioning",
+            "date_modified": "2024-05-17T02:41:22.000Z",
             "date_published": "2024-05-16T09:58:24.000Z",
             "author": {
                 "name": "heliocola",
