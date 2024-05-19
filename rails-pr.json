@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14007?u=29d3bfbcb93f21ab58b6f05946b0a1882b513480&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51830.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2296461332\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51830\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51830/hovercard\" href=\"https://github.com/rails/rails/issues/51830\">#51830</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is just additional changes that would've been included in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1413798412\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46270\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46270/hovercard\" href=\"https://github.com/rails/rails/pull/46270\">#46270</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">When running multiple db rake tasks in a single command, we should restore to the original \"db config\" in between each task.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51862",
+            "title": "More restore original db config in db rake tasks",
+            "date_modified": "2024-05-19T02:33:31.000Z",
+            "date_published": "2024-05-19T02:33:27.000Z",
+            "author": {
+                "name": "justinko",
+                "url": "https://github.com/justinko"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51821.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2295789148\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51821\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51821/hovercard\" href=\"https://github.com/rails/rails/issues/51821\">#51821</a>.</p>\n<p dir=\"auto\">When doing non-partial inserts, we should ignore not only unchanged columns with a default function, but also which are autoincremented in the database (and so don't have a default function).</p>",
             "url": "https://github.com/rails/rails/pull/51859",
             "title": "Fix non-partial inserts for models with composite identity primary keys",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "trebeil",
                 "url": "https://github.com/trebeil"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5238698?u=891eeb449bcb179b920fd08ed86c18eb6d477a04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51606.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2252182200\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51606\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51606/hovercard\" href=\"https://github.com/rails/rails/issues/51606\">#51606</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51746",
-            "title": "Use the given `form` in `html_options` for the hidden field in `collection_check_boxes`",
-            "date_modified": "2024-05-06T12:36:57.000Z",
-            "date_published": "2024-05-06T09:41:35.000Z",
-            "author": {
-                "name": "3v0k4",
-                "url": "https://github.com/3v0k4"
             }
         }
     ]
