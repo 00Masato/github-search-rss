@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/27697325?u=c25b1d3eb895997576e1578a950b62a1e4644f7f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC adds an attribute that allows specifying the ordinal of an exported function when creating cdylibs.</p>\n<p dir=\"auto\">We already have a <a href=\"https://doc.rust-lang.org/reference/items/external-blocks.html#the-link_ordinal-attribute\" rel=\"nofollow\"><code class=\"notranslate\">#[link_ordinal(n)]</code></a> attribute which allows importing functions from DLLs by its ordinal, but we don't have any way of doing the opposite - specifying the ordinal of a function when we're making our own DLLs.</p>\n<p dir=\"auto\">Currently, you need to create a <code class=\"notranslate\">lib.def</code> file and specify the ordinals, and then link it with <code class=\"notranslate\">cargo:rustc-cdylib-link-arg=/DEF</code>.</p>\n<p dir=\"auto\">The biggest downside of the current method is that once you specify a <code class=\"notranslate\">.def</code> file, you will have to specify an ordinal for every function that you want to export from the DLL, or else it won't be present in the generated <code class=\"notranslate\">.lib</code> file. This can become very overwhelming if you have a lot of exported functions.</p>\n<p dir=\"auto\">This RFC would allow you to specify exported function ordinals like so:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"// Export this function at Ordinal 1\n#[no_mangle]\n#[export_ordinal(1)]\npub extern &quot;C&quot; fn hello() {\n\tprintln!(&quot;Hello, World!&quot;);\n}\"><pre class=\"notranslate\"><span class=\"pl-c\">// Export this function at Ordinal 1</span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>no_mangle<span class=\"pl-kos\">]</span></span>\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>export_ordinal<span class=\"pl-kos\">(</span><span class=\"pl-c1\">1</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">pub</span> <span class=\"pl-k\">extern</span> <span class=\"pl-s\">\"C\"</span> <span class=\"pl-k\">fn</span> <span class=\"pl-en\">hello</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n\t<span class=\"pl-en\">println</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"Hello, World!\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/MeguminSama/rfcs/blob/export-function-ordinals/text/0000-export-function-ordinals.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3641",
+            "title": "[RFC] Add `#[export_ordinal(n)]` attribute",
+            "date_modified": "2024-05-20T20:54:36.000Z",
+            "date_published": "2024-05-20T20:54:35.000Z",
+            "author": {
+                "name": "MeguminSama",
+                "url": "https://github.com/MeguminSama"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1606434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">#[diagnostic::blocking]</code> is a marker attribute for functions that are considered (by their author) to be a blocking operation, and as such shouldn't be invoked from an <code class=\"notranslate\">async</code> function. <code class=\"notranslate\">rustc</code>, <code class=\"notranslate\">clippy</code> and other tools can use this signal to lint against calling these functions in <code class=\"notranslate\">async</code> contexts.</p>\n<p dir=\"auto\">It would allow <code class=\"notranslate\">rustc</code>, <code class=\"notranslate\">clippy</code> and other tools to provide lints like</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"warning: async function `foo` can block\n  --&gt; $DIR/blocking-calls-in-async.rs:28:1\n   |\n28 | async fn foo() {\n   | --------------\n29 |     interesting();\n   |     ^^^^^^^^^^^^^`foo` is determined to block because it calls into `interesting`\n   |\nnote: `interesting` is considered to be blocking because it was explicitly marked as such\n  --&gt; $DIR/blocking-calls-in-async.rs:5:1\n   |\n5  | #[diagnostic::blocking]\n   | ^^^^^^^^^^^^^^^^^^^^^^^\n6  | fn interesting() {}\n   | ----------------\"><pre class=\"notranslate\"><code class=\"notranslate\">warning: async function `foo` can block\n  --&gt; $DIR/blocking-calls-in-async.rs:28:1\n   |\n28 | async fn foo() {\n   | --------------\n29 |     interesting();\n   |     ^^^^^^^^^^^^^`foo` is determined to block because it calls into `interesting`\n   |\nnote: `interesting` is considered to be blocking because it was explicitly marked as such\n  --&gt; $DIR/blocking-calls-in-async.rs:5:1\n   |\n5  | #[diagnostic::blocking]\n   | ^^^^^^^^^^^^^^^^^^^^^^^\n6  | fn interesting() {}\n   | ----------------\n</code></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/estebank/rfcs/blob/diagnostic-blocking/text/3639-diagnostic-blocking.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3639",
             "title": "[RFC] Add `#[diagnostic::blocking]` attribute",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "davidtwco",
                 "url": "https://github.com/davidtwco"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164242179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">More details are in the MD himself.<br>\nFor more possible info see:<br>\n<a href=\"https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050\" rel=\"nofollow\">https://internals.rust-lang.org/t/stack-aligment-in-a-callback-function/2050</a><br>\n<a href=\"https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer\" rel=\"nofollow\">https://clang.llvm.org/docs/AttributeReference.html#force-align-arg-pointer</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/benisxdxd/rfcs/blob/master/text/3594-expose-stackrealign-attribute.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3594",
-            "title": "RFC: Add realign_stack attribute to rustc",
-            "date_modified": "2024-05-07T20:52:30.000Z",
-            "date_published": "2024-03-26T00:19:11.000Z",
-            "author": {
-                "name": "benisxdxd",
-                "url": "https://github.com/benisxdxd"
             }
         }
     ]
