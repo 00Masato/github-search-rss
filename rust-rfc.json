@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">An alternative proposal to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2289380504\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3632\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3632/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3632\">#3632</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/extern-impl-trait/text/0000-externally-implementable-traits.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3645",
+            "title": "Externally implementable traits",
+            "date_modified": "2024-05-22T21:59:54.000Z",
+            "date_published": "2024-05-22T21:40:35.000Z",
+            "author": {
+                "name": "Amanieu",
+                "url": "https://github.com/Amanieu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82710122?u=4f85864b2506072006121bb5cd66ebb5228f2922&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">Add <code class=\"notranslate\">[diagnostic::on_unimplemented_trait_use]</code> in <code class=\"notranslate\">#[diagnostic]</code> on structs that will influence error messages emitted by unsatisfied traits bounds.</p>\n<h1 dir=\"auto\">Motivation</h1>\n<p dir=\"auto\">The idea came about when I was trying to print out a PathBuf, there's a custom message that said:</p>\n<blockquote>\n<p dir=\"auto\">in format strings you may be able to use <code class=\"notranslate\">{:?}</code> (or {:#?} for pretty-print) instead<br>\ncall <code class=\"notranslate\">.display()</code> or <code class=\"notranslate\">.to_string_lossy()</code> to safely print paths, as they may contain non-Unicode data</p>\n</blockquote>\n<p dir=\"auto\">And found out its hardcoded in trait <code class=\"notranslate\">Display</code></p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#[rustc_on_unimplemented(\n    on(\n        any(_Self = &quot;std::path::Path&quot;, _Self = &quot;std::path::PathBuf&quot;),\n        label = &quot;`{Self}` cannot be formatted with the default formatter; call `.display()` on it&quot;,\n        note = &quot;call `.display()` or `.to_string_lossy()` to safely print paths, \\\n                as they may contain non-Unicode data&quot;\n    ),\n    message = &quot;`{Self}` doesn't implement `{Display}`&quot;,\n    label = &quot;`{Self}` cannot be formatted with the default formatter&quot;,\n    note = &quot;in format strings you may be able to use `{{:?}}` (or {{:#?}} for pretty-print) instead&quot;\n)]\npub trait Display {...}\"><pre class=\"notranslate\"><span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>rustc_on_unimplemented<span class=\"pl-kos\">(</span></span>\n<span class=\"pl-c1\">    on<span class=\"pl-kos\">(</span></span>\n<span class=\"pl-c1\">        any<span class=\"pl-kos\">(</span>_Self = <span class=\"pl-s\">\"std::path::Path\"</span>, _Self = <span class=\"pl-s\">\"std::path::PathBuf\"</span><span class=\"pl-kos\">)</span>,</span>\n<span class=\"pl-c1\">        label = <span class=\"pl-s\">\"`{Self}` cannot be formatted with the default formatter; call `.display()` on it\"</span>,</span>\n<span class=\"pl-c1\">        note = <span class=\"pl-s\">\"call `.display()` or `.to_string_lossy()` to safely print paths, <span class=\"pl-cce\">\\</span></span></span>\n<span class=\"pl-c1\"><span class=\"pl-s\"><span class=\"pl-cce\"></span>                as they may contain non-Unicode data\"</span></span>\n<span class=\"pl-c1\">    <span class=\"pl-kos\">)</span>,</span>\n<span class=\"pl-c1\">    message = <span class=\"pl-s\">\"`{Self}` doesn't implement `{Display}`\"</span>,</span>\n<span class=\"pl-c1\">    label = <span class=\"pl-s\">\"`{Self}` cannot be formatted with the default formatter\"</span>,</span>\n<span class=\"pl-c1\">    note = <span class=\"pl-s\">\"in format strings you may be able to use `{{:?}}` (or {{:#?}} for pretty-print) instead\"</span></span>\n<span class=\"pl-c1\"><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">pub</span> <span class=\"pl-k\">trait</span> <span class=\"pl-smi\">Display</span> <span class=\"pl-kos\">{</span>...<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">It would be nice if this functionality is exposed to libraries as well, so that when the user tries to use an unimplemented trait (e.g. maybe Display isn't implemented because it's insufficient to clearly express intentions) the author can explain why via this diagnostic and offer a recommendation/alternative.</p>\n<p dir=\"auto\">For example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#[diagnostic::on_unimplemented_trait_use(\n    trait = Display,\n    message = &quot;`{Self}` doesn't implement `{Display}`&quot;,\n    label = &quot;`{Self}` cannot be formatted with the default formatter; call `.display()` on it&quot;,\n    note = &quot;call `.display()` or `.to_string_lossy()` to safely print paths, \\\n                as they may contain non-Unicode data&quot;\n)]\nstruct PathBuf;\"><pre class=\"notranslate\"><span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>diagnostic<span class=\"pl-kos\">::</span>on_unimplemented_trait_use<span class=\"pl-kos\">(</span></span>\n<span class=\"pl-c1\">    <span class=\"pl-k\">trait</span> = <span class=\"pl-v\">Display</span>,</span>\n<span class=\"pl-c1\">    message = <span class=\"pl-s\">\"`{Self}` doesn't implement `{Display}`\"</span>,</span>\n<span class=\"pl-c1\">    label = <span class=\"pl-s\">\"`{Self}` cannot be formatted with the default formatter; call `.display()` on it\"</span>,</span>\n<span class=\"pl-c1\">    note = <span class=\"pl-s\">\"call `.display()` or `.to_string_lossy()` to safely print paths, <span class=\"pl-cce\">\\</span></span></span>\n<span class=\"pl-c1\"><span class=\"pl-s\"><span class=\"pl-cce\"></span>                as they may contain non-Unicode data\"</span></span>\n<span class=\"pl-c1\"><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">PathBuf</span><span class=\"pl-kos\">;</span></pre></div>",
             "url": "https://github.com/rust-lang/rfcs/pull/3643",
             "title": "[RFC] On_unimplemented_trait_use",
@@ -86,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6801863?u=699ef806e3d9624167be89db3c7217df5193775e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/p-avital/rfcs/blob/stabilize-marker-freeze/text/0000-stabilize-marker-freeze.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3633",
             "title": "[RFC] `core::marker::Freeze` in bounds",
-            "date_modified": "2024-05-22T20:24:43.000Z",
+            "date_modified": "2024-05-22T21:34:42.000Z",
             "date_published": "2024-05-10T17:00:40.000Z",
             "author": {
                 "name": "p-avital",
@@ -97,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">An alternative to this is <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2292887865\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3635\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3635/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3635\">#3635</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-impl-fn/text/0000-externally-implementable-functions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3632",
             "title": "[RFC] externally implementable functions",
-            "date_modified": "2024-05-22T19:39:42.000Z",
+            "date_modified": "2024-05-22T21:43:46.000Z",
             "date_published": "2024-05-10T09:40:13.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "scottmcm",
                 "url": "https://github.com/scottmcm"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5026283?u=5904dba48d84a78b16221f9d91cfdd86c4985e5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/chorman0773/rust-rfcs/blob/freeze-uninit/text/0000-freeze-uninit.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3605",
-            "title": "RFC: Add `freeze` intrinsic and related library functions",
-            "date_modified": "2024-05-21T10:59:08.000Z",
-            "date_published": "2024-04-02T04:01:02.000Z",
-            "author": {
-                "name": "chorman0773",
-                "url": "https://github.com/chorman0773"
             }
         }
     ]
