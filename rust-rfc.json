@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/no-crate-transfer-help/text/0000-remove-crate-transfer-mediation-policy.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3646",
+            "title": "Change crates.io policy to not offer crate transfer mediation",
+            "date_modified": "2024-05-24T13:01:27.000Z",
+            "date_published": "2024-05-24T12:53:18.000Z",
+            "author": {
+                "name": "carols10cents",
+                "url": "https://github.com/carols10cents"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">An alternative proposal to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2289380504\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3632\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3632/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3632\">#3632</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/extern-impl-trait/text/0000-externally-implementable-traits.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2311212266\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/125418\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/125418/hovercard\" href=\"https://github.com/rust-lang/rust/issues/125418\">rust-lang/rust#125418</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3645",
             "title": "Externally implementable traits",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "traviscross",
                 "url": "https://github.com/traviscross"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Third-party <code class=\"notranslate\">derive</code> macros want to be able to use the same direct discriminant access to the <code class=\"notranslate\">enum</code> for which they're implementing a trait that the core derive macro does, which seems entirely reasonable.</p>\n<p dir=\"auto\">To allow that without imposing a new category of major breaking changes on library authors, this proposes a <em>safe</em> built-in way for getting the discriminant as a primitive integer -- not an opaque <code class=\"notranslate\">mem::Discriminant</code> -- for anything on which you can see private fields.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/enum-discriminant/text/3607-enum-discriminant.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3607",
-            "title": "Add an expression for direct access to an enum's discriminant",
-            "date_modified": "2024-05-07T07:57:56.000Z",
-            "date_published": "2024-04-07T04:18:53.000Z",
-            "author": {
-                "name": "scottmcm",
-                "url": "https://github.com/scottmcm"
             }
         }
     ]
