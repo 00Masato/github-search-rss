@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38815969?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ToMe25/rust-rfcs/blob/collection-contains-trait/text/3647-collection-contains-trait.md\">Rendered</a></p>\n<p dir=\"auto\">An RFC about adding a <code class=\"notranslate\">Contains</code> trait for collections to allow checking whether an item is part of a collection without knowing the type of collection.</p>\n<h2 dir=\"auto\">Unresolved questions</h2>\n<ul dir=\"auto\">\n<li>Should non-collection types with a contains function(str, range) implement <code class=\"notranslate\">Contains&lt;T&gt;</code>?</li>\n<li>Should <code class=\"notranslate\">Vec&lt;T&gt;</code> implement <code class=\"notranslate\">Contains&lt;T&gt;</code> directly, or only using <code class=\"notranslate\">Deref&lt;Target = [T]&gt;</code>?</li>\n</ul>\n<p dir=\"auto\">Should the contains method of those types<br>\na) be moved to the trait and instantly stabilized, or<br>\nb) be kept in place until this is stabilized, requiring users to use its fully qualified name, or<br>\nc) should the trait method be declared unstable and the the native methods be disabled using inverted feature flags, if inverted feature flags even exist?</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3647",
             "title": "Collection Contains trait",
-            "date_modified": "2024-05-24T17:47:07.000Z",
+            "date_modified": "2024-05-24T18:29:59.000Z",
             "date_published": "2024-05-24T15:16:30.000Z",
             "author": {
                 "name": "ToMe25",
