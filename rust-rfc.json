@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38815969?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/ToMe25/rust-rfcs/blob/collection-contains-trait/text/3647-collection-contains-trait.md\">Rendered</a></p>\n<p dir=\"auto\">An RFC about adding a <code class=\"notranslate\">Contains</code> trait for collections to allow checking whether an item is part of a collection without knowing the type of collection.</p>\n<h2 dir=\"auto\">Unresolved questions</h2>\n<ul dir=\"auto\">\n<li>Should non-collection types with a contains function(str, range) implement <code class=\"notranslate\">Contains&lt;T&gt;</code>?</li>\n<li>Should <code class=\"notranslate\">Vec&lt;T&gt;</code> implement <code class=\"notranslate\">Contains&lt;T&gt;</code> directly, or only using <code class=\"notranslate\">Deref&lt;Target = [T]&gt;</code>?</li>\n</ul>\n<p dir=\"auto\">Should the contains method of those types<br>\na) be moved to the trait and instantly stabilized, or<br>\nb) be kept in place until this is stabilized, requiring users to use its fully qualified name, or<br>\nc) should the trait method be declared unstable and the the native methods be disabled using inverted feature flags, if inverted feature flags even exist?</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3647",
-            "title": "Collection Contains trait",
-            "date_modified": "2024-05-27T10:48:59.000Z",
-            "date_published": "2024-05-24T15:16:30.000Z",
-            "author": {
-                "name": "ToMe25",
-                "url": "https://github.com/ToMe25"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/no-crate-transfer-help/text/3646-remove-crate-transfer-mediation-policy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3646",
             "title": "Change crates.io policy to not offer crate transfer mediation",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "hamirmahal",
                 "url": "https://github.com/hamirmahal"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">To fully stabilize, in Rust 2024, the Lifetime Capture Rules 2024 that we accepted in RFC 3498, we need to stabilize some means of precise capturing.  This RFC provides that means.</p>\n<p dir=\"auto\">This RFC adds <code class=\"notranslate\">use&lt;..&gt;</code> syntax for specifying which generic parameters should be captured in an opaque RPIT-like <code class=\"notranslate\">impl Trait</code> type, e.g. <code class=\"notranslate\">impl use&lt;'t, T&gt; Trait</code>.  This solves the problem of overcapturing and will allow the Lifetime Capture Rules 2024 to be fully stabilized for RPIT in Rust 2024.</p>\n<p dir=\"auto\">One way to think about <code class=\"notranslate\">use&lt;..&gt;</code> is that, in Rust <code class=\"notranslate\">use</code> brings things <em>into scope</em>, and here we are bringing certain generic parameters into scope for the hidden type.</p>\n<p dir=\"auto\">For some history about the progress toward this feature predating this RFC, see <a href=\"https://github.com/rust-lang/rfcs/pull/3617#issuecomment-2076349223\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3617/hovercard\">this comment</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/TC/precise-capturing/text/3617-precise-capturing.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3617",
+            "title": "Precise capturing",
+            "date_modified": "2024-05-21T19:48:42.000Z",
+            "date_published": "2024-04-24T07:57:17.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
             }
         }
     ]
