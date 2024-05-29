@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes optional names for repetition groups in macros:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"macro_rules! foo {\n    ( $group1:( $a:ident ),+ ) =&gt; {\n        $group1( println!(&quot;{}&quot;, $a); )+\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">macro_rules!</span> foo <span class=\"pl-kos\">{</span>\n    <span class=\"pl-kos\">(</span> $group1<span class=\"pl-kos\">:</span><span class=\"pl-kos\">(</span> $a<span class=\"pl-kos\">:</span>ident <span class=\"pl-kos\">)</span>,+ <span class=\"pl-kos\">)</span> =&gt; <span class=\"pl-kos\">{</span>\n        $group1<span class=\"pl-kos\">(</span> println!<span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{}\"</span>, $a<span class=\"pl-kos\">)</span>; <span class=\"pl-kos\">)</span>+\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/aa37d02a509da8b5f1187ddd13c92d40cdbd31cf/text/0000-macros-named-capture-groups.md\">Rendered</a></p>\n<p dir=\"auto\">Small Pre-RFC: <a href=\"https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3649",
+            "title": "[RFC] Named macro capture groups",
+            "date_modified": "2024-05-29T01:00:35.000Z",
+            "date_published": "2024-05-29T00:37:05.000Z",
+            "author": {
+                "name": "tgross35",
+                "url": "https://github.com/tgross35"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/no-crate-transfer-help/text/3646-remove-crate-transfer-mediation-policy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3646",
             "title": "Change crates.io policy to not offer crate transfer mediation",
@@ -163,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/match-ergonomics-2024/text/3627-match-ergonomics-2024.md\">Rendered</a></p>\n<p dir=\"auto\">Changes to match ergonomics for the 2024 edition.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang A-patterns A-edition-2024</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3627",
             "title": "Match ergonomics 2024",
-            "date_modified": "2024-05-25T03:50:58.000Z",
+            "date_modified": "2024-05-29T00:48:24.000Z",
             "date_published": "2024-05-06T20:46:23.000Z",
             "author": {
                 "name": "Jules-Bertholet",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "hamirmahal",
                 "url": "https://github.com/hamirmahal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">To fully stabilize, in Rust 2024, the Lifetime Capture Rules 2024 that we accepted in RFC 3498, we need to stabilize some means of precise capturing.  This RFC provides that means.</p>\n<p dir=\"auto\">This RFC adds <code class=\"notranslate\">use&lt;..&gt;</code> syntax for specifying which generic parameters should be captured in an opaque RPIT-like <code class=\"notranslate\">impl Trait</code> type, e.g. <code class=\"notranslate\">impl use&lt;'t, T&gt; Trait</code>.  This solves the problem of overcapturing and will allow the Lifetime Capture Rules 2024 to be fully stabilized for RPIT in Rust 2024.</p>\n<p dir=\"auto\">One way to think about <code class=\"notranslate\">use&lt;..&gt;</code> is that, in Rust <code class=\"notranslate\">use</code> brings things <em>into scope</em>, and here we are bringing certain generic parameters into scope for the hidden type.</p>\n<p dir=\"auto\">For some history about the progress toward this feature predating this RFC, see <a href=\"https://github.com/rust-lang/rfcs/pull/3617#issuecomment-2076349223\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3617/hovercard\">this comment</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/TC/precise-capturing/text/3617-precise-capturing.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3617",
-            "title": "Precise capturing",
-            "date_modified": "2024-05-21T19:48:42.000Z",
-            "date_published": "2024-04-24T07:57:17.000Z",
-            "author": {
-                "name": "traviscross",
-                "url": "https://github.com/traviscross"
             }
         }
     ]
