@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes optional names for repetition groups in macros:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"macro_rules! foo {\n    ( $group1:( $a:ident ),+ ) =&gt; {\n        $group1( println!(&quot;{}&quot;, $a); )+\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">macro_rules!</span> foo <span class=\"pl-kos\">{</span>\n    <span class=\"pl-kos\">(</span> $group1<span class=\"pl-kos\">:</span><span class=\"pl-kos\">(</span> $a<span class=\"pl-kos\">:</span>ident <span class=\"pl-kos\">)</span>,+ <span class=\"pl-kos\">)</span> =&gt; <span class=\"pl-kos\">{</span>\n        $group1<span class=\"pl-kos\">(</span> println!<span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{}\"</span>, $a<span class=\"pl-kos\">)</span>; <span class=\"pl-kos\">)</span>+\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/aa37d02a509da8b5f1187ddd13c92d40cdbd31cf/text/0000-macros-named-capture-groups.md\">Rendered</a></p>\n<p dir=\"auto\">Small Pre-RFC: <a href=\"https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3649",
             "title": "[RFC] Named macro capture groups",
-            "date_modified": "2024-05-29T12:09:59.000Z",
+            "date_modified": "2024-05-29T14:29:54.000Z",
             "date_published": "2024-05-29T00:37:05.000Z",
             "author": {
                 "name": "tgross35",
@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3050060?u=6ca85464b07c5464a052250a4fc3e3f9c03c97ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/rust-lang/rust/issues/43781\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/43781/hovercard\">tracking issue</a></p>\n<p dir=\"auto\">cc @rust-lang/rustdoc</p>\n<p dir=\"auto\"><a href=\"https://github.com/GuillaumeGomez/rfcs/blob/doc-cfg/text/000-rustdoc-cfgs-handling.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3631",
             "title": "RFC for doc_cfg, doc_cfg_auto, doc_cfg_hide and doc_cfg_show features",
-            "date_modified": "2024-05-28T22:33:44.000Z",
+            "date_modified": "2024-05-29T14:04:43.000Z",
             "date_published": "2024-05-09T14:08:45.000Z",
             "author": {
                 "name": "GuillaumeGomez",
