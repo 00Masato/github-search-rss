@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We realised the previous deprecation hadn't been warning for all users, so proceeding to removal could cause an un-warned change in behaviour.</p>\n<p dir=\"auto\">This Pull Request restores the previous deprecation, then adds an additional once-off warning the first time <code class=\"notranslate\">to_time</code> is called [if the config setting has not already been set].</p>\n<p dir=\"auto\">A one-time warning is a departure from our usual warn-every-call strategy, but seems like a better fit here:</p>\n<ul dir=\"auto\">\n<li>warning on every <code class=\"notranslate\">to_time</code> call would just be repetitive and overwhelming, and</li>\n<li>the immediately prompted action is itself one-shot.</li>\n</ul>\n<p dir=\"auto\">Even though an application could ultimately need to review each call site to confirm it's happy with the change in return value, the only measurable action is globally switching the config setting -- separately warning on each call does not provide a \"burn down\" list as it would for a change to the calling API.</p>",
+            "url": "https://github.com/rails/rails/pull/51994",
+            "title": "Re-roll deprecation of to_time_preserves_timezone",
+            "date_modified": "2024-06-02T16:08:41.000Z",
+            "date_published": "2024-06-02T16:08:36.000Z",
+            "author": {
+                "name": "matthewd",
+                "url": "https://github.com/matthewd"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39144575?u=27bc8b51723fcd8f9a2de237a4082ecb370f0a59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Following up <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/317465a4a8f8c0ebaf9534921350c4540584c03c/hovercard\" href=\"https://github.com/rails/rails/commit/317465a4a8f8c0ebaf9534921350c4540584c03c\"><tt>317465a</tt></a>.</p>",
             "url": "https://github.com/rails/rails/pull/51993",
             "title": "Fix test title mismatch",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/929886?u=20e7647deec019e86c7d64fd94148ede89abb64c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This pull request has been created to (1) align documentation with conventional practice, (2) prefer continuity by maintaining names from previous code blocks, and (3) clear up other potential sources of confusion.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">A search on GitHub reveals that, typically, custom Railtie classes are named <code class=\"notranslate\">Railtie</code>, with Rails itself embracing this convention (perhaps even fostering it). If we named the class in the docs to align with this practice, learners can supplement the material with what they find on GitHub and within Rails itself.</p>\n<p dir=\"auto\">Secondly, the first time we introduce a custom Railtie class, it's called <code class=\"notranslate\">Railtie</code>. Unfortunately, in subsequent code examples, <code class=\"notranslate\">MyRailtie</code> is introduced. In the first code block, we indicate the file path where the class is/could be defined <a href=\"https://github.com/rails/rails/blob/692f25a9254c58c64b138770e6b604e73de38620/railties/lib/rails/railtie.rb#L39\">(<code class=\"notranslate\">lib/my_gem/railtie.rb</code>)</a>. In the subsequent blocks we don't. I think this could also be a little confusing. If we were to keep the old class name, it might be easy for a learner to infer that we're developing the same class we created in the first code block.</p>\n<p dir=\"auto\">The other changes replace <code class=\"notranslate\">MyRailtie</code> and substitute it with <code class=\"notranslate\">MyGem</code>. Reason is, the custom Railtie doesn't seem to be the appropriate place for those functions given that they are very specific to the gem. I think what we want to encourage there that the Railtie lets you specify what code to run for every hook. Your gem, not the custom Railtie, hold the code. For example, I was very confused by <a href=\"https://github.com/rails/rails/blob/692f25a9254c58c64b138770e6b604e73de38620/railties/lib/rails/railtie.rb#L84\"><code class=\"notranslate\">MyRailtie.setup!</code></a>. I wondered where the <code class=\"notranslate\">setup!</code> method came from and whether it could have been inherited from the <code class=\"notranslate\">Rails::Railtie</code> parent. So I replaced <code class=\"notranslate\">MyRailtie</code> with <code class=\"notranslate\">MyGem</code> to make the arbitrariness of that code more obvious.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51873",
-            "title": "[ci skip] Align documentation with conventional practice",
-            "date_modified": "2024-05-23T16:44:02.000Z",
-            "date_published": "2024-05-21T08:34:43.000Z",
-            "author": {
-                "name": "yawboakye",
-                "url": "https://github.com/yawboakye"
             }
         }
     ]
