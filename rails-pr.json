@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The documentation wasn't making it clear that a <code class=\"notranslate\">NullTransaction</code> is returned when no transaction is active.</p>\n<p dir=\"auto\">While we're not going to document <code class=\"notranslate\">NullTransaction</code> itself, we can more explictly explain that <code class=\"notranslate\">current_transaction</code> always returns an object that responds to the <code class=\"notranslate\">ActiveRecord::Transaction</code> interface.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/fxn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/fxn\">@fxn</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
             "url": "https://github.com/rails/rails/pull/51968",
             "title": "Clarify `current_transaction` behavior.",
-            "date_modified": "2024-06-01T11:48:45.000Z",
+            "date_modified": "2024-06-02T08:32:14.000Z",
             "date_published": "2024-05-31T13:23:22.000Z",
             "author": {
                 "name": "casperisfine",
