@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2326434456\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51959\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51959/hovercard\" href=\"https://github.com/rails/rails/pull/51959\">#51959</a>. The test I added in that PR can be improved by actually checking that the runner does what the expected behaviour is.</p>\n<p dir=\"auto\">Since support for minitest/spec should not be implied (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2326434456\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51959\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51959/hovercard?comment_id=1621385796&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/51959#discussion_r1621385796\">#51959 (comment)</a>) I also slightly modified the test above</p>",
+            "url": "https://github.com/rails/rails/pull/52002",
+            "title": "Add a proper test for running tests by line with custom method",
+            "date_modified": "2024-06-03T10:28:09.000Z",
+            "date_published": "2024-06-03T10:28:04.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10766?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was changed just before the release <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2313590997\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51894\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51894/hovercard\" href=\"https://github.com/rails/rails/pull/51894\">#51894</a></p>\n<p dir=\"auto\">[ci skip]</p>",
             "url": "https://github.com/rails/rails/pull/51999",
             "title": "Clarify YJIT addition in 7.2 changelog",
@@ -113,17 +124,6 @@
             "author": {
                 "name": "npezza93",
                 "url": "https://github.com/npezza93"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The documentation wasn't making it clear that a <code class=\"notranslate\">NullTransaction</code> is returned when no transaction is active.</p>\n<p dir=\"auto\">While we're not going to document <code class=\"notranslate\">NullTransaction</code> itself, we can more explictly explain that <code class=\"notranslate\">current_transaction</code> always returns an object that responds to the <code class=\"notranslate\">ActiveRecord::Transaction</code> interface.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/fxn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/fxn\">@fxn</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
-            "url": "https://github.com/rails/rails/pull/51968",
-            "title": "Clarify `current_transaction` behavior.",
-            "date_modified": "2024-06-03T08:31:01.000Z",
-            "date_published": "2024-05-31T13:23:22.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         },
         {
