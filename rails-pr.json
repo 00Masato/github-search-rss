@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6830119?u=c811408f10a29f10f3ea0863c5204b0061d74d56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Fix a minor typo in Active Record and PostgreSQL guide.</p>",
+            "url": "https://github.com/rails/rails/pull/52004",
+            "title": "[ci skip] Fix a typo in Active Record and PostgreSQL guide",
+            "date_modified": "2024-06-03T12:19:46.000Z",
+            "date_published": "2024-06-03T12:19:41.000Z",
+            "author": {
+                "name": "duffuniverse",
+                "url": "https://github.com/duffuniverse"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2326434456\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51959\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51959/hovercard\" href=\"https://github.com/rails/rails/pull/51959\">#51959</a>. The test I added in that PR can be improved by actually checking that the runner does what the expected behaviour is.</p>\n<p dir=\"auto\">Since support for minitest/spec should not be implied (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2326434456\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51959\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51959/hovercard?comment_id=1621385796&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/51959#discussion_r1621385796\">#51959 (comment)</a>) I also slightly modified the test above</p>",
             "url": "https://github.com/rails/rails/pull/52002",
             "title": "Add a proper test for running tests by line with custom method",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "collimarco",
                 "url": "https://github.com/collimarco"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14007?u=29d3bfbcb93f21ab58b6f05946b0a1882b513480&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51745.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280431140\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51745\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51745/hovercard\" href=\"https://github.com/rails/rails/issues/51745\">#51745</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Suppose you have a PG <code class=\"notranslate\">tsrange</code> column named <code class=\"notranslate\">my_range</code>. If you create a record with <code class=\"notranslate\">my_range: (Time.current..)</code> (inclusive), PG will insert the record with <code class=\"notranslate\">[my_range,]</code>, but behind the scenes it'll <a href=\"https://www.postgresql.org/docs/current/rangetypes.html#RANGETYPES-INFINITE\" rel=\"nofollow\">convert it</a> to <code class=\"notranslate\">[my_range,)</code>, making it exclusive.</p>\n<p dir=\"auto\">The problem is when you <code class=\"notranslate\">reload</code> or retrieve the record, it'll be <code class=\"notranslate\">my_range: (Time.current...)</code> (exclusive).</p>\n<p dir=\"auto\">You can \"force\" inclusivity by using the timestamp value of <code class=\"notranslate\">infinity</code> on insertion: <code class=\"notranslate\">[my_range, infinity]</code></p>\n<p dir=\"auto\">And that's what this change does.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51920",
-            "title": "Support PG unbounded inclusive date/time range",
-            "date_modified": "2024-05-27T07:24:49.000Z",
-            "date_published": "2024-05-27T07:19:47.000Z",
-            "author": {
-                "name": "justinko",
-                "url": "https://github.com/justinko"
             }
         }
     ]
