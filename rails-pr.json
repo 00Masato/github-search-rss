@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10766?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was changed just before the release <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2313590997\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51894\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51894/hovercard\" href=\"https://github.com/rails/rails/pull/51894\">#51894</a></p>\n<p dir=\"auto\">[ci skip]</p>",
+            "url": "https://github.com/rails/rails/pull/51999",
+            "title": "Clarify YJIT addition in 7.2 changelog",
+            "date_modified": "2024-06-03T04:41:47.000Z",
+            "date_published": "2024-06-03T04:41:43.000Z",
+            "author": {
+                "name": "morgoth",
+                "url": "https://github.com/morgoth"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2853450?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51995.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2329813988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51995\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51995/hovercard\" href=\"https://github.com/rails/rails/issues/51995\">#51995</a></p>\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">include?</code> on composite primary key relations is broken.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Calling <code class=\"notranslate\">exists?</code> does not work with composite keys (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2179081656\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51295\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51295/hovercard\" href=\"https://github.com/rails/rails/issues/51295\">#51295</a>) which is used internally for <code class=\"notranslate\">include?</code> here it decomposes the composite primary key into a hash that is supported by <code class=\"notranslate\">exists?</code> so it does not raise and returns the expected result.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/51996",
             "title": "Fix include? on composite key relations",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "justinko",
                 "url": "https://github.com/justinko"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51757.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2283433150\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51757\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51757/hovercard\" href=\"https://github.com/rails/rails/issues/51757\">#51757</a>.</p>\n<p dir=\"auto\">When we have <code class=\"notranslate\">database_tasks: false</code> on primary and we have 2 databases, we fall into the <code class=\"notranslate\">if db_configs.size == 1</code> branch, which tries to run migrations on the primary database, which is not correct.</p>",
-            "url": "https://github.com/rails/rails/pull/51916",
-            "title": "Fix running migrations on other databases when `database_tasks: false` on primary",
-            "date_modified": "2024-05-26T19:17:19.000Z",
-            "date_published": "2024-05-26T12:42:58.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
