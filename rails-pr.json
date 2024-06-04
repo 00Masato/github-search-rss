@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">And stop exposing the capybara server port to all interfaces.</p>\n<p dir=\"auto\">We were using this just to make sure the selenium container can access the capybara server but it can with the default bridge network.</p>",
-            "url": "https://github.com/rails/rails/pull/52020",
-            "title": "Remove the default network from the devcontainer compose",
-            "date_modified": "2024-06-04T17:18:14.000Z",
-            "date_published": "2024-06-04T17:18:09.000Z",
-            "author": {
-                "name": "rafaelfranca",
-                "url": "https://github.com/rafaelfranca"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Alternate take on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2332727777\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52016\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52016/hovercard\" href=\"https://github.com/rails/rails/pull/52016\">#52016</a></p>\n<p dir=\"auto\">Instead of a proxy object representing the always-instantaneous transaction state, here I'm going the other way, and giving the user an object that will always reference the <em>current</em> state of the then-current transaction at the time of creation.</p>\n<p dir=\"auto\">That means it will behave reasonably even if they do something thoroughly unreasonable, like add a callback after the transaction has already committed / rolled back.</p>\n<p dir=\"auto\">Definitely needs some tidying to be mergeable: at minimum I've lost the callback docs by moving them into a nodoc class -- and I haven't added tests that show the ways this differs from current HEAD behaviour.</p>",
             "url": "https://github.com/rails/rails/pull/52017",
             "title": "Allow users to add transaction callbacks after commit etc",
-            "date_modified": "2024-06-04T08:17:35.000Z",
+            "date_modified": "2024-06-04T19:21:41.000Z",
             "date_published": "2024-06-04T07:58:28.000Z",
             "author": {
                 "name": "matthewd",
@@ -31,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2327834253\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51968\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51968/hovercard?comment_id=2146695970&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/51968#issuecomment-2146695970\">#51968 (comment)</a></p>\n<p dir=\"auto\">There is some concerns about the API being misused. By returning a proxy object we make this impossible.</p>",
             "url": "https://github.com/rails/rails/pull/52016",
             "title": "Make `.current_transaction` return a proxy rather than the real transaction",
-            "date_modified": "2024-06-04T07:09:44.000Z",
+            "date_modified": "2024-06-04T19:21:38.000Z",
             "date_published": "2024-06-04T07:09:39.000Z",
             "author": {
                 "name": "casperisfine",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "bhumi1102",
                 "url": "https://github.com/bhumi1102"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2786819?u=722b21f1f48dc9a97c9494aba04c4f657d31e941&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created to provide more clarity and update the Active Record Migrations documentation.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Some initial thoughts to get started:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> We talk about transactions and how to disable them early on, as part of the first few paragraphs, that could be a subsection to add separation.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> The guide goes into reversible early, before even talking about generating migrations and other basic stuff, and then later talks more about it. I think it's important to lay the foundation of change vs up/down, and the fact that migrations should always try to be able to be rolled back, but maybe we can do that without going into reversible that early in the guide, which complicates things further.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> We mention bin/rails generate --help to look for more details, but we could mention specific generators also offer help too, e.g. bin/rails generate model --help or bin/rails generate migration --help</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> There's a small section about composite PKs, but there's also <a href=\"https://edgeguides.rubyonrails.org/active_record_composite_primary_keys.html\" rel=\"nofollow\">a whole guide on it</a>, we can add a link to it from the migrations guide at least for more info on the topic.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> The section that talks about execute shows an example of a specific model Product.connection.execute, but we can call execute directly within a migration, that might be simpler to show.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> We talk about \"seed data \" in setup &amp; preparing sections, but never mention it before, or explain what seed data is. There's a section about seed data later in the guide, perhaps we can link to it to facilitate.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> In \"running specific migrations\", bin/rails db:migrate VERSION=zomg actually raises a different error: Invalid format of target version: <code class=\"notranslate\">VERSION=zomg</code>... might need a different example there for the unknown migration version error. (no need to show this invalid format one)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> The section about referential integrity can likely be better explained, in particular I think it's worth mentioning that even though the \"AR method/way\" (the pattern, I mean) doesn't think such \"intelligence\" belongs to the database, foreign keys and unique indexes are generally safer at the database level. (and should likely have their counterparts explicitly added in code with associations and validations). I just don't want to convey that someone shouldn't be adding FKs &amp; unique constraints, because not adding these can definitely bite you.</li>\n</ul>\n<p dir=\"auto\">Other changes:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Moved sections around</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Added a section about \"Rails Migration Version Control\"</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Added a section about \"Using UUIDs instead of IDs for Primary Keys\"</li>\n</ul>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51928",
+            "title": "[RF-DOCS] Active Record Migration Documentation",
+            "date_modified": "2024-06-03T11:54:39.000Z",
+            "date_published": "2024-05-27T13:22:18.000Z",
+            "author": {
+                "name": "Ridhwana",
+                "url": "https://github.com/Ridhwana"
             }
         }
     ]
