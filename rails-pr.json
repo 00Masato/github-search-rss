@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10766?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was changed just before the release <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2313590997\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51894\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51894/hovercard\" href=\"https://github.com/rails/rails/pull/51894\">#51894</a></p>\n<p dir=\"auto\">[ci skip]</p>",
-            "url": "https://github.com/rails/rails/pull/51999",
-            "title": "Clarify YJIT addition in 7.2 changelog",
-            "date_modified": "2024-06-03T04:41:47.000Z",
-            "date_published": "2024-06-03T04:41:43.000Z",
-            "author": {
-                "name": "morgoth",
-                "url": "https://github.com/morgoth"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2853450?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51995.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2329813988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51995\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51995/hovercard\" href=\"https://github.com/rails/rails/issues/51995\">#51995</a></p>\n<p dir=\"auto\">Calling <code class=\"notranslate\">exists?</code> does not work with composite keys (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2179081656\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51295\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51295/hovercard\" href=\"https://github.com/rails/rails/issues/51295\">#51295</a>) which is used internally for <code class=\"notranslate\">include?</code> here it zips the primary key values into a hash with the primary key keys, a format that is supported by <code class=\"notranslate\">exists?</code> so it does not raise and returns the expected result.</p>",
             "url": "https://github.com/rails/rails/pull/51996",
             "title": "Fix `include?` on composite key relations",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "collimarco",
                 "url": "https://github.com/collimarco"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14007?u=29d3bfbcb93f21ab58b6f05946b0a1882b513480&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #51745.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280431140\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51745\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51745/hovercard\" href=\"https://github.com/rails/rails/issues/51745\">#51745</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Suppose you have a PG <code class=\"notranslate\">tsrange</code> column named <code class=\"notranslate\">my_range</code>. If you create a record with <code class=\"notranslate\">my_range: (Time.current..)</code> (inclusive), PG will insert the record with <code class=\"notranslate\">[my_range,]</code>, but behind the scenes it'll <a href=\"https://www.postgresql.org/docs/current/rangetypes.html#RANGETYPES-INFINITE\" rel=\"nofollow\">convert it</a> to <code class=\"notranslate\">[my_range,)</code>, making it exclusive.</p>\n<p dir=\"auto\">The problem is when you <code class=\"notranslate\">reload</code> or retrieve the record, it'll be <code class=\"notranslate\">my_range: (Time.current...)</code> (exclusive).</p>\n<p dir=\"auto\">You can \"force\" inclusivity by using the timestamp value of <code class=\"notranslate\">infinity</code> on insertion: <code class=\"notranslate\">[my_range, infinity]</code></p>\n<p dir=\"auto\">And that's what this change does.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/51920",
+            "title": "Support PG unbounded inclusive date/time range",
+            "date_modified": "2024-05-27T07:24:49.000Z",
+            "date_published": "2024-05-27T07:19:47.000Z",
+            "author": {
+                "name": "justinko",
+                "url": "https://github.com/justinko"
             }
         }
     ]
