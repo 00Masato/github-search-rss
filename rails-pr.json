@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11965368?u=7c85497dee3f07446e7f22f874367fa42f0e0650&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/rails/rails/pull/52023",
-            "title": "Resolve Typo",
-            "date_modified": "2024-06-05T01:26:26.000Z",
-            "date_published": "2024-06-05T01:26:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is getting the same treatment as <code class=\"notranslate\">base64</code>, <code class=\"notranslate\">mutex_m</code>, etc. In Ruby 3.4 it will start to warn: <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/ruby/ruby/commit/d7e558e3c48c213d0e8bedca4fb547db55613f7c/hovercard\" href=\"https://github.com/ruby/ruby/commit/d7e558e3c48c213d0e8bedca4fb547db55613f7c\">ruby/ruby@<tt>d7e558e</tt></a></p>\n<p dir=\"auto\">See for example <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1841193442\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48907\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48907/hovercard\" href=\"https://github.com/rails/rails/pull/48907\">#48907</a></p>\n<p dir=\"auto\">I also removed two requires that seem unnessesary: The test doesn't access <code class=\"notranslate\">::Logger</code> and the other one requires <code class=\"notranslate\">as/logger</code> right after.</p>",
+            "url": "https://github.com/rails/rails/pull/52024",
+            "title": "Add an explicit dependency on the `logger` gem",
+            "date_modified": "2024-06-05T11:57:30.000Z",
+            "date_published": "2024-06-05T11:19:07.000Z",
             "author": {
-                "name": "majidalaeinia",
-                "url": "https://github.com/majidalaeinia"
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
             }
         },
         {
