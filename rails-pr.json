@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11965368?u=7c85497dee3f07446e7f22f874367fa42f0e0650&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/52023",
+            "title": "Resolve Typo",
+            "date_modified": "2024-06-05T01:26:26.000Z",
+            "date_published": "2024-06-05T01:26:08.000Z",
+            "author": {
+                "name": "majidalaeinia",
+                "url": "https://github.com/majidalaeinia"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Alternate take on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2332727777\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52016\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52016/hovercard\" href=\"https://github.com/rails/rails/pull/52016\">#52016</a></p>\n<p dir=\"auto\">Instead of a proxy object representing the always-instantaneous transaction state, here I'm going the other way, and giving the user an object that will always reference the <em>current</em> state of the then-current transaction at the time of creation.</p>\n<p dir=\"auto\">That means it will behave reasonably even if they do something thoroughly unreasonable, like add a callback after the transaction has already committed / rolled back.</p>\n<p dir=\"auto\">Definitely needs some tidying to be mergeable: at minimum I've lost the callback docs by moving them into a nodoc class -- and I haven't added tests that show the ways this differs from current HEAD behaviour.</p>",
             "url": "https://github.com/rails/rails/pull/52017",
             "title": "Allow users to add transaction callbacks after commit etc",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Ridhwana",
                 "url": "https://github.com/Ridhwana"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/90962?u=19ad2f7c52efcfffc70b1829289366c3bdabf184&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Documentation of authenticate_or_request_with_http_token is incorrect and this may also have security implications.</p>\n<p dir=\"auto\"><strong>Based on the current documentation, if you return false (which is non-nil), login procedure will be considered successful.</strong></p>\n<p dir=\"auto\"><strong>But that is not what happens!</strong></p>\n<p dir=\"auto\">If you return false, the login procedure is considered UNSUCCESSFUL.</p>\n<p dir=\"auto\">This pull request fixes the documentation.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request clarifies what happens if you return <code class=\"notranslate\">false</code> in the login procedure.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/51927",
-            "title": "Clarify documentation of authenticate_or_request_with_http_token [fix #51908] [ci skip]",
-            "date_modified": "2024-05-27T23:20:23.000Z",
-            "date_published": "2024-05-27T12:32:16.000Z",
-            "author": {
-                "name": "collimarco",
-                "url": "https://github.com/collimarco"
             }
         }
     ]
