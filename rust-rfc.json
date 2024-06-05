@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101962850?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Please see the commit section.</p>\n<p dir=\"auto\"><a href=\"https://github.com/FullyNonlinear/rfcs/blob/master/text/2094-nll.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3653",
+            "title": "text: minor typo fix in 2094-NLL",
+            "date_modified": "2024-06-05T07:58:18.000Z",
+            "date_published": "2024-06-05T07:34:01.000Z",
+            "author": {
+                "name": "FullyNonlinear",
+                "url": "https://github.com/FullyNonlinear"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes optional names for repetition groups in macros:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"macro_rules! foo {\n    ( $group1:( $a:ident ),+ ) =&gt; {\n        $group1( println!(&quot;{}&quot;, $a); )+\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">macro_rules!</span> foo <span class=\"pl-kos\">{</span>\n    <span class=\"pl-kos\">(</span> $group1<span class=\"pl-kos\">:</span><span class=\"pl-kos\">(</span> $a<span class=\"pl-kos\">:</span>ident <span class=\"pl-kos\">)</span>,+ <span class=\"pl-kos\">)</span> =&gt; <span class=\"pl-kos\">{</span>\n        $group1<span class=\"pl-kos\">(</span> println!<span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{}\"</span>, $a<span class=\"pl-kos\">)</span>; <span class=\"pl-kos\">)</span>+\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/aa37d02a509da8b5f1187ddd13c92d40cdbd31cf/text/0000-macros-named-capture-groups.md\">Rendered</a></p>\n<p dir=\"auto\">Small Pre-RFC: <a href=\"https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3649",
             "title": "[RFC] Named macro capture groups",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Darksonn",
                 "url": "https://github.com/Darksonn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43425812?u=f2f8ffc3e131abd598a2ae1b7832c1657ddef687&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #3618.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2272444805\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3618\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/3618/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/3618\">#3618</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/hamirmahal/rfcs/blob/patch-2/text/0344-conventions-galore.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3619",
-            "title": "docs: `0344-conventions-galore.md` should use `_`",
-            "date_modified": "2024-05-02T13:12:25.000Z",
-            "date_published": "2024-04-30T21:02:18.000Z",
-            "author": {
-                "name": "hamirmahal",
-                "url": "https://github.com/hamirmahal"
             }
         }
     ]
