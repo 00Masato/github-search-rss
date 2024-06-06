@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/547754?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Given the Dockerfile is intended for production deployment I think we should also skip the <code class=\"notranslate\">test</code> group by default.</p>\n<p dir=\"auto\"><a href=\"https://bundler.io/v2.5/man/bundle-config.1.html\" rel=\"nofollow\">https://bundler.io/v2.5/man/bundle-config.1.html</a></p>\n<blockquote>\n<p dir=\"auto\">without<br>\nA space-separated list of groups referencing gems to skip during installation.</p>\n</blockquote>",
-            "url": "https://github.com/rails/rails/pull/52035",
-            "title": "Dockerfile - Bundle without both development & test",
-            "date_modified": "2024-06-06T20:37:24.000Z",
-            "date_published": "2024-06-06T20:37:19.000Z",
-            "author": {
-                "name": "olimart",
-                "url": "https://github.com/olimart"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As of Ruby 2.6, <a href=\"https://bugs.ruby-lang.org/issues/14850\" rel=\"nofollow\">::Time supports rich timezone objects</a> and expects them to follow a similar API to tzinfo. Mostly we already do this with ActiveSupport::TimeZone, delegating to the underlying tzinfo object so this mostly already works.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"&gt;&gt; Time.new(2024, 9, 26, 10, in: ActiveSupport::TimeZone[&quot;America/Toronto&quot;])\n=&gt; 2024-09-26 10:00:00 -0400\"><pre class=\"notranslate\"><code class=\"notranslate\">&gt;&gt; Time.new(2024, 9, 26, 10, in: ActiveSupport::TimeZone[\"America/Toronto\"])\n=&gt; 2024-09-26 10:00:00 -0400\n</code></pre></div>\n<p dir=\"auto\">However we were missing <a href=\"https://ruby-doc.org/3.3.2/Time.html#class-Time-label-Timezone+Objects\" rel=\"nofollow\">two optional methods Ruby would like to have used</a>: <code class=\"notranslate\">abbr</code> and <code class=\"notranslate\">dist?</code>.</p>\n<p dir=\"auto\">Calling strftime with \"%Z\" will try the following on the timezone:</p>\n<ul dir=\"auto\">\n<li>zone.abbr(time)</li>\n<li>zone.strftime(\"%Z\", time)</li>\n<li>zone.name</li>\n</ul>\n<p dir=\"auto\">Because we previously only implemented name, a <code class=\"notranslate\">::Time</code> created with an <code class=\"notranslate\">ActiveSupport::TimeZone</code> would \"abbreviate\" awkwardly to the full tz identifier (like \"12:34:00 America/Vancouver\" instead of \"12:34:00 PDT\"). This PR implements abbr to make these Times format the same way as <code class=\"notranslate\">TimeWithZone</code>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jasonkim/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jasonkim\">@jasonkim</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
             "url": "https://github.com/rails/rails/pull/52034",
             "title": "Improve support for using ActiveSupport::TimeZone as a ::Time object's timezone",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "justinko",
                 "url": "https://github.com/justinko"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Calling <code class=\"notranslate\">eager_load</code> will execute a single query with a join, not two. The original queries were probably the result of executing the code in the console, where <code class=\"notranslate\">books = Book.eager_load(:author).limit(10) </code> would execute the query.</p>",
+            "url": "https://github.com/rails/rails/pull/51940",
+            "title": "Fix query result of eager_load example in the guides. [ci-skip]",
+            "date_modified": "2024-05-29T14:49:33.000Z",
+            "date_published": "2024-05-29T14:49:29.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
             }
         }
     ]
