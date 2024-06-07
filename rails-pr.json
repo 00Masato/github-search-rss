@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2338014024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/sprockets-rails/issues/524\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/sprockets-rails/issues/524/hovercard\" href=\"https://github.com/rails/sprockets-rails/issues/524\">rails/sprockets-rails#524</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52038.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2339357352\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52038\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52038/hovercard\" href=\"https://github.com/rails/rails/issues/52038\">#52038</a></p>",
+            "url": "https://github.com/rails/rails/pull/52042",
+            "title": "Try sprockets-rails edge",
+            "date_modified": "2024-06-07T09:00:54.000Z",
+            "date_published": "2024-06-07T09:00:13.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR replaces <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2335914495\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52026\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52026/hovercard\" href=\"https://github.com/rails/rails/pull/52026\">#52026</a> by fixing the <code class=\"notranslate\">caller_locations</code>.</p>\n<p dir=\"auto\">Before:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"(called from include at /home/wojtek/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/railties-7.2.0.beta2/lib/rails/console/methods.rb:6)\"><pre class=\"notranslate\"><code class=\"notranslate\">(called from include at /home/wojtek/.asdf/installs/ruby/3.3.2/lib/ruby/gems/3.3.0/gems/railties-7.2.0.beta2/lib/rails/console/methods.rb:6)\n</code></pre></div>\n<p dir=\"auto\">After:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"(called from block in &lt;class:Engine&gt; at /home/zzak/.rbenv/versions/3.4.0/lib/ruby/gems/3.4.0+0/bundler/gems/mission_control-jobs-7295d75ed735/lib/mission_control/jobs/engine.rb:73)\"><pre class=\"notranslate\"><code class=\"notranslate\">(called from block in &lt;class:Engine&gt; at /home/zzak/.rbenv/versions/3.4.0/lib/ruby/gems/3.4.0+0/bundler/gems/mission_control-jobs-7295d75ed735/lib/mission_control/jobs/engine.rb:73)\n</code></pre></div>",
             "url": "https://github.com/rails/rails/pull/52040",
             "title": "Rails::ConsoleMethods deprecation warning should point to the source",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "justinko",
                 "url": "https://github.com/justinko"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Calling <code class=\"notranslate\">eager_load</code> will execute a single query with a join, not two. The original queries were probably the result of executing the code in the console, where <code class=\"notranslate\">books = Book.eager_load(:author).limit(10) </code> would execute the query.</p>",
-            "url": "https://github.com/rails/rails/pull/51940",
-            "title": "Fix query result of eager_load example in the guides. [ci-skip]",
-            "date_modified": "2024-05-29T14:49:33.000Z",
-            "date_published": "2024-05-29T14:49:29.000Z",
-            "author": {
-                "name": "p8",
-                "url": "https://github.com/p8"
             }
         }
     ]
