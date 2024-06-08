@@ -6,25 +6,25 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"You are trying to install in deployment mode after changing\nyour Gemfile. Run `bundle install` elsewhere and add the\nupdated Gemfile.lock to version control.\"><pre class=\"notranslate\"><code class=\"notranslate\">You are trying to install in deployment mode after changing\nyour Gemfile. Run `bundle install` elsewhere and add the\nupdated Gemfile.lock to version control.\n</code></pre></div>\n<p dir=\"auto\">This is because the Gemfile.lock is unfortunately Ruby version dependent.</p>",
-            "url": "https://github.com/rails/rails/pull/52056",
-            "title": "[7.1] Fix the rails-new-docker CI step",
-            "date_modified": "2024-06-08T08:59:35.000Z",
-            "date_published": "2024-06-08T08:59:35.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52051.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2341068288\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52051\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52051/hovercard\" href=\"https://github.com/rails/rails/issues/52051\">#52051</a> (see there for a problem description and lengthy discussion).</p>",
+            "url": "https://github.com/rails/rails/pull/52059",
+            "title": "Move Active Record associations related errors to centralized `errors.rb` file",
+            "date_modified": "2024-06-08T09:57:08.000Z",
+            "date_published": "2024-06-08T09:57:04.000Z",
             "author": {
-                "name": "byroot",
-                "url": "https://github.com/byroot"
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2340685293\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52046\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52046/hovercard\" href=\"https://github.com/rails/rails/issues/52046\">#52046</a></p>\n<p dir=\"auto\">If <code class=\"notranslate\">#check_version</code> raises, the connection would be leaked until the GC collects the object.</p>",
-            "url": "https://github.com/rails/rails/pull/52055",
-            "title": "Better handle errors in `#check_version`",
-            "date_modified": "2024-06-08T08:56:22.000Z",
-            "date_published": "2024-06-08T08:56:17.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a backport of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2317689269\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51916\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51916/hovercard\" href=\"https://github.com/rails/rails/pull/51916\">#51916</a> to <code class=\"notranslate\">7-1-stable</code>.<br>\ncc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/eileencodes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/eileencodes\">@eileencodes</a></p>",
+            "url": "https://github.com/rails/rails/pull/52057",
+            "title": "Fix running migrations on other databases when `database_tasks: false` on primary",
+            "date_modified": "2024-06-08T09:04:52.000Z",
+            "date_published": "2024-06-08T09:04:48.000Z",
             "author": {
-                "name": "byroot",
-                "url": "https://github.com/byroot"
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         },
         {
