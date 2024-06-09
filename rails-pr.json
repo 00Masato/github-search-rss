@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11965368?u=7c85497dee3f07446e7f22f874367fa42f0e0650&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/rails/rails/pull/52067",
-            "title": "Use 'html_safe?' instead of 'html_safe'",
-            "date_modified": "2024-06-09T02:43:57.000Z",
-            "date_published": "2024-06-09T02:43:52.000Z",
-            "author": {
-                "name": "majidalaeinia",
-                "url": "https://github.com/majidalaeinia"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://buildkite.com/rails/rails/builds/108172#018ffa37-574b-494d-ba93-de15f73c1de5\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108172#018ffa37-574b-494d-ba93-de15f73c1de5</a></p>\n<p dir=\"auto\">To reproduce, run:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ cd activerecord\n$ SEED=32138 rake test:postgresql\"><pre class=\"notranslate\"><code class=\"notranslate\">$ cd activerecord\n$ SEED=32138 rake test:postgresql\n</code></pre></div>\n<p dir=\"auto\">Using <code class=\"notranslate\">.stub</code> does not pass the object via <code class=\"notranslate\">configurations=</code> method (which converts the hash into the <code class=\"notranslate\">ActiveRecord::DatabaseConfigurations</code> object), and so we get an error. We need to manually assign the value via the setter and restore it back at the end.</p>",
             "url": "https://github.com/rails/rails/pull/52065",
             "title": "Correctly stub database configurations in test",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I saw a few times <code class=\"notranslate\">.exists?</code>(instead of <code class=\"notranslate\">.any?</code>) being used on loaded relations.<br>\nSeems like there is no reason why we can't improve that method?</p>\n<p dir=\"auto\">This is a reworked <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2327575420\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51966\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51966/hovercard\" href=\"https://github.com/rails/rails/pull/51966\">#51966</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
+            "url": "https://github.com/rails/rails/pull/51987",
+            "title": "Optimize `ActiveRecord::Relation#exists?` with no conditions for loaded relations",
+            "date_modified": "2024-06-01T09:24:33.000Z",
+            "date_published": "2024-06-01T09:24:29.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
