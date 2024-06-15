@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Primitive representations on enums now accept type aliases, meaning that in addition to primitives like <code class=\"notranslate\">#[repr(u32)]</code>, <code class=\"notranslate\">#[repr(core::ffi::c_int)]</code> and <code class=\"notranslate\">#[repr(self::my_type)]</code> are now accepted.</p>\n<p dir=\"auto\">Internals discussion: <a href=\"https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/repr-type-aliases/text/0000-repr-type-aliases.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3659",
+            "title": "`repr(type)` for type aliases",
+            "date_modified": "2024-06-15T02:17:23.000Z",
+            "date_published": "2024-06-15T02:14:21.000Z",
+            "author": {
+                "name": "clarfonthey",
+                "url": "https://github.com/clarfonthey"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155238?u=c09aaff33aa53ea99359e53bef06aa5058ac8d15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a proposed flagship goal for 2024h2 covering <strong>Rust for Linux</strong>. You can <a href=\"https://rust-lang.github.io/rust-project-goals/2024h2/slate.html\" rel=\"nofollow\">read more about the project goal slate and its associated process here</a>. This RFC is prepared using the project goal template, which differs from the typical RFC template.</p>\n<p dir=\"auto\">The overall goal is <strong>resolving the biggest blockers to Linux building on stable Rust</strong> via the following steps:</p>\n<ul dir=\"auto\">\n<li>stabilizing support for arbitrary <code class=\"notranslate\">self</code> types and unsizeable smart pointers, thus permitting ergonomic support for <a href=\"https://rust-for-linux.com/arc-in-the-linux-kernel\" rel=\"nofollow\">in-place linked lists</a> on stable;</li>\n<li>stabilizing features for labeled goto in inline assembler and extended <code class=\"notranslate\">offset_of!</code> support, needed for various bts of low-level coding;</li>\n<li>adding Rust For Linux project on Rust CI, thus ensuring we don't accidentally cause regressions for this highly visible project (done!);</li>\n<li>stabilizing support for pointers to statics in constants, permitting the construction of vtables for kernel modules;</li>\n<li>code-generation features and compiler options, allowing Rust to match the compilers given to gcc/clang when building the kernel;</li>\n<li>and, if possible, stabilize options for building core/alloc with fewer features, allowing the kernel to forbid infallible allocation and other aspects of the standard libraries that it does not want (this requires further investigation).</li>\n</ul>\n<p dir=\"auto\">Approving this goal implies agreement from the <a href=\"https://www.rust-lang.org/governance/teams/lang\" rel=\"nofollow\">Lang</a>, <a href=\"https://www.rust-lang.org/governance/teams/infra\" rel=\"nofollow\">Compiler</a>, and <a href=\"https://www.rust-lang.org/governance/teams/library#team-libs-api\" rel=\"nofollow\">Libs-API</a> teams to the items marked as <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://camo.githubusercontent.com/6145f1e9e6c103e893efb60a2fe224a4c7aac6b5d2518b39c279d4ee4f7a0138/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465616d25323061736b2d726564\"><img src=\"https://camo.githubusercontent.com/6145f1e9e6c103e893efb60a2fe224a4c7aac6b5d2518b39c279d4ee4f7a0138/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465616d25323061736b2d726564\" alt=\"Team\" data-canonical-src=\"https://img.shields.io/badge/Team%20ask-red\" style=\"max-width: 100%;\"></a> in the table of work items, along with potentially other design meetings as needed.</p>\n<p dir=\"auto\"><a href=\"https://github.com/nikomatsakis/rfcs/blob/rfl-project-goal/text/0000-rust-for-linux-project-goal-2024h2.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3658",
             "title": "Proposed 2024h2 flagship goal: Rust for Linux",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Jules-Bertholet",
                 "url": "https://github.com/Jules-Bertholet"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the \"implicit named arguments\" mechanism to allow accessing<br>\nfield names with <code class=\"notranslate\">var.field</code> syntax: <code class=\"notranslate\">format!(\"{self.x} {var.another_field}\")</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/format-args-implicit-identifiers-dot/text/3626-format-args-implicit-dot.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3626",
-            "title": "Extend format_args implicit arguments to allow field access",
-            "date_modified": "2024-05-18T20:33:13.000Z",
-            "date_published": "2024-05-06T10:21:50.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
             }
         }
     ]
