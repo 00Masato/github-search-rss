@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io/crate-deletions/text/3660-crates-io-crate-deletions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3660",
             "title": "Add \"crates.io: Crate Deletions\" RFC",
-            "date_modified": "2024-06-20T14:03:40.000Z",
+            "date_modified": "2024-06-20T16:37:19.000Z",
             "date_published": "2024-06-20T10:55:21.000Z",
             "author": {
                 "name": "Turbo87",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Primitive representations on enums now accept type aliases, meaning that in addition to primitives like <code class=\"notranslate\">#[repr(u32)]</code>, <code class=\"notranslate\">#[repr(type = core::ffi::c_int)]</code> and <code class=\"notranslate\">#[repr(type = my_type)]</code> are now accepted.</p>\n<p dir=\"auto\">Internals discussion: <a href=\"https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/repr-type-aliases/text/0000-repr-type-aliases.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3659",
             "title": "`repr(type)` for type aliases",
-            "date_modified": "2024-06-20T15:42:36.000Z",
+            "date_modified": "2024-06-20T16:15:01.000Z",
             "date_published": "2024-06-15T02:14:21.000Z",
             "author": {
                 "name": "clarfonthey",
