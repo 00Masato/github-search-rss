@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10758879?u=a95fb3a90d046c7bb408e18733ec04034adb508c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The method described in this line of documentation doesn't exist, but an equivalent one does:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"user.id_before_last_change \n# =&gt; NoMethodError: undefined method `id_before_last_change' for #&lt;User&gt;\n\nuser.id_before_last_save\n# =&gt; &quot;030720de-cc38-4215-925f-96a5f09cde39&quot;\"><pre class=\"notranslate\"><span class=\"pl-en\">user</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">id_before_last_change</span> \n<span class=\"pl-c\"># =&gt; NoMethodError: undefined method `id_before_last_change' for #&lt;User&gt;</span>\n\n<span class=\"pl-en\">user</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">id_before_last_save</span>\n<span class=\"pl-c\"># =&gt; \"030720de-cc38-4215-925f-96a5f09cde39\"</span></pre></div>",
             "url": "https://github.com/rails/rails/pull/52195",
             "title": "Fix ActiveRecord dirty docs",
-            "date_modified": "2024-06-22T19:34:11.000Z",
+            "date_modified": "2024-06-22T21:31:21.000Z",
             "date_published": "2024-06-22T19:34:07.000Z",
             "author": {
                 "name": "jaynetics",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Mention which blob can't be transformed and what content_type it has.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52193",
             "title": "Improve ActiveStorage::InvariableError message",
-            "date_modified": "2024-06-22T16:33:13.000Z",
+            "date_modified": "2024-06-22T21:58:04.000Z",
             "date_published": "2024-06-22T16:33:02.000Z",
             "author": {
                 "name": "p8",
