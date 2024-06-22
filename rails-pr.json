@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10758879?u=a95fb3a90d046c7bb408e18733ec04034adb508c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The method described in this line of documentation doesn't exist, but an equivalent one does:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"user.id_before_last_change \n# =&gt; NoMethodError: undefined method `id_before_last_change' for #&lt;User&gt;\n\nuser.id_before_last_save\n# =&gt; &quot;030720de-cc38-4215-925f-96a5f09cde39&quot;\"><pre class=\"notranslate\"><span class=\"pl-en\">user</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">id_before_last_change</span> \n<span class=\"pl-c\"># =&gt; NoMethodError: undefined method `id_before_last_change' for #&lt;User&gt;</span>\n\n<span class=\"pl-en\">user</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">id_before_last_save</span>\n<span class=\"pl-c\"># =&gt; \"030720de-cc38-4215-925f-96a5f09cde39\"</span></pre></div>",
+            "url": "https://github.com/rails/rails/pull/52195",
+            "title": "Fix ActiveRecord dirty docs",
+            "date_modified": "2024-06-22T19:34:11.000Z",
+            "date_published": "2024-06-22T19:34:07.000Z",
+            "author": {
+                "name": "jaynetics",
+                "url": "https://github.com/jaynetics"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28509627?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Fix return values for HTTP Digest authentication api docs for method authenticate. It returns true when authenticate is successful and returns nil otherwise.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52194",
             "title": "Fix return values for authenticate in HTTP Digest authentication api docs [skip ci]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tute",
                 "url": "https://github.com/tute"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/803765?u=1068ad3fe7323acb63e9fe65e558ba0aabe5d3fe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I realized that retrying a job from GoodJob would enqueue it in the current locale of the GoodJob dashboard, even if the job was originally enqueued in a different locale.</p>\n<p dir=\"auto\">For instance, it was enqueued in <code class=\"notranslate\">:fr</code>, and failed. When I retried it from the dashboard that was in <code class=\"notranslate\">:en</code>, it was enqueued with an <code class=\"notranslate\">:en</code> locale ( I noticed it because it failed again with a missing translation error)</p>\n<p dir=\"auto\">I tracked it down to the <code class=\"notranslate\">serialize</code> method of <code class=\"notranslate\">ActiveJob</code> who always sets <code class=\"notranslate\">locale</code> from <code class=\"notranslate\">I18n.locale</code></p>\n<p dir=\"auto\">This PR changes the serialize method to actually return the original local from the job if it is set, and default to the current locale if not.</p>",
-            "url": "https://github.com/rails/rails/pull/52121",
-            "title": "Include the actual ActiveJob locale when serializing rather than I18n locale",
-            "date_modified": "2024-06-14T00:53:57.000Z",
-            "date_published": "2024-06-13T20:17:11.000Z",
-            "author": {
-                "name": "Intrepidd",
-                "url": "https://github.com/Intrepidd"
             }
         }
     ]
