@@ -6,47 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2107609326\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50921\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50921/hovercard\" href=\"https://github.com/rails/rails/pull/50921\">#50921</a> to <code class=\"notranslate\">7-0-stable</code> since this CI failure is also happening there.<br>\n<a href=\"https://buildkite.com/rails/rails/builds/108670#019048d6-64e3-4674-ab60-9b9c4f48d418/1117-1878\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108670#019048d6-64e3-4674-ab60-9b9c4f48d418/1117-1878</a></p>\n<p dir=\"auto\">Require 'uri' explicitly to address <code class=\"notranslate\">NameError: uninitialized constant ToQueryTest::URI</code></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nToQueryTest#test_hash_not_sorted_lexicographically_for_nested_structure:\nNameError: uninitialized constant ToQueryTest::URI\n    test/core_ext/object/to_query_test.rb:90:in `test_hash_not_sorted_lexicographically_for_nested_structure'\n\nbin/test test/core_ext/object/to_query_test.rb:79\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nToQueryTest#test_hash_not_sorted_lexicographically_for_nested_structure:\nNameError: uninitialized constant ToQueryTest::URI\n    test/core_ext/object/to_query_test.rb:90:in `test_hash_not_sorted_lexicographically_for_nested_structure'\n\nbin/test test/core_ext/object/to_query_test.rb:79\n</code></pre></div>",
-            "url": "https://github.com/rails/rails/pull/52203",
-            "title": "[7-0-stable] Require 'uri' explicitly to address NameError: uninitialized constant ToQueryTest::URI",
-            "date_modified": "2024-06-24T06:30:56.000Z",
-            "date_published": "2024-06-24T06:30:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #52162.\">Closes</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2363221053\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52162\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52162/hovercard\" href=\"https://github.com/rails/rails/pull/52162\">#52162</a></p>\n<p dir=\"auto\">If one of the locals conflict with a keyword, typically <code class=\"notranslate\">class</code>.</p>\n<p dir=\"auto\">The potentially confusing part however is that if you define a default value, <code class=\"notranslate\">local_assigns</code> won't respect it.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bensheldon/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bensheldon\">@bensheldon</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a></p>",
+            "url": "https://github.com/rails/rails/pull/52205",
+            "title": "Also pass `local_assigns` to strict locals templates",
+            "date_modified": "2024-06-24T07:37:51.000Z",
+            "date_published": "2024-06-24T07:37:46.000Z",
             "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Newer versions of json gem remove ostruct causing us to either explicitly require ostruct where we need.</p>\n<p dir=\"auto\">This is an alternative to depend on a stable version of json for older rubies.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nControllerHelperTest#test_respond_to:\nNameError: uninitialized constant ControllerHelperTest::OpenStruct\n    /rails/actionview/test/template/controller_helper_test.rb:25:in `test_respond_to'\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nControllerHelperTest#test_respond_to:\nNameError: uninitialized constant ControllerHelperTest::OpenStruct\n    /rails/actionview/test/template/controller_helper_test.rb:25:in `test_respond_to'\n</code></pre></div>\n<p dir=\"auto\"><a href=\"https://buildkite.com/rails/rails/builds/108663#0190481d-cb6b-41b8-8c2a-db3d72a19964/1186-1194\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108663#0190481d-cb6b-41b8-8c2a-db3d72a19964/1186-1194</a></p>\n<p dir=\"auto\">The alternative is to combine commits like <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/fractaledmind/rails/commit/06a73b33e805b62e19e4e1831c226db4fd0e147c/hovercard\" href=\"https://github.com/fractaledmind/rails/commit/06a73b33e805b62e19e4e1831c226db4fd0e147c\">fractaledmind/rails@<tt>06a73b3</tt></a> and <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/fractaledmind/rails/commit/759750b519ac952a2ea66f4575b2d77c8cb03cb0/hovercard\" href=\"https://github.com/fractaledmind/rails/commit/759750b519ac952a2ea66f4575b2d77c8cb03cb0\">fractaledmind/rails@<tt>759750b</tt></a>.</p>\n<p dir=\"auto\">See also <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2229284323\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51510\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51510/hovercard\" href=\"https://github.com/rails/rails/pull/51510\">#51510</a>, which was backported to <code class=\"notranslate\">7-1-stable</code>, so that is also an option.</p>",
-            "url": "https://github.com/rails/rails/pull/52202",
-            "title": "[7-0-stable] Lock json to 1.6.x to avoid ostruct removal",
-            "date_modified": "2024-06-24T03:17:20.000Z",
-            "date_published": "2024-06-24T03:16:34.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2328897197\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51984\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51984/hovercard\" href=\"https://github.com/rails/rails/pull/51984\">#51984</a> to <code class=\"notranslate\">7-0-stable</code> since this test is failing on Ruby 3.3:<br>\n<a href=\"https://buildkite.com/rails/rails/builds/108663#0190481d-cc42-4876-9c69-27532e9b07c7\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108663#0190481d-cc42-4876-9c69-27532e9b07c7</a></p>",
-            "url": "https://github.com/rails/rails/pull/52201",
-            "title": "[7-0-stable] Backport #51984 to fix Method#duplicable?",
-            "date_modified": "2024-06-24T06:27:13.000Z",
-            "date_published": "2024-06-24T02:56:01.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This fixes the following errors currently happening in CI:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ bundle install\n\nDownloading loofah-2.21.3 revealed dependencies not in the API or the lockfile (crass (~&gt; 1.0.2), nokogiri (&gt;= 1.12.0)).\nRunning `bundle update loofah` should fix the problem.\"><pre class=\"notranslate\"><code class=\"notranslate\">$ bundle install\n\nDownloading loofah-2.21.3 revealed dependencies not in the API or the lockfile (crass (~&gt; 1.0.2), nokogiri (&gt;= 1.12.0)).\nRunning `bundle update loofah` should fix the problem.\n</code></pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"--- Running bug_report_templates/action_mailbox.rb\nFetching gem metadata from https://rubygems.org/...........\nResolving dependencies...\nFetching sqlite3 2.0.2\nInstalling sqlite3 2.0.2 with native extensions\n/home/zzak/.rbenv/versions/3.4.0/lib/ruby/gems/3.4.0+0/gems/bundler-2.4.19/lib/bundler/rubygems_integration.rb:280:in 'block (2 levels) in Kernel#replace_gem':\nError loading the 'sqlite3' Active Record adapter.\nMissing a gem it depends on? can't activate sqlite3 (~&gt; 1.4), already activated sqlite3-2.0.2.\nMake sure all dependencies are added to Gemfile. (LoadError)\"><pre class=\"notranslate\"><code class=\"notranslate\">--- Running bug_report_templates/action_mailbox.rb\nFetching gem metadata from https://rubygems.org/...........\nResolving dependencies...\nFetching sqlite3 2.0.2\nInstalling sqlite3 2.0.2 with native extensions\n/home/zzak/.rbenv/versions/3.4.0/lib/ruby/gems/3.4.0+0/gems/bundler-2.4.19/lib/bundler/rubygems_integration.rb:280:in 'block (2 levels) in Kernel#replace_gem':\nError loading the 'sqlite3' Active Record adapter.\nMissing a gem it depends on? can't activate sqlite3 (~&gt; 1.4), already activated sqlite3-2.0.2.\nMake sure all dependencies are added to Gemfile. (LoadError)\n</code></pre></div>\n<p dir=\"auto\"><a href=\"https://buildkite.com/rails/rails/builds/108649#01904309-f3b6-445d-bcaf-1a4710798455/1239-1242\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108649#01904309-f3b6-445d-bcaf-1a4710798455/1239-1242</a></p>",
-            "url": "https://github.com/rails/rails/pull/52200",
-            "title": "[7-0-stable] Fix bundle install and bug_report_templates tests",
-            "date_modified": "2024-06-24T02:48:05.000Z",
-            "date_published": "2024-06-24T02:39:55.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
             }
         },
         {
@@ -223,6 +190,39 @@
             "author": {
                 "name": "ehasrouni",
                 "url": "https://github.com/ehasrouni"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Digging deeper is a large section. We can move the performance, security and error reporting guides to a separate section.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52154",
+            "title": "Move production guides to separate section [ci-skip]",
+            "date_modified": "2024-06-19T17:14:35.000Z",
+            "date_published": "2024-06-19T13:00:08.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14007?u=7d74620cf38d2057b13e9cbb7ee8c6ae35c1d019&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52081.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2344500235\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52081\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52081/hovercard\" href=\"https://github.com/rails/rails/issues/52081\">#52081</a></p>\n<p dir=\"auto\">This fixes a situation where a join table is missing in the SQL statement for a has/through relationship that utilizes a scope. It can occur when using <code class=\"notranslate\">joins</code> in the scope with no where clauses (e.g. <code class=\"notranslate\">joins(:post).where(posts: {name: \"foo\"})</code> vs <code class=\"notranslate\">joins(:post).merge(Post.foo)</code>). The \"chain\" is cutoff and the join is left behind.</p>\n<p dir=\"auto\">I'm guessing this bug has lingered because the majority of <code class=\"notranslate\">joins</code> also utilize/chain a where clause.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52150",
+            "title": "In association scope, always merge the joins (regardless of references_values)",
+            "date_modified": "2024-06-18T22:47:14.000Z",
+            "date_published": "2024-06-18T22:28:38.000Z",
+            "author": {
+                "name": "justinko",
+                "url": "https://github.com/justinko"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52125.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2353216899\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52125\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52125/hovercard\" href=\"https://github.com/rails/rails/issues/52125\">#52125</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Starting in Rack 3.1, rack.input is optional, so <code class=\"notranslate\">read_body_stream</code> (used by <code class=\"notranslate\">raw_post</code>) can no longer call <code class=\"notranslate\">read</code> unconditionally.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52138",
+            "title": "Fix raw_post raising when rack.input is nil",
+            "date_modified": "2024-06-21T21:26:27.000Z",
+            "date_published": "2024-06-16T18:10:58.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
             }
         }
     ]
