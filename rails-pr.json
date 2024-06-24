@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2107609326\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50921\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50921/hovercard\" href=\"https://github.com/rails/rails/pull/50921\">#50921</a> to <code class=\"notranslate\">7-0-stable</code> since this CI failure is also happening there.<br>\n<a href=\"https://buildkite.com/rails/rails/builds/108670#019048d6-64e3-4674-ab60-9b9c4f48d418/1117-1878\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108670#019048d6-64e3-4674-ab60-9b9c4f48d418/1117-1878</a></p>\n<p dir=\"auto\">Require 'uri' explicitly to address <code class=\"notranslate\">NameError: uninitialized constant ToQueryTest::URI</code></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nToQueryTest#test_hash_not_sorted_lexicographically_for_nested_structure:\nNameError: uninitialized constant ToQueryTest::URI\n    test/core_ext/object/to_query_test.rb:90:in `test_hash_not_sorted_lexicographically_for_nested_structure'\n\nbin/test test/core_ext/object/to_query_test.rb:79\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nToQueryTest#test_hash_not_sorted_lexicographically_for_nested_structure:\nNameError: uninitialized constant ToQueryTest::URI\n    test/core_ext/object/to_query_test.rb:90:in `test_hash_not_sorted_lexicographically_for_nested_structure'\n\nbin/test test/core_ext/object/to_query_test.rb:79\n</code></pre></div>",
+            "url": "https://github.com/rails/rails/pull/52203",
+            "title": "[7-0-stable] Require 'uri' explicitly to address NameError: uninitialized constant ToQueryTest::URI",
+            "date_modified": "2024-06-24T06:30:56.000Z",
+            "date_published": "2024-06-24T06:30:52.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Newer versions of json gem remove ostruct causing us to either explicitly require ostruct where we need.</p>\n<p dir=\"auto\">This is an alternative to depend on a stable version of json for older rubies.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nControllerHelperTest#test_respond_to:\nNameError: uninitialized constant ControllerHelperTest::OpenStruct\n    /rails/actionview/test/template/controller_helper_test.rb:25:in `test_respond_to'\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nControllerHelperTest#test_respond_to:\nNameError: uninitialized constant ControllerHelperTest::OpenStruct\n    /rails/actionview/test/template/controller_helper_test.rb:25:in `test_respond_to'\n</code></pre></div>\n<p dir=\"auto\"><a href=\"https://buildkite.com/rails/rails/builds/108663#0190481d-cb6b-41b8-8c2a-db3d72a19964/1186-1194\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108663#0190481d-cb6b-41b8-8c2a-db3d72a19964/1186-1194</a></p>\n<p dir=\"auto\">The alternative is to combine commits like <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/fractaledmind/rails/commit/06a73b33e805b62e19e4e1831c226db4fd0e147c/hovercard\" href=\"https://github.com/fractaledmind/rails/commit/06a73b33e805b62e19e4e1831c226db4fd0e147c\">fractaledmind/rails@<tt>06a73b3</tt></a> and <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/fractaledmind/rails/commit/759750b519ac952a2ea66f4575b2d77c8cb03cb0/hovercard\" href=\"https://github.com/fractaledmind/rails/commit/759750b519ac952a2ea66f4575b2d77c8cb03cb0\">fractaledmind/rails@<tt>759750b</tt></a>.</p>\n<p dir=\"auto\">See also <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2229284323\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51510\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51510/hovercard\" href=\"https://github.com/rails/rails/pull/51510\">#51510</a>, which was backported to <code class=\"notranslate\">7-1-stable</code>, so that is also an option.</p>",
             "url": "https://github.com/rails/rails/pull/52202",
             "title": "[7-0-stable] Lock json to 1.6.x to avoid ostruct removal",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2328897197\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51984\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51984/hovercard\" href=\"https://github.com/rails/rails/pull/51984\">#51984</a> to <code class=\"notranslate\">7-0-stable</code> since this test is failing on Ruby 3.3:<br>\n<a href=\"https://buildkite.com/rails/rails/builds/108663#0190481d-cc42-4876-9c69-27532e9b07c7\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108663#0190481d-cc42-4876-9c69-27532e9b07c7</a></p>",
             "url": "https://github.com/rails/rails/pull/52201",
             "title": "[7-0-stable] Backport #51984 to fix Method#duplicable?",
-            "date_modified": "2024-06-24T02:56:05.000Z",
+            "date_modified": "2024-06-24T06:27:13.000Z",
             "date_published": "2024-06-24T02:56:01.000Z",
             "author": {
                 "name": "zzak",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "ehasrouni",
                 "url": "https://github.com/ehasrouni"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Digging deeper is a large section. We can move the performance, security and error reporting guides to a separate section.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52154",
-            "title": "Move production guides to separate section [ci-skip]",
-            "date_modified": "2024-06-19T17:14:35.000Z",
-            "date_published": "2024-06-19T13:00:08.000Z",
-            "author": {
-                "name": "p8",
-                "url": "https://github.com/p8"
             }
         }
     ]
