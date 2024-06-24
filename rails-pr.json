@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Newer versions of json gem remove ostruct causing us to either explicitly require ostruct where we need.</p>\n<p dir=\"auto\">This is an alternative to depend on a stable version of json for older rubies.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nControllerHelperTest#test_respond_to:\nNameError: uninitialized constant ControllerHelperTest::OpenStruct\n    /rails/actionview/test/template/controller_helper_test.rb:25:in `test_respond_to'\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nControllerHelperTest#test_respond_to:\nNameError: uninitialized constant ControllerHelperTest::OpenStruct\n    /rails/actionview/test/template/controller_helper_test.rb:25:in `test_respond_to'\n</code></pre></div>\n<p dir=\"auto\"><a href=\"https://buildkite.com/rails/rails/builds/108663#0190481d-cb6b-41b8-8c2a-db3d72a19964/1186-1194\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108663#0190481d-cb6b-41b8-8c2a-db3d72a19964/1186-1194</a></p>\n<p dir=\"auto\">The alternative is to combine commits like <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/fractaledmind/rails/commit/06a73b33e805b62e19e4e1831c226db4fd0e147c/hovercard\" href=\"https://github.com/fractaledmind/rails/commit/06a73b33e805b62e19e4e1831c226db4fd0e147c\">fractaledmind/rails@<tt>06a73b3</tt></a> and <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/fractaledmind/rails/commit/759750b519ac952a2ea66f4575b2d77c8cb03cb0/hovercard\" href=\"https://github.com/fractaledmind/rails/commit/759750b519ac952a2ea66f4575b2d77c8cb03cb0\">fractaledmind/rails@<tt>759750b</tt></a>.</p>\n<p dir=\"auto\">See also <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2229284323\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51510\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51510/hovercard\" href=\"https://github.com/rails/rails/pull/51510\">#51510</a>, which was backported to <code class=\"notranslate\">7-1-stable</code>, so that is also an option.</p>",
+            "url": "https://github.com/rails/rails/pull/52202",
+            "title": "[7-0-stable] Lock json to 1.6.x to avoid ostruct removal",
+            "date_modified": "2024-06-24T03:17:20.000Z",
+            "date_published": "2024-06-24T03:16:34.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2328897197\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51984\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51984/hovercard\" href=\"https://github.com/rails/rails/pull/51984\">#51984</a> to <code class=\"notranslate\">7-0-stable</code> since this test is failing on Ruby 3.3:<br>\n<a href=\"https://buildkite.com/rails/rails/builds/108663#0190481d-cc42-4876-9c69-27532e9b07c7\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/108663#0190481d-cc42-4876-9c69-27532e9b07c7</a></p>",
             "url": "https://github.com/rails/rails/pull/52201",
             "title": "[7-0-stable] Backport #51984 to fix Method#duplicable?",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14007?u=7d74620cf38d2057b13e9cbb7ee8c6ae35c1d019&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52081.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2344500235\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52081\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52081/hovercard\" href=\"https://github.com/rails/rails/issues/52081\">#52081</a></p>\n<p dir=\"auto\">This fixes a situation where a join table is missing in the SQL statement for a has/through relationship that utilizes a scope. It can occur when using <code class=\"notranslate\">joins</code> in the scope with no where clauses (e.g. <code class=\"notranslate\">joins(:post).where(posts: {name: \"foo\"})</code> vs <code class=\"notranslate\">joins(:post).merge(Post.foo)</code>). The \"chain\" is cutoff and the join is left behind.</p>\n<p dir=\"auto\">I'm guessing this bug has lingered because the majority of <code class=\"notranslate\">joins</code> also utilize/chain a where clause.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52150",
-            "title": "In association scope, always merge the joins (regardless of references_values)",
-            "date_modified": "2024-06-18T22:47:14.000Z",
-            "date_published": "2024-06-18T22:28:38.000Z",
-            "author": {
-                "name": "justinko",
-                "url": "https://github.com/justinko"
             }
         }
     ]
