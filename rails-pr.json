@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4468155?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Since the current documentation contains wrong information, we need to fix it.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The refactoring over <code class=\"notranslate\">attribute</code> was done at <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1166733860\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44666\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44666/hovercard\" href=\"https://github.com/rails/rails/pull/44666\">#44666</a>,<br>\nwhich stops <code class=\"notranslate\">attribute</code> from calling <code class=\"notranslate\">define_attribute</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">none</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52207",
+            "title": "Remove wrong document due to refactoring `attribute`",
+            "date_modified": "2024-06-24T11:54:30.000Z",
+            "date_published": "2024-06-24T11:54:26.000Z",
+            "author": {
+                "name": "aeroastro",
+                "url": "https://github.com/aeroastro"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #50565.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2064752053\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50565\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50565/hovercard\" href=\"https://github.com/rails/rails/issues/50565\">#50565</a></p>\n<p dir=\"auto\">One thing I'd like to figure out in this PR is <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2010260417\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rack/rack/issues/2137\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rack/rack/pull/2137/hovercard\" href=\"https://github.com/rack/rack/pull/2137\">rack/rack#2137</a>, so still investigating. This is more just an FYI, if folks would like to help.</p>",
             "url": "https://github.com/rails/rails/pull/52206",
             "title": "wip: drop support for Rack < 3",
-            "date_modified": "2024-06-24T10:46:37.000Z",
+            "date_modified": "2024-06-24T11:20:16.000Z",
             "date_published": "2024-06-24T08:04:37.000Z",
             "author": {
                 "name": "zzak",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "willianveiga",
                 "url": "https://github.com/willianveiga"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Logger severity predicates have existed since the <a href=\"https://github.com/ruby/logger/commit/525b58d97eb7dd1375f59dec6e4f34ebff0c0ecb\">introduction of Logger</a>. However, these methods only looked at the <code class=\"notranslate\">level</code> instance variable, so they did not work with the <a href=\"https://github.com/rails/rails/commit/629efb605728b31ad9644f6f0acaf3760b641a29\">thread safe implementation</a> of temporary log levels in Rails.</p>\n<p dir=\"auto\">Since then, the Logger severity predicates were <a href=\"https://github.com/ruby/logger/commit/7365c995bfde6cc52ad6c481e4c6fff32780025c\">updated</a> to use the <code class=\"notranslate\">level</code> method instead of the instance variable, making Rails' severity predicate overrides obsolete.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit removes Rails' custom severity predicates in favor of Logger's implementation, since the new implementation was released in Logger 1.4.2 and came bundled with Ruby 2.7.0.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">This change only touches undocumented, internal methods so a CHANGELOG entry doesn't seem necessary.</p>",
-            "url": "https://github.com/rails/rails/pull/52132",
-            "title": "Remove obsolete Logger severity predicates",
-            "date_modified": "2024-06-18T22:18:29.000Z",
-            "date_published": "2024-06-15T19:18:49.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
             }
         }
     ]
