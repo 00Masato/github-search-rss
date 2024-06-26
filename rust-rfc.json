@@ -42,33 +42,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Primitive representations on enums now accept type aliases, meaning that in addition to primitives like <code class=\"notranslate\">#[repr(u32)]</code>, <code class=\"notranslate\">#[repr(discriminant = core::ffi::c_int)]</code> and <code class=\"notranslate\">#[repr(discriminant = my_type)]</code> are now accepted.</p>\n<p dir=\"auto\">Internals discussion: <a href=\"https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956</a><br>\nLast comment on RFC under first version (<code class=\"notranslate\">self::</code>): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2354411818\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3659\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3659/hovercard?comment_id=2171268028&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3659#issuecomment-2171268028\">#3659 (comment)</a><br>\nLast comment on RFC under second version (<code class=\"notranslate\">type = ...</code>): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2354411818\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3659\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3659/hovercard?comment_id=2181588275&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3659#issuecomment-2181588275\">#3659 (comment)</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/repr-type-aliases/text/0000-repr-type-aliases.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3659",
             "title": "`repr(discriminant = ...)` for type aliases",
-            "date_modified": "2024-06-21T23:31:30.000Z",
+            "date_modified": "2024-06-26T18:32:21.000Z",
             "date_published": "2024-06-15T02:14:21.000Z",
             "author": {
                 "name": "clarfonthey",
                 "url": "https://github.com/clarfonthey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155238?u=c09aaff33aa53ea99359e53bef06aa5058ac8d15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a proposed flagship goal for 2024h2 covering <strong>Rust for Linux</strong>. You can <a href=\"https://rust-lang.github.io/rust-project-goals/2024h2/slate.html\" rel=\"nofollow\">read more about the project goal slate and its associated process here</a>. This RFC is prepared using the project goal template, which differs from the typical RFC template.</p>\n<p dir=\"auto\">The overall goal is <strong>resolving the biggest blockers to Linux building on stable Rust</strong> via the following steps:</p>\n<ul dir=\"auto\">\n<li>stabilizing support for arbitrary <code class=\"notranslate\">self</code> types and unsizeable smart pointers, thus permitting ergonomic support for <a href=\"https://rust-for-linux.com/arc-in-the-linux-kernel\" rel=\"nofollow\">in-place linked lists</a> on stable;</li>\n<li>stabilizing features for labeled goto in inline assembler and extended <code class=\"notranslate\">offset_of!</code> support, needed for various bts of low-level coding;</li>\n<li>adding Rust For Linux project on Rust CI, thus ensuring we don't accidentally cause regressions for this highly visible project (done!);</li>\n<li>stabilizing support for pointers to statics in constants, permitting the construction of vtables for kernel modules;</li>\n<li>code-generation features and compiler options, allowing Rust to match the compilers given to gcc/clang when building the kernel;</li>\n<li>and, if possible, stabilize options for building core/alloc with fewer features, allowing the kernel to forbid infallible allocation and other aspects of the standard libraries that it does not want (this requires further investigation).</li>\n</ul>\n<p dir=\"auto\">Approving this goal implies agreement from the <a href=\"https://www.rust-lang.org/governance/teams/lang\" rel=\"nofollow\">Lang</a>, <a href=\"https://www.rust-lang.org/governance/teams/infra\" rel=\"nofollow\">Compiler</a>, and <a href=\"https://www.rust-lang.org/governance/teams/library#team-libs-api\" rel=\"nofollow\">Libs-API</a> teams to the items marked as <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://camo.githubusercontent.com/6145f1e9e6c103e893efb60a2fe224a4c7aac6b5d2518b39c279d4ee4f7a0138/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465616d25323061736b2d726564\"><img src=\"https://camo.githubusercontent.com/6145f1e9e6c103e893efb60a2fe224a4c7aac6b5d2518b39c279d4ee4f7a0138/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465616d25323061736b2d726564\" alt=\"Team\" data-canonical-src=\"https://img.shields.io/badge/Team%20ask-red\" style=\"max-width: 100%;\"></a> in the table of work items, along with potentially other design meetings as needed.</p>\n<p dir=\"auto\"><a href=\"https://github.com/nikomatsakis/rfcs/blob/rfl-project-goal/text/0000-rust-for-linux-project-goal-2024h2.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3658",
-            "title": "Proposed 2024h2 flagship goal: Rust for Linux",
-            "date_modified": "2024-06-26T10:49:15.000Z",
-            "date_published": "2024-06-14T21:43:05.000Z",
-            "author": {
-                "name": "nikomatsakis",
-                "url": "https://github.com/nikomatsakis"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155238?u=c09aaff33aa53ea99359e53bef06aa5058ac8d15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a proposed flagship goal for 2024h2 covering <strong>async Rust</strong>. You can <a href=\"https://rust-lang.github.io/rust-project-goals/2024h2/slate.html\" rel=\"nofollow\">read more about the project goal slate and its associated process here</a>. This RFC is prepared using the project goal template, which differs from the typical RFC template.</p>\n<p dir=\"auto\">The overall goal is <strong>bringing the Async Rust experience closer to parity with sync Rust</strong>. We have identified three high-priority goals that we believe would do the most to improve async over the long term:</p>\n<ul dir=\"auto\">\n<li>resolving the \"send bound problem\", thus enabling foundational, generic traits like Tower's <a href=\"\"><code class=\"notranslate\">Service</code></a> trait;</li>\n<li>stabilizing async closures, thus enabling richer, combinator APIs like sync Rust's <a href=\"https://doc.rust-lang.org/std/iter/trait.Iterator.html\" rel=\"nofollow\"><code class=\"notranslate\">Iterator</code></a>;</li>\n<li>reorganizing the async WG, so the project can benefit from a group of async rust experts with deep knowledge of the space that can align around a shared vision;</li>\n</ul>\n<p dir=\"auto\">We have also identified two \"stretch goals\":</p>\n<ul dir=\"auto\">\n<li>stabilizing a trait in libstd for async iteration, thus enabling the ecosystem to build atop a stable foundation;</li>\n<li>completing the async drop experiments proposed in <a href=\"https://github.com/rust-lang/compiler-team/issues/727\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/compiler-team/issues/727/hovercard\">MCP 727</a>, laying the groundwork for resolving the the next major gap in language feature support.</li>\n</ul>\n<p dir=\"auto\">Approving this goal implies agreement from the <a href=\"https://www.rust-lang.org/governance/teams/lang\" rel=\"nofollow\">Lang</a>, <a href=\"https://www.rust-lang.org/governance/teams/library\" rel=\"nofollow\">Libs</a>, and <a href=\"https://www.rust-lang.org/governance/teams/library#team-libs-api\" rel=\"nofollow\">Libs-API</a> teams to the items marked as <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://camo.githubusercontent.com/6145f1e9e6c103e893efb60a2fe224a4c7aac6b5d2518b39c279d4ee4f7a0138/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465616d25323061736b2d726564\"><img src=\"https://camo.githubusercontent.com/6145f1e9e6c103e893efb60a2fe224a4c7aac6b5d2518b39c279d4ee4f7a0138/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5465616d25323061736b2d726564\" alt=\"Team\" data-canonical-src=\"https://img.shields.io/badge/Team%20ask-red\" style=\"max-width: 100%;\"></a> in the table of work items, along with potentially other design meetings as needed.</p>\n<p dir=\"auto\"><a href=\"https://github.com/nikomatsakis/rfcs/blob/async-project-goal/text/0000-async-project-goal-2024h2.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3657",
-            "title": "Async project goal",
-            "date_modified": "2024-06-25T17:25:28.000Z",
-            "date_published": "2024-06-12T22:42:20.000Z",
-            "author": {
-                "name": "nikomatsakis",
-                "url": "https://github.com/nikomatsakis"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3628",
+            "title": "`async T` and `gen T` types",
+            "date_modified": "2024-05-10T16:11:51.000Z",
+            "date_published": "2024-05-07T08:33:00.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/match-ergonomics-2024/text/3627-match-ergonomics-2024.md\">Rendered</a></p>\n<p dir=\"auto\">Changes to match ergonomics for the 2024 edition.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang A-patterns A-edition-2024</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3627",
+            "title": "Match ergonomics 2024",
+            "date_modified": "2024-05-29T13:59:09.000Z",
+            "date_published": "2024-05-06T20:46:23.000Z",
+            "author": {
+                "name": "Jules-Bertholet",
+                "url": "https://github.com/Jules-Bertholet"
             }
         }
     ]
