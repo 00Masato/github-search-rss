@@ -6,25 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26704491?u=db54a0798fb800751ceea6bd73cf3d2794ebb1ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Recently, I restored a very large database, around 100 GB in size. After reviewing the data, I realized I needed to delete some of it. While searching for a direct method like delete_where, I found delete_by. Therefore, I propose adding delete_where as an alias for delete_by and also adding destroy_where. These methods can be used directly for convenience.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a></p>\n<p dir=\"auto\">I wanted to make more of this method, guide me if we can make it asynchronous in nature<br>\nAdditionally, I would like to implement asynchronous versions of these methods (delete_where_async and destroy_where_async) to handle deletions in the background.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26704491?u=db54a0798fb800751ceea6bd73cf3d2794ebb1ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Recently, I restored a very large database, around 100 GB in size. After reviewing the data, I realized I needed to delete some of it. While searching for a direct method like delete_where, I found delete_by. Therefore, I propose adding delete_where as an alias for delete_by and also adding destroy_where. These methods can be used directly for convenience.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>\n<p dir=\"auto\">I wanted to make more of this method, please guide and help me if we can make it asynchronous in nature<br>\nAdditionally, I would like to implement asynchronous versions of these methods (delete_where_async and destroy_where_async) to handle deletions in the background.</p>",
             "url": "https://github.com/rails/rails/pull/52237",
             "title": "Add delete_where as alias for delete_by",
-            "date_modified": "2024-06-29T13:57:28.000Z",
+            "date_modified": "2024-06-29T14:04:36.000Z",
             "date_published": "2024-06-29T13:31:18.000Z",
             "author": {
                 "name": "adityapandit17",
                 "url": "https://github.com/adityapandit17"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26132902?u=016ee37305f6fa13412eaca5649f8ed41d4e1ee7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I found broken links on the following page and fixed them:<br>\n<a href=\"https://edgeguides.rubyonrails.org/getting_started_with_devcontainer.html\" rel=\"nofollow\">https://edgeguides.rubyonrails.org/getting_started_with_devcontainer.html</a></p>",
-            "url": "https://github.com/rails/rails/pull/52236",
-            "title": "Fix broken links in Dev Containers start guide [ci skip]",
-            "date_modified": "2024-06-29T11:36:14.000Z",
-            "date_published": "2024-06-29T11:36:10.000Z",
-            "author": {
-                "name": "takmar",
-                "url": "https://github.com/takmar"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ghiculescu",
                 "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Rails currently does not have a nice route helper for HTTP/1 and HTTP/2 WebSockets.</p>\n<p dir=\"auto\">HTTP/1 uses <code class=\"notranslate\">GET</code> with the <code class=\"notranslate\">upgrade</code> header, while HTTP/2+ uses <code class=\"notranslate\">CONNECT</code> with the <code class=\"notranslate\">:protocol</code> pseudo-header. Users should not need to know the difference.</p>\n<p dir=\"auto\">Currently you'd need to write something like this:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"match &quot;home/index&quot;, to: &quot;home#index&quot;, via: [:get, :connect]\"><pre class=\"notranslate\"><span class=\"pl-en\">match</span> <span class=\"pl-s\">\"home/index\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">to</span>: <span class=\"pl-s\">\"home#index\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">via</span>: <span class=\"pl-kos\">[</span><span class=\"pl-pds\">:get</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:connect</span><span class=\"pl-kos\">]</span></pre></div>\n<p dir=\"auto\">With this change, we can write:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"connect &quot;home/index&quot;\"><pre class=\"notranslate\"><span class=\"pl-en\">connect</span> <span class=\"pl-s\">\"home/index\"</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52169",
+            "title": "Add route helper for websockets.",
+            "date_modified": "2024-06-22T09:45:11.000Z",
+            "date_published": "2024-06-20T11:28:00.000Z",
+            "author": {
+                "name": "ioquatix",
+                "url": "https://github.com/ioquatix"
             }
         }
     ]
