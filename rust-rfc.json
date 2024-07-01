@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3674314?u=196aca207002445372f3989bb4f72bf0de437665&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC adds an <code class=\"notranslate\">async</code> bound modifier to the <code class=\"notranslate\">Fn</code> family of trait bounds.  The combination desugars to a set of perma-unstable <code class=\"notranslate\">AsyncFn{,Mut,Once}</code> traits that parallel the current <code class=\"notranslate\">Fn{,Mut,Once}</code> traits.</p>\n<p dir=\"auto\">These traits give users the ability to express bounds for async callable types that are higher-ranked, and allow async closures to return futures which borrow from the closure's captures.</p>\n<p dir=\"auto\">This RFC also connects these traits to the <code class=\"notranslate\">async || {}</code> closure syntax, as originally laid out in <a href=\"https://rust-lang.github.io/rfcs/2394-async_await.html#async--closures\" rel=\"nofollow\">RFC 2394</a>, and confirms the necessity of a first-class async closure syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/compiler-errors/rust-rfcs/blob/async-closure-redux/text/3668-async-closure.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3668",
+            "title": "Async closures",
+            "date_modified": "2024-07-01T22:01:20.000Z",
+            "date_published": "2024-07-01T21:44:59.000Z",
+            "author": {
+                "name": "compiler-errors",
+                "url": "https://github.com/compiler-errors"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends Cargo's structured table form of features to include a <code class=\"notranslate\">deps</code><br>\nkey, to unambiguously specify packages the feature depends on without having to<br>\nuse the <code class=\"notranslate\">dep:foo</code> microformat.</p>\n<div class=\"highlight highlight-source-toml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"[features]\nmyfeature = { deps = [&quot;some-crate&quot;, &quot;another-crate&quot;] }\n# This is equivalent to `myfeature = [&quot;dep:some-crate&quot;, &quot;dep:another-crate&quot;]`\n# This can also be written in shorthand form:\nmyfeature.deps = [&quot;some-crate&quot;, &quot;another-crate&quot;]\"><pre class=\"notranslate\">[<span class=\"pl-en\">features</span>]\n<span class=\"pl-smi\">myfeature</span> = { <span class=\"pl-smi\">deps</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>some-crate<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>another-crate<span class=\"pl-pds\">\"</span></span>] }\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> This is equivalent to `myfeature = [\"dep:some-crate\", \"dep:another-crate\"]`</span>\n<span class=\"pl-c\"><span class=\"pl-c\">#</span> This can also be written in shorthand form:</span>\n<span class=\"pl-smi\">myfeature.deps</span> = [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>some-crate<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>another-crate<span class=\"pl-pds\">\"</span></span>]</pre></div>\n<p dir=\"auto\">This incremental RFC was inspired by the incremental, easier-to-review RFCs<br>\ncurrently being used for other individual pieces of the structured table format<br>\nfor features.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/feature-deps/text/3663-feature-deps.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3663",
             "title": "Cargo structured syntax for feature dependencies on crates",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79955405?u=c4a50058c2fe0214e4243abaf547ee6e1f59de46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Jules-Bertholet/rfcs/blob/match-ergonomics-2024/text/3627-match-ergonomics-2024.md\">Rendered</a></p>\n<p dir=\"auto\">Changes to match ergonomics for the 2024 edition.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang A-patterns A-edition-2024</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3627",
-            "title": "Match ergonomics 2024",
-            "date_modified": "2024-05-29T13:59:09.000Z",
-            "date_published": "2024-05-06T20:46:23.000Z",
-            "author": {
-                "name": "Jules-Bertholet",
-                "url": "https://github.com/Jules-Bertholet"
             }
         }
     ]
