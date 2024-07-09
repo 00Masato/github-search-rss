@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/174509?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/shepmaster/rfcs/blob/aarch64-apple-darwin-tier-1/text/0000-promote-aarch64-apple-darwin-to-tier-1.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3671",
+            "title": "Promote aarch64-apple-darwin to Tier 1",
+            "date_modified": "2024-07-09T16:02:25.000Z",
+            "date_published": "2024-07-09T16:02:22.000Z",
+            "author": {
+                "name": "shepmaster",
+                "url": "https://github.com/shepmaster"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3674314?u=196aca207002445372f3989bb4f72bf0de437665&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC adds an <code class=\"notranslate\">async</code> bound modifier to the <code class=\"notranslate\">Fn</code> family of trait bounds.  The combination desugars to a set of perma-unstable <code class=\"notranslate\">AsyncFn{,Mut,Once}</code> traits that parallel the current <code class=\"notranslate\">Fn{,Mut,Once}</code> traits.</p>\n<p dir=\"auto\">These traits give users the ability to express bounds for async callable types that are higher-ranked, and allow async closures to return futures which borrow from the closure's captures.</p>\n<p dir=\"auto\">This RFC also connects these traits to the <code class=\"notranslate\">async || {}</code> closure syntax, as originally laid out in <a href=\"https://rust-lang.github.io/rfcs/2394-async_await.html#async--closures\" rel=\"nofollow\">RFC 2394</a>, and confirms the necessity of a first-class async closure syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/compiler-errors/rust-rfcs/blob/async-closure-redux/text/3668-async-closure.md\">Rendered</a></p>\n<p dir=\"auto\">For additional background, see this blog post (which is referenced in the RFC):</p>\n<ul dir=\"auto\">\n<li><a href=\"https://hackmd.io/@compiler-errors/async-closures\" rel=\"nofollow\">Async closures 2024-07-01</a></li>\n</ul>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"462983150\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/62290\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/62290/hovercard\" href=\"https://github.com/rust-lang/rust/issues/62290\">rust-lang/rust#62290</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3668",
             "title": "Async closures",
@@ -209,17 +220,6 @@
             "title": "Function body blocks",
             "date_modified": "2024-05-16T02:20:15.000Z",
             "date_published": "2024-05-07T08:42:43.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3628",
-            "title": "`async T` and `gen T` types",
-            "date_modified": "2024-05-10T16:11:51.000Z",
-            "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
