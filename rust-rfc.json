@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/174509?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/shepmaster/rfcs/blob/aarch64-apple-darwin-tier-1/text/0000-promote-aarch64-apple-darwin-to-tier-1.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3671",
             "title": "Promote aarch64-apple-darwin to Tier 1",
-            "date_modified": "2024-07-11T12:59:22.000Z",
+            "date_modified": "2024-07-11T19:14:43.000Z",
             "date_published": "2024-07-09T16:02:22.000Z",
             "author": {
                 "name": "shepmaster",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3674314?u=196aca207002445372f3989bb4f72bf0de437665&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC adds an <code class=\"notranslate\">async</code> bound modifier to the <code class=\"notranslate\">Fn</code> family of trait bounds.  The combination desugars to a set of perma-unstable <code class=\"notranslate\">AsyncFn{,Mut,Once}</code> traits that parallel the current <code class=\"notranslate\">Fn{,Mut,Once}</code> traits.</p>\n<p dir=\"auto\">These traits give users the ability to express bounds for async callable types that are higher-ranked, and allow async closures to return futures which borrow from the closure's captures.</p>\n<p dir=\"auto\">This RFC also connects these traits to the <code class=\"notranslate\">async || {}</code> closure syntax, as originally laid out in <a href=\"https://rust-lang.github.io/rfcs/2394-async_await.html#async--closures\" rel=\"nofollow\">RFC 2394</a>, and confirms the necessity of a first-class async closure syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/compiler-errors/rust-rfcs/blob/async-closure-redux/text/3668-async-closure.md\">Rendered</a></p>\n<p dir=\"auto\">For additional background, see this blog post (which is referenced in the RFC):</p>\n<ul dir=\"auto\">\n<li><a href=\"https://hackmd.io/@compiler-errors/async-closures\" rel=\"nofollow\">Async closures 2024-07-01</a></li>\n</ul>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"462983150\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/62290\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/62290/hovercard\" href=\"https://github.com/rust-lang/rust/issues/62290\">rust-lang/rust#62290</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3668",
             "title": "Async closures",
-            "date_modified": "2024-07-11T03:52:45.000Z",
+            "date_modified": "2024-07-11T19:27:44.000Z",
             "date_published": "2024-07-01T21:44:59.000Z",
             "author": {
                 "name": "compiler-errors",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes optional names for repetition groups in macros:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"macro_rules! foo {\n    ( $group1( $a:ident ),+ ) =&gt; {\n        $group1( println!(&quot;{}&quot;, $a); )+\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">macro_rules!</span> foo <span class=\"pl-kos\">{</span>\n    <span class=\"pl-kos\">(</span> $group1<span class=\"pl-kos\">(</span> $a<span class=\"pl-kos\">:</span>ident <span class=\"pl-kos\">)</span>,+ <span class=\"pl-kos\">)</span> =&gt; <span class=\"pl-kos\">{</span>\n        $group1<span class=\"pl-kos\">(</span> println!<span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{}\"</span>, $a<span class=\"pl-kos\">)</span>; <span class=\"pl-kos\">)</span>+\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/macros-named-capture-groups/text/3649-macros-named-capture-groups.md\">Rendered</a></p>\n<p dir=\"auto\">Small Pre-RFC: <a href=\"https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3649",
             "title": "[RFC] Named macro capture groups",
-            "date_modified": "2024-06-24T12:09:17.000Z",
+            "date_modified": "2024-07-11T19:01:45.000Z",
             "date_published": "2024-05-29T00:37:05.000Z",
             "author": {
                 "name": "tgross35",
