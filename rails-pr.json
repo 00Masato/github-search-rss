@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/52325",
+            "title": "Exclude system tables from SQLite schema dumps",
+            "date_modified": "2024-07-13T18:45:42.000Z",
+            "date_published": "2024-07-13T18:33:21.000Z",
+            "author": {
+                "name": "northeastprince",
+                "url": "https://github.com/northeastprince"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16205473?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52324",
+            "title": "Fix typo from tests [ci skip]",
+            "date_modified": "2024-07-13T18:07:30.000Z",
+            "date_published": "2024-07-13T18:07:26.000Z",
+            "author": {
+                "name": "nisusam",
+                "url": "https://github.com/nisusam"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If we have records with ids = [1,2,3,4,5,6,7,8,9,10] and we iterate in reverse order and provide limits (e.g. <code class=\"notranslate\">start: 9</code> and <code class=\"notranslate\">finish: 2</code>), it will not return any results, because conditions are not correctly constructed to select the proper records.</p>\n<p dir=\"auto\">I also noticed, that in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1834208849\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48876\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48876/hovercard\" href=\"https://github.com/rails/rails/pull/48876\">#48876</a> (cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/HParker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/HParker\">@HParker</a>) support for composite primary keys was not added to <code class=\"notranslate\">batch_on_loaded_relation</code>. But adding this will make the code sooooo much ugly.</p>",
             "url": "https://github.com/rails/rails/pull/52322",
             "title": "Fix loaded relation batching with limits and reverse order",
@@ -14,17 +36,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9530257?u=843bdc925f0656c18ab0055a508001d94eead91a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because markdown tables are collapsed in rails guides.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request add a new line between sentences and tables, because the preview on Github shows it correctly, but the display on the webpage is corrupted.</p>\n<p dir=\"auto\"><a href=\"https://edgeguides.rubyonrails.org/configuring.html#config-active-storage-web-image-content-types\" rel=\"nofollow\">https://edgeguides.rubyonrails.org/configuring.html#config-active-storage-web-image-content-types</a><br>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/9530257/348463037-f49e0d58-8dc9-4549-bc24-b28e91e186ff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4OTM5OTcsIm5iZiI6MTcyMDg5MzY5NywicGF0aCI6Ii85NTMwMjU3LzM0ODQ2MzAzNy1mNDllMGQ1OC04ZGM5LTQ1NDktYmMyNC1iMjhlOTFlMTg2ZmYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTNUMTgwMTM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzM0ZGI1ZTNhYmViZDQ3ODI5MzlhMzUyY2M0YzAyYTU4N2ZlYzVmNzQwMmE4N2QwZGVjMGVkODVmNmFjZDIyYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.urpUqhFRwFuUFRMGdRYKeheHzqlFi9xga0gvx_pNwwg\"><img width=\"500\" alt=\"スクリーンショット 2024-07-13 18 31 59\" src=\"https://private-user-images.githubusercontent.com/9530257/348463037-f49e0d58-8dc9-4549-bc24-b28e91e186ff.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4OTM5OTcsIm5iZiI6MTcyMDg5MzY5NywicGF0aCI6Ii85NTMwMjU3LzM0ODQ2MzAzNy1mNDllMGQ1OC04ZGM5LTQ1NDktYmMyNC1iMjhlOTFlMTg2ZmYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDcxMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDA3MTNUMTgwMTM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9YzM0ZGI1ZTNhYmViZDQ3ODI5MzlhMzUyY2M0YzAyYTU4N2ZlYzVmNzQwMmE4N2QwZGVjMGVkODVmNmFjZDIyYSZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.urpUqhFRwFuUFRMGdRYKeheHzqlFi9xga0gvx_pNwwg\" style=\"max-width: 100%;\"></a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52319",
-            "title": "Fix markdown table collapse in configuring.md [ci skip]",
-            "date_modified": "2024-07-13T09:44:24.000Z",
-            "date_published": "2024-07-13T09:44:20.000Z",
-            "author": {
-                "name": "yamashun",
-                "url": "https://github.com/yamashun"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7331511?u=e5c461c2ed59b967e0925a515ab00b9a756715e3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<blockquote>\n<p dir=\"auto\">This deprecation warning will be visible starting with the release of Rails 8.0,<br>\nso it seems correct to use \"in Rails 8.1\" instead of \"in Rails 8.0\".<br>\n<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/willnet/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/willnet\">@willnet</a></p>\n</blockquote>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1632305308\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47713\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47713/hovercard\" href=\"https://github.com/rails/rails/pull/47713\">#47713</a></p>\n<p dir=\"auto\">This Pull Request has been created because need to update the deprecation warning message.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the deprecation warning message from \"in Rails 8.0\" to \"in Rails 8.1\".</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">suggested by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/willnet/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/willnet\">@willnet</a> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1632305308\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/47713\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/47713/hovercard?comment_id=1663496308&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/47713#discussion_r1663496308\">#47713 (comment)</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52265",
-            "title": "Update statistics.rake deprecation message",
-            "date_modified": "2024-07-04T10:25:05.000Z",
-            "date_published": "2024-07-03T12:58:28.000Z",
-            "author": {
-                "name": "JuanVqz",
-                "url": "https://github.com/JuanVqz"
             }
         }
     ]
