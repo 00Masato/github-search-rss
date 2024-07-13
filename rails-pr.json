@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/52325",
             "title": "Exclude system tables from SQLite schema dumps",
-            "date_modified": "2024-07-13T19:59:20.000Z",
+            "date_modified": "2024-07-13T20:12:01.000Z",
             "date_published": "2024-07-13T18:33:21.000Z",
             "author": {
                 "name": "northeastprince",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If we have records with ids = [1,2,3,4,5,6,7,8,9,10] and we iterate in reverse order and provide limits (e.g. <code class=\"notranslate\">start: 9</code> and <code class=\"notranslate\">finish: 2</code>), it will not return any results, because conditions are not correctly constructed to select the proper records.</p>\n<p dir=\"auto\">I also noticed, that in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1834208849\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48876\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48876/hovercard\" href=\"https://github.com/rails/rails/pull/48876\">#48876</a> (cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/HParker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/HParker\">@HParker</a>) support for composite primary keys was not added to <code class=\"notranslate\">batch_on_loaded_relation</code>. But adding this will make the code sooooo much ugly.</p>",
             "url": "https://github.com/rails/rails/pull/52322",
             "title": "Fix loaded relation batching with limits and reverse order",
-            "date_modified": "2024-07-13T10:56:01.000Z",
+            "date_modified": "2024-07-13T20:44:48.000Z",
             "date_published": "2024-07-13T10:55:56.000Z",
             "author": {
                 "name": "fatkodima",
