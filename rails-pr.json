@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If we have records with ids = [1,2,3,4,5,6,7,8,9,10] and we iterate in reverse order and provide limits (e.g. <code class=\"notranslate\">start: 9</code> and <code class=\"notranslate\">finish: 2</code>), it will not return any results, because conditions are not correctly constructed to select the proper records.</p>\n<p dir=\"auto\">I also noticed, that in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1834208849\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48876\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48876/hovercard\" href=\"https://github.com/rails/rails/pull/48876\">#48876</a> (cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/HParker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/HParker\">@HParker</a>) support for composite primary keys was not added to <code class=\"notranslate\">batch_on_loaded_relation</code>. But adding this will make the code sooooo much ugly.</p>",
-            "url": "https://github.com/rails/rails/pull/52322",
-            "title": "Fix loaded relation batching with limits and reverse order",
-            "date_modified": "2024-07-13T20:44:48.000Z",
-            "date_published": "2024-07-13T10:55:56.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6379550?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Documentation doesn't mention that blorgh needs to be copied into unicorn/engines/blorgh. Fix to include that step.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the instructions to install the engine <code class=\"notranslate\">blorgh</code> into the sample application <code class=\"notranslate\">unicorn</code> is missing the step of copying <code class=\"notranslate\">blorgh</code> into <code class=\"notranslate\">unicorn/engines/</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds the step of copying <code class=\"notranslate\">blorgh</code> into <code class=\"notranslate\">unicorn/engines/</code> before running <code class=\"notranslate\">bundle</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52318",
             "title": "Update engines.md with step needed to install engine in test application [ci skip]",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "JuanVqz",
                 "url": "https://github.com/JuanVqz"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The tests for streaming responses, as modified in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2347543583\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52094\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52094/hovercard\" href=\"https://github.com/rails/rails/pull/52094\">#52094</a> are insufficient to determine whether the response included multiple chunks. We should ensure that this is the case, as well as ensuring that the response body conforms to an \"Enumerable Body\" as defined by the Rack specification when <code class=\"notranslate\">stream: true</code> is requested.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52253",
+            "title": "Add tests for streaming chunks.",
+            "date_modified": "2024-07-02T23:33:42.000Z",
+            "date_published": "2024-07-02T03:24:05.000Z",
+            "author": {
+                "name": "ioquatix",
+                "url": "https://github.com/ioquatix"
             }
         }
     ]
