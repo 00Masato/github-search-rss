@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"# Generating with...\nbin/rails generate migration CreateUsers email_address:string!:uniq password_digest:string!\n\n# Produces:\nclass CreateUsers &lt; ActiveRecord::Migration[8.0]\n  def change\n    create_table :users do |t|\n      t.string :email_address, null: false\n      t.string :password_digest, null: false\n\n      t.timestamps\n    end\n    add_index :users, :email_address, unique: true\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\"># Generating with...\nbin/rails generate migration CreateUsers email_address:string!:uniq password_digest:string!\n\n# Produces:\nclass CreateUsers &lt; ActiveRecord::Migration[8.0]\n  def change\n    create_table :users do |t|\n      t.string :email_address, null: false\n      t.string :password_digest, null: false\n\n      t.timestamps\n    end\n    add_index :users, :email_address, unique: true\n  end\nend\n</code></pre></div>",
+            "url": "https://github.com/rails/rails/pull/52327",
+            "title": "Add not-null modifier to migrations",
+            "date_modified": "2024-07-14T10:59:34.000Z",
+            "date_published": "2024-07-14T10:59:30.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/52325",
             "title": "Exclude system tables from SQLite schema dumps",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "JuanVqz",
                 "url": "https://github.com/JuanVqz"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30030?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The tests for streaming responses, as modified in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2347543583\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52094\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52094/hovercard\" href=\"https://github.com/rails/rails/pull/52094\">#52094</a> are insufficient to determine whether the response included multiple chunks. We should ensure that this is the case, as well as ensuring that the response body conforms to an \"Enumerable Body\" as defined by the Rack specification when <code class=\"notranslate\">stream: true</code> is requested.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52253",
-            "title": "Add tests for streaming chunks.",
-            "date_modified": "2024-07-02T23:33:42.000Z",
-            "date_published": "2024-07-02T03:24:05.000Z",
-            "author": {
-                "name": "ioquatix",
-                "url": "https://github.com/ioquatix"
             }
         }
     ]
