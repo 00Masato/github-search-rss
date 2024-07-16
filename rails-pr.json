@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">There's no need to use class eval here.</p>\n<p dir=\"auto\">Essentially a revert of <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f7e91c7224560fbd3e95c238a0e8bb362799bcb7/hovercard\" href=\"https://github.com/rails/rails/commit/f7e91c7224560fbd3e95c238a0e8bb362799bcb7\"><tt>f7e91c7</tt></a></p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/amatsuda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/amatsuda\">@amatsuda</a>, I didn't find more context than the commit message, and as far as I can tell, this doesn't seem to re-introduce the issue mentioned, unless there's more to it and it happens when code is loaded in a particular order?</p>",
+            "url": "https://github.com/rails/rails/pull/52339",
+            "title": "Simplify FileUpdateCheckerSharedTests",
+            "date_modified": "2024-07-16T07:44:19.000Z",
+            "date_published": "2024-07-16T07:44:15.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13457494?u=fb7971eda2d2680c27e7d2e5a4db7b430745f04d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Rails supports <code class=\"notranslate\">Time#rfc2822</code>, so  I naturally assumed that <code class=\"notranslate\">Time#to_fs</code> would also support <code class=\"notranslate\">rfc2822</code>. However, I discovered that this was not the case.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes adds support for <code class=\"notranslate\">rfc2822</code> format for <code class=\"notranslate\">Time#to_fs</code> &amp; <code class=\"notranslate\">Date#to_fs</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52337",
             "title": "Support rfc2822 format for Time#to_fs & Date#to_fs",
@@ -141,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7911294?u=f39338498a634d2861ebcd94c2419715e58d258b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to make it easier to provide programatic access to details about requested shard/role.</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>This Pull Request introduces a more specific exception <code class=\"notranslate\">NoConnectionPool</code> as a subclass of the previously-raised ConnectionNotEstablished. The new exception is used to handle cases where a requested database connection pool has not been found.</li>\n<li>The <code class=\"notranslate\">retrieve_connection_pool</code> method in <code class=\"notranslate\">connection_handler.rb</code> has been modified to provide more specific error messages reflecting if we're missing a shard and/or a role.</li>\n<li>Test cases have been updated to reflect these changes.</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
             "url": "https://github.com/rails/rails/pull/52298",
             "title": "Raise specific exception when a pool is not configured",
-            "date_modified": "2024-07-15T22:06:38.000Z",
+            "date_modified": "2024-07-16T07:45:19.000Z",
             "date_published": "2024-07-09T21:19:03.000Z",
             "author": {
                 "name": "hharen",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "bensheldon",
                 "url": "https://github.com/bensheldon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/787783?u=5fda346e35dce7edb3ad596c1a96e0b09b48e090&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because of readability issues with the gotcha section of the select form options helper documentation.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the select form options helper gotcha documentation.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52278",
-            "title": "[ci skip] Improve readability of select form options helper gotcha documentation",
-            "date_modified": "2024-07-12T01:49:47.000Z",
-            "date_published": "2024-07-05T12:00:08.000Z",
-            "author": {
-                "name": "markzalar",
-                "url": "https://github.com/markzalar"
             }
         }
     ]
