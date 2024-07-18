@@ -6,6 +6,17 @@
     "description": "mdn/browser-compat-data update data on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=cd2cd89732988370977199b052537a5d721dd80d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Some spec_urls for standardized MathML features.</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/23853",
+            "title": "Add spec_urls for MathML",
+            "date_modified": "2024-07-18T16:01:46.000Z",
+            "date_published": "2024-07-18T16:01:34.000Z",
+            "author": {
+                "name": "Elchi3",
+                "url": "https://github.com/Elchi3"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=cd2cd89732988370977199b052537a5d721dd80d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Spec: <a href=\"https://w3c.github.io/sensors/#automation\" rel=\"nofollow\">https://w3c.github.io/sensors/#automation</a><br>\nChrome: <a href=\"https://chromestatus.com/feature/5173284500406272\" rel=\"nofollow\">https://chromestatus.com/feature/5173284500406272</a></p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/23852",
             "title": "Add virtual sensor WebDriver commands",
