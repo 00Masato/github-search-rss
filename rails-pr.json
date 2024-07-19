@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because several <code class=\"notranslate\">[8.0]</code> versions can be found in active_record_migrations.md with <code class=\"notranslate\">7-2-stable</code> branch:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ rg &quot;\\[8.0\\]&quot; guides/source/\nguides/source/active_record_migrations.md\n153:class CreateProducts &lt; ActiveRecord::Migration[8.0]\n444:class CreateUsers &lt; ActiveRecord::Migration[8.0]\n470:class CreateUsers &lt; ActiveRecord::Migration[8.0]\n484:class CreateUsers &lt; ActiveRecord::Migration[8.0]\n532:class AddDetailsToProducts &lt; ActiveRecord::Migration[8.0]\n817:class UpdateProductPrices &lt; ActiveRecord::Migration[8.0]\n938:class ChangeProductsPrice &lt; ActiveRecord::Migration[8.0]\n957:class ChangeProductsPrice &lt; ActiveRecord::Migration[8.0]\n1066:class IrreversibleMigrationExample &lt; ActiveRecord::Migration[8.0]\n1231:class ChangeEnum &lt; ActiveRecord::Migration[8.0]\n1717:    class CreateAuthors &lt; ActiveRecord::Migration[8.0]\"><pre class=\"notranslate\">$ rg <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>\\[8.0\\]<span class=\"pl-pds\">\"</span></span> guides/source/\nguides/source/active_record_migrations.md\n153:class CreateProducts <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n444:class CreateUsers <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n470:class CreateUsers <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n484:class CreateUsers <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n532:class AddDetailsToProducts <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n817:class UpdateProductPrices <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n938:class ChangeProductsPrice <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n957:class ChangeProductsPrice <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n1066:class IrreversibleMigrationExample <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n1231:class ChangeEnum <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]\n1717:    class CreateAuthors <span class=\"pl-k\">&lt;</span> ActiveRecord::Migration[8.0]</pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request just changes migration versions <code class=\"notranslate\">[8.0]</code> to <code class=\"notranslate\">[7.2]</code> in <code class=\"notranslate\">7-2-stable</code> branch.</p>",
+            "url": "https://github.com/rails/rails/pull/52362",
+            "title": "[doc][ci skip] Fix migration versions [8.0] to [7.2] in migration guide",
+            "date_modified": "2024-07-19T10:00:38.000Z",
+            "date_published": "2024-07-19T10:00:34.000Z",
+            "author": {
+                "name": "hachi8833",
+                "url": "https://github.com/hachi8833"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52358.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2417401809\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52358\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52358/hovercard\" href=\"https://github.com/rails/rails/issues/52358\">#52358</a>.</p>\n<p dir=\"auto\">The problem was that when a primary key includes <code class=\"notranslate\">\"id\"</code> column, then we should use <code class=\"notranslate\">id_value</code> method to get its value.</p>",
             "url": "https://github.com/rails/rails/pull/52359",
             "title": "Fix `find_or_initialize_by` for finding by associations with composite primary keys",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "djfpaagman",
                 "url": "https://github.com/djfpaagman"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1151753?u=0ae97787ee7a5583ea7b5bdb149c32e84fae699b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong>test copying of default_proc in to_hash</strong></li>\n<li><strong>add testing of update w/ indifferent_access</strong></li>\n<li><strong>add update with block test</strong></li>\n</ul>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I wanted to improve the test suite.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a couple tests for untested features and reworks a test that was confused.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52296",
-            "title": "Some test improvements for hash with indifferent access",
-            "date_modified": "2024-07-10T22:05:42.000Z",
-            "date_published": "2024-07-09T14:02:16.000Z",
-            "author": {
-                "name": "kwstannard",
-                "url": "https://github.com/kwstannard"
             }
         }
     ]
