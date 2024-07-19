@@ -218,7 +218,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3628",
             "title": "`async T` and `gen T` types",
-            "date_modified": "2024-05-10T16:11:51.000Z",
+            "date_modified": "2024-07-19T19:52:46.000Z",
             "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
