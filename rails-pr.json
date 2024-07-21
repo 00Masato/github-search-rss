@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently it is possible to save user without email address. This commit adds validation to disallow saving empty email_address.</p>",
+            "url": "https://github.com/rails/rails/pull/52380",
+            "title": "Sessions: Don't allow saving user without an email",
+            "date_modified": "2024-07-21T13:07:46.000Z",
+            "date_published": "2024-07-21T13:07:42.000Z",
+            "author": {
+                "name": "dixpac",
+                "url": "https://github.com/dixpac"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Normalizes email_address before saving it to the DB.</p>",
             "url": "https://github.com/rails/rails/pull/52379",
             "title": "Session generator: Normalize email_address",
@@ -94,7 +105,7 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When an authenticated user clicks `button_to 'Sign out', session_path, method: :delete&gt;, he gets an error:</p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NjcyNTEsIm5iZiI6MTcyMTU2Njk1MSwicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDEzMDIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFiM2ZhMDViMzc1MTkwMmNiYTAxZGNlMmZiNDQ0ZDkwMGNlZTVmN2E4MGM5NjQ4MjRhYWZjZTAyMjhjODNhZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aerEo2iF34PuU0bfiXDJ3-m8Lk3lWFcxFYdg0RHD0a8\"><img width=\"696\" alt=\"Screenshot 2024-07-19 at 21 39 54\" src=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NjcyNTEsIm5iZiI6MTcyMTU2Njk1MSwicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDEzMDIzMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFiM2ZhMDViMzc1MTkwMmNiYTAxZGNlMmZiNDQ0ZDkwMGNlZTVmN2E4MGM5NjQ4MjRhYWZjZTAyMjhjODNhZDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.aerEo2iF34PuU0bfiXDJ3-m8Lk3lWFcxFYdg0RHD0a8\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\">This will fix it.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When an authenticated user clicks `button_to 'Sign out', session_path, method: :delete&gt;, he gets an error:</p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NzA3ODUsIm5iZiI6MTcyMTU3MDQ4NSwicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDE0MDEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJmYTg1M2U4ZjU1YjZjZmExY2NkODU1MDIyOTdjMWJhOGIzMjRmMTFhZjZlYWFmNDZmNDI4ZGM3OGY4MWViMmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.71-kXwLB1FDyIx9QzMHs1GB4HZDGljPHM2k3_7yNXug\"><img width=\"696\" alt=\"Screenshot 2024-07-19 at 21 39 54\" src=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NzA3ODUsIm5iZiI6MTcyMTU3MDQ4NSwicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDE0MDEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTJmYTg1M2U4ZjU1YjZjZmExY2NkODU1MDIyOTdjMWJhOGIzMjRmMTFhZjZlYWFmNDZmNDI4ZGM3OGY4MWViMmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.71-kXwLB1FDyIx9QzMHs1GB4HZDGljPHM2k3_7yNXug\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\">This will fix it.</p>",
             "url": "https://github.com/rails/rails/pull/52369",
             "title": "Session generator - NoMethodError on sign out",
             "date_modified": "2024-07-21T09:33:36.000Z",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "shayonj",
                 "url": "https://github.com/shayonj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">There's no need to use class eval here.</p>\n<p dir=\"auto\">Essentially a revert of <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f7e91c7224560fbd3e95c238a0e8bb362799bcb7/hovercard\" href=\"https://github.com/rails/rails/commit/f7e91c7224560fbd3e95c238a0e8bb362799bcb7\"><tt>f7e91c7</tt></a></p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/amatsuda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/amatsuda\">@amatsuda</a>, I didn't find more context than the commit message, and as far as I can tell, this doesn't seem to re-introduce the issue mentioned, unless there's more to it and it happens when code is loaded in a particular order?</p>",
-            "url": "https://github.com/rails/rails/pull/52339",
-            "title": "Simplify FileUpdateCheckerSharedTests",
-            "date_modified": "2024-07-16T07:44:19.000Z",
-            "date_published": "2024-07-16T07:44:15.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
             }
         }
     ]
