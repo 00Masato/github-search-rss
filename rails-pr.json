@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Normalizes email_address before saving it to the DB.</p>",
+            "url": "https://github.com/rails/rails/pull/52379",
+            "title": "Session generator: Normalize email_address",
+            "date_modified": "2024-07-21T11:10:51.000Z",
+            "date_published": "2024-07-21T11:10:47.000Z",
+            "author": {
+                "name": "dixpac",
+                "url": "https://github.com/dixpac"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, <code class=\"notranslate\">error_on_ignore</code> option is not passed to the <code class=\"notranslate\">BatchEnumerator</code>. And when we iterate using it (via something like <code class=\"notranslate\">Post.in_batches(error_on_ignore: true).delete_all</code>) it is lost.<br>\nSo we need to check for the option presence before we return the <code class=\"notranslate\">BatchEnumerator</code> instance.</p>",
             "url": "https://github.com/rails/rails/pull/52378",
             "title": "Fix swallowing ignore order warning when batching using `BatchEnumerator`",
@@ -83,7 +94,7 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When an authenticated user clicks `button_to 'Sign out', session_path, method: :delete&gt;, he gets an error:</p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NjAwMDQsIm5iZiI6MTcyMTU1OTcwNCwicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDExMDE0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE5MWQyY2Q3MGVkNzIwMDA3YmQ0YjViYTY5ZTc2YjIzZmY0NGRiMDg5NDkyZDcwOWIwZWM4ZjE2ZDgxZTFhYWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.JzwEuC9PTW2ni5QTH1vJeECInFjpuyliBkiEmM1J7KY\"><img width=\"696\" alt=\"Screenshot 2024-07-19 at 21 39 54\" src=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NjAwMDQsIm5iZiI6MTcyMTU1OTcwNCwicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDExMDE0NFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE5MWQyY2Q3MGVkNzIwMDA3YmQ0YjViYTY5ZTc2YjIzZmY0NGRiMDg5NDkyZDcwOWIwZWM4ZjE2ZDgxZTFhYWImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.JzwEuC9PTW2ni5QTH1vJeECInFjpuyliBkiEmM1J7KY\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\">This will fix it.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When an authenticated user clicks `button_to 'Sign out', session_path, method: :delete&gt;, he gets an error:</p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NjM2MjMsIm5iZiI6MTcyMTU2MzMyMywicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDEyMDIwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYwMzkxNmEzOGNmZTEwY2MwN2Y0ZTgzNjc4MjRhM2IxY2U4YzM5OTYyZDlmZjFkZDRlMWEzYmIxN2U0MjI2NjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0._qxAu8Lgtof3XXb6cW3mqZ8phWOHY_VLfaRZqg5WUMA\"><img width=\"696\" alt=\"Screenshot 2024-07-19 at 21 39 54\" src=\"https://private-user-images.githubusercontent.com/13472945/350541022-7dcdd078-1767-4468-99bd-31b12642b0e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE1NjM2MjMsIm5iZiI6MTcyMTU2MzMyMywicGF0aCI6Ii8xMzQ3Mjk0NS8zNTA1NDEwMjItN2RjZGQwNzgtMTc2Ny00NDY4LTk5YmQtMzFiMTI2NDJiMGUzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzIxVDEyMDIwM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYwMzkxNmEzOGNmZTEwY2MwN2Y0ZTgzNjc4MjRhM2IxY2U4YzM5OTYyZDlmZjFkZDRlMWEzYmIxN2U0MjI2NjMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0._qxAu8Lgtof3XXb6cW3mqZ8phWOHY_VLfaRZqg5WUMA\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\">This will fix it.</p>",
             "url": "https://github.com/rails/rails/pull/52369",
             "title": "Session generator - NoMethodError on sign out",
             "date_modified": "2024-07-21T09:33:36.000Z",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1834208849\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48876\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48876/hovercard\" href=\"https://github.com/rails/rails/pull/48876\">#48876</a> (cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/HParker/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/HParker\">@HParker</a>).</p>\n<p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2406845758\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52322\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52322/hovercard\" href=\"https://github.com/rails/rails/pull/52322\">#52322</a> I discovered, that support for composite primary keys was not added to <code class=\"notranslate\">batch_on_loaded_relation</code> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1834208849\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48876\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48876/hovercard\" href=\"https://github.com/rails/rails/pull/48876\">#48876</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/52329",
-            "title": "Fix loaded relation batching for models with composite primary keys",
-            "date_modified": "2024-07-14T11:48:53.000Z",
-            "date_published": "2024-07-14T11:48:48.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
