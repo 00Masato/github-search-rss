@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We never want to connect or reconnect here, we just need to drop any results from a multi-statement query and that only makes sense to do on the same connection we'd already used for the query.</p>\n<p dir=\"auto\">Previously when a query was run which hit the query cache on a fresh, non-sticky connection, the connection would perform its <code class=\"notranslate\">verfiy!</code> before calling next_result, resulting in a network round trip.</p>\n<p dir=\"auto\"><a href=\"https://gist.github.com/jhawthorn/a7210ff40d947b5f6c776045a2a8c59c\">https://gist.github.com/jhawthorn/a7210ff40d947b5f6c776045a2a8c59c</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
             "url": "https://github.com/rails/rails/pull/52402",
             "title": "Use raw connection for Trilogy more_results",
-            "date_modified": "2024-07-23T08:48:14.000Z",
+            "date_modified": "2024-07-23T10:23:48.000Z",
             "date_published": "2024-07-23T05:28:53.000Z",
             "author": {
                 "name": "jhawthorn",
