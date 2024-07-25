@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In general you should not be posting credit card details to your server, you should be using a processor like Stripe or Braintree. But if you make a mistake in your form and <em>do</em> post a user's credit card number, those details will get logged by default, even if your server doesn't use them. Now you're potentially \"storing card data\" and so you have a whole bunch more legal requirements to do it securely.</p>\n<p dir=\"auto\">This PR adds <code class=\"notranslate\">cvv</code> and <code class=\"notranslate\">card_</code> to the defaults for <a href=\"https://api.rubyonrails.org/v7.1.3.4/classes/ActiveSupport/ParameterFilter.html\" rel=\"nofollow\"><code class=\"notranslate\">ActiveSupport::ParameterFilter</code></a> for new apps. This means that params with those names will not get logged by default. This just changes the template for new apps; there's no changes made to existing apps.</p>",
             "url": "https://github.com/rails/rails/pull/52413",
             "title": "Add `cvv` and `card_` as default parameters to filter out in new apps",
-            "date_modified": "2024-07-25T05:52:31.000Z",
+            "date_modified": "2024-07-25T07:01:20.000Z",
             "date_published": "2024-07-25T05:52:26.000Z",
             "author": {
                 "name": "ghiculescu",
@@ -58,17 +58,6 @@
             "author": {
                 "name": "y-yagi",
                 "url": "https://github.com/y-yagi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We never want to connect or reconnect here, we just need to drop any results from a multi-statement query and that only makes sense to do on the same connection we'd already used for the query.</p>\n<p dir=\"auto\">Previously when a query was run which hit the query cache on a fresh, non-sticky connection, the connection would perform its <code class=\"notranslate\">verfiy!</code> before calling next_result, resulting in a network round trip.</p>\n<p dir=\"auto\"><a href=\"https://gist.github.com/jhawthorn/a7210ff40d947b5f6c776045a2a8c59c\">https://gist.github.com/jhawthorn/a7210ff40d947b5f6c776045a2a8c59c</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
-            "url": "https://github.com/rails/rails/pull/52402",
-            "title": "Use raw connection for Trilogy more_results",
-            "date_modified": "2024-07-24T06:09:53.000Z",
-            "date_published": "2024-07-23T05:28:53.000Z",
-            "author": {
-                "name": "jhawthorn",
-                "url": "https://github.com/jhawthorn"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "sato11",
                 "url": "https://github.com/sato11"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49515?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created for two reasons</p>\n<ol dir=\"auto\">\n<li>Running the Rails application with Docker in development has become more common/standard, developers will not be able to use <code class=\"notranslate\">web_console</code> to debug application without updating the <code class=\"notranslate\">allowed_ips</code>. Additionally, the message doesn't  direct a developer how to make it it work without searching for the message online.</li>\n<li>Because every time a Rails app is upgraded to a new version of Rails and <code class=\"notranslate\">app:update</code> is run, it overwrites my changes for <code class=\"notranslate\">allowed_ips</code>.</li>\n</ol>\n<p dir=\"auto\">Now that Docker related files (Dockerfile and dev container) are part of the default <code class=\"notranslate\">rails new</code> generation, it is fairly standard to develop and debug against a Rails app running a Docker container. Out of the box, this leads to the whiny warning:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\" Cannot render console from 192.168.167.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1\"><pre class=\"notranslate\"><code class=\"notranslate\"> Cannot render console from 192.168.167.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the generated <code class=\"notranslate\">development.rb</code> file and docker compose to allow Docker network IPs to be used in the <code class=\"notranslate\">allowed_ips</code> configuration. The defaults proposed here are static and broad for simplicity, but there are other options. It could be more dynamically set, or maybe the possibilities are just too varied to provide a good default and setting the env var would be left to the developer to populate (with a doc/guide update note perhaps as well?)</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">Discussion of various solutions for what to set the value to in <a href=\"https://stackoverflow.com/questions/29417328/how-to-disable-cannot-render-console-from-on-rails\" rel=\"nofollow\">https://stackoverflow.com/questions/29417328/how-to-disable-cannot-render-console-from-on-rails</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52374",
+            "title": "Set allowed_ips in generated development.rb for Docker environments",
+            "date_modified": "2024-07-24T17:45:07.000Z",
+            "date_published": "2024-07-20T21:58:19.000Z",
+            "author": {
+                "name": "ryanwi",
+                "url": "https://github.com/ryanwi"
             }
         }
     ]
