@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When <code class=\"notranslate\">config.i18n.raise_on_missing_translations = true</code>, controllers and views raise an error on missing translations. However, models won't. This PR changes models to raise an error when <code class=\"notranslate\">raise_on_missing_translations</code> is true.</p>\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52426",
+            "title": "Add an option to raise an error on missing translations for Active Model human_attribute_name",
+            "date_modified": "2024-07-26T11:07:03.000Z",
+            "date_published": "2024-07-26T11:06:43.000Z",
+            "author": {
+                "name": "shouichi",
+                "url": "https://github.com/shouichi"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Rails 8.0 will be Ruby 3.1 or greater only<br>\n<code class=\"notranslate\">except</code> natively got added in Ruby 3.0 so this is dead code now.</p>\n<p dir=\"auto\"><a href=\"https://docs.ruby-lang.org/en/3.1/Hash.html#method-i-except\" rel=\"nofollow\">https://docs.ruby-lang.org/en/3.1/Hash.html#method-i-except</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52424",
             "title": "Drop Hash `except` core extension",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/35061?u=948386299a45ab279b5d657bf028751fc6d3767f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In my app I'm using Turbo Stream. I need to know the moment that a stream channel is connected and was pleased to find there is a notification for it: <code class=\"notranslate\">transmit_subscription_confirmation.action_cable</code>. However, the only information in the notification event is <code class=\"notranslate\">channel_class: \"Turbo::StreamsChannel\"</code>. For custom ActionCable classes, this might be sufficient, but this is not very helpful for a Turbo Stream channel because you can't disambiguate them. Plus, in my particular case, I want to know the specific model that the <code class=\"notranslate\">turbo_stream_from</code> was initialized for.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds <code class=\"notranslate\">identifier:</code> as an additional payload field for <code class=\"notranslate\">transmit_subscription_confirmation.action_cable</code> and for <code class=\"notranslate\">transmit_subscription_rejection.action_cable</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG — it does not seem worth updating the changelog for this as it's practically a bug fix.</li>\n</ul>\n<h3 dir=\"auto\">Addendum</h3>\n<p dir=\"auto\">The reason that I need to listen for this event is because of a bug, I think, in Turbo Stream. If I can get confirmation of the bug, I'm happy to submit a fix for it, as well. I opened an Issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2431017564\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52420\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52420/hovercard\" href=\"https://github.com/rails/rails/issues/52420\">#52420</a> to stay organized. But regardless of how we handle this \"bug\", it will be good to have an identifier on these events.</p>",
             "url": "https://github.com/rails/rails/pull/52421",
             "title": "Include identifier in ActionCable channel notifications",
-            "date_modified": "2024-07-25T21:40:03.000Z",
+            "date_modified": "2024-07-26T11:09:47.000Z",
             "date_published": "2024-07-25T21:39:58.000Z",
             "author": {
                 "name": "krschacht",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "heratyian",
                 "url": "https://github.com/heratyian"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently it is possible to save user without email address. This commit adds validation to disallow saving empty email_address.</p>",
-            "url": "https://github.com/rails/rails/pull/52380",
-            "title": "Sessions: Don't allow saving user without an email",
-            "date_modified": "2024-07-21T13:07:46.000Z",
-            "date_published": "2024-07-21T13:07:42.000Z",
-            "author": {
-                "name": "dixpac",
-                "url": "https://github.com/dixpac"
             }
         }
     ]
