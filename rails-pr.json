@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/929886?u=20e7647deec019e86c7d64fd94148ede89abb64c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In <code class=\"notranslate\">config/database.yml</code> specifically, and generally where the default/fallback value of a hash key is a simple value, we should prefer <a href=\"https://ruby-doc.org/3.2.2/Hash.html#method-i-fetch\" rel=\"nofollow\"><code class=\"notranslate\">Hash#fetch(key, default_value)</code></a> to <code class=\"notranslate\">Hash#fetch(key, &amp;blk)</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR updates the <code class=\"notranslate\">config/database.yml</code> template to prefer <code class=\"notranslate\">ENV.fetch(\"RAILS_MAX_THREADS\", 5)</code> over the current block/proc approach. The block/proc approach allows us to defer computing the default value until absolutely necessary—that is, <code class=\"notranslate\">ENV.fetch(\"RAILS_MAX_THREADS\")</code> is <code class=\"notranslate\">nil</code>. This makes sense when the computation can be very expensive. In this case, they're not.</p>\n<p dir=\"auto\">The defaults are simple values (integers), not resource-intensive, and require no expensive computation (method calls, etc) to produce. Therefore, I believe they should be passed directly to the <code class=\"notranslate\">fetch</code> call. I've restricted the changes to the database configuration but there are other low-hanging fruits that could be similarly refactored.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52427",
-            "title": "In database config, prefer simple values to blocks/procs",
-            "date_modified": "2024-07-26T12:30:50.000Z",
-            "date_published": "2024-07-26T12:25:19.000Z",
-            "author": {
-                "name": "yawboakye",
-                "url": "https://github.com/yawboakye"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When <code class=\"notranslate\">config.i18n.raise_on_missing_translations = true</code>, controllers and views raise an error on missing translations. However, models won't. This PR changes models to raise an error when <code class=\"notranslate\">raise_on_missing_translations</code> is true.</p>\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52426",
             "title": "Add an option to raise an error on missing translations for Active Model human_attribute_name",
@@ -42,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Rails 8.0 will be Ruby 3.1 or greater only<br>\n<code class=\"notranslate\">except</code> natively got added in Ruby 3.0 so this is dead code now.</p>\n<p dir=\"auto\"><a href=\"https://docs.ruby-lang.org/en/3.1/Hash.html#method-i-except\" rel=\"nofollow\">https://docs.ruby-lang.org/en/3.1/Hash.html#method-i-except</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52424",
             "title": "Drop Hash `except` core extension",
-            "date_modified": "2024-07-26T13:48:11.000Z",
+            "date_modified": "2024-07-26T15:39:41.000Z",
             "date_published": "2024-07-26T07:06:12.000Z",
             "author": {
                 "name": "Earlopain",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2407396802\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52328\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52328/hovercard\" href=\"https://github.com/rails/rails/pull/52328\">#52328</a> adds sessions (existing user can <strong>sign in</strong>).</p>\n<p dir=\"auto\">This PR adds registrations (new user can <strong>sign up</strong>).</p>\n<p dir=\"auto\">We already have database uniqueness validation for <code class=\"notranslate\">email_address</code>, now we add validations in the <code class=\"notranslate\">User</code> model to display errors during registration.</p>\n<hr>\n<p dir=\"auto\">I think the next step to make this new authentication solution viable for a real app would be adding \"forgot/reset password\" feature.</p>",
+            "url": "https://github.com/rails/rails/pull/52383",
+            "title": "Sessions generator: add basic registrations",
+            "date_modified": "2024-07-23T16:30:42.000Z",
+            "date_published": "2024-07-21T21:17:39.000Z",
+            "author": {
+                "name": "yshmarov",
+                "url": "https://github.com/yshmarov"
             }
         }
     ]
