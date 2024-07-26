@@ -72,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In general you should not be posting credit card details to your server, you should be using a processor like Stripe or Braintree. But if you make a mistake in your form and <em>do</em> post a user's credit card number, those details will get logged by default, even if your server doesn't use them. Now you're potentially \"storing card data\" and so you have a whole bunch more legal requirements to do it securely.</p>\n<p dir=\"auto\">This PR adds <code class=\"notranslate\">cvv</code> and <code class=\"notranslate\">card_</code> to the defaults for <a href=\"https://api.rubyonrails.org/v7.1.3.4/classes/ActiveSupport/ParameterFilter.html\" rel=\"nofollow\"><code class=\"notranslate\">ActiveSupport::ParameterFilter</code></a> for new apps. This means that params with those names will not get logged by default. This just changes the template for new apps; there's no changes made to existing apps.</p>",
-            "url": "https://github.com/rails/rails/pull/52413",
-            "title": "Add `cvv` and `card_` as default parameters to filter out in new apps",
-            "date_modified": "2024-07-25T22:18:50.000Z",
-            "date_published": "2024-07-25T05:52:26.000Z",
-            "author": {
-                "name": "ghiculescu",
-                "url": "https://github.com/ghiculescu"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19589006?u=4625e661fdb3256af0ed316629196771b9ee0c11&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because I wanted to have a Svelte store compatible way to monitor a channel, and create a clean interface to subscribe callbacks to a channel.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Action Cable client <code class=\"notranslate\">Subscription</code> to add a <code class=\"notranslate\">.observer(parser = String)</code> accessor to create or find a <code class=\"notranslate\">SubscriptionObserver</code> which allows for subscribing callback functions to new data. The value in the <code class=\"notranslate\">SubscriptionObserver</code> gets replaced with each new packet.</p>\n<p dir=\"auto\">Here's a code example:</p>\n<div class=\"highlight highlight-source-js notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"const observer = consumer.subscriptions.create({ channel: &quot;ExampleChannel&quot; }).observer(JSON.parse)\nconst unsubscribe = observer.subscribe((data) =&gt; console.log(data))\n\nsetTimeout(unsubscribe, 5000)\"><pre class=\"notranslate\"><span class=\"pl-k\">const</span> <span class=\"pl-s1\">observer</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s1\">consumer</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">subscriptions</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">{</span> <span class=\"pl-c1\">channel</span>: <span class=\"pl-s\">\"ExampleChannel\"</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">observer</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">JSON</span><span class=\"pl-kos\">.</span><span class=\"pl-c1\">parse</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-k\">const</span> <span class=\"pl-s1\">unsubscribe</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s1\">observer</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">subscribe</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">data</span><span class=\"pl-kos\">)</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-smi\">console</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">log</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">data</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\n<span class=\"pl-en\">setTimeout</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">unsubscribe</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">5000</span><span class=\"pl-kos\">)</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">This is fully compatible with <a href=\"https://svelte.dev/docs/svelte-components#script-4-prefix-stores-with-$-to-access-their-values\" rel=\"nofollow\">Svelte Stores</a>.</p>\n<p dir=\"auto\">A lot of inspiration was also taken from the <a href=\"https://rxjs.dev/guide/observable\" rel=\"nofollow\">RxJS Observable</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52411",
             "title": "Action Cable: Create `SubscriptionObserver` to facilitate callbacks for channel data",
@@ -220,6 +209,17 @@
             "title": "Sessions: Don't allow saving user without an email",
             "date_modified": "2024-07-21T13:07:46.000Z",
             "date_published": "2024-07-21T13:07:42.000Z",
+            "author": {
+                "name": "dixpac",
+                "url": "https://github.com/dixpac"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Normalizes email_address before saving it to the DB.</p>",
+            "url": "https://github.com/rails/rails/pull/52379",
+            "title": "Session generator: Normalize email_address",
+            "date_modified": "2024-07-25T16:59:01.000Z",
+            "date_published": "2024-07-21T11:10:47.000Z",
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
