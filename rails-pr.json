@@ -171,17 +171,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10753327?u=86c075e9f1796312a3a998811bffbe9014128e46&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52381.\">FIXES</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2421510148\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52381\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52381/hovercard\" href=\"https://github.com/rails/rails/issues/52381\">#52381</a></p>\n<p dir=\"auto\">This Pull Request ensures the namespace option is handled when using <code class=\"notranslate\">form_with</code>. I can add tests and CHANGELOG update once we get 👀 on this change and consensus this is the right approach. Thanks!</p>",
-            "url": "https://github.com/rails/rails/pull/52382",
-            "title": "Ensure the namespace option is handled when using form_with",
-            "date_modified": "2024-07-27T13:48:44.000Z",
-            "date_published": "2024-07-21T16:35:21.000Z",
-            "author": {
-                "name": "heratyian",
-                "url": "https://github.com/heratyian"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently it is possible to save user without email address. This commit adds validation to disallow saving empty email_address.</p>",
             "url": "https://github.com/rails/rails/pull/52380",
             "title": "Sessions: Don't allow saving user without an email",
@@ -220,6 +209,17 @@
             "title": "Document `ActiveStorage::Current`",
             "date_modified": "2024-07-25T17:00:14.000Z",
             "date_published": "2024-07-21T03:59:53.000Z",
+            "author": {
+                "name": "sato11",
+                "url": "https://github.com/sato11"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">config.active_storage.replace_on_assign_to_many</code> has been removed at <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/b06252e2a7fa489782099653f7ddcecc5b07745c/hovercard\" href=\"https://github.com/rails/rails/commit/b06252e2a7fa489782099653f7ddcecc5b07745c\"><tt>b06252e</tt></a> and <code class=\"notranslate\">config.active_storage.silence_invalid_content_types_warning</code> at <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/0cf8444d614747e6a6257ec5ddb700934ebfec07/hovercard\" href=\"https://github.com/rails/rails/commit/0cf8444d614747e6a6257ec5ddb700934ebfec07\"><tt>0cf8444</tt></a>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1942177428\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49624\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49624/hovercard\" href=\"https://github.com/rails/rails/pull/49624\">#49624</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52376",
+            "title": "Remove ActiveStorage's deprecated configs",
+            "date_modified": "2024-07-24T01:02:25.000Z",
+            "date_published": "2024-07-21T01:20:53.000Z",
             "author": {
                 "name": "sato11",
                 "url": "https://github.com/sato11"
