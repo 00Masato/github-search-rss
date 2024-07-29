@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1371733?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2433883064\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52432\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52432/hovercard\" href=\"https://github.com/rails/rails/pull/52432\">#52432</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a></p>",
-            "url": "https://github.com/rails/rails/pull/52436",
-            "title": "Add missing aliases for collection_checkboxes",
-            "date_modified": "2024-07-28T22:27:22.000Z",
-            "date_published": "2024-07-28T22:27:17.000Z",
-            "author": {
-                "name": "chaadow",
-                "url": "https://github.com/chaadow"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Then we have a uniform way of starting dev mode whether someone is using jsbundling or importmaps.</p>\n<p dir=\"auto\">This can also be overwritten by teams using docker compose or the like to boot their dev modes.</p>",
             "url": "https://github.com/rails/rails/pull/52433",
             "title": "Add bin/dev by default",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because it does not feel friendly that the name of the class is mentioned in one of error messages, while its documentation is rendered private.</p>\n<p dir=\"auto\">Also edit the error message in order to navigate those who read first to the higher-level module, <code class=\"notranslate\">ActiveStorage::SetCurrent</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52219.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2374293077\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52219\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52219/hovercard\" href=\"https://github.com/rails/rails/issues/52219\">#52219</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes three interrelated things:</p>\n<ol dir=\"auto\">\n<li>Document <code class=\"notranslate\">ActiveStorage::Current</code> from scratch</li>\n<li>Link the documentation of <code class=\"notranslate\">ActiveStorage::SetCurrent</code> to <code class=\"notranslate\">ActiveStorage::Current</code></li>\n<li>Change error message so it points to the wrapper module <code class=\"notranslate\">ActiveStorage::SetCurrent</code> rather than the underlying <code class=\"notranslate\">ActiveStorage::Current</code></li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">My team and I could just use <code class=\"notranslate\">ActiveStorage::SetCurrent</code> to solve our problem when I created the issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2374293077\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52219\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52219/hovercard\" href=\"https://github.com/rails/rails/issues/52219\">#52219</a>. It is my imagination that there should be a case where <code class=\"notranslate\">ActiveStorage::SetCurrent</code> is not available to use, perhaps because url generation takes place in the background process or something. That's why I mentioned the case in the change but without a concrete solution.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52377",
+            "title": "Document `ActiveStorage::Current`",
+            "date_modified": "2024-07-25T17:00:14.000Z",
+            "date_published": "2024-07-21T03:59:53.000Z",
+            "author": {
+                "name": "sato11",
+                "url": "https://github.com/sato11"
             }
         }
     ]
