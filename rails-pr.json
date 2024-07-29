@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Then we have a uniform way of starting dev mode whether someone is using jsbundling or importmaps.</p>\n<p dir=\"auto\">This can also be overwritten by teams using docker compose or the like to boot their dev modes.</p>",
             "url": "https://github.com/rails/rails/pull/52433",
             "title": "Add bin/dev by default",
-            "date_modified": "2024-07-29T13:40:49.000Z",
+            "date_modified": "2024-07-29T14:30:09.000Z",
             "date_published": "2024-07-28T21:35:55.000Z",
             "author": {
                 "name": "dhh",
@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently it is possible to save user without email address. This commit adds validation to disallow saving empty email_address.</p>",
             "url": "https://github.com/rails/rails/pull/52380",
             "title": "Sessions: Don't allow saving user without an email",
-            "date_modified": "2024-07-21T13:07:46.000Z",
+            "date_modified": "2024-07-29T14:20:15.000Z",
             "date_published": "2024-07-21T13:07:42.000Z",
             "author": {
                 "name": "dixpac",
@@ -185,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Normalizes email_address before saving it to the DB.</p>",
             "url": "https://github.com/rails/rails/pull/52379",
             "title": "Session generator: Normalize email_address",
-            "date_modified": "2024-07-29T13:48:15.000Z",
+            "date_modified": "2024-07-29T14:17:46.000Z",
             "date_published": "2024-07-21T11:10:47.000Z",
             "author": {
                 "name": "dixpac",
