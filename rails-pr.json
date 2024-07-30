@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because Spring watches the root <code class=\"notranslate\">config/initializers</code> directory and reloads the application on changes. I would also like it to watch the <code class=\"notranslate\">config/initializers</code> directory of engines defined within the application so spring can reboot when they change. Otherwise spring needs to be reloaded manually when modifying configuration of engines.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2438214747\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/spring/issues/723\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/spring/pull/723/hovercard\" href=\"https://github.com/rails/spring/pull/723\">rails/spring#723</a> I introduce a <code class=\"notranslate\">spring_booted</code> load hook to spring.</p>\n<p dir=\"auto\">In this PR, I use that load hook to add <code class=\"notranslate\">config/initializers</code> to the spring file watcher for each engine defined within the application.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52453",
+            "title": "Watch `config/initializers` in engines",
+            "date_modified": "2024-07-30T16:23:47.000Z",
+            "date_published": "2024-07-30T16:22:53.000Z",
+            "author": {
+                "name": "andrewn617",
+                "url": "https://github.com/andrewn617"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2779422?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Note that the PostgreSQL DROP EXTENSION statement does not accept a schema name (see <a href=\"https://www.postgresql.org/docs/current/sql-dropextension.html\" rel=\"nofollow\">https://www.postgresql.org/docs/current/sql-dropextension.html</a>). Since we allow <code class=\"notranslate\">enable_extension</code> to be called with a schema-qualified name, this commit allows <code class=\"notranslate\">disable_extension</code> to be similarly called with a schema-qualified name, but the schema name is chopped off in the generated SQL statement.</p>\n<p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2403936559\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52312\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52312/hovercard\" href=\"https://github.com/rails/rails/issues/52312\">#52312</a> for context.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52452",
             "title": "Allow disable_extension to be called with schema-qualified name",
@@ -209,17 +220,6 @@
             "title": "Sessions: Don't allow saving user without an email",
             "date_modified": "2024-07-29T14:20:15.000Z",
             "date_published": "2024-07-21T13:07:42.000Z",
-            "author": {
-                "name": "dixpac",
-                "url": "https://github.com/dixpac"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Normalizes email_address before saving it to the DB.</p>",
-            "url": "https://github.com/rails/rails/pull/52379",
-            "title": "Session generator: Normalize email_address",
-            "date_modified": "2024-07-29T14:17:46.000Z",
-            "date_published": "2024-07-21T11:10:47.000Z",
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
