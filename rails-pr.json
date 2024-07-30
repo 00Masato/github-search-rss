@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We special case singleton methods being added to ActiveRecord::Base subclasses whose names match methods on Kernel so that we can eagerly define them on the ClassSpecificRelation as otherwise we'd never hit method_missing.</p>\n<p dir=\"auto\">Previously, this would also eagerly define methods which were on the Kernel Module's singleton class rather than being defined as instance methods inside the module, which created quite a few unnecessary methods.</p>\n<p dir=\"auto\">Most notably this hit \"name\" which is defined on the anonymous HABTM classes. I think that case is worth fixing twice (it's an common error involving a complex interaction, that might only be foudn through luck) so the second commit here explicitly delegates <code class=\"notranslate\">name</code>. Either commit solves the <code class=\"notranslate\">name</code> issue (which I think is the only case I've seen this in the wild)</p>",
             "url": "https://github.com/rails/rails/pull/52449",
             "title": "Avoid eagerly generating Module methods on ActiveRecord::Relation delegation",
-            "date_modified": "2024-07-30T07:13:26.000Z",
+            "date_modified": "2024-07-30T12:25:51.000Z",
             "date_published": "2024-07-30T07:12:03.000Z",
             "author": {
                 "name": "jhawthorn",
