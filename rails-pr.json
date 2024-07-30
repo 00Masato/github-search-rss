@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Either these assets are part of your app, and should be in app/assets, or you're getting them from a vendor, and they should be in vendor/assets.</p>",
             "url": "https://github.com/rails/rails/pull/52447",
             "title": "lib/assets is too rare of a use case to warrant a default directory",
-            "date_modified": "2024-07-29T22:49:03.000Z",
+            "date_modified": "2024-07-30T14:56:53.000Z",
             "date_published": "2024-07-29T22:48:58.000Z",
             "author": {
                 "name": "dhh",
