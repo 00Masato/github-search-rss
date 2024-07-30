@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Symbol#name</code> is always available now that we require Ruby &gt;= 3.1 (though plausibly this could also return <code class=\"notranslate\">self</code>)</p>",
             "url": "https://github.com/rails/rails/pull/52448",
             "title": "Use name for Symbol#as_json",
-            "date_modified": "2024-07-30T07:08:54.000Z",
+            "date_modified": "2024-07-30T10:09:33.000Z",
             "date_published": "2024-07-30T07:08:50.000Z",
             "author": {
                 "name": "jhawthorn",
