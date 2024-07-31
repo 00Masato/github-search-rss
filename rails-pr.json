@@ -6,11 +6,11 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2432280064\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52428\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52428/hovercard\" href=\"https://github.com/rails/rails/pull/52428\">#52428</a></p>\n<p dir=\"auto\">There is a suble difference between a query that doesn't return a result at all, and a query that returns an empty result set.</p>\n<p dir=\"auto\">The former doesn't have any column name, the later do.</p>\n<p dir=\"auto\">noticed by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
-            "url": "https://github.com/rails/rails/pull/52461",
-            "title": "AbstractAdapter#cast_result should return a result with columns even if empty",
-            "date_modified": "2024-07-31T08:59:11.000Z",
-            "date_published": "2024-07-31T08:59:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2432280064\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52428\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52428/hovercard\" href=\"https://github.com/rails/rails/pull/52428\">#52428</a></p>\n<p dir=\"auto\">This adapter was overly complex following <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"528248056\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/37798\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/37798/hovercard\" href=\"https://github.com/rails/rails/pull/37798\">#37798</a>.</p>\n<p dir=\"auto\">I'm also not convinced storing the <code class=\"notranslate\">read_uncommited</code> value in the execution state was really valid, it's a connection property.</p>\n<p dir=\"auto\">We can assume outside of transaction, <code class=\"notranslate\">read_uncommited</code> is set to the default, and simply reset it at the end of any transaction that did change it.</p>\n<p dir=\"auto\">This makes SQLite3Adapter much less of a snowflake.</p>",
+            "url": "https://github.com/rails/rails/pull/52462",
+            "title": "Refactor SQLite3Adapter to simplify transaction management",
+            "date_modified": "2024-07-31T09:55:39.000Z",
+            "date_published": "2024-07-31T09:34:28.000Z",
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
@@ -88,17 +88,6 @@
             "title": "Avoid eagerly generating Module methods on ActiveRecord::Relation delegation",
             "date_modified": "2024-07-30T21:38:20.000Z",
             "date_published": "2024-07-30T07:12:03.000Z",
-            "author": {
-                "name": "jhawthorn",
-                "url": "https://github.com/jhawthorn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2432280064\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52428\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52428/hovercard\" href=\"https://github.com/rails/rails/pull/52428\">#52428</a></p>\n<p dir=\"auto\">The payload construction was inlined here in a previous commit, but log wasn't removed or deprecated.</p>\n<p dir=\"auto\">We've been using this as a hook we can override to add some adapter-specific keys. If we want to remove or bypass this at a later date we should probably introduce something that can be overridden like we did for <code class=\"notranslate\">cache_notification_info</code>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
-            "url": "https://github.com/rails/rails/pull/52446",
-            "title": "Keep using log in DatabaseStatements#raw_execute",
-            "date_modified": "2024-07-31T06:39:09.000Z",
-            "date_published": "2024-07-29T21:49:21.000Z",
             "author": {
                 "name": "jhawthorn",
                 "url": "https://github.com/jhawthorn"
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2407396802\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52328\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52328/hovercard\" href=\"https://github.com/rails/rails/pull/52328\">#52328</a> adds sessions (existing user can <strong>sign in</strong>).</p>\n<p dir=\"auto\">This PR adds registrations (new user can <strong>sign up</strong>).</p>\n<p dir=\"auto\">We already have database uniqueness validation for <code class=\"notranslate\">email_address</code>, now we add validations in the <code class=\"notranslate\">User</code> model to display errors during registration.</p>\n<hr>\n<p dir=\"auto\">I think the next step to make this new authentication solution viable for a real app would be adding \"forgot/reset password\" feature.</p>",
+            "url": "https://github.com/rails/rails/pull/52383",
+            "title": "Sessions generator: add basic registrations",
+            "date_modified": "2024-07-29T13:49:52.000Z",
+            "date_published": "2024-07-21T21:17:39.000Z",
+            "author": {
+                "name": "yshmarov",
+                "url": "https://github.com/yshmarov"
             }
         }
     ]
