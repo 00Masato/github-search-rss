@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">They accepted binds ever since <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/8571facea3b51717b3c57c50b2deae5dbf997c6e/hovercard\" href=\"https://github.com/rails/rails/commit/8571facea3b51717b3c57c50b2deae5dbf997c6e\"><tt>8571fac</tt></a> but never did anything with them.</p>\n<p dir=\"auto\">At one point it made sense because <code class=\"notranslate\">sql_for_insert</code> would take all the arguments of <code class=\"notranslate\">insert</code> and have the opportunity to change either, but that's no longer the case, only the <code class=\"notranslate\">sql</code> argument is sometimes changed.</p>",
+            "url": "https://github.com/rails/rails/pull/52464",
+            "title": "`sql_for_insert` doesn't need to concern itself about binds",
+            "date_modified": "2024-07-31T12:20:01.000Z",
+            "date_published": "2024-07-31T12:19:57.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1940294?u=d4f2aa731fb79823699ccf12919944f869c30264&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"451509136\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/36388\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/36388/hovercard\" href=\"https://github.com/rails/rails/pull/36388\">#36388</a>, we added support for rendering objects that respond to <code class=\"notranslate\">render_in</code>.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"451509136\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/36388\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/36388/hovercard\" href=\"https://github.com/rails/rails/pull/36388\">#36388</a>, we added support for rendering objects that respond to for controller actions. This PR adds support for implicitly rendering renderables for controller actions as one can for regular templates today.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Specifically, I've updated <code class=\"notranslate\">ImplictRender</code> to look for a corresponding renderable in the format <code class=\"notranslate\">Views::Prefixes::ActionName</code>.</p>\n<p dir=\"auto\">If this approach is deemed acceptable, I'll gladly add docs changes to this PR ❤️</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bradgessler/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bradgessler\">@bradgessler</a>'s post on doing this for Phlex: <a href=\"https://fly.io/ruby-dispatch/hacking-rails-implicit-rendering-for-view-components/\" rel=\"nofollow\">https://fly.io/ruby-dispatch/hacking-rails-implicit-rendering-for-view-components/</a><br>\nViewComponent thread discussing the topic: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"806573536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ViewComponent/view_component/issues/618\" data-hovercard-type=\"issue\" data-hovercard-url=\"/ViewComponent/view_component/issues/618/hovercard\" href=\"https://github.com/ViewComponent/view_component/issues/618\">ViewComponent/view_component#618</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/joeldrapper/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/joeldrapper\">@joeldrapper</a></p>",
             "url": "https://github.com/rails/rails/pull/52457",
             "title": "Add support for implicitly rendering renderables",
@@ -209,17 +220,6 @@
             "title": "Sessions: Don't allow saving user without an email",
             "date_modified": "2024-07-29T14:20:15.000Z",
             "date_published": "2024-07-21T13:07:42.000Z",
-            "author": {
-                "name": "dixpac",
-                "url": "https://github.com/dixpac"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Normalizes email_address before saving it to the DB.</p>",
-            "url": "https://github.com/rails/rails/pull/52379",
-            "title": "Session generator: Normalize email_address",
-            "date_modified": "2024-07-29T14:17:46.000Z",
-            "date_published": "2024-07-21T11:10:47.000Z",
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
