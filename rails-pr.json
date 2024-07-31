@@ -6,25 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's a noop on all adapters except MySQL which doesn't allow multi statements by default.</p>\n<p dir=\"auto\">Also <code class=\"notranslate\">batch_execute</code> in Sqlite3Adapter has to use many ow level APIs because while sqlite3 allow multi statement by default, you have to use a different API for that.</p>\n<p dir=\"auto\">So overall <code class=\"notranslate\">with_multi_statement</code> was always a lie, because it wouldn't work on sqlite3 and it's simpler to pass a <code class=\"notranslate\">batch: true</code> argument to <code class=\"notranslate\">raw_execute</code> so that each adapter can do the necessary work to allow multi-statement.</p>\n<p dir=\"auto\">This will simplify a future PR that <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a> will open soon.</p>",
-            "url": "https://github.com/rails/rails/pull/52466",
-            "title": "Get rid of `with_multi_statement`",
-            "date_modified": "2024-07-31T14:28:28.000Z",
-            "date_published": "2024-07-31T14:28:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Follow-up to <a href=\"https://github.com/rails/rails/pull/52432\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52432/hovercard\">#52432</a><br>\nRelated to <a href=\"https://github.com/rails/rails/issues/52430\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52430/hovercard\">#52430</a></p>\n<p dir=\"auto\">Helpers like <code class=\"notranslate\">text_area_tag</code> construct <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea\" rel=\"nofollow\">textarea</a> elements. This commit renames all view helper and form builder methods to replace occurrences of <code class=\"notranslate\">text_area</code> with <code class=\"notranslate\">textarea</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In the same style, this commit also renames the <code class=\"notranslate\">rich_text</code>-prefixed helpers to utilize a <code class=\"notranslate\">textarea</code> suffix instead of the existing <code class=\"notranslate\">text_area</code> suffix.</p>\n<p dir=\"auto\">To preserve backwards compatibility, this commit defines aliases for the existing <code class=\"notranslate\">text_area</code> format.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52467",
+            "title": "Rename `text_area` to `textarea` and `rich_text_area` to `rich_textarea`",
+            "date_modified": "2024-07-31T15:57:15.000Z",
+            "date_published": "2024-07-31T15:57:01.000Z",
             "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1898859181\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49290\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49290/hovercard\" href=\"https://github.com/rails/rails/pull/49290\">#49290</a> likely to do the same as PostgresqlAdapter, but it's not used anywhere and there not really any reason to have that option.</p>\n<p dir=\"auto\">Postgres has it because INSERT RETURNING can't be used in some corner cases, see: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3919440\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/5698\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/5698/hovercard\" href=\"https://github.com/rails/rails/pull/5698\">#5698</a></p>",
-            "url": "https://github.com/rails/rails/pull/52465",
-            "title": "Get rid of unused `Sqlite3Adapter#use_insert_returning?`",
-            "date_modified": "2024-07-31T13:30:49.000Z",
-            "date_published": "2024-07-31T13:30:43.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
             }
         },
         {
@@ -42,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236461?u=cd87f40664f26021ba65daabaf812a036c1f4c8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Minor edit: in the script generator <code class=\"notranslate\">USAGE</code>, use the same subdirectory example as the one in <code class=\"notranslate\">CHANGELOG.md</code>, which was recently updated here: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2438522773\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52454\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52454/hovercard\" href=\"https://github.com/rails/rails/pull/52454\">#52454</a>. I also think <code class=\"notranslate\">script/data/backfill.rb</code> is a better real world example.</p>",
             "url": "https://github.com/rails/rails/pull/52455",
             "title": "Update script generator usage with a more real world example",
-            "date_modified": "2024-07-30T21:18:51.000Z",
+            "date_modified": "2024-07-31T15:31:04.000Z",
             "date_published": "2024-07-30T20:11:44.000Z",
             "author": {
                 "name": "jeromedalbert",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "yshmarov",
                 "url": "https://github.com/yshmarov"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently it is possible to save user without email address. This commit adds validation to disallow saving empty email_address.</p>",
+            "url": "https://github.com/rails/rails/pull/52380",
+            "title": "Sessions: Don't allow saving user without an email",
+            "date_modified": "2024-07-29T14:20:15.000Z",
+            "date_published": "2024-07-21T13:07:42.000Z",
+            "author": {
+                "name": "dixpac",
+                "url": "https://github.com/dixpac"
             }
         }
     ]
