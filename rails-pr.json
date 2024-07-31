@@ -6,11 +6,11 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">They accepted binds ever since <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/8571facea3b51717b3c57c50b2deae5dbf997c6e/hovercard\" href=\"https://github.com/rails/rails/commit/8571facea3b51717b3c57c50b2deae5dbf997c6e\"><tt>8571fac</tt></a> but never did anything with them.</p>\n<p dir=\"auto\">At one point it made sense because <code class=\"notranslate\">sql_for_insert</code> would take all the arguments of <code class=\"notranslate\">insert</code> and have the opportunity to change either, but that's no longer the case, only the <code class=\"notranslate\">sql</code> argument is sometimes changed.</p>",
-            "url": "https://github.com/rails/rails/pull/52464",
-            "title": "`sql_for_insert` doesn't need to concern itself about binds",
-            "date_modified": "2024-07-31T12:20:01.000Z",
-            "date_published": "2024-07-31T12:19:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1898859181\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49290\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49290/hovercard\" href=\"https://github.com/rails/rails/pull/49290\">#49290</a> likely to do the same as PostgresqlAdapter, but it's not used anywhere and there not really any reason to have that option.</p>\n<p dir=\"auto\">Postgres has it because INSERT RETURNING can't be used in some corner cases, see: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3919440\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/5698\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/5698/hovercard\" href=\"https://github.com/rails/rails/pull/5698\">#5698</a></p>",
+            "url": "https://github.com/rails/rails/pull/52465",
+            "title": "Get rid of unused `Sqlite3Adapter#use_insert_returning?`",
+            "date_modified": "2024-07-31T13:30:49.000Z",
+            "date_published": "2024-07-31T13:30:43.000Z",
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
