@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2432280064\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52428\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52428/hovercard\" href=\"https://github.com/rails/rails/pull/52428\">#52428</a></p>\n<p dir=\"auto\">There is a suble difference between a query that doesn't return a result at all, and a query that returns an empty result set.</p>\n<p dir=\"auto\">The former doesn't have any column name, the later do.</p>\n<p dir=\"auto\">noticed by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
+            "url": "https://github.com/rails/rails/pull/52461",
+            "title": "AbstractAdapter#cast_result should return a result with columns even if empty",
+            "date_modified": "2024-07-31T08:59:11.000Z",
+            "date_published": "2024-07-31T08:59:07.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100725?u=f814728f5d5be106120815f6728242be95132129&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">On July 29th, Docker introduced Docker build checks: <a href=\"https://www.docker.com/blog/introducing-docker-build-checks/\" rel=\"nofollow\">https://www.docker.com/blog/introducing-docker-build-checks/</a>.</p>\n<p dir=\"auto\">By default, running a Docker build with warnings will not cause the build to fail (return a non-zero exit code). To raise errors on warnings <code class=\"notranslate\"># check=error=true</code> declaration should be added to the Dockerfile.</p>\n<p dir=\"auto\">Also, an official Docker guide (<a href=\"https://docs.docker.com/reference/dockerfile/#syntax\" rel=\"nofollow\">https://docs.docker.com/reference/dockerfile/#syntax</a>) has syntax declaration examples without spaces, so I removed them too.</p>",
             "url": "https://github.com/rails/rails/pull/52460",
             "title": "Generate errors when running a Docker build with warnings",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13472945?u=ef29693db9743ffa3d8a02d9faa0bdec7fb0892d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2407396802\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52328\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52328/hovercard\" href=\"https://github.com/rails/rails/pull/52328\">#52328</a> adds sessions (existing user can <strong>sign in</strong>).</p>\n<p dir=\"auto\">This PR adds registrations (new user can <strong>sign up</strong>).</p>\n<p dir=\"auto\">We already have database uniqueness validation for <code class=\"notranslate\">email_address</code>, now we add validations in the <code class=\"notranslate\">User</code> model to display errors during registration.</p>\n<hr>\n<p dir=\"auto\">I think the next step to make this new authentication solution viable for a real app would be adding \"forgot/reset password\" feature.</p>",
-            "url": "https://github.com/rails/rails/pull/52383",
-            "title": "Sessions generator: add basic registrations",
-            "date_modified": "2024-07-29T13:49:52.000Z",
-            "date_published": "2024-07-21T21:17:39.000Z",
-            "author": {
-                "name": "yshmarov",
-                "url": "https://github.com/yshmarov"
             }
         }
     ]
