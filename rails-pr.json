@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Basic password reset flow to show use of signed ids with a mailer. Should be possible to opt out of this.</p>\n<p dir=\"auto\">Still to do:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add application-side tests for everything. Set a good example.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add the password mailer preview.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Fix problem with signed id token param not being recognized for POST without a manual route</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52472",
+            "title": "Add password reset to authentication generator",
+            "date_modified": "2024-08-01T00:00:25.000Z",
+            "date_published": "2024-07-31T23:59:51.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Main changes are:</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Releases are maintained by a pre-defined, fixed period of time. One year for bug fixes and two years for security fixes.</p>\n</li>\n<li>\n<p dir=\"auto\">Distinction between severe security issues and regular security issues is removed.</p>\n</li>\n<li>\n<p dir=\"auto\">Npm versioning is updated to match not use the pre-release <code class=\"notranslate\">-</code> separator.</p>\n</li>\n</ul>\n<p dir=\"auto\">A list of all supported releases and their end-of-life date will be added to <a href=\"https://rubyonrails.org/maintenance\" rel=\"nofollow\">https://rubyonrails.org/maintenance</a>. I'll also update <a href=\"https://rubyonrails.org/security\" rel=\"nofollow\">https://rubyonrails.org/security</a>.</p>",
             "url": "https://github.com/rails/rails/pull/52471",
             "title": "Implement new maintenance policy",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "sato11",
                 "url": "https://github.com/sato11"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49515?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created for two reasons</p>\n<ol dir=\"auto\">\n<li>Running the Rails application with Docker in development has become more common/standard, developers will not be able to use <code class=\"notranslate\">web_console</code> to debug application without updating the <code class=\"notranslate\">allowed_ips</code>. Additionally, the message doesn't  direct a developer how to make it it work without searching for the message online.</li>\n<li>Because every time a Rails app is upgraded to a new version of Rails and <code class=\"notranslate\">app:update</code> is run, it overwrites my changes for <code class=\"notranslate\">allowed_ips</code>.</li>\n</ol>\n<p dir=\"auto\">Now that Docker related files (Dockerfile and dev container) are part of the default <code class=\"notranslate\">rails new</code> generation, it is fairly standard to develop and debug against a Rails app running a Docker container. Out of the box, this leads to the whiny warning:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\" Cannot render console from 192.168.167.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1\"><pre class=\"notranslate\"><code class=\"notranslate\"> Cannot render console from 192.168.167.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the generated <code class=\"notranslate\">development.rb</code> file and docker compose to allow Docker network IPs to be used in the <code class=\"notranslate\">allowed_ips</code> configuration. The defaults proposed here are static and broad for simplicity, but there are other options. It could be more dynamically set, or maybe the possibilities are just too varied to provide a good default and setting the env var would be left to the developer to populate (with a doc/guide update note perhaps as well?)</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">Discussion of various solutions for what to set the value to in <a href=\"https://stackoverflow.com/questions/29417328/how-to-disable-cannot-render-console-from-on-rails\" rel=\"nofollow\">https://stackoverflow.com/questions/29417328/how-to-disable-cannot-render-console-from-on-rails</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52374",
-            "title": "Set allowed_ips in generated development.rb for Docker environments",
-            "date_modified": "2024-07-24T17:45:07.000Z",
-            "date_published": "2024-07-20T21:58:19.000Z",
-            "author": {
-                "name": "ryanwi",
-                "url": "https://github.com/ryanwi"
             }
         }
     ]
