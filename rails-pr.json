@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111689?u=64ab12304da52634277b04537b8c4260affa2b4e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The version of securerandom included in the default gems for Ruby 3.3 is 0.3.1, but a lower version may be used if specified in Gemfile.lock.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">For example, I actually had a problem in my project: the shopify_api gem used in this project has <code class=\"notranslate\">securerandom &gt;= 0</code> runtime dependency, and Gemfile.lock fixed securerandom version to 0.2.0. When I upgraded Rails version from 7.0 to 7.1, I started getting errors from <code class=\"notranslate\">SecureRandom.base36</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">This change relates to the following change:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1870273073\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49067\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49067/hovercard\" href=\"https://github.com/rails/rails/pull/49067\">#49067</a></li>\n</ul>\n<p dir=\"auto\"><code class=\"notranslate\">chars</code> keyword argument was added to <code class=\"notranslate\">SecureRandom.alphanumeric</code> in 0.3.0:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/ruby/securerandom/blob/v0.2.2/lib/random/formatter.rb#L241\">https://github.com/ruby/securerandom/blob/v0.2.2/lib/random/formatter.rb#L241</a></li>\n<li><a href=\"https://github.com/ruby/securerandom/blob/v0.3.0/lib/random/formatter.rb#L367\">https://github.com/ruby/securerandom/blob/v0.3.0/lib/random/formatter.rb#L367</a></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52473",
+            "title": "Check securerandom version before using `SecureRandom.alphanumeric`",
+            "date_modified": "2024-08-01T00:20:08.000Z",
+            "date_published": "2024-08-01T00:14:24.000Z",
+            "author": {
+                "name": "r7kamura",
+                "url": "https://github.com/r7kamura"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Basic password reset flow to show use of signed ids with a mailer. Should be possible to opt out of this.</p>\n<p dir=\"auto\">Still to do:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add application-side tests for everything. Set a good example.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add the password mailer preview.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Fix problem with signed id token param not being recognized for POST without a manual route</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52472",
             "title": "Add password reset to authentication generator",
@@ -209,17 +220,6 @@
             "title": "Document `ActiveStorage::Current`",
             "date_modified": "2024-07-25T17:00:14.000Z",
             "date_published": "2024-07-21T03:59:53.000Z",
-            "author": {
-                "name": "sato11",
-                "url": "https://github.com/sato11"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22004610?u=8b285b31d33b20555541d5dda4c5ed77477eea3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">config.active_storage.replace_on_assign_to_many</code> has been removed at <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/b06252e2a7fa489782099653f7ddcecc5b07745c/hovercard\" href=\"https://github.com/rails/rails/commit/b06252e2a7fa489782099653f7ddcecc5b07745c\"><tt>b06252e</tt></a> and <code class=\"notranslate\">config.active_storage.silence_invalid_content_types_warning</code> at <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/0cf8444d614747e6a6257ec5ddb700934ebfec07/hovercard\" href=\"https://github.com/rails/rails/commit/0cf8444d614747e6a6257ec5ddb700934ebfec07\"><tt>0cf8444</tt></a>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1942177428\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49624\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49624/hovercard\" href=\"https://github.com/rails/rails/pull/49624\">#49624</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52376",
-            "title": "Remove ActiveStorage's deprecated configs",
-            "date_modified": "2024-07-24T01:02:25.000Z",
-            "date_published": "2024-07-21T01:20:53.000Z",
             "author": {
                 "name": "sato11",
                 "url": "https://github.com/sato11"
