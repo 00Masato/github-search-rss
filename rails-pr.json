@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/437?u=198b3dc94d58b619dc6e27f59bd4386945017d56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Requiring <code class=\"notranslate\">action_dispatch/http/request</code> outside of Rails results in an error due to <code class=\"notranslate\">MimeNegotiation</code> depending on <code class=\"notranslate\">ActiveSupport::Concern</code> without requiring it.</p>",
+            "url": "https://github.com/rails/rails/pull/52492",
+            "title": "Adds missing require to action_dispatch/http/mime_negotiation",
+            "date_modified": "2024-08-02T15:04:00.000Z",
+            "date_published": "2024-08-02T15:03:55.000Z",
+            "author": {
+                "name": "foca",
+                "url": "https://github.com/foca"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Added <code class=\"notranslate\">autocomplete=\"new-password\"</code> to help password managers.</p>",
             "url": "https://github.com/rails/rails/pull/52491",
             "title": "Add autocomplete=\"new-password\" to password fields",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Problem:</p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc/hovercard\" href=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc\"><tt>f6c0a35</tt></a> changed <code class=\"notranslate\">human_attribute_name</code> to raise error if <code class=\"notranslate\">raise_on_missing_translations</code> is <code class=\"notranslate\">true</code>. This change had a major impact on existing applications (i.e., too many missing translation errors).</p>\n<p dir=\"auto\">Solution:</p>\n<p dir=\"auto\">Change <code class=\"notranslate\">human_attribute_name</code> to raise an error iff <code class=\"notranslate\">raise_on_missing_translations</code> is <code class=\"notranslate\">:strict</code>.</p>",
             "url": "https://github.com/rails/rails/pull/52487",
             "title": "Change human_attribute_name to raise an error iff in strict mode",
-            "date_modified": "2024-08-02T12:30:20.000Z",
+            "date_modified": "2024-08-02T15:31:17.000Z",
             "date_published": "2024-08-02T09:01:57.000Z",
             "author": {
                 "name": "shouichi",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, <code class=\"notranslate\">error_on_ignore</code> option is not passed to the <code class=\"notranslate\">BatchEnumerator</code>. And when we iterate using it (via something like <code class=\"notranslate\">Post.in_batches(error_on_ignore: true).delete_all</code>) it is lost.<br>\nSo we need to check for the option presence before we return the <code class=\"notranslate\">BatchEnumerator</code> instance.</p>",
-            "url": "https://github.com/rails/rails/pull/52378",
-            "title": "Fix swallowing ignore order warning when batching using `BatchEnumerator`",
-            "date_modified": "2024-07-29T22:12:36.000Z",
-            "date_published": "2024-07-21T09:20:21.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
