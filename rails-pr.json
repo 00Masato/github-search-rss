@@ -28,10 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Basic password reset flow to show use of signed ids with a mailer. Should be possible to opt out of this.</p>\n<p dir=\"auto\">Still to do:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add application-side tests for everything. Set a good example.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Add the password mailer preview.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Fix problem with signed id token param not being recognized for POST without a manual route</li>\n</ul>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Basic password reset flow to show use of signed ids with a mailer. Should be possible to opt out of this.</p>\n<p dir=\"auto\">Still to do:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Fix problem with signed id token param not being recognized for POST without a manual route</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52472",
             "title": "Add password reset to authentication generator",
-            "date_modified": "2024-08-01T22:48:33.000Z",
+            "date_modified": "2024-08-01T23:58:03.000Z",
             "date_published": "2024-07-31T23:59:51.000Z",
             "author": {
                 "name": "dhh",
