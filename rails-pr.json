@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162485299?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is just a rebased version of what's in <a href=\"https://github.com/Shopify/rails/pull/26\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/Shopify/rails/pull/26/hovercard\">here</a></p>",
+            "url": "https://github.com/rails/rails/pull/52535",
+            "title": "Load assoc async - test",
+            "date_modified": "2024-08-07T20:01:51.000Z",
+            "date_published": "2024-08-07T20:01:46.000Z",
+            "author": {
+                "name": "hcmaATshopify",
+                "url": "https://github.com/hcmaATshopify"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #52501.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2446689893\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52501\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52501/hovercard\" href=\"https://github.com/rails/rails/pull/52501\">#52501</a></p>\n<p dir=\"auto\">Since MySQL require to set the isolation level as a statement before the <code class=\"notranslate\">BEGIN</code>, if the <code class=\"notranslate\">begin</code> statement fails and we retry it we're opening a transaction with the default level.</p>\n<p dir=\"auto\">To handle this we can send both statement at once so that if we retry both are sent.</p>\n<p dir=\"auto\">A much simpler alternative would be to just disallow retrying <code class=\"notranslate\">BEGIN</code> when opening an isolated DB transaction.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/kirs/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/kirs\">@kirs</a></p>\n<p dir=\"auto\">Also cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a> as I'd love your opinion on this. In the future I'd really like to leverage batches more to save on roundtrips as explained in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2335181050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/trilogy-libraries/trilogy/issues/189\" data-hovercard-type=\"issue\" data-hovercard-url=\"/trilogy-libraries/trilogy/issues/189/hovercard\" href=\"https://github.com/trilogy-libraries/trilogy/issues/189\">trilogy-libraries/trilogy#189</a>, but right now it's actually worse because instead of 2 roundtrips we're doing 3:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">set_server_options OPTION_MULTI_STATEMENTS_ON</code></li>\n<li><code class=\"notranslate\">query \"SET TRANSACTION ISOLATION LEVEL...; BEGIN;</code></li>\n<li><code class=\"notranslate\">set_server_options OPTION_MULTI_STATEMENTS_OFF</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52529",
             "title": "Preserve isolation level when retrying MySQL transactions",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44102752?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2435788027\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52441\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52441/hovercard\" href=\"https://github.com/rails/rails/issues/52441\">#52441</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes</p>\n<ul dir=\"auto\">\n<li>caching with rails doc</li>\n<li>updated development.rb.tt</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52474",
-            "title": "Update development mode  default caching docs",
-            "date_modified": "2024-08-02T21:34:10.000Z",
-            "date_published": "2024-08-01T07:01:14.000Z",
-            "author": {
-                "name": "nikhilbhatt",
-                "url": "https://github.com/nikhilbhatt"
             }
         }
     ]
