@@ -163,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Problem:</p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc/hovercard\" href=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc\"><tt>f6c0a35</tt></a> changed <code class=\"notranslate\">human_attribute_name</code> to raise error if <code class=\"notranslate\">raise_on_missing_translations</code> is <code class=\"notranslate\">true</code>. This change had a major impact on existing applications (i.e., too many missing translation errors).</p>\n<p dir=\"auto\">Solution:</p>\n<p dir=\"auto\">Allow each model to decide whether to raise an error on missing translations.</p>",
             "url": "https://github.com/rails/rails/pull/52495",
             "title": "Enable raising an error for missing translations on a per-model basis",
-            "date_modified": "2024-08-12T17:45:45.000Z",
+            "date_modified": "2024-08-13T01:26:23.000Z",
             "date_published": "2024-08-03T02:50:43.000Z",
             "author": {
                 "name": "shouichi",
