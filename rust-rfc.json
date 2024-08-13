@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support restricting implementation of individual methods within traits, as an<br>\nextension of the restriction mechanism defined in<br>\n<a href=\"https://rust-lang.github.io/rfcs/3323-restrictions.html\" rel=\"nofollow\">RFC 3323</a>.</p>\n<p dir=\"auto\">This makes it possible, for instance, to define a trait that any crate can<br>\nimplement, but disallow overriding one of the trait's methods.</p>\n<p dir=\"auto\">This was inspired in the course of writing another RFC defining a trait, which needed precisely this feature of restricting overrides of the trait's method. I separated out this feature as its own RFC, since it's independently useful for various other purposes, and since it should be available to any crate and not just the standard library.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/final/text/3678-trait-method-impl-restrictions.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3678",
+            "title": "Trait method impl restrictions",
+            "date_modified": "2024-08-13T19:59:43.000Z",
+            "date_published": "2024-08-13T19:51:41.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io-remove-dev-deps/text/3674-crates-io-remove-dev-deps.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3674",
             "title": "crates.io: Remove dev-dependencies from the index",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278509?u=f17ebaaae490d5f66760b62f162c2f142c7fc37d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"545842586\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2845/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2845\">#2845</a> which aims to resolve the <a href=\"https://github.com/rust-lang/rust/issues/88967\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/88967/hovercard\">issues</a> surrounding the stabilization of <code class=\"notranslate\">Iterator::intersperse</code>.</p>\n<h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">When name resolution encounters an ambiguity between 2 trait methods, if one trait is a sub-trait of the other then select that method instead of reporting an ambiguity error.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Amanieu/rfcs/blob/item-shadowing/text/0000-supertrait-item-shadowing-v2.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3624",
-            "title": "Supertrait item shadowing v2",
-            "date_modified": "2024-07-24T11:10:14.000Z",
-            "date_published": "2024-05-03T23:39:09.000Z",
-            "author": {
-                "name": "Amanieu",
-                "url": "https://github.com/Amanieu"
             }
         }
     ]
