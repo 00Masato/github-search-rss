@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/224488?u=8ba5d071516f0981681d9518cc59fc519e238d04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">If a <code class=\"notranslate\">method_added</code>/<code class=\"notranslate\">singleton_method_added</code> method on a constant doesn't call <code class=\"notranslate\">super</code> then none of the <code class=\"notranslate\">method_added</code>/<code class=\"notranslate\">singleton_method_added</code> methods on ancestors of the constant ever get called by Ruby.</p>\n<p dir=\"auto\">This breaks any code that might want to instrument classes to collect method definition locations, or to do other things when methods are added.</p>\n<p dir=\"auto\">In order to be a good citizen, it is best practice to call <code class=\"notranslate\">super</code> from these methods.</p>\n<p dir=\"auto\">This Pull Request has been created to fix the instances where the Rails codebase does not call <code class=\"notranslate\">super</code> from these methods.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52634",
+            "title": "Call `super` from `method_added`/`singleton_method_added` methods",
+            "date_modified": "2024-08-16T22:41:15.000Z",
+            "date_published": "2024-08-16T22:41:11.000Z",
+            "author": {
+                "name": "paracycle",
+                "url": "https://github.com/paracycle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/761956?u=51347a55448ba4bebf4bb58b56ae4e63d47af47b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because, when working on encrypted Active Record attributes, I found a couple of small documentation errors.</p>\n<h3 dir=\"auto\">Detail</h3>\n<h4 dir=\"auto\">Fix <code class=\"notranslate\">ActiveRecord::Encryptor#decrypt</code> documentation</h4>\n<p dir=\"auto\"><code class=\"notranslate\">ActiveRecord::Encryptor#decrypt</code> documentation mentions that it decrypts a <code class=\"notranslate\">clean_text</code>, when, in fact, it decrypts an <code class=\"notranslate\">encrypted_text</code>. This commit fixes this issue.</p>\n<h4 dir=\"auto\">Add missing <code class=\"notranslate\">_</code> on the Active Record Encryption guides</h4>\n<p dir=\"auto\">The Custom Key Providers section mentions the expected API for custom key providers. The <code class=\"notranslate\">decryption_keys</code> description is missing an underscore character.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52633",
             "title": "Fix Active Record Encryption documentation [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "kirs",
                 "url": "https://github.com/kirs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Problem:</p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc/hovercard\" href=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc\"><tt>f6c0a35</tt></a> changed <code class=\"notranslate\">human_attribute_name</code> to raise error if <code class=\"notranslate\">raise_on_missing_translations</code> is <code class=\"notranslate\">true</code>. This change had a major impact on existing applications (i.e., too many missing translation errors).</p>\n<p dir=\"auto\">Solution:</p>\n<p dir=\"auto\">Allow each model to decide whether to raise an error on missing translations.</p>",
-            "url": "https://github.com/rails/rails/pull/52495",
-            "title": "Enable raising an error for missing translations on a per-model basis",
-            "date_modified": "2024-08-13T13:30:30.000Z",
-            "date_published": "2024-08-03T02:50:43.000Z",
-            "author": {
-                "name": "shouichi",
-                "url": "https://github.com/shouichi"
             }
         }
     ]
