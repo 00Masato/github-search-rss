@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121169?u=01c0a7b1cf2181cbc9a7ca63ad9f6974651722d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/52623",
+            "title": "Add Rails 7.2 release date to guides index",
+            "date_modified": "2024-08-16T11:33:58.000Z",
+            "date_published": "2024-08-16T11:33:54.000Z",
+            "author": {
+                "name": "frenkel",
+                "url": "https://github.com/frenkel"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25246024?u=45bc5dab950868e9945f9455cff98e7196ef5a27&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In the example about RESTful downloads and PDFs, the Guides ask to register the <code class=\"notranslate\">application/pdf</code> MIME type in Rails explicitly. This step doesn't seem necessary because the <a href=\"https://github.com/rails/rails/blob/main/actionpack/lib/action_dispatch/http/mime_types.rb\">PDF type is already registered by Rails </a> by default.</p>\n<p dir=\"auto\">This Pull Request has been created to clarify that Rails supports the <code class=\"notranslate\">application/pdf</code> type, and others, out of the box.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52597",
             "title": "Explains that `application/pdf` is already registered by Rails [ci skip]",
@@ -25,17 +36,6 @@
             "author": {
                 "name": "codergeek121",
                 "url": "https://github.com/codergeek121"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/617116?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><del>Some jobs such as <code class=\"notranslate\">ActiveStorage::PurgeJob</code> are set to retry on <code class=\"notranslate\">ActiveRecord::Deadlocked</code> by default.</del><br>\nI think it makes more sense to raise <del><code class=\"notranslate\">ActiveRecord::Deadlocked</code></del> <code class=\"notranslate\">ActiveRecord::StatementTimeout </code> instead of <code class=\"notranslate\">ActiveRecord::StatementInvalid</code> when SQLite3 raises a <code class=\"notranslate\">SQLite3::BusyException</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request translates the <code class=\"notranslate\">SQLite3::BusyException</code> into a <code class=\"notranslate\">ActiveRecord::StatementTimeout</code> exception.</p>",
-            "url": "https://github.com/rails/rails/pull/52577",
-            "title": "Handle SQLite3::BusyException to raise ActiveRecord::StatementTimeout",
-            "date_modified": "2024-08-12T17:21:47.000Z",
-            "date_published": "2024-08-12T12:02:56.000Z",
-            "author": {
-                "name": "n-studio",
-                "url": "https://github.com/n-studio"
             }
         },
         {
