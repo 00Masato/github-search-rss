@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5077225?u=d56fa4ee81065e962478080385d7d9a08ec15f51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In addition to PosgreSQL JSON and MySQL JSON data types, developers need to use <code class=\"notranslate\">store_accessor</code> instead of <code class=\"notranslate\">store</code> when working with SQLite's JSON data type as well.</p>",
             "url": "https://github.com/rails/rails/pull/52636",
             "title": "Update Active Record Store docs to mention SQLite JSON usage [ci skip]",
-            "date_modified": "2024-08-16T23:59:15.000Z",
+            "date_modified": "2024-08-17T02:01:24.000Z",
             "date_published": "2024-08-16T23:59:11.000Z",
             "author": {
                 "name": "fractaledmind",
