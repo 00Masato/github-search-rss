@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">…mentation</p>\n<p dir=\"auto\">The explanations about avoinding N+1 queries seems out of place early in the documentation. The actual association hasn't been explained yet and yet we explain performance optimizations.<br>\nIt's also confusing when reading the following paragraph where \"this relationship\" might seem to refer to the <code class=\"notranslate\">with_attached_avatar</code> scope.</p>\n<p dir=\"auto\">Instead we can group it as a performance section together with the <code class=\"notranslate\">strict_loading</code> section.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52648",
             "title": "Move \"avoid N+1 queries\" explanation lower in the Active Storage docu…",
-            "date_modified": "2024-08-19T11:47:10.000Z",
+            "date_modified": "2024-08-19T19:27:17.000Z",
             "date_published": "2024-08-19T11:46:49.000Z",
             "author": {
                 "name": "p8",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5077225?u=d56fa4ee81065e962478080385d7d9a08ec15f51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is another tiny documentation change made as I read through the guides with an eye to missing or out-of-date documentation on using Rails with SQLite.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">While SQLite was indeed a shaky option for any production system prior to the 7.1 release, the improved default configuration in 7.1 made SQLite a viable production database option for smaller workloads.</p>",
             "url": "https://github.com/rails/rails/pull/52639",
             "title": "Update the description of when SQLite might make sense as the configured database [ci skip]",
-            "date_modified": "2024-08-17T17:34:32.000Z",
+            "date_modified": "2024-08-19T19:26:37.000Z",
             "date_published": "2024-08-17T17:27:38.000Z",
             "author": {
                 "name": "fractaledmind",
