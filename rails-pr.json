@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/122306143?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Currently running <code class=\"notranslate\">rails dbconsole</code> is hardcoded to use the default interface for the given database (e.g. <code class=\"notranslate\">psql</code> for Postgres). Other interfaces exist however, such as <code class=\"notranslate\">pgcli</code> which I’m a fan of.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Allows the use of alternative interfaces by specifying the <code class=\"notranslate\">cmd</code> key in the database configuration.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Considered the use of an environment variable for this, but this approach seemed more flexible; and environment variable can still be used via ERB.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52656",
+            "title": "Allow use of alternative database interfaces",
+            "date_modified": "2024-08-20T14:58:06.000Z",
+            "date_published": "2024-08-20T14:38:17.000Z",
+            "author": {
+                "name": "tsvallender",
+                "url": "https://github.com/tsvallender"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64558?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because there is unnecessary HTTP access in ActiveStorage, which is affecting performance, so I want to stop it.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Change it to use the <code class=\"notranslate\">Google::Cloud::Storage.anonymous</code> object to avoid obtaining an OAuth token when dealing with public buckets.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52655",
             "title": "Stopped getting an extra oauth access token when retrieving public_url l in GCS.",
@@ -58,17 +69,6 @@
             "author": {
                 "name": "djmb",
                 "url": "https://github.com/djmb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">…mentation</p>\n<p dir=\"auto\">The explanations about avoinding N+1 queries seems out of place early in the documentation. The actual association hasn't been explained yet and yet we explain performance optimizations.<br>\nIt's also confusing when reading the following paragraph where \"this relationship\" might seem to refer to the <code class=\"notranslate\">with_attached_avatar</code> scope.</p>\n<p dir=\"auto\">Instead we can group it as a performance section together with the <code class=\"notranslate\">strict_loading</code> section.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52648",
-            "title": "Move \"avoid N+1 queries\" explanation lower in the Active Storage docu…",
-            "date_modified": "2024-08-19T19:27:17.000Z",
-            "date_published": "2024-08-19T11:46:49.000Z",
-            "author": {
-                "name": "p8",
-                "url": "https://github.com/p8"
             }
         },
         {
