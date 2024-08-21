@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/52671",
             "title": "Allow passing validation options to update",
-            "date_modified": "2024-08-21T20:36:31.000Z",
+            "date_modified": "2024-08-21T21:43:33.000Z",
             "date_published": "2024-08-21T15:36:38.000Z",
             "author": {
                 "name": "northeastprince",
@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2651240?u=d1c170b78ab342593d0ad83baee8556ed046846f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It's common practice to scope nested resources within their parents. This PR introduces a new option, <code class=\"notranslate\">scope_module</code>, to the <code class=\"notranslate\">resource/resources</code> methods.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"resources :posts, scope_module: true do\n  resources :comments\nend  \n\n# Is the same as:\n\nresources :posts do\n  scope module: &quot;posts&quot; do\n    resources :comments\n  end\nend\"><pre class=\"notranslate\"><span class=\"pl-en\">resources</span> <span class=\"pl-pds\">:posts</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">scope_module</span>: <span class=\"pl-c1\">true</span> <span class=\"pl-k\">do</span>\n  <span class=\"pl-en\">resources</span> <span class=\"pl-pds\">:comments</span>\n<span class=\"pl-k\">end</span>  \n\n<span class=\"pl-c\"># Is the same as:</span>\n\n<span class=\"pl-en\">resources</span> <span class=\"pl-pds\">:posts</span> <span class=\"pl-k\">do</span>\n  <span class=\"pl-en\">scope</span> <span class=\"pl-pds\">module</span>: <span class=\"pl-s\">\"posts\"</span> <span class=\"pl-k\">do</span>\n    <span class=\"pl-en\">resources</span> <span class=\"pl-pds\">:comments</span>\n  <span class=\"pl-k\">end</span>\n<span class=\"pl-k\">end</span></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><a href=\"https://x.com/matheusrich/status/1778082403673604371\" rel=\"nofollow\">I talked about it</a> with <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/MatheusRich/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/MatheusRich\">@MatheusRich</a> months ago and <a href=\"https://github.com/cherrypush/cherrypush.com/blob/main/config/routes.rb#L31-L33\">heard the same</a> from other colleagues in the community.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR, make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52652",
             "title": "Add scope_module option to resources",
-            "date_modified": "2024-08-21T17:33:21.000Z",
+            "date_modified": "2024-08-21T21:27:00.000Z",
             "date_published": "2024-08-20T02:39:45.000Z",
             "author": {
                 "name": "lazaronixon",
@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5077225?u=d56fa4ee81065e962478080385d7d9a08ec15f51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is another tiny documentation change made as I read through the guides with an eye to missing or out-of-date documentation on using Rails with SQLite.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">While SQLite was indeed a shaky option for any production system prior to the 7.1 release, the improved default configuration in 7.1 made SQLite a viable production database option for smaller workloads.</p>",
             "url": "https://github.com/rails/rails/pull/52639",
             "title": "Update the description of when SQLite might make sense as the configured database [ci skip]",
-            "date_modified": "2024-08-19T19:26:37.000Z",
+            "date_modified": "2024-08-21T21:42:44.000Z",
             "date_published": "2024-08-17T17:27:38.000Z",
             "author": {
                 "name": "fractaledmind",
@@ -135,17 +135,6 @@
             "author": {
                 "name": "jdufresne",
                 "url": "https://github.com/jdufresne"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Minor fix, removing trailing white space in service-worker.js.</p>",
-            "url": "https://github.com/rails/rails/pull/52637",
-            "title": "Cleanup service-worker.js trailing white space",
-            "date_modified": "2024-08-17T06:37:49.000Z",
-            "date_published": "2024-08-17T06:37:44.000Z",
-            "author": {
-                "name": "jlduran",
-                "url": "https://github.com/jlduran"
             }
         },
         {
@@ -174,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If you have a form that contains includes a rich text field that's optional, you can end up with lots of <code class=\"notranslate\">ActionText::RichText</code> records in the database with empty values. See <a href=\"https://stackoverflow.com/questions/64580428/is-it-possible-to-prevent-empty-action-text-entries\" rel=\"nofollow\">https://stackoverflow.com/questions/64580428/is-it-possible-to-prevent-empty-action-text-entries</a> for an example of folks trying to avoid this. To me this seems like something we could handle at the framework level.</p>\n<p dir=\"auto\">This PR introduces a store_if_blank<code class=\"notranslate\">option on</code>has_rich_text<code class=\"notranslate\">. It defaults to </code>true<code class=\"notranslate\">(the current behaviour); if you pass</code>false<code class=\"notranslate\">, AT won't create </code>ActionText::RichText` records when saving with a blank value.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Message\n  has_rich_text :content, store_if_blank: false\nend\n\nMessage.create(content: &quot;hi&quot;) # creates an ActionText::RichText\nMessage.create(content: &quot;&quot;) # does not create an ActionText::RichText\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Message</span>\n  <span class=\"pl-en\">has_rich_text</span> <span class=\"pl-pds\">:content</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">store_if_blank</span>: <span class=\"pl-c1\">false</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-v\">Message</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">content</span>: <span class=\"pl-s\">\"hi\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-c\"># creates an ActionText::RichText</span>\n<span class=\"pl-v\">Message</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">content</span>: <span class=\"pl-s\">\"\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-c\"># does not create an ActionText::RichText</span></pre></div>",
             "url": "https://github.com/rails/rails/pull/52573",
             "title": "Add `store_if_blank` option to `has_rich_text`",
-            "date_modified": "2024-08-12T20:43:19.000Z",
+            "date_modified": "2024-08-21T21:51:04.000Z",
             "date_published": "2024-08-12T01:38:20.000Z",
             "author": {
                 "name": "ghiculescu",
@@ -220,6 +209,17 @@
             "title": "Improve documentation of `config.assets.quiet` [ci skip]",
             "date_modified": "2024-08-16T09:33:20.000Z",
             "date_published": "2024-08-08T12:52:17.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because the documentation for the <code class=\"notranslate\">config.assets.debug</code> configuration option is incorrect.</p>\n<p dir=\"auto\">Fixes issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280577750\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51747\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51747/hovercard\" href=\"https://github.com/rails/rails/issues/51747\">#51747</a> and closes PR <a href=\"https://github.com/rails/rails/pull/51845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51845/hovercard\">#51845</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request fixes the <code class=\"notranslate\">config.assets.debug</code> documentation and makes it correct.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52544",
+            "title": "Fix wrong `config.assets.debug` documentation [ci skip]",
+            "date_modified": "2024-08-12T08:23:51.000Z",
+            "date_published": "2024-08-08T12:25:42.000Z",
             "author": {
                 "name": "Uaitt",
                 "url": "https://github.com/Uaitt"
