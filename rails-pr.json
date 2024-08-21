@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's common to have a few very popular foreign keys, might as well avoid copies.</p>",
-            "url": "https://github.com/rails/rails/pull/52666",
-            "title": "Deduplicate derived foreign keys",
-            "date_modified": "2024-08-21T11:07:05.000Z",
-            "date_published": "2024-08-21T11:07:01.000Z",
-            "author": {
-                "name": "casperisfine",
-                "url": "https://github.com/casperisfine"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/634379?u=c5cc4f8589962319b7522ca7d8a7aca32c3325e4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created to improve the I18n guide by adding instructions for local testing setup, specifically for configuring the <code class=\"notranslate\">hosts</code> in <code class=\"notranslate\">development.rb</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the I18n guide to include additional steps required for setting up local testing of subdomain-based locale extraction.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52662",
             "title": "Update i18n guide with local testing setup instructions [ci skip]",
@@ -220,6 +209,17 @@
             "title": "Improve documentation of `config.assets.quiet` [ci skip]",
             "date_modified": "2024-08-16T09:33:20.000Z",
             "date_published": "2024-08-08T12:52:17.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because the documentation for the <code class=\"notranslate\">config.assets.debug</code> configuration option is incorrect.</p>\n<p dir=\"auto\">Fixes issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280577750\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51747\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51747/hovercard\" href=\"https://github.com/rails/rails/issues/51747\">#51747</a> and closes PR <a href=\"https://github.com/rails/rails/pull/51845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51845/hovercard\">#51845</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request fixes the <code class=\"notranslate\">config.assets.debug</code> documentation and makes it correct.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52544",
+            "title": "Fix wrong `config.assets.debug` documentation [ci skip]",
+            "date_modified": "2024-08-12T08:23:51.000Z",
+            "date_published": "2024-08-08T12:25:42.000Z",
             "author": {
                 "name": "Uaitt",
                 "url": "https://github.com/Uaitt"
