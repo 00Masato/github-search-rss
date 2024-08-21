@@ -6,11 +6,22 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">YAML.load</code> is much slower than <code class=\"notranslate\">YAML.load_file</code> when Bootsnap is enabled.</p>\n<p dir=\"auto\">As such for big file that don't use ERB, it's preferable to use <code class=\"notranslate\">load_file</code>.</p>\n<p dir=\"auto\">This is mostly useful for fixtures (which use <code class=\"notranslate\">ConfigurationFile</code> under the hood)</p>",
-            "url": "https://github.com/rails/rails/pull/52665",
-            "title": "Optimize ConfigurationFile when ERB is not used",
-            "date_modified": "2024-08-21T10:51:35.000Z",
-            "date_published": "2024-08-21T10:51:31.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2477720990\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52665\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52665/hovercard\" href=\"https://github.com/rails/rails/pull/52665\">#52665</a></p>\n<p dir=\"auto\">Uncached ERB rendering is very constly, so assuming many files don't actually contain ERB, it's worth checking for it first.</p>\n<p dir=\"auto\">For ERB files, we could consider caching the compilation, but it's more complicated.</p>",
+            "url": "https://github.com/rails/rails/pull/52667",
+            "title": "ConfigurationFile: skip ERB rendering unless the file seem to contain ERB",
+            "date_modified": "2024-08-21T11:56:03.000Z",
+            "date_published": "2024-08-21T11:17:08.000Z",
+            "author": {
+                "name": "casperisfine",
+                "url": "https://github.com/casperisfine"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19192189?u=dd60737844a9db7f1475bab21fc3e5258a405e15&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's common to have a few very popular foreign keys, might as well avoid copies.</p>",
+            "url": "https://github.com/rails/rails/pull/52666",
+            "title": "Deduplicate derived foreign keys",
+            "date_modified": "2024-08-21T11:07:05.000Z",
+            "date_published": "2024-08-21T11:07:01.000Z",
             "author": {
                 "name": "casperisfine",
                 "url": "https://github.com/casperisfine"
@@ -209,17 +220,6 @@
             "title": "Improve documentation of `config.assets.quiet` [ci skip]",
             "date_modified": "2024-08-16T09:33:20.000Z",
             "date_published": "2024-08-08T12:52:17.000Z",
-            "author": {
-                "name": "Uaitt",
-                "url": "https://github.com/Uaitt"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because the documentation for the <code class=\"notranslate\">config.assets.debug</code> configuration option is incorrect.</p>\n<p dir=\"auto\">Fixes issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280577750\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51747\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51747/hovercard\" href=\"https://github.com/rails/rails/issues/51747\">#51747</a> and closes PR <a href=\"https://github.com/rails/rails/pull/51845\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51845/hovercard\">#51845</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request fixes the <code class=\"notranslate\">config.assets.debug</code> documentation and makes it correct.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52544",
-            "title": "Fix wrong `config.assets.debug` documentation [ci skip]",
-            "date_modified": "2024-08-12T08:23:51.000Z",
-            "date_published": "2024-08-08T12:25:42.000Z",
             "author": {
                 "name": "Uaitt",
                 "url": "https://github.com/Uaitt"
