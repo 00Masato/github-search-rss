@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26704491?u=db54a0798fb800751ceea6bd73cf3d2794ebb1ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I was using the latest ruby 3.3.4<br>\nand I tried upgrading the rails version to 7.2.0 following <a href=\"https://guides.rubyonrails.org/upgrading_ruby_on_rails.html\" rel=\"nofollow\">https://guides.rubyonrails.org/upgrading_ruby_on_rails.html</a><br>\nafter updating the version in gemfile, bundle install works fine and after that every command failing<br>\nsee the below screeshot for reference</p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/26704491/360063009-3402deb8-a974-4a65-8f1b-d05f19feb4c8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQyNjcxOTMsIm5iZiI6MTcyNDI2Njg5MywicGF0aCI6Ii8yNjcwNDQ5MS8zNjAwNjMwMDktMzQwMmRlYjgtYTk3NC00YTY1LThmMWItZDA1ZjE5ZmViNGM4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIxVDE5MDEzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZGNlMjAyMmFhM2E1NTFlNDJhZTE2ZWM2YTdkYWJjMmE2OGMwODcyOWFmYzMxYmQ3NmVhYmEwNDgyMDBmNDcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.xw7X_Y8_yB_oQ9NHp1IQJ0uuIzLIEnZ_nT6Z8HKcUVI\"><img width=\"1727\" alt=\"Screenshot 2024-08-22 at 12 20 38 AM\" src=\"https://private-user-images.githubusercontent.com/26704491/360063009-3402deb8-a974-4a65-8f1b-d05f19feb4c8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQyNjcxOTMsIm5iZiI6MTcyNDI2Njg5MywicGF0aCI6Ii8yNjcwNDQ5MS8zNjAwNjMwMDktMzQwMmRlYjgtYTk3NC00YTY1LThmMWItZDA1ZjE5ZmViNGM4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIxVDE5MDEzM1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTNjZGNlMjAyMmFhM2E1NTFlNDJhZTE2ZWM2YTdkYWJjMmE2OGMwODcyOWFmYzMxYmQ3NmVhYmEwNDgyMDBmNDcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.xw7X_Y8_yB_oQ9NHp1IQJ0uuIzLIEnZ_nT6Z8HKcUVI\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/fxn/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/fxn\">@fxn</a> can you take a look if this fix work or let me know your thoughts so I can fix it on root level</p>",
-            "url": "https://github.com/rails/rails/pull/52673",
-            "title": "Fix missing deprecator error",
-            "date_modified": "2024-08-21T18:57:59.000Z",
-            "date_published": "2024-08-21T18:57:55.000Z",
-            "author": {
-                "name": "adityapandit17",
-                "url": "https://github.com/adityapandit17"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55164724?u=c6537070bc166ac2ce4c6e8e8aa439b91fff5af1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/52671",
             "title": "Allow passing validation options to update",
-            "date_modified": "2024-08-21T18:47:27.000Z",
+            "date_modified": "2024-08-21T19:05:03.000Z",
             "date_published": "2024-08-21T15:36:38.000Z",
             "author": {
                 "name": "northeastprince",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ioquatix",
                 "url": "https://github.com/ioquatix"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142498048?u=ef62fa9962bb2e26413478ff05f28a98a59d9b9d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52530.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2453364344\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52530\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52530/hovercard\" href=\"https://github.com/rails/rails/issues/52530\">#52530</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request addresses an issue where adding a merge with an <code class=\"notranslate\">or</code> condition to a scope in ActiveRecord could unintentionally widen the scope if the scope contains raw SQL strings. The fix ensures that scopes behave as expected, returning only the records that match the intended query criteria.</p>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This Pull Request includes changes to the <code class=\"notranslate\">merger.rb</code> file to properly handle the merging of scopes that involve raw SQL strings. Specifically, the logic was updated as follows:</p>\n<ul dir=\"auto\">\n<li><strong>Conditional Check for Raw SQL</strong>:\n<ul dir=\"auto\">\n<li>Added a check to determine if either of the <code class=\"notranslate\">where</code> clauses being merged contains raw SQL using the <code class=\"notranslate\">raw_sql_involved?</code> method.</li>\n</ul>\n</li>\n<li><strong>Proper Handling of <code class=\"notranslate\">or</code> Merging</strong>:\n<ul dir=\"auto\">\n<li>When raw SQL is involved, the merge is handled with the <code class=\"notranslate\">merge_with_proper_or_handling</code> method, which ensures that the conditions are grouped correctly and the scope is not widened unintentionally.</li>\n</ul>\n</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52550",
+            "title": "Added changes in the merger.rb file for merge logic",
+            "date_modified": "2024-08-12T06:46:42.000Z",
+            "date_published": "2024-08-08T19:26:59.000Z",
+            "author": {
+                "name": "Demon-Sheriff",
+                "url": "https://github.com/Demon-Sheriff"
             }
         }
     ]
