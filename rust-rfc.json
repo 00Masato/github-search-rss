@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1606434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support the following:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"enum Foo {\n    #[default]\n    Bar {\n        x: Option&lt;i32&gt;,\n        y: Option&lt;i32&gt;,\n    },\n    Baz,\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">enum</span> <span class=\"pl-smi\">Foo</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>default<span class=\"pl-kos\">]</span></span>\n    <span class=\"pl-v\">Bar</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-c1\">x</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n        <span class=\"pl-c1\">y</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-v\">Baz</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/estebank/rfcs/blob/derive-default-enum-with-fields/text/0000-derive-default-enum-with-fields.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3683",
+            "title": "`#[derive(Default)]` on enum variants with fields",
+            "date_modified": "2024-08-25T19:02:13.000Z",
+            "date_published": "2024-08-25T18:59:16.000Z",
+            "author": {
+                "name": "estebank",
+                "url": "https://github.com/estebank"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1606434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/estebank/rfcs/blob/default-fields/text/0000-default-field-values.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3681",
             "title": "[RFC] Default field values",
-            "date_modified": "2024-08-25T13:47:18.000Z",
+            "date_modified": "2024-08-25T18:49:00.000Z",
             "date_published": "2024-08-22T23:46:12.000Z",
             "author": {
                 "name": "estebank",
@@ -209,17 +220,6 @@
             "title": "Function body blocks",
             "date_modified": "2024-05-16T02:20:15.000Z",
             "date_published": "2024-05-07T08:42:43.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3628",
-            "title": "`async T` and `gen T` types",
-            "date_modified": "2024-07-19T22:41:16.000Z",
-            "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
