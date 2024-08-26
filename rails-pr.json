@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26704491?u=db54a0798fb800751ceea6bd73cf3d2794ebb1ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a><br>\nI was checking this and seems we do not need to explicitly return the handlers, as we are doing sort_by!<br>\nLet me know if I am right and it make sense to you as well</p>",
-            "url": "https://github.com/rails/rails/pull/52712",
-            "title": "No need for explicit return of handlers",
-            "date_modified": "2024-08-26T07:54:29.000Z",
-            "date_published": "2024-08-26T07:54:25.000Z",
-            "author": {
-                "name": "adityapandit17",
-                "url": "https://github.com/adityapandit17"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Makes this work: <a href=\"https://github.com/rails/rails/pull/52573/files#r1730329576\">https://github.com/rails/rails/pull/52573/files#r1730329576</a></p>",
             "url": "https://github.com/rails/rails/pull/52709",
             "title": "Make Action Text `store_if_blank` work for `presence` validation",
@@ -64,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/771968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR contains two commits.  The 1st commit resolves model attribute types on schema load, fixing <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2466607232\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52607\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52607/hovercard\" href=\"https://github.com/rails/rails/issues/52607\">#52607</a>, as explained below.  The 2nd commit re-applies <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1959672475\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49769\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49769/hovercard\" href=\"https://github.com/rails/rails/pull/49769\">#49769</a> which was previously reverted due to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2466607232\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52607\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52607/hovercard\" href=\"https://github.com/rails/rails/issues/52607\">#52607</a>.</p>\n<p dir=\"auto\">When running tests in parallel, a new database is created for each test worker (<a href=\"https://github.com/rails/rails/blob/ec667e5f114df58087493096253541f1034815af/activerecord/lib/active_record/test_databases.rb\">via <code class=\"notranslate\">ActiveRecord::TestDatabases.create_and_load_schema</code></a>).  Each of these databases use different OID numbers for custom defined types such as enums.  If model schemas are loaded before forking — as done <a href=\"https://github.com/rails/rails/blob/ec667e5f114df58087493096253541f1034815af/railties/lib/rails/testing/maintain_test_schema.rb#L11-L15\">in <code class=\"notranslate\">railties/lib/rails/testing/maintain_test_schema.rb</code></a> when <code class=\"notranslate\">eager_load</code> is true — Rails will hold on to the OID numbers from the original database.  Thus each test worker does not recognize the OID numbers when resolving model attribute types.</p>\n<p dir=\"auto\">This commit sidesteps the problem by resolving model attribute types on schema load.  This does not address the conflicting OID numbers, but each test worker will inherit properly resolved attribute types.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52607.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2466607232\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52607\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52607/hovercard\" href=\"https://github.com/rails/rails/issues/52607\">#52607</a>.<br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #49717.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1953737551\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49717\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/49717/hovercard\" href=\"https://github.com/rails/rails/issues/49717\">#49717</a>.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> since you were handling <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2466607232\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52607\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52607/hovercard\" href=\"https://github.com/rails/rails/issues/52607\">#52607</a>.</p>",
             "url": "https://github.com/rails/rails/pull/52703",
             "title": "Resolve model attribute types on schema load",
-            "date_modified": "2024-08-24T19:19:57.000Z",
+            "date_modified": "2024-08-26T08:09:00.000Z",
             "date_published": "2024-08-24T19:19:53.000Z",
             "author": {
                 "name": "jonathanhefner",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "codergeek121",
                 "url": "https://github.com/codergeek121"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/617116?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #38755.\">Fixes</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"582941692\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/38755\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/38755/hovercard\" href=\"https://github.com/rails/rails/issues/38755\">#38755</a></p>\n<p dir=\"auto\">Similar to how Solid Queue and Solid Cache are configured:<br>\n<a href=\"https://github.com/rails/solid_queue/blob/main/app/models/solid_queue/record.rb\">https://github.com/rails/solid_queue/blob/main/app/models/solid_queue/record.rb</a><br>\n<a href=\"https://github.com/rails/solid_cache/blob/main/app/models/solid_cache/record.rb\">https://github.com/rails/solid_cache/blob/main/app/models/solid_cache/record.rb</a></p>",
+            "url": "https://github.com/rails/rails/pull/52569",
+            "title": "Add support for multiple databases for Active Storage/Action Text/Action Mailbox",
+            "date_modified": "2024-08-12T18:36:48.000Z",
+            "date_published": "2024-08-11T21:56:14.000Z",
+            "author": {
+                "name": "n-studio",
+                "url": "https://github.com/n-studio"
             }
         }
     ]
