@@ -17,10 +17,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67046614?u=4f71a9eb45e037bbff1deb7a3049ed030cbb7d75&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">To filter parent model records, with any one child associated with it by semi-joins between parent and children</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">To optimize the performance when filtering parent model records based on the presence of associated records, we propose using semi-joins instead of full joins. Typically, we rely on methods like <code class=\"notranslate\">where.associated</code> and <code class=\"notranslate\">where.missing</code>, which utilize <code class=\"notranslate\">JOIN</code> clauses. However, in scenarios where we don't need the associated records in the result set, semi-joins offer a more efficient alternative. They help avoid the overhead of returning duplicate rows when there are multiple matches.</p>\n<p dir=\"auto\">For example, to retrieve posts with at least one comment, we can now write:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Post.where.exists_with(:comments)\"><pre class=\"notranslate\"><span class=\"pl-v\">Post</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">exists_with</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:comments</span><span class=\"pl-kos\">)</span></pre></div>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67046614?u=4f71a9eb45e037bbff1deb7a3049ed030cbb7d75&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">To filter parent model records, with any one child associated with it by semi-joins between parent and children</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">To optimize the performance when filtering parent model records based on the presence of associated records, we propose using semi-joins instead of full joins. Typically, we rely on methods like <code class=\"notranslate\">where.associated</code> and <code class=\"notranslate\">where.missing</code>, which utilize <code class=\"notranslate\">JOIN</code> clauses. However, in scenarios where we don't need the associated records joins in the result set, semi-joins offer a more efficient alternative. They help avoid the overhead of returning duplicate rows when there are multiple matches.</p>\n<p dir=\"auto\">For example, to retrieve posts with at least one comment, we can now write:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Post.where.exists_with(:comments)\"><pre class=\"notranslate\"><span class=\"pl-v\">Post</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">where</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">exists_with</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:comments</span><span class=\"pl-kos\">)</span></pre></div>",
             "url": "https://github.com/rails/rails/pull/52707",
             "title": "feat: Add `where.exists_with` methods",
-            "date_modified": "2024-08-25T12:26:40.000Z",
+            "date_modified": "2024-08-27T17:42:35.000Z",
             "date_published": "2024-08-25T10:58:58.000Z",
             "author": {
                 "name": "InbaKrish",
@@ -91,17 +91,6 @@
             "author": {
                 "name": "djmb",
                 "url": "https://github.com/djmb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58582?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created in order to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #2779.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2463125918\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rspec/rspec-rails/issues/2779\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rspec/rspec-rails/issues/2779/hovercard\" href=\"https://github.com/rspec/rspec-rails/issues/2779\">rspec/rspec-rails#2779</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Previously, <code class=\"notranslate\">ActiveRecord::Encryption</code> configuration was deferred until <code class=\"notranslate\">ActiveRecord::Base</code> was loaded. Therefore, accessing <code class=\"notranslate\">ActiveRecord::Encryption.config</code> properties before <code class=\"notranslate\">ActiveRecord::Base</code> was loaded would give incorrect results.</p>\n<p dir=\"auto\"><code class=\"notranslate\">ActiveRecord::Encryption</code> now has its own loading hook so that its configuration is set as soon as needed.</p>\n<p dir=\"auto\">When <code class=\"notranslate\">ActiveRecord::Base</code> is loaded, even lazily, it in turn triggers the loading of <code class=\"notranslate\">ActiveRecord::Encryption</code>, thus preserving the original behavior of having its config ready before any use of <code class=\"notranslate\">ActiveRecord::Base</code>.</p>\n<p dir=\"auto\">This fix complements one of my previous fixes in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2067810728\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50606\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50606/hovercard\" href=\"https://github.com/rails/rails/pull/50606\">#50606</a>.</p>\n<p dir=\"auto\">Since both Rails 7.1.4 and 7.2.* versions are affected, I'd recommend backporting this fix to <code class=\"notranslate\">7-1-stable</code> and <code class=\"notranslate\">7-2-stable</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52669",
-            "title": "Ensure ActiveRecord::Encryption.config is always ready before access",
-            "date_modified": "2024-08-27T16:48:32.000Z",
-            "date_published": "2024-08-21T13:49:15.000Z",
-            "author": {
-                "name": "maximerety",
-                "url": "https://github.com/maximerety"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ghiculescu",
                 "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Problem:</p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc/hovercard\" href=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc\"><tt>f6c0a35</tt></a> changed <code class=\"notranslate\">human_attribute_name</code> to raise error if <code class=\"notranslate\">raise_on_missing_translations</code> is <code class=\"notranslate\">true</code>. This change had a major impact on existing applications (i.e., too many missing translation errors).</p>\n<p dir=\"auto\">Solution:</p>\n<p dir=\"auto\">Allow each model to decide whether to raise an error on missing translations.</p>",
+            "url": "https://github.com/rails/rails/pull/52495",
+            "title": "Enable raising an error for missing translations on a per-model basis",
+            "date_modified": "2024-08-22T00:40:47.000Z",
+            "date_published": "2024-08-03T02:50:43.000Z",
+            "author": {
+                "name": "shouichi",
+                "url": "https://github.com/shouichi"
             }
         }
     ]
