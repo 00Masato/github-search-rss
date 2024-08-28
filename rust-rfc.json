@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1606434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/estebank/rfcs/blob/default-fields/text/0000-default-field-values.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3681",
             "title": "[RFC] Default field values",
-            "date_modified": "2024-08-28T05:17:35.000Z",
+            "date_modified": "2024-08-28T18:41:53.000Z",
             "date_published": "2024-08-22T23:46:12.000Z",
             "author": {
                 "name": "estebank",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support restricting implementation of individual methods within traits, as an<br>\nextension of the restriction mechanism defined in<br>\n<a href=\"https://rust-lang.github.io/rfcs/3323-restrictions.html\" rel=\"nofollow\">RFC 3323</a>.</p>\n<p dir=\"auto\">This makes it possible, for instance, to define a trait that any crate can<br>\nimplement, but disallow overriding one of the trait's methods.</p>\n<p dir=\"auto\">This was inspired in the course of writing another RFC defining a trait, which needed precisely this feature of restricting overrides of the trait's method. I separated out this feature as its own RFC, since it's independently useful for various other purposes, and since it should be available to any crate and not just the standard library.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/final/text/3678-trait-method-impl-restrictions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3678",
             "title": "Trait method impl restrictions",
-            "date_modified": "2024-08-28T18:00:26.000Z",
+            "date_modified": "2024-08-28T18:03:52.000Z",
             "date_published": "2024-08-13T19:51:41.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19721361?u=9383d7fb7acb50acf57b84096363ae0b522d78ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is to enable <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/266220-t-rustdoc/topic/.22linking.22.20separate.20rustdoc.20outputs/near/434858884\" rel=\"nofollow\">merging</a> cross-crate information (like the search index, index.html, source files index) from separate output directories, so that rustdoc can run in parallel in non-cargo build systems.</p>\n<p dir=\"auto\"><a href=\"https://rustc-dev-guide.rust-lang.org/rustdoc.html#multiple-runs-same-output-directory\" rel=\"nofollow\">Currently</a>, rustdoc updates these cross-crate files with the information from a new crate by reading the old version, adding the information for the current crate, and writing the same file back. This causes issues in build systems that disallow multiple build actions targeting the same output files. Cargo supports cross-crate information because it doesn't have this restriction, <a href=\"https://buck2.build/docs/api/rules/#rust_library\" rel=\"nofollow\">Buck2</a> and <a href=\"https://bazelbuild.github.io/rules_rust/rust_doc.html\" rel=\"nofollow\">Bazel</a> do not support cross-crate information, and Fuchsia has a doc step that runs rustdoc serially on <a href=\"https://fuchsia-docs.firebaseapp.com/rust/rustdoc_index/\" rel=\"nofollow\">2700 crates</a>.</p>\n<p dir=\"auto\">Supporting parallel rustdoc with CCI as a native step in Buck2, <a href=\"https://github.com/bazelbuild/rules_rust/issues/1837\" data-hovercard-type=\"issue\" data-hovercard-url=\"/bazelbuild/rules_rust/issues/1837/hovercard\">Bazel</a>, and <a href=\"https://fuchsia.dev/fuchsia-src/development/build/build_system/intro\" rel=\"nofollow\">GN (Fuchsia + Chrome)</a> would require mergable cross-crate information, which is what this proposal is about. It adds new flags, <code class=\"notranslate\">--include-info-json</code>, <code class=\"notranslate\">--write-info-json</code>, <code class=\"notranslate\">--merge=none|read-write|write-only</code> and <code class=\"notranslate\">--include-rendered-docs</code>, to opt-in to these new features.</p>\n<p dir=\"auto\"><a href=\"https://github.com/EtomicBomb/rust-rfcs/blob/master/text/0000-mergeable-rustdoc-cross-crate-info.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3662",
             "title": "Mergeable rustdoc cross-crate info",
-            "date_modified": "2024-08-25T23:27:04.000Z",
+            "date_modified": "2024-08-28T18:50:41.000Z",
             "date_published": "2024-06-20T20:44:52.000Z",
             "author": {
                 "name": "EtomicBomb",
