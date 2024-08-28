@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108208?u=a2a5b1195abe3e951d26672c75d73ca8ff83d033&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">So it can properly compare <code class=\"notranslate\">other</code> with <code class=\"notranslate\">itself</code>, and remove the comparison of type, scale, limit &amp; precision.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because better implementation suggested on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2484099653\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52699\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52699/hovercard\" href=\"https://github.com/rails/rails/pull/52699\">#52699</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes  <code class=\"notranslate\">TimeZoneConverter#==</code> method to make it symmetric.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/52726",
+            "title": "[#52699] Update `TimeZoneConverter#==` method to make it symmetric",
+            "date_modified": "2024-08-28T01:22:16.000Z",
+            "date_published": "2024-08-28T01:22:07.000Z",
+            "author": {
+                "name": "ruyrocha",
+                "url": "https://github.com/ruyrocha"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3304533?u=1b24771a82866fe93815749790acc6c1ef4093fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2490401573\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52724\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52724/hovercard\" href=\"https://github.com/rails/rails/issues/52724\">#52724</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes</p>\n<ul dir=\"auto\">\n<li>active_storage_overview.md</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52725",
             "title": "Fix #52724 Active Storage Overview documentation to promote use of Rails.application.credentials and better bucket names",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "ghiculescu",
                 "url": "https://github.com/ghiculescu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Problem:</p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc/hovercard\" href=\"https://github.com/rails/rails/commit/f6c0a35b1b8b4fb4d033aa6c09c4efaaf6652bdc\"><tt>f6c0a35</tt></a> changed <code class=\"notranslate\">human_attribute_name</code> to raise error if <code class=\"notranslate\">raise_on_missing_translations</code> is <code class=\"notranslate\">true</code>. This change had a major impact on existing applications (i.e., too many missing translation errors).</p>\n<p dir=\"auto\">Solution:</p>\n<p dir=\"auto\">Allow each model to decide whether to raise an error on missing translations.</p>",
-            "url": "https://github.com/rails/rails/pull/52495",
-            "title": "Enable raising an error for missing translations on a per-model basis",
-            "date_modified": "2024-08-22T00:40:47.000Z",
-            "date_published": "2024-08-03T02:50:43.000Z",
-            "author": {
-                "name": "shouichi",
-                "url": "https://github.com/shouichi"
             }
         }
     ]
