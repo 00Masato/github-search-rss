@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1606434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support the following:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"enum Foo {\n    #[default]\n    Bar {\n        x: Option&lt;i32&gt;,\n        y: Option&lt;i32&gt;,\n    },\n    Baz,\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">enum</span> <span class=\"pl-smi\">Foo</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>default<span class=\"pl-kos\">]</span></span>\n    <span class=\"pl-v\">Bar</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-c1\">x</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n        <span class=\"pl-c1\">y</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-v\">Baz</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/estebank/rfcs/blob/derive-default-enum-with-fields/text/0000-derive-default-enum-with-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3683",
             "title": "`#[derive(Default)]` on enum variants with fields",
-            "date_modified": "2024-08-26T23:19:00.000Z",
+            "date_modified": "2024-08-28T23:32:43.000Z",
             "date_published": "2024-08-25T18:59:16.000Z",
             "author": {
                 "name": "estebank",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support restricting implementation of individual methods within traits, as an<br>\nextension of the restriction mechanism defined in<br>\n<a href=\"https://rust-lang.github.io/rfcs/3323-restrictions.html\" rel=\"nofollow\">RFC 3323</a>.</p>\n<p dir=\"auto\">This makes it possible, for instance, to define a trait that any crate can<br>\nimplement, but disallow overriding one of the trait's methods.</p>\n<p dir=\"auto\">This was inspired in the course of writing another RFC defining a trait, which needed precisely this feature of restricting overrides of the trait's method. I separated out this feature as its own RFC, since it's independently useful for various other purposes, and since it should be available to any crate and not just the standard library.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/final/text/3678-trait-method-impl-restrictions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3678",
             "title": "Trait method impl restrictions",
-            "date_modified": "2024-08-28T20:36:45.000Z",
+            "date_modified": "2024-08-29T00:00:13.000Z",
             "date_published": "2024-08-13T19:51:41.000Z",
             "author": {
                 "name": "joshtriplett",
