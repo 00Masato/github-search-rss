@@ -171,17 +171,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19580458?u=1884c67cfdf07c9cdcd4edbe3532aa770aba55af&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/max-niederman/rust-rfcs/blob/guard-patterns/text/3637-guard-patterns.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3637",
-            "title": "Guard Patterns",
-            "date_modified": "2024-09-04T15:46:07.000Z",
-            "date_published": "2024-05-15T07:03:42.000Z",
-            "author": {
-                "name": "max-niederman",
-                "url": "https://github.com/max-niederman"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2289380504\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3632\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3632/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3632\">#3632</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-static/text/0000-externally-definable-statics.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2311212266\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/125418\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/125418/hovercard\" href=\"https://github.com/rust-lang/rust/issues/125418\">rust-lang/rust#125418</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3635",
             "title": "[RFC] externally definable statics",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "GuillaumeGomez",
                 "url": "https://github.com/GuillaumeGomez"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/fn-body-blocks/text/3629-fn-body-blocks.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3629",
+            "title": "Function body blocks",
+            "date_modified": "2024-05-16T02:20:15.000Z",
+            "date_published": "2024-05-07T08:42:43.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
             }
         }
     ]
