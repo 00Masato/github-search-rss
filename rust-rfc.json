@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20070360?u=c5051b99b45e27910ed27f9b2145cd90e8c3d717&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io</p>\n<p dir=\"auto\">A big thank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/woodruffw/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/woodruffw\">@woodruffw</a> for co-authoring, providing prior art through PyPi's implementation, and all of the expert advice. 🙏</p>\n<p dir=\"auto\"><a href=\"https://github.com/mdtro/rfcs/blob/mdtro/trusted-publishing-cratesio/text/3691-trusted-publishing-cratesio.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3691",
+            "title": "Trusted Publishing Support on Crates.io",
+            "date_modified": "2024-09-10T18:00:26.000Z",
+            "date_published": "2024-09-10T17:35:19.000Z",
+            "author": {
+                "name": "mdtro",
+                "url": "https://github.com/mdtro"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Adds the builtin types <code class=\"notranslate\">u&lt;N&gt;</code> and <code class=\"notranslate\">i&lt;N&gt;</code>, allowing integers with an arbitrary size in bits.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/generic-integers-v2/text/0000-generic-integers.md\">Rendered</a></p>\n<h2 dir=\"auto\">Details</h2>\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"374716653\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2581\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2581/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2581\">#2581</a>, which was previously postponed. A lot has happened since then, and there has been general support for this change from a lot of different people. It's time.</p>\n<p dir=\"auto\">There are a few key differences from the previous RFC, but I trust that you can read.</p>\n<h2 dir=\"auto\">Thanks</h2>\n<p dir=\"auto\">Thank you to everyone who responded to the <a href=\"https://internals.rust-lang.org/t/pre-rfc-generic-integers-v2/21326\" rel=\"nofollow\">pre-RFC</a> on Internals with feedback.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3686",
             "title": "Generic Integers V2: It's Time",
@@ -209,17 +220,6 @@
             "title": "Function body blocks",
             "date_modified": "2024-05-16T02:20:15.000Z",
             "date_published": "2024-05-07T08:42:43.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow the syntax <code class=\"notranslate\">async T</code> and <code class=\"notranslate\">gen T</code> as types, equivalent to<br>\n<code class=\"notranslate\">impl Future&lt;Output = T&gt;</code> and <code class=\"notranslate\">impl Iterator&lt;Item = T&gt;</code> respectively. Accept<br>\nthem anywhere <code class=\"notranslate\">impl Trait</code> can appear.</p>\n<p dir=\"auto\">This RFC was inspired by a few different needs.</p>\n<p dir=\"auto\">First, writing large numbers of functions that manipulate iterators or futures.<br>\nHaving a shorthand for the type makes function signatures much clearer.</p>\n<p dir=\"auto\">And second, providing one part of a general solution that gives people the<br>\nbenefits of <code class=\"notranslate\">async fn</code> in all contexts, and for new constructs like <code class=\"notranslate\">gen</code>.</p>\n<p dir=\"auto\">Co-authored-by: Eric Holk</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/async-gen-types/text/3628-async-gen-types.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3628",
-            "title": "`async T` and `gen T` types",
-            "date_modified": "2024-07-19T22:41:16.000Z",
-            "date_published": "2024-05-07T08:33:00.000Z",
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
