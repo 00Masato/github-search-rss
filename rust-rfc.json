@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3757567?u=da6a6ffd479943d5ba42f5652320c26aa649ca18&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As discussed <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/131828-t-compiler/topic/--print.20std-support\" rel=\"nofollow\">on Zulip</a>, this RFC proposes adding a new argument for <code class=\"notranslate\">rustc --print</code> that acts as the single source of truth for whether a target supports std.</p>\n<p dir=\"auto\"><a href=\"https://github.com/adamgemmell/rfcs/blob/dev/adagem01/std-supported/text/3693-print-std-support.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3693",
             "title": "Expose std support via --print",
-            "date_modified": "2024-09-12T18:54:32.000Z",
+            "date_modified": "2024-09-12T19:57:30.000Z",
             "date_published": "2024-09-12T15:59:32.000Z",
             "author": {
                 "name": "adamgemmell",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Adds the builtin types <code class=\"notranslate\">u&lt;N&gt;</code> and <code class=\"notranslate\">i&lt;N&gt;</code>, allowing integers with an arbitrary size in bits.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/generic-integers-v2/text/0000-generic-integers.md\">Rendered</a></p>\n<h2 dir=\"auto\">Details</h2>\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"374716653\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2581\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2581/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2581\">#2581</a>, which was previously postponed. A lot has happened since then, and there has been general support for this change from a lot of different people. It's time.</p>\n<p dir=\"auto\">There are a few key differences from the previous RFC, but I trust that you can read.</p>\n<h2 dir=\"auto\">Thanks</h2>\n<p dir=\"auto\">Thank you to everyone who responded to the <a href=\"https://internals.rust-lang.org/t/pre-rfc-generic-integers-v2/21326\" rel=\"nofollow\">pre-RFC</a> on Internals with feedback.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3686",
             "title": "Generic Integers V2: It's Time",
-            "date_modified": "2024-09-12T07:06:34.000Z",
+            "date_modified": "2024-09-12T19:54:42.000Z",
             "date_published": "2024-09-01T19:36:15.000Z",
             "author": {
                 "name": "clarfonthey",
