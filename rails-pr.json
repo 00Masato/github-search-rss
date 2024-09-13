@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52697.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2483844263\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52697\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52697/hovercard\" href=\"https://github.com/rails/rails/issues/52697\">#52697</a></p>\n<p dir=\"auto\"><code class=\"notranslate\">prerecord</code> is where, when tests are run in verbose mode, the name of the test is printed. Unless we call this test runs are</p>\n<p dir=\"auto\">This deviates from the vanilla minitest behaviour, which calls prerecord before tests are run even for parallel executors, which can result in interleaved output. We don't want this as it makes it impossible to associate the time or success of a test back to which test is responsible.</p>\n<p dir=\"auto\">Instead this calls <code class=\"notranslate\">prerecord</code> after the test has come back and immediately before calling record while holding a mutex, to ensure the correct time is associated with the correct test.</p>\n<p dir=\"auto\">I also considered continuing to not call <code class=\"notranslate\">prerecord</code> and <a href=\"https://github.com/rails/rails/compare/main...jhawthorn:rails:prerecorded_option2\">instead letting the reporter class deal with it</a> but I think this PRs approach is cleaner.</p>\n<p dir=\"auto\"><strong>Before</strong></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"0.00 s = .\n0.00 s = .\n0.00 s = .\"><pre class=\"notranslate\"><code class=\"notranslate\">0.00 s = .\n0.00 s = .\n0.00 s = .\n</code></pre></div>\n<p dir=\"auto\"><strong>After</strong></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"CachedViewRenderTest#test_render_partial_collection_as_by_symbol = 0.17 s = .\nLazyViewRenderTest#test_render_partial_collection_as_by_symbol = 0.18 s = .\nFrozenStringLiteralEnabledViewRenderTest#test_render_partial_collection_as_by_symbol = 0.17 s = .\"><pre class=\"notranslate\"><code class=\"notranslate\">CachedViewRenderTest#test_render_partial_collection_as_by_symbol = 0.17 s = .\nLazyViewRenderTest#test_render_partial_collection_as_by_symbol = 0.18 s = .\nFrozenStringLiteralEnabledViewRenderTest#test_render_partial_collection_as_by_symbol = 0.17 s = .\n</code></pre></div>",
+            "url": "https://github.com/rails/rails/pull/52917",
+            "title": "Call prerecord in test parallelization",
+            "date_modified": "2024-09-13T20:52:36.000Z",
+            "date_published": "2024-09-13T20:52:32.000Z",
+            "author": {
+                "name": "jhawthorn",
+                "url": "https://github.com/jhawthorn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background / Detail</h3>\n<p dir=\"auto\">Adds support to use the PostgreSQL option <code class=\"notranslate\">IF NOT EXISTS</code> when adding enum values via <code class=\"notranslate\">add_enum_value</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/52916",
             "title": "Add if_not_exists option to add_enum_value",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "andrewn617",
                 "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/561109?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The comment in the cookies documentation references a different field than the example below. Align them.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/52793",
-            "title": "[ci skip] Fix a documentation name mismatch in cookies.rb",
-            "date_modified": "2024-09-13T19:56:29.000Z",
-            "date_published": "2024-09-04T08:11:14.000Z",
-            "author": {
-                "name": "lwassermann",
-                "url": "https://github.com/lwassermann"
             }
         }
     ]
