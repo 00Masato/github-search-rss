@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Which means we should not generate Sprockets code any more.</p>",
             "url": "https://github.com/rails/rails/pull/52918",
             "title": "Action Text generator can now rely on Propshaft",
-            "date_modified": "2024-09-13T22:20:35.000Z",
+            "date_modified": "2024-09-13T23:41:25.000Z",
             "date_published": "2024-09-13T21:41:18.000Z",
             "author": {
                 "name": "dhh",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Combine <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2352177495\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52122\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52122/hovercard\" href=\"https://github.com/rails/rails/pull/52122\">#52122</a> and fix the remaining failures for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2520749172\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52887\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52887/hovercard\" href=\"https://github.com/rails/rails/pull/52887\">#52887</a>.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a></p>",
             "url": "https://github.com/rails/rails/pull/52899",
             "title": "Fix remaining tests for propshaft",
-            "date_modified": "2024-09-13T17:10:06.000Z",
+            "date_modified": "2024-09-13T23:44:06.000Z",
             "date_published": "2024-09-12T14:45:41.000Z",
             "author": {
                 "name": "zzak",
@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">So remove the -a option and all generated code for sprockets. Sprockets will remain an option for existing applications, though.</p>",
             "url": "https://github.com/rails/rails/pull/52887",
             "title": "No new apps should be started with sprockets",
-            "date_modified": "2024-09-12T14:27:24.000Z",
+            "date_modified": "2024-09-13T23:46:42.000Z",
             "date_published": "2024-09-11T20:53:51.000Z",
             "author": {
                 "name": "dhh",
