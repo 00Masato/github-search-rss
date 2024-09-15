@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds <code class=\"notranslate\">resolver.feature-unification</code> to <code class=\"notranslate\">.cargo/config.toml</code> to allow workspace unfication (cargo-workspace-hack) or per-package unification (<code class=\"notranslate\">cargo hack</code>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/feature-unification/text/3692-feature-unification.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3692",
             "title": "RFC: Give users control over feature unification",
-            "date_modified": "2024-09-14T15:44:59.000Z",
+            "date_modified": "2024-09-15T17:50:05.000Z",
             "date_published": "2024-09-11T22:22:19.000Z",
             "author": {
                 "name": "epage",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20070360?u=c5051b99b45e27910ed27f9b2145cd90e8c3d717&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io</p>\n<p dir=\"auto\">A big thank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/woodruffw/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/woodruffw\">@woodruffw</a> for co-authoring, providing prior art through PyPi's implementation, and all of the expert advice. 🙏</p>\n<p dir=\"auto\"><a href=\"https://github.com/mdtro/rfcs/blob/mdtro/trusted-publishing-cratesio/text/3691-trusted-publishing-cratesio.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3691",
             "title": "Trusted Publishing Support on Crates.io",
-            "date_modified": "2024-09-15T16:55:57.000Z",
+            "date_modified": "2024-09-15T17:27:05.000Z",
             "date_published": "2024-09-10T17:35:19.000Z",
             "author": {
                 "name": "mdtro",
