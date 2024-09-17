@@ -6,10 +6,10 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13556931?u=7186d0ea4b8b8f8a9e8dcc9520705652b157e5d9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes allowing boolean literals as <code class=\"notranslate\">cfg</code> predicates, e.g. <code class=\"notranslate\">cfg(true)</code> and <code class=\"notranslate\">cfg(false)</code>.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/clubby789/rfcs/blob/cfg-boolean-literal/text/0000-cfg_boolean_literal.md\">Rendered</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13556931?u=7186d0ea4b8b8f8a9e8dcc9520705652b157e5d9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes allowing boolean literals as <code class=\"notranslate\">cfg</code> predicates, e.g. <code class=\"notranslate\">cfg(true)</code> and <code class=\"notranslate\">cfg(false)</code>.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/clubby789/rfcs/blob/cfg-boolean-literal/text/3695-cfg_boolean_literal.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3695",
             "title": "RFC: Allow boolean literals as `cfg` predicates",
-            "date_modified": "2024-09-16T21:49:17.000Z",
+            "date_modified": "2024-09-17T10:09:23.000Z",
             "date_published": "2024-09-16T14:02:39.000Z",
             "author": {
                 "name": "clubby789",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3757567?u=da6a6ffd479943d5ba42f5652320c26aa649ca18&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As discussed <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/131828-t-compiler/topic/--print.20std-support\" rel=\"nofollow\">on Zulip</a>, this RFC proposes adding a new argument for <code class=\"notranslate\">rustc --print</code> that acts as the single source of truth for whether a target supports std.</p>\n<p dir=\"auto\"><a href=\"https://github.com/adamgemmell/rfcs/blob/dev/adagem01/std-supported/text/3693-print-std-support.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3693",
             "title": "Expose std support via --print",
-            "date_modified": "2024-09-13T16:56:12.000Z",
+            "date_modified": "2024-09-17T10:09:57.000Z",
             "date_published": "2024-09-12T15:59:32.000Z",
             "author": {
                 "name": "adamgemmell",
