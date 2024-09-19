@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds <code class=\"notranslate\">resolver.feature-unification</code> to <code class=\"notranslate\">.cargo/config.toml</code> to allow workspace unfication (cargo-workspace-hack) or per-package unification (<code class=\"notranslate\">cargo hack</code>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/feature-unification/text/3692-feature-unification.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3692",
             "title": "RFC: Give users control over feature unification",
-            "date_modified": "2024-09-19T20:52:06.000Z",
+            "date_modified": "2024-09-19T21:43:10.000Z",
             "date_published": "2024-09-11T22:22:19.000Z",
             "author": {
                 "name": "epage",
