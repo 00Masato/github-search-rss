@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many crates support deriving their traits with <code class=\"notranslate\">derive(Trait)</code>. Today, this<br>\nrequires defining proc macros, in a separate crate, typically with several<br>\nadditional dependencies adding substantial compilation time, and typically<br>\nguarded by a feature that users need to remember to enable.</p>\n<p dir=\"auto\">However, many common cases of derives don't require any more power than an<br>\nordinary <code class=\"notranslate\">macro_rules!</code> macro. Supporting these common cases would allow many<br>\ncrates to avoid defining proc macros, reduce dependencies and compilation time,<br>\nand provide these macros unconditionally without requiring the user to enable a<br>\nfeature.</p>\n<p dir=\"auto\">I've reviewed several existing proc-macro-based derives in the ecosystem, and<br>\nit appears that many would be able to use this feature to avoid needing proc<br>\nmacros at all.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/declarative-derive-macros/text/3698-declarative-derive-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3698",
             "title": "Declarative `macro_rules!` derive macros",
-            "date_modified": "2024-09-21T05:30:59.000Z",
+            "date_modified": "2024-09-21T06:50:45.000Z",
             "date_published": "2024-09-21T01:51:14.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many crates provide attribute macros. Today, this requires defining proc<br>\nmacros, in a separate crate, typically with several additional dependencies<br>\nadding substantial compilation time, and typically guarded by a feature that<br>\nusers need to remember to enable.</p>\n<p dir=\"auto\">However, many common cases of attribute macros don't require any more power<br>\nthan an ordinary <code class=\"notranslate\">macro_rules!</code> macro. Supporting these common cases would<br>\nallow many crates to avoid defining proc macros, reduce dependencies and<br>\ncompilation time, and provide these macros unconditionally without requiring a<br>\nthe user to enable a feature.</p>\n<p dir=\"auto\">I've reviewed several existing proc-macro-based attributes in the ecosystem,<br>\nand it appears that many would be able to use this feature to avoid needing<br>\nproc macros at all.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/declarative-attribute-macros.md/text/3697-declarative-attribute-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3697",
             "title": "Declarative `macro_rules!` attribute macros",
-            "date_modified": "2024-09-21T04:28:21.000Z",
+            "date_modified": "2024-09-21T06:53:17.000Z",
             "date_published": "2024-09-21T01:15:27.000Z",
             "author": {
                 "name": "joshtriplett",
