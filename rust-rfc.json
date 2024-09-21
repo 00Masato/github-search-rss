@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many crates provide attribute macros. Today, this requires defining proc<br>\nmacros, in a separate crate, typically with several additional dependencies<br>\nadding substantial compilation time, and typically guarded by a feature that<br>\nusers need to remember to enable.</p>\n<p dir=\"auto\">However, many common cases of attribute macros don't require any more power<br>\nthan an ordinary <code class=\"notranslate\">macro_rules!</code> macro. Supporting these common cases would<br>\nallow many crates to avoid defining proc macros, reduce dependencies and<br>\ncompilation time, and provide these macros unconditionally without requiring a<br>\nthe user to enable a feature.</p>\n<p dir=\"auto\">I've reviewed several existing proc-macro-based attributes in the ecosystem,<br>\nand it appears that many would be able to use this feature to avoid needing<br>\nproc macros at all.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/declarative-attribute-macros.md/text/3697-declarative-attribute-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3697",
             "title": "Declarative `macro_rules!` attribute macros",
-            "date_modified": "2024-09-21T02:37:28.000Z",
+            "date_modified": "2024-09-21T03:39:54.000Z",
             "date_published": "2024-09-21T01:15:27.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13556931?u=7186d0ea4b8b8f8a9e8dcc9520705652b157e5d9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes allowing boolean literals as <code class=\"notranslate\">cfg</code> predicates, e.g. <code class=\"notranslate\">cfg(true)</code> and <code class=\"notranslate\">cfg(false)</code>.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/clubby789/rfcs/blob/cfg-boolean-literal/text/3695-cfg_boolean_literal.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3695",
             "title": "RFC: Allow boolean literals as `cfg` predicates",
-            "date_modified": "2024-09-20T21:37:03.000Z",
+            "date_modified": "2024-09-21T03:08:57.000Z",
             "date_published": "2024-09-16T14:02:39.000Z",
             "author": {
                 "name": "clubby789",
