@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many crates support deriving their traits with <code class=\"notranslate\">derive(Trait)</code>. Today, this<br>\nrequires defining proc macros, in a separate crate, typically with several<br>\nadditional dependencies adding substantial compilation time, and typically<br>\nguarded by a feature that users need to remember to enable.</p>\n<p dir=\"auto\">However, many common cases of derives don't require any more power than an<br>\nordinary <code class=\"notranslate\">macro_rules!</code> macro. Supporting these common cases would allow many<br>\ncrates to avoid defining proc macros, reduce dependencies and compilation time,<br>\nand provide these macros unconditionally without requiring the user to enable a<br>\nfeature.</p>\n<p dir=\"auto\">I've reviewed several existing proc-macro-based derives in the ecosystem, and<br>\nit appears that many would be able to use this feature to avoid needing proc<br>\nmacros at all.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/declarative-derive-macros/text/3698-declarative-derive-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3698",
             "title": "Declarative `macro_rules!` derive macros",
-            "date_modified": "2024-09-21T11:46:46.000Z",
+            "date_modified": "2024-09-21T21:44:39.000Z",
             "date_published": "2024-09-21T01:51:14.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many crates provide attribute macros. Today, this requires defining proc<br>\nmacros, in a separate crate, typically with several additional dependencies<br>\nadding substantial compilation time, and typically guarded by a feature that<br>\nusers need to remember to enable.</p>\n<p dir=\"auto\">However, many common cases of attribute macros don't require any more power<br>\nthan an ordinary <code class=\"notranslate\">macro_rules!</code> macro. Supporting these common cases would<br>\nallow many crates to avoid defining proc macros, reduce dependencies and<br>\ncompilation time, and provide these macros unconditionally without requiring a<br>\nthe user to enable a feature.</p>\n<p dir=\"auto\">I've reviewed several existing proc-macro-based attributes in the ecosystem,<br>\nand it appears that many would be able to use this feature to avoid needing<br>\nproc macros at all.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/declarative-attribute-macros.md/text/3697-declarative-attribute-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3697",
             "title": "Declarative `macro_rules!` attribute macros",
-            "date_modified": "2024-09-21T11:58:42.000Z",
+            "date_modified": "2024-09-21T21:23:00.000Z",
             "date_published": "2024-09-21T01:15:27.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -138,17 +138,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19721361?u=9383d7fb7acb50acf57b84096363ae0b522d78ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is to enable <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/266220-t-rustdoc/topic/.22linking.22.20separate.20rustdoc.20outputs/near/434858884\" rel=\"nofollow\">merging</a> cross-crate information (like the search index, index.html, source files index) from separate output directories, so that rustdoc can run in parallel in non-cargo build systems.</p>\n<p dir=\"auto\"><a href=\"https://rustc-dev-guide.rust-lang.org/rustdoc.html#multiple-runs-same-output-directory\" rel=\"nofollow\">Currently</a>, rustdoc updates these cross-crate files with the information from a new crate by reading the old version, adding the information for the current crate, and writing the same file back. This causes issues in build systems that disallow multiple build actions targeting the same output files. Cargo supports cross-crate information because it doesn't have this restriction, <a href=\"https://buck2.build/docs/api/rules/#rust_library\" rel=\"nofollow\">Buck2</a> and <a href=\"https://bazelbuild.github.io/rules_rust/rust_doc.html\" rel=\"nofollow\">Bazel</a> do not support cross-crate information, and Fuchsia has a doc step that runs rustdoc serially on <a href=\"https://fuchsia-docs.firebaseapp.com/rust/rustdoc_index/\" rel=\"nofollow\">2700 crates</a>.</p>\n<p dir=\"auto\">Supporting parallel rustdoc with CCI as a native step in Buck2, <a href=\"https://github.com/bazelbuild/rules_rust/issues/1837\" data-hovercard-type=\"issue\" data-hovercard-url=\"/bazelbuild/rules_rust/issues/1837/hovercard\">Bazel</a>, and <a href=\"https://fuchsia.dev/fuchsia-src/development/build/build_system/intro\" rel=\"nofollow\">GN (Fuchsia + Chrome)</a> would require mergable cross-crate information, which is what this proposal is about. It adds new flags, <code class=\"notranslate\">--include-info-json</code>, <code class=\"notranslate\">--write-info-json</code>, <code class=\"notranslate\">--merge=none|read-write|write-only</code> and <code class=\"notranslate\">--include-rendered-docs</code>, to opt-in to these new features.</p>\n<p dir=\"auto\"><a href=\"https://github.com/EtomicBomb/rust-rfcs/blob/master/text/0000-mergeable-rustdoc-cross-crate-info.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3662",
-            "title": "Mergeable rustdoc cross-crate info",
-            "date_modified": "2024-08-31T18:48:53.000Z",
-            "date_published": "2024-06-20T20:44:52.000Z",
-            "author": {
-                "name": "EtomicBomb",
-                "url": "https://github.com/EtomicBomb"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Primitive representations on enums now accept type aliases, meaning that in addition to primitives like <code class=\"notranslate\">#[repr(u32)]</code>, <code class=\"notranslate\">#[repr(tag = core::ffi::c_int)]</code> and <code class=\"notranslate\">#[repr(tag = my_type)]</code> are now accepted.</p>\n<p dir=\"auto\">Internals discussion: <a href=\"https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-type-aliases-in-repr/20956</a><br>\nLast comment on RFC under first version (<code class=\"notranslate\">self::</code>): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2354411818\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3659\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3659/hovercard?comment_id=2171268028&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3659#issuecomment-2171268028\">#3659 (comment)</a><br>\nLast comment on RFC under second version (<code class=\"notranslate\">type = ...</code>): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2354411818\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3659\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3659/hovercard?comment_id=2181588275&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3659#issuecomment-2181588275\">#3659 (comment)</a><br>\nLast comment on RFC under third version (<code class=\"notranslate\">discriminant = …</code>): <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2354411818\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3659\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3659/hovercard?comment_id=2221105082&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3659#issuecomment-2221105082\">#3659 (comment)</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/repr-type-aliases/text/0000-repr-type-aliases.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3659",
             "title": "`repr(tag = ...)` for type aliases",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "estebank",
                 "url": "https://github.com/estebank"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2289380504\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3632\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3632/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3632\">#3632</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/extern-static/text/0000-externally-definable-statics.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2311212266\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/125418\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/125418/hovercard\" href=\"https://github.com/rust-lang/rust/issues/125418\">rust-lang/rust#125418</a></li>\n</ul>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3635",
+            "title": "[RFC] externally definable statics",
+            "date_modified": "2024-05-23T10:24:48.000Z",
+            "date_published": "2024-05-13T13:49:36.000Z",
+            "author": {
+                "name": "m-ou-se",
+                "url": "https://github.com/m-ou-se"
             }
         }
     ]
