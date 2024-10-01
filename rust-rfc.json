@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We have <code class=\"notranslate\">From</code> for infallible, <code class=\"notranslate\">TryFrom</code> for checked, and this proposes <code class=\"notranslate\">WrappingFrom</code> for modular conversions.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/wrapping-from/text/3703-wrapping-from.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3703",
             "title": "`num::WrappingFrom` trait for conversions between integers",
-            "date_modified": "2024-10-01T20:58:48.000Z",
+            "date_modified": "2024-10-01T22:13:38.000Z",
             "date_published": "2024-10-01T05:08:31.000Z",
             "author": {
                 "name": "scottmcm",
