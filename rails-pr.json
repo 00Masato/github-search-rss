@@ -6,6 +6,39 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Propshaft 1.1.0 got released, which (obviously) changed the version and moved some routes around.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Failure:\nRails::Command::RoutesTest#test_rails_routes_with_expanded_option [test/commands/routes_test.rb:249]:\n--- expected\n+++ actual\n@@ -3,7 +3,7 @@\n Verb              |\n URI               | /assets\n Controller#Action | Propshaft::Server\n-Source Location   | propshaft (1.0.0) lib/propshaft/railtie.rb:43\n+Source Location   | propshaft (1.1.0) lib/propshaft/railtie.rb:47\n --[ Route 2 ]--------------\n Prefix            | cart\n Verb              | GET\"><pre class=\"notranslate\"><code class=\"notranslate\">Failure:\nRails::Command::RoutesTest#test_rails_routes_with_expanded_option [test/commands/routes_test.rb:249]:\n--- expected\n+++ actual\n@@ -3,7 +3,7 @@\n Verb              |\n URI               | /assets\n Controller#Action | Propshaft::Server\n-Source Location   | propshaft (1.0.0) lib/propshaft/railtie.rb:43\n+Source Location   | propshaft (1.1.0) lib/propshaft/railtie.rb:47\n --[ Route 2 ]--------------\n Prefix            | cart\n Verb              | GET\n</code></pre></div>\n<p dir=\"auto\">I don't think it's easily available in that context where a route is actually defined, so just skip checking that one specific line.</p>\n<p dir=\"auto\">This is visible in <code class=\"notranslate\">rack-head</code> test that probably remove the lockfile (it's allowed to fail though). <a href=\"https://buildkite.com/rails/rails/builds/112060#0192480d-dbb0-4ead-9cf5-5451af14cae6\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/112060#0192480d-dbb0-4ead-9cf5-5451af14cae6</a></p>",
+            "url": "https://github.com/rails/rails/pull/53136",
+            "title": "Assert less specifically against the propshaft route",
+            "date_modified": "2024-10-01T14:52:00.000Z",
+            "date_published": "2024-10-01T14:51:55.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Make it clear that it is to solve the problem of megamorphic partials and that it's not suggested to be used as a default and on all partials.</p>",
+            "url": "https://github.com/rails/rails/pull/53135",
+            "title": "Clarify the use case for Strict Locals",
+            "date_modified": "2024-10-01T14:57:23.000Z",
+            "date_published": "2024-10-01T14:50:22.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280379519\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51744\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51744/hovercard\" href=\"https://github.com/rails/rails/pull/51744\">#51744</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53081.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2554140709\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53081\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53081/hovercard\" href=\"https://github.com/rails/rails/issues/53081\">#53081</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #53088.\">Closes</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2554426600\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53088\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53088/hovercard\" href=\"https://github.com/rails/rails/pull/53088\">#53088</a></p>\n<p dir=\"auto\">While the yielded type wasn't specified and we could always return the more efficient format, there's too many code out there that depend on this behavior.</p>\n<p dir=\"auto\">Ultimately, queries done with <code class=\"notranslate\">exec_query</code> are rare, as long as Active Record itself use the more efficient path to instantiate records, most of the gain is obtained.</p>",
+            "url": "https://github.com/rails/rails/pull/53134",
+            "title": "ActiveRecord::Result#each to yield regular Hash",
+            "date_modified": "2024-10-01T14:23:31.000Z",
+            "date_published": "2024-10-01T14:20:44.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's commonly used for normalization but there is a dedicated method in AR for that. Switch it out to an example that doesn't perform normalization, and suggest <code class=\"notranslate\">normalizes</code> if the user wants to do that.</p>\n<p dir=\"auto\">I'm don't know how orthodox it is to mention ActiveRecord in ActiveModel docs. There are at least some matches right now already.</p>",
             "url": "https://github.com/rails/rails/pull/53133",
             "title": "Promote `normalizes` in `before_validation` docs",
@@ -64,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The ruby image installs ruby for the <code class=\"notranslate\">vscode</code> user (which is created in the debian base image). VSCode uses this user by default. However, other dev container implementations may not do that, in which case the dev container may open as root where ruby is not available.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Explicitly set the <code class=\"notranslate\">remoteUser</code> to <code class=\"notranslate\">vscode</code> in <code class=\"notranslate\">devcontainer.json</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53115",
             "title": "Explicitly set the user to vscode in Dev Container",
-            "date_modified": "2024-09-30T23:21:15.000Z",
+            "date_modified": "2024-10-01T14:24:16.000Z",
             "date_published": "2024-09-30T13:47:54.000Z",
             "author": {
                 "name": "andrewn617",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Highlight that non Active Record backed models can be used with <code class=\"notranslate\">form_with</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Expand section on creating forms with model objects by highlighting non Active Record backed models can be used with <code class=\"notranslate\">form_with</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53070",
-            "title": "Guides: Improve Action View Form Helpers [ci skip]",
-            "date_modified": "2024-09-27T19:22:47.000Z",
-            "date_published": "2024-09-27T14:53:48.000Z",
-            "author": {
-                "name": "stevepolitodesign",
-                "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26832131?u=f49f2160f6459b77ab65019fc2be572f3628f02c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><code class=\"notranslate\">ActiveStorage</code> routes customization documentation is not complete.</p>\n\n<p dir=\"auto\">This Pull Request has been created in order to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48915.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1843653413\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48915\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48915/hovercard\" href=\"https://github.com/rails/rails/issues/48915\">#48915</a> .</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request introduces the following changes:</p>\n<ol dir=\"auto\">\n<li>Expands on the documentation for <a href=\"https://guides.rubyonrails.org/configuring.html#config-active-storage-routes-prefix\" rel=\"nofollow\">routes_prefix</a> by adding in a new tip.</li>\n<li>Creates a new test case proving that the newly added tip is working as expected.</li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53069",
-            "title": "Fix #48915: Expand ActiveStorage routing customization documentation",
-            "date_modified": "2024-09-27T13:57:48.000Z",
-            "date_published": "2024-09-27T13:57:43.000Z",
-            "author": {
-                "name": "Shannarra",
-                "url": "https://github.com/Shannarra"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Tested this over <a href=\"https://github.com/zzak/rails-probot-migration\">here</a>, but I feel pretty confident it keeps most of the desired behavior.</p>\n<h2 dir=\"auto\">Auto-label PRs</h2>\n<ul dir=\"auto\">\n<li>When a Pull request is created or updated, add a label based on file paths changed</li>\n<li>Labels will update if there is a change to the PR, e.g. rebase, etc</li>\n<li>This is the only job (unfortunately) that will add a status check to a PR\n<ul dir=\"auto\">\n<li>We can roll it into an existing workflow to avoid that, and make it <code class=\"notranslate\">continue-on-error</code></li>\n</ul>\n</li>\n</ul>\n<h2 dir=\"auto\">Stale</h2>\n<ul dir=\"auto\">\n<li>Runs once a day</li>\n<li>Ignores PRs</li>\n<li>Ignore issues with \"exempt\" labels</li>\n<li>Adds \"stale\" label after 90 days with a comment</li>\n<li>Closes 1 week later with no comment</li>\n</ul>\n<h2 dir=\"auto\">Unstale</h2>\n<ul dir=\"auto\">\n<li>Triggered on update to issue or issue comment</li>\n<li>Skips if the actor is the bot itself (avoid loop from add label -&gt; unstale)</li>\n<li>Checks for \"stale\" label and removes if exists</li>\n</ul>\n<h2 dir=\"auto\">More info needed</h2>\n<ul dir=\"auto\">\n<li>Runs daily</li>\n<li>Must add \"more-info-needed\" label manually (unchanged current process)</li>\n<li>After 2 weeks of no update,</li>\n<li>Uses the \"stale\" action to instead close the issue immediately\n<ul dir=\"auto\">\n<li>TODO: remove \"more-info-needed\" label in unstale job (sorry just noticed this when opening the PR)</li>\n</ul>\n</li>\n</ul>\n<hr>\n<p dir=\"auto\">Sorry I hit submit before finishing the description.</p>\n<p dir=\"auto\">Opening this now to get some feedback, but we probably want to remove / disable the old probot before merging this.</p>\n<p dir=\"auto\">This is something I've wanted to do for a while, it gives us more control over the changes which influence the Issues team work and processes. Plus the old bot is likely running on some very outdated software, and on a physical machine someone is paying for.</p>",
-            "url": "https://github.com/rails/rails/pull/53068",
-            "title": "Migrate from rails-probot to Actions",
-            "date_modified": "2024-09-30T00:13:47.000Z",
-            "date_published": "2024-09-27T13:24:04.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
