@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5658207?u=596fe0fc2e3ea62c7c5e970efca3006eb3b81089&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">The motivation for this change is because we wish to make use of transactions in our tests but there are some databases that we don't or cannot use transactions with.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request adds a new method to <code class=\"notranslate\">TestFixtures</code>, <code class=\"notranslate\">setup_transactions</code> that allows subclasses to override and return a hash of <code class=\"notranslate\">database_name =&gt; boolean</code> to enable or disable transactions for that database. This is orthogonal to the <code class=\"notranslate\">use_transactional_tests</code> setting to disable or enable transactions for <em>all</em> connections.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mmareve/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mmareve\">@mmareve</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/vdye/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/vdye\">@vdye</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
+            "url": "https://github.com/rails/rails/pull/53139",
+            "title": "Add support for disabling transactions per database in `ActiveRecord`",
+            "date_modified": "2024-10-01T15:29:29.000Z",
+            "date_published": "2024-10-01T15:28:43.000Z",
+            "author": {
+                "name": "mjcheetham",
+                "url": "https://github.com/mjcheetham"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/245443?u=a95b823cd933875b07547e7bd1a81ae227e83603&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">rubocop -A</code> would generate false positive fixes.<br>\nAfter this change we use <code class=\"notranslate\">rubocop -a</code> instead.<br>\nThe idea is not to change semantics with RuboCop<br>\nSee <a href=\"https://docs.rubocop.org/rubocop/usage/auto_correct.html#safe-auto-correct\" rel=\"nofollow\">https://docs.rubocop.org/rubocop/usage/auto_correct.html#safe-auto-correct</a></p>",
+            "url": "https://github.com/rails/rails/pull/53138",
+            "title": "Autocorrect safely with RuboCop",
+            "date_modified": "2024-10-01T15:55:39.000Z",
+            "date_published": "2024-10-01T15:12:24.000Z",
+            "author": {
+                "name": "schmijos",
+                "url": "https://github.com/schmijos"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Propshaft 1.1.0 got released, which (obviously) changed the version and moved some routes around.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Failure:\nRails::Command::RoutesTest#test_rails_routes_with_expanded_option [test/commands/routes_test.rb:249]:\n--- expected\n+++ actual\n@@ -3,7 +3,7 @@\n Verb              |\n URI               | /assets\n Controller#Action | Propshaft::Server\n-Source Location   | propshaft (1.0.0) lib/propshaft/railtie.rb:43\n+Source Location   | propshaft (1.1.0) lib/propshaft/railtie.rb:47\n --[ Route 2 ]--------------\n Prefix            | cart\n Verb              | GET\"><pre class=\"notranslate\"><code class=\"notranslate\">Failure:\nRails::Command::RoutesTest#test_rails_routes_with_expanded_option [test/commands/routes_test.rb:249]:\n--- expected\n+++ actual\n@@ -3,7 +3,7 @@\n Verb              |\n URI               | /assets\n Controller#Action | Propshaft::Server\n-Source Location   | propshaft (1.0.0) lib/propshaft/railtie.rb:43\n+Source Location   | propshaft (1.1.0) lib/propshaft/railtie.rb:47\n --[ Route 2 ]--------------\n Prefix            | cart\n Verb              | GET\n</code></pre></div>\n<p dir=\"auto\">I don't think it's easily available in that context where a route is actually defined, so just skip checking that one specific line.</p>\n<p dir=\"auto\">This is visible in <code class=\"notranslate\">rack-head</code> test that probably remove the lockfile (it's allowed to fail though). <a href=\"https://buildkite.com/rails/rails/builds/112060#0192480d-dbb0-4ead-9cf5-5451af14cae6\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/112060#0192480d-dbb0-4ead-9cf5-5451af14cae6</a></p>",
             "url": "https://github.com/rails/rails/pull/53136",
             "title": "Assert less specifically against the propshaft route",
@@ -22,17 +44,6 @@
             "title": "Clarify the use case for Strict Locals",
             "date_modified": "2024-10-01T14:57:23.000Z",
             "date_published": "2024-10-01T14:50:22.000Z",
-            "author": {
-                "name": "byroot",
-                "url": "https://github.com/byroot"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Followup: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2280379519\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51744\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51744/hovercard\" href=\"https://github.com/rails/rails/pull/51744\">#51744</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53081.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2554140709\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53081\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53081/hovercard\" href=\"https://github.com/rails/rails/issues/53081\">#53081</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #53088.\">Closes</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2554426600\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53088\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53088/hovercard\" href=\"https://github.com/rails/rails/pull/53088\">#53088</a></p>\n<p dir=\"auto\">While the yielded type wasn't specified and we could always return the more efficient format, there's too many code out there that depend on this behavior.</p>\n<p dir=\"auto\">Ultimately, queries done with <code class=\"notranslate\">exec_query</code> are rare, as long as Active Record itself use the more efficient path to instantiate records, most of the gain is obtained.</p>",
-            "url": "https://github.com/rails/rails/pull/53134",
-            "title": "ActiveRecord::Result#each to yield regular Hash",
-            "date_modified": "2024-10-01T14:23:31.000Z",
-            "date_published": "2024-10-01T14:20:44.000Z",
             "author": {
                 "name": "byroot",
                 "url": "https://github.com/byroot"
@@ -179,17 +190,6 @@
             "author": {
                 "name": "richardboehme",
                 "url": "https://github.com/richardboehme"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53081.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2554140709\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53081\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53081/hovercard\" href=\"https://github.com/rails/rails/issues/53081\">#53081</a> (see there for the discussion).</p>",
-            "url": "https://github.com/rails/rails/pull/53088",
-            "title": "Handle hash methods for `ActiveRecord::Result` rows",
-            "date_modified": "2024-09-28T17:54:32.000Z",
-            "date_published": "2024-09-28T17:54:28.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         },
         {
