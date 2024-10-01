@@ -6,6 +6,39 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's commonly used for normalization but there is a dedicated method in AR for that. Switch it out to an example that doesn't perform normalization, and suggest <code class=\"notranslate\">normalizes</code> if the user wants to do that.</p>\n<p dir=\"auto\">I'm don't know how orthodox it is to mention ActiveRecord in ActiveModel docs. There are at least some matches right now already.</p>",
+            "url": "https://github.com/rails/rails/pull/53133",
+            "title": "Promote `normalizes` in `before_validation` docs",
+            "date_modified": "2024-10-01T12:28:09.000Z",
+            "date_published": "2024-10-01T12:28:05.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Since it is possible to correctly construct the predicate_builder on the callee side if model class and aliased table object are passed, this eliminates the need for users to construct the predicate_builder and simplifies the creation of aliased relations.</p>",
+            "url": "https://github.com/rails/rails/pull/53132",
+            "title": "Don't require `predicate_builder` to create aliased relations",
+            "date_modified": "2024-10-01T12:20:53.000Z",
+            "date_published": "2024-10-01T12:20:49.000Z",
+            "author": {
+                "name": "kamipo",
+                "url": "https://github.com/kamipo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Despite the fact that the <code class=\"notranslate\">BrowserBlocker</code> class is defined after a <code class=\"notranslate\">private</code> modifier, it is still a public constant and is included in the <a href=\"https://edgeapi.rubyonrails.org/classes/ActionController/AllowBrowser/BrowserBlocker.html\" rel=\"nofollow\">documentation</a>.</p>\n<p dir=\"auto\">To reduce the API surface area of the <code class=\"notranslate\">allow_browser</code> feature, this commit marks the class with a <code class=\"notranslate\"># :nodoc:</code> comment.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53131",
+            "title": "Make `ActionController::AllowBrowser::BrowserBlocker` private",
+            "date_modified": "2024-10-01T12:09:12.000Z",
+            "date_published": "2024-10-01T12:09:07.000Z",
+            "author": {
+                "name": "seanpdoyle",
+                "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236461?u=cd87f40664f26021ba65daabaf812a036c1f4c8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">rails new --help</code> currently shows this after <code class=\"notranslate\">[--skip-solid</code>]: <code class=\"notranslate\"># Skip Solid Cache &amp; Queue setup</code>.</p>\n<p dir=\"auto\">This PR adds a missing mention to <code class=\"notranslate\">Cable</code>.</p>\n<p dir=\"auto\">Alternatively the help message could just say <code class=\"notranslate\">Skip Solid adapters</code>.</p>",
             "url": "https://github.com/rails/rails/pull/53128",
             "title": "Mention Cable in `--skip-solid` help",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26832131?u=f49f2160f6459b77ab65019fc2be572f3628f02c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><code class=\"notranslate\">ActiveStorage</code> routes customization documentation is not complete.</p>\n\n<p dir=\"auto\">This Pull Request has been created in order to <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48915.\">resolve</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1843653413\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48915\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48915/hovercard\" href=\"https://github.com/rails/rails/issues/48915\">#48915</a> .</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request introduces the following changes:</p>\n<ol dir=\"auto\">\n<li>Expands on the documentation for <a href=\"https://guides.rubyonrails.org/configuring.html#config-active-storage-routes-prefix\" rel=\"nofollow\">routes_prefix</a> by adding in a new tip.</li>\n<li>Creates a new test case proving that the newly added tip is working as expected.</li>\n</ol>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53069",
-            "title": "Fix #48915: Expand ActiveStorage routing customization documentation",
-            "date_modified": "2024-09-27T13:57:48.000Z",
-            "date_published": "2024-09-27T13:57:43.000Z",
-            "author": {
-                "name": "Shannarra",
-                "url": "https://github.com/Shannarra"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Tested this over <a href=\"https://github.com/zzak/rails-probot-migration\">here</a>, but I feel pretty confident it keeps most of the desired behavior.</p>\n<h2 dir=\"auto\">Auto-label PRs</h2>\n<ul dir=\"auto\">\n<li>When a Pull request is created or updated, add a label based on file paths changed</li>\n<li>Labels will update if there is a change to the PR, e.g. rebase, etc</li>\n<li>This is the only job (unfortunately) that will add a status check to a PR\n<ul dir=\"auto\">\n<li>We can roll it into an existing workflow to avoid that, and make it <code class=\"notranslate\">continue-on-error</code></li>\n</ul>\n</li>\n</ul>\n<h2 dir=\"auto\">Stale</h2>\n<ul dir=\"auto\">\n<li>Runs once a day</li>\n<li>Ignores PRs</li>\n<li>Ignore issues with \"exempt\" labels</li>\n<li>Adds \"stale\" label after 90 days with a comment</li>\n<li>Closes 1 week later with no comment</li>\n</ul>\n<h2 dir=\"auto\">Unstale</h2>\n<ul dir=\"auto\">\n<li>Triggered on update to issue or issue comment</li>\n<li>Skips if the actor is the bot itself (avoid loop from add label -&gt; unstale)</li>\n<li>Checks for \"stale\" label and removes if exists</li>\n</ul>\n<h2 dir=\"auto\">More info needed</h2>\n<ul dir=\"auto\">\n<li>Runs daily</li>\n<li>Must add \"more-info-needed\" label manually (unchanged current process)</li>\n<li>After 2 weeks of no update,</li>\n<li>Uses the \"stale\" action to instead close the issue immediately\n<ul dir=\"auto\">\n<li>TODO: remove \"more-info-needed\" label in unstale job (sorry just noticed this when opening the PR)</li>\n</ul>\n</li>\n</ul>\n<hr>\n<p dir=\"auto\">Sorry I hit submit before finishing the description.</p>\n<p dir=\"auto\">Opening this now to get some feedback, but we probably want to remove / disable the old probot before merging this.</p>\n<p dir=\"auto\">This is something I've wanted to do for a while, it gives us more control over the changes which influence the Issues team work and processes. Plus the old bot is likely running on some very outdated software, and on a physical machine someone is paying for.</p>",
-            "url": "https://github.com/rails/rails/pull/53068",
-            "title": "Migrate from rails-probot to Actions",
-            "date_modified": "2024-09-30T00:13:47.000Z",
-            "date_published": "2024-09-27T13:24:04.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8252238?u=c34e53afee0a1d7e6b1a8112f8bb875c51fcd657&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As explained in the Mozilla documentation:</p>\n<blockquote>\n<p dir=\"auto\">When a user reloads the browser, the browser will send conditional requests for validating to the origin server. But it's not necessary to revalidate those kinds of static resources even when a user reloads the browser, because they're never modified. immutable tells a cache that the response is immutable while it's <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching#fresh_and_stale_based_on_age\" rel=\"nofollow\">fresh</a> and avoids those kinds of unnecessary conditional requests to the server.</p>\n</blockquote>\n<p dir=\"auto\">See: <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control</a><br>\nand <a href=\"https://www.keycdn.com/blog/cache-control-immutable\" rel=\"nofollow\">https://www.keycdn.com/blog/cache-control-immutable</a></p>\n<p dir=\"auto\">I believe it's an effective and straightforward approach to improve performance.</p>\n<p dir=\"auto\">For instance, GitHub is already using it in production.</p>\n<p dir=\"auto\">Following <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dhh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dhh\">@dhh</a>'s PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2520044020\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52883\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52883/hovercard\" href=\"https://github.com/rails/rails/pull/52883\">#52883</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53067",
-            "title": "Include the immutable directive in the cache-control header",
-            "date_modified": "2024-09-28T02:46:02.000Z",
-            "date_published": "2024-09-27T13:05:06.000Z",
-            "author": {
-                "name": "guillaumebriday",
-                "url": "https://github.com/guillaumebriday"
             }
         }
     ]
