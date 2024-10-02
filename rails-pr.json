@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236461?u=cd87f40664f26021ba65daabaf812a036c1f4c8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">rails new --help</code> currently shows this after <code class=\"notranslate\">[--skip-solid</code>]: <code class=\"notranslate\"># Skip Solid Cache &amp; Queue setup</code>.</p>\n<p dir=\"auto\">This PR adds a missing mention to <code class=\"notranslate\">Cable</code>.</p>\n<p dir=\"auto\">Alternatively the help message could just say <code class=\"notranslate\">Skip Solid adapters</code>.</p>",
             "url": "https://github.com/rails/rails/pull/53128",
             "title": "Mention Cable in `--skip-solid` help",
-            "date_modified": "2024-10-01T03:30:31.000Z",
+            "date_modified": "2024-10-02T07:58:11.000Z",
             "date_published": "2024-10-01T02:41:45.000Z",
             "author": {
                 "name": "jeromedalbert",
