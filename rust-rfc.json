@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/116025916?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC outlines the case for promoting the Rust riscv64gc-unknown-linux-gnu target to Tier-1 (without host tools) status.</p>\n<p dir=\"auto\">Shout out to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Hoverbear/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Hoverbear\">@Hoverbear</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/danielsilverstone-ct/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/danielsilverstone-ct\">@danielsilverstone-ct</a> for their support.</p>\n<p dir=\"auto\"><a href=\"https://github.com/robin-randhawa-sifive/rust-lang-rfcs/blob/promote-riscv64-unknown-linux-gnu-to-tier1-without-host-tools/text/0000-promote-riscv64gc-unknown-linux-gnu-to-tier1-without-host-tools.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3707",
             "title": "RFC: Promote riscv64gc-unknown-linux-gnu to Tier-1 (without host tools)",
-            "date_modified": "2024-10-03T15:07:34.000Z",
+            "date_modified": "2024-10-03T17:50:51.000Z",
             "date_published": "2024-10-03T13:31:03.000Z",
             "author": {
                 "name": "robin-randhawa-sifive",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We have <code class=\"notranslate\">From</code> for infallible, <code class=\"notranslate\">TryFrom</code> for checked, and this proposes <code class=\"notranslate\">WrappingFrom</code> for modular conversions.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/wrapping-from/text/3703-wrapping-from.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3703",
             "title": "`num::WrappingFrom` trait for conversions between integers",
-            "date_modified": "2024-10-02T08:39:20.000Z",
+            "date_modified": "2024-10-03T17:38:43.000Z",
             "date_published": "2024-10-01T05:08:31.000Z",
             "author": {
                 "name": "scottmcm",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds <code class=\"notranslate\">resolver.feature-unification</code> to <code class=\"notranslate\">.cargo/config.toml</code> to allow workspace unfication (cargo-workspace-hack) or per-package unification (<code class=\"notranslate\">cargo hack</code>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/feature-unification/text/3692-feature-unification.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3692",
             "title": "RFC: Give users control over feature unification",
-            "date_modified": "2024-10-03T11:15:47.000Z",
+            "date_modified": "2024-10-03T17:41:47.000Z",
             "date_published": "2024-09-11T22:22:19.000Z",
             "author": {
                 "name": "epage",
@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Adds the builtin types <code class=\"notranslate\">u&lt;N&gt;</code> and <code class=\"notranslate\">i&lt;N&gt;</code>, allowing integers with an arbitrary size in bits.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/generic-integers-v2/text/0000-generic-integers.md\">Rendered</a></p>\n<h2 dir=\"auto\">Details</h2>\n<p dir=\"auto\">This is a follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"374716653\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2581\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2581/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2581\">#2581</a>, which was previously postponed. A lot has happened since then, and there has been general support for this change from a lot of different people. It's time.</p>\n<p dir=\"auto\">There are a few key differences from the previous RFC, but I trust that you can read.</p>\n<h2 dir=\"auto\">Thanks</h2>\n<p dir=\"auto\">Thank you to everyone who responded to the <a href=\"https://internals.rust-lang.org/t/pre-rfc-generic-integers-v2/21326\" rel=\"nofollow\">pre-RFC</a> on Internals with feedback.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3686",
             "title": "Generic Integers V2: It's Time",
-            "date_modified": "2024-10-03T16:15:31.000Z",
+            "date_modified": "2024-10-03T17:08:35.000Z",
             "date_published": "2024-09-01T19:36:15.000Z",
             "author": {
                 "name": "clarfonthey",
@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1606434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow <code class=\"notranslate\">struct</code> definitions to provide default values for individual fields and<br>\nthereby allowing those to be omitted from initializers. When deriving <code class=\"notranslate\">Default</code>,<br>\nthe provided values will then be used. For example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#[derive(Default)]\nstruct Pet {\n    name: Option&lt;String&gt;, // impl Default for Pet will use Default::default() for name\n    age: i128 = 42, // impl Default for Pet will use the literal 42 for age\n}\"><pre class=\"notranslate\"><span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>derive<span class=\"pl-kos\">(</span><span class=\"pl-v\">Default</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">struct</span> <span class=\"pl-smi\">Pet</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">name</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">String</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">,</span> <span class=\"pl-c\">// impl Default for Pet will use Default::default() for name</span>\n    <span class=\"pl-c1\">age</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">i128</span> = <span class=\"pl-c1\">42</span><span class=\"pl-kos\">,</span> <span class=\"pl-c\">// impl Default for Pet will use the literal 42 for age</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/estebank/rfcs/blob/default-fields/text/0000-default-field-values.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3681",
             "title": "[RFC] Default field values",
-            "date_modified": "2024-10-03T10:00:05.000Z",
+            "date_modified": "2024-10-03T17:18:53.000Z",
             "date_published": "2024-08-22T23:46:12.000Z",
             "author": {
                 "name": "estebank",
