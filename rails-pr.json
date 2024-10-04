@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2563418980\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53160\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53160/hovercard\" href=\"https://github.com/rails/rails/pull/53160\">#53160</a></p>\n<p dir=\"auto\">Technically this is a behavior change so adding a changelog and tests to prevent regressions.</p>\n<p dir=\"auto\">That change was also backported to 7.2, so this can be too.</p>",
             "url": "https://github.com/rails/rails/pull/53169",
             "title": "Add tests and changelog for \"Fix log level of ActiveJob :retry_stopped event\"",
-            "date_modified": "2024-10-04T05:50:39.000Z",
+            "date_modified": "2024-10-04T16:25:23.000Z",
             "date_published": "2024-10-04T05:50:34.000Z",
             "author": {
                 "name": "zzak",
