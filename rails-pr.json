@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2338835954\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/ruby/issues/10924\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/ruby/ruby/pull/10924/hovercard\" href=\"https://github.com/ruby/ruby/pull/10924\">ruby/ruby#10924</a><br>\nRef: <a href=\"https://bugs.ruby-lang.org/issues/20433\" rel=\"nofollow\">https://bugs.ruby-lang.org/issues/20433</a></p>\n<p dir=\"auto\">This breaks a few assertions, but nothing really important.</p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a></p>",
+            "url": "https://github.com/rails/rails/pull/53202",
+            "title": "Update the test suite for Ruby 3.4 Hash#inspect changes",
+            "date_modified": "2024-10-05T17:00:20.000Z",
+            "date_published": "2024-10-05T17:00:04.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5059927?u=54cb27efd35253e1fe86d48663b299bf398d8d84&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Currently it seems as though errors that happen inside ActiveJob are not sent off to the Rails error reporter.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This sets up ActiveJob to report errors to the Rails to make general error reporting simpler. Currently tools like sentry are <a href=\"https://github.com/getsentry/sentry-ruby/blob/master/sentry-rails/lib/sentry/rails/active_job.rb#L4\">monkey patching </a> to get error reporting inside ActiveJob.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53201",
             "title": "Ensure errors in ActiveJob are reported to the rails Error Reporter",
-            "date_modified": "2024-10-05T15:45:54.000Z",
+            "date_modified": "2024-10-05T16:06:18.000Z",
             "date_published": "2024-10-05T15:30:50.000Z",
             "author": {
                 "name": "npezza93",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/816901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong>Remove leaks from namespaced_generators_test.rb</strong></li>\n<li><strong>Fix test leak in railties</strong></li>\n<li><strong>Fix most tests in <code class=\"notranslate\">reporter_test.rb</code> when run with <code class=\"notranslate\">bin/test</code></strong></li>\n<li><strong>Fix failing test in reporter_test.rb</strong></li>\n</ul>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Had a rather poor experience trying to make a change in railties and running the tests with <code class=\"notranslate\">bin/tests</code> to confirm I didn't break anything.<br>\nSo many tests seemed to fail without being related.<br>\nI investigated a bit and found a few possible causes.<br>\nLess flaky failures means more reliable tests and less things getting on the way of contributors.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I made four changes in four separate commits, and documented them in their respective commit message.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">There's probably more, but this is a good start.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53200",
             "title": "Fix some (flaky?) failures in railties tests",
-            "date_modified": "2024-10-05T14:12:38.000Z",
+            "date_modified": "2024-10-05T16:07:37.000Z",
             "date_published": "2024-10-05T14:12:33.000Z",
             "author": {
                 "name": "davidstosik",
@@ -36,17 +47,6 @@
             "author": {
                 "name": "bogdan",
                 "url": "https://github.com/bogdan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6393110?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because <a href=\"https://github.com/rails/rails/pull/50825\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50825/hovercard\">rails console prompts have been changed since Rails 7.2</a>.<br>\nWhile numerous instances of <code class=\"notranslate\">irb&gt;</code> appear in the Ruby on Rails Guides, it’s particularly important to update the prompts on the “Getting Started with Rails” page first. This page is targeted at beginners, so having prompts that match what they encounter in their hands-on activities is especially beneficial.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes prompts of <code class=\"notranslate\">rails console</code>  in  \"Getting Started with Rails\".</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53197",
-            "title": "Update rails console prompts [ci skip]",
-            "date_modified": "2024-10-05T10:32:10.000Z",
-            "date_published": "2024-10-05T10:32:06.000Z",
-            "author": {
-                "name": "wakairo",
-                "url": "https://github.com/wakairo"
             }
         },
         {
@@ -91,17 +91,6 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/612482?u=23edfed541612d80d4ee9f75b4fa72735e17727d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Postgres format function has a way to use the same argument several times inside the template string instead of repeating the same argument multiple times.</p>\n<p dir=\"auto\">Simplified the usage by adding the argument position on the formatstr.</p>\n<p dir=\"auto\">Reference: <a href=\"https://www.postgresql.org/docs/current/functions-string.html#FUNCTIONS-STRING-FORMAT\" rel=\"nofollow\">https://www.postgresql.org/docs/current/functions-string.html#FUNCTIONS-STRING-FORMAT</a></p>",
-            "url": "https://github.com/rails/rails/pull/53190",
-            "title": "Simplify usage of Postgres `format` function",
-            "date_modified": "2024-10-04T22:59:03.000Z",
-            "date_published": "2024-10-04T22:58:59.000Z",
-            "author": {
-                "name": "fabriziomello",
-                "url": "https://github.com/fabriziomello"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "mjcheetham",
                 "url": "https://github.com/mjcheetham"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/245443?u=a95b823cd933875b07547e7bd1a81ae227e83603&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">rubocop -A</code> would generate false positive fixes.<br>\nAfter this change we use <code class=\"notranslate\">rubocop -a</code> instead.<br>\nThe idea is not to change semantics with RuboCop<br>\nSee <a href=\"https://docs.rubocop.org/rubocop/usage/auto_correct.html#safe-auto-correct\" rel=\"nofollow\">https://docs.rubocop.org/rubocop/usage/auto_correct.html#safe-auto-correct</a></p>",
+            "url": "https://github.com/rails/rails/pull/53138",
+            "title": "Autocorrect safely with RuboCop",
+            "date_modified": "2024-10-01T15:55:39.000Z",
+            "date_published": "2024-10-01T15:12:24.000Z",
+            "author": {
+                "name": "schmijos",
+                "url": "https://github.com/schmijos"
             }
         }
     ]
