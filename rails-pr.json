@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2267076770\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51676\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51676/hovercard\" href=\"https://github.com/rails/rails/pull/51676\">#51676</a></p>",
+            "url": "https://github.com/rails/rails/pull/53196",
+            "title": "Fix `pluck` passed hash with alias join",
+            "date_modified": "2024-10-05T08:46:21.000Z",
+            "date_published": "2024-10-05T08:46:17.000Z",
+            "author": {
+                "name": "kamipo",
+                "url": "https://github.com/kamipo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/151224?u=85901a0a1d5c58fb953d17b754f7b980ffab2cab&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It would be nice to rely on built-in extract dimensions logic when writing custom image analyzer like this:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class CustomeImageAnalyzer &lt; ActiveStorage::Analyzer::ImageAnalyzer::Vips\n  def metadata\n    read_image do |image|\n      extract_dimensions_metadata(image).tap do |metadata|\n        metadata[:aspect_ratio] = metadata[:width].to_f / metadata[:height]\n      end\n    end\n  end\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">CustomeImageAnalyzer</span> &lt; <span class=\"pl-v\">ActiveStorage</span>::<span class=\"pl-v\">Analyzer</span>::<span class=\"pl-v\">ImageAnalyzer</span>::<span class=\"pl-v\">Vips</span>\n  <span class=\"pl-k\">def</span> <span class=\"pl-en\">metadata</span>\n    <span class=\"pl-en\">read_image</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">image</span>|\n      <span class=\"pl-en\">extract_dimensions_metadata</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">image</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">tap</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">metadata</span>|\n        <span class=\"pl-s1\">metadata</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:aspect_ratio</span><span class=\"pl-kos\">]</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s1\">metadata</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:width</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_f</span> / <span class=\"pl-s1\">metadata</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:height</span><span class=\"pl-kos\">]</span>\n      <span class=\"pl-k\">end</span>\n    <span class=\"pl-k\">end</span>\n  <span class=\"pl-k\">end</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">This pull request introduces <code class=\"notranslate\">extract_dimensions_metadata</code>, the method idea is <a href=\"https://github.com/rails/rails/blob/main/activestorage/lib/active_storage/analyzer/image_analyzer.rb#L21\">similar</a> to<code class=\"notranslate\">rotated_image?</code>. Not a big deal, but still.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53195",
+            "title": "Add extract_dimensions_metadata to image analyzer",
+            "date_modified": "2024-10-05T08:22:21.000Z",
+            "date_published": "2024-10-05T08:22:17.000Z",
+            "author": {
+                "name": "aishek",
+                "url": "https://github.com/aishek"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1709692?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This commit addresses the issue by ensuring that the id is always passed</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Currently, calling reload does not pass the id information to the exception when the record is not found.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #52598.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2464301253\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52598\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52598/hovercard\" href=\"https://github.com/rails/rails/issues/52598\">#52598</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the <code class=\"notranslate\">_find_record</code> method in the <code class=\"notranslate\">Persistence</code> module to stop using <code class=\"notranslate\">find_by!</code> and instead use <code class=\"notranslate\">find_by</code>. This way if the record is not found the method can populate the exception message with the right id information.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">It seems that the original change (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1432226606\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46402\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46402/hovercard\" href=\"https://github.com/rails/rails/pull/46402\">#46402</a>) was introduced to support <code class=\"notranslate\">query_constraints_list</code>. I have tried to ensure that <code class=\"notranslate\">query_constraints_list</code> is used in generating the error object, but I couldn't find any prior art, so I had to come up with my own approach.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53194",
             "title": "Fix reloading destroyed model does not set id on RecordNotFound exception",
-            "date_modified": "2024-10-05T08:00:27.000Z",
+            "date_modified": "2024-10-05T08:58:42.000Z",
             "date_published": "2024-10-05T06:29:26.000Z",
             "author": {
                 "name": "cmaruz",
@@ -97,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18258?u=b3aa789e5bc9c9c26ca860c607dad86a0b803222&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I love the new authentication generator. Since other Rails generators that create models create a test stub and fixture file, I expected the authentication generator to do the same. I think it's particularly useful in this case to smooth the learning curve for new users who may not be familiar with how to set the <code class=\"notranslate\">password_digest</code>  value.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I've used the <code class=\"notranslate\">test_framework</code> and <code class=\"notranslate\">fixture_replacement</code> hooks and provided a default <code class=\"notranslate\">test_unit</code> implmentation.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53165",
             "title": "Add user fixture to authentication generator",
-            "date_modified": "2024-10-04T01:39:19.000Z",
+            "date_modified": "2024-10-05T08:37:46.000Z",
             "date_published": "2024-10-03T22:31:19.000Z",
             "author": {
                 "name": "therubyhound",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "Earlopain",
                 "url": "https://github.com/Earlopain"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236461?u=cd87f40664f26021ba65daabaf812a036c1f4c8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">rails new --help</code> currently shows this after <code class=\"notranslate\">[--skip-solid</code>]: <code class=\"notranslate\"># Skip Solid Cache &amp; Queue setup</code>.</p>\n<p dir=\"auto\">This PR adds a missing mention to <code class=\"notranslate\">Cable</code>.</p>\n<p dir=\"auto\">Alternatively the help message could just say <code class=\"notranslate\">Skip Solid adapters</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/53128",
-            "title": "Mention Cable in `--skip-solid` help",
-            "date_modified": "2024-10-03T12:42:51.000Z",
-            "date_published": "2024-10-01T02:41:45.000Z",
-            "author": {
-                "name": "jeromedalbert",
-                "url": "https://github.com/jeromedalbert"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">All meta descriptions and og:description meta tags currently are prefixed with the specific guide's h1. This happens when sanitizing the headers html fragment.</p>\n<p dir=\"auto\">For example:</p>\n<p dir=\"auto\">Before this change the (og)-description of the ActionCable guide was:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"content=&quot;Action Cable OverviewIn this guide...\"><pre class=\"notranslate\"><code class=\"notranslate\">content=\"Action Cable OverviewIn this guide...\n</code></pre></div>\n<p dir=\"auto\">Note the \"Action Cable Overview\" prefix without a whitespace.</p>\n<p dir=\"auto\">After this change the description is:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"content=&quot;In this guide...&quot;\"><pre class=\"notranslate\"><code class=\"notranslate\">content=\"In this guide...\"\n</code></pre></div>",
-            "url": "https://github.com/rails/rails/pull/53124",
-            "title": "Fix prefixed headings in guide pages meta descriptions",
-            "date_modified": "2024-10-04T01:25:39.000Z",
-            "date_published": "2024-09-30T20:46:18.000Z",
-            "author": {
-                "name": "codergeek121",
-                "url": "https://github.com/codergeek121"
             }
         }
     ]
