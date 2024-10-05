@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2338835954\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/ruby/issues/10924\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/ruby/ruby/pull/10924/hovercard\" href=\"https://github.com/ruby/ruby/pull/10924\">ruby/ruby#10924</a><br>\nRef: <a href=\"https://bugs.ruby-lang.org/issues/20433\" rel=\"nofollow\">https://bugs.ruby-lang.org/issues/20433</a></p>\n<p dir=\"auto\">This breaks a few assertions, but nothing really important.</p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/yahonda/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/yahonda\">@yahonda</a></p>",
-            "url": "https://github.com/rails/rails/pull/53202",
-            "title": "Update the test suite for Ruby 3.4 Hash#inspect changes",
-            "date_modified": "2024-10-05T17:00:20.000Z",
-            "date_published": "2024-10-05T17:00:04.000Z",
-            "author": {
-                "name": "byroot",
-                "url": "https://github.com/byroot"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5059927?u=54cb27efd35253e1fe86d48663b299bf398d8d84&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Currently it seems as though errors that happen inside ActiveJob are not sent off to the Rails error reporter.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This sets up ActiveJob to report errors to the Rails to make general error reporting simpler. Currently tools like sentry are <a href=\"https://github.com/getsentry/sentry-ruby/blob/master/sentry-rails/lib/sentry/rails/active_job.rb#L4\">monkey patching </a> to get error reporting inside ActiveJob.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53201",
             "title": "Ensure errors in ActiveJob are reported to the rails Error Reporter",
-            "date_modified": "2024-10-05T16:06:18.000Z",
+            "date_modified": "2024-10-05T17:51:40.000Z",
             "date_published": "2024-10-05T15:30:50.000Z",
             "author": {
                 "name": "npezza93",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "schmijos",
                 "url": "https://github.com/schmijos"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's commonly used for normalization but there is a dedicated method in AR for that. Switch it out to an example that doesn't perform normalization, and suggest <code class=\"notranslate\">normalizes</code> if the user wants to do that.</p>\n<p dir=\"auto\">I'm don't know how orthodox it is to mention ActiveRecord in ActiveModel docs. There are at least some matches right now already.</p>",
+            "url": "https://github.com/rails/rails/pull/53133",
+            "title": "Promote `normalizes` in `before_validation` docs",
+            "date_modified": "2024-10-03T12:50:16.000Z",
+            "date_published": "2024-10-01T12:28:05.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
             }
         }
     ]
