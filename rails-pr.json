@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/419086?u=d0fe8d6b68a77ff6fc46bd57cbc2a37db85a6d34&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation / Background</h2>\n<p dir=\"auto\">The <code class=\"notranslate\">reverting?</code> predicate method allows running operations when reverting, but sometimes we need to run code only when migrating. It is possible to wrap the code in an <code class=\"notranslate\">up_only […] end</code> block but this is slightly less readable, especially for one-liners. This helper adds the <code class=\"notranslate\">migrating?</code> method to avoid using the <code class=\"notranslate\">unless reverting?</code> double negation.</p>\n<p dir=\"auto\">See issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1713995776\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48245\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48245/hovercard\" href=\"https://github.com/rails/rails/issues/48245\">#48245</a></p>\n<p dir=\"auto\">Note: I didn't add tests because I couldn't find tests specific to <code class=\"notranslate\">reverting?</code>, feel free to add them or ask me to.</p>",
-            "url": "https://github.com/rails/rails/pull/53210",
-            "title": "Add migrating? helper for migrations",
-            "date_modified": "2024-10-06T10:24:04.000Z",
-            "date_published": "2024-10-06T10:16:33.000Z",
-            "author": {
-                "name": "goulvench",
-                "url": "https://github.com/goulvench"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/419086?u=d0fe8d6b68a77ff6fc46bd57cbc2a37db85a6d34&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation / Background</h2>\n<p dir=\"auto\">The <code class=\"notranslate\">up_only (block)</code> helper allows running operations when migrating up, but sometimes a block needs to run when reverting instead. It is possible to wrap the block in <code class=\"notranslate\">if reverting? […] end</code> but this is slightly less readable. Also, since there are <code class=\"notranslate\">up</code> and <code class=\"notranslate\">down</code> methods, and an <code class=\"notranslate\">up_only</code> helper, one would expect a <code class=\"notranslate\">down_only</code> helper to match.</p>\n<p dir=\"auto\">See issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1713995776\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48245\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48245/hovercard\" href=\"https://github.com/rails/rails/issues/48245\">#48245</a></p>",
             "url": "https://github.com/rails/rails/pull/53209",
             "title": "Add down_only migration helper",
@@ -58,17 +47,6 @@
             "author": {
                 "name": "bogdan",
                 "url": "https://github.com/bogdan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/816901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong>Remove leaks from namespaced_generators_test.rb</strong></li>\n<li><strong>Fix test leak in railties</strong></li>\n<li><strong>Fix most tests in <code class=\"notranslate\">reporter_test.rb</code> when run with <code class=\"notranslate\">bin/test</code></strong></li>\n<li><strong>Fix failing test in reporter_test.rb</strong></li>\n</ul>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Had a rather poor experience trying to make a change in railties and running the tests with <code class=\"notranslate\">bin/tests</code> to confirm I didn't break anything.<br>\nSo many tests seemed to fail without being related.<br>\nI investigated a bit and found a few possible causes.<br>\nLess flaky failures means more reliable tests and less things getting on the way of contributors.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I made four changes in four separate commits, and documented them in their respective commit message.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">There's probably more, but this is a good start.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53200",
-            "title": "Fix some (flaky?) failures in railties tests",
-            "date_modified": "2024-10-06T16:57:28.000Z",
-            "date_published": "2024-10-05T14:12:33.000Z",
-            "author": {
-                "name": "davidstosik",
-                "url": "https://github.com/davidstosik"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "HamptonMakes",
                 "url": "https://github.com/HamptonMakes"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5658207?u=596fe0fc2e3ea62c7c5e970efca3006eb3b81089&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">The motivation for this change is because we wish to make use of transactions in our tests but there are some databases that we don't or cannot use transactions with.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request adds a new attribute to <code class=\"notranslate\">TestFixtures</code>, <code class=\"notranslate\">ignore_transactions_dbnames</code> that allows you to return an array of database names to disable transactions for that database. This is orthogonal to the <code class=\"notranslate\">use_transactional_tests</code> setting to disable or enable transactions for <em>all</em> connections.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>\n<p dir=\"auto\">cc: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mmareve/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mmareve\">@mmareve</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/vdye/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/vdye\">@vdye</a>, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a></p>",
+            "url": "https://github.com/rails/rails/pull/53139",
+            "title": "Add support for disabling transactions per database in `ActiveRecord`",
+            "date_modified": "2024-10-05T06:36:40.000Z",
+            "date_published": "2024-10-01T15:28:43.000Z",
+            "author": {
+                "name": "mjcheetham",
+                "url": "https://github.com/mjcheetham"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/245443?u=a95b823cd933875b07547e7bd1a81ae227e83603&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">rubocop -A</code> would generate false positive fixes.<br>\nAfter this change we use <code class=\"notranslate\">rubocop -a</code> instead.<br>\nThe idea is not to change semantics with RuboCop<br>\nSee <a href=\"https://docs.rubocop.org/rubocop/usage/auto_correct.html#safe-auto-correct\" rel=\"nofollow\">https://docs.rubocop.org/rubocop/usage/auto_correct.html#safe-auto-correct</a></p>",
+            "url": "https://github.com/rails/rails/pull/53138",
+            "title": "Autocorrect safely with RuboCop",
+            "date_modified": "2024-10-01T15:55:39.000Z",
+            "date_published": "2024-10-01T15:12:24.000Z",
+            "author": {
+                "name": "schmijos",
+                "url": "https://github.com/schmijos"
             }
         }
     ]
