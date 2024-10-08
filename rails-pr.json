@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">An identifier should be quoted otherwise reserved words names doesn't work.</p>",
-            "url": "https://github.com/rails/rails/pull/53230",
-            "title": "Allow `select` with reserved words aliases",
-            "date_modified": "2024-10-08T10:10:22.000Z",
-            "date_published": "2024-10-08T10:10:17.000Z",
-            "author": {
-                "name": "kamipo",
-                "url": "https://github.com/kamipo"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14258779?u=a386e08490920b3e8346651d2c963d1765bf7abc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">prefer the example to use hash method to access custom credentials values<br>\nthis is beneficial to avoid issues like this<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2364576058\" data-permission-text=\"Title is private\" data-url=\"https://github.com/basecamp/kamal/issues/849\" data-hovercard-type=\"issue\" data-hovercard-url=\"/basecamp/kamal/issues/849/hovercard\" href=\"https://github.com/basecamp/kamal/issues/849\">basecamp/kamal#849</a></p>\n<p dir=\"auto\">the problem is there is no dig that raise error if the key is not found</p>",
             "url": "https://github.com/rails/rails/pull/53228",
             "title": "[docs] prefer the example  to use hash method to access custom credentials values [ci skip]",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This was inspired by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2049804724\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50405\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50405/hovercard\" href=\"https://github.com/rails/rails/pull/50405\">#50405</a>.</p>\n<p dir=\"auto\">If you accidentally pretty print <code class=\"notranslate\">ActiveStorage::Blob.services</code> and have the entire config which may contain secrets persit in logs or elsewhere.</p>\n<p dir=\"auto\">Or in Ruby 3.2 and older, raising an exception on those objects, e.g. <code class=\"notranslate\">ActiveStorage::Blob.services[:local]</code> instead of <code class=\"notranslate\">fetch</code>.<br>\nFor this reason, I would also like to consider this a bug-fix and backport it to 7.2 and 7.1, where the issue is even more apparent given the older versions of Ruby supported.</p>\n<p dir=\"auto\">Before:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"pp ActiveStorage::Blob.services\n  #&lt;ActiveStorage::Service::Registry:0x00007f2a68469d28\n    @configurations={\n      :s3 =&gt; {\n        :service=&gt;&quot;S3&quot;,\n        :access_key_id=&gt;&quot;test_key&quot;,\n        :secret_access_key=&gt;&quot;test_secret&quot;,\n        :region=&gt;&quot;us-east-1&quot;,\n        :bucket=&gt;&quot;rails-test&quot;\n      },\n      :gcs =&gt; { :service=&gt;&quot;GCS&quot;, :credentials=&gt; &quot;secret-hash&quot; }\n    }\n    @services={}&gt;\"><pre class=\"notranslate\"><span class=\"pl-en\">pp</span> <span class=\"pl-v\">ActiveStorage</span>::<span class=\"pl-v\">Blob</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">services</span>\n  <span class=\"pl-c\">#&lt;ActiveStorage::Service::Registry:0x00007f2a68469d28</span>\n    <span class=\"pl-c1\">@configurations</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span>\n      <span class=\"pl-pds\">:s3</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-pds\">:service</span><span class=\"pl-c1\">=&gt;</span><span class=\"pl-s\">\"S3\"</span><span class=\"pl-kos\">,</span>\n        <span class=\"pl-pds\">:access_key_id</span><span class=\"pl-c1\">=&gt;</span><span class=\"pl-s\">\"test_key\"</span><span class=\"pl-kos\">,</span>\n        <span class=\"pl-pds\">:secret_access_key</span><span class=\"pl-c1\">=&gt;</span><span class=\"pl-s\">\"test_secret\"</span><span class=\"pl-kos\">,</span>\n        <span class=\"pl-pds\">:region</span><span class=\"pl-c1\">=&gt;</span><span class=\"pl-s\">\"us-east-1\"</span><span class=\"pl-kos\">,</span>\n        <span class=\"pl-pds\">:bucket</span><span class=\"pl-c1\">=&gt;</span><span class=\"pl-s\">\"rails-test\"</span>\n      <span class=\"pl-kos\">}</span><span class=\"pl-kos\">,</span>\n      <span class=\"pl-pds\">:gcs</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span> <span class=\"pl-pds\">:service</span><span class=\"pl-c1\">=&gt;</span><span class=\"pl-s\">\"GCS\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:credentials</span><span class=\"pl-c1\">=&gt;</span> <span class=\"pl-s\">\"secret-hash\"</span> <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n    <span class=\"pl-c1\">@services</span><span class=\"pl-c1\">=</span><span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span>&gt;<span class=\"pl-en\"></span></pre></div>\n<p dir=\"auto\">After</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"  #&lt;ActiveStorage::Service::Registry configurations=[:s3, :gcs]&gt;\"><pre class=\"notranslate\">  <span class=\"pl-c\">#&lt;ActiveStorage::Service::Registry configurations=[:s3, :gcs]&gt;</span></pre></div>",
+            "url": "https://github.com/rails/rails/pull/53153",
+            "title": "Add inspect to ActiveStorage::Service, ActiveStorage::Service::Registry, and ActiveStorage::Service::Configurator",
+            "date_modified": "2024-10-02T14:38:28.000Z",
+            "date_published": "2024-10-02T14:38:24.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
