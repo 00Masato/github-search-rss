@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25405190?u=64314ab5744b9926919e515a477872955c6562ce&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add helper methods on primitive pointer types to facilitate getting and setting the tag of a pointer.<br>\nIntended to work with programs that make use of architecture features such as AArch64<br>\nTop-Byte Ignore (TBI), the primary use-case being writing tagging memory allocators.</p>\n<p dir=\"auto\"><a href=\"https://github.com/mrkajetanp/rfcs/blob/ptr-tag-helpers/text/3700-ptr-tag-helpers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3700",
             "title": "Add helper methods on primitive pointer types for pointer tagging",
-            "date_modified": "2024-10-10T21:24:56.000Z",
+            "date_modified": "2024-10-11T06:47:06.000Z",
             "date_published": "2024-09-26T14:49:36.000Z",
             "author": {
                 "name": "mrkajetanp",
