@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a syntax and mechanism for macros to access \"fields\" of high-level fragment<br>\nspecifiers that they've matched, to let macros use the Rust parser for<br>\nrobustness and future compatibility, while still extracting pieces of the<br>\nmatched syntax.</p>\n<p dir=\"auto\">This RFC introduces the syntax <code class=\"notranslate\">${fragname.field}</code>, and a couple of fragment specifiers and their fields. The goal is to add more such fragment specifiers and fields, to allow more macros to leverage the Rust parser, but the purpose of this RFC is to introduce the concept and syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/macro-fragment-fields/text/0000-macro-fragment-fields.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3714",
+            "title": "Macro fragment fields",
+            "date_modified": "2024-10-20T20:08:24.000Z",
+            "date_published": "2024-10-20T20:08:21.000Z",
+            "author": {
+                "name": "joshtriplett",
+                "url": "https://github.com/joshtriplett"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Relax the requirements on struct field ordering for dynamically sized fields for <code class=\"notranslate\">repr(Rust)</code> and <code class=\"notranslate\">repr(transparent)</code>, such that <code class=\"notranslate\">?Sized</code> fields can be anywhere in the field list, as long as there is only one.</p>\n<p dir=\"auto\">Note that this RFC previously added changes to <code class=\"notranslate\">repr(C)</code>, but these have since been removed.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/relaxed-dst-field-ordering/text/0000-relaxed-dst-field-ordering.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3713",
             "title": "Relaxed DST field ordering",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "clarfonthey",
                 "url": "https://github.com/clarfonthey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes optional names for repetition groups in macros:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"macro_rules! foo {\n    ( $group1( $a:ident ),+ ) =&gt; {\n        $group1( println!(&quot;{}&quot;, $a); )+\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">macro_rules!</span> foo <span class=\"pl-kos\">{</span>\n    <span class=\"pl-kos\">(</span> $group1<span class=\"pl-kos\">(</span> $a<span class=\"pl-kos\">:</span>ident <span class=\"pl-kos\">)</span>,+ <span class=\"pl-kos\">)</span> =&gt; <span class=\"pl-kos\">{</span>\n        $group1<span class=\"pl-kos\">(</span> println!<span class=\"pl-kos\">(</span><span class=\"pl-s\">\"{}\"</span>, $a<span class=\"pl-kos\">)</span>; <span class=\"pl-kos\">)</span>+\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/macros-named-capture-groups/text/3649-macros-named-capture-groups.md\">Rendered</a></p>\n<p dir=\"auto\">Small Pre-RFC: <a href=\"https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-named-capture-groups-for-macros/20883</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3649",
-            "title": "[RFC] Named macro capture groups",
-            "date_modified": "2024-07-11T19:01:45.000Z",
-            "date_published": "2024-05-29T00:37:05.000Z",
-            "author": {
-                "name": "tgross35",
-                "url": "https://github.com/tgross35"
             }
         }
     ]
