@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a syntax and mechanism for macros to access \"fields\" of high-level fragment<br>\nspecifiers that they've matched, to let macros use the Rust parser for<br>\nrobustness and future compatibility, while still extracting pieces of the<br>\nmatched syntax.</p>\n<p dir=\"auto\">This RFC introduces the syntax <code class=\"notranslate\">${fragname.field}</code>, and a couple of fragment specifiers and their fields. The goal is to add more such fragment specifiers and fields, to allow more macros to leverage the Rust parser, but the purpose of this RFC is to introduce the concept and syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/macro-fragment-fields/text/3714-macro-fragment-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3714",
             "title": "Macro fragment fields",
-            "date_modified": "2024-10-21T15:39:16.000Z",
+            "date_modified": "2024-10-21T23:23:12.000Z",
             "date_published": "2024-10-20T20:08:21.000Z",
             "author": {
                 "name": "joshtriplett",
