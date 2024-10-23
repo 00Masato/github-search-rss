@@ -185,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This makes a few small incremental improvements to our release process:</p>\n<ul dir=\"auto\">\n<li>Adds <code class=\"notranslate\">--verify-tag</code> to <code class=\"notranslate\">gh release create</code> command so that we error if the tag wasn't pushed correctly</li>\n<li>Checks that a default repo is configured in <code class=\"notranslate\">check_gh_client</code>, which is required to create a release, before performing the bump, tagging, commit, pushing</li>\n<li>Runs <code class=\"notranslate\">build</code> and prints checksums of the built gems before starting to push gems. This should move any build errors earlier into the process, before we start pushing. Checksums should have the same output as running <code class=\"notranslate\">sha1sum pkg/*.gem</code> (other than a different order)</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53349",
             "title": "Small improvements to releaser",
-            "date_modified": "2024-10-22T18:08:15.000Z",
+            "date_modified": "2024-10-23T20:22:16.000Z",
             "date_published": "2024-10-17T06:05:58.000Z",
             "author": {
                 "name": "jhawthorn",
