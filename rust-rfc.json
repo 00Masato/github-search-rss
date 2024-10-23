@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds <code class=\"notranslate\">resolver.feature-unification</code> to <code class=\"notranslate\">.cargo/config.toml</code> to allow workspace unfication (cargo-workspace-hack) or per-package unification (<code class=\"notranslate\">cargo hack</code>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/feature-unification/text/3692-feature-unification.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3692",
             "title": "RFC: Give users control over feature unification",
-            "date_modified": "2024-10-05T10:34:19.000Z",
+            "date_modified": "2024-10-23T15:43:38.000Z",
             "date_published": "2024-09-11T22:22:19.000Z",
             "author": {
                 "name": "epage",
@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20070360?u=c5051b99b45e27910ed27f9b2145cd90e8c3d717&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io</p>\n<p dir=\"auto\">A big thank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/woodruffw/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/woodruffw\">@woodruffw</a> for co-authoring, providing prior art through PyPi's implementation, and all of the expert advice. 🙏</p>\n<p dir=\"auto\"><a href=\"https://github.com/mdtro/rfcs/blob/mdtro/trusted-publishing-cratesio/text/3691-trusted-publishing-cratesio.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3691",
             "title": "Trusted Publishing Support on Crates.io",
-            "date_modified": "2024-10-23T14:01:50.000Z",
+            "date_modified": "2024-10-23T15:41:41.000Z",
             "date_published": "2024-09-10T17:35:19.000Z",
             "author": {
                 "name": "mdtro",
@@ -207,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support restricting implementation of individual methods within traits, using the already reserved <code class=\"notranslate\">final</code> keyword.</p>\n<p dir=\"auto\">This makes it possible to define a trait that any crate can implement, but disallow overriding one of the trait's methods or associated functions.</p>\n<p dir=\"auto\">This was inspired in the course of writing another RFC defining a trait, which wanted precisely this feature of restricting overrides of the trait's method. I separated out this feature as its own RFC, since it's independently useful for various other purposes, and since it should be available to any crate and not just the standard library.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/final/text/3678-final.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2562890879\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/131179\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/131179/hovercard\" href=\"https://github.com/rust-lang/rust/issues/131179\">rust-lang/rust#131179</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3678",
             "title": "Trait method impl restrictions",
-            "date_modified": "2024-10-23T14:06:59.000Z",
+            "date_modified": "2024-10-23T15:25:19.000Z",
             "date_published": "2024-08-13T19:51:41.000Z",
             "author": {
                 "name": "joshtriplett",
