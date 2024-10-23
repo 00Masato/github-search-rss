@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51307998?u=8f411f487ae7a31e9f8d0e27c07fd5bc8c756367&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because everyone likes consistent examples in documentation</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes example in Multiple Databases with Active Record Docs</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53423",
+            "title": "[ci skip] Update Example in Multiple Databases with Active Record Docs",
+            "date_modified": "2024-10-23T19:58:24.000Z",
+            "date_published": "2024-10-23T19:58:06.000Z",
+            "author": {
+                "name": "ryanmansfield",
+                "url": "https://github.com/ryanmansfield"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48097622?u=0f5215ec096873b7ddfe2f431d11437a04fac995&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n This pull request removes storage entries when active_storage is skipped and database is not sqlite3 and <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53413.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2607107968\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53413\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53413/hovercard\" href=\"https://github.com/rails/rails/issues/53413\">#53413</a> \n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes railties/lib/rails/generators/rails/app/templates/gitignore.tt</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53417",
             "title": "Remove storage from gitignore if skip_active_storage and database is not sqlite3",
@@ -209,17 +220,6 @@
             "title": "Deprecate built-in snekaers adapter",
             "date_modified": "2024-10-21T15:37:03.000Z",
             "date_published": "2024-10-16T11:40:40.000Z",
-            "author": {
-                "name": "dixpac",
-                "url": "https://github.com/dixpac"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/rails/rails/pull/53334",
-            "title": "Deprecate built-in ActiveJob backburner adapter",
-            "date_modified": "2024-10-16T11:36:07.000Z",
-            "date_published": "2024-10-16T11:33:27.000Z",
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
