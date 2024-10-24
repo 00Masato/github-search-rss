@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC threads are known for turning into huge messes once many comments arrive. One among many reasons for this is that the comments are entirely disorganized, which makes it very hard to keep track.</p>\n<p dir=\"auto\">I propose adding a warning the PR template that will strongly encourage people to leave inline review comments. These are significantly easier to keep track of (and can be resolved, hiding them!).</p>\n<p dir=\"auto\">One question: who can/will approve this change? I'm just gonna go off vibes here, telling a bunch of teams about it and hoping that enough people like it that we can just ship it in and improve everyone's life!</p>\n<p dir=\"auto\">Example (do feel free to comment normally here :D):</p>\n<div class=\"markdown-alert markdown-alert-important\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg class=\"octicon octicon-report mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path></svg>Important</p><p dir=\"auto\">When responding to RFCs, try to use inline review comments instead of direct comments for normal comments<br>\nand keep normal comments for procedural matters like starting FCPs.</p>\n<p dir=\"auto\">This keeps the discussion more organized.</p>\n</div>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3717",
+            "title": "Add PR template encouraging inline comments over normal comments",
+            "date_modified": "2024-10-24T17:54:25.000Z",
+            "date_published": "2024-10-24T17:13:18.000Z",
+            "author": {
+                "name": "Noratrieb",
+                "url": "https://github.com/Noratrieb"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>We introduce the concept of \"target modifier\". A target modifier is a flag where it may be unsound if you link together two compilation units that disagree on the flag.</li>\n<li>We fail the build if rustc can see two Rust compilation units that do not agree on the exact set of target modifier flags.</li>\n<li>There are already several existing flags that could fall into this category. There are also hypothetical new flags that do.</li>\n<li>The error can be silenced using the <code class=\"notranslate\">-Cunsafe-allow-abi-mismatch</code> escape hatch.</li>\n<li>Not having a stable way to build stdlib crates does not block stabilization of target modifiers.</li>\n<li>As a future extension we may be able to relax the rules to allow some specific kinds of mismatches.</li>\n<li>This RFC does not stabilize any target modifiers. That should happen in follow-up MCPs/FCPs/RFCs/etc.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/target-modifiers/text/3716-target-modifiers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3716",
             "title": "[RFC] Target Modifiers",
-            "date_modified": "2024-10-24T11:54:42.000Z",
+            "date_modified": "2024-10-24T17:14:48.000Z",
             "date_published": "2024-10-24T11:30:32.000Z",
             "author": {
                 "name": "Darksonn",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a syntax and mechanism for macros to access \"fields\" of high-level fragment<br>\nspecifiers that they've matched, to let macros use the Rust parser for<br>\nrobustness and future compatibility, while still extracting pieces of the<br>\nmatched syntax.</p>\n<p dir=\"auto\">This RFC introduces the syntax <code class=\"notranslate\">${fragname.field}</code>, and a couple of fragment specifiers and their fields. The goal is to add more such fragment specifiers and fields, to allow more macros to leverage the Rust parser, but the purpose of this RFC is to introduce the concept and syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/macro-fragment-fields/text/3714-macro-fragment-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3714",
             "title": "Macro fragment fields",
-            "date_modified": "2024-10-24T15:51:30.000Z",
+            "date_modified": "2024-10-24T17:39:00.000Z",
             "date_published": "2024-10-20T20:08:21.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -209,17 +220,6 @@
             "title": "Simplify lightweight clones, including into closures and async blocks",
             "date_modified": "2024-09-28T08:26:04.000Z",
             "date_published": "2024-08-20T20:34:07.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Support restricting implementation of individual methods within traits, using the already reserved <code class=\"notranslate\">final</code> keyword.</p>\n<p dir=\"auto\">This makes it possible to define a trait that any crate can implement, but disallow overriding one of the trait's methods or associated functions.</p>\n<p dir=\"auto\">This was inspired in the course of writing another RFC defining a trait, which wanted precisely this feature of restricting overrides of the trait's method. I separated out this feature as its own RFC, since it's independently useful for various other purposes, and since it should be available to any crate and not just the standard library.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/final/text/3678-final.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2562890879\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/131179\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/131179/hovercard\" href=\"https://github.com/rust-lang/rust/issues/131179\">rust-lang/rust#131179</a></li>\n</ul>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3678",
-            "title": "Trait method impl restrictions",
-            "date_modified": "2024-10-24T16:27:41.000Z",
-            "date_published": "2024-08-13T19:51:41.000Z",
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
