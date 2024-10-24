@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111195437?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53428",
+            "title": "Update devcontainer.json",
+            "date_modified": "2024-10-24T09:19:51.000Z",
+            "date_published": "2024-10-24T09:19:29.000Z",
+            "author": {
+                "name": "nguyenxu29y1-cmt",
+                "url": "https://github.com/nguyenxu29y1-cmt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/929886?u=20e7647deec019e86c7d64fd94148ede89abb64c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It appears that <code class=\"notranslate\">bin/rails generate action_text:install</code> is the only viable way to install ActionText. I followed the guides and tried <code class=\"notranslate\">bin/rails action_text:install</code>. Didn't work. Then I confirmed that <a href=\"https://github.com/rails/rails/blob/main/actiontext/lib/generators/action_text/install/install_generator.rb\">installer is indeed a generator</a>. Ran <code class=\"notranslate\">bin/rails g action_text:install</code> and it was smooth sailing.</p>\n<p dir=\"auto\">This Pull Request updates the guide to instruct readers to run <code class=\"notranslate\">bin/rails generate action_text:install</code> instead of <code class=\"notranslate\">bin/rails action_text:install</code>. There seems to more occurrence of <code class=\"notranslate\">bin/rails generate</code> over <code class=\"notranslate\">bin/rails g</code>, so even though I prefer and use the <code class=\"notranslate\">g</code> alias I've opted for the full command here.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53427",
+            "title": "[ci-skip] ActionText is installed via generate command",
+            "date_modified": "2024-10-24T09:10:53.000Z",
+            "date_published": "2024-10-24T09:10:50.000Z",
+            "author": {
+                "name": "yawboakye",
+                "url": "https://github.com/yawboakye"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds the commits from the recent security releases for the main branch. I will also backport this to 8-0-stable.</p>\n<p dir=\"auto\">These aren't a security concern for the 8-0-stable or main branches, as Ruby 3.2, which is now required, runs these regular expressions in linear time. However it's best to keep these branches in sync.</p>",
             "url": "https://github.com/rails/rails/pull/53426",
             "title": "Security release forward ports to newer branches",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/rails/rails/pull/53334",
-            "title": "Deprecate built-in ActiveJob backburner adapter",
-            "date_modified": "2024-10-16T11:36:07.000Z",
-            "date_published": "2024-10-16T11:33:27.000Z",
-            "author": {
-                "name": "dixpac",
-                "url": "https://github.com/dixpac"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9696?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When <code class=\"notranslate\">cache_versioning</code> is enabled (which is the default), <code class=\"notranslate\">#cache_key</code> raises an error when there is no <code class=\"notranslate\">updated_at</code> attribute on the record instance.</p>\n<p dir=\"auto\">However, if the attribute is there, it returns a string without the <code class=\"notranslate\">updated_at</code> inside it.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"User.select(:id).first.cache_key\n# =&gt; ActiveModel::MissingAttributeError: missing attribute 'updated_at' for User\n\nUser.select(:id, :updated_at).first.cache_key \n# =&gt; &quot;users/006a09a1-c846-45e7-883b-8165391eb4ac&quot;\"><pre class=\"notranslate\"><span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">select</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:id</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">first</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">cache_key</span>\n<span class=\"pl-c\"># =&gt; ActiveModel::MissingAttributeError: missing attribute 'updated_at' for User</span>\n\n<span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">select</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:id</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:updated_at</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">first</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">cache_key</span> \n<span class=\"pl-c\"># =&gt; \"users/006a09a1-c846-45e7-883b-8165391eb4ac\"</span></pre></div>\n<p dir=\"auto\">The value of <code class=\"notranslate\">updated_at</code> is not needed to generate the cache key for the record and therefore it shouldn't raise an error when it is missing.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the check for cache versioning in the <code class=\"notranslate\">cache_key</code> method to check for <code class=\"notranslate\">cache_versioning</code> instead of <code class=\"notranslate\">cache_version</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53333",
-            "title": "Don't require a `updated_at` attribute for `cache_key` when cache versioning is enabled",
-            "date_modified": "2024-10-16T11:23:41.000Z",
-            "date_published": "2024-10-16T11:23:37.000Z",
-            "author": {
-                "name": "benedikt",
-                "url": "https://github.com/benedikt"
             }
         }
     ]
