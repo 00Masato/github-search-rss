@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>We introduce the concept of \"target modifier\". A target modifier is a flag where it may be unsound if you link together two compilation units that disagree on the flag.</li>\n<li>We fail the build if rustc can see two Rust compilation units that do not agree on the exact set of target modifier flags.</li>\n<li>There are already several existing flags that could fall into this category. There are also hypothetical new flags that do.</li>\n<li>The error can be silenced using the <code class=\"notranslate\">-Cunsafe-allow-abi-mismatch</code> escape hatch.</li>\n<li>Not having a stable way to build stdlib crates does not block stabilization of target modifiers.</li>\n<li>As a future extension we may be able to relax the rules to allow some specific kinds of mismatches.</li>\n<li>This RFC does not stabilize any target modifiers. That should happen in follow-up MCPs/FCPs/RFCs/etc.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/target-modifiers/text/3716-target-modifiers.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3716",
+            "title": "[RFC] Target Modifiers",
+            "date_modified": "2024-10-24T11:54:42.000Z",
+            "date_published": "2024-10-24T11:30:32.000Z",
+            "author": {
+                "name": "Darksonn",
+                "url": "https://github.com/Darksonn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow declaring proc macro attributes and derive macros as unsafe, and<br>\nrequiring <code class=\"notranslate\">unsafe</code> to invoke them.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/unsafe-derives/text/3715-unsafe-derives-and-attrs.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3715",
             "title": "Unsafe derives and attributes",
@@ -141,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds <code class=\"notranslate\">resolver.feature-unification</code> to <code class=\"notranslate\">.cargo/config.toml</code> to allow workspace unfication (cargo-workspace-hack) or per-package unification (<code class=\"notranslate\">cargo hack</code>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/feature-unification/text/3692-feature-unification.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3692",
             "title": "RFC: Give users control over feature unification",
-            "date_modified": "2024-10-23T19:53:20.000Z",
+            "date_modified": "2024-10-24T12:01:36.000Z",
             "date_published": "2024-09-11T22:22:19.000Z",
             "author": {
                 "name": "epage",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io-remove-dev-deps/text/3674-crates-io-remove-dev-deps.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3674",
-            "title": "crates.io: Remove dev-dependencies from the index",
-            "date_modified": "2024-09-01T16:09:20.000Z",
-            "date_published": "2024-07-31T12:11:20.000Z",
-            "author": {
-                "name": "Turbo87",
-                "url": "https://github.com/Turbo87"
             }
         }
     ]
