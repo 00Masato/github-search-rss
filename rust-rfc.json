@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a syntax and mechanism for macros to access \"fields\" of high-level fragment<br>\nspecifiers that they've matched, to let macros use the Rust parser for<br>\nrobustness and future compatibility, while still extracting pieces of the<br>\nmatched syntax.</p>\n<p dir=\"auto\">This RFC introduces the syntax <code class=\"notranslate\">${fragname.field}</code>, and a couple of fragment specifiers and their fields. The goal is to add more such fragment specifiers and fields, to allow more macros to leverage the Rust parser, but the purpose of this RFC is to introduce the concept and syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/macro-fragment-fields/text/3714-macro-fragment-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3714",
             "title": "Macro fragment fields",
-            "date_modified": "2024-10-24T08:19:06.000Z",
+            "date_modified": "2024-10-24T10:31:59.000Z",
             "date_published": "2024-10-20T20:08:21.000Z",
             "author": {
                 "name": "joshtriplett",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Relax the requirements on struct field ordering for dynamically sized fields for <code class=\"notranslate\">repr(Rust)</code> and <code class=\"notranslate\">repr(transparent)</code>, such that <code class=\"notranslate\">?Sized</code> fields can be anywhere in the field list, as long as there is only one.</p>\n<p dir=\"auto\">Note that this RFC previously added changes to <code class=\"notranslate\">repr(C)</code>, but these have since been removed.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/relaxed-dst-field-ordering/text/0000-relaxed-dst-field-ordering.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3713",
             "title": "Relaxed DST field ordering",
-            "date_modified": "2024-10-21T20:46:41.000Z",
+            "date_modified": "2024-10-24T10:28:13.000Z",
             "date_published": "2024-10-19T01:54:52.000Z",
             "author": {
                 "name": "clarfonthey",

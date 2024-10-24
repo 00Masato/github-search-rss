@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111195437?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53428",
-            "title": "Update devcontainer.json",
-            "date_modified": "2024-10-24T09:19:51.000Z",
-            "date_published": "2024-10-24T09:19:29.000Z",
-            "author": {
-                "name": "nguyenxu29y1-cmt",
-                "url": "https://github.com/nguyenxu29y1-cmt"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/929886?u=20e7647deec019e86c7d64fd94148ede89abb64c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It appears that <code class=\"notranslate\">bin/rails generate action_text:install</code> is the only viable way to install ActionText. I followed the guides and tried <code class=\"notranslate\">bin/rails action_text:install</code>. Didn't work. Then I confirmed that <a href=\"https://github.com/rails/rails/blob/main/actiontext/lib/generators/action_text/install/install_generator.rb\">installer is indeed a generator</a>. Ran <code class=\"notranslate\">bin/rails g action_text:install</code> and it was smooth sailing.</p>\n<p dir=\"auto\">This Pull Request updates the guide to instruct readers to run <code class=\"notranslate\">bin/rails generate action_text:install</code> instead of <code class=\"notranslate\">bin/rails action_text:install</code>. There seems to more occurrence of <code class=\"notranslate\">bin/rails generate</code> over <code class=\"notranslate\">bin/rails g</code>, so even though I prefer and use the <code class=\"notranslate\">g</code> alias I've opted for the full command here.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53427",
             "title": "[ci-skip] ActionText is installed via generate command",
@@ -220,6 +209,17 @@
             "title": "Deprecate built-in snekaers adapter",
             "date_modified": "2024-10-21T15:37:03.000Z",
             "date_published": "2024-10-16T11:40:40.000Z",
+            "author": {
+                "name": "dixpac",
+                "url": "https://github.com/dixpac"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7427365?u=67ed8ab4a2204734e6d97e9ebbe4a963512a0fda&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/53334",
+            "title": "Deprecate built-in ActiveJob backburner adapter",
+            "date_modified": "2024-10-16T11:36:07.000Z",
+            "date_published": "2024-10-16T11:33:27.000Z",
             "author": {
                 "name": "dixpac",
                 "url": "https://github.com/dixpac"
