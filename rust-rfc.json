@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>We introduce the concept of \"target modifier\". A target modifier is a flag where it may be unsound if you link together two compilation units that disagree on the flag.</li>\n<li>We fail the build if rustc can see two Rust compilation units that do not agree on the exact set of target modifier flags.</li>\n<li>There are already several existing flags that could fall into this category. There are also hypothetical new flags that do.</li>\n<li>The error can be silenced using the <code class=\"notranslate\">-Cunsafe-allow-abi-mismatch</code> escape hatch.</li>\n<li>Not having a stable way to build stdlib crates does not block stabilization of target modifiers.</li>\n<li>As a future extension we may be able to relax the rules to allow some specific kinds of mismatches.</li>\n<li>This RFC does not stabilize any target modifiers. That should happen in follow-up MCPs/FCPs/RFCs/etc.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/target-modifiers/text/3716-target-modifiers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3716",
             "title": "[RFC] Target Modifiers",
-            "date_modified": "2024-10-24T17:14:48.000Z",
+            "date_modified": "2024-10-25T01:03:08.000Z",
             "date_published": "2024-10-24T11:30:32.000Z",
             "author": {
                 "name": "Darksonn",
