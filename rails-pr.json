@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We've already changed from _url to _path in the scaffold controller.</p>",
+            "url": "https://github.com/rails/rails/pull/53445",
+            "title": "We should only use _url when changing the host, otherwise _path is better",
+            "date_modified": "2024-10-24T23:05:49.000Z",
+            "date_published": "2024-10-24T23:05:45.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We can lean on the existing session model to authenticate the action cable web sockets connection too.</p>",
             "url": "https://github.com/rails/rails/pull/53444",
             "title": "Authenticate the action cable connection too",
-            "date_modified": "2024-10-24T23:01:35.000Z",
+            "date_modified": "2024-10-24T23:26:25.000Z",
             "date_published": "2024-10-24T23:01:31.000Z",
             "author": {
                 "name": "dhh",
@@ -69,17 +80,6 @@
             "author": {
                 "name": "yawboakye",
                 "url": "https://github.com/yawboakye"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds the commits from the recent security releases for the main branch. I will also backport this to 8-0-stable.</p>\n<p dir=\"auto\">These aren't a security concern for the 8-0-stable or main branches, as Ruby 3.2, which is now required, runs these regular expressions in linear time. However it's best to keep these branches in sync.</p>",
-            "url": "https://github.com/rails/rails/pull/53426",
-            "title": "Security release forward ports to newer branches",
-            "date_modified": "2024-10-24T00:37:02.000Z",
-            "date_published": "2024-10-24T00:36:57.000Z",
-            "author": {
-                "name": "jhawthorn",
-                "url": "https://github.com/jhawthorn"
             }
         },
         {
