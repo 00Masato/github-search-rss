@@ -41,8 +41,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1405162?u=4a593c5999233164774ac9a437265dc65d205f56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I was going through the guides and noticed an outdated mention of <code class=\"notranslate\">rich_textarea</code>. The hash part of the link to the api docs is broken too.</p>\n<p dir=\"auto\">This Pull Request has been created to fix the guides to use <code class=\"notranslate\">rich_text_area</code> instead.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53450",
-            "title": "Fix rich_text_area in ActionText guide",
-            "date_modified": "2024-10-25T17:56:20.000Z",
+            "title": "[ci-skip] Fix rich_text_area in ActionText guide",
+            "date_modified": "2024-10-26T11:43:32.000Z",
             "date_published": "2024-10-25T16:03:46.000Z",
             "author": {
                 "name": "evpgh",
