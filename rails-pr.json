@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When a route has <code class=\"notranslate\">::</code> in the path, the scanner was not able to parse it correctly. This was because the scanner was not checking if the next byte was a <code class=\"notranslate\">:</code> when the current byte was a <code class=\"notranslate\">:</code>.</p>\n<p dir=\"auto\">This will match the behavior of the old parser.</p>\n<p dir=\"auto\">It feels like the <code class=\"notranslate\">#peek_byte</code> on the string scanner should accept a position to peek at, but it doesn't. So we have to use <code class=\"notranslate\">#getbyte</code> to get the byte at the next position.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53397.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2602206392\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53397\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53397/hovercard\" href=\"https://github.com/rails/rails/issues/53397\">#53397</a>.</p>",
             "url": "https://github.com/rails/rails/pull/53453",
             "title": "Fix routes with `::` in the path",
-            "date_modified": "2024-10-25T23:03:34.000Z",
+            "date_modified": "2024-10-26T17:10:11.000Z",
             "date_published": "2024-10-25T22:59:53.000Z",
             "author": {
                 "name": "rafaelfranca",
