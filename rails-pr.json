@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">By default <code class=\"notranslate\">attributes_for_inspect</code> is set to <code class=\"notranslate\">:all</code>.<br>\nFor new appliciations it is set to <code class=\"notranslate\">[:id]</code> in <code class=\"notranslate\">config/environment/production.rb</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53473",
+            "title": "Update ActiveRecord::Core.attributes_for_inspect CHANGELOG [ci-skip]",
+            "date_modified": "2024-10-28T16:33:31.000Z",
+            "date_published": "2024-10-28T16:24:56.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Tag <code class=\"notranslate\">.attributes_for_inspect</code> as a <code class=\"notranslate\">singleton-method</code> so it shows up in the API documentation.</p>\n<p dir=\"auto\">Expand the documentation of <code class=\"notranslate\">#inspect</code> and <code class=\"notranslate\">#full_inspect</code> with examples, and how the output can be changed by<br>\n<code class=\"notranslate\">.attributes_for_inspect</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53472",
+            "title": "Expand documentation of `.attributes_for_inspect` [ci-skip]",
+            "date_modified": "2024-10-28T16:13:38.000Z",
+            "date_published": "2024-10-28T16:12:00.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When running under Rack 3, we'll proceed with the new behaviour. That means we won't affect applications that already use Rack 3, but does also mean we can't help an application that is simultaneously bumping Rails and Rack together. 🤷🏻‍♂️</p>\n<p dir=\"auto\">However, with this commit, we at least ensure we maintain compatibility for applications that are currently still on Rack 2 -- and we can help with the transition using deprecation warnings... though there's admittedly a decent chance such warnings will only show up in production.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53394.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2601289400\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53394\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53394/hovercard\" href=\"https://github.com/rails/rails/issues/53394\">#53394</a></p>",
             "url": "https://github.com/rails/rails/pull/53471",
             "title": "Maintain Rack 2 parameter parsing behaviour",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "rzane",
                 "url": "https://github.com/rzane"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48097622?u=0f5215ec096873b7ddfe2f431d11437a04fac995&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n This pull request removes storage entries when active_storage is skipped and database is not sqlite3 and <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53413.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2607107968\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53413\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53413/hovercard\" href=\"https://github.com/rails/rails/issues/53413\">#53413</a> \n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes railties/lib/rails/generators/rails/app/templates/gitignore.tt</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53417",
-            "title": "Remove storage from gitignore if skip_active_storage and database is not sqlite3",
-            "date_modified": "2024-10-23T12:53:29.000Z",
-            "date_published": "2024-10-23T12:30:52.000Z",
-            "author": {
-                "name": "vinibispo",
-                "url": "https://github.com/vinibispo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2779422?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Default headers are added to ActionDispatch::Response in the <code class=\"notranslate\">.create</code><br>\nmethod, not in <code class=\"notranslate\">#initialize</code>. The <code class=\"notranslate\">make_response!</code> method in<br>\nActionController::Live calls <code class=\"notranslate\">Live::Response.new</code> rather than<br>\n<code class=\"notranslate\">Live::Response.create</code>, which bypasses the merging of default headers.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53402.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2603000097\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53402\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53402/hovercard\" href=\"https://github.com/rails/rails/issues/53402\">#53402</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53403",
-            "title": "Include default headers in ActionController::Live responses.",
-            "date_modified": "2024-10-24T20:14:34.000Z",
-            "date_published": "2024-10-21T15:59:55.000Z",
-            "author": {
-                "name": "afn",
-                "url": "https://github.com/afn"
             }
         }
     ]
