@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/88084038?u=f08dc1fe27f8713e5eab20bc4c0544618d57fa51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Remove redundant <code class=\"notranslate\">serialize_argument(true)</code> method call to improve readability.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">It seems that calling the <code class=\"notranslate\">serialize_argument(true)</code> method looks redundant. It seems to me that it is enough to assign <code class=\"notranslate\">true</code> to <code class=\"notranslate\">result[WITH_INDIFFERENT_ACCESS_KEY]</code>, if I understood everything correctly.</p>",
+            "url": "https://github.com/rails/rails/pull/53476",
+            "title": "refactor: remove redundant `serialize_argument(true)` call in `serialize_indifferent_hash`",
+            "date_modified": "2024-10-28T19:35:37.000Z",
+            "date_published": "2024-10-28T19:33:38.000Z",
+            "author": {
+                "name": "Suban05",
+                "url": "https://github.com/Suban05"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If <code class=\"notranslate\">.attributes_for_inspect</code> is set to <code class=\"notranslate\">:all</code> for production console, we probably want this behaviour in all environments.</p>\n<p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2506001400\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52801\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52801/hovercard\" href=\"https://github.com/rails/rails/pull/52801\">#52801</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53475",
             "title": "Always show all attributes in the console",
-            "date_modified": "2024-10-28T18:25:36.000Z",
+            "date_modified": "2024-10-28T19:21:20.000Z",
             "date_published": "2024-10-28T18:09:29.000Z",
             "author": {
                 "name": "p8",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "baarde",
                 "url": "https://github.com/baarde"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/929886?u=20e7647deec019e86c7d64fd94148ede89abb64c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It appears that <code class=\"notranslate\">bin/rails generate action_text:install</code> is the only viable way to install ActionText. I followed the guides and tried <code class=\"notranslate\">bin/rails action_text:install</code>. Didn't work. Then I confirmed that <a href=\"https://github.com/rails/rails/blob/main/actiontext/lib/generators/action_text/install/install_generator.rb\">installer is indeed a generator</a>. Ran <code class=\"notranslate\">bin/rails g action_text:install</code> and it was smooth sailing.</p>\n<p dir=\"auto\">This Pull Request updates the guide to instruct readers to run <code class=\"notranslate\">bin/rails generate action_text:install</code> instead of <code class=\"notranslate\">bin/rails action_text:install</code>. There seems to more occurrence of <code class=\"notranslate\">bin/rails generate</code> over <code class=\"notranslate\">bin/rails g</code>, so even though I prefer and use the <code class=\"notranslate\">g</code> alias I've opted for the full command here.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53427",
-            "title": "[ci-skip] ActionText is installed via generate command",
-            "date_modified": "2024-10-28T12:32:57.000Z",
-            "date_published": "2024-10-24T09:10:50.000Z",
-            "author": {
-                "name": "yawboakye",
-                "url": "https://github.com/yawboakye"
             }
         }
     ]
