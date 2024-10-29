@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/88084038?u=f08dc1fe27f8713e5eab20bc4c0544618d57fa51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Remove redundant <code class=\"notranslate\">serialize_argument(true)</code> method call to improve readability.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">It seems that calling the <code class=\"notranslate\">serialize_argument(true)</code> method looks redundant. It seems to me that it is enough to assign <code class=\"notranslate\">true</code> to <code class=\"notranslate\">result[WITH_INDIFFERENT_ACCESS_KEY]</code>, if I understood everything correctly.</p>",
-            "url": "https://github.com/rails/rails/pull/53476",
-            "title": "refactor: remove redundant `serialize_argument(true)` call in `serialize_indifferent_hash`",
-            "date_modified": "2024-10-28T19:35:37.000Z",
-            "date_published": "2024-10-28T19:33:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1000669?u=a974dc193c92673d14a6927670902d682038cd6a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This gives them a better idea of what the helper will do when reading the docs.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a href=\"https://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#method-i-number_with_delimiter\" rel=\"nofollow\">I was browsing the docs</a>, and it would be more useful if the working example docs gave real example output.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes example output of <code class=\"notranslate\">number_to_*</code> helpers.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53477",
+            "title": "[Docs] Update working cases example outputs for number_to_* helpers",
+            "date_modified": "2024-10-29T02:36:21.000Z",
+            "date_published": "2024-10-29T02:36:17.000Z",
             "author": {
-                "name": "Suban05",
-                "url": "https://github.com/Suban05"
+                "name": "JuanitoFatas",
+                "url": "https://github.com/JuanitoFatas"
             }
         },
         {
