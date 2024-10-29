@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/509837?u=697e4a265d5359363a5d57a24b07f9a79cb0b08a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53464.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2616964067\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53464\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53464/hovercard\" href=\"https://github.com/rails/rails/issues/53464\">#53464</a></p>\n<p dir=\"auto\">The issue came up because we were calling <code class=\"notranslate\">URI(url.to_s)</code> on the full URL, including query string params etc. This is only necessary if we are redirecting to a different full URL, ie. not redirecting to a path.</p>\n<p dir=\"auto\">Note that the issue would still exist if you redirected to a full URL that included a non-ASCII querystring. I think a more proper fix would be to avoid using <code class=\"notranslate\">URI</code> but I'm not sure what a good replacement is.</p>",
+            "url": "https://github.com/rails/rails/pull/53478",
+            "title": "Fix `redirect_to` host verification error with non-ASCII querystring",
+            "date_modified": "2024-10-29T03:56:08.000Z",
+            "date_published": "2024-10-29T03:56:04.000Z",
+            "author": {
+                "name": "ghiculescu",
+                "url": "https://github.com/ghiculescu"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1000669?u=a974dc193c92673d14a6927670902d682038cd6a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This gives them a better idea of what the helper will do when reading the docs.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a href=\"https://api.rubyonrails.org/classes/ActionView/Helpers/NumberHelper.html#method-i-number_with_delimiter\" rel=\"nofollow\">I was browsing the docs</a>, and it would be more useful if the working example docs gave real example output.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes example output of <code class=\"notranslate\">number_to_*</code> helpers.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53477",
             "title": "[Docs] Update working cases example outputs for number_to_* helpers",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "baarde",
                 "url": "https://github.com/baarde"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/929886?u=20e7647deec019e86c7d64fd94148ede89abb64c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It appears that <code class=\"notranslate\">bin/rails generate action_text:install</code> is the only viable way to install ActionText. I followed the guides and tried <code class=\"notranslate\">bin/rails action_text:install</code>. Didn't work. Then I confirmed that <a href=\"https://github.com/rails/rails/blob/main/actiontext/lib/generators/action_text/install/install_generator.rb\">installer is indeed a generator</a>. Ran <code class=\"notranslate\">bin/rails g action_text:install</code> and it was smooth sailing.</p>\n<p dir=\"auto\">This Pull Request updates the guide to instruct readers to run <code class=\"notranslate\">bin/rails generate action_text:install</code> instead of <code class=\"notranslate\">bin/rails action_text:install</code>. There seems to more occurrence of <code class=\"notranslate\">bin/rails generate</code> over <code class=\"notranslate\">bin/rails g</code>, so even though I prefer and use the <code class=\"notranslate\">g</code> alias I've opted for the full command here.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53427",
-            "title": "[ci-skip] ActionText is installed via generate command",
-            "date_modified": "2024-10-28T12:32:57.000Z",
-            "date_published": "2024-10-24T09:10:50.000Z",
-            "author": {
-                "name": "yawboakye",
-                "url": "https://github.com/yawboakye"
             }
         }
     ]
