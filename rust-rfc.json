@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/explicit-abi/text/3722-explicit-abi.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3722",
+            "title": "[RFC] Explicit ABI in `extern`",
+            "date_modified": "2024-10-30T10:56:46.000Z",
+            "date_published": "2024-10-30T10:46:06.000Z",
+            "author": {
+                "name": "m-ou-se",
+                "url": "https://github.com/m-ou-se"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Tweak the behaviour of <code class=\"notranslate\">?</code> inside <code class=\"notranslate\">try{}</code> blocks to not depend on context, in order to work better with methods and need type annotations less often.</p>\n<p dir=\"auto\">The stable behaviour of <code class=\"notranslate\">?</code> when <em>not</em> in a <code class=\"notranslate\">try{}</code> block is untouched.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/if-at-first-you-dont-succeed/text/3721-homogeneous-try-blocks.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3721",
             "title": "Add `homogeneous_try_blocks` RFC",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "epage",
                 "url": "https://github.com/epage"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20070360?u=c5051b99b45e27910ed27f9b2145cd90e8c3d717&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">/cc @rust-lang/crates-io</p>\n<p dir=\"auto\">A big thank you to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/woodruffw/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/woodruffw\">@woodruffw</a> for co-authoring, providing prior art through PyPi's implementation, and all of the expert advice. 🙏</p>\n<p dir=\"auto\"><a href=\"https://github.com/mdtro/rfcs/blob/mdtro/trusted-publishing-cratesio/text/3691-trusted-publishing-cratesio.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3691",
-            "title": "crates.io: Trusted Publishing Support",
-            "date_modified": "2024-10-28T16:40:05.000Z",
-            "date_published": "2024-09-10T17:35:19.000Z",
-            "author": {
-                "name": "mdtro",
-                "url": "https://github.com/mdtro"
             }
         }
     ]
