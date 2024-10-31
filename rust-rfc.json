@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1662621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">This RFC adds call-site unpacking of tuples, tuple structs, and fixed-size arrays, using <code class=\"notranslate\">...expr</code> within the function call's parentheses as a shorthand for passing arguments. The full contents of these collections with known sizes are unpacked directly as the next arguments of a function call, desugaring into the corresponding element accesses during compilation.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/miikkas/rust-rfc-static-function-argument-unpacking/blob/master/text/3723-static-function-argument-unpacking.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3723",
             "title": "[RFC] Static Function Argument Unpacking",
-            "date_modified": "2024-10-31T00:50:39.000Z",
+            "date_modified": "2024-10-31T03:29:06.000Z",
             "date_published": "2024-10-30T19:07:10.000Z",
             "author": {
                 "name": "miikkas",
