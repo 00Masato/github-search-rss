@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's already fixed on main but not released yet: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2616467456\" data-permission-text=\"Title is private\" data-url=\"https://github.com/sidekiq/sidekiq/issues/6477\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/sidekiq/sidekiq/pull/6477/hovercard\" href=\"https://github.com/sidekiq/sidekiq/pull/6477\">sidekiq/sidekiq#6477</a></p>\n<p dir=\"auto\">Makes CI green for jobs that remove the gemfile like <a href=\"https://buildkite.com/rails/rails/builds/113285#0192dd58-d4f6-45dc-a1a9-89db15868afe\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/113285#0192dd58-d4f6-45dc-a1a9-89db15868afe</a>, since they apparently do that.</p>",
-            "url": "https://github.com/rails/rails/pull/53499",
-            "title": "Temporarily allow sidekiq warning",
-            "date_modified": "2024-10-30T12:34:42.000Z",
-            "date_published": "2024-10-30T12:34:37.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Having it be an extra point at the bottom looks out of place. I moved it to the actual config description.</p>\n<p dir=\"auto\">Additionally, it implied that the watcher will be used simply by adding the listen gem to the gemfile which is not true. In the past, it was part of the generated gemfile/config but not since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"964786067\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42985\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42985/hovercard\" href=\"https://github.com/rails/rails/pull/42985\">#42985</a></p>",
             "url": "https://github.com/rails/rails/pull/53498",
             "title": "Update guide docs for the evented file watcher",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "eval",
                 "url": "https://github.com/eval"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Using <code class=\"notranslate\">unprocessable_entity</code> will emit a warning on Rack 3.2</p>\n<p dir=\"auto\">This to me seems like the least invasive change and is also how headers are currently handled.</p>\n<p dir=\"auto\">There's some code in jbuilder that will need a similar change. <a href=\"https://github.com/search?q=org%3Arails+unprocessable_entity+-repo%3Arails%2Frails&amp;type=code\">https://github.com/search?q=org%3Arails+unprocessable_entity+-repo%3Arails%2Frails&amp;type=code</a>. I will take a look if this is accepted.</p>\n<p dir=\"auto\"><strong>Question:</strong> Should <code class=\"notranslate\">ActionDispatch::Constants</code> be nodoc? I think it should be but can that just be done now after it's been availale for a year?</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ioquatix/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ioquatix\">@ioquatix</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">There have been various PRs in the past for this:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2385041238\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52252\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52252/hovercard\" href=\"https://github.com/rails/rails/pull/52252\">#52252</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2367816055\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52192\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52192/hovercard\" href=\"https://github.com/rails/rails/pull/52192\">#52192</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2345919668\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52087\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52087/hovercard\" href=\"https://github.com/rails/rails/pull/52087\">#52087</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2347618665\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52097\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52097/hovercard\" href=\"https://github.com/rails/rails/pull/52097\">#52097</a></li>\n</ul>\n<p dir=\"auto\">Maybe this will be the one.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53383",
+            "title": "Handle Rack 3.2 `unprocessable_{entity,content}`",
+            "date_modified": "2024-10-19T17:00:53.000Z",
+            "date_published": "2024-10-19T17:00:48.000Z",
+            "author": {
+                "name": "Earlopain",
+                "url": "https://github.com/Earlopain"
             }
         }
     ]
