@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2097964?u=0e9fd19834f9606a6d939fbc12c28aeadff91b03&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">This RFC proposes a way to write the discriminant of an enum when building it \"from scratch\". This introduces two new library components, an unsafe <code class=\"notranslate\">set_discriminant</code> function, and a <code class=\"notranslate\">discriminant_of!</code> macro, which can be used with any enum, regardless of <code class=\"notranslate\">repr</code> or any other details.</p>\n<p dir=\"auto\">This RFC is a follow-on to the <code class=\"notranslate\">offset_of_enum</code> feature, tracked by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2091334584\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/120141\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/120141/hovercard\" href=\"https://github.com/rust-lang/rust/issues/120141\">rust-lang/rust#120141</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jamesmunns/rfcs/blob/james/unsafe_set_discriminant/text/3727-unsafe-set-discriminant.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3727",
+            "title": "RFC: Unsafe Set Enum Discriminants",
+            "date_modified": "2024-11-08T11:57:32.000Z",
+            "date_published": "2024-11-08T11:56:13.000Z",
+            "author": {
+                "name": "jamesmunns",
+                "url": "https://github.com/jamesmunns"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/123987141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC was co-authored by Walter Pearce (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/walterhpearce/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/walterhpearce\">@walterhpearce</a>) and Josh Triplett (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/joshtriplett/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/joshtriplett\">@joshtriplett</a>).</p>\n<p dir=\"auto\">Here, we propose the alternative adoption and implementation of The Update Framework for providing the chain and trust and implementing signatures for crates and releases. This provides us with the same mitigations and protections as in the previous RFC, utilizing the standard TUF framework for achieving it using new industry standard techniques, tailored for the Rust ecosystem.</p>\n<p dir=\"auto\">Big thanks to <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/epage/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/epage\">@epage</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Eh2406/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Eh2406\">@Eh2406</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mdtro/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mdtro\">@mdtro</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/woodruffw/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/woodruffw\">@woodruffw</a> for the insights and discussion around this. Also heartfelt thanks to anyone else I missed who participated in the RustConf 2024 Cargo Vault discussions around this topic.</p>\n<p dir=\"auto\">We're going to have follow-up discussions with the infrastructure team on deploying and documenting the infrastructure for this, and on using this infrastructure to set up mirrors (which was one of the primary motivations for creating this infrastructure). Depending on the complexity of setting up mirroring, we may follow up with a subsequent RFC on mirroring.</p>\n<p dir=\"auto\">(This RFC supersedes and <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #3579.\">closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2157593345\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3579\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3579/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3579\">#3579</a>, the previous draft Public Key Infrastructure RFC, which did not use TUF.)</p>\n<p dir=\"auto\"><a href=\"https://github.com/walterhpearce/rfcs/blob/tuf/text/3724-theupdateframework.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3724",
             "title": "Implement The Update Framework for Project Signing",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3757567?u=da6a6ffd479943d5ba42f5652320c26aa649ca18&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As discussed <a href=\"https://rust-lang.zulipchat.com/#narrow/stream/131828-t-compiler/topic/--print.20std-support\" rel=\"nofollow\">on Zulip</a>, this RFC proposes adding a new argument for <code class=\"notranslate\">rustc --print</code> that acts as the single source of truth for whether a target supports std.</p>\n<p dir=\"auto\"><a href=\"https://github.com/adamgemmell/rfcs/blob/dev/adagem01/std-supported/text/3693-print-std-support.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3693",
-            "title": "Expose std support via --print",
-            "date_modified": "2024-11-01T02:21:34.000Z",
-            "date_published": "2024-09-12T15:59:32.000Z",
-            "author": {
-                "name": "adamgemmell",
-                "url": "https://github.com/adamgemmell"
             }
         }
     ]
