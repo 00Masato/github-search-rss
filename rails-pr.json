@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Point to the Ruby 3.3.6 documentation in the Rails guides.</p>\n<p dir=\"auto\">This is actually the only occurrence of the whole guides that needs to be changed (there are other 3 occurrences of links that point to <a href=\"https://ruby-doc.org/\" rel=\"nofollow\">ruby-doc.org</a> but are all about old release notes)</p>",
+            "url": "https://github.com/rails/rails/pull/53563",
+            "title": "Point to Ruby 3.3.6 documentation in Rails guides [ci skip]",
+            "date_modified": "2024-11-08T16:45:02.000Z",
+            "date_published": "2024-11-08T16:21:22.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68273?u=ea37762ae498704cbd73ba6b361793d51c9b1b43&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When I originally wrote this there were 4 things.</p>\n<p dir=\"auto\">Clearly this needed updating.</p>",
+            "url": "https://github.com/rails/rails/pull/53562",
+            "title": "Modernizing Old Dad Jokes",
+            "date_modified": "2024-11-08T16:20:54.000Z",
+            "date_published": "2024-11-08T16:20:50.000Z",
+            "author": {
+                "name": "skellock",
+                "url": "https://github.com/skellock"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101501?u=b9368cd286f05d7b8998746f81d8cb3c2bd247c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">One line change that allows more than a single route to be silenced using a regexp pattern.</p>",
             "url": "https://github.com/rails/rails/pull/53561",
             "title": "allow path regexp in SilenceRequest middleware",
@@ -20,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/53025062?u=573142bc2bfb495ed7710d8d96a106c2029f31c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because Fixes Issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2635832226\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53538\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53538/hovercard\" href=\"https://github.com/rails/rails/issues/53538\">#53538</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the value returned from computed_height method, because is returning decimal positions and forcing round(0) to the result of encoded_with * display_height_scale avoids the return of decimals when leave the method.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li>[ X Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53560",
             "title": "Fixes Issue 53538",
-            "date_modified": "2024-11-08T15:53:16.000Z",
+            "date_modified": "2024-11-08T16:09:48.000Z",
             "date_published": "2024-11-08T14:04:08.000Z",
             "author": {
                 "name": "lmunozm1702",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "gabriel-curtino",
                 "url": "https://github.com/gabriel-curtino"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4034581?u=8b2576e32b150ae2177fa58f5319ca120f329369&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">There is an API <a href=\"https://github.com/rails/rails/blob/7fac5d14d00fcc8dc60b49729abe78223ad3bf00/activerecord/lib/active_record/attribute_methods.rb#L459\">accessed_fields</a> that track the columns accessed during some request. But there is no possibility to load required data only for preloaded associations.<br>\nThis PR allows user to specify columns to be loaded without triggering additional database queries when used alongside eager loading.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">load_columns</code> is a method in Active Record that allows for selective loading of specific columns from a database table. This method is particularly useful in scenarios where you're preloading tables that have many columns, but your current operation only requires a subset of those columns. By using load_columns, you can potentially improve both the performance and resource efficiency of your Active Record operations.</p>\n<p dir=\"auto\">The primary_key, foreign keys, inheritance and polymorphic columns are included in loaded columns list by default.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53454",
-            "title": "Allow user to specify which columns should be loaded for preloaded associations",
-            "date_modified": "2024-11-04T08:50:03.000Z",
-            "date_published": "2024-10-26T08:48:36.000Z",
-            "author": {
-                "name": "andriy-baran",
-                "url": "https://github.com/andriy-baran"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1984961?u=8ad5b1ba19568c45ce03e1d8b95fbf0de3b220bc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because we would like to define rate limits shared for certain controllers (e.g. for all API endpoints). At the moment, rate-limit is evaluated on controller-based level due to <code class=\"notranslate\">controller_path</code> part of cache key and configuration is not flexible in this  case.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">In order to achieve cross-controller rate limits, I added option <code class=\"notranslate\">:scope</code> arguments which may be passed to <code class=\"notranslate\">rate_limit</code> method. It is expected to be symbol or string.</p>\n<p dir=\"auto\">If multiple controllers (or e.g. <code class=\"notranslate\">ApplicationController</code>) defines rate-limit with <code class=\"notranslate\">:scope</code> value provided, rate limit counter is incremented across controller actions, which allows user to define e.g. global rate limit to 100req/s.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"rate_limit to: 100, within: 1.minute, scope: :api_global\"><pre class=\"notranslate\"><span class=\"pl-en\">rate_limit</span> <span class=\"pl-pds\">to</span>: <span class=\"pl-c1\">100</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">within</span>: <span class=\"pl-c1\">1</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">minute</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">scope</span>: <span class=\"pl-pds\">:api_global</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I am not happy from provided test case. Assigning <code class=\"notranslate\">@controller</code> in <code class=\"notranslate\">cross-controller rate limit</code> test feels kinda hackish, however I cannot find better solution. Feedback is really welcomed.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53449",
-            "title": "Rate Limiting: Allow to define shared rate limit across controllers.",
-            "date_modified": "2024-11-06T17:34:46.000Z",
-            "date_published": "2024-10-25T13:05:58.000Z",
-            "author": {
-                "name": "arthurwozniak",
-                "url": "https://github.com/arthurwozniak"
             }
         }
     ]
