@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2651240?u=d1c170b78ab342593d0ad83baee8556ed046846f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Turbo morph was introduced as the happiest navigation path for Rails. It usually replaces turbo streams and offers more modern navigation. Is there any reason not to recommend these patterns when creating a new Rails app?</p>\n<p dir=\"auto\">I'm also proposing that view transitions be enabled by default. The fading effect is subtle, and I see no reason not to recommend enabling it.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a href=\"https://dev.37signals.com/a-happier-happy-path-in-turbo-with-morphing/\" rel=\"nofollow\">https://dev.37signals.com/a-happier-happy-path-in-turbo-with-morphing/</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53567",
+            "title": "Add turbo meta tags to the application template",
+            "date_modified": "2024-11-09T01:58:07.000Z",
+            "date_published": "2024-11-09T01:50:58.000Z",
+            "author": {
+                "name": "lazaronixon",
+                "url": "https://github.com/lazaronixon"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20671304?u=7139c14de87a260ec47f53675dca4071adb8d437&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">small indentation changes to fix code block display issue</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53566",
             "title": "Fixes broken code examples in the API docs [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "zvkemp",
                 "url": "https://github.com/zvkemp"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8942202?u=5f666981b961af6fc1288996a03f0c4ee04f750d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It seems Action Mailbox guide expects exim pipes the inbound emails to a rails task, meaning rails the Rails app must be run in that location. This task does some checks and trigger a post request to the app inbound emails path.</p>\n<p dir=\"auto\">This results very inconvenient when deploying in containers with Kamal or cannot install rails where the mail server is.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I'm adding to the guide a NOTE with an alternative for replacing that task with a bash script.</p>\n<p dir=\"auto\">Here the link included: <a href=\"https://gist.github.com/gabriel-curtino/034aa4c9174ec21e37eb462f087c087c\">https://gist.github.com/gabriel-curtino/034aa4c9174ec21e37eb462f087c087c</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">It works for me :)</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53463",
-            "title": "[ci skip] Guides: Alternative Exim Relay Script for Action Mailbox",
-            "date_modified": "2024-10-27T22:20:09.000Z",
-            "date_published": "2024-10-27T22:20:05.000Z",
-            "author": {
-                "name": "gabriel-curtino",
-                "url": "https://github.com/gabriel-curtino"
             }
         }
     ]
