@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Suggest a way to execute a command similar to <code class=\"notranslate\">db:reset</code>, which would run migrations (after the comment indicating that it won’t).</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Resetting the Database section has a note stating that resetting the database won't run migrations. This Pull Request adds a short comment stating what that command would like in case you do need (or want) to run them.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Restting the Database section in the Active Record Migrations guide.</p>",
+            "url": "https://github.com/rails/rails/pull/53583",
+            "title": "Add database reset suggestion [ci-skip]",
+            "date_modified": "2024-11-10T18:21:01.000Z",
+            "date_published": "2024-11-10T18:20:56.000Z",
+            "author": {
+                "name": "arzezak",
+                "url": "https://github.com/arzezak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168854?u=075f949ceef8be9c565bcf4dde727a6bf5a73839&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2622473074\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53490\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53490/hovercard?comment_id=2465235043&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/53490#issuecomment-2465235043\">#53490 (comment)</a></p>\n<p dir=\"auto\">TruffleRuby does not implement <code class=\"notranslate\">Regexp.timeout/Regexp.timeout=</code> yet, and it might be quite tricky to implement (e.g. it might need changes in the Regexp engine, <a href=\"https://github.com/jruby/joni\">https://github.com/jruby/joni</a>).<br>\nSo it would be nice if it doesn't fail here when booting a Rails 8 app on TruffleRuby (latest release or head).<br>\n(we've had a couple reports of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2622473074\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53490\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53490/hovercard\" href=\"https://github.com/rails/rails/pull/53490\">#53490</a> breaking Rails on TruffleRuby)</p>\n<h3 dir=\"auto\">Alternative</h3>\n<p dir=\"auto\">Wait that TruffleRuby implements <code class=\"notranslate\">Regexp.timeout =</code>.<br>\nAs mentioned above that might take some time, and of course that won't fix for the current TruffleRuby release, 24.1.0.<br>\nThe next release, 24.2.0, is only in March 2025.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53582",
             "title": "Check if Regexp.timeout = is supported in configuration.rb",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "vlado",
                 "url": "https://github.com/vlado"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2616219534\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53459\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53459/hovercard\" href=\"https://github.com/rails/rails/pull/53459\">#53459</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Earlopain/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Earlopain\">@Earlopain</a></p>",
-            "url": "https://github.com/rails/rails/pull/53524",
-            "title": "Rubocop Guides Omakase [ci skip]",
-            "date_modified": "2024-11-04T05:55:48.000Z",
-            "date_published": "2024-11-03T12:59:44.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
