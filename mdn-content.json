@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Separated the attributes into sections: events and deprecated.<br>\nLinked each event to its corresponding page.<br>\nAdded a note about that.<br>\nAdded a global warning about deprecated attributes, suggesting the use of CSS instead.<br>\nreduced the amount of text and removed the bolding in each individual deprecated attribute<br>\nadded logical property equivalents to the list of usable attribute.<br>\nadded :focus to :active<br>\nadded a link to event handling.</p>",
             "url": "https://github.com/mdn/content/pull/36696",
             "title": "<body> element: enhance attribute section",
-            "date_modified": "2024-11-08T23:54:20.000Z",
+            "date_modified": "2024-11-11T10:15:05.000Z",
             "date_published": "2024-11-08T23:52:17.000Z",
             "author": {
                 "name": "estelle",
@@ -185,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">addresses concerned brought up in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2625632984\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/36583\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/36583/hovercard\" href=\"https://github.com/mdn/content/pull/36583\">#36583</a></p>",
             "url": "https://github.com/mdn/content/pull/36691",
             "title": "addresses 36583: summary icon styles",
-            "date_modified": "2024-11-09T07:12:35.000Z",
+            "date_modified": "2024-11-11T11:01:27.000Z",
             "date_published": "2024-11-08T08:34:04.000Z",
             "author": {
                 "name": "estelle",
