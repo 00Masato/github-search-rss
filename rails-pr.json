@@ -83,17 +83,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/987638?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">google-chrome-stable</code> is for system tests. So applications don't use it, the package is unneeded.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53579",
-            "title": "Don't install a package for system test when applications don't use it",
-            "date_modified": "2024-11-10T05:40:10.000Z",
-            "date_published": "2024-11-10T05:29:35.000Z",
-            "author": {
-                "name": "y-yagi",
-                "url": "https://github.com/y-yagi"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53565.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2645266168\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53565\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53565/hovercard\" href=\"https://github.com/rails/rails/issues/53565\">#53565</a>.</p>\n<p dir=\"auto\">This was probably unnoticed for so long, because sqlite get real traction only recently and people started to create partial indexes. The problem was that the existing regex </p><div class=\"Box Box--condensed my-2\">\n  <div class=\"Box-header f6\">\n    <p class=\"mb-0 text-bold\">\n      <a href=\"https://github.com/rails/rails/blob/852d0cd4123463cf215f4b024801b256857295c4/activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb#L24\">rails/activerecord/lib/active_record/connection_adapters/sqlite3/schema_statements.rb</a>\n    </p>\n    <p class=\"mb-0 color-fg-muted\">\n         Line 24\n      in\n      <a data-pjax=\"true\" class=\"commit-tease-sha Link--inTextBlock\" href=\"/rails/rails/commit/852d0cd4123463cf215f4b024801b256857295c4\">852d0cd</a>\n    </p>\n  </div>\n  <div itemprop=\"text\" class=\"Box-body p-0 blob-wrapper blob-wrapper-embedded data\">\n    <table class=\"highlight tab-size mb-0 js-file-line-container\" data-tab-size=\"8\" data-paste-markdown-skip=\"\">\n\n        <tbody><tr class=\"border-0\">\n          <td id=\"L24\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"24\"></td>\n          <td id=\"LC24\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\"> <span class=\"pl-sr\">/<span class=\"pl-cce\">\\b</span>ON<span class=\"pl-cce\">\\b</span><span class=\"pl-cce\">\\s</span>*\"?(<span class=\"pl-cce\">\\w</span>+?)\"?<span class=\"pl-cce\">\\s</span>*<span class=\"pl-cce\">\\(</span>(?&lt;expressions&gt;.+?)<span class=\"pl-cce\">\\)</span>(?:<span class=\"pl-cce\">\\s</span>*WHERE<span class=\"pl-cce\">\\b</span><span class=\"pl-cce\">\\s</span>*(?&lt;where&gt;.+))?(?:<span class=\"pl-cce\">\\s</span>*<span class=\"pl-cce\">\\/</span><span class=\"pl-cce\">\\*</span>.*<span class=\"pl-cce\">\\*</span><span class=\"pl-cce\">\\/</span>)?<span class=\"pl-cce\">\\z</span>/i</span> =~ <span class=\"pl-s1\">index_sql</span> </td>\n        </tr>\n    </tbody></table>\n  </div>\n</div>\n incorrectly greedily parses the comment under the <code class=\"notranslate\">where</code> clause. Fixing it makes the regexp even more complex, so I think just striping it from the already parsed <code class=\"notranslate\">where</code> is simpler.<p></p>",
             "url": "https://github.com/rails/rails/pull/53570",
             "title": "Fix retrieving partial indexes with comments for SQLite",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "camallen",
                 "url": "https://github.com/camallen"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2458665186\" data-permission-text=\"Title is private\" data-url=\"https://github.com/puma/puma/issues/3439\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/puma/puma/pull/3439/hovercard\" href=\"https://github.com/puma/puma/pull/3439\">puma/puma#3439</a> introduced a new <code class=\"notranslate\">WEB_CONCURRENCY=auto</code> setting for puma. The config sets puma's worker count to the count of available cpus.</p>\n<p dir=\"auto\">This PR adds the new option to the explaining comments of a new project's default <code class=\"notranslate\">puma.rb</code> config file.</p>",
+            "url": "https://github.com/rails/rails/pull/53535",
+            "title": "Change the WEB_CONCURRENCY deploy comment default to `auto`",
+            "date_modified": "2024-11-04T23:20:54.000Z",
+            "date_published": "2024-11-04T22:49:23.000Z",
+            "author": {
+                "name": "codergeek121",
+                "url": "https://github.com/codergeek121"
             }
         }
     ]
