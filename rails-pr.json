@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">This PR just improves a comment in the default generated <code class=\"notranslate\">bin/rubocop</code> binstub. 😃</p>",
+            "url": "https://github.com/rails/rails/pull/53593",
+            "title": "Improve comment in default RuboCop binstub [ci skip]",
+            "date_modified": "2024-11-11T13:03:03.000Z",
+            "date_published": "2024-11-11T13:02:39.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Just adds a missing period in the automatically generated <code class=\"notranslate\">config/puma.rb</code> 😃.</p>",
+            "url": "https://github.com/rails/rails/pull/53592",
+            "title": "Add missing period to generated Puma config [ci skip]",
+            "date_modified": "2024-11-11T12:56:27.000Z",
+            "date_published": "2024-11-11T12:56:06.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We want to run a tight ship in general, but a few of these tests are intending one thread to block while the rest of the test does its thing; the new 0.2s default seems to be a bit too short for reliable CI.</p>\n<p dir=\"auto\">Prompted by: <a href=\"https://buildkite.com/rails/rails/builds/113615#01931ab5-4f17-4ec4-8a72-4655c5b6a9c4/1294-1302\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/113615#01931ab5-4f17-4ec4-8a72-4655c5b6a9c4/1294-1302</a></p>\n<p dir=\"auto\">I've just eyeballed nearby tests that seem like they might also need more time, not done any real analysis.</p>\n<p dir=\"auto\">FYI <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a> -- I don't think this materially degrades the improvement from <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2121222831\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50985\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50985/hovercard\" href=\"https://github.com/rails/rails/pull/50985\">#50985</a></p>",
             "url": "https://github.com/rails/rails/pull/53591",
             "title": "Slightly extend checkout timeout for a couple of tests",
@@ -105,10 +127,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Point to the Ruby 3.3.6 documentation in the Rails guides.</p>\n<p dir=\"auto\">This is actually the only occurrence of the whole guides that needs to be changed (there are other 3 occurrences of links that point to <a href=\"https://ruby-doc.org/\" rel=\"nofollow\">ruby-doc.org</a> but are all about old release notes)</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Point to the latest official Ruby documentation (<a href=\"https://docs.ruby-lang.org/en/master/\" rel=\"nofollow\">https://docs.ruby-lang.org/en/master/</a>) across the Rails guides.</p>\n<p dir=\"auto\">This way we don't have to modify the docs every time a new version of Ruby is released.</p>",
             "url": "https://github.com/rails/rails/pull/53563",
-            "title": "Point to Ruby 3.3.6 documentation in Rails guides [ci skip]",
-            "date_modified": "2024-11-09T12:21:41.000Z",
+            "title": "Point to latest official Ruby documentation in Rails guides [ci skip]",
+            "date_modified": "2024-11-11T12:50:09.000Z",
             "date_published": "2024-11-08T16:21:22.000Z",
             "author": {
                 "name": "Uaitt",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "camallen",
                 "url": "https://github.com/camallen"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2458665186\" data-permission-text=\"Title is private\" data-url=\"https://github.com/puma/puma/issues/3439\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/puma/puma/pull/3439/hovercard\" href=\"https://github.com/puma/puma/pull/3439\">puma/puma#3439</a> introduced a new <code class=\"notranslate\">WEB_CONCURRENCY=auto</code> setting for puma. The config sets puma's worker count to the count of available cpus.</p>\n<p dir=\"auto\">This PR adds the new option to the explaining comments of a new project's default <code class=\"notranslate\">puma.rb</code> config file.</p>",
-            "url": "https://github.com/rails/rails/pull/53535",
-            "title": "Change the WEB_CONCURRENCY deploy comment default to `auto`",
-            "date_modified": "2024-11-04T23:20:54.000Z",
-            "date_published": "2024-11-04T22:49:23.000Z",
-            "author": {
-                "name": "codergeek121",
-                "url": "https://github.com/codergeek121"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5148?u=16a958717ad4cf89b260916f4ef52a9ef4aff433&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request adds shortcut to switch ActiveRecord logging to STDOUT.</p>\n<p dir=\"auto\">I have this in <code class=\"notranslate\">ApplicationRecord</code> or as monkey-patch in all my projects and I think it could be useful addition to the framework.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">During development or when debugging something I would like to see SQL queries that are executed and I usually do it like this:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class MyModelTest &lt; ActiveSupport::TestCase\n  test &quot;does something on create&quot; do\n    ...\n    original_logger = ActiveRecord::Base.logger\n    ActiveRecord::Base.logger = Logger.new(STDOUT)\n    # Code I want to debug\n    MyModel.create(...)\n    ...\n    ActiveRecord::Base.logger = original_logger\n    \n    assert something_happend_during_create\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class MyModelTest &lt; ActiveSupport::TestCase\n  test \"does something on create\" do\n    ...\n    original_logger = ActiveRecord::Base.logger\n    ActiveRecord::Base.logger = Logger.new(STDOUT)\n    # Code I want to debug\n    MyModel.create(...)\n    ...\n    ActiveRecord::Base.logger = original_logger\n    \n    assert something_happend_during_create\n  end\nend\n</code></pre></div>\n<p dir=\"auto\">That way I get only SQL queries I'm interested in logged to STDOUT and displayed in test output.</p>\n<p dir=\"auto\">Using <code class=\"notranslate\">ActiveRecord.log_to_stdout</code> block method that can be simplified to:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"class MyModelTest &lt; ActiveSupport::TestCase\n  test &quot;does something on create&quot; do\n    ...\n    ActiveRecord.log_to_stdout do\n      # Code I want to debug\n      MyModel.create(...)\n    end\n    \n    assert something_happend_during_create\n  end\nend\"><pre class=\"notranslate\"><code class=\"notranslate\">class MyModelTest &lt; ActiveSupport::TestCase\n  test \"does something on create\" do\n    ...\n    ActiveRecord.log_to_stdout do\n      # Code I want to debug\n      MyModel.create(...)\n    end\n    \n    assert something_happend_during_create\n  end\nend\n</code></pre></div>\n<p dir=\"auto\">It can also be called without block to \"permanently\" switch logs to STDOUT:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"ActiveRecord.log_to_stdout\n# is identical to\nActiveRecord::Base.logger = Logger.new(STDOUT)\"><pre class=\"notranslate\"><code class=\"notranslate\">ActiveRecord.log_to_stdout\n# is identical to\nActiveRecord::Base.logger = Logger.new(STDOUT)\n</code></pre></div>\n<p dir=\"auto\">This can be useful if you want to see logs in production console for example (although you can get that with <code class=\"notranslate\">Rails.logger.level = :warn</code> also).</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53525",
-            "title": "Add shortcut for ActiveRecord to log to STDOUT",
-            "date_modified": "2024-11-05T05:33:54.000Z",
-            "date_published": "2024-11-03T19:16:36.000Z",
-            "author": {
-                "name": "vlado",
-                "url": "https://github.com/vlado"
             }
         }
     ]
