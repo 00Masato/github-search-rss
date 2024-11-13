@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53624.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2655908276\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53624\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53624/hovercard\" href=\"https://github.com/rails/rails/issues/53624\">#53624</a> (cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/byroot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/byroot\">@byroot</a>).</p>",
+            "url": "https://github.com/rails/rails/pull/53628",
+            "title": "Restore back the ability to pass only database name for `DATABASE_URL`",
+            "date_modified": "2024-11-13T19:54:33.000Z",
+            "date_published": "2024-11-13T19:54:29.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Put back the quiet assets in development:</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">This was removed in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/0f43feda04d45aec064aedc312d265a529e4915d/hovercard\" href=\"https://github.com/rails/rails/commit/0f43feda04d45aec064aedc312d265a529e4915d\"><tt>0f43fed</tt></a>. This option is supported by propshaft.</p>\n<p dir=\"auto\">Currently, the terminal is clutted with assets request log.</p>\n</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53627",
+            "title": "Put back the quiet assets in development:",
+            "date_modified": "2024-11-13T19:04:58.000Z",
+            "date_published": "2024-11-13T19:04:54.000Z",
+            "author": {
+                "name": "Edouard-chin",
+                "url": "https://github.com/Edouard-chin"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39729785?u=bca7557c833422e5d3656072d74e99510b0764d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a href=\"https://github.com/rack/rack/blob/main/SPEC.rdoc\">Rack specification</a> states that a hash-like object stored in environment with <code class=\"notranslate\">rack.session</code> key MUST implement <code class=\"notranslate\">store/2</code> method with <code class=\"notranslate\">[]=</code> semantics.</p>\n<blockquote>\n<p dir=\"auto\">rack.session<br>\nA hash-like interface for storing request session data. The store must implement: store(key, value) (aliased as []=); fetch(key, default = nil) (aliased as []); delete(key); clear; to_hash (returning unfrozen Hash instance);</p>\n</blockquote>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53626",
             "title": "Add `ActionDispatch::Request::Session#store` method",
-            "date_modified": "2024-11-13T17:43:17.000Z",
+            "date_modified": "2024-11-13T19:40:29.000Z",
             "date_published": "2024-11-13T17:43:01.000Z",
             "author": {
                 "name": "viralpraxis",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Point to the latest official Ruby documentation (<a href=\"https://docs.ruby-lang.org/en/master/\" rel=\"nofollow\">https://docs.ruby-lang.org/en/master/</a>) across the Rails guides.</p>\n<p dir=\"auto\">This way we don't have to modify the docs every time a new version of Ruby is released.</p>",
-            "url": "https://github.com/rails/rails/pull/53563",
-            "title": "Point to latest official Ruby documentation in Rails guides [ci skip]",
-            "date_modified": "2024-11-12T13:43:01.000Z",
-            "date_published": "2024-11-08T16:21:22.000Z",
-            "author": {
-                "name": "Uaitt",
-                "url": "https://github.com/Uaitt"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101501?u=b9368cd286f05d7b8998746f81d8cb3c2bd247c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">One line change that allows more than a single route to be silenced using a regexp pattern.</p>",
-            "url": "https://github.com/rails/rails/pull/53561",
-            "title": "allow path regexp in SilenceRequest middleware",
-            "date_modified": "2024-11-08T15:48:43.000Z",
-            "date_published": "2024-11-08T15:48:10.000Z",
-            "author": {
-                "name": "rainerborene",
-                "url": "https://github.com/rainerborene"
             }
         }
     ]
