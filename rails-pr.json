@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68130652?u=2e5706334945cb28d537569b5fbfd4eb1a938035&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds some of the newer available skip options to the guides in the same order and format they appear in the CLI.</p>\n<p dir=\"auto\">Apologies in advance if there is anything wrong with this PR, or if it's not needed. I've read the contributing guidelines, but this is my first PR for Rails.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I was giving Rails 8 a run and noticed a few options for <code class=\"notranslate\">rails new</code> within <code class=\"notranslate\">rails new --help</code> that I didn't see in the docs and thought it may be useful to add them.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds to the documentation for the Rails Guides, specifically the <a href=\"https://guides.rubyonrails.org/command_line.html#rails-new\" rel=\"nofollow\">The Rails Command Line</a> page and the list of available skip options.</p>",
+            "url": "https://github.com/rails/rails/pull/53612",
+            "title": "Document additional skip options for rails new [ci skip]",
+            "date_modified": "2024-11-13T03:00:32.000Z",
+            "date_published": "2024-11-13T02:59:33.000Z",
+            "author": {
+                "name": "jake-duchesne",
+                "url": "https://github.com/jake-duchesne"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Creates parity with the <a href=\"https://guides.rubyonrails.org/v8.0/layouts_and_rendering.html#options-for-render\" rel=\"nofollow\">guides</a> by documenting the <a href=\"https://guides.rubyonrails.org/v8.0/layouts_and_rendering.html#the-variants-option\" rel=\"nofollow\">variants</a> option.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53601",
             "title": "Document options for `render` in API [ci skip]",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53590.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2648880719\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53590\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53590/hovercard\" href=\"https://github.com/rails/rails/issues/53590\">#53590</a> (see there for the description).</p>\n<p dir=\"auto\">When an invalid value is passed for <code class=\"notranslate\">.where</code> with a polymorphic association, that value is passed as <code class=\"notranslate\">id</code> to the query, but the <code class=\"notranslate\">type</code> is silently ignored, which can lead to invalid records being fetched.</p>",
             "url": "https://github.com/rails/rails/pull/53600",
             "title": "Do not accept invalid values for `where` with polymorphic associations",
-            "date_modified": "2024-11-12T14:52:12.000Z",
+            "date_modified": "2024-11-13T03:03:06.000Z",
             "date_published": "2024-11-12T14:49:41.000Z",
             "author": {
                 "name": "fatkodima",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "simkim",
                 "url": "https://github.com/simkim"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/80e66cc4d90bf8c15d1a5f6e3152e90147f00772/hovercard\" href=\"https://github.com/rails/rails/commit/80e66cc4d90bf8c15d1a5f6e3152e90147f00772\"><tt>80e66cc</tt></a>: 11,638 additions and 11,661 deletions</p>\n<p dir=\"auto\">There are some commits in rails that touch a large amount of files and are cosmetic only.</p>\n<p dir=\"auto\">This file will do two things:</p>\n<ul dir=\"auto\">\n<li>Blaming through the GitHub UI will not blame these commits</li>\n<li>Locally you can use it with <code class=\"notranslate\">--ignore-revs-file</code></li>\n</ul>\n<p dir=\"auto\"><a href=\"https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file#ignore-commits-in-the-blame-view\">https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file#ignore-commits-in-the-blame-view</a> <a href=\"https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt\" rel=\"nofollow\">https://git-scm.com/docs/git-blame#Documentation/git-blame.txt---ignore-revs-fileltfilegt</a></p>\n<p dir=\"auto\">There surely are more commits worthy of being included here but I just ran into this one once again and would like to stop doing that.</p>\n<p dir=\"auto\">This comment gets linked to quite often <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"25906219\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/13771\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/13771/hovercard?comment_id=32746700&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/13771#issuecomment-32746700\">#13771 (comment)</a> and while there seldom are large cosmetic changes, they do exist. Let's make the ones that did happen a bit less painful.</p>\n<hr>\n<p dir=\"auto\">I also remember bumping against the string literal changes a few times (<a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/35b3de8021e68649cac963bd82a74cc75d1f60f0/hovercard\" href=\"https://github.com/rails/rails/commit/35b3de8021e68649cac963bd82a74cc75d1f60f0\"><tt>35b3de8</tt></a> et al) , added those to the list as well.</p>",
-            "url": "https://github.com/rails/rails/pull/53547",
-            "title": "[ci skip] Introduce a `ignore-rev` file for better blaming experience",
-            "date_modified": "2024-11-07T15:16:46.000Z",
-            "date_published": "2024-11-06T17:47:13.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
             }
         }
     ]
