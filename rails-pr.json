@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4396877?u=ffb4d538a6fee162d3618c7d0562b7fd1101ca5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Closes open paren in the comment describing dark mode preference.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53607",
-            "title": "[Guides] Fixes minor typo in comment [ci skip]",
-            "date_modified": "2024-11-12T21:05:55.000Z",
-            "date_published": "2024-11-12T21:05:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171052405?u=3a14c7da8c6befa492bf2c4a836d71cc8d9beb4a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR corrects a minor typo in the “Getting Started” guide, where textarea is used instead of text_area. This typo appears in two locations within the documentation and may lead to errors when following along with the guide.</p>\n<p dir=\"auto\">Files Changed:<br>\n•\tguides/source/getting_started.md</p>\n<p dir=\"auto\">Why is this Change Needed?<br>\nWhen users follow the guide, the incorrect use of textarea results in an error: undefined method 'textarea' for an instance of ActionView::Helpers::FormBuilder. Correcting this typo to text_area will be a fix.</p>",
+            "url": "https://github.com/rails/rails/pull/53610",
+            "title": "Fix typo in 'Getting Started' guide - Replace 'textarea' with 'text_a…",
+            "date_modified": "2024-11-13T01:27:27.000Z",
+            "date_published": "2024-11-13T01:27:23.000Z",
             "author": {
-                "name": "Labern",
-                "url": "https://github.com/Labern"
+                "name": "LamaInPijamas",
+                "url": "https://github.com/LamaInPijamas"
             }
         },
         {
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25312?u=2c0dc99077decca52a0e4dd5291be46e0d6ef48d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I believe that rails developers need to be able to run applications in prodlike environments, even on their own machines.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes database.yml.tt templates for new applications</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">My motivation was described here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2646385080\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53574\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53574/hovercard?comment_id=2466847837&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/issues/53574#issuecomment-2466847837\">#53574 (comment)</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53584",
             "title": "Update database.yml templates",
-            "date_modified": "2024-11-12T22:54:42.000Z",
+            "date_modified": "2024-11-13T00:08:53.000Z",
             "date_published": "2024-11-10T19:58:09.000Z",
             "author": {
                 "name": "alec-c4",
