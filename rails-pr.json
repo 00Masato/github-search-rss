@@ -17,50 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4396877?u=ffb4d538a6fee162d3618c7d0562b7fd1101ca5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">One space between bullet points; phrasing changed in last section.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53634",
-            "title": "Standardise spacing and phrasing [ci skip]",
-            "date_modified": "2024-11-14T03:14:19.000Z",
-            "date_published": "2024-11-14T03:14:15.000Z",
-            "author": {
-                "name": "Labern",
-                "url": "https://github.com/Labern"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4396877?u=ffb4d538a6fee162d3618c7d0562b7fd1101ca5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Markdown documents throughout the Rails libraries use two spaces between each second-level header.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53633",
-            "title": "Standardise spacing [ci skip]",
-            "date_modified": "2024-11-14T02:58:56.000Z",
-            "date_published": "2024-11-14T02:58:52.000Z",
-            "author": {
-                "name": "Labern",
-                "url": "https://github.com/Labern"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4396877?u=ffb4d538a6fee162d3618c7d0562b7fd1101ca5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Three punctuation changes for clarity.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53632",
-            "title": "Standardise punctuation [ci skip]",
-            "date_modified": "2024-11-14T02:48:25.000Z",
-            "date_published": "2024-11-14T02:48:25.000Z",
-            "author": {
-                "name": "Labern",
-                "url": "https://github.com/Labern"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4396877?u=ffb4d538a6fee162d3618c7d0562b7fd1101ca5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Quickly brings the CSS here into line with the normal style — lowercase element-names (e.g. h1) and one element per line, as per the rest of the stylesheets.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53631",
-            "title": "[Guides] Format css in line with normal style [ci skip]",
-            "date_modified": "2024-11-14T02:33:39.000Z",
-            "date_published": "2024-11-14T02:33:36.000Z",
-            "author": {
-                "name": "Labern",
-                "url": "https://github.com/Labern"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199?u=7131f4a48ae5754664b31b0894a7d9d3c9ffc07b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">(We already require concurrent-ruby 1.3.1+ with support for this.)</p>\n<p dir=\"auto\">References:</p>\n<ul dir=\"auto\">\n<li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/f719787c582839fd2fcd886d70b43da3ddad2ceb/hovercard\" href=\"https://github.com/rails/rails/commit/f719787c582839fd2fcd886d70b43da3ddad2ceb\"><tt>f719787</tt></a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2105815588\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby-concurrency/concurrent-ruby/issues/1038\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/ruby-concurrency/concurrent-ruby/pull/1038/hovercard\" href=\"https://github.com/ruby-concurrency/concurrent-ruby/pull/1038\">ruby-concurrency/concurrent-ruby#1038</a></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53629",
             "title": "Parallel tests with :number_of_processors uses cgroups-aware usable processor count",
@@ -124,17 +80,6 @@
             "author": {
                 "name": "stevehill1981",
                 "url": "https://github.com/stevehill1981"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4396877?u=ffb4d538a6fee162d3618c7d0562b7fd1101ca5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Two minor tweaks: comments in this and other files are written as full sentences without spaces between the comment and method declaration. Add a full stop and removed a newline.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53614",
-            "title": "Consistency: comments above methods should be full sentences [ci skip]",
-            "date_modified": "2024-11-13T04:02:40.000Z",
-            "date_published": "2024-11-13T04:02:37.000Z",
-            "author": {
-                "name": "Labern",
-                "url": "https://github.com/Labern"
             }
         },
         {
@@ -223,6 +168,61 @@
             "author": {
                 "name": "jchilders",
                 "url": "https://github.com/jchilders"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25312?u=2c0dc99077decca52a0e4dd5291be46e0d6ef48d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I believe that rails developers need to be able to run applications in prodlike environments, even on their own machines.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes database.yml.tt templates for new applications</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">My motivation was described here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2646385080\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53574\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53574/hovercard?comment_id=2466847837&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/issues/53574#issuecomment-2466847837\">#53574 (comment)</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53584",
+            "title": "Update database.yml templates",
+            "date_modified": "2024-11-13T13:43:00.000Z",
+            "date_published": "2024-11-10T19:58:09.000Z",
+            "author": {
+                "name": "alec-c4",
+                "url": "https://github.com/alec-c4"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Suggest a way to execute a command similar to <code class=\"notranslate\">db:reset</code>, which would run migrations (after the comment indicating that it won’t).</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Resetting the Database section has a note stating that resetting the database won't run migrations. This Pull Request adds a short comment stating what that command would like in case you do need (or want) to run them.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Restting the Database section in the Active Record Migrations guide.</p>",
+            "url": "https://github.com/rails/rails/pull/53583",
+            "title": "Add database reset suggestion [ci-skip]",
+            "date_modified": "2024-11-11T21:52:11.000Z",
+            "date_published": "2024-11-10T18:20:56.000Z",
+            "author": {
+                "name": "arzezak",
+                "url": "https://github.com/arzezak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168854?u=075f949ceef8be9c565bcf4dde727a6bf5a73839&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">See <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2622473074\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53490\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53490/hovercard?comment_id=2465235043&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/53490#issuecomment-2465235043\">#53490 (comment)</a></p>\n<p dir=\"auto\">TruffleRuby does not implement <code class=\"notranslate\">Regexp.timeout/Regexp.timeout=</code> yet, and it might be quite tricky to implement (e.g. it might need changes in the Regexp engine, <a href=\"https://github.com/jruby/joni\">https://github.com/jruby/joni</a>).<br>\nSo it would be nice if it doesn't fail here when booting a Rails 8 app on TruffleRuby (latest release or head).<br>\n(we've had a couple reports of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2622473074\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53490\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53490/hovercard\" href=\"https://github.com/rails/rails/pull/53490\">#53490</a> breaking Rails on TruffleRuby)</p>\n<h3 dir=\"auto\">Alternative</h3>\n<p dir=\"auto\">Wait that TruffleRuby implements <code class=\"notranslate\">Regexp.timeout =</code>.<br>\nAs mentioned above that might take some time, and of course that won't fix for the current TruffleRuby release, 24.1.0.<br>\nThe next release, 24.2.0, is only in March 2025.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53582",
+            "title": "Check if Regexp.timeout = is supported in configuration.rb",
+            "date_modified": "2024-11-11T13:11:53.000Z",
+            "date_published": "2024-11-10T15:58:17.000Z",
+            "author": {
+                "name": "eregon",
+                "url": "https://github.com/eregon"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=87f48b6c8977eca031c6b84a5b1f21b241270c4d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53564.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2644714727\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53564\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53564/hovercard\" href=\"https://github.com/rails/rails/issues/53564\">#53564</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Updates <code class=\"notranslate\">Arel::Visitors::ToSql#visit_Arel_Nodes_Equality</code> to look ahead at the database value and check if it's <code class=\"notranslate\">nil</code>, and if so, uses <code class=\"notranslate\">IS NULL</code> instead of <code class=\"notranslate\">=</code> in the resulting query. The value is memoised <a href=\"https://github.com/rails/rails/blob/852d0cd4123463cf215f4b024801b256857295c4/activerecord/lib/active_record/relation/query_attribute.rb#L26-L29\">here</a>, so I doubt this change has any major performance implications in the case where the condition is falsey and the <code class=\"notranslate\">=</code> branch is executed.</p>\n<p dir=\"auto\"><strong>Edit:</strong> Looks like <code class=\"notranslate\">ActiveRecord::Relation::QueryAttribute#nil?</code> already does a similar check, so I went with <a href=\"https://github.com/rails/rails/compare/0957be203f2d172ccdaa9a2a0023a56b551a4db4..a6e06e11fedc753bcc8018e4aed83f967c1f94a4\">this approach</a> instead.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">NA</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53580",
+            "title": "[Fix #53564] Ensure normalized attribute queries are consistent for `nil` and normalized `nil`",
+            "date_modified": "2024-11-10T14:15:37.000Z",
+            "date_published": "2024-11-10T12:43:13.000Z",
+            "author": {
+                "name": "joshuay03",
+                "url": "https://github.com/joshuay03"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Point to the latest official Ruby documentation (<a href=\"https://docs.ruby-lang.org/en/master/\" rel=\"nofollow\">https://docs.ruby-lang.org/en/master/</a>) across the Rails guides.</p>\n<p dir=\"auto\">This way we don't have to modify the docs every time a new version of Ruby is released.</p>",
+            "url": "https://github.com/rails/rails/pull/53563",
+            "title": "Point to latest official Ruby documentation in Rails guides [ci skip]",
+            "date_modified": "2024-11-12T13:43:01.000Z",
+            "date_published": "2024-11-08T16:21:22.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
             }
         }
     ]
