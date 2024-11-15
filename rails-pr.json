@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/987638?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">When users run this command, they don't have a <code class=\"notranslate\">new_framework_defaults</code> yet. So they may not know about new deprecations and messages would be just noise. I think it's better to silence those messages to avoid confusion.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53558.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2643778592\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53558\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53558/hovercard\" href=\"https://github.com/rails/rails/issues/53558\">#53558</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53647",
+            "title": "Silence deprecate message during `app:udpate` command",
+            "date_modified": "2024-11-15T05:52:05.000Z",
+            "date_published": "2024-11-15T05:52:01.000Z",
+            "author": {
+                "name": "y-yagi",
+                "url": "https://github.com/y-yagi"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5162312?u=e1b3c0f7c6dc600253bf15c99f618b9b2d39c500&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2654237527\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53615\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53615/hovercard\" href=\"https://github.com/rails/rails/pull/53615\">#53615</a> made the API for initiailizable collections not respond to as many methods (and subsequently not be able to be treated as an array anymore). Since this is <a href=\"https://api.rubyonrails.org/classes/Rails/Initializable/Collection.html\" rel=\"nofollow\">public API</a>, we should restore this behaviour to not break applications.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes Rails::Initializable::Collection to respond to more array methods, as it previously did.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53644",
             "title": "Make Rails::Initializable::Collection more array-like",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "alec-c4",
                 "url": "https://github.com/alec-c4"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Suggest a way to execute a command similar to <code class=\"notranslate\">db:reset</code>, which would run migrations (after the comment indicating that it won’t).</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Resetting the Database section has a note stating that resetting the database won't run migrations. This Pull Request adds a short comment stating what that command would like in case you do need (or want) to run them.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Restting the Database section in the Active Record Migrations guide.</p>",
-            "url": "https://github.com/rails/rails/pull/53583",
-            "title": "Add database reset suggestion [ci-skip]",
-            "date_modified": "2024-11-15T01:10:02.000Z",
-            "date_published": "2024-11-10T18:20:56.000Z",
-            "author": {
-                "name": "arzezak",
-                "url": "https://github.com/arzezak"
             }
         }
     ]
