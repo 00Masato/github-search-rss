@@ -105,10 +105,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Suggest a way to execute a command similar to <code class=\"notranslate\">db:reset</code>, which would run migrations (after the comment indicating that it won’t).</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Resetting the Database section has a note stating that resetting the database won't run migrations. This Pull Request adds a short comment stating what that command would like in case you do need (or want) to run them.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Restting the Database section in the Active Record Migrations guide.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Documents <code class=\"notranslate\">db:migrate:reset</code> as an alternative to <code class=\"notranslate\">db:reset</code> that does run migrations.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Resetting the Database section has a note stating that resetting the database won't run migrations. This Pull Request adds a short comment stating what that command would like in case you do need (or want) to run them.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Resetting the Database section in the Active Record Migrations guide.</p>",
             "url": "https://github.com/rails/rails/pull/53583",
             "title": "Add database reset suggestion [ci-skip]",
-            "date_modified": "2024-11-15T20:00:03.000Z",
+            "date_modified": "2024-11-15T20:59:23.000Z",
             "date_published": "2024-11-10T18:20:56.000Z",
             "author": {
                 "name": "arzezak",
