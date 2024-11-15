@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">All of Rust's types are either <em>sized</em>, which implement the <code class=\"notranslate\">Sized</code> trait and have a statically known size during compilation, or <em>unsized</em>, which do not implement the <code class=\"notranslate\">Sized</code> trait and are assumed to have a size which can be computed at runtime. However, this dichotomy misses two categories of type - types whose size is unknown during compilation but is a runtime constant, and types whose size can never be known. Supporting the former is a prerequisite to stable scalable vector types and supporting the latter is a prerequisite to unblocking extern types. This RFC proposes a hierarchy of <code class=\"notranslate\">Sized</code> traits in order to be able to support these use cases.</p>\n<p dir=\"auto\">This RFC relies on experimental, yet-to-be-RFC'd const traits, so this is blocked on that. I haven't squashed any of the previous revisions but can do so if/when this is approved. Already discussed in the <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/410673-t-lang.2Fmeetings/topic/Design.20meeting.202024-11-13/near/482097877\" rel=\"nofollow\">2024-11-13 t-lang design meeting</a> with feedback incorporated.</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/sized-hierarchy/text/0000-sized-hierarchy.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3729",
+            "title": "Hierarchy of Sized traits",
+            "date_modified": "2024-11-15T16:01:10.000Z",
+            "date_published": "2024-11-15T16:01:06.000Z",
+            "author": {
+                "name": "davidtwco",
+                "url": "https://github.com/davidtwco"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2097964?u=0e9fd19834f9606a6d939fbc12c28aeadff91b03&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">This RFC proposes a way to write the discriminant of an enum when building it \"from scratch\". This introduces two new library components, an unsafe <code class=\"notranslate\">set_discriminant</code> function, and a <code class=\"notranslate\">discriminant_of!</code> macro, which can be used with any enum, regardless of <code class=\"notranslate\">repr</code> or any other details.</p>\n<p dir=\"auto\">This RFC is a follow-on to the <code class=\"notranslate\">offset_of_enum</code> feature, tracked by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2091334584\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/120141\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/120141/hovercard\" href=\"https://github.com/rust-lang/rust/issues/120141\">rust-lang/rust#120141</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jamesmunns/rfcs/blob/james/unsafe_set_discriminant/text/3727-unsafe-set-discriminant.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3727",
             "title": "RFC: Unsafe Set Enum Discriminants",
@@ -209,17 +220,6 @@
             "title": "Declarative `macro_rules!` derive macros",
             "date_modified": "2024-11-01T06:57:25.000Z",
             "date_published": "2024-09-21T01:51:14.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many crates provide attribute macros. Today, this requires defining proc<br>\nmacros, in a separate crate, typically with several additional dependencies<br>\nadding substantial compilation time, and typically guarded by a feature that<br>\nusers need to remember to enable.</p>\n<p dir=\"auto\">However, many common cases of attribute macros don't require any more power<br>\nthan an ordinary <code class=\"notranslate\">macro_rules!</code> macro. Supporting these common cases would<br>\nallow many crates to avoid defining proc macros, reduce dependencies and<br>\ncompilation time, and provide these macros unconditionally without requiring a<br>\nthe user to enable a feature.</p>\n<p dir=\"auto\">I've reviewed several existing proc-macro-based attributes in the ecosystem,<br>\nand it appears that many would be able to use this feature to avoid needing<br>\nproc macros at all.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/declarative-attribute-macros.md/text/3697-declarative-attribute-macros.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3697",
-            "title": "Declarative `macro_rules!` attribute macros",
-            "date_modified": "2024-11-09T15:06:06.000Z",
-            "date_published": "2024-09-21T01:15:27.000Z",
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"

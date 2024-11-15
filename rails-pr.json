@@ -72,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/711717?u=c7b39c02e7c7a4af51a179e8f248c32c06904b1a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As has been noted in a few issues, upgrading from Rails to 7.1 config defaults can lead to data loss or confusion as the hash_digest_class changed from SHA1 to SHA256 but we don't by default class changed from SHA1 to SHA256 but we don't by default class changed from SHA1 to SHA256 but we don't by default class changed from SHA1 to SHA256 but we don't by default set<br>\n<code class=\"notranslate\">support_sha1_for_non_deterministic_encryption = true</code>.</p>\n<p dir=\"auto\">This adds the change to the 7.0-&gt;7.1 upgrade notes and to the 7.1 release notes.</p>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1707228995\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48204\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48204/hovercard\" href=\"https://github.com/rails/rails/issues/48204\">#48204</a><br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2017006620\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50212\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50212/hovercard\" href=\"https://github.com/rails/rails/issues/50212\">#50212</a><br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2020540956\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50226\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50226/hovercard\" href=\"https://github.com/rails/rails/issues/50226\">#50226</a><br>\nFurther writeup: <a href=\"https://calebhearth.com/rails-7-1-encryption-errors\" rel=\"nofollow\">https://calebhearth.com/rails-7-1-encryption-errors</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53587",
-            "title": "Call out pitfalls with Encryption when upgrading",
-            "date_modified": "2024-11-11T14:52:23.000Z",
-            "date_published": "2024-11-10T21:49:17.000Z",
-            "author": {
-                "name": "calebhearth",
-                "url": "https://github.com/calebhearth"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We want to make changes to this command, for example removing \"erb:authentication\" or \"test_unit\" (especially if you're using rspec or another test_framework)... but we realized that how we got here is there are no tests to ensure that any additions to Railties and aren't explicitly filtered (via hidden_namespaces) will cause this test to fail.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a></p>",
             "url": "https://github.com/rails/rails/pull/53586",
             "title": "Add test coverage for generators help output",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "vlado",
                 "url": "https://github.com/vlado"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2616219534\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53459\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53459/hovercard\" href=\"https://github.com/rails/rails/pull/53459\">#53459</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Earlopain/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Earlopain\">@Earlopain</a></p>",
+            "url": "https://github.com/rails/rails/pull/53524",
+            "title": "Rubocop Guides Omakase [ci skip]",
+            "date_modified": "2024-11-04T05:55:48.000Z",
+            "date_published": "2024-11-03T12:59:44.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
