@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10403397?u=20cd240ed3354a64b2ee548ce4734839e1070e26&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">fixed typo on form.text_area, was form.textarea</p>",
-            "url": "https://github.com/rails/rails/pull/53653",
-            "title": "Update getting_started.md [ci skip]",
-            "date_modified": "2024-11-16T19:49:40.000Z",
-            "date_published": "2024-11-16T19:49:36.000Z",
-            "author": {
-                "name": "apasternack",
-                "url": "https://github.com/apasternack"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29117986?u=4befb41e6e7e7cad1de777b30c90caf1703a24a7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Hello!</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We had an issue using <code class=\"notranslate\">ActiveRecord::FixtureSet.create_fixtures</code> with partitioned tables in postgres. Each time we did a <code class=\"notranslate\">rails db:migrate</code> after creating fixture resulted in an update of our <code class=\"notranslate\">structure.sql</code> adding <code class=\"notranslate\">NOT VALID</code> to mostly all our foreign key constraints on partitioned tables.</p>\n<p dir=\"auto\">By digging into the code we discovered that it was linked to <code class=\"notranslate\">ActiveRecord::ConnectionAdapters::PostgreSQL::ReferentialIntegrity#all_foreign_keys_valid!</code> that set constraints as <code class=\"notranslate\">NOT VALID</code> before re-validating them.</p>\n<p dir=\"auto\">With partitioned tables, it leaves some partitions in NOT VALID state. This is because partitions can have foreign key constraints with the same name as the partitioned table. The <code class=\"notranslate\">UDPATE</code> is not scoped to a specific table so it will mark all partitions as invalid, while only validating one table, leaving all the others invalid. By scoping the <code class=\"notranslate\">UPDATE</code> to a specific table we ensure that we touch only the partition we are about to validate.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request scopes the <code class=\"notranslate\">UPDATE pg_catalog.pg_constraint SET convalidated=false</code>  to the table we are about to validate. So it no longer put partition constraints in invalid states as side effects. Note that constraints on partition are still validated as they are also considered as their own table.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53636",
             "title": "fix referential_integrity for postgres partitioned tables",
@@ -47,17 +36,6 @@
             "author": {
                 "name": "Edouard-chin",
                 "url": "https://github.com/Edouard-chin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Creates parity with the <a href=\"https://guides.rubyonrails.org/v8.0/layouts_and_rendering.html#options-for-render\" rel=\"nofollow\">guides</a> by documenting the <a href=\"https://guides.rubyonrails.org/v8.0/layouts_and_rendering.html#the-variants-option\" rel=\"nofollow\">variants</a> option.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53601",
-            "title": "Document options for `render` in API [ci skip]",
-            "date_modified": "2024-11-13T16:12:57.000Z",
-            "date_published": "2024-11-12T15:10:33.000Z",
-            "author": {
-                "name": "stevepolitodesign",
-                "url": "https://github.com/stevepolitodesign"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "zvkemp",
                 "url": "https://github.com/zvkemp"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8942202?u=5f666981b961af6fc1288996a03f0c4ee04f750d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It seems Action Mailbox guide expects exim pipes the inbound emails to a rails task, meaning rails the Rails app must be run in that location. This task does some checks and trigger a post request to the app inbound emails path.</p>\n<p dir=\"auto\">This results very inconvenient when deploying in containers with Kamal or cannot install rails where the mail server is.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I'm adding to the guide a NOTE with an alternative for replacing that task with a bash script.</p>\n<p dir=\"auto\">Here the link included: <a href=\"https://gist.github.com/gabriel-curtino/034aa4c9174ec21e37eb462f087c087c\">https://gist.github.com/gabriel-curtino/034aa4c9174ec21e37eb462f087c087c</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">It works for me :)</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53463",
+            "title": "[ci skip] Guides: Alternative Exim Relay Script for Action Mailbox",
+            "date_modified": "2024-10-27T22:20:09.000Z",
+            "date_published": "2024-10-27T22:20:05.000Z",
+            "author": {
+                "name": "gabriel-curtino",
+                "url": "https://github.com/gabriel-curtino"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4034581?u=8b2576e32b150ae2177fa58f5319ca120f329369&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">There is an API <a href=\"https://github.com/rails/rails/blob/7fac5d14d00fcc8dc60b49729abe78223ad3bf00/activerecord/lib/active_record/attribute_methods.rb#L459\">accessed_fields</a> that track the columns accessed during some request. But there is no possibility to load required data only for preloaded associations.<br>\nThis PR allows user to specify columns to be loaded without triggering additional database queries when used alongside eager loading.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><code class=\"notranslate\">load_columns</code> is a method in Active Record that allows for selective loading of specific columns from a database table. This method is particularly useful in scenarios where you're preloading tables that have many columns, but your current operation only requires a subset of those columns. By using load_columns, you can potentially improve both the performance and resource efficiency of your Active Record operations.</p>\n<p dir=\"auto\">The primary_key, foreign keys, inheritance and polymorphic columns are included in loaded columns list by default.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53454",
+            "title": "Allow user to specify which columns should be loaded for preloaded associations",
+            "date_modified": "2024-11-11T10:34:56.000Z",
+            "date_published": "2024-10-26T08:48:36.000Z",
+            "author": {
+                "name": "andriy-baran",
+                "url": "https://github.com/andriy-baran"
             }
         }
     ]
