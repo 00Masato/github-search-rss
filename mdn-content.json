@@ -6,11 +6,11 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a typo - the ACCEPT-ENCODING indicates the sender's preference for a particular type of content (recipient is ambiguous here, since the recipient is the person that has to return that content)</p>\n<p dir=\"auto\">Comes out of comment by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bsmth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bsmth\">@bsmth</a> here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2634835689\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/36657\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/36657/hovercard?comment_id=1846072798&amp;comment_type=review_comment\" href=\"https://github.com/mdn/content/pull/36657#discussion_r1846072798\">#36657 (comment)</a></p>",
-            "url": "https://github.com/mdn/content/pull/36853",
-            "title": "ACCEPT-ENCODING - encodings sender understands not recipient",
-            "date_modified": "2024-11-18T22:42:11.000Z",
-            "date_published": "2024-11-18T22:40:17.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This removes the <code class=\"notranslate\">Accept-Charset</code> header. Not sent by browsers and is deprecated</p>\n<p dir=\"auto\">Historically form elements had an attribute <code class=\"notranslate\">acceptcharset</code> that took same values. This now only takes <code class=\"notranslate\">\"UTF-8\"</code> if specified, so I tidied that up as well.</p>",
+            "url": "https://github.com/mdn/content/pull/36854",
+            "title": "Accept-Charset HTTP header removed - not sent by any browser for many years and deprecated",
+            "date_modified": "2024-11-19T00:05:25.000Z",
+            "date_published": "2024-11-19T00:04:57.000Z",
             "author": {
                 "name": "hamishwillee",
                 "url": "https://github.com/hamishwillee"
