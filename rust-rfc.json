@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new visible lint level below <code class=\"notranslate\">warn</code> to allow linters to act like a pair-programmer / code-reviewer where feedback is evaluated on a case-by-case basis.</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">cargo</code> does not display these lints by default, requiring an opt-in</li>\n<li>This RFC assumes LSPs/IDEs will opt-in</li>\n<li>CIs could opt-in and open issues in the code review to show nits introduced in the current PR but not block merge on them</li>\n</ul>\n<p dir=\"auto\">There is no expectation that crates will be <code class=\"notranslate\">nit</code>-free.</p>\n<p dir=\"auto\"><em>Note:</em> The name <code class=\"notranslate\">nit</code> is being used for illustrative purposes and is assumed to not be the final choice</p>\n<p dir=\"auto\"><em>Note:</em> This RFC leaves the determination of what lints will be <code class=\"notranslate\">nit</code> by<br>\ndefault to the respective teams.  Any lints referenced in this document are<br>\nfor illustrating the intent of this feature and how teams could reason about<br>\nthis new lint level.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/nit-lint-level/text/3730-nit-lint-level.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3730",
             "title": "RFC: Add a semantically non-blocking lint level",
-            "date_modified": "2024-11-20T15:55:36.000Z",
+            "date_modified": "2024-11-20T16:20:50.000Z",
             "date_published": "2024-11-19T17:37:57.000Z",
             "author": {
                 "name": "epage",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/783247?u=b4f1eeea8dd687c853f13caa8e40eced78c65cf1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/m-ou-se/rfcs/blob/explicit-abi/text/3722-explicit-abi.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3722",
             "title": "[RFC] Explicit ABI in `extern`",
-            "date_modified": "2024-11-01T03:23:19.000Z",
+            "date_modified": "2024-11-20T16:28:11.000Z",
             "date_published": "2024-10-30T10:46:06.000Z",
             "author": {
                 "name": "m-ou-se",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6783654?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">A <code class=\"notranslate\">!</code> pattern indicates a type with no valid values. It is used to indicate an impossible case when matching an empty type in unsafe code.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"enum Void {}\nunsafe fn empty_tup&lt;T&gt;(tup: *const (T, Void)) -&gt; ! {\n    unsafe {\n        match *tup { ! }\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">enum</span> <span class=\"pl-smi\">Void</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span>\n<span class=\"pl-k\">unsafe</span> <span class=\"pl-k\">fn</span> <span class=\"pl-en\">empty_tup</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">T</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">tup</span><span class=\"pl-kos\">:</span> <span class=\"pl-c1\">*</span><span class=\"pl-k\">const</span> <span class=\"pl-kos\">(</span><span class=\"pl-smi\">T</span><span class=\"pl-kos\">,</span> <span class=\"pl-smi\">Void</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span> -&gt; ! <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">unsafe</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-k\">match</span> <span class=\"pl-c1\">*</span>tup <span class=\"pl-kos\">{</span> ! <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Note: this RFC is purely about a new pattern syntax. It does not propose changes to exhaustiveness checking or to the operational semantics of uninhabited types.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Nadrieril/rfcs/blob/never_patterns/text/0000-never-patterns.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3719",
             "title": "RFC: Never patterns",
-            "date_modified": "2024-11-18T04:23:40.000Z",
+            "date_modified": "2024-11-20T16:02:39.000Z",
             "date_published": "2024-10-27T18:07:43.000Z",
             "author": {
                 "name": "Nadrieril",
