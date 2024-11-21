@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53673.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2673467930\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53673\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53673/hovercard\" href=\"https://github.com/rails/rails/issues/53673\">#53673</a></p>\n<p dir=\"auto\">Performing a query with prepared statements using the Mysql2 adapter would result in <code class=\"notranslate\">NoMethodError</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/53692",
-            "title": "Fix Mysql2Adapter support for prepared statements",
-            "date_modified": "2024-11-21T09:06:42.000Z",
-            "date_published": "2024-11-21T09:06:11.000Z",
-            "author": {
-                "name": "byroot",
-                "url": "https://github.com/byroot"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Description</h1>\n<p dir=\"auto\">Both the <a href=\"https://github.com/rubocop/ruby-style-guide?tab=readme-ov-file#global-inputoutput-streams\">Ruby style guide</a> and <a href=\"https://docs.rubocop.org/rubocop/cops_style.html#styleglobalstdstream\" rel=\"nofollow\">RuboCop</a> suggest that it's better to use the global Std streams instead of their constant counterparts.</p>",
             "url": "https://github.com/rails/rails/pull/53690",
             "title": "Use global Std stream instead of constant in default `bin/setup`",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "jchilders",
                 "url": "https://github.com/jchilders"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25312?u=2c0dc99077decca52a0e4dd5291be46e0d6ef48d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I believe that rails developers need to be able to run applications in prodlike environments, even on their own machines.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes database.yml.tt templates for new applications</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">My motivation was described here <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2646385080\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53574\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53574/hovercard?comment_id=2466847837&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/issues/53574#issuecomment-2466847837\">#53574 (comment)</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/53584",
+            "title": "Update database.yml templates",
+            "date_modified": "2024-11-18T13:15:57.000Z",
+            "date_published": "2024-11-10T19:58:09.000Z",
+            "author": {
+                "name": "alec-c4",
+                "url": "https://github.com/alec-c4"
             }
         }
     ]
