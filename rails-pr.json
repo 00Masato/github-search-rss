@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3414795?u=f40b7e0ce2902c65ed78284b790eaffaff8b59d7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because of a discussion we had in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2680477722\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53695\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53695/hovercard\" href=\"https://github.com/rails/rails/pull/53695\">#53695</a></p>\n<p dir=\"auto\"><code class=\"notranslate\">Arel.sql</code> seems to be far more intuitive to use than <code class=\"notranslate\">sanitize_sql_array</code></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the documentation for <code class=\"notranslate\">sanitize_sql_array</code> so that it suggests to use <code class=\"notranslate\">Arel.sql</code> as an alternative.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53717",
-            "title": "Add note about Arel.sql in documentation for sanitize_sql_array",
-            "date_modified": "2024-11-22T19:03:54.000Z",
-            "date_published": "2024-11-22T18:21:25.000Z",
-            "author": {
-                "name": "westonganger",
-                "url": "https://github.com/westonganger"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11434205?u=25fdf1780aa6109d67a31474e4f6c2232479dce9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because running seeds after they've been run may not clean up existing data. Using <code class=\"notranslate\">replant</code>, existing data is truncated, then the seeds are run from a clean slate.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the guide on active record migrations.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53716",
             "title": "docs: use `db:seed:replant` for resetting seed data",
@@ -102,17 +91,6 @@
             "author": {
                 "name": "larouxn",
                 "url": "https://github.com/larouxn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Enabling this flag locally prevents the test schema from loading with mysql2, so this commit tests my theory that the ENV var is not making it to the CI job.</p>",
-            "url": "https://github.com/rails/rails/pull/53697",
-            "title": "Log that prepared_statements enabled for mysql2",
-            "date_modified": "2024-11-21T22:43:23.000Z",
-            "date_published": "2024-11-21T21:41:56.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "Edouard-chin",
                 "url": "https://github.com/Edouard-chin"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53590.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2648880719\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53590\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53590/hovercard\" href=\"https://github.com/rails/rails/issues/53590\">#53590</a> (see there for the description).</p>\n<p dir=\"auto\">When an invalid value is passed for <code class=\"notranslate\">.where</code> with a polymorphic association, that value is passed as <code class=\"notranslate\">id</code> to the query, but the <code class=\"notranslate\">type</code> is silently ignored, which can lead to invalid records being fetched.</p>",
+            "url": "https://github.com/rails/rails/pull/53600",
+            "title": "Do not accept invalid values for `where` with polymorphic associations",
+            "date_modified": "2024-11-13T08:09:16.000Z",
+            "date_published": "2024-11-12T14:49:41.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We want to make changes to this command, for example removing \"erb:authentication\" or \"test_unit\" (especially if you're using rspec or another test_framework)... but we realized that how we got here is there are no tests to ensure that any additions to Railties and aren't explicitly filtered (via hidden_namespaces) will cause this test to fail.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a></p>",
+            "url": "https://github.com/rails/rails/pull/53586",
+            "title": "Add test coverage for generators help output",
+            "date_modified": "2024-11-17T01:02:48.000Z",
+            "date_published": "2024-11-10T20:55:54.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
