@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The crates.io team decided in their meeting last week to adjust the RFC and drop the parts about version deletions. The RFC is now only focussed on deleting whole crates.</p>\n<p dir=\"auto\">The team initially thought that using the ruleset from the npm registry was a good idea, but we didn't sufficiently consider that npm does not have the concept of \"yanking\" a version. npm has version deprecations, but they don't influence package resolution at all, and so they are not comparable. Since yanking a version on crates.io accomplishes a lot of the same things as deleting a version on npm, the case for version deletion on crates.io is weak. The main use case would be to delete things that were not intended to be public. But due to the nature of crates.io having various inofficial mirrors, once something is published it is public anyway and any secrets or tokens would have to be invalidated anyway.</p>\n<p dir=\"auto\">In other words: more cons than pros for version deletions on crates.io</p>\n<p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io/version-deletions/text/3660-crates-io-crate-deletions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3731",
             "title": "crates.io: Remove version deletions from the \"crate deletions\" RFC",
-            "date_modified": "2024-11-26T12:16:10.000Z",
+            "date_modified": "2024-11-28T21:29:49.000Z",
             "date_published": "2024-11-26T12:15:39.000Z",
             "author": {
                 "name": "Turbo87",
