@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141300?u=e222ed60f0855d57158dd20d3613f4db42b4236f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The crates.io team decided in their meeting last week to adjust the RFC and drop the parts about version deletions. The RFC is now only focussed on deleting whole crates.</p>\n<p dir=\"auto\">The team initially thought that using the ruleset from the npm registry was a good idea, but we didn't sufficiently consider that npm does not have the concept of \"yanking\" a version. npm has version deprecations, but they don't influence package resolution at all, and so they are not comparable. Since yanking a version on crates.io accomplishes a lot of the same things as deleting a version on npm, the case for version deletion on crates.io is weak. The main use case would be to delete things that were not intended to be public. But due to the nature of crates.io having various inofficial mirrors, once something is published it is public anyway and any secrets or tokens would have to be invalidated anyway.</p>\n<p dir=\"auto\">In other words: more cons than pros for version deletions on crates.io</p>\n<p dir=\"auto\"><a href=\"https://github.com/Turbo87/rust-rfcs/blob/crates-io/version-deletions/text/3660-crates-io-crate-deletions.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3731",
-            "title": "crates.io: Remove version deletions from the \"crate deletions\" RFC",
-            "date_modified": "2024-11-28T21:29:49.000Z",
-            "date_published": "2024-11-26T12:15:39.000Z",
-            "author": {
-                "name": "Turbo87",
-                "url": "https://github.com/Turbo87"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new visible lint level below <code class=\"notranslate\">warn</code> to allow linters to act like a pair-programmer / code-reviewer where feedback is evaluated on a case-by-case basis.</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">cargo</code> does not display these lints by default, requiring an opt-in</li>\n<li>This RFC assumes LSPs/IDEs will opt-in</li>\n<li>CIs could opt-in and open issues in the code review to show nits introduced in the current PR but not block merge on them</li>\n</ul>\n<p dir=\"auto\">There is no expectation that crates will be <code class=\"notranslate\">nit</code>-free.</p>\n<p dir=\"auto\"><em>Note:</em> The name <code class=\"notranslate\">nit</code> is being used for illustrative purposes and is assumed to not be the final choice</p>\n<p dir=\"auto\"><em>Note:</em> This RFC leaves the determination of what lints will be <code class=\"notranslate\">nit</code> by<br>\ndefault to the respective teams.  Any lints referenced in this document are<br>\nfor illustrating the intent of this feature and how teams could reason about<br>\nthis new lint level.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/nit-lint-level/text/3730-nit-lint-level.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3730",
             "title": "RFC: Add a semantically non-blocking lint level",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "scottmcm",
                 "url": "https://github.com/scottmcm"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25405190?u=64314ab5744b9926919e515a477872955c6562ce&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a helper for primitive pointer types to facilitate modifying the address of a pointer.  This<br>\nmechanism is intended to enable the use of architecture features such as AArch64 Top-Byte Ignore<br>\n(TBI) to facilitate use-cases such as high-bit pointer tagging.  An example application of this<br>\nmechanism would be writing a tagging memory allocator.</p>\n<p dir=\"auto\"><a href=\"https://github.com/mrkajetanp/rfcs/blob/ptr-tag-helpers/text/3700-ptr-assume-moved.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3700",
+            "title": "Add core::ptr::assume_moved",
+            "date_modified": "2024-11-26T14:24:47.000Z",
+            "date_published": "2024-09-26T14:49:36.000Z",
+            "author": {
+                "name": "mrkajetanp",
+                "url": "https://github.com/mrkajetanp"
             }
         }
     ]
