@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">All of Rust's types are either <em>sized</em>, which implement the <code class=\"notranslate\">Sized</code> trait and have a statically known size during compilation, or <em>unsized</em>, which do not implement the <code class=\"notranslate\">Sized</code> trait and are assumed to have a size which can be computed at runtime. However, this dichotomy misses two categories of type - types whose size is unknown during compilation but is a runtime constant, and types whose size can never be known. Supporting the former is a prerequisite to stable scalable vector types and supporting the latter is a prerequisite to unblocking extern types. This RFC proposes a hierarchy of <code class=\"notranslate\">Sized</code> traits in order to be able to support these use cases.</p>\n<p dir=\"auto\">This RFC relies on experimental, yet-to-be-RFC'd const traits, so this is blocked on that. I haven't squashed any of the previous revisions but can do so if/when this is approved. Already discussed in the <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/410673-t-lang.2Fmeetings/topic/Design.20meeting.202024-11-13/near/482097877\" rel=\"nofollow\">2024-11-13 t-lang design meeting</a> with feedback incorporated.</p>\n<p dir=\"auto\">See <a href=\"https://github.com/rust-lang/rfcs/pull/3729#issuecomment-2498703253\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3729/hovercard\">this comment</a> for the most recent summary of changes to this RFC since it was opened.</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/sized-hierarchy/text/3729-sized-hierarchy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3729",
             "title": "Hierarchy of Sized traits",
-            "date_modified": "2024-12-02T17:30:17.000Z",
+            "date_modified": "2024-12-02T20:43:06.000Z",
             "date_published": "2024-11-15T16:01:06.000Z",
             "author": {
                 "name": "davidtwco",
@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a syntax and mechanism for macros to access \"fields\" of high-level fragment<br>\nspecifiers that they've matched, to let macros use the Rust parser for<br>\nrobustness and future compatibility, while still extracting pieces of the<br>\nmatched syntax.</p>\n<p dir=\"auto\">This RFC introduces the syntax <code class=\"notranslate\">${fragname.field}</code>, and a couple of fragment specifiers and their fields. The goal is to add more such fragment specifiers and fields, to allow more macros to leverage the Rust parser, but the purpose of this RFC is to introduce the concept and syntax.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/macro-fragment-fields/text/3714-macro-fragment-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3714",
             "title": "Macro fragment fields",
-            "date_modified": "2024-11-20T18:37:25.000Z",
+            "date_modified": "2024-12-02T20:26:28.000Z",
             "date_published": "2024-10-20T20:08:21.000Z",
             "author": {
                 "name": "joshtriplett",
