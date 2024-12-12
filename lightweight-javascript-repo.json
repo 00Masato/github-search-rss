@@ -6,21 +6,43 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171963732?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Node.js + Express Boilerplate with GraphQL  A clean and extensible boilerplate for building scalable Node.js applications using Express and GraphQL.  Features Node.js + Express: Lightweight and fast backend framework. GraphQL API: Built-in support for creating flexible and efficient APIs with GraphQL.</div>",
-            "url": "https://github.com/Rajesh4013/graphql-nodeexpress-boilerplate",
-            "title": "Rajesh4013/graphql-nodeexpress-boilerplate: Node.js + Express Boilerplate with GraphQL  A clean and extensible boilerplate for building scalable Node.js applications using Express and GraphQL.  Features Node.js + Express: Lightweight and fast backend framework. GraphQL API: Built-in support for creating flexible and efficient APIs with GraphQL.",
-            "date_modified": "2024-12-12T07:01:12.000Z",
-            "date_published": "2024-12-02T06:13:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/179528356?u=ea532ca234108d707973e08e45c661c9bfe6a901&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, no-install version of Zen Browser that runs directly from a USB drive, keeping all data self-contained for portability.</div>",
+            "url": "https://github.com/wysh3/Zen-Browser-Portable",
+            "title": "wysh3/Zen-Browser-Portable: A lightweight, no-install version of Zen Browser that runs directly from a USB drive, keeping all data self-contained for portability.",
+            "date_modified": "2024-12-12T07:58:57.000Z",
+            "date_published": "2024-12-11T12:36:03.000Z",
             "author": {
-                "name": "Rajesh4013",
-                "url": "https://github.com/Rajesh4013"
+                "name": "wysh3",
+                "url": "https://github.com/wysh3"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91952704?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight auth library based on oidc-client-ts for React single page applications (SPA). Support for hooks and higher-order components (HOC).</div>",
+            "url": "https://github.com/authts/react-oidc-context",
+            "title": "authts/react-oidc-context: Lightweight auth library based on oidc-client-ts for React single page applications (SPA). Support for hooks and higher-order components (HOC).",
+            "date_modified": "2024-12-12T07:57:07.000Z",
+            "date_published": "2021-05-05T14:06:29.000Z",
+            "author": {
+                "name": "authts",
+                "url": "https://github.com/authts"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114252697?u=524879c75f6e41e2b67bcb6480c0c567f2f76705&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>✍️ Medium-Like Blogging Application: A full-featured blogging platform inspired by Medium.  🛠️ Tech Stack:  Frontend: React and Tailwind CSS for a sleek, responsive UI.  Backend: Honō (Cloudflare Workers) for lightweight, serverless logic.  Database: PostgreSQL with Prisma ORM and connection pooling.   🚀 Features:  📝 Rich blogging functionality </div>",
+            "url": "https://github.com/shubhampawar4841/Medium",
+            "title": "shubhampawar4841/Medium: ✍️ Medium-Like Blogging Application: A full-featured blogging platform inspired by Medium.  🛠️ Tech Stack:  Frontend: React and Tailwind CSS for a sleek, responsive UI.  Backend: Honō (Cloudflare Workers) for lightweight, serverless logic.  Database: PostgreSQL with Prisma ORM and connection pooling.   🚀 Features:  📝 Rich blogging functionality ",
+            "date_modified": "2024-12-12T07:53:57.000Z",
+            "date_published": "2024-09-25T12:45:01.000Z",
+            "author": {
+                "name": "shubhampawar4841",
+                "url": "https://github.com/shubhampawar4841"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188756392?u=caec9ea260a1f92b8f31cea12fea717224ea8644&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast, lightweight WhatsApp bot powered Baileys Web API</div>",
             "url": "https://github.com/AstroX11/Xstro",
             "title": "AstroX11/Xstro: A fast, lightweight WhatsApp bot powered Baileys Web API",
-            "date_modified": "2024-12-12T06:59:54.000Z",
+            "date_modified": "2024-12-12T07:53:27.000Z",
             "date_published": "2024-11-02T07:18:06.000Z",
             "author": {
                 "name": "AstroX11",
@@ -28,25 +50,91 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108690798?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Database GUI in your browser. It supports connecting to Postgres, MySQL, and SQLite.</div>",
-            "url": "https://github.com/outerbase/studio",
-            "title": "outerbase/studio: A lightweight Database GUI in your browser. It supports connecting to Postgres, MySQL, and SQLite.",
-            "date_modified": "2024-12-12T06:58:30.000Z",
-            "date_published": "2024-01-17T02:15:23.000Z",
-            "author": {
-                "name": "outerbase",
-                "url": "https://github.com/outerbase"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1503638?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight development web server.</div>",
             "url": "https://github.com/akiraohgaki/devsrv",
             "title": "akiraohgaki/devsrv: A lightweight development web server.",
-            "date_modified": "2024-12-12T06:45:26.000Z",
+            "date_modified": "2024-12-12T07:44:18.000Z",
             "date_published": "2024-09-10T17:03:31.000Z",
             "author": {
                 "name": "akiraohgaki",
                 "url": "https://github.com/akiraohgaki"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171963732?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Node.js + Express Boilerplate with GraphQL  A clean and extensible boilerplate for building scalable Node.js applications using Express and GraphQL.  Features Node.js + Express: Lightweight and fast backend framework. GraphQL API: Built-in support for creating flexible and efficient APIs with GraphQL.</div>",
+            "url": "https://github.com/Rajesh4013/graphql-nodeexpress-boilerplate",
+            "title": "Rajesh4013/graphql-nodeexpress-boilerplate: Node.js + Express Boilerplate with GraphQL  A clean and extensible boilerplate for building scalable Node.js applications using Express and GraphQL.  Features Node.js + Express: Lightweight and fast backend framework. GraphQL API: Built-in support for creating flexible and efficient APIs with GraphQL.",
+            "date_modified": "2024-12-12T07:41:48.000Z",
+            "date_published": "2024-12-02T06:13:56.000Z",
+            "author": {
+                "name": "Rajesh4013",
+                "url": "https://github.com/Rajesh4013"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11608962?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, mobile-first, and customizable portfolio / resume SPA ready for deployment</div>",
+            "url": "https://github.com/aykyiv/ebrief-elegant-portfolio-resume",
+            "title": "aykyiv/ebrief-elegant-portfolio-resume: A lightweight, mobile-first, and customizable portfolio / resume SPA ready for deployment",
+            "date_modified": "2024-12-12T07:41:12.000Z",
+            "date_published": "2024-12-02T16:47:23.000Z",
+            "author": {
+                "name": "aykyiv",
+                "url": "https://github.com/aykyiv"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71209582?u=6db522b3afedd5d619875701ddc03b8443ebcf56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern lightweight component library based on Vue 3🚀</div>",
+            "url": "https://github.com/Onion-L/onionl-ui",
+            "title": "Onion-L/onionl-ui: A modern lightweight component library based on Vue 3🚀",
+            "date_modified": "2024-12-12T07:36:32.000Z",
+            "date_published": "2024-11-29T01:20:46.000Z",
+            "author": {
+                "name": "Onion-L",
+                "url": "https://github.com/Onion-L"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130297748?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight AI toolkit for multiple platforms</div>",
+            "url": "https://github.com/modalityml/fluent-ai",
+            "title": "modalityml/fluent-ai: A lightweight AI toolkit for multiple platforms",
+            "date_modified": "2024-12-12T07:32:51.000Z",
+            "date_published": "2024-12-10T07:07:59.000Z",
+            "author": {
+                "name": "modalityml",
+                "url": "https://github.com/modalityml"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46305542?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight redefined version of microShield</div>",
+            "url": "https://github.com/List-KR/tinyShield",
+            "title": "List-KR/tinyShield: A lightweight redefined version of microShield",
+            "date_modified": "2024-12-12T07:27:54.000Z",
+            "date_published": "2024-11-07T08:24:01.000Z",
+            "author": {
+                "name": "List-KR",
+                "url": "https://github.com/List-KR"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41122242?u=eb6466f376e25261c8647e73a8775afba567eefc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and modern paste bin and url shortener.</div>",
+            "url": "https://github.com/greenhat616/pastebin",
+            "title": "greenhat616/pastebin: A lightweight and modern paste bin and url shortener.",
+            "date_modified": "2024-12-12T07:19:50.000Z",
+            "date_published": "2021-10-10T08:43:55.000Z",
+            "author": {
+                "name": "greenhat616",
+                "url": "https://github.com/greenhat616"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108690798?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Database GUI in your browser. It supports connecting to Postgres, MySQL, and SQLite.</div>",
+            "url": "https://github.com/outerbase/studio",
+            "title": "outerbase/studio: A lightweight Database GUI in your browser. It supports connecting to Postgres, MySQL, and SQLite.",
+            "date_modified": "2024-12-12T08:01:59.000Z",
+            "date_published": "2024-01-17T02:15:23.000Z",
+            "author": {
+                "name": "outerbase",
+                "url": "https://github.com/outerbase"
             }
         },
         {
@@ -58,17 +146,6 @@
             "author": {
                 "name": "zayne-labs",
                 "url": "https://github.com/zayne-labs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114252697?u=524879c75f6e41e2b67bcb6480c0c567f2f76705&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>✍️ Medium-Like Blogging Application: A full-featured blogging platform inspired by Medium.  🛠️ Tech Stack:  Frontend: React and Tailwind CSS for a sleek, responsive UI.  Backend: Honō (Cloudflare Workers) for lightweight, serverless logic.  Database: PostgreSQL with Prisma ORM and connection pooling.   🚀 Features:  📝 Rich blogging functionality </div>",
-            "url": "https://github.com/shubhampawar4841/Medium",
-            "title": "shubhampawar4841/Medium: ✍️ Medium-Like Blogging Application: A full-featured blogging platform inspired by Medium.  🛠️ Tech Stack:  Frontend: React and Tailwind CSS for a sleek, responsive UI.  Backend: Honō (Cloudflare Workers) for lightweight, serverless logic.  Database: PostgreSQL with Prisma ORM and connection pooling.   🚀 Features:  📝 Rich blogging functionality ",
-            "date_modified": "2024-12-12T06:38:19.000Z",
-            "date_published": "2024-09-25T12:45:01.000Z",
-            "author": {
-                "name": "shubhampawar4841",
-                "url": "https://github.com/shubhampawar4841"
             }
         },
         {
@@ -146,83 +223,6 @@
             "author": {
                 "name": "0xSiO",
                 "url": "https://github.com/0xSiO"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107604315?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Python Web Chart Library</div>",
-            "url": "https://github.com/vegaxholdings/lightweight-charts-server",
-            "title": "vegaxholdings/lightweight-charts-server: Python Web Chart Library",
-            "date_modified": "2024-12-12T05:11:08.000Z",
-            "date_published": "2024-07-31T06:33:02.000Z",
-            "author": {
-                "name": "vegaxholdings",
-                "url": "https://github.com/vegaxholdings"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/109958650?u=4ad9a9266250ba49e1515597e6003a17d7721a19&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight unofficial Character.AI API in Node/Deno/Bun JS.</div>",
-            "url": "https://github.com/KevinAdhaikal/CAINode",
-            "title": "KevinAdhaikal/CAINode: A lightweight unofficial Character.AI API in Node/Deno/Bun JS.",
-            "date_modified": "2024-12-12T05:09:54.000Z",
-            "date_published": "2024-04-21T17:02:03.000Z",
-            "author": {
-                "name": "KevinAdhaikal",
-                "url": "https://github.com/KevinAdhaikal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51640895?u=6bf2420b6ca97c06a218d0b10504f6a9fd0f2e33&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A collection of optimized Dockerfiles for various platforms, including Next.js, Node.js, Spring Boot, and more. This repo focuses on reducing image sizes while maintaining functionality, making containerized deployments efficient and lightweight</div>",
-            "url": "https://github.com/david-randoll/docker-images-optomized",
-            "title": "david-randoll/docker-images-optomized: A collection of optimized Dockerfiles for various platforms, including Next.js, Node.js, Spring Boot, and more. This repo focuses on reducing image sizes while maintaining functionality, making containerized deployments efficient and lightweight",
-            "date_modified": "2024-12-12T05:00:33.000Z",
-            "date_published": "2024-11-11T01:36:57.000Z",
-            "author": {
-                "name": "david-randoll",
-                "url": "https://github.com/david-randoll"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3534405?u=8bb6d2fe7e62158021f5d535b2f290e77f16236c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight steel to forge PWAs. (Minimal Frontend Framework with server side rendering and other capabilities)</div>",
-            "url": "https://github.com/Masquerade-Circus/valyrian.js",
-            "title": "Masquerade-Circus/valyrian.js: Lightweight steel to forge PWAs. (Minimal Frontend Framework with server side rendering and other capabilities)",
-            "date_modified": "2024-12-12T04:42:26.000Z",
-            "date_published": "2018-01-11T22:10:12.000Z",
-            "author": {
-                "name": "Masquerade-Circus",
-                "url": "https://github.com/Masquerade-Circus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91417599?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Astro component for syntax highlighting and rendering beautifully formatted code blocks.</div>",
-            "url": "https://github.com/astro-community/code",
-            "title": "astro-community/code: A lightweight Astro component for syntax highlighting and rendering beautifully formatted code blocks.",
-            "date_modified": "2024-12-12T04:27:27.000Z",
-            "date_published": "2024-12-05T19:09:38.000Z",
-            "author": {
-                "name": "astro-community",
-                "url": "https://github.com/astro-community"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/146950644?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fun side project that serves as an offline alternative to the TDSB Connects app. Built as a Progressive Web App (PWA), it runs locally on your device and doesn’t rely on servers, offering a lightweight, efficient, and reliable experience.</div>",
-            "url": "https://github.com/HassanSattar3/Better-Tdsb-Connect-App",
-            "title": "HassanSattar3/Better-Tdsb-Connect-App: A fun side project that serves as an offline alternative to the TDSB Connects app. Built as a Progressive Web App (PWA), it runs locally on your device and doesn’t rely on servers, offering a lightweight, efficient, and reliable experience.",
-            "date_modified": "2024-12-12T04:19:41.000Z",
-            "date_published": "2024-11-25T15:16:36.000Z",
-            "author": {
-                "name": "HassanSattar3",
-                "url": "https://github.com/HassanSattar3"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26692481?u=96481259c1b8fb5fd219b8fb55e7b4d7a42e1007&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight version of Semaphore</div>",
-            "url": "https://github.com/jeffy-g/mini-semaphore",
-            "title": "jeffy-g/mini-semaphore: A lightweight version of Semaphore",
-            "date_modified": "2024-12-12T03:48:49.000Z",
-            "date_published": "2020-02-29T16:55:25.000Z",
-            "author": {
-                "name": "jeffy-g",
-                "url": "https://github.com/jeffy-g"
             }
         }
     ]
