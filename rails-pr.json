@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53968.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2740760695\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53968\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53968/hovercard\" href=\"https://github.com/rails/rails/issues/53968\">#53968</a></p>\n<p dir=\"auto\">An anonymous module can become named if assigned later, hence it's incorrect to cache <code class=\"notranslate\">module_parent_name</code> if the module is anonymous.</p>",
+            "url": "https://github.com/rails/rails/pull/53971",
+            "title": "Don't cache `module_parent_name` on anonymous modules",
+            "date_modified": "2024-12-16T09:36:32.000Z",
+            "date_published": "2024-12-16T09:36:27.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This proposal is based on a <a href=\"https://github.com/rails/rails/pull/53796#issuecomment-2512417545\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53796/hovercard\">code review comment</a>:</p>\n<blockquote>\n<p dir=\"auto\">I think we should deprecate and remove this module. It is only used<br>\nonce inside the framework, in a place that perhaps don't even need it<br>\nanymore and I don't think it adds much for our users. They would be<br>\nbetter served with their own config object that is just a hash.</p>\n</blockquote>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">To achieve this outcome, replace the only internal occurrence of <code class=\"notranslate\">ActiveSupport::Configurable</code> with a <a href=\"https://edgeapi.rubyonrails.org/classes/Class.html#method-i-class_attribute\" rel=\"nofollow\">class_attribute</a>. Similarly, replace <a href=\"https://edgeapi.rubyonrails.org/classes/ActiveSupport/Configurable/ClassMethods.html#method-i-config_accessor\" rel=\"nofollow\">config_accessor</a> calls with class- and instance-level calls to <a href=\"https://edgeapi.rubyonrails.org/classes/Module.html#method-i-delegate\" rel=\"nofollow\">delegate</a> for the readers and writers.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/53970",
             "title": "Deprecate `ActiveSupport::Configurable`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "chase-dougherty",
                 "url": "https://github.com/chase-dougherty"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2575027?u=e7a9fe052c03fa59da09e064fdfacf2b1f627c2f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">File uploaded via Action Text's integration with Active Storage Direct Uploads may be saved to the server (and the backing storage service) without ever being associated to an <code class=\"notranslate\">ActiveStorage::Attachment</code> or <code class=\"notranslate\">ActionText::RichText</code> record.</p>\n<p dir=\"auto\">This commit mirrors the <a href=\"https://edgeguides.rubyonrails.org/active_storage_overview.html#integrating-with-libraries-or-frameworks\" rel=\"nofollow\">Active Storage Overview</a> documentation's guidance to <a href=\"https://edgeguides.rubyonrails.org/active_storage_overview.html#purging-unattached-uploads\" rel=\"nofollow\">Purge Unattached Uploads</a> regularly.</p>",
-            "url": "https://github.com/rails/rails/pull/53831",
-            "title": "Document Action Text File Upload purging [ci skip]",
-            "date_modified": "2024-12-07T13:43:33.000Z",
-            "date_published": "2024-12-04T20:35:30.000Z",
-            "author": {
-                "name": "seanpdoyle",
-                "url": "https://github.com/seanpdoyle"
             }
         }
     ]
