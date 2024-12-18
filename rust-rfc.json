@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185516564?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC for issue <a href=\"https://github.com/rust-lang/rust/issues/134475\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/134475/hovercard\">rust-lang/rust#134475</a></p>\n<p dir=\"auto\">This RFC proposes checking for <code class=\"notranslate\">T: Sized</code> in required trait methods (which do not check for some reason) which will be a lint for now, a hard error in the future.</p>\n<p dir=\"auto\">It does have alot of mistakes (grammatically) (sorry)</p>\n<p dir=\"auto\"><a href=\"https://github.com/ionicmc-rs/rfcs/blob/master/text/3696-unsized-params-in-traits.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3745",
+            "title": "unsized params in traits",
+            "date_modified": "2024-12-18T21:13:41.000Z",
+            "date_published": "2024-12-18T21:11:39.000Z",
+            "author": {
+                "name": "ionicmc-rs",
+                "url": "https://github.com/ionicmc-rs"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/128307220?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As discussed previously:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://smallcultfollowing.com/babysteps/blog/2014/05/13/focusing-on-ownership/\" rel=\"nofollow\">2014 Blog post</a></li>\n<li><a href=\"https://internals.rust-lang.org/t/lack-of-mut-in-bindings-as-a-deny-by-default-lint/15818\" rel=\"nofollow\">2021 IRLO thread</a></li>\n<li><a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/Idea.3A.20Downgrade.20.22immutable.20variable.E2.80.9C.20errors.20to.20lints\" rel=\"nofollow\">Zulip thread</a></li>\n</ul>\n<p dir=\"auto\">Mutation of non-mutable locals arguably resembles a lint more than a hard error.  Converting it to a configurable lint has the potential to reduce friction and more clearly distinguish it from Rust's more fundamental type system restrictions.</p>\n<p dir=\"auto\">Implementing this is less effort than you might expect: the borrow checker already has separate code paths for handling local variables.  I've written a proof-of-concept for the change as part of <a href=\"https://github.com/rust-lang/rust/pull/134233\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/134233/hovercard\">this pull request</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/em-tg/rfcs/blob/emy/text/3742-mutate-non-mutable-locals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3742",
             "title": "Convert \"reassignment of immutable local\" and \"mutable borrow of immutable local\" from a hard error to a deny-by-default lint",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshtriplett",
                 "url": "https://github.com/joshtriplett"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Relax the requirements on struct field ordering for dynamically sized fields for <code class=\"notranslate\">repr(Rust)</code> and <code class=\"notranslate\">repr(transparent)</code>, such that <code class=\"notranslate\">?Sized</code> fields can be anywhere in the field list, as long as there is only one.</p>\n<p dir=\"auto\">Note that this RFC previously added changes to <code class=\"notranslate\">repr(C)</code>, but these have since been removed.</p>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/relaxed-dst-field-ordering/text/0000-relaxed-dst-field-ordering.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3713",
-            "title": "Relaxed DST field ordering",
-            "date_modified": "2024-10-24T10:28:13.000Z",
-            "date_published": "2024-10-19T01:54:52.000Z",
-            "author": {
-                "name": "clarfonthey",
-                "url": "https://github.com/clarfonthey"
             }
         }
     ]
