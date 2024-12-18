@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1915?u=06a64e4fc6a804a9422dfe87605c798e676630d5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">first</code> forces an ordering even if we've deliberately removed any orderings on the underlying scope. Given the nature of <code class=\"notranslate\">#sole</code>, this change doesn't affect the results, but does allow the user to omit orderings where it would pessimise the query (as we've discovered on a large site).</p>",
             "url": "https://github.com/rails/rails/pull/53982",
             "title": "Use `limit` in `#sole`, not `first`.",
-            "date_modified": "2024-12-17T23:09:48.000Z",
+            "date_modified": "2024-12-18T07:58:32.000Z",
             "date_published": "2024-12-17T23:09:43.000Z",
             "author": {
                 "name": "kivikakk",
