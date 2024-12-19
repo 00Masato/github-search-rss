@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185516564?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC for issue <a href=\"https://github.com/rust-lang/rust/issues/134475\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/134475/hovercard\">rust-lang/rust#134475</a></p>\n<p dir=\"auto\">This RFC proposes checking for <code class=\"notranslate\">T: Sized</code> in required trait methods (which do not check for some reason) which will be a lint for now, a hard error in the future.</p>\n<p dir=\"auto\">It does have alot of mistakes (grammatically) (sorry)</p>\n<p dir=\"auto\"><a href=\"https://github.com/ionicmc-rs/rfcs/blob/master/text/3696-unsized-params-in-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3745",
             "title": "unsized params in traits",
-            "date_modified": "2024-12-19T05:22:22.000Z",
+            "date_modified": "2024-12-19T08:01:56.000Z",
             "date_published": "2024-12-18T21:11:39.000Z",
             "author": {
                 "name": "ionicmc-rs",
