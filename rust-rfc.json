@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/653604?u=bcaaafaa0439ac0006d5e4aff450ab0b826bc5ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new environment variable <code class=\"notranslate\">CARGO_CHECK</code> that is set to <code class=\"notranslate\">true</code> when running <code class=\"notranslate\">cargo check</code> so build scripts can skip expensive compilation steps that are unnecessary for Rust type checking, such as compiling external C++ code in cxx based projects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/akiselev/rfcs/blob/cargo-check-env/text/3748-cargo_check_environment_variable.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3748",
             "title": "RFC: Set CARGO_CHECK environment variable when type checking",
-            "date_modified": "2024-12-21T23:36:01.000Z",
+            "date_modified": "2024-12-22T01:16:36.000Z",
             "date_published": "2024-12-21T04:51:26.000Z",
             "author": {
                 "name": "akiselev",
