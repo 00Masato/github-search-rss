@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4459874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is largely the work of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rylev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rylev\">@rylev</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chriswailes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chriswailes\">@chriswailes</a>. As <a href=\"https://github.com/rust-lang/rfcs/pull/3379#issuecomment-1876158423\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3379/hovercard\">suggested by @tmandry</a> I have stripped it down to an MVP that just adds <code class=\"notranslate\">os_version_min</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ChrisDenton/rfcs/blob/os-min-version/text/3750-cfg-os-version-min.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3750",
+            "title": "RFC: cfg_os_version_min",
+            "date_modified": "2024-12-27T11:12:05.000Z",
+            "date_published": "2024-12-27T11:09:52.000Z",
+            "author": {
+                "name": "ChrisDenton",
+                "url": "https://github.com/ChrisDenton"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/653604?u=bcaaafaa0439ac0006d5e4aff450ab0b826bc5ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new environment variable <code class=\"notranslate\">CARGO_CHECK</code> that is set to <code class=\"notranslate\">true</code> when running <code class=\"notranslate\">cargo check</code> so build scripts can skip expensive compilation steps that are unnecessary for Rust type checking, such as compiling external C++ code in cxx based projects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/akiselev/rfcs/blob/cargo-check-env/text/3748-cargo_check_environment_variable.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3748",
             "title": "RFC: Set CARGO_CHECK environment variable when type checking",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Darksonn",
                 "url": "https://github.com/Darksonn"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/162737?u=31a4f284889d0261a2b00e45af696e84dafb1488&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow declaring proc macro attributes and derive macros as unsafe, and<br>\nrequiring <code class=\"notranslate\">unsafe</code> to invoke them.</p>\n<p dir=\"auto\"><a href=\"https://github.com/joshtriplett/rfcs/blob/unsafe-derives/text/3715-unsafe-derives-and-attrs.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3715",
-            "title": "Unsafe derives and attributes",
-            "date_modified": "2024-11-21T08:04:48.000Z",
-            "date_published": "2024-10-22T13:38:06.000Z",
-            "author": {
-                "name": "joshtriplett",
-                "url": "https://github.com/joshtriplett"
             }
         }
     ]
