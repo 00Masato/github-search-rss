@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3369694?u=0e58e15e1657c606b31b8a082b25a3154567234b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Folyd/rfcs/blob/master/text/0000-llm-text-docs.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3751",
+            "title": "RFC: add LLM text version to rustdoc",
+            "date_modified": "2024-12-30T03:47:03.000Z",
+            "date_published": "2024-12-30T03:46:13.000Z",
+            "author": {
+                "name": "Folyd",
+                "url": "https://github.com/Folyd"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4459874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is largely the work of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rylev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rylev\">@rylev</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chriswailes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chriswailes\">@chriswailes</a>. As <a href=\"https://github.com/rust-lang/rfcs/pull/3379#issuecomment-1876158423\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3379/hovercard\">suggested by @tmandry</a> I have stripped it down to an MVP that just adds <code class=\"notranslate\">os_version_min</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ChrisDenton/rfcs/blob/os-min-version/text/3750-cfg-os-version-min.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3750",
             "title": "RFC: cfg_os_version_min",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Noratrieb",
                 "url": "https://github.com/Noratrieb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>We introduce the concept of \"target modifier\". A target modifier is a flag where it may be unsound if you link together two compilation units that disagree on the flag.</li>\n<li>We fail the build if rustc can see two Rust compilation units that do not agree on the exact set of target modifier flags.</li>\n<li>There are already several existing flags that could fall into this category. There are also hypothetical new flags that do.</li>\n<li>The error can be silenced using the <code class=\"notranslate\">-Cunsafe-allow-abi-mismatch</code> escape hatch.</li>\n<li>Not having a stable way to build stdlib crates does not block stabilization of target modifiers.</li>\n<li>As a future extension we may be able to relax the rules to allow some specific kinds of mismatches.</li>\n<li>This RFC does not stabilize any target modifiers. That should happen in follow-up MCPs/FCPs/RFCs/etc.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/target-modifiers/text/3716-target-modifiers.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3716",
-            "title": "[RFC] Target Modifiers",
-            "date_modified": "2024-12-25T12:39:06.000Z",
-            "date_published": "2024-10-24T11:30:32.000Z",
-            "author": {
-                "name": "Darksonn",
-                "url": "https://github.com/Darksonn"
             }
         }
     ]
