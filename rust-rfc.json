@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6120103?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Special case struct patterns containing only a rest pattern (e.g., <code class=\"notranslate\">Foo { .. }</code>) so that they can match values of any type with the appropriate name, not just structs (e.g., it could match an <code class=\"notranslate\">enum Foo</code> value). This is done so that structs containing only private fields can be changed to other types without breaking backwards compatibility.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/rest-patterns-foo-should-match-non-struct-types/21607\" rel=\"nofollow\">Prior discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/theemathas/rfcs/blob/rest_pattern_matches_non_struct/text/3753-rest-pattern-matches-non-struct.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3753",
             "title": "RFC: `Foo { .. }` pattern matches non-struct types",
-            "date_modified": "2024-12-31T11:43:01.000Z",
+            "date_modified": "2024-12-31T13:47:10.000Z",
             "date_published": "2024-12-31T10:47:56.000Z",
             "author": {
                 "name": "theemathas",
