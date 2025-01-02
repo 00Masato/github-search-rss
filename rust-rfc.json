@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6120103?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Special case struct patterns containing only a rest pattern (e.g., <code class=\"notranslate\">Foo { .. }</code>) so that they can match values of any type with the appropriate name, not just structs (e.g., it could match an <code class=\"notranslate\">enum Foo</code> value). This is done so that structs containing only private fields can be changed to other types without breaking backwards compatibility.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/rest-patterns-foo-should-match-non-struct-types/21607\" rel=\"nofollow\">Prior discussion on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/theemathas/rfcs/blob/rest_pattern_matches_non_struct/text/3753-rest-pattern-matches-non-struct.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3753",
             "title": "RFC: `Foo { .. }` pattern matches non-struct types",
-            "date_modified": "2024-12-31T13:47:10.000Z",
+            "date_modified": "2025-01-02T02:15:14.000Z",
             "date_published": "2024-12-31T10:47:56.000Z",
             "author": {
                 "name": "theemathas",
@@ -130,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">All of Rust's types are either <em>sized</em>, which implement the <code class=\"notranslate\">Sized</code> trait and have a statically known size during compilation, or <em>unsized</em>, which do not implement the <code class=\"notranslate\">Sized</code> trait and are assumed to have a size which can be computed at runtime. However, this dichotomy misses two categories of type - types whose size is unknown during compilation but is a runtime constant, and types whose size can never be known. Supporting the former is a prerequisite to stable scalable vector types and supporting the latter is a prerequisite to unblocking extern types. This RFC proposes a hierarchy of <code class=\"notranslate\">Sized</code> traits in order to be able to support these use cases.</p>\n<p dir=\"auto\">This RFC relies on experimental, yet-to-be-RFC'd const traits, so this is blocked on that. I haven't squashed any of the previous revisions but can do so if/when this is approved. Already discussed in the <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/410673-t-lang.2Fmeetings/topic/Design.20meeting.202024-11-13/near/482097877\" rel=\"nofollow\">2024-11-13 t-lang design meeting</a> with feedback incorporated.</p>\n<p dir=\"auto\">See <a href=\"https://github.com/rust-lang/rfcs/pull/3729#issuecomment-2517204789\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3729/hovercard\">this comment</a> for the most recent summary of changes to this RFC since it was opened.</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/sized-hierarchy/text/3729-sized-hierarchy.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3729",
             "title": "Hierarchy of Sized traits",
-            "date_modified": "2024-12-22T10:00:07.000Z",
+            "date_modified": "2025-01-02T02:11:51.000Z",
             "date_published": "2024-11-15T16:01:06.000Z",
             "author": {
                 "name": "davidtwco",
