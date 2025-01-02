@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3369694?u=0e58e15e1657c606b31b8a082b25a3154567234b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Folyd/rfcs/blob/master/text/0000-llm-text-docs.md\">Rendered</a></p>\n<p dir=\"auto\">--- Edited ---<br>\nLet me explain why I want to add this feature. I needed an LLM to use the <a href=\"https://docs.rs/oas3\" rel=\"nofollow\">oas3</a> crate to generate OpenAPI Specifications. However, due to its knowledge cutoff, the code the LLM generated was based on v0.4.0, while the latest version is v0.13.1. I wanted the LLM to learn from the latest documentation to generate up-to-date code.</p>\n<p dir=\"auto\">While rustdoc has an experimental JSON format, it contains a lot of unrelated information that's not useful for LLMs and is quite large - the JSON output for oas3 v0.13.1 is 5.5MB. That's why I believe we need a new text format that helps AI learn new versions quickly. I estimate the text version of oas3 v0.13.1 would be less than 1KB, containing just the essential public API information.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3751",
             "title": "RFC: add LLM text version to rustdoc",
-            "date_modified": "2025-01-01T22:39:59.000Z",
+            "date_modified": "2025-01-02T17:20:23.000Z",
             "date_published": "2024-12-30T03:46:13.000Z",
             "author": {
                 "name": "Folyd",
