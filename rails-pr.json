@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Recruit the Reaper to do more work in keeping the connection pool healthy:</p>\n<ul dir=\"auto\">\n<li>retiring connections that have been idle<sup><a href=\"#user-content-fn-1-7a241e2cba5c469acd8522fe71b441b9\" id=\"user-content-fnref-1-7a241e2cba5c469acd8522fe71b441b9\" data-footnote-ref=\"\" aria-describedby=\"footnote-label\">1</a></sup> for too long, or that have been open beyond a configured total maximum age</li>\n<li>creating occasional activity on inactive<sup><a href=\"#user-content-fn-1-7a241e2cba5c469acd8522fe71b441b9\" id=\"user-content-fnref-1-2-7a241e2cba5c469acd8522fe71b441b9\" data-footnote-ref=\"\" aria-describedby=\"footnote-label\">1</a></sup> connections</li>\n<li>keeping the pool prepopulated up to its minimum size</li>\n<li>proactively connecting to the target database from any pooled connections that had lazily deferred that step</li>\n<li>resetting or replacing connections that are known to be broken</li>\n</ul>\n<p dir=\"auto\">For most applications this is going to make no difference. For large applications with multiple active connection pools, though, it will allow more maintenance work to be done in the background and/or in parallel.</p>\n<p dir=\"auto\">Maximum total connection lifetime is helpful, for example, to facilitate smooth database server failover: as long as the old server remains available for (max lifetime) seconds after a load balancer switches to a new server, no in-flight activity will be interrupted.</p>\n<section data-footnotes=\"\" class=\"footnotes\"><h2 id=\"footnote-label\" class=\"sr-only\" dir=\"auto\">Footnotes</h2>\n<ol dir=\"auto\">\n<li id=\"user-content-fn-1-7a241e2cba5c469acd8522fe71b441b9\">\n<p dir=\"auto\">\"idle\" and \"inactive\" here distinguish between connections that have not been requested by the application in a while (idle) and those that have not spoken to their remote server in a while (inactive). The former is a desirable opportunity to reduce our connection count (<code class=\"notranslate\">idle_timeout</code>); the latter is a risk that the server or a firewall may drop a connection we still anticipate using (avoided by <code class=\"notranslate\">keepalive</code>). <a href=\"#user-content-fnref-1-7a241e2cba5c469acd8522fe71b441b9\" data-footnote-backref=\"\" aria-label=\"Back to reference 1\" class=\"data-footnote-backref\">↩</a> <a href=\"#user-content-fnref-1-2-7a241e2cba5c469acd8522fe71b441b9\" data-footnote-backref=\"\" aria-label=\"Back to reference 1-2\" class=\"data-footnote-backref\">↩<sup>2</sup></a></p>\n</li>\n</ol>\n</section>",
+            "url": "https://github.com/rails/rails/pull/54175",
+            "title": "Maintain AR connection pools in the background",
+            "date_modified": "2025-01-09T16:30:35.000Z",
+            "date_published": "2025-01-09T16:23:29.000Z",
+            "author": {
+                "name": "matthewd",
+                "url": "https://github.com/matthewd"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If you try to display the output for the commands:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">bin/rails g benchmark</code></li>\n<li><code class=\"notranslate\">bin/rails g script</code></li>\n</ul>\n<p dir=\"auto\">You'll see that it suggest to run the scripts via <code class=\"notranslate\">ruby script/...</code>.</p>\n<p dir=\"auto\">I believe it makes more sense to use the Rails runner instead, because this way scripts are automatically wrapped with the Rails Executor (citing directly from the docs).</p>",
             "url": "https://github.com/rails/rails/pull/54174",
             "title": "Suggest to use `bin/rails runner` in commands help [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "naofumi",
                 "url": "https://github.com/naofumi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #53997.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2748585408\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53997\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53997/hovercard\" href=\"https://github.com/rails/rails/issues/53997\">#53997</a></p>",
-            "url": "https://github.com/rails/rails/pull/54032",
-            "title": "Allow ActiveSupport::ErrorReporter#report to accept a string message",
-            "date_modified": "2024-12-24T01:50:16.000Z",
-            "date_published": "2024-12-23T09:16:56.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
