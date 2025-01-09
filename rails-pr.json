@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"[MiniMagick] MiniMagick::Image#mime_type has been deprecated, because it wasn't returning correct result for all formats ImageMagick supports. Unfortunately, returning the correct MIME type would be very slow, because it would require ImageMagick to read the whole file. It's better to use Marcel and MimeMagic gems, which are able to determine the MIME type just from the image header.\"><pre class=\"notranslate\"><code class=\"notranslate\">[MiniMagick] MiniMagick::Image#mime_type has been deprecated, because it wasn't returning correct result for all formats ImageMagick supports. Unfortunately, returning the correct MIME type would be very slow, because it would require ImageMagick to read the whole file. It's better to use Marcel and MimeMagic gems, which are able to determine the MIME type just from the image header.\n</code></pre></div>\n<p dir=\"auto\">[<a href=\"https://buildkite.com/rails/rails/builds/115455#0194455d-a2d1-4dee-be65-1f557422a6fe/1152-3839\" rel=\"nofollow\">eg</a>]</p>\n<p dir=\"auto\">This method is removed in v5 of <code class=\"notranslate\">mini_magick</code> gem:</p>\n<blockquote>\n<p dir=\"auto\">Removed deprecated Image#mime_type, as it wasn't accurate.<br>\nMIME type from file content should be determined either using Marcel<br>\nor MimeMagic, or mime-types or MiniMime using Image#type.</p>\n</blockquote>\n<p dir=\"auto\">Since we depend on it through <code class=\"notranslate\">image_processing</code> gem (<code class=\"notranslate\">mini_magick (&gt;= 4.9.5, &lt; 5)</code>), while work is being done in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2664665420\" data-permission-text=\"Title is private\" data-url=\"https://github.com/janko/image_processing/issues/132\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/janko/image_processing/pull/132/hovercard\" href=\"https://github.com/janko/image_processing/pull/132\">janko/image_processing#132</a> so sooner or later this test will fail.</p>",
+            "url": "https://github.com/rails/rails/pull/54164",
+            "title": "Fix MiniMagic::Image.mime_type deprecation in ASto test",
+            "date_modified": "2025-01-09T00:41:19.000Z",
+            "date_published": "2025-01-09T00:32:41.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28151680?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Imagine that you need to add custom styles/logic for specific route namespaces.<br>\nFor example, I have links to the admin panel in my shared navbar, and when I work the nested resources, I want to see the styled link.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"%= link_to &quot;Books&quot;, admin_books_path,\n  class: &quot;#{current_namespace?('admin') ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}&quot; %&gt;\n\"><pre class=\"notranslate\"><code class=\"notranslate\">%= link_to \"Books\", admin_books_path,\n  class: \"#{current_namespace?('admin') ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}\" %&gt;\n\n</code></pre></div>\n<p dir=\"auto\">It could be helpful for developers with a short logic based on current namespaces.</p>\n<p dir=\"auto\">This Pull Request has been created because I need a method to check my current namespace.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes:</p>\n<ul dir=\"auto\">\n<li>Add a new helper method <code class=\"notranslate\">current_namespace?(namespace)</code></li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54160",
             "title": "Added current_namespace? for ActionView URL helpers",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59101468?u=eed7ec97fb48c253f84a966eb9db853c68195d6b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixed a  typo in the article \"2.6.1.4 Building and Creating Associated Objects\"</p>\n<p dir=\"auto\">Was missed a mark \"!\"</p>\n<p dir=\"auto\">I decided to fix this error because I trust your documentation 100% and I don't like mistakes, even if they are grammatical.</p>",
             "url": "https://github.com/rails/rails/pull/54153",
             "title": "Fixed a typo in the article \"2.6.1.4 Building [ci skip]",
-            "date_modified": "2025-01-09T00:03:47.000Z",
+            "date_modified": "2025-01-09T00:53:20.000Z",
             "date_published": "2025-01-08T11:03:57.000Z",
             "author": {
                 "name": "VitaliiShevchenko",
@@ -119,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15097447?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Why this PR?</p>\n<ul dir=\"auto\">\n<li>The docs make reference to enabling verbose queries, but do not explicitly state how this can be done.</li>\n<li>This PR address that (alleged) shortfall.</li>\n<li>Feel free to close if this does not meet PR requirements / goals.</li>\n</ul>\n<p dir=\"auto\">🔗 Preview: <a href=\"https://benkoshy-docs-rails-guide-ve.rails-docs-preview.pages.dev/guides/debugging_rails_applications\" rel=\"nofollow\">https://benkoshy-docs-rails-guide-ve.rails-docs-preview.pages.dev/guides/debugging_rails_applications</a></p>",
             "url": "https://github.com/rails/rails/pull/54066",
             "title": "docs: rails debug guide - add detail re: verbose logs [ci-skip]",
-            "date_modified": "2025-01-08T23:17:11.000Z",
+            "date_modified": "2025-01-09T02:04:13.000Z",
             "date_published": "2024-12-28T03:02:03.000Z",
             "author": {
                 "name": "benkoshy",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "igorkorepanov",
                 "url": "https://github.com/igorkorepanov"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61743304?u=9f9fb5b1dd81a65d9d7b711aada7f3b7398d7226&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/53991",
-            "title": "run migrations from scratch in Rails 8.0",
-            "date_modified": "2024-12-18T10:11:53.000Z",
-            "date_published": "2024-12-18T10:11:49.000Z",
-            "author": {
-                "name": "S-surendrasingh",
-                "url": "https://github.com/S-surendrasingh"
             }
         }
     ]
