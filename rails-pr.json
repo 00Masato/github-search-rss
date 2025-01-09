@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If you try to display the output for the commands:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">bin/rails g benchmark</code></li>\n<li><code class=\"notranslate\">bin/rails g script</code></li>\n</ul>\n<p dir=\"auto\">You'll see that it suggest to run the scripts via <code class=\"notranslate\">ruby script/...</code>.</p>\n<p dir=\"auto\">I believe it makes more sense to use the Rails runner instead, because this way scripts are automatically wrapped with the Rails Executor (citing directly from the docs).</p>",
+            "url": "https://github.com/rails/rails/pull/54174",
+            "title": "Suggest to use `bin/rails runner` in commands help [ci skip]",
+            "date_modified": "2025-01-09T15:38:27.000Z",
+            "date_published": "2025-01-09T15:38:21.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97030518?u=44f65a79575affbfae38d5a4e75393694efa9d6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If you try to generate a new benchmark for your Rails app with:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"bin/rails g benchmark my_cool_benchmark\"><pre class=\"notranslate\">bin/rails g benchmark my_cool_benchmark</pre></div>\n<p dir=\"auto\">You will end up with a new file at <code class=\"notranslate\">script/benchmarks/my_cool_benchmark.rb</code> which contains this:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"# frozen_string_literal: true\n\nrequire_relative &quot;../../config/environment&quot;\n\n# Any benchmarking setup goes here...\n\n\n\nBenchmark.ips do |x|\n  x.report(&quot;before&quot;) { }\n  x.report(&quot;after&quot;) { }\n\n  x.compare!\nend\"><pre class=\"notranslate\"><span class=\"pl-c\"># frozen_string_literal: true</span>\n\n<span class=\"pl-en\">require_relative</span> <span class=\"pl-s\">\"../../config/environment\"</span>\n\n<span class=\"pl-c\"># Any benchmarking setup goes here...</span>\n\n\n\n<span class=\"pl-v\">Benchmark</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">ips</span> <span class=\"pl-k\">do</span> |<span class=\"pl-s1\">x</span>|\n  <span class=\"pl-s1\">x</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">report</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"before\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-kos\">}</span>\n  <span class=\"pl-s1\">x</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">report</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"after\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-kos\">}</span>\n\n  <span class=\"pl-s1\">x</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">compare!</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">However, the 2 new lines after the</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"# Any benchmarking setup goes here...\"><pre class=\"notranslate\"><span class=\"pl-c\"># Any benchmarking setup goes here...</span></pre></div>\n<p dir=\"auto\">comment are RuboCop offenses that can easily be avoided here :)</p>",
+            "url": "https://github.com/rails/rails/pull/54173",
+            "title": "Fix RuboCop offense in benchmark generator template [ci skip]",
+            "date_modified": "2025-01-09T15:24:07.000Z",
+            "date_published": "2025-01-09T15:22:49.000Z",
+            "author": {
+                "name": "Uaitt",
+                "url": "https://github.com/Uaitt"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44395485?u=b23a21a0c92001fd66eff73cd748619583a71713&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Allow <code class=\"notranslate\">json: { symbolize_names: true }</code> to be passed to <code class=\"notranslate\">serialize</code></li>\n<li>Opted for <code class=\"notranslate\">symbolize_names</code> for parity with <code class=\"notranslate\">ruby/json</code></li>\n</ul>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because I make heavy use of symbols and on JSON serialized attributes, I found myself always either using <code class=\"notranslate\">.deep_symbolize_keys</code> or, when it wasn't causing problems, creating a <code class=\"notranslate\">SymbolizedJSON</code> class just to pass <code class=\"notranslate\">symbolize_names</code> into <code class=\"notranslate\">JSON.parse</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the options available to the <code class=\"notranslate\">serialize</code> attribute in active record. Similar to the <code class=\"notranslate\">yaml:</code> option, you can now specify <code class=\"notranslate\">json:</code> with the only option right now being <code class=\"notranslate\">symbolize_names</code></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54172",
             "title": "JSON serialized attributes can return symbolized keys",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17348?u=fdf078377d9d61f651d2050a319491a855e50d34&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Upcoming Bun release <a href=\"https://bun.sh/blog/bun-lock-text-lockfile\" rel=\"nofollow\">will change</a> default lockfile format from binary to plaintext:</p>\n<blockquote>\n<p dir=\"auto\">We're planning to make bun.lock the default in Bun v1.2.0. In the meantime, we continue to support the binary bun.lockb format and will do so for awhile.</p>\n</blockquote>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds support for both <code class=\"notranslate\">bun.lockb</code> and <code class=\"notranslate\">bun.lock</code> to Rails' default Dockerfile.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<ul dir=\"auto\">\n<li><a href=\"https://bun.sh/blog/bun-lock-text-lockfile\" rel=\"nofollow\">https://bun.sh/blog/bun-lock-text-lockfile</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2352661442\" data-permission-text=\"Title is private\" data-url=\"https://github.com/oven-sh/bun/issues/11863\" data-hovercard-type=\"issue\" data-hovercard-url=\"/oven-sh/bun/issues/11863/hovercard\" href=\"https://github.com/oven-sh/bun/issues/11863\">oven-sh/bun#11863</a></li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54031",
-            "title": "Support plaintext bun lockfile",
-            "date_modified": "2024-12-23T04:32:51.000Z",
-            "date_published": "2024-12-23T04:32:47.000Z",
-            "author": {
-                "name": "bai",
-                "url": "https://github.com/bai"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When using the importmap, you previously needed to manually add an etagger to the <code class=\"notranslate\">ApplicationController</code> to ensure any changes would invalidate the HTML response etag. The <a href=\"https://github.com/rails/importmap-rails/releases/tag/v2.1.0\">latest version of importmap-rails</a> now has a macro to add this, so this PR adds a call to that in the default <code class=\"notranslate\">ApplicationController</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/54021",
-            "title": "Make importmap changes invalidate HTML etags by default",
-            "date_modified": "2024-12-21T20:13:34.000Z",
-            "date_published": "2024-12-21T20:08:11.000Z",
-            "author": {
-                "name": "dhh",
-                "url": "https://github.com/dhh"
             }
         }
     ]
