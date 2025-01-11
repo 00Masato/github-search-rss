@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This enables users to change the parent class for ActiveStorage::BaseController, including the option to inherit from ActionController::API for api-only apps.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #32208.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"303653126\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32208\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/32208/hovercard\" href=\"https://github.com/rails/rails/issues/32208\">#32208</a><br>\nRebase of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"304755601\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32238\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32238/hovercard\" href=\"https://github.com/rails/rails/pull/32238\">#32238</a> with tests and using the approach to configure the parent with a flag as suggested here:<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"304755601\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32238\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32238/hovercard?comment_id=1141969885&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/32238#issuecomment-1141969885\">#32238 (comment)</a></p>",
+            "url": "https://github.com/rails/rails/pull/54189",
+            "title": "Allow configuring Active Storage base controller parent class",
+            "date_modified": "2025-01-11T10:53:15.000Z",
+            "date_published": "2025-01-11T10:52:09.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I went through git history and can't find a time where it ever loaded Dependencies, it seems like it's always dealt with <code class=\"notranslate\">active_support/all</code> and for at least one commit it applied some <code class=\"notranslate\">config.active_support</code> values.</p>",
             "url": "https://github.com/rails/rails/pull/54188",
             "title": "Fix load_active_support initializer doc [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "sohlex",
                 "url": "https://github.com/sohlex"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18366969?u=e6919af135d360a17f71ab7380f0d57fe08be21a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because currently, although directly update are mentioned, there is no mention of methods to directly create or delete. i think that a more consistent level of granularity in the explanations will enable a smoother guide.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes added a mention to the direct create and delete methods to the guide.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">none</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54047",
-            "title": "Add direct insert and direct delete methods to a guide [skip ci]",
-            "date_modified": "2024-12-26T04:18:22.000Z",
-            "date_published": "2024-12-26T04:14:10.000Z",
-            "author": {
-                "name": "soartec-lab",
-                "url": "https://github.com/soartec-lab"
             }
         }
     ]
