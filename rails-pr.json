@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Make RequestForgeryProtection::NULL_ORIGIN_MESSAGE private</p>\n<ul dir=\"auto\">\n<li><a href=\"https://edgeapi.rubyonrails.org/classes/ActionController/RequestForgeryProtection.html#constant-NULL_ORIGIN_MESSAGE\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActionController/RequestForgeryProtection.html#constant-NULL_ORIGIN_MESSAGE</a></li>\n</ul>\n</li>\n<li>\n<p dir=\"auto\">Make FilterParameters#ENV_MATCH, NULL_ENV_FILTER, NULL_PARAM_FILTER nodoc</p>\n<ul dir=\"auto\">\n<li><a href=\"https://edgeapi.rubyonrails.org/classes/ActionDispatch/Http/FilterParameters.html#constant-ENV_MATCH\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActionDispatch/Http/FilterParameters.html#constant-ENV_MATCH</a></li>\n</ul>\n</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54190",
-            "title": "Cleanup some private constants from API doc",
-            "date_modified": "2025-01-11T11:03:03.000Z",
-            "date_published": "2025-01-11T11:02:59.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This enables users to change the parent class for ActiveStorage::BaseController, including the option to inherit from ActionController::API for api-only apps.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #32208.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"303653126\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32208\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/32208/hovercard\" href=\"https://github.com/rails/rails/issues/32208\">#32208</a><br>\nRebase of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"304755601\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32238\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32238/hovercard\" href=\"https://github.com/rails/rails/pull/32238\">#32238</a> with tests and using the approach to configure the parent with a flag as suggested here:<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"304755601\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32238\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32238/hovercard?comment_id=1141969885&amp;comment_type=issue_comment\" href=\"https://github.com/rails/rails/pull/32238#issuecomment-1141969885\">#32238 (comment)</a></p>",
             "url": "https://github.com/rails/rails/pull/54189",
             "title": "Allow configuring Active Storage base controller parent class",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "intrip",
                 "url": "https://github.com/intrip"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15097447?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Why this PR?</p>\n<ul dir=\"auto\">\n<li>The docs make reference to enabling verbose queries, but do not explicitly state how this can be done. This PR address that (alleged) shortfall.</li>\n<li>Various minor issues were also added / changed in this PR.</li>\n<li>Feel free to close if this does not meet PR requirements / goals.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54066",
+            "title": "docs: rails debug guide - add detail re: verbose logs [ci-skip]",
+            "date_modified": "2025-01-09T21:18:23.000Z",
+            "date_published": "2024-12-28T03:02:03.000Z",
+            "author": {
+                "name": "benkoshy",
+                "url": "https://github.com/benkoshy"
             }
         }
     ]
