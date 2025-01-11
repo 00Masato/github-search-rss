@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I went through git history and can't find a time where it ever loaded Dependencies, it seems like it's always dealt with <code class=\"notranslate\">active_support/all</code> and for at least one commit it applied some <code class=\"notranslate\">config.active_support</code> values.</p>",
-            "url": "https://github.com/rails/rails/pull/54188",
-            "title": "Fix load_active_support initializer doc [ci skip]",
-            "date_modified": "2025-01-11T00:22:34.000Z",
-            "date_published": "2025-01-11T00:22:29.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5512772?u=bbae6d87b3499e6b3662664cf4be0e84cc40f6d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This bug existed from <code class=\"notranslate\">7.2</code> so we may need to consider backporting the fix</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54136.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2772328972\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54136\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54136/hovercard\" href=\"https://github.com/rails/rails/issues/54136\">#54136</a><br>\nAdditional fix for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1987667334\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50001\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/50001/hovercard\" href=\"https://github.com/rails/rails/issues/50001\">#50001</a></p>\n<p dir=\"auto\"><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/c2c861f98ae25d0daa177898db48f12de1065cf6/hovercard\" href=\"https://github.com/rails/rails/commit/c2c861f98ae25d0daa177898db48f12de1065cf6\"><tt>c2c861f</tt></a> wasn't a sufficient fix for tables that have more than just one auto populated column but the database doesn't support <code class=\"notranslate\">RETURNING</code> statement.</p>\n<p dir=\"auto\">This commit ensures that mysql adapters will only consider <code class=\"notranslate\">auto_increment</code> columns to be returned after insert which also implies that only one column can be returned after insert.</p>\n<p dir=\"auto\">Essentially what I'm trying to achieve is to ensure that <code class=\"notranslate\">Model._returning_columns_for_insert</code> never returns more than one column for databases where we know <code class=\"notranslate\">RETURNING</code> is not a thing and only one auto-incremented column can be returned.<br>\nThough I'm not making any explicit assertion for that as <code class=\"notranslate\">_returning_columns_for_insert</code> is just an internal concept and can change behind the scenes.</p>",
             "url": "https://github.com/rails/rails/pull/54184",
             "title": "Fix inserts on MySQL with no `RETURNING` support for a table with multiple auto populated columns",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "benkoshy",
                 "url": "https://github.com/benkoshy"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1951918?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because it was really hard for me as a beginner to use dev containers with the latest Rails version.<br>\nThe existing documentation for Getting started with Rails using dev containers creates the Store app using Rails 7 instead of 8. Currently the guide says it is creating a Rails 8 app, but this doesn't correspond to the thruth.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request describes a little bit more in detail the <code class=\"notranslate\">rails-new</code> command by specifying that the <a href=\"https://github.com/rails/rails-new/issues/43#issuecomment-2494511211\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails-new/issues/43/hovercard\">order of the argument is important</a> and pointing to the available Rails releases so that the end user can choose a Rails version to start with.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54063",
+            "title": "Update getting started with dev containers guide to use Rails 8 instead of 7 [ci skip]",
+            "date_modified": "2024-12-28T08:36:51.000Z",
+            "date_published": "2024-12-27T18:14:42.000Z",
+            "author": {
+                "name": "sohlex",
+                "url": "https://github.com/sohlex"
             }
         }
     ]
