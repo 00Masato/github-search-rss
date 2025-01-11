@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29685855?u=76ee419dcddef791410b916092fe6c5375226178&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Fix the code used to describe the <code class=\"notranslate\">around_action</code> in action_controller_overview.md. It is not working properly because the arguments passed to the around_action are incorrect (the action in the controller is passed as a proc to the argument).</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the action argument from the ActionDurationCallback.around, as the action is provided as a proc within the around method. Additionally, fixed the logic to retrieve the action_name and controller_name properties from the controller object.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54191",
+            "title": "[ci-skip][docs] Fix ActionDurationCallback.around in action_controller_overview.md ",
+            "date_modified": "2025-01-11T13:53:16.000Z",
+            "date_published": "2025-01-11T13:53:12.000Z",
+            "author": {
+                "name": "wt-l00",
+                "url": "https://github.com/wt-l00"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Make RequestForgeryProtection::NULL_ORIGIN_MESSAGE private</p>\n<ul dir=\"auto\">\n<li><a href=\"https://edgeapi.rubyonrails.org/classes/ActionController/RequestForgeryProtection.html#constant-NULL_ORIGIN_MESSAGE\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActionController/RequestForgeryProtection.html#constant-NULL_ORIGIN_MESSAGE</a></li>\n</ul>\n</li>\n<li>\n<p dir=\"auto\">Make FilterParameters#ENV_MATCH, NULL_ENV_FILTER, NULL_PARAM_FILTER nodoc</p>\n<ul dir=\"auto\">\n<li><a href=\"https://edgeapi.rubyonrails.org/classes/ActionDispatch/Http/FilterParameters.html#constant-ENV_MATCH\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActionDispatch/Http/FilterParameters.html#constant-ENV_MATCH</a></li>\n</ul>\n</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54190",
             "title": "Cleanup some private constants from API doc",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "intrip",
                 "url": "https://github.com/intrip"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15097447?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Why this PR?</p>\n<ul dir=\"auto\">\n<li>The docs make reference to enabling verbose queries, but do not explicitly state how this can be done. This PR address that (alleged) shortfall.</li>\n<li>Various minor issues were also added / changed in this PR.</li>\n<li>Feel free to close if this does not meet PR requirements / goals.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54066",
-            "title": "docs: rails debug guide - add detail re: verbose logs [ci-skip]",
-            "date_modified": "2025-01-09T21:18:23.000Z",
-            "date_published": "2024-12-28T03:02:03.000Z",
-            "author": {
-                "name": "benkoshy",
-                "url": "https://github.com/benkoshy"
             }
         }
     ]
