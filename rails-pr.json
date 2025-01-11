@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We shouldn't dup query values if those values are frozen.  For example if you have a script like:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Post &lt; ActiveRecord::Base\n  default_scope { where(author: &quot;foo&quot;, title: &quot;bar&quot;) }\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Post</span> &lt; <span class=\"pl-v\">ActiveRecord</span>::<span class=\"pl-v\">Base</span>\n  <span class=\"pl-en\">default_scope</span> <span class=\"pl-kos\">{</span> <span class=\"pl-en\">where</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">author</span>: <span class=\"pl-s\">\"foo\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">title</span>: <span class=\"pl-s\">\"bar\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">The \"foo\" and \"bar\" strings would get dup'd even if you have frozen_string_literals set.  I think this impacts all <code class=\"notranslate\">where</code> calls, not just default_scope, and I think frozen string literals are more common so this should help more than just default_scope</p>",
-            "url": "https://github.com/rails/rails/pull/54192",
-            "title": "Don't dup query values if they're frozen",
-            "date_modified": "2025-01-11T20:42:21.000Z",
-            "date_published": "2025-01-11T20:42:17.000Z",
-            "author": {
-                "name": "tenderlove",
-                "url": "https://github.com/tenderlove"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29685855?u=76ee419dcddef791410b916092fe6c5375226178&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Fix the code used to describe the <code class=\"notranslate\">around_action</code> in action_controller_overview.md. It is not working properly because the arguments passed to the around_action are incorrect (the action in the controller is passed as a proc to the argument).</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Removed the action argument from the ActionDurationCallback.around, as the action is provided as a proc within the around method. Additionally, fixed the logic to retrieve the action_name and controller_name properties from the controller object.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54191",
             "title": "[ci-skip][docs] Fix ActionDurationCallback.around in action_controller_overview.md ",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "benkoshy",
                 "url": "https://github.com/benkoshy"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1951918?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because it was really hard for me as a beginner to use dev containers with the latest Rails version.<br>\nThe existing documentation for Getting started with Rails using dev containers creates the Store app using Rails 7 instead of 8. Currently the guide says it is creating a Rails 8 app, but this doesn't correspond to the thruth.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request describes a little bit more in detail the <code class=\"notranslate\">rails-new</code> command by specifying that the <a href=\"https://github.com/rails/rails-new/issues/43#issuecomment-2494511211\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails-new/issues/43/hovercard\">order of the argument is important</a> and pointing to the available Rails releases so that the end user can choose a Rails version to start with.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54063",
+            "title": "Update getting started with dev containers guide to use Rails 8 instead of 7 [ci skip]",
+            "date_modified": "2024-12-28T08:36:51.000Z",
+            "date_published": "2024-12-27T18:14:42.000Z",
+            "author": {
+                "name": "sohlex",
+                "url": "https://github.com/sohlex"
             }
         }
     ]
