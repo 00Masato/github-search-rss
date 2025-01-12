@@ -6,21 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Adds test coverage for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1832410763\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48869\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48869/hovercard\" href=\"https://github.com/rails/rails/pull/48869\">#48869</a></p>",
-            "url": "https://github.com/rails/rails/pull/54194",
-            "title": "Test disabled session in blobs and representation proxy controllers",
-            "date_modified": "2025-01-12T01:08:28.000Z",
-            "date_published": "2025-01-12T01:08:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2771004158\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54130\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54130/hovercard\" href=\"https://github.com/rails/rails/issues/54130\">#54130</a></p>",
+            "url": "https://github.com/rails/rails/pull/54195",
+            "title": "Add deprecations to 8.0 Release Notes [ci skip]",
+            "date_modified": "2025-01-12T03:00:40.000Z",
+            "date_published": "2025-01-12T03:00:36.000Z",
             "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This first commit sets up the command, a visitor to gather data, and a simple lint to demonstrate its use.</p>\n<p dir=\"auto\">This first lint ensures that \"active_support/rails\" is required in all frameworks (there were a few missing this require but this was addressed in a <a href=\"https://github.com/rails/rails/commit/2e920b0097dab768738ea20849dec8029f31e14e\">previous commit</a>), and then checks that none of the requires in \"active_support/rails\" are called again (except in Active Support since it does not require \"active_support/rails\").</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This first commit sets up the command, a visitor to gather data, and a simple lint to demonstrate its use.</p>\n<p dir=\"auto\">This first lint ensures that \"active_support/rails\" is required in all frameworks (one was missing this require but this was addressed in a <a href=\"https://github.com/skipkayhil/rails/commit/2e920b0097dab768738ea20849dec8029f31e14e\">previous commit</a>), and then checks that none of the requires in \"active_support/rails\" are called again (except in Active Support since it does not require \"active_support/rails\").</p>\n<hr>\n<p dir=\"auto\"><code class=\"notranslate\">./tools/railspect requires . -a</code> + manual fixes</p>\n<p dir=\"auto\">Manually add require to lib/rails.rb because it's a framework entrypoint, lib/rails/command.rb because its the entrypoint for the<br>\nCLI.</p>\n<p dir=\"auto\">Additionally migrated Rails::TestUnitReporter off of <code class=\"notranslate\">class_attribute</code> since the class is internal and doesn't need the additional features (It gets required very early when running Rails' test suite).</p>",
             "url": "https://github.com/rails/rails/pull/54193",
             "title": "Add `railspect requires` for auditing `require`s",
-            "date_modified": "2025-01-12T01:34:01.000Z",
+            "date_modified": "2025-01-12T03:04:39.000Z",
             "date_published": "2025-01-11T23:44:52.000Z",
             "author": {
                 "name": "skipkayhil",
