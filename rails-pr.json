@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1840530?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Getting Started guide's Unsubscribe Link Section adds the unsubscribe route without specifying the param as token, but the rest of the code assumes that the param is token and not the default id. Hence, running the code as specified in the current version of the guide results in an error when calling the unsubscribe_url helper.</p>\n<p dir=\"auto\">This pull request adds the missing param argument to the unsubscribe route declaration, which fixes the above issue.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">ibid</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54198",
+            "title": "Getting Started Unsubscribe Link Section - Add param to the unsubscribe route",
+            "date_modified": "2025-01-12T05:00:52.000Z",
+            "date_published": "2025-01-12T05:00:48.000Z",
+            "author": {
+                "name": "jainil",
+                "url": "https://github.com/jainil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">ActiveSupport::Delegation accomplishes the same thing as Forwardable and is already required in all frameworks through <code class=\"notranslate\">active_support/rails</code>.</p>",
+            "url": "https://github.com/rails/rails/pull/54197",
+            "title": "Replace Forwardable with ActiveSupport::Delegation",
+            "date_modified": "2025-01-12T04:32:05.000Z",
+            "date_published": "2025-01-12T04:32:01.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When fixing <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2781763915\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54190\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54190/hovercard\" href=\"https://github.com/rails/rails/pull/54190\">#54190</a> I remembered this patch back in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2515019268\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52853\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52853/hovercard\" href=\"https://github.com/rails/rails/pull/52853\">#52853</a>, which actually did <em>not</em> fix the issue:<br>\n<a href=\"https://edgeapi.rubyonrails.org/classes/ActiveSupport/Deprecation/Reporting.html#constant-LIB_DIR\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActiveSupport/Deprecation/Reporting.html#constant-LIB_DIR</a></p>\n<p dir=\"auto\">This is because a constant declared after the <code class=\"notranslate\">private</code> keyword is still public.<br>\nAlternatively we can <code class=\"notranslate\">:stopdoc:</code> around these, but they probably should really be private constants.</p>\n<p dir=\"auto\">I imagine this shouldn't be backported though.</p>",
             "url": "https://github.com/rails/rails/pull/54196",
             "title": "Really make sure AS::Deprecation::Reporting constants are private",
@@ -14,17 +36,6 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2771004158\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54130\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54130/hovercard\" href=\"https://github.com/rails/rails/issues/54130\">#54130</a></p>",
-            "url": "https://github.com/rails/rails/pull/54195",
-            "title": "Add deprecations to 8.0 Release Notes [ci skip]",
-            "date_modified": "2025-01-12T03:00:40.000Z",
-            "date_published": "2025-01-12T03:00:36.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
             }
         },
         {
@@ -212,17 +223,6 @@
             "author": {
                 "name": "mrpasquini",
                 "url": "https://github.com/mrpasquini"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38259?u=35f5de01349d82fede55d7d5a03bcadddd5a1ccb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In batches limit string</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Other places of ActiveRecord work fine when <code class=\"notranslate\">#limit</code> gets string argument -- be it from request params or commandline.<br>\nBut <code class=\"notranslate\">in_batches</code> just takes <code class=\"notranslate\">limit_value</code> as it was in the scope and uses for number comparison, which of course throws exception if limit is a string.<br>\nThis broke my raketask to-be-ran against a table with over 600M rows, so I need both <code class=\"notranslate\">limit</code> (so the rake task can be executed in less-than-a-day runs) and <code class=\"notranslate\">in_batches</code> to keep that memory under control.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This tiny PR adds explicit <code class=\"notranslate\">.to_i</code> on the <code class=\"notranslate\">limit_value</code> within <code class=\"notranslate\">in_batches</code>. With a test case of course, based on the test case above it.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Not sure if it's the proper way to do this casting, maybe it should be at the level of <code class=\"notranslate\">limit_value</code> to ensure it always returns a number?</p>\n<p dir=\"auto\">This is a minor bug fix so I'm not adding it to CHANGELOG.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54105",
-            "title": "Fix in_batches handling of limit when it's a string",
-            "date_modified": "2025-01-05T12:30:09.000Z",
-            "date_published": "2025-01-03T15:39:20.000Z",
-            "author": {
-                "name": "tomash",
-                "url": "https://github.com/tomash"
             }
         }
     ]
