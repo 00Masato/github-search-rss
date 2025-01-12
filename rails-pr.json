@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When fixing <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2781763915\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54190\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54190/hovercard\" href=\"https://github.com/rails/rails/pull/54190\">#54190</a> I remembered this patch back in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2515019268\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52853\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52853/hovercard\" href=\"https://github.com/rails/rails/pull/52853\">#52853</a>, which actually did <em>not</em> fix the issue:<br>\n<a href=\"https://edgeapi.rubyonrails.org/classes/ActiveSupport/Deprecation/Reporting.html#constant-LIB_DIR\" rel=\"nofollow\">https://edgeapi.rubyonrails.org/classes/ActiveSupport/Deprecation/Reporting.html#constant-LIB_DIR</a></p>\n<p dir=\"auto\">This is because a constant declared after the <code class=\"notranslate\">private</code> keyword is still public.<br>\nAlternatively we can <code class=\"notranslate\">:stopdoc:</code> around these, but they probably should really be private constants.</p>\n<p dir=\"auto\">I imagine this shouldn't be backported though.</p>",
+            "url": "https://github.com/rails/rails/pull/54196",
+            "title": "Really make sure AS::Deprecation::Reporting constants are private",
+            "date_modified": "2025-01-12T03:53:25.000Z",
+            "date_published": "2025-01-12T03:53:21.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2771004158\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54130\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54130/hovercard\" href=\"https://github.com/rails/rails/issues/54130\">#54130</a></p>",
             "url": "https://github.com/rails/rails/pull/54195",
             "title": "Add deprecations to 8.0 Release Notes [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tomash",
                 "url": "https://github.com/tomash"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1753245?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a href=\"https://github.com/basecamp/trix/releases/tag/v2.1.12\">2.1.12</a> Introduces a fix for <a href=\"https://nvd.nist.gov/vuln/detail/CVE-2025-21610\" rel=\"nofollow\">CVE-2025-21610</a><br>\n<a href=\"https://github.com/basecamp/trix/releases/tag/v2.1.11\">2.1.11</a> Introduces a SASS upgrade and adds the ability to configure the HTML Sanitization.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jorgemanrubia/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jorgemanrubia\">@jorgemanrubia</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jeremy/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jeremy\">@jeremy</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/basecamp/trix/compare/v2.1.10...v2.1.12\">Full changelog</a></p>",
-            "url": "https://github.com/rails/rails/pull/54099",
-            "title": "Update vendored Trix version to 2.1.12",
-            "date_modified": "2025-01-06T06:34:08.000Z",
-            "date_published": "2025-01-03T09:15:10.000Z",
-            "author": {
-                "name": "intrip",
-                "url": "https://github.com/intrip"
             }
         }
     ]
