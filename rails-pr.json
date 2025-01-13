@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">quirks_mode</code> options hasn't been a thing since 9 years ago. As for <code class=\"notranslate\">max_nesting: false</code>, it's not a good idea, the default nesting of 100 is plenty and allow to better handle circular dependencies.</p>\n<p dir=\"auto\">FYI: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthaigh27/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthaigh27\">@matthaigh27</a></p>",
-            "url": "https://github.com/rails/rails/pull/54224",
-            "title": "Cleanup ActiveSupport::JSON",
-            "date_modified": "2025-01-13T09:26:08.000Z",
-            "date_published": "2025-01-13T09:26:03.000Z",
-            "author": {
-                "name": "byroot",
-                "url": "https://github.com/byroot"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/276295?u=65ca90e03f20b9fa211c2b4bdf2790659a1253cc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the function has been moved to core since version 13.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the documentation to not mislead people into installing unnecessary extension when using newer (supported) PostgreSQL.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">The documentation seems a bit too complex now (three different conditions, and one partially overlaps the other) and I'd suggest dropping them to bare minimum of version requirement (13+) and mention the extension and different function in passing (or not at all).</p>\n<p dir=\"auto\">Or maybe even drop the whole mention and relevant checks (<code class=\"notranslate\">supports_pgcrypto_uuid?</code> etc) as version 12 and lower are no longer supported.</p>\n<p dir=\"auto\">Alternatively, suggest <code class=\"notranslate\">uuid-ossp</code>/<code class=\"notranslate\">uuid_generate_v4</code> for version up to 12 and ignore <code class=\"notranslate\">pgcrypto</code>.</p>\n<p dir=\"auto\">The documentation than can be something like  this instead:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"        # By default, this will use the &lt;tt&gt;gen_random_uuid()&lt;/tt&gt; function.\n        # As that function is only available in PostgreSQL 13+, for earlier\n        # versions an explicit default can be set to use \n        # &lt;tt&gt;uuid_generate_v4()&lt;/tt&gt; from the +uuid-ossp+ extension instead:\"><pre class=\"notranslate\"><code class=\"notranslate\">        # By default, this will use the &lt;tt&gt;gen_random_uuid()&lt;/tt&gt; function.\n        # As that function is only available in PostgreSQL 13+, for earlier\n        # versions an explicit default can be set to use \n        # &lt;tt&gt;uuid_generate_v4()&lt;/tt&gt; from the +uuid-ossp+ extension instead:\n</code></pre></div>\n<p dir=\"auto\">And update <code class=\"notranslate\">supports_pgcrypto_uuid?</code> to just <code class=\"notranslate\">supports_uuid?</code> (and the version accordingly)</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54223",
             "title": "Update PostgreSQL UUID documentation [ci-skip]",
@@ -36,17 +25,6 @@
             "author": {
                 "name": "madogiwa0124",
                 "url": "https://github.com/madogiwa0124"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2782648710\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54205\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54205/hovercard\" href=\"https://github.com/rails/rails/issues/54205\">#54205</a>, backport <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2702915713\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53773\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53773/hovercard\" href=\"https://github.com/rails/rails/pull/53773\">#53773</a></p>",
-            "url": "https://github.com/rails/rails/pull/54206",
-            "title": "[8-0] Fix link in Active Record Associations guide",
-            "date_modified": "2025-01-12T21:45:13.000Z",
-            "date_published": "2025-01-12T21:41:45.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
             }
         },
         {
@@ -220,6 +198,28 @@
             "title": "Ensure image_processing is installed for new apps",
             "date_modified": "2025-01-09T11:04:18.000Z",
             "date_published": "2025-01-09T11:00:54.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28151680?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Imagine that you need to add custom styles/logic for specific route namespaces.<br>\nFor example, I have links to the admin panel in my shared navbar, and when I work the nested resources, I want to see the styled link.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"%= link_to &quot;Books&quot;, admin_books_path,\n  class: &quot;#{current_namespace?('admin') ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}&quot; %&gt;\n\"><pre class=\"notranslate\"><code class=\"notranslate\">%= link_to \"Books\", admin_books_path,\n  class: \"#{current_namespace?('admin') ? 'border-indigo-500 text-gray-900' : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'}\" %&gt;\n\n</code></pre></div>\n<p dir=\"auto\">It could be helpful for developers with a short logic based on current namespaces.</p>\n<p dir=\"auto\">This Pull Request has been created because I need a method to check my current namespace.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes:</p>\n<ul dir=\"auto\">\n<li>Add a new helper method <code class=\"notranslate\">current_namespace?(namespace)</code></li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54160",
+            "title": "Added current_namespace? for ActionView URL helpers",
+            "date_modified": "2025-01-08T21:52:39.000Z",
+            "date_published": "2025-01-08T15:14:14.000Z",
+            "author": {
+                "name": "Kasvit",
+                "url": "https://github.com/Kasvit"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2318857078\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51925\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51925/hovercard\" href=\"https://github.com/rails/rails/pull/51925\">#51925</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/p8/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/p8\">@p8</a></p>\n<p dir=\"auto\">🔗 Preview: <a href=\"https://zzak-public-association-api.rails-docs-preview.pages.dev/api/classes/ActiveRecord/Associations/Association\" rel=\"nofollow\">https://zzak-public-association-api.rails-docs-preview.pages.dev/api/classes/ActiveRecord/Associations/Association</a></p>",
+            "url": "https://github.com/rails/rails/pull/54149",
+            "title": "Make ActiveRecord::Association API public",
+            "date_modified": "2025-01-10T10:22:12.000Z",
+            "date_published": "2025-01-08T01:03:03.000Z",
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
