@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I want to start moving Rails to be more Ractor friendly, and in support of that goal I want to start moving some of our long lived \"global\" objects to be frozen. <code class=\"notranslate\">_default_attributes</code> keeps references to the database types, and it's my first target for Ractor shareability.</p>",
             "url": "https://github.com/rails/rails/pull/54228",
             "title": "Freeze database conversion types",
-            "date_modified": "2025-01-15T20:32:08.000Z",
+            "date_modified": "2025-01-16T01:28:26.000Z",
             "date_published": "2025-01-13T18:45:26.000Z",
             "author": {
                 "name": "tenderlove",
