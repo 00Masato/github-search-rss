@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2788753987\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54247\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54247/hovercard\" href=\"https://github.com/rails/rails/pull/54247\">#54247</a>:<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2788753987\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54247\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54247/hovercard?comment_id=2551598066&amp;comment_type=review\" href=\"https://github.com/rails/rails/pull/54247#pullrequestreview-2551598066\">#54247 (review)</a></p>",
-            "url": "https://github.com/rails/rails/pull/54256",
-            "title": "Lock RDoc to 6.9 until sdoc is fixed",
-            "date_modified": "2025-01-15T23:22:29.000Z",
-            "date_published": "2025-01-15T23:22:29.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Supports efforts such as <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2061815924\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50528\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50528/hovercard\" href=\"https://github.com/rails/rails/pull/50528\">#50528</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The following metatag will be added to <code class=\"notranslate\">app/views/layouts/application.html.erb</code></p>\n<div class=\"highlight highlight-text-html-basic notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"&lt;meta name=&quot;application-name&quot; content=&quot;Name of Rails Application&quot;&gt;\"><pre class=\"notranslate\"><span class=\"pl-kos\">&lt;</span><span class=\"pl-ent\">meta</span> <span class=\"pl-c1\">name</span>=\"<span class=\"pl-s\">application-name</span>\" <span class=\"pl-c1\">content</span>=\"<span class=\"pl-s\">Name of Rails Application</span>\"<span class=\"pl-kos\">&gt;</span></pre></div>\n<p dir=\"auto\">The <code class=\"notranslate\">application-name</code> is a <a href=\"https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name\" rel=\"nofollow\">standard metadata name</a>, and compliments existing app-related metatags.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54257",
+            "title": "Add `application-name` metadata to application layout",
+            "date_modified": "2025-01-16T02:20:28.000Z",
+            "date_published": "2025-01-16T02:20:24.000Z",
             "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
+                "name": "stevepolitodesign",
+                "url": "https://github.com/stevepolitodesign"
             }
         },
         {
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I want to start moving Rails to be more Ractor friendly, and in support of that goal I want to start moving some of our long lived \"global\" objects to be frozen. <code class=\"notranslate\">_default_attributes</code> keeps references to the database types, and it's my first target for Ractor shareability.</p>",
             "url": "https://github.com/rails/rails/pull/54228",
             "title": "Freeze database conversion types",
-            "date_modified": "2025-01-16T01:28:26.000Z",
+            "date_modified": "2025-01-16T02:11:36.000Z",
             "date_published": "2025-01-13T18:45:26.000Z",
             "author": {
                 "name": "tenderlove",
