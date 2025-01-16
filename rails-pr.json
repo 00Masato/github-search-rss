@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2788753987\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54247\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54247/hovercard\" href=\"https://github.com/rails/rails/pull/54247\">#54247</a>:<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2788753987\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54247\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54247/hovercard?comment_id=2551598066&amp;comment_type=review\" href=\"https://github.com/rails/rails/pull/54247#pullrequestreview-2551598066\">#54247 (review)</a></p>",
+            "url": "https://github.com/rails/rails/pull/54256",
+            "title": "Lock RDoc to 6.9 until sdoc is fixed",
+            "date_modified": "2025-01-15T23:22:29.000Z",
+            "date_published": "2025-01-15T23:22:29.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/717637?u=685121f22ceb01c9e4650173c8eedae4cd070aa9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Improve cache page in Rails guide</p>\n\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The deleted line initially had single quotes, but was changed in this PR: <a href=\"https://github.com/rails/rails/pull/53459/files#diff-3673de0675cbb963764640c2874d899ff36ce0ebd1f7c19d8ed87cfa431ef5b6R218\">https://github.com/rails/rails/pull/53459/files#diff-3673de0675cbb963764640c2874d899ff36ce0ebd1f7c19d8ed87cfa431ef5b6R218</a></p>\n<p dir=\"auto\">I'd argue it didn't add much initially, but it's now a duplcate and is confusing.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature. N/A</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included. N/A</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54255",
             "title": "guides/source/caching_with_rails.md: remove dup",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "pjambet",
                 "url": "https://github.com/pjambet"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16137809?u=a3e3302df39898d8fa4dcea30a8345364442ba72&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54254",
-            "title": "Attach activestorage data uri",
-            "date_modified": "2025-01-15T17:25:24.000Z",
-            "date_published": "2025-01-15T17:04:38.000Z",
-            "author": {
-                "name": "hatsu38",
-                "url": "https://github.com/hatsu38"
             }
         },
         {
