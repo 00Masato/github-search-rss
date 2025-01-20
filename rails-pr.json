@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10057052?u=4f232b4219d02819e9bf19edf8c7fe63b1371296&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fix <code class=\"notranslate\">NoMethodError: undefined method 'assert_selector' for an instance of BlogFlowTest</code>, using assert_select to fix this.</p>",
-            "url": "https://github.com/rails/rails/pull/54299",
-            "title": "Doc: Using assert_select in guide of testing",
-            "date_modified": "2025-01-20T09:34:33.000Z",
-            "date_published": "2025-01-20T09:00:32.000Z",
-            "author": {
-                "name": "memorycancel",
-                "url": "https://github.com/memorycancel"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We added database configuration for custom structure dump/load commands, to be configured per database.</p>\n<p dir=\"auto\">The use-case for this is if you have multiple databases using different versions, or in the process of a database version upgrade and you need multiple versions of the command installed. This can make managing them in your path complicated. (e.g. <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2793136907\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54268\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54268/hovercard\" href=\"https://github.com/rails/rails/issues/54268\">#54268</a>)</p>\n<p dir=\"auto\">We also added configuration for custom dbconsole command, this was already under the <code class=\"notranslate\">ActiveRecord.database_cli</code> option. However, that option doesn't support multiple versions of the same database like we wanted for structure dump/load. Having the default hard-coded on a top-level constant like AR with the sole-purpose of servicing the <code class=\"notranslate\">dbconsole</code> command felt misplaced. With the hash being keyed by the database type, and not the adapter is especially confusing when other configurations are adapter based. Finally, because it's a simple hash, deprecating it or changing it are extremely difficult so it's better to do that while the option is still new (8.0) and only used by dbconsole. (cc <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2475829336\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52656\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52656/hovercard\" href=\"https://github.com/rails/rails/pull/52656\">#52656</a>)</p>\n<p dir=\"auto\">Following the structure dump/load commands, we also added flags to database config and deprecated the old setters.</p>",
             "url": "https://github.com/rails/rails/pull/54296",
             "title": "Consolidate database commands to config",
-            "date_modified": "2025-01-20T10:01:32.000Z",
+            "date_modified": "2025-01-20T10:49:20.000Z",
             "date_published": "2025-01-20T08:41:20.000Z",
             "author": {
                 "name": "zzak",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54152.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2775065931\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54152\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54152/hovercard\" href=\"https://github.com/rails/rails/issues/54152\">#54152</a></p>\n<p dir=\"auto\">When we decided to load the variant processor early, during boot, as opposed to when processing variants we ended up making a lazy dependency non-lazy.</p>\n<p dir=\"auto\">In other words, we set the default variant processor as <code class=\"notranslate\">:vips</code> but don't require the gem as a hard dependency making an unfortunate gap where booting a Rails app will generate this warning. Not good.</p>\n<p dir=\"auto\">However, making it a gemspec dependency on Active Storage seems a bit much, and we can opt-in new applications to avoid the warning. I assume that existing apps which are using Active Storage likely already have added the dependency.</p>\n<p dir=\"auto\">This is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2775170246\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54155\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54155/hovercard\" href=\"https://github.com/rails/rails/pull/54155\">#54155</a> which just adds an extra line to the warning about unsetting the variant_processor flag.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Earlopain/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Earlopain\">@Earlopain</a></p>\n<p dir=\"auto\">There is also a bit of historical context in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"311814194\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/32471\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/32471/hovercard\" href=\"https://github.com/rails/rails/pull/32471\">#32471</a> for reference.</p>",
+            "url": "https://github.com/rails/rails/pull/54166",
+            "title": "Ensure image_processing is installed for new apps",
+            "date_modified": "2025-01-09T11:04:18.000Z",
+            "date_published": "2025-01-09T11:00:54.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
             }
         }
     ]
