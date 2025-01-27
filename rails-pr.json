@@ -20,22 +20,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Revert: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2785767801\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54230\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54230/hovercard\" href=\"https://github.com/rails/rails/pull/54230\">#54230</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #5437.\">Fix</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3652568\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/5437\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/5437/hovercard\" href=\"https://github.com/rails/rails/pull/5437\">#5437</a></p>\n<p dir=\"auto\"><code class=\"notranslate\">Clear-Site-Data</code> can cause Google Chrome to lock up for upwards of 20 seconds. Ref: <a href=\"https://issues.chromium.org/issues/41343050\" rel=\"nofollow\">https://issues.chromium.org/issues/41343050</a></p>\n<p dir=\"auto\">Given this issue doesn't seem likely to be fixed by Chrome soon, and given Chrome current market share, that seem like a big footgun for users.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/flavorjones/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/flavorjones\">@flavorjones</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthieuprat/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthieuprat\">@matthieuprat</a></p>",
             "url": "https://github.com/rails/rails/pull/54379",
             "title": "Revert \"Clear-Site-Data in generated authentication code\"",
-            "date_modified": "2025-01-27T21:26:28.000Z",
+            "date_modified": "2025-01-27T22:06:55.000Z",
             "date_published": "2025-01-27T20:14:18.000Z",
             "author": {
                 "name": "byroot",
                 "url": "https://github.com/byroot"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3124?u=6ece6a5a8b8ea32c5fa94c325d151bc01d1e44e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This just makes the devcontainer script optionally work with podman.  It will try to detect if you have podman installed, then use it, otherwise it tries to use docker.</p>",
-            "url": "https://github.com/rails/rails/pull/54378",
-            "title": "Make the devcontainer script work with podman",
-            "date_modified": "2025-01-27T21:23:44.000Z",
-            "date_published": "2025-01-27T20:12:40.000Z",
-            "author": {
-                "name": "tenderlove",
-                "url": "https://github.com/tenderlove"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Jell",
                 "url": "https://github.com/Jell"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33149?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I couldn't find any documentation for <code class=\"notranslate\">rails db:system:change</code> command in Rails Guides.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds missing documentation.</p>\n<p dir=\"auto\">The actual code change was listed in <a href=\"https://guides.rubyonrails.org/v6.0.3/6_0_release_notes.html#railties-notable-changes\" rel=\"nofollow\">https://guides.rubyonrails.org/v6.0.3/6_0_release_notes.html#railties-notable-changes</a> but was never showed up in the Guides.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/blob/main/railties/lib/rails/commands/db/system/change/change_command.rb\">https://github.com/rails/rails/blob/main/railties/lib/rails/commands/db/system/change/change_command.rb</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[x ] This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li>[ x] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54318",
+            "title": "Added documentation for `rails db:system:change` command",
+            "date_modified": "2025-01-23T08:43:43.000Z",
+            "date_published": "2025-01-21T14:59:04.000Z",
+            "author": {
+                "name": "german",
+                "url": "https://github.com/german"
             }
         }
     ]
