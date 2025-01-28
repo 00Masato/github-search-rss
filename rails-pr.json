@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/373841?u=bce4ac3b793cf4f113aef87ebe2241d3f96eeaef&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2598615887\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53375\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/53375/hovercard\" href=\"https://github.com/rails/rails/pull/53375\">#53375</a> the default for enqueuing jobs after transactions was set to false, however it seems like the PR forgot to remove the relevant documentation for <code class=\"notranslate\">perform_later</code> and it now states the exact opposite of the actual behavior.</p>\n<p dir=\"auto\">In the previous PR it is discussed if the default should be changed back to <code class=\"notranslate\">true</code>, but as long as it is it not, I believe the documentation should reflect the actual behavior.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request removes the incorrect information.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Even if Rails intends to change the default and don't want to merge this into main, it would make sense to merge it into 8.0, since the default will exist there.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54383",
+            "title": "Remove incorrect transaction enqueuing documentation for perform_later",
+            "date_modified": "2025-01-28T09:17:16.000Z",
+            "date_published": "2025-01-28T09:17:12.000Z",
+            "author": {
+                "name": "erikaxel",
+                "url": "https://github.com/erikaxel"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16135?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/54381",
             "title": "Remove node_modules from the final image when using bun",
@@ -14,17 +25,6 @@
             "author": {
                 "name": "milk1000cc",
                 "url": "https://github.com/milk1000cc"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Load the routes in the console when calling  the <code class=\"notranslate\">app</code> IRB helper:</p>\n<ul dir=\"auto\">\n<li>When running a console, the routes are not loaded, which results in not being able to see what route helpers are available.</li>\n</ul>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ bin/rails c\n$ catana(dev)&gt; app.methods.grep(/_(path|url)/) # []\n$ catana(dev)&gt; app.foo_path # Works. The routes are now loaded.\n$ catana(dev)&gt; app.methods.grep(/_(path|url)/) # [:foo_path]\"><pre class=\"notranslate\">$ bin/rails c\n$ catana(dev)<span class=\"pl-k\">&gt;</span> app.methods.grep(/_(path<span class=\"pl-k\">|</span>url)/) <span class=\"pl-c\"><span class=\"pl-c\">#</span> []</span>\n$ catana(dev)<span class=\"pl-k\">&gt;</span> app.foo_path <span class=\"pl-c\"><span class=\"pl-c\">#</span> Works. The routes are now loaded.</span>\n$ catana(dev)<span class=\"pl-k\">&gt;</span> app.methods.grep(/_(path<span class=\"pl-k\">|</span>url)/) <span class=\"pl-c\"><span class=\"pl-c\">#</span> [:foo_path]</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54380",
-            "title": "Load the routes in the console when calling the `app` IRB helper",
-            "date_modified": "2025-01-27T21:48:37.000Z",
-            "date_published": "2025-01-27T21:09:30.000Z",
-            "author": {
-                "name": "Edouard-chin",
-                "url": "https://github.com/Edouard-chin"
             }
         },
         {
