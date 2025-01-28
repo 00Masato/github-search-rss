@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16135?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/54381",
+            "title": "Remove node_modules from the final image when using bun",
+            "date_modified": "2025-01-28T04:16:10.000Z",
+            "date_published": "2025-01-28T04:16:06.000Z",
+            "author": {
+                "name": "milk1000cc",
+                "url": "https://github.com/milk1000cc"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Load the routes in the console when calling  the <code class=\"notranslate\">app</code> IRB helper:</p>\n<ul dir=\"auto\">\n<li>When running a console, the routes are not loaded, which results in not being able to see what route helpers are available.</li>\n</ul>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ bin/rails c\n$ catana(dev)&gt; app.methods.grep(/_(path|url)/) # []\n$ catana(dev)&gt; app.foo_path # Works. The routes are now loaded.\n$ catana(dev)&gt; app.methods.grep(/_(path|url)/) # [:foo_path]\"><pre class=\"notranslate\">$ bin/rails c\n$ catana(dev)<span class=\"pl-k\">&gt;</span> app.methods.grep(/_(path<span class=\"pl-k\">|</span>url)/) <span class=\"pl-c\"><span class=\"pl-c\">#</span> []</span>\n$ catana(dev)<span class=\"pl-k\">&gt;</span> app.foo_path <span class=\"pl-c\"><span class=\"pl-c\">#</span> Works. The routes are now loaded.</span>\n$ catana(dev)<span class=\"pl-k\">&gt;</span> app.methods.grep(/_(path<span class=\"pl-k\">|</span>url)/) <span class=\"pl-c\"><span class=\"pl-c\">#</span> [:foo_path]</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54380",
             "title": "Load the routes in the console when calling the `app` IRB helper",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Jell",
                 "url": "https://github.com/Jell"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33149?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I couldn't find any documentation for <code class=\"notranslate\">rails db:system:change</code> command in Rails Guides.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds missing documentation.</p>\n<p dir=\"auto\">The actual code change was listed in <a href=\"https://guides.rubyonrails.org/v6.0.3/6_0_release_notes.html#railties-notable-changes\" rel=\"nofollow\">https://guides.rubyonrails.org/v6.0.3/6_0_release_notes.html#railties-notable-changes</a> but was never showed up in the Guides.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/blob/main/railties/lib/rails/commands/db/system/change/change_command.rb\">https://github.com/rails/rails/blob/main/railties/lib/rails/commands/db/system/change/change_command.rb</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul dir=\"auto\">\n<li>[x ] This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li>[ x] Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54318",
-            "title": "Added documentation for `rails db:system:change` command",
-            "date_modified": "2025-01-23T08:43:43.000Z",
-            "date_published": "2025-01-21T14:59:04.000Z",
-            "author": {
-                "name": "german",
-                "url": "https://github.com/german"
             }
         }
     ]
