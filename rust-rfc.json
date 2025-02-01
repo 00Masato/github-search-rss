@@ -30,8 +30,8 @@
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14171107?u=ce02dd40378c3083f74de5ed504bb8a3161f8d90&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RealtimeSanitizer is an approach to detecting real-time safety violations in timing critical code. It has been added to LLVM 20, adn this RFC aims to leverage that work and add it to Rust.</p>\n<p dir=\"auto\">See the document for more.</p>\n<p dir=\"auto\">Thanks for considering,<br>\nChris (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/cjappl/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/cjappl\">@cjappl</a>), David (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/davidtrevelyan/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/davidtrevelyan\">@davidtrevelyan</a>), and Stephen (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/steckes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/steckes\">@steckes</a>)</p>\n<p dir=\"auto\"><a href=\"https://github.com/cjappl/rfcs/blob/rtsan_proposal/text/0000-rtsan-and-attributes.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3766",
-            "title": "RFC: Implement RealtimeSanitizer (RTSan) support, add `#[nonblocking]`, `#[blocking]` attributes",
-            "date_modified": "2025-02-01T12:19:07.000Z",
+            "title": "RFC: Implement RealtimeSanitizer (RTSan) support, add `#[realtime(nonblocking)]`, `#[realtime(blocking)]` attributes",
+            "date_modified": "2025-02-01T21:49:35.000Z",
             "date_published": "2025-01-30T23:34:22.000Z",
             "author": {
                 "name": "cjappl",
