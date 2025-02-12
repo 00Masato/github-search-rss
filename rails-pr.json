@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2842161662\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54481\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54481/hovercard\" href=\"https://github.com/rails/rails/pull/54481\">#54481</a></p>\n<p dir=\"auto\">Instead of overriding to_json to return a piece of JSON to be directly embedded in the JSON document, we can now return a JSON::Fragment from as_json.</p>\n<p dir=\"auto\">Since both JSON::Coder and JSON::Fragment were shipped together in json 2.10.0, I didn't update the <code class=\"notranslate\">defined?</code> guards.</p>\n<hr>\n<p dir=\"auto\">I don't know if this was even used out there, but with the current default JSON encoder, it's possible to return a JSON fragment by inheriting from some of the native types and returning the fragment with <code class=\"notranslate\">to_json</code>. With String, Integer, or Numeric, the object isn't touched by <code class=\"notranslate\">jsonify</code> and passed to the <code class=\"notranslate\">json</code> gem, which ultimately calls <code class=\"notranslate\">to_json</code> on it. It's used in the test suite with CustomNumeric.</p>\n<p dir=\"auto\">To be able to stop JSON::Coder, which doesn't use <code class=\"notranslate\">to_json</code>, we need to return a <code class=\"notranslate\">JSON::Fragment</code> from <code class=\"notranslate\">as_json</code>. So it needs to be added to the list of acceptable classes.</p>",
             "url": "https://github.com/rails/rails/pull/54503",
             "title": "Allow JSON::Fragment as a return value for as_json",
-            "date_modified": "2025-02-12T11:34:48.000Z",
+            "date_modified": "2025-02-12T13:34:08.000Z",
             "date_published": "2025-02-12T11:34:43.000Z",
             "author": {
                 "name": "etiennebarrie",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54497.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2846117453\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54497\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54497/hovercard\" href=\"https://github.com/rails/rails/issues/54497\">#54497</a>.</p>\n<p dir=\"auto\">Previously, when calling <code class=\"notranslate\">exist?</code>, local cache stored <code class=\"notranslate\">nil</code> as key's value, which was returned in further cache accesses by that key.</p>",
             "url": "https://github.com/rails/rails/pull/54499",
             "title": "Do not store the value when checking if key exists in the local cache",
-            "date_modified": "2025-02-12T12:39:22.000Z",
+            "date_modified": "2025-02-12T13:24:53.000Z",
             "date_published": "2025-02-11T20:42:14.000Z",
             "author": {
                 "name": "fatkodima",
