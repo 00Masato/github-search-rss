@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Deprecate <code class=\"notranslate\">lib.edition</code>, etc in favor of only setting <code class=\"notranslate\">package.edition</code>, removing the fields in the next Edition.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/build-target-edition/text/3772-build-target-edition.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3772",
+            "title": "RFC: Deprecate the per-build-target `edition` field in `Cargo.toml`",
+            "date_modified": "2025-02-13T19:54:18.000Z",
+            "date_published": "2025-02-13T19:53:18.000Z",
+            "author": {
+                "name": "epage",
+                "url": "https://github.com/epage"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/i686-pc-windows-gnu/text/3771-demote-i686-pc-windows-gnu.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3771",
             "title": "RFC: Demote i686-pc-windows-gnu to Tier 2",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "davidtwco",
                 "url": "https://github.com/davidtwco"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2097964?u=1fe73e13d520993e0850944c34b7c8251504344a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">This RFC proposes a way to write the discriminant of an enum when building it \"from scratch\". This introduces two new library components, an unsafe <code class=\"notranslate\">set_discriminant</code> function, and a <code class=\"notranslate\">discriminant_of!</code> macro, which can be used with any enum, regardless of <code class=\"notranslate\">repr</code> or any other details.</p>\n<p dir=\"auto\">This RFC is a follow-on to the <code class=\"notranslate\">offset_of_enum</code> feature, tracked by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2091334584\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/120141\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/120141/hovercard\" href=\"https://github.com/rust-lang/rust/issues/120141\">rust-lang/rust#120141</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jamesmunns/rfcs/blob/james/unsafe_set_discriminant/text/3727-unsafe-set-discriminant.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3727",
-            "title": "RFC: Unsafe Set Enum Discriminants",
-            "date_modified": "2024-11-23T07:35:41.000Z",
-            "date_published": "2024-11-08T11:56:13.000Z",
-            "author": {
-                "name": "jamesmunns",
-                "url": "https://github.com/jamesmunns"
             }
         }
     ]
