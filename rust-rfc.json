@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19915050?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow annotating functions with <code class=\"notranslate\">#[must_use = false]</code> to suppress any warning generated due to its return type being marked as <code class=\"notranslate\">#[must_use]</code>.</p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-must-use-false/21861\" rel=\"nofollow\">Pre-RFC on IRLO</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/lolbinarycat/rust-rfcs/blob/must_use-false/text/3737-must_use-false.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3737",
             "title": "#[must_use = false]",
-            "date_modified": "2025-01-10T00:45:27.000Z",
+            "date_modified": "2025-02-16T00:18:53.000Z",
             "date_published": "2024-12-07T18:23:35.000Z",
             "author": {
                 "name": "lolbinarycat",
