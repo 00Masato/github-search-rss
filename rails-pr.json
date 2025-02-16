@@ -6,10 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236461?u=cd87f40664f26021ba65daabaf812a036c1f4c8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Add a space after \"version:\" in the issue template, so <code class=\"notranslate\">version:</code> becomes <code class=\"notranslate\">version: </code>. This save every issue reporter a couple keystrokes and ensures a space by default for reporters who forget them, resulting in better formatted bug reports.</p>\n</li>\n<li>\n<p dir=\"auto\">Add some new lines after titles to make the issue template more consistent with the pull request template, resulting in a more readable and breathable markdown by default.</p>\n</li>\n</ul>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236461?u=cd87f40664f26021ba65daabaf812a036c1f4c8e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Add a space after <code class=\"notranslate\">version:</code> in the issue template, so it becomes <code class=\"notranslate\">version: </code>. This saves issue reporters a couple keystrokes and ensures a space by default if they forget to type it, resulting in better formatted bug reports.</p>\n</li>\n<li>\n<p dir=\"auto\">Add some new lines after titles to make the issue template more consistent with the pull request template, resulting in a more readable and breathable markdown by default.</p>\n</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54548",
             "title": "Improve issue template formatting",
-            "date_modified": "2025-02-16T00:17:55.000Z",
+            "date_modified": "2025-02-16T03:01:35.000Z",
             "date_published": "2025-02-16T00:12:54.000Z",
             "author": {
                 "name": "jeromedalbert",
