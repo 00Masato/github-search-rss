@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54549.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2855834477\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54549\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54549/hovercard\" href=\"https://github.com/rails/rails/issues/54549\">#54549</a>.</p>",
-            "url": "https://github.com/rails/rails/pull/54552",
-            "title": "Fix generating `database.yml` when skipping Kamal",
-            "date_modified": "2025-02-16T10:39:31.000Z",
-            "date_published": "2025-02-16T10:39:27.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When routing a request, <code class=\"notranslate\">#find_routes</code> will iterate through potential routes for the request and yield them to the passed block. <code class=\"notranslate\">#serve</code> and <code class=\"notranslate\">#recognize</code> both used <code class=\"notranslate\">#find_routes</code>, but ended up handling things slightly differently. Both methods would modify the <code class=\"notranslate\">script_name</code> and <code class=\"notranslate\">path_info</code> of the request if the current route is not anchored. However, only <code class=\"notranslate\">#serve</code> used <code class=\"notranslate\">#chomp</code> and would restore the request's original <code class=\"notranslate\">script_name</code> and <code class=\"notranslate\">path_info</code> after each iteration. This inconsistency can cause issues as <code class=\"notranslate\">#recognize</code> can end up not matching them even though <code class=\"notranslate\">#serve</code> would.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit fixes the issue by unifying more of the implementations of <code class=\"notranslate\">#serve</code> and <code class=\"notranslate\">#recognize</code>. Now, <code class=\"notranslate\">#find_routes</code> implements the mutation/restoration of request params for both <code class=\"notranslate\">#serve</code> and <code class=\"notranslate\">#recognize</code> so that their behavior is consistent and request mutation isn't leaked between iterations.</p>\n<p dir=\"auto\">One test had to be changed because it depended on the request mutation leaking outside of <code class=\"notranslate\">#recognize</code>, so it was updated to make assertions during <code class=\"notranslate\">#recognize</code> instead.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #31152.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"273833319\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/31152\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/31152/hovercard\" href=\"https://github.com/rails/rails/issues/31152\">#31152</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54550",
             "title": "Fix `#recognize` inconsistency with `#serve`",
-            "date_modified": "2025-02-16T05:53:45.000Z",
+            "date_modified": "2025-02-16T17:21:20.000Z",
             "date_published": "2025-02-16T05:53:41.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "AliSepehri",
                 "url": "https://github.com/AliSepehri"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13083546?u=8b2dddee7748c9048bf7dad4806db20a6bd08a87&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\"><strong>Motivation / Background</strong></h4>\n<p dir=\"auto\">When a user tries to sign in while already authenticated using the default sessions controller, an error occurs. This Pull Request ensures that instead of raising an error, the user is redirected to <code class=\"notranslate\">after_authentication_url</code>.</p>\n<h4 dir=\"auto\"><strong>Detail</strong></h4>\n<ul dir=\"auto\">\n<li>Added <code class=\"notranslate\">redirect_if_authenticated</code> to the sessions controller to handle cases where an already authenticated user tries to sign in.</li>\n<li>Now, instead of throwing an error, the controller will redirect the user to <code class=\"notranslate\">after_authentication_url</code>.</li>\n</ul>\n<h4 dir=\"auto\"><strong>Additional Information</strong></h4>\n<p dir=\"auto\">This change improves the user experience by preventing unnecessary authentication errors and ensuring a smooth redirection flow.</p>\n<h4 dir=\"auto\"><strong>Checklist</strong></h4>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if applicable.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated if this change affects behavior or adds a new feature.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54473",
+            "title": "Ensure sessions controller redirects authenticated users instead of raising an error on Sign in",
+            "date_modified": "2025-02-09T06:46:57.000Z",
+            "date_published": "2025-02-09T06:15:36.000Z",
+            "author": {
+                "name": "ak15",
+                "url": "https://github.com/ak15"
             }
         }
     ]
