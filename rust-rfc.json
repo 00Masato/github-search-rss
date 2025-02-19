@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5963049?u=2149075d53ee210932e16cd6a05632d9e9d2abaf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC guarantees the representation of <code class=\"notranslate\">&amp;str</code> and <code class=\"notranslate\">&amp;[T]</code> to be equivalent to a <code class=\"notranslate\">repr(C)</code> struct containing a pointer and a length.</p>\n<p dir=\"auto\"><a href=\"https://github.com/cramertj/rfcs/blob/slice-repr/text/0000-guaranteed-slice-repr.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3775",
             "title": "Guarantee slice representation",
-            "date_modified": "2025-02-19T16:51:57.000Z",
+            "date_modified": "2025-02-19T17:28:34.000Z",
             "date_published": "2025-02-19T00:12:13.000Z",
             "author": {
                 "name": "cramertj",
