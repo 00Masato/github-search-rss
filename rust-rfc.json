@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposes adding <code class=\"notranslate\">#[inline(trampoline)]</code> and <code class=\"notranslate\">#[inline(rarely)]</code> to hint the compiler additional information about <em>why</em> you're marking the function for inlining, to help it hopefully make better choices without the overly-strong hammers of <code class=\"notranslate\">always</code> or <code class=\"notranslate\">never</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/more-inline-options/text/3778-inline-intents.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3778",
+            "title": "RFC: Add additional `inline` intents",
+            "date_modified": "2025-02-23T02:07:13.000Z",
+            "date_published": "2025-02-23T01:53:45.000Z",
+            "author": {
+                "name": "scottmcm",
+                "url": "https://github.com/scottmcm"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/138764211?u=fd6e1047bcae81137b81095986a8ab16ca3d8914&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust should have a spaceship operator <code class=\"notranslate\">&lt;=&gt;</code> for cleaner three-way comparisons.</p>\n<p dir=\"auto\"><a href=\"https://github.com/bjoernager/rfcs/blob/spaceship-operator/text/3776-spaceship-operator.md\">Rendered</a>.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3776",
             "title": "RFC: Add \"spaceship\" operator.",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "VitWW",
                 "url": "https://github.com/VitWW"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94611769?u=c64b6eb0bd05d503079483eb2aa477cfaf482c16&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/y86-dev/rfcs/blob/field-projection-v2/text/3735-field-projections.md\">Rendered</a></p>\n<p dir=\"auto\">This is my second attempt at a field projection RFC, <a href=\"https://github.com/rust-lang/rfcs/pull/3318\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3318/hovercard\">here is the first</a>.</p>\n<hr>\n<p dir=\"auto\">Add field projections, a very general operation. In simple terms, it is a new operator that turns a generic container type <code class=\"notranslate\">C&lt;T&gt;</code> containing a struct <code class=\"notranslate\">T</code> into a container <code class=\"notranslate\">C&lt;F&gt;</code> where <code class=\"notranslate\">F</code> is a field of the struct <code class=\"notranslate\">T</code>. For example given the struct:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"struct Foo {\n    bar: i32,\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">struct</span> <span class=\"pl-smi\">Foo</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">bar</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">i32</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">One can project from <code class=\"notranslate\">&amp;mut MaybeUninit&lt;Foo&gt;</code> to <code class=\"notranslate\">&amp;mut MaybeUninit&lt;i32&gt;</code> by using the new field projection operator:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"impl Foo {\n    fn initialize(this: &amp;mut MaybeUninit&lt;Self&gt;) {\n        let bar: &amp;mut MaybeUninit&lt;i32&gt; = this-&gt;bar;\n        bar.write(42);\n    }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">impl</span> <span class=\"pl-smi\">Foo</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-k\">fn</span> <span class=\"pl-en\">initialize</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">this</span><span class=\"pl-kos\">:</span> <span class=\"pl-c1\">&amp;</span><span class=\"pl-k\">mut</span> <span class=\"pl-smi\">MaybeUninit</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">Self</span><span class=\"pl-kos\">&gt;</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-k\">let</span> bar<span class=\"pl-kos\">:</span> <span class=\"pl-c1\">&amp;</span><span class=\"pl-k\">mut</span> <span class=\"pl-smi\">MaybeUninit</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">i32</span><span class=\"pl-kos\">&gt;</span> = this-&gt;bar<span class=\"pl-kos\">;</span>\n        bar<span class=\"pl-kos\">.</span><span class=\"pl-en\">write</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">42</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n    <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Special cases of field projections are pin projections, or projecting raw pointers to fields <code class=\"notranslate\">*mut Foo</code> to <code class=\"notranslate\">*mut i32</code> with improved syntax over <code class=\"notranslate\">&amp;raw mut (*ptr).bar</code>.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3735",
-            "title": "[RFC] field projections v2",
-            "date_modified": "2025-01-26T13:59:02.000Z",
-            "date_published": "2024-12-04T10:19:16.000Z",
-            "author": {
-                "name": "y86-dev",
-                "url": "https://github.com/y86-dev"
             }
         }
     ]
