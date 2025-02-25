@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18085551?u=d28b23fc7492d25f5224c6133ee73e278a75fdc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kxxt/rfcs/blob/crate-changelog-field/text/0000-crate-changelog-field.md\">Rendered</a></p>\n<p dir=\"auto\">This is the second attempt to introduce the <code class=\"notranslate\">changelog</code> field into crate manifest.</p>\n<p dir=\"auto\">Previous attempt: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"253131429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2129\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2129/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2129\">#2129</a></p>\n<p dir=\"auto\">Comparing with previous attempt,<br>\nthis RFC does not impose any format constraint over the contents of the changelog and instead only requires an external URL.</p>\n<p dir=\"auto\">This RFC also reserves the possibility of using a local file included in crate as changelog while leaving it to future RFCs.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3779",
+            "title": "RFC: Crate changelog field",
+            "date_modified": "2025-02-25T15:59:22.000Z",
+            "date_published": "2025-02-25T15:03:12.000Z",
+            "author": {
+                "name": "kxxt",
+                "url": "https://github.com/kxxt"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposes adding <code class=\"notranslate\">#[inline(trampoline)]</code> and <code class=\"notranslate\">#[inline(rarely)]</code> to hint the compiler additional information about <em>why</em> you're marking the function for inlining, to help it hopefully make better choices without the overly-strong hammers of <code class=\"notranslate\">always</code> or <code class=\"notranslate\">never</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/more-inline-options/text/3778-inline-intents.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3778",
             "title": "RFC: Add additional `inline` intents",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Deprecate <code class=\"notranslate\">lib.edition</code>, etc in favor of only setting <code class=\"notranslate\">package.edition</code>, removing the fields in the next Edition.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/build-target-edition/text/3772-build-target-edition.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3772",
             "title": "RFC: Deprecate the per-build-target `edition` field in `Cargo.toml`",
-            "date_modified": "2025-02-17T15:22:24.000Z",
+            "date_modified": "2025-02-25T15:57:07.000Z",
             "date_published": "2025-02-13T19:53:18.000Z",
             "author": {
                 "name": "epage",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "lolbinarycat",
                 "url": "https://github.com/lolbinarycat"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130038091?u=ee14d5421ebc534c38bc2826c1a38a3d07878657&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes Partial Types as universal and type safe solution to \"partial borrowing\" like problems.<br>\nThis RFC is a third try and it is based on <a href=\"https://github.com/rust-lang/rfcs/pull/3426\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3426/hovercard\">Partial Types (v2) #3426</a></p>\n<h3 dir=\"auto\"><strong><a href=\"https://github.com/VitWW/rfcs/blob/partial_types3_mult_min/text/0000-partial_types.md\">Rendered</a></strong></h3>\n<p dir=\"auto\">Example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"struct StructABC { a: u32, b: i64, c: f32, }\n\n// function with partial parameter Struct\nfn ref_a (s : &amp; StructABC.{a}) -&gt; &amp;u32 {\n    &amp;s.a\n}\n\nlet s = StructABC {a: 4, b: 7, c: 0.0};\n\n// partial expression, partial reference and partial argument\nlet sa = ref_a(&amp; s.{a});\"><pre class=\"notranslate\"><span class=\"pl-k\">struct</span> <span class=\"pl-smi\">StructABC</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">u32</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">b</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">i64</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">c</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">f32</span><span class=\"pl-kos\">,</span> <span class=\"pl-kos\">}</span>\n\n<span class=\"pl-c\">// function with partial parameter Struct</span>\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">ref_a</span> <span class=\"pl-kos\">(</span><span class=\"pl-s1\">s</span> <span class=\"pl-kos\">:</span> <span class=\"pl-c1\">&amp;</span> <span class=\"pl-smi\">StructABC</span><span class=\"pl-kos\">.</span><span class=\"pl-kos\">{</span>a<span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span> -&gt; <span class=\"pl-c1\">&amp;</span><span class=\"pl-smi\">u32</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-c1\">&amp;</span>s<span class=\"pl-kos\">.</span><span class=\"pl-c1\">a</span>\n<span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">let</span> s = <span class=\"pl-smi\">StructABC</span> <span class=\"pl-kos\">{</span><span class=\"pl-c1\">a</span><span class=\"pl-kos\">:</span> <span class=\"pl-c1\">4</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">b</span><span class=\"pl-kos\">:</span> <span class=\"pl-c1\">7</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">c</span><span class=\"pl-kos\">:</span> <span class=\"pl-c1\">0.0</span><span class=\"pl-kos\">}</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-c\">// partial expression, partial reference and partial argument</span>\n<span class=\"pl-k\">let</span> sa = <span class=\"pl-en\">ref_a</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">&amp;</span> s<span class=\"pl-kos\">.</span><span class=\"pl-kos\">{</span><span class=\"pl-c1\">a</span><span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span></pre></div>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3736",
-            "title": "RFC: Partial Types (v3)",
-            "date_modified": "2025-01-21T22:38:48.000Z",
-            "date_published": "2024-12-06T16:58:49.000Z",
-            "author": {
-                "name": "VitWW",
-                "url": "https://github.com/VitWW"
             }
         }
     ]
