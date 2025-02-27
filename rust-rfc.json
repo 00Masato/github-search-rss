@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18085551?u=d28b23fc7492d25f5224c6133ee73e278a75fdc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kxxt/rfcs/blob/crate-changelog-field/text/0000-crate-changelog-field.md\">Rendered</a></p>\n<p dir=\"auto\">This is the second attempt to introduce the <code class=\"notranslate\">changelog</code> field into crate manifest.</p>\n<p dir=\"auto\">Previous attempt: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"253131429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2129\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2129/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2129\">#2129</a></p>\n<p dir=\"auto\">Comparing with previous attempt,<br>\nthis RFC does not impose any format constraint over the contents of the changelog and instead only requires an external URL.</p>\n<p dir=\"auto\">This RFC also reserves the possibility of using a local file included in crate as changelog while leaving it to future RFCs.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3779",
             "title": "RFC: Crate changelog field",
-            "date_modified": "2025-02-27T14:26:57.000Z",
+            "date_modified": "2025-02-27T15:13:29.000Z",
             "date_published": "2025-02-25T15:03:12.000Z",
             "author": {
                 "name": "kxxt",
@@ -141,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76854355?u=c8a002ee3c70f41a556c7dff250e0abf1244ec76&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">The addition of <code class=\"notranslate\">supported-targets</code> to <code class=\"notranslate\">Cargo.toml</code>. This field is an array of <code class=\"notranslate\">target-triple</code>/<code class=\"notranslate\">cfg</code> specifications that restricts the set of targets which a package supports. Packages must meet the <code class=\"notranslate\">supported-targets</code> of their dependencies, and they can only be built for targets that satisfy their <code class=\"notranslate\">supported-targets</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/carloskiki/rfcs/blob/master/text/3759-cargo-supported-targets.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3759",
             "title": "RFC: Allow packages to specify a set of supported targets",
-            "date_modified": "2025-02-15T02:30:00.000Z",
+            "date_modified": "2025-02-27T15:50:06.000Z",
             "date_published": "2025-01-08T19:43:50.000Z",
             "author": {
                 "name": "carloskiki",
