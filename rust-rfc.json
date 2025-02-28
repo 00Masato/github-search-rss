@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18085551?u=d28b23fc7492d25f5224c6133ee73e278a75fdc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kxxt/rfcs/blob/crate-changelog-field/text/0000-crate-changelog-field.md\">Rendered</a></p>\n<p dir=\"auto\">This is the second attempt to introduce the <code class=\"notranslate\">changelog</code> field into crate manifest.</p>\n<p dir=\"auto\">Previous attempt: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"253131429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2129\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2129/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2129\">#2129</a></p>\n<p dir=\"auto\">Comparing with previous attempt,<br>\nthis RFC does not impose any format constraint over the contents of the changelog and instead only requires an external URL.</p>\n<p dir=\"auto\">This RFC also reserves the possibility of using a local file included in crate as changelog while leaving it to future RFCs.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3779",
             "title": "RFC: Crate changelog field",
-            "date_modified": "2025-02-28T01:48:10.000Z",
+            "date_modified": "2025-02-28T12:58:16.000Z",
             "date_published": "2025-02-25T15:03:12.000Z",
             "author": {
                 "name": "kxxt",
@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/i686-pc-windows-gnu/text/3771-demote-i686-pc-windows-gnu.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3771",
             "title": "RFC: Demote i686-pc-windows-gnu to Tier 2",
-            "date_modified": "2025-02-28T09:30:40.000Z",
+            "date_modified": "2025-02-28T12:40:31.000Z",
             "date_published": "2025-02-11T20:07:14.000Z",
             "author": {
                 "name": "Noratrieb",
