@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13721164?u=2e62be9691a37ada0a05aad8cc0bdb2c64b2db07&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">On mobile devices, the Rails Guides have horizontal scroll which is not ideal for responsive design. C.f. <a href=\"https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions\" rel=\"nofollow\">See here</a> on a mobile device as an example.</p>\n<h3 dir=\"auto\">Solution</h3>\n<p dir=\"auto\">This can be fixed by adjusting the width, white-space and overflow attributes on .code and .code &gt; pre respectively.</p>",
             "url": "https://github.com/rails/rails/pull/54661",
             "title": "Fix Horizontal Scroll on Mobile [ci skip]",
-            "date_modified": "2025-03-01T16:43:32.000Z",
+            "date_modified": "2025-03-01T19:28:50.000Z",
             "date_published": "2025-03-01T16:43:27.000Z",
             "author": {
                 "name": "etmartinkazoo",
