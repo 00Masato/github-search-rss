@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26396425?u=f660166a92539f1b136d99aeb7332b34dc4c34f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While working on a project, I discovered an unnecessary query in the PostgreSQL adapter.</p>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This PR prevents an unnecessary query from being executed in the schema_search_path setter.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. This is not a bug, only a micro optimization</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54698",
+            "title": "perf: prevent unnecesary query on schema_search",
+            "date_modified": "2025-03-05T19:15:25.000Z",
+            "date_published": "2025-03-05T19:13:52.000Z",
+            "author": {
+                "name": "jvlara",
+                "url": "https://github.com/jvlara"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Finding known security issues in the application's Gemfile should be part of every CI flow.</p>",
             "url": "https://github.com/rails/rails/pull/54695",
             "title": "Add a default bin/bundle-audit configuration",
-            "date_modified": "2025-03-05T16:50:56.000Z",
+            "date_modified": "2025-03-05T19:08:05.000Z",
             "date_published": "2025-03-05T13:07:54.000Z",
             "author": {
                 "name": "dhh",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199?u=7131f4a48ae5754664b31b0894a7d9d3c9ffc07b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce <code class=\"notranslate\">bin/ci</code>, a low-rent local CI for new apps.</p>\n<p dir=\"auto\"><code class=\"notranslate\">bin/ci</code> runs your all tests, linters, and security scanners. And it optionally signs off on your work by giving your PR a green status.</p>\n<p dir=\"auto\">This is your final check after completing a major chunk of work, before you merge your PR, etc. For everyday dev/test, use targeted <code class=\"notranslate\">rails t …</code>.</p>\n<p dir=\"auto\">Use in tandem with <a href=\"https://github.com/basecamp/gh-signoff\">gh-signoff</a> to set a green PR status when <code class=\"notranslate\">bin/ci</code> completes successfully.</p>",
             "url": "https://github.com/rails/rails/pull/54693",
             "title": "Local CI with bin/ci",
-            "date_modified": "2025-03-05T19:00:18.000Z",
+            "date_modified": "2025-03-05T19:39:01.000Z",
             "date_published": "2025-03-05T01:30:32.000Z",
             "author": {
                 "name": "jeremy",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "etiennebarrie",
                 "url": "https://github.com/etiennebarrie"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<ul dir=\"auto\">\n<li><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54334.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2807521634\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54334\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54334/hovercard\" href=\"https://github.com/rails/rails/issues/54334\">#54334</a></li>\n</ul>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>\n<h3 dir=\"auto\">Problem</h3>\n<p dir=\"auto\">Sending such param <code class=\"notranslate\">subscription[prices_attributes[0][price_id]]=3</code>, where there is nested brackets would parse to this hash on Rails 7.2.2 and Rack 2:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"{\n  &quot;subscription&quot; =&gt; {\n    &quot;prices_attributes&quot; =&gt; {\n      &quot;0&quot; =&gt; {\n        &quot;price_id&quot; =&gt; &quot;3&quot;\n      }\n    }\n  }\n}\"><pre class=\"notranslate\"><span class=\"pl-kos\">{</span>\n  <span class=\"pl-s\">\"subscription\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-s\">\"prices_attributes\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n      <span class=\"pl-s\">\"0\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-s\">\"price_id\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-s\">\"3\"</span>\n      <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n  <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">On Rail 8.0, <em>with</em> Rack 2, the params are no longer parsed the same way and the result is:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"{\n  &quot;subscription&quot; =&gt; {\n    &quot;prices_attributes[0&quot; =&gt; {\n      &quot;price_id&quot; =&gt; {\n        &quot;[&quot; =&gt; &quot;456&quot;,\n      }\n    }\n  }\n}\"><pre class=\"notranslate\"><span class=\"pl-kos\">{</span>\n  <span class=\"pl-s\">\"subscription\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-s\">\"prices_attributes[0\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n      <span class=\"pl-s\">\"price_id\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-kos\">{</span>\n        <span class=\"pl-s\">\"[\"</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-s\">\"456\"</span><span class=\"pl-kos\">,</span>\n      <span class=\"pl-kos\">}</span>\n    <span class=\"pl-kos\">}</span>\n  <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<h3 dir=\"auto\">Context</h3>\n<p dir=\"auto\">On Rack 2, the content inside brackets is <a href=\"https://github.com/rack/rack/blob/aa5a0f532aac7a57e4bc7e857eca1c38229f7b30/lib/rack/query_parser.rb#L90\">extracted using a regex</a>, whereas our parser uses a simpler solution and extract the content up until a \"]\" token is found, without taking in consideration that there could be a nested brack opening.</p>\n<h3 dir=\"auto\">Solution</h3>\n<p dir=\"auto\">Tweaked the param builder to check if we have a nested bracket opening and trigger a deprecation message, while continuing to parse as it used to work on Rails 7.</p>\n<h3 dir=\"auto\">Rack 3</h3>\n<p dir=\"auto\">On Rack 3, the params no longer parses as it used to on Rack 2. And the result is similar to what the param builder parses.</p>\n</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54635",
-            "title": "Allow params with nested brackets to be parsed similar to how it worked on Rails 7",
-            "date_modified": "2025-02-27T07:48:09.000Z",
-            "date_published": "2025-02-26T22:49:25.000Z",
-            "author": {
-                "name": "Edouard-chin",
-                "url": "https://github.com/Edouard-chin"
             }
         }
     ]
