@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Finding known security issues in the application's Gemfile should be part of every CI flow.</p>",
             "url": "https://github.com/rails/rails/pull/54695",
             "title": "Add a default bin/bundle-audit configuration",
-            "date_modified": "2025-03-05T15:46:54.000Z",
+            "date_modified": "2025-03-05T16:50:56.000Z",
             "date_published": "2025-03-05T13:07:54.000Z",
             "author": {
                 "name": "dhh",
@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199?u=7131f4a48ae5754664b31b0894a7d9d3c9ffc07b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Introduce <code class=\"notranslate\">bin/ci</code>, a low-rent local CI for new apps.</p>\n<p dir=\"auto\"><code class=\"notranslate\">bin/ci</code> runs your all tests, linters, and security scanners. And it optionally signs off on your work by giving your PR a green status.</p>\n<p dir=\"auto\">This is your final check after completing a major chunk of work, before you merge your PR, etc. For everyday dev/test, use targeted <code class=\"notranslate\">rails t …</code>.</p>\n<p dir=\"auto\">Use in tandem with <a href=\"https://github.com/basecamp/gh-signoff\">gh-signoff</a> to set a green PR status when <code class=\"notranslate\">bin/ci</code> completes successfully.</p>",
             "url": "https://github.com/rails/rails/pull/54693",
             "title": "Local CI with bin/ci",
-            "date_modified": "2025-03-05T07:56:03.000Z",
+            "date_modified": "2025-03-05T16:11:15.000Z",
             "date_published": "2025-03-05T01:30:32.000Z",
             "author": {
                 "name": "jeremy",
