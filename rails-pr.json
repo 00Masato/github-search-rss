@@ -9,22 +9,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54700.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2899806512\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54700\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54700/hovercard\" href=\"https://github.com/rails/rails/issues/54700\">#54700</a>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">config.action_mailer.default(..)</code> example is wrong, because <code class=\"notranslate\">action_mailer</code> is an instance of <code class=\"notranslate\">OrderedOptions</code> and this is calling a <code class=\"notranslate\">Hash#default(..)</code> method, which does not make sense.</p>",
             "url": "https://github.com/rails/rails/pull/54702",
             "title": "Fix `ActionMailer::Base.default` docs [skip-ci]",
-            "date_modified": "2025-03-06T09:55:20.000Z",
+            "date_modified": "2025-03-06T14:49:39.000Z",
             "date_published": "2025-03-06T09:55:16.000Z",
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26396425?u=f660166a92539f1b136d99aeb7332b34dc4c34f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While working on a project, I noticed that the PostgreSQL adapter executes an unnecessary query when setting schema_search_path to the same schema that the application is already using.</p>\n<h3 dir=\"auto\">Details</h3>\n<p dir=\"auto\">This PR optimizes the schema_search_path setter by skipping the query if the new schema matches the current one. This avoids redundant database calls and improves efficiency.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. This is not a bug, only a micro optimization</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54698",
-            "title": "perf: prevent unnecesary query on schema_search",
-            "date_modified": "2025-03-06T13:50:38.000Z",
-            "date_published": "2025-03-05T19:13:52.000Z",
-            "author": {
-                "name": "jvlara",
-                "url": "https://github.com/jvlara"
             }
         },
         {
@@ -127,10 +116,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13721164?u=2e62be9691a37ada0a05aad8cc0bdb2c64b2db07&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">On mobile devices, the Rails Guides have horizontal scroll which is not ideal for responsive design. C.f. <a href=\"https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions\" rel=\"nofollow\">See here</a> on a mobile device as an example.</p>\n<h3 dir=\"auto\">Solution</h3>\n<p dir=\"auto\">This can be fixed by adjusting the width, white-space and overflow attributes on .code and .code &gt; pre respectively.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13721164?u=2e62be9691a37ada0a05aad8cc0bdb2c64b2db07&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes pull request #54590.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2869420128\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54590\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54590/hovercard\" href=\"https://github.com/rails/rails/pull/54590\">#54590</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">On mobile devices, the Rails Guides have horizontal scroll which is not ideal for responsive design. C.f. <a href=\"https://edgeguides.rubyonrails.org/contributing_to_ruby_on_rails.html#follow-the-coding-conventions\" rel=\"nofollow\">See here</a> on a mobile device as an example.</p>\n<h3 dir=\"auto\">Solution</h3>\n<p dir=\"auto\">This can be fixed by adjusting the width, white-space and overflow attributes on .code and .code &gt; pre respectively.</p>",
             "url": "https://github.com/rails/rails/pull/54661",
             "title": "Fix Horizontal Scroll on Mobile [ci skip]",
-            "date_modified": "2025-03-06T13:48:05.000Z",
+            "date_modified": "2025-03-06T14:41:02.000Z",
             "date_published": "2025-03-01T16:43:27.000Z",
             "author": {
                 "name": "etmartinkazoo",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Edouard-chin",
                 "url": "https://github.com/Edouard-chin"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/475851?u=15433a415659f482885f223f1b6e7892c7210399&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The documentation on <a href=\"https://api.rubyonrails.org/v8.0/classes/ActiveRecord/Transactions/ClassMethods.html\" rel=\"nofollow\">nested transactions and rollbacks</a> can be confusing. The situation described in the documentation is specific to <code class=\"notranslate\">ActiveRecord::Rollback</code> - however I've encountered many developers that thought this was the behavior for any raised exception in a nested transaction.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I've updated the docs to call out that this applies only to ActiveRecord::Rollback. Any other exception will be passed on, not hidden.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54632",
+            "title": "[ci skip] Clarify nested transaction and exception behavior",
+            "date_modified": "2025-03-05T00:33:59.000Z",
+            "date_published": "2025-02-26T19:31:48.000Z",
+            "author": {
+                "name": "dersam",
+                "url": "https://github.com/dersam"
             }
         }
     ]
