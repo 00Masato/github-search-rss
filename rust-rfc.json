@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9914262?u=6d397d57ea18944924ce4d9c107b7dad87ff0c0e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">std::num::NonZero&lt;T&gt;</code> type allows non-zero integer semantics to be clearly expressed. Yet this<br>\ntype is only seamlessly usable if all APIs with non-zero semantics use this type, due to required<br>\nto/from conversion at any API boundary that differs in its use of <code class=\"notranslate\">NonZero</code>.</p>\n<p dir=\"auto\">The burden of these conversions is especially heavy in tests and examples. This RFC proposes new<br>\ncoercions to facilitate implicit conversion to <code class=\"notranslate\">NonZero</code> from integral constants, simplifying usage<br>\nin tests and examples, where succinctness and readability are paramount.</p>\n<p dir=\"auto\"><a href=\"https://github.com/sandersaares/rust-lang-rfcs/blob/u/sasaares/const-nonzero-ergonomics/text/3786-const-nonzero-ergonomics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3786",
             "title": "RFC: const ergonomics for NonZero<T>",
-            "date_modified": "2025-03-07T12:35:47.000Z",
+            "date_modified": "2025-03-07T20:51:52.000Z",
             "date_published": "2025-03-07T09:22:17.000Z",
             "author": {
                 "name": "sandersaares",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5963049?u=9241cef72c870a195c728bc4992f8d1fd01968f1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC guarantees the representation of <code class=\"notranslate\">&amp;str</code> and <code class=\"notranslate\">&amp;[T]</code> to be equivalent to a <code class=\"notranslate\">repr(C)</code> struct containing a pointer and a length.</p>\n<p dir=\"auto\"><a href=\"https://github.com/cramertj/rfcs/blob/slice-repr/text/0000-guaranteed-slice-repr.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3775",
             "title": "Guarantee slice representation",
-            "date_modified": "2025-03-04T18:51:37.000Z",
+            "date_modified": "2025-03-07T20:30:31.000Z",
             "date_published": "2025-02-19T00:12:13.000Z",
             "author": {
                 "name": "cramertj",
