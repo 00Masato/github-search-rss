@@ -105,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Deprecate <code class=\"notranslate\">lib.edition</code>, etc in favor of only setting <code class=\"notranslate\">package.edition</code>, removing the fields in the next Edition.</p>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/build-target-edition/text/3772-build-target-edition.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3772",
-            "title": "RFC: Deprecate the per-build-target `edition` field in `Cargo.toml`",
-            "date_modified": "2025-03-08T18:33:27.000Z",
-            "date_published": "2025-02-13T19:53:18.000Z",
-            "author": {
-                "name": "epage",
-                "url": "https://github.com/epage"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/i686-pc-windows-gnu/text/3771-demote-i686-pc-windows-gnu.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3771",
             "title": "RFC: Demote i686-pc-windows-gnu to Tier 2",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "akiselev",
                 "url": "https://github.com/akiselev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185516564?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">issue for this RFC <a href=\"https://github.com/rust-lang/rust/issues/134475\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/134475/hovercard\">rust-lang/rust#134475</a></p>\n<p dir=\"auto\">This RFC proposes checking for <code class=\"notranslate\">T: Sized</code> in required trait methods (which do not check for some reason) which will be a future compatibility lint</p>\n<p dir=\"auto\"><a href=\"https://github.com/ionicmc-rs/rfcs/blob/master/text/3696-unsized-params-in-traits.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3745",
+            "title": "unsized params in traits",
+            "date_modified": "2025-02-25T19:59:00.000Z",
+            "date_published": "2024-12-18T21:11:39.000Z",
+            "author": {
+                "name": "ionicmc-rs",
+                "url": "https://github.com/ionicmc-rs"
             }
         }
     ]
