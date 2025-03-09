@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1178779?u=4bd8c56dac06b90d985b2688ec76f0859f297404&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds an RFC proposing a new attribute that would help detect mistakes when a parameter of a function is not used after the function returns. E.g. when inserting into a collection that is then immediately dropped.</p>\n<p dir=\"auto\">Cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/joshtriplett/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/joshtriplett\">@joshtriplett</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Kixunil/rust-rfcs/blob/must-use-output/text/3773-must-use-output.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3773",
             "title": "Add `must-use-output` attribute",
-            "date_modified": "2025-03-07T16:38:29.000Z",
+            "date_modified": "2025-03-09T10:29:03.000Z",
             "date_published": "2025-02-16T12:10:15.000Z",
             "author": {
                 "name": "Kixunil",
