@@ -72,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fix minor typographic issues</p>",
-            "url": "https://github.com/mdn/content/pull/38545",
-            "title": "Fix code/link stuck to text",
-            "date_modified": "2025-03-10T10:01:51.000Z",
-            "date_published": "2025-03-09T17:55:04.000Z",
-            "author": {
-                "name": "Josh-Cena",
-                "url": "https://github.com/Josh-Cena"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6667599?u=c6264c34285a2083e0d17bed6ba44d0acfcfd11b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n\n<p dir=\"auto\">Clarify that the <code class=\"notranslate\">button</code> property is used to indicate which button is released (for <code class=\"notranslate\">mouseup</code> events, for example), not only which button is pressed.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/38543",
             "title": "Improve MouseEvent.button",
@@ -220,6 +209,17 @@
             "title": "Fix description of several Range methods",
             "date_modified": "2025-03-07T20:06:14.000Z",
             "date_published": "2025-03-07T20:04:20.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Similar to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2902318958\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/38506\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/38506/hovercard\" href=\"https://github.com/mdn/content/pull/38506\">#38506</a></p>",
+            "url": "https://github.com/mdn/content/pull/38515",
+            "title": "Remove empty sections",
+            "date_modified": "2025-03-08T17:43:43.000Z",
+            "date_published": "2025-03-07T15:32:12.000Z",
             "author": {
                 "name": "Josh-Cena",
                 "url": "https://github.com/Josh-Cena"
