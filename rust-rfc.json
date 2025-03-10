@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76854355?u=c8a002ee3c70f41a556c7dff250e0abf1244ec76&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">The addition of <code class=\"notranslate\">supported-targets</code> to <code class=\"notranslate\">Cargo.toml</code>. This field is an array of <code class=\"notranslate\">target-triple</code>/<code class=\"notranslate\">cfg</code> specifications that restricts the set of targets which a package supports. Packages must meet the <code class=\"notranslate\">supported-targets</code> of their dependencies, and they can only be built for targets that satisfy their <code class=\"notranslate\">supported-targets</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/carloskiki/rfcs/blob/master/text/3759-cargo-supported-targets.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3759",
             "title": "RFC: Allow packages to specify a set of supported targets",
-            "date_modified": "2025-03-10T17:37:36.000Z",
+            "date_modified": "2025-03-10T18:39:23.000Z",
             "date_published": "2025-01-08T19:43:50.000Z",
             "author": {
                 "name": "carloskiki",
