@@ -105,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/i686-pc-windows-gnu/text/3771-demote-i686-pc-windows-gnu.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3771",
-            "title": "RFC: Demote i686-pc-windows-gnu to Tier 2",
-            "date_modified": "2025-03-11T19:55:48.000Z",
-            "date_published": "2025-02-11T20:07:14.000Z",
-            "author": {
-                "name": "Noratrieb",
-                "url": "https://github.com/Noratrieb"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19915050?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/lolbinarycat/rust-rfcs/blob/doc-consts/text/0000-doc-consts.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3770",
             "title": "#[doc(consts)]",
@@ -163,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/332036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Please remember to create inline comments for discussions to keep this RFC manageable and discussion trees resolveable.</p>\n<p dir=\"auto\"><a href=\"https://github.com/oli-obk/rfcs/blob/const-trait-impl/text/0000-const-trait-impls.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"544416304\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/67792\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/67792/hovercard\" href=\"https://github.com/rust-lang/rust/issues/67792\">rust-lang/rust#67792</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3762",
             "title": "Make trait methods callable in const contexts",
-            "date_modified": "2025-03-12T18:43:04.000Z",
+            "date_modified": "2025-03-12T19:40:06.000Z",
             "date_published": "2025-01-13T16:44:06.000Z",
             "author": {
                 "name": "oli-obk",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ionicmc-rs",
                 "url": "https://github.com/ionicmc-rs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/128307220?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As discussed previously:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://smallcultfollowing.com/babysteps/blog/2014/05/13/focusing-on-ownership/\" rel=\"nofollow\">2014 Blog post</a></li>\n<li><a href=\"https://internals.rust-lang.org/t/lack-of-mut-in-bindings-as-a-deny-by-default-lint/15818\" rel=\"nofollow\">2021 IRLO thread</a></li>\n<li><a href=\"https://rust-lang.zulipchat.com/#narrow/stream/213817-t-lang/topic/Idea.3A.20Downgrade.20.22immutable.20variable.E2.80.9C.20errors.20to.20lints\" rel=\"nofollow\">Zulip thread</a></li>\n</ul>\n<p dir=\"auto\">Mutation of non-mutable locals arguably resembles a lint more than a hard error.  Converting it to a configurable lint has the potential to reduce friction and more clearly distinguish it from Rust's more fundamental type system restrictions.</p>\n<p dir=\"auto\">Implementing this is less effort than you might expect: the borrow checker already has separate code paths for handling local variables.  I've written a proof-of-concept for the change as part of <a href=\"https://github.com/rust-lang/rust/pull/134233\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/134233/hovercard\">this pull request</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/em-tg/rfcs/blob/emy/text/3742-mutate-non-mutable-locals.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3742",
+            "title": "Convert \"reassignment of immutable local\" and \"mutable borrow of immutable local\" from a hard error to a deny-by-default lint",
+            "date_modified": "2024-12-20T15:36:12.000Z",
+            "date_published": "2024-12-15T19:26:35.000Z",
+            "author": {
+                "name": "em-tg",
+                "url": "https://github.com/em-tg"
             }
         }
     ]
