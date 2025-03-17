@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9914262?u=6d397d57ea18944924ce4d9c107b7dad87ff0c0e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">std::num::NonZero&lt;T&gt;</code> type allows non-zero integer semantics to be clearly expressed. Yet this<br>\ntype is only seamlessly usable if all APIs with non-zero semantics use this type, due to required<br>\nto/from conversion at any API boundary that differs in its use of <code class=\"notranslate\">NonZero</code>.</p>\n<p dir=\"auto\">The burden of these conversions is especially heavy in tests and examples. This RFC proposes new<br>\ncoercions to facilitate implicit conversion to <code class=\"notranslate\">NonZero</code> from integral constants, simplifying usage<br>\nin tests and examples, where succinctness and readability are paramount.</p>\n<p dir=\"auto\"><a href=\"https://github.com/sandersaares/rust-lang-rfcs/blob/u/sasaares/const-nonzero-ergonomics/text/3786-const-nonzero-ergonomics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3786",
             "title": "RFC: const ergonomics for NonZero<T>",
-            "date_modified": "2025-03-17T03:57:29.000Z",
+            "date_modified": "2025-03-17T18:15:47.000Z",
             "date_published": "2025-03-07T09:22:17.000Z",
             "author": {
                 "name": "sandersaares",
