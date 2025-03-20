@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63151578?u=0a831ef01c1b17a592d62367cce371f36262f66b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a <code class=\"notranslate\">Forget</code> marker trait indicating whether it is safe to skip the destructor before the value of a type exits the scope and basic utilities to work with <code class=\"notranslate\">!Forget</code> types. Introduce a seamless migration route for the standard library and ecosystem.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Ddystopia/rfcs/blob/forget-marker-trait/text/0000-forget-marker-trait.md\">Rendered</a></p>\n<p dir=\"auto\"><a href=\"https://internals.rust-lang.org/t/pre-rfc-forget-marker-trait/22456\" rel=\"nofollow\">Pre-RFC thread</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3782",
             "title": "`Forget` marker trait",
-            "date_modified": "2025-03-20T08:44:48.000Z",
+            "date_modified": "2025-03-20T10:31:04.000Z",
             "date_published": "2025-03-01T13:16:13.000Z",
             "author": {
                 "name": "Ddystopia",
