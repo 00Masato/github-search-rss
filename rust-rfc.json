@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141183465?u=62bcb7be09e0fb60d34a8f0e80c1c0f3736419ff&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/practicalrs/rfcs/blob/debug_false_in_test_profile/0000-debug-false-in-test-profile.md\">Rendered</a></p>\n<p dir=\"auto\">IMO this change is a low-hanging fruit that would improve the experience for many Rust developers.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3795",
-            "title": "RFC: debug=false in test profile by default",
-            "date_modified": "2025-03-31T03:55:19.000Z",
-            "date_published": "2025-03-30T21:58:56.000Z",
-            "author": {
-                "name": "practicalrs",
-                "url": "https://github.com/practicalrs"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23638587?u=6d1f4ed9b2481fd4af374eb927f9a73602c53ba5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jyn514/rfcs/blob/crate-attr/text/3791-crate-attr.md\">Rendered</a></p>\n<p dir=\"auto\">cc <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2905664297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/138287\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/138287/hovercard\" href=\"https://github.com/rust-lang/rust/issues/138287\">rust-lang/rust#138287</a></p>\n<p dir=\"auto\">Differences from the current nightly implementation (note that this section is non-normative):</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">-A -W -D -F</code> become aliases for <code class=\"notranslate\">crate-attr</code></li>\n<li>Attributes are prepended, not appended.</li>\n<li>Everything about how this interacts with doctests (see <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2923808363\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3791\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3791/hovercard?comment_id=1999037718&amp;comment_type=review_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3791#discussion_r1999037718\">#3791 (comment)</a>)</li>\n<li>The attribute shares the same Span as the crate root. In particular <code class=\"notranslate\">file!</code> behaves properly now and the edition is no longer always 2015.</li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3791",
             "title": "RFC: `--crate-attr`",
@@ -53,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9914262?u=6d397d57ea18944924ce4d9c107b7dad87ff0c0e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">std::num::NonZero&lt;T&gt;</code> type allows non-zero integer semantics to be clearly expressed. Yet this<br>\ntype is only seamlessly usable if all APIs with non-zero semantics use this type, due to required<br>\nto/from conversion at any API boundary that differs in its use of <code class=\"notranslate\">NonZero</code>.</p>\n<p dir=\"auto\">The burden of these conversions is especially heavy in tests and examples. This RFC proposes new<br>\ncoercions to facilitate implicit conversion to <code class=\"notranslate\">NonZero</code> from integral constants, simplifying usage<br>\nin tests and examples, where succinctness and readability are paramount.</p>\n<p dir=\"auto\"><a href=\"https://github.com/sandersaares/rust-lang-rfcs/blob/u/sasaares/const-nonzero-ergonomics/text/3786-const-nonzero-ergonomics.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3786",
             "title": "RFC: const ergonomics for NonZero<T>",
-            "date_modified": "2025-03-31T07:19:26.000Z",
+            "date_modified": "2025-03-31T08:39:42.000Z",
             "date_published": "2025-03-07T09:22:17.000Z",
             "author": {
                 "name": "sandersaares",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "ChrisDenton",
                 "url": "https://github.com/ChrisDenton"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/653604?u=bcaaafaa0439ac0006d5e4aff450ab0b826bc5ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new environment variable <code class=\"notranslate\">CARGO_CHECK</code> that is set to <code class=\"notranslate\">true</code> when running <code class=\"notranslate\">cargo check</code> so build scripts can skip expensive compilation steps that are unnecessary for Rust type checking, such as compiling external C++ code in cxx based projects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/akiselev/rfcs/blob/cargo-check-env/text/3748-cargo_check_environment_variable.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3748",
+            "title": "RFC: Set CARGO_CHECK environment variable when type checking",
+            "date_modified": "2025-01-04T11:41:09.000Z",
+            "date_published": "2024-12-21T04:51:26.000Z",
+            "author": {
+                "name": "akiselev",
+                "url": "https://github.com/akiselev"
             }
         }
     ]
