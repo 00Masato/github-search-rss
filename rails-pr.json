@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Defining these classes in abstract_unit makes running all Action Pack tests slower because they have to download/setup browsers for system tests (even if the tests being run never end up using the system test classes).</p>\n<p dir=\"auto\">This commit moves the system test class definitions into a helper which is only included in the two test files that use them. This will make running non-system Action Pack test files much much faster.</p>",
+            "url": "https://github.com/rails/rails/pull/54844",
+            "title": "Extract system test setup to system_helper",
+            "date_modified": "2025-03-31T14:47:01.000Z",
+            "date_published": "2025-03-31T14:46:57.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54838.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2958853884\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54838\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54838/hovercard\" href=\"https://github.com/rails/rails/issues/54838\">#54838</a></p>\n<p dir=\"auto\">Browsers add the length of the name and content when validating that a cookie is under 4kb, so this commit updates Rails to do the same.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54843",
+            "title": "Include cookie name in length calculation",
+            "date_modified": "2025-03-31T14:34:31.000Z",
+            "date_published": "2025-03-31T14:33:20.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This pull request uses MySQL container instead of MariaDB one in devcontainer</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">MariaDB was likely chosen because Debian \"bookworm\" sets it as the default MySQL-compatible database. However, recent changes in MariaDB introduced incompatibilities with MySQL—for example, <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2687327796\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53727\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53727/hovercard\" href=\"https://github.com/rails/rails/issues/53727\">#53727</a>. This makes MariaDB less suitable as the default for developing the mysql2 and trilogy adapters.</p>\n<p dir=\"auto\">Now that the database runs as a separate container, we are no longer bound by the base OS default. Using the official MySQL container offers a development environment that more closely aligns with the behavior of MySQL itself.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">References:<br>\n<a href=\"https://lists.debian.org/debian-devel-announce/2016/09/msg00000.html\" rel=\"nofollow\">https://lists.debian.org/debian-devel-announce/2016/09/msg00000.html</a><br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1837531404\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48891\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/48891/hovercard\" href=\"https://github.com/rails/rails/pull/48891\">#48891</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54842",
             "title": "Use MySQL instead of MariaDB in devcontainer",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "gregmolnar",
                 "url": "https://github.com/gregmolnar"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Just like <code class=\"notranslate\">http_basic_authenticate_with</code> offers a <a href=\"https://api.rubyonrails.org/classes/ActionController/HttpAuthentication/Basic.html\" rel=\"nofollow\">quick way to add HTTP Basic password protection</a> to a controller, I suggest introducing <code class=\"notranslate\">http_token_authenticate_with</code> for token authentication.</p>\n<p dir=\"auto\">This is useful for protecting an API with a fixed shared secret, e.g. when two internal systems are talking to each other. To prevent hard-coding credentials, the token could be set via an environment variable.</p>\n<p dir=\"auto\">Examples:<br>\n<code class=\"notranslate\">http_basic_authenticate_with name: \"john\", password: \"secret\"</code></p>\n<p dir=\"auto\"><code class=\"notranslate\">http_token_authenticate_with token: \"secret-token\"</code></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54766",
-            "title": "Add `http_token_authenticate_with`",
-            "date_modified": "2025-03-25T08:28:33.000Z",
-            "date_published": "2025-03-15T17:48:33.000Z",
-            "author": {
-                "name": "c960657",
-                "url": "https://github.com/c960657"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3169?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This documents the behaviour added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"473311422\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/36773\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/36773/hovercard\" href=\"https://github.com/rails/rails/pull/36773\">#36773</a> which allows setting a database connection URL in an environment variable named <code class=\"notranslate\">#{name.upcase}_DATABASE_URL</code>.</p>\n<p dir=\"auto\">Unless the <code class=\"notranslate\">--skip-solid</code> option to <code class=\"notranslate\">rails new</code> is set, an explanatory comment is also added to the <code class=\"notranslate\">database.yml</code> config file to complement the solid-related multi-database configurations.</p>",
-            "url": "https://github.com/rails/rails/pull/54765",
-            "title": "[ci skip] Add documentation for configuring non-primary databases using an environment variable",
-            "date_modified": "2025-03-21T10:50:18.000Z",
-            "date_published": "2025-03-15T16:11:56.000Z",
-            "author": {
-                "name": "floehopper",
-                "url": "https://github.com/floehopper"
             }
         }
     ]
