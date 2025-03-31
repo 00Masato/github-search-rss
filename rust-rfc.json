@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?u=ecb2aa155dbb36751ff120968e29ac87f076ad1a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">About as simple as it gets.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/cfg-logical-ops/text/0000-cfg-logical-ops.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3796",
             "title": "Allow `&&`, `||`, and `!` in `cfg`",
-            "date_modified": "2025-03-31T09:18:38.000Z",
+            "date_modified": "2025-03-31T13:38:19.000Z",
             "date_published": "2025-03-30T22:48:29.000Z",
             "author": {
                 "name": "jhpratt",
@@ -174,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/332036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Please remember to create inline comments for discussions to keep this RFC manageable and discussion trees resolveable.</p>\n<p dir=\"auto\"><a href=\"https://github.com/oli-obk/rfcs/blob/const-trait-impl/text/0000-const-trait-impls.md\">Rendered</a></p>\n<p dir=\"auto\">Tracking:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"544416304\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/67792\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/67792/hovercard\" href=\"https://github.com/rust-lang/rust/issues/67792\">rust-lang/rust#67792</a></li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3762",
             "title": "Make trait methods callable in const contexts",
-            "date_modified": "2025-03-31T02:50:19.000Z",
+            "date_modified": "2025-03-31T13:35:11.000Z",
             "date_published": "2025-01-13T16:44:06.000Z",
             "author": {
                 "name": "oli-obk",
