@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100745775?u=d163c1e109877aaea862f8e7cd98477768a40072&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Label interpolation is a useful feature on fixtures but it could be pretty restrictive when fixture label doesn't meet a field validation (ex. a slug not allowing underscores). Multiple times I have found myself limited by this behaviour and having to manually override interpolated fields on fixtures.<br>\nThat's why label modifiers can bring some flexibility to label interpolation. Modifiers allows chaining simple String methods and apply them to the label.</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"john_doe:\n    slug: $LABEL(titleize)                 # =&gt; &quot;John Doe&quot;\n    username: $LABEL(dasherize.capitalize) # =&gt; &quot;John-doe&quot;\n    raw_label: $LABEL()                    # =&gt; &quot;john_doe&quot; (same as $LABEL)\"><pre class=\"notranslate\"><code class=\"notranslate\">john_doe:\n    slug: $LABEL(titleize)                 # =&gt; \"John Doe\"\n    username: $LABEL(dasherize.capitalize) # =&gt; \"John-doe\"\n    raw_label: $LABEL()                    # =&gt; \"john_doe\" (same as $LABEL)\n</code></pre></div>\n<p dir=\"auto\">This will allow more flexibility when using $LABEL on fixtures.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Label substitution was extended to look for chaining methods wrapped by parenthesis and separated by points to dynamically apply them to the inserted label.</p>\n<p dir=\"auto\">Now, instead of looking for $LABEL and replacing it with fixture label, a regexp is being matched as in the provided examples applying the chain of methods to label before inserting it.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54900",
+            "title": "Allowing label interpolation modifiers on fixtures",
+            "date_modified": "2025-04-10T07:44:32.000Z",
+            "date_published": "2025-04-10T07:43:48.000Z",
+            "author": {
+                "name": "jarenas9539",
+                "url": "https://github.com/jarenas9539"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Until <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1298097426\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45545\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45545/hovercard\" href=\"https://github.com/rails/rails/pull/45545\">#45545</a> is merged, I thought it would be helpful to show how to filter <strong>all</strong> parameters.</p>\n<p dir=\"auto\">I find this is useful, since people may not know to add to this list in the first place.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54899",
             "title": "[ci skip] Document how to filter all parameters",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "yedhink",
                 "url": "https://github.com/yedhink"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I am optimizing one query in my project and rewrote it using <code class=\"notranslate\">UNION</code> instead of <code class=\"notranslate\">OR</code>.</p>\n<p dir=\"auto\">The new query was like this: <code class=\"notranslate\">SomeModel.from(union, :some_models)</code>. It produced an error <code class=\"notranslate\">missing FROM-clause entry for table \"some_models\"</code> in PostgreSQL. The problem is that <code class=\"notranslate\">#from</code> happily accepts unions, but silently ignores passed aliases.</p>",
-            "url": "https://github.com/rails/rails/pull/54829",
-            "title": "Allow using aliases for unions in `from` clause",
-            "date_modified": "2025-03-28T22:33:56.000Z",
-            "date_published": "2025-03-28T22:29:42.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         }
     ]
