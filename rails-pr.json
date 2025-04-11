@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The change I'm most interested in is support for boolean literals:</p>\n<blockquote>\n<p dir=\"auto\">SQLite recognizes the keywords \"TRUE\" and \"FALSE\", as of version<br>\n3.23.0 (2018-04-02) but those keywords are really just alternative<br>\nspellings for the integer literals 1 and 0 respectively.</p>\n</blockquote>\n<p dir=\"auto\">The last bump to 3.8.0 was <a href=\"https://github.com/rails/rails/commit/d1a74c1e012ed96f7179e53b9190b7da0a369e11\">in 2018</a>.</p>\n<ul dir=\"auto\">\n<li>Debian stable (bookworm) packages 3.40.1</li>\n<li>Debian oldstable (bullseye) packages 3.34.1</li>\n<li>Debian oldoldstable (buster) packages 3.27.2</li>\n<li>Ubuntu 20 (focal, EOL next month) packages 3.31</li>\n<li>Ubuntu 22 (jammy) packages 3.37</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/54907",
+            "title": "Bump minimum supported SQLite to 3.23.0",
+            "date_modified": "2025-04-11T14:55:07.000Z",
+            "date_published": "2025-04-11T14:54:49.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99586?u=b4abd791d83e768c72cb832147b4a210caecf47d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/54906",
             "title": "Clarify Active Storage setup for importmap-rails [skip ci]",
@@ -64,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5122678?u=204301f9f9fe8930fd26fe3bfe65b6ffaffd8b59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Until <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1298097426\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45545\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45545/hovercard\" href=\"https://github.com/rails/rails/pull/45545\">#45545</a> is merged, I thought it would be helpful to show how to filter <strong>all</strong> parameters.</p>\n<p dir=\"auto\">I find this is useful, since people may not know to add to this list in the first place.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54899",
             "title": "[ci skip] Document how to filter all parameters",
-            "date_modified": "2025-04-11T13:31:30.000Z",
+            "date_modified": "2025-04-11T14:23:27.000Z",
             "date_published": "2025-04-09T20:47:03.000Z",
             "author": {
                 "name": "stevepolitodesign",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Edouard-chin",
                 "url": "https://github.com/Edouard-chin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1151753?u=0ae97787ee7a5583ea7b5bdb149c32e84fae699b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I was looking into giving engines more complete control of their database connections. A consistent foil to understanding connections is that the connection handling code is split between ConnectionHandling and Core.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request moves all the methods that the connection handling module was calling that were located in the core module. This will not result in functionality changes to ActiveRecord::Base.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/54851",
-            "title": "ActiveRecord connection code spring cleaning",
-            "date_modified": "2025-04-11T12:10:02.000Z",
-            "date_published": "2025-04-01T15:33:32.000Z",
-            "author": {
-                "name": "kwstannard",
-                "url": "https://github.com/kwstannard"
             }
         }
     ]
