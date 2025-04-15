@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54921.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2993533271\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54921\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54921/hovercard\" href=\"https://github.com/rails/rails/issues/54921\">#54921</a>.<br>\nFollow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1954829143\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49723\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49723/hovercard\" href=\"https://github.com/rails/rails/pull/49723\">#49723</a>.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bendillinger/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bendillinger\">@bendillinger</a> can you confirm that this fixes the problem?</p>",
+            "url": "https://github.com/rails/rails/pull/54924",
+            "title": "Fix `config.active_storage.touch_attachment_records` to work with eager loading",
+            "date_modified": "2025-04-15T12:02:21.000Z",
+            "date_published": "2025-04-15T12:02:17.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142009152?u=0eef36171bcf40796f6299f29e950a36b1d720c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This might be obvious, but as a beginner it took me some time to get my head around why I was getting decryption errors.</p>",
             "url": "https://github.com/rails/rails/pull/54918",
             "title": "Update active_record_encryption.md [ci skip]",
@@ -25,17 +36,6 @@
             "author": {
                 "name": "chaadow",
                 "url": "https://github.com/chaadow"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When analyzing my project's cache store usage (we use redis), I noticed that 30% of the whole cache was used only by keys. I calculated, if we enforce the limit of 64 bytes, then the whole cache will become 15% smaller. There are some pretty large keys (in the order of hundreds of bytes). It will be tedious to ask people to fix their keys in all the places. Or introduce a monkey patch similar to this PR.</p>\n<p dir=\"auto\">The approach used is similar to foreign keys naming scheme - truncate the key and append some digest of the rest to it.</p>\n<p dir=\"auto\">Fortunately, in our codebase all the keys are prefixed with some unique identifiers that will help to find in the codebase where the key is set, so this approach will work perfectly.</p>\n<p dir=\"auto\"><strike>It makes sense for me to only have this config for redis and memcache to reduce their memory usage, so I added this configuration only for them.</strike></p>\n<p dir=\"auto\">Example usage:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"# config/application.rb\nconfig.cache_store = :redis_cache_store, { max_key_size: 64 }\"><pre class=\"notranslate\"><span class=\"pl-c\"># config/application.rb</span>\n<span class=\"pl-en\">config</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">cache_store</span> <span class=\"pl-c1\">=</span> <span class=\"pl-pds\">:redis_cache_store</span><span class=\"pl-kos\">,</span> <span class=\"pl-kos\">{</span> <span class=\"pl-pds\">max_key_size</span>: <span class=\"pl-c1\">64</span> <span class=\"pl-kos\">}</span></pre></div>",
-            "url": "https://github.com/rails/rails/pull/54915",
-            "title": "Allow to configure maximum cache key sizes",
-            "date_modified": "2025-04-15T09:19:10.000Z",
-            "date_published": "2025-04-13T12:04:09.000Z",
-            "author": {
-                "name": "fatkodima",
-                "url": "https://github.com/fatkodima"
             }
         },
         {
