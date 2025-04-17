@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/665553?u=8dddb2ec71179079744f2446d68d7bdb88797bab&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR adds some docs clarifying about the verification Rails does after fixtures are loaded to ensure that all foreign key constraints are valid. Feature introduced via <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"935222285\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/42674\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/42674/hovercard\" href=\"https://github.com/rails/rails/pull/42674\">#42674</a>.</p>",
             "url": "https://github.com/rails/rails/pull/54930",
             "title": "Add docs about check of FKs after fixtures load [ci skip]",
-            "date_modified": "2025-04-17T04:02:11.000Z",
+            "date_modified": "2025-04-17T09:31:02.000Z",
             "date_published": "2025-04-16T10:52:18.000Z",
             "author": {
                 "name": "danimashu",
