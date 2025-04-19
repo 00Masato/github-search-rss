@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656993?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding ergonomic <code class=\"notranslate\">input!</code>, <code class=\"notranslate\">inputln!</code> and may <code class=\"notranslate\">try_input!</code> macros to Rust for reading user input, inspired by Python’s <code class=\"notranslate\">input()</code>.<br>\nThese macros simplify input handling, improve beginner experience, and provide clear error handling for EOF, parse, and I/O errors.</p>\n<p dir=\"auto\">The goal is to make Rust more approachable for newcomers and teaching.</p>\n<p dir=\"auto\">Previous discussions:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/rust-lang/rust/pull/75435\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/75435/hovercard\">Add <code class=\"notranslate\">std::io::input</code> simple input function. rust#75435</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3183\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3183/hovercard\">[Draft] RFC: Console Input Simplified #3183</a> (related RFC that additionally proposes scan macros)</li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\">RFC: Add std::io::inputln() #3196</a></li>\n</ul>\n<p dir=\"auto\">This RFC is a compilation of comments and feedback provided on previous RFCs, especially RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1054688416\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3196\">#3196</a> .</p>\n<p dir=\"auto\"><a href=\"https://github.com/Phosphorus-M/rfcs/blob/input-utilities/text/0000-input-macros.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3799",
+            "title": "RFC: input macros",
+            "date_modified": "2025-04-19T05:00:32.000Z",
+            "date_published": "2025-04-19T05:00:28.000Z",
+            "author": {
+                "name": "Phosphorus-M",
+                "url": "https://github.com/Phosphorus-M"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3161395?u=ecb2aa155dbb36751ff120968e29ac87f076ad1a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">About as simple as it gets.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jhpratt/rfcs/blob/cfg-logical-ops/text/0000-cfg-logical-ops.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3796",
             "title": "Allow `&&`, `||`, and `!` in `cfg`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "ChrisDenton",
                 "url": "https://github.com/ChrisDenton"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/653604?u=bcaaafaa0439ac0006d5e4aff450ab0b826bc5ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new environment variable <code class=\"notranslate\">CARGO_CHECK</code> that is set to <code class=\"notranslate\">true</code> when running <code class=\"notranslate\">cargo check</code> so build scripts can skip expensive compilation steps that are unnecessary for Rust type checking, such as compiling external C++ code in cxx based projects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/akiselev/rfcs/blob/cargo-check-env/text/3748-cargo_check_environment_variable.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3748",
-            "title": "RFC: Set CARGO_CHECK environment variable when type checking",
-            "date_modified": "2025-01-04T11:41:09.000Z",
-            "date_published": "2024-12-21T04:51:26.000Z",
-            "author": {
-                "name": "akiselev",
-                "url": "https://github.com/akiselev"
             }
         }
     ]
