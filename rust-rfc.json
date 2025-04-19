@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/75776246?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The new method enables concise, ergonomic updates to <code class=\"notranslate\">Option&lt;T&gt;</code> values by combining default initialization (<code class=\"notranslate\">T::default()</code>) and a transformation into a single in-place operation.</p>\n<p dir=\"auto\">Example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let mut opt: Option&lt;String&gt; = None;\nopt.update_or_default(|mut s| { s.push_str(&quot;Hello&quot;); s });\n// Now opt == Some(&quot;Hello&quot;.to_string())\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> <span class=\"pl-k\">mut</span> opt<span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Option</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-smi\">String</span><span class=\"pl-kos\">&gt;</span> = <span class=\"pl-v\">None</span><span class=\"pl-kos\">;</span>\nopt<span class=\"pl-kos\">.</span><span class=\"pl-en\">update_or_default</span><span class=\"pl-kos\">(</span>|<span class=\"pl-k\">mut</span> s| <span class=\"pl-kos\">{</span> s<span class=\"pl-kos\">.</span><span class=\"pl-en\">push_str</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"Hello\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> s <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-c\">// Now opt == Some(\"Hello\".to_string())</span></pre></div>\n<p dir=\"auto\">Compared to existing patterns with <code class=\"notranslate\">get_or_insert_with</code> or <code class=\"notranslate\">take().unwrap_or_default()</code>, this method:</p>\n<ul dir=\"auto\">\n<li>Reduces boilerplate</li>\n<li>Avoids mutable reference juggling</li>\n<li>Improves readability</li>\n<li>Encourages a more functional and expressive API</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/Kivooeo/rfcs/blob/master/text/0000-update_or_default.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3800",
+            "title": "Add RFC for `Option::update_of_default`",
+            "date_modified": "2025-04-19T09:55:03.000Z",
+            "date_published": "2025-04-19T09:35:55.000Z",
+            "author": {
+                "name": "Kivooeo",
+                "url": "https://github.com/Kivooeo"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656993?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding ergonomic <code class=\"notranslate\">input!</code>, <code class=\"notranslate\">inputln!</code> and may <code class=\"notranslate\">try_input!</code> macros to Rust for reading user input, inspired by Python’s <code class=\"notranslate\">input()</code>.<br>\nThese macros simplify input handling, improve beginner experience, and provide clear error handling for EOF, parse, and I/O errors.</p>\n<p dir=\"auto\">The goal is to make Rust more approachable for newcomers and teaching.</p>\n<p dir=\"auto\">Previous discussions:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/rust-lang/rust/pull/75435\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/75435/hovercard\">Add <code class=\"notranslate\">std::io::input</code> simple input function. rust#75435</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3183\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3183/hovercard\">[Draft] RFC: Console Input Simplified #3183</a> (related RFC that additionally proposes scan macros)</li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\">RFC: Add std::io::inputln() #3196</a></li>\n</ul>\n<p dir=\"auto\">This RFC is a compilation of comments and feedback provided on previous RFCs, especially RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1054688416\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3196\">#3196</a> .</p>\n<p dir=\"auto\"><a href=\"https://github.com/Phosphorus-M/rfcs/blob/input-utilities/text/0000-input-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3799",
             "title": "RFC: input macros",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "theemathas",
                 "url": "https://github.com/theemathas"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4459874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is largely the work of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rylev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rylev\">@rylev</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chriswailes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chriswailes\">@chriswailes</a>. As <a href=\"https://github.com/rust-lang/rfcs/pull/3379#issuecomment-1876158423\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3379/hovercard\">suggested by @tmandry</a> I have stripped it down to an MVP that just adds <code class=\"notranslate\">os_version_min</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ChrisDenton/rfcs/blob/os-min-version/text/3750-cfg-os-version-min.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3750",
-            "title": "RFC: cfg_os_version_min",
-            "date_modified": "2025-04-11T12:36:34.000Z",
-            "date_published": "2024-12-27T11:09:52.000Z",
-            "author": {
-                "name": "ChrisDenton",
-                "url": "https://github.com/ChrisDenton"
             }
         }
     ]
