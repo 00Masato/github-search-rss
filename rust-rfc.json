@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The template had a very short explanation of the motivation, which probably led many people into believing that the motivation can be rather short, compared to the explanations.</p>\n<p dir=\"auto\">But really, the motivation is extremely important and should often contain a lot of information. This makes those expectations a lot more explicit. It also explicitly asks for use cases to be listed out, which can then be referenced in the rest of the RFC to make it clearer how it solves the problem.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3801",
+            "title": "Elaborate on motivation in template",
+            "date_modified": "2025-04-20T12:57:55.000Z",
+            "date_published": "2025-04-20T12:57:55.000Z",
+            "author": {
+                "name": "Noratrieb",
+                "url": "https://github.com/Noratrieb"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656993?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding ergonomic <code class=\"notranslate\">input!</code>, <code class=\"notranslate\">inputln!</code> and may <code class=\"notranslate\">try_input!</code> macros to Rust for reading user input, inspired by Python’s <code class=\"notranslate\">input()</code>.<br>\nThese macros simplify input handling, improve beginner experience, and provide clear error handling for EOF, parse, and I/O errors.</p>\n<p dir=\"auto\">The goal is to make Rust more approachable for newcomers and teaching.</p>\n<p dir=\"auto\">Previous discussions:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/rust-lang/rust/pull/75435\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/75435/hovercard\">Add <code class=\"notranslate\">std::io::input</code> simple input function. rust#75435</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3183\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3183/hovercard\">[Draft] RFC: Console Input Simplified #3183</a> (related RFC that additionally proposes scan macros)</li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\">RFC: Add std::io::inputln() #3196</a></li>\n</ul>\n<p dir=\"auto\">This RFC is a compilation of comments and feedback provided on previous RFCs, especially RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1054688416\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3196\">#3196</a> .</p>\n<p dir=\"auto\"><a href=\"https://github.com/Phosphorus-M/rfcs/blob/input-utilities/text/0000-input-macros.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3799",
             "title": "RFC: input macros",
-            "date_modified": "2025-04-20T01:12:20.000Z",
+            "date_modified": "2025-04-20T12:56:33.000Z",
             "date_published": "2025-04-19T05:00:28.000Z",
             "author": {
                 "name": "Phosphorus-M",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "theemathas",
                 "url": "https://github.com/theemathas"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4459874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC is largely the work of <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rylev/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rylev\">@rylev</a> and <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/chriswailes/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/chriswailes\">@chriswailes</a>. As <a href=\"https://github.com/rust-lang/rfcs/pull/3379#issuecomment-1876158423\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3379/hovercard\">suggested by @tmandry</a> I have stripped it down to an MVP that just adds <code class=\"notranslate\">os_version_min</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ChrisDenton/rfcs/blob/os-min-version/text/3750-cfg-os-version-min.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3750",
-            "title": "RFC: cfg_os_version_min",
-            "date_modified": "2025-04-11T12:36:34.000Z",
-            "date_published": "2024-12-27T11:09:52.000Z",
-            "author": {
-                "name": "ChrisDenton",
-                "url": "https://github.com/ChrisDenton"
             }
         }
     ]
