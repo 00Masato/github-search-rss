@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Previously, retryable SqlLiterals passed to <code class=\"notranslate\">#where</code> would lose their retryability because both <code class=\"notranslate\">#build_where_clause</code> and <code class=\"notranslate\">WhereClause</code> would wrap them in non-retryable <code class=\"notranslate\">SqlLiteral</code>s.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">To fix this problem, this commit updates <code class=\"notranslate\">#build_where_clause</code> to check for <code class=\"notranslate\">SqlLiterals</code> and updates <code class=\"notranslate\">WhereClause</code> to assume that any predicate passed in will already be wrapped.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">There were only a few places that passed Strings to <code class=\"notranslate\">WhereClause</code> (<code class=\"notranslate\">\"1=0\"</code> in <code class=\"notranslate\">PredicateBuilder</code> and sanitized sql strings in <code class=\"notranslate\">#build_where_clause</code>) that needed to be updated to use <code class=\"notranslate\">Arel.sql</code>. The <code class=\"notranslate\">WhereClause</code> tests also had Strings to wrap but they are really unit tests and aren't representative of what can be done with the public API</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54951",
             "title": "Enable passing retryable `SqlLiteral`s to `#where`",
-            "date_modified": "2025-04-20T20:57:12.000Z",
+            "date_modified": "2025-04-20T23:39:18.000Z",
             "date_published": "2025-04-20T20:56:27.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3846?u=42e153d8b1f8e31db8d838217fd6f849ad0f6b1c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In these 5 calls, an array is allocated for the splat, as the Ruby compiler cannot determine that the keyword/block expressions will not have side effects that will affect the splat. By assigning the related expression to a local variable and using the local variable, you can avoid the allocation for the splat.</p>\n<p dir=\"auto\">CC <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tenderlove/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tenderlove\">@tenderlove</a> (not even tens!)</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This is just a micro-optimization to avoid allocations and thus improve performance.  All behavior should be the same.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">These were the issue flagged by the performance warning in Ruby feature 21274 (not yet merged into Ruby itself): <a href=\"https://bugs.ruby-lang.org/issues/21274\" rel=\"nofollow\">https://bugs.ruby-lang.org/issues/21274</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature (not applicable).</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included (not applicable).</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/54949",
             "title": "Avoid unnecessary splat allocations",
-            "date_modified": "2025-04-20T08:08:24.000Z",
+            "date_modified": "2025-04-20T23:34:22.000Z",
             "date_published": "2025-04-20T08:08:19.000Z",
             "author": {
                 "name": "jeremyevans",
@@ -91,17 +91,6 @@
             "author": {
                 "name": "pixeltrix",
                 "url": "https://github.com/pixeltrix"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3005649075\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54943\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54943/hovercard\" href=\"https://github.com/rails/rails/issues/54943\">#54943</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/commit/e0d14918643cb9121f33aeb49c8cdb1445c7252e\">Don't recalculate GROUP BY in {update,delete}_all</a></p>\n<p dir=\"auto\">These values are already calculated when building the SelectManager<br>\narel, so we can use them instead of recalculating/rebuilding them.<br>\nSpecifically, this prevents calling <code class=\"notranslate\">arel_columns</code> after building the<br>\nrelation, which opens up the possibility to cache the built Arel ast. It<br>\ncouldn't be cached before because <code class=\"notranslate\">arel_columns</code> may modify the<br>\nrelation.</p>\n<p dir=\"auto\">Going through the {Update,Delete}Manager's ast in <code class=\"notranslate\">Crud</code> is necessary to<br>\nprevent <code class=\"notranslate\">Group(Group(SQL))</code> because <code class=\"notranslate\">#group</code> will wrap its arguments in<br>\n<code class=\"notranslate\">Group</code> nodes.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/commit/019f16239aa8000a700ddaac4dff89da091605a2\">Don't recalculate HAVING in {update,delete}_all</a></p>\n<p dir=\"auto\">These values are already calculated when building the SelectManager<br>\narel, so we can use theminstead of recalculating/rebuilding them.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/rails/rails/commit/6ff9e82e4774d494298d6bfca2ceebe92aec64a1\">Pass existing connection to #arel in #to_sql</a></p>\n<p dir=\"auto\">This prevents having to do another connection lookup when manually<br>\ngenerating SQL for a Relation.</p>\n<p dir=\"auto\">Additionally, by adding a connection parameter to <code class=\"notranslate\">#arel</code> the<br>\n<code class=\"notranslate\">{update,delete}_all</code> methods can now go through <code class=\"notranslate\">#arel</code> instead of<br>\n<code class=\"notranslate\">#build_arel</code>. This prevents having to rebuild the Arel AST in cases<br>\nwhere a relation is re-used for querying after calling<br>\n<code class=\"notranslate\">{update,delete}_all</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/54941",
-            "title": "Pass existing connection to #arel in #to_sql",
-            "date_modified": "2025-04-18T19:53:00.000Z",
-            "date_published": "2025-04-18T17:32:10.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "stevepolitodesign",
                 "url": "https://github.com/stevepolitodesign"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42006985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I followed through the <strong>Getting Started with Rails</strong> guide and found a few things unclear, in particular section <a href=\"https://guides.rubyonrails.org/getting_started.html#showing-individual-products\" rel=\"nofollow\">10.4. Showing Individual Products</a> describing url and link_to helpers, so tried to improve it.</p>\n<p dir=\"auto\">This is my first contribution, so very happy to receive feedback if I have not followed the protocols correctly.</p>",
+            "url": "https://github.com/rails/rails/pull/54897",
+            "title": "Improve explanation of path/link_to helpers in Getting Started guide",
+            "date_modified": "2025-04-19T08:20:20.000Z",
+            "date_published": "2025-04-09T19:44:59.000Z",
+            "author": {
+                "name": "SimBed",
+                "url": "https://github.com/SimBed"
             }
         }
     ]
