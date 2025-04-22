@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82600264?u=ba5af4aa760f6b5bd3265bf03021c5748988394b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This propsal adds support for <code class=\"notranslate\">#[unsafe(assume)]</code>-ing conditions in <code class=\"notranslate\">where</code> clauses to help with complex generic call stacks and hinting for higher ranked bounds.</p>\n<p dir=\"auto\"><a href=\"https://github.com/DasLixou/rust-rfcs/blob/assume_bound/text/3802-assume-bound.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3802",
             "title": "RFC: Assume bounds for generic functions",
-            "date_modified": "2025-04-22T04:42:09.000Z",
+            "date_modified": "2025-04-22T05:40:24.000Z",
             "date_published": "2025-04-21T14:59:00.000Z",
             "author": {
                 "name": "DasLixou",
