@@ -4,5 +4,226 @@
     "home_page_url": "https://00masato.github.io/github-search-rss/mdn-content.json",
     "feed_url": "https://00masato.github.io/github-search-rss/mdn-content.json",
     "description": "mdn/content update content on GitHub",
-    "items": []
+    "items": [
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Chrome 138 onwards supports the <a href=\"https://webmachinelearning.github.io/writing-assistance-apis/#summarizer-api\" rel=\"nofollow\">Summarizer API</a>; the relevant <a href=\"https://chromestatus.com/feature/5193953788559360\" rel=\"nofollow\">ChromeStatus entry</a> says 139, but I've been told this is incorrect.</p>\n<p dir=\"auto\">Specifically, this PR adds:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> A Summarizer API landing page</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> A usage guide</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> A reference for the <code class=\"notranslate\">Summarizer</code> interface.</li>\n</ul>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39263",
+            "title": "Document the Summarizer API",
+            "date_modified": "2025-04-24T14:56:56.000Z",
+            "date_published": "2025-04-24T14:13:11.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43580235?u=cae42d5a371dd041072ce6d85a1808de05535be8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Moving these tests into a subdir to make things uniform.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Convention for structure and links in the sidebar &amp; landing page.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Relates to:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2986165884\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39067\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/39067/hovercard\" href=\"https://github.com/mdn/content/pull/39067\">#39067</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2985879281\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39062\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/39062/hovercard\" href=\"https://github.com/mdn/content/pull/39062\">#39062</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2981912232\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39047\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/39047/hovercard\" href=\"https://github.com/mdn/content/pull/39047\">#39047</a></li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/39262",
+            "title": "chore(learn): Move skills tests into subdir",
+            "date_modified": "2025-04-24T11:20:11.000Z",
+            "date_published": "2025-04-24T11:18:05.000Z",
+            "author": {
+                "name": "bsmth",
+                "url": "https://github.com/bsmth"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Rephrases the comment \"though not for requests from content scripts, as was the case in Manifest V2\" made in the <a href=\"https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/host_permissions#format\" rel=\"nofollow\">host_permissions manifest key discussion about extra privileges</a> given to XMLHttpRequest and fetch to access the declared origins without cross-origin restrictions. The statement has been interpreted to mean that the privilege isn't given for requests from content scripts in Manifest V2, when it is.</p>\n<p dir=\"auto\">Change originally made as a result of <a href=\"https://github.com/mdn/content/pull/15183#discussion_r870832200\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/15183/hovercard\">this comment</a>.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #39168.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3001172752\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39168\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/39168/hovercard\" href=\"https://github.com/mdn/content/issues/39168\">#39168</a></p>",
+            "url": "https://github.com/mdn/content/pull/39260",
+            "title": "Clarification of difference between additional privileges granted in MV2 and MV3 host permissions",
+            "date_modified": "2025-04-24T04:23:56.000Z",
+            "date_published": "2025-04-24T04:21:59.000Z",
+            "author": {
+                "name": "rebloor",
+                "url": "https://github.com/rebloor"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120011256?u=9b1c1de5a62d4cc8a73582b6a58232dcfcca3188&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">As pointed out by <a href=\"https://github.com/mdn/content/issues/38249\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/38249/hovercard\">#38249</a> the objects presented as the properties of the return value of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamTrack/getCapabilities#return_value\" rel=\"nofollow\"><code class=\"notranslate\">getCapabilities()</code></a>, method were wrong. I removed that abstraction all together and mapped the properties to the actual runtime behavior developers see in JavaScript. There’s no need to introduce abstract or specialized types like \"UDoubleRange\" that might make developers think they’re dealing with a built-in, complex data type. This reduces unnecessary cognitive overhead.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #38249.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2865035899\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/38249\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/38249/hovercard\" href=\"https://github.com/mdn/content/issues/38249\">#38249</a></p>\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39259",
+            "title": "Align `getCapabilities()` documentation with JavaScript runtime behavior",
+            "date_modified": "2025-04-24T13:37:03.000Z",
+            "date_published": "2025-04-24T01:49:01.000Z",
+            "author": {
+                "name": "low-perry",
+                "url": "https://github.com/low-perry"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23019147?u=4c0de81596ced64dc067dea5686f7ca2912db0cb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This is a follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3008521407\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39217\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/39217/hovercard\" href=\"https://github.com/mdn/content/pull/39217\">#39217</a>. The feature is actually going to make it to the stable release. More details are included in the the <a href=\"https://github.com/mdn/browser-compat-data/pull/26606\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/26606/hovercard\">BCD PR</a>.</p>\n<p dir=\"auto\">So removing this update from Experimental and moving it to the main release page.</p>\n<h3 dir=\"auto\">Related issues</h3>\n<p dir=\"auto\">Doc issue tracker: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2960183132\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/38878\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/38878/hovercard\" href=\"https://github.com/mdn/content/issues/38878\">#38878</a></p>",
+            "url": "https://github.com/mdn/content/pull/39255",
+            "title": "docs(Fx138-relnote): Move support for `import` from Experimental to main release",
+            "date_modified": "2025-04-23T20:04:21.000Z",
+            "date_published": "2025-04-23T20:02:17.000Z",
+            "author": {
+                "name": "dipikabh",
+                "url": "https://github.com/dipikabh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286386?u=bc4894b945491e0834d2306dade7fef748ddf698&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<ul dir=\"auto\">\n<li>added experimental note for Firefox</li>\n<li>added experimental note to the Firefox 138 release page</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n<ul dir=\"auto\">\n<li>Working on <a href=\"https://github.com/mdn/content/issues/38910\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/38910/hovercard\">issue #38910</a></li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li>N/A</li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/39251",
+            "title": "added experimental note for pseudo-elements after pseudo-elements",
+            "date_modified": "2025-04-23T20:12:22.000Z",
+            "date_published": "2025-04-23T15:02:48.000Z",
+            "author": {
+                "name": "dletorey",
+                "url": "https://github.com/dletorey"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Provide a release note for the change made inProvide a release note for the change made in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1792685\" rel=\"nofollow\">Bug 1792685</a> Ensure that all document_start resources have finished loading before starting document_end scripts</p>\n",
+            "url": "https://github.com/mdn/content/pull/39245",
+            "title": "Bug-1792685 Content scripts and styles guaranteed execution order release note",
+            "date_modified": "2025-04-23T13:48:05.000Z",
+            "date_published": "2025-04-23T04:20:53.000Z",
+            "author": {
+                "name": "rebloor",
+                "url": "https://github.com/rebloor"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120011256?u=9b1c1de5a62d4cc8a73582b6a58232dcfcca3188&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts#generating_the_required_code\" rel=\"nofollow\">This</a> section is problematic, because FontSquirel's <a href=\"https://www.fontsquirrel.com/tools/webfont-generator\" rel=\"nofollow\">Webfont Generator</a> does not work.<br>\nReplaced it with <a href=\"https://transfonter.org/\" rel=\"nofollow\">Transfonter</a>.<br>\nMade some minor changes to the doc, to reflect the <code class=\"notranslate\">@font-face</code> generated by Transfonter.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #39228.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3009349447\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39228\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/39228/hovercard\" href=\"https://github.com/mdn/content/issues/39228\">#39228</a></p>\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39239",
+            "title": "Replace Webfont Generator Link in Docs",
+            "date_modified": "2025-04-22T17:30:20.000Z",
+            "date_published": "2025-04-22T17:18:52.000Z",
+            "author": {
+                "name": "low-perry",
+                "url": "https://github.com/low-perry"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR documents the <a href=\"https://wicg.github.io/observable/\" rel=\"nofollow\">Observable API</a>, which is available in Chrome 135 onwards — see the relevant ChromeStaus entry here: <a href=\"https://chromestatus.com/feature/5154593776599040\" rel=\"nofollow\">https://chromestatus.com/feature/5154593776599040</a>.</p>\n<p dir=\"auto\">Specifically, this PR adds:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> An Observable API landing page</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" checked=\"\"> A guide to using the API</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> An <code class=\"notranslate\">EventTarget.when()</code> reference</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> An <code class=\"notranslate\">Observable()</code> reference</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\"> A <code class=\"notranslate\">Subscriber</code> reference</li>\n</ul>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39237",
+            "title": "Technical review: Document the Observable API",
+            "date_modified": "2025-04-22T15:40:24.000Z",
+            "date_published": "2025-04-22T15:38:11.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">may <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #39167.\">fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3000978990\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39167\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/39167/hovercard\" href=\"https://github.com/mdn/content/issues/39167\">#39167</a> and parts of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2687974019\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/36950\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/36950/hovercard\" href=\"https://github.com/mdn/content/issues/36950\">#36950</a></p>",
+            "url": "https://github.com/mdn/content/pull/39233",
+            "title": "DRAFT: fix shape function",
+            "date_modified": "2025-04-23T06:45:11.000Z",
+            "date_published": "2025-04-22T08:49:17.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1174392?u=62a90fa4c0ee6240e0926ac17dd4ddb9cf38fc5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">I updated the \"Updating an existing app\" example because the id and start_url values were on different origins, which as I understand it is not supported.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The id and start_url values were on different origins, which as I understand it is not supported.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<ul dir=\"auto\">\n<li></li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li></li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/39232",
+            "title": "Update PWA manifest id example: id and start_url must be the same origin",
+            "date_modified": "2025-04-23T13:25:53.000Z",
+            "date_published": "2025-04-22T08:33:57.000Z",
+            "author": {
+                "name": "kynikos",
+                "url": "https://github.com/kynikos"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10406106?u=72b2b7ca59e6c9d16f35ff0e82be0c9be0eee2f7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://dev.to/darkmavis1980/you-should-stop-using-parseint-nbf\" rel=\"nofollow\">https://dev.to/darkmavis1980/you-should-stop-using-parseint-nbf</a></p>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39230",
+            "title": "Add reference to Number()",
+            "date_modified": "2025-04-22T13:42:08.000Z",
+            "date_published": "2025-04-22T02:32:34.000Z",
+            "author": {
+                "name": "sastani",
+                "url": "https://github.com/sastani"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120011256?u=9b1c1de5a62d4cc8a73582b6a58232dcfcca3188&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR addresses the absence of <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SourceBuffer\" rel=\"nofollow\">SourceBuffer</a> event documentation. The following changes have been made:</p>\n<ul dir=\"auto\">\n<li>Added detailed event pages for SourceBuffer</li>\n<li>Included code examples to demonstrate usage.</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">The event summary in the specification states that the <code class=\"notranslate\">error</code> event is fired whenever an error occurs during <code class=\"notranslate\">SourceBuffer.appendBuffer()</code>, with <code class=\"notranslate\">SourceBuffer.updating</code> changing from <code class=\"notranslate\">true</code> to <code class=\"notranslate\">false</code>.<br>\nHowever, as highlighted <a href=\"https://www.w3.org/TR/media-source-2/#sourcebuffer-events:~:text=object%20to%20true.-,remove,-Removes%20media%20for\" rel=\"nofollow\">here</a>, the <code class=\"notranslate\">error</code> event is also fired during the <code class=\"notranslate\">remove</code> method. This behaviour is described on the <code class=\"notranslate\">error</code> page</p>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39224",
+            "title": "Add missing SourceBuffer event pages",
+            "date_modified": "2025-04-21T18:16:45.000Z",
+            "date_published": "2025-04-21T17:35:25.000Z",
+            "author": {
+                "name": "low-perry",
+                "url": "https://github.com/low-perry"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120011256?u=9b1c1de5a62d4cc8a73582b6a58232dcfcca3188&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Completed the Exceptions section of the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/SourceBuffer/appendBuffer\" rel=\"nofollow\">SourceBuffer: appendBuffer() method</a>.<br>\nAdded examples for basic usage and exception handling.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<p dir=\"auto\"><a href=\"https://www.w3.org/TR/media-source-2/#methods\" rel=\"nofollow\">Here</a> the method is described<br>\n<a href=\"https://www.w3.org/TR/media-source-2/#sourcebuffer-prepare-append\" rel=\"nofollow\">The algorithm which throws the errors </a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #36404.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2598298341\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/36404\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/36404/hovercard\" href=\"https://github.com/mdn/content/issues/36404\">#36404</a></p>\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39216",
+            "title": "Add Exceptions section and Examples for the `appendBuffer` method of `SourceBuffer`",
+            "date_modified": "2025-04-21T15:08:09.000Z",
+            "date_published": "2025-04-21T13:34:39.000Z",
+            "author": {
+                "name": "low-perry",
+                "url": "https://github.com/low-perry"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60073468?u=6a49eff6ce3dd09016478f37e9ccd38d940abf05&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This makes some of the wording around the Privacy Sandbox Enrollment more specific to Chrome since these features are currently only available as experimental features in Chrome.<br>\nFurthermore, Mozilla is opposed to 4/5 of the listed features, while Apple is opposed to just the Topics API.<br>\nThey both have yet to give a standards position on the remaining features.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">I think it is disingenuous to frame Google's additions to their browser as a general concept for \"Browsers\" (plural) when other implementers seem to overall take issue with the features at hand.<br>\nFraming it that way seems to give too much credibility to something that is still up in the air and with a seemingly undecided future.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://mozilla.github.io/standards-positions/\" rel=\"nofollow\">https://mozilla.github.io/standards-positions/</a> includes Mozilla's negative standards position for the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Fenced_frame_API\" rel=\"nofollow\">Fenced Frame API</a>, Protected Audience API, <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Shared_Storage_API\" rel=\"nofollow\">Shared Storage API</a> and <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Topics_API\" rel=\"nofollow\">Topics API</a>.<br>\n<a href=\"https://webkit.org/standards-positions/#position-111\" rel=\"nofollow\">https://webkit.org/standards-positions/#position-111</a> has Apple's opposition to the <a href=\"https://developer.mozilla.org/en-US/docs/Web/API/Topics_API\" rel=\"nofollow\">Topics API</a>.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Could not find any.</p>",
+            "url": "https://github.com/mdn/content/pull/39208",
+            "title": "Clarify that privacy sandbox enrollment is currently a Chrome-only thing",
+            "date_modified": "2025-04-20T21:39:19.000Z",
+            "date_published": "2025-04-20T21:37:26.000Z",
+            "author": {
+                "name": "Psychpsyo",
+                "url": "https://github.com/Psychpsyo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/120011256?u=9b1c1de5a62d4cc8a73582b6a58232dcfcca3188&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This update refines the color styling for the <code class=\"notranslate\">&lt;abbr&gt;</code> element by introducing two new colors for its normal and hover states. These colors have been carefully chosen to achieve a contrast ratio of 7.12:1, ensuring robust visual cues that significantly enhance accessibility.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #39201.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3006851224\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39201\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/39201/hovercard\" href=\"https://github.com/mdn/content/issues/39201\">#39201</a></p>\n\n\n",
+            "url": "https://github.com/mdn/content/pull/39207",
+            "title": "Enhance <abbr> Element Contrast for Improved Accessibility",
+            "date_modified": "2025-04-24T04:03:03.000Z",
+            "date_published": "2025-04-20T21:30:59.000Z",
+            "author": {
+                "name": "low-perry",
+                "url": "https://github.com/low-perry"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add missing <code class=\"notranslate\">Guides/</code>, <code class=\"notranslate\">Reference/</code>, etc.</p>",
+            "url": "https://github.com/mdn/content/pull/39196",
+            "title": "Update all MDN slug examples to new IA",
+            "date_modified": "2025-04-23T15:22:02.000Z",
+            "date_published": "2025-04-19T02:31:38.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">mega PR for all the masking and clipping features on MDN. Pushed this draft PR so reviewers of the sub PRs can see what is coming down the pipe.</p>\n<p dir=\"auto\">Sub PRs:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2998692077\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39150\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/39150/hovercard\" href=\"https://github.com/mdn/content/pull/39150\">#39150</a></li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/39151",
+            "title": "DRAFT: Masking and clipping module",
+            "date_modified": "2025-04-21T05:50:42.000Z",
+            "date_published": "2025-04-16T07:19:11.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41184947?u=dc63bc6f8b1d2895c923fdd8689b2d487d329945&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">the fields <code class=\"notranslate\">subject</code> and <code class=\"notranslate\">issuer</code> have the exact same description at the moment, and may be considered to be a typo when writing this documentation.</p>\n<p dir=\"auto\"><code class=\"notranslate\">subject</code> should refer to the certificate one obtain, and <code class=\"notranslate\">issuer</code> should refer to the one who issue that certificate</p>\n<p dir=\"auto\">in addition, I found that this may be one of the few places that mention <code class=\"notranslate\">Certificate</code>, and we may link this document to Glossary <code class=\"notranslate\">Digital Certificate</code> and update descriptions of it? (though in fact I have few ideas on how to update that glossary entry)</p>",
+            "url": "https://github.com/mdn/content/pull/39146",
+            "title": "fix fields description in webRequest CertificateInfo",
+            "date_modified": "2025-04-21T05:07:24.000Z",
+            "date_published": "2025-04-16T04:39:03.000Z",
+            "author": {
+                "name": "PassionPenguin",
+                "url": "https://github.com/PassionPenguin"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/mdn/browser-compat-data/releases/tag/v6.0.6\">BCD release v6.0.6</a></p>\n<p dir=\"auto\">/cc cc/ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bsmth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bsmth\">@bsmth</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wbamberg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wbamberg\">@wbamberg</a></p>",
+            "url": "https://github.com/mdn/content/pull/39144",
+            "title": "Synchronize with BCD v6.0.6",
+            "date_modified": "2025-04-16T14:34:03.000Z",
+            "date_published": "2025-04-16T01:38:54.000Z",
+            "author": {
+                "name": "OnkarRuikar",
+                "url": "https://github.com/OnkarRuikar"
+            }
+        }
+    ]
 }
