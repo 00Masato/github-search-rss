@@ -31,19 +31,8 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1080678?u=b6e211b7766e6aa01e794067f67dd65d419c0150&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously there was no public API implemented for the <code class=\"notranslate\">before_fork_hook</code> when using parallel testing. Applications may want to perform actions before fork, and we should provide an API for it like we did for setup and teardown.</p>",
             "url": "https://github.com/rails/rails/pull/54985",
             "title": "Add public API for `before_fork_hook` in parallel testing",
-            "date_modified": "2025-04-28T19:51:12.000Z",
+            "date_modified": "2025-04-30T20:35:38.000Z",
             "date_published": "2025-04-28T19:51:07.000Z",
-            "author": {
-                "name": "eileencodes",
-                "url": "https://github.com/eileencodes"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1080678?u=b6e211b7766e6aa01e794067f67dd65d419c0150&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Preivously, you could append your own hooks to parallel tests, but there was no way to skip the Rails database parallelization hooks. There may be cases where you want to implement your own database handling, so this allows you to implement all of that in a <code class=\"notranslate\">parallelize_setup</code> block without having Rails create any databases for you.</p>\n<p dir=\"auto\">To skip Rails database parallelization when running parallel tests you can set it in the <code class=\"notranslate\">parallelize</code> caller:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"parallelize(workers: 10, parallelize_databases: false)\"><pre class=\"notranslate\"><span class=\"pl-en\">parallelize</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">workers</span>: <span class=\"pl-c1\">10</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">parallelize_databases</span>: <span class=\"pl-c1\">false</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\">Or in your application config:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"config.active_support.parallelize_test_databases = false\"><pre class=\"notranslate\"><span class=\"pl-en\">config</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">active_support</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">parallelize_test_databases</span> <span class=\"pl-c1\">=</span> <span class=\"pl-c1\">false</span></pre></div>\n<p dir=\"auto\">This is set to true by default.</p>\n<p dir=\"auto\">Note: if you do not create databases for the processes, it is possible for your test suite to deadlock. If you're seeing frequent deadlocks, you may need to create more databases for the processes to use or adjust your tests/code so it's less likely to cause database contention.</p>",
-            "url": "https://github.com/rails/rails/pull/54984",
-            "title": "Implement ability to opt out of parallel database hooks",
-            "date_modified": "2025-04-30T15:11:04.000Z",
-            "date_published": "2025-04-28T18:54:25.000Z",
             "author": {
                 "name": "eileencodes",
                 "url": "https://github.com/eileencodes"
@@ -223,6 +212,17 @@
             "author": {
                 "name": "fatkodima",
                 "url": "https://github.com/fatkodima"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142009152?u=0eef36171bcf40796f6299f29e950a36b1d720c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This might be obvious, but as a beginner it took me some time to get my head around why I was getting decryption errors.</p>",
+            "url": "https://github.com/rails/rails/pull/54918",
+            "title": "Update active_record_encryption.md [ci skip]",
+            "date_modified": "2025-04-26T19:02:19.000Z",
+            "date_published": "2025-04-13T18:00:01.000Z",
+            "author": {
+                "name": "pardeyke",
+                "url": "https://github.com/pardeyke"
             }
         }
     ]
