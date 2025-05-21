@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/181925856?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes the creation of a new <code class=\"notranslate\">BijectionMap</code> type that will have a one-to-one correspondence between keys and values. This will be included in <code class=\"notranslate\">std::collections</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/SciMind2460/rfcs/blob/master/text/3816-bidirectional-hash-maps.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3816",
             "title": "RFC: Create a new `BijectionMap` type for bi-directional hashmaps",
-            "date_modified": "2025-05-21T05:11:40.000Z",
+            "date_modified": "2025-05-21T06:54:35.000Z",
             "date_published": "2025-05-21T04:21:44.000Z",
             "author": {
                 "name": "SciMind2460",
