@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1896483?u=c6fc0bdfda0b94322521aecdf211fabe16d2edea&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">tldr: make it easier/safer to use <code class=\"notranslate\">target_feature</code> in traits.</p>\n<p dir=\"auto\"><a href=\"https://github.com/veluca93/rfcs/blob/tft/text/3820-target-feature-traits.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3820",
+            "title": "RFC: Changes to `target_feature` attribute",
+            "date_modified": "2025-05-25T19:37:32.000Z",
+            "date_published": "2025-05-25T19:25:50.000Z",
+            "author": {
+                "name": "veluca93",
+                "url": "https://github.com/veluca93"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49250442?u=aea7fcbd3fe5509309c9afc8320dddf56deca864&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">tldr;<code class=\"notranslate\">slice::chunks</code> but for <code class=\"notranslate\">&amp;str</code> with chunks being substrings as <code class=\"notranslate\">&amp;str</code> of <code class=\"notranslate\">chunk_size</code> length.</p>\n<p dir=\"auto\"><a href=\"https://github.com/tkr-sh/rfcs/blob/master/text/3818-str-chunks.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3818",
             "title": "RFC: New method for `str`: `str::chunks(usize)`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "cramertj",
                 "url": "https://github.com/cramertj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1178779?u=4bd8c56dac06b90d985b2688ec76f0859f297404&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds an RFC proposing a new attribute that would help detect mistakes when a parameter of a function is not used after the function returns. E.g. when inserting into a collection that is then immediately dropped.</p>\n<p dir=\"auto\">Cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/joshtriplett/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/joshtriplett\">@joshtriplett</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Kixunil/rust-rfcs/blob/must-use-output/text/3773-must-use-output.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3773",
-            "title": "Add `must-use-output` attribute",
-            "date_modified": "2025-05-16T15:54:00.000Z",
-            "date_published": "2025-02-16T12:10:15.000Z",
-            "author": {
-                "name": "Kixunil",
-                "url": "https://github.com/Kixunil"
             }
         }
     ]
