@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49250442?u=aea7fcbd3fe5509309c9afc8320dddf56deca864&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">tldr;<code class=\"notranslate\">slice::chunks</code> but for <code class=\"notranslate\">&amp;str</code> with chunks being substrings as <code class=\"notranslate\">&amp;str</code> of <code class=\"notranslate\">chunk_size</code> length.</p>\n<p dir=\"auto\"><a href=\"https://github.com/tkr-sh/rfcs/blob/master/text/3818-str-chunks.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3818",
             "title": "RFC: New method for `str`: `str::chunks(usize)`",
-            "date_modified": "2025-05-25T00:05:07.000Z",
+            "date_modified": "2025-05-25T00:11:21.000Z",
             "date_published": "2025-05-24T22:35:06.000Z",
             "author": {
                 "name": "tkr-sh",
