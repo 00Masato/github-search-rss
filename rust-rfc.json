@@ -6,10 +6,10 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1896483?u=c6fc0bdfda0b94322521aecdf211fabe16d2edea&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">tldr: make it easier/safer to use <code class=\"notranslate\">target_feature</code> in traits.</p>\n<p dir=\"auto\"><a href=\"https://github.com/veluca93/rfcs/blob/tft/text/3820-target-feature-traits.md\">Rendered</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1896483?u=c6fc0bdfda0b94322521aecdf211fabe16d2edea&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">tldr: make it easier/safer to use <code class=\"notranslate\">target_feature</code> in traits.</p>\n<p dir=\"auto\">Also see prior discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2972360895\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/139368\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/139368/hovercard\" href=\"https://github.com/rust-lang/rust/issues/139368\">rust-lang/rust#139368</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/veluca93/rfcs/blob/tft/text/3820-target-feature-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3820",
             "title": "RFC: Changes to `target_feature` attribute",
-            "date_modified": "2025-05-26T07:01:22.000Z",
+            "date_modified": "2025-05-26T07:54:20.000Z",
             "date_published": "2025-05-25T19:25:50.000Z",
             "author": {
                 "name": "veluca93",
