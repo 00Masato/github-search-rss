@@ -6,6 +6,39 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tshepang/rfcs/blob/patch-5/text/3355-rust-spec.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3825",
+            "title": "add missing word",
+            "date_modified": "2025-05-29T19:23:28.000Z",
+            "date_published": "2025-05-29T19:23:25.000Z",
+            "author": {
+                "name": "tshepang",
+                "url": "https://github.com/tshepang"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tshepang/rfcs/blob/patch-4/text/3355-rust-spec.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3824",
+            "title": "add missing word",
+            "date_modified": "2025-05-29T19:19:41.000Z",
+            "date_published": "2025-05-29T19:19:37.000Z",
+            "author": {
+                "name": "tshepang",
+                "url": "https://github.com/tshepang"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3823",
+            "title": "add edit link to each page",
+            "date_modified": "2025-05-29T19:17:12.000Z",
+            "date_published": "2025-05-29T19:17:12.000Z",
+            "author": {
+                "name": "tshepang",
+                "url": "https://github.com/tshepang"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60879563?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposal was initially shared in a <a href=\"https://www.reddit.com/r/rust/comments/1kwud96/proposal_to_reconcile_generics_and_rusts_orphan/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\" rel=\"nofollow\">Reddit post</a> I authored to introduce the idea and gather community feedback:</p>\n<p dir=\"auto\">“Proposal to reconcile generics and Rust’s orphan rule”</p>\n<p dir=\"auto\">While the post is still recent and awaiting responses, it serves as an early exposition of the problem and the motivation behind this RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/victorGhiglione/rfcs/blob/local_trait_restriction_for_orphan_rule/text/3773-local-type-filter.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3821",
             "title": "RFC: Allow generic impls using local trait bounds",
@@ -130,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23638587?u=6d1f4ed9b2481fd4af374eb927f9a73602c53ba5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/jyn514/rfcs/blob/crate-attr/text/3791-crate-attr.md\">Rendered</a></p>\n<p dir=\"auto\">cc <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2905664297\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/138287\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/138287/hovercard\" href=\"https://github.com/rust-lang/rust/issues/138287\">rust-lang/rust#138287</a></p>\n<p dir=\"auto\">Differences from the current nightly implementation (note that this section is non-normative):</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">-A -W -D -F</code> become aliases for <code class=\"notranslate\">crate-attr</code></li>\n<li>Attributes are prepended, not appended.</li>\n<li>Everything about how this interacts with doctests (see <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2923808363\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3791\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3791/hovercard?comment_id=1999037718&amp;comment_type=review_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3791#discussion_r1999037718\">#3791 (comment)</a>)</li>\n<li>The attribute shares the same Span as the crate root. In particular <code class=\"notranslate\">file!</code> behaves properly now and the edition is no longer always 2015.</li>\n</ul>",
             "url": "https://github.com/rust-lang/rfcs/pull/3791",
             "title": "RFC: `--crate-attr`",
-            "date_modified": "2025-05-29T16:34:51.000Z",
+            "date_modified": "2025-05-29T19:30:39.000Z",
             "date_published": "2025-03-17T05:38:21.000Z",
             "author": {
                 "name": "jyn514",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "kxxt",
                 "url": "https://github.com/kxxt"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposes adding <code class=\"notranslate\">#[inline(trampoline)]</code> and <code class=\"notranslate\">#[inline(rarely)]</code> to hint the compiler additional information about <em>why</em> you're marking the function for inlining, to help it hopefully make better choices without the overly-strong hammers of <code class=\"notranslate\">always</code> or <code class=\"notranslate\">never</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/more-inline-options/text/3778-inline-intents.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3778",
-            "title": "RFC: Add additional `inline` intents",
-            "date_modified": "2025-03-14T17:05:39.000Z",
-            "date_published": "2025-02-23T01:53:45.000Z",
-            "author": {
-                "name": "scottmcm",
-                "url": "https://github.com/scottmcm"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/138764211?u=fd6e1047bcae81137b81095986a8ab16ca3d8914&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Rust should have a spaceship operator <code class=\"notranslate\">&lt;=&gt;</code> for cleaner three-way comparisons.</p>\n<p dir=\"auto\"><a href=\"https://github.com/bjoernager/rfcs/blob/spaceship-operator/text/3776-spaceship-operator.md\">Rendered</a>.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3776",
-            "title": "RFC: Add \"spaceship\" operator.",
-            "date_modified": "2025-03-01T22:47:53.000Z",
-            "date_published": "2025-02-21T17:38:16.000Z",
-            "author": {
-                "name": "bjoernager",
-                "url": "https://github.com/bjoernager"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5963049?u=9241cef72c870a195c728bc4992f8d1fd01968f1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC guarantees the representation of <code class=\"notranslate\">&amp;str</code> and <code class=\"notranslate\">&amp;[T]</code> to be equivalent to a <code class=\"notranslate\">repr(C)</code> struct containing a pointer and a length.</p>\n<p dir=\"auto\"><a href=\"https://github.com/cramertj/rfcs/blob/slice-repr/text/0000-guaranteed-slice-repr.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3775",
-            "title": "Guarantee slice representation",
-            "date_modified": "2025-04-29T09:21:34.000Z",
-            "date_published": "2025-02-19T00:12:13.000Z",
-            "author": {
-                "name": "cramertj",
-                "url": "https://github.com/cramertj"
             }
         }
     ]
