@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60879563?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposal was initially shared in a <a href=\"https://www.reddit.com/r/rust/comments/1kwud96/proposal_to_reconcile_generics_and_rusts_orphan/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\" rel=\"nofollow\">Reddit post</a> I authored to introduce the idea and gather community feedback:</p>\n<p dir=\"auto\">“Proposal to reconcile generics and Rust’s orphan rule”</p>\n<p dir=\"auto\">While the post is still recent and awaiting responses, it serves as an early exposition of the problem and the motivation behind this RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/victorGhiglione/rfcs/blob/local_trait_restriction_for_orphan_rule/text/3773-local-type-filter.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3821",
             "title": "RFC: Allow generic impls using local trait bounds",
-            "date_modified": "2025-05-27T21:00:11.000Z",
+            "date_modified": "2025-05-29T03:05:58.000Z",
             "date_published": "2025-05-27T19:39:12.000Z",
             "author": {
                 "name": "victorGhiglione",
