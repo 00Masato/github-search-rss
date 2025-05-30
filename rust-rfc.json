@@ -17,28 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tshepang/rfcs/blob/patch-5/text/3355-rust-spec.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3825",
-            "title": "add missing word",
-            "date_modified": "2025-05-30T09:59:15.000Z",
-            "date_published": "2025-05-29T19:23:25.000Z",
-            "author": {
-                "name": "tshepang",
-                "url": "https://github.com/tshepang"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/tshepang/rfcs/blob/patch-4/text/3355-rust-spec.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3824",
-            "title": "add missing word",
-            "date_modified": "2025-05-29T19:19:41.000Z",
-            "date_published": "2025-05-29T19:19:37.000Z",
-            "author": {
-                "name": "tshepang",
-                "url": "https://github.com/tshepang"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rust-lang/rfcs/pull/3823",
             "title": "add edit link to each page",
@@ -223,6 +201,28 @@
             "author": {
                 "name": "Ddystopia",
                 "url": "https://github.com/Ddystopia"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18085551?u=d28b23fc7492d25f5224c6133ee73e278a75fdc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kxxt/rfcs/blob/crate-changelog-field/text/0000-crate-changelog-field.md\">Rendered</a></p>\n<p dir=\"auto\">This is the second attempt to introduce the <code class=\"notranslate\">changelog</code> field into crate manifest.</p>\n<p dir=\"auto\">Previous attempt: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"253131429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2129\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2129/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2129\">#2129</a></p>\n<p dir=\"auto\">Comparing with previous attempt,<br>\nthis RFC does not impose any format constraint over the contents of the changelog and instead only requires an external URL.</p>\n<p dir=\"auto\">This RFC also reserves the possibility of using a local file included in crate as changelog while leaving it to future RFCs.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3779",
+            "title": "RFC: Crate changelog field",
+            "date_modified": "2025-04-16T15:55:03.000Z",
+            "date_published": "2025-02-25T15:03:12.000Z",
+            "author": {
+                "name": "kxxt",
+                "url": "https://github.com/kxxt"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposes adding <code class=\"notranslate\">#[inline(trampoline)]</code> and <code class=\"notranslate\">#[inline(rarely)]</code> to hint the compiler additional information about <em>why</em> you're marking the function for inlining, to help it hopefully make better choices without the overly-strong hammers of <code class=\"notranslate\">always</code> or <code class=\"notranslate\">never</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/more-inline-options/text/3778-inline-intents.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3778",
+            "title": "RFC: Add additional `inline` intents",
+            "date_modified": "2025-03-14T17:05:39.000Z",
+            "date_published": "2025-02-23T01:53:45.000Z",
+            "author": {
+                "name": "scottmcm",
+                "url": "https://github.com/scottmcm"
             }
         }
     ]
