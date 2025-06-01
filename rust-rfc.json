@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191960014?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See discussion on internals <a href=\"https://internals.rust-lang.org/t/pre-rfc-allow-procedural-macros-to-be-placed-in-the-same-crate-package-as-app/23005\" rel=\"nofollow\">here</a>.</p>\n<p dir=\"auto\">I feel the need to clarify that this is not about crates, but packages. I had them confused the initial time I wrote the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ora-0/rust-rfcs/blob/master/text/3778-proc-macro-in-same-package-as-app.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3826",
             "title": "RFC: Procedural macros in same package as app",
-            "date_modified": "2025-06-01T07:13:44.000Z",
+            "date_modified": "2025-06-01T09:30:25.000Z",
             "date_published": "2025-05-30T07:45:15.000Z",
             "author": {
                 "name": "ora-0",
