@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3829",
+            "title": "de-RFC: Remove unsized_locals",
+            "date_modified": "2025-06-02T19:00:56.000Z",
+            "date_published": "2025-06-02T18:40:20.000Z",
+            "author": {
+                "name": "Noratrieb",
+                "url": "https://github.com/Noratrieb"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191960014?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See discussion on internals <a href=\"https://internals.rust-lang.org/t/pre-rfc-allow-procedural-macros-to-be-placed-in-the-same-crate-package-as-app/23005\" rel=\"nofollow\">here</a>.</p>\n<p dir=\"auto\">I feel the need to clarify that this is not about crates, but packages. I had them confused the initial time I wrote the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ora-0/rust-rfcs/blob/master/text/3778-proc-macro-in-same-package-as-app.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3826",
             "title": "RFC: Procedural macros in same package as app",
-            "date_modified": "2025-06-02T07:41:07.000Z",
+            "date_modified": "2025-06-02T18:27:27.000Z",
             "date_published": "2025-05-30T07:45:15.000Z",
             "author": {
                 "name": "ora-0",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/588486?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rust-lang/rfcs/pull/3823",
             "title": "add edit link to each page",
-            "date_modified": "2025-05-31T16:58:05.000Z",
+            "date_modified": "2025-06-02T18:39:58.000Z",
             "date_published": "2025-05-29T19:17:12.000Z",
             "author": {
                 "name": "tshepang",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "kxxt",
                 "url": "https://github.com/kxxt"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposes adding <code class=\"notranslate\">#[inline(trampoline)]</code> and <code class=\"notranslate\">#[inline(rarely)]</code> to hint the compiler additional information about <em>why</em> you're marking the function for inlining, to help it hopefully make better choices without the overly-strong hammers of <code class=\"notranslate\">always</code> or <code class=\"notranslate\">never</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/more-inline-options/text/3778-inline-intents.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3778",
-            "title": "RFC: Add additional `inline` intents",
-            "date_modified": "2025-03-14T17:05:39.000Z",
-            "date_published": "2025-02-23T01:53:45.000Z",
-            "author": {
-                "name": "scottmcm",
-                "url": "https://github.com/scottmcm"
             }
         }
     ]
