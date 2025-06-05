@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154856872?u=549d98da76d371effb56d0d7f4dfcac951507814&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Proposal to add dedented string literals to Rust of the form: <code class=\"notranslate\">d\"string\"</code>.</p>\n<p dir=\"auto\">With the following:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let sql = d&quot;\n    create table student(\n        id int primary key,\n        name text\n    )\n    &quot;;\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> sql = d\"\n    create table <span class=\"pl-en\">student</span><span class=\"pl-kos\">(</span>\n        id int primary key<span class=\"pl-kos\">,</span>\n        name text\n    <span class=\"pl-kos\">)</span>\n    \"<span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\">Being equivalent to:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let sql = &quot;\\\ncreate table student(\n    id int primary key,\n    name text\n)&quot;;\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> sql = <span class=\"pl-s\">\"<span class=\"pl-cce\">\\</span></span>\n<span class=\"pl-s\"><span class=\"pl-cce\"></span>create table student(</span>\n<span class=\"pl-s\">    id int primary key,</span>\n<span class=\"pl-s\">    name text</span>\n<span class=\"pl-s\">)\"</span><span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/nik-contrib/rfcs/blob/dedented_strings/text/3830-dedented-string-literals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3830",
             "title": "RFC: Dedented String Literals",
-            "date_modified": "2025-06-05T18:55:12.000Z",
+            "date_modified": "2025-06-05T20:59:09.000Z",
             "date_published": "2025-06-05T15:40:28.000Z",
             "author": {
                 "name": "nik-rev",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191960014?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See discussion on internals <a href=\"https://internals.rust-lang.org/t/pre-rfc-allow-procedural-macros-to-be-placed-in-the-same-crate-package-as-app/23005\" rel=\"nofollow\">here</a>.</p>\n<p dir=\"auto\">I feel the need to clarify that this is not about crates, but packages. I had them confused the initial time I wrote the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ora-0/rust-rfcs/blob/master/text/3778-proc-macro-in-same-package-as-app.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3826",
             "title": "RFC: Procedural macros in same package as app",
-            "date_modified": "2025-06-05T19:53:02.000Z",
+            "date_modified": "2025-06-05T20:46:09.000Z",
             "date_published": "2025-05-30T07:45:15.000Z",
             "author": {
                 "name": "ora-0",
