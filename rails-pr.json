@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82371?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The templates used in <code class=\"notranslate\">rails g authentication</code> were still using <code class=\"notranslate\">Parameters#permit</code>, while the scaffold templates were already updated to use <code class=\"notranslate\">Parameters#expect</code> in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2266721717\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51674\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51674/hovercard\" href=\"https://github.com/rails/rails/pull/51674\">#51674</a> . This change makes them consistent.</p>",
             "url": "https://github.com/rails/rails/pull/55166",
             "title": "Use `Parameters#expect` in the templates for the authentication generator too",
-            "date_modified": "2025-06-06T07:02:28.000Z",
+            "date_modified": "2025-06-06T08:27:14.000Z",
             "date_published": "2025-06-06T07:02:23.000Z",
             "author": {
                 "name": "willnet",
