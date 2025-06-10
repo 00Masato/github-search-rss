@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/330628?u=562ead6e5c8da9a02015f73a9aefdb6c82d4e2cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Godbolt can finally run code built with MSVC so we can demonstrate that it, too, has provenance. :)</p>\n<p dir=\"auto\"><a href=\"https://github.com/RalfJung/rfcs/blob/provenance-msvc/text/3559-rust-has-provenance.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3831",
-            "title": "Provenance RFC: add MSVC example",
-            "date_modified": "2025-06-09T20:07:31.000Z",
-            "date_published": "2025-06-09T19:42:31.000Z",
-            "author": {
-                "name": "RalfJung",
-                "url": "https://github.com/RalfJung"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154856872?u=549d98da76d371effb56d0d7f4dfcac951507814&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Proposal to add dedented string literals to Rust of the form: <code class=\"notranslate\">d\"string\"</code>.</p>\n<p dir=\"auto\">With the following:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let sql = d&quot;\n    create table student(\n        id int primary key,\n        name text\n    )\n    &quot;;\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> sql = d\"\n    create table <span class=\"pl-en\">student</span><span class=\"pl-kos\">(</span>\n        id int primary key<span class=\"pl-kos\">,</span>\n        name text\n    <span class=\"pl-kos\">)</span>\n    \"<span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\">Being equivalent to:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"let sql = &quot;\\\ncreate table student(\n    id int primary key,\n    name text\n)&quot;;\"><pre class=\"notranslate\"><span class=\"pl-k\">let</span> sql = <span class=\"pl-s\">\"<span class=\"pl-cce\">\\</span></span>\n<span class=\"pl-s\"><span class=\"pl-cce\"></span>create table student(</span>\n<span class=\"pl-s\">    id int primary key,</span>\n<span class=\"pl-s\">    name text</span>\n<span class=\"pl-s\">)\"</span><span class=\"pl-kos\">;</span></pre></div>\n<p dir=\"auto\"><a href=\"https://github.com/nik-contrib/rfcs/blob/dedented_strings/text/3830-dedented-string-literals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3830",
             "title": "RFC: Dedented String Literals",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Ddystopia",
                 "url": "https://github.com/Ddystopia"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18085551?u=d28b23fc7492d25f5224c6133ee73e278a75fdc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/kxxt/rfcs/blob/crate-changelog-field/text/0000-crate-changelog-field.md\">Rendered</a></p>\n<p dir=\"auto\">This is the second attempt to introduce the <code class=\"notranslate\">changelog</code> field into crate manifest.</p>\n<p dir=\"auto\">Previous attempt: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"253131429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/2129\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/2129/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/2129\">#2129</a></p>\n<p dir=\"auto\">Comparing with previous attempt,<br>\nthis RFC does not impose any format constraint over the contents of the changelog and instead only requires an external URL.</p>\n<p dir=\"auto\">This RFC also reserves the possibility of using a local file included in crate as changelog while leaving it to future RFCs.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3779",
+            "title": "RFC: Crate changelog field",
+            "date_modified": "2025-04-16T15:55:03.000Z",
+            "date_published": "2025-02-25T15:03:12.000Z",
+            "author": {
+                "name": "kxxt",
+                "url": "https://github.com/kxxt"
             }
         }
     ]
