@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Source: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2133622078\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51078\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51078/hovercard\" href=\"https://github.com/rails/rails/pull/51078\">#51078</a></p>",
+            "url": "https://github.com/rails/rails/pull/55210",
+            "title": "[7-2-stable] Clean up changelog for where.associated scope bug",
+            "date_modified": "2025-06-19T03:07:08.000Z",
+            "date_published": "2025-06-19T03:07:04.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">column</code> method is <a href=\"https://github.com/rails/rails/blob/1921f0fef60983d6423b937884de5e83b2619960/activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb#L495\">defined</a> (and documented) on <code class=\"notranslate\">TableDefinition</code> not on <code class=\"notranslate\">ColumnMethods</code>.<br>\nSo there is no need to document it on <code class=\"notranslate\">ColumnMethods</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55207",
             "title": "Remove documentation for non existing ColumnMethods#column [ci skip]",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "piowit",
                 "url": "https://github.com/piowit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108208?u=c8303f0e5fbbd78a380286ed0af8272d35bcdb6b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3114156995\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55146\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55146/hovercard\" href=\"https://github.com/rails/rails/issues/55146\">#55146</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes Sidekiq integration queueing test, as the wrapper class has changed in Sidekiq v8.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55148",
-            "title": "[#55146] Fix tests for Sidekiq integration queueing.",
-            "date_modified": "2025-06-16T14:36:52.000Z",
-            "date_published": "2025-06-03T20:28:20.000Z",
-            "author": {
-                "name": "ruyrocha",
-                "url": "https://github.com/ruyrocha"
             }
         }
     ]
