@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102709083?u=5401755cd360b4cf74a74b3aebb4a8a20380fef0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ads a <code class=\"notranslate\">into_unique</code> method to <code class=\"notranslate\">Rc</code> and <code class=\"notranslate\">Arc</code>, returns the <code class=\"notranslate\">Some(this)</code>, if the has exactly one strong reference.</p>\n<p dir=\"auto\"><a href=\"https://github.com/A4-Tacks/rfcs/blob/arc-into-unique/text/0000-arc-into-unique.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3835",
             "title": "RFC: Add `into_unique` method to `Rc` and `Arc`",
-            "date_modified": "2025-06-19T09:39:25.000Z",
+            "date_modified": "2025-06-19T12:43:00.000Z",
             "date_published": "2025-06-19T09:28:34.000Z",
             "author": {
                 "name": "A4-Tacks",
