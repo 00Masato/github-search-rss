@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=87f48b6c8977eca031c6b84a5b1f21b241270c4d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Addresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2259967955\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/debug/issues/1098\" data-hovercard-type=\"issue\" data-hovercard-url=\"/ruby/debug/issues/1098/hovercard?comment_id=2394771899&amp;comment_type=issue_comment\" href=\"https://github.com/ruby/debug/issues/1098#issuecomment-2394771899\">ruby/debug#1098 (comment)</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3116846110\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/debug/issues/1140\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/ruby/debug/pull/1140/hovercard\" href=\"https://github.com/ruby/debug/pull/1140\">ruby/debug#1140</a> introduced a new <code class=\"notranslate\">no_repeat</code> config option (see <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2259967955\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/debug/issues/1098\" data-hovercard-type=\"issue\" data-hovercard-url=\"/ruby/debug/issues/1098/hovercard\" href=\"https://github.com/ruby/debug/issues/1098\">ruby/debug#1098</a> for context) which is included in the <a href=\"https://github.com/ruby/debug/releases/tag/v1.11.0\">latest release</a>. <code class=\"notranslate\">debug</code> <a href=\"https://github.com/rails/rails/blob/aa66aece44f191e6330c04ce4942c3edf31d85d7/railties/lib/rails/generators/rails/app/templates/Gemfile.tt#L56\">isn't pinned to a specific version in the generated Gemfile</a>, so we can start using this in new apps.</p>\n\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55214",
+            "title": "Enable `debug` `no_repeat` config in generated app",
+            "date_modified": "2025-06-20T07:53:31.000Z",
+            "date_published": "2025-06-20T07:01:59.000Z",
+            "author": {
+                "name": "joshuay03",
+                "url": "https://github.com/joshuay03"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1734607?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add an isolated option to steps. Defaults to false.</p>\n<p dir=\"auto\">Isolated steps are always run in their own job execution. We do this by interrupting the job before running a step if both:</p>\n<ol dir=\"auto\">\n<li>It is not the first step we've run in this execution</li>\n<li>Either this step or the previous one was marked as isolated.</li>\n</ol>\n<p dir=\"auto\">The first to be run in an execution is always run inline so we don't end up in an infinite loop of interruptions.</p>\n<p dir=\"auto\">This allows you to execute a long running step separately which is useful to ensure that progress is saved before it runs.</p>",
             "url": "https://github.com/rails/rails/pull/55212",
             "title": "Active Job Continuation isolated steps",
@@ -31,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Source: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2133622078\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51078\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/51078/hovercard\" href=\"https://github.com/rails/rails/pull/51078\">#51078</a></p>",
             "url": "https://github.com/rails/rails/pull/55210",
             "title": "[7-2-stable] Clean up changelog for where.associated scope bug",
-            "date_modified": "2025-06-19T03:07:08.000Z",
+            "date_modified": "2025-06-20T07:16:34.000Z",
             "date_published": "2025-06-19T03:07:04.000Z",
             "author": {
                 "name": "zzak",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">column</code> method is <a href=\"https://github.com/rails/rails/blob/1921f0fef60983d6423b937884de5e83b2619960/activerecord/lib/active_record/connection_adapters/abstract/schema_definitions.rb#L495\">defined</a> (and documented) on <code class=\"notranslate\">TableDefinition</code> not on <code class=\"notranslate\">ColumnMethods</code>.<br>\nSo there is no need to document it on <code class=\"notranslate\">ColumnMethods</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55207",
             "title": "Remove documentation for non existing ColumnMethods#column [ci skip]",
-            "date_modified": "2025-06-19T12:10:43.000Z",
+            "date_modified": "2025-06-20T07:08:03.000Z",
             "date_published": "2025-06-18T08:57:23.000Z",
             "author": {
                 "name": "p8",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Edouard-chin",
                 "url": "https://github.com/Edouard-chin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37537?u=8f87e7acc222a7ec1eb52d48cb76922d57d791b3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I've been learning about Turbo Streams recently, and noted a few places in the docs for potential improvements.</p>\n<p dir=\"auto\">One is that the first place searches like \"rails websockets\" lead to is the ActionCable guide, which doesn't currently make any references to Hotwire.</p>\n<p dir=\"auto\">If this proposed change seems in the ballpark but not quite right, I'm happy to do additional wordsmithing.</p>",
-            "url": "https://github.com/rails/rails/pull/55160",
-            "title": "Docs: Add link to Turbo Streams docs in ActionCable guide [ci skip]",
-            "date_modified": "2025-06-05T15:21:41.000Z",
-            "date_published": "2025-06-05T15:21:36.000Z",
-            "author": {
-                "name": "jslag",
-                "url": "https://github.com/jslag"
             }
         }
     ]
