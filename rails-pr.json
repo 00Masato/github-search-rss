@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1734607?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add an isolated option to steps. Defaults to false.</p>\n<p dir=\"auto\">Isolated steps are always run in their own job execution. We do this by interrupting the job before running a step if both:</p>\n<ol dir=\"auto\">\n<li>It is not the first step we've run in this execution</li>\n<li>Either this step or the previous one was marked as isolated.</li>\n</ol>\n<p dir=\"auto\">The first to be run in an execution is always run inline so we don't end up in an infinite loop of interruptions.</p>\n<p dir=\"auto\">This allows you to execute a long running step separately which is useful to ensure that progress is saved before it runs.</p>",
             "url": "https://github.com/rails/rails/pull/55212",
             "title": "Active Job Continuation isolated steps",
-            "date_modified": "2025-06-19T13:22:15.000Z",
+            "date_modified": "2025-06-25T17:58:04.000Z",
             "date_published": "2025-06-19T13:22:11.000Z",
             "author": {
                 "name": "djmb",
