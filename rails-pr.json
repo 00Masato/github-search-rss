@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6830119?u=c811408f10a29f10f3ea0863c5204b0061d74d56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request fixes stale links in the Cross-Site Scripting (XSS) section and a few minor typos in the guide.</p>",
             "url": "https://github.com/rails/rails/pull/55314",
             "title": "[ci skip] Fix stale links in the Securing Rails Applications guide",
-            "date_modified": "2025-07-09T13:37:58.000Z",
+            "date_modified": "2025-07-09T14:51:15.000Z",
             "date_published": "2025-07-09T11:55:25.000Z",
             "author": {
                 "name": "duffuniverse",
@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As <code class=\"notranslate\">form_with</code> is defined on <code class=\"notranslate\">FormHelper</code>, we need to link explicitly inside <code class=\"notranslate\">FormBuilder</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55312",
             "title": "Make link to `form_with` explicit [ci skip]",
-            "date_modified": "2025-07-09T10:31:30.000Z",
+            "date_modified": "2025-07-09T14:49:35.000Z",
             "date_published": "2025-07-09T10:31:21.000Z",
             "author": {
                 "name": "p8",
