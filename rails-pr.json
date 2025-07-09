@@ -6,21 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6830119?u=c811408f10a29f10f3ea0863c5204b0061d74d56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request fixes stale links in the Cross-Site Scripting (XSS) section and a few minor typos in the guide.</p>",
-            "url": "https://github.com/rails/rails/pull/55314",
-            "title": "[ci skip] Fix stale links in the Securing Rails Applications guide",
-            "date_modified": "2025-07-09T14:51:15.000Z",
-            "date_published": "2025-07-09T11:55:25.000Z",
-            "author": {
-                "name": "duffuniverse",
-                "url": "https://github.com/duffuniverse"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54629302?u=87f48b6c8977eca031c6b84a5b1f21b241270c4d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<p dir=\"auto\">Small QoL improvement.</p>\n<p dir=\"auto\">Including both the current character length and the max character length makes it easier to immediately tell how many characters over the current index/table name is, without having to figure it out by pasting it into an editor, for example.</p>\n\n\n\n\n\n\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55313",
             "title": "Include current character length in index and table name length error messages",
-            "date_modified": "2025-07-09T15:47:08.000Z",
+            "date_modified": "2025-07-09T16:18:49.000Z",
             "date_published": "2025-07-09T11:14:21.000Z",
             "author": {
                 "name": "joshuay03",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "kch",
                 "url": "https://github.com/kch"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36794420?u=a2a8aa41d017668a64b1dad585ce5543b42d7bb7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Enables <code class=\"notranslate\">config.i18n.raise_on_missing_translations</code> by default in development and test environments when generating new applications.</p>\n<p dir=\"auto\">In every new Rails app I worked on (and old ones that have been upgraded to newer versions), we've eventually turned this setting on because it's more useful than the default \"Translation missing: ...\" string, which hides away the fact your translations are not set up correctly (and this often goes unnoticed in the test suite), so I think raising instead is a sensible default.</p>",
+            "url": "https://github.com/rails/rails/pull/55268",
+            "title": "Raise on missing translations by default in new applications",
+            "date_modified": "2025-06-30T17:10:22.000Z",
+            "date_published": "2025-06-30T17:10:17.000Z",
+            "author": {
+                "name": "lovro-bikic",
+                "url": "https://github.com/lovro-bikic"
             }
         }
     ]
