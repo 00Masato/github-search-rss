@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">normalize_relative_action_path</code> added in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/033acf8bc3df8c45eab9cc59a42b3aa72617f00c/hovercard\" href=\"https://github.com/rails/rails/commit/033acf8bc3df8c45eab9cc59a42b3aa72617f00c\"><tt>033acf8</tt></a>, but was not intended to be public.</p>\n<p dir=\"auto\">It was following the pattern set in <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/bc4781583d9db237dd928b01743c6db7596a36b3/hovercard\" href=\"https://github.com/rails/rails/commit/bc4781583d9db237dd928b01743c6db7596a36b3\"><tt>bc47815</tt></a> for <code class=\"notranslate\">normalize_action_path</code> which also should not be public.</p>\n<p dir=\"auto\">The only seemingly real usage that I could find of this was removed from gitlab years ago:<br>\n<a href=\"https://gitlab.com/gitlab-org/gitlab/-/commit/834b6d69\" rel=\"nofollow\">https://gitlab.com/gitlab-org/gitlab/-/commit/834b6d69</a></p>\n<p dir=\"auto\">Based on:<br>\n<a href=\"https://github.com/search?q=normalize_action_path+language%3ARuby&amp;type=code&amp;ref=advsearch&amp;p=1\">https://github.com/search?q=normalize_action_path+language%3ARuby&amp;type=code&amp;ref=advsearch&amp;p=1</a></p>\n<hr>\n<p dir=\"auto\">Even though it's a documented <em>private</em> method, it can be considered public API (because it's in the docs) -- so that may warrant deprecation.</p>\n<p dir=\"auto\">Leaving that decision up to reviewers. 🙇</p>",
+            "url": "https://github.com/rails/rails/pull/55317",
+            "title": "Ensure RequestForgeryProtection#normalize_action_path is private",
+            "date_modified": "2025-07-10T06:10:09.000Z",
+            "date_published": "2025-07-10T06:10:04.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3215335488\" data-permission-text=\"Title is private\" data-url=\"https://github.com/ruby/bigdecimal/issues/365\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/ruby/bigdecimal/pull/365/hovercard\" href=\"https://github.com/ruby/bigdecimal/pull/365\">ruby/bigdecimal#365</a></p>\n<p dir=\"auto\">I guess the fix should be backported to previous versions of Rails Guides as well.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55316",
             "title": "[ci skip][doc]Fix engineering notation -> scientific notation",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "kch",
                 "url": "https://github.com/kch"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36794420?u=a2a8aa41d017668a64b1dad585ce5543b42d7bb7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Enables <code class=\"notranslate\">config.i18n.raise_on_missing_translations</code> by default in development and test environments when generating new applications.</p>\n<p dir=\"auto\">In every new Rails app I worked on (and old ones that have been upgraded to newer versions), we've eventually turned this setting on because it's more useful than the default \"Translation missing: ...\" string, which hides away the fact your translations are not set up correctly (and this often goes unnoticed in the test suite), so I think raising instead is a sensible default.</p>",
-            "url": "https://github.com/rails/rails/pull/55268",
-            "title": "Raise on missing translations by default in new applications",
-            "date_modified": "2025-06-30T17:10:22.000Z",
-            "date_published": "2025-06-30T17:10:17.000Z",
-            "author": {
-                "name": "lovro-bikic",
-                "url": "https://github.com/lovro-bikic"
             }
         }
     ]
