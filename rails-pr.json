@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">TSort is getting removed: <a href=\"https://bugs.ruby-lang.org/issues/21442\" rel=\"nofollow\">https://bugs.ruby-lang.org/issues/21442</a></p>\n<p dir=\"auto\">Railties mainly uses tsort to find the order in which initializers are supposed to be run in regard with <code class=\"notranslate\">before</code>/<code class=\"notranslate\">after</code> hooks.</p>\n<p dir=\"auto\">railties is the only consumer of <code class=\"notranslate\">tsort</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Maybe it can be replaced by a custom implementation. For now this gets rid of the warning.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55322",
-            "title": "Add `tsort` as a runtime dependency to `railties`",
-            "date_modified": "2025-07-11T10:31:07.000Z",
-            "date_published": "2025-07-11T10:31:02.000Z",
-            "author": {
-                "name": "Earlopain",
-                "url": "https://github.com/Earlopain"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/445386?u=23fc9bf955ae5b7ab0d7f13cae520861d8c5b13a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the current Active Storage guide currently offers no guidance on querying records based on attachment metadata. This gap leads developers to trial-and-error or external sources to figure out the correct join syntax.</p>\n<p dir=\"auto\">Adding an official “Querying” section will streamline discovery and promote best practices directly in the Rails Guides.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes guides/source/active_storage_overview.md by inserting a new <em>Querying</em> subsection immediately after Attaching Files to Records.</p>",
             "url": "https://github.com/rails/rails/pull/55310",
             "title": "Add querying section to ActiveStorage guides",
@@ -80,6 +69,17 @@
             "author": {
                 "name": "tsuruby",
                 "url": "https://github.com/tsuruby"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3079883?u=a99c7ff87591be21ec012f647e25dbdff7635966&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The section \"Testing Enqueued Emails\" contained two duplicate examples. This removes one of them.</p>\n<p dir=\"auto\">See <a href=\"https://edgeguides.rubyonrails.org/testing.html#testing-enqueued-emails\" rel=\"nofollow\">https://edgeguides.rubyonrails.org/testing.html#testing-enqueued-emails</a></p>",
+            "url": "https://github.com/rails/rails/pull/55301",
+            "title": "Remove duplicate example in guides/testing",
+            "date_modified": "2025-07-11T15:00:55.000Z",
+            "date_published": "2025-07-06T09:05:26.000Z",
+            "author": {
+                "name": "drjayvee",
+                "url": "https://github.com/drjayvee"
             }
         },
         {
