@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25246024?u=45bc5dab950868e9945f9455cff98e7196ef5a27&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I found the explanation about instance-level methods defined by <code class=\"notranslate\">cattr_accessor</code> a bit confusing and error-prone, especially the terminology of \"changing\" and \"overriding\" values.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I rewrote a segment to make it explicit that class variables are in use, and the implication of changing their value.</p>\n<p dir=\"auto\">I rewrote the \"for example\" part very slightly to make it focus more on the example that is to follow, than on the explanation about class variables.</p>\n<p dir=\"auto\">[ci skip]</p>",
             "url": "https://github.com/rails/rails/pull/55328",
             "title": "Clarification about instance-level methods defined by cattr_accessor",
-            "date_modified": "2025-07-14T07:44:49.000Z",
+            "date_modified": "2025-07-14T15:57:03.000Z",
             "date_published": "2025-07-13T20:26:29.000Z",
             "author": {
                 "name": "flavio-b",
