@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28561?u=095779352a57f75e734987829f3f67a10e5780ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55333",
+            "title": "Fix typo in Getting Started guide [ci skip]",
+            "date_modified": "2025-07-14T17:29:19.000Z",
+            "date_published": "2025-07-14T17:29:12.000Z",
+            "author": {
+                "name": "p8",
+                "url": "https://github.com/p8"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #54882.\">Fixes</span>: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2976017906\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54882\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/54882/hovercard\" href=\"https://github.com/rails/rails/issues/54882\">#54882</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jarl-dk/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jarl-dk\">@jarl-dk</a></p>",
             "url": "https://github.com/rails/rails/pull/55332",
             "title": "Clearing optional CPK in belongs_to should preserve PK",
@@ -209,17 +220,6 @@
             "title": "Deprecate implicit size attribute when maxlength is specified on text fields",
             "date_modified": "2025-07-10T14:31:13.000Z",
             "date_published": "2025-07-01T06:43:18.000Z",
-            "author": {
-                "name": "kch",
-                "url": "https://github.com/kch"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8216?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Mailer previews use iframes requiring multiple requests to display a single email: one for the header/controls, one for the message body, and additional requests when switching between HTML/plain text formats.</p>\n<p dir=\"auto\">When email content contains dynamic data (timestamps, random values, database queries), each request generates a new email object with different values, causing inconsistencies where the subject line shows one random value while the body shows another.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds email object caching to mailer previews to ensure consistent content across all requests for the same preview session. Changes include:</p>\n<ul dir=\"auto\">\n<li>Cache generated email objects using preview object_id as key and reuse across requests</li>\n<li>Add email_id parameter to part selection URLs and iframe src to maintain cache consistency</li>\n<li>Update existing tests to handle additional URL parameters and verify email_id presence</li>\n<li>Add comprehensive test coverage for email persistence functionality</li>\n</ul>\n<p dir=\"auto\">The caching is transparent to users. Previews work exactly as before but now show consistent dynamic content across format switches and iframe loads.</p>\n<p dir=\"auto\">Instead of one squashed commit, I kept each commit logically separate and self-explanatory. I hope it aids in review. I can squash for merge.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">The caching uses a class-level simple hash without size limits or expiration since mailer previews are primarily used in development environments with limited concurrent usage. I made an optional <a href=\"https://github.com/kch/rails/commit/80b555326ecd78545af2594ce9aa15874a495bb5\">LRU cache implementation</a> but deemed unnecessary given the usage pattern. Let me know if it's warranted and I'll pull it in.</p>\n<p dir=\"auto\">The cache prevents potential memory accumulation in long-running development sessions, but this is acceptable given the development-focused nature of mailer previews.</p>",
-            "url": "https://github.com/rails/rails/pull/55274",
-            "title": "Ensure consistent mailer preview content across iframe requests",
-            "date_modified": "2025-07-10T14:28:17.000Z",
-            "date_published": "2025-07-01T05:47:47.000Z",
             "author": {
                 "name": "kch",
                 "url": "https://github.com/kch"
