@@ -119,7 +119,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/445386?u=23fc9bf955ae5b7ab0d7f13cae520861d8c5b13a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the current Active Storage guide currently offers no guidance on querying records based on attachment metadata. This gap leads developers to trial-and-error or external sources to figure out the correct join syntax.</p>\n<p dir=\"auto\">Adding an official “Querying” section will streamline discovery and promote best practices directly in the Rails Guides.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes guides/source/active_storage_overview.md by inserting a new <em>Querying</em> subsection immediately after Attaching Files to Records.</p>",
             "url": "https://github.com/rails/rails/pull/55310",
             "title": "Add querying section to ActiveStorage guides",
-            "date_modified": "2025-07-11T19:08:27.000Z",
+            "date_modified": "2025-07-16T14:59:55.000Z",
             "date_published": "2025-07-09T00:14:02.000Z",
             "author": {
                 "name": "thiagodiniz",
