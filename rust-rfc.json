@@ -6,10 +6,10 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/517608?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the set of Unicode character which can be used in identifiers with <a href=\"https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AID_Compat_Math_Start%3DYes%3A%5D&amp;g=&amp;i=idtype\" rel=\"nofollow\">ID_Compat_Math_Start</a> and <a href=\"https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AID_Compat_Math_Continue%3DYes%3A%5D&amp;g=&amp;i=idtype\" rel=\"nofollow\">ID_Compat_Math_Continue</a>, most notable: ∇, ∂, ∞, subscripts ⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ and superscripts ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎.</p>\n<p dir=\"auto\">This can be a boon to implementers of scientific concepts as they can write for example <code class=\"notranslate\">let ∇E₁₂ = 0.5;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Danvil/rfcs/tree/compat_math_identifiers/text/0000-compat-math-identifiers.md\">Rendered</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/517608?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the set of Unicode character which can be used in identifiers with <a href=\"https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AID_Compat_Math_Start%3DYes%3A%5D&amp;g=&amp;i=idtype\" rel=\"nofollow\">ID_Compat_Math_Start</a> and <a href=\"https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AID_Compat_Math_Continue%3DYes%3A%5D&amp;g=&amp;i=idtype\" rel=\"nofollow\">ID_Compat_Math_Continue</a>, most notable: ∇, ∂, ∞, subscripts ⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ and superscripts ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎.</p>\n<p dir=\"auto\">This can be a boon to implementers of scientific concepts as they can write for example <code class=\"notranslate\">let ∇E₁₂ = 0.5;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Danvil/rfcs/blob/compat_math_identifiers/text/0000-compat-math-identifiers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3840",
             "title": "RFC: ID_Compat_Math characters allowed in identifiers",
-            "date_modified": "2025-07-16T22:47:46.000Z",
+            "date_modified": "2025-07-16T23:53:39.000Z",
             "date_published": "2025-07-16T19:17:40.000Z",
             "author": {
                 "name": "Danvil",
