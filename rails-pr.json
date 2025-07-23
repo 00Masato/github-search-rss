@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67093?u=ae38721048300d0786fffecd87c5651a4ab67c35&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This adds some context around where the route goes and why it's a singular route to address questions that have come up recently.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">It wasn't clear where the unsubscribe route should be added and why it's a singular route. I've added some context in the code block and a note afterwards about why this is a singular resource.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">A few recent questions that this addresses:</p>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3230629353\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55337\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55337/hovercard\" href=\"https://github.com/rails/rails/pull/55337\">#55337</a><br>\n<a href=\"https://www.reddit.com/r/rails/comments/1m7j2sg/getting_started_guide_unsubscribe/\" rel=\"nofollow\">https://www.reddit.com/r/rails/comments/1m7j2sg/getting_started_guide_unsubscribe/</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55393",
+            "title": "[RF-DOCS] Clarify unsubscribe route",
+            "date_modified": "2025-07-23T19:58:20.000Z",
+            "date_published": "2025-07-23T19:57:58.000Z",
+            "author": {
+                "name": "excid3",
+                "url": "https://github.com/excid3"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">and also fix incorrect comment for different test method</p>\n<p dir=\"auto\">This method is intended to make a subsequent query hit the rescue inside<br>\n<code class=\"notranslate\">with_raw_connection</code>, but this was only actually happening with<br>\n<code class=\"notranslate\">mysql2</code> and <code class=\"notranslate\">trilogy</code>. The <code class=\"notranslate\">pg</code> adapter was not being correctly put<br>\ninto a state where the <code class=\"notranslate\">SELECT</code> in the test would need to retry.</p>\n<p dir=\"auto\">This commit fixes the issue by using pg_terminate_backend instead of<br>\npg_cancel_backend. Now when the test is run with <code class=\"notranslate\">pg</code> it correctly hits<br>\nthe rescue in <code class=\"notranslate\">with_raw_connection</code>.</p>",
             "url": "https://github.com/rails/rails/pull/55392",
             "title": "Fix kill_connection_from_server for PG test",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "flavio-b",
                 "url": "https://github.com/flavio-b"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/445386?u=23fc9bf955ae5b7ab0d7f13cae520861d8c5b13a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the current Active Storage guide currently offers no guidance on querying records based on attachment metadata. This gap leads developers to trial-and-error or external sources to figure out the correct join syntax.</p>\n<p dir=\"auto\">Adding an official “Querying” section will streamline discovery and promote best practices directly in the Rails Guides.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes guides/source/active_storage_overview.md by inserting a new <em>Querying</em> subsection immediately after Attaching Files to Records.</p>",
-            "url": "https://github.com/rails/rails/pull/55310",
-            "title": "Add querying section to ActiveStorage guides",
-            "date_modified": "2025-07-20T00:07:23.000Z",
-            "date_published": "2025-07-09T00:14:02.000Z",
-            "author": {
-                "name": "thiagodiniz",
-                "url": "https://github.com/thiagodiniz"
             }
         }
     ]
