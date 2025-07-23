@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/174509?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/shepmaster/rfcs/blob/demote-x86_64-apple-darwin/text/3841-demote-x86_64-apple-darwin.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3841",
+            "title": "Demote `x86_64-apple-darwin` from Tier 1 to Tier 2 with host tools",
+            "date_modified": "2025-07-23T13:45:16.000Z",
+            "date_published": "2025-07-23T13:31:31.000Z",
+            "author": {
+                "name": "shepmaster",
+                "url": "https://github.com/shepmaster"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/517608?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC extends the set of Unicode character which can be used in identifiers with <a href=\"https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AID_Compat_Math_Start%3DYes%3A%5D&amp;g=&amp;i=idtype\" rel=\"nofollow\">ID_Compat_Math_Start</a> and <a href=\"https://util.unicode.org/UnicodeJsps/list-unicodeset.jsp?a=%5B%3AID_Compat_Math_Continue%3DYes%3A%5D&amp;g=&amp;i=idtype\" rel=\"nofollow\">ID_Compat_Math_Continue</a>, most notable: ∇, ∂, ∞, subscripts ⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻⁼⁽⁾ and superscripts ₀₁₂₃₄₅₆₇₈₉₊₋₌₍₎.</p>\n<p dir=\"auto\">This can be a boon to implementers of scientific concepts as they can write for example <code class=\"notranslate\">let ∇E₁₂ = 0.5;</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Danvil/rfcs/blob/compat_math_identifiers/text/3840-compat-math-identifiers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3840",
             "title": "RFC: ID_Compat_Math characters allowed in identifiers",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "vigna",
                 "url": "https://github.com/vigna"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9914262?u=6d397d57ea18944924ce4d9c107b7dad87ff0c0e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">std::num::NonZero&lt;T&gt;</code> type allows non-zero integer semantics to be clearly expressed. Yet this<br>\ntype is only seamlessly usable if all APIs with non-zero semantics use this type, due to required<br>\nto/from conversion at any API boundary that differs in its use of <code class=\"notranslate\">NonZero</code>.</p>\n<p dir=\"auto\">The burden of these conversions is especially heavy in tests and examples. This RFC proposes new<br>\ncoercions to facilitate implicit conversion to <code class=\"notranslate\">NonZero</code> from integral constants, simplifying usage<br>\nin tests and examples, where succinctness and readability are paramount.</p>\n<p dir=\"auto\"><a href=\"https://github.com/sandersaares/rust-lang-rfcs/blob/u/sasaares/const-nonzero-ergonomics/text/3786-const-nonzero-ergonomics.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3786",
-            "title": "RFC: const ergonomics for NonZero<T>",
-            "date_modified": "2025-07-10T05:45:37.000Z",
-            "date_published": "2025-03-07T09:22:17.000Z",
-            "author": {
-                "name": "sandersaares",
-                "url": "https://github.com/sandersaares"
             }
         }
     ]
