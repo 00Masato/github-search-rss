@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
+            "url": "https://github.com/rails/rails/pull/55491",
+            "title": "Merge security patches in 8-0-stable",
+            "date_modified": "2025-08-14T11:51:20.000Z",
+            "date_published": "2025-08-14T11:07:37.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14981592?u=11406fb0121b15a93b3305388377a57b4d9c96f9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"rubocop --parallel\nError: `Rails` cops have been extracted to the `rubocop-rails` gem.\n(obsolete configuration found in .rubocop.yml, please update it)\"><pre class=\"notranslate\"><code class=\"notranslate\">rubocop --parallel\nError: `Rails` cops have been extracted to the `rubocop-rails` gem.\n(obsolete configuration found in .rubocop.yml, please update it)\n</code></pre></div>\n<p dir=\"auto\">Like here:</p>\n<ul dir=\"auto\">\n<li><a href=\"https://buildkite.com/rails/rails/builds/120729/steps/canvas?sid=0198a576-b57c-485b-803a-150b40ee41df\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/120729/steps/canvas?sid=0198a576-b57c-485b-803a-150b40ee41df</a></li>\n<li><a href=\"https://buildkite.com/rails/rails/builds/120724/steps/canvas?sid=0198a53d-2d42-49b2-8b35-97c2395f01b2\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/120724/steps/canvas?sid=0198a53d-2d42-49b2-8b35-97c2395f01b2</a></li>\n</ul>\n<p dir=\"auto\">This is fixed since RuboCop 1.74 with <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2897960171\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rubocop/rubocop/issues/13954\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rubocop/rubocop/pull/13954/hovercard\" href=\"https://github.com/rubocop/rubocop/pull/13954\">rubocop/rubocop#13954</a> but I can't tell why it would start only now.</p>\n<p dir=\"auto\"><code class=\"notranslate\">rubocop-md</code> needs a bump as well to silence some deprecation about a renamed cop.</p>\n<p dir=\"auto\">Other changes are what rubocop now wants.</p>",
             "url": "https://github.com/rails/rails/pull/55490",
             "title": "Bump RuboCop to fix some transient failures in CI",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "PaceHeartLater",
                 "url": "https://github.com/PaceHeartLater"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23732665?u=bfc04f83d82dc0dcf2885f0318ddb7f804c6296f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55398",
-            "title": "feat: ability to provide a custom error handler to MemCacheStore",
-            "date_modified": "2025-07-28T13:32:51.000Z",
-            "date_published": "2025-07-24T16:07:04.000Z",
-            "author": {
-                "name": "nickamorim",
-                "url": "https://github.com/nickamorim"
             }
         }
     ]
