@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1218868?u=2205d40bade58ddc23b3f2ee7ee42774376cfd8f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because [REPLACE ME]</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55512",
+            "title": "Add NumberHelper#number_from_delimited",
+            "date_modified": "2025-08-19T11:59:12.000Z",
+            "date_published": "2025-08-19T11:57:23.000Z",
+            "author": {
+                "name": "matteeyah",
+                "url": "https://github.com/matteeyah"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Markdown has become the formatting language of AI. We should make it easier for folks to format any return as markdown.</p>",
             "url": "https://github.com/rails/rails/pull/55511",
             "title": "Add markdown mime type and renderer",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "yokomaru",
                 "url": "https://github.com/yokomaru"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/993934?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Recently, I was starting a new project and got the familiar error:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"$ rails new blog --database=postgres\nExpected '--database' to be one of mysql, trilogy, postgresql, sqlite3, mariadb-mysql, mariadb-trilogy; got postgres\"><pre class=\"notranslate\">$ rails new blog --database=postgres\nExpected <span class=\"pl-s\"><span class=\"pl-pds\">'</span>--database<span class=\"pl-pds\">'</span></span> to be one of mysql, trilogy, postgresql, sqlite3, mariadb-mysql, mariadb-trilogy<span class=\"pl-k\">;</span> got postgres</pre></div>\n<p dir=\"auto\">This time instead of cursing at the screen, I took a note to come back to this and submit a PR. It's a small PR, but in the spirit of Ruby it should contribute to the developer happiness.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request allows <code class=\"notranslate\">postgres</code> as an alias for <code class=\"notranslate\">postgresql</code> in rails generators.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55406",
-            "title": "Allow `postgres` as an alias for `postgresql` in rails generators",
-            "date_modified": "2025-08-19T10:27:38.000Z",
-            "date_published": "2025-07-25T21:22:08.000Z",
-            "author": {
-                "name": "aliismayilov",
-                "url": "https://github.com/aliismayilov"
             }
         }
     ]
