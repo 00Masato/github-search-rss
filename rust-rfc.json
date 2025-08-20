@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16103364?u=09ef08026fda09489818ee682ecd4a8663e89af3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add <code class=\"notranslate\">repr(ordered_fields)</code> and provide a migration path to switch users from <code class=\"notranslate\">repr(C)</code> to <code class=\"notranslate\">repr(ordered_fields)</code>, then change the meaning of <code class=\"notranslate\">repr(C)</code> in the next edition.</p>\n<p dir=\"auto\">This RFC is meant to be an MVP, and any extensions (for example, adding more <code class=\"notranslate\">repr</code>s) are not in scope. This is done to make it as easy as possible to accept this RFC and make progress on the issue of <code class=\"notranslate\">repr(C)</code> serving two opposing roles.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RustyYato/rfcs/blob/repr_ordered_fields/text/3845-repr-ordered-fields.md\">Rendered</a></p>\n<p dir=\"auto\">To avoid endless bikeshedding, I'll make a poll if this RFC is accepted with all the potential names for the new <code class=\"notranslate\">repr</code>. If you have a new name, I'll add it to the list of names in the unresolved questions section, and will include it in the poll.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3845",
             "title": "repr(ordered_fields)",
-            "date_modified": "2025-08-18T23:04:46.000Z",
+            "date_modified": "2025-08-20T16:31:54.000Z",
             "date_published": "2025-08-05T16:01:05.000Z",
             "author": {
                 "name": "RustyYato",
@@ -116,10 +116,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/1909-unsized-rvalues.md\">Original RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">New RFC</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/1909-unsized-rvalues.md\">Original RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">New RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3829",
             "title": "de-RFC: Remove unsized_locals",
-            "date_modified": "2025-08-19T20:49:36.000Z",
+            "date_modified": "2025-08-20T16:32:06.000Z",
             "date_published": "2025-06-02T18:40:20.000Z",
             "author": {
                 "name": "Noratrieb",
@@ -157,17 +157,6 @@
             "author": {
                 "name": "veluca93",
                 "url": "https://github.com/veluca93"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10580822?u=2905c8dd9367f6bf4ab8fc2cf62ae4acbb01786a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/dpaoliello/rfcs/blob/aarch64tier1/text/3817-promote-aarch64-pc-windows-msvc-to-tier-1.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3817",
-            "title": "RFC: Promote aarch64-pc-windows-msvc to Tier 1",
-            "date_modified": "2025-08-17T23:03:41.000Z",
-            "date_published": "2025-05-22T19:55:27.000Z",
-            "author": {
-                "name": "dpaoliello",
-                "url": "https://github.com/dpaoliello"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "madsmtm",
                 "url": "https://github.com/madsmtm"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19656993?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding ergonomic <code class=\"notranslate\">input!</code>, <code class=\"notranslate\">inputln!</code> and may <code class=\"notranslate\">try_input!</code> macros to Rust for reading user input, inspired by Python’s <code class=\"notranslate\">input()</code>.<br>\nThese macros simplify input handling, improve beginner experience, and provide clear error handling for EOF, parse, and I/O errors.</p>\n<p dir=\"auto\">The goal is to make Rust more approachable for newcomers and teaching.</p>\n<p dir=\"auto\">Previous discussions:</p>\n<p dir=\"auto\">2014</p>\n<ul dir=\"auto\">\n<li><a href=\"https://internals.rust-lang.org/t/pre-rfc-input-macro/527\" rel=\"nofollow\">Pre-RFC: input! macro | forum internals.rust-lang.org</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/67\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/67/hovercard\">User-friendly input macros #67</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/issues/768\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/768/hovercard\">Simplify Standard Input (Issue #768)</a></li>\n<li><a href=\"https://users.rust-lang.org/t/is-there-appropriate-macro-for-simplified-console-input/1000\" rel=\"nofollow\">Is there appropriate macro for simplified console input? | forum users.rust-lang.org</a></li>\n<li><a href=\"https://users.rust-lang.org/t/a-small-marco-to-read-data-filed-from-lines/1164\" rel=\"nofollow\">A small marco to read data filed from Lines | forum users.rust-lang.org</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/issues/1142\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/1142/hovercard\">New API for easier value reading from stdin #1142</a></li>\n<li><a href=\"https://internals.rust-lang.org/t/add-plain-simple-way-in-the-standard-library-for-reading-values-from-stdin/10846\" rel=\"nofollow\">Add plain-simple way (in the standard library) for reading values from <code class=\"notranslate\">stdin</code>? | forum internals.rust-lang.org</a></li>\n<li><a href=\"https://github.com/rust-lang/rust/pull/75435\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/75435/hovercard\">Add <code class=\"notranslate\">std::io::input</code> simple input function. rust#75435</a></li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3183\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3183/hovercard\">[Draft] RFC: Console Input Simplified #3183</a> (related RFC that additionally proposes scan macros)</li>\n<li><a href=\"https://github.com/rust-lang/rfcs/pull/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\">RFC: Add std::io::inputln() #3196</a></li>\n<li><a href=\"https://internals.rust-lang.org/t/a-read-macro-for-std-io/15950\" rel=\"nofollow\">A read!() macro for std::io? | forum internals.rust-lang.org</a></li>\n<li><a href=\"https://internals.rust-lang.org/t/feature-request-scan-macro/21027\" rel=\"nofollow\">Feature Request: <code class=\"notranslate\">scan!</code> macro | forum internals.rust-lang.org</a></li>\n<li><a href=\"https://users.rust-lang.org/t/simple-way-to-read-input-from-the-terminal-stdio/129997\" rel=\"nofollow\">Simple way to read input from the terminal (stdio) | forum users.rust-lang.org</a></li>\n</ul>\n<p dir=\"auto\">2025</p>\n<p dir=\"auto\">This RFC is a compilation of comments and feedback provided on previous RFCs, especially RFC <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1054688416\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3196\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3196/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3196\">#3196</a> .</p>\n<p dir=\"auto\"><a href=\"https://github.com/Phosphorus-M/rfcs/blob/input-utilities/text/0000-input-macros.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3799",
+            "title": "RFC: input macros",
+            "date_modified": "2025-08-14T02:10:31.000Z",
+            "date_published": "2025-04-19T05:00:28.000Z",
+            "author": {
+                "name": "Phosphorus-M",
+                "url": "https://github.com/Phosphorus-M"
             }
         }
     ]
