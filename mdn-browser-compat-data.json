@@ -6,10 +6,21 @@
     "description": "mdn/browser-compat-data update data on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286386?u=bc4894b945491e0834d2306dade7fef748ddf698&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<ul dir=\"auto\">\n<li>Added firefox support for text autospace</li>\n<li>Added note about what is actually supported</li>\n<li>Added flag</li>\n</ul>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<ul dir=\"auto\">\n<li>Tested in Firefox Nightly 144.0a1 (2025-08-25) parses but no effect</li>\n</ul>\n<h4 dir=\"auto\">Related issues</h4>\n<ul dir=\"auto\">\n<li>Content PR - coming soon</li>\n<li><a href=\"https://github.com/mdn/data/pull/1005\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/data/pull/1005/hovercard\">Data PR</a></li>\n<li>Firefox Release Note PR - coming soon</li>\n</ul>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/27672",
+            "title": "added firefox release info",
+            "date_modified": "2025-08-26T13:23:00.000Z",
+            "date_published": "2025-08-26T13:22:30.000Z",
+            "author": {
+                "name": "dletorey",
+                "url": "https://github.com/dletorey"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=1185d4fc45f5ff4c4a592b30a4dd2bb5cd1b7128&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is a bit of a test PR to see if we could add spec_urls everywhere (especially for behavioral sub features).<br>\nSome things came up where we should probably agree on spec_url consistency for a few common sub features:</p>\n<ul dir=\"auto\">\n<li>worker_support</li>\n<li>iterable sub features (forEach, keys, values, iterator, etc)</li>\n<li>secure_context_required<br>\nI decided to use the spec_url for the interface itself, happy to hear other thoughts.</li>\n</ul>\n<p dir=\"auto\">Also, I think when a sub aspect of e.g. a method is described then it is okay to link to the same spec section as the method. So, basically the sub feature gets the same spec_url as the parent feature.</p>\n<p dir=\"auto\">I marked standard_track false for a few things: CSSPrimitiveValue, CSSValue, CSSValueList. Doesn't look like these will be going anywhere.</p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/27671",
             "title": "Add more spec_urls; set some standard_tracks to false (APIs A-C)",
-            "date_modified": "2025-08-26T13:10:52.000Z",
+            "date_modified": "2025-08-26T13:11:31.000Z",
             "date_published": "2025-08-26T13:10:28.000Z",
             "author": {
                 "name": "Elchi3",
@@ -17,21 +28,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286386?u=bc4894b945491e0834d2306dade7fef748ddf698&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<ul dir=\"auto\">\n<li>Added firefox support for text autospace</li>\n<li>Added note about what is actually supported</li>\n<li>Added flag</li>\n</ul>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<ul dir=\"auto\">\n<li>Tested in Firefox Nightly 144.0a1 (2025-08-25) parses but no effect</li>\n</ul>\n<h4 dir=\"auto\">Related issues</h4>\n<ul dir=\"auto\">\n<li>Content PR - coming soon</li>\n<li><a href=\"https://github.com/mdn/data/pull/1005\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/data/pull/1005/hovercard\">Data PR</a></li>\n<li>Firefox Release Note PR - coming soon</li>\n</ul>",
-            "url": "https://github.com/mdn/browser-compat-data/pull/27670",
-            "title": "Added firefox support for text autospace",
-            "date_modified": "2025-08-26T12:51:45.000Z",
-            "date_published": "2025-08-26T12:50:49.000Z",
-            "author": {
-                "name": "dletorey",
-                "url": "https://github.com/dletorey"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/194820?u=16f166a3ba214c8dd3751fe0b302b4849e0ec0fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">This adds a new <code class=\"notranslate\">ImageData</code> constructor argument type (<code class=\"notranslate\">Float16</code>).<br>\nAlready added to MDN: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3305851936\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/40680\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/40680/hovercard\" href=\"https://github.com/mdn/content/pull/40680\">mdn/content#40680</a></p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<p dir=\"auto\">In the browser console</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"\nnew ImageData(new Float16Array(4), 1, 1, {pixelFormat:&quot;rgba-float16&quot;})\"><pre class=\"notranslate\"><code class=\"notranslate\">\nnew ImageData(new Float16Array(4), 1, 1, {pixelFormat:\"rgba-float16\"})\n</code></pre></div>\n<p dir=\"auto\">Further links a part of the related issue and the related MDN changes: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3294051118\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/40639\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/40639/hovercard\" href=\"https://github.com/mdn/content/issues/40639\">mdn/content#40639</a></p>\n<h4 dir=\"auto\">Related issues</h4>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #27547.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3307186465\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/27547\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/27547/hovercard?comment_id=3214471118&amp;comment_type=issue_comment\" href=\"https://github.com/mdn/browser-compat-data/issues/27547#issuecomment-3214471118\">#27547 (comment)</a></p>\n<p dir=\"auto\">Documents <a href=\"https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface\" rel=\"nofollow\">https://html.spec.whatwg.org/multipage/imagebitmap-and-animations.html#the-imagedata-interface</a></p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/27661",
             "title": "Chrome 137 adds `pixelFormat` option to `ImageData()` (float16)",
-            "date_modified": "2025-08-26T12:17:11.000Z",
+            "date_modified": "2025-08-26T13:28:44.000Z",
             "date_published": "2025-08-24T16:33:24.000Z",
             "author": {
                 "name": "cmahnke",
