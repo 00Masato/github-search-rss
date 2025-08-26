@@ -6,43 +6,175 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132615559?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>got-scraping-client is a lightweight and efficient tool for web scraping tasks using the popular Got HTTP client. It simplifies data extraction from web pages by providing a straightforward API and built-in support for handling common challenges like pagination and rate limiting.</div>",
-            "url": "https://github.com/sazzadhossainmilon/got-scraping-client",
-            "title": "sazzadhossainmilon/got-scraping-client: got-scraping-client is a lightweight and efficient tool for web scraping tasks using the popular Got HTTP client. It simplifies data extraction from web pages by providing a straightforward API and built-in support for handling common challenges like pagination and rate limiting.",
-            "date_modified": "2025-08-26T09:01:31.000Z",
-            "date_published": "2025-04-04T23:42:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/173033553?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A flexible, lightweight React-based viewer for PDFs and images with zoom, rotation, brightness/contrast adjustments, and side-by-side comparison, optimized for easy integration and customization.</div>",
+            "url": "https://github.com/Optimal2/OpenDocViewer",
+            "title": "Optimal2/OpenDocViewer: A flexible, lightweight React-based viewer for PDFs and images with zoom, rotation, brightness/contrast adjustments, and side-by-side comparison, optimized for easy integration and customization.",
+            "date_modified": "2025-08-26T10:01:35.000Z",
+            "date_published": "2025-03-23T11:33:55.000Z",
             "author": {
-                "name": "sazzadhossainmilon",
-                "url": "https://github.com/sazzadhossainmilon"
+                "name": "Optimal2",
+                "url": "https://github.com/Optimal2"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/151859229?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and accessible React accordion component with smooth animations.</div>",
-            "url": "https://github.com/vuhuuu11/react-accordion",
-            "title": "vuhuuu11/react-accordion: A lightweight and accessible React accordion component with smooth animations.",
-            "date_modified": "2025-08-26T09:00:51.000Z",
-            "date_published": "2025-04-04T12:49:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42973155?u=37878d945ff1b50666d7b05ceb6d67f44b299327&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>💻一款简洁实用轻量级的本地AI对话客户端，采用Tauri2.0和Next.js编写  A simple, practical, and lightweight local AI chat client, written in Tauri 2.0 &amp; Next.js.</div>",
+            "url": "https://github.com/kamjin3086/chatless",
+            "title": "kamjin3086/chatless: 💻一款简洁实用轻量级的本地AI对话客户端，采用Tauri2.0和Next.js编写  A simple, practical, and lightweight local AI chat client, written in Tauri 2.0 & Next.js.",
+            "date_modified": "2025-08-26T09:59:47.000Z",
+            "date_published": "2025-07-31T05:34:46.000Z",
             "author": {
-                "name": "vuhuuu11",
-                "url": "https://github.com/vuhuuu11"
+                "name": "kamjin3086",
+                "url": "https://github.com/kamjin3086"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/137229185?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>RiftJS: A lightweight Node.js wrapper for the Riot Games API, providing easy access to League of Legends game data.</div>",
-            "url": "https://github.com/Jonatansilx/RiftJS",
-            "title": "Jonatansilx/RiftJS: RiftJS: A lightweight Node.js wrapper for the Riot Games API, providing easy access to League of Legends game data.",
-            "date_modified": "2025-08-26T09:00:22.000Z",
-            "date_published": "2025-04-03T17:48:22.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8504419?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Linked Data Server and Proxy</div>",
+            "url": "https://github.com/zazuko/trifid",
+            "title": "zazuko/trifid: Lightweight Linked Data Server and Proxy",
+            "date_modified": "2025-08-26T09:59:24.000Z",
+            "date_published": "2016-12-29T13:57:19.000Z",
             "author": {
-                "name": "Jonatansilx",
-                "url": "https://github.com/Jonatansilx"
+                "name": "zazuko",
+                "url": "https://github.com/zazuko"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73129404?u=4db56df3c09d85a7ecfc84f5adba927cfe7710c6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Modern React 19 component library with TypeScript, Vite, and OXC linter. Lightweight, tree-shakable, and ready for production.</div>",
+            "url": "https://github.com/o-datsiura/uixio",
+            "title": "o-datsiura/uixio: 🚀 Modern React 19 component library with TypeScript, Vite, and OXC linter. Lightweight, tree-shakable, and ready for production.",
+            "date_modified": "2025-08-26T09:58:25.000Z",
+            "date_published": "2025-08-04T15:21:45.000Z",
+            "author": {
+                "name": "o-datsiura",
+                "url": "https://github.com/o-datsiura"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/186132092?u=a2361e4e046db33488a136d34670cb1a719e1dba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔐 A lightweight and easy-to-use OTP (One-Time Password) generator and manager built with Node.js. Supports numeric OTPs for login/signup verification and TOTP (Google Authenticator style) for 2FA.</div>",
+            "url": "https://github.com/tsxr1ck/otpify",
+            "title": "tsxr1ck/otpify: 🔐 A lightweight and easy-to-use OTP (One-Time Password) generator and manager built with Node.js. Supports numeric OTPs for login/signup verification and TOTP (Google Authenticator style) for 2FA.",
+            "date_modified": "2025-08-26T09:57:01.000Z",
+            "date_published": "2025-08-25T08:55:57.000Z",
+            "author": {
+                "name": "tsxr1ck",
+                "url": "https://github.com/tsxr1ck"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/158364296?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>HyCom API is a lightweight TypeScript client that simplifies access to the HyCom public API, allowing users to easily fetch authors, posts, and site statistics. 🚀 With its straightforward functions, you can quickly generate QR codes and explore popular tags without hassle. 🐙</div>",
+            "url": "https://github.com/luanreis28aa/hycom-api",
+            "title": "luanreis28aa/hycom-api: HyCom API is a lightweight TypeScript client that simplifies access to the HyCom public API, allowing users to easily fetch authors, posts, and site statistics. 🚀 With its straightforward functions, you can quickly generate QR codes and explore popular tags without hassle. 🐙",
+            "date_modified": "2025-08-26T09:56:40.000Z",
+            "date_published": "2025-05-23T01:55:12.000Z",
+            "author": {
+                "name": "luanreis28aa",
+                "url": "https://github.com/luanreis28aa"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69126233?u=5dc258786c6d9ec20e69b1b605685a5b508532ad&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for TypeScript and JavaScript, `@adam-rocska/timeout` creates a Promise that resolves after a set time, perfect for managing delays in your async workflows. Check it out on GitHub for easy integration into your projects! 🐙✨</div>",
+            "url": "https://github.com/thegamer49520/timeout-typescript",
+            "title": "thegamer49520/timeout-typescript: A lightweight utility for TypeScript and JavaScript, `@adam-rocska/timeout` creates a Promise that resolves after a set time, perfect for managing delays in your async workflows. Check it out on GitHub for easy integration into your projects! 🐙✨",
+            "date_modified": "2025-08-26T09:56:32.000Z",
+            "date_published": "2025-05-23T01:03:17.000Z",
+            "author": {
+                "name": "thegamer49520",
+                "url": "https://github.com/thegamer49520"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/119518330?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀</div>",
+            "url": "https://github.com/ratul3429/bun-microservice-gateways",
+            "title": "ratul3429/bun-microservice-gateways: This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀",
+            "date_modified": "2025-08-26T09:54:18.000Z",
+            "date_published": "2025-05-22T09:12:38.000Z",
+            "author": {
+                "name": "ratul3429",
+                "url": "https://github.com/ratul3429"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49471898?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight JavaScript overlay progress bar as a singleton utility</div>",
+            "url": "https://github.com/Vlad345345/bs-progressbar",
+            "title": "Vlad345345/bs-progressbar: Lightweight JavaScript overlay progress bar as a singleton utility",
+            "date_modified": "2025-08-26T09:51:59.000Z",
+            "date_published": "2025-05-21T20:02:38.000Z",
+            "author": {
+                "name": "Vlad345345",
+                "url": "https://github.com/Vlad345345"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197093519?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.</div>",
+            "url": "https://github.com/SamarthKulkarni20/keyed-batched-items-accumulator",
+            "title": "SamarthKulkarni20/keyed-batched-items-accumulator: A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.",
+            "date_modified": "2025-08-26T09:51:15.000Z",
+            "date_published": "2025-05-21T16:16:34.000Z",
+            "author": {
+                "name": "SamarthKulkarni20",
+                "url": "https://github.com/SamarthKulkarni20"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/70700766?u=26e15c7524ed55f23d3b4fa34e7bc3ee0bfef596&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cap is a lightweight, modern open-source CAPTCHA alternative using SHA-256 proof-of-work</div>",
+            "url": "https://github.com/tiagorangel1/cap",
+            "title": "tiagorangel1/cap: Cap is a lightweight, modern open-source CAPTCHA alternative using SHA-256 proof-of-work",
+            "date_modified": "2025-08-26T09:50:08.000Z",
+            "date_published": "2025-01-11T17:35:52.000Z",
+            "author": {
+                "name": "tiagorangel1",
+                "url": "https://github.com/tiagorangel1"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/74963836?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight TypeScript HTTP API client</div>",
+            "url": "https://github.com/Bixoto/api-session-ts",
+            "title": "Bixoto/api-session-ts: Lightweight TypeScript HTTP API client",
+            "date_modified": "2025-08-26T09:48:06.000Z",
+            "date_published": "2025-01-21T14:29:01.000Z",
+            "author": {
+                "name": "Bixoto",
+                "url": "https://github.com/Bixoto"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/148970016?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧈 ButterPop.js - A lightweight (&lt;100KB), zero-dependency toast notification library with 23 beautiful themes. Create smooth, customizable notifications with flexible positioning, progress indicators, and interactive elements. Modern, accessible, and easy to integrate into any project. </div>",
+            "url": "https://github.com/BAHEKARPRANAV/ButterPop.js",
+            "title": "BAHEKARPRANAV/ButterPop.js: 🧈 ButterPop.js - A lightweight (<100KB), zero-dependency toast notification library with 23 beautiful themes. Create smooth, customizable notifications with flexible positioning, progress indicators, and interactive elements. Modern, accessible, and easy to integrate into any project. ",
+            "date_modified": "2025-08-26T09:46:32.000Z",
+            "date_published": "2025-05-16T18:20:51.000Z",
+            "author": {
+                "name": "BAHEKARPRANAV",
+                "url": "https://github.com/BAHEKARPRANAV"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43268197?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight web application for analyzing Steam accounts.</div>",
+            "url": "https://github.com/Kf637/Steam-Account-Reputation-Check",
+            "title": "Kf637/Steam-Account-Reputation-Check: A lightweight web application for analyzing Steam accounts.",
+            "date_modified": "2025-08-26T09:46:30.000Z",
+            "date_published": "2025-08-19T19:35:01.000Z",
+            "author": {
+                "name": "Kf637",
+                "url": "https://github.com/Kf637"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114530840?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)</div>",
+            "url": "https://github.com/usebruno/bruno",
+            "title": "usebruno/bruno: Opensource IDE For Exploring and Testing API's (lightweight alternative to Postman/Insomnia)",
+            "date_modified": "2025-08-26T09:52:47.000Z",
+            "date_published": "2022-09-27T20:51:45.000Z",
+            "author": {
+                "name": "usebruno",
+                "url": "https://github.com/usebruno"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121651952?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>MiniEdu-API is a lightweight school management system API built for managing students, teachers, classes, and academic records. Developed as part of a Full Stack Engineer job task for FlyNest Global PLC.</div>",
             "url": "https://github.com/habibur-pro/MiniEdu-api",
             "title": "habibur-pro/MiniEdu-api: MiniEdu-API is a lightweight school management system API built for managing students, teachers, classes, and academic records. Developed as part of a Full Stack Engineer job task for FlyNest Global PLC.",
-            "date_modified": "2025-08-26T08:59:07.000Z",
+            "date_modified": "2025-08-26T09:43:18.000Z",
             "date_published": "2025-08-26T03:47:38.000Z",
             "author": {
                 "name": "habibur-pro",
@@ -50,179 +182,47 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214794772?u=fbb3899b89f0b1bf3febdedb727a2cc360375667&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>\"A lightweight Node.js server that acts as a middleware for an AI fact-checker. It uses the Gemini API to analyze URLs or text and provides a fact-checking status and explanation in a structured JSON format. Designed to be deployed as a serverless function on platforms like Netlify or Verce</div>",
-            "url": "https://github.com/Patisto/gemini-fact-checker-server",
-            "title": "Patisto/gemini-fact-checker-server: \"A lightweight Node.js server that acts as a middleware for an AI fact-checker. It uses the Gemini API to analyze URLs or text and provides a fact-checking status and explanation in a structured JSON format. Designed to be deployed as a serverless function on platforms like Netlify or Verce",
-            "date_modified": "2025-08-26T08:57:16.000Z",
-            "date_published": "2025-08-25T18:54:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/145249784?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.</div>",
+            "url": "https://github.com/Nikhilkumarseeda/user-crud-server",
+            "title": "Nikhilkumarseeda/user-crud-server: User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.",
+            "date_modified": "2025-08-26T09:43:08.000Z",
+            "date_published": "2025-05-15T02:37:45.000Z",
             "author": {
-                "name": "Patisto",
-                "url": "https://github.com/Patisto"
+                "name": "Nikhilkumarseeda",
+                "url": "https://github.com/Nikhilkumarseeda"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64277277?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility to compare and match names with fuzzy string similarity. It helps in detecting whether two names refer to the same person, even if they are spelled differently, abbreviated, or contain prefixes like Mr., Mrs., Shri, etc.</div>",
-            "url": "https://github.com/nirbhay2005/fuzzy-name-match",
-            "title": "nirbhay2005/fuzzy-name-match: A lightweight utility to compare and match names with fuzzy string similarity. It helps in detecting whether two names refer to the same person, even if they are spelled differently, abbreviated, or contain prefixes like Mr., Mrs., Shri, etc.",
-            "date_modified": "2025-08-26T08:56:35.000Z",
-            "date_published": "2025-08-26T07:51:41.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130097627?u=d152d8784a9105fe19ca6edcbd1e2ef9058d76b8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript framework for building fast, reactive UI.</div>",
+            "url": "https://github.com/Lymore01/leaf",
+            "title": "Lymore01/leaf: A lightweight JavaScript framework for building fast, reactive UI.",
+            "date_modified": "2025-08-26T09:44:18.000Z",
+            "date_published": "2025-08-11T17:35:38.000Z",
             "author": {
-                "name": "nirbhay2005",
-                "url": "https://github.com/nirbhay2005"
+                "name": "Lymore01",
+                "url": "https://github.com/Lymore01"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/200860103?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight local first SQL analytics tool. Get your data 🦆 in a row</div>",
-            "url": "https://github.com/pondpilot/pondpilot",
-            "title": "pondpilot/pondpilot: A lightweight local first SQL analytics tool. Get your data 🦆 in a row",
-            "date_modified": "2025-08-26T08:56:13.000Z",
-            "date_published": "2025-02-26T21:54:21.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168734408?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight library that converts user-defined formulas into SQL or JavaScript.</div>",
+            "url": "https://github.com/laaane16/formulaParser",
+            "title": "laaane16/formulaParser: Lightweight library that converts user-defined formulas into SQL or JavaScript.",
+            "date_modified": "2025-08-26T09:38:04.000Z",
+            "date_published": "2025-03-30T21:48:34.000Z",
             "author": {
-                "name": "pondpilot",
-                "url": "https://github.com/pondpilot"
+                "name": "laaane16",
+                "url": "https://github.com/laaane16"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/157421268?u=0dad9fb92719415714c650f2a39e72edff300e67&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple and lightweight music apps - enjoy app for qortal. Q-Music | Javascript version</div>",
-            "url": "https://github.com/iffinland/Q-Music-Apps",
-            "title": "iffinland/Q-Music-Apps: Simple and lightweight music apps - enjoy app for qortal. Q-Music | Javascript version",
-            "date_modified": "2025-08-26T08:53:12.000Z",
-            "date_published": "2025-06-29T16:22:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103934885?u=8f39b0bb80162f1ec7f44803cf1aa7b9d9a113ff&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, framework-agnostic image uploader component with drag &amp; drop support</div>",
+            "url": "https://github.com/ONtio-js/progressive-image-uploader",
+            "title": "ONtio-js/progressive-image-uploader: A lightweight, framework-agnostic image uploader component with drag & drop support",
+            "date_modified": "2025-08-26T09:38:01.000Z",
+            "date_published": "2025-08-26T09:24:22.000Z",
             "author": {
-                "name": "iffinland",
-                "url": "https://github.com/iffinland"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113027509?u=b49a1cddb2fe616ebad2cabece4f4c0d8e1ea1bc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>“A lightweight Flask API that detects and classifies input types (string, number, float, boolean, email, URL, hash, etc.) with a simple frontend UI for real-time validation.”</div>",
-            "url": "https://github.com/ShAiDSk/input-type-api",
-            "title": "ShAiDSk/input-type-api: “A lightweight Flask API that detects and classifies input types (string, number, float, boolean, email, URL, hash, etc.) with a simple frontend UI for real-time validation.”",
-            "date_modified": "2025-08-26T08:51:49.000Z",
-            "date_published": "2025-08-26T08:49:41.000Z",
-            "author": {
-                "name": "ShAiDSk",
-                "url": "https://github.com/ShAiDSk"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/124462644?u=cdee494c0dda08d752ddeb4b24bd4add1ae839f6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, full-stack chat built for speed and scalability.</div>",
-            "url": "https://github.com/parththirwani/ChatterStack",
-            "title": "parththirwani/ChatterStack: A lightweight, full-stack chat built for speed and scalability.",
-            "date_modified": "2025-08-26T08:45:10.000Z",
-            "date_published": "2025-08-22T07:02:58.000Z",
-            "author": {
-                "name": "parththirwani",
-                "url": "https://github.com/parththirwani"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154813103?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Benchmark and test of different swiper alternatives</div>",
-            "url": "https://github.com/abhinavpv7/swiper-2025",
-            "title": "abhinavpv7/swiper-2025: Benchmark and test of different swiper alternatives",
-            "date_modified": "2025-08-26T08:43:16.000Z",
-            "date_published": "2025-03-16T02:14:59.000Z",
-            "author": {
-                "name": "abhinavpv7",
-                "url": "https://github.com/abhinavpv7"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36508367?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight authorization gate for NestJS with policy classes, ability callbacks, and before/after hooks</div>",
-            "url": "https://github.com/sapientpro/nestjs-gate",
-            "title": "sapientpro/nestjs-gate: Lightweight authorization gate for NestJS with policy classes, ability callbacks, and before/after hooks",
-            "date_modified": "2025-08-26T08:42:36.000Z",
-            "date_published": "2025-08-26T08:33:43.000Z",
-            "author": {
-                "name": "sapientpro",
-                "url": "https://github.com/sapientpro"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/169381528?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Benchmark and test of different swiper alternatives</div>",
-            "url": "https://github.com/djkst2903/swiper-2025",
-            "title": "djkst2903/swiper-2025: Benchmark and test of different swiper alternatives",
-            "date_modified": "2025-08-26T08:41:34.000Z",
-            "date_published": "2025-03-13T16:50:42.000Z",
-            "author": {
-                "name": "djkst2903",
-                "url": "https://github.com/djkst2903"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46499271?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight event-driven microservices package for RabbitMQ in Node.js. Enables asynchronous communication, message publishing and consuming, and scalable event-driven architecture. Perfect for distributed systems and real-time applications.</div>",
-            "url": "https://github.com/ChandanJain009/nodejs-nano-service",
-            "title": "ChandanJain009/nodejs-nano-service: A lightweight event-driven microservices package for RabbitMQ in Node.js. Enables asynchronous communication, message publishing and consuming, and scalable event-driven architecture. Perfect for distributed systems and real-time applications.",
-            "date_modified": "2025-08-26T08:40:51.000Z",
-            "date_published": "2025-03-11T12:37:06.000Z",
-            "author": {
-                "name": "ChandanJain009",
-                "url": "https://github.com/ChandanJain009"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/149811319?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library for managing dark mode, accommodating both user preferences and the system preference.</div>",
-            "url": "https://github.com/react18-tools/nextjs-darkmode",
-            "title": "react18-tools/nextjs-darkmode: A lightweight library for managing dark mode, accommodating both user preferences and the system preference.",
-            "date_modified": "2025-08-26T08:34:48.000Z",
-            "date_published": "2024-06-05T15:34:35.000Z",
-            "author": {
-                "name": "react18-tools",
-                "url": "https://github.com/react18-tools"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1253363?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>WarpDrive is a lightweight data library for web apps — universal, typed, reactive, and ready to scale.</div>",
-            "url": "https://github.com/emberjs/data",
-            "title": "emberjs/data: WarpDrive is a lightweight data library for web apps — universal, typed, reactive, and ready to scale.",
-            "date_modified": "2025-08-26T08:33:59.000Z",
-            "date_published": "2011-12-20T01:50:40.000Z",
-            "author": {
-                "name": "emberjs",
-                "url": "https://github.com/emberjs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/175281194?u=ed6473afcaf8c32bd8ec71cc3afed78c95f8c812&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Node.js package published on NPM to simplify and automate common development tasks, designed for quick integration and ease of use.</div>",
-            "url": "https://github.com/thinakaranmanokaran/Package-Helper",
-            "title": "thinakaranmanokaran/Package-Helper: A lightweight Node.js package published on NPM to simplify and automate common development tasks, designed for quick integration and ease of use.",
-            "date_modified": "2025-08-26T08:33:14.000Z",
-            "date_published": "2024-09-15T06:48:32.000Z",
-            "author": {
-                "name": "thinakaranmanokaran",
-                "url": "https://github.com/thinakaranmanokaran"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/129597179?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Modularity for TypeScript Projects</div>",
-            "url": "https://github.com/softarc-consulting/sheriff",
-            "title": "softarc-consulting/sheriff: Lightweight Modularity for TypeScript Projects",
-            "date_modified": "2025-08-26T08:32:30.000Z",
-            "date_published": "2023-04-01T13:03:55.000Z",
-            "author": {
-                "name": "softarc-consulting",
-                "url": "https://github.com/softarc-consulting"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113836621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Netlify/Decap CMS successor. Fast, lightweight, Git-based headless CMS. Modern UX, first-class i18n support, mobile support + 100s of improvements. Framework-agnostic, open source &amp; free.</div>",
-            "url": "https://github.com/sveltia/sveltia-cms",
-            "title": "sveltia/sveltia-cms: Netlify/Decap CMS successor. Fast, lightweight, Git-based headless CMS. Modern UX, first-class i18n support, mobile support + 100s of improvements. Framework-agnostic, open source & free.",
-            "date_modified": "2025-08-26T08:31:42.000Z",
-            "date_published": "2023-03-06T15:09:55.000Z",
-            "author": {
-                "name": "sveltia",
-                "url": "https://github.com/sveltia"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/149811319?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A highly lightweight utility that automatically detects and makes links clickable in Markdown rendered by react-markdown.</div>",
-            "url": "https://github.com/react18-tools/react-markdown-autolink",
-            "title": "react18-tools/react-markdown-autolink: A highly lightweight utility that automatically detects and makes links clickable in Markdown rendered by react-markdown.",
-            "date_modified": "2025-08-26T08:28:12.000Z",
-            "date_published": "2024-07-12T09:53:44.000Z",
-            "author": {
-                "name": "react18-tools",
-                "url": "https://github.com/react18-tools"
+                "name": "ONtio-js",
+                "url": "https://github.com/ONtio-js"
             }
         }
     ]
