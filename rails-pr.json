@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While implementing something similar in my application I noticed that models already have a cached columns_hash available from ModelSchema without having to go through the schema_cache/connection.</p>",
+            "url": "https://github.com/rails/rails/pull/55567",
+            "title": "Simplify retrieving columns_hash in InsertAll",
+            "date_modified": "2025-08-28T18:40:51.000Z",
+            "date_published": "2025-08-28T18:08:04.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22918438?u=fdc1400b350c4311901a7b8ee1a6463e3b18a1b0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Emit debug events by default in local environments. It would be good for devs to be able to see debug events when working locally, and it's also a bit of a pain to have to wrap tests in <code class=\"notranslate\">Rails.event.with_debug</code> any time we want to assert that a debug event was emitted.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Sets a new option on the Event Reporter, <code class=\"notranslate\">debug_mode</code>, which will force the event reporter into debug mode. When bootstrapping the app, we configure that value based on <code class=\"notranslate\">config.consider_all_requests_local</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">I considered combining <code class=\"notranslate\">debug_mode</code> with <code class=\"notranslate\">raise_on_error</code>, but decided it was clearer to keep them separate. We set both of them for local requests, but they don't mean the same thing. The former is enabling the emission of all debug events, and the latter defines behaviour if we encounter an error during event emission / in the subscriber code.</p>\n<p dir=\"auto\">I've also opted to no'doc <code class=\"notranslate\">debug_mode</code>, I don't think apps should set this directly.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55566",
             "title": "Enable debug mode for events in local environments",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joaquintomas2003",
                 "url": "https://github.com/joaquintomas2003"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">For event payloads that are a hash, filter the data before emitting the event.</p>\n<p dir=\"auto\">Since we want to filter any sensitive data as early as possible.</p>\n<p dir=\"auto\">However, custom objects are not resolved until later, so we can't filter those.</p>\n<hr>\n<p dir=\"auto\">Based on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3245791167\" data-permission-text=\"Title is private\" data-url=\"https://github.com/Shopify/rails/issues/37\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/Shopify/rails/pull/37/hovercard\" href=\"https://github.com/Shopify/rails/pull/37\">Shopify#37</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3245792106\" data-permission-text=\"Title is private\" data-url=\"https://github.com/Shopify/rails/issues/38\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/Shopify/rails/pull/38/hovercard\" href=\"https://github.com/Shopify/rails/pull/38\">Shopify#38</a>.</p>\n<p dir=\"auto\">Originally discussed here:<br>\n<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3229704194\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55334\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55334/hovercard?comment_id=2212329630&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/55334#discussion_r2212329630\">#55334 (comment)</a></p>",
-            "url": "https://github.com/rails/rails/pull/55489",
-            "title": "Filter event reporter payloads",
-            "date_modified": "2025-08-25T15:40:06.000Z",
-            "date_published": "2025-08-14T08:39:45.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
