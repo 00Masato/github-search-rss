@@ -6,10 +6,32 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">If it works no reason not to allow it.</p>",
+            "url": "https://github.com/rails/rails/pull/55575",
+            "title": "Action Pack: Allow rack 3.2.x",
+            "date_modified": "2025-08-29T14:59:51.000Z",
+            "date_published": "2025-08-29T14:35:39.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1003859?u=f8e57ec4c51c09f69587cfafd975c1dbe09209b4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">In the current authentication flow, password reset tokens are valid for 15 minutes. This is not configurable and can be an issue for a lot of users. This PR allows to modify this expiration time.</p>\n<p dir=\"auto\">The PR does not break the current logic. It keeps the 15 minute default.</p>\n<p dir=\"auto\">Modifying the expiration time can be done like this:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"has_secure_password reset_token_expires_in: 1.hour\"><pre class=\"notranslate\"><code class=\"notranslate\">has_secure_password reset_token_expires_in: 1.hour\n</code></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55574",
+            "title": "Feature/reset password token duration",
+            "date_modified": "2025-08-29T14:20:56.000Z",
+            "date_published": "2025-08-29T14:19:55.000Z",
+            "author": {
+                "name": "jevin",
+                "url": "https://github.com/jevin"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7865030?u=a91840c5a5d8e811d0afa26717f1fd56b4d902e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In development or after initialization a user may want to inspect the current cache namespace. They may also wish to change it. This PR adds this functionality.</p>\n<p dir=\"auto\">Note: custom namespaces passed in as options during the cache calls will override any previously set namespace value during that call.</p>\n<p dir=\"auto\">Why:</p>\n<p dir=\"auto\">To make parallel tests more resilient, we have found that it is better to reset the cache namespace between tests instead of clearing the cache.</p>\n<p dir=\"auto\">This functionality can be used as follows:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"def randomize_namespace\n  @store = Rails.cache.store\n  namespace = @store.get_namespace\n\n  if namespace\n    namespace = &quot;#{SecureRandom.hex(6)}r:&quot; + namespace.split(&quot;r:&quot;)[-1]\n  else\n    namespace = SecureRandom.hex(6)\n  end\n\n  @store.set_namespace(namespace)\nend\"><pre class=\"notranslate\"><span class=\"pl-k\">def</span> <span class=\"pl-en\">randomize_namespace</span>\n  <span class=\"pl-c1\">@store</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Rails</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">cache</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">store</span>\n  <span class=\"pl-s1\">namespace</span> <span class=\"pl-c1\">=</span> <span class=\"pl-c1\">@store</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">get_namespace</span>\n\n  <span class=\"pl-k\">if</span> <span class=\"pl-s1\">namespace</span>\n    <span class=\"pl-s1\">namespace</span> <span class=\"pl-c1\">=</span> <span class=\"pl-s\">\"<span class=\"pl-s1\"><span class=\"pl-kos\">#{</span><span class=\"pl-v\">SecureRandom</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">hex</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">6</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">}</span></span>r:\"</span> + <span class=\"pl-s1\">namespace</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">split</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"r:\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">[</span>-<span class=\"pl-c1\">1</span><span class=\"pl-kos\">]</span>\n  <span class=\"pl-k\">else</span>\n    <span class=\"pl-s1\">namespace</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">SecureRandom</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">hex</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">6</span><span class=\"pl-kos\">)</span>\n  <span class=\"pl-k\">end</span>\n\n  <span class=\"pl-c1\">@store</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">set_namespace</span><span class=\"pl-kos\">(</span><span class=\"pl-s1\">namespace</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-k\">end</span></pre></div>\n<p dir=\"auto\">For reviewers: is <code class=\"notranslate\">cache_key_test</code> the best home for these tests?</p>",
             "url": "https://github.com/rails/rails/pull/55573",
             "title": "Allow getter and setter for `options[:namespace]` in `ActiveSupport::Cache::Store`",
-            "date_modified": "2025-08-29T10:42:03.000Z",
+            "date_modified": "2025-08-29T14:25:47.000Z",
             "date_published": "2025-08-29T10:41:59.000Z",
             "author": {
                 "name": "Schwad",
@@ -17,43 +39,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1769416?u=786458082f04393c2a84cd8bd1eaf04cb5e38a56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This PR fixes a small issue with unsubscribing using a class in the Event Reporter, which was introduced by <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3321203323\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55487\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55487/hovercard\" href=\"https://github.com/rails/rails/pull/55487\">#55487</a></p>\n<p dir=\"auto\">The arguments of <code class=\"notranslate\">===</code> were in the wrong order which prevented instances of a class being unsubscribed.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Rails.event.unsubscribe(MyEventSubscriber)\"><pre class=\"notranslate\"><span class=\"pl-v\">Rails</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">event</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">unsubscribe</span><span class=\"pl-kos\">(</span><span class=\"pl-v\">MyEventSubscriber</span><span class=\"pl-kos\">)</span></pre></div>\n<p dir=\"auto\">CC: <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55572",
-            "title": "Fix for unsubscribing from event reporter using class",
-            "date_modified": "2025-08-29T10:30:52.000Z",
-            "date_published": "2025-08-29T10:30:25.000Z",
-            "author": {
-                "name": "aidanharan",
-                "url": "https://github.com/aidanharan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/80c048a9dc5262366a13036436deca2e58f9b5f4/hovercard\" href=\"https://github.com/rails/rails/commit/80c048a9dc5262366a13036436deca2e58f9b5f4\"><tt>80c048a</tt></a> to <code class=\"notranslate\">7-2-stable</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/55571",
-            "title": "[7-2-stable] Backport \"Restore latest sidekiq gem for tests\"",
-            "date_modified": "2025-08-29T08:55:36.000Z",
-            "date_published": "2025-08-29T08:55:32.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Backports <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/80c048a9dc5262366a13036436deca2e58f9b5f4/hovercard\" href=\"https://github.com/rails/rails/commit/80c048a9dc5262366a13036436deca2e58f9b5f4\"><tt>80c048a</tt></a> to <code class=\"notranslate\">8-0-stable</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/55570",
-            "title": "[8-0-stable] Backport \"Restore latest sidekiq gem for tests\"",
-            "date_modified": "2025-08-29T08:55:00.000Z",
-            "date_published": "2025-08-29T08:54:56.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7865030?u=a91840c5a5d8e811d0afa26717f1fd56b4d902e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Right now the only opportunity to access the parallel worker id is to grab it in</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"parallelize_setup do |worker_id|\"><pre class=\"notranslate\"><code class=\"notranslate\">parallelize_setup do |worker_id|\n</code></pre></div>\n<p dir=\"auto\">Where it must be assigned to a config by hand. This PR makes a helper <code class=\"notranslate\">parallel_worker_id</code> available throughout. It is <code class=\"notranslate\">nil</code> if not in parallel.</p>",
             "url": "https://github.com/rails/rails/pull/55565",
             "title": "Creates `parallel_worker_id` helper for running parallel tests",
-            "date_modified": "2025-08-29T10:54:20.000Z",
+            "date_modified": "2025-08-29T14:59:12.000Z",
             "date_published": "2025-08-28T13:13:21.000Z",
             "author": {
                 "name": "Schwad",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/207504?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Instead of only allowing to raise.</p>\n<p dir=\"auto\">This is to aid large codebases to find all places that currently do open<br>\nredirects but are not called with <code class=\"notranslate\">allow_other_host: true</code>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">raise_on_open_redirects</code> is marked as deprecated and if set to true<br>\nwill set <code class=\"notranslate\">action_on_open_redirect</code> to <code class=\"notranslate\">:raise</code></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55496",
+            "title": "Allow logs and notifications for open redirects",
+            "date_modified": "2025-08-15T13:41:11.000Z",
+            "date_published": "2025-08-15T12:53:58.000Z",
+            "author": {
+                "name": "TobiasBales",
+                "url": "https://github.com/TobiasBales"
             }
         }
     ]
