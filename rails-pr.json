@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7865030?u=a91840c5a5d8e811d0afa26717f1fd56b4d902e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Right now the only opportunity to access the parallel worker id is to grab it in</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"parallelize_setup do |worker_id|\"><pre class=\"notranslate\"><code class=\"notranslate\">parallelize_setup do |worker_id|\n</code></pre></div>\n<p dir=\"auto\">Where it must be assigned to a config by hand. This PR makes a helper <code class=\"notranslate\">parallel_worker_id</code> available throughout. It is <code class=\"notranslate\">nil</code> if not in parallel.</p>",
-            "url": "https://github.com/rails/rails/pull/55565",
-            "title": "Creates `parallel_worker_id` helper for running parallel tests",
-            "date_modified": "2025-08-29T15:34:09.000Z",
-            "date_published": "2025-08-28T13:13:21.000Z",
-            "author": {
-                "name": "Schwad",
-                "url": "https://github.com/Schwad"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9959248?u=12cb7b2d845775f77710d6988f0bfc3622a73b0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As I was going through the guide I wondered how concerns would be used on multiple models without hurting DRY.</p>\n<p dir=\"auto\">The guide tells you to create the concern in a model specific folder called products and the sub chapter ends with saying concerns can be used by multiple models.</p>\n<p dir=\"auto\">I added a short explanation where to put the concerns in this case.</p>",
             "url": "https://github.com/rails/rails/pull/55557",
             "title": "Documentation small change: Add clarification to Concern's save location",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/207504?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Instead of only allowing to raise.</p>\n<p dir=\"auto\">This is to aid large codebases to find all places that currently do open<br>\nredirects but are not called with <code class=\"notranslate\">allow_other_host: true</code>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">raise_on_open_redirects</code> is marked as deprecated and if set to true<br>\nwill set <code class=\"notranslate\">action_on_open_redirect</code> to <code class=\"notranslate\">:raise</code></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55496",
+            "title": "Allow logs and notifications for open redirects",
+            "date_modified": "2025-08-15T13:41:11.000Z",
+            "date_published": "2025-08-15T12:53:58.000Z",
+            "author": {
+                "name": "TobiasBales",
+                "url": "https://github.com/TobiasBales"
             }
         }
     ]
