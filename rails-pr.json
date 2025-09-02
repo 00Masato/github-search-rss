@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This reverts <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1236138329\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/45100\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/45100/hovercard\" href=\"https://github.com/rails/rails/pull/45100\">#45100</a> (and the follow-up commits), due to issues it introduced which were unresolved so close to a release.</p>\n<p dir=\"auto\">As part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3207914413\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55303\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55303/hovercard\" href=\"https://github.com/rails/rails/pull/55303\">#55303</a>, we tried to address these issues, but ran into trouble due to the Vips analyzer loading ruby-vips early, which also loads libxml2 (from system) before nokogiri -- which breaks a bunch of stuff.</p>\n<p dir=\"auto\">We need more time to figure that out so let's just revert for now.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/skipkayhil/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/skipkayhil\">@skipkayhil</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/flavorjones/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/flavorjones\">@flavorjones</a></p>",
+            "url": "https://github.com/rails/rails/pull/55605",
+            "title": "Revert \"Load configured Active Storage plugins during boot\"",
+            "date_modified": "2025-09-02T10:40:34.000Z",
+            "date_published": "2025-09-02T10:40:30.000Z",
+            "author": {
+                "name": "zzak",
+                "url": "https://github.com/zzak"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1734607?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When testing live streaming, we don't create a new thread and we patch the <code class=\"notranslate\">Live</code> module to ensure that the thread locals are not cleared afterwards.</p>\n<p dir=\"auto\">We were however always calling <code class=\"notranslate\">ActiveSupport::IsolatedExecutionState.clear</code> so we were losing that state in tests.</p>\n<p dir=\"auto\">Additionally since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3178828038\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55247\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55247/hovercard\" href=\"https://github.com/rails/rails/pull/55247\">#55247</a> calling <code class=\"notranslate\">ActiveSupport::IsolatedExecutionState.clear</code> is unsafe in test code, because we are in an execution context (for the test) and the call wipes that out.</p>\n<p dir=\"auto\">This fix is not perfect as <code class=\"notranslate\">share_with</code> does a shallow copy so changes from within the test streaming \"thread\" can leak out - I think that's a fundamental flaw in how the <code class=\"notranslate\">Live</code> module and thread state interact.</p>",
             "url": "https://github.com/rails/rails/pull/55604",
             "title": "Avoid clearing isolated state in live tests",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "hubb",
                 "url": "https://github.com/hubb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1218868?u=2205d40bade58ddc23b3f2ee7ee42774376cfd8f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because there is no way to parse a delimited number string into a number.</p>\n<p dir=\"auto\">The inverse exists with ActiveSupport::NumberHelper#number_to_delimited`.</p>\n<p dir=\"auto\">Context: We were working on a feature which creates and XLS report in a <code class=\"notranslate\">rails</code> app. The data comes already formatted in number delimited strings. We want to parse the number delimited string and output a raw number into the XLS file, since it'll be formatted by Excell automatically.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveSupport::NumberHelper</code> and adds <code class=\"notranslate\">number_from_delimited</code> which parses a delimited number string into a number.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55512",
-            "title": "Add NumberHelper#number_from_delimited",
-            "date_modified": "2025-08-19T12:59:08.000Z",
-            "date_published": "2025-08-19T11:57:23.000Z",
-            "author": {
-                "name": "matteeyah",
-                "url": "https://github.com/matteeyah"
             }
         }
     ]
