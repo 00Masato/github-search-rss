@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16103364?u=09ef08026fda09489818ee682ecd4a8663e89af3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add <code class=\"notranslate\">repr(ordered_fields)</code> and provide a migration path to switch users from <code class=\"notranslate\">repr(C)</code> to <code class=\"notranslate\">repr(ordered_fields)</code>, then change the meaning of <code class=\"notranslate\">repr(C)</code> in the next edition.</p>\n<p dir=\"auto\">This RFC is meant to be an MVP, and any extensions (for example, adding more <code class=\"notranslate\">repr</code>s) are not in scope. This is done to make it as easy as possible to accept this RFC and make progress on the issue of <code class=\"notranslate\">repr(C)</code> serving two opposing roles.</p>\n<p dir=\"auto\"><a href=\"https://github.com/RustyYato/rfcs/blob/repr_ordered_fields/text/3845-repr-ordered-fields.md\">Rendered</a></p>\n<p dir=\"auto\">To avoid endless bikeshedding, I'll make a poll if this RFC is accepted with all the potential names for the new <code class=\"notranslate\">repr</code>. If you have a new name, I'll add it to the list of names in the unresolved questions section, and will include it in the poll.</p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3845",
             "title": "repr(ordered_fields)",
-            "date_modified": "2025-08-27T18:36:25.000Z",
+            "date_modified": "2025-09-03T13:42:40.000Z",
             "date_published": "2025-08-05T16:01:05.000Z",
             "author": {
                 "name": "RustyYato",
