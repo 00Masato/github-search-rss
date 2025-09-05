@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously we'd allocate a new proc for each <code class=\"notranslate\">CallbackChain</code>. Instead we can use a singleton object that responds to call (we could use a singleton instance of a proc, but this should be slightly simpler for Ruby to execute).</p>\n<p dir=\"auto\">(This could potentially also help make callbacks work inside Ractors, but there would be a lot more to do)</p>",
-            "url": "https://github.com/rails/rails/pull/55616",
-            "title": "Use singleton for callbacks default terminator",
-            "date_modified": "2025-09-05T09:27:17.000Z",
-            "date_published": "2025-09-05T08:53:16.000Z",
-            "author": {
-                "name": "jhawthorn",
-                "url": "https://github.com/jhawthorn"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1966473?u=fe117732163d3610f051fca80df4e04c1b91335d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The goal of this PR is to update the Rails Command Line Guide.</p>\n<p dir=\"auto\">The existing guide was a bit sparse, so this diff has a decent amount of newly written content. This addresses feedback from the community (via Discord) that is noted in Basecamp task. Here are some of the highlights:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> reorganize the guide to add sections and subsections based on use case (instead of the command)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> new introduction and overview section</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> expand the console section and add new dbconsole section</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> added code snippets and why-is-this-command-useful to many commands</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> add a new section for all of the commands in the db: namespace</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> expand the testing section</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> add a number of new commands that are new to Rails or were just missing from guides (e.g.bin/rails credentials:)</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55612",
             "title": "[RF-Docs] [ci-skip]The Rails Command Line Guide ",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "hubb",
                 "url": "https://github.com/hubb"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1218868?u=2205d40bade58ddc23b3f2ee7ee42774376cfd8f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because there is no way to parse a delimited number string into a number.</p>\n<p dir=\"auto\">The inverse exists with ActiveSupport::NumberHelper#number_to_delimited`.</p>\n<p dir=\"auto\">Context: We were working on a feature which creates and XLS report in a <code class=\"notranslate\">rails</code> app. The data comes already formatted in number delimited strings. We want to parse the number delimited string and output a raw number into the XLS file, since it'll be formatted by Excell automatically.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveSupport::NumberHelper</code> and adds <code class=\"notranslate\">number_from_delimited</code> which parses a delimited number string into a number.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55512",
+            "title": "Add NumberHelper#number_from_delimited",
+            "date_modified": "2025-08-19T12:59:08.000Z",
+            "date_published": "2025-08-19T11:57:23.000Z",
+            "author": {
+                "name": "matteeyah",
+                "url": "https://github.com/matteeyah"
             }
         }
     ]
