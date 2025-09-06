@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/505427?u=d6f9feb614d4641e87a2df6e4da6ed4c44ece004&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This PR addresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3337246526\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55518\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55518/hovercard\" href=\"https://github.com/rails/rails/issues/55518\">#55518</a> .Rails guides state that action_controller.logger can be set to nil to disable logging.</p>\n<blockquote>\n<p dir=\"auto\">Accepts a logger conforming to the interface of Log4r or the default Ruby Logger class, which is then used to log information from Action Controller. Set to nil to disable logging.</p>\n</blockquote>\n<p dir=\"auto\">Previously, it always defaulted to <code class=\"notranslate\">Rails.logger</code>, ignoring <code class=\"notranslate\">nil</code> or <code class=\"notranslate\">false</code> values. This change uses <code class=\"notranslate\">options.fetch(:logger, Rails.logger)</code>, enabling apps to opt out of logging when desired.</p>",
+            "url": "https://github.com/rails/rails/pull/55625",
+            "title": "Allow disabling action_controller.logger by setting it to nil or false",
+            "date_modified": "2025-09-06T06:13:15.000Z",
+            "date_published": "2025-09-06T06:13:10.000Z",
+            "author": {
+                "name": "robertomiranda",
+                "url": "https://github.com/robertomiranda"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?u=59682ca006f149399b647e6a121e663538cb0f6e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">As noted in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3387251717\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55617\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55617/hovercard\" href=\"https://github.com/rails/rails/issues/55617\">#55617</a>, there is no support for procs in the public file server. There was a test missing, so this probably went unnoticed. I'd took a stab at adding the functionality and wrote a basic test.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR allows setting public file server headers with everything that responds to <code class=\"notranslate\">:call</code>. In contrast to the original example configuration, I pass a single <code class=\"notranslate\">Rack::Request</code> parameter directly instead of <code class=\"notranslate\">path</code> and <code class=\"notranslate\">_</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">If someone is using <code class=\"notranslate\">ActionDispatch::FileHandler#call</code> directly and attempt is falsy, we're missing the headers. I think the cleanest way would be to add this to <code class=\"notranslate\">Rack::Files</code> directly as well. Maybe I'm missing something, but I'm not sure if there are actual usages of <code class=\"notranslate\">FileHandler#call</code> and if it's intended to be public api.</p>",
             "url": "https://github.com/rails/rails/pull/55624",
             "title": "Add callable support for public_file_server headers",
-            "date_modified": "2025-09-05T23:22:26.000Z",
+            "date_modified": "2025-09-06T06:43:58.000Z",
             "date_published": "2025-09-05T18:34:07.000Z",
             "author": {
                 "name": "codergeek121",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "kirs",
                 "url": "https://github.com/kirs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4910785?u=59682ca006f149399b647e6a121e663538cb0f6e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The authentication generator form templates allow setting the email_address form field value with query parameters. This is not used in any existing functionality or test.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #55168.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3125210911\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55168\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55168/hovercard\" href=\"https://github.com/rails/rails/issues/55168\">#55168</a></p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55548",
-            "title": "Remove the ability to set email_address value via query parameters",
-            "date_modified": "2025-08-27T21:59:20.000Z",
-            "date_published": "2025-08-24T18:40:16.000Z",
-            "author": {
-                "name": "codergeek121",
-                "url": "https://github.com/codergeek121"
             }
         }
     ]
