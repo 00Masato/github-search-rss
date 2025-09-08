@@ -42,7 +42,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We intend to make this the default: instead of users needing to do maths to choose a pool size based on the number of worker threads they have (in Puma etc.), we can just stop enforcing any limit. Under normal usage, actual consumption will be naturally limited by the number of threads that request a connection. (This natural limiting doesn't apply to code that uses explicit <code class=\"notranslate\">checkout</code> calls instead of the standard connection-leasing model: such applications may still benefit from choosing a hard limit.)</p>\n<p dir=\"auto\">In this PR, however, I am <em>not</em> changing the default <code class=\"notranslate\">max_connections</code> value from its current <strong>5</strong> -- just making sure there is a way to explicitly specify \"unlimited\" instead of needing to use an arbitrary large number.</p>",
             "url": "https://github.com/rails/rails/pull/55628",
             "title": "Setting max_connections to nil means no limit",
-            "date_modified": "2025-09-06T14:24:51.000Z",
+            "date_modified": "2025-09-08T06:54:41.000Z",
             "date_published": "2025-09-06T14:23:37.000Z",
             "author": {
                 "name": "matthewd",
@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">After this morning's \"Chat With Maintainers\" at Rails World there was a discussion that we could maybe enable frozen string literal by default.</p>\n<p dir=\"auto\">This does this by modifying <code class=\"notranslate\">RubyVM::InstructionSequence.compile_option</code> in the generated boot.rb. This way new Rails applications will have frozen string literal enabled by default (no change to existing applications).</p>\n<p dir=\"auto\">(I made an app and it seems to work 🤞 CI agrees)</p>",
             "url": "https://github.com/rails/rails/pull/55618",
             "title": "Use frozen_string_literal by default in new apps",
-            "date_modified": "2025-09-05T15:23:10.000Z",
+            "date_modified": "2025-09-08T07:00:59.000Z",
             "date_published": "2025-09-05T13:38:06.000Z",
             "author": {
                 "name": "jhawthorn",
