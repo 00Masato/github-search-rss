@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1830974?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Zulip: <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/131828-t-compiler/topic/Mitigation.20enforcement.20.28.60-C.20allow-partial-mitigations.60.29/with/539293124\" rel=\"nofollow\">https://rust-lang.zulipchat.com/#narrow/channel/131828-t-compiler/topic/Mitigation.20enforcement.20.28.60-C.20allow-partial-mitigations.60.29/with/539293124</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/arielb1/rfcs/blob/track-mitigations/text/3855-mitigation-enforcement.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3855",
+            "title": "Mitigation enforcement",
+            "date_modified": "2025-09-13T19:29:58.000Z",
+            "date_published": "2025-09-13T19:19:28.000Z",
+            "author": {
+                "name": "arielb1",
+                "url": "https://github.com/arielb1"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72159?u=f25bf9f675b806b92a8e5083ce5d0b8f1d7708df&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC for the issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"654099587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/74182\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/74182/hovercard\" href=\"https://github.com/rust-lang/rust/issues/74182\">rust-lang/rust#74182</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/kornelski/rfcs/blob/stable_since/text/0000-stable_since.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3854",
             "title": "RFC for `#[stable(since)]`",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Jules-Bertholet",
                 "url": "https://github.com/Jules-Bertholet"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13724985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposal introduces a way to name configuration predicates for easy reuse throughout a crate.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#![cfg_alias(x86_linux = all(\n    any(target_arch = &quot;x86&quot;, target_arch = &quot;x86_64&quot;), target_os = &quot;linux&quot;\n))]\n\n#[cfg(x86_linux)]\nfn foo() { /* ... */ }\n\n#[cfg(not(x86_linux))]\nfn foo() { /* ... */ }\"><pre class=\"notranslate\"><span class=\"pl-c1\">#!<span class=\"pl-kos\">[</span>cfg_alias<span class=\"pl-kos\">(</span>x86_linux = all<span class=\"pl-kos\">(</span></span>\n<span class=\"pl-c1\">    any<span class=\"pl-kos\">(</span>target_arch = <span class=\"pl-s\">\"x86\"</span><span class=\"pl-kos\">,</span> target_arch = <span class=\"pl-s\">\"x86_64\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">,</span> target_os = <span class=\"pl-s\">\"linux\"</span></span>\n<span class=\"pl-c1\"><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>cfg<span class=\"pl-kos\">(</span>x86_linux<span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">foo</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span>\n\n<span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>cfg<span class=\"pl-kos\">(</span>not<span class=\"pl-kos\">(</span>x86_linux<span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>\n<span class=\"pl-k\">fn</span> <span class=\"pl-en\">foo</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* ... */</span> <span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">Previous discussion:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"57342123\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/831\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rfcs/issues/831/hovercard\" href=\"https://github.com/rust-lang/rfcs/issues/831\">#831</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2545153202\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/130780\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rust/pull/130780/hovercard?comment_id=2822439922&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rust/pull/130780#issuecomment-2822439922\">rust-lang/rust#130780 (comment)</a></li>\n<li><a href=\"https://rust-lang.zulipchat.com/#narrow/channel/213817-t-lang/topic/cfg.20aliases/with/433335771\" rel=\"nofollow\">#t-lang &gt; cfg aliases</a></li>\n<li><a href=\"https://internals.rust-lang.org/t/pre-rfc-cfg-attribute-alias/7404/16\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-cfg-attribute-alias/7404/16</a></li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/tgross35/rfcs/blob/cfg-alias/text/3804-cfg-alias.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3804",
-            "title": "RFC: naming groups of configuration with `cfg_alias`",
-            "date_modified": "2025-08-29T04:06:42.000Z",
-            "date_published": "2025-04-23T23:44:34.000Z",
-            "author": {
-                "name": "tgross35",
-                "url": "https://github.com/tgross35"
             }
         }
     ]
