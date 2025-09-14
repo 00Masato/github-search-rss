@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3387?u=3e00cb55fcf745a6e3d74ba4118f835ff9ae5b12&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This patch documents that the internal constant that decides if compression is applied on attribute encryption (<code class=\"notranslate\">THRESHOLD_TO_JUSTIFY_COMPRESSION</code>) cannot be changed.</p>\n<p dir=\"auto\">See why in the code comment.</p>",
+            "url": "https://github.com/rails/rails/pull/55676",
+            "title": "Document THRESHOLD_TO_JUSTIFY_COMPRESSION cannot be changed.",
+            "date_modified": "2025-09-14T21:59:21.000Z",
+            "date_published": "2025-09-14T21:59:06.000Z",
+            "author": {
+                "name": "fxn",
+                "url": "https://github.com/fxn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It was originally <a href=\"https://github.com/rails/rails/commit/49b6b211a922f73d0b083e7e4d2f0a91bd44da90\">introduced</a> when moving schema caches from the connections to pools to share logic between the real ConnectionPool and the NullPool.</p>\n<p dir=\"auto\">However, the AbstractPool's implementation was later <a href=\"https://github.com/rails/rails/commit/b36f9186b0516ef17a6d29e13d2d0e736af43ef2\">removed</a> when refactoring SchemaCache to use pools instead of connections.</p>",
             "url": "https://github.com/rails/rails/pull/55674",
             "title": "Remove unused AbstractPool module",
@@ -28,7 +39,7 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142009152?u=0eef36171bcf40796f6299f29e950a36b1d720c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/142009152/489254679-2dcc36e7-fef9-4019-86ed-47c0e7068852.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc4ODQwMTQsIm5iZiI6MTc1Nzg4MzcxNCwicGF0aCI6Ii8xNDIwMDkxNTIvNDg5MjU0Njc5LTJkY2MzNmU3LWZlZjktNDAxOS04NmVkLTQ3YzBlNzA2ODg1Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxNFQyMTAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZDI5YmZlNzk3YjI1OTYxNTRmODczMTRlODc4MGQ2ZGZjM2EwNzU2MWI0MzBiOTg3MTVlZGQ4YmI4MGM1NWI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.V-8RMlZB_24COmYonxsi3LGZD0KXsSZdjb_94sRa0cs\"><img width=\"1365\" height=\"1102\" alt=\"Screenshot 2025-09-14 at 11 12 31\" src=\"https://private-user-images.githubusercontent.com/142009152/489254679-2dcc36e7-fef9-4019-86ed-47c0e7068852.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc4ODQwMTQsIm5iZiI6MTc1Nzg4MzcxNCwicGF0aCI6Ii8xNDIwMDkxNTIvNDg5MjU0Njc5LTJkY2MzNmU3LWZlZjktNDAxOS04NmVkLTQ3YzBlNzA2ODg1Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxNFQyMTAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04ZDI5YmZlNzk3YjI1OTYxNTRmODczMTRlODc4MGQ2ZGZjM2EwNzU2MWI0MzBiOTg3MTVlZGQ4YmI4MGM1NWI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.V-8RMlZB_24COmYonxsi3LGZD0KXsSZdjb_94sRa0cs\" style=\"max-width: 100%; height: auto; max-height: 1102px;\"></a>\n<p dir=\"auto\">I have added a dark appearance to the common http error pages. I have used the same colors as <a href=\"https://github.com/Frexuz\">Frexuz</a> in his patch for the welcome page <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3348432669\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55538\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55538/hovercard\" href=\"https://github.com/rails/rails/pull/55538\">#55538</a>.</p>\n<p dir=\"auto\">Also added <code class=\"notranslate\">height: 100dvh</code> to the body for better mobile support.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142009152?u=0eef36171bcf40796f6299f29e950a36b1d720c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/142009152/489254679-2dcc36e7-fef9-4019-86ed-47c0e7068852.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc4ODc2MTQsIm5iZiI6MTc1Nzg4NzMxNCwicGF0aCI6Ii8xNDIwMDkxNTIvNDg5MjU0Njc5LTJkY2MzNmU3LWZlZjktNDAxOS04NmVkLTQ3YzBlNzA2ODg1Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxNFQyMjAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMmFmNDIzZTFlMmMxZjg4MDFkMjQ1ODJjNDczMzY4ZjdiNmRmZjFiOWRhNjc4M2Q0MTdjNDA4MzI1OTUyMzA5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.GAsXg_aUo911HyQkkFTU7hK3K5XoM6Ur5-BAwWfZH0k\"><img width=\"1365\" height=\"1102\" alt=\"Screenshot 2025-09-14 at 11 12 31\" src=\"https://private-user-images.githubusercontent.com/142009152/489254679-2dcc36e7-fef9-4019-86ed-47c0e7068852.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTc4ODc2MTQsIm5iZiI6MTc1Nzg4NzMxNCwicGF0aCI6Ii8xNDIwMDkxNTIvNDg5MjU0Njc5LTJkY2MzNmU3LWZlZjktNDAxOS04NmVkLTQ3YzBlNzA2ODg1Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwOTE0JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDkxNFQyMjAxNTRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMmFmNDIzZTFlMmMxZjg4MDFkMjQ1ODJjNDczMzY4ZjdiNmRmZjFiOWRhNjc4M2Q0MTdjNDA4MzI1OTUyMzA5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.GAsXg_aUo911HyQkkFTU7hK3K5XoM6Ur5-BAwWfZH0k\" style=\"max-width: 100%; height: auto; max-height: 1102px;\"></a>\n<p dir=\"auto\">I have added a dark appearance to the common http error pages. I have used the same colors as <a href=\"https://github.com/Frexuz\">Frexuz</a> in his patch for the welcome page <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3348432669\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55538\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55538/hovercard\" href=\"https://github.com/rails/rails/pull/55538\">#55538</a>.</p>\n<p dir=\"auto\">Also added <code class=\"notranslate\">height: 100dvh</code> to the body for better mobile support.</p>",
             "url": "https://github.com/rails/rails/pull/55671",
             "title": "Adding dark mode to http error pages",
             "date_modified": "2025-09-14T09:17:09.000Z",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "jevin",
                 "url": "https://github.com/jevin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9959248?u=12cb7b2d845775f77710d6988f0bfc3622a73b0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">As I was going through the guide I wondered how concerns would be used on multiple models without hurting DRY.</p>\n<p dir=\"auto\">The guide tells you to create the concern in a model specific folder called products and the sub chapter ends with saying concerns can be used by multiple models.</p>\n<p dir=\"auto\">I added a short explanation where to put the concerns in this case.</p>",
-            "url": "https://github.com/rails/rails/pull/55557",
-            "title": "Documentation small change: Add clarification to Concern's save location",
-            "date_modified": "2025-08-27T08:24:23.000Z",
-            "date_published": "2025-08-26T12:01:24.000Z",
-            "author": {
-                "name": "manuel1618",
-                "url": "https://github.com/manuel1618"
             }
         }
     ]
