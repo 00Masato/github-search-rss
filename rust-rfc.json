@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39484203?u=e433c03291cbf30eef49c06b7d483d2b2205bd32&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Could <em>maybe</em> make e.g. <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3355371147\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3851\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3851/hovercard?comment_id=3317282798&amp;comment_type=issue_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3851#issuecomment-3317282798\">#3851 (comment)</a> less likely to happen.</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3865",
-            "title": "Emphasize do not squash/rebase commits",
-            "date_modified": "2025-10-02T05:49:09.000Z",
-            "date_published": "2025-10-02T05:48:36.000Z",
-            "author": {
-                "name": "jieyouxu",
-                "url": "https://github.com/jieyouxu"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105766?u=47d9506cd27251424ec97996669a75d6d29a74aa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Tracking issue: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3131500836\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/142269\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/142269/hovercard\" href=\"https://github.com/rust-lang/rust/issues/142269\">rust-lang/rust#142269</a></p>\n<h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">Add an <code class=\"notranslate\">iter!</code> macro to provide a better way to create iterators.</p>\n<p dir=\"auto\">Implementing the <code class=\"notranslate\">Iterator</code> trait directly can be tedious. Generators (see <a href=\"https://rust-lang.github.io/rfcs/3513-gen-blocks.html\" rel=\"nofollow\">RFC 3513</a>) are available on nightly but there are enough open design questions that generators are unlikely to be stabilized in the foreseeable future.</p>\n<p dir=\"auto\">On the other hand, we have an <code class=\"notranslate\">iter!</code> macro available on nightly that provides a subset of the full generator functionality. Stabilizing this version now would have several benefits:</p>\n<ul dir=\"auto\">\n<li>Users immediately gain a more ergonomic way to write many iterators.</li>\n<li>We can better inform the design of generators by getting more real-world usage experience.</li>\n<li>Saves the <code class=\"notranslate\">gen { ... }</code> and <code class=\"notranslate\">gen || { ... }</code> syntax for a more complete feature in the future.</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/eholk/rust-rfcs/blob/iter-macro/text/3861-iter-macro.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3861",
             "title": "RFC: Add `iter!` macro",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "veluca93",
                 "url": "https://github.com/veluca93"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84762?u=65f5941f516bf6a9c5be4be8dce0aadebb37690e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC describes an Extended Standard Library (ESL) for Rust.</p>\n<p dir=\"auto\">Please see <a href=\"https://docs.google.com/document/d/1NzuF8QVVi9wcmvmHa1_-hwRLNb9UoxWNbUcdOsqWJyc/edit?usp=sharing\" rel=\"nofollow\">this document</a> for additional information about fundraising.</p>\n<p dir=\"auto\">I’d like to thank Dirkjan Ochtman (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/djc/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/djc\">@djc</a>), Adolfo Ochagavía (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/aochagavia/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/aochagavia\">@aochagavia</a>), Alex Gaynor (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/alex/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/alex\">@alex</a>), James Munns (OneVariable GmbH, <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/jamesmunns/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/jamesmunns\">@jamesmunns</a>), Andrew Gallant (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/BurntSushi/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/BurntSushi\">@BurntSushi</a>), Marco Ieni (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/marcoieni/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/marcoieni\">@marcoieni</a>), and many others for their feedback and assistance while working on this. My thanks does not necessarily imply their endorsement.</p>\n<p dir=\"auto\"><a href=\"https://github.com/bdaehlie/rust-rfcs/blob/extended-standard-library/text/0000-extended-standard-library.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3810",
+            "title": "RFC: Extended Standard Library (ESL)",
+            "date_modified": "2025-10-01T19:16:09.000Z",
+            "date_published": "2025-05-08T20:06:35.000Z",
+            "author": {
+                "name": "bdaehlie",
+                "url": "https://github.com/bdaehlie"
             }
         }
     ]
