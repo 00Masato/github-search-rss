@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/56412856?u=bccded5971ce1f35f40d5b299ef1e8a2864964b6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h1 dir=\"auto\">Summary</h1>\n<p dir=\"auto\">Introduce a new auto trait <code class=\"notranslate\">Forgettable</code>, implemented by all types that can be safely forgotten,<br>\nand change the signature of <code class=\"notranslate\">core::mem::forget</code> to require <code class=\"notranslate\">T: Forgettable</code>.</p>\n<p dir=\"auto\">This allows types to opt out of being safely forgotten by explicitly <code class=\"notranslate\">impl !Forgettable for T</code>,<br>\npreventing <code class=\"notranslate\">mem::forget(t)</code> from compiling when dropping <code class=\"notranslate\">t</code> is required for safety invariants.</p>\n<p dir=\"auto\"><a href=\"https://github.com/mcmah309/rfcs/blob/forgettable-auto-trait/text/3867-forgettable-auto-trait.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3867",
             "title": "RFC: forgettable auto trait",
-            "date_modified": "2025-10-05T16:00:08.000Z",
+            "date_modified": "2025-10-05T16:09:28.000Z",
             "date_published": "2025-10-05T14:24:33.000Z",
             "author": {
                 "name": "mcmah309",
