@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13217751?u=46645768cc8a3f53105dd1a1321e3105c2a6a285&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://api.rubyonrails.org/classes/ActiveSupport/Notifications/Event.html#method-i-idle_time\" rel=\"nofollow\">idle_time</a> method contains I think a duplicate word time that can be removed.</p>",
+            "url": "https://github.com/rails/rails/pull/55864",
+            "title": "Fix typo in idle_time method docs",
+            "date_modified": "2025-10-07T19:57:35.000Z",
+            "date_published": "2025-10-07T19:57:31.000Z",
+            "author": {
+                "name": "RicardoTrindade",
+                "url": "https://github.com/RicardoTrindade"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7780198?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">In the tutorial we use <code class=\"notranslate\">product.inventory_count?</code> to check if the product is in stock. This is relying on implicit rails behavior that can be confusing and hard to reason about for newcomers.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This change uses <code class=\"notranslate\">product.inventory_count.positive?</code> instead, which is more explicit and easier to understand. I also standardized on using it throughout the tutorial for consistency.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. - N/A</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included. - N/A</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55863",
             "title": "[Getting Started] Use .positive? for more explicit positive checks rather than implicitly field itself [ci skip]",
-            "date_modified": "2025-10-07T17:52:09.000Z",
+            "date_modified": "2025-10-07T19:49:28.000Z",
             "date_published": "2025-10-07T17:51:57.000Z",
             "author": {
                 "name": "harsh183",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1966473?u=fe117732163d3610f051fca80df4e04c1b91335d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Overview</h2>\n<p dir=\"auto\">The goal of this PR is to add documentation for the Rails Initialization Process Guide.</p>\n<p dir=\"auto\">Note: This guide has be rewritten entirely. I kept the the old version at the bottom so that the \"diff\" is clean and easy to read (without meaningless +-). The old guide will of course be deleted after the review and before merging.</p>",
             "url": "https://github.com/rails/rails/pull/55862",
             "title": "[RF-Docs] [ci-skip] Rewrite of the Rails Initialization Process Guide",
-            "date_modified": "2025-10-07T18:45:17.000Z",
+            "date_modified": "2025-10-07T19:05:33.000Z",
             "date_published": "2025-10-07T16:11:55.000Z",
             "author": {
                 "name": "bhumi1102",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "master-coder-ayush",
                 "url": "https://github.com/master-coder-ayush"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2977353?u=16bc8a352fe2375d06afa25a6b6e3f56bbfa07dd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This has been deprecated for quite a while and was supposed to be removed as part of Rails 8.0, based on the deprecation warning. This <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #55829.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3483160614\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55829\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55829/hovercard\" href=\"https://github.com/rails/rails/issues/55829\">#55829</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes <code class=\"notranslate\">action_cable.js</code> from the repository. It was updated in 2021 with <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/4a23cb3415eac03d76623112576559a722d1f23d/hovercard\" href=\"https://github.com/rails/rails/commit/4a23cb3415eac03d76623112576559a722d1f23d\"><tt>4a23cb3</tt></a> to emit a deprecation warning, and as such there's been plenty of time to update.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55830",
-            "title": "Remove index_with_name_deprecation.js in actioncable",
-            "date_modified": "2025-10-04T04:25:27.000Z",
-            "date_published": "2025-10-04T04:25:22.000Z",
-            "author": {
-                "name": "connorshea",
-                "url": "https://github.com/connorshea"
             }
         }
     ]
