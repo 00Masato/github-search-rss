@@ -6,6 +6,28 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/495429?u=2f3b9dd03c6c4a961d44a632fe1976c73fa19e1f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Adds <code class=\"notranslate\">persist-credentials: false</code> to all <code class=\"notranslate\">actions/checkout</code> workflow steps.</p>\n<h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">Applies security best practices. It prevents persistance of the <code class=\"notranslate\">GITHUB_TOKEN</code> in the local git config.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3494637317\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/fred/issues/883\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/fred/issues/883/hovercard\" href=\"https://github.com/mdn/fred/issues/883\">mdn/fred#883</a>.</p>",
+            "url": "https://github.com/mdn/content/pull/41435",
+            "title": "ci(workflows): disable `actions/checkout` credential persistance",
+            "date_modified": "2025-10-08T10:02:06.000Z",
+            "date_published": "2025-10-08T10:01:42.000Z",
+            "author": {
+                "name": "caugner",
+                "url": "https://github.com/caugner"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1533077393\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/147\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/147/hovercard\" href=\"https://github.com/openwebdocs/project/issues/147\">openwebdocs/project#147</a></p>",
+            "url": "https://github.com/mdn/content/pull/41434",
+            "title": "CSS modules: motion path",
+            "date_modified": "2025-10-08T10:00:28.000Z",
+            "date_published": "2025-10-08T09:37:44.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/495429?u=2f3b9dd03c6c4a961d44a632fe1976c73fa19e1f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Updates the <code class=\"notranslate\">system-file-changes</code> workflow to treat GitHub author and actor as untrusted, passing them via environment variable.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Apply best practices.</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3487933902\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/fred/issues/872\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/fred/issues/872/hovercard\" href=\"https://github.com/mdn/fred/issues/872\">mdn/fred#872</a>:</p>\n<blockquote>\n<p dir=\"auto\">Treat all <code class=\"notranslate\">github.event.*</code> parameters as untrusted input: Sanitize before use in shell command</p>\n</blockquote>",
             "url": "https://github.com/mdn/content/pull/41433",
             "title": "ci(system-file-changes): pass actor/author via env",
@@ -39,21 +61,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/mdn/browser-compat-data/releases/tag/v7.1.11\">BCD release v7.1.11</a></p>\n<p dir=\"auto\">/cc cc/ <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/bsmth/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/bsmth\">@bsmth</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wbamberg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wbamberg\">@wbamberg</a></p>",
-            "url": "https://github.com/mdn/content/pull/41429",
-            "title": "Synchronize with BCD v7.1.11",
-            "date_modified": "2025-10-07T23:43:05.000Z",
-            "date_published": "2025-10-07T22:12:47.000Z",
-            "author": {
-                "name": "OnkarRuikar",
-                "url": "https://github.com/OnkarRuikar"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Remove a lot of example domains that may happen to be valid, fixing <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3129428369\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39865\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/39865/hovercard\" href=\"https://github.com/mdn/content/issues/39865\">#39865</a>. It is impossible to find all such examples, but I found a good bunch.</p>",
             "url": "https://github.com/mdn/content/pull/41428",
             "title": "Only use *.example and example.com as example domains",
-            "date_modified": "2025-10-07T21:18:07.000Z",
+            "date_modified": "2025-10-08T09:23:07.000Z",
             "date_published": "2025-10-07T21:16:15.000Z",
             "author": {
                 "name": "Josh-Cena",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "l10nelw",
                 "url": "https://github.com/l10nelw"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I have worked on these examples pages often enough to be saddened by their current situation. I'm going to invest some effort in modernizing them; as a first step, I need to weed out everything that's not related to the DOM, such as CSSOM or HTML. The \"examples\" page almost exclusively contains demonstrations of CSSOM and HTML, so they are moved to their respective locations.</p>\n<p dir=\"auto\">Please don't review the exact words written here; I have not written anything. I merely moved things around. I'll rewrite them right next.</p>",
-            "url": "https://github.com/mdn/content/pull/41381",
-            "title": "Modernize DOM guide (1): update interface list, disband intro/examples pages",
-            "date_modified": "2025-10-03T11:56:27.000Z",
-            "date_published": "2025-10-03T04:46:48.000Z",
-            "author": {
-                "name": "Josh-Cena",
-                "url": "https://github.com/Josh-Cena"
             }
         }
     ]
