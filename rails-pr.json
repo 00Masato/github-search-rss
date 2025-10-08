@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30756?u=f8d2a7e32ff26a8fa1412559b8e2a98a9af5205d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The existing documentation implied that the \"hard to guess\" URLs active storage generates provides some sort of access control. This is not the case. Rather, as they rely on ActiveRecord::SignedId, they're tamper proof and don't expose the underlying id.</p>\n<p dir=\"auto\">The security risk of using these URLs isn't that someone will guess them. Rather, it is if the URLs are ever leaked, the files will be exposed.</p>\n<p dir=\"auto\"><a href=\"https://www.tokyodev.com/articles/identifying-and-fixing-a-resume-visibility-mistake\" rel=\"nofollow\">This happened to us</a> via Cloudflare's crawler hints feature.</p>\n<p dir=\"auto\">But there is a myriad of other ways it could happen. E.g. anyone with access to the request log has access to them, they might be exposed via certain analytics tools, even if a user has access to the app revoked they'll still have access to any files, etc.</p>\n<p dir=\"auto\">Because of this, whenever any access control is needed, proxy and redirect mode should not be used.</p>",
+            "url": "https://github.com/rails/rails/pull/55865",
+            "title": "Make the warning about active storage redirect and proxy mode stronger",
+            "date_modified": "2025-10-08T00:35:57.000Z",
+            "date_published": "2025-10-08T00:35:53.000Z",
+            "author": {
+                "name": "pwim",
+                "url": "https://github.com/pwim"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13217751?u=46645768cc8a3f53105dd1a1321e3105c2a6a285&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://api.rubyonrails.org/classes/ActiveSupport/Notifications/Event.html#method-i-idle_time\" rel=\"nofollow\">idle_time</a> method contains I think a duplicate word time that can be removed.</p>",
             "url": "https://github.com/rails/rails/pull/55864",
             "title": "Fix typo in idle_time method docs",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "joshuay03",
                 "url": "https://github.com/joshuay03"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84087852?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the Rails guides website (guides.rubyonrails.org) currently lacks a sitemap.xml file, which is important for SEO and search engine discoverability. Without a sitemap, search engines may not efficiently crawl and index all the available guide content, potentially reducing the visibility of valuable Rails documentation.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the Rails guides generation system to automatically create a sitemap.xml file during the guide generation process. The changes include:</p>\n<ul dir=\"auto\">\n<li>Added generate_sitemap method to the RailsGuides::Generator class</li>\n<li>Integrated sitemap generation into the main generate method workflow</li>\n<li>Added generate_sitemap_xml helper method to format the XML output</li>\n<li>The sitemap automatically parses documents.yaml to extract all guide URLs dynamically</li>\n<li>Implements intelligent priority assignment based on guide sections (Start Here, Models, Views, etc.)</li>\n<li>Sets appropriate change frequencies (weekly for release notes, monthly for guides)</li>\n<li>Generates the sitemap in the output directory alongside other generated files</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55831",
-            "title": "Add automated sitemap.xml generation to Rails guides",
-            "date_modified": "2025-10-04T15:05:58.000Z",
-            "date_published": "2025-10-04T10:21:18.000Z",
-            "author": {
-                "name": "master-coder-ayush",
-                "url": "https://github.com/master-coder-ayush"
             }
         }
     ]
