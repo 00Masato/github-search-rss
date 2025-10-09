@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Otherwise-manually-created connections that have not directly cause a connection should remain lazy.</p>\n<p dir=\"auto\">Since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2778257867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54175\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54175/hovercard\" href=\"https://github.com/rails/rails/pull/54175\">#54175</a>, merely touching <code class=\"notranslate\">AR::Base.lease_connection</code> was sufficient to cause a network connection, which could inflate database server connection counts. We don't want that.</p>",
             "url": "https://github.com/rails/rails/pull/55857",
             "title": "Only preconnect connections that have been prepopulated",
-            "date_modified": "2025-10-09T18:46:16.000Z",
+            "date_modified": "2025-10-09T21:53:13.000Z",
             "date_published": "2025-10-07T03:24:57.000Z",
             "author": {
                 "name": "matthewd",
