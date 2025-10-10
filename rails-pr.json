@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8851921?u=ad9161ddeb8ef7fdb10052fc5e74e18f79b913d3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">In the <a href=\"https://github.com/rails/rails/blob/230cc353c18b94ea825dc37e9566cf2b82289bc6/railties/lib/rails/commands/rake/rake_command.rb#L27\">Rails::Command::RakeCommand</a> class, the call to <a href=\"https://github.com/rails/rails/blob/230cc353c18b94ea825dc37e9566cf2b82289bc6/railties/lib/rails/commands/rake/rake_command.rb#L27\">rake.standard_exception_handling</a> delegates exception handling during rake.top_level execution to Rake itself.</p>\n<p dir=\"auto\">In our team, we use Rake tasks through Cron Jobs. In production, when unexpected exceptions occur inside a task, we need to send error reports to monitoring tools or output structured logs. We believe many other projects operate in a similar way.</p>\n<p dir=\"auto\">Since Rails wraps the Rake command, it seems reasonable to also proxy exception handling.<br>\nThis proposal adds functionality to report unhandled exceptions via the Error Reporter.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Rescued exceptions inside the rake.standard_exception_handling block and added error reporting via <code class=\"notranslate\">ActiveSupport.error_reporter.report</code> method.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"rake.standard_exception_handling do\n  rake.top_level\nrescue =&gt; e\n  ActiveSupport.error_reporter.report(\n    e,\n    source: &quot;rake_command.rails&quot;\n  )\n  raise\nend\"><pre class=\"notranslate\"><span class=\"pl-en\">rake</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">standard_exception_handling</span> <span class=\"pl-k\">do</span>\n  <span class=\"pl-en\">rake</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">top_level</span>\n<span class=\"pl-k\">rescue</span> <span class=\"pl-c1\">=&gt;</span> <span class=\"pl-en\">e</span>\n  <span class=\"pl-v\">ActiveSupport</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">error_reporter</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">report</span><span class=\"pl-kos\">(</span>\n    <span class=\"pl-en\">e</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-pds\">source</span>: <span class=\"pl-s\">\"rake_command.rails\"</span>\n  <span class=\"pl-kos\">)</span>\n  <span class=\"pl-en\">raise</span>\n<span class=\"pl-k\">end</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55880",
             "title": "Add error reporter to rails rake command",
-            "date_modified": "2025-10-09T13:44:43.000Z",
+            "date_modified": "2025-10-10T13:32:57.000Z",
             "date_published": "2025-10-09T13:42:59.000Z",
             "author": {
                 "name": "kakudou3",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32049413?u=4ab75de201dfdd4c8484c9ac029f04c229652f33&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3497104662\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55874\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55874/hovercard\" href=\"https://github.com/rails/rails/issues/55874\">#55874</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Restarting the serve automatically after dropping DB<br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #55874.\">close</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3497104662\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55874\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55874/hovercard\" href=\"https://github.com/rails/rails/issues/55874\">#55874</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55875",
             "title": "feat(sqlite3): Restarting the serve automatically after dropping DB",
-            "date_modified": "2025-10-10T08:08:58.000Z",
+            "date_modified": "2025-10-10T13:52:02.000Z",
             "date_published": "2025-10-08T22:55:36.000Z",
             "author": {
                 "name": "yokonao",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1966473?u=fe117732163d3610f051fca80df4e04c1b91335d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Overview</h2>\n<p dir=\"auto\">The goal of this PR is to add documentation for the Rails Initialization Process Guide.</p>\n<p dir=\"auto\">Note: This guide has be rewritten entirely. I kept the the old version at the bottom so that the \"diff\" is clean and easy to read (without meaningless +-). The old guide will of course be deleted after the review and before merging.</p>",
             "url": "https://github.com/rails/rails/pull/55862",
             "title": "[RF-Docs] [ci-skip] Rewrite of the Rails Initialization Process Guide",
-            "date_modified": "2025-10-08T23:51:05.000Z",
+            "date_modified": "2025-10-10T13:42:50.000Z",
             "date_published": "2025-10-07T16:11:55.000Z",
             "author": {
                 "name": "bhumi1102",
@@ -135,17 +135,6 @@
             "author": {
                 "name": "rience",
                 "url": "https://github.com/rience"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Otherwise-manually-created connections that have not directly cause a connection should remain lazy.</p>\n<p dir=\"auto\">Since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2778257867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54175\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54175/hovercard\" href=\"https://github.com/rails/rails/pull/54175\">#54175</a>, merely touching <code class=\"notranslate\">AR::Base.lease_connection</code> was sufficient to cause a network connection, which could inflate database server connection counts. We don't want that.</p>",
-            "url": "https://github.com/rails/rails/pull/55857",
-            "title": "Only preconnect connections that have been prepopulated",
-            "date_modified": "2025-10-09T21:53:13.000Z",
-            "date_published": "2025-10-07T03:24:57.000Z",
-            "author": {
-                "name": "matthewd",
-                "url": "https://github.com/matthewd"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "zzak",
                 "url": "https://github.com/zzak"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #55834.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3483807677\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55834\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55834/hovercard\" href=\"https://github.com/rails/rails/issues/55834\">#55834</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/55837",
+            "title": "Fix `change_column` to preserve old column attributes for sqlite3",
+            "date_modified": "2025-10-04T15:49:48.000Z",
+            "date_published": "2025-10-04T15:49:44.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
             }
         }
     ]
