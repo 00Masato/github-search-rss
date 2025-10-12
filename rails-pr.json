@@ -50,17 +50,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5162312?u=e1b3c0f7c6dc600253bf15c99f618b9b2d39c500&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This Pull Request has been created because parameter filtering is broken when structured events get emitted before or during application initialization.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes ActiveSupport::EventReporter to update the payload filter when the app configured filter params get passed off to Active Support.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3321333377\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55489\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55489/hovercard\" href=\"https://github.com/rails/rails/pull/55489\">#55489</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55871",
-            "title": "Refresh event payload filtering when application boots",
-            "date_modified": "2025-10-09T17:06:37.000Z",
-            "date_published": "2025-10-08T18:30:28.000Z",
-            "author": {
-                "name": "gmcgibbon",
-                "url": "https://github.com/gmcgibbon"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16633?u=96158c955ec4a8c03dcbcf8573c8949207ef008c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the ActiveJob Rails Guide mentions the list of <a href=\"https://guides.rubyonrails.org/active_job_basics.html#available-callbacks\" rel=\"nofollow\">available callbacks</a>, but the <code class=\"notranslate\">after_discard</code> is missing.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This pull request adds the <code class=\"notranslate\">after_discard</code> callback to the list of available callbacks.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55869",
             "title": "[ci skip] Add after_discard to the ActiveJob callback list",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "drymar",
                 "url": "https://github.com/drymar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5467859?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because we sometimes found ourselves manually preloading records because the standard preloading generated queries that were quite slow.<br>\nWe found this was because the standard preloader tried to load associated records in a single query. While that is perfectly understandable, exactly the point of a preloader, but in some cases we want multiple queries that each retrieved a batch of the records to be preloaded.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds an additional option to the preloader: <code class=\"notranslate\">batch_size</code>. If that option is supplied the preloader limits the number of ids to be retrieved in a single query.</p>\n<p dir=\"auto\">So when it has determined it needs to loads 10,000 categories, and batch size is set to 1,000, instead of doing a single query on the categories table supplying 10,000 ids it does 10 queries each retrieving 1,000 categories.</p>\n<p dir=\"auto\">Especially when preloading belongs_to_and_has_many we found that the overall system performance was better splitting the preloader queries in multiple smaller ones.</p>",
+            "url": "https://github.com/rails/rails/pull/55835",
+            "title": "Allow preloader queries to be split in batches",
+            "date_modified": "2025-10-04T14:44:01.000Z",
+            "date_published": "2025-10-04T14:43:57.000Z",
+            "author": {
+                "name": "fhoeben",
+                "url": "https://github.com/fhoeben"
             }
         }
     ]
