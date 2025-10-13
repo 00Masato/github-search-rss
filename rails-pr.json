@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7780198?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">The other sections in the tutorial are based on what rails feature they're teaching, instead of the application specific feature. Since this will be reflected in the table of contents, it'll help people jumping to the relevant section and people skimming when they have a little rails familiarity.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Changed the section heading</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. - N/A</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included. - N/A</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55892",
+            "title": "[Getting Started Guide] Change section header for email section to Action Mailer and Email Notifications instead of Adding In Stock Notifications [ci skip]",
+            "date_modified": "2025-10-13T00:59:39.000Z",
+            "date_published": "2025-10-13T00:59:35.000Z",
+            "author": {
+                "name": "harsh183",
+                "url": "https://github.com/harsh183"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2977353?u=16bc8a352fe2375d06afa25a6b6e3f56bbfa07dd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because I found the phrasing of the documentation a bit misleading, as it implies the default behavior is not the default behavior (\"this is <em>only</em> used if &lt;default setting since Rails 6.1&gt; is enabled.\").</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the docs to clarify the usage of <code class=\"notranslate\">ActiveStorage::VariantRecord</code>, since <code class=\"notranslate\">track_variants</code> has been the default for a few years now.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55891",
             "title": "Update comment for ActiveStorage::VariantWithRecord",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "n-at-han-k",
                 "url": "https://github.com/n-at-han-k"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Opted to make it dependent on the <code class=\"notranslate\">:notify</code> behavior than adding yet another behavior just for structured events, but happy to go that way if there is a strong opion.</p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/gmcgibbon/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/gmcgibbon\">@gmcgibbon</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a></p>",
-            "url": "https://github.com/rails/rails/pull/55838",
-            "title": "Add structured event for Rails deprecations, when `config.active_support.deprecation` is set to `:notify`.",
-            "date_modified": "2025-10-04T23:37:48.000Z",
-            "date_published": "2025-10-04T23:35:19.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         }
     ]
