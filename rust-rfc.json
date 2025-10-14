@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/928074?u=34b16e2e7d89c10be8992a845915ab8af13f5570&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">const</code> operand to <code class=\"notranslate\">asm!</code> and <code class=\"notranslate\">global_asm!</code> currently only accepts integers. Change it to also accept pointer values. The value must be computed during const evaluation. The operand expands to the name of the symbol that the<br>\npointer references, plus an integer offset when necessary.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Darksonn/rfcs/blob/asm-const-ptr/text/3848-asm-const-ptr.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3848",
             "title": "Pass pointers to `const` in assembly",
-            "date_modified": "2025-10-14T15:44:39.000Z",
+            "date_modified": "2025-10-14T17:00:20.000Z",
             "date_published": "2025-08-10T09:52:51.000Z",
             "author": {
                 "name": "Darksonn",
