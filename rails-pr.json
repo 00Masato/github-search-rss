@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3484220764\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55838\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55838/hovercard?comment_id=2440638910&amp;comment_type=review_comment\" href=\"https://github.com/rails/rails/pull/55838#discussion_r2440638910\">#55838 (comment)</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/gmcgibbon/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/gmcgibbon\">@gmcgibbon</a></p>",
-            "url": "https://github.com/rails/rails/pull/55931",
-            "title": "Remove unused debug event test setup",
-            "date_modified": "2025-10-17T23:22:11.000Z",
-            "date_published": "2025-10-17T23:22:07.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8933450?u=30e09922a2e61be01fb062aeae1206baa8da0dc2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
             "url": "https://github.com/rails/rails/pull/55930",
             "title": "Confirming a spec run",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "rience",
                 "url": "https://github.com/rience"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7780198?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The guide previously instructed readers to add an Edit link to the show page<br>\nbefore creating the edit.html.erb view, which would result in broken links.</p>\n\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This commit reorders the sections to:</p>\n<ol dir=\"auto\">\n<li>First introduce partials and create _form.html.erb</li>\n<li>Update new.html.erb to use the partial</li>\n<li>Create edit.html.erb using the partial</li>\n<li>Then add the Edit link to show.html.erb</li>\n</ol>\n<p dir=\"auto\">This ensures the edit view exists before we link to it, providing a smoother tutorial experience for readers following along.</p>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature. - N/A</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included. - N/A</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55855",
+            "title": "[Getting Started guide] Improve flow by create edit view before adding edit link [ci skip]",
+            "date_modified": "2025-10-16T15:24:24.000Z",
+            "date_published": "2025-10-06T18:00:40.000Z",
+            "author": {
+                "name": "harsh183",
+                "url": "https://github.com/harsh183"
             }
         }
     ]
