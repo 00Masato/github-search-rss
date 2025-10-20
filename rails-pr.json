@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/rails/rails/pull/55952",
-            "title": "Add remaining deprecations to 8.1 Upgrade Guide [ci skip]",
-            "date_modified": "2025-10-20T20:58:18.000Z",
-            "date_published": "2025-10-20T20:53:39.000Z",
-            "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67093?u=ae38721048300d0786fffecd87c5651a4ab67c35&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Now that we have several tutorials, we should link to the next tutorial in the \"What's Next\" section at the end of each. This provides a much smoother flow for readers to continue learning.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Getting Started recommends Sign Up and Settings tutorial as next step.<br>\nSign Up and Settings recommends Wishlists tutorial as next step.<br>\nWishlists doesn't have a</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55950",
             "title": "[RF-Docs] [ci-skip] Link to next tutorial in What's Next",
@@ -25,17 +14,6 @@
             "author": {
                 "name": "excid3",
                 "url": "https://github.com/excid3"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71886?u=6f65f74687428d5106c268fc72d3360ebb2d44fd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">I noticed a typo in the rdoc for <code class=\"notranslate\">AbstractController::Helpers</code> while browsing the docs.<br>\nThe method name in the docs for <code class=\"notranslate\">all_helpers_from_path</code> is being parsed as <code class=\"notranslate\">#</code></p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/71886/503190338-119ce043-888c-4c12-b020-4de62c632422.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA5OTQ0MjEsIm5iZiI6MTc2MDk5NDEyMSwicGF0aCI6Ii83MTg4Ni81MDMxOTAzMzgtMTE5Y2UwNDMtODg4Yy00YzEyLWIwMjAtNGRlNjJjNjMyNDIyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDIwVDIxMDIwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM2NjBjNDk2MzVkNDU5OGZkZGQ1MjgzYzgwNDI5MDM5YTI4ZTNiMTAxMjU2MDE3NjdkYzgxN2MwZGJkZDgxMGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.n8-6Ncn9d0ok1Vs6N76leDI-S7CAao4omsqjROf4QTY\"><img width=\"1057\" height=\"838\" alt=\"Screenshot 2025-10-20 at 12 46 53\" src=\"https://private-user-images.githubusercontent.com/71886/503190338-119ce043-888c-4c12-b020-4de62c632422.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjA5OTQ0MjEsIm5iZiI6MTc2MDk5NDEyMSwicGF0aCI6Ii83MTg4Ni81MDMxOTAzMzgtMTE5Y2UwNDMtODg4Yy00YzEyLWIwMjAtNGRlNjJjNjMyNDIyLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEwMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMDIwVDIxMDIwMVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWM2NjBjNDk2MzVkNDU5OGZkZGQ1MjgzYzgwNDI5MDM5YTI4ZTNiMTAxMjU2MDE3NjdkYzgxN2MwZGJkZDgxMGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.n8-6Ncn9d0ok1Vs6N76leDI-S7CAao4omsqjROf4QTY\" style=\"max-width: 100%; height: auto; max-height: 838px;\"></a>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request removes the extraneous <code class=\"notranslate\">#</code> from the <code class=\"notranslate\">:method:</code> rdoc directive</p>",
-            "url": "https://github.com/rails/rails/pull/55947",
-            "title": "Fix rdoc comment formatting for all_helpers_from_path method",
-            "date_modified": "2025-10-20T11:49:50.000Z",
-            "date_published": "2025-10-20T11:49:46.000Z",
-            "author": {
-                "name": "c0nspiracy",
-                "url": "https://github.com/c0nspiracy"
             }
         },
         {
@@ -58,17 +36,6 @@
             "author": {
                 "name": "gmcgibbon",
                 "url": "https://github.com/gmcgibbon"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Kamal 2.8.0 is shipping with the long-awaited localhost registry option. We should use that out of the box for new installs, so there's one less thing to setup before you can get that \"hurrah, I'm live in production\" feeling.</p>",
-            "url": "https://github.com/rails/rails/pull/55934",
-            "title": "Kamal localhost registry",
-            "date_modified": "2025-10-20T08:10:36.000Z",
-            "date_published": "2025-10-18T14:35:40.000Z",
-            "author": {
-                "name": "dhh",
-                "url": "https://github.com/dhh"
             }
         },
         {
@@ -223,6 +190,39 @@
             "author": {
                 "name": "agomezcampero",
                 "url": "https://github.com/agomezcampero"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30756?u=f8d2a7e32ff26a8fa1412559b8e2a98a9af5205d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The existing documentation implied that the \"hard to guess\" URLs active storage generates provides some sort of access control. This is not the case. Rather, as they rely on ActiveRecord::SignedId, they're tamper proof and don't expose the underlying id.</p>\n<p dir=\"auto\">The security risk of using these URLs isn't that someone will guess them. Rather, it is if the URLs are ever leaked, the files will be exposed.</p>\n<p dir=\"auto\"><a href=\"https://www.tokyodev.com/articles/identifying-and-fixing-a-resume-visibility-mistake\" rel=\"nofollow\">This happened to us</a> via Cloudflare's crawler hints feature.</p>\n<p dir=\"auto\">But there is a myriad of other ways it could happen. E.g. anyone with access to the request log has access to them, they might be exposed via certain analytics tools, even if a user has access to the app revoked they'll still have access to any files, etc.</p>\n<p dir=\"auto\">Because of this, whenever any access control is needed, proxy and redirect mode should not be used.</p>",
+            "url": "https://github.com/rails/rails/pull/55865",
+            "title": "Make the warning about active storage redirect and proxy mode stronger",
+            "date_modified": "2025-10-14T04:27:52.000Z",
+            "date_published": "2025-10-08T00:35:53.000Z",
+            "author": {
+                "name": "pwim",
+                "url": "https://github.com/pwim"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1966473?u=fe117732163d3610f051fca80df4e04c1b91335d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Overview</h2>\n<p dir=\"auto\">The goal of this PR is to add documentation for the Rails Initialization Process Guide.</p>\n<p dir=\"auto\">Note: This guide has be rewritten entirely. I kept the the old version at the bottom so that the \"diff\" is clean and easy to read (without meaningless +-). The old guide will of course be deleted after the review and before merging.</p>",
+            "url": "https://github.com/rails/rails/pull/55862",
+            "title": "[RF-Docs] [ci-skip] Rewrite of the Rails Initialization Process Guide",
+            "date_modified": "2025-10-10T13:42:50.000Z",
+            "date_published": "2025-10-07T16:11:55.000Z",
+            "author": {
+                "name": "bhumi1102",
+                "url": "https://github.com/bhumi1102"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/617116?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Postgresql and Mysql have different behaviors regarding the sorting order of NULL.</p>\n<p dir=\"auto\">For example:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"z = Book.create!(name: &quot;Zulu&quot;, author: authors(:david))\ny = Book.create!(name: &quot;Yankee&quot;, author: authors(:mary))\nx = Book.create!(name: &quot;X-Ray&quot;, author: authors(:david))\nn = Book.create!(name: nil, author: authors(:bob))\n\n# In postgreSQL\nBook.order(name: :asc) # =&gt; [ x, y, z, n ]\n# In MySQL/SQLite3\nBook.order(name: :asc) # =&gt; [ n, x, y, z ]\"><pre class=\"notranslate\"><span class=\"pl-s1\">z</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"Zulu\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">author</span>: <span class=\"pl-en\">authors</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:david</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-s1\">y</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"Yankee\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">author</span>: <span class=\"pl-en\">authors</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:mary</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-s1\">x</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"X-Ray\"</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">author</span>: <span class=\"pl-en\">authors</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:david</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-s1\">n</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">create!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-c1\">nil</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">author</span>: <span class=\"pl-en\">authors</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:bob</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">)</span>\n\n<span class=\"pl-c\"># In postgreSQL</span>\n<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-pds\">:asc</span><span class=\"pl-kos\">)</span> <span class=\"pl-c\"># =&gt; [ x, y, z, n ]</span>\n<span class=\"pl-c\"># In MySQL/SQLite3</span>\n<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-pds\">:asc</span><span class=\"pl-kos\">)</span> <span class=\"pl-c\"># =&gt; [ n, x, y, z ]</span></pre></div>\n<p dir=\"auto\">Allowing <code class=\"notranslate\">asc_nulls_first</code> and <code class=\"notranslate\">desc_nulls_last</code> enables more control on sorting.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Usage:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"Book.order(name: :asc_nulls_first)\nBook.order(name: :ASC_NULLS_FIRST)\nBook.order(name: &quot;asc_nulls_first&quot;)\nBook.order(Book.arel_table[&quot;name&quot;].asc_nulls_first)\nBook.order(books: { name: :asc_nulls_first })\"><pre class=\"notranslate\"><span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-pds\">:asc_nulls_first</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-pds\">:ASC_NULLS_FIRST</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">name</span>: <span class=\"pl-s\">\"asc_nulls_first\"</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">arel_table</span><span class=\"pl-kos\">[</span><span class=\"pl-s\">\"name\"</span><span class=\"pl-kos\">]</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">asc_nulls_first</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-v\">Book</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">order</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">books</span>: <span class=\"pl-kos\">{</span> <span class=\"pl-pds\">name</span>: <span class=\"pl-pds\">:asc_nulls_first</span> <span class=\"pl-kos\">}</span><span class=\"pl-kos\">)</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55860",
+            "title": "Add asc_nulls_first and desc_nulls_last to order",
+            "date_modified": "2025-10-07T15:05:05.000Z",
+            "date_published": "2025-10-07T14:18:42.000Z",
+            "author": {
+                "name": "n-studio",
+                "url": "https://github.com/n-studio"
             }
         }
     ]
