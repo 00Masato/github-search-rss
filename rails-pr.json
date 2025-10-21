@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67093?u=ae38721048300d0786fffecd87c5651a4ab67c35&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Now that we have several tutorials, we should link to the next tutorial in the \"What's Next\" section at the end of each. This provides a much smoother flow for readers to continue learning.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Getting Started recommends Sign Up and Settings tutorial as next step.<br>\nSign Up and Settings recommends Wishlists tutorial as next step.<br>\nWishlists doesn't have a</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/55950",
-            "title": "[RF-Docs] [ci-skip] Link to next tutorial in What's Next",
-            "date_modified": "2025-10-20T20:32:05.000Z",
-            "date_published": "2025-10-20T15:29:32.000Z",
-            "author": {
-                "name": "excid3",
-                "url": "https://github.com/excid3"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/543166?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">One of the benefits of developing with MySQL is that it allows dropping the current database without first disconnecting clients. As a result developers can use <code class=\"notranslate\">bin/rails db:reset</code> and similar, without first shutting down instances of the app, Rails consoles, background workers, etc. By default PostgreSQL fails to drop a database when clients are connected and displays the following error:</p>\n<blockquote>\n<p dir=\"auto\">PG::ObjectInUse: ERROR:  database \"xyz\" is being accessed by other users (PG::ObjectInUse)</p>\n</blockquote>\n<p dir=\"auto\">This is frustrating when working in development where the database may be dropped frequently.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">PostgreSQL 13 added the <code class=\"notranslate\">FORCE</code> option to the <code class=\"notranslate\">DROP DATABASE</code> statement (<a href=\"https://www.postgresql.org/docs/current/sql-dropdatabase.html\" rel=\"nofollow\">PostgreSQL docs</a>) which automatically disconnects clients before dropping the database. This PR adds the <code class=\"notranslate\">RAILS_PG_DROP_FORCE</code> environment variable which sets this new option. This allows developers to easily drop/reset the database without shutting down their app, etc. E.g.,</p>\n<p dir=\"auto\">$ RAILS_PG_DROP_FORCE=true bin/rails db:reset</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">My first attempt at this feature used the PostgreSQL function <a href=\"https://www.postgresql.org/docs/current/functions-admin.html\" rel=\"nofollow\">pg_terminate_backend</a>, similar to the <a href=\"https://github.com/rails/rails/blob/44b6847ead440f8ab5b17e3a0036fb4e75c6e2d4/activerecord/test/support/adapter_helper.rb#L173\">test helper</a>. By using that function it would work for Postgres versions &lt; 13; however, it felt significantly more complicated. As those versions have already reached EOL I didn't think the extra complexity was justified.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55941",
             "title": "PostgreSQL drop database FORCE option.",
@@ -152,7 +141,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This has been on my todo list for a while, as we've continued to gradually accumulate extra context that we end up needing to pass along with queries.</p>\n<p dir=\"auto\"><strong>This is a draft</strong> -- for exploration, I've changed a number of low-level-but-public APIs. Even if we agree that's a reasonable end-goal, they would require deprecations along the way.</p>",
             "url": "https://github.com/rails/rails/pull/55897",
             "title": "Introduce Parameter Object: QueryIntent",
-            "date_modified": "2025-10-14T20:11:51.000Z",
+            "date_modified": "2025-10-21T09:22:41.000Z",
             "date_published": "2025-10-13T19:05:11.000Z",
             "author": {
                 "name": "matthewd",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "n-studio",
                 "url": "https://github.com/n-studio"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1983566?u=a7744c9a78a5e310c491c9f462847ea1742d90d9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because documentation about behaviour of <code class=\"notranslate\">db:prepare</code> task was incorrect.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes Rails guide in \"Preparing a database\" section. At the moment it's saying that if schema and tables exists - <code class=\"notranslate\">db:prepare</code> task will do nothing. As a matter of fact it'll run pending migrations if they exist.</p>",
+            "url": "https://github.com/rails/rails/pull/55858",
+            "title": "Clarify behavior of `db:prepare` task that indeed runs migrations if schema and tables are created",
+            "date_modified": "2025-10-18T14:54:57.000Z",
+            "date_published": "2025-10-07T08:06:47.000Z",
+            "author": {
+                "name": "rience",
+                "url": "https://github.com/rience"
             }
         }
     ]
