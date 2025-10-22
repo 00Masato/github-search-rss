@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47848?u=41ccf0d1865a17f47d140f73a3293f1f3559fc0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>",
-            "url": "https://github.com/rails/rails/pull/55973",
-            "title": "Don't require \"rails\" in railties that are required by that file",
-            "date_modified": "2025-10-22T20:49:27.000Z",
-            "date_published": "2025-10-22T20:39:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/372620?u=9c18ddb233cbcbe6b40d89e77fea229410654520&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I thought that this issue might actually be valid.<br>\nHowever, I'm not sure whether it is really a valid issue nor do I know whether my way of solving this is how one should do it.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request defers the persistence if the through-records were replaced rather than modified.<br>\nIt's not a lot of code but it <em>feels</em> rather complicated.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55975",
+            "title": "[Fix #55957] has_many through persistence",
+            "date_modified": "2025-10-22T21:15:30.000Z",
+            "date_published": "2025-10-22T21:15:15.000Z",
             "author": {
-                "name": "rafaelfranca",
-                "url": "https://github.com/rafaelfranca"
+                "name": "alexanderadam",
+                "url": "https://github.com/alexanderadam"
             }
         },
         {
