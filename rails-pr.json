@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4289625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created just to fix a typo.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/55977",
+            "title": "[ci-skip][doc] Fix typo on command_line.md",
+            "date_modified": "2025-10-22T22:58:49.000Z",
+            "date_published": "2025-10-22T22:58:34.000Z",
+            "author": {
+                "name": "hachi8833",
+                "url": "https://github.com/hachi8833"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/372620?u=9c18ddb233cbcbe6b40d89e77fea229410654520&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because I thought that this issue might actually be valid.<br>\nHowever, I'm not sure whether it is really a valid issue nor do I know whether my way of solving this is how one should do it.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request defers the persistence if the through-records were replaced rather than modified.<br>\nIt's not a lot of code but it <em>feels</em> rather complicated.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/55975",
             "title": "[Fix #55957] has_many through persistence",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "agomezcampero",
                 "url": "https://github.com/agomezcampero"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30756?u=f8d2a7e32ff26a8fa1412559b8e2a98a9af5205d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The existing documentation implied that the \"hard to guess\" URLs active storage generates provides some sort of access control. This is not the case. Rather, as they rely on ActiveRecord::SignedId, they're tamper proof and don't expose the underlying id.</p>\n<p dir=\"auto\">The security risk of using these URLs isn't that someone will guess them. Rather, it is if the URLs are ever leaked, the files will be exposed.</p>\n<p dir=\"auto\"><a href=\"https://www.tokyodev.com/articles/identifying-and-fixing-a-resume-visibility-mistake\" rel=\"nofollow\">This happened to us</a> via Cloudflare's crawler hints feature.</p>\n<p dir=\"auto\">But there is a myriad of other ways it could happen. E.g. anyone with access to the request log has access to them, they might be exposed via certain analytics tools, even if a user has access to the app revoked they'll still have access to any files, etc.</p>\n<p dir=\"auto\">Because of this, whenever any access control is needed, proxy and redirect mode should not be used.</p>",
-            "url": "https://github.com/rails/rails/pull/55865",
-            "title": "Make the warning about active storage redirect and proxy mode stronger",
-            "date_modified": "2025-10-14T04:27:52.000Z",
-            "date_published": "2025-10-08T00:35:53.000Z",
-            "author": {
-                "name": "pwim",
-                "url": "https://github.com/pwim"
             }
         }
     ]
