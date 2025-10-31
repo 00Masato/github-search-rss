@@ -6,6 +6,39 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow users to add explicit dependencies on standard library crates in the <code class=\"notranslate\">Cargo.toml</code>. This enables Cargo to determine which standard library crates are required by the crate graph without <code class=\"notranslate\">build-std-crates</code> being set and for different crates to require different standard library crates.</p>\n<p dir=\"auto\"><strong>This RFC is is part of the <a href=\"https://rust-lang.github.io/rust-project-goals/2025h2/build-std.html\" rel=\"nofollow\">build-std project goal</a> and a series of build-std RFCs:</strong></p>\n<ol dir=\"auto\">\n<li>build-std context (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574641536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3873\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3873/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3873\">#3873</a>)</li>\n<li><code class=\"notranslate\">build-std=\"always\"</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574654214\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3874\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3874/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3874\">#3874</a>)</li>\n<li>Explicit standard library dependencies (this RFC)</li>\n<li><code class=\"notranslate\">build-std=\"compatible\"</code> (RFC not opened yet)</li>\n<li><code class=\"notranslate\">build-std=\"match-profile\"</code> (RFC not opened yet)</li>\n</ol>\n<p dir=\"auto\">There is also <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std\" rel=\"nofollow\">a Zulip channel where you can ask questions about any of the build-std RFCs</a>. This series of RFCs was drafted over many months with the help of stakeholders from many Rust project teams, we thank them for their help!</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/build-std-part-three-explicit-dependencies/text/3875-build-std-explicit-dependencies.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3875",
+            "title": "build-std: explicit dependencies",
+            "date_modified": "2025-10-31T12:00:03.000Z",
+            "date_published": "2025-10-31T11:59:14.000Z",
+            "author": {
+                "name": "davidtwco",
+                "url": "https://github.com/davidtwco"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add a new Cargo configuration option, <code class=\"notranslate\">build-std = \"always|never\"</code>, which will unconditionally rebuild standard library dependencies. The set of standard library dependencies can optionally be customised with a new <code class=\"notranslate\">build-std-crates</code> option. It also describes how Cargo (or external tools) should build the standard library crates on stable (i.e., which flags to pass and features to enable).</p>\n<p dir=\"auto\">This proposal limits the ways the built standard library can be customised (such as by settings in the profile) and intends that the build standard library matches the prebuilt one (if available) as closely as possible.</p>\n<p dir=\"auto\"><strong>This RFC is is part of the <a href=\"https://rust-lang.github.io/rust-project-goals/2025h2/build-std.html\" rel=\"nofollow\">build-std project goal</a> and a series of build-std RFCs:</strong></p>\n<ol dir=\"auto\">\n<li>build-std context (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574641536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3873\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3873/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3873\">#3873</a>)</li>\n<li><code class=\"notranslate\">build-std=\"always\"</code> (this RFC)</li>\n<li>Explicit standard library dependencies (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574668933\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3875\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3875/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3875\">#3875</a>)</li>\n<li><code class=\"notranslate\">build-std=\"compatible\"</code> (RFC not opened yet)</li>\n<li><code class=\"notranslate\">build-std=\"match-profile\"</code> (RFC not opened yet)</li>\n</ol>\n<p dir=\"auto\">There is also <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std\" rel=\"nofollow\">a Zulip channel where you can ask questions about any of the build-std RFCs</a>. This series of RFCs was drafted over many months with the help of stakeholders from many Rust project teams, we thank them for their help!</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/build-std-part-two-always/text/3874-build-std-always.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3874",
+            "title": "build-std: always",
+            "date_modified": "2025-10-31T12:00:34.000Z",
+            "date_published": "2025-10-31T11:54:34.000Z",
+            "author": {
+                "name": "davidtwco",
+                "url": "https://github.com/davidtwco"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While Rust's pre-built standard library has proven itself sufficient for the majority of use cases, there are a handful of use cases that are not well supported:</p>\n<ol dir=\"auto\">\n<li>Rebuilding the standard library to match the user's profile</li>\n<li>Rebuilding the standard library with ABI-modifying flags</li>\n<li>Building the standard library for tier three targets</li>\n</ol>\n<p dir=\"auto\">Proposals to solve these problems come broadly under the umbrella of \"build-std\" and date back over 10 years ago, though no complete solution has yet reached consensus.</p>\n<p dir=\"auto\"><strong>This RFC does not propose any changes directly, only document the background, history and motivations for build-std. It is part of a series of build-std RFCs and later RFCs will reference this one.</strong> This RFC is part of the <a href=\"https://rust-lang.github.io/rust-project-goals/2025h2/build-std.html\" rel=\"nofollow\">build-std project goal</a>.</p>\n<ol dir=\"auto\">\n<li>build-std context (this RFC)</li>\n<li><code class=\"notranslate\">build-std=\"always\"</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574654214\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3874\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3874/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3874\">#3874</a>)</li>\n<li>Explicit standard library dependencies (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574668933\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3875\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3875/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3875\">#3875</a>)</li>\n<li><code class=\"notranslate\">build-std=\"compatible\"</code> (RFC not opened yet)</li>\n<li><code class=\"notranslate\">build-std=\"match-profile\"</code> (RFC not opened yet)</li>\n</ol>\n<p dir=\"auto\">There is also <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std\" rel=\"nofollow\">a Zulip channel where you can ask questions about any of the build-std RFCs</a>. This series of RFCs was drafted over many months with the help of stakeholders from many Rust project teams, we thank them for their help!</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/build-std-part-one-context/text/3873-build-std-context.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3873",
+            "title": "build-std: context",
+            "date_modified": "2025-10-31T12:00:24.000Z",
+            "date_published": "2025-10-31T11:50:24.000Z",
+            "author": {
+                "name": "davidtwco",
+                "url": "https://github.com/davidtwco"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/158471?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">This RFC proposes that crates.io should provide insight into vulnerabilities and unsound<br>\nAPI surface based on the RustSec advisory database.</p>\n<p dir=\"auto\"><a href=\"https://github.com/djc/rfcs/blob/crates-io-security/text/3872-crates-io-security.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3872",
             "title": "Adding a crates.io Security tab",
@@ -190,39 +223,6 @@
             "author": {
                 "name": "Noratrieb",
                 "url": "https://github.com/Noratrieb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191960014?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See discussion on internals <a href=\"https://internals.rust-lang.org/t/pre-rfc-allow-procedural-macros-to-be-placed-in-the-same-crate-package-as-app/23005\" rel=\"nofollow\">here</a>.</p>\n<p dir=\"auto\">I feel the need to clarify that this is not about crates, but packages. I had them confused the initial time I wrote the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ora-0/rust-rfcs/blob/master/text/3778-proc-macro-in-same-package-as-app.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3826",
-            "title": "RFC: Procedural macros in same package as app",
-            "date_modified": "2025-06-12T02:20:20.000Z",
-            "date_published": "2025-05-30T07:45:15.000Z",
-            "author": {
-                "name": "ora-0",
-                "url": "https://github.com/ora-0"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60879563?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposal was initially shared in a <a href=\"https://www.reddit.com/r/rust/comments/1kwud96/proposal_to_reconcile_generics_and_rusts_orphan/?utm_source=share&amp;utm_medium=web3x&amp;utm_name=web3xcss&amp;utm_term=1&amp;utm_content=share_button\" rel=\"nofollow\">Reddit post</a> I authored to introduce the idea and gather community feedback:</p>\n<p dir=\"auto\">“Proposal to reconcile generics and Rust’s orphan rule”</p>\n<p dir=\"auto\">While the post is still recent and awaiting responses, it serves as an early exposition of the problem and the motivation behind this RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/victorGhiglione/rfcs/blob/local_trait_restriction_for_orphan_rule/text/3773-local-type-filter.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3821",
-            "title": "RFC: Allow generic impls using local trait bounds",
-            "date_modified": "2025-06-07T16:26:58.000Z",
-            "date_published": "2025-05-27T19:39:12.000Z",
-            "author": {
-                "name": "victorGhiglione",
-                "url": "https://github.com/victorGhiglione"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1896483?u=c6fc0bdfda0b94322521aecdf211fabe16d2edea&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">tldr: make it easier/safer to use <code class=\"notranslate\">target_feature</code> in traits.</p>\n<p dir=\"auto\">Also see prior discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2972360895\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/139368\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/139368/hovercard\" href=\"https://github.com/rust-lang/rust/issues/139368\">rust-lang/rust#139368</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/veluca93/rfcs/blob/tft/text/3820-target-feature-traits.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3820",
-            "title": "RFC: Changes to `target_feature` attribute",
-            "date_modified": "2025-06-22T22:39:29.000Z",
-            "date_published": "2025-05-25T19:25:50.000Z",
-            "author": {
-                "name": "veluca93",
-                "url": "https://github.com/veluca93"
             }
         }
     ]
