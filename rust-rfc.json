@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This includes several commits to fix various markdown errors in the rfc book. This is in preparation for mdbook 0.5 which is a little more sensitive to markdown errors (mostly generating warnings, or not rendering as expected). This should be compatible with both 0.5 and 0.4.</p>\n<p dir=\"auto\">r? internal-sites</p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/markup-fixes/text/0048-traits.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3878",
-            "title": "Apply several markup fixes",
-            "date_modified": "2025-11-08T10:59:14.000Z",
-            "date_published": "2025-11-08T02:32:04.000Z",
-            "author": {
-                "name": "ehuss",
-                "url": "https://github.com/ehuss"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow users to add explicit dependencies on standard library crates in the <code class=\"notranslate\">Cargo.toml</code>. This enables Cargo to determine which standard library crates are required by the crate graph without <code class=\"notranslate\">build-std-crates</code> being set and for different crates to require different standard library crates.</p>\n<p dir=\"auto\"><strong>This RFC is is part of the <a href=\"https://rust-lang.github.io/rust-project-goals/2025h2/build-std.html\" rel=\"nofollow\">build-std project goal</a> and a series of build-std RFCs:</strong></p>\n<ol dir=\"auto\">\n<li>build-std context (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574641536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3873\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3873/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3873\">#3873</a>)</li>\n<li><code class=\"notranslate\">build-std=\"always\"</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574654214\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3874\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3874/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3874\">#3874</a>)</li>\n<li>Explicit standard library dependencies (this RFC)</li>\n<li><code class=\"notranslate\">build-std=\"compatible\"</code> (RFC not opened yet)</li>\n<li><code class=\"notranslate\">build-std=\"match-profile\"</code> (RFC not opened yet)</li>\n</ol>\n<p dir=\"auto\">There is also <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std\" rel=\"nofollow\">a Zulip channel where you can ask questions about any of the build-std RFCs</a>. This series of RFCs was drafted over many months with the help of stakeholders from many Rust project teams, we thank them for their help!</p>\n<p dir=\"auto\">There are some details that have been noted as being worth mentioning in any eventual tracking issues:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574668933\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3875\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3875/hovercard?comment_id=2482474212&amp;comment_type=review_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3875#discussion_r2482474212\">#3875 (comment)</a></li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/build-std-part-three-explicit-dependencies/text/3875-build-std-explicit-dependencies.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3875",
             "title": "build-std: explicit dependencies",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Noratrieb",
                 "url": "https://github.com/Noratrieb"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191960014?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">See discussion on internals <a href=\"https://internals.rust-lang.org/t/pre-rfc-allow-procedural-macros-to-be-placed-in-the-same-crate-package-as-app/23005\" rel=\"nofollow\">here</a>.</p>\n<p dir=\"auto\">I feel the need to clarify that this is not about crates, but packages. I had them confused the initial time I wrote the document.</p>\n<p dir=\"auto\"><a href=\"https://github.com/ora-0/rust-rfcs/blob/master/text/3778-proc-macro-in-same-package-as-app.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3826",
+            "title": "RFC: Procedural macros in same package as app",
+            "date_modified": "2025-06-12T02:20:20.000Z",
+            "date_published": "2025-05-30T07:45:15.000Z",
+            "author": {
+                "name": "ora-0",
+                "url": "https://github.com/ora-0"
             }
         }
     ]
