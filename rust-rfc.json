@@ -9,19 +9,8 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This includes several commits to fix various markdown errors in the rfc book. This is in preparation for mdbook 0.5 which is a little more sensitive to markdown errors (mostly generating warnings, or not rendering as expected). This should be compatible with both 0.5 and 0.4.</p>\n<p dir=\"auto\">r? internal-sites</p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/markup-fixes/text/0048-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3878",
             "title": "Apply several markup fixes",
-            "date_modified": "2025-11-08T02:32:09.000Z",
+            "date_modified": "2025-11-08T10:59:14.000Z",
             "date_published": "2025-11-08T02:32:04.000Z",
-            "author": {
-                "name": "ehuss",
-                "url": "https://github.com/ehuss"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This helps when using <code class=\"notranslate\">mdbook serve</code> so that mdbook will automatically reload whenever a file changes.</p>\n<p dir=\"auto\">This doesn't handle adding new files because that requires running <code class=\"notranslate\">generate-book.py</code>, but that should be fine.</p>\n<p dir=\"auto\">r? internal-sites</p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3877",
-            "title": "Add mdbook-extra-watch-dirs",
-            "date_modified": "2025-11-08T02:30:21.000Z",
-            "date_published": "2025-11-08T02:30:18.000Z",
             "author": {
                 "name": "ehuss",
                 "url": "https://github.com/ehuss"
@@ -223,6 +212,17 @@
             "author": {
                 "name": "nik-rev",
                 "url": "https://github.com/nik-rev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/1909-unsized-rvalues.md\">Original RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">New RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3829",
+            "title": "de-RFC: Remove unsized_locals",
+            "date_modified": "2025-09-21T15:09:46.000Z",
+            "date_published": "2025-06-02T18:40:20.000Z",
+            "author": {
+                "name": "Noratrieb",
+                "url": "https://github.com/Noratrieb"
             }
         }
     ]
