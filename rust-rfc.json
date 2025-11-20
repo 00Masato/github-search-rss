@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73757586?u=fdf6c88693ae3845def1f97b5af24113d331506a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The current model for incremental recompilations doesn't share progress between compiler activities, leading to unnecessary rebuilds.</p>\n<p dir=\"auto\">This PR introduces two concepts (target stages and stage dependencies) that would help alleviate that problem, via extracting some unstable fields from crate hashing into their own parts of the incremental system, and separating concerns between the different compilation stages.</p>\n<p dir=\"auto\"><strong>So, <code class=\"notranslate\">cargo check</code> isn't affect by <code class=\"notranslate\">-Clto=true</code> and <code class=\"notranslate\">cargo build</code> can reuse artifacts produced by <code class=\"notranslate\">cargo check</code>.</strong></p>\n<p dir=\"auto\"><a href=\"https://github.com/blyxyas/rfcs/blob/target-stages/text/0000-target-stages.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3881",
+            "title": "Target Stages, an improvement of the incremental system",
+            "date_modified": "2025-11-20T21:33:10.000Z",
+            "date_published": "2025-11-20T21:33:10.000Z",
+            "author": {
+                "name": "blyxyas",
+                "url": "https://github.com/blyxyas"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40406187?u=6776d5897692d7182cfc31f3073aa64eb86c113a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC introduce <code class=\"notranslate\">DerefInto</code> and <code class=\"notranslate\">DerefMutInto</code>, supertraits of <a href=\"https://doc.rust-lang.org/std/ops/trait.Deref.html\" rel=\"nofollow\"><code class=\"notranslate\">Deref</code></a> / <a href=\"https://doc.rust-lang.org/std/ops/trait.DerefMut.html\" rel=\"nofollow\"><code class=\"notranslate\">DerefMut</code></a> that return targets by value, enabling ergonomic RAII access for types like RefCell, Mutex, and RwLock.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Thomas-Mewily/rust_rfcs/blob/master/text/3880-deref_into.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3880",
             "title": "RFC: Introduce `DerefInto` and `DerefMutInto` for RAII access",
@@ -20,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Allow users to add explicit dependencies on standard library crates in the <code class=\"notranslate\">Cargo.toml</code>. This enables Cargo to determine which standard library crates are required by the crate graph without <code class=\"notranslate\">build-std-crates</code> being set and for different crates to require different standard library crates.</p>\n<p dir=\"auto\"><strong>This RFC is is part of the <a href=\"https://rust-lang.github.io/rust-project-goals/2025h2/build-std.html\" rel=\"nofollow\">build-std project goal</a> and a series of build-std RFCs:</strong></p>\n<ol dir=\"auto\">\n<li>build-std context (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574641536\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3873\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3873/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3873\">#3873</a>)</li>\n<li><code class=\"notranslate\">build-std=\"always\"</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574654214\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3874\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3874/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3874\">#3874</a>)</li>\n<li>Explicit standard library dependencies (this RFC)</li>\n<li><code class=\"notranslate\">build-std=\"compatible\"</code> (RFC not opened yet)</li>\n<li><code class=\"notranslate\">build-std=\"match-profile\"</code> (RFC not opened yet)</li>\n</ol>\n<p dir=\"auto\">There is also <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std\" rel=\"nofollow\">a Zulip channel where you can ask questions about any of the build-std RFCs</a>. This series of RFCs was drafted over many months with the help of stakeholders from many Rust project teams, we thank them for their help!</p>\n<p dir=\"auto\">There are some details that have been noted as being worth mentioning in any eventual tracking issues:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574668933\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3875\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3875/hovercard?comment_id=2482474212&amp;comment_type=review_comment\" href=\"https://github.com/rust-lang/rfcs/pull/3875#discussion_r2482474212\">#3875 (comment)</a></li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/build-std-part-three-explicit-dependencies/text/3875-build-std-explicit-dependencies.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3875",
             "title": "build-std: explicit dependencies",
-            "date_modified": "2025-11-20T14:59:16.000Z",
+            "date_modified": "2025-11-20T21:23:47.000Z",
             "date_published": "2025-10-31T11:59:14.000Z",
             "author": {
                 "name": "davidtwco",
@@ -42,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1295100?u=b0540abe14ddfb8c24578add2a8c960bc704a661&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While Rust's pre-built standard library has proven itself sufficient for the majority of use cases, there are a handful of use cases that are not well supported:</p>\n<ol dir=\"auto\">\n<li>Rebuilding the standard library to match the user's profile</li>\n<li>Rebuilding the standard library with ABI-modifying flags</li>\n<li>Building the standard library for tier three targets</li>\n</ol>\n<p dir=\"auto\">Proposals to solve these problems come broadly under the umbrella of \"build-std\" and date back over 10 years ago, though no complete solution has yet reached consensus.</p>\n<p dir=\"auto\"><strong>This RFC does not propose any changes directly, only document the background, history and motivations for build-std. It is part of a series of build-std RFCs and later RFCs will reference this one.</strong> This RFC is part of the <a href=\"https://rust-lang.github.io/rust-project-goals/2025h2/build-std.html\" rel=\"nofollow\">build-std project goal</a>.</p>\n<ol dir=\"auto\">\n<li>build-std context (this RFC)</li>\n<li><code class=\"notranslate\">build-std=\"always\"</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574654214\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3874\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3874/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3874\">#3874</a>)</li>\n<li>Explicit standard library dependencies (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3574668933\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3875\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3875/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3875\">#3875</a>)</li>\n<li><code class=\"notranslate\">build-std=\"compatible\"</code> (RFC not opened yet)</li>\n<li><code class=\"notranslate\">build-std=\"match-profile\"</code> (RFC not opened yet)</li>\n</ol>\n<p dir=\"auto\">There is also <a href=\"https://rust-lang.zulipchat.com/#narrow/channel/516120-project-goals.2F2025h1.2Fbuild-std\" rel=\"nofollow\">a Zulip channel where you can ask questions about any of the build-std RFCs</a>. This series of RFCs was drafted over many months with the help of stakeholders from many Rust project teams, we thank them for their help!</p>\n<p dir=\"auto\"><a href=\"https://github.com/davidtwco/rfcs/blob/build-std-part-one-context/text/3873-build-std-context.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3873",
             "title": "build-std: context",
-            "date_modified": "2025-11-19T02:01:41.000Z",
+            "date_modified": "2025-11-20T21:24:23.000Z",
             "date_published": "2025-10-31T11:50:24.000Z",
             "author": {
                 "name": "davidtwco",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "nik-rev",
                 "url": "https://github.com/nik-rev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48135649?u=f47185e959d8ac7ec628af62c40ed782e9d6485b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/1909-unsized-rvalues.md\">Original RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">New RFC</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/Noratrieb/rfcs/blob/ununsize_locals/text/3829-de-rfc-unsized-locals.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3829",
-            "title": "de-RFC: Remove unsized_locals",
-            "date_modified": "2025-09-21T15:09:46.000Z",
-            "date_published": "2025-06-02T18:40:20.000Z",
-            "author": {
-                "name": "Noratrieb",
-                "url": "https://github.com/Noratrieb"
             }
         }
     ]
