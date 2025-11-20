@@ -6,14 +6,14 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/in/29110?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Bumps <a href=\"https://github.com/sindresorhus/file-type\">file-type</a> from 21.1.0 to 21.1.1.</p>\n<details>\n<summary>Release notes</summary>\n<p dir=\"auto\"><em>Sourced from <a href=\"https://github.com/sindresorhus/file-type/releases\">file-type's releases</a>.</em></p>\n<blockquote>\n<h2 dir=\"auto\">v21.1.1</h2>\n<ul dir=\"auto\">\n<li>Fix handling of partial Gunzip file (<a href=\"https://redirect.github.com/sindresorhus/file-type/issues/783\">#783</a>)  <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/mdn/content/commit/710e053b1c1dfa3844ee483bb36998f728153396/hovercard\" href=\"https://github.com/mdn/content/commit/710e053b1c1dfa3844ee483bb36998f728153396\"><tt>710e053</tt></a></li>\n</ul>\n<hr>\n<p dir=\"auto\"><a class=\"commit-link\" href=\"https://github.com/sindresorhus/file-type/compare/v21.1.0...v21.1.1\">sindresorhus/file-type@<tt>v21.1.0...v21.1.1</tt></a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/sindresorhus/file-type/commit/85015587c18716d4690a27f2a36bf63a8a06d8c8\"><code class=\"notranslate\">8501558</code></a> 21.1.1</li>\n<li><a href=\"https://github.com/sindresorhus/file-type/commit/710e0530fb42c98e95a1451254dcc0ee95f9c855\"><code class=\"notranslate\">710e053</code></a> Fix handling of partial Gunzip file (<a href=\"https://redirect.github.com/sindresorhus/file-type/issues/783\">#783</a>)</li>\n<li>See full diff in <a href=\"https://github.com/sindresorhus/file-type/compare/v21.1.0...v21.1.1\">compare view</a></li>\n</ul>\n</details>\n<br>\n<p dir=\"auto\"><a href=\"https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores\"><img src=\"https://camo.githubusercontent.com/420c055cc7147edf1a25fb8eadfba76d642992fcae38dec95b854447218a5fc1/68747470733a2f2f646570656e6461626f742d6261646765732e6769746875626170702e636f6d2f6261646765732f636f6d7061746962696c6974795f73636f72653f646570656e64656e63792d6e616d653d66696c652d74797065267061636b6167652d6d616e616765723d6e706d5f616e645f7961726e2670726576696f75732d76657273696f6e3d32312e312e30266e65772d76657273696f6e3d32312e312e31\" alt=\"Dependabot compatibility score\" data-canonical-src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=file-type&amp;package-manager=npm_and_yarn&amp;previous-version=21.1.0&amp;new-version=21.1.1\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting <code class=\"notranslate\">@dependabot rebase</code>.</p>\n<hr>\n<details>\n<summary>Dependabot commands and options</summary>\n<br>\n<p dir=\"auto\">You can trigger Dependabot actions by commenting on this PR:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">@dependabot rebase</code> will rebase this PR</li>\n<li><code class=\"notranslate\">@dependabot recreate</code> will recreate this PR, overwriting any edits that have been made to it</li>\n<li><code class=\"notranslate\">@dependabot merge</code> will merge this PR after your CI passes on it</li>\n<li><code class=\"notranslate\">@dependabot squash and merge</code> will squash and merge this PR after your CI passes on it</li>\n<li><code class=\"notranslate\">@dependabot cancel merge</code> will cancel a previously requested merge and block automerging</li>\n<li><code class=\"notranslate\">@dependabot reopen</code> will reopen this PR if it is closed</li>\n<li><code class=\"notranslate\">@dependabot close</code> will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually</li>\n<li><code class=\"notranslate\">@dependabot show &lt;dependency name&gt; ignore conditions</code> will show all of the ignore conditions of the specified dependency</li>\n<li><code class=\"notranslate\">@dependabot ignore this major version</code> will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)</li>\n<li><code class=\"notranslate\">@dependabot ignore this minor version</code> will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)</li>\n<li><code class=\"notranslate\">@dependabot ignore this dependency</code> will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/content/pull/42033",
-            "title": "chore(deps-dev): bump file-type from 21.1.0 to 21.1.1",
-            "date_modified": "2025-11-20T14:02:07.000Z",
-            "date_published": "2025-11-20T14:01:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/582725?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Typo fix: <code class=\"notranslate\">stye</code> -&gt; <code class=\"notranslate\">style</code></p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Typos halt the flow of reading (brains often perform a double-take), which is counterproductive when consuming more complex documentation.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">n/a</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">n/a</p>",
+            "url": "https://github.com/mdn/content/pull/42034",
+            "title": "Fix typo in description of CSSStyleRule.style",
+            "date_modified": "2025-11-20T14:45:59.000Z",
+            "date_published": "2025-11-20T14:25:17.000Z",
             "author": {
-                "name": "dependabot",
-                "url": "https://github.com/apps/dependabot"
+                "name": "RavuAlHemio",
+                "url": "https://github.com/RavuAlHemio"
             }
         },
         {
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>create new page for <code class=\"notranslate\">&lt;timeline-range-name&gt;</code></li>\n<li>rewrite <code class=\"notranslate\">animation-range</code> shorthand property.</li>\n<li>make example detail how the property works and interacts with afm</li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/42020",
             "title": "Scroll-driven animations: animation-range and <timeline-range-name> data type",
-            "date_modified": "2025-11-20T09:47:44.000Z",
+            "date_modified": "2025-11-20T14:53:30.000Z",
             "date_published": "2025-11-19T15:08:10.000Z",
             "author": {
                 "name": "estelle",
@@ -66,17 +66,6 @@
             "title": "Add scroll-driven animations to glossary see also",
             "date_modified": "2025-11-19T13:21:30.000Z",
             "date_published": "2025-11-19T13:19:48.000Z",
-            "author": {
-                "name": "estelle",
-                "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">part of scroll driven animation.<br>\nthis will be a large PR, so doing it in parts.</p>",
-            "url": "https://github.com/mdn/content/pull/42015",
-            "title": "New data-type: <axis>",
-            "date_modified": "2025-11-20T08:55:21.000Z",
-            "date_published": "2025-11-19T13:11:35.000Z",
             "author": {
                 "name": "estelle",
                 "url": "https://github.com/estelle"
@@ -220,6 +209,17 @@
             "title": "Editorial review: Document WebGPU texture view swizzle feature",
             "date_modified": "2025-11-13T07:53:06.000Z",
             "date_published": "2025-11-07T17:40:42.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Use of the <code class=\"notranslate\">bgra8unorm</code> format for read-only storage textures is deprecated. The specification explicitly disallows this, as this format is intended for write-only access and is not portable. Any browser support for this combination is considered a bug.</p>\n<p dir=\"auto\">Chrome previously allowed this, but it is deprecated from version 140 onwards. See <a href=\"https://developer.chrome.com/blog/new-in-webgpu-140#deprecate_bgra8unorm_read-only_storage_texture_usage\" rel=\"nofollow\">https://developer.chrome.com/blog/new-in-webgpu-140#deprecate_bgra8unorm_read-only_storage_texture_usage</a>.</p>\n<p dir=\"auto\">This PR adds a note to make the deprecation clear. Note that I'm not intending to add a browser compat data point for this change, as:</p>\n<ul dir=\"auto\">\n<li>It is expected behavior anyway.</li>\n<li>We don't really want to encourage people to use it in browsers that wrongly allow it.</li>\n</ul>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/41840",
+            "title": "Editorial review: Add note about bgra8unorm read-only storage textures bring deprecated",
+            "date_modified": "2025-11-07T15:36:39.000Z",
+            "date_published": "2025-11-07T15:14:14.000Z",
             "author": {
                 "name": "chrisdavidmills",
                 "url": "https://github.com/chrisdavidmills"
