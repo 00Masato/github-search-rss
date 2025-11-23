@@ -31,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73757586?u=fdf6c88693ae3845def1f97b5af24113d331506a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The current model for incremental recompilations doesn't share progress between compiler activities, leading to unnecessary rebuilds.</p>\n<p dir=\"auto\">This PR introduces two concepts (target stages and stage dependencies) that would help alleviate that problem, via extracting some unstable fields from crate hashing into their own parts of the incremental system, and separating concerns between the different compilation stages.</p>\n<p dir=\"auto\"><strong>So, <code class=\"notranslate\">cargo check</code> isn't affected by <code class=\"notranslate\">-Clto=true</code> and <code class=\"notranslate\">cargo build</code> can reuse artifacts produced by <code class=\"notranslate\">cargo check</code>.</strong></p>\n<p dir=\"auto\"><a href=\"https://github.com/blyxyas/rfcs/blob/target-stages/text/0000-target-stages.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3881",
             "title": "Target Stages, an improvement of the incremental system",
-            "date_modified": "2025-11-23T15:53:59.000Z",
+            "date_modified": "2025-11-23T17:41:11.000Z",
             "date_published": "2025-11-20T21:33:10.000Z",
             "author": {
                 "name": "blyxyas",
