@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30781523?u=034a62a6987af0004bbaba8a7d6ab7195dab9ccc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes #[exhaustive] traits to enable sound cross-trait casting for trait objects.</p>\n<p dir=\"auto\">For any concrete type T, the set of #[exhaustive] traits it implements is finite anddeterministic, allowing runtime checks like “if this dyn A also implements dyn B, cast and use it.”</p>\n<p dir=\"auto\">The design adds a per-type exhaustive trait→vtable map and enforces three rules (type-crate ownership of implementation, trait arguments determined by Self, and 'static only) to keep the mapping coherent under separate compilation.</p>\n<p dir=\"auto\">Use cases include capability-based game entities (e.g., Damageable, Walkable traits) and GUI widgets (e.g., Clickable, Scrollable),<br>\navoiding manual registry/macro approaches such as bevy_reflect.</p>\n<p dir=\"auto\">This enables patterns such as: \"if dyn Character is dyn Flyable, then character.fly()\"</p>\n<p dir=\"auto\"><a href=\"https://github.com/izagawd/exhaustive_traits/blob/exhaustive_traits/text/3885-exhaustive-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3885",
             "title": "RFC: Exhaustive traits. Traits that enable cross trait casting between trait objects.",
-            "date_modified": "2025-11-25T00:59:39.000Z",
+            "date_modified": "2025-11-25T02:34:23.000Z",
             "date_published": "2025-11-24T22:52:55.000Z",
             "author": {
                 "name": "izagawd",
