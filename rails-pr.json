@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8004593?u=501ba2f3558c5a4e910de2bc73d2ad95ee7f36d6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds the Rails Guides documentation for <a href=\"https://edgeapi.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-scoping\" rel=\"nofollow\"><code class=\"notranslate\">Relation#scoping</code></a>:</p>\n<ul dir=\"auto\">\n<li>Adds clearer documentation for <code class=\"notranslate\">Relation#scoping</code>, especially the <code class=\"notranslate\">all_queries: true</code> behavior.</li>\n<li>Includes updated examples, <code class=\"notranslate\">SQL</code> output, and guidance on nested scoping.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56229",
+            "title": "[docs] Update documentation for block-level scoping and clarify examples [ci-skip]",
+            "date_modified": "2025-11-25T11:59:58.000Z",
+            "date_published": "2025-11-25T11:59:46.000Z",
+            "author": {
+                "name": "shivabhusal",
+                "url": "https://github.com/shivabhusal"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/122436?u=ec54cf625a213bbe6cf0ed04a3d14551dac7875d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">becomes</code> can be optimized a little.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes <code class=\"notranslate\">ActiveRecord::Base#becomes</code> to return self when no class conversion needed.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56228",
             "title": "Optimize ActiveRecord::Base#becomes when no class conversion needed",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "c960657",
                 "url": "https://github.com/c960657"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9832?u=373f535db0f519750b898d7754096d9ada71e5a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This branch contains all the fixes needed for minitest 6 to work smoothly with rails. I've now tested extensively on MT5 as well as MT6.</p>\n<p dir=\"auto\">I have another branch testing out the actual MT6 bump and it still has some sort of flaky going on that I'm investigating.</p>",
-            "url": "https://github.com/rails/rails/pull/56202",
-            "title": "Prepping rails for minitest 6",
-            "date_modified": "2025-11-21T21:10:19.000Z",
-            "date_published": "2025-11-20T11:23:46.000Z",
-            "author": {
-                "name": "zenspider",
-                "url": "https://github.com/zenspider"
             }
         }
     ]
