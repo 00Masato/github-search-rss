@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30781523?u=034a62a6987af0004bbaba8a7d6ab7195dab9ccc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes const self fields: per-type constant metadata that can be accessed through values and trait objects using expr.FIELD syntax.</p>\n<p dir=\"auto\">For trait objects, implementations store their constant data inline in the vtable, allowing &amp;dyn Trait to read per-impl constants (like flags, versions) without a virtual function call. For non trait objects, it is as efficient as accessing a constant value.</p>\n<p dir=\"auto\">This makes patterns like “methods that just return a literal” both more expressive and more efficient, especially in hot loops over many trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/izagawd/rust_rfcs/blob/const_self_fields/text/3888-const-self-fields.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3888",
+            "title": "RFC: Const self fields",
+            "date_modified": "2025-11-26T19:32:13.000Z",
+            "date_published": "2025-11-26T19:19:01.000Z",
+            "author": {
+                "name": "izagawd",
+                "url": "https://github.com/izagawd"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/173050347?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC would introduce <strong>glob exports</strong> for only public item.</p>\n<p dir=\"auto\"><a href=\"https://github.com/HackingRepo/rfcs/blob/patch-1/text/0000-pub_use_pub_glob.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3887",
             "title": "Create 0000-pub_use_pub_glob.md",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "RustyYato",
                 "url": "https://github.com/RustyYato"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Move to a world where the size check for <code class=\"notranslate\">transmute</code> is always accurate, preserving the developer experience via linting instead of the special-cased typeck tricks.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/newt_level_transfiguration/text/3844-next-gen-transmute.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3844",
-            "title": "Next-Gen `transmute`",
-            "date_modified": "2025-08-22T07:38:59.000Z",
-            "date_published": "2025-08-02T23:28:32.000Z",
-            "author": {
-                "name": "scottmcm",
-                "url": "https://github.com/scottmcm"
             }
         }
     ]
