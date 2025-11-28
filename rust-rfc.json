@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30781523?u=034a62a6987af0004bbaba8a7d6ab7195dab9ccc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes const self fields: per-type constant metadata that can be accessed through values and trait objects using expr.FIELD syntax.</p>\n<p dir=\"auto\">For trait objects, implementations store their constant data inline in the vtable, allowing &amp;dyn Trait to read per-impl constants (like flags, versions) without a virtual function call. For non trait objects, it is as efficient as accessing a constant value.</p>\n<p dir=\"auto\">This makes patterns like “methods that just return a literal” both more expressive and more efficient, especially in hot loops over many trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/izagawd/rust_rfcs/blob/const_self_fields/text/3888-const-self-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3888",
             "title": "RFC: Const self fields",
-            "date_modified": "2025-11-28T21:13:23.000Z",
+            "date_modified": "2025-11-28T22:10:58.000Z",
             "date_published": "2025-11-26T19:19:01.000Z",
             "author": {
                 "name": "izagawd",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Changelog: <a href=\"https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-051\">https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-051</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/mdbook-0.5/text/0019-opt-in-builtin-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3883",
             "title": "Update to mdbook 0.5",
-            "date_modified": "2025-11-28T22:00:13.000Z",
+            "date_modified": "2025-11-28T22:31:59.000Z",
             "date_published": "2025-11-22T21:16:06.000Z",
             "author": {
                 "name": "ehuss",
