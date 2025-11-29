@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30781523?u=034a62a6987af0004bbaba8a7d6ab7195dab9ccc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes const self fields: per-type constant metadata that can be accessed through values and trait objects using expr.FIELD syntax.</p>\n<p dir=\"auto\">For trait objects, implementations store their constant data inline in the vtable, allowing &amp;dyn Trait to read per-impl constants (like flags, versions) without a virtual function call. For non trait objects, it is as efficient as accessing a constant value.</p>\n<p dir=\"auto\">This makes patterns like “methods that just return a literal” both more expressive and more efficient, especially in hot loops over many trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/izagawd/rust_rfcs/blob/const_self_fields/text/3888-const-self-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3888",
             "title": "RFC: Const self fields",
-            "date_modified": "2025-11-28T22:10:58.000Z",
+            "date_modified": "2025-11-29T00:33:32.000Z",
             "date_published": "2025-11-26T19:19:01.000Z",
             "author": {
                 "name": "izagawd",
@@ -50,10 +50,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Changelog: <a href=\"https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-051\">https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-051</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/mdbook-0.5/text/0019-opt-in-builtin-traits.md\">Rendered</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43198?u=4e88d47bc79d87f09f463582681d29f1ed6f478e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Changelog: <a href=\"https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-051\">https://github.com/rust-lang/mdBook/blob/master/CHANGELOG.md#mdbook-051</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/ehuss/rfcs/blob/mdbook-0.5/text/0048-traits.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3883",
             "title": "Update to mdbook 0.5",
-            "date_modified": "2025-11-28T22:31:59.000Z",
+            "date_modified": "2025-11-29T00:09:25.000Z",
             "date_published": "2025-11-22T21:16:06.000Z",
             "author": {
                 "name": "ehuss",
@@ -75,7 +75,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73757586?u=fdf6c88693ae3845def1f97b5af24113d331506a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The current model for incremental recompilations doesn't share progress between compiler activities, leading to unnecessary rebuilds.</p>\n<p dir=\"auto\">This PR introduces two concepts (target stages and stage dependencies) that would help alleviate that problem, via extracting some unstable fields from crate hashing into their own parts of the incremental system, and separating concerns between the different compilation stages.</p>\n<p dir=\"auto\"><strong>So, <code class=\"notranslate\">cargo check</code> isn't affected by <code class=\"notranslate\">-Clto=true</code> and <code class=\"notranslate\">cargo build</code> can reuse artifacts produced by <code class=\"notranslate\">cargo check</code>.</strong></p>\n<p dir=\"auto\"><a href=\"https://github.com/blyxyas/rfcs/blob/target-stages/text/0000-target-stages.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3881",
             "title": "Target Stages, an improvement of the incremental system",
-            "date_modified": "2025-11-28T18:24:42.000Z",
+            "date_modified": "2025-11-29T00:12:10.000Z",
             "date_published": "2025-11-20T21:33:10.000Z",
             "author": {
                 "name": "blyxyas",
