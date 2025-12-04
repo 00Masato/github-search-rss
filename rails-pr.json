@@ -185,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8004593?u=501ba2f3558c5a4e910de2bc73d2ad95ee7f36d6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">When developers report view-template rendering issues, they often struggle to provide reproducible code. As a result, many issue descriptions are unclear or incomplete, making them difficult to understand or reproduce. This is largely because we do not currently provide a predefined template for such reports.</p>\n<h2 dir=\"auto\">Details</h2>\n<p dir=\"auto\">This PR introduces a dedicated bug report template for Action View template-rendering issues and includes a helpful link to the relevant Rails guide.</p>\n<p dir=\"auto\">Preview <a href=\"https://shivabhusal-adds-new-test-te.rails-docs-preview.pages.dev/guides/contributing_to_ruby_on_rails#create-an-executable-test-case\" rel=\"nofollow\">here</a></p>",
             "url": "https://github.com/rails/rails/pull/56251",
             "title": "Add a new bug report test template for ActionView to validate rendering of templates & partials [ci-skip]",
-            "date_modified": "2025-12-04T04:47:17.000Z",
+            "date_modified": "2025-12-04T05:55:01.000Z",
             "date_published": "2025-11-28T15:47:58.000Z",
             "author": {
                 "name": "shivabhusal",
