@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40406187?u=6776d5897692d7182cfc31f3073aa64eb86c113a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC introduce <code class=\"notranslate\">DerefInto</code> and <code class=\"notranslate\">DerefMutInto</code>, supertraits of <a href=\"https://doc.rust-lang.org/std/ops/trait.Deref.html\" rel=\"nofollow\"><code class=\"notranslate\">Deref</code></a> / <a href=\"https://doc.rust-lang.org/std/ops/trait.DerefMut.html\" rel=\"nofollow\"><code class=\"notranslate\">DerefMut</code></a> that return targets by value, enabling ergonomic RAII access for types like RefCell, Mutex, and RwLock.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Thomas-Mewily/rust_rfcs/blob/master/text/3880-deref_into.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3880",
             "title": "RFC: Introduce `DerefInto` and `DerefMutInto` for RAII access",
-            "date_modified": "2025-12-04T01:18:36.000Z",
+            "date_modified": "2025-12-04T01:55:38.000Z",
             "date_published": "2025-11-10T21:06:46.000Z",
             "author": {
                 "name": "Thomas-Mewily",
