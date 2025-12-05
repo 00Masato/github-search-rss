@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30781523?u=034a62a6987af0004bbaba8a7d6ab7195dab9ccc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes const self fields: per-type constant metadata that can be accessed through values and trait objects using expr.FIELD syntax.</p>\n<p dir=\"auto\">For trait objects, implementations store their constant data inline in the vtable, allowing &amp;dyn Trait to read per-impl constants (like flags, versions) without a virtual function call. For non trait objects, it is as efficient as accessing a constant value.</p>\n<p dir=\"auto\">This makes patterns like “methods that just return a literal” both more expressive and more efficient, especially in hot loops over many trait objects.</p>\n<p dir=\"auto\"><a href=\"https://github.com/izagawd/rust_rfcs/blob/const_self_fields/text/3888-const-self-fields.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3888",
             "title": "RFC: Const self fields",
-            "date_modified": "2025-12-04T22:27:25.000Z",
+            "date_modified": "2025-12-05T18:31:16.000Z",
             "date_published": "2025-11-26T19:19:01.000Z",
             "author": {
                 "name": "izagawd",
@@ -64,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23638587?u=6d1f4ed9b2481fd4af374eb927f9a73602c53ba5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC was in large part drafted in May 2025, shortly after my Rust All Hands talk, \"Futile Feature Gates\". There were about 25 people in that room; I want to thank all of them for their feedback during that session, and everyone who reviewed early drafts of this RFC.</p>\n<p dir=\"auto\"><a href=\"https://github.com/jyn514/rfcs/blob/rustc-bootstrap/text/0000-rustc-bootstrap.md\">Rendered</a></p>\n\n\n<div class=\"markdown-alert markdown-alert-important\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg class=\"octicon octicon-report mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path></svg>Important</p><p dir=\"auto\">When responding to RFCs, try to use inline review comments (it is possible to leave an inline review comment for the entire file at the top) instead of direct comments for normal comments and keep normal comments for procedural matters like starting FCPs.</p>\n<p dir=\"auto\">This keeps the discussion more organized.</p>\n</div>",
             "url": "https://github.com/rust-lang/rfcs/pull/3882",
             "title": "`RUSTC_ALLOW_UNSTABLE_<feature>`: a `RUSTC_BOOTSTRAP` alternative",
-            "date_modified": "2025-12-05T17:48:54.000Z",
+            "date_modified": "2025-12-05T18:38:32.000Z",
             "date_published": "2025-11-22T02:46:21.000Z",
             "author": {
                 "name": "jyn514",
