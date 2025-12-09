@@ -6,10 +6,21 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3309728?u=2ccd2acb5fae3acecf3204d570fbc3dd78b8245c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Enable ranges of enum discriminants to be reserved ahead of time with an unnamed enum variant. This requires all users of that enum to consider those values as valid - including within the declaring crate.</p>\n<p dir=\"auto\">This is useful for any situation in which recompiling an enum to handle new discriminant values is infeasible, and using a newtype integer is unergonomic due to the type's intended nature as a set of enumerated values. This includes FFI, Protobuf, and embedded syscalls.</p>\n<p dir=\"auto\">If an enum is valid for every discriminant (it has no niches), it is an <em>open enum</em> and may be <code class=\"notranslate\">as</code> cast from its explicit backing integer. For example:</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"#[repr(u32)]     // Fruit is represented by any `u32` due to the unnamed *open variant* below.\nenum Fruit {\n    Apple,       // Apple is represented with 0u32.\n    Orange,      // Orange is represented with 1u32.\n    Banana = 4,  // Banana is represented with 4u32.\n    _ = ..,      // The rest of the discriminants in `u32` are reserved.\n}\n// Using an `as` cast from `u32`, since it is an open enum.\nlet fruit = 3 as Fruit;\n\n// Does not match any of the known variants.\nmatch fruit {\n    Fruit::Apple | Fruit::Orange | Fruit::Banana =&gt; unreachable!(),\n    // This wildcard branch is required far all exhaustive matches of `Fruit`.\n    // `fruit` preserves its value casting back to `u32`.\n    _ =&gt; assert_eq!(fruit as u32, 3),\n}\"><pre class=\"notranslate\"><span class=\"pl-c1\">#<span class=\"pl-kos\">[</span>repr<span class=\"pl-kos\">(</span><span class=\"pl-smi\">u32</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">]</span></span>     <span class=\"pl-c\">// Fruit is represented by any `u32` due to the unnamed *open variant* below.</span>\n<span class=\"pl-k\">enum</span> <span class=\"pl-smi\">Fruit</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-v\">Apple</span><span class=\"pl-kos\">,</span>       <span class=\"pl-c\">// Apple is represented with 0u32.</span>\n    <span class=\"pl-v\">Orange</span><span class=\"pl-kos\">,</span>      <span class=\"pl-c\">// Orange is represented with 1u32.</span>\n    <span class=\"pl-v\">Banana</span> = <span class=\"pl-c1\">4</span><span class=\"pl-kos\">,</span>  <span class=\"pl-c\">// Banana is represented with 4u32.</span>\n    _ = ..<span class=\"pl-kos\">,</span>      <span class=\"pl-c\">// The rest of the discriminants in `u32` are reserved.</span>\n<span class=\"pl-kos\">}</span>\n<span class=\"pl-c\">// Using an `as` cast from `u32`, since it is an open enum.</span>\n<span class=\"pl-k\">let</span> fruit = <span class=\"pl-c1\">3</span> <span class=\"pl-k\">as</span> <span class=\"pl-smi\">Fruit</span><span class=\"pl-kos\">;</span>\n\n<span class=\"pl-c\">// Does not match any of the known variants.</span>\n<span class=\"pl-k\">match</span> fruit <span class=\"pl-kos\">{</span>\n    <span class=\"pl-smi\">Fruit</span><span class=\"pl-kos\">::</span><span class=\"pl-v\">Apple</span> | <span class=\"pl-smi\">Fruit</span><span class=\"pl-kos\">::</span><span class=\"pl-v\">Orange</span> | <span class=\"pl-smi\">Fruit</span><span class=\"pl-kos\">::</span><span class=\"pl-v\">Banana</span> =&gt; <span class=\"pl-en\">unreachable</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">,</span>\n    <span class=\"pl-c\">// This wildcard branch is required far all exhaustive matches of `Fruit`.</span>\n    <span class=\"pl-c\">// `fruit` preserves its value casting back to `u32`.</span>\n    _ =&gt; <span class=\"pl-en\">assert_eq</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span>fruit <span class=\"pl-k\">as</span> <span class=\"pl-smi\">u32</span><span class=\"pl-kos\">,</span> <span class=\"pl-c1\">3</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">,</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">While writing this RFC I was not aware of the recent work on a <a href=\"https://github.com/rust-lang/rfcs/pull/3803\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3803/hovercard\">similar RFC</a> by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/madsmtm/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/madsmtm\">@madsmtm</a>. This RFC takes a different approach and describes why it does not use an attribute in the Alternatives.</p>\n<p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label T-lang</p>\n<p dir=\"auto\"><a href=\"https://github.com/kupiakos/rs-rfcs/blob/unnamed-variants/text/3894-unnamed-variants.md\">Rendered</a>.</p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3894",
+            "title": "RFC: Allow reservation of enum discriminants via unnamed variants",
+            "date_modified": "2025-12-09T19:33:18.000Z",
+            "date_published": "2025-12-09T19:31:50.000Z",
+            "author": {
+                "name": "kupiakos",
+                "url": "https://github.com/kupiakos"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/181925856?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<p dir=\"auto\">This RFC proposes FFI-compatible complex numbers to help scientific computing library authors use non-indirected complexes.</p>\n<p dir=\"auto\">I apologise in advance to <code class=\"notranslate\">num-complex</code></p>\n<p dir=\"auto\"><a href=\"https://github.com/SciMind2460/rfcs/blob/master/text/3892-complex-numbers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3892",
             "title": "Complex numbers",
-            "date_modified": "2025-12-09T18:53:52.000Z",
+            "date_modified": "2025-12-09T19:58:14.000Z",
             "date_published": "2025-12-02T10:51:56.000Z",
             "author": {
                 "name": "SciMind2460",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "RustyYato",
                 "url": "https://github.com/RustyYato"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18526288?u=a851e2ec349404d3ad63a62786fe9a35009fa8d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Move to a world where the size check for <code class=\"notranslate\">transmute</code> is always accurate, preserving the developer experience via linting instead of the special-cased typeck tricks.</p>\n<p dir=\"auto\"><a href=\"https://github.com/scottmcm/rfcs/blob/newt_level_transfiguration/text/3844-next-gen-transmute.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3844",
-            "title": "Next-Gen `transmute`",
-            "date_modified": "2025-08-22T07:38:59.000Z",
-            "date_published": "2025-08-02T23:28:32.000Z",
-            "author": {
-                "name": "scottmcm",
-                "url": "https://github.com/scottmcm"
             }
         }
     ]
