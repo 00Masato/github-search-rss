@@ -39,18 +39,7 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105274?u=173310b843e2751843265438af8cfb79eda02039&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Adds link to Navigation API from 146 release notes.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Otherwise, there’s nowhere to go to learn more.</p>",
-            "url": "https://github.com/mdn/content/pull/42380",
-            "title": "Add link to Navigation API from 146 release notes",
-            "date_modified": "2025-12-14T14:39:08.000Z",
-            "date_published": "2025-12-13T08:41:12.000Z",
-            "author": {
-                "name": "pepelsbey",
-                "url": "https://github.com/pepelsbey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/576623?u=88392c52422628facfd7cf108241d2864680915d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Use consistent headings for <code class=\"notranslate\">rel</code> attributes.</p>\n<p dir=\"auto\"><strong>Before:</strong></p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/576623/526169027-5be83178-0411-459a-9c40-2899a7418e0e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjI1MDMsIm5iZiI6MTc2NTc2MjIwMywicGF0aCI6Ii81NzY2MjMvNTI2MTY5MDI3LTViZTgzMTc4LTA0MTEtNDU5YS05YzQwLTI4OTlhNzQxOGUwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMTMwMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWI5ZDY0NDU4MGRhODFjOWJiYjkxMGU1MzhlZmRkODllNjFkM2U1MzcwYTdkYzNlMGQ3N2M2YmQ4MTkzMzI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.utAuGUR5mM9VUE3b1Ym-YP_3YIbx4_x8QbY4pEVEcgE\"><img width=\"300\" alt=\"before\" src=\"https://private-user-images.githubusercontent.com/576623/526169027-5be83178-0411-459a-9c40-2899a7418e0e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjI1MDMsIm5iZiI6MTc2NTc2MjIwMywicGF0aCI6Ii81NzY2MjMvNTI2MTY5MDI3LTViZTgzMTc4LTA0MTEtNDU5YS05YzQwLTI4OTlhNzQxOGUwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMTMwMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04YWI5ZDY0NDU4MGRhODFjOWJiYjkxMGU1MzhlZmRkODllNjFkM2U1MzcwYTdkYzNlMGQ3N2M2YmQ4MTkzMzI0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.utAuGUR5mM9VUE3b1Ym-YP_3YIbx4_x8QbY4pEVEcgE\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\"><strong>After:</strong></p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/576623/526168961-33aa4768-10b4-4578-ac00-6080c9125592.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjI1MDMsIm5iZiI6MTc2NTc2MjIwMywicGF0aCI6Ii81NzY2MjMvNTI2MTY4OTYxLTMzYWE0NzY4LTEwYjQtNDU3OC1hYzAwLTYwODBjOTEyNTU5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMTMwMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZDI2MjBlZTBhN2IxMmYwMGY5ZjMyYzE0OGYwZmFjY2U2OWY2NDY2MDE0MjgyOWRkMjU1YjM3ODZkNGE2NWFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nZRa9s8nrHn4eLzMcwYckN_Ur8rD8oqq3XqgXE8A4Bw\"><img width=\"300\" alt=\"after\" src=\"https://private-user-images.githubusercontent.com/576623/526168961-33aa4768-10b4-4578-ac00-6080c9125592.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjI1MDMsIm5iZiI6MTc2NTc2MjIwMywicGF0aCI6Ii81NzY2MjMvNTI2MTY4OTYxLTMzYWE0NzY4LTEwYjQtNDU3OC1hYzAwLTYwODBjOTEyNTU5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMTMwMDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZDI2MjBlZTBhN2IxMmYwMGY5ZjMyYzE0OGYwZmFjY2U2OWY2NDY2MDE0MjgyOWRkMjU1YjM3ODZkNGE2NWFjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nZRa9s8nrHn4eLzMcwYckN_Ur8rD8oqq3XqgXE8A4Bw\" style=\"max-width: 100%;\"></a>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/576623?u=88392c52422628facfd7cf108241d2864680915d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Use consistent headings for <code class=\"notranslate\">rel</code> attributes.</p>\n<p dir=\"auto\"><strong>Before:</strong></p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/576623/526169027-5be83178-0411-459a-9c40-2899a7418e0e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjY1MTksIm5iZiI6MTc2NTc2NjIxOSwicGF0aCI6Ii81NzY2MjMvNTI2MTY5MDI3LTViZTgzMTc4LTA0MTEtNDU5YS05YzQwLTI4OTlhNzQxOGUwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMjM2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZTUyNGJhZjQ3YTQ2NzZlZWMzYzhhNjVhZjg1MDJhN2VhMzM2OTU2NmY2OWMzOGVmZTU1ZWY4ZGU1YWJmYzYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VegzdM3xtz5Zjlga-o_ZxSo2vSIdHQkrzTpHJUGVlPQ\"><img width=\"300\" alt=\"before\" src=\"https://private-user-images.githubusercontent.com/576623/526169027-5be83178-0411-459a-9c40-2899a7418e0e.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjY1MTksIm5iZiI6MTc2NTc2NjIxOSwicGF0aCI6Ii81NzY2MjMvNTI2MTY5MDI3LTViZTgzMTc4LTA0MTEtNDU5YS05YzQwLTI4OTlhNzQxOGUwZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMjM2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iZTUyNGJhZjQ3YTQ2NzZlZWMzYzhhNjVhZjg1MDJhN2VhMzM2OTU2NmY2OWMzOGVmZTU1ZWY4ZGU1YWJmYzYzJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.VegzdM3xtz5Zjlga-o_ZxSo2vSIdHQkrzTpHJUGVlPQ\" style=\"max-width: 100%;\"></a>\n<p dir=\"auto\"><strong>After:</strong></p>\n<a target=\"_blank\" rel=\"noopener noreferrer\" href=\"https://private-user-images.githubusercontent.com/576623/526168961-33aa4768-10b4-4578-ac00-6080c9125592.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjY1MTksIm5iZiI6MTc2NTc2NjIxOSwicGF0aCI6Ii81NzY2MjMvNTI2MTY4OTYxLTMzYWE0NzY4LTEwYjQtNDU3OC1hYzAwLTYwODBjOTEyNTU5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMjM2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNDlmZDQ4Yjg4NDc5NDgyMDI2MzhmZjU1N2EwZTNjZmJhYTZiZDQ0ZjkxYmEwODZmY2I5MGVjYTFiMTU5ZDQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fzrsE6dGfbiKrYpk_-JoCXBDJceYgO1UVmZeCUXGjRE\"><img width=\"300\" alt=\"after\" src=\"https://private-user-images.githubusercontent.com/576623/526168961-33aa4768-10b4-4578-ac00-6080c9125592.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjU3NjY1MTksIm5iZiI6MTc2NTc2NjIxOSwicGF0aCI6Ii81NzY2MjMvNTI2MTY4OTYxLTMzYWE0NzY4LTEwYjQtNDU3OC1hYzAwLTYwODBjOTEyNTU5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMjE1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTIxNVQwMjM2NTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNDlmZDQ4Yjg4NDc5NDgyMDI2MzhmZjU1N2EwZTNjZmJhYTZiZDQ0ZjkxYmEwODZmY2I5MGVjYTFiMTU5ZDQ2JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.fzrsE6dGfbiKrYpk_-JoCXBDJceYgO1UVmZeCUXGjRE\" style=\"max-width: 100%;\"></a>",
             "url": "https://github.com/mdn/content/pull/42379",
             "title": "Enforce naming convention in `rel` attributes",
             "date_modified": "2025-12-13T07:05:40.000Z",
@@ -58,17 +47,6 @@
             "author": {
                 "name": "ramiy",
                 "url": "https://github.com/ramiy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108879845?u=eeb9306682180ab80521c80fd8f46609fe3c6770&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Automated changes generated by scripts/update-interface-data via interface-updater github workflow</p>",
-            "url": "https://github.com/mdn/content/pull/42378",
-            "title": "Update InterfaceData based on WebRef",
-            "date_modified": "2025-12-13T00:30:19.000Z",
-            "date_published": "2025-12-13T00:30:00.000Z",
-            "author": {
-                "name": "mdn-bot",
-                "url": "https://github.com/mdn-bot"
             }
         },
         {
@@ -223,6 +201,28 @@
             "author": {
                 "name": "chrisdavidmills",
                 "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Also makes a few grammatical fixes.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #42331.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3712696862\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42331\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42331/hovercard\" href=\"https://github.com/mdn/content/issues/42331\">#42331</a>.</p>\n\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/42340",
+            "title": "Correct scope for \"Dwarf planets\" table header",
+            "date_modified": "2025-12-10T10:17:12.000Z",
+            "date_published": "2025-12-10T10:15:38.000Z",
+            "author": {
+                "name": "chrisdavidmills",
+                "url": "https://github.com/chrisdavidmills"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/432915?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Here's a draft page on passkeys.</p>\n<p dir=\"auto\">It's not yet finished, major missing sections are:</p>\n<ul dir=\"auto\">\n<li>stuff about migrating users away from passwords, including techniques like conditional mediation</li>\n<li>something about passkey portability, addressing the question of whether passkeys tend to lock users in</li>\n<li>more detail about the security properties of passkeys and potential weaknesses</li>\n<li>some more signposty stuff explaining the structure of this document</li>\n</ul>\n<p dir=\"auto\">But it's mostly there.</p>",
+            "url": "https://github.com/mdn/content/pull/42338",
+            "title": "Add passkeys guide",
+            "date_modified": "2025-12-14T19:34:28.000Z",
+            "date_published": "2025-12-10T04:25:44.000Z",
+            "author": {
+                "name": "wbamberg",
+                "url": "https://github.com/wbamberg"
             }
         }
     ]
