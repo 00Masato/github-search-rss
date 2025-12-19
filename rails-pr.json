@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Many applications use a mix of ENV and encrypted keys to store cloud service keys and the like. Depending on the service, it might make sense only to inject the ENV during Docker boot or to keep it as part of the Rails encrypted credentials. And applications might migrate from one form to another.</p>\n<p dir=\"auto\">But whether ENV or encrypted keys are both used or you wish to migrate in the future, you shouldn't have to change your application code. This also opens the door for providing more credentials backends going forward, like 1password or the like.</p>\n<p dir=\"auto\">These combined credentials are available via <code class=\"notranslate\">Rails.app.creds</code>.</p>\n<p dir=\"auto\">Examples:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"# ENV[&quot;DB_HOST&quot;] || Rails.app.credentials[:db_host]\nRails.app.creds[:db_host]\nRails.app.creds.grab(:db_host)\n\n# ENV[&quot;AWS__ACCESS_KEY_ID&quot;] || Rails.app.credentials.dig(:aws, :access_key_id)\nRails.app.creds.dig(:aws, :access_key_id)\nRails.app.creds.grab(:aws, :access_key_id)\"><pre class=\"notranslate\"><span class=\"pl-c\"># ENV[\"DB_HOST\"] || Rails.app.credentials[:db_host]</span>\n<span class=\"pl-v\">Rails</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">app</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">creds</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:db_host</span><span class=\"pl-kos\">]</span>\n<span class=\"pl-v\">Rails</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">app</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">creds</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">grab</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:db_host</span><span class=\"pl-kos\">)</span>\n\n<span class=\"pl-c\"># ENV[\"AWS__ACCESS_KEY_ID\"] || Rails.app.credentials.dig(:aws, :access_key_id)</span>\n<span class=\"pl-v\">Rails</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">app</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">creds</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">dig</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:aws</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:access_key_id</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-v\">Rails</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">app</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">creds</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">grab</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">:aws</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">:access_key_id</span><span class=\"pl-kos\">)</span></pre></div>",
+            "url": "https://github.com/rails/rails/pull/56404",
+            "title": "Provide combined credentials for accessing both ENV and encrypted keys",
+            "date_modified": "2025-12-19T01:29:33.000Z",
+            "date_published": "2025-12-19T01:06:06.000Z",
+            "author": {
+                "name": "dhh",
+                "url": "https://github.com/dhh"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2741?u=ce0dd0173c534e7e8b72e1cb393fed76e904a91c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is especially so when it's followed by a long name, like <code class=\"notranslate\">credentials</code>. Now that's <code class=\"notranslate\">Rails.app.credentials</code>. Reads a lot more pleasantly too.</p>",
             "url": "https://github.com/rails/rails/pull/56403",
             "title": "Add Rails.app alias for Rails.application",
-            "date_modified": "2025-12-18T23:24:16.000Z",
+            "date_modified": "2025-12-19T01:13:00.000Z",
             "date_published": "2025-12-18T23:09:47.000Z",
             "author": {
                 "name": "dhh",
@@ -36,17 +47,6 @@
             "author": {
                 "name": "Tretent",
                 "url": "https://github.com/Tretent"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's used in ActiveSupport::Testing::MethodCallAssertions:<br>\n</p><div class=\"Box Box--condensed my-2\">\n  <div class=\"Box-header f6\">\n    <p class=\"mb-0 text-bold\">\n      <a href=\"https://github.com/rails/rails/blob/61b5c7e2953fd0ccfab151b233ce69283c567a34/activesupport/lib/active_support/testing/method_call_assertions.rb#L3\">rails/activesupport/lib/active_support/testing/method_call_assertions.rb</a>\n    </p>\n    <p class=\"mb-0 color-fg-muted\">\n         Line 3\n      in\n      <a data-pjax=\"true\" class=\"commit-tease-sha Link--inTextBlock\" href=\"/rails/rails/commit/61b5c7e2953fd0ccfab151b233ce69283c567a34\">61b5c7e</a>\n    </p>\n  </div>\n  <div itemprop=\"text\" class=\"Box-body p-0 blob-wrapper blob-wrapper-embedded data\">\n    <table class=\"highlight tab-size mb-0 js-file-line-container\" data-tab-size=\"8\" data-paste-markdown-skip=\"\">\n\n        <tbody><tr class=\"border-0\">\n          <td id=\"L3\" class=\"blob-num border-0 px-3 py-0 color-bg-default\" data-line-number=\"3\"></td>\n          <td id=\"LC3\" class=\"blob-code border-0 px-3 py-0 color-bg-default blob-code-inner js-file-line\"> <span class=\"pl-en\">require</span> <span class=\"pl-s\">\"minitest/mock\"</span> </td>\n        </tr>\n    </tbody></table>\n  </div>\n</div>\n<p></p>\n<p dir=\"auto\">This might explain why my builds are failing, but why not all builds are affected 🤷<br>\n<a href=\"https://buildkite.com/rails/rails/builds/124759#019b3073-e2ce-4883-b4eb-212f6e3dea86/L1482\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/124759#019b3073-e2ce-4883-b4eb-212f6e3dea86/L1482</a></p>",
-            "url": "https://github.com/rails/rails/pull/56399",
-            "title": "Add minitest-mock as run-time dependency of AS",
-            "date_modified": "2025-12-18T22:38:45.000Z",
-            "date_published": "2025-12-18T14:28:12.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
             }
         },
         {
