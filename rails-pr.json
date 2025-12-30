@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2394703?u=db3bfddb34846d7b948b10aae2bc4b6398edad45&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">found these todos from <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> .</p>\n<p dir=\"auto\">Now that Rails 8.1 is released, all schema cache dumps include the cast_type attribute, so we no longer need to fall back to fetching it from the connection.</p>",
-            "url": "https://github.com/rails/rails/pull/56484",
-            "title": "Remove deprecated fetch cast type",
-            "date_modified": "2025-12-30T03:59:41.000Z",
-            "date_published": "2025-12-30T03:59:33.000Z",
-            "author": {
-                "name": "seuros",
-                "url": "https://github.com/seuros"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/606427?u=b5c8a3522dc350227898b69553412cfc31d5d2e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #56480.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3767955897\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56480\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56480/hovercard\" href=\"https://github.com/rails/rails/issues/56480\">#56480</a></p>\n<p dir=\"auto\">Fixes the confusing error message when <code class=\"notranslate\">config.content_security_policy_nonce_auto</code> is set to <code class=\"notranslate\">true</code> without properly configuring CSP.</p>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56483",
             "title": "Fix confusing error when content_security_policy_nonce_auto is enabled without CSP",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Saidbek",
                 "url": "https://github.com/Saidbek"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23050?u=6ceb62c774ac06be1f3bb7d319ac90316aaad50c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Some minor comment updates related to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3745529319\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56404\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/56404/hovercard\" href=\"https://github.com/rails/rails/pull/56404\">#56404</a></p>\n<ol dir=\"auto\">\n<li>Fix comments in <code class=\"notranslate\">encrypted_configuration.rb</code> that were referencing <code class=\"notranslate\">ENV</code>.</li>\n<li>Standardize comments across the three different classes. I tried to take what seemed like the best pieces from each and standardize them.</li>\n<li>Note in comments that <code class=\"notranslate\">nil</code> values are considered \"missing\". <del>Though I'm not 100% sure if that's intentional.</del></li>\n<li>Use scenarios for comment examples</li>\n</ol>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56430",
+            "title": "Fix & standardize comments for CombinedConfiguration",
+            "date_modified": "2025-12-29T23:39:40.000Z",
+            "date_published": "2025-12-22T16:21:15.000Z",
+            "author": {
+                "name": "jordan-brough",
+                "url": "https://github.com/jordan-brough"
             }
         }
     ]
