@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2394703?u=db3bfddb34846d7b948b10aae2bc4b6398edad45&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Gems adding types to postgresql for <a href=\"https://github.com/seuros/activerecord-postgis\">postgis</a> or  for <a href=\"https://github.com/ankane/neighbor\">vector</a> monkey patch the adapter to add the types.</p>\n<p dir=\"auto\">This interface will allow us to add types with a cleaner interface.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/ankane/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/ankane\">@ankane</a></p>",
             "url": "https://github.com/rails/rails/pull/56496",
             "title": "Add PostgreSQLAdapter.register_type_mapping",
-            "date_modified": "2026-01-01T01:22:18.000Z",
+            "date_modified": "2026-01-01T02:24:42.000Z",
             "date_published": "2026-01-01T01:22:09.000Z",
             "author": {
                 "name": "seuros",
