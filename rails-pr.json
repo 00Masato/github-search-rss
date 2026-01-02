@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10766?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3216866406\" data-permission-text=\"Title is private\" data-url=\"https://github.com/collectiveidea/delayed_job/issues/1236\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/collectiveidea/delayed_job/pull/1236/hovercard\" href=\"https://github.com/collectiveidea/delayed_job/pull/1236\">collectiveidea/delayed_job#1236</a></p>\n<p dir=\"auto\">refs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2526470615\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52929\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52929/hovercard\" href=\"https://github.com/rails/rails/issues/52929\">#52929</a></p>",
+            "url": "https://github.com/rails/rails/pull/56506",
+            "title": "Deprecate delayed_job Active Job adapter",
+            "date_modified": "2026-01-02T21:42:45.000Z",
+            "date_published": "2026-01-02T21:38:44.000Z",
+            "author": {
+                "name": "morgoth",
+                "url": "https://github.com/morgoth"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6375192?u=c259c2e9db46d4bd707c8c5512d8ed652aa6f238&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Adds tests for <code class=\"notranslate\">stream_handler</code> override behavior in stream subscriptions.</li>\n<li>Adds tests for <code class=\"notranslate\">default_stream_handler</code> override behavior and coder passthrough.</li>\n<li>Ensures custom coder decoding reaches user handlers and default handlers.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56505",
             "title": "Add coverage for stream handler overrides in Action Cable",
-            "date_modified": "2026-01-02T20:43:50.000Z",
+            "date_modified": "2026-01-02T21:17:00.000Z",
             "date_published": "2026-01-02T20:39:07.000Z",
             "author": {
                 "name": "afurm",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "siaw23",
                 "url": "https://github.com/siaw23"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59744?u=dcc56246ab9ed7f43103e10a1b09b6cecf8599cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <code class=\"notranslate\">bin/rails server</code> command now binds to <code class=\"notranslate\">::</code> (all IPv6 interfaces) in non-development environments, instead of <code class=\"notranslate\">0.0.0.0</code>. The development environment continues to use <code class=\"notranslate\">localhost</code> for backwards compatibility.</p>\n<p dir=\"auto\">IPv6 sockets for <code class=\"notranslate\">::</code> on most operating systems accept both IPv4 and IPv6 connections, so existing workflows will continue to work. This change prepares Rails for the increasing adoption of IPv6 and reduces reliance on increasingly expensive public IPv4 addresses (<a href=\"https://aws.amazon.com/blogs/aws/new-aws-public-ipv4-address-charge-public-ip-insights/\" rel=\"nofollow\">https://aws.amazon.com/blogs/aws/new-aws-public-ipv4-address-charge-public-ip-insights/</a>).</p>\n<p dir=\"auto\">Here's how different hosts map to different urls:</p>\n<markdown-accessiblity-table><table role=\"table\">\n<thead>\n<tr>\n<th align=\"center\">Host</th>\n<th align=\"center\">localhost:3000</th>\n<th align=\"center\">127.0.0.1:3000</th>\n<th align=\"center\">[::1]:3000</th>\n<th align=\"center\">0.0.0.0:3000</th>\n<th align=\"center\">[::]:3000</th>\n<th align=\"center\">Network Open</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><code class=\"notranslate\">localhost</code></td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌ No</td>\n</tr>\n<tr>\n<td align=\"center\"><code class=\"notranslate\">127.0.0.1</code></td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌</td>\n<td align=\"center\">❌ No</td>\n</tr>\n<tr>\n<td align=\"center\"><code class=\"notranslate\">::1</code></td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌ No</td>\n</tr>\n<tr>\n<td align=\"center\"><code class=\"notranslate\">0.0.0.0</code></td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">❌</td>\n<td align=\"center\">✅ Yes</td>\n</tr>\n<tr>\n<td align=\"center\"><code class=\"notranslate\">::</code></td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅</td>\n<td align=\"center\">✅ Yes</td>\n</tr>\n</tbody>\n</table></markdown-accessiblity-table>\n<p dir=\"auto\">This change:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">0.0.0.0</code> =&gt; <code class=\"notranslate\">::</code> (production)</li>\n</ul>\n<p dir=\"auto\">I have a corresponding issue to update the defaults in Puma to IPv6 <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3592574612\" data-permission-text=\"Title is private\" data-url=\"https://github.com/puma/puma/issues/3812\" data-hovercard-type=\"issue\" data-hovercard-url=\"/puma/puma/issues/3812/hovercard\" href=\"https://github.com/puma/puma/issues/3812\">puma/puma#3812</a> and a PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3765056038\" data-permission-text=\"Title is private\" data-url=\"https://github.com/puma/puma/issues/3847\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/puma/puma/pull/3847/hovercard\" href=\"https://github.com/puma/puma/pull/3847\">puma/puma#3847</a>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56470",
-            "title": "Change production host default to IPv6 (`::`)",
-            "date_modified": "2025-12-29T23:17:26.000Z",
-            "date_published": "2025-12-27T19:43:21.000Z",
-            "author": {
-                "name": "schneems",
-                "url": "https://github.com/schneems"
             }
         }
     ]
