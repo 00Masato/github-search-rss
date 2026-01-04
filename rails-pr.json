@@ -6,22 +6,22 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Our support policy is that we support all Ruby release that aren't EOL at the time we release a new minor of Rails.</p>\n<p dir=\"auto\">Ruby 3.2 will be EOL on April 1st, so by the time we'll release Rails 8.2 it will be EOL.</p>\n<p dir=\"auto\">Might as well drop support now and spare CI resources.</p>\n<p dir=\"auto\">NB: We don't have any Ruby 3.2 specific codepath  that I could find, so this does allow any cleanup. Dropping 3.3. will though.</p>",
-            "url": "https://github.com/rails/rails/pull/56511",
-            "title": "Drop support for Ruby 3.2",
-            "date_modified": "2026-01-04T10:44:17.000Z",
-            "date_published": "2026-01-04T10:44:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We've been experiencing a nasty flaky test, yet it's not very clear what is happening:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nInfoControllerTest#test_info_controller_allows_requests_when_all_requests_are_considered_local:\nArgumentError: `secret_key_base` for test environment must be a type of String, got: &quot;&quot;`\n    lib/rails/application/configuration.rb:563:in 'Rails::Application::Configuration#secret_key_base='\n    lib/rails/application/configuration.rb:547:in 'Rails::Application::Configuration#secret_key_base'\n    lib/rails/application.rb:511:in 'Rails::Application#secret_key_base'\n    lib/rails/application.rb:328:in 'Rails::Application#env_config'\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nInfoControllerTest#test_info_controller_allows_requests_when_all_requests_are_considered_local:\nArgumentError: `secret_key_base` for test environment must be a type of String, got: \"\"`\n    lib/rails/application/configuration.rb:563:in 'Rails::Application::Configuration#secret_key_base='\n    lib/rails/application/configuration.rb:547:in 'Rails::Application::Configuration#secret_key_base'\n    lib/rails/application.rb:511:in 'Rails::Application#secret_key_base'\n    lib/rails/application.rb:328:in 'Rails::Application#env_config'\n</code></pre></div>",
+            "url": "https://github.com/rails/rails/pull/56513",
+            "title": "Attempt to fix secret_key_base test failure",
+            "date_modified": "2026-01-04T11:49:59.000Z",
+            "date_published": "2026-01-04T11:49:51.000Z",
             "author": {
                 "name": "byroot",
                 "url": "https://github.com/byroot"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Just ran <code class=\"notranslate\">bundle install</code> on Ruby 4.0 and some gems need updating.</p>",
-            "url": "https://github.com/rails/rails/pull/56510",
-            "title": "Update gems incompatible with Ruby 4.0",
-            "date_modified": "2026-01-04T10:48:00.000Z",
-            "date_published": "2026-01-04T10:35:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It was introduced in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"424066316\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/35698\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/35698/hovercard\" href=\"https://github.com/rails/rails/pull/35698\">#35698</a> to allow automatic analysis of failures and such.</p>\n<p dir=\"auto\">Overall it makes sense but it has been broken for ages, so let's just get rid of it. If someone is interested in fixing it, it can be re-introduced.</p>\n<p dir=\"auto\">Until then, it get rid of a CGI warning on Ruby 4.0</p>",
+            "url": "https://github.com/rails/rails/pull/56512",
+            "title": "Remove minitest-ci",
+            "date_modified": "2026-01-04T11:19:34.000Z",
+            "date_published": "2026-01-04T11:19:34.000Z",
             "author": {
                 "name": "byroot",
                 "url": "https://github.com/byroot"
