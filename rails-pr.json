@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Our support policy is that we support all Ruby release that aren't EOL at the time we release a new minor of Rails.</p>\n<p dir=\"auto\">Ruby 3.2 will be EOL on April 1st, so by the time we'll release Rails 8.2 it will be EOL.</p>\n<p dir=\"auto\">Might as well drop support now and spare CI resources.</p>\n<p dir=\"auto\">NB: We don't have any Ruby 3.2 specific codepath  that I could find, so this does allow any cleanup. Dropping 3.3. will though.</p>",
+            "url": "https://github.com/rails/rails/pull/56511",
+            "title": "Drop support for Ruby 3.2",
+            "date_modified": "2026-01-04T10:44:17.000Z",
+            "date_published": "2026-01-04T10:44:08.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Just ran <code class=\"notranslate\">bundle install</code> on Ruby 4.0 and some gems need updating.</p>",
+            "url": "https://github.com/rails/rails/pull/56510",
+            "title": "Update gems incompatible with Ruby 4.0",
+            "date_modified": "2026-01-04T10:48:00.000Z",
+            "date_published": "2026-01-04T10:35:36.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10766?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3216866406\" data-permission-text=\"Title is private\" data-url=\"https://github.com/collectiveidea/delayed_job/issues/1236\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/collectiveidea/delayed_job/pull/1236/hovercard\" href=\"https://github.com/collectiveidea/delayed_job/pull/1236\">collectiveidea/delayed_job#1236</a></p>\n<p dir=\"auto\">refs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2526470615\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52929\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52929/hovercard\" href=\"https://github.com/rails/rails/issues/52929\">#52929</a></p>",
             "url": "https://github.com/rails/rails/pull/56506",
             "title": "Deprecate delayed_job Active Job adapter",
@@ -182,17 +204,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277819?u=f88292414deeecfd67fee18ae9d7297bcc001138&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This adds some support for detecting leaked env vars to our test suite, and fixes any detected cases.</p>\n<p dir=\"auto\">I was debugging this error from a flakey test:<br>\n<a href=\"https://buildkite.com/rails/rails/builds/125076#019b624d-1383-4554-97f3-296c60ddeff4/L1729\" rel=\"nofollow\">https://buildkite.com/rails/rails/builds/125076#019b624d-1383-4554-97f3-296c60ddeff4/L1729</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Error:\nInfoControllerTest#test_info_controller_returns_fuzzy_matches_for_route_paths:\nArgumentError: `secret_key_base` for test environment must be a type of String`\n    lib/rails/application/configuration.rb:559:in `secret_key_base='\n    lib/rails/application/configuration.rb:543:in `secret_key_base'\n    lib/rails/application.rb:482:in `secret_key_base'\n    lib/rails/application.rb:325:in `env_config'\nbin/test railties/test/rails_info_controller_test.rb:207\"><pre class=\"notranslate\"><code class=\"notranslate\">Error:\nInfoControllerTest#test_info_controller_returns_fuzzy_matches_for_route_paths:\nArgumentError: `secret_key_base` for test environment must be a type of String`\n    lib/rails/application/configuration.rb:559:in `secret_key_base='\n    lib/rails/application/configuration.rb:543:in `secret_key_base'\n    lib/rails/application.rb:482:in `secret_key_base'\n    lib/rails/application.rb:325:in `env_config'\nbin/test railties/test/rails_info_controller_test.rb:207\n</code></pre></div>\n<p dir=\"auto\">First, I thought it might be something leaking <code class=\"notranslate\">SECRET_KEY_BASE</code> or <code class=\"notranslate\">SECRET_KEY_BASE_DUMMY</code>, but ended up digging this hole instead.</p>\n<p dir=\"auto\">Inspired by Ruby's <a href=\"https://github.com/ruby/ruby/blob/master/tool/lib/leakchecker.rb\">leakchecker</a> if only in spirit, but at least wanted to put this up to get feedback. 🙇</p>",
-            "url": "https://github.com/rails/rails/pull/56476",
-            "title": "Add LeakChecker to tools and fail on ENV leaks",
-            "date_modified": "2026-01-04T10:01:57.000Z",
-            "date_published": "2025-12-29T11:34:09.000Z",
-            "author": {
-                "name": "zzak",
-                "url": "https://github.com/zzak"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/752058?u=44e59103a64d58f779cbbe49a559906aad9d23dd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">…on generator</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Currently, the code generated by the authentication generator permits a user to access the sign in page even with an authenticated session. That shouldn't be permitted and with this change, they will be redirected to the root_url. There is also a new helper method to add the same behavior to a sign up flow.,</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li>[] Tests are added or updated if you fix a bug or add a feature.</li>\n<li>[] CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56472",
             "title": "authenticated users shouldn't access new session path in authenticati…",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "schneems",
                 "url": "https://github.com/schneems"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91827?u=5d16c2cce54bc3bf41620e3c5f3b357a2d465790&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because there is no <code class=\"notranslate\">touch</code> option for ActiveStorage and there are often times that you might not want the parent record touched when the active storage attachment is updated. The <code class=\"notranslate\">touch_attachment_records</code> (<a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1954829143\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49723\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49723/hovercard\" href=\"https://github.com/rails/rails/pull/49723\">#49723</a>) is broad. Sometimes developers need finer grained control.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This adds a per-attachment touch: option:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"  has_one_attached :avatar                   # follows global setting\n  has_one_attached :og_image, touch: false   # never touches\"><pre class=\"notranslate\">  <span class=\"pl-en\">has_one_attached</span> <span class=\"pl-pds\">:avatar</span>                   <span class=\"pl-c\"># follows global setting</span>\n  <span class=\"pl-en\">has_one_attached</span> <span class=\"pl-pds\">:og_image</span><span class=\"pl-kos\">,</span> <span class=\"pl-pds\">touch</span>: <span class=\"pl-c1\">false</span>   <span class=\"pl-c\"># never touches</span></pre></div>\n<p dir=\"auto\">The global setting (<code class=\"notranslate\">ActiveStorage.touch_attachment_records</code>) takes precedence if set to false, attachments never touch their parent records regardless of the per-attachment setting.</p>\n<p dir=\"auto\">Reasoning:<br>\nThe global <code class=\"notranslate\">ActiveStorage.touch_attachment_records</code> setting is broad, affecting all attachments. In some applications, attachments should update the parent's timestamp, while others should not. This allows developers to make that decision on a per attachment basis.</p>\n<p dir=\"auto\">Implementation notes:</p>\n<ul dir=\"auto\">\n<li>Changed <code class=\"notranslate\">belongs_to :record</code> to <code class=\"notranslate\">touch: false</code> since Rails evaluates the touch option at class load time, not runtime</li>\n<li>Override <code class=\"notranslate\">touch</code> method on <code class=\"notranslate\">Attachment</code> to handle conditional cascading</li>\n<li>Early return in <code class=\"notranslate\">touch_attachments</code> when global is disabled (Attachment has no updated_at column, so touching without cascade is a no-op)</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Relates to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1954829143\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/49723\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/49723/hovercard\" href=\"https://github.com/rails/rails/pull/49723\">#49723</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56468",
-            "title": "ActiveStorage - Add `touch:` option to `has_one_attached`/`has_many_attached`",
-            "date_modified": "2025-12-27T12:05:34.000Z",
-            "date_published": "2025-12-27T12:05:25.000Z",
-            "author": {
-                "name": "donnfelker",
-                "url": "https://github.com/donnfelker"
             }
         }
     ]
