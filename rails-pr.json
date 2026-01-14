@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11340522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Similar to <code class=\"notranslate\">grep -v</code>, this option filters out routes matching the pattern instead of showing only matching routes:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"$ rails routes -v admin\"><pre class=\"notranslate\"><code class=\"notranslate\">$ rails routes -v admin\n</code></pre></div>\n<p dir=\"auto\">This complements the existing <code class=\"notranslate\">-g</code> option which shows only matching routes.</p>",
             "url": "https://github.com/rails/rails/pull/56595",
             "title": "Add inverse grep option (-v) to rails routes",
-            "date_modified": "2026-01-13T13:39:04.000Z",
+            "date_modified": "2026-01-14T16:20:50.000Z",
             "date_published": "2026-01-13T13:38:52.000Z",
             "author": {
                 "name": "arzezak",
