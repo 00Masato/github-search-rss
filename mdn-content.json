@@ -6,21 +6,10 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/in/29110?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Bumps <a href=\"https://github.com/prettier/prettier\">prettier</a> from 3.7.4 to 3.8.0.</p>\n<details>\n<summary>Release notes</summary>\n<p dir=\"auto\"><em>Sourced from <a href=\"https://github.com/prettier/prettier/releases\">prettier's releases</a>.</em></p>\n<blockquote>\n<h2 dir=\"auto\">3.8.0</h2>\n<ul dir=\"auto\">\n<li>Support Angular v21.1</li>\n</ul>\n<p dir=\"auto\"><a href=\"https://github.com/prettier/prettier/compare/3.7.4...3.8.0\">diff</a></p>\n<p dir=\"auto\">🔗 <a href=\"https://prettier.io/blog/2026/01/14/3.8.0\" rel=\"nofollow\">Release note</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p dir=\"auto\"><em>Sourced from <a href=\"https://github.com/prettier/prettier/blob/main/CHANGELOG.md\">prettier's changelog</a>.</em></p>\n<blockquote>\n<h1 dir=\"auto\">3.8.0</h1>\n<p dir=\"auto\"><a href=\"https://github.com/prettier/prettier/compare/3.7.4...3.8.0\">diff</a></p>\n<p dir=\"auto\">🔗 <a href=\"https://prettier.io/blog/2026/01/14/3.8.0\" rel=\"nofollow\">Release Notes</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/prettier/prettier/commit/812a4d0071270f61a7aa549d625b618be7e09d71\"><code class=\"notranslate\">812a4d0</code></a> Release 3.8.0</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/6cc1be31e25d001ebe8f000bb5e7bded57ba66ad\"><code class=\"notranslate\">6cc1be3</code></a> Consistent title</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/6d9bef05148a952b932d12b02596479c4af702a8\"><code class=\"notranslate\">6d9bef0</code></a> Apply automated changes</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/3744a1840eec3fdef6962c9f704684b6c55df64f\"><code class=\"notranslate\">3744a18</code></a> Update code example</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/9a3edde02229795adb43613a6d3e7fa00a0113fe\"><code class=\"notranslate\">9a3edde</code></a> Update</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/82dc52cdeeace56a3628843d79d2ec2c6fc8bc57\"><code class=\"notranslate\">82dc52c</code></a> Regenerate</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/dc2de1a6e7b2993ff52214fa294d51bf6aa034ae\"><code class=\"notranslate\">dc2de1a</code></a> Regenerate</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/5aa69662b461e4237d9028cc22900bc09e5e04a9\"><code class=\"notranslate\">5aa6966</code></a> Regenerate</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/daeeb51af98e9532080bbcee7a432b0c6ba9b186\"><code class=\"notranslate\">daeeb51</code></a> Another version</li>\n<li><a href=\"https://github.com/prettier/prettier/commit/a2829858609b4ac93b28ceedd16294417b9236fc\"><code class=\"notranslate\">a282985</code></a> Add blog post</li>\n<li>Additional commits viewable in <a href=\"https://github.com/prettier/prettier/compare/3.7.4...3.8.0\">compare view</a></li>\n</ul>\n</details>\n<br>\n<p dir=\"auto\"><a href=\"https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores\"><img src=\"https://camo.githubusercontent.com/710c87ca8354887ffd2b6df4bad4b00d5ff6b63670f089419b31549097e41931/68747470733a2f2f646570656e6461626f742d6261646765732e6769746875626170702e636f6d2f6261646765732f636f6d7061746962696c6974795f73636f72653f646570656e64656e63792d6e616d653d7072657474696572267061636b6167652d6d616e616765723d6e706d5f616e645f7961726e2670726576696f75732d76657273696f6e3d332e372e34266e65772d76657273696f6e3d332e382e30\" alt=\"Dependabot compatibility score\" data-canonical-src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=prettier&amp;package-manager=npm_and_yarn&amp;previous-version=3.7.4&amp;new-version=3.8.0\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting <code class=\"notranslate\">@dependabot rebase</code>.</p>\n<p dir=\"auto\">Dependabot will merge this PR once CI passes on it, as requested by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/mdn-bot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/mdn-bot\">@mdn-bot</a>.</p>\n<hr>\n<details>\n<summary>Dependabot commands and options</summary>\n<br>\n<p dir=\"auto\">You can trigger Dependabot actions by commenting on this PR:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">@dependabot rebase</code> will rebase this PR</li>\n<li><code class=\"notranslate\">@dependabot recreate</code> will recreate this PR, overwriting any edits that have been made to it</li>\n<li><code class=\"notranslate\">@dependabot merge</code> will merge this PR after your CI passes on it</li>\n<li><code class=\"notranslate\">@dependabot squash and merge</code> will squash and merge this PR after your CI passes on it</li>\n<li><code class=\"notranslate\">@dependabot cancel merge</code> will cancel a previously requested merge and block automerging</li>\n<li><code class=\"notranslate\">@dependabot reopen</code> will reopen this PR if it is closed</li>\n<li><code class=\"notranslate\">@dependabot close</code> will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually</li>\n<li><code class=\"notranslate\">@dependabot show &lt;dependency name&gt; ignore conditions</code> will show all of the ignore conditions of the specified dependency</li>\n<li><code class=\"notranslate\">@dependabot ignore this major version</code> will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)</li>\n<li><code class=\"notranslate\">@dependabot ignore this minor version</code> will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)</li>\n<li><code class=\"notranslate\">@dependabot ignore this dependency</code> will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/content/pull/42785",
-            "title": "chore(deps-dev): bump prettier from 3.7.4 to 3.8.0",
-            "date_modified": "2026-01-15T14:03:26.000Z",
-            "date_published": "2026-01-15T14:03:06.000Z",
-            "author": {
-                "name": "dependabot",
-                "url": "https://github.com/apps/dependabot"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/80367947?u=f9af6771070ae7d5572e82c5b6d94dfc1438290a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">In the navigate event listener, the code was calling <code class=\"notranslate\">shouldNotIntercept(navigateEvent)</code>, but <code class=\"notranslate\">navigateEvent</code> is not defined in this scope. The correct variable is the event parameter passed to the <code class=\"notranslate\">event</code>.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><a href=\"https://developer.mozilla.org/en-US/docs/Web/API/NavigateEvent\" rel=\"nofollow\">https://developer.mozilla.org/en-US/docs/Web/API/NavigateEvent</a></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/42784",
             "title": "Fix variable name in `NavigateEvent` interface",
-            "date_modified": "2026-01-15T14:03:24.000Z",
+            "date_modified": "2026-01-15T14:04:34.000Z",
             "date_published": "2026-01-15T14:02:56.000Z",
             "author": {
                 "name": "Mimori256",
@@ -42,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/212202619?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds documentation and examples describing the <code class=\"notranslate\">blocked</code> state of<br>\n<code class=\"notranslate\">IDBFactory.deleteDatabase()</code>, including when it occurs, how it behaves,<br>\nand best practices for avoiding it.</p>\n<p dir=\"auto\">Related bug: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=2006245\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=2006245</a></p>",
             "url": "https://github.com/mdn/content/pull/42782",
             "title": "docs: explain blocked state for IDBFactory.deleteDatabase",
-            "date_modified": "2026-01-15T12:21:44.000Z",
+            "date_modified": "2026-01-15T14:55:45.000Z",
             "date_published": "2026-01-15T10:53:32.000Z",
             "author": {
                 "name": "codewithzubair07",
@@ -83,17 +72,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105274?u=173310b843e2751843265438af8cfb79eda02039&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">It updates notes clarifying <code class=\"notranslate\">font-stretch</code> rename to <code class=\"notranslate\">font-width</code> for property and descriptor.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<ul dir=\"auto\">\n<li>Adds a note to the descriptor as well</li>\n<li>Fixes the link to the spec for the property</li>\n<li>Removes the note about browser support (it’s supported in Safari: <a href=\"https://github.com/mdn/browser-compat-data/blob/main/css/properties/font-width.json#L24\">property</a> and <a href=\"https://github.com/mdn/browser-compat-data/blob/main/api/CSSFontFaceDescriptors.json#L236\">descriptor</a>).</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">It doesn’t fix the issue below, but it’s relevant:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3731478025\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42409\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42409/hovercard\" href=\"https://github.com/mdn/content/issues/42409\">#42409</a></li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/42771",
-            "title": "Add and update font-stretch/width notes",
-            "date_modified": "2026-01-15T09:22:39.000Z",
-            "date_published": "2026-01-13T16:25:36.000Z",
-            "author": {
-                "name": "pepelsbey",
-                "url": "https://github.com/pepelsbey"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/90795230?u=30e076018c48072ae49ac9bd509e481f936baeb1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Description<br>\nThis PR adds a \"How to fix\" section with practical troubleshooting steps for the<br>\n\"CORS request did not succeed\" error.</p>\n<p dir=\"auto\">Motivation<br>\nThe current page explains the causes of the error but does not provide actionable<br>\nguidance. Adding troubleshooting steps helps readers identify and resolve the<br>\nunderlying network issues more effectively.</p>\n<p dir=\"auto\">Additional details<br>\nRelated issues and pull requests<br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #42716.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3798696988\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42716\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42716/hovercard\" href=\"https://github.com/mdn/content/issues/42716\">#42716</a></p>",
             "url": "https://github.com/mdn/content/pull/42770",
             "title": "\"how to fix\" cors did not succeed error added",
@@ -108,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5314459?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Document that the attribute selector <code class=\"notranslate\">[open]</code> can be used in place of <code class=\"notranslate\">:open</code>.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\"><code class=\"notranslate\">:open</code> has limited availability. This makes the difference between the two more clear suggests this alternative for those who do not think of it.</p>",
             "url": "https://github.com/mdn/content/pull/42763",
             "title": "Document that an attribute selector can also be used for this",
-            "date_modified": "2026-01-12T20:57:39.000Z",
+            "date_modified": "2026-01-15T14:42:37.000Z",
             "date_published": "2026-01-12T20:57:08.000Z",
             "author": {
                 "name": "lkmorlan",
@@ -218,11 +196,33 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33471049?u=8195eb275ecb56d95c1ad94e79f15dc41cd82d09&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/42699",
             "title": "[css-fonts] Update to latest spec",
-            "date_modified": "2026-01-12T13:41:13.000Z",
+            "date_modified": "2026-01-15T14:51:15.000Z",
             "date_published": "2026-01-09T07:10:34.000Z",
             "author": {
                 "name": "NightFurySL2001",
                 "url": "https://github.com/NightFurySL2001"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction/AsyncFunction\" rel=\"nofollow\"><code class=\"notranslate\">AsyncFunction()</code></a>, <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction/GeneratorFunction\" rel=\"nofollow\"><code class=\"notranslate\">GeneratorFunction()</code></a>, and <a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction/AsyncGeneratorFunction\" rel=\"nofollow\"><code class=\"notranslate\">AsyncGeneratorFunction()</code></a> contructors can execute their arguments as JavaScript.</p>\n<p dir=\"auto\">These are subclasses of <code class=\"notranslate\">Function()</code>, which is documented in</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3746186429\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42462\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/42462/hovercard\" href=\"https://github.com/mdn/content/pull/42462\">#42462</a> (this PR depends on it)</li>\n</ul>\n<p dir=\"auto\">What this does is:</p>\n<ul dir=\"auto\">\n<li>Add the three functions to the list of injection sinks</li>\n<li>Add the warning header and a comment to the examples section for each. These link to the <code class=\"notranslate\">Function()</code> security section and exmples.</li>\n</ul>\n<p dir=\"auto\">IMO this is sufficient.</p>\n<p dir=\"auto\">Related docs work tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3510273732\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/41507\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/41507/hovercard\" href=\"https://github.com/mdn/content/issues/41507\">#41507</a></p>",
+            "url": "https://github.com/mdn/content/pull/42697",
+            "title": "Ff148 tt asyncfunction generatorfunction",
+            "date_modified": "2026-01-09T00:51:16.000Z",
+            "date_published": "2026-01-09T00:23:32.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Clarify the use of the tooltip role and its association with elements. Emphasize the inaccessibility of native tooltips and the importance of visible text.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #42676.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3789841764\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42676\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42676/hovercard\" href=\"https://github.com/mdn/content/issues/42676\">#42676</a></p>",
+            "url": "https://github.com/mdn/content/pull/42694",
+            "title": "tooltip role description clarity",
+            "date_modified": "2026-01-08T19:29:27.000Z",
+            "date_published": "2026-01-08T19:27:43.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
             }
         }
     ]
