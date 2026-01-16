@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10766?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It is proposed to upstream it via <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2528104336\" data-permission-text=\"Title is private\" data-url=\"https://github.com/QueueClassic/queue_classic/issues/354\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/QueueClassic/queue_classic/pull/354/hovercard\" href=\"https://github.com/QueueClassic/queue_classic/pull/354\">QueueClassic/queue_classic#354</a></p>\n<p dir=\"auto\">There is no response there and the gem did not see activity since 2 years</p>\n<p dir=\"auto\">This is the last AJ adapter to be ejected.</p>\n<p dir=\"auto\">refs <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2526470615\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52929\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/52929/hovercard\" href=\"https://github.com/rails/rails/issues/52929\">#52929</a></p>",
-            "url": "https://github.com/rails/rails/pull/56629",
-            "title": "Deprecate queue_classic Active Job adapter",
-            "date_modified": "2026-01-16T19:37:01.000Z",
-            "date_published": "2026-01-16T17:22:50.000Z",
-            "author": {
-                "name": "morgoth",
-                "url": "https://github.com/morgoth"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26221?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Some of the documentation regarding ActiveRecord::FinderMethods still used the old array notation, instead of using hash notation.</p>\n<p dir=\"auto\">This Pull Request has been created because the documentation is obsolete, which can mislead junior developers just getting into Rails.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the documentation where the old <code class=\"notranslate\">where</code> method arguments using (nested) arrays are used, to the now preferred (implicit) hash notation.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56628",
             "title": "Fix outdated ActiveRecord finder docs. [ci skip]",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "berniechiu",
                 "url": "https://github.com/berniechiu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/542271?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because:<br>\nIt's helpful to have a copy button for the whole guide page, mostly used to provide context to LLMs.</p>\n<p dir=\"auto\">(This is my first PR for Rails.)</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Adds a “Copy Markdown” button to the guide sidebar</li>\n<li>Embeds the guide’s Markdown source in the rendered page as an escaped <code class=\"notranslate\">&lt;template id=\"guide-markdown\"&gt;</code>.</li>\n<li>Copies that template’s text to the clipboard and shows a brief success state</li>\n<li>Styles the button for light and dark themes</li>\n<li>Tests to ensure the UI/template are present in HTML output and omitted in EPUB output</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<ul dir=\"auto\">\n<li>The open-source SVG icons are from Font Awesome and include the attribution.</li>\n<li>Reuses existing ClipboardJS behavior already used for code block copy buttons.</li>\n<li>Markdown copied excludes the “DO NOT READ THIS FILE ON GITHUB…” notice.</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56572",
+            "title": "Guides: add Copy Markdown button",
+            "date_modified": "2026-01-10T17:25:27.000Z",
+            "date_published": "2026-01-10T17:10:30.000Z",
+            "author": {
+                "name": "enzo2",
+                "url": "https://github.com/enzo2"
             }
         }
     ]
