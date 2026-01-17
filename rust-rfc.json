@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134893?u=940724c499b98313ee519a69a725d26908685e6d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Let <code class=\"notranslate\">Option</code> and <code class=\"notranslate\">Box</code> derive <code class=\"notranslate\">#[must_use]</code> from their generic parameter <code class=\"notranslate\">T</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/dhardy/rfcs/blob/derive-must-use/text/0000-derive-must-use.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3906",
             "title": "Let `Option` derive `#[must_use]`",
-            "date_modified": "2026-01-17T19:00:17.000Z",
+            "date_modified": "2026-01-17T21:12:33.000Z",
             "date_published": "2026-01-07T10:03:09.000Z",
             "author": {
                 "name": "dhardy",
