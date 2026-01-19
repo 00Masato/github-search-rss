@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33411204?u=2e161d32418071afd7547fe4c619134d386a4c97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an RFC aimed at allowing Cargo to present client certificates when forming HTTP connections and support mutual TLS authentication with registries.</p>\n<p dir=\"auto\">It is aimed at forming consensus around the discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1229262351\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/10641\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/10641/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/10641\">rust-lang/cargo#10641</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthague/rfcs/blob/master/text/3907-mtls-registry-authentication.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3907",
             "title": "Cargo mTLS registry authentication",
-            "date_modified": "2026-01-19T05:08:51.000Z",
+            "date_modified": "2026-01-19T16:57:28.000Z",
             "date_published": "2026-01-17T03:24:34.000Z",
             "author": {
                 "name": "matthague",
