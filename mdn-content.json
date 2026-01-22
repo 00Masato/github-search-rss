@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/178316747?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">###Description</p>\n<p dir=\"auto\">This change clarifies the blur event documentation to note that browser behavior differs when a focused element is removed from the document.</p>\n<p dir=\"auto\">Specifically, Chromium-based browsers fire a blur event in this case, while Firefox does not.</p>\n<p dir=\"auto\">###Motivation</p>\n<p dir=\"auto\">The page previously stated that blur is not fired when a focused element is removed from the document, which is only true for Firefox.<br>\nThis update prevents confusion by documenting the cross-browser difference reported in issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3823377990\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42801\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42801/hovercard\" href=\"https://github.com/mdn/content/issues/42801\">#42801</a>.</p>\n<p dir=\"auto\">###Related issues and pull requests</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #42801.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3823377990\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42801\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42801/hovercard\" href=\"https://github.com/mdn/content/issues/42801\">#42801</a></p>",
+            "url": "https://github.com/mdn/content/pull/42864",
+            "title": "Clarify blur event behavior when focused element is removed",
+            "date_modified": "2026-01-22T10:45:47.000Z",
+            "date_published": "2026-01-22T10:44:22.000Z",
+            "author": {
+                "name": "SURYAS1306",
+                "url": "https://github.com/SURYAS1306"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1925929?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Simple typo; \"label\" should be \"layer\"</p>\n\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/42859",
             "title": "Fix note on layer precedence in index.md",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "rebloor",
                 "url": "https://github.com/rebloor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/212202619?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR adds documentation and examples describing the <code class=\"notranslate\">blocked</code> state of<br>\n<code class=\"notranslate\">IDBFactory.deleteDatabase()</code>, including when it occurs, how it behaves,<br>\nand best practices for avoiding it.</p>\n<p dir=\"auto\">Related bug: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=2006245\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=2006245</a></p>",
-            "url": "https://github.com/mdn/content/pull/42782",
-            "title": "docs: explain blocked state for IDBFactory.deleteDatabase",
-            "date_modified": "2026-01-15T19:17:06.000Z",
-            "date_published": "2026-01-15T10:53:32.000Z",
-            "author": {
-                "name": "codewithzubair07",
-                "url": "https://github.com/codewithzubair07"
             }
         }
     ]
