@@ -28,17 +28,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/128289787?u=3cffcb544ac593c4daadd786263ecf02dc84df1a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I'll say upfront that I'm a Rust beginner, but the issue I'm discussing is exactly the kind of thing that experienced developers tend to avoid altogether. I suspect the reason it still exists in the language isn't that people don't know how to solve it, but simply that it doesn't occur frequently enough to annoy someone sufficiently to push for a language-level change. For me, as someone who's just learning the language, this problem has been nagging at me, and I feel I've spent enough time thinking it through and discussing it on the forum to arrive at a logical and straightforward solution.</p>\n<p dir=\"auto\">My RFC proposes what I believe is the most intuitive and readable syntax for disambiguating method names that I can imagine. I think even without reading the full text, it's immediately clear what <code class=\"notranslate\">obj.Self::method(args)</code>, <code class=\"notranslate\">obj.Category::method(args)</code>, and <code class=\"notranslate\">obj.(Library::Trait::method)(args)</code> do. You can even guess why the parentheses are required around <code class=\"notranslate\">Library::Trait::method</code> but not around <code class=\"notranslate\">obj.Self::method</code>.</p>\n<p dir=\"auto\">I used an LLM to help turn the idea into a proper RFC, and now I have the persistent feeling that the list of edits I want to make isn't getting any shorter. It's hard to say I'd have done a better job myself, given my English proficiency and the fact that when you've been nursing an idea for long enough, no retelling — not even your own — ever feels complete. So it's possible I'm just overthinking it and can no longer distinguish real logical or presentation issues from a mere sense of incompleteness.</p>\n<p dir=\"auto\">I'm really looking forward to your feedback so I can focus my revisions on what actually matters — things that are unclear to someone who isn't the author of RFC, or issues I've simply overlooked.</p>\n<p dir=\"auto\"><a href=\"https://github.com/syudoer/rust-rfcs/blob/master/text/3908-obj-action-method-disambiguation.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3908",
-            "title": "RFC: obj-action style method disambiguation ",
-            "date_modified": "2026-01-24T08:05:58.000Z",
-            "date_published": "2026-01-20T16:46:08.000Z",
-            "author": {
-                "name": "syudoer",
-                "url": "https://github.com/syudoer"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33411204?u=2e161d32418071afd7547fe4c619134d386a4c97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This is an RFC aimed at allowing Cargo to present client certificates when forming HTTP connections and support mutual TLS authentication with registries.</p>\n<p dir=\"auto\">It is aimed at forming consensus around the discussion in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1229262351\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/cargo/issues/10641\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/cargo/issues/10641/hovercard\" href=\"https://github.com/rust-lang/cargo/issues/10641\">rust-lang/cargo#10641</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/matthague/rfcs/blob/master/text/3907-mtls-registry-authentication.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3907",
             "title": "Cargo mTLS registry authentication",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "arielb1",
                 "url": "https://github.com/arielb1"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72159?u=f25bf9f675b806b92a8e5083ce5d0b8f1d7708df&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">RFC for the issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"654099587\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/74182\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/74182/hovercard\" href=\"https://github.com/rust-lang/rust/issues/74182\">rust-lang/rust#74182</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/kornelski/rfcs/blob/stable_since/text/0000-stable_since.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3854",
+            "title": "RFC for `#[stable(since)]`",
+            "date_modified": "2025-09-20T15:25:49.000Z",
+            "date_published": "2025-09-12T14:25:02.000Z",
+            "author": {
+                "name": "kornelski",
+                "url": "https://github.com/kornelski"
             }
         }
     ]
