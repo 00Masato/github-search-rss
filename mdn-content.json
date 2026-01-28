@@ -6,6 +6,17 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22853459?u=afbf0eba59a51397425a0b8afdeec513bf75c444&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">This PR adds a practical real-world example to the <code class=\"notranslate\">Array.prototype.findLast()</code> documentation that demonstrates finding the most recent completed task from a time-ordered list.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The current examples are good but lack a practical use case that developers commonly encounter. This new example shows:</p>\n<ul dir=\"auto\">\n<li>How <code class=\"notranslate\">findLast()</code> works with real-world data structures (tasks with timestamps)</li>\n<li>Why it's more efficient than reversing an array and using <code class=\"notranslate\">find()</code></li>\n<li>A relatable scenario (task management) that many developers work with</li>\n</ul>\n<h3 dir=\"auto\">Changes Made</h3>\n<ul dir=\"auto\">\n<li>Added a new \"Find the most recent completed task\" example section</li>\n<li>Includes a complete code example with task objects containing id, name, completed status, and timestamps</li>\n<li>Explains the efficiency benefit over alternative approaches</li>\n</ul>\n<h3 dir=\"auto\">Related Issues</h3>\n<p dir=\"auto\">This addresses the need for more practical examples in the Array methods documentation.</p>\n<h2 dir=\"auto\">Checklist</h2>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> I have reviewed the <a href=\"https://github.com/mdn/content/blob/main/CONTRIBUTING.md\">contributing guide</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> I have followed the <a href=\"https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide\" rel=\"nofollow\">writing style guide</a></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> The example code is clear and follows MDN conventions</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> The example adds value and doesn't duplicate existing content</li>\n</ul>",
+            "url": "https://github.com/mdn/content/pull/42948",
+            "title": "docs: add practical real-world example to Array.findLast()",
+            "date_modified": "2026-01-28T15:06:03.000Z",
+            "date_published": "2026-01-28T15:06:00.000Z",
+            "author": {
+                "name": "surajsahani",
+                "url": "https://github.com/surajsahani"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/217966615?u=cee49c342ec782bc8c58381428ec2532cb0fa382&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Clarifies the <code class=\"notranslate\">SameSite</code> cookie attribute documentation by replacing incorrect <em>cross-origin</em> terminology with <em>cross-site</em> and by making the description of <code class=\"notranslate\">SameSite=Lax</code> more precise.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The SameSite attribute is defined in terms of <em>site</em> (scheme + eTLD+1), not origin. Using cross-origin terminology can mislead readers and make it harder to understand real browser behavior.</p>\n<p dir=\"auto\">Additionally, while the existing description of <code class=\"notranslate\">SameSite=Lax</code> was technically correct, it was imprecise. This update clarifies when cookies are included or omitted by explicitly distinguishing top-level navigations from subresource requests and safe HTTP methods from state-changing ones.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<ul dir=\"auto\">\n<li><a href=\"https://web.dev/articles/same-site-same-origin\" rel=\"nofollow\">https://web.dev/articles/same-site-same-origin</a></li>\n<li><a href=\"https://web.dev/articles/samesite-cookies-explained\" rel=\"nofollow\">https://web.dev/articles/samesite-cookies-explained</a></li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #42945.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3865080741\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42945\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42945/hovercard\" href=\"https://github.com/mdn/content/issues/42945\">#42945</a></p>\n",
             "url": "https://github.com/mdn/content/pull/42947",
             "title": "Fix: clarify cross-site terminology and SameSite=Lax behavior",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "wbamberg",
                 "url": "https://github.com/wbamberg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This change includes:</p>\n<ul dir=\"auto\">\n<li>modifications to the native messaging guide and native manifest article to reflect the changes made in migrating native-messaging to Manifest V3.</li>\n<li>edits to the native messaging guide to improve its presentation and readability.</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Related changes to the native-messaging example are in  <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3835782346\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/webextensions-examples/issues/617\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/webextensions-examples/pull/617/hovercard\" href=\"https://github.com/mdn/webextensions-examples/pull/617\">mdn/webextensions-examples#617</a></p>",
-            "url": "https://github.com/mdn/content/pull/42872",
-            "title": "Changes for native-messaging to MV3",
-            "date_modified": "2026-01-22T21:22:45.000Z",
-            "date_published": "2026-01-22T17:54:46.000Z",
-            "author": {
-                "name": "rebloor",
-                "url": "https://github.com/rebloor"
             }
         }
     ]
