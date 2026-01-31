@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3050060?u=6ca85464b07c5464a052250a4fc3e3f9c03c97ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR introduces discussion about adding another derivable trait: <code class=\"notranslate\">Deref</code> (follows-up the newly added derivable trait <a href=\"https://github.com/rust-lang/rfcs/pull/3809\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3809/hovercard\"><code class=\"notranslate\">From</code></a>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/GuillaumeGomez/rfcs/blob/derive-deref/text/0000-derive-deref.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3911",
             "title": "Add `derive(Deref)` RFC",
-            "date_modified": "2026-01-23T14:06:16.000Z",
+            "date_modified": "2026-01-31T05:54:32.000Z",
             "date_published": "2026-01-22T15:59:17.000Z",
             "author": {
                 "name": "GuillaumeGomez",
