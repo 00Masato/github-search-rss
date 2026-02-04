@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While rare, it can happen that some cache backend return truncated responses (memcached...).</p>\n<p dir=\"auto\">But generally speaking, the cache should treat any sort of error during deserialization as a cache miss.</p>",
             "url": "https://github.com/rails/rails/pull/56729",
             "title": "Better handle cache deserialization errors",
-            "date_modified": "2026-02-04T10:44:41.000Z",
+            "date_modified": "2026-02-04T14:12:23.000Z",
             "date_published": "2026-02-04T10:11:09.000Z",
             "author": {
                 "name": "byroot",
