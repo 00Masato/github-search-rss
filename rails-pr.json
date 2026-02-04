@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">It's usefulness as a class is storing a model's <code class=\"notranslate\">default_types</code>, but those are cached in an instance variable on the model's class anyways. Making it a Module means less objects (zero vs one per table), and we don't have to ensure its cleared if the schema is reloaded.</p>",
+            "url": "https://github.com/rails/rails/pull/56734",
+            "title": "Make AM::AttributeSet::YAMLEncoder a Module",
+            "date_modified": "2026-02-04T17:55:41.000Z",
+            "date_published": "2026-02-04T17:55:29.000Z",
+            "author": {
+                "name": "hmcguire-shopify",
+                "url": "https://github.com/hmcguire-shopify"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/88370686?u=2c69df9e1fbd01efda132e644352dfeb7861ed57&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Improve accuracy and modernize wording in the Active Record Migrations guide:</p>\n<ul dir=\"auto\">\n<li>Update outdated “PgAdmin III” wording to “pgAdmin”.</li>\n<li>Fix a misleading sentence in the foreign key example (“reviewers” → “authors”).</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56733",
             "title": "Docs: Update pgAdmin name; fix foreign key wording",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "aseroff",
                 "url": "https://github.com/aseroff"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/78165374?u=497eeac70d26f846f023e917b70f6fa9974bc390&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request improves the Getting Started guide by adding helpful documentation notes, warnings, and tips that clarify important concepts for beginners. These additions help developers understand:</p>\n<ul dir=\"auto\">\n<li>How Rails handles multiple database environments</li>\n<li>Best practices for working with migrations</li>\n<li>How to handle validation errors</li>\n<li>The importance of testing in Rails development</li>\n</ul>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds the following documentation improvements to <code class=\"notranslate\">guides/source/getting_started.md</code>:</p>\n<ul dir=\"auto\">\n<li><strong>NOTE</strong> about Rails creating separate databases for each environment (development, test, production)</li>\n<li><strong>WARNING</strong> and additional guidance about migration best practices, including:\n<ul dir=\"auto\">\n<li>Never modifying migrations after they've been run in production</li>\n<li>Proper rollback procedures for deployed migrations</li>\n</ul>\n</li>\n<li><strong>TIP</strong> about checking validation errors using <code class=\"notranslate\">@product.errors</code></li>\n<li>Enhanced introduction to the Testing section with context about TDD and testing importance</li>\n</ul>\n<p dir=\"auto\">These changes make the guide more comprehensive and help prevent common mistakes that beginners might encounter.</p>",
-            "url": "https://github.com/rails/rails/pull/56677",
-            "title": "[ci skip] Add helpful notes and tips to Getting Started guide",
-            "date_modified": "2026-02-01T04:48:20.000Z",
-            "date_published": "2026-01-24T23:23:37.000Z",
-            "author": {
-                "name": "MuhammadIbtisam",
-                "url": "https://github.com/MuhammadIbtisam"
             }
         }
     ]
