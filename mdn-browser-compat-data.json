@@ -6,17 +6,6 @@
     "description": "mdn/browser-compat-data update data on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/in/29110?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Bumps <a href=\"https://github.com/ddbeck/mdn-content-inventory\">@ddbeck/mdn-content-inventory</a> from 0.2.20260206 to 0.2.20260209.</p>\n<details>\n<summary>Commits</summary>\n<ul dir=\"auto\">\n<li>See full diff in <a href=\"https://github.com/ddbeck/mdn-content-inventory/commits\">compare view</a></li>\n</ul>\n</details>\n<br>\n<p dir=\"auto\"><a href=\"https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores\"><img src=\"https://camo.githubusercontent.com/00ba3469dda8e4105c66f86a6a55684f6548f2fc82ddbbfe853a9df2d79b867b/68747470733a2f2f646570656e6461626f742d6261646765732e6769746875626170702e636f6d2f6261646765732f636f6d7061746962696c6974795f73636f72653f646570656e64656e63792d6e616d653d4064646265636b2f6d646e2d636f6e74656e742d696e76656e746f7279267061636b6167652d6d616e616765723d6e706d5f616e645f7961726e2670726576696f75732d76657273696f6e3d302e322e3230323630323036266e65772d76657273696f6e3d302e322e3230323630323039\" alt=\"Dependabot compatibility score\" data-canonical-src=\"https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=@ddbeck/mdn-content-inventory&amp;package-manager=npm_and_yarn&amp;previous-version=0.2.20260206&amp;new-version=0.2.20260209\" style=\"max-width: 100%;\"></a></p>\n<p dir=\"auto\">Dependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting <code class=\"notranslate\">@dependabot rebase</code>.</p>\n<hr>\n<details>\n<summary>Dependabot commands and options</summary>\n<br>\n<p dir=\"auto\">You can trigger Dependabot actions by commenting on this PR:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">@dependabot rebase</code> will rebase this PR</li>\n<li><code class=\"notranslate\">@dependabot recreate</code> will recreate this PR, overwriting any edits that have been made to it</li>\n<li><code class=\"notranslate\">@dependabot show &lt;dependency name&gt; ignore conditions</code> will show all of the ignore conditions of the specified dependency</li>\n<li><code class=\"notranslate\">@dependabot ignore this major version</code> will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)</li>\n<li><code class=\"notranslate\">@dependabot ignore this minor version</code> will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)</li>\n<li><code class=\"notranslate\">@dependabot ignore this dependency</code> will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)</li>\n</ul>\n</details>",
-            "url": "https://github.com/mdn/browser-compat-data/pull/29007",
-            "title": "chore(deps-dev): bump @ddbeck/mdn-content-inventory from 0.2.20260206 to 0.2.20260209",
-            "date_modified": "2026-02-09T12:10:02.000Z",
-            "date_published": "2026-02-09T12:08:46.000Z",
-            "author": {
-                "name": "dependabot",
-                "url": "https://github.com/apps/dependabot"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/495429?u=2f3b9dd03c6c4a961d44a632fe1976c73fa19e1f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Mark <code class=\"notranslate\">RTCPeerConnectionIceEvent.url</code> as deprecated</p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n\n\n<h4 dir=\"auto\">Related issues</h4>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #28993.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3907857573\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/28993\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/28993/hovercard\" href=\"https://github.com/mdn/browser-compat-data/issues/28993\">#28993</a>.</p>",
             "url": "https://github.com/mdn/browser-compat-data/pull/29004",
             "title": "Mark `RTCPeerConnectionIceEvent.url` as deprecated",
@@ -157,6 +146,50 @@
             "author": {
                 "name": "rebloor",
                 "url": "https://github.com/rebloor"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF148 Supports using Document.execCommand with option \"paste\" in web content in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1998195#c18\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=1998195#c18</a></p>\n<p dir=\"auto\">Previously this would only work on extensions. The change is a reimplementation of the feature using the Clipboard API, so shares the same behaviour as added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3699897493\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/28587\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/28587/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/28587\">#28587</a>.</p>\n<p dir=\"auto\">The feature is non-standard but in its \"kind of\" standard, paste is only supported in extensions. So what we're doing is adding non-standard behaviour to some browsers. What I have done is added an entry for paste that matches <code class=\"notranslate\">copy</code> and similar in versions, then added version notes for this additional \"non-standard\" implementation.</p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3805383037\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42747\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42747/hovercard\" href=\"https://github.com/mdn/content/issues/42747\">mdn/content#42747</a></p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/28953",
+            "title": "FF148 Document.execCommand with paste supported in content",
+            "date_modified": "2026-02-09T06:02:36.000Z",
+            "date_published": "2026-02-02T06:05:23.000Z",
+            "author": {
+                "name": "hamishwillee",
+                "url": "https://github.com/hamishwillee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1583797?u=54c58ff3cac6925d619bbd946583a54ff2fc9342&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Update Safari support for Zstandard content encoding.</p>\n<p dir=\"auto\">Also update the spec URLs to move Zstd into the relevant section, rather than the main spec_url for Accept-/Content-Encoding.</p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<p dir=\"auto\">We've added support for Zstandard to Safari 26.3 when running on OS versions 26.3 and later.</p>\n<p dir=\"auto\">Loaded pages and verified <code class=\"notranslate\">zstd</code> is present in request and response header fields in Web Inspector.</p>\n<h4 dir=\"auto\">Related issues</h4>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #28948.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3878148522\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/28948\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/28948/hovercard\" href=\"https://github.com/mdn/browser-compat-data/issues/28948\">#28948</a>.</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/28949",
+            "title": "Safari 26.3 adds Zstandard (zstd)",
+            "date_modified": "2026-02-09T12:42:01.000Z",
+            "date_published": "2026-01-31T02:45:19.000Z",
+            "author": {
+                "name": "ekinnear",
+                "url": "https://github.com/ekinnear"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/495429?u=2f3b9dd03c6c4a961d44a632fe1976c73fa19e1f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Update the Firefox statement for <code class=\"notranslate\">NodeIterator.detach()</code>, indicating that this is still supported.</p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<p dir=\"auto\">Verified with collector test, see <a href=\"https://github.com/mdn/browser-compat-data/issues/20829#issuecomment-3811033154\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/20829/hovercard\">this comment</a>.</p>\n<h4 dir=\"auto\">Related issues</h4>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #20829.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1916130689\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/20829\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/20829/hovercard\" href=\"https://github.com/mdn/browser-compat-data/issues/20829\">#20829</a>.</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/28935",
+            "title": "Firefox still has `NodeIterator.detach()`",
+            "date_modified": "2026-02-05T15:19:39.000Z",
+            "date_published": "2026-01-28T12:35:12.000Z",
+            "author": {
+                "name": "caugner",
+                "url": "https://github.com/caugner"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/495429?u=2f3b9dd03c6c4a961d44a632fe1976c73fa19e1f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">Add Firefox notes for <code class=\"notranslate\">Document.getSelection()</code> mentioning a limitation before Firefox 139.</p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<p dir=\"auto\">See issue below.</p>\n<h4 dir=\"auto\">Related issues</h4>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #21697.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2051047436\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/21697\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/browser-compat-data/issues/21697/hovercard\" href=\"https://github.com/mdn/browser-compat-data/issues/21697\">#21697</a>.</p>",
+            "url": "https://github.com/mdn/browser-compat-data/pull/28931",
+            "title": "Add Firefox notes for `Document.getSelection()`",
+            "date_modified": "2026-02-06T10:38:41.000Z",
+            "date_published": "2026-01-27T17:49:28.000Z",
+            "author": {
+                "name": "caugner",
+                "url": "https://github.com/caugner"
             }
         }
     ]
