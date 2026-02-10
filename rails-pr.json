@@ -6,6 +6,28 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Because Active Record encryption automatically register deep pattern for all encrypted attributes, the list of filtered parameters can quickly grow very large, and severely impact performance.</p>\n<p dir=\"auto\">Given we have a precompilation step, we can perform some dead code elimination.</p>\n<p dir=\"auto\">e.g. in our case the vast majority of encrypted columns have a common suffix (<code class=\"notranslate\">*_token</code>) but <code class=\"notranslate\">token</code> is already a filtered parameter, making all these extra filters redundant and harmful.</p>",
+            "url": "https://github.com/rails/rails/pull/56762",
+            "title": "ActiveSupport::ParameterFilter: optimize redundant patterns out",
+            "date_modified": "2026-02-10T13:21:55.000Z",
+            "date_published": "2026-02-10T13:21:42.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Following <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3512679283\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55900\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55900/hovercard\" href=\"https://github.com/rails/rails/pull/55900\">#55900</a>, we now always pay the efty price of building the event payload and filtering it before we check subscribers to know if they even need it.</p>\n<p dir=\"auto\">I realize this is technically a breaking change, but the filtering logic seem to have been ported over from AS::Notifications but in AS::Notifications we'd save building the payload, here registering a filter doesn't allow to save any substantial overhead.</p>\n<p dir=\"auto\">So in my opinion the feature doesn't make sense as is.</p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/adrianna-chang-shopify/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/adrianna-chang-shopify\">@adrianna-chang-shopify</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/zzak/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/zzak\">@zzak</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/gmcgibbon/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/gmcgibbon\">@gmcgibbon</a> any objections?</p>",
+            "url": "https://github.com/rails/rails/pull/56761",
+            "title": "EventReporter: filter events before building the payload",
+            "date_modified": "2026-02-10T12:27:39.000Z",
+            "date_published": "2026-02-10T12:27:27.000Z",
+            "author": {
+                "name": "byroot",
+                "url": "https://github.com/byroot"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45868351?u=df5e64c90f4c374fd001960424c5e8c6d4ba92e6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Updated code block syntax highlighting for Ruby in getting_started.md.</p>\n\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">The previous version caused incorrect syntax highlighting in the rendered guide. Updating it fixes the highlighting for the example.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This is a documentation-only change.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56760",
             "title": "Fix Ruby code block syntax highlighting for getting_started.md document [ci skip]",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "maxromaniv",
                 "url": "https://github.com/maxromaniv"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/78165374?u=497eeac70d26f846f023e917b70f6fa9974bc390&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request improves Rails guides by adding helpful documentation notes, warnings, and tips. These additions clarify important concepts and help new developers avoid common mistakes.</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li><strong>getting_started.md</strong> — Added NOTE about database environments, WARNING and guidance about migration best practices, TIP about validation errors, and expanded Testing section intro</li>\n<li><strong>action_controller_overview.md</strong> — Added helpful notes and callouts</li>\n<li><strong>active_record_basics.md</strong> — Added helpful notes and callouts</li>\n<li><strong>association_basics.md</strong> — Added helpful notes and callouts</li>\n<li><strong>configuring.md</strong> — Added helpful notes and callouts</li>\n<li><strong>testing.md</strong> — Added helpful notes and callouts</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56713",
-            "title": "[ci skip] Docs/add notes and tips to guides",
-            "date_modified": "2026-02-01T18:36:28.000Z",
-            "date_published": "2026-02-01T18:36:20.000Z",
-            "author": {
-                "name": "MuhammadIbtisam",
-                "url": "https://github.com/MuhammadIbtisam"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51209881?u=b7eda8aa52cb95b4e923cf2ad791b6bd6660c5c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because the example in action mailer documentation greets the user with <code class=\"notranslate\">@user.name</code> in the heading, then references <code class=\"notranslate\">@user.login</code> without explanation.  Using <code class=\"notranslate\">@user.name</code> throughout could improve the clarity in this example</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes  <code class=\"notranslate\">@user.login</code> to <code class=\"notranslate\">@user.name</code> in the mailer view example for consistency.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56710",
-            "title": "[ci skip] Improve clarity in Action Mailer guide example",
-            "date_modified": "2026-02-01T18:59:44.000Z",
-            "date_published": "2026-01-31T18:44:36.000Z",
-            "author": {
-                "name": "Tresor11",
-                "url": "https://github.com/Tresor11"
             }
         }
     ]
