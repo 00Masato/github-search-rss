@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5162312?u=e1b3c0f7c6dc600253bf15c99f618b9b2d39c500&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because the patch appears to be unused.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request deprecates <code class=\"notranslate\">Mail::Address.wrap</code> for removal in 8.2.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56778",
-            "title": "Deprecate Mail::Address.wrap",
-            "date_modified": "2026-02-11T17:35:02.000Z",
-            "date_published": "2026-02-11T16:49:34.000Z",
-            "author": {
-                "name": "gmcgibbon",
-                "url": "https://github.com/gmcgibbon"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I was about to mark it as eager loaded as I noticed it is referenced in AR <code class=\"notranslate\">quote</code> methods, but given it scheduled to be removed, might as well just delete it.</p>",
             "url": "https://github.com/rails/rails/pull/56777",
             "title": "Remove the deprecated `ActiveSupport::Multibyte::Chars` class",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "GitToTheHub",
                 "url": "https://github.com/GitToTheHub"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/606427?u=b5c8a3522dc350227898b69553412cfc31d5d2e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">[<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #56736.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3898600911\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56736\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56736/hovercard\" href=\"https://github.com/rails/rails/issues/56736\">#56736</a>]</p>\n<p dir=\"auto\">When <code class=\"notranslate\">Rails.app.key_generator</code> was accessed in an initializer before <code class=\"notranslate\">config.active_support.key_generator_hash_digest_class</code> was applied, it would cache a key generator with the wrong hash digest class.</p>\n\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The cache key for <code class=\"notranslate\">Rails.app.key_generator</code> now includes both <code class=\"notranslate\">secret_key_base</code> and <code class=\"notranslate\">hash_digest_class</code> as <code class=\"notranslate\">[secret_key_base, hash_digest_class]</code>. This ensures that different hash digest classes get different cached generators, preventing stale generators from being reused when the hash digest class changes.</p>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56737",
+            "title": "Fix key generator hash digest class caching issue",
+            "date_modified": "2026-02-09T02:10:42.000Z",
+            "date_published": "2026-02-04T23:47:41.000Z",
+            "author": {
+                "name": "Saidbek",
+                "url": "https://github.com/Saidbek"
             }
         }
     ]
