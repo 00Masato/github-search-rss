@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142009152?u=0eef36171bcf40796f6299f29e950a36b1d720c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Automatically set multiple=true html attribute in form builder to true if has_many_attached</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I think this could add a bit to rails magic. So you won't forget to set multiple: true manually.</p>",
+            "url": "https://github.com/rails/rails/pull/56815",
+            "title": "Automatically set multiple=true html attribute ",
+            "date_modified": "2026-02-16T08:24:44.000Z",
+            "date_published": "2026-02-16T08:24:34.000Z",
+            "author": {
+                "name": "pardeyke",
+                "url": "https://github.com/pardeyke"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6727425?u=0d2fb3ce83e3eed3281d604b1ded190a065b2994&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Previously, triggers on a SQLite3 table were silently dropped when the table was altered through operations that require table recreation (<code class=\"notranslate\">remove_column</code>, <code class=\"notranslate\">add_foreign_key</code>, <code class=\"notranslate\">add_check_constraint</code>, or <code class=\"notranslate\">add_column</code> with <code class=\"notranslate\">null: false</code>). This happened because SQLite automatically drops triggers when the referenced table is dropped, and the <code class=\"notranslate\">alter_table</code> method did not restore them afterward — unlike foreign keys and check constraints, which are already preserved.</p>\n<p dir=\"auto\">This PR adds a <code class=\"notranslate\">triggers(table_name)</code> method that queries <code class=\"notranslate\">sqlite_master</code> and <code class=\"notranslate\">sqlite_temp_master</code> for existing trigger definitions, and restores them after table recreation in <code class=\"notranslate\">alter_table</code>.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #56810.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3944581558\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56810\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56810/hovercard\" href=\"https://github.com/rails/rails/issues/56810\">#56810</a></p>",
             "url": "https://github.com/rails/rails/pull/56811",
             "title": "SQLite3: Preserve triggers on a table when altering it",
@@ -91,17 +102,6 @@
             "author": {
                 "name": "daffo",
                 "url": "https://github.com/daffo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6375192?u=c259c2e9db46d4bd707c8c5512d8ed652aa6f238&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request has been created because <code class=\"notranslate\">ActiveRecord::ConnectionAdapters::SQLite3::Column#==</code> did not compare <code class=\"notranslate\">rowid</code>, while <code class=\"notranslate\">#hash</code> already included it.</p>\n<p dir=\"auto\">That allowed two columns with different <code class=\"notranslate\">rowid</code> semantics to compare equal, which is incorrect for deduplication and schema metadata consistency.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes SQLite3 column equality so <code class=\"notranslate\">rowid</code> is part of the comparison:</p>\n<ul dir=\"auto\">\n<li>Updates <code class=\"notranslate\">ActiveRecord::ConnectionAdapters::SQLite3::Column#==</code> to compare <code class=\"notranslate\">rowid</code>.</li>\n<li>Adds a regression test: <code class=\"notranslate\">test_rowid_changes_column_equality</code> in <code class=\"notranslate\">activerecord/test/cases/adapters/sqlite3/sqlite3_adapter_test.rb</code>.</li>\n</ul>\n<p dir=\"auto\">The new test reproduces the bug by constructing two otherwise-identical SQLite3 columns that differ only by <code class=\"notranslate\">rowid</code> and asserting they are not equal.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<ul dir=\"auto\">\n<li>Verification run:\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">ARCONN=sqlite3 bundle exec ruby -Itest test/cases/adapters/sqlite3/sqlite3_adapter_test.rb</code></li>\n<li>Result: <code class=\"notranslate\">94 runs, 237 assertions, 0 failures, 0 errors, 0 skips</code></li>\n</ul>\n</li>\n<li>No CHANGELOG update was added because this is a minor bug fix.</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. (N/A here: minor bug fix)</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56802",
-            "title": "Fix SQLite3 column equality for `rowid` aliases",
-            "date_modified": "2026-02-14T15:21:22.000Z",
-            "date_published": "2026-02-14T15:12:39.000Z",
-            "author": {
-                "name": "afurm",
-                "url": "https://github.com/afurm"
             }
         },
         {
