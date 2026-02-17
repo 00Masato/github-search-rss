@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Ref <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3949527554\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56824\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56824/hovercard\" href=\"https://github.com/rails/rails/issues/56824\">#56824</a></p>\n<p dir=\"auto\">An autoload is defined, but then the Normalization autoload referenced the Attributes constant, so it ended up getting loaded immediately.</p>\n<p dir=\"auto\">This commit moves the autoload inside the real Attributes module so that it correctly loads lazily.</p>",
             "url": "https://github.com/rails/rails/pull/56825",
             "title": "Fix eagerly loading ActiveModel::Attributes",
-            "date_modified": "2026-02-16T23:44:14.000Z",
+            "date_modified": "2026-02-17T09:27:01.000Z",
             "date_published": "2026-02-16T23:44:04.000Z",
             "author": {
                 "name": "skipkayhil",
