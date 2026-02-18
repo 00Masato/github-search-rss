@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6097?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The documentation here is a bit out of date <a href=\"https://guides.rubyonrails.org/configuring.html#actiondispatch-hostauthorization\" rel=\"nofollow\">https://guides.rubyonrails.org/configuring.html#actiondispatch-hostauthorization</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"new-project(dev):002&gt; Rails.version\n=&gt; &quot;8.1.2&quot;\nnew-project(dev):003&gt; Rails.application.config.hosts\n=&gt; [&quot;.localhost&quot;, &quot;.test&quot;, #&lt;IPAddr: IPv4:0.0.0.0/0.0.0.0&gt;, #&lt;IPAddr: IPv6:0000:0000:0000:0000:0000:0000:0000:0000/0000:0000:0000:0000:0000:0000:0000:0000&gt;]\"><pre class=\"notranslate\"><code class=\"notranslate\">new-project(dev):002&gt; Rails.version\n=&gt; \"8.1.2\"\nnew-project(dev):003&gt; Rails.application.config.hosts\n=&gt; [\".localhost\", \".test\", #&lt;IPAddr: IPv4:0.0.0.0/0.0.0.0&gt;, #&lt;IPAddr: IPv6:0000:0000:0000:0000:0000:0000:0000:0000/0000:0000:0000:0000:0000:0000:0000:0000&gt;]\n</code></pre></div>\n<p dir=\"auto\">I did the best i could to get the ideas across, but maybe too wordy - any feedback welcome.</p>",
             "url": "https://github.com/rails/rails/pull/56834",
             "title": "Update documentation for Rails host configuration for local development",
-            "date_modified": "2026-02-18T05:05:31.000Z",
+            "date_modified": "2026-02-18T06:17:21.000Z",
             "date_published": "2026-02-18T05:04:11.000Z",
             "author": {
                 "name": "jjb",
