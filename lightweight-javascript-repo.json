@@ -6,21 +6,76 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/179848160?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🖼️ Create stunning image walls effortlessly with this lightweight, dependency-free package featuring a built-in light box and intuitive navigation.</div>",
-            "url": "https://github.com/delphineka/image-wall",
-            "title": "delphineka/image-wall: 🖼️ Create stunning image walls effortlessly with this lightweight, dependency-free package featuring a built-in light box and intuitive navigation.",
-            "date_modified": "2026-02-22T02:57:34.000Z",
-            "date_published": "2025-10-28T00:01:09.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11688788?u=786d2f1a629f08f4ab47945082e63da33a433dfb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>NBA Stat Spot — A lightweight web app providing suggested NBA player prop bets, complete with real-time injury, standings, team news and live game context. Built with a FastAPI + React/TypeScript stack and deployable via Docker.</div>",
+            "url": "https://github.com/mitchelldawkinsjr/NBA-Stat-Spot",
+            "title": "mitchelldawkinsjr/NBA-Stat-Spot: NBA Stat Spot — A lightweight web app providing suggested NBA player prop bets, complete with real-time injury, standings, team news and live game context. Built with a FastAPI + React/TypeScript stack and deployable via Docker.",
+            "date_modified": "2026-02-22T03:50:04.000Z",
+            "date_published": "2025-10-08T16:37:22.000Z",
             "author": {
-                "name": "delphineka",
-                "url": "https://github.com/delphineka"
+                "name": "mitchelldawkinsjr",
+                "url": "https://github.com/mitchelldawkinsjr"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199042787?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Build efficient corporate intranets with this lightweight PHP MVC framework, offering modularity, session management, and easy extensibility.</div>",
+            "url": "https://github.com/redichigo/php-intranet-mvc-framework",
+            "title": "redichigo/php-intranet-mvc-framework: 🌐 Build efficient corporate intranets with this lightweight PHP MVC framework, offering modularity, session management, and easy extensibility.",
+            "date_modified": "2026-02-22T03:49:21.000Z",
+            "date_published": "2026-01-15T22:18:30.000Z",
+            "author": {
+                "name": "redichigo",
+                "url": "https://github.com/redichigo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/219212161?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Build lightweight, reactive JavaScript/TypeScript applications with the Alphabet Frameworks and optimized utility-first CSS for efficient development.</div>",
+            "url": "https://github.com/ueadgf/alphabet",
+            "title": "ueadgf/alphabet: 🛠️ Build lightweight, reactive JavaScript/TypeScript applications with the Alphabet Frameworks and optimized utility-first CSS for efficient development.",
+            "date_modified": "2026-02-22T03:48:45.000Z",
+            "date_published": "2025-07-20T19:50:33.000Z",
+            "author": {
+                "name": "ueadgf",
+                "url": "https://github.com/ueadgf"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/208438942?u=934023ef67b06d1a5716a3f487ac10ee2cb34280&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📝 Create in a distraction-free markdown environment with write0, a lightweight, client-side tool designed for focused writing on the web.</div>",
+            "url": "https://github.com/HieuCoder2025/write0",
+            "title": "HieuCoder2025/write0: 📝 Create in a distraction-free markdown environment with write0, a lightweight, client-side tool designed for focused writing on the web.",
+            "date_modified": "2026-02-22T03:48:40.000Z",
+            "date_published": "2026-01-15T15:29:08.000Z",
+            "author": {
+                "name": "HieuCoder2025",
+                "url": "https://github.com/HieuCoder2025"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/181491164?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Generate ICMP9 subscriptions easily for V2Ray, Clash, and more with this lightweight Cloudflare Workers service, ensuring seamless global connectivity.</div>",
+            "url": "https://github.com/kylepeart21/get-icmp9-node",
+            "title": "kylepeart21/get-icmp9-node: 🌐 Generate ICMP9 subscriptions easily for V2Ray, Clash, and more with this lightweight Cloudflare Workers service, ensuring seamless global connectivity.",
+            "date_modified": "2026-02-22T03:48:37.000Z",
+            "date_published": "2024-09-13T14:21:07.000Z",
+            "author": {
+                "name": "kylepeart21",
+                "url": "https://github.com/kylepeart21"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/765292?u=8bac410e8c65fe083096154e286bacfcd54fc02d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, self-hosted AI assistant with first-class MCP support</div>",
+            "url": "https://github.com/jolks/goto-assistant",
+            "title": "jolks/goto-assistant: Lightweight, self-hosted AI assistant with first-class MCP support",
+            "date_modified": "2026-02-22T03:48:18.000Z",
+            "date_published": "2026-02-10T12:29:09.000Z",
+            "author": {
+                "name": "jolks",
+                "url": "https://github.com/jolks"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11203929?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.</div>",
             "url": "https://github.com/zuohuadong/supacloud",
             "title": "zuohuadong/supacloud: ⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.",
-            "date_modified": "2026-02-22T02:56:47.000Z",
+            "date_modified": "2026-02-22T03:48:02.000Z",
             "date_published": "2025-12-25T15:16:04.000Z",
             "author": {
                 "name": "zuohuadong",
@@ -28,43 +83,98 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/133708924?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🏎️ Simplify HTML and JavaScript integration with Rendu, a lightweight toolkit focused on standards and progressive rendering.</div>",
-            "url": "https://github.com/3lomda/rendu",
-            "title": "3lomda/rendu: 🏎️ Simplify HTML and JavaScript integration with Rendu, a lightweight toolkit focused on standards and progressive rendering.",
-            "date_modified": "2026-02-22T02:56:46.000Z",
-            "date_published": "2025-06-02T19:39:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66273259?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔄 Convert configuration files seamlessly between YAML, JSON, TOML, XML, INI, and ENV formats with this fast, lightweight tool.</div>",
+            "url": "https://github.com/axouxb6/universal-config-converter",
+            "title": "axouxb6/universal-config-converter: 🔄 Convert configuration files seamlessly between YAML, JSON, TOML, XML, INI, and ENV formats with this fast, lightweight tool.",
+            "date_modified": "2026-02-22T03:47:58.000Z",
+            "date_published": "2026-01-14T23:03:45.000Z",
             "author": {
-                "name": "3lomda",
-                "url": "https://github.com/3lomda"
+                "name": "axouxb6",
+                "url": "https://github.com/axouxb6"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168782285?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📝 Enhance your Markdown experience with VanillaMD, a lightweight library for simple and elegant document formatting.</div>",
-            "url": "https://github.com/iann123d/VanillaMD",
-            "title": "iann123d/VanillaMD: 📝 Enhance your Markdown experience with VanillaMD, a lightweight library for simple and elegant document formatting.",
-            "date_modified": "2026-02-22T02:56:12.000Z",
-            "date_published": "2024-05-09T23:44:09.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63948511?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Build dynamic web applications effortlessly with Alphabet, a lightweight JavaScript/TypeScript framework featuring reactive DOM and an optimized utility-first CSS.</div>",
+            "url": "https://github.com/DarkException22/alphabet",
+            "title": "DarkException22/alphabet: 🌟 Build dynamic web applications effortlessly with Alphabet, a lightweight JavaScript/TypeScript framework featuring reactive DOM and an optimized utility-first CSS.",
+            "date_modified": "2026-02-22T03:47:53.000Z",
+            "date_published": "2026-01-15T20:48:04.000Z",
             "author": {
-                "name": "iann123d",
-                "url": "https://github.com/iann123d"
+                "name": "DarkException22",
+                "url": "https://github.com/DarkException22"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/347876?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Simplify online file conversion with FormatConver, a lightweight platform based on FFmpeg, ensuring secure remote processing for your files.</div>",
-            "url": "https://github.com/fidjey08/FormatConver",
-            "title": "fidjey08/FormatConver: 🌐 Simplify online file conversion with FormatConver, a lightweight platform based on FFmpeg, ensuring secure remote processing for your files.",
-            "date_modified": "2026-02-22T02:56:00.000Z",
-            "date_published": "2025-08-14T16:43:44.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/226190294?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, libre P2P chat application designed for the DAT ecosystem and Hypercore protocol</div>",
+            "url": "https://github.com/LTC-GT/hyperchat",
+            "title": "LTC-GT/hyperchat: A lightweight, libre P2P chat application designed for the DAT ecosystem and Hypercore protocol",
+            "date_modified": "2026-02-22T03:47:40.000Z",
+            "date_published": "2026-02-13T23:27:59.000Z",
             "author": {
-                "name": "fidjey08",
-                "url": "https://github.com/fidjey08"
+                "name": "LTC-GT",
+                "url": "https://github.com/LTC-GT"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4661702?u=cc7c812bd1868346cdbd8b0a39d6200c267695f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight terminal UI for managing and monitoring local processes.</div>",
+            "url": "https://github.com/tomagranate/corsa",
+            "title": "tomagranate/corsa: Lightweight terminal UI for managing and monitoring local processes.",
+            "date_modified": "2026-02-22T03:47:39.000Z",
+            "date_published": "2026-01-25T03:50:39.000Z",
+            "author": {
+                "name": "tomagranate",
+                "url": "https://github.com/tomagranate"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/202606558?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔄 Run multiple spinners in Node.js effortlessly with Spindle, a lightweight CLI tool that ensures clear, simultaneous output without visual clutter.</div>",
+            "url": "https://github.com/cmustardo100/spindle",
+            "title": "cmustardo100/spindle: 🔄 Run multiple spinners in Node.js effortlessly with Spindle, a lightweight CLI tool that ensures clear, simultaneous output without visual clutter.",
+            "date_modified": "2026-02-22T03:47:35.000Z",
+            "date_published": "2025-07-30T15:48:25.000Z",
+            "author": {
+                "name": "cmustardo100",
+                "url": "https://github.com/cmustardo100"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111230795?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📊 Analyze *Uma Musume Pretty Derby* tournament stats with a lightweight dashboard that visualizes pick rates, win rates, and tier lists for community events.</div>",
+            "url": "https://github.com/ryanbotmd/racc-open-stats",
+            "title": "ryanbotmd/racc-open-stats: 📊 Analyze *Uma Musume Pretty Derby* tournament stats with a lightweight dashboard that visualizes pick rates, win rates, and tier lists for community events.",
+            "date_modified": "2026-02-22T03:47:22.000Z",
+            "date_published": "2026-01-14T06:50:41.000Z",
+            "author": {
+                "name": "ryanbotmd",
+                "url": "https://github.com/ryanbotmd"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58785688?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍪 Extract browser cookies effortlessly with Sweet Cookie, a lightweight tool that prioritizes inline access and minimizes setup for local development.</div>",
+            "url": "https://github.com/suvayan1111/sweet-cookie",
+            "title": "suvayan1111/sweet-cookie: 🍪 Extract browser cookies effortlessly with Sweet Cookie, a lightweight tool that prioritizes inline access and minimizes setup for local development.",
+            "date_modified": "2026-02-22T03:47:03.000Z",
+            "date_published": "2026-01-14T02:24:37.000Z",
+            "author": {
+                "name": "suvayan1111",
+                "url": "https://github.com/suvayan1111"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/143774385?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
+            "url": "https://github.com/Phrog1st/resafe",
+            "title": "Phrog1st/resafe",
+            "date_modified": "2026-02-22T03:46:30.000Z",
+            "date_published": "2023-09-01T03:49:19.000Z",
+            "author": {
+                "name": "Phrog1st",
+                "url": "https://github.com/Phrog1st"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/486430?u=0a0f2d280fedd23245ef4a94d25a70a63e2ab1e9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Kanban dashboard for managing AI agent workflows across multiple projects</div>",
             "url": "https://github.com/jaycollett/AgentConductor",
             "title": "jaycollett/AgentConductor: A lightweight Kanban dashboard for managing AI agent workflows across multiple projects",
-            "date_modified": "2026-02-22T02:55:49.000Z",
+            "date_modified": "2026-02-22T03:45:52.000Z",
             "date_published": "2026-02-20T21:33:52.000Z",
             "author": {
                 "name": "jaycollett",
@@ -72,120 +182,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/263094912?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>NewSurWave Music is a lightweight and responsive web-based music streaming platform developed using HTML, CSS, and JavaScript.</div>",
-            "url": "https://github.com/nsb619236-code/newsurwave-music",
-            "title": "nsb619236-code/newsurwave-music: NewSurWave Music is a lightweight and responsive web-based music streaming platform developed using HTML, CSS, and JavaScript.",
-            "date_modified": "2026-02-22T02:55:48.000Z",
-            "date_published": "2026-02-22T02:31:16.000Z",
-            "author": {
-                "name": "nsb619236-code",
-                "url": "https://github.com/nsb619236-code"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57811639?u=c34eb16592357c7a8d9068555212ddf487948e83&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and native GNOME Shell extension that displays the current status of Caps Lock and Num Lock directly on your top panel.</div>",
-            "url": "https://github.com/felipepizetta/capsnum-indicator",
-            "title": "felipepizetta/capsnum-indicator: A lightweight and native GNOME Shell extension that displays the current status of Caps Lock and Num Lock directly on your top panel.",
-            "date_modified": "2026-02-22T02:55:36.000Z",
-            "date_published": "2026-02-21T14:09:02.000Z",
-            "author": {
-                "name": "felipepizetta",
-                "url": "https://github.com/felipepizetta"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/161820646?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⏰ Display local and UTC time easily in your terminal with TimeSync, a lightweight TypeScript and JavaScript utility designed for quick, clear access.</div>",
-            "url": "https://github.com/Antoinesiewe237/TimeSync",
-            "title": "Antoinesiewe237/TimeSync: ⏰ Display local and UTC time easily in your terminal with TimeSync, a lightweight TypeScript and JavaScript utility designed for quick, clear access.",
-            "date_modified": "2026-02-22T02:54:09.000Z",
-            "date_published": "2024-03-01T09:18:12.000Z",
-            "author": {
-                "name": "Antoinesiewe237",
-                "url": "https://github.com/Antoinesiewe237"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54209728?u=8ff71976bc365461b6e893032f1f8522d3c5e3a0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A set of lightweight helper functions for Postgres.js designed to make writing simple CRUD operations quick and painless</div>",
-            "url": "https://github.com/kiranojhanp/pgbuddy",
-            "title": "kiranojhanp/pgbuddy: A set of lightweight helper functions for Postgres.js designed to make writing simple CRUD operations quick and painless",
-            "date_modified": "2026-02-22T02:52:29.000Z",
-            "date_published": "2025-01-04T09:52:51.000Z",
-            "author": {
-                "name": "kiranojhanp",
-                "url": "https://github.com/kiranojhanp"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132568727?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌌 Optimize Ethereum interactions with Celestial Runtime, a lightweight and efficient framework designed for seamless blockchain development.</div>",
-            "url": "https://github.com/wqqoz/celestial-runtime",
-            "title": "wqqoz/celestial-runtime: 🌌 Optimize Ethereum interactions with Celestial Runtime, a lightweight and efficient framework designed for seamless blockchain development.",
-            "date_modified": "2026-02-22T02:51:52.000Z",
-            "date_published": "2025-10-16T12:10:27.000Z",
-            "author": {
-                "name": "wqqoz",
-                "url": "https://github.com/wqqoz"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/210531742?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Create and manipulate multidimensional arrays with ease using ndarray-pop, a lightweight library for efficient numerical computations in JavaScript.</div>",
-            "url": "https://github.com/bejita71/ndarray-pop",
-            "title": "bejita71/ndarray-pop: 🛠️ Create and manipulate multidimensional arrays with ease using ndarray-pop, a lightweight library for efficient numerical computations in JavaScript.",
-            "date_modified": "2026-02-22T02:51:48.000Z",
-            "date_published": "2025-10-16T08:25:59.000Z",
-            "author": {
-                "name": "bejita71",
-                "url": "https://github.com/bejita71"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/165580131?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔒 Simplify authentication in Java applications with this lightweight library, enhancing security and user management effortlessly.</div>",
-            "url": "https://github.com/ShagsterSupreme/java-aaa",
-            "title": "ShagsterSupreme/java-aaa: 🔒 Simplify authentication in Java applications with this lightweight library, enhancing security and user management effortlessly.",
-            "date_modified": "2026-02-22T02:51:38.000Z",
-            "date_published": "2024-03-31T16:41:55.000Z",
-            "author": {
-                "name": "ShagsterSupreme",
-                "url": "https://github.com/ShagsterSupreme"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168854239?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎯 Adjust your crosshair in real time with CrossIt, a fast and customizable tool designed for perfecting your aiming style.</div>",
-            "url": "https://github.com/Psynoir/CrossIt",
-            "title": "Psynoir/CrossIt: 🎯 Adjust your crosshair in real time with CrossIt, a fast and customizable tool designed for perfecting your aiming style.",
-            "date_modified": "2026-02-22T02:51:26.000Z",
-            "date_published": "2025-10-16T03:22:42.000Z",
-            "author": {
-                "name": "Psynoir",
-                "url": "https://github.com/Psynoir"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86847119?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
-            "url": "https://github.com/moHHisham1992/extlight",
-            "title": "moHHisham1992/extlight",
-            "date_modified": "2026-02-22T02:51:01.000Z",
-            "date_published": "2021-07-02T16:31:03.000Z",
-            "author": {
-                "name": "moHHisham1992",
-                "url": "https://github.com/moHHisham1992"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199898815?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Connect to Minecraft servers effortlessly with SimpleAFK, a lightweight bot that keeps you logged in for uninterrupted AFK farming and chunk loading.</div>",
-            "url": "https://github.com/amalbabun/SimpleAFK",
-            "title": "amalbabun/SimpleAFK: 🤖 Connect to Minecraft servers effortlessly with SimpleAFK, a lightweight bot that keeps you logged in for uninterrupted AFK farming and chunk loading.",
-            "date_modified": "2026-02-22T02:50:40.000Z",
-            "date_published": "2025-10-14T11:37:30.000Z",
-            "author": {
-                "name": "amalbabun",
-                "url": "https://github.com/amalbabun"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154505189?u=7f4d135e30c012fa41fb6df4ef4adee8cfa990e0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>一个极轻量化 nanobot Tauri 管理助手｜An Ultra-lightweight nanobot Tauri Management Assistant</div>",
             "url": "https://github.com/Freakz3z/nanoboard",
             "title": "Freakz3z/nanoboard: 一个极轻量化 nanobot Tauri 管理助手｜An Ultra-lightweight nanobot Tauri Management Assistant",
-            "date_modified": "2026-02-22T02:50:26.000Z",
+            "date_modified": "2026-02-22T03:43:40.000Z",
             "date_published": "2026-02-10T16:03:38.000Z",
             "author": {
                 "name": "Freakz3z",
@@ -193,36 +193,36 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197670057?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Build transparent, message-first agents with efficient tool calls, planning, and multi-agent handoffs using the lightweight agent-sdk for Node.js.</div>",
-            "url": "https://github.com/dhia7an/agent-sdk",
-            "title": "dhia7an/agent-sdk: 🤖 Build transparent, message-first agents with efficient tool calls, planning, and multi-agent handoffs using the lightweight agent-sdk for Node.js.",
-            "date_modified": "2026-02-22T02:50:07.000Z",
-            "date_published": "2025-02-03T20:03:19.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41953267?u=714064c368b1f444432528182cb3546a15a10edf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, local‑first note + daily logging + task system with optional Express JSON persistence. Mobile friendly, keyboard centric, themable.</div>",
+            "url": "https://github.com/tvpian/Ultranote_Lite",
+            "title": "tvpian/Ultranote_Lite: Lightweight, local‑first note + daily logging + task system with optional Express JSON persistence. Mobile friendly, keyboard centric, themable.",
+            "date_modified": "2026-02-22T03:42:12.000Z",
+            "date_published": "2025-08-17T22:26:58.000Z",
             "author": {
-                "name": "dhia7an",
-                "url": "https://github.com/dhia7an"
+                "name": "tvpian",
+                "url": "https://github.com/tvpian"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176049109?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡ Clone and manipulate objects efficiently with smart-object-utils, a fast and lightweight alternative to Lodash for modern JavaScript projects.</div>",
-            "url": "https://github.com/jds-1206/smart-object-utils",
-            "title": "jds-1206/smart-object-utils: ⚡ Clone and manipulate objects efficiently with smart-object-utils, a fast and lightweight alternative to Lodash for modern JavaScript projects.",
-            "date_modified": "2026-02-22T02:49:32.000Z",
-            "date_published": "2024-07-19T15:45:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69026999?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌥️ Deploy apps effortlessly on Proxmox with NimbusLab, a lightweight PaaS that automates provisioning and deployment from GitHub to VMs and containers.</div>",
+            "url": "https://github.com/dynastyteng/NimbusLab-PaaS",
+            "title": "dynastyteng/NimbusLab-PaaS: 🌥️ Deploy apps effortlessly on Proxmox with NimbusLab, a lightweight PaaS that automates provisioning and deployment from GitHub to VMs and containers.",
+            "date_modified": "2026-02-22T03:41:09.000Z",
+            "date_published": "2026-01-10T01:59:45.000Z",
             "author": {
-                "name": "jds-1206",
-                "url": "https://github.com/jds-1206"
+                "name": "dynastyteng",
+                "url": "https://github.com/dynastyteng"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/208562985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Build and adapt lightweight freelancing mini-apps in React, designed for schools, gyms, and small organizations. Learn from real-world projects.</div>",
-            "url": "https://github.com/bougnaboy/react-mini-suite",
-            "title": "bougnaboy/react-mini-suite: 🚀 Build and adapt lightweight freelancing mini-apps in React, designed for schools, gyms, and small organizations. Learn from real-world projects.",
-            "date_modified": "2026-02-22T02:49:02.000Z",
-            "date_published": "2025-10-12T19:21:35.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73334865?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Optimize your crypto trading with FlashScalper, a tool for multi-indicator analysis, risk management, and adaptive strategies.</div>",
+            "url": "https://github.com/riyad242514/flash-scalper",
+            "title": "riyad242514/flash-scalper: 🚀 Optimize your crypto trading with FlashScalper, a tool for multi-indicator analysis, risk management, and adaptive strategies.",
+            "date_modified": "2026-02-22T03:40:44.000Z",
+            "date_published": "2026-01-09T03:41:32.000Z",
             "author": {
-                "name": "bougnaboy",
-                "url": "https://github.com/bougnaboy"
+                "name": "riyad242514",
+                "url": "https://github.com/riyad242514"
             }
         }
     ]
