@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This worked before 8.1.1 because inline previously required<br>\nsidekiq/testing which required sidekiq. That require was removed with<br>\nthe addition of the deprecation so we now need to do it manually.</p>",
-            "url": "https://github.com/rails/rails/pull/56862",
-            "title": "Fix deprecation of sidekiq/testing/inline",
-            "date_modified": "2026-02-24T03:45:16.000Z",
-            "date_published": "2026-02-24T03:31:05.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112153?u=ae9bbed658b111f2876040ab4dbbe06bc0018068&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">When <code class=\"notranslate\">ActiveSupport::ExecutionContext.nestable</code> is set to true, calling <code class=\"notranslate\">pop</code> can result in <code class=\"notranslate\">ActiveSupport::ExecutionContext.to_h</code> returning <code class=\"notranslate\">nil</code> instead of an empty hash. This is reproducable in a rails application by running:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"ActiveSupport::ExecutionContext.to_h # =&gt; {}\nreload!\nActiveSupport::ExecutionContext.to_h # nil\"><pre class=\"notranslate\"><span class=\"pl-v\">ActiveSupport</span>::<span class=\"pl-v\">ExecutionContext</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_h</span> <span class=\"pl-c\"># =&gt; {}</span>\n<span class=\"pl-en\">reload!</span>\n<span class=\"pl-v\">ActiveSupport</span>::<span class=\"pl-v\">ExecutionContext</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_h</span> <span class=\"pl-c\"># nil</span></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">I believe this is occurring because <code class=\"notranslate\">ActiveSupport::ExecutionContext.to_h@stack</code> is empty and so the call to <code class=\"notranslate\">@stack.pop</code> returns <code class=\"notranslate\">nil</code>, so we can set a default value in that case</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56863",
+            "title": "ActiveSupport::ExecutionContext: Fix nil execution context after pop while nestable",
+            "date_modified": "2026-02-24T04:10:35.000Z",
+            "date_published": "2026-02-24T04:00:51.000Z",
             "author": {
-                "name": "skipkayhil",
-                "url": "https://github.com/skipkayhil"
+                "name": "mariovisic",
+                "url": "https://github.com/mariovisic"
             }
         },
         {
