@@ -72,10 +72,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12972156?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for instrumenting function calls using mcount fentry or xray, and adding a new builtin attribute to toggle instrumentation.</p>\n<p dir=\"auto\">Today, mcount and xray enjoy experimental support, but I was unable to find any RFC proposing their inclusion.</p>\n<p dir=\"auto\"><a href=\"https://github.com/pmur/rfcs/blob/murp/instrumented-functions/text/0000-instrumented-functions.md\">Rendered</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12972156?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for instrumenting function calls using mcount fentry or xray, and adding a new builtin attribute to toggle instrumentation.</p>\n<p dir=\"auto\">Today, mcount and xray enjoy experimental support, but I was unable to find any RFC proposing their inclusion.</p>\n<p dir=\"auto\"><a href=\"https://github.com/pmur/rfcs/blob/murp/instrumented-functions/text/3917-instrumented-functions.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3917",
             "title": "RFC: Add compiler support for instrumenting functions",
-            "date_modified": "2026-02-11T22:52:00.000Z",
+            "date_modified": "2026-02-24T21:09:58.000Z",
             "date_published": "2026-02-10T16:18:13.000Z",
             "author": {
                 "name": "pmur",
