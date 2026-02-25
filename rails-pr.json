@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/522155?u=2974f6234f7bf0cdb100b531448d05fa0c2729f5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When a <code class=\"notranslate\">has_one</code>/<code class=\"notranslate\">has_many</code> association uses <code class=\"notranslate\">inverse_of</code> to derive its foreign key from a <code class=\"notranslate\">belongs_to</code> that has a composite <code class=\"notranslate\">foreign_key</code>, <code class=\"notranslate\">derive_foreign_key</code> returns the inverse reflection's memoized frozen array. The existing code then calls map! on this frozen array, raising <code class=\"notranslate\">FrozenError</code>.</p>\n<p dir=\"auto\">Replace <code class=\"notranslate\">map! + freeze with map { ... }.freeze</code> to avoid mutating the derived array in place.</p>",
             "url": "https://github.com/rails/rails/pull/56877",
             "title": "Fix FrozenError when deriving foreign key from inverse with composite foreign key",
-            "date_modified": "2026-02-25T17:34:08.000Z",
+            "date_modified": "2026-02-25T20:06:56.000Z",
             "date_published": "2026-02-25T17:33:56.000Z",
             "author": {
                 "name": "kirs",
