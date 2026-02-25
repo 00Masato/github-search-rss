@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130501741?u=55ba349e1b3155e831033ae72edf842ca526287c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The Wishlists guide contains a small syntax issue in a code example. The loop references <code class=\"notranslate\">it</code> but does not define a block variable, which makes the snippet invalid Ruby if copied.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adds the missing block parameter <code class=\"notranslate\">|it|</code> to the <code class=\"notranslate\">each</code> loop in the example.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are not required because this is a documentation fix.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG update is not required because this does not change behavior.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56878",
+            "title": "Fix missing block variable in Wishlists guide example",
+            "date_modified": "2026-02-25T18:45:51.000Z",
+            "date_published": "2026-02-25T18:45:38.000Z",
+            "author": {
+                "name": "ochovhaniuk98",
+                "url": "https://github.com/ochovhaniuk98"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/522155?u=2974f6234f7bf0cdb100b531448d05fa0c2729f5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When a <code class=\"notranslate\">has_one</code>/<code class=\"notranslate\">has_many</code> association uses <code class=\"notranslate\">inverse_of</code> to derive its foreign key from a <code class=\"notranslate\">belongs_to</code> that has a composite <code class=\"notranslate\">foreign_key</code>, <code class=\"notranslate\">derive_foreign_key</code> returns the inverse reflection's memoized frozen array. The existing code then calls map! on this frozen array, raising <code class=\"notranslate\">FrozenError</code>.</p>\n<p dir=\"auto\">Replace <code class=\"notranslate\">map! + freeze with map { ... }.freeze</code> to avoid mutating the derived array in place.</p>",
             "url": "https://github.com/rails/rails/pull/56877",
             "title": "Fix FrozenError when deriving foreign key from inverse with composite foreign key",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "nicolasva",
                 "url": "https://github.com/nicolasva"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6097?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The documentation here is a bit out of date <a href=\"https://guides.rubyonrails.org/configuring.html#actiondispatch-hostauthorization\" rel=\"nofollow\">https://guides.rubyonrails.org/configuring.html#actiondispatch-hostauthorization</a></p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"new-project(dev):002&gt; Rails.version\n=&gt; &quot;8.1.2&quot;\nnew-project(dev):003&gt; Rails.application.config.hosts\n=&gt; [&quot;.localhost&quot;, &quot;.test&quot;, #&lt;IPAddr: IPv4:0.0.0.0/0.0.0.0&gt;, #&lt;IPAddr: IPv6:0000:0000:0000:0000:0000:0000:0000:0000/0000:0000:0000:0000:0000:0000:0000:0000&gt;]\"><pre class=\"notranslate\"><code class=\"notranslate\">new-project(dev):002&gt; Rails.version\n=&gt; \"8.1.2\"\nnew-project(dev):003&gt; Rails.application.config.hosts\n=&gt; [\".localhost\", \".test\", #&lt;IPAddr: IPv4:0.0.0.0/0.0.0.0&gt;, #&lt;IPAddr: IPv6:0000:0000:0000:0000:0000:0000:0000:0000/0000:0000:0000:0000:0000:0000:0000:0000&gt;]\n</code></pre></div>\n<p dir=\"auto\">I did the best i could to get the ideas across, but maybe too wordy - any feedback welcome.</p>",
-            "url": "https://github.com/rails/rails/pull/56834",
-            "title": "Update documentation for Rails host configuration for local development",
-            "date_modified": "2026-02-18T06:17:21.000Z",
-            "date_published": "2026-02-18T05:04:11.000Z",
-            "author": {
-                "name": "jjb",
-                "url": "https://github.com/jjb"
             }
         }
     ]
