@@ -6,32 +6,65 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87310476?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple and intuitive reactive framework. Lightweight, fast, and user-friendly virtual DOM library inspired by Vue.js.</div>",
-            "url": "https://github.com/mintjamsinc/ichigojs",
-            "title": "mintjamsinc/ichigojs: A simple and intuitive reactive framework. Lightweight, fast, and user-friendly virtual DOM library inspired by Vue.js.",
-            "date_modified": "2026-03-04T07:13:37.000Z",
-            "date_published": "2025-09-21T23:52:59.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168687729?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript logging utility for creating structured log files with flexible configuration support.</div>",
+            "url": "https://github.com/WhoStoleMySleepDev/logger",
+            "title": "WhoStoleMySleepDev/logger: A lightweight TypeScript logging utility for creating structured log files with flexible configuration support.",
+            "date_modified": "2026-03-04T09:09:16.000Z",
+            "date_published": "2026-03-03T08:19:39.000Z",
             "author": {
-                "name": "mintjamsinc",
-                "url": "https://github.com/mintjamsinc"
+                "name": "WhoStoleMySleepDev",
+                "url": "https://github.com/WhoStoleMySleepDev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107732340?u=5595a9eb32e0b2c400a30f660f1f9931fe8628b3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight frontend library combining the best of jQuery's simplicity with React/Angular's component model.</div>",
-            "url": "https://github.com/tonywied17/zero-query",
-            "title": "tonywied17/zero-query: A lightweight frontend library combining the best of jQuery's simplicity with React/Angular's component model.",
-            "date_modified": "2026-03-04T07:12:21.000Z",
-            "date_published": "2026-03-02T22:11:44.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102327141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔍 Enhance SEO for your React 19 applications effortlessly with this lightweight, type-safe library designed for optimal performance and simplicity.</div>",
+            "url": "https://github.com/cesarortegaii/react-meta",
+            "title": "cesarortegaii/react-meta: 🔍 Enhance SEO for your React 19 applications effortlessly with this lightweight, type-safe library designed for optimal performance and simplicity.",
+            "date_modified": "2026-03-04T09:08:01.000Z",
+            "date_published": "2026-02-04T15:42:30.000Z",
             "author": {
-                "name": "tonywied17",
-                "url": "https://github.com/tonywied17"
+                "name": "cesarortegaii",
+                "url": "https://github.com/cesarortegaii"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94504889?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔮 Extract metadata effortlessly from web pages using ogie, a lightweight library for OpenGraph, Twitter Cards, JSON-LD, and more, built for production.</div>",
+            "url": "https://github.com/AConfusedBoi/ogie",
+            "title": "AConfusedBoi/ogie: 🔮 Extract metadata effortlessly from web pages using ogie, a lightweight library for OpenGraph, Twitter Cards, JSON-LD, and more, built for production.",
+            "date_modified": "2026-03-04T09:07:56.000Z",
+            "date_published": "2021-11-17T04:38:49.000Z",
+            "author": {
+                "name": "AConfusedBoi",
+                "url": "https://github.com/AConfusedBoi"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197598966?u=4cbf74864e01e3827fef5714ec8ebf9fab9c3d09&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight authentication system built with React and React Router DOM, using a JSON Server–based self-made API. The project demonstrates a complete client-side authentication flow without any backend or database, focusing on routing, form handling, and controlled state management with a mini color mixer project.</div>",
+            "url": "https://github.com/PRANAV-SHILU/SecureAuth",
+            "title": "PRANAV-SHILU/SecureAuth: A lightweight authentication system built with React and React Router DOM, using a JSON Server–based self-made API. The project demonstrates a complete client-side authentication flow without any backend or database, focusing on routing, form handling, and controlled state management with a mini color mixer project.",
+            "date_modified": "2026-03-04T09:07:35.000Z",
+            "date_published": "2025-12-25T09:58:37.000Z",
+            "author": {
+                "name": "PRANAV-SHILU",
+                "url": "https://github.com/PRANAV-SHILU"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132299798?u=c1a0bec7f63f158ecfc49e644297b46d7d4ef611&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🖥️ Enhance your logging with Good Console, a lightweight TypeScript library for structured, colorful logs in both Browser and Node environments.</div>",
+            "url": "https://github.com/LuizMiguel01/good-console",
+            "title": "LuizMiguel01/good-console: 🖥️ Enhance your logging with Good Console, a lightweight TypeScript library for structured, colorful logs in both Browser and Node environments.",
+            "date_modified": "2026-03-04T09:06:31.000Z",
+            "date_published": "2023-07-27T09:33:03.000Z",
+            "author": {
+                "name": "LuizMiguel01",
+                "url": "https://github.com/LuizMiguel01"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46663249?u=48fbbf200d8304f48fb3d2a564fd4e642b21cce3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🪐 像星球爆炸一样管理文本！这是一个独特的桌面小工具：主悬浮球点击后弹出多个子球，每个子球代表一段预设文本，点击即复制。轻量、快速、不占任务栏。 🪐 Manage text like an exploding planet! A unique desktop tool where a main floating orb bursts into sub-orbs representing preset texts. Click to copy. Lightweight and unobtrusive.</div>",
             "url": "https://github.com/GGGWB/split-sphere",
             "title": "GGGWB/split-sphere: 🪐 像星球爆炸一样管理文本！这是一个独特的桌面小工具：主悬浮球点击后弹出多个子球，每个子球代表一段预设文本，点击即复制。轻量、快速、不占任务栏。 🪐 Manage text like an exploding planet! A unique desktop tool where a main floating orb bursts into sub-orbs representing preset texts. Click to copy. Lightweight and unobtrusive.",
-            "date_modified": "2026-03-04T07:11:01.000Z",
+            "date_modified": "2026-03-04T09:06:37.000Z",
             "date_published": "2026-03-03T16:51:58.000Z",
             "author": {
                 "name": "GGGWB",
@@ -39,164 +72,120 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/208864202?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight web vulnerability scanner with SSRF protection and header analysis.</div>",
-            "url": "https://github.com/devxharshit/SecureScan",
-            "title": "devxharshit/SecureScan: Lightweight web vulnerability scanner with SSRF protection and header analysis.",
-            "date_modified": "2026-03-04T07:08:57.000Z",
-            "date_published": "2026-03-03T16:19:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/157084662?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🗺️ Build custom route planning features with WaypointJS, a lightweight TypeScript library that works with any mapping service and has zero runtime dependencies.</div>",
+            "url": "https://github.com/jelenaxaxa/waypointjs",
+            "title": "jelenaxaxa/waypointjs: 🗺️ Build custom route planning features with WaypointJS, a lightweight TypeScript library that works with any mapping service and has zero runtime dependencies.",
+            "date_modified": "2026-03-04T09:06:26.000Z",
+            "date_published": "2026-02-03T04:00:40.000Z",
             "author": {
-                "name": "devxharshit",
-                "url": "https://github.com/devxharshit"
+                "name": "jelenaxaxa",
+                "url": "https://github.com/jelenaxaxa"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86598690?u=d162a81012e4324f444f1e86b6e814acc879aba5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight , easy to setup and self-hostable web analytics platform. Tracks Visitoes, Visits, Bounce rate, Device type and OS. </div>",
-            "url": "https://github.com/SAYOUNCDR/okunix",
-            "title": "SAYOUNCDR/okunix: A lightweight , easy to setup and self-hostable web analytics platform. Tracks Visitoes, Visits, Bounce rate, Device type and OS. ",
-            "date_modified": "2026-03-04T07:07:17.000Z",
-            "date_published": "2026-01-03T07:34:44.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25509135?u=e6396a2b6143fb94ba1bfcb9e9c872295f30d1fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>React Virtual Keyboard - Customizable, responsive and lightweight</div>",
+            "url": "https://github.com/hodgef/react-simple-keyboard",
+            "title": "hodgef/react-simple-keyboard: React Virtual Keyboard - Customizable, responsive and lightweight",
+            "date_modified": "2026-03-04T09:05:58.000Z",
+            "date_published": "2018-04-20T14:28:27.000Z",
             "author": {
-                "name": "SAYOUNCDR",
-                "url": "https://github.com/SAYOUNCDR"
+                "name": "hodgef",
+                "url": "https://github.com/hodgef"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73099895?u=b2fe6e21f2cc161126b928ad3a604348da1965f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight personal assistant for Telegram, powered by Claude Agent SDK. Runs in Docker for isolation. Memory,   scheduled jobs, web browsing, Gmail, and GitHub — small enough to fully understand.</div>",
-            "url": "https://github.com/echosprint/MinClaw",
-            "title": "echosprint/MinClaw: Lightweight personal assistant for Telegram, powered by Claude Agent SDK. Runs in Docker for isolation. Memory,   scheduled jobs, web browsing, Gmail, and GitHub — small enough to fully understand.",
-            "date_modified": "2026-03-04T07:04:36.000Z",
-            "date_published": "2026-02-26T09:07:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/137431028?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Debug React Native apps easily with rn-remote-debugger, a lightweight tool tailored for Hermes engine support and streamlined development.</div>",
+            "url": "https://github.com/Sardorbek2802/rn-remote-debugger",
+            "title": "Sardorbek2802/rn-remote-debugger: 🛠️ Debug React Native apps easily with rn-remote-debugger, a lightweight tool tailored for Hermes engine support and streamlined development.",
+            "date_modified": "2026-03-04T09:05:50.000Z",
+            "date_published": "2023-06-22T16:36:35.000Z",
             "author": {
-                "name": "echosprint",
-                "url": "https://github.com/echosprint"
+                "name": "Sardorbek2802",
+                "url": "https://github.com/Sardorbek2802"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Node.js private proxy registry</div>",
-            "url": "https://github.com/verdaccio/verdaccio",
-            "title": "verdaccio/verdaccio: A lightweight Node.js private proxy registry",
-            "date_modified": "2026-03-04T07:03:49.000Z",
-            "date_published": "2016-04-15T16:21:12.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/255067809?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A high-performance flag selector component supporting both lightweight and full selection modes. Includes 250+ countries and regions data, featuring smart IP detection, local storage, search filtering, and rich functionality.</div>",
+            "url": "https://github.com/lvayywyg-cmyk/Flag-Selector-Component",
+            "title": "lvayywyg-cmyk/Flag-Selector-Component: A high-performance flag selector component supporting both lightweight and full selection modes. Includes 250+ countries and regions data, featuring smart IP detection, local storage, search filtering, and rich functionality.",
+            "date_modified": "2026-03-04T09:05:45.000Z",
+            "date_published": "2026-03-04T08:54:18.000Z",
             "author": {
-                "name": "verdaccio",
-                "url": "https://github.com/verdaccio"
+                "name": "lvayywyg-cmyk",
+                "url": "https://github.com/lvayywyg-cmyk"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/225835822?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight interface for accessing and integrating LLM metadata, enabling applications to seamlessly discover, query, and integrate large language model information.</div>",
-            "url": "https://github.com/basellm/llm-metadata",
-            "title": "basellm/llm-metadata: A lightweight interface for accessing and integrating LLM metadata, enabling applications to seamlessly discover, query, and integrate large language model information.",
-            "date_modified": "2026-03-04T06:59:50.000Z",
-            "date_published": "2025-08-31T14:59:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185293853?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔑 Simplify key management in your applications with a lightweight, efficient solution for organizing and accessing data securely.</div>",
+            "url": "https://github.com/pedro25cl/keys",
+            "title": "pedro25cl/keys: 🔑 Simplify key management in your applications with a lightweight, efficient solution for organizing and accessing data securely.",
+            "date_modified": "2026-03-04T09:05:36.000Z",
+            "date_published": "2026-02-02T02:27:31.000Z",
             "author": {
-                "name": "basellm",
-                "url": "https://github.com/basellm"
+                "name": "pedro25cl",
+                "url": "https://github.com/pedro25cl"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/264579731?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Open-source alternative to Claude Agent SDK — lightweight, provider-agnostic. </div>",
-            "url": "https://github.com/OasAIStudio/open-agent-sdk",
-            "title": "OasAIStudio/open-agent-sdk: Open-source alternative to Claude Agent SDK — lightweight, provider-agnostic. ",
-            "date_modified": "2026-03-04T06:59:48.000Z",
-            "date_published": "2026-01-31T14:31:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2493377?u=63464504c91380cc87c5aea77f6b1b5d9fe01b84&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight application built using Aspire to showcase OpenFeature capabilities with a focus on feature flag integration.</div>",
+            "url": "https://github.com/askpt/openfeature-aspire-sample",
+            "title": "askpt/openfeature-aspire-sample: A lightweight application built using Aspire to showcase OpenFeature capabilities with a focus on feature flag integration.",
+            "date_modified": "2026-03-04T09:05:02.000Z",
+            "date_published": "2025-05-12T17:03:07.000Z",
             "author": {
-                "name": "OasAIStudio",
-                "url": "https://github.com/OasAIStudio"
+                "name": "askpt",
+                "url": "https://github.com/askpt"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/217570708?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, flexible Spec-Driven Development (SDD) for modern AI-powered development</div>",
-            "url": "https://github.com/codervisor/lean-spec",
-            "title": "codervisor/lean-spec: Lightweight, flexible Spec-Driven Development (SDD) for modern AI-powered development",
-            "date_modified": "2026-03-04T06:59:22.000Z",
-            "date_published": "2025-10-31T08:59:00.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25509135?u=e6396a2b6143fb94ba1bfcb9e9c872295f30d1fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Javascript Virtual Keyboard - Customizable, responsive and lightweight</div>",
+            "url": "https://github.com/hodgef/simple-keyboard",
+            "title": "hodgef/simple-keyboard: Javascript Virtual Keyboard - Customizable, responsive and lightweight",
+            "date_modified": "2026-03-04T09:04:38.000Z",
+            "date_published": "2018-03-02T16:25:36.000Z",
             "author": {
-                "name": "codervisor",
-                "url": "https://github.com/codervisor"
+                "name": "hodgef",
+                "url": "https://github.com/hodgef"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/187519071?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, PaddleOCR implementation in Typescript for OCR text detection and recognition in JavaScript environments.</div>",
-            "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr",
-            "title": "PT-Perkasa-Pilar-Utama/ppu-paddle-ocr: A lightweight, PaddleOCR implementation in Typescript for OCR text detection and recognition in JavaScript environments.",
-            "date_modified": "2026-03-04T06:59:00.000Z",
-            "date_published": "2025-05-08T09:26:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39119518?u=d8eddb6c94c32d5ba99ab545cf75a6497e8d268c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>FIFO queue with clean API and strong typing. Lightweight and iterable by design.</div>",
+            "url": "https://github.com/raikuxq/apexds-queue",
+            "title": "raikuxq/apexds-queue: FIFO queue with clean API and strong typing. Lightweight and iterable by design.",
+            "date_modified": "2026-03-04T09:04:37.000Z",
+            "date_published": "2026-03-04T07:52:50.000Z",
             "author": {
-                "name": "PT-Perkasa-Pilar-Utama",
-                "url": "https://github.com/PT-Perkasa-Pilar-Utama"
+                "name": "raikuxq",
+                "url": "https://github.com/raikuxq"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93930405?u=bc2122c68bc8a2ab3ce19334b7159a817e9c5083&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight React hook to detect online/offline network status with real-time updates.</div>",
-            "url": "https://github.com/Prem-Ray/use-online-checking",
-            "title": "Prem-Ray/use-online-checking: Lightweight React hook to detect online/offline network status with real-time updates.",
-            "date_modified": "2026-03-04T06:58:23.000Z",
-            "date_published": "2026-03-03T16:34:20.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14957082?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, powerful framework for multi-agent workflows and voice agents</div>",
+            "url": "https://github.com/openai/openai-agents-js",
+            "title": "openai/openai-agents-js: A lightweight, powerful framework for multi-agent workflows and voice agents",
+            "date_modified": "2026-03-04T09:04:16.000Z",
+            "date_published": "2025-05-31T00:08:49.000Z",
             "author": {
-                "name": "Prem-Ray",
-                "url": "https://github.com/Prem-Ray"
+                "name": "openai",
+                "url": "https://github.com/openai"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6926059?u=9f66c90af17cd2c29813d0e83f8937eb0dbcc8f8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight AI coding agent that actually works. KodaX is modular, zero-config, and supports multiple LLM providers out of the box. Use it as a CLI tool or npm library—with session memory, parallel execution, and agent teams. Written in TypeScript.</div>",
-            "url": "https://github.com/icetomoyo/KodaX",
-            "title": "icetomoyo/KodaX: A lightweight AI coding agent that actually works. KodaX is modular, zero-config, and supports multiple LLM providers out of the box. Use it as a CLI tool or npm library—with session memory, parallel execution, and agent teams. Written in TypeScript.",
-            "date_modified": "2026-03-04T06:57:40.000Z",
-            "date_published": "2026-02-15T14:32:44.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11079593?u=37a3b0f97f7cbf0fde44f029220e52d6434160f7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, browser-only framework for inter-tab/window communication using the Broadcast Channel API. Enables each browsing context (tab, window, iframe) to register a unique identity, discover other active contexts, and send messages to specific identities or broadcast messages to all.</div>",
+            "url": "https://github.com/ajnaduvil/tab-whisper",
+            "title": "ajnaduvil/tab-whisper: A lightweight, browser-only framework for inter-tab/window communication using the Broadcast Channel API. Enables each browsing context (tab, window, iframe) to register a unique identity, discover other active contexts, and send messages to specific identities or broadcast messages to all.",
+            "date_modified": "2026-03-04T09:04:02.000Z",
+            "date_published": "2025-08-03T09:35:22.000Z",
             "author": {
-                "name": "icetomoyo",
-                "url": "https://github.com/icetomoyo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93391458?u=2616a63c57e2605f65476b354e8c205987171c19&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AutoCommitter is a lightweight automation project that maintains consistent GitHub contributions using scheduled workflows.</div>",
-            "url": "https://github.com/DragAditya/GithubAutomation",
-            "title": "DragAditya/GithubAutomation: AutoCommitter is a lightweight automation project that maintains consistent GitHub contributions using scheduled workflows.",
-            "date_modified": "2026-03-04T06:56:47.000Z",
-            "date_published": "2026-01-12T17:49:49.000Z",
-            "author": {
-                "name": "DragAditya",
-                "url": "https://github.com/DragAditya"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/122727166?u=3e44954c209563ba4b759fe78131f2788727bb4b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React data fetching hook with smart caching and revalidation.</div>",
-            "url": "https://github.com/Sourabh10122002/use-fetchly",
-            "title": "Sourabh10122002/use-fetchly: A lightweight React data fetching hook with smart caching and revalidation.",
-            "date_modified": "2026-03-04T06:56:13.000Z",
-            "date_published": "2026-02-18T09:08:10.000Z",
-            "author": {
-                "name": "Sourabh10122002",
-                "url": "https://github.com/Sourabh10122002"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77896990?u=7444fefd7f6f6de086d8186063eb3039f969345d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight typewriter effect library.</div>",
-            "url": "https://github.com/chesteralejandro/typr",
-            "title": "chesteralejandro/typr: A lightweight typewriter effect library.",
-            "date_modified": "2026-03-04T06:55:00.000Z",
-            "date_published": "2026-02-20T11:40:05.000Z",
-            "author": {
-                "name": "chesteralejandro",
-                "url": "https://github.com/chesteralejandro"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/241015377?u=19a215759f0c20d11956f9a1deeedcf2f481f92c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Vexon is a lightweight, experimental scripting language designed for simplicity, speed, and embeddability. It includes its own lexer, parser, compiler, virtual machine, and a growing standard library — all implemented from scratch.</div>",
-            "url": "https://github.com/TheServer-lab/vexon",
-            "title": "TheServer-lab/vexon: Vexon is a lightweight, experimental scripting language designed for simplicity, speed, and embeddability. It includes its own lexer, parser, compiler, virtual machine, and a growing standard library — all implemented from scratch.",
-            "date_modified": "2026-03-04T06:49:07.000Z",
-            "date_published": "2025-11-26T04:51:59.000Z",
-            "author": {
-                "name": "TheServer-lab",
-                "url": "https://github.com/TheServer-lab"
+                "name": "ajnaduvil",
+                "url": "https://github.com/ajnaduvil"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/195769352?u=cb56d5b46616e1ee200945378f45cdd63e9f898d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, privacy-first tool that helps users generate a safer version of text before uploading it to AI or online platforms.</div>",
             "url": "https://github.com/GavinGao73/ai-input-safety",
             "title": "GavinGao73/ai-input-safety: A lightweight, privacy-first tool that helps users generate a safer version of text before uploading it to AI or online platforms.",
-            "date_modified": "2026-03-04T06:48:48.000Z",
+            "date_modified": "2026-03-04T09:02:19.000Z",
             "date_published": "2026-02-10T21:57:59.000Z",
             "author": {
                 "name": "GavinGao73",
@@ -204,25 +193,36 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45006?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight extension registry for Bexoe</div>",
-            "url": "https://github.com/wrodenbusch/bexoe-registry",
-            "title": "wrodenbusch/bexoe-registry: Lightweight extension registry for Bexoe",
-            "date_modified": "2026-03-04T06:47:17.000Z",
-            "date_published": "2026-03-02T22:49:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39119518?u=d8eddb6c94c32d5ba99ab545cf75a6497e8d268c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, type-safe linked list with full iteration. Lightweight and designed for clarity.</div>",
+            "url": "https://github.com/raikuxq/apexds-linked-list",
+            "title": "raikuxq/apexds-linked-list: Simple, type-safe linked list with full iteration. Lightweight and designed for clarity.",
+            "date_modified": "2026-03-04T09:02:16.000Z",
+            "date_published": "2026-03-04T07:51:53.000Z",
             "author": {
-                "name": "wrodenbusch",
-                "url": "https://github.com/wrodenbusch"
+                "name": "raikuxq",
+                "url": "https://github.com/raikuxq"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102475617?u=903ddf5631b94fbdaae4e6423ee79de29e72955a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight &amp; secure Notecraft</div>",
-            "url": "https://github.com/7sg56/cinder-notes",
-            "title": "7sg56/cinder-notes: A lightweight & secure Notecraft",
-            "date_modified": "2026-03-04T06:46:40.000Z",
-            "date_published": "2026-01-24T11:42:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101777018?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Create modern, lightweight, type-safe toast notifications for Angular with ease using ng-toastly, designed for smooth integration and accessibility.</div>",
+            "url": "https://github.com/JEpstein00/ng-toastly",
+            "title": "JEpstein00/ng-toastly: 🌟 Create modern, lightweight, type-safe toast notifications for Angular with ease using ng-toastly, designed for smooth integration and accessibility.",
+            "date_modified": "2026-03-04T09:01:37.000Z",
+            "date_published": "2026-01-28T01:16:11.000Z",
             "author": {
-                "name": "7sg56",
-                "url": "https://github.com/7sg56"
+                "name": "JEpstein00",
+                "url": "https://github.com/JEpstein00"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176389763?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Discover a fast and lightweight anime data and streaming API, providing easy access to search, details, and episodes from kuudere.to.</div>",
+            "url": "https://github.com/Philiszszsss/kuudere-api",
+            "title": "Philiszszsss/kuudere-api: 🚀 Discover a fast and lightweight anime data and streaming API, providing easy access to search, details, and episodes from kuudere.to.",
+            "date_modified": "2026-03-04T09:00:53.000Z",
+            "date_published": "2026-01-26T22:12:38.000Z",
+            "author": {
+                "name": "Philiszszsss",
+                "url": "https://github.com/Philiszszsss"
             }
         }
     ]
