@@ -17,28 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5294464?u=e2754ad8dcc82f6e65b07bac4a31928faf3df6fe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #56969.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4064868815\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56969\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56969/hovercard\" href=\"https://github.com/rails/rails/issues/56969\">#56969</a></p>\n<p dir=\"auto\">All details (reproduction, etc) are found in the issue.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Changes <code class=\"notranslate\">(.+)</code> to <code class=\"notranslate\">(.*)</code> in <code class=\"notranslate\">VIRTUAL_TABLE_REGEX</code>. With zero-or-more<br>\nmatching, empty parentheses produce empty string instead of nil, and<br>\n<code class=\"notranslate\">\"\".split(\", \")</code> returns [] without error. No changes to the schema<br>\ndumper are needed.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Added a unit test that asserts VIRTUAL_TABLE_REGEX correctly parses<br>\na USING SomeModule() SQL string. This doesn't test the issue <em>per se</em>, but a full integration test isn't feasible without installing a third-party SQLite extension.</p>",
-            "url": "https://github.com/rails/rails/pull/56971",
-            "title": "Fix crashing schema dump for virtual tables with SQLite and Spatialite",
-            "date_modified": "2026-03-12T15:55:28.000Z",
-            "date_published": "2026-03-12T15:55:16.000Z",
-            "author": {
-                "name": "hschne",
-                "url": "https://github.com/hschne"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4064868815\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56969\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56969/hovercard\" href=\"https://github.com/rails/rails/issues/56969\">#56969</a></p>",
-            "url": "https://github.com/rails/rails/pull/56970",
-            "title": "SQLite virtual tables without parenthesis produces broken schema.rb #56969",
-            "date_modified": "2026-03-12T15:56:49.000Z",
-            "date_published": "2026-03-12T15:54:49.000Z",
-            "author": {
-                "name": "nicolasva",
-                "url": "https://github.com/nicolasva"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11633481?u=b01f90f29336f5f4de89477cd6ba79776e8410c4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Warn about custom inflection rules global side effects, which cause confusing and hard-to-trace issues.</p>\n<p dir=\"auto\">Based on the 2-year-old issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2256403548\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/51630\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/51630/hovercard\" href=\"https://github.com/rails/rails/issues/51630\">#51630</a>, where <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rafaelfranca/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rafaelfranca\">@rafaelfranca</a> noted \"we don't recommend changing the inflector because it has global effect on the Ruby process.\" Nothing changed since then (and won't in the future I assume).</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Add warnings to the API docs, guides and <code class=\"notranslate\">inflections.rb</code> initializer template.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56968",
             "title": "Add inflector global side effects warnings throughout the docs [ci skip]",
@@ -220,6 +198,28 @@
             "title": "Add rake task to clean the guides output directory",
             "date_modified": "2026-03-03T18:38:17.000Z",
             "date_published": "2026-03-03T18:29:47.000Z",
+            "author": {
+                "name": "ayushn21",
+                "url": "https://github.com/ayushn21"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4924039?u=4c5bfb5b7a38c4ce566e4e72308f00254353f0e0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">guides:vendor_javascript</code> task was failing with the below error:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"NoMethodError: undefined method 'gsub' for an instance of Hash (NoMethodError)\n\n      umd_url = url.gsub(&quot;esm.js&quot;, &quot;umd.js&quot;)\"><pre class=\"notranslate\"><code class=\"notranslate\">NoMethodError: undefined method 'gsub' for an instance of Hash (NoMethodError)\n\n      umd_url = url.gsub(\"esm.js\", \"umd.js\")\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR fixes the task to correctly instantiate the array of imports.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56920",
+            "title": "Fix the Rails Guides task to vendor JavaScript",
+            "date_modified": "2026-03-03T18:27:12.000Z",
+            "date_published": "2026-03-03T18:27:01.000Z",
+            "author": {
+                "name": "ayushn21",
+                "url": "https://github.com/ayushn21"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4924039?u=4c5bfb5b7a38c4ce566e4e72308f00254353f0e0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR updates the Rails on Rack guide.</p>\n<p dir=\"auto\">Overview of changes:</p>\n<ul dir=\"auto\">\n<li>Several copy improvements.</li>\n<li>Link to initialization guide for description on how the <code class=\"notranslate\">Rails::Server</code> starts up.</li>\n<li>Update information about the default middleware stack.</li>\n<li>Reformat structure of the \"Internal Middleware Stack\" section to match other guides like the \"Configuration\" guide.</li>\n<li>Add a section on adding custom middleware to the stack.</li>\n<li>Add a section on advanced usage describing the use of the Rack API inside Rails controllers.</li>\n<li>Updated the resources with up-to-date information. (<a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/p8/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/p8\">@p8</a> I know you suggested removing this section, but I think there's value in signposting the pre-requisites for a reader to understand this section. I've added a blog post from myself so I'm obviously biased with that one, please let me know if you have any feedback there. I do believe my post would be helpful for a reader to understand this guide.)</li>\n</ul>\n<p dir=\"auto\">From audit:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> The <code class=\"notranslate\">bin/rails server</code> section could probably link to the <a href=\"https://guides.rubyonrails.org/initialization.html#rails-server-start\" rel=\"nofollow\">Initialization guide</a> so we only need to keep that in-sync.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> The \"Internal Middleware Stack\" section should be formatted similar to the configuration guide and/or the \"Instrumentation\" guide.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Some of the middleware have more extensive document documentation in the API docs.  (Linked each middleware component to its API docs page)</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Sprockets::Rails::QuietAssets is now Propshaft::QuietAsset</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56918",
+            "title": "[RF-Docs] [ci-skip] Update the Rails on Rack guide",
+            "date_modified": "2026-03-12T14:38:43.000Z",
+            "date_published": "2026-03-03T17:46:24.000Z",
             "author": {
                 "name": "ayushn21",
                 "url": "https://github.com/ayushn21"
