@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4062121103\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56966\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56966/hovercard\" href=\"https://github.com/rails/rails/issues/56966\">#56966</a></p>",
+            "url": "https://github.com/rails/rails/pull/56979",
+            "title": "PostgreSQL::SchemaDumper drops index opclass when using persistent schemas alongside dump_schemas #56966",
+            "date_modified": "2026-03-13T12:04:52.000Z",
+            "date_published": "2026-03-13T12:04:40.000Z",
+            "author": {
+                "name": "nicolasva",
+                "url": "https://github.com/nicolasva"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/956570?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Several discussions consider the best location to place one-off scripts and data migrations. Notably: <a href=\"https://discuss.rubyonrails.org/t/is-there-any-official-way-to-organize-one-off-scripts/74186/3\" rel=\"nofollow\">https://discuss.rubyonrails.org/t/is-there-any-official-way-to-organize-one-off-scripts/74186/3</a> and the pull request <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2408432886\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/52335\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/52335/hovercard\" href=\"https://github.com/rails/rails/pull/52335\">#52335</a>.</p>\n<p dir=\"auto\">This PR seeks to include the script directory documentation next to the existing maintenance_tasks gem suggestion within the Data Migrations sectionl.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/56973",
             "title": "[ci skip] Update ActiveRecord Migrations documentation concerning dat…",
@@ -55,17 +66,6 @@
             "title": "ActiveRecord: Allow adapter `#exec_query` methods to take `allow_retry` option",
             "date_modified": "2026-03-10T13:48:41.000Z",
             "date_published": "2026-03-07T12:28:08.000Z",
-            "author": {
-                "name": "frodsan",
-                "url": "https://github.com/frodsan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/840464?u=dcdc36059164d1a5d7359bc08329a109a25fe7f5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because the PostgreSQL adapter currently raises an ActiveRecord::ReadOnlyError when attempting to execute a <a href=\"https://www.postgresql.org/docs/current/sql-reset.html\" rel=\"nofollow\">RESET</a> command within a read-only context (e.g., prevent_writes: true).</p>\n<p dir=\"auto\"><code class=\"notranslate\">RESET</code> acts as a syntactic shortcut for <code class=\"notranslate\">SET configuration_parameter TO DEFAULT</code>.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56945",
-            "title": "ActiveRecord: Support Postgres `RESET` on readonly queries",
-            "date_modified": "2026-03-13T08:48:27.000Z",
-            "date_published": "2026-03-07T11:28:45.000Z",
             "author": {
                 "name": "frodsan",
                 "url": "https://github.com/frodsan"
