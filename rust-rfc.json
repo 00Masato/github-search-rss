@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1617736?u=3c160b4a66ca211ea091b90c00252f4561582680&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This proposes adding a way of defining multiple \"lint profiles\" to <code class=\"notranslate\">Cargo.toml</code>, allowing for runtime selection of different lint behaviors.</p>\n<p dir=\"auto\">To some extent, it is an alternative to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2673004305\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rfcs/issues/3730\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3730/hovercard\" href=\"https://github.com/rust-lang/rfcs/pull/3730\">#3730</a>: it attempts to solve many of the same problems, but also attempts to solve other problems.</p>\n<p dir=\"auto\"><a href=\"https://github.com/Manishearth/rfcs/blob/custom-lint-profiles/text/3926-custom-lint-profiles.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3926",
             "title": "RFC: Custom lint profiles",
-            "date_modified": "2026-03-13T01:30:44.000Z",
+            "date_modified": "2026-03-13T01:34:18.000Z",
             "date_published": "2026-03-08T18:30:18.000Z",
             "author": {
                 "name": "Manishearth",
