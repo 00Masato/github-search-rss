@@ -6,10 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4062121103\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56966\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56966/hovercard\" href=\"https://github.com/rails/rails/issues/56966\">#56966</a></p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4062121103\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56966\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56966/hovercard\" href=\"https://github.com/rails/rails/issues/56966\">#56966</a></p>\n<p dir=\"auto\">PostgreSQL: opclass silently dropped from schema.rb when using dump_schemas<br>\nProblem: within_each_schema restricts schema_search_path to just the schema being dumped (e.g. \"public\"). If an extension (pg_trgm) is installed in a separate schema (e.g. shared_extensions), PostgreSQL returns a schema-qualified opclass name shared_extensions.gin_trgm_ops in pg_get_indexdef output. The opclass regex \\w+_ops doesn't match names containing a dot → opclass is silently dropped from schema.rb.</p>\n<p dir=\"auto\">Fix: schema_statements.rb:143 — extended opclass regex to (?:\\w+.)?\\w+_ops and added .split(\".\").last.to_sym to extract the simple name, stripping any schema prefix.</p>\n<p dir=\"auto\">Tests: schema_test.rb — SchemaOpclassParsingTest with 2 cases: unqualified opclass and schema-qualified opclass.</p>",
             "url": "https://github.com/rails/rails/pull/56979",
             "title": "PostgreSQL::SchemaDumper drops index opclass when using persistent schemas alongside dump_schemas #56966",
-            "date_modified": "2026-03-13T12:04:52.000Z",
+            "date_modified": "2026-03-13T12:08:37.000Z",
             "date_published": "2026-03-13T12:04:40.000Z",
             "author": {
                 "name": "nicolasva",
