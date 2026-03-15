@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4200835?u=2f1eb76bfed93848044c99326c4cf5ec9515cfa7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Because <code class=\"notranslate\">todo!()</code> is often used as a placeholder while working on the code, we should avoid linting <code class=\"notranslate\">unreachable_code</code> on code after those macro uses. Instead let's add a <code class=\"notranslate\">todo_macro_uses</code> lint that we can selectively activate e.g. when compiling a release.</p>\n<p dir=\"auto\">This will reduce message churn and allow users to concentrate on the warnings and errors that matter while they work on the code.</p>\n<p dir=\"auto\"><a href=\"https://github.com/llogiq/rfcs/blob/todo-overreach/text/0000-todo-overreach.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3928",
             "title": "Avoid linting `unreachable_code` on `todo!()`",
-            "date_modified": "2026-03-14T22:27:16.000Z",
+            "date_modified": "2026-03-15T19:29:45.000Z",
             "date_published": "2026-03-14T22:25:56.000Z",
             "author": {
                 "name": "llogiq",
