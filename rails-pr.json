@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73684?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This pull request drops workaround for mail gem version &lt; 2.8.</p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Action Mailbox now requires mail gem &gt;= 2.8 since <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2071970159\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/50668\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/50668/hovercard\" href=\"https://github.com/rails/rails/pull/50668\">#50668</a>, so we can drop this workaround.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes [REPLACE ME]</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Refer to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1475585443\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/46643\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/46643/hovercard\" href=\"https://github.com/rails/rails/pull/46643\">#46643</a>, which added this workaround.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/56994",
+            "title": "Drop workaround for mail gem version < 2.8",
+            "date_modified": "2026-03-16T14:15:25.000Z",
+            "date_published": "2026-03-16T14:14:12.000Z",
+            "author": {
+                "name": "yahonda",
+                "url": "https://github.com/yahonda"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4039764876\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/56949\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/56949/hovercard\" href=\"https://github.com/rails/rails/issues/56949\">#56949</a></p>\n<markdown-accessiblity-table><table role=\"table\">\n<thead>\n<tr>\n<th>Test</th>\n<th>Scenario</th>\n<th>Input</th>\n<th>Expected</th>\n<th>Result</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>test_semicolon_validation</td>\n<td>Static source with semicolon injection</td>\n<td>\"<a href=\"https://evil.com\" rel=\"nofollow\">https://evil.com</a>; geolocation *\"</td>\n<td>Raises InvalidDirectiveError</td>\n<td>PASS</td>\n</tr>\n<tr>\n<td>test_whitespace_validation</td>\n<td>Static source with whitespace injection</td>\n<td>\"<a href=\"https://example.com\" rel=\"nofollow\">https://example.com</a> <a href=\"https://evil.com\" rel=\"nofollow\">https://evil.com</a>\"</td>\n<td>Raises InvalidDirectiveError</td>\n<td>PASS</td>\n</tr>\n<tr>\n<td>test_dynamic_source_semicolon_injection</td>\n<td>Dynamic Proc source (user input) with semicolon injection</td>\n<td>params[:allowed_origin] = \"<a href=\"https://evil.com\" rel=\"nofollow\">https://evil.com</a>; geolocation *\"</td>\n<td>Raises InvalidDirectiveError</td>\n<td>PASS</td>\n</tr>\n<tr>\n<td>test_dynamic_source_whitespace_injection</td>\n<td>Dynamic Proc source (user input) with whitespace injection</td>\n<td>params[:allowed_origin] = \"<a href=\"https://evil.com\" rel=\"nofollow\">https://evil.com</a> <a href=\"https://other.com\" rel=\"nofollow\">https://other.com</a>\"</td>\n<td>Raises InvalidDirectiveError</td>\n<td>PASS</td>\n</tr>\n<tr>\n<td>test_dynamic_source_with_valid_input</td>\n<td>Dynamic Proc source with legitimate input</td>\n<td>params[:allowed_origin] = \"<a href=\"https://trusted.com\" rel=\"nofollow\">https://trusted.com</a>\"</td>\n<td>Builds header normally</td>\n<td>PASS</td>\n</tr>\n</tbody>\n</table></markdown-accessiblity-table>\n<p dir=\"auto\">Fix applied: Added InvalidDirectiveError, a validate method, and updated build_directive in [permissions_policy.rb]</p>",
             "url": "https://github.com/rails/rails/pull/56991",
             "title": "Incomplete fix for CVE-2024-54133: Feature-Policy directive injection via ActionDispatch::PermissionsPolicy #56949",
-            "date_modified": "2026-03-16T13:25:51.000Z",
+            "date_modified": "2026-03-16T13:39:38.000Z",
             "date_published": "2026-03-15T19:17:05.000Z",
             "author": {
                 "name": "nicolasva",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "ruyrocha",
                 "url": "https://github.com/ruyrocha"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4924039?u=4c5bfb5b7a38c4ce566e4e72308f00254353f0e0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The HTML Rails Guides can only be viewed by opening the HTML file. While this is fine, serving them over HTTP has better ergonomics and better simulates how they will be access in production.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds a basic <code class=\"notranslate\">config.ru</code> to serve the Rails Guides using a <code class=\"notranslate\">Rack::Static</code> server. This allows the developer to access the guides at <code class=\"notranslate\">localhost:9292</code> during development.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56922",
-            "title": "Add a development server to view the Rails Guides",
-            "date_modified": "2026-03-16T13:09:18.000Z",
-            "date_published": "2026-03-03T18:33:03.000Z",
-            "author": {
-                "name": "ayushn21",
-                "url": "https://github.com/ayushn21"
             }
         }
     ]
