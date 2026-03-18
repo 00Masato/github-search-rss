@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142009152?u=0eef36171bcf40796f6299f29e950a36b1d720c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<ul dir=\"auto\">\n<li>Remove <code class=\"notranslate\">&lt;h2&gt;</code> and <code class=\"notranslate\">&lt;ol&gt;</code> tags from inside a <code class=\"notranslate\">&lt;p&gt;</code> tag in the routing error rescue template, as these are not valid HTML elements within a paragraph</li>\n</ul>\n<p dir=\"auto\">Per the <a href=\"https://html.spec.whatwg.org/#the-p-element\" rel=\"nofollow\">HTML spec</a>, <code class=\"notranslate\">&lt;p&gt;</code> elements can only contain phrasing content. Block-level elements like <code class=\"notranslate\">&lt;h2&gt;</code> and <code class=\"notranslate\">&lt;ol&gt;</code> are not permitted inside <code class=\"notranslate\">&lt;p&gt;</code> tags and cause implicit paragraph closure, leading to malformed DOM structure.</p>",
+            "url": "https://github.com/rails/rails/pull/57010",
+            "title": "Fix invalid HTML in routing error template",
+            "date_modified": "2026-03-18T22:03:57.000Z",
+            "date_published": "2026-03-18T22:03:47.000Z",
+            "author": {
+                "name": "pardeyke",
+                "url": "https://github.com/pardeyke"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/606427?u=b5c8a3522dc350227898b69553412cfc31d5d2e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">Both requires lost their purpose at different times: <code class=\"notranslate\">attribute_accessors</code> when <a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/c562b54c090999bddcdf1db351faa12d6950c72c/hovercard\" href=\"https://github.com/rails/rails/commit/c562b54c090999bddcdf1db351faa12d6950c72c\"><tt>c562b54</tt></a> replaced <code class=\"notranslate\">mattr_accessor :parse_json_times</code> with plain <code class=\"notranslate\">singleton_class.attr_accessor</code>, and delegation when the pluggable JSON backend was removed back in 2012. Neither is referenced anywhere in the file today.</p>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57008",
             "title": "Remove unused requires from ActiveSupport::JSON::Decoding",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "thehale",
                 "url": "https://github.com/thehale"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1692273?u=4d8efe2f6a8ff5be3c5594b28d80e870f4456493&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because of new directives in permissions policy.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes ActionDispatch::PermissionsPolicy and define an application-wide permissions policy in the CSP initializer template.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/56939",
-            "title": "New application-wide permissions policy with directives",
-            "date_modified": "2026-03-05T10:30:41.000Z",
-            "date_published": "2026-03-05T10:30:32.000Z",
-            "author": {
-                "name": "cbldev",
-                "url": "https://github.com/cbldev"
             }
         }
     ]
