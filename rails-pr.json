@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44640?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I've been meaning to do this for several years, but <code class=\"notranslate\">Redis::Distributed</code> was a blocked. So I implemented <code class=\"notranslate\">RedisClient.ring</code> to offer the same feature.</p>\n<p dir=\"auto\"><code class=\"notranslate\">redis-client</code> is configured to use RESP2 protocol, so there's no new server requirement compared to the previous version (that being said the first RESP3 release was 6 years ago).</p>\n<h3 dir=\"auto\">Todo</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> For now I've removed the <code class=\"notranslate\">:redis</code> constructor argument, but I suspect some people do rely on it to pass a Redis cluster client, so I don't think I can actually entirely remove this option.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57004",
             "title": "Reimplement RedisCache store using `redis-client`",
-            "date_modified": "2026-03-18T16:47:19.000Z",
+            "date_modified": "2026-03-20T09:47:56.000Z",
             "date_published": "2026-03-18T15:28:40.000Z",
             "author": {
                 "name": "byroot",
