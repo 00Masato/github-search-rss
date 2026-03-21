@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">We currently query <code class=\"notranslate\">pg_type</code> every time we connect to a Postgres server, to get the mapping from type names to its internal numeric OID values.</p>\n<p dir=\"auto\">For user-defined types, and extensions (including e.g. <code class=\"notranslate\">hstore</code>, which we support out of the box), that's necessary: OIDs are unique to the server instance, and don't even survive a DB dump/load.</p>\n<p dir=\"auto\">However, all the core built-in types actually have statically allocated OIDs that are shipped in the Postgres source.</p>\n<p dir=\"auto\">Instead of querying immediately, we can ship our own copy of the well-known OID mappings, and load that upon connect for free.</p>\n<p dir=\"auto\">The first time we encounter an unknown type, we'll <em>then</em> run the same \"load all the type definitions we're likely to need\" semi-heuristic query that we used to run eagerly... as well as continuing to follow-up with one-shot queries when even that fails us.</p>",
             "url": "https://github.com/rails/rails/pull/57013",
             "title": "Predefine the well-known Postgres type OIDs",
-            "date_modified": "2026-03-20T08:27:56.000Z",
+            "date_modified": "2026-03-21T18:39:01.000Z",
             "date_published": "2026-03-19T14:57:19.000Z",
             "author": {
                 "name": "matthewd",
