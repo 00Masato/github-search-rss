@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This ports a suggestion for the release note about the reporting API by <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/dipikabh/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/dipikabh\">@dipikabh</a>  in <a href=\"https://github.com/mdn/content/pull/43523/changes#r2975153054\">https://github.com/mdn/content/pull/43523/changes#r2975153054</a></p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3978136610\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/43221\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/43221/hovercard\" href=\"https://github.com/mdn/content/issues/43221\">#43221</a>.</p>",
             "url": "https://github.com/mdn/content/pull/43538",
             "title": "FF149 relnote reporting API update",
-            "date_modified": "2026-03-23T22:04:39.000Z",
+            "date_modified": "2026-03-23T22:05:51.000Z",
             "date_published": "2026-03-23T22:04:18.000Z",
             "author": {
                 "name": "hamishwillee",
@@ -53,7 +53,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Chrome 145 adds support for the <code class=\"notranslate\">PerformanceNavigationTiming.confidence</code> property, and the associated <code class=\"notranslate\">PerformanceTimingConfidence</code> interface. See <a href=\"https://chromestatus.com/feature/5186950448283648\" rel=\"nofollow\">https://chromestatus.com/feature/5186950448283648</a>.</p>\n<p dir=\"auto\">This PR adds documentation for both features mentioned above.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/43528",
             "title": "Technical review: Document PerformanceNavigationTiming.confidence",
-            "date_modified": "2026-03-23T10:04:43.000Z",
+            "date_modified": "2026-03-23T22:36:23.000Z",
             "date_published": "2026-03-23T09:56:02.000Z",
             "author": {
                 "name": "chrisdavidmills",
