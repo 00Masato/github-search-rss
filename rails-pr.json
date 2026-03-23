@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131752?u=32ddf1119b1d189c9bd241a721b36ea01c29f61e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Checking that CI agrees before merging</p>",
+            "url": "https://github.com/rails/rails/pull/57054",
+            "title": "Cherry-pick security release commits onto main branch",
+            "date_modified": "2026-03-23T21:18:21.000Z",
+            "date_published": "2026-03-23T21:18:11.000Z",
+            "author": {
+                "name": "jhawthorn",
+                "url": "https://github.com/jhawthorn"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1653699?u=7ae593653937723ee466cb3ed20d5bfbcab9d54e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3461771945\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55794\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/55794/hovercard\" href=\"https://github.com/rails/rails/pull/55794\">#55794</a> (fixing <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3334650388\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55513\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55513/hovercard\" href=\"https://github.com/rails/rails/issues/55513\">#55513</a>) added a <code class=\"notranslate\">Process.waitpid(pid, WNOHANG)</code> sweep in <code class=\"notranslate\">Parallelization#shutdown</code> to detect dead workers <strong>before</strong> calling <code class=\"notranslate\">Server#shutdown</code>. This helps when workers are already dead at shutdown time, but doesn't cover the case where workers exit <strong>during</strong> <code class=\"notranslate\">Server#shutdown</code>'s <code class=\"notranslate\">wait_for_active_workers</code> loop.</p>\n<p dir=\"auto\">If a worker finishes its tests and exits without calling <code class=\"notranslate\">stop_worker</code> over DRb (e.g. a <code class=\"notranslate\">parallelize_teardown</code> hook raises, the DRb connection drops, or the worker is OOM-killed mid-cleanup), and this happens <strong>after</strong> the initial WNOHANG sweep, <code class=\"notranslate\">Server#shutdown</code> loops forever on <code class=\"notranslate\">while active_workers?</code>.</p>\n<p dir=\"auto\">We're hitting this intermittently in CI with system tests (Capybara/Cuprite). Workers become zombies, but the parent hangs until a watchdog kills it ~90s later.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #57052.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4123268235\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57052\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57052/hovercard\" href=\"https://github.com/rails/rails/issues/57052\">#57052</a></p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Adds a <code class=\"notranslate\">reap_dead_workers</code> method to <code class=\"notranslate\">Server</code> that uses <code class=\"notranslate\">Process.waitpid(pid, WNOHANG)</code> to detect exited worker processes, and calls it inside the <code class=\"notranslate\">wait_for_active_workers</code> loop. This catches workers that die at any point during shutdown — before or during the wait.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">A regression test is included that forks a worker, lets it register, then kills it <em>after</em> the parent enters <code class=\"notranslate\">Server#shutdown</code>. Without the fix, the test hangs; with it, shutdown completes cleanly.</p>",
             "url": "https://github.com/rails/rails/pull/57053",
             "title": "Fix parallel test shutdown hang when workers die during Server#shutdown",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Mordorreal",
                 "url": "https://github.com/Mordorreal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">(based on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4110158041\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57020\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57020/hovercard\" href=\"https://github.com/rails/rails/pull/57020\">#57020</a>)</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"❯ bin/rails c\nLoading development environment (Rails 8.1.2)\nLobsters(dev):001&gt; User.ancestors\n=&gt;\n[User (call 'User.load_schema' to load schema informations),\n #&lt;Module:0x0000000125bfcf40&gt;,\"><pre class=\"notranslate\"><code class=\"notranslate\">❯ bin/rails c\nLoading development environment (Rails 8.1.2)\nLobsters(dev):001&gt; User.ancestors\n=&gt;\n[User (call 'User.load_schema' to load schema informations),\n #&lt;Module:0x0000000125bfcf40&gt;,\n</code></pre></div>\n<p dir=\"auto\">Previously, ActiveRecord::Store would include an anonymous module into<br>\nmodels which holds the Store's generated attributes.</p>\n<p dir=\"auto\">This commit names the module to make it obvious what the module is in<br>\nthe list of ancestors, and then uses the name to reference it instead of<br>\nstoring a reference to the module in an instance variable on the<br>\nsingleton class.</p>",
-            "url": "https://github.com/rails/rails/pull/57021",
-            "title": "De-anonymize generated attribute module for Store",
-            "date_modified": "2026-03-23T16:04:49.000Z",
-            "date_published": "2026-03-20T21:51:02.000Z",
-            "author": {
-                "name": "hmcguire-shopify",
-                "url": "https://github.com/hmcguire-shopify"
             }
         }
     ]
