@@ -17,10 +17,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">FATAL</code> means the server is choosing to terminate the connection, so it's useful for us to clearly distinguish that type of error and correctly translate it to ConnectionBad instead of general StatementInvalid (which would leave us with a broken connection, to only be noticed later).</p>\n<p dir=\"auto\">I think this could be improved upstream in the <code class=\"notranslate\">pg</code> gem, but our manual result handling is minimal enough that it's also fine to just do it ourselves.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">FATAL</code> means the server is choosing to terminate the connection, so it's useful for us to clearly distinguish that type of error and correctly translate it to ConnectionFailed instead of general StatementInvalid (which would leave us with a broken connection, to only be noticed later).</p>\n<p dir=\"auto\">I think this could be improved upstream in the <code class=\"notranslate\">pg</code> gem, but our manual result handling is minimal enough that it's also fine to just do it ourselves.</p>",
             "url": "https://github.com/rails/rails/pull/57057",
             "title": "Report Postgres FATAL exceptions more clearly",
-            "date_modified": "2026-03-24T16:10:50.000Z",
+            "date_modified": "2026-03-24T18:36:36.000Z",
             "date_published": "2026-03-24T15:01:14.000Z",
             "author": {
                 "name": "matthewd",
