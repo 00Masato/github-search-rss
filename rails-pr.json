@@ -6,17 +6,6 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8846835?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This pull request makes a minor update to the <code class=\"notranslate\">Dockerfile.tt</code> template to improve compatibility with different Yarn installation methods. The change ensures the correct Yarn flag is used depending on whether Yarn is managed through Corepack.</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Dockerfile generation:\n<ul dir=\"auto\">\n<li>Updated the Yarn install command to use <code class=\"notranslate\">--immutable</code> if Yarn is managed by Corepack, otherwise use <code class=\"notranslate\">--frozen-lockfile</code>. This improves compatibility with various project setups.</li>\n</ul>\n</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\"><a href=\"https://classic.yarnpkg.com/en/docs/cli/install#toc-yarn-install-frozen-lockfile\" rel=\"nofollow\">https://classic.yarnpkg.com/en/docs/cli/install#toc-yarn-install-frozen-lockfile</a><br>\n<a href=\"https://yarnpkg.com/cli/install\" rel=\"nofollow\">https://yarnpkg.com/cli/install</a></p>",
-            "url": "https://github.com/rails/rails/pull/57074",
-            "title": "Update yarn install command to support immutable and frozen-lockfile in Dockerfile.tt",
-            "date_modified": "2026-03-27T02:13:12.000Z",
-            "date_published": "2026-03-27T02:13:03.000Z",
-            "author": {
-                "name": "javier-menendez",
-                "url": "https://github.com/javier-menendez"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1930?u=907eaf9a63b14b4929d210347e26a46dd3ba7a68&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We have a worker's queue in the database.<br>\nWe would like to fetch a record and mark it as \"in progress\".<br>\nWe'd like to avoid a race condition.</p>\n<h4 dir=\"auto\">Before</h4>\n<ol dir=\"auto\">\n<li>Select a few records</li>\n<li>Mark one record in the database as in progress</li>\n<li>If the record has been marked \"in progress\" by another process first, then try 2 again with the next record.</li>\n<li>If all records were claimed by others, go back to 1 and select a few more.</li>\n<li>Return the single record that we were able to claim.</li>\n</ol>\n<p dir=\"auto\">Think we have a few locks thrown in there.</p>\n<h4 dir=\"auto\">After</h4>\n<ul dir=\"auto\">\n<li>Select and update a record in one database operation.</li>\n</ul>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request adds <code class=\"notranslate\">update_all_returning</code>.</p>\n<p dir=\"auto\">It leverages Postgres and Sqlite's <code class=\"notranslate\">RETURNING</code> feature to fetch the values in the record updated.</p>\n<h3 dir=\"auto\">Support</h3>\n<p dir=\"auto\">It is not available for MiraDB or MySql.</p>\n<ul dir=\"auto\">\n<li>miradb supports <code class=\"notranslate\">RETURNING</code> for insert, but not for update. Had to add a <code class=\"notranslate\">supports_</code> for this. not thrilled and can change if you prefer.</li>\n<li>MySql seems to not follow PostgreSQL</li>\n</ul>\n<p dir=\"auto\">I avoided implementing a locking 3 query implementation for MySQL. But I can add something if you prefer. Just felt there are nuances and it would be better for the developer to handle the edge cases.</p>",
             "url": "https://github.com/rails/rails/pull/57073",
             "title": "Add update_all_returning for atomic update-and-fetch",
@@ -42,7 +31,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/146974323?u=73eba4cc7d2e1dc04ec5e3c04e5829ec0ee61a47&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Inflector#titleize uses [a-z] in its regex to match word-initial lowercase letters for capitalization. This only matches ASCII characters, so Unicode lowercase letters like đ, é, ü, ñ, ć are silently skipped and left lowercase.</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">Before<br>\n<code class=\"notranslate\">titleize(\"ćasim đipa\") # =&gt; \"ćasim đipa\"</code></p>\n</li>\n<li>\n<p dir=\"auto\">After<br>\n<code class=\"notranslate\">titleize(\"ćasim đipa\") # =&gt; \"Ćasim Đipa\"</code></p>\n</li>\n</ul>\n<p dir=\"auto\">Fix: Replace [a-z] with \\p{Ll} in the titleize regex</p>",
             "url": "https://github.com/rails/rails/pull/57071",
             "title": "Fix titleize to capitalize unicode lowercase letters",
-            "date_modified": "2026-03-26T16:45:59.000Z",
+            "date_modified": "2026-03-27T07:24:16.000Z",
             "date_published": "2026-03-26T16:45:48.000Z",
             "author": {
                 "name": "EldinGuzin",
@@ -220,6 +209,17 @@
             "title": "Add test coverage for Errors#delete with type and options",
             "date_modified": "2026-03-23T13:53:46.000Z",
             "date_published": "2026-03-23T13:53:37.000Z",
+            "author": {
+                "name": "hammadxcm",
+                "url": "https://github.com/hammadxcm"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18144989?u=936c991dbed7170944ef183417b188cfd51abc47&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">development?</code>, <code class=\"notranslate\">test?</code>, and <code class=\"notranslate\">production?</code> predicates on <code class=\"notranslate\">ActiveSupport::EnvironmentInquirer</code> are optimized methods that bypass <code class=\"notranslate\">StringInquirer</code>'s <code class=\"notranslate\">method_missing</code> delegation, but had no dedicated test coverage. Only <code class=\"notranslate\">local?</code> and the <code class=\"notranslate\">\"local\"</code> argument error were tested.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This adds tests for <code class=\"notranslate\">ActiveSupport::EnvironmentInquirer</code> verifying:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">development?</code> returns true for \"development\", false for \"test\" and \"production\"</li>\n<li><code class=\"notranslate\">test?</code> returns true for \"test\", false for \"development\" and \"production\"</li>\n<li><code class=\"notranslate\">production?</code> returns true for \"production\", false for \"development\" and \"test\"</li>\n<li>Custom environments (e.g., \"staging\") fall back to <code class=\"notranslate\">StringInquirer</code> behavior and return false for all default predicates</li>\n<li><code class=\"notranslate\">local?</code> returns false for non-local environments like \"staging\"</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests added for the previously untested predicates.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. <em>(N/A — test-only change)</em></li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/57045",
+            "title": "Add test coverage for EnvironmentInquirer predicates",
+            "date_modified": "2026-03-23T13:52:13.000Z",
+            "date_published": "2026-03-23T13:52:01.000Z",
             "author": {
                 "name": "hammadxcm",
                 "url": "https://github.com/hammadxcm"
