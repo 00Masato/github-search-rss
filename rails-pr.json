@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8039537?u=8ae0cc76e21f675d2bc027fe6c1a68e0f32d66b2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\"><code class=\"notranslate\">get url, params: { ... }, as: :json</code> in integration tests converts GET to POST with <code class=\"notranslate\">X-Http-Method-Override: GET</code> header. This relies on <code class=\"notranslate\">Rack::MethodOverride</code> middleware to convert back to GET for routing.</p>\n<p dir=\"auto\">API-only apps (<code class=\"notranslate\">config.api_only = true</code>) exclude this middleware, so routing sees POST and fails with <code class=\"notranslate\">ActionController::RoutingError: No route matches [POST]</code>.</p>\n<h3 dir=\"auto\">Fix</h3>\n<p dir=\"auto\">Only apply the POST conversion when <code class=\"notranslate\">Rack::MethodOverride</code> is in the middleware stack. When absent, keep the request as GET:</p>\n<ul dir=\"auto\">\n<li>Params stay as hash → rack-test puts them in query string</li>\n<li>Skip Content-Type (no body)</li>\n<li>Accept header preserved from JSON encoder</li>\n</ul>\n<p dir=\"auto\">Middleware check is memoized per session.</p>\n<h3 dir=\"auto\">Benchmark</h3>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"                               Before          After\nGET params: as: :json      2,898 i/s       2,800-2,840 i/s (within noise)\"><pre class=\"notranslate\"><code class=\"notranslate\">                               Before          After\nGET params: as: :json      2,898 i/s       2,800-2,840 i/s (within noise)\n</code></pre></div>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #57131.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4197882667\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57131\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57131/hovercard\" href=\"https://github.com/rails/rails/issues/57131\">#57131</a></p>",
+            "url": "https://github.com/rails/rails/pull/57140",
+            "title": "Fix GET+JSON+params in integration tests for API-only apps",
+            "date_modified": "2026-04-04T08:24:15.000Z",
+            "date_published": "2026-04-04T08:12:48.000Z",
+            "author": {
+                "name": "Mordorreal",
+                "url": "https://github.com/Mordorreal"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61051?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because it has potential to save few cycles when variant transformation is not necessary.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the behavior of #variant method. When asking for variant and only transformation that is requested is a format the same as original's format - the processing can be skipped (the variant blog is still downloaded, though)</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">For more aggresive optimization one can reach out to <code class=\"notranslate\">#variant_or_self</code> method proposed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4202443467\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57138\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57138/hovercard\" href=\"https://github.com/rails/rails/pull/57138\">#57138</a></p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li>N/A CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57139",
             "title": "Skip image processing for identity format conversions in ActiveStorage",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "zeto",
                 "url": "https://github.com/zeto"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26704491?u=5409966e579cb7407d0ee1711751efced60737ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Bumped bundler version since 4.0.9 is available to use</p>\n<p dir=\"auto\"><a href=\"https://github.com/ruby/rubygems/releases/tag/bundler-v4.0.9\">https://github.com/ruby/rubygems/releases/tag/bundler-v4.0.9</a></p>",
-            "url": "https://github.com/rails/rails/pull/57112",
-            "title": "Bumping Bundler Version to 4.0.9",
-            "date_modified": "2026-03-31T16:51:32.000Z",
-            "date_published": "2026-03-31T16:51:32.000Z",
-            "author": {
-                "name": "adityapandit17",
-                "url": "https://github.com/adityapandit17"
             }
         }
     ]
