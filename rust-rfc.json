@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1076834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">We adopt a Rust Project contribution policy for AI-generated work.  This applies to all Project spaces.</p>\n<h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">In the Rust Project, we've seen an increase in unwanted and unhelpful contributions where contributors used generative AI.  These are frustrating and costly to reviewers in the Project.  We need to find ways to reduce the incidence of these and to lower the cost of handling them.</p>\n<p dir=\"auto\">We hope that by stating our expectations clearly that fewer contributors will send us unhelpful things and more contributors will send us helpful ones.  We hope that this policy will make decisions and communication less costly for reviewers and moderators.</p>\n<h2 dir=\"auto\">Policy design approach</h2>\n<p dir=\"auto\">People in the Rust Project have diverse — and in some cases, strongly opposed — views on generative AI and on its use.  To address the problem in front of us, this policy describes only those items on which Project members agree.</p>\n<h2 dir=\"auto\">Contribution policy for AI-generated work</h2>\n<p dir=\"auto\">In all Rust Project spaces:</p>\n<ul dir=\"auto\">\n<li>Submitting AI-generated work when you weren't in the loop is prohibited.</li>\n<li>Submitting AI-generated work when you haven't checked it with care is prohibited.</li>\n<li>Submitting AI-generated work when you don't have reason to believe you understand it is prohibited.</li>\n<li>Submitting AI-generated work when you can't explain it to a reviewer is prohibited.</li>\n<li>Feeding reviewer questions into an AI tool and proxying the output directly back is prohibited.</li>\n</ul>\n<hr>\n<p dir=\"auto\">See the RFC text for definitions, questions, and answers.</p>\n<p dir=\"auto\">cc @rust-lang/leadership-council</p>\n<p dir=\"auto\"><a href=\"https://github.com/rust-lang/rfcs/blob/TC/ai-contribution-policy/text/3950-ai-contribution-policy.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3950",
+            "title": "Add contribution policy for AI-generated work",
+            "date_modified": "2026-04-17T14:51:32.000Z",
+            "date_published": "2026-04-17T14:35:23.000Z",
+            "author": {
+                "name": "traviscross",
+                "url": "https://github.com/traviscross"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><em><a href=\"https://triagebot.infra.rust-lang.org/gh-comments/rust-lang/rfcs/pull/3946\" rel=\"nofollow\">View all comments</a></em></p>\n<p dir=\"auto\">This RFC introduces the concept of a crates.io username separate from GitHub (or any potential future OAuth provider) usernames to be able to support multiple OAuth providers someday and adequately handle potential username collisions.</p>\n<p dir=\"auto\">Introducing the concept of a crates.io username in the back end of crates.io and in the user experience is a prerequisite to eventually offering multiple OAuth providers.</p>\n<div class=\"markdown-alert markdown-alert-important\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg class=\"octicon octicon-report mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path></svg>Important</p><p dir=\"auto\">Since RFCs involve many conversations at once that can be difficult to follow, please use review comment threads on the text changes instead of direct comments on the RFC.</p>\n<p dir=\"auto\">If you don't have a particular section of the RFC to comment on, you can click on the \"Comment on this file\" button on the top-right corner of the diff, to the right of the \"Viewed\" checkbox. This will create a separate thread even if others have commented on the file too.</p>\n</div>\n<p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/crates-io-username-identity/text/0000-crates-io-username-identity.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3946",
             "title": "Propose the concept of a crates.io username for identity",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "syudoer",
                 "url": "https://github.com/syudoer"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3050060?u=6ca85464b07c5464a052250a4fc3e3f9c03c97ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR introduces discussion about adding another derivable trait: <code class=\"notranslate\">Deref</code> (follows-up the newly added derivable trait <a href=\"https://github.com/rust-lang/rfcs/pull/3809\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3809/hovercard\"><code class=\"notranslate\">From</code></a>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/GuillaumeGomez/rfcs/blob/derive-deref/text/0000-derive-deref.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3911",
-            "title": "Add `derive(Deref)` RFC",
-            "date_modified": "2026-02-10T19:56:57.000Z",
-            "date_published": "2026-01-22T15:59:17.000Z",
-            "author": {
-                "name": "GuillaumeGomez",
-                "url": "https://github.com/GuillaumeGomez"
             }
         }
     ]
