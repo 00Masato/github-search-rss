@@ -6,6 +6,17 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/650357?u=44a253760baa77a8815bd835b927fb95c087492a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Safe, constant-time, minimal-space-overhead casting between trait objects that share a common root supertrait. A <em>bounded</em> trait graph is one rooted at a single explicitly-declared supertrait; that root names the closure of traits a cast may target, so the compiler can compute a per-type metadata table globally and resolve each cast with two loads and a branch. The user-facing surface is a <code class=\"notranslate\">cast!(in dyn Root, expr =&gt; dyn U)</code> macro (plus <code class=\"notranslate\">try_cast!</code> and <code class=\"notranslate\">unchecked_cast!</code> variants) that works for references, <code class=\"notranslate\">&amp;mut</code>, and owned <code class=\"notranslate\">Box</code>/<code class=\"notranslate\">Rc</code>/<code class=\"notranslate\">Arc</code>. Unlike ecosystem solutions, casting does not require <code class=\"notranslate\">'static</code>, global registries, or <code class=\"notranslate\">TypeId</code>, and remains correct across crate boundaries and generic instantiations.</p>\n<div class=\"highlight highlight-source-rust notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"pub trait Root: TraitMetadataTable&lt;dyn Root&gt; {}\npub trait Sub: Root { fn greet(&amp;self); }\n\nlet r: &amp;dyn Root = /* … */;\nmatch cast!(in dyn Root, r =&gt; dyn Sub) {\n    Ok(s)  =&gt; s.greet(),                      // r implemented Sub\n    Err(_) =&gt; { /* r did not implement Sub */ }\n}\"><pre class=\"notranslate\"><span class=\"pl-k\">pub</span> <span class=\"pl-k\">trait</span> <span class=\"pl-smi\">Root</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">TraitMetadataTable</span><span class=\"pl-kos\">&lt;</span><span class=\"pl-k\">dyn</span> <span class=\"pl-smi\">Root</span><span class=\"pl-kos\">&gt;</span> <span class=\"pl-kos\">{</span><span class=\"pl-kos\">}</span>\n<span class=\"pl-k\">pub</span> <span class=\"pl-k\">trait</span> <span class=\"pl-smi\">Sub</span><span class=\"pl-kos\">:</span> <span class=\"pl-smi\">Root</span> <span class=\"pl-kos\">{</span> <span class=\"pl-k\">fn</span> <span class=\"pl-en\">greet</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">&amp;</span><span class=\"pl-smi\">self</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">;</span> <span class=\"pl-kos\">}</span>\n\n<span class=\"pl-k\">let</span> r<span class=\"pl-kos\">:</span> <span class=\"pl-c1\">&amp;</span><span class=\"pl-k\">dyn</span> <span class=\"pl-smi\">Root</span> = <span class=\"pl-c\">/* … */</span><span class=\"pl-kos\">;</span>\n<span class=\"pl-k\">match</span> <span class=\"pl-en\">cast</span><span class=\"pl-en\">!</span><span class=\"pl-kos\">(</span>in dyn <span class=\"pl-v\">Root</span><span class=\"pl-kos\">,</span> r =&gt; dyn <span class=\"pl-v\">Sub</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span>\n    <span class=\"pl-v\">Ok</span><span class=\"pl-kos\">(</span>s<span class=\"pl-kos\">)</span>  =&gt; s<span class=\"pl-kos\">.</span><span class=\"pl-en\">greet</span><span class=\"pl-kos\">(</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">,</span>                      <span class=\"pl-c\">// r implemented Sub</span>\n    <span class=\"pl-v\">Err</span><span class=\"pl-kos\">(</span>_<span class=\"pl-kos\">)</span> =&gt; <span class=\"pl-kos\">{</span> <span class=\"pl-c\">/* r did not implement Sub */</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-kos\">}</span></pre></div>\n<p dir=\"auto\">I have a working implementation I used to validate the details of this RFC - will open Soon(TM).</p>\n<p dir=\"auto\"><a href=\"https://github.com/DiamondLovesYou/rfcs-bounded-intertrait-casting/blob/master/text/0000-bounded-intertrait-casting.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3952",
+            "title": "Bounded Trait Casting",
+            "date_modified": "2026-04-19T16:07:21.000Z",
+            "date_published": "2026-04-19T15:27:24.000Z",
+            "author": {
+                "name": "DiamondLovesYou",
+                "url": "https://github.com/DiamondLovesYou"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7378772?u=48eefd13b07809cff9c3bbc05f8d9b54671ce852&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR proposes the addition of first class newtype support. This change would provide a discrete abstraction to help unload the overloaded tuple struct.</p>\n<hr>\n<p dir=\"auto\"><a href=\"https://github.com/papa-zakari/rfcs/blob/first-class-newtypes/text/3951-first-class-newtypes.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3951",
             "title": "feat: initial proposal for first class newtypes",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "ionicmc-rs",
                 "url": "https://github.com/ionicmc-rs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12972156?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes to add support for instrumenting function calls using mcount fentry or xray, and adding a new builtin attribute to toggle instrumentation.</p>\n<p dir=\"auto\">Today, mcount and xray enjoy experimental support, but I was unable to find any RFC proposing their inclusion.</p>\n<p dir=\"auto\"><a href=\"https://github.com/pmur/rfcs/blob/murp/instrumented-functions/text/3917-instrumented-functions.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3917",
-            "title": "RFC: Add compiler support for instrumenting functions",
-            "date_modified": "2026-03-31T19:09:57.000Z",
-            "date_published": "2026-02-10T16:18:13.000Z",
-            "author": {
-                "name": "pmur",
-                "url": "https://github.com/pmur"
             }
         }
     ]
