@@ -6,14 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/842976?u=a2938de63e10d26185ff8f208ec8f290d90ea4c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\"><code class=\"notranslate\">Path#existent</code> calls <code class=\"notranslate\">expanded</code>, which uses <code class=\"notranslate\">Dir.glob</code> to list files matching a glob pattern. It then filters every result through <code class=\"notranslate\">File.exist?</code> — but this is redundant, since <code class=\"notranslate\">Dir.glob</code> only returns entries that already exist on the filesystem.</p>\n<p dir=\"auto\">In applications with many engines, this adds up to a large number of unnecessary stat syscalls during boot.</p>\n<h3 dir=\"auto\">Change</h3>\n<p dir=\"auto\">Instead of calling <code class=\"notranslate\">expanded</code> and then filtering, <code class=\"notranslate\">existent</code> now inlines the expansion logic:</p>\n<ul dir=\"auto\">\n<li><strong>Glob paths:</strong> <code class=\"notranslate\">Dir.glob</code> results are used directly — no <code class=\"notranslate\">File.exist?</code> re-check.</li>\n<li><strong>Non-glob paths:</strong> The existing <code class=\"notranslate\">File.exist?</code> guard and broken-symlink detection are preserved.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57219",
-            "title": "Skip redundant File.exist? calls in Path#existent for glob paths",
-            "date_modified": "2026-04-21T12:07:25.000Z",
-            "date_published": "2026-04-21T12:07:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/308724?u=0330e3f8167a4e10123a48abf1e33446c9c626d0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Here's a link to this section in the current guides: <a href=\"https://guides.rubyonrails.org/action_cable_overview.html#more-complete-examples\" rel=\"nofollow\">https://guides.rubyonrails.org/action_cable_overview.html#more-complete-examples</a></p>\n<p dir=\"auto\">It links to <a href=\"https://github.com/rails/actioncable-examples\">a repo</a> that hasn't been updated in 9 years and has since been archived.  Probably not worth linking to anymore.</p>",
+            "url": "https://github.com/rails/rails/pull/57220",
+            "title": "Guides: remove outdated link to Action Cable examples",
+            "date_modified": "2026-04-21T13:09:46.000Z",
+            "date_published": "2026-04-21T13:08:51.000Z",
             "author": {
-                "name": "surkova",
-                "url": "https://github.com/surkova"
+                "name": "tjschuck",
+                "url": "https://github.com/tjschuck"
             }
         },
         {
