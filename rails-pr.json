@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58559918?u=0a8572c3e71c98a3308137fbd21417d8aff17407&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because when we use <code class=\"notranslate\">create_or_find_by</code> and catches a <code class=\"notranslate\">RecordNotUnique</code> error and retries the query, it was previously using <code class=\"notranslate\">where(attributes).find_by!(attributes)</code>  this makes the conditions to duplicate and build wrong query, resulting in a <code class=\"notranslate\">RecordNotFound</code> error.</p>\n<p dir=\"auto\">These changes replace <code class=\"notranslate\">where</code> with <code class=\"notranslate\">rewhere</code> and <code class=\"notranslate\">find_by!</code> with take! to fix conflicting scopes on retry.</p>\n<p dir=\"auto\">Also updated the stub in <code class=\"notranslate\">test_find_or_create_by_race_condition</code> from <code class=\"notranslate\">:find_by!</code> to <code class=\"notranslate\">:take!</code> because the new implementation no longer calls <code class=\"notranslate\">find_by!</code>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR changes <a href=\"https://github.com/rails/rails/blob/main/activerecord/lib/active_record/relation.rb#L283\">activerecord/lib/active_record/relation.rb</a> and <a href=\"https://github.com/rails/rails/blob/main/activerecord/test/cases/relations_test.rb\">activerecord/test/cases/relations_test.rb</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #57192.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4273139183\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57192\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57192/hovercard\" href=\"https://github.com/rails/rails/issues/57192\">#57192</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/57223",
+            "title": "Fix duplicate `where` conditions in `create_or_find_by`",
+            "date_modified": "2026-04-22T09:03:41.000Z",
+            "date_published": "2026-04-22T09:03:31.000Z",
+            "author": {
+                "name": "y-dashev",
+                "url": "https://github.com/y-dashev"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently, an empty (<code class=\"notranslate\">;</code>) SQL query is considered as a write query:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"User.connection.execute(';')\n# =&gt; ActiveRecord::ReadOnlyError: Write query attempted while in readonly mode: ;\"><pre class=\"notranslate\"><span class=\"pl-v\">User</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">connection</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">execute</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">';'</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-c\"># =&gt; ActiveRecord::ReadOnlyError: Write query attempted while in readonly mode: ;</span></pre></div>\n<p dir=\"auto\">These queries are often used as a faster alternative to <code class=\"notranslate\">SELECT 1</code> (or something like that), which is a read query. Was surprised to find out that <code class=\"notranslate\">;</code> is considered a write query.</p>",
             "url": "https://github.com/rails/rails/pull/57221",
             "title": "Empty SQL query `;` in PostgreSQL is a read query",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Mordorreal",
                 "url": "https://github.com/Mordorreal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107416?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">These arguments, and their corresponding versions on <code class=\"notranslate\">option_groups_from_collection_for_select</code> along with <code class=\"notranslate\">group_method</code> and <code class=\"notranslate\">group_label_method</code>, accept a <code class=\"notranslate\">Proc</code> in addition to a string/symbol method name to determine what value to return, however this support wasn't documented.</p>",
-            "url": "https://github.com/rails/rails/pull/57163",
-            "title": "Document that `value_method` and `text_method` arguments of `options_from_collection_for_select` accept Proc [ci skip]",
-            "date_modified": "2026-04-08T21:06:01.000Z",
-            "date_published": "2026-04-08T21:05:52.000Z",
-            "author": {
-                "name": "cgunther",
-                "url": "https://github.com/cgunther"
             }
         }
     ]
