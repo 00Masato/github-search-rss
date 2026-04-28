@@ -6,43 +6,175 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3294321?u=5195fea99c477dc594509f205c06cd93e5aabd5c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>DaprFx is a lightweight, production-oriented microservice toolkit for .NET, built on Dapr. It offers a Spring Cloud–style developer experience: typed abstractions, resilient invocation, pub/sub, outbox delivery, and state management—without binding you to a single vendor runtime.</div>",
-            "url": "https://github.com/Edison0621/Navyblue.MicroFramework",
-            "title": "Edison0621/Navyblue.MicroFramework: DaprFx is a lightweight, production-oriented microservice toolkit for .NET, built on Dapr. It offers a Spring Cloud–style developer experience: typed abstractions, resilient invocation, pub/sub, outbox delivery, and state management—without binding you to a single vendor runtime.",
-            "date_modified": "2026-04-28T07:44:22.000Z",
-            "date_published": "2026-04-28T07:34:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/174629181?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📊 Monitor your data in real-time with StatNet, an ultra-lightweight app featuring a fast, minimal web interface and a Go backend.</div>",
+            "url": "https://github.com/david-william-don-101/statnet",
+            "title": "david-william-don-101/statnet: 📊 Monitor your data in real-time with StatNet, an ultra-lightweight app featuring a fast, minimal web interface and a Go backend.",
+            "date_modified": "2026-04-28T08:45:24.000Z",
+            "date_published": "2025-09-03T16:24:00.000Z",
             "author": {
-                "name": "Edison0621",
-                "url": "https://github.com/Edison0621"
+                "name": "david-william-don-101",
+                "url": "https://github.com/david-william-don-101"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8744936?u=1115cf471d0dff72c78bf266dbbfe1884eb77d3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An ease to use auto-proxy browser extension</div>",
-            "url": "https://github.com/jc3213/easy_proxy",
-            "title": "jc3213/easy_proxy: An ease to use auto-proxy browser extension",
-            "date_modified": "2026-04-28T07:42:39.000Z",
-            "date_published": "2024-02-02T05:05:04.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/182936445?u=e8b27686bdcc1cfb7698894c5c90f0d54cf60fcd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight tool for managing linux virtual machines</div>",
+            "url": "https://github.com/ccheshirecat/flint",
+            "title": "ccheshirecat/flint: Lightweight tool for managing linux virtual machines",
+            "date_modified": "2026-04-28T08:44:38.000Z",
+            "date_published": "2025-09-06T22:27:48.000Z",
             "author": {
-                "name": "jc3213",
-                "url": "https://github.com/jc3213"
+                "name": "ccheshirecat",
+                "url": "https://github.com/ccheshirecat"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101063068?u=f9642ff19ebb5a337b92d8042594e7e09754e3a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and high-performance media processing library for React Native, built on top of Nitro Modules (JSI).</div>",
-            "url": "https://github.com/thangdevalone/react-native-media-toolkit",
-            "title": "thangdevalone/react-native-media-toolkit: A lightweight and high-performance media processing library for React Native, built on top of Nitro Modules (JSI).",
-            "date_modified": "2026-04-28T07:42:35.000Z",
-            "date_published": "2026-04-02T16:53:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1523286?u=81c249b8a0db3c4352bfd4e7860d9825fa43ded2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility to create a global singletons (on browser and node)</div>",
+            "url": "https://github.com/cajames/global-const",
+            "title": "cajames/global-const: A lightweight utility to create a global singletons (on browser and node)",
+            "date_modified": "2026-04-28T08:44:12.000Z",
+            "date_published": "2024-02-07T04:38:50.000Z",
             "author": {
-                "name": "thangdevalone",
-                "url": "https://github.com/thangdevalone"
+                "name": "cajames",
+                "url": "https://github.com/cajames"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/122207493?u=67dc831be77eadb2e073ad8a9278b9554ec2133c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>BharatNewz is a minimal and clean Indian news app that delivers top headlines across various categories, updated daily with no repeated articles. Features include infinite scrolling, a lightweight UI, and smooth user experience.</div>",
+            "url": "https://github.com/Raghuvansh-36/BharatNewz",
+            "title": "Raghuvansh-36/BharatNewz: BharatNewz is a minimal and clean Indian news app that delivers top headlines across various categories, updated daily with no repeated articles. Features include infinite scrolling, a lightweight UI, and smooth user experience.",
+            "date_modified": "2026-04-28T08:43:43.000Z",
+            "date_published": "2025-08-29T07:54:44.000Z",
+            "author": {
+                "name": "Raghuvansh-36",
+                "url": "https://github.com/Raghuvansh-36"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/276654975?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🐍 Viper MD Bot - Lightweight WhatsApp MD bot framework with web QR &amp; code pairing. Baileys alternative for fast bot development.</div>",
+            "url": "https://github.com/sargtech2005/viper-md-bot",
+            "title": "sargtech2005/viper-md-bot: 🐍 Viper MD Bot - Lightweight WhatsApp MD bot framework with web QR & code pairing. Baileys alternative for fast bot development.",
+            "date_modified": "2026-04-28T08:43:41.000Z",
+            "date_published": "2026-04-19T21:15:47.000Z",
+            "author": {
+                "name": "sargtech2005",
+                "url": "https://github.com/sargtech2005"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/92169669?u=372c3f7f288427406a19a093ce96e2837e72ff4d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ConnectionMonitor.js A lightweight, high-precision network reliability and latency monitor for web applications. Designed for environments with unstable connectivity (e.g., retail, field work, or emerging markets), it provides a \"Real-World\" heartbeat beyond simple navigator.onLine checks.</div>",
+            "url": "https://github.com/raymond-sir-fancypants/UpLink",
+            "title": "raymond-sir-fancypants/UpLink: ConnectionMonitor.js A lightweight, high-precision network reliability and latency monitor for web applications. Designed for environments with unstable connectivity (e.g., retail, field work, or emerging markets), it provides a \"Real-World\" heartbeat beyond simple navigator.onLine checks.",
+            "date_modified": "2026-04-28T08:43:40.000Z",
+            "date_published": "2026-04-24T01:07:28.000Z",
+            "author": {
+                "name": "raymond-sir-fancypants",
+                "url": "https://github.com/raymond-sir-fancypants"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91773459?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight AI PDF Reader</div>",
+            "url": "https://github.com/99percentpeople/Legir",
+            "title": "99percentpeople/Legir: Lightweight AI PDF Reader",
+            "date_modified": "2026-04-28T08:43:12.000Z",
+            "date_published": "2026-04-05T12:00:32.000Z",
+            "author": {
+                "name": "99percentpeople",
+                "url": "https://github.com/99percentpeople"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/184733424?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Pontiff Lookup is a jQuery-powered web app listing pontiffs, their works, publications, and speeches, with fast search and loading for quick, easy exploration🐙</div>",
+            "url": "https://github.com/Arandomised/pontiff-lookup",
+            "title": "Arandomised/pontiff-lookup: Pontiff Lookup is a jQuery-powered web app listing pontiffs, their works, publications, and speeches, with fast search and loading for quick, easy exploration🐙",
+            "date_modified": "2026-04-28T08:42:46.000Z",
+            "date_published": "2025-08-13T21:35:10.000Z",
+            "author": {
+                "name": "Arandomised",
+                "url": "https://github.com/Arandomised"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/217383371?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🐙 Convert trading charts to high-quality images with Node.js Canvas, lightweight-charts, and CCXT. Produce visuals from market data for quick sharing, reporting, and analysis.</div>",
+            "url": "https://github.com/sdfysdfhsdfhs/Chart-To-Image",
+            "title": "sdfysdfhsdfhs/Chart-To-Image: 🐙 Convert trading charts to high-quality images with Node.js Canvas, lightweight-charts, and CCXT. Produce visuals from market data for quick sharing, reporting, and analysis.",
+            "date_modified": "2026-04-28T08:42:20.000Z",
+            "date_published": "2025-08-13T08:52:22.000Z",
+            "author": {
+                "name": "sdfysdfhsdfhs",
+                "url": "https://github.com/sdfysdfhsdfhs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/31472067?u=34f571ac7087c49090dd75ece2f659611c824ac5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ultra-lightweight web development under 14KB with a fast Fastify API and SQLite. Minimalist blogs, weather and tasks apps with zero framework overhead and strong performance. 🐙</div>",
+            "url": "https://github.com/beno5950/14kb-web",
+            "title": "beno5950/14kb-web: Ultra-lightweight web development under 14KB with a fast Fastify API and SQLite. Minimalist blogs, weather and tasks apps with zero framework overhead and strong performance. 🐙",
+            "date_modified": "2026-04-28T08:42:17.000Z",
+            "date_published": "2025-08-13T06:21:59.000Z",
+            "author": {
+                "name": "beno5950",
+                "url": "https://github.com/beno5950"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132704468?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Discord bot for running safe terminal commands on Raspberry Pi or Linux servers. Control access and log attempts. Perfect for remote management. 🐙💻</div>",
+            "url": "https://github.com/NoobBotlies/Discord-Pi-Eval",
+            "title": "NoobBotlies/Discord-Pi-Eval: Lightweight Discord bot for running safe terminal commands on Raspberry Pi or Linux servers. Control access and log attempts. Perfect for remote management. 🐙💻",
+            "date_modified": "2026-04-28T08:41:13.000Z",
+            "date_published": "2025-07-05T06:57:02.000Z",
+            "author": {
+                "name": "NoobBotlies",
+                "url": "https://github.com/NoobBotlies"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/175585674?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>KANGO-XMD-LITE is a lightweight project for efficient data management. Join our community on GitHub and enhance your coding experience! 🌟👩💻</div>",
+            "url": "https://github.com/saranpradeep23/KANGO-XMD-LITE",
+            "title": "saranpradeep23/KANGO-XMD-LITE: KANGO-XMD-LITE is a lightweight project for efficient data management. Join our community on GitHub and enhance your coding experience! 🌟👩💻",
+            "date_modified": "2026-04-28T08:41:09.000Z",
+            "date_published": "2025-07-05T06:10:30.000Z",
+            "author": {
+                "name": "saranpradeep23",
+                "url": "https://github.com/saranpradeep23"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107239395?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Browser is a fast, low-resource Chromium-based browser, perfect for low-end PCs. It uses under 300MB RAM, ensuring smooth performance. 🌐💻</div>",
+            "url": "https://github.com/560320534/lightweight-browser",
+            "title": "560320534/lightweight-browser: Lightweight Browser is a fast, low-resource Chromium-based browser, perfect for low-end PCs. It uses under 300MB RAM, ensuring smooth performance. 🌐💻",
+            "date_modified": "2026-04-28T08:40:43.000Z",
+            "date_published": "2025-07-04T15:44:19.000Z",
+            "author": {
+                "name": "560320534",
+                "url": "https://github.com/560320534"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69117747?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
+            "url": "https://github.com/dilaannkilc/Lightweight-CRM-for-Freelancers",
+            "title": "dilaannkilc/Lightweight-CRM-for-Freelancers",
+            "date_modified": "2026-04-28T08:40:39.000Z",
+            "date_published": "2026-03-04T20:55:31.000Z",
+            "author": {
+                "name": "dilaannkilc",
+                "url": "https://github.com/dilaannkilc"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191056542?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Osito DEX Screener Adapter for Berachain. Track real-time swap data and liquidity with TypeScript and Express.js. 🚀🛠️</div>",
+            "url": "https://github.com/Doveflower1997/osito-dex-screener-adapter",
+            "title": "Doveflower1997/osito-dex-screener-adapter: Lightweight Osito DEX Screener Adapter for Berachain. Track real-time swap data and liquidity with TypeScript and Express.js. 🚀🛠️",
+            "date_modified": "2026-04-28T08:40:24.000Z",
+            "date_published": "2025-07-04T06:07:32.000Z",
+            "author": {
+                "name": "Doveflower1997",
+                "url": "https://github.com/Doveflower1997"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72572867?u=4fd1401bbba104cf5799abf29b11e90dbf068edc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>SplitSmart is a lightweight, real-time expense splitting web app. No sign-up required. Just create a group, share the link, and start tracking.</div>",
             "url": "https://github.com/adilsukumar/SplitSmart-Smart_Expense_Splitter",
             "title": "adilsukumar/SplitSmart-Smart_Expense_Splitter: SplitSmart is a lightweight, real-time expense splitting web app. No sign-up required. Just create a group, share the link, and start tracking.",
-            "date_modified": "2026-04-28T07:42:15.000Z",
+            "date_modified": "2026-04-28T08:40:03.000Z",
             "date_published": "2026-04-28T07:17:52.000Z",
             "author": {
                 "name": "adilsukumar",
@@ -50,179 +182,47 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47065385?u=c822cb4d8e68dac35dac9a82d7d2f190624bd5b4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Privacy-first browser RUM and error tracking SDK. Lightweight (~15-22 KB gzipped), framework-agnostic, no PII by default.</div>",
-            "url": "https://github.com/Sangaibisi/browsonic-sdk",
-            "title": "Sangaibisi/browsonic-sdk: Privacy-first browser RUM and error tracking SDK. Lightweight (~15-22 KB gzipped), framework-agnostic, no PII by default.",
-            "date_modified": "2026-04-28T07:41:18.000Z",
-            "date_published": "2026-04-27T11:47:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20860294?u=a0562d7b8f3b6f85d19d881b1acdc44964e95ae7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.</div>",
+            "url": "https://github.com/vheins/local-memory-mcp",
+            "title": "vheins/local-memory-mcp: A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.",
+            "date_modified": "2026-04-28T08:39:47.000Z",
+            "date_published": "2026-01-21T12:33:27.000Z",
             "author": {
-                "name": "Sangaibisi",
-                "url": "https://github.com/Sangaibisi"
+                "name": "vheins",
+                "url": "https://github.com/vheins"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61808984?u=b4d2a3393e97ab646fee997277e2eb9164cf2ff7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight galgame/visual-novel manager,Under development...</div>",
-            "url": "https://github.com/huoshen80/ReinaManager",
-            "title": "huoshen80/ReinaManager: A lightweight galgame/visual-novel manager,Under development...",
-            "date_modified": "2026-04-28T07:36:19.000Z",
-            "date_published": "2025-01-24T02:46:28.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69126233?u=5dc258786c6d9ec20e69b1b605685a5b508532ad&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for TypeScript and JavaScript, `@adam-rocska/timeout` creates a Promise that resolves after a set time, perfect for managing delays in your async workflows. Check it out on GitHub for easy integration into your projects! 🐙✨</div>",
+            "url": "https://github.com/thegamer49520/timeout-typescript",
+            "title": "thegamer49520/timeout-typescript: A lightweight utility for TypeScript and JavaScript, `@adam-rocska/timeout` creates a Promise that resolves after a set time, perfect for managing delays in your async workflows. Check it out on GitHub for easy integration into your projects! 🐙✨",
+            "date_modified": "2026-04-28T08:38:58.000Z",
+            "date_published": "2025-05-23T01:03:17.000Z",
             "author": {
-                "name": "huoshen80",
-                "url": "https://github.com/huoshen80"
+                "name": "thegamer49520",
+                "url": "https://github.com/thegamer49520"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64662301?u=d36a651c591535eb1a53e1cc4e6461c45f4dc2be&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight state manager with concurrent-safe React bindings and built-in devtools</div>",
-            "url": "https://github.com/LipinVV/my-store",
-            "title": "LipinVV/my-store: Lightweight state manager with concurrent-safe React bindings and built-in devtools",
-            "date_modified": "2026-04-28T07:34:48.000Z",
-            "date_published": "2026-04-28T07:31:12.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/119518330?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀</div>",
+            "url": "https://github.com/ratul3429/bun-microservice-gateways",
+            "title": "ratul3429/bun-microservice-gateways: This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀",
+            "date_modified": "2026-04-28T08:38:38.000Z",
+            "date_published": "2025-05-22T09:12:38.000Z",
             "author": {
-                "name": "LipinVV",
-                "url": "https://github.com/LipinVV"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46435584?u=711ccf68c220cdf3c4f5b99e50d030a1be8c56a3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Fetch API web framework with typed middleware, validator, RPC, OpenAPI and multi-runtime adapters.</div>",
-            "url": "https://github.com/jieceng/orva",
-            "title": "jieceng/orva: Lightweight Fetch API web framework with typed middleware, validator, RPC, OpenAPI and multi-runtime adapters.",
-            "date_modified": "2026-04-28T07:28:54.000Z",
-            "date_published": "2026-04-28T02:43:29.000Z",
-            "author": {
-                "name": "jieceng",
-                "url": "https://github.com/jieceng"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/198517819?u=1f5c41886cae463bdcb8c85fda9fb3c702c06026&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and efficient JavaScript address selector for the Philippines, designed to streamline the process of selecting regions, provinces, cities, and barangays in web applications.</div>",
-            "url": "https://github.com/its-ryyt/Philippines---Javascript-Address-Selector",
-            "title": "its-ryyt/Philippines---Javascript-Address-Selector: A lightweight and efficient JavaScript address selector for the Philippines, designed to streamline the process of selecting regions, provinces, cities, and barangays in web applications.",
-            "date_modified": "2026-04-28T07:27:36.000Z",
-            "date_published": "2025-02-13T13:29:57.000Z",
-            "author": {
-                "name": "its-ryyt",
-                "url": "https://github.com/its-ryyt"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/263552704?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🪁 A lightweight, modern Kubernetes dashboard that unifies multi-cluster and resource management, enterprise-grade user governance (OAuth, RBAC, and audit logs), and AI agents in one workspace. Not just a tool, but more like a platform.</div>",
-            "url": "https://github.com/kite-org/kite",
-            "title": "kite-org/kite: 🪁 A lightweight, modern Kubernetes dashboard that unifies multi-cluster and resource management, enterprise-grade user governance (OAuth, RBAC, and audit logs), and AI agents in one workspace. Not just a tool, but more like a platform.",
-            "date_modified": "2026-04-28T07:23:37.000Z",
-            "date_published": "2025-06-17T12:12:15.000Z",
-            "author": {
-                "name": "kite-org",
-                "url": "https://github.com/kite-org"
+                "name": "ratul3429",
+                "url": "https://github.com/ratul3429"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/74767108?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, drag-and-drop project prioritisation tool designed for rapid operational visibility to ascertain immediate next steps, minimising cognitive load and decision fatigue.</div>",
             "url": "https://github.com/mgreenhough/Project_Tracker",
             "title": "mgreenhough/Project_Tracker: A lightweight, drag-and-drop project prioritisation tool designed for rapid operational visibility to ascertain immediate next steps, minimising cognitive load and decision fatigue.",
-            "date_modified": "2026-04-28T07:23:30.000Z",
+            "date_modified": "2026-04-28T08:38:26.000Z",
             "date_published": "2026-04-25T00:05:59.000Z",
             "author": {
                 "name": "mgreenhough",
                 "url": "https://github.com/mgreenhough"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/198641226?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight tool to generate `.http` files from OpenAPI specification. </div>",
-            "url": "https://github.com/Blouppy/http-file-generator",
-            "title": "Blouppy/http-file-generator: A lightweight tool to generate `.http` files from OpenAPI specification. ",
-            "date_modified": "2026-04-28T07:22:41.000Z",
-            "date_published": "2026-04-18T17:59:39.000Z",
-            "author": {
-                "name": "Blouppy",
-                "url": "https://github.com/Blouppy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64656661?u=f8220c3b5b4d14a763e217cad4c06acddb96d6c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Kinetic Overlay Intelligence — An ultra-lightweight, full-screen transparent overlay game.</div>",
-            "url": "https://github.com/ziuus/waiting-game",
-            "title": "ziuus/waiting-game: Kinetic Overlay Intelligence — An ultra-lightweight, full-screen transparent overlay game.",
-            "date_modified": "2026-04-28T07:22:31.000Z",
-            "date_published": "2026-04-17T04:21:03.000Z",
-            "author": {
-                "name": "ziuus",
-                "url": "https://github.com/ziuus"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/238506974?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, local-first Kubernetes monitoring and management UI</div>",
-            "url": "https://github.com/OpenGittr/kubeui",
-            "title": "OpenGittr/kubeui: A lightweight, local-first Kubernetes monitoring and management UI",
-            "date_modified": "2026-04-28T07:21:58.000Z",
-            "date_published": "2025-12-26T08:19:40.000Z",
-            "author": {
-                "name": "OpenGittr",
-                "url": "https://github.com/OpenGittr"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2655696?u=a33b037759dfd611c318323b08003a8e0b18a35b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight open-source alternative to @anthropic-ai/claude-agent-sdk — readable source,   debuggable, uses your local Claude CLI</div>",
-            "url": "https://github.com/foksa/open-claude-agent-sdk",
-            "title": "foksa/open-claude-agent-sdk: Lightweight open-source alternative to @anthropic-ai/claude-agent-sdk — readable source,   debuggable, uses your local Claude CLI",
-            "date_modified": "2026-04-28T07:21:56.000Z",
-            "date_published": "2026-02-02T19:10:50.000Z",
-            "author": {
-                "name": "foksa",
-                "url": "https://github.com/foksa"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76718614?u=e32eb3dbbff0fac80ba721319521d54da1edb03e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Chrome extension that lets you save images instantly — just hover and click. Supports bulk download, ZIP packaging, and URL transformation strategies for original images.</div>",
-            "url": "https://github.com/synxvi/image-harvester-browser-extension",
-            "title": "synxvi/image-harvester-browser-extension: A lightweight Chrome extension that lets you save images instantly — just hover and click. Supports bulk download, ZIP packaging, and URL transformation strategies for original images.",
-            "date_modified": "2026-04-28T07:21:25.000Z",
-            "date_published": "2026-04-14T08:18:33.000Z",
-            "author": {
-                "name": "synxvi",
-                "url": "https://github.com/synxvi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50897551?u=dedde37e89854fc761cba4eb2c22dbaabee2259b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a lightweight internal web application that gives the team real-time visibility into the pipeline, with the ability to search, filter, and update asset status as content moves from ingest through delivery.</div>",
-            "url": "https://github.com/JustCasuallyJames/media-asset-tracker",
-            "title": "JustCasuallyJames/media-asset-tracker: a lightweight internal web application that gives the team real-time visibility into the pipeline, with the ability to search, filter, and update asset status as content moves from ingest through delivery.",
-            "date_modified": "2026-04-28T07:21:06.000Z",
-            "date_published": "2026-04-25T05:54:26.000Z",
-            "author": {
-                "name": "JustCasuallyJames",
-                "url": "https://github.com/JustCasuallyJames"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/148872143?u=9613d9796750993e21ea12e9401f30c5a54a3e40&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a collection of lightweight TypeScript packages for AT Protocol, the protocol powering Bluesky.</div>",
-            "url": "https://github.com/mary-ext/atcute",
-            "title": "mary-ext/atcute: a collection of lightweight TypeScript packages for AT Protocol, the protocol powering Bluesky.",
-            "date_modified": "2026-04-28T07:20:51.000Z",
-            "date_published": "2024-09-01T03:00:52.000Z",
-            "author": {
-                "name": "mary-ext",
-                "url": "https://github.com/mary-ext"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/116748398?u=4cd53b88914e421bc8599f3b0f3cab9268f3d474&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight authentication infrastructure generator powered by an internal Identity Engine.</div>",
-            "url": "https://github.com/COD434/create-authenik8-app",
-            "title": "COD434/create-authenik8-app: A lightweight authentication infrastructure generator powered by an internal Identity Engine.",
-            "date_modified": "2026-04-28T07:20:36.000Z",
-            "date_published": "2026-04-13T16:39:02.000Z",
-            "author": {
-                "name": "COD434",
-                "url": "https://github.com/COD434"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274907054?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Run local LLMs in a lightweight Windows client with a clean, no-dependency setup.</div>",
-            "url": "https://github.com/Purifying-blucher813/zexo-studio",
-            "title": "Purifying-blucher813/zexo-studio: Run local LLMs in a lightweight Windows client with a clean, no-dependency setup.",
-            "date_modified": "2026-04-28T07:20:20.000Z",
-            "date_published": "2026-04-27T06:21:09.000Z",
-            "author": {
-                "name": "Purifying-blucher813",
-                "url": "https://github.com/Purifying-blucher813"
             }
         }
     ]
