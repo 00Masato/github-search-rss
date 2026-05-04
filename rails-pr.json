@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5657035?u=48dc5950e98b199e1ed1e8c5c3f1e4bfd2b39691&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #57296.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4379889962\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57296\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57296/hovercard\" href=\"https://github.com/rails/rails/issues/57296\">#57296</a>.</p>",
+            "url": "https://github.com/rails/rails/pull/57298",
+            "title": "Fix `eager_load` for CPK models with explicit `select`",
+            "date_modified": "2026-05-04T22:22:15.000Z",
+            "date_published": "2026-05-04T22:22:06.000Z",
+            "author": {
+                "name": "fatkodima",
+                "url": "https://github.com/fatkodima"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10907664?u=07dab6dcee44105c94411e7a7cd32a3118a7dd25&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This Pull Request documents that <code class=\"notranslate\">config.active_storage.routes_prefix</code> can accept any value supported by <code class=\"notranslate\">scope</code>, not only a string path prefix.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #48915.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1843653413\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/48915\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/48915/hovercard\" href=\"https://github.com/rails/rails/issues/48915\">#48915</a>.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">The Active Storage routes are mounted with:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"scope ActiveStorage.routes_prefix do\"><pre class=\"notranslate\"><span class=\"pl-en\">scope</span> <span class=\"pl-v\">ActiveStorage</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">routes_prefix</span> <span class=\"pl-k\">do</span></pre></div>\n<p dir=\"auto\">so applications can pass either a string path prefix or a hash of routing options, such as a path plus subdomain constraint. This updates:</p>\n<ul dir=\"auto\">\n<li>the configuring guide</li>\n<li>the Active Storage overview guide</li>\n<li>the <code class=\"notranslate\">ActiveStorage.routes_prefix</code> API comment</li>\n</ul>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> The documentation is updated.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57297",
             "title": "Document Active Storage routes_prefix scope options",
-            "date_modified": "2026-05-04T22:18:24.000Z",
+            "date_modified": "2026-05-04T22:18:39.000Z",
             "date_published": "2026-05-04T22:18:24.000Z",
             "author": {
                 "name": "Ivanov-Anton",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "nateberkopec",
                 "url": "https://github.com/nateberkopec"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6162142?u=0d27f3f08a707675436f56f610fd1518acefd7cd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><code class=\"notranslate\">ConnectionPool#release_connection</code> accepts an optional lease argument, but it was always releasing the current execution context’s lease instead.</p>\n<h3 dir=\"auto\">Changes</h3>\n<p dir=\"auto\">This changes it to release the provided lease when one is passed, falling back to the current context lease otherwise.</p>\n<h3 dir=\"auto\">Detail</h3>\n<ul dir=\"auto\">\n<li>Use <code class=\"notranslate\">existing_lease || connection_lease</code> in <code class=\"notranslate\">release_connection</code></li>\n<li>Add regression coverage to ensure passing an unrelated empty lease does not release the current active connection</li>\n<li>Add Active Record changelog entry</li>\n<li></li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57253",
-            "title": "Fix `ConnectionPool#release_connection` to honor provided lease",
-            "date_modified": "2026-04-26T09:56:34.000Z",
-            "date_published": "2026-04-26T09:56:24.000Z",
-            "author": {
-                "name": "lucia-w",
-                "url": "https://github.com/lucia-w"
             }
         }
     ]
