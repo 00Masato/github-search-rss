@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6375192?u=c259c2e9db46d4bd707c8c5512d8ed652aa6f238&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #57315.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4400609236\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57315\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57315/hovercard\" href=\"https://github.com/rails/rails/issues/57315\">#57315</a>.</p>\n<p dir=\"auto\">The Mailgun Action Mailbox ingress parsed the request <code class=\"notranslate\">timestamp</code> with <code class=\"notranslate\">Integer(timestamp)</code> while constructing the authenticator. A malformed timestamp could raise <code class=\"notranslate\">ArgumentError</code> before authentication returned <code class=\"notranslate\">false</code>, so the ingress produced a server error instead of rejecting the request as unauthorized.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This keeps the raw timestamp string for the Mailgun HMAC input, parses a separate timestamp value for the recency check with <code class=\"notranslate\">exception: false</code>, and treats invalid or out-of-range timestamps as failed authentication.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Validated with:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"cd actionmailbox &amp;&amp; bin/test test/controllers/ingresses/mailgun/inbound_emails_controller_test.rb\ncd actionmailbox &amp;&amp; bin/test\nbundle exec rubocop actionmailbox/app/controllers/action_mailbox/ingresses/mailgun/inbound_emails_controller.rb actionmailbox/test/controllers/ingresses/mailgun/inbound_emails_controller_test.rb\ngit diff --check\"><pre class=\"notranslate\"><span class=\"pl-c1\">cd</span> actionmailbox <span class=\"pl-k\">&amp;&amp;</span> bin/test test/controllers/ingresses/mailgun/inbound_emails_controller_test.rb\n<span class=\"pl-c1\">cd</span> actionmailbox <span class=\"pl-k\">&amp;&amp;</span> bin/test\nbundle <span class=\"pl-c1\">exec</span> rubocop actionmailbox/app/controllers/action_mailbox/ingresses/mailgun/inbound_emails_controller.rb actionmailbox/test/controllers/ingresses/mailgun/inbound_emails_controller_test.rb\ngit diff --check</pre></div>",
+            "url": "https://github.com/rails/rails/pull/57316",
+            "title": "Reject malformed Mailgun ingress timestamps",
+            "date_modified": "2026-05-07T17:20:01.000Z",
+            "date_published": "2026-05-07T17:18:15.000Z",
+            "author": {
+                "name": "afurm",
+                "url": "https://github.com/afurm"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/948625?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It is noisy to have a lot of unused new_framework_defaults.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Previously the newest new_framework_defaults file would be deleted on <code class=\"notranslate\">rails new</code>, but always created on <code class=\"notranslate\">rails app:update</code>.</p>\n<p dir=\"auto\">When you update <code class=\"notranslate\">load_defaults</code>, you typically delete <code class=\"notranslate\">new_framework_defaults</code>.<br>\nIf you rerun <code class=\"notranslate\">app:update</code> after updating <code class=\"notranslate\">load_defaults</code>, you do not want <code class=\"notranslate\">new_framework_defaults</code> recreated.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57313",
             "title": "Remove framework_defaults if load_defaults matches",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "Charity-P",
                 "url": "https://github.com/Charity-P"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87973621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><strong>Problem</strong>: When enqueue_after_transaction_commit defers enqueueing, retry_job(wait: ...) can lose its delay and enqueue immediately (no scheduled_at / adapter :at).<br>\n<strong>Cause</strong>: The actual enqueue happens inside after_all_transactions_commit, after retry_job has restored/cleared transient state, so the deferred super enqueue doesn’t see the original schedule info.<br>\n<strong>Fix</strong>: In ActiveJob::EnqueueAfterTransactionCommit#raw_enqueue, capture scheduled_at/queue_name/priority at enqueue time and re-apply them only for the deferred super call.<br>\n<strong>Tests</strong>: Add regression test in enqueue_after_transaction_commit_test.rb asserting the TestAdapter receives an :at timestamp ~5 seconds in the future.<br>\n<strong>Changelog</strong>: Update CHANGELOG.md.</p>",
-            "url": "https://github.com/rails/rails/pull/57258",
-            "title": "Fix #57197: Preserve retry_job wait when enqueue is deferred",
-            "date_modified": "2026-04-27T13:34:07.000Z",
-            "date_published": "2026-04-27T13:33:54.000Z",
-            "author": {
-                "name": "maryamfayyaz",
-                "url": "https://github.com/maryamfayyaz"
             }
         }
     ]
