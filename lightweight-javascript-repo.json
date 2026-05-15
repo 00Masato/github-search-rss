@@ -6,98 +6,142 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/137908825?u=188add800537c63951d9e49b1fad851280a6c3b7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight utility to chain and validate environment variable sets across multiple .env files.</div>",
-            "url": "https://github.com/Denis9266466eHoward/envchain-cli",
-            "title": "Denis9266466eHoward/envchain-cli: Lightweight utility to chain and validate environment variable sets across multiple .env files.",
-            "date_modified": "2026-05-15T10:50:40.000Z",
-            "date_published": "2026-05-05T14:17:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38573357?u=120a9a6efa0146a2ee86c38145af99feb2e34ed6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fetcher is a lightweight and developer-friendly REST API client for testing, debugging, and managing HTTP requests.</div>",
+            "url": "https://github.com/MaxiGarcia13/fetcher",
+            "title": "MaxiGarcia13/fetcher: Fetcher is a lightweight and developer-friendly REST API client for testing, debugging, and managing HTTP requests.",
+            "date_modified": "2026-05-15T11:35:35.000Z",
+            "date_published": "2026-05-09T19:56:02.000Z",
             "author": {
-                "name": "Denis9266466eHoward",
-                "url": "https://github.com/Denis9266466eHoward"
+                "name": "MaxiGarcia13",
+                "url": "https://github.com/MaxiGarcia13"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274693317?u=d27a1386507b99299d57fec4b41026b418366aa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight library for reconciling transaction records between payment providers and internal databases</div>",
-            "url": "https://github.com/walletne/ledger-reconcile",
-            "title": "walletne/ledger-reconcile: Lightweight library for reconciling transaction records between payment providers and internal databases",
-            "date_modified": "2026-05-15T10:50:17.000Z",
-            "date_published": "2026-05-05T14:23:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/284320253?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, React-based TypeScript framework for Cloudflare Workers. Designed to be minimal, token-efficient, and built around a template-and-slots model where pages declare which components fill which template regions.</div>",
+            "url": "https://github.com/sundayceo/framework",
+            "title": "sundayceo/framework: A lightweight, React-based TypeScript framework for Cloudflare Workers. Designed to be minimal, token-efficient, and built around a template-and-slots model where pages declare which components fill which template regions.",
+            "date_modified": "2026-05-15T11:35:29.000Z",
+            "date_published": "2026-05-13T13:32:27.000Z",
             "author": {
-                "name": "walletne",
-                "url": "https://github.com/walletne"
+                "name": "sundayceo",
+                "url": "https://github.com/sundayceo"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274880979?u=54b9ea11b4279ad5ef3c314bd423927496036e8d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight daemon that monitors local port usage and logs process ownership changes over time</div>",
-            "url": "https://github.com/glibles/portwatch",
-            "title": "glibles/portwatch: Lightweight daemon that monitors local port usage and logs process ownership changes over time",
-            "date_modified": "2026-05-15T10:50:15.000Z",
-            "date_published": "2026-05-14T20:54:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/263703548?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight real-time Cepheus Engine virtual tabletop.</div>",
+            "url": "https://github.com/tre-systems/cepheus-online",
+            "title": "tre-systems/cepheus-online: A lightweight real-time Cepheus Engine virtual tabletop.",
+            "date_modified": "2026-05-15T11:34:35.000Z",
+            "date_published": "2026-05-03T08:20:19.000Z",
             "author": {
-                "name": "glibles",
-                "url": "https://github.com/glibles"
+                "name": "tre-systems",
+                "url": "https://github.com/tre-systems"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11472492?u=5f135a4853ac834252964f28d865585bdb1d32fa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>pnpm-mature is a lightweight CLI wrapper around pnpm that constrains dependency updates by package release age, while still delegating dependency resolution and lockfile generation to pnpm.</div>",
-            "url": "https://github.com/Maxiviper117/pnpm-mature",
-            "title": "Maxiviper117/pnpm-mature: pnpm-mature is a lightweight CLI wrapper around pnpm that constrains dependency updates by package release age, while still delegating dependency resolution and lockfile generation to pnpm.",
-            "date_modified": "2026-05-15T10:50:09.000Z",
-            "date_published": "2026-05-15T09:56:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118264107?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast, lightweight, runtime agnostic and asynchronous routing framework.</div>",
+            "url": "https://github.com/routup/routup",
+            "title": "routup/routup: A fast, lightweight, runtime agnostic and asynchronous routing framework.",
+            "date_modified": "2026-05-15T11:34:07.000Z",
+            "date_published": "2022-11-05T09:28:26.000Z",
             "author": {
-                "name": "Maxiviper117",
-                "url": "https://github.com/Maxiviper117"
+                "name": "routup",
+                "url": "https://github.com/routup"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4747630?u=22377a40933dd1c18595b10ee346ba7a88cc4dc9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Visual Studio Code extension with a lightweight annotation convention and VS Code experience for requirement, authorship, and compliance traceability. </div>",
-            "url": "https://github.com/etpedror/provenance-vsce",
-            "title": "etpedror/provenance-vsce: A Visual Studio Code extension with a lightweight annotation convention and VS Code experience for requirement, authorship, and compliance traceability. ",
-            "date_modified": "2026-05-15T10:49:50.000Z",
-            "date_published": "2026-05-14T16:05:20.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11203929?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.</div>",
+            "url": "https://github.com/zuohuadong/supacloud",
+            "title": "zuohuadong/supacloud: ⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.",
+            "date_modified": "2026-05-15T11:32:05.000Z",
+            "date_published": "2025-12-25T15:16:04.000Z",
             "author": {
-                "name": "etpedror",
-                "url": "https://github.com/etpedror"
+                "name": "zuohuadong",
+                "url": "https://github.com/zuohuadong"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277338185?u=3519079319c1ffe59c06849e7e34072631798fdd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight HTTP request logger middleware for Node.js with structured JSON output and filtering options.</div>",
-            "url": "https://github.com/nesmarcia92/reqlog",
-            "title": "nesmarcia92/reqlog: Lightweight HTTP request logger middleware for Node.js with structured JSON output and filtering options.",
-            "date_modified": "2026-05-15T10:49:00.000Z",
-            "date_published": "2026-05-12T11:38:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/261709294?u=c8841688ab5903dfd6be758d403d6318c841a8e8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Code to Chart is a lightweight, zero-backend, browser-based tool for writing, previewing, and exporting high-resolution charts and diagrams.</div>",
+            "url": "https://github.com/nihvp/CodetoChart",
+            "title": "nihvp/CodetoChart: Code to Chart is a lightweight, zero-backend, browser-based tool for writing, previewing, and exporting high-resolution charts and diagrams.",
+            "date_modified": "2026-05-15T11:31:56.000Z",
+            "date_published": "2026-05-15T09:29:52.000Z",
             "author": {
-                "name": "nesmarcia92",
-                "url": "https://github.com/nesmarcia92"
+                "name": "nihvp",
+                "url": "https://github.com/nihvp"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60251543?u=6cf2abf09edfefa13d5724a8e27274cc8198c87a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, privacy-first music player. Stream, download, and sing along. No noise, no accounts, no tracking.</div>",
-            "url": "https://github.com/ianclemence/luna",
-            "title": "ianclemence/luna: A lightweight, privacy-first music player. Stream, download, and sing along. No noise, no accounts, no tracking.",
-            "date_modified": "2026-05-15T10:48:50.000Z",
-            "date_published": "2026-03-11T03:32:59.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176759836?u=5e5c6cca1430699afe65b3d128829dcd6f4039f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Manage your Docker containers directly from the GNOME top bar. A lightweight extension to list, control, and monitor containers with real-time stats.</div>",
+            "url": "https://github.com/o-fgungor/gnome-docker-manager",
+            "title": "o-fgungor/gnome-docker-manager: Manage your Docker containers directly from the GNOME top bar. A lightweight extension to list, control, and monitor containers with real-time stats.",
+            "date_modified": "2026-05-15T11:31:16.000Z",
+            "date_published": "2026-05-15T11:30:13.000Z",
             "author": {
-                "name": "ianclemence",
-                "url": "https://github.com/ianclemence"
+                "name": "o-fgungor",
+                "url": "https://github.com/o-fgungor"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274656040?u=cae39fa0d08c9c79962c34c3425273326ad8775f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight local secret manager that injects env vars per project directory</div>",
-            "url": "https://github.com/hathio/envchain-local",
-            "title": "hathio/envchain-local: Lightweight local secret manager that injects env vars per project directory",
-            "date_modified": "2026-05-15T10:48:51.000Z",
-            "date_published": "2026-05-06T00:52:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63518974?u=626edf454509929d17d8f60300cc24951b43441e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and robust CalDAV client for Node.js applications, written in TypeScript. This library enables seamless integration with CalDAV servers to manage calendars, events, and tasks.</div>",
+            "url": "https://github.com/KlautNet/ts-caldav",
+            "title": "KlautNet/ts-caldav: A lightweight and robust CalDAV client for Node.js applications, written in TypeScript. This library enables seamless integration with CalDAV servers to manage calendars, events, and tasks.",
+            "date_modified": "2026-05-15T11:30:33.000Z",
+            "date_published": "2024-12-12T23:55:13.000Z",
             "author": {
-                "name": "hathio",
-                "url": "https://github.com/hathio"
+                "name": "KlautNet",
+                "url": "https://github.com/KlautNet"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11034023?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, single-page web application that visualizes cumulative seasonal snowfall at Winter Park Resort, CO, allowing users to compare year-over-year snowfall patterns. The application displays overlaid line charts for multiple seasons, with interactive features for exploring the data.</div>",
+            "url": "https://github.com/on2flight/cumulative-snowfall",
+            "title": "on2flight/cumulative-snowfall: A lightweight, single-page web application that visualizes cumulative seasonal snowfall at Winter Park Resort, CO, allowing users to compare year-over-year snowfall patterns. The application displays overlaid line charts for multiple seasons, with interactive features for exploring the data.",
+            "date_modified": "2026-05-15T11:30:14.000Z",
+            "date_published": "2025-12-30T02:11:09.000Z",
+            "author": {
+                "name": "on2flight",
+                "url": "https://github.com/on2flight"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/259380963?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fresh View for Viewer (FVV/FW/废物/廢物) // Lightweight text formatting | 轻量级的文本格式</div>",
+            "url": "https://github.com/FVV-Lang/FVV",
+            "title": "FVV-Lang/FVV: Fresh View for Viewer (FVV/FW/废物/廢物) // Lightweight text formatting | 轻量级的文本格式",
+            "date_modified": "2026-05-15T11:29:54.000Z",
+            "date_published": "2024-10-11T06:24:32.000Z",
+            "author": {
+                "name": "FVV-Lang",
+                "url": "https://github.com/FVV-Lang"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94398623?u=b28b05be1bc8902be6e1c7d6c0277b7adf39bf83&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>TubeDesk for Windows is a lightweight desktop app that opens YouTube and YouTube Music in a dedicated Windows application window. It is designed as a clean, modern, power-user-friendly wrapper — not a downloader, ad blocker, or Premium bypass tool.</div>",
+            "url": "https://github.com/vinberg88/youtube-desktop-win",
+            "title": "vinberg88/youtube-desktop-win: TubeDesk for Windows is a lightweight desktop app that opens YouTube and YouTube Music in a dedicated Windows application window. It is designed as a clean, modern, power-user-friendly wrapper — not a downloader, ad blocker, or Premium bypass tool.",
+            "date_modified": "2026-05-15T11:29:20.000Z",
+            "date_published": "2026-05-11T05:29:59.000Z",
+            "author": {
+                "name": "vinberg88",
+                "url": "https://github.com/vinberg88"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164031869?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | <a href=\"https://cat21.space\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://cat21.space</a></div>",
+            "url": "https://github.com/ordpool-space/cat21-indexer",
+            "title": "ordpool-space/cat21-indexer: 😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | https://cat21.space",
+            "date_modified": "2026-05-15T11:29:18.000Z",
+            "date_published": "2024-01-18T08:05:04.000Z",
+            "author": {
+                "name": "ordpool-space",
+                "url": "https://github.com/ordpool-space"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-05-15T10:48:06.000Z",
+            "date_modified": "2026-05-15T11:28:07.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -105,124 +149,80 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37479458?u=d3e7c8e068c8e5e06ed19ad8c429991cedd46e65&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight logger library for JavaScript.</div>",
-            "url": "https://github.com/xueelf/annal",
-            "title": "xueelf/annal: A lightweight logger library for JavaScript.",
-            "date_modified": "2026-05-15T10:52:35.000Z",
-            "date_published": "2026-04-29T02:21:31.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50072640?u=7736110530f9f693e97442fa1ad7660654748949&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, interactive requirements traceability board for engineering projects. </div>",
+            "url": "https://github.com/sohee-zoe/spectra",
+            "title": "sohee-zoe/spectra: A lightweight, interactive requirements traceability board for engineering projects. ",
+            "date_modified": "2026-05-15T11:27:45.000Z",
+            "date_published": "2026-05-03T10:04:32.000Z",
             "author": {
-                "name": "xueelf",
-                "url": "https://github.com/xueelf"
+                "name": "sohee-zoe",
+                "url": "https://github.com/sohee-zoe"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/158125421?u=d426c19959bc8427e892134fc19a12aa3b608e4b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, high-performance Node.js proxy solution that multiplexes HTTP and SOCKS5 protocols onto a single port.</div>",
-            "url": "https://github.com/dev-swarup/multiplex-proxy",
-            "title": "dev-swarup/multiplex-proxy: A lightweight, high-performance Node.js proxy solution that multiplexes HTTP and SOCKS5 protocols onto a single port.",
-            "date_modified": "2026-05-15T10:46:08.000Z",
-            "date_published": "2026-05-10T14:58:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60251543?u=6cf2abf09edfefa13d5724a8e27274cc8198c87a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, privacy-first music player. Stream, download, and sing along. No noise, no accounts, no tracking.</div>",
+            "url": "https://github.com/ianclemence/luna",
+            "title": "ianclemence/luna: A lightweight, privacy-first music player. Stream, download, and sing along. No noise, no accounts, no tracking.",
+            "date_modified": "2026-05-15T11:26:14.000Z",
+            "date_published": "2026-03-11T03:32:59.000Z",
             "author": {
-                "name": "dev-swarup",
-                "url": "https://github.com/dev-swarup"
+                "name": "ianclemence",
+                "url": "https://github.com/ianclemence"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274880737?u=703e6445b390859cc11188751ca8041956647a6e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Express/Fastify middleware that auto-generates OpenAPI docs from runtime traffic analysis.</div>",
-            "url": "https://github.com/jasiancymn22/routewatch",
-            "title": "jasiancymn22/routewatch: Lightweight Express/Fastify middleware that auto-generates OpenAPI docs from runtime traffic analysis.",
-            "date_modified": "2026-05-15T10:45:46.000Z",
-            "date_published": "2026-05-11T03:54:33.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/191596590?u=114708642b4e2144d1dc2f03b5b77441f4c0af2a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight PEP English vocabulary study site for lookup, flashcards, favorites, quizzes, and source-list reading.</div>",
+            "url": "https://github.com/lizliz404/pep-words",
+            "title": "lizliz404/pep-words: A lightweight PEP English vocabulary study site for lookup, flashcards, favorites, quizzes, and source-list reading.",
+            "date_modified": "2026-05-15T11:25:49.000Z",
+            "date_published": "2026-03-28T13:30:48.000Z",
             "author": {
-                "name": "jasiancymn22",
-                "url": "https://github.com/jasiancymn22"
+                "name": "lizliz404",
+                "url": "https://github.com/lizliz404"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/166585958?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A web-based Virtual Lab (VLab) designed to simulate practical experiments and provide an interactive learning experience. This project enables users to explore concepts through a user-friendly interface without needing physical lab equipment. Interactive experiment simulations Clean and responsive UI Easy navigation between modules Lightweight .</div>",
-            "url": "https://github.com/AbdulArmanRayeen/Virtual-Lab",
-            "title": "AbdulArmanRayeen/Virtual-Lab: A web-based Virtual Lab (VLab) designed to simulate practical experiments and provide an interactive learning experience. This project enables users to explore concepts through a user-friendly interface without needing physical lab equipment. Interactive experiment simulations Clean and responsive UI Easy navigation between modules Lightweight .",
-            "date_modified": "2026-05-15T10:45:26.000Z",
-            "date_published": "2026-04-10T19:11:59.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2684895?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Nuxt I18n Micro is a fast, simple, and lightweight internationalization (i18n) module for Nuxt</div>",
+            "url": "https://github.com/s00d/nuxt-i18n-micro",
+            "title": "s00d/nuxt-i18n-micro: Nuxt I18n Micro is a fast, simple, and lightweight internationalization (i18n) module for Nuxt",
+            "date_modified": "2026-05-15T11:25:07.000Z",
+            "date_published": "2024-08-15T14:43:40.000Z",
             "author": {
-                "name": "AbdulArmanRayeen",
-                "url": "https://github.com/AbdulArmanRayeen"
+                "name": "s00d",
+                "url": "https://github.com/s00d"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5072521?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight transcript editor for editing and correcting STT generated timed transcripts </div>",
-            "url": "https://github.com/hyperaudio/hyperaudio-lite-editor",
-            "title": "hyperaudio/hyperaudio-lite-editor: A lightweight transcript editor for editing and correcting STT generated timed transcripts ",
-            "date_modified": "2026-05-15T10:45:26.000Z",
-            "date_published": "2021-07-05T12:46:02.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93391458?u=2616a63c57e2605f65476b354e8c205987171c19&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AutoCommitter is a lightweight automation project that maintains consistent GitHub contributions using scheduled workflows.</div>",
+            "url": "https://github.com/DragAditya/GithubAutomation",
+            "title": "DragAditya/GithubAutomation: AutoCommitter is a lightweight automation project that maintains consistent GitHub contributions using scheduled workflows.",
+            "date_modified": "2026-05-15T11:24:37.000Z",
+            "date_published": "2026-01-12T17:49:49.000Z",
             "author": {
-                "name": "hyperaudio",
-                "url": "https://github.com/hyperaudio"
+                "name": "DragAditya",
+                "url": "https://github.com/DragAditya"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141629453?u=58cb39366d921becea391c712c1c0987abdb7469&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Parasite - A lightweight social deduction multiplayer web game. Trust no one. Survive. Built with Node.js, Express, and Socket.IO.</div>",
-            "url": "https://github.com/nothingness-dev/parasite",
-            "title": "nothingness-dev/parasite: Parasite - A lightweight social deduction multiplayer web game. Trust no one. Survive. Built with Node.js, Express, and Socket.IO.",
-            "date_modified": "2026-05-15T10:44:55.000Z",
-            "date_published": "2026-05-14T23:20:46.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/255098876?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight synthetic testing and uptime monitoring platform for developers.</div>",
+            "url": "https://github.com/territorial-dev/sentinel",
+            "title": "territorial-dev/sentinel: A lightweight synthetic testing and uptime monitoring platform for developers.",
+            "date_modified": "2026-05-15T11:22:24.000Z",
+            "date_published": "2026-03-23T20:41:44.000Z",
             "author": {
-                "name": "nothingness-dev",
-                "url": "https://github.com/nothingness-dev"
+                "name": "territorial-dev",
+                "url": "https://github.com/territorial-dev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97879955?u=c29fe056bc8f874690ab7da4b03c2a01be29eba3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript notes app with drag-and-drop, local storage, and one-click copy for selected text.</div>",
-            "url": "https://github.com/alihussain-hsp/smart-notes",
-            "title": "alihussain-hsp/smart-notes: A lightweight JavaScript notes app with drag-and-drop, local storage, and one-click copy for selected text.",
-            "date_modified": "2026-05-15T10:44:32.000Z",
-            "date_published": "2025-08-26T11:39:33.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112239039?u=5fd40b581337bf6db5945d8288308d5efe24cfaf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, zero-dependency utility library for JavaScript &amp; React apps — string, number, date, validation, array, object and color utilities</div>",
+            "url": "https://github.com/harshyadavDeveloper/snaputils",
+            "title": "harshyadavDeveloper/snaputils: A lightweight, zero-dependency utility library for JavaScript & React apps — string, number, date, validation, array, object and color utilities",
+            "date_modified": "2026-05-15T11:18:56.000Z",
+            "date_published": "2026-05-02T09:37:28.000Z",
             "author": {
-                "name": "alihussain-hsp",
-                "url": "https://github.com/alihussain-hsp"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/194393432?u=414875fc721c3a70e441fc1673ad9bed86281695&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Free teleprompter online. A lightweight, open-source teleprompter helps you read scripts naturally without memorizing every line. </div>",
-            "url": "https://github.com/wendy7756/teleprompter-online",
-            "title": "wendy7756/teleprompter-online: Free teleprompter online. A lightweight, open-source teleprompter helps you read scripts naturally without memorizing every line. ",
-            "date_modified": "2026-05-15T10:44:10.000Z",
-            "date_published": "2026-05-15T07:37:18.000Z",
-            "author": {
-                "name": "wendy7756",
-                "url": "https://github.com/wendy7756"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274696630?u=f9874c5a2453756cb7a6918622d034a3f2cb3983&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight daemon that monitors local port usage and alerts on unexpected bindings</div>",
-            "url": "https://github.com/leomcnamag/portwatch",
-            "title": "leomcnamag/portwatch: Lightweight daemon that monitors local port usage and alerts on unexpected bindings",
-            "date_modified": "2026-05-15T10:44:01.000Z",
-            "date_published": "2026-05-08T20:38:45.000Z",
-            "author": {
-                "name": "leomcnamag",
-                "url": "https://github.com/leomcnamag"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/276246903?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, zero-dependency SVG sparkline generator for Node.js.</div>",
-            "url": "https://github.com/coroboros/sparkline",
-            "title": "coroboros/sparkline: Lightweight, zero-dependency SVG sparkline generator for Node.js.",
-            "date_modified": "2026-05-15T10:43:37.000Z",
-            "date_published": "2026-04-22T13:28:08.000Z",
-            "author": {
-                "name": "coroboros",
-                "url": "https://github.com/coroboros"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274671361?u=f98906f22f9c9ae481548f7b6d38288fde392c97&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight daemon that monitors local port usage and alerts on unexpected bindings</div>",
-            "url": "https://github.com/alex3joese/portwatch",
-            "title": "alex3joese/portwatch: Lightweight daemon that monitors local port usage and alerts on unexpected bindings",
-            "date_modified": "2026-05-15T10:42:01.000Z",
-            "date_published": "2026-05-05T18:14:23.000Z",
-            "author": {
-                "name": "alex3joese",
-                "url": "https://github.com/alex3joese"
+                "name": "harshyadavDeveloper",
+                "url": "https://github.com/harshyadavDeveloper"
             }
         }
     ]
