@@ -6,65 +6,43 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153571188?u=b8997d8a01a2bd5c34dc740e51bf28ad889a5412&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Compress strings efficiently with fsst-rs, a pure-Rust, zero-dependency implementation of the FSST algorithm for fast database applications.</div>",
-            "url": "https://github.com/Martialdepaul/fsst-rs",
-            "title": "Martialdepaul/fsst-rs: 🚀 Compress strings efficiently with fsst-rs, a pure-Rust, zero-dependency implementation of the FSST algorithm for fast database applications.",
-            "date_modified": "2026-05-20T17:58:52.000Z",
-            "date_published": "2024-07-14T17:40:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5614100?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛑 Stop auto-playing videos on the Twitch.tv homepage with this lightweight UserScript, ensuring a more focused viewing experience.</div>",
+            "url": "https://github.com/proneo/userscript-twitch-stop-autoplay",
+            "title": "proneo/userscript-twitch-stop-autoplay: 🛑 Stop auto-playing videos on the Twitch.tv homepage with this lightweight UserScript, ensuring a more focused viewing experience.",
+            "date_modified": "2026-05-20T18:59:19.000Z",
+            "date_published": "2026-02-10T04:37:34.000Z",
             "author": {
-                "name": "Martialdepaul",
-                "url": "https://github.com/Martialdepaul"
+                "name": "proneo",
+                "url": "https://github.com/proneo"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228809861?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔑 Generate unique, compact, and secure IDs effortlessly with UCID—your lightweight solution for customizable ID generation in pure JavaScript.</div>",
-            "url": "https://github.com/Stevenpresidential526/unique-custom-id",
-            "title": "Stevenpresidential526/unique-custom-id: 🔑 Generate unique, compact, and secure IDs effortlessly with UCID—your lightweight solution for customizable ID generation in pure JavaScript.",
-            "date_modified": "2026-05-20T17:58:44.000Z",
-            "date_published": "2025-11-24T12:07:26.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/213872993?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Simplify NFT transfers with this lightweight dApp, automatically detecting ERC-721 and ERC-1155 contracts across EVM-compatible blockchains.</div>",
+            "url": "https://github.com/you4g54/nft-transfer-dapp",
+            "title": "you4g54/nft-transfer-dapp: 🚀 Simplify NFT transfers with this lightweight dApp, automatically detecting ERC-721 and ERC-1155 contracts across EVM-compatible blockchains.",
+            "date_modified": "2026-05-20T18:59:19.000Z",
+            "date_published": "2026-02-10T05:10:48.000Z",
             "author": {
-                "name": "Stevenpresidential526",
-                "url": "https://github.com/Stevenpresidential526"
+                "name": "you4g54",
+                "url": "https://github.com/you4g54"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118412524?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.</div>",
-            "url": "https://github.com/sansss-debug/bun_rpc",
-            "title": "sansss-debug/bun_rpc: 🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.",
-            "date_modified": "2026-05-20T17:58:42.000Z",
-            "date_published": "2023-12-06T23:31:18.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55021483?u=afb2c3d078f3095cc74d8bbe31cd70da9c18074a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, self-hosted, provider-agnostic billing platform. Plug any payment gateway.</div>",
+            "url": "https://github.com/dortanes/anybill",
+            "title": "dortanes/anybill: Lightweight, self-hosted, provider-agnostic billing platform. Plug any payment gateway.",
+            "date_modified": "2026-05-20T18:58:50.000Z",
+            "date_published": "2026-05-20T10:32:29.000Z",
             "author": {
-                "name": "sansss-debug",
-                "url": "https://github.com/sansss-debug"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188300407?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧮 Create quick calculations with this lightweight JavaScript calculator, featuring a simple UI and responsive design for easy use.</div>",
-            "url": "https://github.com/Thodorisgenikis/simple-js-calculator",
-            "title": "Thodorisgenikis/simple-js-calculator: 🧮 Create quick calculations with this lightweight JavaScript calculator, featuring a simple UI and responsive design for easy use.",
-            "date_modified": "2026-05-20T17:58:36.000Z",
-            "date_published": "2025-11-24T09:05:10.000Z",
-            "author": {
-                "name": "Thodorisgenikis",
-                "url": "https://github.com/Thodorisgenikis"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/217729797?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Pianjian - lightweight desktop sticky notes | Vibe Coding project</div>",
-            "url": "https://github.com/Aikoino/pianjian",
-            "title": "Aikoino/pianjian: Pianjian - lightweight desktop sticky notes | Vibe Coding project",
-            "date_modified": "2026-05-20T17:58:15.000Z",
-            "date_published": "2026-05-20T13:46:17.000Z",
-            "author": {
-                "name": "Aikoino",
-                "url": "https://github.com/Aikoino"
+                "name": "dortanes",
+                "url": "https://github.com/dortanes"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-05-20T17:58:13.000Z",
+            "date_modified": "2026-05-20T18:58:11.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -72,87 +50,21 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95395257?u=abeb85c59b73442c6a739e47f2644fe3dacd3cae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight 24/7 hosting build for Natsumi Discord bot</div>",
-            "url": "https://github.com/haruki7777/natsumi-bot-24-7",
-            "title": "haruki7777/natsumi-bot-24-7: Lightweight 24/7 hosting build for Natsumi Discord bot",
-            "date_modified": "2026-05-20T17:57:45.000Z",
-            "date_published": "2026-05-06T06:09:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1591980?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight experimental platform for enhanced video chat</div>",
+            "url": "https://github.com/kenperlin/bici",
+            "title": "kenperlin/bici: A lightweight experimental platform for enhanced video chat",
+            "date_modified": "2026-05-20T18:57:58.000Z",
+            "date_published": "2025-09-06T15:51:40.000Z",
             "author": {
-                "name": "haruki7777",
-                "url": "https://github.com/haruki7777"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228947767?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Write Go code directly in JavaScript files, effortlessly compiling to WebAssembly with Vite for efficient browser-based development.</div>",
-            "url": "https://github.com/Proforma-maraud670/vite-plugin-use-golang",
-            "title": "Proforma-maraud670/vite-plugin-use-golang: 🛠️ Write Go code directly in JavaScript files, effortlessly compiling to WebAssembly with Vite for efficient browser-based development.",
-            "date_modified": "2026-05-20T17:57:26.000Z",
-            "date_published": "2025-11-21T15:59:51.000Z",
-            "author": {
-                "name": "Proforma-maraud670",
-                "url": "https://github.com/Proforma-maraud670"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228944380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.</div>",
-            "url": "https://github.com/Threelane-paris497/svelte-tiny-i18n",
-            "title": "Threelane-paris497/svelte-tiny-i18n: 🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.",
-            "date_modified": "2026-05-20T17:57:03.000Z",
-            "date_published": "2025-11-21T05:01:34.000Z",
-            "author": {
-                "name": "Threelane-paris497",
-                "url": "https://github.com/Threelane-paris497"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/175211884?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Create lightweight desktop applications using Tauri to display HTML/CSS/JS files without a separate browser. Easy to test and deploy.</div>",
-            "url": "https://github.com/Nguyen124-star/tauri_webview",
-            "title": "Nguyen124-star/tauri_webview: 🌐 Create lightweight desktop applications using Tauri to display HTML/CSS/JS files without a separate browser. Easy to test and deploy.",
-            "date_modified": "2026-05-20T17:56:55.000Z",
-            "date_published": "2025-11-23T19:26:10.000Z",
-            "author": {
-                "name": "Nguyen124-star",
-                "url": "https://github.com/Nguyen124-star"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118188384?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight testing automation tool designed to simulate realistic client interactions with SP infrastructure. This bot accelerates testing of the live PDP SPX group by programmatically performing key client operations and collecting comprehensive performance metrics.</div>",
-            "url": "https://github.com/FilOzone/dealbot",
-            "title": "FilOzone/dealbot: A lightweight testing automation tool designed to simulate realistic client interactions with SP infrastructure. This bot accelerates testing of the live PDP SPX group by programmatically performing key client operations and collecting comprehensive performance metrics.",
-            "date_modified": "2026-05-20T17:56:46.000Z",
-            "date_published": "2025-08-13T06:20:59.000Z",
-            "author": {
-                "name": "FilOzone",
-                "url": "https://github.com/FilOzone"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228964862?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Parse Server-Sent Events seamlessly with this lightweight and spec-compliant parser that integrates effortlessly with the Fetch API.</div>",
-            "url": "https://github.com/Loaila1680/parse-sse",
-            "title": "Loaila1680/parse-sse: 🌐 Parse Server-Sent Events seamlessly with this lightweight and spec-compliant parser that integrates effortlessly with the Fetch API.",
-            "date_modified": "2026-05-20T17:56:38.000Z",
-            "date_published": "2025-11-15T13:48:17.000Z",
-            "author": {
-                "name": "Loaila1680",
-                "url": "https://github.com/Loaila1680"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228987848?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Create, edit, and manage Markdown documents quickly and easily with FlyMD—your lightweight, cross-platform editor featuring instant rendering and seamless syncing.</div>",
-            "url": "https://github.com/Interracial-mentum925/flymd",
-            "title": "Interracial-mentum925/flymd: 🚀 Create, edit, and manage Markdown documents quickly and easily with FlyMD—your lightweight, cross-platform editor featuring instant rendering and seamless syncing.",
-            "date_modified": "2026-05-20T17:56:14.000Z",
-            "date_published": "2025-11-13T21:48:14.000Z",
-            "author": {
-                "name": "Interracial-mentum925",
-                "url": "https://github.com/Interracial-mentum925"
+                "name": "kenperlin",
+                "url": "https://github.com/kenperlin"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19247256?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight internal Company ERP for NAS intranet deployment</div>",
             "url": "https://github.com/91wan/company-erp",
             "title": "91wan/company-erp: Lightweight internal Company ERP for NAS intranet deployment",
-            "date_modified": "2026-05-20T17:55:32.000Z",
+            "date_modified": "2026-05-20T18:56:46.000Z",
             "date_published": "2026-05-11T08:27:24.000Z",
             "author": {
                 "name": "91wan",
@@ -160,69 +72,157 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/139072177?u=5634f6ebc5d7e11bd5e962818d4af0d448b4774c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A collection of lightweight browser tools for accessibility, reading, zooming, speed control( hacks for web games ) , and page inspection. </div>",
-            "url": "https://github.com/imik9/web-toolkit",
-            "title": "imik9/web-toolkit: A collection of lightweight browser tools for accessibility, reading, zooming, speed control( hacks for web games ) , and page inspection. ",
-            "date_modified": "2026-05-20T17:55:07.000Z",
-            "date_published": "2026-05-20T16:57:23.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131109546?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight stealth chat for friends with WebRTC P2P, screen share, and auto-update.</div>",
+            "url": "https://github.com/Fabz2004/stealth-chat",
+            "title": "Fabz2004/stealth-chat: Lightweight stealth chat for friends with WebRTC P2P, screen share, and auto-update.",
+            "date_modified": "2026-05-20T18:56:46.000Z",
+            "date_published": "2026-05-20T13:27:06.000Z",
             "author": {
-                "name": "imik9",
-                "url": "https://github.com/imik9"
+                "name": "Fabz2004",
+                "url": "https://github.com/Fabz2004"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229528935?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧠 Build and experiment with a lightweight neural network library in TypeScript, featuring simple tensors and essential machine learning utilities.</div>",
-            "url": "https://github.com/Tunnelbasketballseason635/TensaiNeuro",
-            "title": "Tunnelbasketballseason635/TensaiNeuro: 🧠 Build and experiment with a lightweight neural network library in TypeScript, featuring simple tensors and essential machine learning utilities.",
-            "date_modified": "2026-05-20T17:54:21.000Z",
-            "date_published": "2025-11-03T04:55:28.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102327141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔍 Enhance SEO for your React 19 applications effortlessly with this lightweight, type-safe library designed for optimal performance and simplicity.</div>",
+            "url": "https://github.com/cesarortegaii/react-meta",
+            "title": "cesarortegaii/react-meta: 🔍 Enhance SEO for your React 19 applications effortlessly with this lightweight, type-safe library designed for optimal performance and simplicity.",
+            "date_modified": "2026-05-20T18:56:43.000Z",
+            "date_published": "2026-02-04T15:42:30.000Z",
             "author": {
-                "name": "Tunnelbasketballseason635",
-                "url": "https://github.com/Tunnelbasketballseason635"
+                "name": "cesarortegaii",
+                "url": "https://github.com/cesarortegaii"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229651125?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.</div>",
-            "url": "https://github.com/candisulphurous105/sandbox-runtime",
-            "title": "candisulphurous105/sandbox-runtime: 🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.",
-            "date_modified": "2026-05-20T17:54:18.000Z",
-            "date_published": "2025-11-03T02:35:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94504889?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔮 Extract metadata effortlessly from web pages using ogie, a lightweight library for OpenGraph, Twitter Cards, JSON-LD, and more, built for production.</div>",
+            "url": "https://github.com/AConfusedBoi/ogie",
+            "title": "AConfusedBoi/ogie: 🔮 Extract metadata effortlessly from web pages using ogie, a lightweight library for OpenGraph, Twitter Cards, JSON-LD, and more, built for production.",
+            "date_modified": "2026-05-20T18:56:36.000Z",
+            "date_published": "2021-11-17T04:38:49.000Z",
             "author": {
-                "name": "candisulphurous105",
-                "url": "https://github.com/candisulphurous105"
+                "name": "AConfusedBoi",
+                "url": "https://github.com/AConfusedBoi"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229584302?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠 Build accessible and customizable React UI components with TypeScript and Tailwind CSS for your next modern web application.</div>",
-            "url": "https://github.com/laborpartyplanter436/drk-ui-components",
-            "title": "laborpartyplanter436/drk-ui-components: 🛠 Build accessible and customizable React UI components with TypeScript and Tailwind CSS for your next modern web application.",
-            "date_modified": "2026-05-20T17:53:38.000Z",
-            "date_published": "2025-11-02T12:01:33.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132299798?u=c1a0bec7f63f158ecfc49e644297b46d7d4ef611&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🖥️ Enhance your logging with Good Console, a lightweight TypeScript library for structured, colorful logs in both Browser and Node environments.</div>",
+            "url": "https://github.com/LuizMiguel01/good-console",
+            "title": "LuizMiguel01/good-console: 🖥️ Enhance your logging with Good Console, a lightweight TypeScript library for structured, colorful logs in both Browser and Node environments.",
+            "date_modified": "2026-05-20T18:55:28.000Z",
+            "date_published": "2023-07-27T09:33:03.000Z",
             "author": {
-                "name": "laborpartyplanter436",
-                "url": "https://github.com/laborpartyplanter436"
+                "name": "LuizMiguel01",
+                "url": "https://github.com/LuizMiguel01"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126708648?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Build a lightweight agent using the Anthropic SDK to fetch your IP address and generate images with ease.</div>",
-            "url": "https://github.com/Vasudevsatya/mini-agent",
-            "title": "Vasudevsatya/mini-agent: 🌐 Build a lightweight agent using the Anthropic SDK to fetch your IP address and generate images with ease.",
-            "date_modified": "2026-05-20T17:52:55.000Z",
-            "date_published": "2025-11-01T20:36:14.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66736507?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Explore simple Ether staking with this lightweight DApp, allowing easy deposits and withdrawals via a secure smart contract.</div>",
+            "url": "https://github.com/jekogyan0987/simple-ether-staking",
+            "title": "jekogyan0987/simple-ether-staking: 🌐 Explore simple Ether staking with this lightweight DApp, allowing easy deposits and withdrawals via a secure smart contract.",
+            "date_modified": "2026-05-20T18:55:28.000Z",
+            "date_published": "2026-02-03T11:29:54.000Z",
             "author": {
-                "name": "Vasudevsatya",
-                "url": "https://github.com/Vasudevsatya"
+                "name": "jekogyan0987",
+                "url": "https://github.com/jekogyan0987"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171362759?u=41c9bc620d72b5b13169abb201aa700ffc0857d6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight collaborative code hosting platform with repositories, commits, branching, and team workflows including AI-powered developer assistance.</div>",
-            "url": "https://github.com/Ankita15k/GitNest",
-            "title": "Ankita15k/GitNest: A lightweight collaborative code hosting platform with repositories, commits, branching, and team workflows including AI-powered developer assistance.",
-            "date_modified": "2026-05-20T17:52:54.000Z",
-            "date_published": "2026-02-21T10:02:04.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2726610?u=d7e995ffb9527f3f8b86fd75e39fd2301b81cc32&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, dependency-free, isomorphic test suite matching the core Jest API.</div>",
+            "url": "https://github.com/sc0ttj/jest-lite",
+            "title": "sc0ttj/jest-lite: A lightweight, dependency-free, isomorphic test suite matching the core Jest API.",
+            "date_modified": "2026-05-20T18:55:16.000Z",
+            "date_published": "2026-05-20T16:05:32.000Z",
             "author": {
-                "name": "Ankita15k",
-                "url": "https://github.com/Ankita15k"
+                "name": "sc0ttj",
+                "url": "https://github.com/sc0ttj"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/157084662?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🗺️ Build custom route planning features with WaypointJS, a lightweight TypeScript library that works with any mapping service and has zero runtime dependencies.</div>",
+            "url": "https://github.com/jelenaxaxa/waypointjs",
+            "title": "jelenaxaxa/waypointjs: 🗺️ Build custom route planning features with WaypointJS, a lightweight TypeScript library that works with any mapping service and has zero runtime dependencies.",
+            "date_modified": "2026-05-20T18:55:10.000Z",
+            "date_published": "2026-02-03T04:00:40.000Z",
+            "author": {
+                "name": "jelenaxaxa",
+                "url": "https://github.com/jelenaxaxa"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/137431028?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Debug React Native apps easily with rn-remote-debugger, a lightweight tool tailored for Hermes engine support and streamlined development.</div>",
+            "url": "https://github.com/Sardorbek2802/rn-remote-debugger",
+            "title": "Sardorbek2802/rn-remote-debugger: 🛠️ Debug React Native apps easily with rn-remote-debugger, a lightweight tool tailored for Hermes engine support and streamlined development.",
+            "date_modified": "2026-05-20T18:54:42.000Z",
+            "date_published": "2023-06-22T16:36:35.000Z",
+            "author": {
+                "name": "Sardorbek2802",
+                "url": "https://github.com/Sardorbek2802"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46850407?u=e9724c164239121f6dabe9e1d2f2400ea3817a76&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⛅️ A lightweight ORM for Cloudflare Workers with a unified connection interface across D1 and Durable Objects, designed to be intuitive and productive, focused on essential functionality.</div>",
+            "url": "https://github.com/wellwelwel/cl-orm",
+            "title": "wellwelwel/cl-orm: ⛅️ A lightweight ORM for Cloudflare Workers with a unified connection interface across D1 and Durable Objects, designed to be intuitive and productive, focused on essential functionality.",
+            "date_modified": "2026-05-20T18:54:24.000Z",
+            "date_published": "2026-01-30T11:24:03.000Z",
+            "author": {
+                "name": "wellwelwel",
+                "url": "https://github.com/wellwelwel"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185293853?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔑 Simplify key management in your applications with a lightweight, efficient solution for organizing and accessing data securely.</div>",
+            "url": "https://github.com/pedro25cl/keys",
+            "title": "pedro25cl/keys: 🔑 Simplify key management in your applications with a lightweight, efficient solution for organizing and accessing data securely.",
+            "date_modified": "2026-05-20T18:54:21.000Z",
+            "date_published": "2026-02-02T02:27:31.000Z",
+            "author": {
+                "name": "pedro25cl",
+                "url": "https://github.com/pedro25cl"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/190760641?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight background agent system — proactive, customizable, runs out of the box</div>",
+            "url": "https://github.com/Natebreynolds/clemmy",
+            "title": "Natebreynolds/clemmy: Lightweight background agent system — proactive, customizable, runs out of the box",
+            "date_modified": "2026-05-20T18:52:44.000Z",
+            "date_published": "2026-04-10T06:27:40.000Z",
+            "author": {
+                "name": "Natebreynolds",
+                "url": "https://github.com/Natebreynolds"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97479186?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.</div>",
+            "url": "https://github.com/descope/auth-hosting",
+            "title": "descope/auth-hosting: A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.",
+            "date_modified": "2026-05-20T18:51:39.000Z",
+            "date_published": "2023-06-04T12:07:44.000Z",
+            "author": {
+                "name": "descope",
+                "url": "https://github.com/descope"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52331756?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight web application for logging sets, reps, and PRs. Focuses on data integrity and user experience to streamline session tracking.</div>",
+            "url": "https://github.com/j-kokoszka/set",
+            "title": "j-kokoszka/set: A lightweight web application for logging sets, reps, and PRs. Focuses on data integrity and user experience to streamline session tracking.",
+            "date_modified": "2026-05-20T18:51:38.000Z",
+            "date_published": "2026-05-13T18:01:27.000Z",
+            "author": {
+                "name": "j-kokoszka",
+                "url": "https://github.com/j-kokoszka"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101777018?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Create modern, lightweight, type-safe toast notifications for Angular with ease using ng-toastly, designed for smooth integration and accessibility.</div>",
+            "url": "https://github.com/JEpstein00/ng-toastly",
+            "title": "JEpstein00/ng-toastly: 🌟 Create modern, lightweight, type-safe toast notifications for Angular with ease using ng-toastly, designed for smooth integration and accessibility.",
+            "date_modified": "2026-05-20T18:50:43.000Z",
+            "date_published": "2026-01-28T01:16:11.000Z",
+            "author": {
+                "name": "JEpstein00",
+                "url": "https://github.com/JEpstein00"
             }
         }
     ]
