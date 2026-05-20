@@ -6,10 +6,65 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153571188?u=b8997d8a01a2bd5c34dc740e51bf28ad889a5412&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Compress strings efficiently with fsst-rs, a pure-Rust, zero-dependency implementation of the FSST algorithm for fast database applications.</div>",
+            "url": "https://github.com/Martialdepaul/fsst-rs",
+            "title": "Martialdepaul/fsst-rs: 🚀 Compress strings efficiently with fsst-rs, a pure-Rust, zero-dependency implementation of the FSST algorithm for fast database applications.",
+            "date_modified": "2026-05-20T17:58:52.000Z",
+            "date_published": "2024-07-14T17:40:34.000Z",
+            "author": {
+                "name": "Martialdepaul",
+                "url": "https://github.com/Martialdepaul"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228809861?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔑 Generate unique, compact, and secure IDs effortlessly with UCID—your lightweight solution for customizable ID generation in pure JavaScript.</div>",
+            "url": "https://github.com/Stevenpresidential526/unique-custom-id",
+            "title": "Stevenpresidential526/unique-custom-id: 🔑 Generate unique, compact, and secure IDs effortlessly with UCID—your lightweight solution for customizable ID generation in pure JavaScript.",
+            "date_modified": "2026-05-20T17:58:44.000Z",
+            "date_published": "2025-11-24T12:07:26.000Z",
+            "author": {
+                "name": "Stevenpresidential526",
+                "url": "https://github.com/Stevenpresidential526"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118412524?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.</div>",
+            "url": "https://github.com/sansss-debug/bun_rpc",
+            "title": "sansss-debug/bun_rpc: 🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.",
+            "date_modified": "2026-05-20T17:58:42.000Z",
+            "date_published": "2023-12-06T23:31:18.000Z",
+            "author": {
+                "name": "sansss-debug",
+                "url": "https://github.com/sansss-debug"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188300407?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧮 Create quick calculations with this lightweight JavaScript calculator, featuring a simple UI and responsive design for easy use.</div>",
+            "url": "https://github.com/Thodorisgenikis/simple-js-calculator",
+            "title": "Thodorisgenikis/simple-js-calculator: 🧮 Create quick calculations with this lightweight JavaScript calculator, featuring a simple UI and responsive design for easy use.",
+            "date_modified": "2026-05-20T17:58:36.000Z",
+            "date_published": "2025-11-24T09:05:10.000Z",
+            "author": {
+                "name": "Thodorisgenikis",
+                "url": "https://github.com/Thodorisgenikis"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/217729797?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Pianjian - lightweight desktop sticky notes | Vibe Coding project</div>",
+            "url": "https://github.com/Aikoino/pianjian",
+            "title": "Aikoino/pianjian: Pianjian - lightweight desktop sticky notes | Vibe Coding project",
+            "date_modified": "2026-05-20T17:58:15.000Z",
+            "date_published": "2026-05-20T13:46:17.000Z",
+            "author": {
+                "name": "Aikoino",
+                "url": "https://github.com/Aikoino"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-05-20T16:58:41.000Z",
+            "date_modified": "2026-05-20T17:58:13.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -17,87 +72,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19247256?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight internal Company ERP for NAS intranet deployment</div>",
-            "url": "https://github.com/91wan/company-erp",
-            "title": "91wan/company-erp: Lightweight internal Company ERP for NAS intranet deployment",
-            "date_modified": "2026-05-20T16:54:39.000Z",
-            "date_published": "2026-05-11T08:27:24.000Z",
-            "author": {
-                "name": "91wan",
-                "url": "https://github.com/91wan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1591980?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight experimental platform for enhanced video chat</div>",
-            "url": "https://github.com/kenperlin/bici",
-            "title": "kenperlin/bici: A lightweight experimental platform for enhanced video chat",
-            "date_modified": "2026-05-20T16:54:00.000Z",
-            "date_published": "2025-09-06T15:51:40.000Z",
-            "author": {
-                "name": "kenperlin",
-                "url": "https://github.com/kenperlin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96367314?u=f6c1eb85761d278285fd6fe5ace38acc57e4728b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>轻量级个人/团队导航主页 · 农历 · 多国节假日 · 实时行情 · 热榜 · 多源容灾,永不返回空 │ A self-hostable lightweight nav homepage with lunar calendar, multi-country holidays, live finance &amp; hot lists. Multi-source fallback that never returns empty.</div>",
-            "url": "https://github.com/PazzIFirst/lite_nav",
-            "title": "PazzIFirst/lite_nav: 轻量级个人/团队导航主页 · 农历 · 多国节假日 · 实时行情 · 热榜 · 多源容灾,永不返回空 │ A self-hostable lightweight nav homepage with lunar calendar, multi-country holidays, live finance & hot lists. Multi-source fallback that never returns empty.",
-            "date_modified": "2026-05-20T16:51:26.000Z",
-            "date_published": "2026-05-03T14:33:02.000Z",
-            "author": {
-                "name": "PazzIFirst",
-                "url": "https://github.com/PazzIFirst"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214698?u=9ae883ede9287d3f2db6469be7b2f7a0a69ca560&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, no-configuration message broker/queue for cli tools</div>",
-            "url": "https://github.com/VanL/simplebroker",
-            "title": "VanL/simplebroker: A lightweight, no-configuration message broker/queue for cli tools",
-            "date_modified": "2026-05-20T16:50:06.000Z",
-            "date_published": "2025-07-06T23:44:28.000Z",
-            "author": {
-                "name": "VanL",
-                "url": "https://github.com/VanL"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68658616?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight open-source visualiser for India admin boundaries — pick a layer, view, download parquet</div>",
-            "url": "https://github.com/urbanmorph/geodata",
-            "title": "urbanmorph/geodata: Lightweight open-source visualiser for India admin boundaries — pick a layer, view, download parquet",
-            "date_modified": "2026-05-20T16:47:27.000Z",
-            "date_published": "2026-05-19T08:56:33.000Z",
-            "author": {
-                "name": "urbanmorph",
-                "url": "https://github.com/urbanmorph"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268978725?u=537cc52b7d33cc7d8361702ec1dab9a4f7a1412a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight After Effects script that automates property randomization. Simply define your target parameter and value range, and let the script handle the rest.</div>",
-            "url": "https://github.com/festverse/Randomizer-Script",
-            "title": "festverse/Randomizer-Script: A lightweight After Effects script that automates property randomization. Simply define your target parameter and value range, and let the script handle the rest.",
-            "date_modified": "2026-05-20T16:46:38.000Z",
-            "date_published": "2026-05-20T16:02:10.000Z",
-            "author": {
-                "name": "festverse",
-                "url": "https://github.com/festverse"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1342004?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.</div>",
-            "url": "https://github.com/google/xrblocks",
-            "title": "google/xrblocks: XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
-            "date_modified": "2026-05-20T16:44:55.000Z",
-            "date_published": "2025-09-25T22:57:47.000Z",
-            "author": {
-                "name": "google",
-                "url": "https://github.com/google"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/95395257?u=abeb85c59b73442c6a739e47f2644fe3dacd3cae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight 24/7 hosting build for Natsumi Discord bot</div>",
             "url": "https://github.com/haruki7777/natsumi-bot-24-7",
             "title": "haruki7777/natsumi-bot-24-7: Lightweight 24/7 hosting build for Natsumi Discord bot",
-            "date_modified": "2026-05-20T16:43:08.000Z",
+            "date_modified": "2026-05-20T17:57:45.000Z",
             "date_published": "2026-05-06T06:09:24.000Z",
             "author": {
                 "name": "haruki7777",
@@ -105,65 +83,43 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77960507?u=8d7722cf86341f838611cfe5a3f6c65a48893035&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。</div>",
-            "url": "https://github.com/t8y2/dbx",
-            "title": "t8y2/dbx: 15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。",
-            "date_modified": "2026-05-20T16:43:04.000Z",
-            "date_published": "2026-04-29T03:00:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228947767?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Write Go code directly in JavaScript files, effortlessly compiling to WebAssembly with Vite for efficient browser-based development.</div>",
+            "url": "https://github.com/Proforma-maraud670/vite-plugin-use-golang",
+            "title": "Proforma-maraud670/vite-plugin-use-golang: 🛠️ Write Go code directly in JavaScript files, effortlessly compiling to WebAssembly with Vite for efficient browser-based development.",
+            "date_modified": "2026-05-20T17:57:26.000Z",
+            "date_published": "2025-11-21T15:59:51.000Z",
             "author": {
-                "name": "t8y2",
-                "url": "https://github.com/t8y2"
+                "name": "Proforma-maraud670",
+                "url": "https://github.com/Proforma-maraud670"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23400003?u=fa37344fbaaf2b5fbf00d9f7feea722e7572d223&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight scraper for Google News</div>",
-            "url": "https://github.com/lewisdonovan/google-news-scraper",
-            "title": "lewisdonovan/google-news-scraper: Lightweight scraper for Google News",
-            "date_modified": "2026-05-20T16:42:36.000Z",
-            "date_published": "2020-01-27T13:44:22.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228944380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.</div>",
+            "url": "https://github.com/Threelane-paris497/svelte-tiny-i18n",
+            "title": "Threelane-paris497/svelte-tiny-i18n: 🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.",
+            "date_modified": "2026-05-20T17:57:03.000Z",
+            "date_published": "2025-11-21T05:01:34.000Z",
             "author": {
-                "name": "lewisdonovan",
-                "url": "https://github.com/lewisdonovan"
+                "name": "Threelane-paris497",
+                "url": "https://github.com/Threelane-paris497"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/285328583?u=4072212bb08b03fc3f8a7ba7bdadd79c1d8bff29&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bliish.space is an ultra-fast, lightweight, open-source social platform with customizable profiles, no ads, no tracking, and simple, affordable self-hosting.</div>",
-            "url": "https://github.com/bliish-com/bliishspace",
-            "title": "bliish-com/bliishspace: Bliish.space is an ultra-fast, lightweight, open-source social platform with customizable profiles, no ads, no tracking, and simple, affordable self-hosting.",
-            "date_modified": "2026-05-20T16:53:36.000Z",
-            "date_published": "2026-05-20T16:40:30.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/175211884?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Create lightweight desktop applications using Tauri to display HTML/CSS/JS files without a separate browser. Easy to test and deploy.</div>",
+            "url": "https://github.com/Nguyen124-star/tauri_webview",
+            "title": "Nguyen124-star/tauri_webview: 🌐 Create lightweight desktop applications using Tauri to display HTML/CSS/JS files without a separate browser. Easy to test and deploy.",
+            "date_modified": "2026-05-20T17:56:55.000Z",
+            "date_published": "2025-11-23T19:26:10.000Z",
             "author": {
-                "name": "bliish-com",
-                "url": "https://github.com/bliish-com"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97479186?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.</div>",
-            "url": "https://github.com/descope/auth-hosting",
-            "title": "descope/auth-hosting: A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.",
-            "date_modified": "2026-05-20T16:39:21.000Z",
-            "date_published": "2023-06-04T12:07:44.000Z",
-            "author": {
-                "name": "descope",
-                "url": "https://github.com/descope"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/56612434?u=a140b782ea0c61f5035d7b862e402d8363bcb285&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight end-to-end Soroban smart contract proof-of-concept built with Rust, Soroban SDK, React, and Stellar testnet tooling.</div>",
-            "url": "https://github.com/mollybeach/soroban-fullstack-poc",
-            "title": "mollybeach/soroban-fullstack-poc: A lightweight end-to-end Soroban smart contract proof-of-concept built with Rust, Soroban SDK, React, and Stellar testnet tooling.",
-            "date_modified": "2026-05-20T16:38:52.000Z",
-            "date_published": "2026-05-06T15:51:04.000Z",
-            "author": {
-                "name": "mollybeach",
-                "url": "https://github.com/mollybeach"
+                "name": "Nguyen124-star",
+                "url": "https://github.com/Nguyen124-star"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118188384?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight testing automation tool designed to simulate realistic client interactions with SP infrastructure. This bot accelerates testing of the live PDP SPX group by programmatically performing key client operations and collecting comprehensive performance metrics.</div>",
             "url": "https://github.com/FilOzone/dealbot",
             "title": "FilOzone/dealbot: A lightweight testing automation tool designed to simulate realistic client interactions with SP infrastructure. This bot accelerates testing of the live PDP SPX group by programmatically performing key client operations and collecting comprehensive performance metrics.",
-            "date_modified": "2026-05-20T16:38:48.000Z",
+            "date_modified": "2026-05-20T17:56:46.000Z",
             "date_published": "2025-08-13T06:20:59.000Z",
             "author": {
                 "name": "FilOzone",
@@ -171,58 +127,102 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51480853?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>✨  Microframework for building and organizing your front-end</div>",
-            "url": "https://github.com/ralixjs/ralix",
-            "title": "ralixjs/ralix: ✨  Microframework for building and organizing your front-end",
-            "date_modified": "2026-05-20T16:38:02.000Z",
-            "date_published": "2019-06-07T11:49:29.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228964862?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Parse Server-Sent Events seamlessly with this lightweight and spec-compliant parser that integrates effortlessly with the Fetch API.</div>",
+            "url": "https://github.com/Loaila1680/parse-sse",
+            "title": "Loaila1680/parse-sse: 🌐 Parse Server-Sent Events seamlessly with this lightweight and spec-compliant parser that integrates effortlessly with the Fetch API.",
+            "date_modified": "2026-05-20T17:56:38.000Z",
+            "date_published": "2025-11-15T13:48:17.000Z",
             "author": {
-                "name": "ralixjs",
-                "url": "https://github.com/ralixjs"
+                "name": "Loaila1680",
+                "url": "https://github.com/Loaila1680"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/125809371?u=247338ec1b47fd3fc5b1ca5ade87b69debe0c83a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Synapse Book is a lightweight, fast, and cloud-ready web application built using Vite with Typescript, Shadcn with Tailwind, Go &amp; MongoAtlas. It aims to increase your productivity and help organize your tasks, — Your notes, Wherever you go <g-emoji class=\"g-emoji\" alias=\"relaxed\">☺️</g-emoji></div>",
-            "url": "https://github.com/Sanchit-panday/SynapseBook",
-            "title": "Sanchit-panday/SynapseBook: Synapse Book is a lightweight, fast, and cloud-ready web application built using Vite with Typescript, Shadcn with Tailwind, Go & MongoAtlas. It aims to increase your productivity and help organize your tasks, — Your notes, Wherever you go ☺️",
-            "date_modified": "2026-05-20T16:37:14.000Z",
-            "date_published": "2025-05-31T12:24:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228987848?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Create, edit, and manage Markdown documents quickly and easily with FlyMD—your lightweight, cross-platform editor featuring instant rendering and seamless syncing.</div>",
+            "url": "https://github.com/Interracial-mentum925/flymd",
+            "title": "Interracial-mentum925/flymd: 🚀 Create, edit, and manage Markdown documents quickly and easily with FlyMD—your lightweight, cross-platform editor featuring instant rendering and seamless syncing.",
+            "date_modified": "2026-05-20T17:56:14.000Z",
+            "date_published": "2025-11-13T21:48:14.000Z",
             "author": {
-                "name": "Sanchit-panday",
-                "url": "https://github.com/Sanchit-panday"
+                "name": "Interracial-mentum925",
+                "url": "https://github.com/Interracial-mentum925"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99032604?u=bc3581d3435bc098cbb094312e23f774bf182939&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>UseKeyboard is a lightweight, fully-typed React hook library for handling keyboard interactions declaratively. </div>",
-            "url": "https://github.com/DiegoLibonati/use-keyboard",
-            "title": "DiegoLibonati/use-keyboard: UseKeyboard is a lightweight, fully-typed React hook library for handling keyboard interactions declaratively. ",
-            "date_modified": "2026-05-20T16:36:12.000Z",
-            "date_published": "2024-05-13T00:46:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19247256?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight internal Company ERP for NAS intranet deployment</div>",
+            "url": "https://github.com/91wan/company-erp",
+            "title": "91wan/company-erp: Lightweight internal Company ERP for NAS intranet deployment",
+            "date_modified": "2026-05-20T17:55:32.000Z",
+            "date_published": "2026-05-11T08:27:24.000Z",
             "author": {
-                "name": "DiegoLibonati",
-                "url": "https://github.com/DiegoLibonati"
+                "name": "91wan",
+                "url": "https://github.com/91wan"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12058855?u=a5405061f470415646d53defd70a821d73cf52d0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, browser-based crafting calculator for any game. Enter recipes ad-hoc, calculate required base resources, and view both totals and nested breakdowns. Runs entirely client-side and works offline.</div>",
-            "url": "https://github.com/Majawat/crafting-calculator",
-            "title": "Majawat/crafting-calculator: A lightweight, browser-based crafting calculator for any game. Enter recipes ad-hoc, calculate required base resources, and view both totals and nested breakdowns. Runs entirely client-side and works offline.",
-            "date_modified": "2026-05-20T16:35:18.000Z",
-            "date_published": "2025-09-24T12:24:22.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/139072177?u=5634f6ebc5d7e11bd5e962818d4af0d448b4774c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A collection of lightweight browser tools for accessibility, reading, zooming, speed control( hacks for web games ) , and page inspection. </div>",
+            "url": "https://github.com/imik9/web-toolkit",
+            "title": "imik9/web-toolkit: A collection of lightweight browser tools for accessibility, reading, zooming, speed control( hacks for web games ) , and page inspection. ",
+            "date_modified": "2026-05-20T17:55:07.000Z",
+            "date_published": "2026-05-20T16:57:23.000Z",
             "author": {
-                "name": "Majawat",
-                "url": "https://github.com/Majawat"
+                "name": "imik9",
+                "url": "https://github.com/imik9"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131109546?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight stealth chat for friends with WebRTC P2P, screen share, and auto-update.</div>",
-            "url": "https://github.com/Fabz2004/stealth-chat",
-            "title": "Fabz2004/stealth-chat: Lightweight stealth chat for friends with WebRTC P2P, screen share, and auto-update.",
-            "date_modified": "2026-05-20T16:33:50.000Z",
-            "date_published": "2026-05-20T13:27:06.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229528935?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧠 Build and experiment with a lightweight neural network library in TypeScript, featuring simple tensors and essential machine learning utilities.</div>",
+            "url": "https://github.com/Tunnelbasketballseason635/TensaiNeuro",
+            "title": "Tunnelbasketballseason635/TensaiNeuro: 🧠 Build and experiment with a lightweight neural network library in TypeScript, featuring simple tensors and essential machine learning utilities.",
+            "date_modified": "2026-05-20T17:54:21.000Z",
+            "date_published": "2025-11-03T04:55:28.000Z",
             "author": {
-                "name": "Fabz2004",
-                "url": "https://github.com/Fabz2004"
+                "name": "Tunnelbasketballseason635",
+                "url": "https://github.com/Tunnelbasketballseason635"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229651125?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.</div>",
+            "url": "https://github.com/candisulphurous105/sandbox-runtime",
+            "title": "candisulphurous105/sandbox-runtime: 🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.",
+            "date_modified": "2026-05-20T17:54:18.000Z",
+            "date_published": "2025-11-03T02:35:01.000Z",
+            "author": {
+                "name": "candisulphurous105",
+                "url": "https://github.com/candisulphurous105"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229584302?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠 Build accessible and customizable React UI components with TypeScript and Tailwind CSS for your next modern web application.</div>",
+            "url": "https://github.com/laborpartyplanter436/drk-ui-components",
+            "title": "laborpartyplanter436/drk-ui-components: 🛠 Build accessible and customizable React UI components with TypeScript and Tailwind CSS for your next modern web application.",
+            "date_modified": "2026-05-20T17:53:38.000Z",
+            "date_published": "2025-11-02T12:01:33.000Z",
+            "author": {
+                "name": "laborpartyplanter436",
+                "url": "https://github.com/laborpartyplanter436"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126708648?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Build a lightweight agent using the Anthropic SDK to fetch your IP address and generate images with ease.</div>",
+            "url": "https://github.com/Vasudevsatya/mini-agent",
+            "title": "Vasudevsatya/mini-agent: 🌐 Build a lightweight agent using the Anthropic SDK to fetch your IP address and generate images with ease.",
+            "date_modified": "2026-05-20T17:52:55.000Z",
+            "date_published": "2025-11-01T20:36:14.000Z",
+            "author": {
+                "name": "Vasudevsatya",
+                "url": "https://github.com/Vasudevsatya"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171362759?u=41c9bc620d72b5b13169abb201aa700ffc0857d6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight collaborative code hosting platform with repositories, commits, branching, and team workflows including AI-powered developer assistance.</div>",
+            "url": "https://github.com/Ankita15k/GitNest",
+            "title": "Ankita15k/GitNest: A lightweight collaborative code hosting platform with repositories, commits, branching, and team workflows including AI-powered developer assistance.",
+            "date_modified": "2026-05-20T17:52:54.000Z",
+            "date_published": "2026-02-21T10:02:04.000Z",
+            "author": {
+                "name": "Ankita15k",
+                "url": "https://github.com/Ankita15k"
             }
         }
     ]
