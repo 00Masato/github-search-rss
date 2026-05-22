@@ -6,98 +6,21 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20860294?u=a0562d7b8f3b6f85d19d881b1acdc44964e95ae7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.</div>",
-            "url": "https://github.com/vheins/local-memory-mcp",
-            "title": "vheins/local-memory-mcp: A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.",
-            "date_modified": "2026-05-22T13:50:36.000Z",
-            "date_published": "2026-01-21T12:33:27.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/259078939?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build a lightweight Claude Code alternative for agentic coding with a small codebase and strong CLI capabilities</div>",
+            "url": "https://github.com/ahmedbouuu223-coder/nanocode",
+            "title": "ahmedbouuu223-coder/nanocode: Build a lightweight Claude Code alternative for agentic coding with a small codebase and strong CLI capabilities",
+            "date_modified": "2026-05-22T14:58:29.000Z",
+            "date_published": "2026-02-03T12:02:15.000Z",
             "author": {
-                "name": "vheins",
-                "url": "https://github.com/vheins"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/102327141?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔍 Enhance SEO for your React 19 applications effortlessly with this lightweight, type-safe library designed for optimal performance and simplicity.</div>",
-            "url": "https://github.com/cesarortegaii/react-meta",
-            "title": "cesarortegaii/react-meta: 🔍 Enhance SEO for your React 19 applications effortlessly with this lightweight, type-safe library designed for optimal performance and simplicity.",
-            "date_modified": "2026-05-22T13:50:20.000Z",
-            "date_published": "2026-02-04T15:42:30.000Z",
-            "author": {
-                "name": "cesarortegaii",
-                "url": "https://github.com/cesarortegaii"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94504889?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔮 Extract metadata effortlessly from web pages using ogie, a lightweight library for OpenGraph, Twitter Cards, JSON-LD, and more, built for production.</div>",
-            "url": "https://github.com/AConfusedBoi/ogie",
-            "title": "AConfusedBoi/ogie: 🔮 Extract metadata effortlessly from web pages using ogie, a lightweight library for OpenGraph, Twitter Cards, JSON-LD, and more, built for production.",
-            "date_modified": "2026-05-22T13:50:21.000Z",
-            "date_published": "2021-11-17T04:38:49.000Z",
-            "author": {
-                "name": "AConfusedBoi",
-                "url": "https://github.com/AConfusedBoi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96445570?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight PNG tile server with real-time map theme editor</div>",
-            "url": "https://github.com/SaaShup/curioo-tiles",
-            "title": "SaaShup/curioo-tiles: Lightweight PNG tile server with real-time map theme editor",
-            "date_modified": "2026-05-22T13:49:32.000Z",
-            "date_published": "2026-04-30T13:34:06.000Z",
-            "author": {
-                "name": "SaaShup",
-                "url": "https://github.com/SaaShup"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77960507?u=8d7722cf86341f838611cfe5a3f6c65a48893035&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。</div>",
-            "url": "https://github.com/t8y2/dbx",
-            "title": "t8y2/dbx: 15MB, lightweight, cross-platform database client. Supports MySQL, PostgreSQL, SQLite, Redis, MongoDB, DuckDB, ClickHouse, SQL Server and more.15MB，轻量级跨平台数据库客户端。支持 MySQL、PostgreSQL、SQLite、Redis、MongoDB、DuckDB、ClickHouse、SQL Server 等。",
-            "date_modified": "2026-05-22T13:49:25.000Z",
-            "date_published": "2026-04-29T03:00:36.000Z",
-            "author": {
-                "name": "t8y2",
-                "url": "https://github.com/t8y2"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66736507?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Explore simple Ether staking with this lightweight DApp, allowing easy deposits and withdrawals via a secure smart contract.</div>",
-            "url": "https://github.com/jekogyan0987/simple-ether-staking",
-            "title": "jekogyan0987/simple-ether-staking: 🌐 Explore simple Ether staking with this lightweight DApp, allowing easy deposits and withdrawals via a secure smart contract.",
-            "date_modified": "2026-05-22T13:48:46.000Z",
-            "date_published": "2026-02-03T11:29:54.000Z",
-            "author": {
-                "name": "jekogyan0987",
-                "url": "https://github.com/jekogyan0987"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278400639?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight web app to automatically distribute SLA breach tickets by category and language — no Excel required</div>",
-            "url": "https://github.com/Phoenixwillriseagain-ops/breaches-tracker",
-            "title": "Phoenixwillriseagain-ops/breaches-tracker: Lightweight web app to automatically distribute SLA breach tickets by category and language — no Excel required",
-            "date_modified": "2026-05-22T13:48:19.000Z",
-            "date_published": "2026-05-01T14:38:26.000Z",
-            "author": {
-                "name": "Phoenixwillriseagain-ops",
-                "url": "https://github.com/Phoenixwillriseagain-ops"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132299798?u=c1a0bec7f63f158ecfc49e644297b46d7d4ef611&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🖥️ Enhance your logging with Good Console, a lightweight TypeScript library for structured, colorful logs in both Browser and Node environments.</div>",
-            "url": "https://github.com/LuizMiguel01/good-console",
-            "title": "LuizMiguel01/good-console: 🖥️ Enhance your logging with Good Console, a lightweight TypeScript library for structured, colorful logs in both Browser and Node environments.",
-            "date_modified": "2026-05-22T13:48:17.000Z",
-            "date_published": "2023-07-27T09:33:03.000Z",
-            "author": {
-                "name": "LuizMiguel01",
-                "url": "https://github.com/LuizMiguel01"
+                "name": "ahmedbouuu223-coder",
+                "url": "https://github.com/ahmedbouuu223-coder"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-05-22T13:48:15.000Z",
+            "date_modified": "2026-05-22T14:58:14.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -105,98 +28,153 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/157084662?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🗺️ Build custom route planning features with WaypointJS, a lightweight TypeScript library that works with any mapping service and has zero runtime dependencies.</div>",
-            "url": "https://github.com/jelenaxaxa/waypointjs",
-            "title": "jelenaxaxa/waypointjs: 🗺️ Build custom route planning features with WaypointJS, a lightweight TypeScript library that works with any mapping service and has zero runtime dependencies.",
-            "date_modified": "2026-05-22T13:48:04.000Z",
-            "date_published": "2026-02-03T04:00:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11887183?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A powerful and lightweight inversion of control container for JavaScript &amp; Node.js apps powered by TypeScript.</div>",
+            "url": "https://github.com/inversify/monorepo",
+            "title": "inversify/monorepo: A powerful and lightweight inversion of control container for JavaScript & Node.js apps powered by TypeScript.",
+            "date_modified": "2026-05-22T14:58:08.000Z",
+            "date_published": "2024-10-13T10:20:33.000Z",
             "author": {
-                "name": "jelenaxaxa",
-                "url": "https://github.com/jelenaxaxa"
+                "name": "inversify",
+                "url": "https://github.com/inversify"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/224840475?u=4fee95b9a1184e3fb621527e455c11655ee9c910&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Windows desktop application (with potential Linux support) that provides a lightweight, VFR-oriented Flight Data Management / Movements Logging system for small to medium aerodromes, powered by the Vectair Knowledge Base (VKB).</div>",
-            "url": "https://github.com/Arkmere/FDMS",
-            "title": "Arkmere/FDMS: A Windows desktop application (with potential Linux support) that provides a lightweight, VFR-oriented Flight Data Management / Movements Logging system for small to medium aerodromes, powered by the Vectair Knowledge Base (VKB).",
-            "date_modified": "2026-05-22T13:47:48.000Z",
-            "date_published": "2025-12-11T12:40:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/35654409?u=50b04833b085854fb981dd8d85c15e36b401613c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Create modern desktop applications using Node.js and the Microsoft Edge WebView2 control. It provides a lightweight, native GUI experience with full access to Node.js APIs.</div>",
+            "url": "https://github.com/miukyo/ewvjs",
+            "title": "miukyo/ewvjs: Create modern desktop applications using Node.js and the Microsoft Edge WebView2 control. It provides a lightweight, native GUI experience with full access to Node.js APIs.",
+            "date_modified": "2026-05-22T14:58:04.000Z",
+            "date_published": "2026-02-05T09:55:34.000Z",
             "author": {
-                "name": "Arkmere",
-                "url": "https://github.com/Arkmere"
+                "name": "miukyo",
+                "url": "https://github.com/miukyo"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13162758?u=2e21640ab211a757957dfc17a9eddd562b2f720b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ilingo is a lightweight library for translation and internationalization.</div>",
-            "url": "https://github.com/tada5hi/ilingo",
-            "title": "tada5hi/ilingo: Ilingo is a lightweight library for translation and internationalization.",
-            "date_modified": "2026-05-22T13:47:33.000Z",
-            "date_published": "2022-02-25T09:18:18.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274907547?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build a lightweight terminal coding assistant for local development with fast, simple Claude Code-like workflows</div>",
+            "url": "https://github.com/dowered-depressor172/MiniCode",
+            "title": "dowered-depressor172/MiniCode: Build a lightweight terminal coding assistant for local development with fast, simple Claude Code-like workflows",
+            "date_modified": "2026-05-22T14:57:51.000Z",
+            "date_published": "2026-04-25T21:28:09.000Z",
             "author": {
-                "name": "tada5hi",
-                "url": "https://github.com/tada5hi"
+                "name": "dowered-depressor172",
+                "url": "https://github.com/dowered-depressor172"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/137431028?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Debug React Native apps easily with rn-remote-debugger, a lightweight tool tailored for Hermes engine support and streamlined development.</div>",
-            "url": "https://github.com/Sardorbek2802/rn-remote-debugger",
-            "title": "Sardorbek2802/rn-remote-debugger: 🛠️ Debug React Native apps easily with rn-remote-debugger, a lightweight tool tailored for Hermes engine support and streamlined development.",
-            "date_modified": "2026-05-22T13:47:20.000Z",
-            "date_published": "2023-06-22T16:36:35.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1272479?u=723daf19411f4c644c54d7ba5bb4f6047669d96e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Jarela is a lightweight, full‑featured multi‑agent application that runs locally on your machine.</div>",
+            "url": "https://github.com/andrew-ge-wu/jarela",
+            "title": "andrew-ge-wu/jarela: Jarela is a lightweight, full‑featured multi‑agent application that runs locally on your machine.",
+            "date_modified": "2026-05-22T14:57:52.000Z",
+            "date_published": "2026-05-17T16:43:49.000Z",
             "author": {
-                "name": "Sardorbek2802",
-                "url": "https://github.com/Sardorbek2802"
+                "name": "andrew-ge-wu",
+                "url": "https://github.com/andrew-ge-wu"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20968051?u=72ff5d02e61c4adaefda1241b3e82f126678b157&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This site uses the amazing Astro.build  project. I added **Google Docs**  integration to serve as a lightweight, serverless backend to process and store basic data. Using a Google Doc allows the static site to securely hold sanitized inputs and track records without requiring a traditional database.</div>",
-            "url": "https://github.com/TJAdryan/astro_blog",
-            "title": "TJAdryan/astro_blog: This site uses the amazing Astro.build  project. I added **Google Docs**  integration to serve as a lightweight, serverless backend to process and store basic data. Using a Google Doc allows the static site to securely hold sanitized inputs and track records without requiring a traditional database.",
-            "date_modified": "2026-05-22T13:46:57.000Z",
-            "date_published": "2025-08-18T01:35:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286728102?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight real-time public chat demo — Go + WebSocket + SQLite | 轻量级实时公共聊天室演示项目</div>",
+            "url": "https://github.com/TokenDanceLab/TokenDanceChat",
+            "title": "TokenDanceLab/TokenDanceChat: Lightweight real-time public chat demo — Go + WebSocket + SQLite | 轻量级实时公共聊天室演示项目",
+            "date_modified": "2026-05-22T14:57:46.000Z",
+            "date_published": "2026-05-21T11:23:34.000Z",
             "author": {
-                "name": "TJAdryan",
-                "url": "https://github.com/TJAdryan"
+                "name": "TokenDanceLab",
+                "url": "https://github.com/TokenDanceLab"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154263733?u=4178b0ee3c9a27ba744e5572af60bb2d18e46375&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript utility library for date and time formatting operations. This package provides simple and intuitive functions to format dates and convert between 12-hour and 24-hour time formats.</div>",
-            "url": "https://github.com/KrishDhimanOfficial/time-helper-js",
-            "title": "KrishDhimanOfficial/time-helper-js: A lightweight TypeScript utility library for date and time formatting operations. This package provides simple and intuitive functions to format dates and convert between 12-hour and 24-hour time formats.",
-            "date_modified": "2026-05-22T13:46:55.000Z",
-            "date_published": "2025-10-11T05:42:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/279363514?u=ed76973184b072c84fa67a663a52315da86cbf54&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight step challenge app for tracking Sue’s annual walking challenge, celebrating progress, friendly competition, and getting everyone moving together.</div>",
+            "url": "https://github.com/ideafactorybyallan/Step-w-Sue",
+            "title": "ideafactorybyallan/Step-w-Sue: A lightweight step challenge app for tracking Sue’s annual walking challenge, celebrating progress, friendly competition, and getting everyone moving together.",
+            "date_modified": "2026-05-22T14:57:29.000Z",
+            "date_published": "2026-05-15T15:11:35.000Z",
             "author": {
-                "name": "KrishDhimanOfficial",
-                "url": "https://github.com/KrishDhimanOfficial"
+                "name": "ideafactorybyallan",
+                "url": "https://github.com/ideafactorybyallan"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185293853?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔑 Simplify key management in your applications with a lightweight, efficient solution for organizing and accessing data securely.</div>",
-            "url": "https://github.com/pedro25cl/keys",
-            "title": "pedro25cl/keys: 🔑 Simplify key management in your applications with a lightweight, efficient solution for organizing and accessing data securely.",
-            "date_modified": "2026-05-22T13:46:57.000Z",
-            "date_published": "2026-02-02T02:27:31.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58656036?u=476c2b60f17e9d5abb1aaa2dce48df7ddc362cdd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Frontend for Python Project Management, a lightweight server and Python project automation platform.</div>",
+            "url": "https://github.com/Linwangithub/python_project_management_frontend",
+            "title": "Linwangithub/python_project_management_frontend: Frontend for Python Project Management, a lightweight server and Python project automation platform.",
+            "date_modified": "2026-05-22T14:56:48.000Z",
+            "date_published": "2026-05-18T11:05:25.000Z",
             "author": {
-                "name": "pedro25cl",
-                "url": "https://github.com/pedro25cl"
+                "name": "Linwangithub",
+                "url": "https://github.com/Linwangithub"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42300463?u=02104098ff8bc497583ed44a55aa5d1e77d4a6d6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>NextClaw: Your omnipotent personal assistant, residing above the digital realm. Basically Ultra-Lightweight OpenClaw Pro Max.</div>",
-            "url": "https://github.com/Peiiii/nextclaw",
-            "title": "Peiiii/nextclaw: NextClaw: Your omnipotent personal assistant, residing above the digital realm. Basically Ultra-Lightweight OpenClaw Pro Max.",
-            "date_modified": "2026-05-22T13:46:04.000Z",
-            "date_published": "2026-02-10T17:45:54.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274918986?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Embed, preview, and manage media cards with a lightweight web app and npm package</div>",
+            "url": "https://github.com/elisange9119/embed-lite",
+            "title": "elisange9119/embed-lite: Embed, preview, and manage media cards with a lightweight web app and npm package",
+            "date_modified": "2026-05-22T14:57:57.000Z",
+            "date_published": "2026-04-23T17:19:47.000Z",
             "author": {
-                "name": "Peiiii",
-                "url": "https://github.com/Peiiii"
+                "name": "elisange9119",
+                "url": "https://github.com/elisange9119"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274937574?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Hide secret messages in images with a lightweight, zero-dependency TypeScript steganography kit for browser and Node.js</div>",
+            "url": "https://github.com/imaiste8140/stegano-kit",
+            "title": "imaiste8140/stegano-kit: Hide secret messages in images with a lightweight, zero-dependency TypeScript steganography kit for browser and Node.js",
+            "date_modified": "2026-05-22T14:53:03.000Z",
+            "date_published": "2026-04-19T16:44:19.000Z",
+            "author": {
+                "name": "imaiste8140",
+                "url": "https://github.com/imaiste8140"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20860294?u=a0562d7b8f3b6f85d19d881b1acdc44964e95ae7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.</div>",
+            "url": "https://github.com/vheins/local-memory-mcp",
+            "title": "vheins/local-memory-mcp: A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.",
+            "date_modified": "2026-05-22T14:52:37.000Z",
+            "date_published": "2026-01-21T12:33:27.000Z",
+            "author": {
+                "name": "vheins",
+                "url": "https://github.com/vheins"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274934441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Generate SVG files from AI prompts with a local app built for fast development and easy Gemini API setup</div>",
+            "url": "https://github.com/graemeerrant677/svg-generator",
+            "title": "graemeerrant677/svg-generator: Generate SVG files from AI prompts with a local app built for fast development and easy Gemini API setup",
+            "date_modified": "2026-05-22T14:52:01.000Z",
+            "date_published": "2026-04-19T04:14:50.000Z",
+            "author": {
+                "name": "graemeerrant677",
+                "url": "https://github.com/graemeerrant677"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103789981?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build a self-hosted web IDE with code editor, terminal, git, and file explorer in one lightweight app for browser-based development</div>",
+            "url": "https://github.com/Dappajordan/wede",
+            "title": "Dappajordan/wede: Build a self-hosted web IDE with code editor, terminal, git, and file explorer in one lightweight app for browser-based development",
+            "date_modified": "2026-05-22T14:51:13.000Z",
+            "date_published": "2026-04-18T17:36:16.000Z",
+            "author": {
+                "name": "Dappajordan",
+                "url": "https://github.com/Dappajordan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106502754?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>​A lightweight JavaScript utility that uses advanced RegEx to parse unstructured financial field reports, run automated balancing calculations and instantly sync verified metrics to a Google Sheets database.</div>",
+            "url": "https://github.com/HybeeT007/Business-Report-Parser",
+            "title": "HybeeT007/Business-Report-Parser: ​A lightweight JavaScript utility that uses advanced RegEx to parse unstructured financial field reports, run automated balancing calculations and instantly sync verified metrics to a Google Sheets database.",
+            "date_modified": "2026-05-22T14:51:07.000Z",
+            "date_published": "2026-05-22T14:39:27.000Z",
+            "author": {
+                "name": "HybeeT007",
+                "url": "https://github.com/HybeeT007"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/273611194?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight CRM + Follow-Up &amp; Review Automation for local businesses</div>",
             "url": "https://github.com/nszakapex/followup-crm",
             "title": "nszakapex/followup-crm: Lightweight CRM + Follow-Up & Review Automation for local businesses",
-            "date_modified": "2026-05-22T13:45:11.000Z",
+            "date_modified": "2026-05-22T14:50:45.000Z",
             "date_published": "2026-05-20T16:45:26.000Z",
             "author": {
                 "name": "nszakapex",
@@ -204,25 +182,47 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/139268449?u=0273be81b8824dde3f6e41ffe3fb33be473ed45d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Gudangku is a lightweight yet powerful warehouse management system designed to simplify inventory tracking, stock movement, and operational efficiency. Built with scalability in mind, it helps businesses from small shops to large distribution centers manage their goods seamlessly.</div>",
-            "url": "https://github.com/nxvrnlsr/gudangku",
-            "title": "nxvrnlsr/gudangku: Gudangku is a lightweight yet powerful warehouse management system designed to simplify inventory tracking, stock movement, and operational efficiency. Built with scalability in mind, it helps businesses from small shops to large distribution centers manage their goods seamlessly.",
-            "date_modified": "2026-05-22T13:44:37.000Z",
-            "date_published": "2026-05-18T04:00:23.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188896403?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, single-screen Pomodoro timer built with vanilla HTML, CSS, and JS, featuring smooth theme-switching and daily history tracking.</div>",
+            "url": "https://github.com/AnsALiX/Pomodoro-Timer-webApp",
+            "title": "AnsALiX/Pomodoro-Timer-webApp: A lightweight, single-screen Pomodoro timer built with vanilla HTML, CSS, and JS, featuring smooth theme-switching and daily history tracking.",
+            "date_modified": "2026-05-22T14:56:40.000Z",
+            "date_published": "2026-05-22T14:14:18.000Z",
             "author": {
-                "name": "nxvrnlsr",
-                "url": "https://github.com/nxvrnlsr"
+                "name": "AnsALiX",
+                "url": "https://github.com/AnsALiX"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/192360317?u=e84cefa9c446c8228c590dcabc7037f055213ea9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight LLM inference logging, ingestion, and observability system with real-time telemetry, multi-provider support, and conversation tracing.</div>",
-            "url": "https://github.com/avinash-1707/Helix",
-            "title": "avinash-1707/Helix: Lightweight LLM inference logging, ingestion, and observability system with real-time telemetry, multi-provider support, and conversation tracing.",
-            "date_modified": "2026-05-22T13:44:03.000Z",
-            "date_published": "2026-05-22T13:18:26.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/275112016?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Run a lightweight, high-performance cross-platform AI desktop client for fast local and cloud chat, tools, and workflow control</div>",
+            "url": "https://github.com/beaverfurgenusschomburgkia917/AQBot",
+            "title": "beaverfurgenusschomburgkia917/AQBot: Run a lightweight, high-performance cross-platform AI desktop client for fast local and cloud chat, tools, and workflow control",
+            "date_modified": "2026-05-22T14:49:48.000Z",
+            "date_published": "2026-04-17T03:08:21.000Z",
             "author": {
-                "name": "avinash-1707",
-                "url": "https://github.com/avinash-1707"
+                "name": "beaverfurgenusschomburgkia917",
+                "url": "https://github.com/beaverfurgenusschomburgkia917"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274940441?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Create AI-friendly, text-first spreadsheets in CSVX for lightweight data editing and .xlsx export</div>",
+            "url": "https://github.com/Kavinku8787/csv-enhance",
+            "title": "Kavinku8787/csv-enhance: Create AI-friendly, text-first spreadsheets in CSVX for lightweight data editing and .xlsx export",
+            "date_modified": "2026-05-22T14:49:37.000Z",
+            "date_published": "2026-04-17T02:41:51.000Z",
+            "author": {
+                "name": "Kavinku8787",
+                "url": "https://github.com/Kavinku8787"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164031869?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | <a href=\"https://cat21.space\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://cat21.space</a></div>",
+            "url": "https://github.com/ordpool-space/cat21-indexer",
+            "title": "ordpool-space/cat21-indexer: 😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | https://cat21.space",
+            "date_modified": "2026-05-22T14:48:02.000Z",
+            "date_published": "2024-01-18T08:05:04.000Z",
+            "author": {
+                "name": "ordpool-space",
+                "url": "https://github.com/ordpool-space"
             }
         }
     ]
