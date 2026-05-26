@@ -83,17 +83,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><em><a href=\"https://triagebot.infra.rust-lang.org/gh-comments/rust-lang/rfcs/pull/3946\" rel=\"nofollow\">View all comments</a></em></p>\n<p dir=\"auto\">This RFC introduces the concept of a crates.io username separate from GitHub (or any potential future OAuth provider) usernames to be able to support multiple OAuth providers someday and adequately handle potential username collisions.</p>\n<p dir=\"auto\">Introducing the concept of a crates.io username in the back end of crates.io and in the user experience is a prerequisite to eventually offering multiple OAuth providers.</p>\n<div class=\"markdown-alert markdown-alert-important\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg data-component=\"Octicon\" class=\"octicon octicon-report mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path></svg>Important</p><p dir=\"auto\">Since RFCs involve many conversations at once that can be difficult to follow, please use review comment threads on the text changes instead of direct comments on the RFC.</p>\n<p dir=\"auto\">If you don't have a particular section of the RFC to comment on, you can click on the \"Comment on this file\" button on the top-right corner of the diff, to the right of the \"Viewed\" checkbox. This will create a separate thread even if others have commented on the file too.</p>\n</div>\n<p dir=\"auto\"><a href=\"https://github.com/carols10cents/rfcs/blob/crates-io-username-identity/text/0000-crates-io-username-identity.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3946",
-            "title": "Propose the concept of a crates.io username for identity",
-            "date_modified": "2026-05-22T15:34:02.000Z",
-            "date_published": "2026-04-07T12:14:42.000Z",
-            "author": {
-                "name": "carols10cents",
-                "url": "https://github.com/carols10cents"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/423821?u=ee74e1a07bc8021df41234190cc20537836c2713&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">This RFC proposes adding Bitbucket Cloud as an OAuth 2.0 login provider for crates.io, allowing users who host their Rust projects on Bitbucket to authenticate and publish crates without requiring a GitHub account.</p>\n<h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">crates.io has required a GitHub account since 2014 (<a href=\"https://github.com/rust-lang/crates.io/issues/326\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/crates.io/issues/326/hovercard\">crates.io#326</a>, open since 2015). This creates a single point of failure for identity, excludes enterprise teams on Atlassian tooling, and leaks private org membership via the <code class=\"notranslate\">read:org</code> scope (<a href=\"https://github.com/rust-lang/crates.io/issues/3027\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/crates.io/issues/3027/hovercard\">crates.io#3027</a>).</p>\n<h2 dir=\"auto\">Key design decisions</h2>\n<ul dir=\"auto\">\n<li><strong>Provider abstraction layer.</strong> Introduces an <code class=\"notranslate\">OAuthProvider</code> trait that both GitHub and Bitbucket implement. This makes future providers (GitLab, generic OIDC) straightforward to add.</li>\n<li><strong>Builds on existing groundwork.</strong> The <code class=\"notranslate\">oauth_github</code> table (January 2026) was explicitly created as a stepping stone toward multi-provider auth. This RFC extends that pattern with an <code class=\"notranslate\">oauth_bitbucket</code> table.</li>\n<li><strong>Token refresh.</strong> Bitbucket tokens expire in 2 hours (GitHub's don't). The RFC designs a <code class=\"notranslate\">TokenManager</code> with just-in-time refresh and encrypted refresh token storage to handle this transparently.</li>\n<li><strong>Team ownership.</strong> Maps Bitbucket workspaces and user groups to the existing <code class=\"notranslate\">provider:org:team</code> login format that <code class=\"notranslate\">Team::split_login()</code> already parses.</li>\n<li><strong>Account linking.</strong> Users can link both GitHub and Bitbucket to a single crates.io account.</li>\n</ul>\n<h2 dir=\"auto\">Rendered</h2>\n<p dir=\"auto\"><a href=\"https://github.com/quinnjr/rfcs/blob/crates-io-bitbucket-oauth/text/0000-crates-io-bitbucket-oauth.md\">text/0000-crates-io-bitbucket-oauth.md</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/quinnjr/rfcs/blob/crates-io-bitbucket-oauth/text/0000-crates-io-bitbucket-oauth.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3944",
             "title": "Add Bitbucket Cloud OAuth login for crates.io",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "pmur",
                 "url": "https://github.com/pmur"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3050060?u=6ca85464b07c5464a052250a4fc3e3f9c03c97ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR introduces discussion about adding another derivable trait: <code class=\"notranslate\">Deref</code> (follows-up the newly added derivable trait <a href=\"https://github.com/rust-lang/rfcs/pull/3809\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rust-lang/rfcs/pull/3809/hovercard\"><code class=\"notranslate\">From</code></a>).</p>\n<p dir=\"auto\"><a href=\"https://github.com/GuillaumeGomez/rfcs/blob/derive-deref/text/0000-derive-deref.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3911",
+            "title": "Add `derive(Deref)` RFC",
+            "date_modified": "2026-02-10T19:56:57.000Z",
+            "date_published": "2026-01-22T15:59:17.000Z",
+            "author": {
+                "name": "GuillaumeGomez",
+                "url": "https://github.com/GuillaumeGomez"
             }
         }
     ]
