@@ -6,223 +6,223 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/220407785?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Monitor and control multiple Gluetun VPN Docker instances with a lightweight web UI showing live status, connection details, and controls.</div>",
-            "url": "https://github.com/Thiago12097/gluetun-webui",
-            "title": "Thiago12097/gluetun-webui: Monitor and control multiple Gluetun VPN Docker instances with a lightweight web UI showing live status, connection details, and controls.",
-            "date_modified": "2026-05-28T09:07:54.000Z",
-            "date_published": "2026-03-07T19:38:06.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/119518330?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀</div>",
+            "url": "https://github.com/ratul3429/bun-microservice-gateways",
+            "title": "ratul3429/bun-microservice-gateways: This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀",
+            "date_modified": "2026-05-28T11:09:01.000Z",
+            "date_published": "2025-05-22T09:12:38.000Z",
             "author": {
-                "name": "Thiago12097",
-                "url": "https://github.com/Thiago12097"
+                "name": "ratul3429",
+                "url": "https://github.com/ratul3429"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/245338413?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight code editor — file browser + editor, integrated terminal, and Git in a fast native desktop app. No AI, no clutter.</div>",
-            "url": "https://github.com/bemindlabs/liteduck",
-            "title": "bemindlabs/liteduck: A lightweight code editor — file browser + editor, integrated terminal, and Git in a fast native desktop app. No AI, no clutter.",
-            "date_modified": "2026-05-28T09:07:49.000Z",
-            "date_published": "2026-05-27T03:59:22.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49471898?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight JavaScript overlay progress bar as a singleton utility</div>",
+            "url": "https://github.com/Vlad345345/bs-progressbar",
+            "title": "Vlad345345/bs-progressbar: Lightweight JavaScript overlay progress bar as a singleton utility",
+            "date_modified": "2026-05-28T11:08:42.000Z",
+            "date_published": "2025-05-21T20:02:38.000Z",
             "author": {
-                "name": "bemindlabs",
-                "url": "https://github.com/bemindlabs"
+                "name": "Vlad345345",
+                "url": "https://github.com/Vlad345345"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93643424?u=ad7cdc1a15b017398334fdaf418853eb4484b8a0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight support desk web application with separate backend and frontend.</div>",
-            "url": "https://github.com/4desol4/ICT-Unit-Help-Desk",
-            "title": "4desol4/ICT-Unit-Help-Desk: A lightweight support desk web application with separate backend and frontend.",
-            "date_modified": "2026-05-28T09:06:59.000Z",
-            "date_published": "2026-05-17T22:27:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/186778390?u=2db9a9ba315aa1ace368c5f3e83cea77fd7d0706&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Atlas Quant is a lightweight quantitative signal engine for crypto, stocks, and forex. Designed for serverless deployment on Vercel, using free APIs, periodic scans, runtime caching, and Solana Devnet-based authentication without traditional databases.</div>",
+            "url": "https://github.com/nayrbryanGaming/atlas-quant",
+            "title": "nayrbryanGaming/atlas-quant: Atlas Quant is a lightweight quantitative signal engine for crypto, stocks, and forex. Designed for serverless deployment on Vercel, using free APIs, periodic scans, runtime caching, and Solana Devnet-based authentication without traditional databases.",
+            "date_modified": "2026-05-28T11:08:41.000Z",
+            "date_published": "2026-02-25T18:10:42.000Z",
             "author": {
-                "name": "4desol4",
-                "url": "https://github.com/4desol4"
+                "name": "nayrbryanGaming",
+                "url": "https://github.com/nayrbryanGaming"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34831678?u=633389e17e29ea88385abe63844523bbbeaa5212&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight AST-based Solidity gas optimization analyzer that detects common gas inefficiencies, generates actionable recommendations, exports SARIF reports for GitHub Code Scanning, and integrates seamlessly into CI/CD pipelines.</div>",
-            "url": "https://github.com/dappteacher/gas-analyzer",
-            "title": "dappteacher/gas-analyzer: A lightweight AST-based Solidity gas optimization analyzer that detects common gas inefficiencies, generates actionable recommendations, exports SARIF reports for GitHub Code Scanning, and integrates seamlessly into CI/CD pipelines.",
-            "date_modified": "2026-05-28T09:06:52.000Z",
-            "date_published": "2026-05-12T18:06:27.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197093519?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.</div>",
+            "url": "https://github.com/SamarthKulkarni20/keyed-batched-items-accumulator",
+            "title": "SamarthKulkarni20/keyed-batched-items-accumulator: A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.",
+            "date_modified": "2026-05-28T11:08:29.000Z",
+            "date_published": "2025-05-21T16:16:34.000Z",
             "author": {
-                "name": "dappteacher",
-                "url": "https://github.com/dappteacher"
+                "name": "SamarthKulkarni20",
+                "url": "https://github.com/SamarthKulkarni20"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3959289?u=8595da9f79f906c0e7473c5a77ad05d2dd9f0771&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight AI command palette</div>",
-            "url": "https://github.com/4i7/PilotBell",
-            "title": "4i7/PilotBell: Lightweight AI command palette",
-            "date_modified": "2026-05-28T09:05:49.000Z",
-            "date_published": "2026-05-27T00:54:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/266905921?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight macOS patch that routes Codex Desktop through DeepSeek</div>",
+            "url": "https://github.com/louchi1984-coder/deepcodex",
+            "title": "louchi1984-coder/deepcodex: Lightweight macOS patch that routes Codex Desktop through DeepSeek",
+            "date_modified": "2026-05-28T11:08:22.000Z",
+            "date_published": "2026-05-13T06:37:18.000Z",
             "author": {
-                "name": "4i7",
-                "url": "https://github.com/4i7"
+                "name": "louchi1984-coder",
+                "url": "https://github.com/louchi1984-coder"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/138748598?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Monitor macOS security events in real time with a lightweight agent that detects threats and visualizes alerts through a fast, clear dashboard.</div>",
-            "url": "https://github.com/sebaxtian110/SIEM",
-            "title": "sebaxtian110/SIEM: Monitor macOS security events in real time with a lightweight agent that detects threats and visualizes alerts through a fast, clear dashboard.",
-            "date_modified": "2026-05-28T09:05:41.000Z",
-            "date_published": "2026-03-06T11:49:26.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
+            "url": "https://github.com/xsrazy/qr-code-generator",
+            "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
+            "date_modified": "2026-05-28T11:08:19.000Z",
+            "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
-                "name": "sebaxtian110",
-                "url": "https://github.com/sebaxtian110"
+                "name": "xsrazy",
+                "url": "https://github.com/xsrazy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/192317144?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Implement a lightweight Lisp interpreter in TypeScript for fast, flexible scripting and functional programming within Node.js environments.</div>",
-            "url": "https://github.com/dhanykey/hc-lisp",
-            "title": "dhanykey/hc-lisp: Implement a lightweight Lisp interpreter in TypeScript for fast, flexible scripting and functional programming within Node.js environments.",
-            "date_modified": "2026-05-28T09:05:26.000Z",
-            "date_published": "2025-09-10T18:37:48.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87696613?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>DukaOS — Merchant operating system for informal retailers  DukaOS is an open, lightweight merchant platform built for dukas, kiosks, pharmacies, salons, food vendors, and small wholesalers. It digitizes everyday money and inventory flows common across Dar es Salaam and similar markets </div>",
+            "url": "https://github.com/kadioko/DukaOS",
+            "title": "kadioko/DukaOS: DukaOS — Merchant operating system for informal retailers  DukaOS is an open, lightweight merchant platform built for dukas, kiosks, pharmacies, salons, food vendors, and small wholesalers. It digitizes everyday money and inventory flows common across Dar es Salaam and similar markets ",
+            "date_modified": "2026-05-28T11:07:45.000Z",
+            "date_published": "2026-03-06T14:55:57.000Z",
             "author": {
-                "name": "dhanykey",
-                "url": "https://github.com/dhanykey"
+                "name": "kadioko",
+                "url": "https://github.com/kadioko"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/146451182?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a lightweight dashboard to manage and monitor OpenClaw AI missions efficiently from a single browser tab.</div>",
-            "url": "https://github.com/Syed7625/openclaw-opsdeck-core",
-            "title": "Syed7625/openclaw-opsdeck-core: Provide a lightweight dashboard to manage and monitor OpenClaw AI missions efficiently from a single browser tab.",
-            "date_modified": "2026-05-28T09:05:00.000Z",
-            "date_published": "2023-09-29T13:37:10.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/145249784?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.</div>",
+            "url": "https://github.com/Nikhilkumarseeda/user-crud-server",
+            "title": "Nikhilkumarseeda/user-crud-server: User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.",
+            "date_modified": "2026-05-28T11:07:41.000Z",
+            "date_published": "2025-05-15T02:37:45.000Z",
             "author": {
-                "name": "Syed7625",
-                "url": "https://github.com/Syed7625"
+                "name": "Nikhilkumarseeda",
+                "url": "https://github.com/Nikhilkumarseeda"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/192212867?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Prevent YouTube and YouTube Music from pausing with a lightweight, pure DOM bookmarklet that bypasses CSP and requires no extensions.</div>",
-            "url": "https://github.com/Johnnytec2024/ytm-keep-alive",
-            "title": "Johnnytec2024/ytm-keep-alive: Prevent YouTube and YouTube Music from pausing with a lightweight, pure DOM bookmarklet that bypasses CSP and requires no extensions.",
-            "date_modified": "2026-05-28T09:04:42.000Z",
-            "date_published": "2024-12-19T11:41:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57317804?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>xkytimer is a lightweight, browser-based speedcubing timer. It is designed to be fast, accurate, and easy to use, utilizing native JavaScript performance APIs to ensure millisecond-precise timing.</div>",
+            "url": "https://github.com/xkyrage/xkytimer-speedcube-timer",
+            "title": "xkyrage/xkytimer-speedcube-timer: xkytimer is a lightweight, browser-based speedcubing timer. It is designed to be fast, accurate, and easy to use, utilizing native JavaScript performance APIs to ensure millisecond-precise timing.",
+            "date_modified": "2026-05-28T11:06:15.000Z",
+            "date_published": "2026-05-22T06:32:00.000Z",
             "author": {
-                "name": "Johnnytec2024",
-                "url": "https://github.com/Johnnytec2024"
+                "name": "xkyrage",
+                "url": "https://github.com/xkyrage"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/215385892?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build and manage lightweight, autonomous agents in a steampunk-themed Goosetown environment designed for efficient task automation and simulation.</div>",
-            "url": "https://github.com/armanydavid529/goosetown",
-            "title": "armanydavid529/goosetown: Build and manage lightweight, autonomous agents in a steampunk-themed Goosetown environment designed for efficient task automation and simulation.",
-            "date_modified": "2026-05-28T09:04:21.000Z",
-            "date_published": "2026-03-04T01:27:15.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118066916?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, powerful enhancement for Next.js Link components that automatically detects active routes. Provides intuitive APIs for handling active states with complete TypeScript support.</div>",
+            "url": "https://github.com/PedroFake02/better-link",
+            "title": "PedroFake02/better-link: A lightweight, powerful enhancement for Next.js Link components that automatically detects active routes. Provides intuitive APIs for handling active states with complete TypeScript support.",
+            "date_modified": "2026-05-28T11:05:15.000Z",
+            "date_published": "2025-04-29T06:56:27.000Z",
             "author": {
-                "name": "armanydavid529",
-                "url": "https://github.com/armanydavid529"
+                "name": "PedroFake02",
+                "url": "https://github.com/PedroFake02"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66877247?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is a lightweight PCF control (TypeScript + CSS) that shows a red/yellow/green status indicator based on a bound input value - configurable via the control manifest and easy to drop into canvas or model‑driven Power Apps.</div>",
-            "url": "https://github.com/brayjosh/My_code_Component",
-            "title": "brayjosh/My_code_Component: This is a lightweight PCF control (TypeScript + CSS) that shows a red/yellow/green status indicator based on a bound input value - configurable via the control manifest and easy to drop into canvas or model‑driven Power Apps.",
-            "date_modified": "2026-05-28T09:07:40.000Z",
-            "date_published": "2026-05-27T11:38:45.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/170837138?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, accessible component library providing essential UI building blocks for modern web applications.</div>",
+            "url": "https://github.com/muhammadhamzakhan22/element-essentials",
+            "title": "muhammadhamzakhan22/element-essentials: A lightweight, accessible component library providing essential UI building blocks for modern web applications.",
+            "date_modified": "2026-05-28T11:05:09.000Z",
+            "date_published": "2025-04-28T01:20:34.000Z",
             "author": {
-                "name": "brayjosh",
-                "url": "https://github.com/brayjosh"
+                "name": "muhammadhamzakhan22",
+                "url": "https://github.com/muhammadhamzakhan22"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/194105900?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Manage clinical data with a lightweight app that integrates patient notes, medical records, and PDF reporting in a single portable package.</div>",
-            "url": "https://github.com/Creamy1255/cmed",
-            "title": "Creamy1255/cmed: Manage clinical data with a lightweight app that integrates patient notes, medical records, and PDF reporting in a single portable package.",
-            "date_modified": "2026-05-28T09:04:11.000Z",
-            "date_published": "2026-03-03T17:53:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39297556?u=82f7d5f9f335ff2037cb2f45e33ceff7f7b68a03&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>@quiet-ly/analytics is a lightweight analytics package for self-hosted AWS deployments. It provides a browser SDK, React bindings, and dashboard components for teams that want first-party analytics without sending data to a third-party collector.</div>",
+            "url": "https://github.com/heyitsmeharv/quiet-ly-analytics",
+            "title": "heyitsmeharv/quiet-ly-analytics: @quiet-ly/analytics is a lightweight analytics package for self-hosted AWS deployments. It provides a browser SDK, React bindings, and dashboard components for teams that want first-party analytics without sending data to a third-party collector.",
+            "date_modified": "2026-05-28T11:04:32.000Z",
+            "date_published": "2026-04-14T18:34:59.000Z",
             "author": {
-                "name": "Creamy1255",
-                "url": "https://github.com/Creamy1255"
+                "name": "heyitsmeharv",
+                "url": "https://github.com/heyitsmeharv"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/56677693?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Enable multiple lightweight AI agents to collaborate through structured coordination to tackle complex software development tasks efficiently.</div>",
-            "url": "https://github.com/barthezzz2000/autopoe",
-            "title": "barthezzz2000/autopoe: Enable multiple lightweight AI agents to collaborate through structured coordination to tackle complex software development tasks efficiently.",
-            "date_modified": "2026-05-28T09:04:11.000Z",
-            "date_published": "2026-03-03T17:22:41.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11203929?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.</div>",
+            "url": "https://github.com/zuohuadong/supacloud",
+            "title": "zuohuadong/supacloud: ⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.",
+            "date_modified": "2026-05-28T11:02:08.000Z",
+            "date_published": "2025-12-25T15:16:04.000Z",
             "author": {
-                "name": "barthezzz2000",
-                "url": "https://github.com/barthezzz2000"
+                "name": "zuohuadong",
+                "url": "https://github.com/zuohuadong"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214625097?u=be903a8faac56b71fa31119d63368746521c199e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, read-only database explorer for PostgreSQL, MongoDB, MySQL, SQLite, SQL Server, and Redis. Local dashboard with schema visualization.</div>",
-            "url": "https://github.com/Mananwebdev160408/dbportal",
-            "title": "Mananwebdev160408/dbportal: Lightweight, read-only database explorer for PostgreSQL, MongoDB, MySQL, SQLite, SQL Server, and Redis. Local dashboard with schema visualization.",
-            "date_modified": "2026-05-28T09:03:21.000Z",
-            "date_published": "2026-04-09T12:37:13.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/212707253?u=ddaee344f3380623f03a2584141545e562169e65&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>faxnova-backend is a lightweight Node.js fax delivery API that sends documents, tracks delivery status, and processes webhook events using a modern cloud fax provider</div>",
+            "url": "https://github.com/datguy14/faxnova-backend",
+            "title": "datguy14/faxnova-backend: faxnova-backend is a lightweight Node.js fax delivery API that sends documents, tracks delivery status, and processes webhook events using a modern cloud fax provider",
+            "date_modified": "2026-05-28T11:02:05.000Z",
+            "date_published": "2026-02-22T04:39:39.000Z",
             "author": {
-                "name": "Mananwebdev160408",
-                "url": "https://github.com/Mananwebdev160408"
+                "name": "datguy14",
+                "url": "https://github.com/datguy14"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8047795?u=b9e565e61aceee48a0cef67d5b6ea4bfc74d476a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight cross-platform Markdown desktop editor.</div>",
-            "url": "https://github.com/cairenbin/Light_MD",
-            "title": "cairenbin/Light_MD: A lightweight cross-platform Markdown desktop editor.",
-            "date_modified": "2026-05-28T09:03:13.000Z",
-            "date_published": "2026-05-13T05:56:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/151859229?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and accessible React accordion component with smooth animations.</div>",
+            "url": "https://github.com/vuhuuu11/react-accordion",
+            "title": "vuhuuu11/react-accordion: A lightweight and accessible React accordion component with smooth animations.",
+            "date_modified": "2026-05-28T11:01:59.000Z",
+            "date_published": "2025-04-04T12:49:56.000Z",
             "author": {
-                "name": "cairenbin",
-                "url": "https://github.com/cairenbin"
+                "name": "vuhuuu11",
+                "url": "https://github.com/vuhuuu11"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229842917?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Embed Bluesky discussion threads easily on any website with this lightweight, zero-dependency Web Component that offers flexible styling and universal compatibility.</div>",
-            "url": "https://github.com/abhijeetsanghvi-art/bsky-comments",
-            "title": "abhijeetsanghvi-art/bsky-comments: Embed Bluesky discussion threads easily on any website with this lightweight, zero-dependency Web Component that offers flexible styling and universal compatibility.",
-            "date_modified": "2026-05-28T09:03:05.000Z",
-            "date_published": "2026-03-01T10:08:46.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39297556?u=82f7d5f9f335ff2037cb2f45e33ceff7f7b68a03&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted, privacy-first analytics module for AWS. Pairs with @quiet-ly/analytics.</div>",
+            "url": "https://github.com/heyitsmeharv/terraform-aws-quiet-ly",
+            "title": "heyitsmeharv/terraform-aws-quiet-ly: A lightweight, self-hosted, privacy-first analytics module for AWS. Pairs with @quiet-ly/analytics.",
+            "date_modified": "2026-05-28T11:01:49.000Z",
+            "date_published": "2026-04-14T18:39:15.000Z",
             "author": {
-                "name": "abhijeetsanghvi-art",
-                "url": "https://github.com/abhijeetsanghvi-art"
+                "name": "heyitsmeharv",
+                "url": "https://github.com/heyitsmeharv"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52120122?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌙 Simplify evening reflection with a lightweight CLI app that guides daily journaling on presence, gratitude, and personal growth.</div>",
-            "url": "https://github.com/Renixmehra/checkout",
-            "title": "Renixmehra/checkout: 🌙 Simplify evening reflection with a lightweight CLI app that guides daily journaling on presence, gratitude, and personal growth.",
-            "date_modified": "2026-05-28T09:02:31.000Z",
-            "date_published": "2026-02-27T23:51:05.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/56877552?u=3554f956a5215c611f6a2960df9f16c27acfb984&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>vibe-coded app to track time for my todolist, lightweight, easy to use. Inspired from my old company.</div>",
+            "url": "https://github.com/thvinhtruong/activity-detector",
+            "title": "thvinhtruong/activity-detector: vibe-coded app to track time for my todolist, lightweight, easy to use. Inspired from my old company.",
+            "date_modified": "2026-05-28T11:00:59.000Z",
+            "date_published": "2026-05-28T10:53:31.000Z",
             "author": {
-                "name": "Renixmehra",
-                "url": "https://github.com/Renixmehra"
+                "name": "thvinhtruong",
+                "url": "https://github.com/thvinhtruong"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/237636303?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Build and manage universal AI agents with a lightweight, open-source framework tailored for seamless integration and scalability.</div>",
-            "url": "https://github.com/invertebratekinanesthesia779/aios-core",
-            "title": "invertebratekinanesthesia779/aios-core: 🚀 Build and manage universal AI agents with a lightweight, open-source framework tailored for seamless integration and scalability.",
-            "date_modified": "2026-05-28T09:02:00.000Z",
-            "date_published": "2026-02-27T21:42:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48092596?u=90554c29da30b10a5a0d493836387b7b74f6d11a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight API client.</div>",
+            "url": "https://github.com/azeljkovic/lighty",
+            "title": "azeljkovic/lighty: Lightweight API client.",
+            "date_modified": "2026-05-28T10:58:59.000Z",
+            "date_published": "2026-05-23T20:10:15.000Z",
             "author": {
-                "name": "invertebratekinanesthesia779",
-                "url": "https://github.com/invertebratekinanesthesia779"
+                "name": "azeljkovic",
+                "url": "https://github.com/azeljkovic"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/219429812?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌓 Restore the Dim background option on X/Twitter with a lightweight Chrome extension for quick, easy dark blue mode toggle.</div>",
-            "url": "https://github.com/aswar222444/x-dim-mode",
-            "title": "aswar222444/x-dim-mode: 🌓 Restore the Dim background option on X/Twitter with a lightweight Chrome extension for quick, easy dark blue mode toggle.",
-            "date_modified": "2026-05-28T09:02:03.000Z",
-            "date_published": "2026-02-26T22:35:29.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268516410?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AGIeX is a lightweight node infrastructure for powering the AGI Expert network (<a href=\"https://agi.expert\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://agi.expert</a>). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.</div>",
+            "url": "https://github.com/AGI-expert/AGIeX",
+            "title": "AGI-expert/AGIeX: AGIeX is a lightweight node infrastructure for powering the AGI Expert network (https://agi.expert). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.",
+            "date_modified": "2026-05-28T10:58:11.000Z",
+            "date_published": "2026-03-21T10:15:37.000Z",
             "author": {
-                "name": "aswar222444",
-                "url": "https://github.com/aswar222444"
+                "name": "AGI-expert",
+                "url": "https://github.com/AGI-expert"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101540790?u=7bd952f947ead82bbd517d6d12e2fea35d20bb7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is the NanoFly, A self-hosted server control panel. A premium, self-hostable, lightweight PaaS. The open-source alternative to Vercel, Netlify, and Heroku.  Deploy applications, build from Git repositories, and provision databases in seconds on your own hardware. Perfect for VPS, bare-metal servers, and Raspberry Pi.</div>",
-            "url": "https://github.com/tamalmaity-dev/nanofly",
-            "title": "tamalmaity-dev/nanofly: This is the NanoFly, A self-hosted server control panel. A premium, self-hostable, lightweight PaaS. The open-source alternative to Vercel, Netlify, and Heroku.  Deploy applications, build from Git repositories, and provision databases in seconds on your own hardware. Perfect for VPS, bare-metal servers, and Raspberry Pi.",
-            "date_modified": "2026-05-28T09:01:25.000Z",
-            "date_published": "2026-05-19T17:10:26.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38573357?u=120a9a6efa0146a2ee86c38145af99feb2e34ed6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fetcher is a lightweight and developer-friendly REST API client for testing, debugging, and managing HTTP requests.</div>",
+            "url": "https://github.com/MaxiGarcia13/fetcher",
+            "title": "MaxiGarcia13/fetcher: Fetcher is a lightweight and developer-friendly REST API client for testing, debugging, and managing HTTP requests.",
+            "date_modified": "2026-05-28T10:57:20.000Z",
+            "date_published": "2026-05-09T19:56:02.000Z",
             "author": {
-                "name": "tamalmaity-dev",
-                "url": "https://github.com/tamalmaity-dev"
+                "name": "MaxiGarcia13",
+                "url": "https://github.com/MaxiGarcia13"
             }
         }
     ]
