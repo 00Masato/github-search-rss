@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A <code class=\"notranslate\">query_log_tags_format</code> key in a <code class=\"notranslate\">database.yml</code> entry overrides the global <code class=\"notranslate\">config.active_record.query_log_tags_format</code> for connections in that pool, so different databases can emit <code class=\"notranslate\">:legacy</code> or <code class=\"notranslate\">:sqlcommenter</code> formatted comments.</p>\n<div class=\"highlight highlight-source-yaml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"production:\n  primary:\n    database: primary\n  analytics:\n    database: analytics\n    query_log_tags_format: sqlcommenter\"><pre class=\"notranslate\"><span class=\"pl-ent\">production</span>:\n  <span class=\"pl-ent\">primary</span>:\n    <span class=\"pl-ent\">database</span>: <span class=\"pl-s\">primary</span>\n  <span class=\"pl-ent\">analytics</span>:\n    <span class=\"pl-ent\">database</span>: <span class=\"pl-s\">analytics</span>\n    <span class=\"pl-ent\">query_log_tags_format</span>: <span class=\"pl-s\">sqlcommenter</span></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57570",
             "title": "Enable per-pool query log tags formatter",
-            "date_modified": "2026-06-03T21:46:51.000Z",
+            "date_modified": "2026-06-04T07:25:56.000Z",
             "date_published": "2026-06-03T19:59:26.000Z",
             "author": {
                 "name": "hmcguire-shopify",
@@ -91,17 +91,6 @@
             "author": {
                 "name": "Cr1stal",
                 "url": "https://github.com/Cr1stal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18144989?u=5cb438eb8e89783af02b5ec03ac7d30bbf4099ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">ActiveModel::Type::Boolean#serialize</code> mirrors <code class=\"notranslate\">#cast</code> (false-values serialize to <code class=\"notranslate\">false</code>, blank/<code class=\"notranslate\">nil</code> to <code class=\"notranslate\">nil</code>, anything else to <code class=\"notranslate\">true</code>), and <code class=\"notranslate\">#serialize_cast_value</code> passes the already-cast value through unchanged. Only <code class=\"notranslate\">#cast</code> was tested.</p>\n<p dir=\"auto\">This adds coverage for both serialize methods. No production code changes — test-only.</p>",
-            "url": "https://github.com/rails/rails/pull/57549",
-            "title": "Test Type::Boolean#serialize and #serialize_cast_value",
-            "date_modified": "2026-06-02T18:43:07.000Z",
-            "date_published": "2026-06-02T18:42:53.000Z",
-            "author": {
-                "name": "hammadxcm",
-                "url": "https://github.com/hammadxcm"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "yahonda",
                 "url": "https://github.com/yahonda"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/840464?u=dcdc36059164d1a5d7359bc08329a109a25fe7f5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n\n<p dir=\"auto\">This Pull Request has been created because some intermediate query proxies (e.g. PgDog) struggle with very large <code class=\"notranslate\">WHERE IN (...)</code> clauses produced when preloading associations on large record sets. There is currently no way to limit the number of IDs per preloader query without monkey-patching Rails.</p>\n<p dir=\"auto\">Also, some preload queries just timeout because the large number of rows being preloaded.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request changes the <code class=\"notranslate\">LoaderQuery#load_records_for_keys</code> method in <code class=\"notranslate\">ActiveRecord::Associations::Preloader</code> to respect a new <code class=\"notranslate\">ActiveRecord.preload_batch_size</code> setting. When the value is <code class=\"notranslate\">nil</code> (the default), the behavior is identical to before, all keys are loaded in a single query. When set to an integer, the keys are split in batches and one query is issued per batch, with results merged at the end.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"  # config/application.rb\n  config.active_record.preload_batch_size = 1000\"><pre class=\"notranslate\">  <span class=\"pl-c\"># config/application.rb</span>\n  <span class=\"pl-en\">config</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">active_record</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">preload_batch_size</span> <span class=\"pl-c1\">=</span> <span class=\"pl-c1\">1000</span></pre></div>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">In an ideal scenario, the right fix is to avoid loading thousands of records and preloading associations all at once,  but in a large, actively maintained application that is not always immediately feasible. This option provides a safe escape hatch while those query patterns are improved.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/57443",
+            "title": "Add `ActiveRecord.preload_batch_size` to batch preloader `WHERE IN` queries",
+            "date_modified": "2026-05-22T18:27:20.000Z",
+            "date_published": "2026-05-22T18:16:42.000Z",
+            "author": {
+                "name": "frodsan",
+                "url": "https://github.com/frodsan"
             }
         }
     ]
