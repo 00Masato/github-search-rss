@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6375192?u=c259c2e9db46d4bd707c8c5512d8ed652aa6f238&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Summary:</p>\n<ul dir=\"auto\">\n<li>Avoid raising when send_data infers a content type from a filename that File.extname rejects.</li>\n<li>Use the same fallback for send_stream while keeping Content-Disposition filename escaping unchanged.</li>\n<li>Add coverage for null-byte filenames in send_data and send_stream.</li>\n</ul>\n<p dir=\"auto\">Reproduction:</p>\n<ul dir=\"auto\">\n<li>The new send_data regression failed before the fix with ArgumentError: path name contains null byte at actionpack/lib/action_controller/metal/data_streaming.rb:141.</li>\n</ul>\n<p dir=\"auto\">Tests:</p>\n<ul dir=\"auto\">\n<li>cd actionpack &amp;&amp; bin/test test/controller/send_file_test.rb</li>\n<li>cd actionpack &amp;&amp; bin/test test/controller/live_stream_test.rb</li>\n<li>cd actionpack &amp;&amp; bin/test test/dispatch/content_disposition_test.rb</li>\n<li>RUBOCOP_CACHE_ROOT=/private/tmp/rubocop_cache bundle exec rubocop actionpack/lib/action_dispatch/http/content_disposition.rb actionpack/lib/action_controller/metal/data_streaming.rb actionpack/lib/action_controller/metal/live.rb actionpack/test/controller/send_file_test.rb actionpack/test/controller/live_stream_test.rb</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57569",
             "title": "Handle invalid filenames when inferring send file content type",
-            "date_modified": "2026-06-03T17:50:41.000Z",
+            "date_modified": "2026-06-04T08:03:02.000Z",
             "date_published": "2026-06-03T17:50:21.000Z",
             "author": {
                 "name": "afurm",
