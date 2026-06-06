@@ -6,10 +6,10 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Coders was inconsistently documented: the module defining the autoloads was documented but these nested classes had it nodoc.</p>\n<p dir=\"auto\">JSON was updated to be instantiated, so the intention is for it to be used in applications.</p>\n<p dir=\"auto\">SafeCoder is an implementation detail, it shouldn't be documented.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Coders was inconsistently documented: the module defining the autoloads<br>\nwas documented but these nested classes had it nodoc. I think inverting<br>\nit makes more sense.</p>\n<p dir=\"auto\">SafeCoder is an implementation detail, it shouldn't be documented.</p>",
             "url": "https://github.com/rails/rails/pull/57610",
-            "title": "Fix nodoc for Coders::{JSON,YAMLColumn::SafeCoder} [ci skip]",
-            "date_modified": "2026-06-06T16:21:15.000Z",
+            "title": "Fix visibility of ActiveRecord::Coders [ci skip]",
+            "date_modified": "2026-06-06T16:35:31.000Z",
             "date_published": "2026-06-06T16:21:06.000Z",
             "author": {
                 "name": "skipkayhil",
@@ -196,7 +196,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">MariaDB reports 1020 by default under repeatable-read in recent versions; this doesn't <em>prevent</em> that, but means we at least correctly understand the full transaction has been invalidated and avoid further failure on a bad savepoint rollback.</p>\n<p dir=\"auto\">Related <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2687327796\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/53727\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/53727/hovercard\" href=\"https://github.com/rails/rails/issues/53727\">#53727</a>, <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4567576985\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57535\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57535/hovercard\" href=\"https://github.com/rails/rails/pull/57535\">#57535</a></p>",
             "url": "https://github.com/rails/rails/pull/57568",
             "title": "Classify MySQL check-read errors as serialization failures",
-            "date_modified": "2026-06-06T00:52:31.000Z",
+            "date_modified": "2026-06-06T16:52:11.000Z",
             "date_published": "2026-06-03T17:40:54.000Z",
             "author": {
                 "name": "matthewd",
