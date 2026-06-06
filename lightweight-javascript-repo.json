@@ -6,120 +6,10 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66273259?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔄 Convert configuration files seamlessly between YAML, JSON, TOML, XML, INI, and ENV formats with this fast, lightweight tool.</div>",
-            "url": "https://github.com/axouxb6/universal-config-converter",
-            "title": "axouxb6/universal-config-converter: 🔄 Convert configuration files seamlessly between YAML, JSON, TOML, XML, INI, and ENV formats with this fast, lightweight tool.",
-            "date_modified": "2026-06-06T08:00:22.000Z",
-            "date_published": "2026-01-14T23:03:45.000Z",
-            "author": {
-                "name": "axouxb6",
-                "url": "https://github.com/axouxb6"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126843050?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, VS Code-inspired research IDE built with Tauri, with a Julia-first workflow. </div>",
-            "url": "https://github.com/jake-w-liu/Lyceum",
-            "title": "jake-w-liu/Lyceum: A lightweight, VS Code-inspired research IDE built with Tauri, with a Julia-first workflow. ",
-            "date_modified": "2026-06-06T08:00:21.000Z",
-            "date_published": "2026-06-03T16:24:18.000Z",
-            "author": {
-                "name": "jake-w-liu",
-                "url": "https://github.com/jake-w-liu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63948511?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Build dynamic web applications effortlessly with Alphabet, a lightweight JavaScript/TypeScript framework featuring reactive DOM and an optimized utility-first CSS.</div>",
-            "url": "https://github.com/DarkException22/alphabet",
-            "title": "DarkException22/alphabet: 🌟 Build dynamic web applications effortlessly with Alphabet, a lightweight JavaScript/TypeScript framework featuring reactive DOM and an optimized utility-first CSS.",
-            "date_modified": "2026-06-06T08:00:19.000Z",
-            "date_published": "2026-01-15T20:48:04.000Z",
-            "author": {
-                "name": "DarkException22",
-                "url": "https://github.com/DarkException22"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/202606558?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔄 Run multiple spinners in Node.js effortlessly with Spindle, a lightweight CLI tool that ensures clear, simultaneous output without visual clutter.</div>",
-            "url": "https://github.com/cmustardo100/spindle",
-            "title": "cmustardo100/spindle: 🔄 Run multiple spinners in Node.js effortlessly with Spindle, a lightweight CLI tool that ensures clear, simultaneous output without visual clutter.",
-            "date_modified": "2026-06-06T08:00:06.000Z",
-            "date_published": "2025-07-30T15:48:25.000Z",
-            "author": {
-                "name": "cmustardo100",
-                "url": "https://github.com/cmustardo100"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/239757711?u=1ea671d184add6e650f2433a6f77db3874917e05&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight solution to improve OTP generation, distribution using RTS and verification. Made during a hackaton hosted by smsmode and code4sud in june 2026. Made by Nicolas DUHAMEL, Hugo BELALOUI, Nelson GRAC-AUBERT, Zied ROUROU and Mounir MEROUANE.</div>",
-            "url": "https://github.com/nelson-grac-aubert/hackaton_smsmode_groupe2",
-            "title": "nelson-grac-aubert/hackaton_smsmode_groupe2: A lightweight solution to improve OTP generation, distribution using RTS and verification. Made during a hackaton hosted by smsmode and code4sud in june 2026. Made by Nicolas DUHAMEL, Hugo BELALOUI, Nelson GRAC-AUBERT, Zied ROUROU and Mounir MEROUANE.",
-            "date_modified": "2026-06-06T08:00:02.000Z",
-            "date_published": "2026-06-03T11:40:59.000Z",
-            "author": {
-                "name": "nelson-grac-aubert",
-                "url": "https://github.com/nelson-grac-aubert"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111230795?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📊 Analyze *Uma Musume Pretty Derby* tournament stats with a lightweight dashboard that visualizes pick rates, win rates, and tier lists for community events.</div>",
-            "url": "https://github.com/ryanbotmd/racc-open-stats",
-            "title": "ryanbotmd/racc-open-stats: 📊 Analyze *Uma Musume Pretty Derby* tournament stats with a lightweight dashboard that visualizes pick rates, win rates, and tier lists for community events.",
-            "date_modified": "2026-06-06T07:59:40.000Z",
-            "date_published": "2026-01-14T06:50:41.000Z",
-            "author": {
-                "name": "ryanbotmd",
-                "url": "https://github.com/ryanbotmd"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58785688?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍪 Extract browser cookies effortlessly with Sweet Cookie, a lightweight tool that prioritizes inline access and minimizes setup for local development.</div>",
-            "url": "https://github.com/suvayan1111/sweet-cookie",
-            "title": "suvayan1111/sweet-cookie: 🍪 Extract browser cookies effortlessly with Sweet Cookie, a lightweight tool that prioritizes inline access and minimizes setup for local development.",
-            "date_modified": "2026-06-06T07:59:31.000Z",
-            "date_published": "2026-01-14T02:24:37.000Z",
-            "author": {
-                "name": "suvayan1111",
-                "url": "https://github.com/suvayan1111"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199811817?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📸 Capture video screenshots and generate GIFs effortlessly with this lightweight API built on Elysia and powered by FFmpeg.</div>",
-            "url": "https://github.com/rocky18313/episodes",
-            "title": "rocky18313/episodes: 📸 Capture video screenshots and generate GIFs effortlessly with this lightweight API built on Elysia and powered by FFmpeg.",
-            "date_modified": "2026-06-06T07:59:18.000Z",
-            "date_published": "2026-01-12T04:43:00.000Z",
-            "author": {
-                "name": "rocky18313",
-                "url": "https://github.com/rocky18313"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/143774385?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
-            "url": "https://github.com/Phrog1st/resafe",
-            "title": "Phrog1st/resafe",
-            "date_modified": "2026-06-06T07:58:46.000Z",
-            "date_published": "2023-09-01T03:49:19.000Z",
-            "author": {
-                "name": "Phrog1st",
-                "url": "https://github.com/Phrog1st"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/81507687?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>HSS-CE is a lightweight codebase indexer and Model Context Protocol (MCP) server designed to optimize context retrieval for AI coding assistants</div>",
-            "url": "https://github.com/Phuong38/hss-ce",
-            "title": "Phuong38/hss-ce: HSS-CE is a lightweight codebase indexer and Model Context Protocol (MCP) server designed to optimize context retrieval for AI coding assistants",
-            "date_modified": "2026-06-06T07:58:29.000Z",
-            "date_published": "2026-05-24T12:40:26.000Z",
-            "author": {
-                "name": "Phuong38",
-                "url": "https://github.com/Phuong38"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-06-06T07:58:21.000Z",
+            "date_modified": "2026-06-06T09:38:22.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -127,102 +17,212 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/222572584?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Build a lightweight Linux distribution using JavaScript and a touch of C for fun command-line exploration.</div>",
-            "url": "https://github.com/rosehome2/ultimate-linux",
-            "title": "rosehome2/ultimate-linux: 🚀 Build a lightweight Linux distribution using JavaScript and a touch of C for fun command-line exploration.",
-            "date_modified": "2026-06-06T07:57:49.000Z",
-            "date_published": "2025-07-24T07:09:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57059613?u=f228005dea38093faa13afb4528ce29a35d09717&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight encrypted password manager — Electron + Vanilla JS</div>",
+            "url": "https://github.com/lvivvde/PassVault",
+            "title": "lvivvde/PassVault: Lightweight encrypted password manager — Electron + Vanilla JS",
+            "date_modified": "2026-06-06T09:36:57.000Z",
+            "date_published": "2026-06-06T04:56:51.000Z",
             "author": {
-                "name": "rosehome2",
-                "url": "https://github.com/rosehome2"
+                "name": "lvivvde",
+                "url": "https://github.com/lvivvde"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110214572?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠 Build a lightweight client-server system using Node.js and TypeScript, demonstrating structured communication with a focus on clarity and simplicity.</div>",
-            "url": "https://github.com/Togavanny/MCP-Client-Server-Project-using-NodeJS",
-            "title": "Togavanny/MCP-Client-Server-Project-using-NodeJS: 🛠 Build a lightweight client-server system using Node.js and TypeScript, demonstrating structured communication with a focus on clarity and simplicity.",
-            "date_modified": "2026-06-06T07:57:26.000Z",
-            "date_published": "2026-01-10T02:28:45.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/151859229?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and accessible React accordion component with smooth animations.</div>",
+            "url": "https://github.com/vuhuuu11/react-accordion",
+            "title": "vuhuuu11/react-accordion: A lightweight and accessible React accordion component with smooth animations.",
+            "date_modified": "2026-06-06T09:35:51.000Z",
+            "date_published": "2025-04-04T12:49:56.000Z",
             "author": {
-                "name": "Togavanny",
-                "url": "https://github.com/Togavanny"
+                "name": "vuhuuu11",
+                "url": "https://github.com/vuhuuu11"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69026999?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌥️ Deploy apps effortlessly on Proxmox with NimbusLab, a lightweight PaaS that automates provisioning and deployment from GitHub to VMs and containers.</div>",
-            "url": "https://github.com/dynastyteng/NimbusLab-PaaS",
-            "title": "dynastyteng/NimbusLab-PaaS: 🌥️ Deploy apps effortlessly on Proxmox with NimbusLab, a lightweight PaaS that automates provisioning and deployment from GitHub to VMs and containers.",
-            "date_modified": "2026-06-06T07:57:25.000Z",
-            "date_published": "2026-01-10T01:59:45.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29403246?u=a6b846f0eaa812c75e15fb0532f9720050fc2a05&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight WeChat Mini-Program that tracks 30-day weather to dynamically generate smart gear packing lists for hikers.</div>",
+            "url": "https://github.com/TheBeginnerMeng/TrailReady",
+            "title": "TheBeginnerMeng/TrailReady: A lightweight WeChat Mini-Program that tracks 30-day weather to dynamically generate smart gear packing lists for hikers.",
+            "date_modified": "2026-06-06T09:35:35.000Z",
+            "date_published": "2026-06-06T05:22:03.000Z",
             "author": {
-                "name": "dynastyteng",
-                "url": "https://github.com/dynastyteng"
+                "name": "TheBeginnerMeng",
+                "url": "https://github.com/TheBeginnerMeng"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45950903?u=77abb584b96db02f4b0408cde68fae5ee530d3c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight production workflow system for small manufacturing companies. Connects orders with production batches, tracks status, time, and bottlenecks. Not an ERP. Not a full MES.</div>",
-            "url": "https://github.com/vapl/production-workflow-system",
-            "title": "vapl/production-workflow-system: Lightweight production workflow system for small manufacturing companies. Connects orders with production batches, tracks status, time, and bottlenecks. Not an ERP. Not a full MES.",
-            "date_modified": "2026-06-06T07:57:04.000Z",
-            "date_published": "2026-01-21T19:57:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97969202?u=e63f95130e235fc24e712ddfc70b91454b8a2a51&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A browser-based tool for lightweight scientific annotating and measuring 3D models.</div>",
+            "url": "https://github.com/NilsSchnorr/MeshNotes",
+            "title": "NilsSchnorr/MeshNotes: A browser-based tool for lightweight scientific annotating and measuring 3D models.",
+            "date_modified": "2026-06-06T09:33:41.000Z",
+            "date_published": "2026-01-12T09:20:53.000Z",
             "author": {
-                "name": "vapl",
-                "url": "https://github.com/vapl"
+                "name": "NilsSchnorr",
+                "url": "https://github.com/NilsSchnorr"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/189768266?u=7cd65b87570f9c9dd1914983788109fbc9895d36&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, queue‑driven Node.js backend that detects media from public pages, downloads original streams with yt‑dlp, performs format conversions with FFmpeg, and exposes job APIs for streaming or retrieving results. Designed for local development (Docker + Docker Compose), scalable workers and safe.</div>",
-            "url": "https://github.com/SumitInTech5/All_Video_Downloader_Backend",
-            "title": "SumitInTech5/All_Video_Downloader_Backend: A lightweight, queue‑driven Node.js backend that detects media from public pages, downloads original streams with yt‑dlp, performs format conversions with FFmpeg, and exposes job APIs for streaming or retrieving results. Designed for local development (Docker + Docker Compose), scalable workers and safe.",
-            "date_modified": "2026-06-06T07:57:01.000Z",
-            "date_published": "2026-06-06T05:05:00.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77155700?u=bd4693205873c9c641175fdd56f9a81b83af1a7a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ChatForge is a lightweight, embeddable AI chatbot platform built for local and small businesses. Powered by LangChain and any OpenAI-compatible API, it delivers streaming responses, per-session memory, and a smart fallback engine — all configurable via a single `.env` file and deployable with one `&lt;script&gt;` tag.</div>",
+            "url": "https://github.com/AshminDhungana/ChatForge",
+            "title": "AshminDhungana/ChatForge: ChatForge is a lightweight, embeddable AI chatbot platform built for local and small businesses. Powered by LangChain and any OpenAI-compatible API, it delivers streaming responses, per-session memory, and a smart fallback engine — all configurable via a single `.env` file and deployable with one `<script>` tag.",
+            "date_modified": "2026-06-06T09:33:14.000Z",
+            "date_published": "2026-06-05T06:36:02.000Z",
             "author": {
-                "name": "SumitInTech5",
-                "url": "https://github.com/SumitInTech5"
+                "name": "AshminDhungana",
+                "url": "https://github.com/AshminDhungana"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73334865?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Optimize your crypto trading with FlashScalper, a tool for multi-indicator analysis, risk management, and adaptive strategies.</div>",
-            "url": "https://github.com/riyad242514/flash-scalper",
-            "title": "riyad242514/flash-scalper: 🚀 Optimize your crypto trading with FlashScalper, a tool for multi-indicator analysis, risk management, and adaptive strategies.",
-            "date_modified": "2026-06-06T07:56:59.000Z",
-            "date_published": "2026-01-09T03:41:32.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42098025?u=055076b117c4a8b4c801c21124018f55ffaee35a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, browser-based prompt management tool for AI engineers. Save, organize, rate, and annotate your AI prompts — no backend required.</div>",
+            "url": "https://github.com/bharathkumar-12/prompt-vault",
+            "title": "bharathkumar-12/prompt-vault: A lightweight, browser-based prompt management tool for AI engineers. Save, organize, rate, and annotate your AI prompts — no backend required.",
+            "date_modified": "2026-06-06T09:33:10.000Z",
+            "date_published": "2026-02-22T12:41:14.000Z",
             "author": {
-                "name": "riyad242514",
-                "url": "https://github.com/riyad242514"
+                "name": "bharathkumar-12",
+                "url": "https://github.com/bharathkumar-12"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153501988?u=4535624cd7092c4b2e09209d7b12ac596424068a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight SaaS-style screenshot translation client &amp; N100 backend server inspired by PixPin.</div>",
-            "url": "https://github.com/yoousn/screenshot-translator",
-            "title": "yoousn/screenshot-translator: A lightweight SaaS-style screenshot translation client & N100 backend server inspired by PixPin.",
-            "date_modified": "2026-06-06T07:56:58.000Z",
-            "date_published": "2026-05-26T04:18:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6293543?u=79d709137028800cfd6ad73e7242b91001aca4f7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight reactive state management library</div>",
+            "url": "https://github.com/baveg/fluxio",
+            "title": "baveg/fluxio: Lightweight reactive state management library",
+            "date_modified": "2026-06-06T09:30:50.000Z",
+            "date_published": "2025-10-23T10:29:18.000Z",
             "author": {
-                "name": "yoousn",
-                "url": "https://github.com/yoousn"
+                "name": "baveg",
+                "url": "https://github.com/baveg"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/186774084?u=73531fa598b3ba26d044a458af196ee473081d03&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bichon – A lightweight, high-performance Rust email archiver with WebUI</div>",
-            "url": "https://github.com/rustmailer/bichon",
-            "title": "rustmailer/bichon: Bichon – A lightweight, high-performance Rust email archiver with WebUI",
-            "date_modified": "2026-06-06T07:56:51.000Z",
-            "date_published": "2025-11-18T18:02:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141863638?u=5bbe22da8eeb0864059a7af85b82496ac54ec40c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a lightweight gate ae paper prep tracker built as a local-first browser app</div>",
+            "url": "https://github.com/kayspace/gate-ae-prep",
+            "title": "kayspace/gate-ae-prep: a lightweight gate ae paper prep tracker built as a local-first browser app",
+            "date_modified": "2026-06-06T09:30:44.000Z",
+            "date_published": "2026-05-17T12:08:08.000Z",
             "author": {
-                "name": "rustmailer",
-                "url": "https://github.com/rustmailer"
+                "name": "kayspace",
+                "url": "https://github.com/kayspace"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/196265932?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔄 Automate and manage remote server backups via SSH with BackApp, a lightweight Go + React application featuring an intuitive web interface.</div>",
-            "url": "https://github.com/Royer234/BackApp",
-            "title": "Royer234/BackApp: 🔄 Automate and manage remote server backups via SSH with BackApp, a lightweight Go + React application featuring an intuitive web interface.",
-            "date_modified": "2026-06-06T07:56:42.000Z",
-            "date_published": "2026-01-08T21:51:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/152054514?u=f8a8bf856e45a29d77155f3c8e30f260687861da&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>WorkZen — Employee Management DashboardWorkZen is a role-based employee management system built with React and Tailwind CSS. It provides a clean admin interface to manage employees, track tasks, and handle leave requests — all powered by localStorage for lightweight persistence.</div>",
+            "url": "https://github.com/vansh-sharma-eng/Workzen",
+            "title": "vansh-sharma-eng/Workzen: WorkZen — Employee Management DashboardWorkZen is a role-based employee management system built with React and Tailwind CSS. It provides a clean admin interface to manage employees, track tasks, and handle leave requests — all powered by localStorage for lightweight persistence.",
+            "date_modified": "2026-06-06T09:30:33.000Z",
+            "date_published": "2026-05-09T08:10:22.000Z",
             "author": {
-                "name": "Royer234",
-                "url": "https://github.com/Royer234"
+                "name": "vansh-sharma-eng",
+                "url": "https://github.com/vansh-sharma-eng"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93391458?u=2616a63c57e2605f65476b354e8c205987171c19&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AutoCommitter is a lightweight automation project that maintains consistent GitHub contributions using scheduled workflows.</div>",
+            "url": "https://github.com/DragAditya/GithubAutomation",
+            "title": "DragAditya/GithubAutomation: AutoCommitter is a lightweight automation project that maintains consistent GitHub contributions using scheduled workflows.",
+            "date_modified": "2026-06-06T09:30:27.000Z",
+            "date_published": "2026-01-12T17:49:49.000Z",
+            "author": {
+                "name": "DragAditya",
+                "url": "https://github.com/DragAditya"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140398891?u=5bd6b01ada0be9df798825f51bce81b469f9ddc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Image Downloader Extension – A lightweight browser extension built with HTML, CSS, and JavaScript that allows users to quickly detect, preview, and download images from any webpage. Features a clean interface, fast image extraction, and one-click downloads for an improved browsing experience.</div>",
+            "url": "https://github.com/muazkhan72/Image-Downloader-Extension",
+            "title": "muazkhan72/Image-Downloader-Extension: Image Downloader Extension – A lightweight browser extension built with HTML, CSS, and JavaScript that allows users to quickly detect, preview, and download images from any webpage. Features a clean interface, fast image extraction, and one-click downloads for an improved browsing experience.",
+            "date_modified": "2026-06-06T09:33:38.000Z",
+            "date_published": "2026-06-06T09:06:20.000Z",
+            "author": {
+                "name": "muazkhan72",
+                "url": "https://github.com/muazkhan72"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4183824?u=010c0664b3b7393995b647890e8d5616b0fc6f45&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple and lightweight proxy for seamless integration with multiple STT providers including Whisper.cpp.</div>",
+            "url": "https://github.com/derogab/stt-proxy",
+            "title": "derogab/stt-proxy: A simple and lightweight proxy for seamless integration with multiple STT providers including Whisper.cpp.",
+            "date_modified": "2026-06-06T09:25:51.000Z",
+            "date_published": "2026-01-17T20:19:24.000Z",
+            "author": {
+                "name": "derogab",
+                "url": "https://github.com/derogab"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/290769036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Chrome extension that adds a one-click 2x playback speed toggle for YouTube videos.</div>",
+            "url": "https://github.com/satyamkumar0401/double-speed-toggle-for-youtube",
+            "title": "satyamkumar0401/double-speed-toggle-for-youtube: A lightweight Chrome extension that adds a one-click 2x playback speed toggle for YouTube videos.",
+            "date_modified": "2026-06-06T09:24:49.000Z",
+            "date_published": "2026-06-06T08:21:36.000Z",
+            "author": {
+                "name": "satyamkumar0401",
+                "url": "https://github.com/satyamkumar0401"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/56589824?u=7fb7b513bfcf9b0e73e23a056b27c8ae900617a2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Open-source community chat and voice with hosted access, self-hosting, and ultra-lightweight desktop apps.</div>",
+            "url": "https://github.com/emircanagac/voxpery",
+            "title": "emircanagac/voxpery: Open-source community chat and voice with hosted access, self-hosting, and ultra-lightweight desktop apps.",
+            "date_modified": "2026-06-06T09:23:09.000Z",
+            "date_published": "2026-02-13T17:32:13.000Z",
+            "author": {
+                "name": "emircanagac",
+                "url": "https://github.com/emircanagac"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67702761?u=fa8d2b42de343f406c191753fda05c09d6f7da3f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, secure personal financial ledger and performance analytics panel powered by Next.js and Firebase Firestore.</div>",
+            "url": "https://github.com/codewiththura/ledgerflow-dashboard",
+            "title": "codewiththura/ledgerflow-dashboard: A lightweight, secure personal financial ledger and performance analytics panel powered by Next.js and Firebase Firestore.",
+            "date_modified": "2026-06-06T09:22:04.000Z",
+            "date_published": "2026-05-26T08:16:09.000Z",
+            "author": {
+                "name": "codewiththura",
+                "url": "https://github.com/codewiththura"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/291111805?u=1082ec254d12b586298ae986dcfa9c6f9288a8fa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A sleek, lightweight desktop music player built for a seamless listening experience.</div>",
+            "url": "https://github.com/OrbitMS/AuraPlay",
+            "title": "OrbitMS/AuraPlay: A sleek, lightweight desktop music player built for a seamless listening experience.",
+            "date_modified": "2026-06-06T09:21:27.000Z",
+            "date_published": "2026-06-05T17:41:32.000Z",
+            "author": {
+                "name": "OrbitMS",
+                "url": "https://github.com/OrbitMS"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/106921238?u=89ad1943aa8a3a984548bdd9450f2bcded16bfdf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ReachFlow is a lightweight outreach CRM designed for developers, job seekers, and network builders. It helps you organize recruiter contacts, track conversations, and send personalized emails through Gmail, eliminating messy spreadsheets and repetitive outreach.</div>",
+            "url": "https://github.com/jayyprajapati/ReachFlow",
+            "title": "jayyprajapati/ReachFlow: ReachFlow is a lightweight outreach CRM designed for developers, job seekers, and network builders. It helps you organize recruiter contacts, track conversations, and send personalized emails through Gmail, eliminating messy spreadsheets and repetitive outreach.",
+            "date_modified": "2026-06-06T09:21:25.000Z",
+            "date_published": "2026-02-16T18:36:53.000Z",
+            "author": {
+                "name": "jayyprajapati",
+                "url": "https://github.com/jayyprajapati"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168121190?u=5150be6563491edfa604b27a343c99fff9a6db11&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript game core library for building games and engines.</div>",
+            "url": "https://github.com/Soubhik1000/kernelplay",
+            "title": "Soubhik1000/kernelplay: A lightweight JavaScript game core library for building games and engines.",
+            "date_modified": "2026-06-06T09:21:03.000Z",
+            "date_published": "2025-12-27T16:53:14.000Z",
+            "author": {
+                "name": "Soubhik1000",
+                "url": "https://github.com/Soubhik1000"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/290866980?u=f459571eb35256884c90e26032c15f31db9ffb4a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Chrome extension to control audio volume globally and per website. Easily customize volume levels for each domain with a clean and simple interface.</div>",
+            "url": "https://github.com/Brokolow/domain-volume-master",
+            "title": "Brokolow/domain-volume-master: A lightweight Chrome extension to control audio volume globally and per website. Easily customize volume levels for each domain with a clean and simple interface.",
+            "date_modified": "2026-06-06T09:20:58.000Z",
+            "date_published": "2026-06-04T22:29:41.000Z",
+            "author": {
+                "name": "Brokolow",
+                "url": "https://github.com/Brokolow"
             }
         }
     ]
