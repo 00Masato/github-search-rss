@@ -6,10 +6,43 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1886843?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript library that enhances your SQL workflow by combining raw SQL with targeted type safety and schema validation</div>",
+            "url": "https://github.com/a2lix/schemql",
+            "title": "a2lix/schemql: A lightweight TypeScript library that enhances your SQL workflow by combining raw SQL with targeted type safety and schema validation",
+            "date_modified": "2026-06-10T16:59:59.000Z",
+            "date_published": "2024-10-15T17:00:25.000Z",
+            "author": {
+                "name": "a2lix",
+                "url": "https://github.com/a2lix"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18489846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lit is a simple library for building fast, lightweight web components.</div>",
+            "url": "https://github.com/lit/lit",
+            "title": "lit/lit: Lit is a simple library for building fast, lightweight web components.",
+            "date_modified": "2026-06-10T16:59:43.000Z",
+            "date_published": "2017-06-29T16:27:16.000Z",
+            "author": {
+                "name": "lit",
+                "url": "https://github.com/lit"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/207343906?u=e8d856c5cd8d622e158481d6240b739f49f8290a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Vite + TypeScript frontend starter — accessible, responsive, test-ready</div>",
+            "url": "https://github.com/kate8382/frontend-starter",
+            "title": "kate8382/frontend-starter: Lightweight Vite + TypeScript frontend starter — accessible, responsive, test-ready",
+            "date_modified": "2026-06-10T16:59:08.000Z",
+            "date_published": "2026-06-07T16:11:22.000Z",
+            "author": {
+                "name": "kate8382",
+                "url": "https://github.com/kate8382"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214405054?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight management app for small gardening companies.</div>",
             "url": "https://github.com/hipietro/greenwork_manager",
             "title": "hipietro/greenwork_manager: A lightweight management app for small gardening companies.",
-            "date_modified": "2026-06-10T14:57:18.000Z",
+            "date_modified": "2026-06-10T16:58:31.000Z",
             "date_published": "2026-06-09T21:46:59.000Z",
             "author": {
                 "name": "hipietro",
@@ -17,212 +50,179 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277708346?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cross-platform database client for developers. Supports MySQL, PostgreSQL and SQLite. Hackable with plugins. Built for speed, security, and aesthetics.</div>",
-            "url": "https://github.com/TabularisDB/tabularis",
-            "title": "TabularisDB/tabularis: A lightweight, cross-platform database client for developers. Supports MySQL, PostgreSQL and SQLite. Hackable with plugins. Built for speed, security, and aesthetics.",
-            "date_modified": "2026-06-10T14:59:33.000Z",
-            "date_published": "2026-01-26T21:48:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
+            "url": "https://github.com/xsrazy/qr-code-generator",
+            "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
+            "date_modified": "2026-06-10T16:58:27.000Z",
+            "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
-                "name": "TabularisDB",
-                "url": "https://github.com/TabularisDB"
+                "name": "xsrazy",
+                "url": "https://github.com/xsrazy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11887183?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A powerful and lightweight inversion of control container for JavaScript &amp; Node.js apps powered by TypeScript.</div>",
-            "url": "https://github.com/inversify/monorepo",
-            "title": "inversify/monorepo: A powerful and lightweight inversion of control container for JavaScript & Node.js apps powered by TypeScript.",
-            "date_modified": "2026-06-10T14:58:14.000Z",
-            "date_published": "2024-10-13T10:20:33.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/244449675?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Compute substrate for AI agents: lightweight enough to live on your laptop, elastic enough to scale into the cloud and unleash unlimited resources.</div>",
+            "url": "https://github.com/boxlite-ai/boxlite",
+            "title": "boxlite-ai/boxlite: Compute substrate for AI agents: lightweight enough to live on your laptop, elastic enough to scale into the cloud and unleash unlimited resources.",
+            "date_modified": "2026-06-10T16:56:40.000Z",
+            "date_published": "2025-12-07T22:49:32.000Z",
             "author": {
-                "name": "inversify",
-                "url": "https://github.com/inversify"
+                "name": "boxlite-ai",
+                "url": "https://github.com/boxlite-ai"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132170675?u=bb5975a6a8202363c088ac1e8e0675038adddaa5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, beginner-friendly, tree-walking interpreted programming language built completely from scratch.</div>",
-            "url": "https://github.com/fizzexual/Sprout",
-            "title": "fizzexual/Sprout: A lightweight, beginner-friendly, tree-walking interpreted programming language built completely from scratch.",
-            "date_modified": "2026-06-10T14:47:20.000Z",
-            "date_published": "2026-06-06T22:12:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107278083?u=d43fbb0a02983bc120b50a3b1afaff5d73fc9272&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, responsive web application built with PHP and MySQL designed to streamline restaurant table reservations and management.</div>",
+            "url": "https://github.com/jayant-01-aws/Restaurant-Table-Booking-System-PHP",
+            "title": "jayant-01-aws/Restaurant-Table-Booking-System-PHP: A lightweight, responsive web application built with PHP and MySQL designed to streamline restaurant table reservations and management.",
+            "date_modified": "2026-06-10T16:57:48.000Z",
+            "date_published": "2026-06-10T16:20:36.000Z",
             "author": {
-                "name": "fizzexual",
-                "url": "https://github.com/fizzexual"
+                "name": "jayant-01-aws",
+                "url": "https://github.com/jayant-01-aws"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97479186?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.</div>",
-            "url": "https://github.com/descope/auth-hosting",
-            "title": "descope/auth-hosting: A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.",
-            "date_modified": "2026-06-10T14:59:11.000Z",
-            "date_published": "2023-06-04T12:07:44.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63074935?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PROJECT DESCRIPTION: Open-source blockchain indexer for Android/Termux. Enables lightweight syncing and API serving for Pearl on-chain data without dedicated servers. Includes Cloudflare tunneling and mobile-optimized deployment scripts.</div>",
+            "url": "https://github.com/rizkir443/pearl-indexer",
+            "title": "rizkir443/pearl-indexer: PROJECT DESCRIPTION: Open-source blockchain indexer for Android/Termux. Enables lightweight syncing and API serving for Pearl on-chain data without dedicated servers. Includes Cloudflare tunneling and mobile-optimized deployment scripts.",
+            "date_modified": "2026-06-10T16:54:56.000Z",
+            "date_published": "2026-06-10T16:06:00.000Z",
             "author": {
-                "name": "descope",
-                "url": "https://github.com/descope"
+                "name": "rizkir443",
+                "url": "https://github.com/rizkir443"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/156002263?u=62a7ab1eb22ad7d4dcb6927a0d2dc2bf2c1a8d65&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and responsive Student Scholarship Score Calculator built with HTML, CSS (Flexbox), and vanilla JavaScript. Helps university students dynamically calculate their weighted GPA/rating score for the semester to predict financial grants.</div>",
-            "url": "https://github.com/Zeonbtw/PolyGrade",
-            "title": "Zeonbtw/PolyGrade: A lightweight and responsive Student Scholarship Score Calculator built with HTML, CSS (Flexbox), and vanilla JavaScript. Helps university students dynamically calculate their weighted GPA/rating score for the semester to predict financial grants.",
-            "date_modified": "2026-06-10T15:00:56.000Z",
-            "date_published": "2026-06-06T14:24:20.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101777018?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Create modern, lightweight, type-safe toast notifications for Angular with ease using ng-toastly, designed for smooth integration and accessibility.</div>",
+            "url": "https://github.com/JEpstein00/ng-toastly",
+            "title": "JEpstein00/ng-toastly: 🌟 Create modern, lightweight, type-safe toast notifications for Angular with ease using ng-toastly, designed for smooth integration and accessibility.",
+            "date_modified": "2026-06-10T16:59:02.000Z",
+            "date_published": "2026-01-28T01:16:11.000Z",
             "author": {
-                "name": "Zeonbtw",
-                "url": "https://github.com/Zeonbtw"
+                "name": "JEpstein00",
+                "url": "https://github.com/JEpstein00"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/109103937?u=1d9835649d3a7528bd987e5c258c0b843fa50f6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight team AI hub that turns shared skills, agents, SOPs, and playbooks into portable, tool-specific exports for Codex, Copilot, ChatGPT, and beyond.</div>",
-            "url": "https://github.com/ChaseBianchiSlalom/hub",
-            "title": "ChaseBianchiSlalom/hub: A lightweight team AI hub that turns shared skills, agents, SOPs, and playbooks into portable, tool-specific exports for Codex, Copilot, ChatGPT, and beyond.",
-            "date_modified": "2026-06-10T15:00:12.000Z",
-            "date_published": "2026-05-14T20:19:21.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176389763?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Discover a fast and lightweight anime data and streaming API, providing easy access to search, details, and episodes from kuudere.to.</div>",
+            "url": "https://github.com/Philiszszsss/kuudere-api",
+            "title": "Philiszszsss/kuudere-api: 🚀 Discover a fast and lightweight anime data and streaming API, providing easy access to search, details, and episodes from kuudere.to.",
+            "date_modified": "2026-06-10T16:53:45.000Z",
+            "date_published": "2026-01-26T22:12:38.000Z",
             "author": {
-                "name": "ChaseBianchiSlalom",
-                "url": "https://github.com/ChaseBianchiSlalom"
+                "name": "Philiszszsss",
+                "url": "https://github.com/Philiszszsss"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/599137?u=4fe2466eb88a8673872a1c4d941b098603c7fed8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>GraphStation is a lightweight, non-linear photo browser and gallery designed specifically for Synology NAS users</div>",
-            "url": "https://github.com/thtesche/graphstation",
-            "title": "thtesche/graphstation: GraphStation is a lightweight, non-linear photo browser and gallery designed specifically for Synology NAS users",
-            "date_modified": "2026-06-10T14:57:58.000Z",
-            "date_published": "2026-05-14T15:47:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/70984752?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Streamline IP monitoring with IPcheck-workers, a high-performance, lightweight toolbox for IP analysis, risk detection, and latency testing.</div>",
+            "url": "https://github.com/Tusked/IPcheck-workers",
+            "title": "Tusked/IPcheck-workers: 🌐 Streamline IP monitoring with IPcheck-workers, a high-performance, lightweight toolbox for IP analysis, risk detection, and latency testing.",
+            "date_modified": "2026-06-10T16:54:32.000Z",
+            "date_published": "2026-01-26T20:17:09.000Z",
             "author": {
-                "name": "thtesche",
-                "url": "https://github.com/thtesche"
+                "name": "Tusked",
+                "url": "https://github.com/Tusked"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/980038?u=06b1e0930c9930b9ee3565ff1239bc1a79e7713e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library for secure cross-window communication. Features automatic connection handshakes, heartbeat-based health monitoring, JSON Schema validation, and full TypeScript support.</div>",
-            "url": "https://github.com/WebDev-Guy/parley-js",
-            "title": "WebDev-Guy/parley-js: A lightweight library for secure cross-window communication. Features automatic connection handshakes, heartbeat-based health monitoring, JSON Schema validation, and full TypeScript support.",
-            "date_modified": "2026-06-10T14:59:31.000Z",
-            "date_published": "2025-12-03T02:56:18.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110557696?u=63867da72831bff07527b2e5e1dd33241ade7821&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, modern EPUB reader focused on a clean reading experience. Import, organize, and read your books with customizable themes, typography, and reading preferences.</div>",
+            "url": "https://github.com/Ashxarya/Inkwell",
+            "title": "Ashxarya/Inkwell: A lightweight, modern EPUB reader focused on a clean reading experience. Import, organize, and read your books with customizable themes, typography, and reading preferences.",
+            "date_modified": "2026-06-10T16:56:38.000Z",
+            "date_published": "2026-06-10T16:15:18.000Z",
             "author": {
-                "name": "WebDev-Guy",
-                "url": "https://github.com/WebDev-Guy"
+                "name": "Ashxarya",
+                "url": "https://github.com/Ashxarya"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/70280464?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Tom Select is a lightweight (~16kb gzipped) hybrid of a textbox and select box. Forked from selectize.js to provide a framework agnostic autocomplete widget with native-feeling keyboard navigation. Useful for tagging, contact lists, etc.</div>",
-            "url": "https://github.com/orchidjs/tom-select",
-            "title": "orchidjs/tom-select: Tom Select is a lightweight (~16kb gzipped) hybrid of a textbox and select box. Forked from selectize.js to provide a framework agnostic autocomplete widget with native-feeling keyboard navigation. Useful for tagging, contact lists, etc.",
-            "date_modified": "2026-06-10T14:58:40.000Z",
-            "date_published": "2020-08-13T16:48:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277028901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The complete toolkit for building AI agents in JavaScript. Lightweight core, React &amp; Terminal UIs, autonomous runtime, tools, skills, memory, RAG and observability. Plug-and-play from chat UI to full agents.</div>",
+            "url": "https://github.com/AgentsKit-io/agentskit",
+            "title": "AgentsKit-io/agentskit: The complete toolkit for building AI agents in JavaScript. Lightweight core, React & Terminal UIs, autonomous runtime, tools, skills, memory, RAG and observability. Plug-and-play from chat UI to full agents.",
+            "date_modified": "2026-06-10T16:53:48.000Z",
+            "date_published": "2026-04-02T23:05:48.000Z",
             "author": {
-                "name": "orchidjs",
-                "url": "https://github.com/orchidjs"
+                "name": "AgentsKit-io",
+                "url": "https://github.com/AgentsKit-io"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121246263?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Automate token swaps on the Sui blockchain with this lightweight Node.js bot, boosting trading volume and maximizing airdrop rewards efficiently.</div>",
-            "url": "https://github.com/AndyValencia10/Auto-Swap-Momentum-Finance",
-            "title": "AndyValencia10/Auto-Swap-Momentum-Finance: 🤖 Automate token swaps on the Sui blockchain with this lightweight Node.js bot, boosting trading volume and maximizing airdrop rewards efficiently.",
-            "date_modified": "2026-06-10T14:59:37.000Z",
-            "date_published": "2025-10-09T11:11:10.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214592323?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌍 Discover your IP details and test network connectivity with IP Sentinel, a lightweight tool built on Cloudflare Workers, featuring privacy checks and modern UI.</div>",
+            "url": "https://github.com/ghjkldfdfg/ipSentinel",
+            "title": "ghjkldfdfg/ipSentinel: 🌍 Discover your IP details and test network connectivity with IP Sentinel, a lightweight tool built on Cloudflare Workers, featuring privacy checks and modern UI.",
+            "date_modified": "2026-06-10T16:54:31.000Z",
+            "date_published": "2026-01-26T00:12:34.000Z",
             "author": {
-                "name": "AndyValencia10",
-                "url": "https://github.com/AndyValencia10"
+                "name": "ghjkldfdfg",
+                "url": "https://github.com/ghjkldfdfg"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26618428?u=4f2087010e276ecadb8deffc7d3ec608ccca6472&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight web-based SSH client and server management tool. Go + React, single binary, system tray.</div>",
-            "url": "https://github.com/shivarchit/shellhub",
-            "title": "shivarchit/shellhub: Lightweight web-based SSH client and server management tool. Go + React, single binary, system tray.",
-            "date_modified": "2026-06-10T14:57:30.000Z",
-            "date_published": "2026-06-03T07:26:32.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1591980?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight experimental platform for enhanced video chat</div>",
+            "url": "https://github.com/kenperlin/bici",
+            "title": "kenperlin/bici: A lightweight experimental platform for enhanced video chat",
+            "date_modified": "2026-06-10T16:55:35.000Z",
+            "date_published": "2025-09-06T15:51:40.000Z",
             "author": {
-                "name": "shivarchit",
-                "url": "https://github.com/shivarchit"
+                "name": "kenperlin",
+                "url": "https://github.com/kenperlin"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/215245493?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧵 Simplify your TypeScript and JavaScript development with Loomstr, a type-safe tool for creating lightweight, compiled template strings with built-in filters.</div>",
-            "url": "https://github.com/amesamu000/loomstr",
-            "title": "amesamu000/loomstr: 🧵 Simplify your TypeScript and JavaScript development with Loomstr, a type-safe tool for creating lightweight, compiled template strings with built-in filters.",
-            "date_modified": "2026-06-10T14:56:03.000Z",
-            "date_published": "2025-10-08T22:10:06.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185746299?u=016964c314d760ca1837121f51da02982c6a58c6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight desktop GUI for Hermes Agent.</div>",
+            "url": "https://github.com/baileyh8/Beauty-Hermes-GUI",
+            "title": "baileyh8/Beauty-Hermes-GUI: A lightweight desktop GUI for Hermes Agent.",
+            "date_modified": "2026-06-10T16:51:37.000Z",
+            "date_published": "2026-06-08T09:46:17.000Z",
             "author": {
-                "name": "amesamu000",
-                "url": "https://github.com/amesamu000"
+                "name": "baileyh8",
+                "url": "https://github.com/baileyh8"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/133252345?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Claude Code UI wrapper - integrates with your local settings and chats</div>",
-            "url": "https://github.com/WolpertingerLabs/callboard",
-            "title": "WolpertingerLabs/callboard: Lightweight Claude Code UI wrapper - integrates with your local settings and chats",
-            "date_modified": "2026-06-10T14:57:43.000Z",
-            "date_published": "2026-02-01T19:40:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/225123948?u=2b28cd7c13613fe4044b45d252db9ae8843d7266&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An NPM library for a lightweight, type-safe wrapper for localStorage.</div>",
+            "url": "https://github.com/anassmdi/ls-wrapper",
+            "title": "anassmdi/ls-wrapper: An NPM library for a lightweight, type-safe wrapper for localStorage.",
+            "date_modified": "2026-06-10T16:51:55.000Z",
+            "date_published": "2026-06-10T15:34:24.000Z",
             "author": {
-                "name": "WolpertingerLabs",
-                "url": "https://github.com/WolpertingerLabs"
+                "name": "anassmdi",
+                "url": "https://github.com/anassmdi"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/149892224?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Compress images efficiently across iOS, Android, and Web with this lightweight Expo module featuring strict TypeScript support for seamless integration.</div>",
-            "url": "https://github.com/ruha1984/expo-image-compressor",
-            "title": "ruha1984/expo-image-compressor: 🌟 Compress images efficiently across iOS, Android, and Web with this lightweight Expo module featuring strict TypeScript support for seamless integration.",
-            "date_modified": "2026-06-10T14:55:43.000Z",
-            "date_published": "2025-10-08T19:13:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32970397?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted chat interface for a local LM Studio server.</div>",
+            "url": "https://github.com/ramhee98/LocalMind",
+            "title": "ramhee98/LocalMind: A lightweight, self-hosted chat interface for a local LM Studio server.",
+            "date_modified": "2026-06-10T16:52:18.000Z",
+            "date_published": "2026-06-10T12:10:39.000Z",
             "author": {
-                "name": "ruha1984",
-                "url": "https://github.com/ruha1984"
+                "name": "ramhee98",
+                "url": "https://github.com/ramhee98"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94928792?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🗨️ Translate speech bubbles effortlessly with SnapBubble. Use OCR to capture text, translate it, and overlay results directly within your images.</div>",
-            "url": "https://github.com/ayana6/snapBubble_extension",
-            "title": "ayana6/snapBubble_extension: 🗨️ Translate speech bubbles effortlessly with SnapBubble. Use OCR to capture text, translate it, and overlay results directly within your images.",
-            "date_modified": "2026-06-10T14:58:39.000Z",
-            "date_published": "2025-10-08T19:10:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114274872?u=7ea3119f7953705bb9047a955a88465c15628045&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight whatsapp bot ready to use with discord-inspired command system for all your needs. Powered by Baileys.js </div>",
+            "url": "https://github.com/KristanLaimon/WhatsBotCord.js",
+            "title": "KristanLaimon/WhatsBotCord.js: A lightweight whatsapp bot ready to use with discord-inspired command system for all your needs. Powered by Baileys.js ",
+            "date_modified": "2026-06-10T16:51:35.000Z",
+            "date_published": "2025-08-16T17:27:09.000Z",
             "author": {
-                "name": "ayana6",
-                "url": "https://github.com/ayana6"
+                "name": "KristanLaimon",
+                "url": "https://github.com/KristanLaimon"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25036405?u=cedd3771610f8df8af1c9e3479e34dc288d2bc5f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight VS Code extension to preview CSVs as tables.</div>",
-            "url": "https://github.com/pjrigali/csv-formatter",
-            "title": "pjrigali/csv-formatter: A lightweight VS Code extension to preview CSVs as tables.",
-            "date_modified": "2026-06-10T14:53:30.000Z",
-            "date_published": "2026-02-17T20:08:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10943028?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Chrome Extension and Local(or server) Side Service to Support Lightweight Vibe Coding</div>",
+            "url": "https://github.com/RepTrak/vibe-coding-with-chrome",
+            "title": "RepTrak/vibe-coding-with-chrome: A Chrome Extension and Local(or server) Side Service to Support Lightweight Vibe Coding",
+            "date_modified": "2026-06-10T16:52:18.000Z",
+            "date_published": "2026-05-23T04:30:07.000Z",
             "author": {
-                "name": "pjrigali",
-                "url": "https://github.com/pjrigali"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/99345333?u=5708acb5611e611576c4b7c4a509761b079ada4d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The Agno Agentics Reversal Eligibility Demo is a lightweight tool that evaluates card authorization reversal eligibility from case files (JSON, XML, CSV, ZIP, RAR) using a Python/FastAPI pipeline and Next.js UI. It automates validation, applies merchant rules, computes reversible amounts, and maintains an SQLite audit trail. Ideal for handling sing</div>",
-            "url": "https://github.com/YahyaSaadaoui/monetic-ai-reversal",
-            "title": "YahyaSaadaoui/monetic-ai-reversal: The Agno Agentics Reversal Eligibility Demo is a lightweight tool that evaluates card authorization reversal eligibility from case files (JSON, XML, CSV, ZIP, RAR) using a Python/FastAPI pipeline and Next.js UI. It automates validation, applies merchant rules, computes reversible amounts, and maintains an SQLite audit trail. Ideal for handling sing",
-            "date_modified": "2026-06-10T14:57:31.000Z",
-            "date_published": "2025-08-09T21:12:59.000Z",
-            "author": {
-                "name": "YahyaSaadaoui",
-                "url": "https://github.com/YahyaSaadaoui"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26257294?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>✨ Streamline event management with a lightweight TypeScript and JavaScript library that offers priority-based handlers and easy metrics tracking.</div>",
-            "url": "https://github.com/mjohntimothy/event-manager",
-            "title": "mjohntimothy/event-manager: ✨ Streamline event management with a lightweight TypeScript and JavaScript library that offers priority-based handlers and easy metrics tracking.",
-            "date_modified": "2026-06-10T14:55:41.000Z",
-            "date_published": "2025-02-07T14:40:48.000Z",
-            "author": {
-                "name": "mjohntimothy",
-                "url": "https://github.com/mjohntimothy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/24314847?u=ff23a17365be06c151e4d0645086f230f71aba1d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, real-time collaborative code editor built with Next.js, Monaco Editor, and Liveblocks. Share a link and start pair-programming instantly.</div>",
-            "url": "https://github.com/HariKrishna-9885699666/live-code-pad",
-            "title": "HariKrishna-9885699666/live-code-pad: A lightweight, real-time collaborative code editor built with Next.js, Monaco Editor, and Liveblocks. Share a link and start pair-programming instantly.",
-            "date_modified": "2026-06-10T14:55:03.000Z",
-            "date_published": "2026-06-07T05:51:25.000Z",
-            "author": {
-                "name": "HariKrishna-9885699666",
-                "url": "https://github.com/HariKrishna-9885699666"
+                "name": "RepTrak",
+                "url": "https://github.com/RepTrak"
             }
         }
     ]
