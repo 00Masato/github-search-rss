@@ -218,7 +218,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/karma-runner/karma#karma-is-deprecated-and-is-not-accepting-new-features-or-general-bug-fixes\">Karma is deprecated and is not accepting new features or general bug fixes</a>.</p>\n<p dir=\"auto\">Web Test Runner has a maintained Sauce launcher and can run the existing QUnit suite through an adapter.</p>\n<p dir=\"auto\">I wanted to look into the flakey failures we see on this CI job, but it seems easier to deal with that after we get onto supported tooling.</p>",
             "url": "https://github.com/rails/rails/pull/57688",
             "title": "Run Action Cable JS tests with Web Test Runner",
-            "date_modified": "2026-06-12T16:54:58.000Z",
+            "date_modified": "2026-06-14T05:19:57.000Z",
             "date_published": "2026-06-12T11:23:57.000Z",
             "author": {
                 "name": "matthewd",
