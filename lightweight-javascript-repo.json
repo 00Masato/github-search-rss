@@ -6,87 +6,54 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/293873195?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Windows overlay that mirrors your Azeron keypad in real time. Live key-press highlights, editable button labels, and on-the-fly layout changes — no Azeron software needed. Perfect for streamers or as a quick visual reference for your binds.</div>",
-            "url": "https://github.com/StumblingPanda/Azeron-Cyborg-II-overlay",
-            "title": "StumblingPanda/Azeron-Cyborg-II-overlay: A lightweight Windows overlay that mirrors your Azeron keypad in real time. Live key-press highlights, editable button labels, and on-the-fly layout changes — no Azeron software needed. Perfect for streamers or as a quick visual reference for your binds.",
-            "date_modified": "2026-06-15T15:45:28.000Z",
-            "date_published": "2026-06-15T13:32:12.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168854239?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎯 Adjust your crosshair in real time with CrossIt, a fast and customizable tool designed for perfecting your aiming style.</div>",
+            "url": "https://github.com/Psynoir/CrossIt",
+            "title": "Psynoir/CrossIt: 🎯 Adjust your crosshair in real time with CrossIt, a fast and customizable tool designed for perfecting your aiming style.",
+            "date_modified": "2026-06-15T17:36:36.000Z",
+            "date_published": "2025-10-16T03:22:42.000Z",
             "author": {
-                "name": "StumblingPanda",
-                "url": "https://github.com/StumblingPanda"
+                "name": "Psynoir",
+                "url": "https://github.com/Psynoir"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36966635?u=2566db63ee8a9938d5b8dfb39ddd4b2691ecf43d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight library to algorithmically convert between numerical tone notation (e.g., hao3) to standard Pinyin diacritical marks (e.g., hǎo). </div>",
-            "url": "https://github.com/leonsilicon/pinyin-tone2",
-            "title": "leonsilicon/pinyin-tone2: A lightweight library to algorithmically convert between numerical tone notation (e.g., hao3) to standard Pinyin diacritical marks (e.g., hǎo). ",
-            "date_modified": "2026-06-15T15:55:18.000Z",
-            "date_published": "2026-05-05T15:12:09.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/86847119?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
+            "url": "https://github.com/moHHisham1992/extlight",
+            "title": "moHHisham1992/extlight",
+            "date_modified": "2026-06-15T17:36:14.000Z",
+            "date_published": "2021-07-02T16:31:03.000Z",
             "author": {
-                "name": "leonsilicon",
-                "url": "https://github.com/leonsilicon"
+                "name": "moHHisham1992",
+                "url": "https://github.com/moHHisham1992"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/109162591?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Vue 3 component library to accompany @volverjs/style.</div>",
-            "url": "https://github.com/volverjs/ui-vue",
-            "title": "volverjs/ui-vue: Lightweight Vue 3 component library to accompany @volverjs/style.",
-            "date_modified": "2026-06-15T15:55:30.000Z",
-            "date_published": "2022-07-27T09:46:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/123493817?u=51c3163a08b3b545fe14753ea34cc229f521f336&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight crypto address validator with checksum verification for Bitcoin, Ethereum, Solana and more</div>",
+            "url": "https://github.com/fantasy42/cryptovalid",
+            "title": "fantasy42/cryptovalid: Lightweight crypto address validator with checksum verification for Bitcoin, Ethereum, Solana and more",
+            "date_modified": "2026-06-15T17:36:08.000Z",
+            "date_published": "2026-03-30T18:20:23.000Z",
             "author": {
-                "name": "volverjs",
-                "url": "https://github.com/volverjs"
+                "name": "fantasy42",
+                "url": "https://github.com/fantasy42"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96547434?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, lightweight scheduler to enqueue players onto badminton courts with in session statistics tracking. No user account creation required.</div>",
-            "url": "https://github.com/Sapiiii/rallyq",
-            "title": "Sapiiii/rallyq: Simple, lightweight scheduler to enqueue players onto badminton courts with in session statistics tracking. No user account creation required.",
-            "date_modified": "2026-06-15T15:54:50.000Z",
-            "date_published": "2026-05-31T15:39:33.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199898815?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Connect to Minecraft servers effortlessly with SimpleAFK, a lightweight bot that keeps you logged in for uninterrupted AFK farming and chunk loading.</div>",
+            "url": "https://github.com/amalbabun/SimpleAFK",
+            "title": "amalbabun/SimpleAFK: 🤖 Connect to Minecraft servers effortlessly with SimpleAFK, a lightweight bot that keeps you logged in for uninterrupted AFK farming and chunk loading.",
+            "date_modified": "2026-06-15T17:35:42.000Z",
+            "date_published": "2025-10-14T11:37:30.000Z",
             "author": {
-                "name": "Sapiiii",
-                "url": "https://github.com/Sapiiii"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/187631012?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🦞 Enhance productivity with miniclawd, a lightweight AI assistant for seamless multi-channel communication and powerful built-in tools.</div>",
-            "url": "https://github.com/KOAKAR765/miniclawd",
-            "title": "KOAKAR765/miniclawd: 🦞 Enhance productivity with miniclawd, a lightweight AI assistant for seamless multi-channel communication and powerful built-in tools.",
-            "date_modified": "2026-06-15T15:52:32.000Z",
-            "date_published": "2024-11-07T12:01:21.000Z",
-            "author": {
-                "name": "KOAKAR765",
-                "url": "https://github.com/KOAKAR765"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/41909187?u=412abce1ac86b121f7dcaafbb20aec196d73a241&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight UI framework for Bun with file routing, server components, and UnoCSS</div>",
-            "url": "https://github.com/oniguru-dev/omniui",
-            "title": "oniguru-dev/omniui: Lightweight UI framework for Bun with file routing, server components, and UnoCSS",
-            "date_modified": "2026-06-15T15:55:29.000Z",
-            "date_published": "2026-06-14T22:39:10.000Z",
-            "author": {
-                "name": "oniguru-dev",
-                "url": "https://github.com/oniguru-dev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/249476842?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Manage your K3s/Kubernetes clusters easily with a lightweight terminal UI, offering seamless navigation and real-time metrics.</div>",
-            "url": "https://github.com/gamesbook2814-ctrl/k4s",
-            "title": "gamesbook2814-ctrl/k4s: 🚀 Manage your K3s/Kubernetes clusters easily with a lightweight terminal UI, offering seamless navigation and real-time metrics.",
-            "date_modified": "2026-06-15T15:52:15.000Z",
-            "date_published": "2025-12-16T11:50:34.000Z",
-            "author": {
-                "name": "gamesbook2814-ctrl",
-                "url": "https://github.com/gamesbook2814-ctrl"
+                "name": "amalbabun",
+                "url": "https://github.com/amalbabun"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112750567?u=4c5a78bea44b312a4064d19d5a9606898e6611e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, open-source browser extension for Blobgame.io with performance boosts, reduced website load, experimental features, and community voting for future updates.</div>",
             "url": "https://github.com/SkyViewBlobio/Blobgame.io-Extension",
             "title": "SkyViewBlobio/Blobgame.io-Extension: A lightweight, open-source browser extension for Blobgame.io with performance boosts, reduced website load, experimental features, and community voting for future updates.",
-            "date_modified": "2026-06-15T15:51:57.000Z",
+            "date_modified": "2026-06-15T17:35:36.000Z",
             "date_published": "2026-06-06T13:39:47.000Z",
             "author": {
                 "name": "SkyViewBlobio",
@@ -94,135 +61,168 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/293912460?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight program that picks randomly from a library of Worship Initiative worship songs.</div>",
-            "url": "https://github.com/Lucas-Dyck/WI-Song-Picker",
-            "title": "Lucas-Dyck/WI-Song-Picker: A lightweight program that picks randomly from a library of Worship Initiative worship songs.",
-            "date_modified": "2026-06-15T15:51:47.000Z",
-            "date_published": "2026-06-15T15:43:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197670057?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Build transparent, message-first agents with efficient tool calls, planning, and multi-agent handoffs using the lightweight agent-sdk for Node.js.</div>",
+            "url": "https://github.com/dhia7an/agent-sdk",
+            "title": "dhia7an/agent-sdk: 🤖 Build transparent, message-first agents with efficient tool calls, planning, and multi-agent handoffs using the lightweight agent-sdk for Node.js.",
+            "date_modified": "2026-06-15T17:35:35.000Z",
+            "date_published": "2025-02-03T20:03:19.000Z",
             "author": {
-                "name": "Lucas-Dyck",
-                "url": "https://github.com/Lucas-Dyck"
+                "name": "dhia7an",
+                "url": "https://github.com/dhia7an"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61808984?u=b4d2a3393e97ab646fee997277e2eb9164cf2ff7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight galgame/visual-novel manager,Under development...</div>",
-            "url": "https://github.com/huoshen80/ReinaManager",
-            "title": "huoshen80/ReinaManager: A lightweight galgame/visual-novel manager,Under development...",
-            "date_modified": "2026-06-15T15:54:48.000Z",
-            "date_published": "2025-01-24T02:46:28.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6154722?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>slack-plus-teams is a lightweight compatibility layer that enables developers to run the same bot logic on both Slack and Microsoft Teams. Build once, deploy to both platforms, and bridge the gap between Slack and Teams APIs with minimal changes.</div>",
+            "url": "https://github.com/microsoft/slack-plus-teams",
+            "title": "microsoft/slack-plus-teams: slack-plus-teams is a lightweight compatibility layer that enables developers to run the same bot logic on both Slack and Microsoft Teams. Build once, deploy to both platforms, and bridge the gap between Slack and Teams APIs with minimal changes.",
+            "date_modified": "2026-06-15T17:34:58.000Z",
+            "date_published": "2026-02-27T20:27:34.000Z",
             "author": {
-                "name": "huoshen80",
-                "url": "https://github.com/huoshen80"
+                "name": "microsoft",
+                "url": "https://github.com/microsoft"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126427899?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🗜️ Optimize LocalStorage with native GZIP compression to store 10x more data, enhancing performance with a lightweight, non-blocking API.</div>",
-            "url": "https://github.com/lcbootyneet/NanoStorage",
-            "title": "lcbootyneet/NanoStorage: 🗜️ Optimize LocalStorage with native GZIP compression to store 10x more data, enhancing performance with a lightweight, non-blocking API.",
-            "date_modified": "2026-06-15T15:53:23.000Z",
-            "date_published": "2026-02-14T20:36:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/128976697?u=1e02b6ead752c58a67293fc7d0c9f2fe6116137e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, TypeScript-first web game engine framework for building 2D games</div>",
+            "url": "https://github.com/ShadowDara/samengine",
+            "title": "ShadowDara/samengine: A lightweight, TypeScript-first web game engine framework for building 2D games",
+            "date_modified": "2026-06-15T17:34:53.000Z",
+            "date_published": "2026-04-02T13:14:31.000Z",
             "author": {
-                "name": "lcbootyneet",
-                "url": "https://github.com/lcbootyneet"
+                "name": "ShadowDara",
+                "url": "https://github.com/ShadowDara"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/189909746?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Engage in persistent AI conversations with Mini-Claw, the lightweight Telegram bot that connects seamlessly with your Claude Pro/Max or ChatGPT Plus subscription.</div>",
-            "url": "https://github.com/JK10gming/mini-claw",
-            "title": "JK10gming/mini-claw: 🤖 Engage in persistent AI conversations with Mini-Claw, the lightweight Telegram bot that connects seamlessly with your Claude Pro/Max or ChatGPT Plus subscription.",
-            "date_modified": "2026-06-15T15:50:53.000Z",
-            "date_published": "2026-02-14T19:30:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176049109?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡ Clone and manipulate objects efficiently with smart-object-utils, a fast and lightweight alternative to Lodash for modern JavaScript projects.</div>",
+            "url": "https://github.com/jds-1206/smart-object-utils",
+            "title": "jds-1206/smart-object-utils: ⚡ Clone and manipulate objects efficiently with smart-object-utils, a fast and lightweight alternative to Lodash for modern JavaScript projects.",
+            "date_modified": "2026-06-15T17:34:42.000Z",
+            "date_published": "2024-07-19T15:45:07.000Z",
             "author": {
-                "name": "JK10gming",
-                "url": "https://github.com/JK10gming"
+                "name": "jds-1206",
+                "url": "https://github.com/jds-1206"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/222337631?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Drumbeat Leaderboard — lightweight World Cup 2026 fantasy sweepstake</div>",
-            "url": "https://github.com/alex-poor/drumbeat",
-            "title": "alex-poor/drumbeat: Drumbeat Leaderboard — lightweight World Cup 2026 fantasy sweepstake",
-            "date_modified": "2026-06-15T15:52:48.000Z",
-            "date_published": "2026-06-11T10:19:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1342004?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.</div>",
+            "url": "https://github.com/google/xrblocks",
+            "title": "google/xrblocks: XR Blocks is a lightweight WebXR + AI library for rapidly prototyping advanced AI + XR experiences.",
+            "date_modified": "2026-06-15T17:34:28.000Z",
+            "date_published": "2025-09-25T22:57:47.000Z",
             "author": {
-                "name": "alex-poor",
-                "url": "https://github.com/alex-poor"
+                "name": "google",
+                "url": "https://github.com/google"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/243580117?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📝 Build a lightweight personal blog and admin system with PaperGrid, featuring article management, authentication, and bilingual support in dark mode.</div>",
-            "url": "https://github.com/kevinmilesjulhusin99-gif/PaperGrid",
-            "title": "kevinmilesjulhusin99-gif/PaperGrid: 📝 Build a lightweight personal blog and admin system with PaperGrid, featuring article management, authentication, and bilingual support in dark mode.",
-            "date_modified": "2026-06-15T15:50:16.000Z",
-            "date_published": "2026-02-13T17:03:32.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/208562985?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Build and adapt lightweight freelancing mini-apps in React, designed for schools, gyms, and small organizations. Learn from real-world projects.</div>",
+            "url": "https://github.com/bougnaboy/react-mini-suite",
+            "title": "bougnaboy/react-mini-suite: 🚀 Build and adapt lightweight freelancing mini-apps in React, designed for schools, gyms, and small organizations. Learn from real-world projects.",
+            "date_modified": "2026-06-15T17:34:21.000Z",
+            "date_published": "2025-10-12T19:21:35.000Z",
             "author": {
-                "name": "kevinmilesjulhusin99-gif",
-                "url": "https://github.com/kevinmilesjulhusin99-gif"
+                "name": "bougnaboy",
+                "url": "https://github.com/bougnaboy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171541140?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🖥️ Monitor your Mullvad VPN connection status in real-time with this lightweight Windows system tray application built using modern web technologies.</div>",
-            "url": "https://github.com/Fggp09/mullvad-connection-status",
-            "title": "Fggp09/mullvad-connection-status: 🖥️ Monitor your Mullvad VPN connection status in real-time with this lightweight Windows system tray application built using modern web technologies.",
-            "date_modified": "2026-06-15T15:50:14.000Z",
-            "date_published": "2026-02-13T15:07:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/283413563?u=e8a441c33c40e298e4758a1aafc79d05802631ee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, 100% local browser extension that blocks YouTube Shorts and distracting feeds while keeping search and study materials accessible.</div>",
+            "url": "https://github.com/vishwa-vsr/Flow",
+            "title": "vishwa-vsr/Flow: A lightweight, 100% local browser extension that blocks YouTube Shorts and distracting feeds while keeping search and study materials accessible.",
+            "date_modified": "2026-06-15T17:34:14.000Z",
+            "date_published": "2026-05-10T16:56:21.000Z",
             "author": {
-                "name": "Fggp09",
-                "url": "https://github.com/Fggp09"
+                "name": "vishwa-vsr",
+                "url": "https://github.com/vishwa-vsr"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/172055299?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🖥️ Simplify headless browser control with this lightweight HTTP wrapper for nodriver, ideal for serverless and long-running container setups.</div>",
-            "url": "https://github.com/mindofjes/serverless-nodriver",
-            "title": "mindofjes/serverless-nodriver: 🖥️ Simplify headless browser control with this lightweight HTTP wrapper for nodriver, ideal for serverless and long-running container setups.",
-            "date_modified": "2026-06-15T15:50:07.000Z",
-            "date_published": "2024-06-07T14:44:41.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/27898308?u=6af235e1ea2c52656c44457f5aa28addbcbc9e92&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📦 NPM Package: Lightweight TypeScript extensions for Array prototype.</div>",
+            "url": "https://github.com/mdgfox/array-extensions",
+            "title": "mdgfox/array-extensions: 📦 NPM Package: Lightweight TypeScript extensions for Array prototype.",
+            "date_modified": "2026-06-15T17:33:50.000Z",
+            "date_published": "2026-03-30T13:43:45.000Z",
             "author": {
-                "name": "mindofjes",
-                "url": "https://github.com/mindofjes"
+                "name": "mdgfox",
+                "url": "https://github.com/mdgfox"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36609073?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Manage Cashu ecash tokens and interact with Bitcoin Lightning mints effortlessly using this lightweight CLI built with Node.js and SQLite.</div>",
-            "url": "https://github.com/eridanux/cashu-skill",
-            "title": "eridanux/cashu-skill: 🚀 Manage Cashu ecash tokens and interact with Bitcoin Lightning mints effortlessly using this lightweight CLI built with Node.js and SQLite.",
-            "date_modified": "2026-06-15T15:49:59.000Z",
-            "date_published": "2025-08-09T17:52:15.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/284196885?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight data system for Corinne Aesthetics reporting, dashboards, and business insights.</div>",
+            "url": "https://github.com/ilan-corinneaesthetics/corinne-data-system",
+            "title": "ilan-corinneaesthetics/corinne-data-system: Lightweight data system for Corinne Aesthetics reporting, dashboards, and business insights.",
+            "date_modified": "2026-06-15T17:33:36.000Z",
+            "date_published": "2026-05-13T04:18:33.000Z",
             "author": {
-                "name": "eridanux",
-                "url": "https://github.com/eridanux"
+                "name": "ilan-corinneaesthetics",
+                "url": "https://github.com/ilan-corinneaesthetics"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/140338598?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔗 Enhance your website by displaying external links in a sleek, dynamic overlay with slideFrame—lightweight and easy to integrate.</div>",
-            "url": "https://github.com/SAATHWIKSSHETTY/slideFrame",
-            "title": "SAATHWIKSSHETTY/slideFrame: 🔗 Enhance your website by displaying external links in a sleek, dynamic overlay with slideFrame—lightweight and easy to integrate.",
-            "date_modified": "2026-06-15T15:52:10.000Z",
-            "date_published": "2026-02-12T07:32:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26999397?u=e4d3857f94f3e8d4026310621f01eb78ddd8ae36&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, modern, self-hosted Vulnerability Assessment + Cyber Threat Intelligence platform. End-to-end TypeScript, three services.</div>",
+            "url": "https://github.com/anggipradana/vacti",
+            "title": "anggipradana/vacti: Lightweight, modern, self-hosted Vulnerability Assessment + Cyber Threat Intelligence platform. End-to-end TypeScript, three services.",
+            "date_modified": "2026-06-15T17:32:54.000Z",
+            "date_published": "2026-06-03T19:32:02.000Z",
             "author": {
-                "name": "SAATHWIKSSHETTY",
-                "url": "https://github.com/SAATHWIKSSHETTY"
+                "name": "anggipradana",
+                "url": "https://github.com/anggipradana"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/210287247?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📦 Build Discord Components easily with Container Factory, a lightweight utility designed for simplicity and efficiency in your projects.</div>",
-            "url": "https://github.com/matheusxxv/container-factory",
-            "title": "matheusxxv/container-factory: 📦 Build Discord Components easily with Container Factory, a lightweight utility designed for simplicity and efficiency in your projects.",
-            "date_modified": "2026-06-15T15:52:01.000Z",
-            "date_published": "2025-05-04T20:56:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130927734?u=c884d89f290cec95fcd6b6cd89a4d8ce232befd5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Simplify numerical operations on ndarray objects with any-by, a lightweight library for efficient computations in JavaScript and Node.js.</div>",
+            "url": "https://github.com/MeerAkrayi/ndarray-any-by",
+            "title": "MeerAkrayi/ndarray-any-by: 🌐 Simplify numerical operations on ndarray objects with any-by, a lightweight library for efficient computations in JavaScript and Node.js.",
+            "date_modified": "2026-06-15T17:32:42.000Z",
+            "date_published": "2025-10-11T13:12:49.000Z",
             "author": {
-                "name": "matheusxxv",
-                "url": "https://github.com/matheusxxv"
+                "name": "MeerAkrayi",
+                "url": "https://github.com/MeerAkrayi"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/218612554?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡ Manage Cashu ecash tokens effortlessly with this lightweight CLI, interacting with Bitcoin Lightning mints for seamless transactions.</div>",
-            "url": "https://github.com/AndraG2/cashu-skill",
-            "title": "AndraG2/cashu-skill: ⚡ Manage Cashu ecash tokens effortlessly with this lightweight CLI, interacting with Bitcoin Lightning mints for seamless transactions.",
-            "date_modified": "2026-06-15T15:49:24.000Z",
-            "date_published": "2025-06-30T13:08:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/174259662?u=ed386336dc4ef0ac3d58097a38d300c83a5f571b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>About A lightweight, zero-dependency native win-x64 utility built in modern .NET to maintain system persistence and intercept idle telemetry.</div>",
+            "url": "https://github.com/Neutron-0/NEOghost",
+            "title": "Neutron-0/NEOghost: About A lightweight, zero-dependency native win-x64 utility built in modern .NET to maintain system persistence and intercept idle telemetry.",
+            "date_modified": "2026-06-15T17:32:17.000Z",
+            "date_published": "2026-06-15T17:31:24.000Z",
             "author": {
-                "name": "AndraG2",
-                "url": "https://github.com/AndraG2"
+                "name": "Neutron-0",
+                "url": "https://github.com/Neutron-0"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121246263?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Automate token swaps on the Sui blockchain with this lightweight Node.js bot, boosting trading volume and maximizing airdrop rewards efficiently.</div>",
+            "url": "https://github.com/AndyValencia10/Auto-Swap-Momentum-Finance",
+            "title": "AndyValencia10/Auto-Swap-Momentum-Finance: 🤖 Automate token swaps on the Sui blockchain with this lightweight Node.js bot, boosting trading volume and maximizing airdrop rewards efficiently.",
+            "date_modified": "2026-06-15T17:31:43.000Z",
+            "date_published": "2025-10-09T11:11:10.000Z",
+            "author": {
+                "name": "AndyValencia10",
+                "url": "https://github.com/AndyValencia10"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34137547?u=bc42470b35b9a3bd528a2eaf05217abe167f0dbd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, immutable, and plugin-based date-time manipulation library for JavaScript and TypeScript.</div>",
+            "url": "https://github.com/nazmul-nhb/chronos-date",
+            "title": "nazmul-nhb/chronos-date: A lightweight, immutable, and plugin-based date-time manipulation library for JavaScript and TypeScript.",
+            "date_modified": "2026-06-15T17:31:04.000Z",
+            "date_published": "2026-05-10T15:54:10.000Z",
+            "author": {
+                "name": "nazmul-nhb",
+                "url": "https://github.com/nazmul-nhb"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/215245493?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧵 Simplify your TypeScript and JavaScript development with Loomstr, a type-safe tool for creating lightweight, compiled template strings with built-in filters.</div>",
+            "url": "https://github.com/amesamu000/loomstr",
+            "title": "amesamu000/loomstr: 🧵 Simplify your TypeScript and JavaScript development with Loomstr, a type-safe tool for creating lightweight, compiled template strings with built-in filters.",
+            "date_modified": "2026-06-15T17:31:05.000Z",
+            "date_published": "2025-10-08T22:10:06.000Z",
+            "author": {
+                "name": "amesamu000",
+                "url": "https://github.com/amesamu000"
             }
         }
     ]
