@@ -6,6 +6,28 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126682999?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fixes the example output in the \"Reusing the iterable\" section of <code class=\"notranslate\">Array.prototype.values()</code>.</p>\n<p dir=\"auto\">The explanatory text already says that iterating an exhausted iterator has no effect, but the example implied that a second <code class=\"notranslate\">for...of</code> loop logs <code class=\"notranslate\">undefined</code>. In practice, the second loop produces no output.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">This keeps the example consistent with the text above it and avoids suggesting that an exhausted iterator yields a final <code class=\"notranslate\">undefined</code> value in a <code class=\"notranslate\">for...of</code> loop.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">This change only updates the example output comment. The code sample itself is unchanged.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">None</p>",
+            "url": "https://github.com/mdn/content/pull/44507",
+            "title": "Fix exhausted iterator example on Array.prototype.values()",
+            "date_modified": "2026-06-18T18:33:52.000Z",
+            "date_published": "2026-06-18T18:33:23.000Z",
+            "author": {
+                "name": "Anusha-Pwr",
+                "url": "https://github.com/Anusha-Pwr"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1795135?u=8b4759f2d0964426ac6f2aeacf061ad1ee0e24db&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Add documentation for the <code class=\"notranslate\">alpha()</code> CSS function, including syntax, parameters, examples, and browser compatibility.</p>\n\n\n<h3 dir=\"auto\">Description</h3>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
+            "url": "https://github.com/mdn/content/pull/44506",
+            "title": "Document CSS `alpha()` function",
+            "date_modified": "2026-06-18T18:15:25.000Z",
+            "date_published": "2026-06-18T18:13:44.000Z",
+            "author": {
+                "name": "nt1m",
+                "url": "https://github.com/nt1m"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/47647?u=2fbfc431a85d357f00c0146d5e55b425b7f00a3d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Chrome 150 adds support for the <code class=\"notranslate\">Request.isReloadNavigation</code> property; see <a href=\"https://chromestatus.com/feature/5154214529597440\" rel=\"nofollow\">https://chromestatus.com/feature/5154214529597440</a> for the chromestatus (this doesn't actually have the release version listed, but BCD already says 150).</p>\n<p dir=\"auto\">This PR adds documentation for the new property.</p>\n\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/44504",
             "title": "Technical review: Document Request.isReloadNavigation",
@@ -61,10 +83,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77456300?u=05e452372074933d5f56d553a09e3f34183c31eb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds <code class=\"notranslate\">display-p3-linear</code> to the predefined color spaces.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">Add missing color space to align MDN docs with the spec</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">spec: <a href=\"https://www.w3.org/TR/2026/CRD-css-color-4-20260502/#predefined\" rel=\"nofollow\">https://www.w3.org/TR/2026/CRD-css-color-4-20260502/#predefined</a></p>\n\n\n\n\n",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77456300?u=05e452372074933d5f56d553a09e3f34183c31eb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This PR adds <code class=\"notranslate\">display-p3-linear</code> to the predefined color spaces.</p>\n<h3 dir=\"auto\">Motivation</h3>\n\n<p dir=\"auto\">Add missing color space to align MDN docs with the spec</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">spec: <a href=\"https://www.w3.org/TR/css-color-4/#predefined\" rel=\"nofollow\">https://www.w3.org/TR/css-color-4/#predefined</a></p>\n\n\n\n\n",
             "url": "https://github.com/mdn/content/pull/44496",
             "title": "Add `display-p3-linear` to predefined color spaces",
-            "date_modified": "2026-06-18T10:38:24.000Z",
+            "date_modified": "2026-06-18T19:01:39.000Z",
             "date_published": "2026-06-17T12:43:59.000Z",
             "author": {
                 "name": "priyanshurav",
@@ -86,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This change addresses the dev-doc-needed requirements of <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=1891478\" rel=\"nofollow\">Bug 1891478</a> \"Implement documentId in extension APIs\"</p>\n<p dir=\"auto\">Changhes include:</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\">New page</p>\n<ul dir=\"auto\">\n<li>runtime/getdocumentid/index.md  — documents the new  <code class=\"notranslate\">runtime.getDocumentId()</code>  method, which returns the document UUID for a given window/frame target.</li>\n</ul>\n</li>\n<li>\n<p dir=\"auto\">Updated API reference pages</p>\n<ul dir=\"auto\">\n<li>runtime/connect/index.md  — added  <code class=\"notranslate\">documentId</code>  to  <code class=\"notranslate\">connectInfo</code>  options.</li>\n<li>runtime/sendmessage/index.md  — added  <code class=\"notranslate\">documentId</code>  to  <code class=\"notranslate\">options</code>.</li>\n<li>proxy/requestdetails/index.md  — added  <code class=\"notranslate\">documentId</code>  and  <code class=\"notranslate\">parentDocumentId</code>  properties.</li>\n<li>webnavigation/getframe/index.md  — removed a stray orphaned \"Must include one of\" line.</li>\n</ul>\n</li>\n<li>\n<p dir=\"auto\">Navigation/index updates</p>\n<ul dir=\"auto\">\n<li>runtime/index.md  — added a  <code class=\"notranslate\">runtime.getDocumentId()</code>  entry to the methods list.</li>\n<li>content_scripts/index.md  — added  <code class=\"notranslate\">runtime.getDocumentId()</code>  to the list of APIs usable from content scripts.</li>\n</ul>\n</li>\n<li>\n<p dir=\"auto\">Release notes: firefox/releases/153/index.md  — new bullet under \"Changes for add-on developers\" summarizing all the  <code class=\"notranslate\">documentId</code>  additions across  <code class=\"notranslate\">runtime</code>,  <code class=\"notranslate\">scripting</code>,  <code class=\"notranslate\">userScripts</code>,  <code class=\"notranslate\">tabs</code>,  <code class=\"notranslate\">webNavigation</code>,  <code class=\"notranslate\">webRequest</code>, and  <code class=\"notranslate\">proxy</code>, referencing bug 1891478.</p>\n</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">BCD changes in PR <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4669607685\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/29853\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/29853/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/29853\">mdn/browser-compat-data#29853</a></p>",
             "url": "https://github.com/mdn/content/pull/44491",
             "title": "Bug 1891478 Implementation of `documentId` in more extension APIs",
-            "date_modified": "2026-06-18T17:43:13.000Z",
+            "date_modified": "2026-06-18T19:02:18.000Z",
             "date_published": "2026-06-16T19:07:48.000Z",
             "author": {
                 "name": "rebloor",
@@ -198,28 +220,6 @@
             "title": "Clarify router and switch roles in internet guide",
             "date_modified": "2026-06-15T10:37:52.000Z",
             "date_published": "2026-06-13T16:45:34.000Z",
-            "author": {
-                "name": "KirtiRamchandani",
-                "url": "https://github.com/KirtiRamchandani"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33368817?u=80d39153e27b7d191281ed9b12cfb2b414418080&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #44426.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4648490198\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/44426\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/44426/hovercard\" href=\"https://github.com/mdn/content/issues/44426\">#44426</a></p>",
-            "url": "https://github.com/mdn/content/pull/44441",
-            "title": "Point HTML Sanitizer API references to WHATWG HTML",
-            "date_modified": "2026-06-17T16:09:21.000Z",
-            "date_published": "2026-06-13T16:45:25.000Z",
-            "author": {
-                "name": "KirtiRamchandani",
-                "url": "https://github.com/KirtiRamchandani"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33368817?u=80d39153e27b7d191281ed9b12cfb2b414418080&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<p dir=\"auto\">Updates the <code class=\"notranslate\">&lt;select&gt;</code> element documentation for the <code class=\"notranslate\">required</code> attribute so it matches HTML constraint validation.</p>\n<p dir=\"auto\">The previous text said an option with a non-empty string value must be selected. That is incorrect: a selected option with an empty value can satisfy the requirement when it is not the placeholder label option.</p>\n<h2 dir=\"auto\">Testing</h2>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">corepack npm exec --yes --package=prettier@3.8.4 -- prettier --check files/en-us/web/html/reference/elements/select/index.md</code></li>\n<li><code class=\"notranslate\">corepack npm exec --yes --package=markdownlint-cli2@0.22.1 --package=markdownlint-rule-search-replace@1.2.0 -- markdownlint-cli2 files/en-us/web/html/reference/elements/select/index.md</code></li>\n<li><code class=\"notranslate\">git diff --check</code></li>\n</ul>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #44397.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4622596685\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/44397\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/44397/hovercard\" href=\"https://github.com/mdn/content/issues/44397\">#44397</a></p>",
-            "url": "https://github.com/mdn/content/pull/44440",
-            "title": "Clarify required attribute behavior for select elements",
-            "date_modified": "2026-06-14T04:07:45.000Z",
-            "date_published": "2026-06-13T16:15:53.000Z",
             "author": {
                 "name": "KirtiRamchandani",
                 "url": "https://github.com/KirtiRamchandani"
