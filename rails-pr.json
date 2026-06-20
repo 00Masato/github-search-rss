@@ -6,25 +6,14 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When a model class is inspected before its schema has been loaded, <code class=\"notranslate\">inspect</code> returns a hint message. That message used \"informations\", but \"information\" is an uncountable noun in English and does not take a plural form, so the word should be \"information\".</p>\n<p dir=\"auto\">The same \"schema information\" phrasing is already used in the singular elsewhere; this was the only occurrence of \"informations\" in the codebase.</p>\n<div class=\"markdown-alert markdown-alert-note\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg data-component=\"Octicon\" class=\"octicon octicon-info mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z\"></path></svg>Note</p>\n<ul dir=\"auto\">\n<li>Not a <code class=\"notranslate\">[ci skip]</code> change: it touches a user-facing string in production code plus its test, so CI should run.</li>\n<li>No CHANGELOG (simple grammar fix, not user-facing in the feature sense).</li>\n<li>Why \"information\" is correct: (1) uncountable noun, no plural <code class=\"notranslate\">-s</code>; (2) Merriam-Webster / Oxford list it as noncount; (3) only outlier occurrence in the repo, same phrase used singular elsewhere.</li>\n</ul>\n</div>",
-            "url": "https://github.com/rails/rails/pull/57794",
-            "title": "Fix grammar in Model.inspect schema-not-loaded message",
-            "date_modified": "2026-06-20T13:58:42.000Z",
-            "date_published": "2026-06-20T13:58:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Background</h2>\n<p dir=\"auto\">Due to historical reasons, some models use unique identifiers separate from their primary keys, and these unique identifier column names differ across models. While we attempted to unify these names using <code class=\"notranslate\">alias_attribute</code>, the current association implementation uses <code class=\"notranslate\">_read_attribute</code> for performance optimizations introduced in the past, which doesn't support aliases. To work around this limitation, production applications have had to override <code class=\"notranslate\">_read_attribute</code> to resolve aliases.</p>\n<p dir=\"auto\">Polymorphic associations cannot statically determine <code class=\"notranslate\">inverse_of</code>, so automatic <code class=\"notranslate\">inverse_of</code> detection is disabled. Because of this, support for explicitly specified <code class=\"notranslate\">:inverse_of</code> has been incomplete, and the provided inverse association information was not fully utilized. This change improves the implementation to properly respect explicitly defined inverse associations.</p>\n<h2 dir=\"auto\">Changes</h2>\n<p dir=\"auto\">When using polymorphic associations with <code class=\"notranslate\">:inverse_of</code>, ActiveRecord now respects custom <code class=\"notranslate\">:primary_key</code> options defined on the inverse association. This allows different associated models to use different primary key columns.</p>\n<p dir=\"auto\">For example:</p>\n<ul dir=\"auto\">\n<li>Post can use <code class=\"notranslate\">:uuid</code> as its primary key for comments</li>\n<li>Article can use <code class=\"notranslate\">:slug</code> as its primary key for comments</li>\n<li>Video can use the default <code class=\"notranslate\">:id</code></li>\n</ul>\n<p dir=\"auto\">This is achieved by extending <code class=\"notranslate\">BelongsToReflection#association_primary_key</code> to check for inverse associations when dealing with polymorphic relationships. <code class=\"notranslate\">AutosaveAssociation</code> has also been simplified to use existing reflection methods instead of duplicating the primary key resolution logic.</p>",
+            "url": "https://github.com/rails/rails/pull/57795",
+            "title": "Support polymorphic associations with custom primary keys through `:inverse_of`",
+            "date_modified": "2026-06-20T17:21:21.000Z",
+            "date_published": "2026-06-20T17:21:12.000Z",
             "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fix four spelling mistakes in the \"Rails on Rack\" guide.</p>\n<p dir=\"auto\">Two are in the middleware example comments, where \"Propgate\" and \"Propogate\" should both be \"Propagate\". The other two are in the surrounding prose: \"reponse\" should be \"response\", and \"faciliate\" should be \"facilitate\" in the <code class=\"notranslate\">Rack::ETag</code> section.</p>",
-            "url": "https://github.com/rails/rails/pull/57793",
-            "title": "Fix typos in Rails on Rack guide",
-            "date_modified": "2026-06-20T13:48:18.000Z",
-            "date_published": "2026-06-20T13:48:10.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
+                "name": "kamipo",
+                "url": "https://github.com/kamipo"
             }
         },
         {
@@ -223,6 +212,17 @@
             "author": {
                 "name": "tahsin352",
                 "url": "https://github.com/tahsin352"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100725?u=3d967921888fe6508a55960e59e83a4931a95ff6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">The database pooling configuration options were renamed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2778257867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54175\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54175/hovercard\" href=\"https://github.com/rails/rails/pull/54175\">#54175</a>: <code class=\"notranslate\">max_connections</code> is now the preferred name for the connection limit (previously <code class=\"notranslate\">pool</code>), and <code class=\"notranslate\">min_connections</code> was added to pre-open and maintain a minimum number of connections.</p>\n<p dir=\"auto\">The generated <code class=\"notranslate\">database.yml</code> templates already use <code class=\"notranslate\">max_connections</code>, but the <a href=\"https://guides.rubyonrails.org/configuring.html#database-pooling\" rel=\"nofollow\">Database Pooling</a> section of the configuration guide still documented the legacy <code class=\"notranslate\">pool</code> option.</p>\n<h3 dir=\"auto\">Changes</h3>\n<ul dir=\"auto\">\n<li>Use <code class=\"notranslate\">max_connections</code> in the Database Pooling example and prose.</li>\n<li>Document <code class=\"notranslate\">min_connections</code> with an example.</li>\n<li>Add a note explaining that <code class=\"notranslate\">pool</code> remains supported as an alias for <code class=\"notranslate\">max_connections</code>, that <code class=\"notranslate\">max_connections</code> is now preferred, and that setting conflicting <code class=\"notranslate\">pool</code>/<code class=\"notranslate\">max_connections</code> values (or combining <code class=\"notranslate\">pool</code> with <code class=\"notranslate\">min_connections</code>) raises an error — matching the validation in <code class=\"notranslate\">HashConfig</code>.</li>\n</ul>\n<p dir=\"auto\">Scope is intentionally limited to the Database Pooling section. The <code class=\"notranslate\">pool</code> examples in the DATABASE_URL merging section illustrate URL/hash merge mechanics where <code class=\"notranslate\">pool</code> still works, so they're left unchanged to keep the diff focused.</p>\n<p dir=\"auto\">🤖 Generated with <a href=\"https://claude.com/claude-code\" rel=\"nofollow\">Claude Code</a></p>",
+            "url": "https://github.com/rails/rails/pull/57736",
+            "title": "Document max_connections/min_connections in Database Pooling guide",
+            "date_modified": "2026-06-15T09:18:30.000Z",
+            "date_published": "2026-06-15T09:18:16.000Z",
+            "author": {
+                "name": "igor-alexandrov",
+                "url": "https://github.com/igor-alexandrov"
             }
         }
     ]
