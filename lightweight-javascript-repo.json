@@ -6,109 +6,76 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62959009?u=7eb9e9db6406d9520dd4ca2587dfbc3aa8f20633&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Webex Mercury WebSocket + KMS message decryption — Node.js, Python, Go, Rust</div>",
-            "url": "https://github.com/3rg0n/webex-message-handler",
-            "title": "3rg0n/webex-message-handler: Lightweight Webex Mercury WebSocket + KMS message decryption — Node.js, Python, Go, Rust",
-            "date_modified": "2026-06-22T21:40:29.000Z",
-            "date_published": "2026-02-11T15:56:48.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/234473091?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Monssel is a lightweight, phone-first business management web app that helps small businesses record daily sales, track inventory, expenses, and understand profit—without accounting complexity.</div>",
+            "url": "https://github.com/Kakka-tech/Monssel",
+            "title": "Kakka-tech/Monssel: Monssel is a lightweight, phone-first business management web app that helps small businesses record daily sales, track inventory, expenses, and understand profit—without accounting complexity.",
+            "date_modified": "2026-06-22T22:31:35.000Z",
+            "date_published": "2026-01-04T21:26:45.000Z",
             "author": {
-                "name": "3rg0n",
-                "url": "https://github.com/3rg0n"
+                "name": "Kakka-tech",
+                "url": "https://github.com/Kakka-tech"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199412248?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Deploy and manage a lightweight server with Docker support for fast setup, TLS, reverse proxy, and cache configuration in production environments.</div>",
-            "url": "https://github.com/Davi111776/Overlord",
-            "title": "Davi111776/Overlord: Deploy and manage a lightweight server with Docker support for fast setup, TLS, reverse proxy, and cache configuration in production environments.",
-            "date_modified": "2026-06-22T21:40:20.000Z",
-            "date_published": "2026-03-17T20:15:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197093519?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.</div>",
+            "url": "https://github.com/SamarthKulkarni20/keyed-batched-items-accumulator",
+            "title": "SamarthKulkarni20/keyed-batched-items-accumulator: A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.",
+            "date_modified": "2026-06-22T22:31:26.000Z",
+            "date_published": "2025-05-21T16:16:34.000Z",
             "author": {
-                "name": "Davi111776",
-                "url": "https://github.com/Davi111776"
+                "name": "SamarthKulkarni20",
+                "url": "https://github.com/SamarthKulkarni20"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68172832?u=13c479d72852629644ca862fde1a25997c25b8b9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>BugBoard is a lightweight issue tracking app where users can create projects, report bugs, track feature requests, prioritize work, comment on issues, and monitor project progress.</div>",
-            "url": "https://github.com/mdubelbeis/bug-board",
-            "title": "mdubelbeis/bug-board: BugBoard is a lightweight issue tracking app where users can create projects, report bugs, track feature requests, prioritize work, comment on issues, and monitor project progress.",
-            "date_modified": "2026-06-22T21:40:13.000Z",
-            "date_published": "2026-05-20T18:26:41.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/145249784?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.</div>",
+            "url": "https://github.com/Nikhilkumarseeda/user-crud-server",
+            "title": "Nikhilkumarseeda/user-crud-server: User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.",
+            "date_modified": "2026-06-22T22:30:49.000Z",
+            "date_published": "2025-05-15T02:37:45.000Z",
             "author": {
-                "name": "mdubelbeis",
-                "url": "https://github.com/mdubelbeis"
+                "name": "Nikhilkumarseeda",
+                "url": "https://github.com/Nikhilkumarseeda"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/200506074?u=c8b0a23df292439f74ce21275bfa315607ea951b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Manage multiple split panes in Claude Code efficiently with a lightweight, cross-platform desktop app built on Tauri and React.</div>",
-            "url": "https://github.com/eltonyaw/cc-pane",
-            "title": "eltonyaw/cc-pane: Manage multiple split panes in Claude Code efficiently with a lightweight, cross-platform desktop app built on Tauri and React.",
-            "date_modified": "2026-06-22T21:40:03.000Z",
-            "date_published": "2025-02-24T09:10:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118066916?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, powerful enhancement for Next.js Link components that automatically detects active routes. Provides intuitive APIs for handling active states with complete TypeScript support.</div>",
+            "url": "https://github.com/PedroFake02/better-link",
+            "title": "PedroFake02/better-link: A lightweight, powerful enhancement for Next.js Link components that automatically detects active routes. Provides intuitive APIs for handling active states with complete TypeScript support.",
+            "date_modified": "2026-06-22T22:28:55.000Z",
+            "date_published": "2025-04-29T06:56:27.000Z",
             "author": {
-                "name": "eltonyaw",
-                "url": "https://github.com/eltonyaw"
+                "name": "PedroFake02",
+                "url": "https://github.com/PedroFake02"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/141212006?u=7df648eb1d9798b444b6b15b658dc4b2be1ffacd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Connect directly to Kafka brokers with a lightweight, cross-platform desktop client that starts instantly and secures credentials in your OS keychain.</div>",
-            "url": "https://github.com/anandhuPeepi/kafkalet",
-            "title": "anandhuPeepi/kafkalet: Connect directly to Kafka brokers with a lightweight, cross-platform desktop client that starts instantly and secures credentials in your OS keychain.",
-            "date_modified": "2026-06-22T21:39:36.000Z",
-            "date_published": "2023-08-02T06:29:17.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/170837138?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, accessible component library providing essential UI building blocks for modern web applications.</div>",
+            "url": "https://github.com/muhammadhamzakhan22/element-essentials",
+            "title": "muhammadhamzakhan22/element-essentials: A lightweight, accessible component library providing essential UI building blocks for modern web applications.",
+            "date_modified": "2026-06-22T22:28:55.000Z",
+            "date_published": "2025-04-28T01:20:34.000Z",
             "author": {
-                "name": "anandhuPeepi",
-                "url": "https://github.com/anandhuPeepi"
+                "name": "muhammadhamzakhan22",
+                "url": "https://github.com/muhammadhamzakhan22"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68080340?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Offer hand-drawn React components with a sketchy, notebook style that are fully typed, themeable, and lightweight for creative UIs.</div>",
-            "url": "https://github.com/Tallam60/sketchbook-ui",
-            "title": "Tallam60/sketchbook-ui: Offer hand-drawn React components with a sketchy, notebook style that are fully typed, themeable, and lightweight for creative UIs.",
-            "date_modified": "2026-06-22T21:39:37.000Z",
-            "date_published": "2021-01-12T12:56:32.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83678843?u=632e93b441b4e024e2ba2b37188eea3f28515c61&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight self-hosted file explorer — navigate and manage your filesystem from any browser.</div>",
+            "url": "https://github.com/Defaultik/file-explorer",
+            "title": "Defaultik/file-explorer: Lightweight self-hosted file explorer — navigate and manage your filesystem from any browser.",
+            "date_modified": "2026-06-22T22:28:44.000Z",
+            "date_published": "2026-06-11T20:29:20.000Z",
             "author": {
-                "name": "Tallam60",
-                "url": "https://github.com/Tallam60"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38019421?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a lightweight, themeable, and dependency-free stepper component for React and Vue with fluid animation and autoplay support.</div>",
-            "url": "https://github.com/joscgh/pasito",
-            "title": "joscgh/pasito: Provide a lightweight, themeable, and dependency-free stepper component for React and Vue with fluid animation and autoplay support.",
-            "date_modified": "2026-06-22T21:39:34.000Z",
-            "date_published": "2018-04-02T22:15:53.000Z",
-            "author": {
-                "name": "joscgh",
-                "url": "https://github.com/joscgh"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/295969756?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Kyron Terminal is a sleek, lightweight, text-based interface (CLI/Terminal Emulator) designed specifically for real-time crypto ecosystem monitoring. Blending a retro cyberpunk aesthetic with modern web functionality, Kyron Terminal allows users to check market prices, 24-hour trends.</div>",
-            "url": "https://github.com/kyronterminalxyz/kyronterminaldev",
-            "title": "kyronterminalxyz/kyronterminaldev: Kyron Terminal is a sleek, lightweight, text-based interface (CLI/Terminal Emulator) designed specifically for real-time crypto ecosystem monitoring. Blending a retro cyberpunk aesthetic with modern web functionality, Kyron Terminal allows users to check market prices, 24-hour trends.",
-            "date_modified": "2026-06-22T21:39:06.000Z",
-            "date_published": "2026-06-22T21:37:26.000Z",
-            "author": {
-                "name": "kyronterminalxyz",
-                "url": "https://github.com/kyronterminalxyz"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5168325?u=69dde7e626901f05b53108fd132ac0f28ef62044&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight declarative JSON transformation engine inspired by XSLT. Define mapping rules as plain JavaScript objects stored in reusable .js files, then pass them to a tiny transform() function.</div>",
-            "url": "https://github.com/kimmania/json-transformer",
-            "title": "kimmania/json-transformer: Lightweight declarative JSON transformation engine inspired by XSLT. Define mapping rules as plain JavaScript objects stored in reusable .js files, then pass them to a tiny transform() function.",
-            "date_modified": "2026-06-22T21:38:49.000Z",
-            "date_published": "2026-04-07T11:56:56.000Z",
-            "author": {
-                "name": "kimmania",
-                "url": "https://github.com/kimmania"
+                "name": "Defaultik",
+                "url": "https://github.com/Defaultik"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-06-22T21:38:35.000Z",
+            "date_modified": "2026-06-22T22:28:36.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -116,76 +83,76 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/50215916?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a lightweight MCP server for FortiManager that runs JavaScript code to handle API queries and commands efficiently using Code Mode.</div>",
-            "url": "https://github.com/thejordanone/fortimanager-code-mode-mcp",
-            "title": "thejordanone/fortimanager-code-mode-mcp: Provide a lightweight MCP server for FortiManager that runs JavaScript code to handle API queries and commands efficiently using Code Mode.",
-            "date_modified": "2026-06-22T21:38:27.000Z",
-            "date_published": "2026-03-13T00:02:27.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/129896036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.</div>",
+            "url": "https://github.com/opengeos/GeoLibre",
+            "title": "opengeos/GeoLibre: A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+            "date_modified": "2026-06-22T22:28:22.000Z",
+            "date_published": "2026-05-27T19:34:31.000Z",
             "author": {
-                "name": "thejordanone",
-                "url": "https://github.com/thejordanone"
+                "name": "opengeos",
+                "url": "https://github.com/opengeos"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107294525?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build fast web frontends with LiteForge using signals-driven updates, no virtual DOM, zero dependencies, and strong TypeScript support.</div>",
-            "url": "https://github.com/lamproskpr2/liteforge",
-            "title": "lamproskpr2/liteforge: Build fast web frontends with LiteForge using signals-driven updates, no virtual DOM, zero dependencies, and strong TypeScript support.",
-            "date_modified": "2026-06-22T21:37:56.000Z",
-            "date_published": "2026-03-12T13:40:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/216841304?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, browser-based flight dispatch tool to take the guesswork out of planning your next MSFS session.</div>",
+            "url": "https://github.com/manicminer00/global-flight-dispatcher",
+            "title": "manicminer00/global-flight-dispatcher: A lightweight, browser-based flight dispatch tool to take the guesswork out of planning your next MSFS session.",
+            "date_modified": "2026-06-22T22:27:57.000Z",
+            "date_published": "2026-05-31T13:15:53.000Z",
             "author": {
-                "name": "lamproskpr2",
-                "url": "https://github.com/lamproskpr2"
+                "name": "manicminer00",
+                "url": "https://github.com/manicminer00"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/252235214?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Open source and lightweight app builder platform.</div>",
-            "url": "https://github.com/SuperToolMake/supertoolmake",
-            "title": "SuperToolMake/supertoolmake: Open source and lightweight app builder platform.",
-            "date_modified": "2026-06-22T21:37:37.000Z",
-            "date_published": "2025-12-30T20:16:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/115465353?u=9b871a154555471b8c6aa23df49d6ca17f949ad9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted monitoring system </div>",
+            "url": "https://github.com/gladsonsam/Vantyr",
+            "title": "gladsonsam/Vantyr: A lightweight, self-hosted monitoring system ",
+            "date_modified": "2026-06-22T22:27:23.000Z",
+            "date_published": "2026-03-16T08:32:32.000Z",
             "author": {
-                "name": "SuperToolMake",
-                "url": "https://github.com/SuperToolMake"
+                "name": "gladsonsam",
+                "url": "https://github.com/gladsonsam"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/125457730?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Track your GitHub usage in real time with a lightweight desktop widget showing Copilot requests, Actions minutes, bandwidth, storage, and API limits.</div>",
-            "url": "https://github.com/iamsujalarora/githubMeter",
-            "title": "iamsujalarora/githubMeter: Track your GitHub usage in real time with a lightweight desktop widget showing Copilot requests, Actions minutes, bandwidth, storage, and API limits.",
-            "date_modified": "2026-06-22T21:37:31.000Z",
-            "date_published": "2026-03-12T03:52:21.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/276233255?u=adee8b55fa1a3fe230fd76fb44855543f607b56f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight GNOME Shell extension that displays a black screen after a period of user inactivity and automatically enables power saving mode.</div>",
+            "url": "https://github.com/groovy-gorilla/blackout",
+            "title": "groovy-gorilla/blackout: A lightweight GNOME Shell extension that displays a black screen after a period of user inactivity and automatically enables power saving mode.",
+            "date_modified": "2026-06-22T22:26:59.000Z",
+            "date_published": "2026-06-21T21:29:47.000Z",
             "author": {
-                "name": "iamsujalarora",
-                "url": "https://github.com/iamsujalarora"
+                "name": "groovy-gorilla",
+                "url": "https://github.com/groovy-gorilla"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/149361678?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a minimal document framework with fast builds, low dependencies, and simple setup as a lightweight alternative to VitePress.</div>",
-            "url": "https://github.com/lavish480/ink",
-            "title": "lavish480/ink: Provide a minimal document framework with fast builds, low dependencies, and simple setup as a lightweight alternative to VitePress.",
-            "date_modified": "2026-06-22T21:37:12.000Z",
-            "date_published": "2026-03-12T01:14:23.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268516410?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AGIeX is a lightweight node infrastructure for powering the AGI Expert network (<a href=\"https://agi.expert\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://agi.expert</a>). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.</div>",
+            "url": "https://github.com/AGI-expert/AGIeX",
+            "title": "AGI-expert/AGIeX: AGIeX is a lightweight node infrastructure for powering the AGI Expert network (https://agi.expert). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.",
+            "date_modified": "2026-06-22T22:26:54.000Z",
+            "date_published": "2026-03-21T10:15:37.000Z",
             "author": {
-                "name": "lavish480",
-                "url": "https://github.com/lavish480"
+                "name": "AGI-expert",
+                "url": "https://github.com/AGI-expert"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/109484657?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build and manage a fast, secure forum with Cloudflare Workers, supporting posts, comments, image uploads, 2FA, and user authentication.</div>",
-            "url": "https://github.com/Edsonpcgamer123/CForum",
-            "title": "Edsonpcgamer123/CForum: Build and manage a fast, secure forum with Cloudflare Workers, supporting posts, comments, image uploads, 2FA, and user authentication.",
-            "date_modified": "2026-06-22T21:36:56.000Z",
-            "date_published": "2026-03-11T19:44:02.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1914672?u=6932d5914ab8c47976803b3ce19fb2a7e830837a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight spec-driven development. A roadmap of work items, a short plan per item, one git branch per item — without the ceremony of heavier spec frameworks.</div>",
+            "url": "https://github.com/elnaterator/speclite",
+            "title": "elnaterator/speclite: Lightweight spec-driven development. A roadmap of work items, a short plan per item, one git branch per item — without the ceremony of heavier spec frameworks.",
+            "date_modified": "2026-06-22T22:26:43.000Z",
+            "date_published": "2026-06-02T05:19:37.000Z",
             "author": {
-                "name": "Edsonpcgamer123",
-                "url": "https://github.com/Edsonpcgamer123"
+                "name": "elnaterator",
+                "url": "https://github.com/elnaterator"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/152768032?u=84579f913c2988214a95b187f91d1905813e0c16&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A local-first workspace for organizing creative assets, documents and other files with a growing architecture of lightweight file editors.</div>",
             "url": "https://github.com/Twinspeakers/Inventory",
             "title": "Twinspeakers/Inventory: A local-first workspace for organizing creative assets, documents and other files with a growing architecture of lightweight file editors.",
-            "date_modified": "2026-06-22T21:36:45.000Z",
+            "date_modified": "2026-06-22T22:26:34.000Z",
             "date_published": "2026-06-05T07:36:15.000Z",
             "author": {
                 "name": "Twinspeakers",
@@ -193,36 +160,69 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/104099876?u=659752525ba11e72e8a2960860656b4e870c0b45&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cross-platform utility to keep your device awake. Lightweight. Native. Fast.</div>",
-            "url": "https://github.com/BOSSincrypto/dont-sleep-app",
-            "title": "BOSSincrypto/dont-sleep-app: Cross-platform utility to keep your device awake. Lightweight. Native. Fast.",
-            "date_modified": "2026-06-22T21:36:34.000Z",
-            "date_published": "2026-06-19T13:44:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/151859229?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and accessible React accordion component with smooth animations.</div>",
+            "url": "https://github.com/vuhuuu11/react-accordion",
+            "title": "vuhuuu11/react-accordion: A lightweight and accessible React accordion component with smooth animations.",
+            "date_modified": "2026-06-22T22:26:27.000Z",
+            "date_published": "2025-04-04T12:49:56.000Z",
             "author": {
-                "name": "BOSSincrypto",
-                "url": "https://github.com/BOSSincrypto"
+                "name": "vuhuuu11",
+                "url": "https://github.com/vuhuuu11"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4949545?u=80db341761b801d62f24c6cb87642c3de6c2ee7e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight rule-based Korean sentence parser</div>",
-            "url": "https://github.com/cwchentw/hanparse",
-            "title": "cwchentw/hanparse: A lightweight rule-based Korean sentence parser",
-            "date_modified": "2026-06-22T21:36:09.000Z",
-            "date_published": "2026-04-24T11:56:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155105085?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React SSR meta-framework - devix</div>",
+            "url": "https://github.com/devlusoft/devix",
+            "title": "devlusoft/devix: A lightweight React SSR meta-framework - devix",
+            "date_modified": "2026-06-22T22:26:05.000Z",
+            "date_published": "2026-03-17T23:54:34.000Z",
             "author": {
-                "name": "cwchentw",
-                "url": "https://github.com/cwchentw"
+                "name": "devlusoft",
+                "url": "https://github.com/devlusoft"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/16340911?u=0b86735638fe0dc42ea6e9f046d130a38edf274a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Simple and lightweight typed MobX router 🚀</div>",
-            "url": "https://github.com/js2me/mobx-route",
-            "title": "js2me/mobx-route: 🚀 Simple and lightweight typed MobX router 🚀",
-            "date_modified": "2026-06-22T21:36:07.000Z",
-            "date_published": "2025-04-15T12:48:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214981550?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The Agents in Construction (AiC) ontology is a lightweight semantic model for coordinating on-site production in construction. It is intended to support data integration, reasoning, and analytics for digital twins, production control, and robotics in construction.</div>",
+            "url": "https://github.com/DigiConstructLab-TU-Delft/AiC-Ontology",
+            "title": "DigiConstructLab-TU-Delft/AiC-Ontology: The Agents in Construction (AiC) ontology is a lightweight semantic model for coordinating on-site production in construction. It is intended to support data integration, reasoning, and analytics for digital twins, production control, and robotics in construction.",
+            "date_modified": "2026-06-22T22:24:55.000Z",
+            "date_published": "2025-11-25T18:27:09.000Z",
             "author": {
-                "name": "js2me",
-                "url": "https://github.com/js2me"
+                "name": "DigiConstructLab-TU-Delft",
+                "url": "https://github.com/DigiConstructLab-TU-Delft"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274324912?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Web dashboard for Keyorix — lightweight on-premise secrets manager</div>",
+            "url": "https://github.com/keyorixhq/keyorix-web",
+            "title": "keyorixhq/keyorix-web: Web dashboard for Keyorix — lightweight on-premise secrets manager",
+            "date_modified": "2026-06-22T22:24:24.000Z",
+            "date_published": "2026-04-07T20:32:24.000Z",
+            "author": {
+                "name": "keyorixhq",
+                "url": "https://github.com/keyorixhq"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/152104512?u=4a7840830e2319f7d51e5e414716128fc2a52f32&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, Fast Lightweight Baileys Powerd WhatsApp bot multidevice </div>",
+            "url": "https://github.com/xhclintohn/Toxic-MD",
+            "title": "xhclintohn/Toxic-MD: Simple, Fast Lightweight Baileys Powerd WhatsApp bot multidevice ",
+            "date_modified": "2026-06-22T22:24:24.000Z",
+            "date_published": "2024-12-01T14:39:19.000Z",
+            "author": {
+                "name": "xhclintohn",
+                "url": "https://github.com/xhclintohn"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134590343?u=a09b38523bc87eea9f6ae32e81c42398ba7dd74b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Taro fork</div>",
+            "url": "https://github.com/specificshen/taro-lite",
+            "title": "specificshen/taro-lite: Lightweight Taro fork",
+            "date_modified": "2026-06-22T22:23:51.000Z",
+            "date_published": "2026-06-01T00:38:27.000Z",
+            "author": {
+                "name": "specificshen",
+                "url": "https://github.com/specificshen"
             }
         }
     ]
