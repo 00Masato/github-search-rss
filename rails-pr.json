@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This avoids interacting with the mutex when possible, i.e. when enable_reloading is false.</p>\n<p dir=\"auto\">This lets us use the view context class from Ractors without any additional setup.</p>",
+            "url": "https://github.com/rails/rails/pull/57823",
+            "title": "Initialize ActionView::LookupContext.view_context_class early",
+            "date_modified": "2026-06-23T10:06:17.000Z",
+            "date_published": "2026-06-23T09:58:51.000Z",
+            "author": {
+                "name": "etiennebarrie",
+                "url": "https://github.com/etiennebarrie"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58791514?u=20565716f236185278d79789b6d5bcd0d01f58f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\"><code class=\"notranslate\">CurrentAttributes#set</code> delegates to <code class=\"notranslate\">Object#with</code>, which restores the previous values through the writers when the block exits. A generated writer always stores its key (<code class=\"notranslate\">@attributes[:key] = value</code>), so an attribute without a default — absent from <code class=\"notranslate\">@attributes</code> before the block - gets reintroduced as <code class=\"notranslate\">nil</code> on restore and stays there for the rest of the execution loop.</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Current &lt; ActiveSupport::CurrentAttributes\n  attribute :request_id\nend\n\nCurrent.attributes # =&gt; {}\nCurrent.set(request_id: &quot;abc&quot;) { }\nCurrent.attributes # =&gt; { request_id: nil }   # leaked\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Current</span> &lt; <span class=\"pl-v\">ActiveSupport</span>::<span class=\"pl-v\">CurrentAttributes</span>\n  <span class=\"pl-en\">attribute</span> <span class=\"pl-pds\">:request_id</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">attributes</span> <span class=\"pl-c\"># =&gt; {}</span>\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">set</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">request_id</span>: <span class=\"pl-s\">\"abc\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-kos\">{</span> <span class=\"pl-kos\">}</span>\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">attributes</span> <span class=\"pl-c\"># =&gt; { request_id: nil }   # leaked</span></pre></div>\n<p dir=\"auto\">This matters because CurrentAttributes deliberately omits defaultless attributes from <code class=\"notranslate\">@attributes</code> to keep serialized payloads (jobs, request context, etc.) lean - the leak silently undoes that until the next reset.</p>\n<h3 dir=\"auto\">Fix</h3>\n<p dir=\"auto\">Record which of the passed keys had no stored value before the block, and delete them again in an ensure after with restores. Keys that existed beforehand keep their restored value untouched.</p>\n<h3 dir=\"auto\">Notes</h3>\n<p dir=\"auto\">Restoration still runs through the writers, so custom setter side effects are preserved. Only the keys explicitly passed to set are tracked; a key a custom setter writes as a side effect is out of scope here.</p>",
             "url": "https://github.com/rails/rails/pull/57821",
             "title": "Prevent ActiveSupport::CurrentAttributes#set from leaking unassigned keys",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "tahsin352",
                 "url": "https://github.com/tahsin352"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/100725?u=3d967921888fe6508a55960e59e83a4931a95ff6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">The database pooling configuration options were renamed in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2778257867\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/54175\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/54175/hovercard\" href=\"https://github.com/rails/rails/pull/54175\">#54175</a>: <code class=\"notranslate\">max_connections</code> is now the preferred name for the connection limit (previously <code class=\"notranslate\">pool</code>), and <code class=\"notranslate\">min_connections</code> was added to pre-open and maintain a minimum number of connections.</p>\n<p dir=\"auto\">The generated <code class=\"notranslate\">database.yml</code> templates already use <code class=\"notranslate\">max_connections</code>, but the <a href=\"https://guides.rubyonrails.org/configuring.html#database-pooling\" rel=\"nofollow\">Database Pooling</a> section of the configuration guide still documented the legacy <code class=\"notranslate\">pool</code> option.</p>\n<h3 dir=\"auto\">Changes</h3>\n<ul dir=\"auto\">\n<li>Use <code class=\"notranslate\">max_connections</code> in the Database Pooling example and prose.</li>\n<li>Document <code class=\"notranslate\">min_connections</code> with an example.</li>\n<li>Add a note explaining that <code class=\"notranslate\">pool</code> remains supported as an alias for <code class=\"notranslate\">max_connections</code>, that <code class=\"notranslate\">max_connections</code> is now preferred, and that setting conflicting <code class=\"notranslate\">pool</code>/<code class=\"notranslate\">max_connections</code> values (or combining <code class=\"notranslate\">pool</code> with <code class=\"notranslate\">min_connections</code>) raises an error — matching the validation in <code class=\"notranslate\">HashConfig</code>.</li>\n</ul>\n<p dir=\"auto\">Scope is intentionally limited to the Database Pooling section. The <code class=\"notranslate\">pool</code> examples in the DATABASE_URL merging section illustrate URL/hash merge mechanics where <code class=\"notranslate\">pool</code> still works, so they're left unchanged to keep the diff focused.</p>\n<p dir=\"auto\">🤖 Generated with <a href=\"https://claude.com/claude-code\" rel=\"nofollow\">Claude Code</a></p>",
-            "url": "https://github.com/rails/rails/pull/57736",
-            "title": "Document max_connections/min_connections in Database Pooling guide",
-            "date_modified": "2026-06-15T09:18:30.000Z",
-            "date_published": "2026-06-15T09:18:16.000Z",
-            "author": {
-                "name": "igor-alexandrov",
-                "url": "https://github.com/igor-alexandrov"
             }
         }
     ]
