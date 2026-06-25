@@ -17,17 +17,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This just cleans up some usage of shareable_lambda on constants to make them a bit less obtuse. Sorry.. not sure why I originally did this in such a hideous way.....</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57859",
-            "title": "Better shareable_lambda usage",
-            "date_modified": "2026-06-25T17:02:10.000Z",
-            "date_published": "2026-06-25T16:55:56.000Z",
-            "author": {
-                "name": "andrewn617",
-                "url": "https://github.com/andrewn617"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">register_template_handler is the supported way to teach Action View about a new template type, and gems such as <a href=\"https://github.com/haml/haml/blob/v7.2.0/lib/haml/rails_template.rb#L55\">haml</a> and <a href=\"https://github.com/markaby/markaby/blob/v0.9.4/lib/markaby/rails.rb#L9\">markaby</a> already call it as ActionView::Template.register_template_handler. It was undocumented because it is defined on the internal Template::Handlers module that Template extends, which is marked :nodoc:.</p>\n<p dir=\"auto\">Document it as a singleton method on ActionView::Template, where it actually lives once the module is extended, mirroring how local_assigns is documented.</p>\n<p dir=\"auto\">Everything else under ActionView::Template is internal: the registry helper methods, the built-in handler classes (ERB, Raw, Html, Builder), and Template's own class and instance methods are not meant to be called by applications. Mark the handler classes :nodoc: and use :stopdoc: to stop documenting Template past its public entry points, so the API page only lists register_template_handler and local_assigns.</p>\n<p dir=\"auto\">This also drops the :nodoc: on Template's <code class=\"notranslate\">class &lt;&lt; self</code>, which never had any effect: RDoc does not honor :nodoc: on a singleton class, so mime_types_implementation=, validate_formats and normalized_formats had been showing up as public API.</p>",
             "url": "https://github.com/rails/rails/pull/57858",
             "title": "Only document the public ActionView::Template API [ci skip]",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "duggiefresh",
                 "url": "https://github.com/duggiefresh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I'd like to make Action Controller Renderers Ractor safe. It currently is not because an object that holds the name of the renderers (<code class=\"notranslate\">js</code>, <code class=\"notranslate\">xml</code>...) isn't frozen. I can't just freeze it because we mutate it at boot time.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR includes 3 commits</p>\n<ol dir=\"auto\">\n<li>Deprecate a constant (It was documented but I think this should be for internal usage only).</li>\n<li>Add a way for deprecated constant to change their target after initialization.</li>\n<li>Stop mutating a Set when adding or removing renderer and freeze the set.</li>\n</ol>\n<p dir=\"auto\">I added more explanation in each commit.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/57830",
+            "title": "Make ActionController Renderers ractor safe",
+            "date_modified": "2026-06-25T00:15:20.000Z",
+            "date_published": "2026-06-23T23:15:51.000Z",
+            "author": {
+                "name": "Edouard-chin",
+                "url": "https://github.com/Edouard-chin"
             }
         }
     ]
