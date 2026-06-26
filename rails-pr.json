@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Template.handler_for_extension and Template::Handlers.extensions are read on the template lookup and render path. The registry was kept in class variables, but the module is only extended in Template, so it wasn't necessary.</p>\n<p dir=\"auto\">Move the registry to module instance variables on Template::Handlers, which non-main Ractors can read once the value is shareable, and make the stored handlers shareable: the built-in handler instances are frozen, the :ruby handler is built with ActiveSupport::Ractors.shareable_lambda, and app-provided Proc handlers are routed through<br>\nActiveSupport::Ractors.try_shareable_proc. Registration now rebuilds a frozen copy of the Hash (copy-on-write) and eagerly recomputes the frozen extensions list rather than memoizing it lazily, so a read never writes.</p>\n<p dir=\"auto\">The state and the registration logic now live on the Handlers module itself, so the built-in handlers are registered directly when the module is loaded rather than from the self.extended hook. The instance methods kept for the public and private (for tests) ActionView::Template.* API simply delegate to the module. Template still extends Handlers to expose them.</p>\n<p dir=\"auto\">ActionView::Template::Handlers::Builder memoized its <code class=\"notranslate\">require \"builder\"</code> call in an instance variable, which a frozen handler cannot write. Since require is idempotent the memoization is dropped so the handler holds no mutable state.</p>",
             "url": "https://github.com/rails/rails/pull/57874",
             "title": "Make the Action View template handler registry Ractor-shareable",
-            "date_modified": "2026-06-26T13:49:27.000Z",
+            "date_modified": "2026-06-26T20:47:13.000Z",
             "date_published": "2026-06-26T13:49:19.000Z",
             "author": {
                 "name": "etiennebarrie",
@@ -105,17 +105,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Take 2 on <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4717303158\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57814\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57814/hovercard\" href=\"https://github.com/rails/rails/pull/57814\">#57814</a></p>\n<p dir=\"auto\">Using <code class=\"notranslate\">ActiveSupport::Testing::Isolation</code>, we can get around the Ruby crashes.</p>",
-            "url": "https://github.com/rails/rails/pull/57842",
-            "title": "Make ActiveSupport::JSON encoders Ractor-shareable",
-            "date_modified": "2026-06-26T11:54:05.000Z",
-            "date_published": "2026-06-24T14:46:58.000Z",
-            "author": {
-                "name": "etiennebarrie",
-                "url": "https://github.com/etiennebarrie"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Wrap the callback terminator lambda with <code class=\"notranslate\">ActiveSupport::Ractors.shareable_lambda</code> so <code class=\"notranslate\">ActionMailbox::Callbacks::TERMINATOR</code> is Ractor-shareable.</p>\n<p dir=\"auto\">The lambda receives <code class=\"notranslate\">mailbox</code> and <code class=\"notranslate\">chain</code> as arguments and captures no external state.</p>\n<p dir=\"auto\">Complements <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4619068584\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57629\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57629/hovercard\" href=\"https://github.com/rails/rails/pull/57629\">#57629</a> (which makes the callbacks machinery itself ractor-safe); this covers the terminator: lambda passed by Action Mailbox.</p>",
             "url": "https://github.com/rails/rails/pull/57841",
             "title": "Make ActionMailbox::Callbacks::TERMINATOR ractor safe",
@@ -196,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">These constants expose the MIME type registries directly, leaking mutable internal state. Everything they're used for is already covered by the public API, so deprecate direct access in favor of:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Mime::SET              -&gt; Mime.symbols / Mime[...] / Mime::Type.lookup\nMime::LOOKUP           -&gt; Mime::Type.lookup\nMime::EXTENSION_LOOKUP -&gt; Mime::Type.lookup_by_extension / Mime[...]\"><pre class=\"notranslate\"><code class=\"notranslate\">Mime::SET              -&gt; Mime.symbols / Mime[...] / Mime::Type.lookup\nMime::LOOKUP           -&gt; Mime::Type.lookup\nMime::EXTENSION_LOOKUP -&gt; Mime::Type.lookup_by_extension / Mime[...]\n</code></pre></div>\n<p dir=\"auto\">The constants become ActiveSupport::Deprecation::DeprecatedObjectProxy instances that still delegate to the registries but warn on use.</p>",
             "url": "https://github.com/rails/rails/pull/57826",
             "title": "Deprecate Mime::SET, Mime::LOOKUP and Mime::EXTENSION_LOOKUP",
-            "date_modified": "2026-06-26T15:15:23.000Z",
+            "date_modified": "2026-06-26T21:19:43.000Z",
             "date_published": "2026-06-23T16:22:19.000Z",
             "author": {
                 "name": "etiennebarrie",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "etiennebarrie",
                 "url": "https://github.com/etiennebarrie"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/58791514?u=20565716f236185278d79789b6d5bcd0d01f58f3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">This PR makes <code class=\"notranslate\">ActiveSupport::CurrentAttributes</code> treat <code class=\"notranslate\">nil</code> as unset: assigning <code class=\"notranslate\">nil</code> to an attribute removes its key from the internal <code class=\"notranslate\">@attributes</code> hash instead of storing <code class=\"notranslate\">nil</code>.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">A <code class=\"notranslate\">CurrentAttributes</code> reader returns <code class=\"notranslate\">nil</code> for any attribute that hasn't been set, so a stored <code class=\"notranslate\">nil</code> and an absent key are indistinguishable to callers. <code class=\"notranslate\">CurrentAttributes</code> also deliberately omits attributes without a default from <code class=\"notranslate\">@attributes</code> to keep serialized payloads (Sidekiq jobs, request context, etc.) small — and stray <code class=\"notranslate\">nil</code> keys quietly defeat that.</p>\n<p dir=\"auto\">This also surfaced as a leak in <code class=\"notranslate\">#set</code>, which delegates to <code class=\"notranslate\">Object#with</code>. <code class=\"notranslate\">with</code> restores the previous values through the writers when the block ends, so a defaultless attribute — absent before the block — was written back as <code class=\"notranslate\">nil</code> and left behind for the rest of the execution loop.</p>\n<h3 dir=\"auto\">Example</h3>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"class Current &lt; ActiveSupport::CurrentAttributes\n  attribute :request_id\nend\n\nCurrent.attributes # =&gt; {}\n\nCurrent.set(request_id: &quot;abc&quot;) do\n  # ... processing\nend\n\n# Before: key leaks as nil\nCurrent.attributes # =&gt; { request_id: nil }\n\n# After: stays empty\nCurrent.attributes # =&gt; {}\"><pre class=\"notranslate\"><span class=\"pl-k\">class</span> <span class=\"pl-v\">Current</span> &lt; <span class=\"pl-v\">ActiveSupport</span>::<span class=\"pl-v\">CurrentAttributes</span>\n  <span class=\"pl-en\">attribute</span> <span class=\"pl-pds\">:request_id</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">attributes</span> <span class=\"pl-c\"># =&gt; {}</span>\n\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">set</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">request_id</span>: <span class=\"pl-s\">\"abc\"</span><span class=\"pl-kos\">)</span> <span class=\"pl-k\">do</span>\n  <span class=\"pl-c\"># ... processing</span>\n<span class=\"pl-k\">end</span>\n\n<span class=\"pl-c\"># Before: key leaks as nil</span>\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">attributes</span> <span class=\"pl-c\"># =&gt; { request_id: nil }</span>\n\n<span class=\"pl-c\"># After: stays empty</span>\n<span class=\"pl-v\">Current</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">attributes</span> <span class=\"pl-c\"># =&gt; {}</span></pre></div>",
+            "url": "https://github.com/rails/rails/pull/57821",
+            "title": "Prevent ActiveSupport::CurrentAttributes#set from leaking unassigned keys",
+            "date_modified": "2026-06-24T14:13:56.000Z",
+            "date_published": "2026-06-23T07:33:18.000Z",
+            "author": {
+                "name": "antonzaharia",
+                "url": "https://github.com/antonzaharia"
             }
         }
     ]
