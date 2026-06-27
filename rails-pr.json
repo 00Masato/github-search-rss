@@ -6,6 +6,116 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong><code class=\"notranslate\">configurable.rb</code></strong> — the <code class=\"notranslate\">#configure</code> example's class only does <code class=\"notranslate\">include ActiveSupport::Configurable</code> without declaring a <code class=\"notranslate\">config_accessor</code>, so the bare <code class=\"notranslate\">User.allowed_access</code> reader is never defined and would raise <code class=\"notranslate\">NoMethodError</code>. Read the value through <code class=\"notranslate\">config</code>, matching the adjacent <code class=\"notranslate\">#config</code> example. (The <code class=\"notranslate\">#config_accessor</code> example below, which <em>does</em> declare the accessor, is left untouched.)</li>\n<li><strong><code class=\"notranslate\">notifications.rb</code></strong> — the object returned by <code class=\"notranslate\">.subscribe</code> responds to <code class=\"notranslate\">subscribed_to?</code>, not <code class=\"notranslate\">matches?</code>; the example now calls <code class=\"notranslate\">subscribed_to?</code>.</li>\n</ul>\n<p dir=\"auto\">All changes are comment-only.</p>",
+            "url": "https://github.com/rails/rails/pull/57887",
+            "title": "Fix incorrect RDoc examples in Active Support",
+            "date_modified": "2026-06-27T00:12:06.000Z",
+            "date_published": "2026-06-27T00:11:57.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong><code class=\"notranslate\">rails/engine.rb</code></strong> — the prose referenced \"the <code class=\"notranslate\">#helper</code> method on an engine's instance\", but the instance method is <code class=\"notranslate\">helpers</code> (the example right below already calls <code class=\"notranslate\">MyEngine::Engine.helpers</code>). The singular <code class=\"notranslate\">#helper</code> also renders a broken RDoc cross-reference.</li>\n<li><strong><code class=\"notranslate\">rails/paths.rb</code></strong> — <code class=\"notranslate\">Rails::Paths::Path</code> doesn't define <code class=\"notranslate\">#inspect</code>, so <code class=\"notranslate\">root[\"config/routes\"].inspect</code> returns the default object representation, not the array. The sibling examples use <code class=\"notranslate\">.to_ary.inspect</code>; added the missing <code class=\"notranslate\">.to_ary</code>.</li>\n</ul>\n<p dir=\"auto\">All changes are comment-only.</p>",
+            "url": "https://github.com/rails/rails/pull/57886",
+            "title": "Fix incorrect RDoc in Railties",
+            "date_modified": "2026-06-27T00:09:46.000Z",
+            "date_published": "2026-06-27T00:09:34.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">action_cable/connection/test_case.rb</code>, the \"Connection is automatically inferred\" paragraph is about the connection under test, but one sentence read \"If the <strong>channel</strong> cannot be inferred\" — a copy-paste leftover from the channel test case. Changed it to \"connection\".</p>\n<p dir=\"auto\">Comment-only change.</p>",
+            "url": "https://github.com/rails/rails/pull/57885",
+            "title": "Fix copy-paste RDoc in Action Cable connection test case",
+            "date_modified": "2026-06-27T00:08:33.000Z",
+            "date_published": "2026-06-27T00:08:25.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">active_job/continuation/test_helper.rb</code>, the example wrote <code class=\"notranslate\">step :step_one { items &lt;&lt; 1 }</code>. A brace block cannot follow a method call with an unparenthesized symbol argument, so this raises <code class=\"notranslate\">SyntaxError: unexpected '{' after a method call without parenthesis</code> (verified with <code class=\"notranslate\">ruby -c</code>). Parenthesized the argument — <code class=\"notranslate\">step(:step_one) { items &lt;&lt; 1 }</code> — so the block binds correctly and the example parses. The sibling <code class=\"notranslate\">interrupt_job_during_step</code> example just above uses the valid <code class=\"notranslate\">do |step| ... end</code> form.</p>\n<p dir=\"auto\">Comment-only change.</p>",
+            "url": "https://github.com/rails/rails/pull/57884",
+            "title": "Fix unparseable RDoc example in Active Job continuation test helper",
+            "date_modified": "2026-06-27T00:07:24.000Z",
+            "date_published": "2026-06-27T00:07:15.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">action_mailer/mail_helper.rb</code>, <code class=\"notranslate\">format_paragraph</code>'s wrap check (<code class=\"notranslate\">(sentences.last + [word]).join(\" \").length &gt; len</code>) ignores the indentation, so <code class=\"notranslate\">format_paragraph(my_text, 25, 4)</code> wraps the sample text into <strong>three</strong> lines, not two. Updated the example output to match the actual result.</p>\n<p dir=\"auto\">Comment-only change.</p>",
+            "url": "https://github.com/rails/rails/pull/57883",
+            "title": "Fix incorrect RDoc example in Action Mailer mail helper",
+            "date_modified": "2026-06-27T00:06:14.000Z",
+            "date_published": "2026-06-27T00:06:03.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong><code class=\"notranslate\">service/mirror_service.rb</code></strong> — the list of methods the primary service answers names <code class=\"notranslate\">+exists?+</code>, but the method is <code class=\"notranslate\">exist?</code> (the class delegates <code class=\"notranslate\">:exist?</code>, and every service defines <code class=\"notranslate\">def exist?</code>).</li>\n<li><strong><code class=\"notranslate\">app/models/active_storage/variant.rb</code></strong> — the <code class=\"notranslate\">#url</code> docs say the controllers \"will use this <code class=\"notranslate\">+service_call+</code> method\", but there is no <code class=\"notranslate\">service_call</code> method anywhere in Active Storage; the redirection goes through the documented <code class=\"notranslate\">#url</code>. Reference <code class=\"notranslate\">+url+</code> instead.</li>\n</ul>\n<p dir=\"auto\">All changes are comment-only.</p>",
+            "url": "https://github.com/rails/rails/pull/57882",
+            "title": "Fix incorrect RDoc method names in Active Storage",
+            "date_modified": "2026-06-27T00:04:49.000Z",
+            "date_published": "2026-06-27T00:04:38.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">action_mailbox/base.rb</code>, the <code class=\"notranslate\">ForwardsMailbox</code> example called <code class=\"notranslate\">User.exist?(...)</code>, but the Active Record existence predicate is <code class=\"notranslate\">exists?</code>. <code class=\"notranslate\">User.exist?</code> would raise <code class=\"notranslate\">NoMethodError</code>. Updated the example accordingly.</p>\n<p dir=\"auto\">Comment-only change.</p>",
+            "url": "https://github.com/rails/rails/pull/57881",
+            "title": "Fix incorrect RDoc example in Action Mailbox",
+            "date_modified": "2026-06-27T00:03:12.000Z",
+            "date_published": "2026-06-27T00:03:04.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">In <code class=\"notranslate\">action_text/content.rb</code>:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">to_plain_text</code> strips the content of <code class=\"notranslate\">&lt;script&gt;</code> (and <code class=\"notranslate\">&lt;style&gt;</code>) nodes — they are aliased to <code class=\"notranslate\">plain_text_for_unsupported_node</code>, which returns <code class=\"notranslate\">\"\"</code>. So the example output is <code class=\"notranslate\">\"safe\"</code>, not <code class=\"notranslate\">\"safeunsafe\"</code>. (The separate <code class=\"notranslate\">to_s</code> example below legitimately keeps <code class=\"notranslate\">safeunsafe</code> and is unchanged.)</li>\n<li><code class=\"notranslate\">ActionText::Content.new</code> takes its HTML as a positional argument, not a <code class=\"notranslate\">content:</code> keyword. Passing the keyword binds a Hash and the fragment is built from its <code class=\"notranslate\">to_s</code>. Dropped the keyword so the <code class=\"notranslate\">to_s</code> example matches the other examples in the file.</li>\n</ul>\n<p dir=\"auto\">All changes are comment-only.</p>",
+            "url": "https://github.com/rails/rails/pull/57880",
+            "title": "Fix incorrect RDoc examples in Action Text",
+            "date_modified": "2026-06-27T00:13:00.000Z",
+            "date_published": "2026-06-27T00:01:51.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li><strong><code class=\"notranslate\">action_controller/metal/strong_parameters.rb</code></strong> — the <code class=\"notranslate\">action_on_unpermitted_parameters = :raise</code> example showed <code class=\"notranslate\">found unpermitted keys: a, b</code>, but the real exception message (built in <code class=\"notranslate\">UnpermittedParameters#initialize</code>, and shown correctly by the sibling example above) is <code class=\"notranslate\">found unpermitted parameters: :a, :b</code>.</li>\n<li><strong><code class=\"notranslate\">action_controller/metal/http_authentication.rb</code></strong> — <code class=\"notranslate\">AUTHN_PAIR_DELIMITERS</code> is <code class=\"notranslate\">/(?:,|;|\\t)/</code>, so the comment describing the delimiters should list <code class=\"notranslate\">`,`</code> rather than <code class=\"notranslate\">`:`</code>.</li>\n</ul>\n<p dir=\"auto\">All changes are comment-only.</p>",
+            "url": "https://github.com/rails/rails/pull/57879",
+            "title": "Fix incorrect RDoc in Action Pack",
+            "date_modified": "2026-06-27T00:00:11.000Z",
+            "date_published": "2026-06-27T00:00:01.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">While reading the Active Model docs I noticed a few RDoc examples that disagree with the code right next to them:</p>\n<ul dir=\"auto\">\n<li><strong><code class=\"notranslate\">serializers/json.rb</code></strong> — the <code class=\"notranslate\">as_json</code> example printed <code class=\"notranslate\">\"created_at\" =&gt; \"2006-08-01T17:27:133.000Z\"</code>, which has an impossible <code class=\"notranslate\">133</code>-second component. The same example record appears seven other times in the file, all as <code class=\"notranslate\">\"2006-08-01T17:27:13.000Z\"</code>.</li>\n<li><strong><code class=\"notranslate\">validations.rb</code></strong> (two bullets) and <strong><code class=\"notranslate\">validations/validates.rb</code></strong> — the <code class=\"notranslate\">:except_on</code> option is illustrated with <code class=\"notranslate\">except: :create</code>. There is no <code class=\"notranslate\">:except</code> option (<code class=\"notranslate\">VALID_OPTIONS_FOR_VALIDATE</code> lists <code class=\"notranslate\">:except_on</code>), and the sibling examples on the following lines already use <code class=\"notranslate\">except_on:</code>.</li>\n<li><strong><code class=\"notranslate\">errors.rb</code></strong> — <code class=\"notranslate\">Errors#messages</code> returns a Hash keyed by attribute, but the <code class=\"notranslate\">#add</code> example showed a bare Array. Every other example in the same RDoc block shows the Hash form; this one now matches.</li>\n</ul>\n<p dir=\"auto\">All changes are comment-only.</p>",
+            "url": "https://github.com/rails/rails/pull/57878",
+            "title": "Fix incorrect RDoc examples in Active Model",
+            "date_modified": "2026-06-26T23:57:23.000Z",
+            "date_published": "2026-06-26T23:57:13.000Z",
+            "author": {
+                "name": "55728",
+                "url": "https://github.com/55728"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10948?u=42fd6ce403d7703f0c6fb56fdcf362039ed48a84&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #55401.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3263644825\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/55401\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/55401/hovercard\" href=\"https://github.com/rails/rails/issues/55401\">#55401</a>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">distinct.count</code> currently generates invalid SQL for models with composite<br>\nprimary keys on SQLite.</p>\n<p dir=\"auto\">For a model whose primary key is <code class=\"notranslate\">[\"author_id\", \"id\"]</code>,<br>\n<code class=\"notranslate\">Cpk::Book.distinct.count</code> tries to count the primary key array as a single<br>\naggregate column:</p>\n<div class=\"highlight highlight-source-sql notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"SELECT COUNT(DISTINCT [&quot;author_id&quot;, &quot;id&quot;]) FROM &quot;cpk_books&quot;\"><pre class=\"notranslate\"><span class=\"pl-k\">SELECT</span> <span class=\"pl-c1\">COUNT</span>(DISTINCT [<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>author_id<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>id<span class=\"pl-pds\">\"</span></span>]) <span class=\"pl-k\">FROM</span> <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>cpk_books<span class=\"pl-pds\">\"</span></span></pre></div>\n<p dir=\"auto\">SQLite rejects that query with:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"SQLite3::SQLException: no such column: &quot;author_id&quot;, &quot;id&quot;\"><pre lang=\"text\" class=\"notranslate\"><code class=\"notranslate\">SQLite3::SQLException: no such column: \"author_id\", \"id\"\n</code></pre></div>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request updates Active Record's count subquery handling to treat an<br>\narray <code class=\"notranslate\">column_name</code> as a multiple-column count target when <code class=\"notranslate\">distinct</code> is used.</p>\n<p dir=\"auto\">When the count target is an array, Active Record now builds a subquery that<br>\nselects the individual columns and counts the subquery rows, instead of passing<br>\nthe array into <code class=\"notranslate\">COUNT(DISTINCT ...)</code> as one aggregate expression.</p>\n<p dir=\"auto\">The generated query becomes:</p>\n<div class=\"highlight highlight-source-sql notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"SELECT COUNT(*) FROM (\n  SELECT DISTINCT &quot;cpk_books&quot;.&quot;author_id&quot;, &quot;cpk_books&quot;.&quot;id&quot; FROM &quot;cpk_books&quot;\n) AS subquery_for_count\"><pre class=\"notranslate\"><span class=\"pl-k\">SELECT</span> <span class=\"pl-c1\">COUNT</span>(<span class=\"pl-k\">*</span>) <span class=\"pl-k\">FROM</span> (\n  <span class=\"pl-k\">SELECT DISTINCT</span> <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>cpk_books<span class=\"pl-pds\">\"</span></span>.<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>author_id<span class=\"pl-pds\">\"</span></span>, <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>cpk_books<span class=\"pl-pds\">\"</span></span>.<span class=\"pl-s\"><span class=\"pl-pds\">\"</span>id<span class=\"pl-pds\">\"</span></span> <span class=\"pl-k\">FROM</span> <span class=\"pl-s\"><span class=\"pl-pds\">\"</span>cpk_books<span class=\"pl-pds\">\"</span></span>\n) <span class=\"pl-k\">AS</span> subquery_for_count</pre></div>\n<p dir=\"auto\">This matches the existing subquery strategy used for <code class=\"notranslate\">COUNT DISTINCT</code> shapes<br>\nthat are not supported consistently across adapters.</p>\n<p dir=\"auto\">The PR also adds a regression test covering <code class=\"notranslate\">Cpk::Book.distinct.count</code>.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Tests run:</p>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"ARCONN=sqlite3 bin/test test/cases/calculations_test.rb -i test_distinct_count_for_a_composite_primary_key_model\"><pre class=\"notranslate\">ARCONN=sqlite3 bin/test test/cases/calculations_test.rb -i test_distinct_count_for_a_composite_primary_key_model</pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"1 runs, 1 assertions, 0 failures, 0 errors, 0 skips\"><pre lang=\"text\" class=\"notranslate\"><code class=\"notranslate\">1 runs, 1 assertions, 0 failures, 0 errors, 0 skips\n</code></pre></div>\n<div class=\"highlight highlight-source-shell notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"ARCONN=sqlite3 bin/test test/cases/calculations_test.rb\"><pre class=\"notranslate\">ARCONN=sqlite3 bin/test test/cases/calculations_test.rb</pre></div>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"234 runs, 626 assertions, 0 failures, 0 errors, 1 skips\"><pre lang=\"text\" class=\"notranslate\"><code class=\"notranslate\">234 runs, 626 assertions, 0 failures, 0 errors, 1 skips\n</code></pre></div>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57877",
             "title": "Fix distinct count with composite primary keys",
@@ -20,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Template.handler_for_extension and Template::Handlers.extensions are read on the template lookup and render path. The registry was kept in class variables, but the module is only extended in Template, so it wasn't necessary.</p>\n<p dir=\"auto\">Move the registry to module instance variables on Template::Handlers, which non-main Ractors can read once the value is shareable, and make the stored handlers shareable: the built-in handler instances are frozen, the :ruby handler is built with ActiveSupport::Ractors.shareable_lambda, and app-provided Proc handlers are routed through<br>\nActiveSupport::Ractors.try_shareable_proc. Registration now rebuilds a frozen copy of the Hash (copy-on-write) and eagerly recomputes the frozen extensions list rather than memoizing it lazily, so a read never writes.</p>\n<p dir=\"auto\">The state and the registration logic now live on the Handlers module itself, so the built-in handlers are registered directly when the module is loaded rather than from the self.extended hook. The instance methods kept for the public and private (for tests) ActionView::Template.* API simply delegate to the module. Template still extends Handlers to expose them.</p>\n<p dir=\"auto\">ActionView::Template::Handlers::Builder memoized its <code class=\"notranslate\">require \"builder\"</code> call in an instance variable, which a frozen handler cannot write. Since require is idempotent the memoization is dropped so the handler holds no mutable state.</p>",
             "url": "https://github.com/rails/rails/pull/57874",
             "title": "Make the Action View template handler registry Ractor-shareable",
-            "date_modified": "2026-06-26T21:32:11.000Z",
+            "date_modified": "2026-06-26T23:51:05.000Z",
             "date_published": "2026-06-26T13:49:19.000Z",
             "author": {
                 "name": "etiennebarrie",
@@ -113,116 +223,6 @@
             "author": {
                 "name": "seanpdoyle",
                 "url": "https://github.com/seanpdoyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Wrap the callback terminator lambda with <code class=\"notranslate\">ActiveSupport::Ractors.shareable_lambda</code> so <code class=\"notranslate\">ActionMailbox::Callbacks::TERMINATOR</code> is Ractor-shareable.</p>\n<p dir=\"auto\">The lambda receives <code class=\"notranslate\">mailbox</code> and <code class=\"notranslate\">chain</code> as arguments and captures no external state.</p>\n<p dir=\"auto\">Complements <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4619068584\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57629\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57629/hovercard\" href=\"https://github.com/rails/rails/pull/57629\">#57629</a> (which makes the callbacks machinery itself ractor-safe); this covers the terminator: lambda passed by Action Mailbox.</p>",
-            "url": "https://github.com/rails/rails/pull/57841",
-            "title": "Make ActionMailbox::Callbacks::TERMINATOR ractor safe",
-            "date_modified": "2026-06-24T13:42:09.000Z",
-            "date_published": "2026-06-24T13:41:58.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Wrap the bind-substitution procs in <code class=\"notranslate\">Arel::Visitors::ToSql</code> and <code class=\"notranslate\">Arel::Visitors::PostgreSQL</code>, and the <code class=\"notranslate\">:all_blank</code> reject proc in <code class=\"notranslate\">ActiveRecord::NestedAttributes::ClassMethods</code>, with <code class=\"notranslate\">ActiveSupport::Ractors.shareable_proc</code> so all three constants are Ractor-shareable.</p>\n<p dir=\"auto\">None of the procs capture any external state — each receives its input as an argument.</p>",
-            "url": "https://github.com/rails/rails/pull/57840",
-            "title": "Make some Active Record constants ractor safe",
-            "date_modified": "2026-06-24T13:32:18.000Z",
-            "date_published": "2026-06-24T13:32:09.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Wrap the level-check lambdas in <code class=\"notranslate\">EventReporter::LogSubscriber::LEVEL_CHECKS</code> and the debug-mode check proc in <code class=\"notranslate\">StructuredEventSubscriber::DEBUG_CHECK</code> with <code class=\"notranslate\">ActiveSupport::Ractors.shareable_lambda</code> / <code class=\"notranslate\">.shareable_proc</code> so both constants are Ractor-shareable.</p>\n<p dir=\"auto\">Neither captures any instance state — the lambdas receive the logger as an argument, and the proc only makes a module-level call to <code class=\"notranslate\">ActiveSupport.event_reporter.debug_mode?</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/57839",
-            "title": "Make some ActiveSupport constants ractor safe",
-            "date_modified": "2026-06-24T13:27:16.000Z",
-            "date_published": "2026-06-24T13:27:04.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Wrap the default <code class=\"notranslate\">:same_site</code> proc with <code class=\"notranslate\">ActiveSupport::Ractors.shareable_proc</code> so <code class=\"notranslate\">CookieStore::DEFAULT_SAME_SITE</code> is Ractor-shareable.</p>\n<p dir=\"auto\">The proc receives the request as an argument and captures no external state.</p>",
-            "url": "https://github.com/rails/rails/pull/57837",
-            "title": "Make CookieStore::DEFAULT_SAME_SITE ractor safe",
-            "date_modified": "2026-06-24T13:14:15.000Z",
-            "date_published": "2026-06-24T13:14:05.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1206678?u=e50ffa627c68ffabf016888ca93eba87c86148f1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">This adds a <code class=\"notranslate\">min</code> value to the <code class=\"notranslate\">form.number_field</code> for a Product's <code class=\"notranslate\">inventory_count</code>. This helps prevent the reader from setting and saving the inventory count as negative number within the demo application.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR updates the example within the <a href=\"https://guides.rubyonrails.org/getting_started.html#action-mailer-and-email-notifications\" rel=\"nofollow\">Rails Guide: Action Mailer and Email Notifications</a></p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">N/A</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57831",
-            "title": "Guides: Include `min` value for `form.number_field` [ci skip]",
-            "date_modified": "2026-06-23T23:43:25.000Z",
-            "date_published": "2026-06-23T23:32:13.000Z",
-            "author": {
-                "name": "duggiefresh",
-                "url": "https://github.com/duggiefresh"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">I'd like to make Action Controller Renderers Ractor safe. It currently is not because an object that holds the name of the renderers (<code class=\"notranslate\">js</code>, <code class=\"notranslate\">xml</code>...) isn't frozen. I can't just freeze it because we mutate it at boot time.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This PR includes 3 commits</p>\n<ol dir=\"auto\">\n<li>Deprecate a constant (It was documented but I think this should be for internal usage only).</li>\n<li>Add a way for deprecated constant to change their target after initialization.</li>\n<li>Stop mutating a Set when adding or removing renderer and freeze the set.</li>\n</ol>\n<p dir=\"auto\">I added more explanation in each commit.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57830",
-            "title": "Make ActionController Renderers ractor safe",
-            "date_modified": "2026-06-26T14:24:20.000Z",
-            "date_published": "2026-06-23T23:15:51.000Z",
-            "author": {
-                "name": "Edouard-chin",
-                "url": "https://github.com/Edouard-chin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154584?u=96be1aca783153d62864247464be5ac1e30c8c1b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Summary</h3>\n<p dir=\"auto\">In a multi-database <code class=\"notranslate\">config/database.yml</code>, a secondary database commonly inherits the primary's <code class=\"notranslate\">url:</code> via a YAML anchor and then sets its own <code class=\"notranslate\">database:</code>:</p>\n<div class=\"highlight highlight-source-yaml notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"production:\n  primary: &amp;primary\n    url: &lt;%= ENV[&quot;DATABASE_URL&quot;] %&gt;   # e.g. postgres://user:pass@host/myapp_production\n  queue:\n    &lt;&lt;: *primary\n    database: myapp_production_queue   # silently ignored\"><pre class=\"notranslate\"><span class=\"pl-ent\">production</span>:\n  <span class=\"pl-ent\">primary</span>: <span class=\"pl-s\">&amp;primary</span>\n    <span class=\"pl-ent\">url</span>: <span class=\"pl-s\">&lt;%= ENV[\"DATABASE_URL\"] %&gt;   </span><span class=\"pl-c\"><span class=\"pl-c\">#</span> e.g. postgres://user:pass@host/myapp_production</span>\n  <span class=\"pl-ent\">queue</span>:\n    <span class=\"pl-ent\">&lt;&lt;</span>: <span class=\"pl-s\">*primary</span>\n    <span class=\"pl-ent\">database</span>: <span class=\"pl-s\">myapp_production_queue   </span><span class=\"pl-c\"><span class=\"pl-c\">#</span> silently ignored</span></pre></div>\n<p dir=\"auto\">Because the value parsed from the URL takes precedence over sibling keys, <code class=\"notranslate\">queue</code> silently connects to <code class=\"notranslate\">myapp_production</code>, not <code class=\"notranslate\">myapp_production_queue</code>. A confusing downstream symptom: <code class=\"notranslate\">db:prepare</code> then appears to \"skip\" the secondary — it resolves to the primary database, whose <code class=\"notranslate\">schema_migrations</code> table already exists, so nothing is created.</p>\n<h3 dir=\"auto\">What this changes</h3>\n<p dir=\"auto\">This does <strong>not</strong> change precedence — the URL still wins, which is intentional. It only adds a warning when a single configuration entry provides both a <code class=\"notranslate\">url</code> and a conflicting key (<code class=\"notranslate\">database:</code>, <code class=\"notranslate\">host:</code>, …), so the otherwise-silent conflict becomes visible:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Database configuration for &quot;queue&quot; (production) provides both a `url` and the\nconflicting key(s): database. The value(s) from the URL take precedence, so the\nexplicitly configured value(s) are ignored.\"><pre class=\"notranslate\"><code class=\"notranslate\">Database configuration for \"queue\" (production) provides both a `url` and the\nconflicting key(s): database. The value(s) from the URL take precedence, so the\nexplicitly configured value(s) are ignored.\n</code></pre></div>\n<p dir=\"auto\">The check lives in <code class=\"notranslate\">build_db_config_from_hash</code>, so it applies only to a literal <code class=\"notranslate\">url:</code> key written alongside other keys in the same entry. URLs supplied through the <code class=\"notranslate\">DATABASE_URL</code> environment variable go through a separate path (<code class=\"notranslate\">environment_url_config</code>) and are intentionally <strong>not</strong> warned about — overriding <code class=\"notranslate\">database.yml</code> via <code class=\"notranslate\">DATABASE_URL</code> is a supported, common pattern.</p>\n<p dir=\"auto\">The warning uses <code class=\"notranslate\">Kernel#warn</code> (writes to <code class=\"notranslate\">$stderr</code>, silenceable), fires only on a genuine conflict (explicit value present and different), and never interferes with config loading (the URL parsing in the check is guarded).</p>\n<h3 dir=\"auto\">Notes</h3>\n<ul dir=\"auto\">\n<li>A CHANGELOG entry and tests are included (conflict warns; url-only doesn't; matching value doesn't; <code class=\"notranslate\">DATABASE_URL</code> override doesn't).</li>\n<li>If a warning in this code path is undesirable, I'm happy to convert this into a documentation clarification in the multiple-databases guide instead.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57827",
-            "title": "Warn when a database config provides both a `url` and conflicting keys",
-            "date_modified": "2026-06-23T20:35:08.000Z",
-            "date_published": "2026-06-23T20:01:40.000Z",
-            "author": {
-                "name": "cgmoore120",
-                "url": "https://github.com/cgmoore120"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">These constants expose the MIME type registries directly, leaking mutable internal state. Everything they're used for is already covered by the public API, so deprecate direct access in favor of:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"Mime::SET              -&gt; Mime.symbols / Mime[...] / Mime::Type.lookup\nMime::LOOKUP           -&gt; Mime::Type.lookup\nMime::EXTENSION_LOOKUP -&gt; Mime::Type.lookup_by_extension / Mime[...]\"><pre class=\"notranslate\"><code class=\"notranslate\">Mime::SET              -&gt; Mime.symbols / Mime[...] / Mime::Type.lookup\nMime::LOOKUP           -&gt; Mime::Type.lookup\nMime::EXTENSION_LOOKUP -&gt; Mime::Type.lookup_by_extension / Mime[...]\n</code></pre></div>\n<p dir=\"auto\">The constants become ActiveSupport::Deprecation::DeprecatedObjectProxy instances that still delegate to the registries but warn on use.</p>",
-            "url": "https://github.com/rails/rails/pull/57826",
-            "title": "Deprecate Mime::SET, Mime::LOOKUP and Mime::EXTENSION_LOOKUP",
-            "date_modified": "2026-06-26T21:19:43.000Z",
-            "date_published": "2026-06-23T16:22:19.000Z",
-            "author": {
-                "name": "etiennebarrie",
-                "url": "https://github.com/etiennebarrie"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">We are working on making the framework Ractor safe. This PR enables a basic Rails application to be made ractor shareable.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">We introduce the <code class=\"notranslate\">Rails::Application#ractorize!</code> method which prepares the application to be shared and then calls <code class=\"notranslate\">Ractor.make_shareable</code> on it. For now, there are some restrictions on the setup of the application:</p>\n<ul dir=\"auto\">\n<li>Application code and routes must be eager loaded</li>\n<li>Action cable is not supported</li>\n<li>App must use a null cache store</li>\n</ul>\n<p dir=\"auto\">We hope to remove these restrictions as the feature becomes more mature, this is simply a starting point.</p>\n<p dir=\"auto\">For the last few weeks we have been setting the groundwork, but this PR includes a few final pieces to get this working:</p>\n<ul dir=\"auto\">\n<li>Making inheritable options ractor safe (there is a separate PR for this with some debate around approach <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4677006366\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57757\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/57757/hovercard\" href=\"https://github.com/rails/rails/pull/57757\">#57757</a>, I thought it'd be helpful to open this PR to continue that discussion)</li>\n<li>Removing default procs that mutate the hash when freezing some hashes</li>\n<li>We make the application's key generators store Ractor local, since concurrent map is not Ractor-shareable. If we have a production ready ractor-safe map in the future we can use that, but this is a pragmatic compromise for now.</li>\n<li>Eagerly building each engine's app and throwing away the mutex, which is not ractor shareable</li>\n<li>Making a few procs ractor shareable</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/57825",
-            "title": "Introduce ractorize",
-            "date_modified": "2026-06-26T11:46:21.000Z",
-            "date_published": "2026-06-23T14:01:32.000Z",
-            "author": {
-                "name": "andrewn617",
-                "url": "https://github.com/andrewn617"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This avoids interacting with the mutex when possible, i.e. when enable_reloading is false.</p>\n<p dir=\"auto\">This lets us use the view context class from Ractors without any additional setup.</p>",
-            "url": "https://github.com/rails/rails/pull/57823",
-            "title": "Initialize ActionView::LookupContext.view_context_class early",
-            "date_modified": "2026-06-26T10:16:09.000Z",
-            "date_published": "2026-06-23T09:58:51.000Z",
-            "author": {
-                "name": "etiennebarrie",
-                "url": "https://github.com/etiennebarrie"
             }
         }
     ]
