@@ -152,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">render_tracker was the only config.action_view option that needed custom setup. Its accessor lived on ActionView, so it could not be applied by the after_initialize hook that sends all the config.action_view options to ActionView::Base.</p>",
             "url": "https://github.com/rails/rails/pull/57929",
             "title": "Simplify `config.action_view.render_tracker`",
-            "date_modified": "2026-06-30T12:18:47.000Z",
+            "date_modified": "2026-07-01T17:13:54.000Z",
             "date_published": "2026-06-30T09:38:40.000Z",
             "author": {
                 "name": "etiennebarrie",
