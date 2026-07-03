@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39729785?u=7b7d98859c01331bfc730faea0c8f604b1c2a03d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">For custom attributes we still need to call the \"default\" type caster so that value objects are casted to expected values.</p>\n<p dir=\"auto\">See the new test example for an MRE.</p>\n<p dir=\"auto\">Follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1177003882\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/44746\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/44746/hovercard\" href=\"https://github.com/rails/rails/pull/44746\">#44746</a></p>\n\n<h3 dir=\"auto\">Detail</h3>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/57975",
+            "title": "Fix `in_order_of` raising on CTE & custom attributes",
+            "date_modified": "2026-07-03T17:05:34.000Z",
+            "date_published": "2026-07-03T17:03:52.000Z",
+            "author": {
+                "name": "viralpraxis",
+                "url": "https://github.com/viralpraxis"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/39735028?u=91330295c614cf3cec0b64bf242a14fc2ceb358f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">While working on Ractors I noticed we require <code class=\"notranslate\">useragent</code> during the first request, even in eager loaded envrionments.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Lets require it when we load <code class=\"notranslate\">ActionController::AllowBrowser</code> instead.</p>\n<h3 dir=\"auto\">Additional information</h3>\n\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/57974",
             "title": "Require `useragent` when loading `ActionController::AllowBrowser`",
@@ -209,17 +220,6 @@
             "title": "Honor `distinct` in `pluck` on a loaded relation",
             "date_modified": "2026-06-30T12:59:11.000Z",
             "date_published": "2026-06-30T12:59:00.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When converting rich text to plain text, only <code class=\"notranslate\">&lt;h1&gt;</code> headings were surrounded by blank lines; <code class=\"notranslate\">&lt;h2&gt;</code> through <code class=\"notranslate\">&lt;h6&gt;</code> ran together with adjacent content:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"ActionText::Content.new(&quot;&lt;h2&gt;Title&lt;/h2&gt;&lt;div&gt;body&lt;/div&gt;&quot;).to_plain_text\n# Before: &quot;Titlebody&quot;\n# After:  &quot;Title\\n\\nbody&quot;\"><pre class=\"notranslate\"><span class=\"pl-v\">ActionText</span>::<span class=\"pl-v\">Content</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"&lt;h2&gt;Title&lt;/h2&gt;&lt;div&gt;body&lt;/div&gt;\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_plain_text</span>\n<span class=\"pl-c\"># Before: \"Titlebody\"</span>\n<span class=\"pl-c\"># After:  \"Title\\n\\nbody\"</span></pre></div>\n<p dir=\"auto\">All heading levels are now treated as blocks, consistent with how <code class=\"notranslate\">&lt;h1&gt;</code> is already handled and with the markdown conversion, which supports <code class=\"notranslate\">&lt;h1&gt;</code> through <code class=\"notranslate\">&lt;h6&gt;</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/57934",
-            "title": "Separate `<h2>` through `<h6>` from neighbors in plain text conversion",
-            "date_modified": "2026-07-02T14:11:08.000Z",
-            "date_published": "2026-06-30T12:54:52.000Z",
             "author": {
                 "name": "55728",
                 "url": "https://github.com/55728"
