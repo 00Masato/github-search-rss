@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Reopening <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"278471268\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/31307\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/31307/hovercard\" href=\"https://github.com/rails/rails/pull/31307\">#31307</a><br>\n<span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #57969.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4803420259\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57969\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57969/hovercard\" href=\"https://github.com/rails/rails/issues/57969\">#57969</a></p>\n<p dir=\"auto\">cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/matthewd/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/matthewd\">@matthewd</a> wdyt about backporting to <code class=\"notranslate\">8-1-stable</code>?</p>",
+            "url": "https://github.com/rails/rails/pull/57981",
+            "title": "Only swallow the LoadError we intended to",
+            "date_modified": "2026-07-03T22:18:38.000Z",
+            "date_published": "2026-07-03T22:06:51.000Z",
+            "author": {
+                "name": "skipkayhil",
+                "url": "https://github.com/skipkayhil"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6014046?u=3972bfb97451f7f90e051df2e49fb7b8ee83e28d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Using reduce will create trees like:</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"And\n  And\n    And\n      Query\n    Query\n  Query\"><pre class=\"notranslate\"><code class=\"notranslate\">And\n  And\n    And\n      Query\n    Query\n  Query\n</code></pre></div>\n<p dir=\"auto\">Whereas this commit creates them like</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"And\n  Query\n  Query\n  Query\"><pre class=\"notranslate\"><code class=\"notranslate\">And\n  Query\n  Query\n  Query\n</code></pre></div>",
             "url": "https://github.com/rails/rails/pull/57980",
             "title": "Construct And nodes as Nary instead of Binary",
@@ -209,17 +220,6 @@
             "title": "Honor `distinct` in `pluck` on a loaded relation",
             "date_modified": "2026-06-30T12:59:11.000Z",
             "date_published": "2026-06-30T12:59:00.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When converting rich text to plain text, only <code class=\"notranslate\">&lt;h1&gt;</code> headings were surrounded by blank lines; <code class=\"notranslate\">&lt;h2&gt;</code> through <code class=\"notranslate\">&lt;h6&gt;</code> ran together with adjacent content:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"ActionText::Content.new(&quot;&lt;h2&gt;Title&lt;/h2&gt;&lt;div&gt;body&lt;/div&gt;&quot;).to_plain_text\n# Before: &quot;Titlebody&quot;\n# After:  &quot;Title\\n\\nbody&quot;\"><pre class=\"notranslate\"><span class=\"pl-v\">ActionText</span>::<span class=\"pl-v\">Content</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-s\">\"&lt;h2&gt;Title&lt;/h2&gt;&lt;div&gt;body&lt;/div&gt;\"</span><span class=\"pl-kos\">)</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">to_plain_text</span>\n<span class=\"pl-c\"># Before: \"Titlebody\"</span>\n<span class=\"pl-c\"># After:  \"Title\\n\\nbody\"</span></pre></div>\n<p dir=\"auto\">All heading levels are now treated as blocks, consistent with how <code class=\"notranslate\">&lt;h1&gt;</code> is already handled and with the markdown conversion, which supports <code class=\"notranslate\">&lt;h1&gt;</code> through <code class=\"notranslate\">&lt;h6&gt;</code>.</p>",
-            "url": "https://github.com/rails/rails/pull/57934",
-            "title": "Separate `<h2>` through `<h6>` from neighbors in plain text conversion",
-            "date_modified": "2026-07-02T14:11:08.000Z",
-            "date_published": "2026-06-30T12:54:52.000Z",
             "author": {
                 "name": "55728",
                 "url": "https://github.com/55728"
