@@ -6,32 +6,54 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72234525?u=7ec4eaf3523b60d93638914257c439641009be5b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight file-based database for Node.js</div>",
-            "url": "https://github.com/p3droob/Snowbase",
-            "title": "p3droob/Snowbase: A lightweight file-based database for Node.js",
-            "date_modified": "2026-07-05T16:54:05.000Z",
-            "date_published": "2026-07-01T23:56:04.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/207037264?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A CubeSat fault detection dashboard using XGBoost, explained live with SHAP + LIME. Includes real-time telemetry simulation, subsystem health monitoring, remaining-useful-life estimates, and model comparison — all in a lightweight Flask + vanilla JS app.</div>",
+            "url": "https://github.com/Sayeedahmed-09/SATMON",
+            "title": "Sayeedahmed-09/SATMON: A CubeSat fault detection dashboard using XGBoost, explained live with SHAP + LIME. Includes real-time telemetry simulation, subsystem health monitoring, remaining-useful-life estimates, and model comparison — all in a lightweight Flask + vanilla JS app.",
+            "date_modified": "2026-07-05T17:54:31.000Z",
+            "date_published": "2026-07-05T16:56:50.000Z",
             "author": {
-                "name": "p3droob",
-                "url": "https://github.com/p3droob"
+                "name": "Sayeedahmed-09",
+                "url": "https://github.com/Sayeedahmed-09"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/171155826?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A minimalist and lightweight web kit for accessible contents</div>",
-            "url": "https://github.com/brigitte-bigi/Whakerexa",
-            "title": "brigitte-bigi/Whakerexa: A minimalist and lightweight web kit for accessible contents",
-            "date_modified": "2026-07-05T16:54:02.000Z",
-            "date_published": "2025-04-23T13:28:54.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1843299?u=f51757eca7df17e731c316fc1c5bf821f2381adf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Jira clone with core project management features (projects, backlog, sprints, reporting) plus AI-driven task control and Playwright integration that automatically injects detected bugs into the backlog.</div>",
+            "url": "https://github.com/stevenmcsorley/jira-clone-ai-playwright",
+            "title": "stevenmcsorley/jira-clone-ai-playwright: A lightweight Jira clone with core project management features (projects, backlog, sprints, reporting) plus AI-driven task control and Playwright integration that automatically injects detected bugs into the backlog.",
+            "date_modified": "2026-07-05T17:53:42.000Z",
+            "date_published": "2025-09-24T09:16:43.000Z",
             "author": {
-                "name": "brigitte-bigi",
-                "url": "https://github.com/brigitte-bigi"
+                "name": "stevenmcsorley",
+                "url": "https://github.com/stevenmcsorley"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/218647379?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Human Resource Management System (HRMS) built with a FastAPI backend and a vanilla HTML/CSS/JS frontend.</div>",
+            "url": "https://github.com/px7nn/HRMS-odoo-26",
+            "title": "px7nn/HRMS-odoo-26: A lightweight Human Resource Management System (HRMS) built with a FastAPI backend and a vanilla HTML/CSS/JS frontend.",
+            "date_modified": "2026-07-05T17:52:52.000Z",
+            "date_published": "2026-07-04T03:12:04.000Z",
+            "author": {
+                "name": "px7nn",
+                "url": "https://github.com/px7nn"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45473517?u=665cb51b1fc5d669659e948ecdf55d953ba1b7c6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight AI-assisted workspace that turns messy founder, customer, and design-partner notes into structured product insights, pilot criteria, and recommended next experiments.</div>",
+            "url": "https://github.com/activereality/design-partner-insight-engine",
+            "title": "activereality/design-partner-insight-engine: A lightweight AI-assisted workspace that turns messy founder, customer, and design-partner notes into structured product insights, pilot criteria, and recommended next experiments.",
+            "date_modified": "2026-07-05T17:51:08.000Z",
+            "date_published": "2026-06-26T15:13:21.000Z",
+            "author": {
+                "name": "activereality",
+                "url": "https://github.com/activereality"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/249725682?u=c642e54f431ac409ee3a770a2c498d23c8ab4186&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight visual panel for managing Docker containers, images, networks, and volumes.</div>",
             "url": "https://github.com/MomoFlora/NexPanel",
             "title": "MomoFlora/NexPanel: A lightweight visual panel for managing Docker containers, images, networks, and volumes.",
-            "date_modified": "2026-07-05T16:53:30.000Z",
+            "date_modified": "2026-07-05T17:50:53.000Z",
             "date_published": "2026-07-05T12:21:15.000Z",
             "author": {
                 "name": "MomoFlora",
@@ -39,98 +61,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/234294129?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cross-platform Markdown editor</div>",
-            "url": "https://github.com/Bokuchi-Editor/bokuchi",
-            "title": "Bokuchi-Editor/bokuchi: A lightweight, cross-platform Markdown editor",
-            "date_modified": "2026-07-05T16:53:12.000Z",
-            "date_published": "2025-08-30T12:27:02.000Z",
-            "author": {
-                "name": "Bokuchi-Editor",
-                "url": "https://github.com/Bokuchi-Editor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236211693?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, high-performance AI desktop application designed to be completely local</div>",
-            "url": "https://github.com/monolabsdev/poly-ui",
-            "title": "monolabsdev/poly-ui: A lightweight, high-performance AI desktop application designed to be completely local",
-            "date_modified": "2026-07-05T16:52:55.000Z",
-            "date_published": "2026-03-25T19:32:21.000Z",
-            "author": {
-                "name": "monolabsdev",
-                "url": "https://github.com/monolabsdev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/279123462?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Monitor URL status using lychee to track link health and export metrics for VictoriaMetrics.</div>",
-            "url": "https://github.com/petuniapsychopathological990/http-status-monitor",
-            "title": "petuniapsychopathological990/http-status-monitor: Monitor URL status using lychee to track link health and export metrics for VictoriaMetrics.",
-            "date_modified": "2026-07-05T16:51:48.000Z",
-            "date_published": "2026-05-06T23:39:20.000Z",
-            "author": {
-                "name": "petuniapsychopathological990",
-                "url": "https://github.com/petuniapsychopathological990"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130560723?u=5efe2a8e442af97842d0a9a7aabda0bf60f3fd48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight MV3 Chrome extension to hide watched videos, filter by views and upload date, and remove Shorts, Mixes, Playlists and live streams from YouTube</div>",
-            "url": "https://github.com/MatteoLucerni/youtube-hider-extension",
-            "title": "MatteoLucerni/youtube-hider-extension: Lightweight MV3 Chrome extension to hide watched videos, filter by views and upload date, and remove Shorts, Mixes, Playlists and live streams from YouTube",
-            "date_modified": "2026-07-05T16:51:38.000Z",
-            "date_published": "2025-03-09T20:31:35.000Z",
-            "author": {
-                "name": "MatteoLucerni",
-                "url": "https://github.com/MatteoLucerni"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112201809?u=daec7577f6c3644c9cad7737f08e1791abb55392&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An autonomous agent that monitors your travel bookings, detects price drops by navigating live booking sites with a browser agent, and rebooks on your behalf — runs as a lightweight local daemon, no account or platform required.</div>",
-            "url": "https://github.com/roman-marchuk/booksaver-agent",
-            "title": "roman-marchuk/booksaver-agent: An autonomous agent that monitors your travel bookings, detects price drops by navigating live booking sites with a browser agent, and rebooks on your behalf — runs as a lightweight local daemon, no account or platform required.",
-            "date_modified": "2026-07-05T16:50:49.000Z",
-            "date_published": "2026-05-25T18:45:29.000Z",
-            "author": {
-                "name": "roman-marchuk",
-                "url": "https://github.com/roman-marchuk"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/291729322?u=dcb52051fca283aca4afcb3cd9c201a987624479&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight TypeScript wrapper around Google Gemini API with conversation history, configurable models, and strong type safety.</div>",
-            "url": "https://github.com/wanglinsaputra/wanglin-chatai",
-            "title": "wanglinsaputra/wanglin-chatai: Lightweight TypeScript wrapper around Google Gemini API with conversation history, configurable models, and strong type safety.",
-            "date_modified": "2026-07-05T16:49:55.000Z",
-            "date_published": "2026-07-05T16:35:59.000Z",
-            "author": {
-                "name": "wanglinsaputra",
-                "url": "https://github.com/wanglinsaputra"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/129702378?u=fb65ba52c9841e16148d4f6ea426dfb1055655c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, lightweight SVG maps for JavaScript projects.</div>",
-            "url": "https://github.com/homayounmmdy/svg-world-maps",
-            "title": "homayounmmdy/svg-world-maps: Simple, lightweight SVG maps for JavaScript projects.",
-            "date_modified": "2026-07-05T16:49:39.000Z",
-            "date_published": "2026-02-20T11:12:43.000Z",
-            "author": {
-                "name": "homayounmmdy",
-                "url": "https://github.com/homayounmmdy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/200516118?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎴 Cartoteca — A lightweight, web-based companion app to manually track, organize, and manage your Karuta Discord bot card collection locally.</div>",
-            "url": "https://github.com/ChromeT/cartoteca",
-            "title": "ChromeT/cartoteca: 🎴 Cartoteca — A lightweight, web-based companion app to manually track, organize, and manage your Karuta Discord bot card collection locally.",
-            "date_modified": "2026-07-05T16:49:37.000Z",
-            "date_published": "2026-07-02T18:30:18.000Z",
-            "author": {
-                "name": "ChromeT",
-                "url": "https://github.com/ChromeT"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-07-05T16:48:44.000Z",
+            "date_modified": "2026-07-05T17:48:43.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -138,91 +72,157 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/279854811?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Browse MemPalace SQLite stores with this lightweight web interface and JSON API.</div>",
-            "url": "https://github.com/bentonitic-shielding4582/memory-palace-web-frontend",
-            "title": "bentonitic-shielding4582/memory-palace-web-frontend: Browse MemPalace SQLite stores with this lightweight web interface and JSON API.",
-            "date_modified": "2026-07-05T16:48:31.000Z",
-            "date_published": "2026-05-02T00:50:23.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68317198?u=9f80d776d8ccf6fa9127e15e32469d94d916e8dd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern cross-platform IPTV player built with Tauri, React, and TypeScript. Stream M3U/M3U8 playlists with a clean, fast, and lightweight desktop experience on Windows, Linux, and macOS.</div>",
+            "url": "https://github.com/nurulhudaarosh/iptv-player",
+            "title": "nurulhudaarosh/iptv-player: A modern cross-platform IPTV player built with Tauri, React, and TypeScript. Stream M3U/M3U8 playlists with a clean, fast, and lightweight desktop experience on Windows, Linux, and macOS.",
+            "date_modified": "2026-07-05T17:48:39.000Z",
+            "date_published": "2026-07-01T10:38:20.000Z",
             "author": {
-                "name": "bentonitic-shielding4582",
-                "url": "https://github.com/bentonitic-shielding4582"
+                "name": "nurulhudaarosh",
+                "url": "https://github.com/nurulhudaarosh"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83390454?u=91b9dbc1ff8e6ed3c64c88d08a5bc516f343ab19&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Personal AI Workbench</div>",
-            "url": "https://github.com/Aitenry/RytenBench",
-            "title": "Aitenry/RytenBench: Lightweight Personal AI Workbench",
-            "date_modified": "2026-07-05T16:48:21.000Z",
-            "date_published": "2025-10-16T05:45:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30529067?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
+            "url": "https://github.com/kheireddine-saidi/lightweight-charts-ui",
+            "title": "kheireddine-saidi/lightweight-charts-ui",
+            "date_modified": "2026-07-05T17:48:28.000Z",
+            "date_published": "2026-06-23T20:14:26.000Z",
             "author": {
-                "name": "Aitenry",
-                "url": "https://github.com/Aitenry"
+                "name": "kheireddine-saidi",
+                "url": "https://github.com/kheireddine-saidi"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5204494?u=0f6a6ce0178beb61a94ab66f305c1a0adf694d9f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight python connection monitoring tool and GNOME Shell Extension created to restart the internet connection on unstable networks</div>",
-            "url": "https://github.com/aziis98/wifi-down-restart",
-            "title": "aziis98/wifi-down-restart: A lightweight python connection monitoring tool and GNOME Shell Extension created to restart the internet connection on unstable networks",
-            "date_modified": "2026-07-05T16:47:28.000Z",
-            "date_published": "2026-06-24T08:59:20.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68993250?u=4785bb354ece49df328c29a60e7667d5de4dc372&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Real-time claims review UI challenge: React + TypeScript frontend, FastAPI backend slice, SSE streaming, TanStack Query, Tailwind, Vitest, VitePress docs, and lightweight agent orchestration.</div>",
+            "url": "https://github.com/hsc00/marvel-insurance-ai",
+            "title": "hsc00/marvel-insurance-ai: Real-time claims review UI challenge: React + TypeScript frontend, FastAPI backend slice, SSE streaming, TanStack Query, Tailwind, Vitest, VitePress docs, and lightweight agent orchestration.",
+            "date_modified": "2026-07-05T17:48:17.000Z",
+            "date_published": "2026-07-03T21:59:46.000Z",
             "author": {
-                "name": "aziis98",
-                "url": "https://github.com/aziis98"
+                "name": "hsc00",
+                "url": "https://github.com/hsc00"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/274790379?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Build a lightweight AI client for JavaScript and TypeScript with one function, any model, streaming, and structured output, no dependencies</div>",
-            "url": "https://github.com/florysnug949/aiclientjs",
-            "title": "florysnug949/aiclientjs: Build a lightweight AI client for JavaScript and TypeScript with one function, any model, streaming, and structured output, no dependencies",
-            "date_modified": "2026-07-05T16:46:28.000Z",
-            "date_published": "2026-04-29T11:51:26.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2771646?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, zero-dependency 3D spinner, loader, and progress indicator for JavaScript.</div>",
+            "url": "https://github.com/runelaang/3d-spinner",
+            "title": "runelaang/3d-spinner: A lightweight, zero-dependency 3D spinner, loader, and progress indicator for JavaScript.",
+            "date_modified": "2026-07-05T17:48:06.000Z",
+            "date_published": "2026-06-21T06:07:02.000Z",
             "author": {
-                "name": "florysnug949",
-                "url": "https://github.com/florysnug949"
+                "name": "runelaang",
+                "url": "https://github.com/runelaang"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26999397?u=e4d3857f94f3e8d4026310621f01eb78ddd8ae36&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, modern, self-hosted Vulnerability Assessment + Cyber Threat Intelligence platform. End-to-end TypeScript, three services.</div>",
-            "url": "https://github.com/anggipradana/vacti",
-            "title": "anggipradana/vacti: Lightweight, modern, self-hosted Vulnerability Assessment + Cyber Threat Intelligence platform. End-to-end TypeScript, three services.",
-            "date_modified": "2026-07-05T16:46:13.000Z",
-            "date_published": "2026-06-03T19:32:02.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72234525?u=7ec4eaf3523b60d93638914257c439641009be5b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight file-based database for Node.js</div>",
+            "url": "https://github.com/p3droob/Snowbase",
+            "title": "p3droob/Snowbase: A lightweight file-based database for Node.js",
+            "date_modified": "2026-07-05T17:47:32.000Z",
+            "date_published": "2026-07-01T23:56:04.000Z",
             "author": {
-                "name": "anggipradana",
-                "url": "https://github.com/anggipradana"
+                "name": "p3droob",
+                "url": "https://github.com/p3droob"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61868591?u=a779427451f27868afe0a3d53c79f28d91bef493&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Sprite Animator is a lightweight tool for creating, previewing, and exporting 2D sprite animations for games and pixel art projects.</div>",
-            "url": "https://github.com/poirotw66/Sprite-Animator",
-            "title": "poirotw66/Sprite-Animator: Sprite Animator is a lightweight tool for creating, previewing, and exporting 2D sprite animations for games and pixel art projects.",
-            "date_modified": "2026-07-05T16:45:55.000Z",
-            "date_published": "2026-01-23T10:39:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/200516118?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎴 Cartoteca — A lightweight, web-based companion app to manually track, organize, and manage your Karuta Discord bot card collection locally.</div>",
+            "url": "https://github.com/ChromeT/cartoteca",
+            "title": "ChromeT/cartoteca: 🎴 Cartoteca — A lightweight, web-based companion app to manually track, organize, and manage your Karuta Discord bot card collection locally.",
+            "date_modified": "2026-07-05T17:47:31.000Z",
+            "date_published": "2026-07-02T18:30:18.000Z",
             "author": {
-                "name": "poirotw66",
-                "url": "https://github.com/poirotw66"
+                "name": "ChromeT",
+                "url": "https://github.com/ChromeT"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/294720727?u=2e6fd5849334b981be525b0ffed02f73a7abd257&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight decision compass and navigation framework for projects.</div>",
-            "url": "https://github.com/MS33834/compass",
-            "title": "MS33834/compass: A lightweight decision compass and navigation framework for projects.",
-            "date_modified": "2026-07-05T16:45:33.000Z",
-            "date_published": "2026-06-20T02:38:17.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66505333?u=bc5248a32e5bd5e8a07bb6880400d510c7970091&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Express-based SMS webhook API that receives and exposes SMS events for automation systems via public HTTP endpoints.</div>",
+            "url": "https://github.com/qaderizadeh/sms-gateway-api",
+            "title": "qaderizadeh/sms-gateway-api: Lightweight Express-based SMS webhook API that receives and exposes SMS events for automation systems via public HTTP endpoints.",
+            "date_modified": "2026-07-05T17:45:59.000Z",
+            "date_published": "2026-07-05T14:23:50.000Z",
             "author": {
-                "name": "MS33834",
-                "url": "https://github.com/MS33834"
+                "name": "qaderizadeh",
+                "url": "https://github.com/qaderizadeh"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/224393710?u=e011cbda43c101426d221954133cf1c2d7e05134&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight website to ditch github actions to deploy your projects on your own virtual machines, replicating some features from vercel</div>",
-            "url": "https://github.com/ayushs206/parcel",
-            "title": "ayushs206/parcel: A lightweight website to ditch github actions to deploy your projects on your own virtual machines, replicating some features from vercel",
-            "date_modified": "2026-07-05T16:45:22.000Z",
-            "date_published": "2026-07-04T05:21:03.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/156442109?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Enhance your video player with remaining time display and smooth speed control using Alt + scroll. Lightweight, fast, and easy to use on both trackpad and mouse. Open to feature requests (within platform guidelines).</div>",
+            "url": "https://github.com/Fire162/PW-extension",
+            "title": "Fire162/PW-extension: Enhance your video player with remaining time display and smooth speed control using Alt + scroll. Lightweight, fast, and easy to use on both trackpad and mouse. Open to feature requests (within platform guidelines).",
+            "date_modified": "2026-07-05T17:45:56.000Z",
+            "date_published": "2026-04-14T19:37:13.000Z",
             "author": {
-                "name": "ayushs206",
-                "url": "https://github.com/ayushs206"
+                "name": "Fire162",
+                "url": "https://github.com/Fire162"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/123080044?u=83ce04826246e6627d6f480317a8f62f289e60b2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Rust (Tauri 2) 製の軽量・高速なクロスプラットフォーム動画編集ソフト / Lightweight cross-platform video editor built with Rust</div>",
+            "url": "https://github.com/dikmri/rustVideoEdit",
+            "title": "dikmri/rustVideoEdit: Rust (Tauri 2) 製の軽量・高速なクロスプラットフォーム動画編集ソフト / Lightweight cross-platform video editor built with Rust",
+            "date_modified": "2026-07-05T17:44:49.000Z",
+            "date_published": "2026-07-05T17:38:46.000Z",
+            "author": {
+                "name": "dikmri",
+                "url": "https://github.com/dikmri"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/940434?u=88e29bc3c4ebaec73931dec4312a6c9f2da22327&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>WoodChuck is a lightweight and extensible logging library for TypeScript, designed to simplify the process of logging messages in your applications. With customizable logging levels, type safety, and support for plugins, WoodChuck offers a flexible solution to track and understand your application's behavior.</div>",
+            "url": "https://github.com/JaCraig/Woodchuck",
+            "title": "JaCraig/Woodchuck: WoodChuck is a lightweight and extensible logging library for TypeScript, designed to simplify the process of logging messages in your applications. With customizable logging levels, type safety, and support for plugins, WoodChuck offers a flexible solution to track and understand your application's behavior.",
+            "date_modified": "2026-07-05T17:42:58.000Z",
+            "date_published": "2024-01-08T00:48:15.000Z",
+            "author": {
+                "name": "JaCraig",
+                "url": "https://github.com/JaCraig"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/19603604?u=18744c7ccc764f292069893cfaec08b0a74b71ee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ketchup is a lightweight drawing engine starter kit. It provides a base canvas system with support for pins, boxes, and images, along with essential features such as undo/redo, JSON import/export, and image saving.</div>",
+            "url": "https://github.com/Jedsadha1777/Ketchup",
+            "title": "Jedsadha1777/Ketchup: Ketchup is a lightweight drawing engine starter kit. It provides a base canvas system with support for pins, boxes, and images, along with essential features such as undo/redo, JSON import/export, and image saving.",
+            "date_modified": "2026-07-05T17:41:55.000Z",
+            "date_published": "2025-08-17T15:47:38.000Z",
+            "author": {
+                "name": "Jedsadha1777",
+                "url": "https://github.com/Jedsadha1777"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/52535388?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, self-hosted REST gateway for managing and interacting with Model Context Protocol (MCP) servers.</div>",
+            "url": "https://github.com/hnpsaga/mcp-gateway",
+            "title": "hnpsaga/mcp-gateway: A lightweight, self-hosted REST gateway for managing and interacting with Model Context Protocol (MCP) servers.",
+            "date_modified": "2026-07-05T17:41:50.000Z",
+            "date_published": "2026-07-05T06:18:56.000Z",
+            "author": {
+                "name": "hnpsaga",
+                "url": "https://github.com/hnpsaga"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/920424?u=373889edada7332d986033c0c499f7c5ce9569a5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight web chat frontend for any OpenAI-compatible backend</div>",
+            "url": "https://github.com/xiphux/glyphstream",
+            "title": "xiphux/glyphstream: Lightweight web chat frontend for any OpenAI-compatible backend",
+            "date_modified": "2026-07-05T17:40:14.000Z",
+            "date_published": "2026-05-10T14:19:08.000Z",
+            "author": {
+                "name": "xiphux",
+                "url": "https://github.com/xiphux"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/70494103?u=feab5892ecb5409995f7a1f5ea3a388c73dec9cf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight static recipe book app for browsing recipes, planning meals, cooking step by step, and generating grocery lists.</div>",
+            "url": "https://github.com/RobertCarrUTA/recipe-book",
+            "title": "RobertCarrUTA/recipe-book: A lightweight static recipe book app for browsing recipes, planning meals, cooking step by step, and generating grocery lists.",
+            "date_modified": "2026-07-05T17:39:45.000Z",
+            "date_published": "2026-06-13T06:15:07.000Z",
+            "author": {
+                "name": "RobertCarrUTA",
+                "url": "https://github.com/RobertCarrUTA"
             }
         }
     ]
