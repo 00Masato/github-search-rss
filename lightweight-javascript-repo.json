@@ -6,98 +6,32 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14768695?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, productivity-focused VS Code extension to generate and remove Swift InjectionNext boilerplate code in SwiftUI Views with exactly one tap or a keyboard shortcut.</div>",
-            "url": "https://github.com/ajinumoto/SwiftInjectionExtension",
-            "title": "ajinumoto/SwiftInjectionExtension: A lightweight, productivity-focused VS Code extension to generate and remove Swift InjectionNext boilerplate code in SwiftUI Views with exactly one tap or a keyboard shortcut.",
-            "date_modified": "2026-07-07T17:03:48.000Z",
-            "date_published": "2026-07-07T08:29:13.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6475127?u=08d9a2704d94482648213d43a07a534035da6e34&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight browser-native CAD engine for digitizing floorplans manually or automatically with Gemini AI. Featuring Undo/Redo, snapping grids, and scaling.</div>",
+            "url": "https://github.com/stevenmorano/floorplan-digitizer",
+            "title": "stevenmorano/floorplan-digitizer: Lightweight browser-native CAD engine for digitizing floorplans manually or automatically with Gemini AI. Featuring Undo/Redo, snapping grids, and scaling.",
+            "date_modified": "2026-07-07T19:39:19.000Z",
+            "date_published": "2026-07-07T19:34:10.000Z",
             "author": {
-                "name": "ajinumoto",
-                "url": "https://github.com/ajinumoto"
+                "name": "stevenmorano",
+                "url": "https://github.com/stevenmorano"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96238560?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Simplify coding tasks with Jtilities, a lightweight library of modular JavaScript functions designed for performance and easy readability.</div>",
-            "url": "https://github.com/Mironmwan/jtilities",
-            "title": "Mironmwan/jtilities: 🛠️ Simplify coding tasks with Jtilities, a lightweight library of modular JavaScript functions designed for performance and easy readability.",
-            "date_modified": "2026-07-07T17:03:57.000Z",
-            "date_published": "2025-08-24T21:18:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12627583?u=25c23238c9ff027abb80a2afc1e48fc534e9877a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Angular-first, headless rich text editor toolkit built on ProseMirror — lightweight, signals-based, MIT.</div>",
+            "url": "https://github.com/cdskill/qalma",
+            "title": "cdskill/qalma: Angular-first, headless rich text editor toolkit built on ProseMirror — lightweight, signals-based, MIT.",
+            "date_modified": "2026-07-07T19:39:18.000Z",
+            "date_published": "2026-06-03T21:40:05.000Z",
             "author": {
-                "name": "Mironmwan",
-                "url": "https://github.com/Mironmwan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/66631040?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>💬 Chat effortlessly with AI services using AuroraSpeak's lightweight web client, featuring a clean interface and quick model switching.</div>",
-            "url": "https://github.com/mani1951/auroraspeak",
-            "title": "mani1951/auroraspeak: 💬 Chat effortlessly with AI services using AuroraSpeak's lightweight web client, featuring a clean interface and quick model switching.",
-            "date_modified": "2026-07-07T17:02:51.000Z",
-            "date_published": "2025-12-08T08:21:19.000Z",
-            "author": {
-                "name": "mani1951",
-                "url": "https://github.com/mani1951"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/220677006?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Run a lightweight httpbin service on Cloudflare Workers for testing HTTP requests and responses, with full control and no rate limits.</div>",
-            "url": "https://github.com/6EJlKA/httpbin-hono",
-            "title": "6EJlKA/httpbin-hono: 🌐 Run a lightweight httpbin service on Cloudflare Workers for testing HTTP requests and responses, with full control and no rate limits.",
-            "date_modified": "2026-07-07T17:02:33.000Z",
-            "date_published": "2025-12-07T12:55:45.000Z",
-            "author": {
-                "name": "6EJlKA",
-                "url": "https://github.com/6EJlKA"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/213206254?u=58d19abf93c499904147ad239f1ece857c9a6202&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A responsive, lightweight shopping cart built with HTML, CSS, and vanilla JavaScript. Uses browser Local Storage to save cart items and total price, so your cart persists across page reloads. Perfect for learning DOM manipulation, event handling, and client-side data storage.</div>",
-            "url": "https://github.com/kaihere14/-QuickCart",
-            "title": "kaihere14/-QuickCart: A responsive, lightweight shopping cart built with HTML, CSS, and vanilla JavaScript. Uses browser Local Storage to save cart items and total price, so your cart persists across page reloads. Perfect for learning DOM manipulation, event handling, and client-side data storage.",
-            "date_modified": "2026-07-07T17:01:20.000Z",
-            "date_published": "2025-08-11T16:20:18.000Z",
-            "author": {
-                "name": "kaihere14",
-                "url": "https://github.com/kaihere14"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111172166?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Build engaging AI chat experiences with Ultralytics LLM, a lightweight JavaScript client for web applications, delivered via jsDelivr with zero dependencies.</div>",
-            "url": "https://github.com/richardpapiona9/llm",
-            "title": "richardpapiona9/llm: 🤖 Build engaging AI chat experiences with Ultralytics LLM, a lightweight JavaScript client for web applications, delivered via jsDelivr with zero dependencies.",
-            "date_modified": "2026-07-07T17:00:44.000Z",
-            "date_published": "2025-12-02T07:08:40.000Z",
-            "author": {
-                "name": "richardpapiona9",
-                "url": "https://github.com/richardpapiona9"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/293018292?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Multi-pane trading dashboard with Lightweight Charts, Hyperliquid + yfinance feeds</div>",
-            "url": "https://github.com/millankumar6789-collab/trading-dashboard-vercel",
-            "title": "millankumar6789-collab/trading-dashboard-vercel: Multi-pane trading dashboard with Lightweight Charts, Hyperliquid + yfinance feeds",
-            "date_modified": "2026-07-07T16:59:56.000Z",
-            "date_published": "2026-07-07T12:22:28.000Z",
-            "author": {
-                "name": "millankumar6789-collab",
-                "url": "https://github.com/millankumar6789-collab"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/187771413?u=92cbf34b616685f0f3daaa949680ec7db4e12ba5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛡️ Protect web forms from bots with a lightweight, secure, and privacy-focused JavaScript CAPTCHA solution that enhances user experience without external services.</div>",
-            "url": "https://github.com/1faint/xsukax-JS-CAPTCHA",
-            "title": "1faint/xsukax-JS-CAPTCHA: 🛡️ Protect web forms from bots with a lightweight, secure, and privacy-focused JavaScript CAPTCHA solution that enhances user experience without external services.",
-            "date_modified": "2026-07-07T17:00:08.000Z",
-            "date_published": "2025-11-28T00:14:47.000Z",
-            "author": {
-                "name": "1faint",
-                "url": "https://github.com/1faint"
+                "name": "cdskill",
+                "url": "https://github.com/cdskill"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
             "url": "https://github.com/xsrazy/qr-code-generator",
             "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-07-07T16:59:05.000Z",
+            "date_modified": "2026-07-07T19:38:49.000Z",
             "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
                 "name": "xsrazy",
@@ -105,21 +39,43 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/161125388?u=56df5f38ca764bec2b630a6832dfe757e52287c5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Built a lightweight collaborative document editor inspired by Google Docs, designed as a focused internal productivity tool for creating, editing, saving, importing, and sharing rich-text documents. The app supports core formatting features such as bold, italic, underline, headings, and lists through a modern rich-text editing experience.</div>",
-            "url": "https://github.com/OmkarSaicharan/DocFlow",
-            "title": "OmkarSaicharan/DocFlow: Built a lightweight collaborative document editor inspired by Google Docs, designed as a focused internal productivity tool for creating, editing, saving, importing, and sharing rich-text documents. The app supports core formatting features such as bold, italic, underline, headings, and lists through a modern rich-text editing experience.",
-            "date_modified": "2026-07-07T16:58:35.000Z",
-            "date_published": "2026-07-07T16:42:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111172166?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 Build engaging AI chat experiences with Ultralytics LLM, a lightweight JavaScript client for web applications, delivered via jsDelivr with zero dependencies.</div>",
+            "url": "https://github.com/richardpapiona9/llm",
+            "title": "richardpapiona9/llm: 🤖 Build engaging AI chat experiences with Ultralytics LLM, a lightweight JavaScript client for web applications, delivered via jsDelivr with zero dependencies.",
+            "date_modified": "2026-07-07T19:38:18.000Z",
+            "date_published": "2025-12-02T07:08:40.000Z",
             "author": {
-                "name": "OmkarSaicharan",
-                "url": "https://github.com/OmkarSaicharan"
+                "name": "richardpapiona9",
+                "url": "https://github.com/richardpapiona9"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/187771413?u=92cbf34b616685f0f3daaa949680ec7db4e12ba5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛡️ Protect web forms from bots with a lightweight, secure, and privacy-focused JavaScript CAPTCHA solution that enhances user experience without external services.</div>",
+            "url": "https://github.com/1faint/xsukax-JS-CAPTCHA",
+            "title": "1faint/xsukax-JS-CAPTCHA: 🛡️ Protect web forms from bots with a lightweight, secure, and privacy-focused JavaScript CAPTCHA solution that enhances user experience without external services.",
+            "date_modified": "2026-07-07T19:37:37.000Z",
+            "date_published": "2025-11-28T00:14:47.000Z",
+            "author": {
+                "name": "1faint",
+                "url": "https://github.com/1faint"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55382864?u=29c60bac8c5fe11e78e5f96f8b87532da5ba0b50&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>TradeMarker is a lightweight visual trade journal for tracking US stock positions, average cost, buy/sell records, and planned order levels.</div>",
+            "url": "https://github.com/kunpengxu/TradeMarker",
+            "title": "kunpengxu/TradeMarker: TradeMarker is a lightweight visual trade journal for tracking US stock positions, average cost, buy/sell records, and planned order levels.",
+            "date_modified": "2026-07-07T19:36:39.000Z",
+            "date_published": "2026-06-04T17:24:26.000Z",
+            "author": {
+                "name": "kunpengxu",
+                "url": "https://github.com/kunpengxu"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118412524?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.</div>",
             "url": "https://github.com/sansss-debug/bun_rpc",
             "title": "sansss-debug/bun_rpc: 🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.",
-            "date_modified": "2026-07-07T16:57:45.000Z",
+            "date_modified": "2026-07-07T19:35:31.000Z",
             "date_published": "2023-12-06T23:31:18.000Z",
             "author": {
                 "name": "sansss-debug",
@@ -127,10 +83,43 @@
             }
         },
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51965010?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight and flexible UI component library based on web components technology for creating basic UX modules</div>",
+            "url": "https://github.com/exadel-inc/esl",
+            "title": "exadel-inc/esl: Lightweight and flexible UI component library based on web components technology for creating basic UX modules",
+            "date_modified": "2026-07-07T19:35:24.000Z",
+            "date_published": "2020-12-23T15:13:35.000Z",
+            "author": {
+                "name": "exadel-inc",
+                "url": "https://github.com/exadel-inc"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/59730775?u=fc7bfd07a665d1fd9abfd6b70be2b4acb3990fe0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Turn a few rough lines into a properly formatted ticket. Lightweight, cross-platform desktop app that uses AI to draft Bugs, User Stories, and Tasks from your own templates, then files them straight into your project management applications via API.</div>",
+            "url": "https://github.com/ASWINB2000/ticketsmith",
+            "title": "ASWINB2000/ticketsmith: Turn a few rough lines into a properly formatted ticket. Lightweight, cross-platform desktop app that uses AI to draft Bugs, User Stories, and Tasks from your own templates, then files them straight into your project management applications via API.",
+            "date_modified": "2026-07-07T19:35:00.000Z",
+            "date_published": "2026-07-04T10:00:07.000Z",
+            "author": {
+                "name": "ASWINB2000",
+                "url": "https://github.com/ASWINB2000"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91087061?u=c0dd19e5cbaad7cc4a6ae63d9fd7c0aee918ccb0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧩 Lightweight, high-performance TypeScript library for the WhatsApp Web protocol, built for multi-session scale, low memory usage, zero-copy hot paths, and full control over auth, transport, Signal, app state, and media.</div>",
+            "url": "https://github.com/vinikjkkj/zapo",
+            "title": "vinikjkkj/zapo: 🧩 Lightweight, high-performance TypeScript library for the WhatsApp Web protocol, built for multi-session scale, low memory usage, zero-copy hot paths, and full control over auth, transport, Signal, app state, and media.",
+            "date_modified": "2026-07-07T19:34:56.000Z",
+            "date_published": "2026-03-17T03:22:51.000Z",
+            "author": {
+                "name": "vinikjkkj",
+                "url": "https://github.com/vinikjkkj"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228944380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.</div>",
             "url": "https://github.com/Threelane-paris497/svelte-tiny-i18n",
             "title": "Threelane-paris497/svelte-tiny-i18n: 🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.",
-            "date_modified": "2026-07-07T16:56:33.000Z",
+            "date_modified": "2026-07-07T19:34:38.000Z",
             "date_published": "2025-11-21T05:01:34.000Z",
             "author": {
                 "name": "Threelane-paris497",
@@ -138,21 +127,21 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268516410?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AGIeX is a lightweight node infrastructure for powering the AGI Expert network (<a href=\"https://agi.expert\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://agi.expert</a>). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.</div>",
-            "url": "https://github.com/AGI-expert/AGIeX",
-            "title": "AGI-expert/AGIeX: AGIeX is a lightweight node infrastructure for powering the AGI Expert network (https://agi.expert). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.",
-            "date_modified": "2026-07-07T16:56:27.000Z",
-            "date_published": "2026-03-21T10:15:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48395871?u=135cc5c2580a41f0fabdebf75462838741899460&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight native macOS Markdown viewer and editor with a liquid glass interface. By SovStac (sovstac.com).</div>",
+            "url": "https://github.com/asifwanders/SovMD",
+            "title": "asifwanders/SovMD: Lightweight native macOS Markdown viewer and editor with a liquid glass interface. By SovStac (sovstac.com).",
+            "date_modified": "2026-07-07T19:33:52.000Z",
+            "date_published": "2026-07-07T19:33:29.000Z",
             "author": {
-                "name": "AGI-expert",
-                "url": "https://github.com/AGI-expert"
+                "name": "asifwanders",
+                "url": "https://github.com/asifwanders"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229651125?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.</div>",
             "url": "https://github.com/candisulphurous105/sandbox-runtime",
             "title": "candisulphurous105/sandbox-runtime: 🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.",
-            "date_modified": "2026-07-07T16:54:29.000Z",
+            "date_modified": "2026-07-07T19:32:42.000Z",
             "date_published": "2025-11-03T02:35:01.000Z",
             "author": {
                 "name": "candisulphurous105",
@@ -163,7 +152,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/147217468?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎶 Simplify your orchestration of complex systems with Synphony, a lightweight toolkit that streamlines workflows and enhances collaboration.</div>",
             "url": "https://github.com/efhwuifuwe/synphony",
             "title": "efhwuifuwe/synphony: 🎶 Simplify your orchestration of complex systems with Synphony, a lightweight toolkit that streamlines workflows and enhances collaboration.",
-            "date_modified": "2026-07-07T16:53:02.000Z",
+            "date_modified": "2026-07-07T19:31:40.000Z",
             "date_published": "2023-10-07T00:53:16.000Z",
             "author": {
                 "name": "efhwuifuwe",
@@ -174,7 +163,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/186730084?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡ Discover a lightweight, zero-dependency JavaScript toolbox with 40+ utilities for strings, numbers, arrays, and more—ideal for quick, everyday tasks.</div>",
             "url": "https://github.com/SagaOfLegends/js-toolbox",
             "title": "SagaOfLegends/js-toolbox: ⚡ Discover a lightweight, zero-dependency JavaScript toolbox with 40+ utilities for strings, numbers, arrays, and more—ideal for quick, everyday tasks.",
-            "date_modified": "2026-07-07T16:52:35.000Z",
+            "date_modified": "2026-07-07T19:31:23.000Z",
             "date_published": "2024-10-29T16:01:05.000Z",
             "author": {
                 "name": "SagaOfLegends",
@@ -185,7 +174,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/205843724?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📊 Monitor server traffic effortlessly with this lightweight system, featuring subscription management and support for multiple probes like Nezha and DStatus.</div>",
             "url": "https://github.com/Kevin-231213/miaomiaowu",
             "title": "Kevin-231213/miaomiaowu: 📊 Monitor server traffic effortlessly with this lightweight system, featuring subscription management and support for multiple probes like Nezha and DStatus.",
-            "date_modified": "2026-07-07T16:53:01.000Z",
+            "date_modified": "2026-07-07T19:31:01.000Z",
             "date_published": "2025-11-01T01:38:40.000Z",
             "author": {
                 "name": "Kevin-231213",
@@ -196,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229838053?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍰 Streamline your bakery operations with this lightweight POS system, featuring inventory tracking and role-based access for cashiers and managers.</div>",
             "url": "https://github.com/Levitynice259/Tiny-Bakery-Pos",
             "title": "Levitynice259/Tiny-Bakery-Pos: 🍰 Streamline your bakery operations with this lightweight POS system, featuring inventory tracking and role-based access for cashiers and managers.",
-            "date_modified": "2026-07-07T16:52:26.000Z",
+            "date_modified": "2026-07-07T19:30:57.000Z",
             "date_published": "2025-10-31T23:00:06.000Z",
             "author": {
                 "name": "Levitynice259",
@@ -204,21 +193,32 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/235986952?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>own lightweight utility-first CSS engine using JavaScript.</div>",
-            "url": "https://github.com/chinmaychoudhary03/chai-css",
-            "title": "chinmaychoudhary03/chai-css: own lightweight utility-first CSS engine using JavaScript.",
-            "date_modified": "2026-07-07T16:57:13.000Z",
-            "date_published": "2026-07-07T16:50:29.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33987852?u=7daecc8195f67d1c36a4d813e63e31e26a54d9c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>All-in-One Desktop Agent Skills Utility. Welcome to the Skill Zoo, where all your skills live!</div>",
+            "url": "https://github.com/luochang212/skill-zoo",
+            "title": "luochang212/skill-zoo: All-in-One Desktop Agent Skills Utility. Welcome to the Skill Zoo, where all your skills live!",
+            "date_modified": "2026-07-07T19:30:47.000Z",
+            "date_published": "2026-05-02T16:00:53.000Z",
             "author": {
-                "name": "chinmaychoudhary03",
-                "url": "https://github.com/chinmaychoudhary03"
+                "name": "luochang212",
+                "url": "https://github.com/luochang212"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286598806?u=6d729d7d6d55e3025d900917ba9611f5d3246f48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.</div>",
+            "url": "https://github.com/Jubei-tech/llm-metadata",
+            "title": "Jubei-tech/llm-metadata: LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.",
+            "date_modified": "2026-07-07T19:30:26.000Z",
+            "date_published": "2026-05-21T09:33:54.000Z",
+            "author": {
+                "name": "Jubei-tech",
+                "url": "https://github.com/Jubei-tech"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/116566271?u=2f3dd912d6fa2d52b3197ac16339b3eb77c6ca74&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Forward DNS queries to Cloudflare's secure DNS over HTTPS with this lightweight Cloudflare Workers proxy for fast, encrypted resolution.</div>",
             "url": "https://github.com/Makale25/cloudflare-dns-worker",
             "title": "Makale25/cloudflare-dns-worker: 🛠️ Forward DNS queries to Cloudflare's secure DNS over HTTPS with this lightweight Cloudflare Workers proxy for fast, encrypted resolution.",
-            "date_modified": "2026-07-07T16:51:17.000Z",
+            "date_modified": "2026-07-07T19:29:46.000Z",
             "date_published": "2025-09-26T12:59:26.000Z",
             "author": {
                 "name": "Makale25",
