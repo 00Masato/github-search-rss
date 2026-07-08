@@ -6,10 +6,21 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Since introduction, <code class=\"notranslate\">Sources::File</code> gets required during the first template render. <code class=\"notranslate\">ActionView.eager_load!</code> calls <code class=\"notranslate\">Template.eager_load!</code>, which <code class=\"notranslate\">eager_autoloads</code> <code class=\"notranslate\">Sources</code>, but that doesn't cascade to <code class=\"notranslate\">Sources::File</code>. <code class=\"notranslate\">File</code> is registered as an <code class=\"notranslate\">eager_autoload</code> on <code class=\"notranslate\">Sources</code>, but nothing called <code class=\"notranslate\">eager_load!</code> on <code class=\"notranslate\">Sources</code> to trigger it.</p>\n<p dir=\"auto\">This commit ensures that <code class=\"notranslate\">File</code> is eager loaded by inlining it into <code class=\"notranslate\">Sources</code>. Alternatively, we could add the necessary <code class=\"notranslate\">eager_load!</code> chain, but this change is much simpler and doesn't seem to have any downsides since there aren't any other constants under <code class=\"notranslate\">Sources</code> (meaning if something references <code class=\"notranslate\">Sources</code>, it surely wants to load <code class=\"notranslate\">File</code>).</p>",
+            "url": "https://github.com/rails/rails/pull/58062",
+            "title": "Ensure AV::Template::Sources::File is eager loaded",
+            "date_modified": "2026-07-08T18:57:14.000Z",
+            "date_published": "2026-07-08T18:57:03.000Z",
+            "author": {
+                "name": "hmcguire-shopify",
+                "url": "https://github.com/hmcguire-shopify"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When Rails.application.ractorize! is called it makes Rails.application shareable/frozen (which also recursively makes Rails.cache shareable/frozen). This can lead to FrozenErrors if Rails.cache implements LocalCache because LocalCache's local_cache_key currently isn't computed until LocalCache::Middleware first tries to create a LocalCache.</p>\n<p dir=\"auto\">Additionally, the above Rails.cache FrozenError exposed that when the Rails.error reporter handles an error it will lazily initialize Rails.application.revision for the first time, which also raises a FrozenError when Rails.application is frozen.</p>\n<p dir=\"auto\">This commit fixes both issues by eagerly computing the values: local_cache_key when the cache is instantiated, and revision inside an initializer.</p>",
             "url": "https://github.com/rails/rails/pull/58061",
             "title": "Fix some FrozenErrors for ractorized application",
-            "date_modified": "2026-07-08T17:03:52.000Z",
+            "date_modified": "2026-07-08T18:49:30.000Z",
             "date_published": "2026-07-08T17:03:41.000Z",
             "author": {
                 "name": "hmcguire-shopify",
@@ -39,21 +50,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">A grouped calculation on a relation whose <code class=\"notranslate\">WHERE</code> clause can never match a row — <code class=\"notranslate\">Post.where(id: []).group(:author_id).count</code> — always returns an empty hash, but it still sent a <code class=\"notranslate\">SELECT COUNT(*) ... WHERE 1=0 GROUP BY ...</code> query to the database.</p>\n<p dir=\"auto\">The ungrouped calculations (<code class=\"notranslate\">count</code>/<code class=\"notranslate\">sum</code>/<code class=\"notranslate\">average</code>/<code class=\"notranslate\">minimum</code>/<code class=\"notranslate\">maximum</code>) already recognize a contradictory <code class=\"notranslate\">where</code> clause and return without querying. The grouped path now short-circuits the same way.</p>\n<p dir=\"auto\">Before: one wasted query, result <code class=\"notranslate\">{}</code>.<br>\nAfter: zero queries, result <code class=\"notranslate\">{}</code>.</p>\n<p dir=\"auto\">Same class of change as <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4812931331\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/58004\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/58004/hovercard\" href=\"https://github.com/rails/rails/pull/58004\">#58004</a> (<code class=\"notranslate\">none.ids</code> returning no rows without a query).</p>",
-            "url": "https://github.com/rails/rails/pull/58058",
-            "title": "Skip the query for a grouped calculation on a contradictory relation",
-            "date_modified": "2026-07-08T15:22:56.000Z",
-            "date_published": "2026-07-08T13:42:02.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">Hash#reverse_merge!</code> (and its <code class=\"notranslate\">reverse_update</code> / <code class=\"notranslate\">with_defaults!</code> aliases) replaces the receiver with a plain hash, so the receiver's <code class=\"notranslate\">default</code> and <code class=\"notranslate\">default_proc</code> are lost:</p>\n<div class=\"highlight highlight-source-ruby notranslate position-relative overflow-auto\" dir=\"auto\" data-snippet-clipboard-copy-content=\"counts = Hash.new(0)\ncounts[:a] += 1\ncounts.reverse_merge!(b: 5)\ncounts[:missing]   # before: nil   after: 0\"><pre class=\"notranslate\"><span class=\"pl-s1\">counts</span> <span class=\"pl-c1\">=</span> <span class=\"pl-v\">Hash</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">new</span><span class=\"pl-kos\">(</span><span class=\"pl-c1\">0</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-s1\">counts</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:a</span><span class=\"pl-kos\">]</span> += <span class=\"pl-c1\">1</span>\n<span class=\"pl-s1\">counts</span><span class=\"pl-kos\">.</span><span class=\"pl-en\">reverse_merge!</span><span class=\"pl-kos\">(</span><span class=\"pl-pds\">b</span>: <span class=\"pl-c1\">5</span><span class=\"pl-kos\">)</span>\n<span class=\"pl-s1\">counts</span><span class=\"pl-kos\">[</span><span class=\"pl-pds\">:missing</span><span class=\"pl-kos\">]</span>   <span class=\"pl-c\"># before: nil   after: 0</span></pre></div>\n<p dir=\"auto\">The sibling in-place method <code class=\"notranslate\">Hash#slice!</code> already restores <code class=\"notranslate\">default</code> and <code class=\"notranslate\">default_proc</code> before replacing, and has dedicated tests (<code class=\"notranslate\">test_slice_bang_does_not_override_default</code> / <code class=\"notranslate\">_default_proc</code>) fixing that contract. <code class=\"notranslate\">reverse_merge!</code> now conforms.</p>\n<p dir=\"auto\">Scope: plain <code class=\"notranslate\">Hash</code> core extension only (<code class=\"notranslate\">HashWithIndifferentAccess</code> has its own <code class=\"notranslate\">reverse_merge!</code>/<code class=\"notranslate\">replace</code> and different default semantics — left untouched).</p>",
             "url": "https://github.com/rails/rails/pull/58056",
             "title": "Preserve the hash default in `Hash#reverse_merge!`",
-            "date_modified": "2026-07-08T13:38:42.000Z",
+            "date_modified": "2026-07-08T18:12:37.000Z",
             "date_published": "2026-07-08T13:38:28.000Z",
             "author": {
                 "name": "55728",
@@ -108,7 +108,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This turns result delivery into more of an active behaviour, rather than a passive outcome of execution.</p>\n<p dir=\"auto\">No functional difference here, but it prepares us for supporting a more asynchronous execution model (query pipelining).</p>",
             "url": "https://github.com/rails/rails/pull/58049",
             "title": "Drive result delivery through QueryIntent",
-            "date_modified": "2026-07-08T01:25:17.000Z",
+            "date_modified": "2026-07-08T18:50:50.000Z",
             "date_published": "2026-07-07T15:36:02.000Z",
             "author": {
                 "name": "matthewd",
