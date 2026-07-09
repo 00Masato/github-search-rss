@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8122246?u=2dbe607a66a7616297b78647eeb4e0dbff657c3a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">It's currently not possible to access <code class=\"notranslate\">Time.zone_default</code> in a ractor because the <code class=\"notranslate\">ActiveSupport::TimeZone</code> object isn't frozen.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Implement copy on write when <code class=\"notranslate\">Time.zone_default</code> is set and freeze the TimeZone.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Incomplete task\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/58067",
+            "title": "Implement CoW on Time.zone_default and make the zone ractor safe",
+            "date_modified": "2026-07-09T16:01:34.000Z",
+            "date_published": "2026-07-09T16:01:21.000Z",
+            "author": {
+                "name": "Edouard-chin",
+                "url": "https://github.com/Edouard-chin"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23148976?u=7a0a74afacb16cb3aa6c6aa71dd1772992147143&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">dalli</code> added a <code class=\"notranslate\">set_multi</code> method in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3852001800\" data-permission-text=\"Title is private\" data-url=\"https://github.com/petergoldstein/dalli/issues/1059\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/petergoldstein/dalli/pull/1059/hovercard\" href=\"https://github.com/petergoldstein/dalli/pull/1059\">petergoldstein/dalli#1059</a> which allows writing multiple keys in a single roundrip. Add a <code class=\"notranslate\">write_multi_entries</code> method that will use dalli's <code class=\"notranslate\">set_multi</code> if the used dalli version has the method available</p>",
             "url": "https://github.com/rails/rails/pull/58066",
             "title": "Add write_multi_entries for memcache store if dalli's set_multi is available",
@@ -53,7 +64,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">When Rails.application.ractorize! is called it makes Rails.application shareable/frozen (which also recursively makes Rails.cache shareable/frozen). This can lead to FrozenErrors if Rails.cache implements LocalCache because LocalCache's local_cache_key currently isn't computed until LocalCache::Middleware first tries to create a LocalCache.</p>\n<p dir=\"auto\">Additionally, the above Rails.cache FrozenError exposed that when the Rails.error reporter handles an error it will lazily initialize Rails.application.revision for the first time, which also raises a FrozenError when Rails.application is frozen.</p>\n<p dir=\"auto\">This commit fixes both issues by eagerly computing the values: local_cache_key when the cache is instantiated, and revision inside an initializer.</p>",
             "url": "https://github.com/rails/rails/pull/58061",
             "title": "Fix some FrozenErrors for ractorized application",
-            "date_modified": "2026-07-08T18:49:30.000Z",
+            "date_modified": "2026-07-09T17:14:17.000Z",
             "date_published": "2026-07-08T17:03:41.000Z",
             "author": {
                 "name": "hmcguire-shopify",
@@ -119,7 +130,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1034?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This turns result delivery into more of an active behaviour, rather than a passive outcome of execution.</p>\n<p dir=\"auto\">No functional difference here, but it prepares us for supporting a more asynchronous execution model (query pipelining).</p>",
             "url": "https://github.com/rails/rails/pull/58049",
             "title": "Drive result delivery through QueryIntent",
-            "date_modified": "2026-07-08T19:10:23.000Z",
+            "date_modified": "2026-07-09T17:31:54.000Z",
             "date_published": "2026-07-07T15:36:02.000Z",
             "author": {
                 "name": "matthewd",
@@ -212,17 +223,6 @@
             "author": {
                 "name": "p8",
                 "url": "https://github.com/p8"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/130050589?u=dd8c1745921be908f04c2538628c124a9a610d09&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The ActionCable helper action_cable_meta_tag did not respect the Rails configuration option relative_url_root, this fixes that and so issue <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4772173034\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/57923\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/57923/hovercard\" href=\"https://github.com/rails/rails/issues/57923\">#57923</a></p>\n<h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Minor Fix: action_cable_meta_tag now respects relative_url_root</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">Just the single function in the ActionCable helper and a couple of tests.</p>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">There don't seem to be many tests which use <code class=\"notranslate\">Rail.configuration</code>, and it seems a bad idea to modify it in tests, so I've mocked it.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
-            "url": "https://github.com/rails/rails/pull/58027",
-            "title": "Fix action_cable_meta_tag with relative_url_root",
-            "date_modified": "2026-07-06T19:56:25.000Z",
-            "date_published": "2026-07-06T18:59:11.000Z",
-            "author": {
-                "name": "noproblemwiththat",
-                "url": "https://github.com/noproblemwiththat"
             }
         }
     ]
