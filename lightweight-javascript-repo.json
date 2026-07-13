@@ -6,153 +6,10 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286598806?u=6d729d7d6d55e3025d900917ba9611f5d3246f48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.</div>",
-            "url": "https://github.com/Jubei-tech/llm-metadata",
-            "title": "Jubei-tech/llm-metadata: LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.",
-            "date_modified": "2026-07-13T19:09:37.000Z",
-            "date_published": "2026-05-21T09:33:54.000Z",
-            "author": {
-                "name": "Jubei-tech",
-                "url": "https://github.com/Jubei-tech"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7631108?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Richly - a lightweight, zero-dependency WYSIWYG editor for JavaScript and React with full toolbar, tables, and theming support.</div>",
-            "url": "https://github.com/sanoopbhaskerv/richly",
-            "title": "sanoopbhaskerv/richly: Richly - a lightweight, zero-dependency WYSIWYG editor for JavaScript and React with full toolbar, tables, and theming support.",
-            "date_modified": "2026-07-13T19:09:39.000Z",
-            "date_published": "2026-07-10T21:13:06.000Z",
-            "author": {
-                "name": "sanoopbhaskerv",
-                "url": "https://github.com/sanoopbhaskerv"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43346471?u=c768a3c22670552ad1bb83fb78b16794bcbdaaf4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight gallery of mathematical curve based loading animations with modal previews, formulas, and copyable code snippets. </div>",
-            "url": "https://github.com/themagicalmammal/math-curve-loaders-react",
-            "title": "themagicalmammal/math-curve-loaders-react: A lightweight gallery of mathematical curve based loading animations with modal previews, formulas, and copyable code snippets. ",
-            "date_modified": "2026-07-13T19:09:17.000Z",
-            "date_published": "2026-07-04T08:54:52.000Z",
-            "author": {
-                "name": "themagicalmammal",
-                "url": "https://github.com/themagicalmammal"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118412524?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.</div>",
-            "url": "https://github.com/sansss-debug/bun_rpc",
-            "title": "sansss-debug/bun_rpc: 🛠️ Build lightweight desktop apps using Bun RPC and Neutralinojs for seamless cross-platform performance. Simplify your development workflow today.",
-            "date_modified": "2026-07-13T19:09:14.000Z",
-            "date_published": "2023-12-06T23:31:18.000Z",
-            "author": {
-                "name": "sansss-debug",
-                "url": "https://github.com/sansss-debug"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
-            "url": "https://github.com/xsrazy/qr-code-generator",
-            "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-07-13T19:09:03.000Z",
-            "date_published": "2025-07-23T10:41:39.000Z",
-            "author": {
-                "name": "xsrazy",
-                "url": "https://github.com/xsrazy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63274414?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Local LLM VRAM CalculatorA lightweight, browser-based React tool designed to help developers estimate the exact GPU VRAM needed for local AI development. By analyzing repomix XML summaries of your project repositories, the calculator maps your codebase size to the ideal LLM parameter tier (from 7B up to 70B).</div>",
-            "url": "https://github.com/okgoogle13/vramcalc",
-            "title": "okgoogle13/vramcalc: Local LLM VRAM CalculatorA lightweight, browser-based React tool designed to help developers estimate the exact GPU VRAM needed for local AI development. By analyzing repomix XML summaries of your project repositories, the calculator maps your codebase size to the ideal LLM parameter tier (from 7B up to 70B).",
-            "date_modified": "2026-07-13T19:09:35.000Z",
-            "date_published": "2026-07-11T15:36:30.000Z",
-            "author": {
-                "name": "okgoogle13",
-                "url": "https://github.com/okgoogle13"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134407106?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight pub-sub event streaming for tmux sessions running AI coding agents</div>",
-            "url": "https://github.com/kubestellar/pluk",
-            "title": "kubestellar/pluk: Lightweight pub-sub event streaming for tmux sessions running AI coding agents",
-            "date_modified": "2026-07-13T19:08:31.000Z",
-            "date_published": "2026-06-04T04:37:02.000Z",
-            "author": {
-                "name": "kubestellar",
-                "url": "https://github.com/kubestellar"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26687027?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cross-platform desktop app to watch Twitch, Kick, and YouTube streams simultaneously. Features 100% free, offline AI live transcription.</div>",
-            "url": "https://github.com/ilanzgx/multistream",
-            "title": "ilanzgx/multistream: A lightweight, cross-platform desktop app to watch Twitch, Kick, and YouTube streams simultaneously. Features 100% free, offline AI live transcription.",
-            "date_modified": "2026-07-13T19:08:48.000Z",
-            "date_published": "2025-12-22T19:02:26.000Z",
-            "author": {
-                "name": "ilanzgx",
-                "url": "https://github.com/ilanzgx"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111628226?u=eb76affaad26c1eb47561bca18ae216042a1c99c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A premium‑grade, AI‑powered Chrome extension that automatically scans, maps, and fills job‑application forms across any website (including complex Shadow‑DOM portals like Workday). It pairs with a lightweight Express / SQLite backend for persistent storage of resumes, cover letters, user profiles, settings, and application history</div>",
-            "url": "https://github.com/S-A-Adit/AI-Job-Agent-Chrome-Extension-Backend",
-            "title": "S-A-Adit/AI-Job-Agent-Chrome-Extension-Backend: A premium‑grade, AI‑powered Chrome extension that automatically scans, maps, and fills job‑application forms across any website (including complex Shadow‑DOM portals like Workday). It pairs with a lightweight Express / SQLite backend for persistent storage of resumes, cover letters, user profiles, settings, and application history",
-            "date_modified": "2026-07-13T19:08:48.000Z",
-            "date_published": "2026-07-05T17:57:21.000Z",
-            "author": {
-                "name": "S-A-Adit",
-                "url": "https://github.com/S-A-Adit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/228944380?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.</div>",
-            "url": "https://github.com/Threelane-paris497/svelte-tiny-i18n",
-            "title": "Threelane-paris497/svelte-tiny-i18n: 🌍 Build lightweight and reactive internationalization for Svelte and SvelteKit with zero dependencies and full TypeScript support.",
-            "date_modified": "2026-07-13T19:08:12.000Z",
-            "date_published": "2025-11-21T05:01:34.000Z",
-            "author": {
-                "name": "Threelane-paris497",
-                "url": "https://github.com/Threelane-paris497"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/273905196?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>TL-DPS-Meter - Lightweight Throne &amp; Liberty DPS meter rebuilt with Tauri v2</div>",
-            "url": "https://github.com/bpischa/elrond-TL-DPSmeter",
-            "title": "bpischa/elrond-TL-DPSmeter: TL-DPS-Meter - Lightweight Throne & Liberty DPS meter rebuilt with Tauri v2",
-            "date_modified": "2026-07-13T19:07:58.000Z",
-            "date_published": "2026-07-12T08:59:27.000Z",
-            "author": {
-                "name": "bpischa",
-                "url": "https://github.com/bpischa"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/249136570?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>SignalX - a lightweight reactive component framework with signals, reactivity, and TSX support</div>",
-            "url": "https://github.com/signalxjs/core",
-            "title": "signalxjs/core: SignalX - a lightweight reactive component framework with signals, reactivity, and TSX support",
-            "date_modified": "2026-07-13T19:07:28.000Z",
-            "date_published": "2025-12-11T16:01:15.000Z",
-            "author": {
-                "name": "signalxjs",
-                "url": "https://github.com/signalxjs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/35241048?u=6e94aad3503fb50d1a77cafc458925c3f1fb20ae&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight ASS subtitle rendering pipeline for legacy LG webOS browsers, built around libass with event-driven caching and performance-focused scheduling.</div>",
-            "url": "https://github.com/ediaz23/libass-webos-legacy",
-            "title": "ediaz23/libass-webos-legacy: A lightweight ASS subtitle rendering pipeline for legacy LG webOS browsers, built around libass with event-driven caching and performance-focused scheduling.",
-            "date_modified": "2026-07-13T19:07:20.000Z",
-            "date_published": "2026-04-11T23:47:47.000Z",
-            "author": {
-                "name": "ediaz23",
-                "url": "https://github.com/ediaz23"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4440663?u=a9b2ae023f057c64bcbb5e98149dc989665fcc87&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files.</div>",
             "url": "https://github.com/alexishida/Moji",
             "title": "alexishida/Moji: A lightweight, clean desktop app for opening, reading, editing, and exporting Markdown files.",
-            "date_modified": "2026-07-13T19:07:02.000Z",
+            "date_modified": "2026-07-13T20:47:11.000Z",
             "date_published": "2026-07-08T00:32:30.000Z",
             "author": {
                 "name": "alexishida",
@@ -160,69 +17,212 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/239189084?u=84a5ffe1ffe8a6a1e69b310ce308625e0df626fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight CLI/Web utility that transforms raw terminal crashes and stack traces into human-readable diagnoses and actionable fix checklists</div>",
-            "url": "https://github.com/MaskirovkaOtdel/CrypticMechanic",
-            "title": "MaskirovkaOtdel/CrypticMechanic: A lightweight CLI/Web utility that transforms raw terminal crashes and stack traces into human-readable diagnoses and actionable fix checklists",
-            "date_modified": "2026-07-13T19:07:43.000Z",
-            "date_published": "2026-06-13T12:11:30.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/27692047?u=bc787b1e4e3ed8e040ed0e49baaebc2fef4f98b2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Samtch is a lightweight Twitch client for Android designed for a clean, ad-free viewing experience. It combines the power of the native Twitch web interface for discovery with a highly optimized custom player for watching.</div>",
+            "url": "https://github.com/akumasdk/Samtch",
+            "title": "akumasdk/Samtch: Samtch is a lightweight Twitch client for Android designed for a clean, ad-free viewing experience. It combines the power of the native Twitch web interface for discovery with a highly optimized custom player for watching.",
+            "date_modified": "2026-07-13T20:46:58.000Z",
+            "date_published": "2026-07-08T22:25:59.000Z",
             "author": {
-                "name": "MaskirovkaOtdel",
-                "url": "https://github.com/MaskirovkaOtdel"
+                "name": "akumasdk",
+                "url": "https://github.com/akumasdk"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/255066954?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK</div>",
-            "url": "https://github.com/nanocoai/nanoclaw",
-            "title": "nanocoai/nanoclaw: A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
-            "date_modified": "2026-07-13T19:06:36.000Z",
-            "date_published": "2026-01-31T15:47:22.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/243665771?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight parking management webapp — GitHub Pages, vanilla JS, SVG visualization</div>",
+            "url": "https://github.com/x-talks/Park_Management",
+            "title": "x-talks/Park_Management: Lightweight parking management webapp — GitHub Pages, vanilla JS, SVG visualization",
+            "date_modified": "2026-07-13T20:47:01.000Z",
+            "date_published": "2026-06-01T19:24:34.000Z",
             "author": {
-                "name": "nanocoai",
-                "url": "https://github.com/nanocoai"
+                "name": "x-talks",
+                "url": "https://github.com/x-talks"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229651125?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.</div>",
-            "url": "https://github.com/candisulphurous105/sandbox-runtime",
-            "title": "candisulphurous105/sandbox-runtime: 🛡️ Enforce filesystem and network restrictions on processes with a lightweight sandboxing tool, enabling safer AI agent behavior at the OS level.",
-            "date_modified": "2026-07-13T19:06:10.000Z",
-            "date_published": "2025-11-03T02:35:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32460652?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Slick, high-performance chart card for Home Assistant, built on TradingView Lightweight Charts (history, live, tooltips, multi-pane).</div>",
+            "url": "https://github.com/YamahaRacing/lightweight-charts-card",
+            "title": "YamahaRacing/lightweight-charts-card: Slick, high-performance chart card for Home Assistant, built on TradingView Lightweight Charts (history, live, tooltips, multi-pane).",
+            "date_modified": "2026-07-13T20:46:49.000Z",
+            "date_published": "2026-07-13T05:57:15.000Z",
             "author": {
-                "name": "candisulphurous105",
-                "url": "https://github.com/candisulphurous105"
+                "name": "YamahaRacing",
+                "url": "https://github.com/YamahaRacing"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/227245055?u=9a3610ddd39dcbc2c14bb043e78bbd80609663ef&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>An elegant, modern, lightweight, and zero-dependency Skulpt alternative written in ES-next JavaScript.</div>",
-            "url": "https://github.com/chambtai-sys/Klomn",
-            "title": "chambtai-sys/Klomn: An elegant, modern, lightweight, and zero-dependency Skulpt alternative written in ES-next JavaScript.",
-            "date_modified": "2026-07-13T19:05:29.000Z",
-            "date_published": "2026-07-13T14:58:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/198489824?u=7cdf9915b462e195179d6fb831b4c9ddec9df29f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight IT ticketing system using PERN Stack</div>",
+            "url": "https://github.com/BreckynDev/IT_Ticketing_System",
+            "title": "BreckynDev/IT_Ticketing_System: Lightweight IT ticketing system using PERN Stack",
+            "date_modified": "2026-07-13T20:46:12.000Z",
+            "date_published": "2026-07-13T20:37:45.000Z",
             "author": {
-                "name": "chambtai-sys",
-                "url": "https://github.com/chambtai-sys"
+                "name": "BreckynDev",
+                "url": "https://github.com/BreckynDev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42650546?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>TAK Portal is a lightweight, modern user-management portal designed to integrate seamlessly with Authentik and TAK Server for streamlined certificate and account control. Built specifically for agencies who need reliability, simplicity, and security.</div>",
-            "url": "https://github.com/AdventureSeeker423/TAK-Portal",
-            "title": "AdventureSeeker423/TAK-Portal: TAK Portal is a lightweight, modern user-management portal designed to integrate seamlessly with Authentik and TAK Server for streamlined certificate and account control. Built specifically for agencies who need reliability, simplicity, and security.",
-            "date_modified": "2026-07-13T19:05:23.000Z",
-            "date_published": "2025-12-26T23:01:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121068462?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Zero-dependency, no-build Canvas-2D financial charting engine + drawing tools (Apache-2.0). Lightweight-class performance, measured — reproducible bench harness included.</div>",
+            "url": "https://github.com/DNSReeves/chartforge",
+            "title": "DNSReeves/chartforge: Zero-dependency, no-build Canvas-2D financial charting engine + drawing tools (Apache-2.0). Lightweight-class performance, measured — reproducible bench harness included.",
+            "date_modified": "2026-07-13T20:46:00.000Z",
+            "date_published": "2026-07-13T17:34:59.000Z",
             "author": {
-                "name": "AdventureSeeker423",
-                "url": "https://github.com/AdventureSeeker423"
+                "name": "DNSReeves",
+                "url": "https://github.com/DNSReeves"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/147217468?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎶 Simplify your orchestration of complex systems with Synphony, a lightweight toolkit that streamlines workflows and enhances collaboration.</div>",
-            "url": "https://github.com/efhwuifuwe/synphony",
-            "title": "efhwuifuwe/synphony: 🎶 Simplify your orchestration of complex systems with Synphony, a lightweight toolkit that streamlines workflows and enhances collaboration.",
-            "date_modified": "2026-07-13T19:05:07.000Z",
-            "date_published": "2023-10-07T00:53:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277937452?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Calculate semester and cumulative GPA values automatically on the FCIS Ain Shams University student portal using this lightweight Chrome extension.</div>",
+            "url": "https://github.com/behavioristic-eyewitness324/FCIS-GPA-Helper",
+            "title": "behavioristic-eyewitness324/FCIS-GPA-Helper: Calculate semester and cumulative GPA values automatically on the FCIS Ain Shams University student portal using this lightweight Chrome extension.",
+            "date_modified": "2026-07-13T20:45:51.000Z",
+            "date_published": "2026-07-13T12:43:30.000Z",
             "author": {
-                "name": "efhwuifuwe",
-                "url": "https://github.com/efhwuifuwe"
+                "name": "behavioristic-eyewitness324",
+                "url": "https://github.com/behavioristic-eyewitness324"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277933164?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Run large language models locally and via cloud APIs in this lightweight native client for chat, code generation, and document analysis.</div>",
+            "url": "https://github.com/placepacificgiantsalamander20/fable-5-free-desktop-app",
+            "title": "placepacificgiantsalamander20/fable-5-free-desktop-app: Run large language models locally and via cloud APIs in this lightweight native client for chat, code generation, and document analysis.",
+            "date_modified": "2026-07-13T20:44:44.000Z",
+            "date_published": "2026-07-10T10:04:19.000Z",
+            "author": {
+                "name": "placepacificgiantsalamander20",
+                "url": "https://github.com/placepacificgiantsalamander20"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277937748?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Customize the font style, size, and weight for WhatsApp Web using this lightweight Chromium extension.</div>",
+            "url": "https://github.com/Sauerbratendelphinapterus731/font-changer-for-whatsapp-web",
+            "title": "Sauerbratendelphinapterus731/font-changer-for-whatsapp-web: Customize the font style, size, and weight for WhatsApp Web using this lightweight Chromium extension.",
+            "date_modified": "2026-07-13T20:44:44.000Z",
+            "date_published": "2026-07-10T08:29:30.000Z",
+            "author": {
+                "name": "Sauerbratendelphinapterus731",
+                "url": "https://github.com/Sauerbratendelphinapterus731"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121722314?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Node.js for inside the browser. An open-source, lightweight WebContainer alternative.</div>",
+            "url": "https://github.com/R1ck404/Nodepod",
+            "title": "R1ck404/Nodepod: Node.js for inside the browser. An open-source, lightweight WebContainer alternative.",
+            "date_modified": "2026-07-13T20:44:06.000Z",
+            "date_published": "2026-02-17T10:24:18.000Z",
+            "author": {
+                "name": "R1ck404",
+                "url": "https://github.com/R1ck404"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/258732051?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast and lightweight utility to convert LaTeX strings into clean Unicode characters.</div>",
+            "url": "https://github.com/open-devhub/latex-to-unicode",
+            "title": "open-devhub/latex-to-unicode: Fast and lightweight utility to convert LaTeX strings into clean Unicode characters.",
+            "date_modified": "2026-07-13T20:42:51.000Z",
+            "date_published": "2026-07-13T14:05:34.000Z",
+            "author": {
+                "name": "open-devhub",
+                "url": "https://github.com/open-devhub"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/195098?u=17a467fa8ce3e78855fb1fd31f9fedfdb0a17053&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cloudflare Workers app that watches Wikipedia for newly reported notable deaths, LLM‑filters and de‑duplicates them, then publishes concise memorial posts (Telegram + X) via a lightweight public JSON API. Automates detection, verification, and multi‑platform distribution with low latency and minimal ops overhead.</div>",
+            "url": "https://github.com/brucehart/celebrity-death-bot",
+            "title": "brucehart/celebrity-death-bot: Cloudflare Workers app that watches Wikipedia for newly reported notable deaths, LLM‑filters and de‑duplicates them, then publishes concise memorial posts (Telegram + X) via a lightweight public JSON API. Automates detection, verification, and multi‑platform distribution with low latency and minimal ops overhead.",
+            "date_modified": "2026-07-13T20:41:06.000Z",
+            "date_published": "2025-08-16T00:27:40.000Z",
+            "author": {
+                "name": "brucehart",
+                "url": "https://github.com/brucehart"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/45083378?u=a47c7a00d1e17c7184b68a18e593ac106610a85a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This repository holds my software engineering web portfolio, containing which explain all working experience, the tech stacks I'm use to work with and the most relevant projects I've done. It's implemented as a static landing page, using NextJS with TailwindCSS, TypeScript and little reactivity to keep the project lightweight.</div>",
+            "url": "https://github.com/ignaciocastrocenteno/Software-Engineering-Web-Portfolio",
+            "title": "ignaciocastrocenteno/Software-Engineering-Web-Portfolio: This repository holds my software engineering web portfolio, containing which explain all working experience, the tech stacks I'm use to work with and the most relevant projects I've done. It's implemented as a static landing page, using NextJS with TailwindCSS, TypeScript and little reactivity to keep the project lightweight.",
+            "date_modified": "2026-07-13T20:40:11.000Z",
+            "date_published": "2026-04-01T04:11:41.000Z",
+            "author": {
+                "name": "ignaciocastrocenteno",
+                "url": "https://github.com/ignaciocastrocenteno"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/129896036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.</div>",
+            "url": "https://github.com/opengeos/GeoLibre",
+            "title": "opengeos/GeoLibre: A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+            "date_modified": "2026-07-13T20:44:54.000Z",
+            "date_published": "2026-05-27T19:34:31.000Z",
+            "author": {
+                "name": "opengeos",
+                "url": "https://github.com/opengeos"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487506?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Node.js private proxy registry</div>",
+            "url": "https://github.com/verdaccio/verdaccio",
+            "title": "verdaccio/verdaccio: A lightweight Node.js private proxy registry",
+            "date_modified": "2026-07-13T20:39:35.000Z",
+            "date_published": "2016-04-15T16:21:12.000Z",
+            "author": {
+                "name": "verdaccio",
+                "url": "https://github.com/verdaccio"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/265384410?u=b3309b6a1097b20d22272d198fdcbec7450a74a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight development workflow for solo builders with host-native skills, subagents, and cross-model review.</div>",
+            "url": "https://github.com/0thcanvas/0th-skills",
+            "title": "0thcanvas/0th-skills: Lightweight development workflow for solo builders with host-native skills, subagents, and cross-model review.",
+            "date_modified": "2026-07-13T20:39:30.000Z",
+            "date_published": "2026-04-08T06:57:44.000Z",
+            "author": {
+                "name": "0thcanvas",
+                "url": "https://github.com/0thcanvas"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1126186?u=d6e5fff76ab090cf26270bdf5dbdf472146cec9b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and easy-to-use jQuery plugin that determines if the background colour of an element is light or dark.</div>",
+            "url": "https://github.com/jamiebrittain/colorContrast.js",
+            "title": "jamiebrittain/colorContrast.js: A lightweight and easy-to-use jQuery plugin that determines if the background colour of an element is light or dark.",
+            "date_modified": "2026-07-13T20:39:26.000Z",
+            "date_published": "2013-10-28T19:41:56.000Z",
+            "author": {
+                "name": "jamiebrittain",
+                "url": "https://github.com/jamiebrittain"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
+            "url": "https://github.com/xsrazy/qr-code-generator",
+            "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
+            "date_modified": "2026-07-13T20:38:54.000Z",
+            "date_published": "2025-07-23T10:41:39.000Z",
+            "author": {
+                "name": "xsrazy",
+                "url": "https://github.com/xsrazy"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278274919?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Manage personal Markdown notes with this lightweight Deno desktop application featuring wikilinks and a graph view for visual knowledge mapping.</div>",
+            "url": "https://github.com/Verbenaceaefamilylamnidae461/denidian",
+            "title": "Verbenaceaefamilylamnidae461/denidian: Manage personal Markdown notes with this lightweight Deno desktop application featuring wikilinks and a graph view for visual knowledge mapping.",
+            "date_modified": "2026-07-13T20:38:10.000Z",
+            "date_published": "2026-06-22T22:43:13.000Z",
+            "author": {
+                "name": "Verbenaceaefamilylamnidae461",
+                "url": "https://github.com/Verbenaceaefamilylamnidae461"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278276370?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Access Google Gemini through a lightweight, cross-platform Electron desktop application.</div>",
+            "url": "https://github.com/Victoria3470/gemini-desktop",
+            "title": "Victoria3470/gemini-desktop: Access Google Gemini through a lightweight, cross-platform Electron desktop application.",
+            "date_modified": "2026-07-13T20:37:50.000Z",
+            "date_published": "2026-06-16T21:13:03.000Z",
+            "author": {
+                "name": "Victoria3470",
+                "url": "https://github.com/Victoria3470"
             }
         }
     ]
