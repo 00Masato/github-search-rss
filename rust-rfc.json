@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/264624490?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes allowing unit variants of unit-only enums with an explicit primitive integer #[repr(...)] to be cast directly to that representation type in patterns:</p>\n<p dir=\"auto\">match byte {<br>\nOperation::Banana as u8 =&gt; {}<br>\n_ =&gt; {}<br>\n}</p>\n<p dir=\"auto\">This is narrowly defined syntactic sugar for an equivalent named constant pattern. It introduces no implicit conversions or arbitrary expressions in patterns and does not change enum layout, validity, or exhaustiveness semantics. It is intended primarily for matching integer values from protocols, file formats, hardware interfaces, and FFI while retaining the enum variant’s semantic name.</p>\n<p dir=\"auto\"><a href=\"https://github.com/NotPppp1116/rfcs/blob/agent/enum-variant-cast-patterns/text/0000-enum-variant-cast-patterns.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3985",
             "title": "Create 0000-enum-variant-cast-patterns.md",
-            "date_modified": "2026-07-15T21:32:10.000Z",
+            "date_modified": "2026-07-15T21:57:49.000Z",
             "date_published": "2026-07-15T21:32:05.000Z",
             "author": {
                 "name": "NotPppp1116",
@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12896469?u=775005069e5d927e885d9813ce764620d0eff8e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Restructure and simplify the libs team, per conversations with <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/Amanieu/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/Amanieu\">@Amanieu</a> as the lead &amp; broader team membership.</p>\n<p dir=\"auto\">cc @rust-lang/libs @rust-lang/libs-api @rust-lang/libs-contributors</p>\n<p dir=\"auto\"><a href=\"https://github.com/nia-e/rfcs/blob/master/text/3984-libs-team-refactor.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3984",
             "title": "RFC: Refactor the libs team",
-            "date_modified": "2026-07-15T21:33:08.000Z",
+            "date_modified": "2026-07-15T22:33:29.000Z",
             "date_published": "2026-07-15T21:20:14.000Z",
             "author": {
                 "name": "nia-e",
