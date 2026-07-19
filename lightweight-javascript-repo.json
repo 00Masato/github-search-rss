@@ -6,120 +6,21 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/119518330?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀</div>",
-            "url": "https://github.com/ratul3429/bun-microservice-gateways",
-            "title": "ratul3429/bun-microservice-gateways: This repository provides a fast and configurable gateway using Bun, designed to route HTTP requests to your microservices efficiently. With features like smart routing and built-in health checks, it simplifies local development and lightweight setups. 🐙🚀",
-            "date_modified": "2026-07-19T05:09:57.000Z",
-            "date_published": "2025-05-22T09:12:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/288813381?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, type-safe, and fully accessible drag &amp; drop primitives for Vue.js.</div>",
+            "url": "https://github.com/ubugeeei-prod/draggavue",
+            "title": "ubugeeei-prod/draggavue: Lightweight, type-safe, and fully accessible drag & drop primitives for Vue.js.",
+            "date_modified": "2026-07-19T07:57:27.000Z",
+            "date_published": "2026-07-18T12:08:25.000Z",
             "author": {
-                "name": "ratul3429",
-                "url": "https://github.com/ratul3429"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69126233?u=5dc258786c6d9ec20e69b1b605685a5b508532ad&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for TypeScript and JavaScript, `@adam-rocska/timeout` creates a Promise that resolves after a set time, perfect for managing delays in your async workflows. Check it out on GitHub for easy integration into your projects! 🐙✨</div>",
-            "url": "https://github.com/thegamer49520/timeout-typescript",
-            "title": "thegamer49520/timeout-typescript: A lightweight utility for TypeScript and JavaScript, `@adam-rocska/timeout` creates a Promise that resolves after a set time, perfect for managing delays in your async workflows. Check it out on GitHub for easy integration into your projects! 🐙✨",
-            "date_modified": "2026-07-19T05:09:57.000Z",
-            "date_published": "2025-05-23T01:03:17.000Z",
-            "author": {
-                "name": "thegamer49520",
-                "url": "https://github.com/thegamer49520"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/98144116?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Precise, lightweight desktop image editor — layers, selection, transform, crop, brush &amp; WebGL2 canvas. Built with Tauri, SolidJS, Rust &amp; TypeScript.</div>",
-            "url": "https://github.com/rahmanqolbi/photrez",
-            "title": "rahmanqolbi/photrez: Precise, lightweight desktop image editor — layers, selection, transform, crop, brush & WebGL2 canvas. Built with Tauri, SolidJS, Rust & TypeScript.",
-            "date_modified": "2026-07-19T05:09:54.000Z",
-            "date_published": "2026-06-23T05:22:27.000Z",
-            "author": {
-                "name": "rahmanqolbi",
-                "url": "https://github.com/rahmanqolbi"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/215961108?u=c75425f9a2277e0e8959a75582837a23e019a81d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PanelDrop is a lightweight, open-source streaming dashboard built with pnpm that bundles TMDb API metadata with embedded players to stream movies, TV shows, and anime.</div>",
-            "url": "https://github.com/elliethethirdwilliamsJr/PanelHub",
-            "title": "elliethethirdwilliamsJr/PanelHub: PanelDrop is a lightweight, open-source streaming dashboard built with pnpm that bundles TMDb API metadata with embedded players to stream movies, TV shows, and anime.",
-            "date_modified": "2026-07-19T05:09:46.000Z",
-            "date_published": "2026-06-12T14:07:40.000Z",
-            "author": {
-                "name": "elliethethirdwilliamsJr",
-                "url": "https://github.com/elliethethirdwilliamsJr"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/197093519?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.</div>",
-            "url": "https://github.com/SamarthKulkarni20/keyed-batched-items-accumulator",
-            "title": "SamarthKulkarni20/keyed-batched-items-accumulator: A lightweight utility for Node.js projects that accumulates items into fixed-size batches per key, preserving insertion order within each key. Streams items directly into their respective batches at runtime, eliminating the overhead of post-processing 1D arrays into chunks. It abstracts key-based batch management.",
-            "date_modified": "2026-07-19T05:09:20.000Z",
-            "date_published": "2025-05-21T16:16:34.000Z",
-            "author": {
-                "name": "SamarthKulkarni20",
-                "url": "https://github.com/SamarthKulkarni20"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17308208?u=2dc5fdcf2d1d5fc3835fac403632c61c2afcc6a4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight file hosting platform built on top of S3-compatible storage</div>",
-            "url": "https://github.com/saltbo/zpan",
-            "title": "saltbo/zpan: Lightweight file hosting platform built on top of S3-compatible storage",
-            "date_modified": "2026-07-19T05:09:17.000Z",
-            "date_published": "2019-09-28T04:39:57.000Z",
-            "author": {
-                "name": "saltbo",
-                "url": "https://github.com/saltbo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
-            "url": "https://github.com/xsrazy/qr-code-generator",
-            "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
-            "date_modified": "2026-07-19T05:08:55.000Z",
-            "date_published": "2025-07-23T10:41:39.000Z",
-            "author": {
-                "name": "xsrazy",
-                "url": "https://github.com/xsrazy"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/284183757?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Sythoria is a lightweight, privacy-focused AI chat interface that connects to any OpenAI/Antropic-compatible API, offering multi-provider support, real-time streaming responses, and optional web search integration without tracking or subscriptions.</div>",
-            "url": "https://github.com/sythoria/sythoria-desktop",
-            "title": "sythoria/sythoria-desktop: Sythoria is a lightweight, privacy-focused AI chat interface that connects to any OpenAI/Antropic-compatible API, offering multi-provider support, real-time streaming responses, and optional web search integration without tracking or subscriptions.",
-            "date_modified": "2026-07-19T05:08:48.000Z",
-            "date_published": "2026-05-08T21:41:02.000Z",
-            "author": {
-                "name": "sythoria",
-                "url": "https://github.com/sythoria"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/145249784?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.</div>",
-            "url": "https://github.com/Nikhilkumarseeda/user-crud-server",
-            "title": "Nikhilkumarseeda/user-crud-server: User-crud-server is a lightweight API designed for managing user data with simple create, read, update, and delete operations. It offers a straightforward interface for developers to integrate user management into their applications efficiently.",
-            "date_modified": "2026-07-19T05:08:39.000Z",
-            "date_published": "2025-05-15T02:37:45.000Z",
-            "author": {
-                "name": "Nikhilkumarseeda",
-                "url": "https://github.com/Nikhilkumarseeda"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12483601?u=4b44e7dcf1b94830d1530c8f1cdf12a7a1819017&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight local AI IDE for running multiple Codex and Claude workspaces side-by-side.</div>",
-            "url": "https://github.com/maouzju/chill-vibe-IDE",
-            "title": "maouzju/chill-vibe-IDE: Lightweight local AI IDE for running multiple Codex and Claude workspaces side-by-side.",
-            "date_modified": "2026-07-19T05:08:35.000Z",
-            "date_published": "2026-04-15T12:51:36.000Z",
-            "author": {
-                "name": "maouzju",
-                "url": "https://github.com/maouzju"
+                "name": "ubugeeei-prod",
+                "url": "https://github.com/ubugeeei-prod"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302405968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight canvas texture cropper and proportion scaler.</div>",
             "url": "https://github.com/upstockguru-ux/uppity",
             "title": "upstockguru-ux/uppity: Lightweight canvas texture cropper and proportion scaler.",
-            "date_modified": "2026-07-19T05:08:20.000Z",
+            "date_modified": "2026-07-19T07:55:51.000Z",
             "date_published": "2026-07-11T07:20:38.000Z",
             "author": {
                 "name": "upstockguru-ux",
@@ -127,102 +28,201 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84588948?u=a9a089c99feff40bed91de55a63b0978cb4c31b2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight desktop media library player designed for speed, low-RAM usage, and premium aesthetics. </div>",
-            "url": "https://github.com/Shantodotdev/navio-player",
-            "title": "Shantodotdev/navio-player: A modern, lightweight desktop media library player designed for speed, low-RAM usage, and premium aesthetics. ",
-            "date_modified": "2026-07-19T05:08:05.000Z",
-            "date_published": "2026-07-09T09:55:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/270434259?u=9b97818efd64ce1a2db7fd3e5900bddb0074f002&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A music downloading and listening app with features other music players are missing. Focused on being simple and lightweight. Local + r2 storage</div>",
+            "url": "https://github.com/NaMarrado/TON-Music-Player",
+            "title": "NaMarrado/TON-Music-Player: A music downloading and listening app with features other music players are missing. Focused on being simple and lightweight. Local + r2 storage",
+            "date_modified": "2026-07-19T07:55:04.000Z",
+            "date_published": "2026-04-18T15:12:31.000Z",
             "author": {
-                "name": "Shantodotdev",
-                "url": "https://github.com/Shantodotdev"
+                "name": "NaMarrado",
+                "url": "https://github.com/NaMarrado"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142863501?u=2de6f5d84f33a72a582081ec51dbcd59605e95a9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight desktop application for batch renaming files.</div>",
-            "url": "https://github.com/aoaochan/File-Rename-Pro",
-            "title": "aoaochan/File-Rename-Pro: A lightweight desktop application for batch renaming files.",
-            "date_modified": "2026-07-19T05:07:32.000Z",
-            "date_published": "2026-07-17T02:19:22.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/257673435?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight carbon accounting &amp; telecom parts management (Cloudflare Workers + D1)</div>",
+            "url": "https://github.com/HaNguyenTB/cirtell",
+            "title": "HaNguyenTB/cirtell: Lightweight carbon accounting & telecom parts management (Cloudflare Workers + D1)",
+            "date_modified": "2026-07-19T07:54:40.000Z",
+            "date_published": "2026-03-31T15:03:57.000Z",
             "author": {
-                "name": "aoaochan",
-                "url": "https://github.com/aoaochan"
+                "name": "HaNguyenTB",
+                "url": "https://github.com/HaNguyenTB"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118066916?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, powerful enhancement for Next.js Link components that automatically detects active routes. Provides intuitive APIs for handling active states with complete TypeScript support.</div>",
-            "url": "https://github.com/PedroFake02/better-link",
-            "title": "PedroFake02/better-link: A lightweight, powerful enhancement for Next.js Link components that automatically detects active routes. Provides intuitive APIs for handling active states with complete TypeScript support.",
-            "date_modified": "2026-07-19T05:06:44.000Z",
-            "date_published": "2025-04-29T06:56:27.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286598806?u=6d729d7d6d55e3025d900917ba9611f5d3246f48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.</div>",
+            "url": "https://github.com/Jubei-tech/llm-metadata",
+            "title": "Jubei-tech/llm-metadata: LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.",
+            "date_modified": "2026-07-19T07:54:32.000Z",
+            "date_published": "2026-05-21T09:33:54.000Z",
             "author": {
-                "name": "PedroFake02",
-                "url": "https://github.com/PedroFake02"
+                "name": "Jubei-tech",
+                "url": "https://github.com/Jubei-tech"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/170837138?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, accessible component library providing essential UI building blocks for modern web applications.</div>",
-            "url": "https://github.com/muhammadhamzakhan22/element-essentials",
-            "title": "muhammadhamzakhan22/element-essentials: A lightweight, accessible component library providing essential UI building blocks for modern web applications.",
-            "date_modified": "2026-07-19T05:06:44.000Z",
-            "date_published": "2025-04-28T01:20:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1238286?u=a8b54ff84ec7067c4afc58e2e457159caa7d5309&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight pixel mosaic lazy loader for static and animated images, with noise effects, auto detection, and progressive enhancement.</div>",
+            "url": "https://github.com/catgarret/Pixel-Mosaic-Lazy-Loader",
+            "title": "catgarret/Pixel-Mosaic-Lazy-Loader: A lightweight pixel mosaic lazy loader for static and animated images, with noise effects, auto detection, and progressive enhancement.",
+            "date_modified": "2026-07-19T07:53:55.000Z",
+            "date_published": "2026-07-18T02:52:59.000Z",
             "author": {
-                "name": "muhammadhamzakhan22",
-                "url": "https://github.com/muhammadhamzakhan22"
+                "name": "catgarret",
+                "url": "https://github.com/catgarret"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/273819780?u=4c14945bcaee9fdf58802873f4206fdc85e65800&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight auditable historical citation skill</div>",
-            "url": "https://github.com/Javert11s-hub/histscriptor-citation",
-            "title": "Javert11s-hub/histscriptor-citation: Lightweight auditable historical citation skill",
-            "date_modified": "2026-07-19T05:09:45.000Z",
-            "date_published": "2026-07-17T05:26:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/244347748?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Visual Novel engine built in JavaScript for creating interactive narrative games with branching storylines</div>",
+            "url": "https://github.com/RouteVN/route-engine",
+            "title": "RouteVN/route-engine: A lightweight Visual Novel engine built in JavaScript for creating interactive narrative games with branching storylines",
+            "date_modified": "2026-07-19T07:53:44.000Z",
+            "date_published": "2024-10-02T14:33:00.000Z",
             "author": {
-                "name": "Javert11s-hub",
-                "url": "https://github.com/Javert11s-hub"
+                "name": "RouteVN",
+                "url": "https://github.com/RouteVN"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/210483099?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, lightweight date object library for JavaScript/TypeScript, without the time &amp; timezone nonsense.</div>",
-            "url": "https://github.com/still-forest/proper-date.js",
-            "title": "still-forest/proper-date.js: Simple, lightweight date object library for JavaScript/TypeScript, without the time & timezone nonsense.",
-            "date_modified": "2026-07-19T05:04:13.000Z",
-            "date_published": "2025-03-13T08:26:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/32079912?u=c3771922a6d7204c1d037e4c44e37325c42c6cb9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight free email domain checker using a Bloom filter. Check if an email address belongs to a free provider (Gmail, Yahoo, Outlook, etc.) with a tiny bundle — no full domain lists shipped to the client.</div>",
+            "url": "https://github.com/rafaeelaudibert/bloommx",
+            "title": "rafaeelaudibert/bloommx: Lightweight free email domain checker using a Bloom filter. Check if an email address belongs to a free provider (Gmail, Yahoo, Outlook, etc.) with a tiny bundle — no full domain lists shipped to the client.",
+            "date_modified": "2026-07-19T07:52:32.000Z",
+            "date_published": "2026-02-24T21:56:51.000Z",
             "author": {
-                "name": "still-forest",
-                "url": "https://github.com/still-forest"
+                "name": "rafaeelaudibert",
+                "url": "https://github.com/rafaeelaudibert"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/151859229?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and accessible React accordion component with smooth animations.</div>",
-            "url": "https://github.com/vuhuuu11/react-accordion",
-            "title": "vuhuuu11/react-accordion: A lightweight and accessible React accordion component with smooth animations.",
-            "date_modified": "2026-07-19T05:04:12.000Z",
-            "date_published": "2025-04-04T12:49:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97590636?u=109480e71d6901a1b7dc228669c59ef0fa382cbd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Zero Dependencies, Zero Overhead, Unbelievably Lightweight, Frmaework Agnostic</div>",
+            "url": "https://github.com/Lee-Dongwook/NakedCanvas",
+            "title": "Lee-Dongwook/NakedCanvas: Zero Dependencies, Zero Overhead, Unbelievably Lightweight, Frmaework Agnostic",
+            "date_modified": "2026-07-19T07:51:23.000Z",
+            "date_published": "2026-07-19T07:09:55.000Z",
             "author": {
-                "name": "vuhuuu11",
-                "url": "https://github.com/vuhuuu11"
+                "name": "Lee-Dongwook",
+                "url": "https://github.com/Lee-Dongwook"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25489879?u=9b13258aee14fcbbaf50181a6887b6a7cf8e5bcd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Print Later is a lightweight Windows desktop application that lets you save web pages from your browser and print them whenever you're ready.</div>",
-            "url": "https://github.com/subodhkc/Print-Later",
-            "title": "subodhkc/Print-Later: Print Later is a lightweight Windows desktop application that lets you save web pages from your browser and print them whenever you're ready.",
-            "date_modified": "2026-07-19T05:03:55.000Z",
-            "date_published": "2025-11-30T17:12:13.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164031869?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | <a href=\"https://cat21.space\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://cat21.space</a></div>",
+            "url": "https://github.com/ordpool-space/cat21-indexer",
+            "title": "ordpool-space/cat21-indexer: 😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | https://cat21.space",
+            "date_modified": "2026-07-19T07:50:05.000Z",
+            "date_published": "2024-01-18T08:05:04.000Z",
             "author": {
-                "name": "subodhkc",
-                "url": "https://github.com/subodhkc"
+                "name": "ordpool-space",
+                "url": "https://github.com/ordpool-space"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/24980252?u=423858ea0ca2622e8bdd53ecf8db0d139ebcece3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>WikiFlow is a knowledge-focused Hexo theme for personal wikis, notes, and lightweight documentation sites.</div>",
-            "url": "https://github.com/AlliotTech/hexo-theme-wikiflow",
-            "title": "AlliotTech/hexo-theme-wikiflow: WikiFlow is a knowledge-focused Hexo theme for personal wikis, notes, and lightweight documentation sites.",
-            "date_modified": "2026-07-19T05:00:05.000Z",
-            "date_published": "2026-06-11T04:34:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3324639?u=7c7ef77bbb30d2d638d32015a2e5ca764f1ef14e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight vanilla JavaScript static document generator.</div>",
+            "url": "https://github.com/WangShai123/vanilla-press",
+            "title": "WangShai123/vanilla-press: A lightweight vanilla JavaScript static document generator.",
+            "date_modified": "2026-07-19T07:49:45.000Z",
+            "date_published": "2026-07-17T13:19:17.000Z",
             "author": {
-                "name": "AlliotTech",
-                "url": "https://github.com/AlliotTech"
+                "name": "WangShai123",
+                "url": "https://github.com/WangShai123"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/182505743?u=932bbdb471c713e1ed8e15e90003429e6d5f7c0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, accessible React component library with a CSS-first theme system — no Tailwind required.</div>",
+            "url": "https://github.com/qiukelab/kairo-ui",
+            "title": "qiukelab/kairo-ui: Lightweight, accessible React component library with a CSS-first theme system — no Tailwind required.",
+            "date_modified": "2026-07-19T07:49:16.000Z",
+            "date_published": "2026-07-17T16:29:19.000Z",
+            "author": {
+                "name": "qiukelab",
+                "url": "https://github.com/qiukelab"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/210746255?u=ad0f0ef92a04d0382a92dd43caa8bb88c00bc4d5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and responsive web-based BOQ (Bill of Quantity) management app for project cost estimation, reporting, and export in Excel or PDF format.</div>",
+            "url": "https://github.com/wahyu-devs/boq-manager",
+            "title": "wahyu-devs/boq-manager: A lightweight and responsive web-based BOQ (Bill of Quantity) management app for project cost estimation, reporting, and export in Excel or PDF format.",
+            "date_modified": "2026-07-19T07:46:14.000Z",
+            "date_published": "2025-10-06T03:55:59.000Z",
+            "author": {
+                "name": "wahyu-devs",
+                "url": "https://github.com/wahyu-devs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/213537846?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast, lightweight reminder app for Windows</div>",
+            "url": "https://github.com/fishcake-coder/remind-me",
+            "title": "fishcake-coder/remind-me: A fast, lightweight reminder app for Windows",
+            "date_modified": "2026-07-19T07:45:45.000Z",
+            "date_published": "2026-07-19T05:37:39.000Z",
+            "author": {
+                "name": "fishcake-coder",
+                "url": "https://github.com/fishcake-coder"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63908568?u=4e2bf420115f33c5221fa96052e8756ab302d3c0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight web application built with Nuxt 4 and Tailwind CSS that converts TrueType (TTF) and OpenType (OTF) fonts into optimized WOFF and WOFF2 formats entirely in your browser.</div>",
+            "url": "https://github.com/askomarov/fonts-converter-nuxt",
+            "title": "askomarov/fonts-converter-nuxt: A lightweight web application built with Nuxt 4 and Tailwind CSS that converts TrueType (TTF) and OpenType (OTF) fonts into optimized WOFF and WOFF2 formats entirely in your browser.",
+            "date_modified": "2026-07-19T07:45:08.000Z",
+            "date_published": "2025-08-06T12:58:17.000Z",
+            "author": {
+                "name": "askomarov",
+                "url": "https://github.com/askomarov"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/301500124?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Velo is an open-source payment and liquidity platform for privacy-preserving cash access on Stellar. It combines Soroban smart contracts, a lightweight API layer, and a mobile-first experience to make cash-like settlement practical for real-world use cases such as agent-assisted payments, local commerce, and programmable escrow.</div>",
+            "url": "https://github.com/Nullifier-Systems/velo",
+            "title": "Nullifier-Systems/velo: Velo is an open-source payment and liquidity platform for privacy-preserving cash access on Stellar. It combines Soroban smart contracts, a lightweight API layer, and a mobile-first experience to make cash-like settlement practical for real-world use cases such as agent-assisted payments, local commerce, and programmable escrow.",
+            "date_modified": "2026-07-19T07:43:01.000Z",
+            "date_published": "2026-07-08T21:39:49.000Z",
+            "author": {
+                "name": "Nullifier-Systems",
+                "url": "https://github.com/Nullifier-Systems"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4933?u=ef74373ea89e062ce87662f67ee9a1bf1ac3641a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, lightweight Mac app for managing and studying Anki decks.</div>",
+            "url": "https://github.com/javierarce/ankitron",
+            "title": "javierarce/ankitron: A simple, lightweight Mac app for managing and studying Anki decks.",
+            "date_modified": "2026-07-19T07:42:22.000Z",
+            "date_published": "2026-03-01T15:00:28.000Z",
+            "author": {
+                "name": "javierarce",
+                "url": "https://github.com/javierarce"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97328680?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, type-safe client-side routing library with full TypeScript inference, eliminating runtime route errors through compile-time validation.</div>",
+            "url": "https://github.com/Ritesh-Adwani/Typesafe-Router",
+            "title": "Ritesh-Adwani/Typesafe-Router: A lightweight, type-safe client-side routing library with full TypeScript inference, eliminating runtime route errors through compile-time validation.",
+            "date_modified": "2026-07-19T07:40:18.000Z",
+            "date_published": "2026-07-19T06:43:09.000Z",
+            "author": {
+                "name": "Ritesh-Adwani",
+                "url": "https://github.com/Ritesh-Adwani"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18465053?u=fc4ecdcb50e317c5c8104135158a8bc4608c5ea5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight 2D game engine for WebAssembly and WeChat MiniGames</div>",
+            "url": "https://github.com/esengine/estella",
+            "title": "esengine/estella: Lightweight 2D game engine for WebAssembly and WeChat MiniGames",
+            "date_modified": "2026-07-19T07:34:52.000Z",
+            "date_published": "2026-01-25T07:34:59.000Z",
+            "author": {
+                "name": "esengine",
+                "url": "https://github.com/esengine"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164451221?u=61829249c431a53f11d7072552df0e06b1f19479&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>中文: QingCode 是一个基于 Tauri 2 的桌面代码项目管理工具，专为 AI 开发时代设计，解决多项目切换、服务启动、终端管理和轻量编辑等场景痛点。 English: QingCode is a Tauri 2 desktop code project management companion for the AI development era, streamlining multi-project switching, service startup, terminal management, and lightweight editing in one window.</div>",
+            "url": "https://github.com/Fracizz/QingCode",
+            "title": "Fracizz/QingCode: 中文: QingCode 是一个基于 Tauri 2 的桌面代码项目管理工具，专为 AI 开发时代设计，解决多项目切换、服务启动、终端管理和轻量编辑等场景痛点。 English: QingCode is a Tauri 2 desktop code project management companion for the AI development era, streamlining multi-project switching, service startup, terminal management, and lightweight editing in one window.",
+            "date_modified": "2026-07-19T07:34:43.000Z",
+            "date_published": "2026-07-17T06:06:03.000Z",
+            "author": {
+                "name": "Fracizz",
+                "url": "https://github.com/Fracizz"
             }
         }
     ]
