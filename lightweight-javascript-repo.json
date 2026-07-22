@@ -6,10 +6,65 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176163?u=69dfbc5d07ae535b46f2790ee21670f621dbbcf8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight desktop app framework for building native applications with TypeScript, HTML, and CSS.</div>",
+            "url": "https://github.com/wess/butter",
+            "title": "wess/butter: A lightweight desktop app framework for building native applications with TypeScript, HTML, and CSS.",
+            "date_modified": "2026-07-22T20:05:43.000Z",
+            "date_published": "2026-03-24T17:32:14.000Z",
+            "author": {
+                "name": "wess",
+                "url": "https://github.com/wess"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/284331685?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A post-Markdown lightweight markup language with visual mnemonics and human-centered design.</div>",
+            "url": "https://github.com/markup-carve/carve",
+            "title": "markup-carve/carve: A post-Markdown lightweight markup language with visual mnemonics and human-centered design.",
+            "date_modified": "2026-07-22T20:05:36.000Z",
+            "date_published": "2026-05-13T15:06:42.000Z",
+            "author": {
+                "name": "markup-carve",
+                "url": "https://github.com/markup-carve"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/225162621?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight on-screen drawing for Windows (Tauri), inspired by Epic Pen</div>",
+            "url": "https://github.com/ranks1233/screen-pen",
+            "title": "ranks1233/screen-pen: Lightweight on-screen drawing for Windows (Tauri), inspired by Epic Pen",
+            "date_modified": "2026-07-22T20:03:25.000Z",
+            "date_published": "2026-07-22T17:06:21.000Z",
+            "author": {
+                "name": "ranks1233",
+                "url": "https://github.com/ranks1233"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/128746330?u=a9c5178930975bc3c25ad9499d4063604cbca7ad&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A focused desktop viewer and lightweight source editor for Markdown and HTML files.</div>",
+            "url": "https://github.com/giftedloser/vellum",
+            "title": "giftedloser/vellum: A focused desktop viewer and lightweight source editor for Markdown and HTML files.",
+            "date_modified": "2026-07-22T20:04:07.000Z",
+            "date_published": "2026-07-15T02:16:09.000Z",
+            "author": {
+                "name": "giftedloser",
+                "url": "https://github.com/giftedloser"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83725986?u=a2e0ccad55e36bbbfcead09d30a4e25e287f9a00&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript library for adding resilience policies to async functions.</div>",
+            "url": "https://github.com/smokeeaasd/ftask",
+            "title": "smokeeaasd/ftask: A lightweight TypeScript library for adding resilience policies to async functions.",
+            "date_modified": "2026-07-22T20:03:18.000Z",
+            "date_published": "2026-07-22T19:33:28.000Z",
+            "author": {
+                "name": "smokeeaasd",
+                "url": "https://github.com/smokeeaasd"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/74136457?u=8dddfd2e5b2d0d8a79cb688e6a7fa510ba026a7e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TikTok Live Chat Overlay for streaming.</div>",
             "url": "https://github.com/rzkyydev/TikOverlay",
             "title": "rzkyydev/TikOverlay: A lightweight TikTok Live Chat Overlay for streaming.",
-            "date_modified": "2026-07-22T17:56:55.000Z",
+            "date_modified": "2026-07-22T20:03:07.000Z",
             "date_published": "2026-07-22T17:54:49.000Z",
             "author": {
                 "name": "rzkyydev",
@@ -17,186 +72,76 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/178451673?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, production-ready Google authentication toolkit for Node.js</div>",
-            "url": "https://github.com/PrAtHaM-0707/social-auth-kit",
-            "title": "PrAtHaM-0707/social-auth-kit: Lightweight, production-ready Google authentication toolkit for Node.js",
-            "date_modified": "2026-03-25T09:19:35.000Z",
-            "date_published": "2026-03-04T07:01:28.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3920860?u=911006f95249eec31cd6e06d4f7d07b9112035d4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight local web interface to an LLM API</div>",
+            "url": "https://github.com/dJeyL/miaou",
+            "title": "dJeyL/miaou: Lightweight local web interface to an LLM API",
+            "date_modified": "2026-07-22T20:03:14.000Z",
+            "date_published": "2026-05-29T21:58:31.000Z",
             "author": {
-                "name": "PrAtHaM-0707",
-                "url": "https://github.com/PrAtHaM-0707"
+                "name": "dJeyL",
+                "url": "https://github.com/dJeyL"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9584358?u=4a0d8cea73b5b092be4dd05e5fe21cc978bff09c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The textarea element with syntax highlight</div>",
-            "url": "https://github.com/raviqqe/monza-editor",
-            "title": "raviqqe/monza-editor: The textarea element with syntax highlight",
-            "date_modified": "2026-07-22T18:00:46.000Z",
-            "date_published": "2025-08-15T02:35:23.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87027295?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight news</div>",
+            "url": "https://github.com/joyskr/News-Portal",
+            "title": "joyskr/News-Portal: Lightweight news",
+            "date_modified": "2026-07-22T20:02:40.000Z",
+            "date_published": "2026-07-22T14:50:47.000Z",
             "author": {
-                "name": "raviqqe",
-                "url": "https://github.com/raviqqe"
+                "name": "joyskr",
+                "url": "https://github.com/joyskr"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/180104975?u=7b8dc77d23537f0b1012c58814a91be301cf531c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Zephyr: A modern, lightweight, and secure Mihomo / Clash Meta GUI client built with Tauri and Rust.</div>",
-            "url": "https://github.com/Juwan-Hwang/Zephyr",
-            "title": "Juwan-Hwang/Zephyr: Zephyr: A modern, lightweight, and secure Mihomo / Clash Meta GUI client built with Tauri and Rust.",
-            "date_modified": "2026-07-22T17:59:09.000Z",
-            "date_published": "2026-03-30T20:53:12.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/747612?u=5d9493f9c74f5cf1aaeab7535b79c3289115bd88&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ArgoNVR is a lightweight, self-hosted Network Video Recorder (NVR) designed to run on low-power hardware.</div>",
+            "url": "https://github.com/DaveVoorhis/argonvr",
+            "title": "DaveVoorhis/argonvr: ArgoNVR is a lightweight, self-hosted Network Video Recorder (NVR) designed to run on low-power hardware.",
+            "date_modified": "2026-07-22T20:00:52.000Z",
+            "date_published": "2026-07-14T19:21:45.000Z",
             "author": {
-                "name": "Juwan-Hwang",
-                "url": "https://github.com/Juwan-Hwang"
+                "name": "DaveVoorhis",
+                "url": "https://github.com/DaveVoorhis"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268516410?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AGIeX is a lightweight node infrastructure for powering the AGI Expert network (<a href=\"https://agi.expert\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://agi.expert</a>). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.</div>",
-            "url": "https://github.com/AGI-expert/AGIeX",
-            "title": "AGI-expert/AGIeX: AGIeX is a lightweight node infrastructure for powering the AGI Expert network (https://agi.expert). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.",
-            "date_modified": "2026-07-22T17:55:56.000Z",
-            "date_published": "2026-03-21T10:15:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/297985306?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Write HTML, get 60fps Canvas animations. A lightweight, zero-build Web Component framework for declarative graphics.</div>",
+            "url": "https://github.com/woodoo-labs/kilopixel",
+            "title": "woodoo-labs/kilopixel: Write HTML, get 60fps Canvas animations. A lightweight, zero-build Web Component framework for declarative graphics.",
+            "date_modified": "2026-07-22T20:00:42.000Z",
+            "date_published": "2026-06-29T17:08:54.000Z",
             "author": {
-                "name": "AGI-expert",
-                "url": "https://github.com/AGI-expert"
+                "name": "woodoo-labs",
+                "url": "https://github.com/woodoo-labs"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22381905?u=c1d587c0cf28c8e96054a2ed7e4624b1847976ba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A powerful, type-safe, modular signal-based state management solution for Angular applications. SignalTree provides a modern, lightweight alternative to traditional state management with intelligent composition and superior performance.</div>",
-            "url": "https://github.com/JBorgia/signaltree",
-            "title": "JBorgia/signaltree: A powerful, type-safe, modular signal-based state management solution for Angular applications. SignalTree provides a modern, lightweight alternative to traditional state management with intelligent composition and superior performance.",
-            "date_modified": "2026-07-22T17:57:10.000Z",
-            "date_published": "2025-08-12T00:51:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/284197857?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This project is a modern, lightweight full-stack web application designed to demonstrate core web development fundamentals and seamless client-server architecture. Built with a clean HTML5 structure, custom CSS3 styling, and native dynamic JavaScript, the application connects directly to a RESTful backend built with Node.js and Express.js.</div>",
+            "url": "https://github.com/eirikrozar-source/Student-partner",
+            "title": "eirikrozar-source/Student-partner: This project is a modern, lightweight full-stack web application designed to demonstrate core web development fundamentals and seamless client-server architecture. Built with a clean HTML5 structure, custom CSS3 styling, and native dynamic JavaScript, the application connects directly to a RESTful backend built with Node.js and Express.js.",
+            "date_modified": "2026-07-22T20:03:49.000Z",
+            "date_published": "2026-07-22T19:58:26.000Z",
             "author": {
-                "name": "JBorgia",
-                "url": "https://github.com/JBorgia"
+                "name": "eirikrozar-source",
+                "url": "https://github.com/eirikrozar-source"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51950650?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Type your measurements, get a real sewing pattern, with live guidance and style suggestions - a lightweight 2D pattern designer built in TypeScript.</div>",
-            "url": "https://github.com/kshitijpatne/InfiniDrip",
-            "title": "kshitijpatne/InfiniDrip: Type your measurements, get a real sewing pattern, with live guidance and style suggestions - a lightweight 2D pattern designer built in TypeScript.",
-            "date_modified": "2026-07-22T17:55:23.000Z",
-            "date_published": "2026-06-23T06:50:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112798327?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and secure API, that delivers structured JSON responses from multiple video platforms without requiring user login.</div>",
+            "url": "https://github.com/CodeByPritam/savefrom",
+            "title": "CodeByPritam/savefrom: A lightweight and secure API, that delivers structured JSON responses from multiple video platforms without requiring user login.",
+            "date_modified": "2026-07-22T19:59:14.000Z",
+            "date_published": "2026-07-20T06:54:55.000Z",
             "author": {
-                "name": "kshitijpatne",
-                "url": "https://github.com/kshitijpatne"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/253628401?u=5d857700aeb0b8128a980b580fe4042ec4548dd1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Essential React Hooks collection. Lightweight, fully typed, and ready for production.</div>",
-            "url": "https://github.com/soberzen/react-use",
-            "title": "soberzen/react-use: 🚀 Essential React Hooks collection. Lightweight, fully typed, and ready for production.",
-            "date_modified": "2026-07-22T17:54:44.000Z",
-            "date_published": "2026-05-19T08:25:44.000Z",
-            "author": {
-                "name": "soberzen",
-                "url": "https://github.com/soberzen"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4161756?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Unofficial lightweight sample-library manager for the Instruo arbhar module (Firmware 2.0). Browser UI + local Node server, standalone mac/win binaries.</div>",
-            "url": "https://github.com/Loupv/arbhar-library-manager",
-            "title": "Loupv/arbhar-library-manager: Unofficial lightweight sample-library manager for the Instruo arbhar module (Firmware 2.0). Browser UI + local Node server, standalone mac/win binaries.",
-            "date_modified": "2026-07-22T17:55:38.000Z",
-            "date_published": "2026-07-21T21:31:33.000Z",
-            "author": {
-                "name": "Loupv",
-                "url": "https://github.com/Loupv"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33369805?u=38f827547ab29f0ed8a7a66933a10adf4b6eece9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Personal Claude assistant. Lightweight, secure, customizable.</div>",
-            "url": "https://github.com/sviniabanditka/conclaw",
-            "title": "sviniabanditka/conclaw: Personal Claude assistant. Lightweight, secure, customizable.",
-            "date_modified": "2026-07-22T17:54:40.000Z",
-            "date_published": "2026-04-05T16:39:21.000Z",
-            "author": {
-                "name": "sviniabanditka",
-                "url": "https://github.com/sviniabanditka"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/71226236?u=4681e06e9c22e246aba01f304e3a084d124b77f5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple, Lightweight Calculator</div>",
-            "url": "https://github.com/aidan846/tally",
-            "title": "aidan846/tally: Simple, Lightweight Calculator",
-            "date_modified": "2026-07-22T17:51:56.000Z",
-            "date_published": "2026-07-19T20:44:04.000Z",
-            "author": {
-                "name": "aidan846",
-                "url": "https://github.com/aidan846"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/80845591?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight browser 3D game engine — Three.js + TypeScript + Vite (a learning prototype)</div>",
-            "url": "https://github.com/francist245/CubeQuest3D",
-            "title": "francist245/CubeQuest3D: Lightweight browser 3D game engine — Three.js + TypeScript + Vite (a learning prototype)",
-            "date_modified": "2026-07-22T17:55:04.000Z",
-            "date_published": "2026-06-28T10:27:57.000Z",
-            "author": {
-                "name": "francist245",
-                "url": "https://github.com/francist245"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111286947?u=0f3822f47e0bcc61dca71bf5d63107d268e532b1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight MV3 page tint extension for harsh white web pages.</div>",
-            "url": "https://github.com/Yalyenea/rosewash",
-            "title": "Yalyenea/rosewash: A lightweight MV3 page tint extension for harsh white web pages.",
-            "date_modified": "2026-07-22T17:51:43.000Z",
-            "date_published": "2026-05-11T13:21:04.000Z",
-            "author": {
-                "name": "Yalyenea",
-                "url": "https://github.com/Yalyenea"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114320512?u=bb407b2a7da4baef166f70a1c1dce1b9c1894e4f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ollama Client – Chat with Local LLMs Inside Your Browser  A lightweight, privacy‑first Chrome extension to chat with local LLMs via Ollama, LM Studio, and llama.cpp. Supports streaming, stop/regenerate, RAG, and easy model switching — all without cloud APIs or data leaks.</div>",
-            "url": "https://github.com/Shishir435/ollama-client",
-            "title": "Shishir435/ollama-client: Ollama Client – Chat with Local LLMs Inside Your Browser  A lightweight, privacy‑first Chrome extension to chat with local LLMs via Ollama, LM Studio, and llama.cpp. Supports streaming, stop/regenerate, RAG, and easy model switching — all without cloud APIs or data leaks.",
-            "date_modified": "2026-07-22T17:51:35.000Z",
-            "date_published": "2025-05-20T21:56:20.000Z",
-            "author": {
-                "name": "Shishir435",
-                "url": "https://github.com/Shishir435"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57328045?u=1ebd4bdad62f102146542813bb57deeb61c1cc58&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Operating System made in PXT</div>",
-            "url": "https://github.com/NotCryptid/MicroOS",
-            "title": "NotCryptid/MicroOS: Lightweight Operating System made in PXT",
-            "date_modified": "2026-07-22T17:50:07.000Z",
-            "date_published": "2024-08-17T09:55:37.000Z",
-            "author": {
-                "name": "NotCryptid",
-                "url": "https://github.com/NotCryptid"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83725986?u=a2e0ccad55e36bbbfcead09d30a4e25e287f9a00&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript library for adding resilience policies to async functions.</div>",
-            "url": "https://github.com/smokeeaasd/ftask",
-            "title": "smokeeaasd/ftask: A lightweight TypeScript library for adding resilience policies to async functions.",
-            "date_modified": "2026-07-22T17:50:38.000Z",
-            "date_published": "2026-07-22T17:05:18.000Z",
-            "author": {
-                "name": "smokeeaasd",
-                "url": "https://github.com/smokeeaasd"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/85643862?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Legcord is a custom client designed to enhance your Discord experience while keeping everything lightweight.</div>",
-            "url": "https://github.com/Legcord/Legcord",
-            "title": "Legcord/Legcord: Legcord is a custom client designed to enhance your Discord experience while keeping everything lightweight.",
-            "date_modified": "2026-07-22T17:48:27.000Z",
-            "date_published": "2020-11-16T13:33:38.000Z",
-            "author": {
-                "name": "Legcord",
-                "url": "https://github.com/Legcord"
+                "name": "CodeByPritam",
+                "url": "https://github.com/CodeByPritam"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/445666?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight upload gateway for agents to add screenshots and recordings to pull requests and issues. Cloud and self-host options.</div>",
             "url": "https://github.com/buildinternet/uploads",
             "title": "buildinternet/uploads: Lightweight upload gateway for agents to add screenshots and recordings to pull requests and issues. Cloud and self-host options.",
-            "date_modified": "2026-07-22T17:47:57.000Z",
+            "date_modified": "2026-07-22T19:59:20.000Z",
             "date_published": "2026-07-06T20:39:53.000Z",
             "author": {
                 "name": "buildinternet",
@@ -204,25 +149,80 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/161110590?u=5383e64ef54751d038648f32e790868ed721886e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Expense Tracker web app built using pure HTML, CSS, and JavaScript to help users track daily expenses, analyze spending habits, and manage budgets with localStorage support.</div>",
-            "url": "https://github.com/anmolpanchal-dev/ExpenseTracker",
-            "title": "anmolpanchal-dev/ExpenseTracker: A lightweight Expense Tracker web app built using pure HTML, CSS, and JavaScript to help users track daily expenses, analyze spending habits, and manage budgets with localStorage support.",
-            "date_modified": "2026-07-22T17:48:15.000Z",
-            "date_published": "2026-01-22T18:01:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25514966?u=2fef1c0bace0e1ed7af1aa8cbf31d55802b0a45e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript + HTML + CSS personal blog that uses Markdown files for content, supports search, clickable tags, and post routing, without using any front-end framework.</div>",
+            "url": "https://github.com/shanmeiliu/blog-app",
+            "title": "shanmeiliu/blog-app: A lightweight TypeScript + HTML + CSS personal blog that uses Markdown files for content, supports search, clickable tags, and post routing, without using any front-end framework.",
+            "date_modified": "2026-07-22T19:58:31.000Z",
+            "date_published": "2026-03-28T15:50:56.000Z",
             "author": {
-                "name": "anmolpanchal-dev",
-                "url": "https://github.com/anmolpanchal-dev"
+                "name": "shanmeiliu",
+                "url": "https://github.com/shanmeiliu"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46880752?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, tree-shakable Result type package with a simple, consistent API designed.</div>",
-            "url": "https://github.com/praha-inc/byethrow",
-            "title": "praha-inc/byethrow: A lightweight, tree-shakable Result type package with a simple, consistent API designed.",
-            "date_modified": "2026-07-22T17:48:28.000Z",
-            "date_published": "2025-05-27T10:08:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/84131582?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>observerly’s lightweight, zero-dependency, type-safe astrometry library for TypeScript. Accurately determine the positions of the Sun, Moon, and planets, handle coordinate transformations with ease, calculate transit times for any celestial object, and integrate precision astronomy into your projects with clean, dependency-free code.</div>",
+            "url": "https://github.com/observerly/astrometry",
+            "title": "observerly/astrometry: observerly’s lightweight, zero-dependency, type-safe astrometry library for TypeScript. Accurately determine the positions of the Sun, Moon, and planets, handle coordinate transformations with ease, calculate transit times for any celestial object, and integrate precision astronomy into your projects with clean, dependency-free code.",
+            "date_modified": "2026-07-22T19:58:46.000Z",
+            "date_published": "2023-08-13T10:49:52.000Z",
             "author": {
-                "name": "praha-inc",
-                "url": "https://github.com/praha-inc"
+                "name": "observerly",
+                "url": "https://github.com/observerly"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101040181?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight chat frontend supporting Model Context Protocol (MCP)</div>",
+            "url": "https://github.com/AccSwtch50/SimpleChat",
+            "title": "AccSwtch50/SimpleChat: A lightweight chat frontend supporting Model Context Protocol (MCP)",
+            "date_modified": "2026-07-22T19:56:08.000Z",
+            "date_published": "2026-06-28T13:41:01.000Z",
+            "author": {
+                "name": "AccSwtch50",
+                "url": "https://github.com/AccSwtch50"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30086843?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight web file viewer for operations repos. Renders markdown, YAML, code with syntax highlighting, anchor linking, and dark theme.</div>",
+            "url": "https://github.com/chrisfonte/lookie-link",
+            "title": "chrisfonte/lookie-link: Lightweight web file viewer for operations repos. Renders markdown, YAML, code with syntax highlighting, anchor linking, and dark theme.",
+            "date_modified": "2026-07-22T19:53:00.000Z",
+            "date_published": "2026-02-28T21:01:48.000Z",
+            "author": {
+                "name": "chrisfonte",
+                "url": "https://github.com/chrisfonte"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/177497214?u=c2b10f2e22c9bf0d388e19b86b62b39615651732&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Stremio-compatible streaming client for Windows.</div>",
+            "url": "https://github.com/JuanHernandez00/Nosk",
+            "title": "JuanHernandez00/Nosk: Lightweight Stremio-compatible streaming client for Windows.",
+            "date_modified": "2026-07-22T19:55:27.000Z",
+            "date_published": "2026-07-15T01:46:37.000Z",
+            "author": {
+                "name": "JuanHernandez00",
+                "url": "https://github.com/JuanHernandez00"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142466583?u=0fb96d9045b066a6d8c5a61a7bdf9dd797548f3e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Chrome extension for overlaying and inspecting responsive column grids on any webpage.</div>",
+            "url": "https://github.com/051jeferson/Gridding",
+            "title": "051jeferson/Gridding: A lightweight Chrome extension for overlaying and inspecting responsive column grids on any webpage.",
+            "date_modified": "2026-07-22T19:54:59.000Z",
+            "date_published": "2026-07-22T19:41:48.000Z",
+            "author": {
+                "name": "051jeferson",
+                "url": "https://github.com/051jeferson"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/107859758?u=6f0717486f027f9bd391f69f386a17d442364ff0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>StayFree is a lightweight desktop dictation app for macOS &amp; Windows that lets you type by speaking in English or Hinglish.</div>",
+            "url": "https://github.com/Adityalingwal/Stayfree",
+            "title": "Adityalingwal/Stayfree: StayFree is a lightweight desktop dictation app for macOS & Windows that lets you type by speaking in English or Hinglish.",
+            "date_modified": "2026-07-22T19:51:17.000Z",
+            "date_published": "2026-02-06T19:00:32.000Z",
+            "author": {
+                "name": "Adityalingwal",
+                "url": "https://github.com/Adityalingwal"
             }
         }
     ]
