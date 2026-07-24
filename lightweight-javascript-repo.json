@@ -6,87 +6,43 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7432219?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A sleek, minimal note-taking desktop app that docks at the edge of your screen and supports rich text editing, color-coding, and intelligent reminders.</div>",
-            "url": "https://github.com/hypn05/NoteMinder",
-            "title": "hypn05/NoteMinder: A sleek, minimal note-taking desktop app that docks at the edge of your screen and supports rich text editing, color-coding, and intelligent reminders.",
-            "date_modified": "2026-07-24T01:44:41.000Z",
-            "date_published": "2025-10-31T03:39:10.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302405968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight canvas texture cropper and proportion scaler.</div>",
+            "url": "https://github.com/upstockguru-ux/uppity",
+            "title": "upstockguru-ux/uppity: Lightweight canvas texture cropper and proportion scaler.",
+            "date_modified": "2026-07-24T04:58:15.000Z",
+            "date_published": "2026-07-11T07:20:38.000Z",
             "author": {
-                "name": "hypn05",
-                "url": "https://github.com/hypn05"
+                "name": "upstockguru-ux",
+                "url": "https://github.com/upstockguru-ux"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22381905?u=c1d587c0cf28c8e96054a2ed7e4624b1847976ba&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A powerful, type-safe, modular signal-based state management solution for Angular applications. SignalTree provides a modern, lightweight alternative to traditional state management with intelligent composition and superior performance.</div>",
-            "url": "https://github.com/JBorgia/signaltree",
-            "title": "JBorgia/signaltree: A powerful, type-safe, modular signal-based state management solution for Angular applications. SignalTree provides a modern, lightweight alternative to traditional state management with intelligent composition and superior performance.",
-            "date_modified": "2026-07-24T01:44:01.000Z",
-            "date_published": "2025-08-12T00:51:52.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17528817?u=3fbe602ec035538c23f3d73e9d42415e10b43da5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🪓 Fast, lightweight log viewer with powerful filtering (AND/OR/NOT), real-time TCP streaming, and Elasticsearch integration. Cross-platform: Windows, macOS, Linux.</div>",
+            "url": "https://github.com/moxbo/lumberjack",
+            "title": "moxbo/lumberjack: 🪓 Fast, lightweight log viewer with powerful filtering (AND/OR/NOT), real-time TCP streaming, and Elasticsearch integration. Cross-platform: Windows, macOS, Linux.",
+            "date_modified": "2026-07-24T04:58:04.000Z",
+            "date_published": "2025-10-22T07:54:47.000Z",
             "author": {
-                "name": "JBorgia",
-                "url": "https://github.com/JBorgia"
+                "name": "moxbo",
+                "url": "https://github.com/moxbo"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62213297?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A curated index of npm packages with zero dependencies — lightweight, secure, and self-contained.</div>",
-            "url": "https://github.com/moshmodo/zero-dep-npm-registry",
-            "title": "moshmodo/zero-dep-npm-registry: A curated index of npm packages with zero dependencies — lightweight, secure, and self-contained.",
-            "date_modified": "2026-07-24T01:43:49.000Z",
-            "date_published": "2026-07-19T00:15:17.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126222872?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤖 A powerful, lightweight JavaScript library + interactive CLI for ChatGPT</div>",
+            "url": "https://github.com/KudoAI/chatgpt.js",
+            "title": "KudoAI/chatgpt.js: 🤖 A powerful, lightweight JavaScript library + interactive CLI for ChatGPT",
+            "date_modified": "2026-07-24T04:57:19.000Z",
+            "date_published": "2023-03-15T07:53:55.000Z",
             "author": {
-                "name": "moshmodo",
-                "url": "https://github.com/moshmodo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/227924669?u=ca08f1ea7b2ef303aa29beee14a9ddfe274e1d88&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This lightweight Smart Meeting Management System is a pure front-end project without a backend. All data stores locally in the browser. With clean code, it supports meeting scheduling and management, ideal for front-end beginners to learn.</div>",
-            "url": "https://github.com/ANEMONE-ops/smart-meeting-system",
-            "title": "ANEMONE-ops/smart-meeting-system: This lightweight Smart Meeting Management System is a pure front-end project without a backend. All data stores locally in the browser. With clean code, it supports meeting scheduling and management, ideal for front-end beginners to learn.",
-            "date_modified": "2026-07-24T01:42:25.000Z",
-            "date_published": "2026-07-24T01:40:42.000Z",
-            "author": {
-                "name": "ANEMONE-ops",
-                "url": "https://github.com/ANEMONE-ops"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1726265?u=b562b9c57fffb057537421aa2166ae701a5c33ee&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and modular JavaScript/TypeScript library for OGC APIs</div>",
-            "url": "https://github.com/haoliangyu/ogcapi-js",
-            "title": "haoliangyu/ogcapi-js: A lightweight and modular JavaScript/TypeScript library for OGC APIs",
-            "date_modified": "2026-07-24T01:40:59.000Z",
-            "date_published": "2020-02-26T18:58:47.000Z",
-            "author": {
-                "name": "haoliangyu",
-                "url": "https://github.com/haoliangyu"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72234855?u=18f4204ea4c1256f13659f5773835b2a3d9ec3bb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>DirrochaCMS is a lightweight CMS for content management with an API for websites and apps. It supports easy editing, publishing, and deployment on Netlify and Vercel, using Firebase Firestore as a free NoSQL database.</div>",
-            "url": "https://github.com/marco0antonio0/DirrochaCMS",
-            "title": "marco0antonio0/DirrochaCMS: DirrochaCMS is a lightweight CMS for content management with an API for websites and apps. It supports easy editing, publishing, and deployment on Netlify and Vercel, using Firebase Firestore as a free NoSQL database.",
-            "date_modified": "2026-07-24T01:40:38.000Z",
-            "date_published": "2025-02-03T07:27:27.000Z",
-            "author": {
-                "name": "marco0antonio0",
-                "url": "https://github.com/marco0antonio0"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/193371425?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Open Source Game Library </div>",
-            "url": "https://github.com/superduperrusobear/playsomthng",
-            "title": "superduperrusobear/playsomthng: Lightweight Open Source Game Library ",
-            "date_modified": "2026-07-24T01:40:06.000Z",
-            "date_published": "2026-07-17T03:13:13.000Z",
-            "author": {
-                "name": "superduperrusobear",
-                "url": "https://github.com/superduperrusobear"
+                "name": "KudoAI",
+                "url": "https://github.com/KudoAI"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18465053?u=fc4ecdcb50e317c5c8104135158a8bc4608c5ea5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight 2D game engine for WebAssembly and WeChat MiniGames</div>",
             "url": "https://github.com/esengine/estella",
             "title": "esengine/estella: Lightweight 2D game engine for WebAssembly and WeChat MiniGames",
-            "date_modified": "2026-07-24T01:39:30.000Z",
+            "date_modified": "2026-07-24T04:56:13.000Z",
             "date_published": "2026-01-25T07:34:59.000Z",
             "author": {
                 "name": "esengine",
@@ -94,21 +50,131 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46880752?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Diva, short for “Dependency Injection Value,” is a lightweight and type-safe DI library designed for TypeScript.</div>",
-            "url": "https://github.com/praha-inc/diva",
-            "title": "praha-inc/diva: Diva, short for “Dependency Injection Value,” is a lightweight and type-safe DI library designed for TypeScript.",
-            "date_modified": "2026-07-24T01:38:47.000Z",
-            "date_published": "2026-02-25T03:15:44.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/126609566?u=fb3c72142ea8b16295f69ed2eff4dfe257a6d741&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern lightweight desktop toolkit for Realtek AMB82-mini development.</div>",
+            "url": "https://github.com/breeze0305/Realtek_AMB82mini_plugin",
+            "title": "breeze0305/Realtek_AMB82mini_plugin: A modern lightweight desktop toolkit for Realtek AMB82-mini development.",
+            "date_modified": "2026-07-24T04:52:58.000Z",
+            "date_published": "2025-10-21T07:49:35.000Z",
             "author": {
-                "name": "praha-inc",
-                "url": "https://github.com/praha-inc"
+                "name": "breeze0305",
+                "url": "https://github.com/breeze0305"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11203929?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.</div>",
+            "url": "https://github.com/zuohuadong/supacloud",
+            "title": "zuohuadong/supacloud: ⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.",
+            "date_modified": "2026-07-24T04:50:25.000Z",
+            "date_published": "2025-12-25T15:16:04.000Z",
+            "author": {
+                "name": "zuohuadong",
+                "url": "https://github.com/zuohuadong"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17308208?u=2dc5fdcf2d1d5fc3835fac403632c61c2afcc6a4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight file hosting platform built on top of S3-compatible storage</div>",
+            "url": "https://github.com/saltbo/zpan",
+            "title": "saltbo/zpan: Lightweight file hosting platform built on top of S3-compatible storage",
+            "date_modified": "2026-07-24T04:49:46.000Z",
+            "date_published": "2019-09-28T04:39:57.000Z",
+            "author": {
+                "name": "saltbo",
+                "url": "https://github.com/saltbo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/28120150?u=98e9f5b92610c54b73c3bb7ecd63e53a6c7cb30d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight client for DragonRealms.</div>",
+            "url": "https://github.com/jackfperryjr/magiloom",
+            "title": "jackfperryjr/magiloom: A modern, lightweight client for DragonRealms.",
+            "date_modified": "2026-07-24T04:49:10.000Z",
+            "date_published": "2026-04-22T01:12:42.000Z",
+            "author": {
+                "name": "jackfperryjr",
+                "url": "https://github.com/jackfperryjr"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113720519?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight code editor plugin for pares-radix — text manipulation, file management, syntax highlighting. A VS Code-inspired editing experience as a pares-modulus plugin.</div>",
+            "url": "https://github.com/plures/pares-scribe",
+            "title": "plures/pares-scribe: Lightweight code editor plugin for pares-radix — text manipulation, file management, syntax highlighting. A VS Code-inspired editing experience as a pares-modulus plugin.",
+            "date_modified": "2026-07-24T04:48:21.000Z",
+            "date_published": "2026-03-28T21:54:40.000Z",
+            "author": {
+                "name": "plures",
+                "url": "https://github.com/plures"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/88273576?u=4c02ef43c82ca987fbb16d7d8e0d556db57c3a4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight FIRE Tracker &amp; API Server</div>",
+            "url": "https://github.com/nitsuah/fire",
+            "title": "nitsuah/fire: Lightweight FIRE Tracker & API Server",
+            "date_modified": "2026-07-24T04:45:57.000Z",
+            "date_published": "2026-06-03T05:13:54.000Z",
+            "author": {
+                "name": "nitsuah",
+                "url": "https://github.com/nitsuah"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164914332?u=8ba204c640648b393fec1b2d54b0a21d3c961184&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Linea is a lightweight desktop overlay that displays the lyrics of your currently playing songs from Spotify in real time—right on your screen.  No switching tabs. No searching manually. No interruptions.  Just a minimal, floating window that stays out of your way while keeping you connected to the words behind the music.</div>",
+            "url": "https://github.com/Meet2304/Project-Linea",
+            "title": "Meet2304/Project-Linea: Linea is a lightweight desktop overlay that displays the lyrics of your currently playing songs from Spotify in real time—right on your screen.  No switching tabs. No searching manually. No interruptions.  Just a minimal, floating window that stays out of your way while keeping you connected to the words behind the music.",
+            "date_modified": "2026-07-24T04:41:27.000Z",
+            "date_published": "2026-04-12T12:07:45.000Z",
+            "author": {
+                "name": "Meet2304",
+                "url": "https://github.com/Meet2304"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302347386?u=fb88ccfc8404a82ab06779bf9f29a7ff84327081&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight self-hosted SNMP monitoring: poll SNMPv2c/v3 devices, store history in SQLite, view it in a dependency-free web UI.</div>",
+            "url": "https://github.com/RootSwitch/SNMPCanvas",
+            "title": "RootSwitch/SNMPCanvas: Lightweight self-hosted SNMP monitoring: poll SNMPv2c/v3 devices, store history in SQLite, view it in a dependency-free web UI.",
+            "date_modified": "2026-07-24T04:40:13.000Z",
+            "date_published": "2026-07-17T16:05:51.000Z",
+            "author": {
+                "name": "RootSwitch",
+                "url": "https://github.com/RootSwitch"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302347386?u=fb88ccfc8404a82ab06779bf9f29a7ff84327081&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight self-hosted syslog + SNMP trap receiver: catch UDP syslog and v1/v2c traps, store them in SQLite, review and export from a dependency-free web UI.</div>",
+            "url": "https://github.com/RootSwitch/SyslogCanvas",
+            "title": "RootSwitch/SyslogCanvas: Lightweight self-hosted syslog + SNMP trap receiver: catch UDP syslog and v1/v2c traps, store them in SQLite, review and export from a dependency-free web UI.",
+            "date_modified": "2026-07-24T04:38:33.000Z",
+            "date_published": "2026-07-18T20:06:00.000Z",
+            "author": {
+                "name": "RootSwitch",
+                "url": "https://github.com/RootSwitch"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302347386?u=fb88ccfc8404a82ab06779bf9f29a7ff84327081&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, locally hostable network diagram editor - imports Visio, Gliffy, and draw.io diagrams plus common device inventory formats. Security-focused: no external dependencies or network calls. Pairs with PingCanvas to turn diagrams into NOC monitoring dashboards.</div>",
+            "url": "https://github.com/RootSwitch/CrossCanvas",
+            "title": "RootSwitch/CrossCanvas: Lightweight, locally hostable network diagram editor - imports Visio, Gliffy, and draw.io diagrams plus common device inventory formats. Security-focused: no external dependencies or network calls. Pairs with PingCanvas to turn diagrams into NOC monitoring dashboards.",
+            "date_modified": "2026-07-24T04:36:28.000Z",
+            "date_published": "2026-07-11T23:18:57.000Z",
+            "author": {
+                "name": "RootSwitch",
+                "url": "https://github.com/RootSwitch"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91087061?u=c0dd19e5cbaad7cc4a6ae63d9fd7c0aee918ccb0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🧩 Lightweight, high-performance TypeScript library for the WhatsApp Web protocol, built for multi-session scale, low memory usage, zero-copy hot paths, and full control over auth, transport, Signal, app state, and media.</div>",
+            "url": "https://github.com/vinikjkkj/zapo",
+            "title": "vinikjkkj/zapo: 🧩 Lightweight, high-performance TypeScript library for the WhatsApp Web protocol, built for multi-session scale, low memory usage, zero-copy hot paths, and full control over auth, transport, Signal, app state, and media.",
+            "date_modified": "2026-07-24T04:35:43.000Z",
+            "date_published": "2026-03-17T03:22:51.000Z",
+            "author": {
+                "name": "vinikjkkj",
+                "url": "https://github.com/vinikjkkj"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/77220799?u=199f477772119515b8ff14606648d07ea41ff50e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, open-source, local-first research journal and linked-note app. Your knowledge, rooted locally.</div>",
             "url": "https://github.com/infinitumio/neoma",
             "title": "infinitumio/neoma: A lightweight, open-source, local-first research journal and linked-note app. Your knowledge, rooted locally.",
-            "date_modified": "2026-07-24T01:38:18.000Z",
+            "date_modified": "2026-07-24T04:33:22.000Z",
             "date_published": "2026-07-20T23:35:46.000Z",
             "author": {
                 "name": "infinitumio",
@@ -116,113 +182,47 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/285313599?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight transaction-masking wrapper around mysql2/promise that safely handles inline database expressions.</div>",
-            "url": "https://github.com/PrestomediaLLC/sql-runner",
-            "title": "PrestomediaLLC/sql-runner: A lightweight transaction-masking wrapper around mysql2/promise that safely handles inline database expressions.",
-            "date_modified": "2026-07-24T01:36:58.000Z",
-            "date_published": "2026-06-13T14:32:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103361575?u=d4bc6da275b5b0893be43b67f6af4239b0ce3ef3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast, interactive CLI tool built to selectively prune and delete releases, tags, and container images across GitHub, GitLab, and multiple container registries. Distributed as lightweight, standalone native executables powered by Bun.</div>",
+            "url": "https://github.com/iamvikshan/dmrzl",
+            "title": "iamvikshan/dmrzl: A fast, interactive CLI tool built to selectively prune and delete releases, tags, and container images across GitHub, GitLab, and multiple container registries. Distributed as lightweight, standalone native executables powered by Bun.",
+            "date_modified": "2026-07-24T04:31:36.000Z",
+            "date_published": "2024-11-26T14:47:31.000Z",
             "author": {
-                "name": "PrestomediaLLC",
-                "url": "https://github.com/PrestomediaLLC"
+                "name": "iamvikshan",
+                "url": "https://github.com/iamvikshan"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268466139?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight command bus for safe multi-agent AI workflows.</div>",
-            "url": "https://github.com/comeva2kr/ai-command-bus",
-            "title": "comeva2kr/ai-command-bus: A lightweight command bus for safe multi-agent AI workflows.",
-            "date_modified": "2026-07-24T01:35:42.000Z",
-            "date_published": "2026-06-04T10:20:15.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3053586?u=55d4112802fcae06d1b21074709f32cdfa5fe6c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight orchestration harness built for your AI agents. The unfiltered truth about where your project stands. </div>",
+            "url": "https://github.com/BradGroux/veritas-kanban",
+            "title": "BradGroux/veritas-kanban: Lightweight orchestration harness built for your AI agents. The unfiltered truth about where your project stands. ",
+            "date_modified": "2026-07-24T04:31:24.000Z",
+            "date_published": "2026-01-26T08:35:20.000Z",
             "author": {
-                "name": "comeva2kr",
-                "url": "https://github.com/comeva2kr"
+                "name": "BradGroux",
+                "url": "https://github.com/BradGroux"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/361540?u=5df356a70c81794af3f3c2ad984f398b5b29e203&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎵 A lightweight backend and browser userscript to scrobble your YouTube Music tracks automatically to Last.fm. Supports authentication, now playing updates, and delayed scrobbling with customizable timing.</div>",
-            "url": "https://github.com/ernestohegi/scrobbler",
-            "title": "ernestohegi/scrobbler: 🎵 A lightweight backend and browser userscript to scrobble your YouTube Music tracks automatically to Last.fm. Supports authentication, now playing updates, and delayed scrobbling with customizable timing.",
-            "date_modified": "2026-07-24T01:34:12.000Z",
-            "date_published": "2025-08-01T15:40:51.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268516410?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AGIeX is a lightweight node infrastructure for powering the AGI Expert network (<a href=\"https://agi.expert\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://agi.expert</a>). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.</div>",
+            "url": "https://github.com/AGI-expert/AGIeX",
+            "title": "AGI-expert/AGIeX: AGIeX is a lightweight node infrastructure for powering the AGI Expert network (https://agi.expert). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.",
+            "date_modified": "2026-07-24T04:31:20.000Z",
+            "date_published": "2026-03-21T10:15:37.000Z",
             "author": {
-                "name": "ernestohegi",
-                "url": "https://github.com/ernestohegi"
+                "name": "AGI-expert",
+                "url": "https://github.com/AGI-expert"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60723358?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A simple, modern, and lightweight browser-source HUD for OBS Studio inspired by the interface of Starfield.</div>",
-            "url": "https://github.com/mcckyle/OBS-HUD",
-            "title": "mcckyle/OBS-HUD: A simple, modern, and lightweight browser-source HUD for OBS Studio inspired by the interface of Starfield.",
-            "date_modified": "2026-07-24T01:34:06.000Z",
-            "date_published": "2026-06-29T04:04:11.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2958534?u=1fd780b5870e46d6acae6e5b5d7f1078c46e2509&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Markdown editor with live preview — Tauri 2 + Vanilla TS</div>",
+            "url": "https://github.com/tznthou/plume",
+            "title": "tznthou/plume: Lightweight Markdown editor with live preview — Tauri 2 + Vanilla TS",
+            "date_modified": "2026-07-24T04:28:11.000Z",
+            "date_published": "2026-06-11T13:10:21.000Z",
             "author": {
-                "name": "mcckyle",
-                "url": "https://github.com/mcckyle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/46880752?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, tree-shakable Result type package with a simple, consistent API designed.</div>",
-            "url": "https://github.com/praha-inc/byethrow",
-            "title": "praha-inc/byethrow: A lightweight, tree-shakable Result type package with a simple, consistent API designed.",
-            "date_modified": "2026-07-24T01:33:27.000Z",
-            "date_published": "2025-05-27T10:08:58.000Z",
-            "author": {
-                "name": "praha-inc",
-                "url": "https://github.com/praha-inc"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/189649040?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight cross-platform photobox control system with admin dashboard and customer booth UI</div>",
-            "url": "https://github.com/tissetyo/Photoslive",
-            "title": "tissetyo/Photoslive: Lightweight cross-platform photobox control system with admin dashboard and customer booth UI",
-            "date_modified": "2026-07-24T01:31:18.000Z",
-            "date_published": "2026-07-16T12:07:19.000Z",
-            "author": {
-                "name": "tissetyo",
-                "url": "https://github.com/tissetyo"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/291061042?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Digital business card + lightweight follow-up CRM. Vanilla JS frontend, Supabase (Postgres/Auth/Edge Functions) backend, Stripe billing.</div>",
-            "url": "https://github.com/seb1030/nexus-card",
-            "title": "seb1030/nexus-card: Digital business card + lightweight follow-up CRM. Vanilla JS frontend, Supabase (Postgres/Auth/Edge Functions) backend, Stripe billing.",
-            "date_modified": "2026-07-24T01:27:30.000Z",
-            "date_published": "2026-07-21T13:14:45.000Z",
-            "author": {
-                "name": "seb1030",
-                "url": "https://github.com/seb1030"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7477366?u=f803e366d1ab3fe5885b18c0763670f1c0c49196&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight desktop launcher built with Electron, TypeScript, and SQLite, featuring fast search, pinned items, clipboard history, plugin modules, and Cashflow Lite.</div>",
-            "url": "https://github.com/gongteng0215/LiteLauncher",
-            "title": "gongteng0215/LiteLauncher: A lightweight desktop launcher built with Electron, TypeScript, and SQLite, featuring fast search, pinned items, clipboard history, plugin modules, and Cashflow Lite.",
-            "date_modified": "2026-07-24T01:27:13.000Z",
-            "date_published": "2026-02-08T14:12:55.000Z",
-            "author": {
-                "name": "gongteng0215",
-                "url": "https://github.com/gongteng0215"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/118840593?u=0a6119470a1fcd350a89c026e4c9719b3a225fcd&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight userscript that detects keywords and emojis in X (Twitter) display names and bios, with dry-run highlighting and optional automatic blocking.</div>",
-            "url": "https://github.com/geekzahra/FeedBan",
-            "title": "geekzahra/FeedBan: A lightweight userscript that detects keywords and emojis in X (Twitter) display names and bios, with dry-run highlighting and optional automatic blocking.",
-            "date_modified": "2026-07-24T01:26:03.000Z",
-            "date_published": "2026-07-24T00:08:13.000Z",
-            "author": {
-                "name": "geekzahra",
-                "url": "https://github.com/geekzahra"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2208932?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight node cow server with no dependancies, not even a databse</div>",
-            "url": "https://github.com/wolispace/cowsee",
-            "title": "wolispace/cowsee: A lightweight node cow server with no dependancies, not even a databse",
-            "date_modified": "2026-07-24T01:24:49.000Z",
-            "date_published": "2026-06-27T22:40:29.000Z",
-            "author": {
-                "name": "wolispace",
-                "url": "https://github.com/wolispace"
+                "name": "tznthou",
+                "url": "https://github.com/tznthou"
             }
         }
     ]
