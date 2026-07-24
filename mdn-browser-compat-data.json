@@ -39,17 +39,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/349114?u=1185d4fc45f5ff4c4a592b30a4dd2bb5cd1b7128&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h4 dir=\"auto\">Summary</h4>\n<p dir=\"auto\">This interface is exposed on Chrome Android. Discovered thanks to the Collector (v10.20.4).</p>\n<h4 dir=\"auto\">Test results and supporting details</h4>\n<p dir=\"auto\"><a href=\"https://chromiumdash.appspot.com/commit/70de5a1e0903dcca28309087bb528c798be108ea\" rel=\"nofollow\">https://chromiumdash.appspot.com/commit/70de5a1e0903dcca28309087bb528c798be108ea</a><br>\n<a href=\"https://source.chromium.org/chromium/chromium/src/+/70de5a1e0903dcca28309087bb528c798be108ea\" rel=\"nofollow\">https://source.chromium.org/chromium/chromium/src/+/70de5a1e0903dcca28309087bb528c798be108ea</a></p>\n<h4 dir=\"auto\">Related issues</h4>\n<p dir=\"auto\">None.</p>",
-            "url": "https://github.com/mdn/browser-compat-data/pull/30111",
-            "title": "BrowserCaptureMediaStreamTrack is available on Chrome Android",
-            "date_modified": "2026-07-24T09:24:37.000Z",
-            "date_published": "2026-07-22T12:32:13.000Z",
-            "author": {
-                "name": "Elchi3",
-                "url": "https://github.com/Elchi3"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/98808480?u=3e585e5cd409ec43b9f58cd6229761f4a274873d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<ul dir=\"auto\">\n<li>mark Safari support for <code class=\"notranslate\">ruby-position: inter-character</code> as partial</li>\n<li>document the known bopomofo tone-mark limitation</li>\n</ul>\n<p dir=\"auto\">Related to <a href=\"https://github.com/mdn/content/issues/44762\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/44762/hovercard\">mdn/content#44762</a>.</p>\n<h2 dir=\"auto\">Validation</h2>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">python3 -m json.tool css/properties/ruby-position.json</code></li>\n<li><code class=\"notranslate\">git diff --check</code></li>\n</ul>",
             "url": "https://github.com/mdn/browser-compat-data/pull/30104",
             "title": "data: mark Safari ruby inter-character support partial",
