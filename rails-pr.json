@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Move the <code class=\"notranslate\">supports_insert_returning?</code> branching into the abstract implementation and drop the identical <code class=\"notranslate\">returning_column_values</code> overrides in PostgreSQL, SQLite3, and MySQL. When RETURNING is supported the abstract now returns <code class=\"notranslate\">result.rows.first</code>; otherwise it falls back to <code class=\"notranslate\">[last_inserted_id(result)]</code> for adapters that resolve the id from the driver (e.g. Trilogy / mysql2 via <code class=\"notranslate\">LAST_INSERT_ID</code>).</p>\n<p dir=\"auto\">Trilogy remains the only adapter whose <code class=\"notranslate\">exec_insert</code> returns a raw driver result (<code class=\"notranslate\">Trilogy::Result</code>) rather than <code class=\"notranslate\">ActiveRecord::Result</code>, because its <code class=\"notranslate\">last_inserted_id</code> reads <code class=\"notranslate\">result.last_insert_id</code> off the raw object. <code class=\"notranslate\">test_exec_insert</code> (added in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"168504011\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/26002\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/26002/hovercard\" href=\"https://github.com/rails/rails/pull/26002\">#26002</a>) asserts that <code class=\"notranslate\">connection.send(:last_inserted_id, exec_insert(...))</code> works, which locks this adapter-specific return type in as a de facto contract and makes further refactoring (e.g. always returning <code class=\"notranslate\">ActiveRecord::Result</code>) difficult until <code class=\"notranslate\">exec_insert</code> itself is removed.</p>",
+            "url": "https://github.com/rails/rails/pull/58283",
+            "title": "Consolidate `returning_column_values` on the abstract adapter",
+            "date_modified": "2026-07-28T18:30:40.000Z",
+            "date_published": "2026-07-28T18:30:27.000Z",
+            "author": {
+                "name": "kamipo",
+                "url": "https://github.com/kamipo"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Implement <code class=\"notranslate\">next_sequence_value</code> on the PostgreSQL adapter so a model overriding <code class=\"notranslate\">prefetch_primary_key?</code> to true can use the real PG sequence for id generation (previously only Oracle enhanced adapter provided this).</p>\n<p dir=\"auto\">Add a PostgreSQL test that exercises the <code class=\"notranslate\">prefetch_primary_key?</code> path end-to-end: the sequence is advanced before the INSERT, the prefetched value ends up in the persisted row, and <code class=\"notranslate\">||=</code> in <code class=\"notranslate\">_insert_record</code> lets an explicit id take precedence over the prefetched one.</p>\n<p dir=\"auto\">The test provides coverage for upcoming refactorings around <code class=\"notranslate\">insert</code> / <code class=\"notranslate\">_insert_record</code>, and helps verify that the oracle-enhanced adapter (<a href=\"https://github.com/rsim/oracle-enhanced\">https://github.com/rsim/oracle-enhanced</a>), which relies on <code class=\"notranslate\">prefetch_primary_key?</code>, isn't broken.</p>",
             "url": "https://github.com/rails/rails/pull/58282",
             "title": "Add `prefetch_primary_key?` test coverage on PostgreSQL",
@@ -58,17 +69,6 @@
             "author": {
                 "name": "chaadow",
                 "url": "https://github.com/chaadow"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">DefaultSchemaVersionsFormatter#format</code> carries a fallback for a non-Array <code class=\"notranslate\">versions</code> argument that can never run. The formatter is only reached through <code class=\"notranslate\">insert_versions_sql</code>, whose sole caller is <code class=\"notranslate\">dump_schema_versions</code>, and that always passes the array of versions read back from the <code class=\"notranslate\">schema_migrations</code> table. No call path passes a single version.</p>\n<p dir=\"auto\">The conditional predates the class itself:</p>\n<ul dir=\"auto\">\n<li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/fd87169eb11fc4cfd9082dabe0a85f3bfa385c29/hovercard\" href=\"https://github.com/rails/rails/commit/fd87169eb11fc4cfd9082dabe0a85f3bfa385c29\"><tt>fd87169</tt></a> introduced it, back when adapters without multi-row INSERT support dumped each version with a separate statement.</li>\n<li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/d1a74c1e012ed96f7179e53b9190b7da0a369e11/hovercard\" href=\"https://github.com/rails/rails/commit/d1a74c1e012ed96f7179e53b9190b7da0a369e11\"><tt>d1a74c1</tt></a> removed the last call path that passed a single version.</li>\n<li><a class=\"commit-link\" data-hovercard-type=\"commit\" data-hovercard-url=\"https://github.com/rails/rails/commit/0cc1842d3844411f77d9e6fbb6980ff2fbfaf868/hovercard\" href=\"https://github.com/rails/rails/commit/0cc1842d3844411f77d9e6fbb6980ff2fbfaf868\"><tt>0cc1842</tt></a> moved the code into this class, carrying the branch along.</li>\n</ul>\n<p dir=\"auto\">This removes the dead fallback so the multi-row <code class=\"notranslate\">VALUES</code> statement is the only path. Schema dumps produce exactly the same output as before.</p>\n<p dir=\"auto\">The class is internal (<code class=\"notranslate\">:nodoc:</code>). The public extension point, <code class=\"notranslate\">config.active_record.schema_versions_formatter</code>, is unaffected: custom formatters keep receiving the array of versions, as documented in the configuring guide.</p>",
-            "url": "https://github.com/rails/rails/pull/58277",
-            "title": "Remove unreachable single-version branch from `DefaultSchemaVersionsFormatter`",
-            "date_modified": "2026-07-28T12:25:43.000Z",
-            "date_published": "2026-07-28T12:25:26.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
             }
         },
         {
