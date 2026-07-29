@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/598730?u=62984c4f4ede922870c5cc2dbdf498926c7c0f9e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes a new externref lang type (<code class=\"notranslate\">core::arch::wasm32::externref</code>, <code class=\"notranslate\">feature(wasm_externref)</code>): an opaque, unforgeable reference to a WebAssembly host value, lowering to the Wasm <code class=\"notranslate\">externref</code> reference type in function signatures.</p>\n<p dir=\"auto\">Following the semantics of Clang's <code class=\"notranslate\">__externref_t</code> (shipped since Clang 15), it is a bare-position-only type, legal solely as the top-level type of function parameters, return values and local bindings and enforced at type-check time. This allows host references (e.g. JavaScript values) to be marshalled from one foreign call to another directly enabling better performance and interoperability between Wasm ecosystem crates.</p>\n<p dir=\"auto\"><a href=\"https://github.com/guybedford/rfcs/blob/externref-lang-item/text/3987-wasm-externref-lang-item.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3987",
             "title": "RFC: Externref lang item for Wasm targets",
-            "date_modified": "2026-07-29T15:41:08.000Z",
+            "date_modified": "2026-07-29T17:35:22.000Z",
             "date_published": "2026-07-29T00:09:07.000Z",
             "author": {
                 "name": "guybedford",
