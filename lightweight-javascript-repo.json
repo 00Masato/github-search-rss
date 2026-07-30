@@ -6,65 +6,54 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/142862742?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ForgeADE is a native, lightweight, AI-first development workspace built for modern software engineers. Unlike traditional IDEs that treat AI as an extension, ForgeADE treats AI agents, terminals, Git, and projects as first-class citizens — all running locally with minimal resource usage.</div>",
-            "url": "https://github.com/Haslab-dev/forge-ade",
-            "title": "Haslab-dev/forge-ade: ForgeADE is a native, lightweight, AI-first development workspace built for modern software engineers. Unlike traditional IDEs that treat AI as an extension, ForgeADE treats AI agents, terminals, Git, and projects as first-class citizens — all running locally with minimal resource usage.",
-            "date_modified": "2026-07-29T09:04:02.000Z",
-            "date_published": "2026-07-28T05:31:06.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22618943?u=83b74b430fabfe49585b175f66c3c71e8458a8b3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple lightweight string operation library for Typescript. No jQuery required! Unit tested, works with Angular.</div>",
+            "url": "https://github.com/sevensc/typescript-string-operations",
+            "title": "sevensc/typescript-string-operations: Simple lightweight string operation library for Typescript. No jQuery required! Unit tested, works with Angular.",
+            "date_modified": "2026-07-30T19:08:11.000Z",
+            "date_published": "2017-01-23T19:17:24.000Z",
             "author": {
-                "name": "Haslab-dev",
-                "url": "https://github.com/Haslab-dev"
+                "name": "sevensc",
+                "url": "https://github.com/sevensc"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/61221043?u=f04c299056d3efec49e7e11af50366739d47b85d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight social feed app built with Node.js, Express, PostgreSQL, Prisma, React Native, and Expo, featuring JWT authentication, posts, likes, comments, username filtering, and Firebase push notifications.</div>",
-            "url": "https://github.com/apelmahmudDev/mini-social-feed",
-            "title": "apelmahmudDev/mini-social-feed: A lightweight social feed app built with Node.js, Express, PostgreSQL, Prisma, React Native, and Expo, featuring JWT authentication, posts, likes, comments, username filtering, and Firebase push notifications.",
-            "date_modified": "2026-07-30T17:10:26.000Z",
-            "date_published": "2026-07-29T11:49:13.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17308208?u=2dc5fdcf2d1d5fc3835fac403632c61c2afcc6a4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight file hosting platform built on top of S3-compatible storage</div>",
+            "url": "https://github.com/saltbo/zpan",
+            "title": "saltbo/zpan: Lightweight file hosting platform built on top of S3-compatible storage",
+            "date_modified": "2026-07-30T19:07:51.000Z",
+            "date_published": "2019-09-28T04:39:57.000Z",
             "author": {
-                "name": "apelmahmudDev",
-                "url": "https://github.com/apelmahmudDev"
+                "name": "saltbo",
+                "url": "https://github.com/saltbo"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2958534?u=1fd780b5870e46d6acae6e5b5d7f1078c46e2509&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Markdown editor with live preview — Tauri 2 + Vanilla TS</div>",
-            "url": "https://github.com/tznthou/plume",
-            "title": "tznthou/plume: Lightweight Markdown editor with live preview — Tauri 2 + Vanilla TS",
-            "date_modified": "2026-07-30T17:13:04.000Z",
-            "date_published": "2026-06-11T13:10:21.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/195098?u=17a467fa8ce3e78855fb1fd31f9fedfdb0a17053&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cloudflare Workers app that watches Wikipedia for newly reported notable deaths, LLM‑filters and de‑duplicates them, then publishes concise memorial posts (Telegram + X) via a lightweight public JSON API. Automates detection, verification, and multi‑platform distribution with low latency and minimal ops overhead.</div>",
+            "url": "https://github.com/brucehart/celebrity-death-bot",
+            "title": "brucehart/celebrity-death-bot: Cloudflare Workers app that watches Wikipedia for newly reported notable deaths, LLM‑filters and de‑duplicates them, then publishes concise memorial posts (Telegram + X) via a lightweight public JSON API. Automates detection, verification, and multi‑platform distribution with low latency and minimal ops overhead.",
+            "date_modified": "2026-07-30T19:06:39.000Z",
+            "date_published": "2025-08-16T00:27:40.000Z",
             "author": {
-                "name": "tznthou",
-                "url": "https://github.com/tznthou"
+                "name": "brucehart",
+                "url": "https://github.com/brucehart"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18900961?u=da4ad19a3d0cd8a9d03c233b1120779f963494a5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Screeps TypeScript AI bot — bootstrap economy + lightweight room planning</div>",
-            "url": "https://github.com/zkl2333/screeps-bot",
-            "title": "zkl2333/screeps-bot: Screeps TypeScript AI bot — bootstrap economy + lightweight room planning",
-            "date_modified": "2026-07-30T17:11:38.000Z",
-            "date_published": "2019-10-24T11:50:03.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286598806?u=6d729d7d6d55e3025d900917ba9611f5d3246f48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.</div>",
+            "url": "https://github.com/Jubei-tech/llm-metadata",
+            "title": "Jubei-tech/llm-metadata: LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.",
+            "date_modified": "2026-07-30T19:06:42.000Z",
+            "date_published": "2026-05-21T09:33:54.000Z",
             "author": {
-                "name": "zkl2333",
-                "url": "https://github.com/zkl2333"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/310775211?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Roblox - a lightweight utility.</div>",
-            "url": "https://github.com/timhof7336/labs-74e892a5",
-            "title": "timhof7336/labs-74e892a5: Roblox - a lightweight utility.",
-            "date_modified": "2026-07-30T17:11:48.000Z",
-            "date_published": "2026-07-30T17:08:36.000Z",
-            "author": {
-                "name": "timhof7336",
-                "url": "https://github.com/timhof7336"
+                "name": "Jubei-tech",
+                "url": "https://github.com/Jubei-tech"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302405968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight canvas texture cropper and proportion scaler.</div>",
             "url": "https://github.com/upstockguru-ux/uppity",
             "title": "upstockguru-ux/uppity: Lightweight canvas texture cropper and proportion scaler.",
-            "date_modified": "2026-07-30T17:12:00.000Z",
+            "date_modified": "2026-07-30T19:07:10.000Z",
             "date_published": "2026-07-11T07:20:38.000Z",
             "author": {
                 "name": "upstockguru-ux",
@@ -72,157 +61,168 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/167995522?u=38bad5b6ce987ed5204f8219676d35b2190bc74f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight, and educational web application for visualizing popular sorting algorithms. Built using HTML5, CSS3, and Vanilla JavaScript, it provides real-time animations, step-by-step execution, performance statistics, and interactive controls to help users understand how different sorting algorithms work.</div>",
-            "url": "https://github.com/kiirtann/Sorting-Algorithm-Visuliazer",
-            "title": "kiirtann/Sorting-Algorithm-Visuliazer: A modern, lightweight, and educational web application for visualizing popular sorting algorithms. Built using HTML5, CSS3, and Vanilla JavaScript, it provides real-time animations, step-by-step execution, performance statistics, and interactive controls to help users understand how different sorting algorithms work.",
-            "date_modified": "2026-07-30T17:11:42.000Z",
-            "date_published": "2026-07-30T16:54:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8734488?u=07d54982182f81e6317d6036c7a27edc863b7d6f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Sense (心数) — lightweight WeChat Mini Program expense tracker: shared multi-user ledgers, multi-currency, ECharts stats, and an AI assistant (voice / receipt OCR / natural-language entry). Serverless on WeChat Cloud.</div>",
+            "url": "https://github.com/yuuteng/sense",
+            "title": "yuuteng/sense: Sense (心数) — lightweight WeChat Mini Program expense tracker: shared multi-user ledgers, multi-currency, ECharts stats, and an AI assistant (voice / receipt OCR / natural-language entry). Serverless on WeChat Cloud.",
+            "date_modified": "2026-07-30T19:06:19.000Z",
+            "date_published": "2026-07-02T13:17:34.000Z",
             "author": {
-                "name": "kiirtann",
-                "url": "https://github.com/kiirtann"
+                "name": "yuuteng",
+                "url": "https://github.com/yuuteng"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33706975?u=6455851d703e3da6336610636540c2253bf60fd2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, read-only UI for exploring Apache Iceberg REST catalogs, namespaces, schemas, partitions, snapshots, and table properties.</div>",
-            "url": "https://github.com/norrishuang/Icevue",
-            "title": "norrishuang/Icevue: A lightweight, read-only UI for exploring Apache Iceberg REST catalogs, namespaces, schemas, partitions, snapshots, and table properties.",
-            "date_modified": "2026-07-30T17:11:06.000Z",
-            "date_published": "2026-07-30T15:01:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97479186?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.</div>",
+            "url": "https://github.com/descope/auth-hosting",
+            "title": "descope/auth-hosting: A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.",
+            "date_modified": "2026-07-30T19:04:37.000Z",
+            "date_published": "2023-06-04T12:07:44.000Z",
             "author": {
-                "name": "norrishuang",
-                "url": "https://github.com/norrishuang"
+                "name": "descope",
+                "url": "https://github.com/descope"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4407286?u=ee03a4d2abbfefcd95f06e7c59f89a2e987d61a9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, real-time quiz application for classrooms and events. Host interactive quizzes with live results, scoring, and pass/fail feedback - no accounts required for participants.</div>",
-            "url": "https://github.com/tatwan/MarkdownMash",
-            "title": "tatwan/MarkdownMash: A lightweight, real-time quiz application for classrooms and events. Host interactive quizzes with live results, scoring, and pass/fail feedback - no accounts required for participants.",
-            "date_modified": "2026-07-30T17:10:29.000Z",
-            "date_published": "2026-01-18T09:27:01.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20867252?u=659243849c12e1686df6065c522263e2299b04fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, modular AI agent framework optimized for local LLMs</div>",
+            "url": "https://github.com/quintonmiller/tailored-ai",
+            "title": "quintonmiller/tailored-ai: Lightweight, modular AI agent framework optimized for local LLMs",
+            "date_modified": "2026-07-30T19:05:27.000Z",
+            "date_published": "2026-02-24T07:12:53.000Z",
             "author": {
-                "name": "tatwan",
-                "url": "https://github.com/tatwan"
+                "name": "quintonmiller",
+                "url": "https://github.com/quintonmiller"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5072521?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight transcript editor for editing and correcting STT generated timed transcripts </div>",
-            "url": "https://github.com/hyperaudio/hyperaudio-lite-editor",
-            "title": "hyperaudio/hyperaudio-lite-editor: A lightweight transcript editor for editing and correcting STT generated timed transcripts ",
-            "date_modified": "2026-07-30T17:08:13.000Z",
-            "date_published": "2021-07-05T12:46:02.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43293123?u=fab26d6e4b4b531c8a326f92d482a59957fc8d6a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight YAML configuration editor for Home Assistant</div>",
+            "url": "https://github.com/roman-pinchuk/conf-edit-ha",
+            "title": "roman-pinchuk/conf-edit-ha: Lightweight YAML configuration editor for Home Assistant",
+            "date_modified": "2026-07-30T19:04:15.000Z",
+            "date_published": "2026-01-09T14:47:25.000Z",
             "author": {
-                "name": "hyperaudio",
-                "url": "https://github.com/hyperaudio"
+                "name": "roman-pinchuk",
+                "url": "https://github.com/roman-pinchuk"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/265614093?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>NodeAuth: High-security, Lightweight 2FA/TOTP management tool supporting Cloudflare Serverless and Docker on-premise deployment.</div>",
-            "url": "https://github.com/nodeauth/nodeauth-worker",
-            "title": "nodeauth/nodeauth-worker: NodeAuth: High-security, Lightweight 2FA/TOTP management tool supporting Cloudflare Serverless and Docker on-premise deployment.",
-            "date_modified": "2026-07-30T17:10:47.000Z",
-            "date_published": "2026-03-25T06:23:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168124713?u=ce00dad5da77cd26b27531b3bb9d7bfc411289ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ultra-lightweight Self-Hosted &amp; Open-Source Note Application featuring Client-Side AES-256-GCM End-to-End Encryption (E2EE), Native Markdown Formatting, and Zero Subscriptions.</div>",
+            "url": "https://github.com/Arelius-D/LucID",
+            "title": "Arelius-D/LucID: Ultra-lightweight Self-Hosted & Open-Source Note Application featuring Client-Side AES-256-GCM End-to-End Encryption (E2EE), Native Markdown Formatting, and Zero Subscriptions.",
+            "date_modified": "2026-07-30T19:04:00.000Z",
+            "date_published": "2026-07-30T13:28:04.000Z",
             "author": {
-                "name": "nodeauth",
-                "url": "https://github.com/nodeauth"
+                "name": "Arelius-D",
+                "url": "https://github.com/Arelius-D"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/962416?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, pluggable spec renderer built by Kong. Designed to power fast, customizable API documentation experiences.</div>",
-            "url": "https://github.com/Kong/spec-renderer",
-            "title": "Kong/spec-renderer: A lightweight, pluggable spec renderer built by Kong. Designed to power fast, customizable API documentation experiences.",
-            "date_modified": "2026-07-30T17:09:03.000Z",
-            "date_published": "2024-02-13T16:21:28.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/297985306?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Write HTML, get 60fps Canvas animations. A lightweight, zero-build Web Component framework for declarative graphics.</div>",
+            "url": "https://github.com/woodoo-labs/kilopixel",
+            "title": "woodoo-labs/kilopixel: Write HTML, get 60fps Canvas animations. A lightweight, zero-build Web Component framework for declarative graphics.",
+            "date_modified": "2026-07-30T19:02:28.000Z",
+            "date_published": "2026-06-29T17:08:54.000Z",
             "author": {
-                "name": "Kong",
-                "url": "https://github.com/Kong"
+                "name": "woodoo-labs",
+                "url": "https://github.com/woodoo-labs"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/310089750?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>TideGuard  A lightweight virtual waiting room built for Cloudflare Workers.  Protect your applications from traffic spikes with an edge-native virtual waiting room powered by Durable Objects.</div>",
-            "url": "https://github.com/TideGuard/TideGuard",
-            "title": "TideGuard/TideGuard: TideGuard  A lightweight virtual waiting room built for Cloudflare Workers.  Protect your applications from traffic spikes with an edge-native virtual waiting room powered by Durable Objects.",
-            "date_modified": "2026-07-30T17:05:23.000Z",
-            "date_published": "2026-07-28T09:07:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155315034?u=1063619f8f9d46d644c49bf218281c75ab2c764d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight framework-agnostic data grid\"</div>",
+            "url": "https://github.com/svatekr70/lattice",
+            "title": "svatekr70/lattice: Lightweight framework-agnostic data grid\"",
+            "date_modified": "2026-07-30T19:01:26.000Z",
+            "date_published": "2026-07-22T12:36:04.000Z",
             "author": {
-                "name": "TideGuard",
-                "url": "https://github.com/TideGuard"
+                "name": "svatekr70",
+                "url": "https://github.com/svatekr70"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/204908196?u=9b6af0e7f056d85f68c838d6d0e14031f85cceaa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight, and high-performance Lavalink v4 client for TypeScript, designed with first-class Bun and Node.js support, strong typing, intelligent node management, and an exceptional developer experience.</div>",
-            "url": "https://github.com/titanxdevz/YuKumo",
-            "title": "titanxdevz/YuKumo: A modern, lightweight, and high-performance Lavalink v4 client for TypeScript, designed with first-class Bun and Node.js support, strong typing, intelligent node management, and an exceptional developer experience.",
-            "date_modified": "2026-07-30T17:05:48.000Z",
-            "date_published": "2026-07-30T07:40:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91549538?u=6294ad251678e0483c23b9fe075ceab279acb3d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight &amp; SVG based diagramming toolkit.</div>",
+            "url": "https://github.com/Ashutoshbind15/ScribbleSVG",
+            "title": "Ashutoshbind15/ScribbleSVG: A lightweight & SVG based diagramming toolkit.",
+            "date_modified": "2026-07-30T18:59:43.000Z",
+            "date_published": "2026-07-02T10:49:58.000Z",
             "author": {
-                "name": "titanxdevz",
-                "url": "https://github.com/titanxdevz"
+                "name": "Ashutoshbind15",
+                "url": "https://github.com/Ashutoshbind15"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/250009311?u=2e55816d02b11347a51f179b7ea7a94aea790bde&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A faithful modern re-creation of the original Minecraft launcher. Relive the nostalgia with a fresh, fast, and lightweight interface – now with improved performance, cross-platform support, and all the features you need to manage your game effortlessly.</div>",
-            "url": "https://github.com/leiming2333/The-Melody-of-Oblivion-Remake",
-            "title": "leiming2333/The-Melody-of-Oblivion-Remake: A faithful modern re-creation of the original Minecraft launcher. Relive the nostalgia with a fresh, fast, and lightweight interface – now with improved performance, cross-platform support, and all the features you need to manage your game effortlessly.",
-            "date_modified": "2026-07-30T17:09:23.000Z",
-            "date_published": "2026-07-27T16:42:46.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76421360?u=d88164dcbcf894ca943648de64fc72e5a8f18c29&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight network security checker that verifies IP location and detects unexpected country changes before accessing sensitive services.</div>",
+            "url": "https://github.com/AhmadJeddi/SafeIP",
+            "title": "AhmadJeddi/SafeIP: A lightweight network security checker that verifies IP location and detects unexpected country changes before accessing sensitive services.",
+            "date_modified": "2026-07-30T19:02:15.000Z",
+            "date_published": "2026-07-30T18:56:01.000Z",
             "author": {
-                "name": "leiming2333",
-                "url": "https://github.com/leiming2333"
+                "name": "AhmadJeddi",
+                "url": "https://github.com/AhmadJeddi"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83108160?u=f456fc5008f82828bad454430c40495ce33bd8c2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>VCFM - lightweight browser football manager</div>",
-            "url": "https://github.com/as7er/vcfm",
-            "title": "as7er/vcfm: VCFM - lightweight browser football manager",
-            "date_modified": "2026-07-30T17:07:24.000Z",
-            "date_published": "2026-07-12T18:40:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48646114?u=c19d09130e2b7ea8e4b53e71c69d0b9b45e8a45a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>[SH] Self-Hosted PaaS Panel for deploying applications straight from a git repository into Docker a lightweight, self-hosted alternative to Heroku / Railway / Render</div>",
+            "url": "https://github.com/KROWIEL/self-hosted-public",
+            "title": "KROWIEL/self-hosted-public: [SH] Self-Hosted PaaS Panel for deploying applications straight from a git repository into Docker a lightweight, self-hosted alternative to Heroku / Railway / Render",
+            "date_modified": "2026-07-30T18:54:56.000Z",
+            "date_published": "2026-07-11T12:35:18.000Z",
             "author": {
-                "name": "as7er",
-                "url": "https://github.com/as7er"
+                "name": "KROWIEL",
+                "url": "https://github.com/KROWIEL"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105464634?u=ba8bc55c1fd98bc8b49a913eb68936fea05dc532&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
-            "url": "https://github.com/tomigonzalez/lightweight",
-            "title": "tomigonzalez/lightweight",
-            "date_modified": "2026-07-30T17:08:56.000Z",
-            "date_published": "2026-04-23T19:15:05.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277028901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The complete toolkit for building AI agents in JavaScript. Lightweight core, React &amp; Terminal UIs, autonomous runtime, tools, skills, memory, RAG and observability. Plug-and-play from chat UI to full agents.</div>",
+            "url": "https://github.com/AgentsKit-io/agentskit",
+            "title": "AgentsKit-io/agentskit: The complete toolkit for building AI agents in JavaScript. Lightweight core, React & Terminal UIs, autonomous runtime, tools, skills, memory, RAG and observability. Plug-and-play from chat UI to full agents.",
+            "date_modified": "2026-07-30T18:54:39.000Z",
+            "date_published": "2026-04-02T23:05:48.000Z",
             "author": {
-                "name": "tomigonzalez",
-                "url": "https://github.com/tomigonzalez"
+                "name": "AgentsKit-io",
+                "url": "https://github.com/AgentsKit-io"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/785262?u=878a80de37b768849fbb1bb139fd0f62090dda35&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fullstack, lightweight and flexible framework for IoT applications</div>",
-            "url": "https://github.com/blaizard/bzd",
-            "title": "blaizard/bzd: Fullstack, lightweight and flexible framework for IoT applications",
-            "date_modified": "2026-07-30T17:05:44.000Z",
-            "date_published": "2019-09-18T22:06:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73742237?u=058f47efc41e6b8c3bcb58fe8346524c5c4efd38&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div> A lightweight native Windows desktop application built with Tauri 2, Rust,      and React that displays real-time synchronized lyrics over Spotify and YouTube.</div>",
+            "url": "https://github.com/YUKILL-CLOUD/lyrica",
+            "title": "YUKILL-CLOUD/lyrica:  A lightweight native Windows desktop application built with Tauri 2, Rust,      and React that displays real-time synchronized lyrics over Spotify and YouTube.",
+            "date_modified": "2026-07-30T18:52:48.000Z",
+            "date_published": "2026-07-22T19:03:00.000Z",
             "author": {
-                "name": "blaizard",
-                "url": "https://github.com/blaizard"
+                "name": "YUKILL-CLOUD",
+                "url": "https://github.com/YUKILL-CLOUD"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/94349922?u=45398534faf2adc0f1ecba56235f1fe21c278e5b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, post-only Nostr client that compresses media on your device for fast, data-efficient uploads.</div>",
-            "url": "https://github.com/Lokuyow/ehagaki",
-            "title": "Lokuyow/ehagaki: A lightweight, post-only Nostr client that compresses media on your device for fast, data-efficient uploads.",
-            "date_modified": "2026-07-30T17:03:28.000Z",
-            "date_published": "2025-07-21T02:26:18.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/246818976?u=b160e882e0cf55f003a10bf417c761bb4e48c361&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is a lightweight website built with Node.js, featuring simple server-side logic to handle routing and serve pages dynamically. It's designed as a small-scale project to demonstrate core backend fundamentals using pure Node.js.</div>",
+            "url": "https://github.com/rayapu776-ui/server",
+            "title": "rayapu776-ui/server: This is a lightweight website built with Node.js, featuring simple server-side logic to handle routing and serve pages dynamically. It's designed as a small-scale project to demonstrate core backend fundamentals using pure Node.js.",
+            "date_modified": "2026-07-30T18:55:23.000Z",
+            "date_published": "2026-07-30T18:46:22.000Z",
             "author": {
-                "name": "Lokuyow",
-                "url": "https://github.com/Lokuyow"
+                "name": "rayapu776-ui",
+                "url": "https://github.com/rayapu776-ui"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1811635?u=1a343daf8e99a11d4514e1300cb723cddcd5ac78&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>GameAI is an AI-native playground for building mini games with coding agents like Codex, Claude, and other AI development tools. It explores how AI can help design, generate, iterate, and ship lightweight interactive games faster.</div>",
-            "url": "https://github.com/kevinchenkai/GameAI",
-            "title": "kevinchenkai/GameAI: GameAI is an AI-native playground for building mini games with coding agents like Codex, Claude, and other AI development tools. It explores how AI can help design, generate, iterate, and ship lightweight interactive games faster.",
-            "date_modified": "2026-07-30T16:59:51.000Z",
-            "date_published": "2026-05-16T15:12:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/225899850?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight service booking web app for home repair, cleaning, wellness, and worker booking.</div>",
+            "url": "https://github.com/Heet0804/QuickFix-Home-Service",
+            "title": "Heet0804/QuickFix-Home-Service: A lightweight service booking web app for home repair, cleaning, wellness, and worker booking.",
+            "date_modified": "2026-07-30T18:54:30.000Z",
+            "date_published": "2026-05-26T06:02:48.000Z",
             "author": {
-                "name": "kevinchenkai",
-                "url": "https://github.com/kevinchenkai"
+                "name": "Heet0804",
+                "url": "https://github.com/Heet0804"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8044303?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Official Codex marketplace for Sunear Designer. Turn door and window documents into structured Sunear projects through a secure, lightweight plugin while keeping design, geometry, pricing, and manufacturing engines server-side.</div>",
+            "url": "https://github.com/lesnicaaa/sunear-codex-marketplace",
+            "title": "lesnicaaa/sunear-codex-marketplace: Official Codex marketplace for Sunear Designer. Turn door and window documents into structured Sunear projects through a secure, lightweight plugin while keeping design, geometry, pricing, and manufacturing engines server-side.",
+            "date_modified": "2026-07-30T18:53:38.000Z",
+            "date_published": "2026-07-30T16:35:06.000Z",
+            "author": {
+                "name": "lesnicaaa",
+                "url": "https://github.com/lesnicaaa"
             }
         }
     ]
