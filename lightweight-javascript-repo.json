@@ -6,131 +6,76 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/22618943?u=83b74b430fabfe49585b175f66c3c71e8458a8b3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Simple lightweight string operation library for Typescript. No jQuery required! Unit tested, works with Angular.</div>",
-            "url": "https://github.com/sevensc/typescript-string-operations",
-            "title": "sevensc/typescript-string-operations: Simple lightweight string operation library for Typescript. No jQuery required! Unit tested, works with Angular.",
-            "date_modified": "2026-07-30T19:08:11.000Z",
-            "date_published": "2017-01-23T19:17:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2684895?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Nuxt I18n Micro is a fast, simple, and lightweight internationalization (i18n) module for Nuxt</div>",
+            "url": "https://github.com/s00d/nuxt-i18n-micro",
+            "title": "s00d/nuxt-i18n-micro: Nuxt I18n Micro is a fast, simple, and lightweight internationalization (i18n) module for Nuxt",
+            "date_modified": "2026-07-30T20:54:40.000Z",
+            "date_published": "2024-08-15T14:43:40.000Z",
             "author": {
-                "name": "sevensc",
-                "url": "https://github.com/sevensc"
+                "name": "s00d",
+                "url": "https://github.com/s00d"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17308208?u=2dc5fdcf2d1d5fc3835fac403632c61c2afcc6a4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight file hosting platform built on top of S3-compatible storage</div>",
-            "url": "https://github.com/saltbo/zpan",
-            "title": "saltbo/zpan: Lightweight file hosting platform built on top of S3-compatible storage",
-            "date_modified": "2026-07-30T19:07:51.000Z",
-            "date_published": "2019-09-28T04:39:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/263495903?u=dfde3335cdf92caa53821e40632fcd29f4298f45&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, rollback safe logger for Salesforce that will not blow up your data storage.</div>",
+            "url": "https://github.com/aleximperiale-sys/litelogger",
+            "title": "aleximperiale-sys/litelogger: A lightweight, rollback safe logger for Salesforce that will not blow up your data storage.",
+            "date_modified": "2026-07-30T20:53:44.000Z",
+            "date_published": "2026-07-30T20:53:33.000Z",
             "author": {
-                "name": "saltbo",
-                "url": "https://github.com/saltbo"
+                "name": "aleximperiale-sys",
+                "url": "https://github.com/aleximperiale-sys"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/195098?u=17a467fa8ce3e78855fb1fd31f9fedfdb0a17053&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cloudflare Workers app that watches Wikipedia for newly reported notable deaths, LLM‑filters and de‑duplicates them, then publishes concise memorial posts (Telegram + X) via a lightweight public JSON API. Automates detection, verification, and multi‑platform distribution with low latency and minimal ops overhead.</div>",
-            "url": "https://github.com/brucehart/celebrity-death-bot",
-            "title": "brucehart/celebrity-death-bot: Cloudflare Workers app that watches Wikipedia for newly reported notable deaths, LLM‑filters and de‑duplicates them, then publishes concise memorial posts (Telegram + X) via a lightweight public JSON API. Automates detection, verification, and multi‑platform distribution with low latency and minimal ops overhead.",
-            "date_modified": "2026-07-30T19:06:39.000Z",
-            "date_published": "2025-08-16T00:27:40.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7144234?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight way to connect agents across harnesses for collaboration and shared memory. Includes conversation room, scrum board, and wiki.</div>",
+            "url": "https://github.com/mjoneill/manyhands",
+            "title": "mjoneill/manyhands: A lightweight way to connect agents across harnesses for collaboration and shared memory. Includes conversation room, scrum board, and wiki.",
+            "date_modified": "2026-07-30T20:53:16.000Z",
+            "date_published": "2026-07-26T13:32:36.000Z",
             "author": {
-                "name": "brucehart",
-                "url": "https://github.com/brucehart"
+                "name": "mjoneill",
+                "url": "https://github.com/mjoneill"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286598806?u=6d729d7d6d55e3025d900917ba9611f5d3246f48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.</div>",
-            "url": "https://github.com/Jubei-tech/llm-metadata",
-            "title": "Jubei-tech/llm-metadata: LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.",
-            "date_modified": "2026-07-30T19:06:42.000Z",
-            "date_published": "2026-05-21T09:33:54.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1118320?u=43e249c79d8cdb77c88f3211bf744374a88046b6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight project-management layer that sits above OpenSpec and Superpowers — tracks epics, an explicit detour stack, and a reconcile gate so nothing is lost across pivots or context compaction.</div>",
+            "url": "https://github.com/cfdude/pm",
+            "title": "cfdude/pm: A lightweight project-management layer that sits above OpenSpec and Superpowers — tracks epics, an explicit detour stack, and a reconcile gate so nothing is lost across pivots or context compaction.",
+            "date_modified": "2026-07-30T20:52:50.000Z",
+            "date_published": "2026-07-14T19:31:29.000Z",
             "author": {
-                "name": "Jubei-tech",
-                "url": "https://github.com/Jubei-tech"
+                "name": "cfdude",
+                "url": "https://github.com/cfdude"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302405968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight canvas texture cropper and proportion scaler.</div>",
-            "url": "https://github.com/upstockguru-ux/uppity",
-            "title": "upstockguru-ux/uppity: Lightweight canvas texture cropper and proportion scaler.",
-            "date_modified": "2026-07-30T19:07:10.000Z",
-            "date_published": "2026-07-11T07:20:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/291545540?u=94212df6bbd86f8ce49af3c3c9b3b101409a0741&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>\"I am a Frontend Developer specializing in building analytical, data-driven web utilities using clean Vanilla JavaScript. Instead of relying on bloated frameworks for basic tasks, I write optimized, lightweight calculation engines that process complex multi-variable algorithms. My portfolio includes fully deployed tools featuring multi-dimensional </div>",
+            "url": "https://github.com/Shek164/ENGINEER-SHEDRACK",
+            "title": "Shek164/ENGINEER-SHEDRACK: \"I am a Frontend Developer specializing in building analytical, data-driven web utilities using clean Vanilla JavaScript. Instead of relying on bloated frameworks for basic tasks, I write optimized, lightweight calculation engines that process complex multi-variable algorithms. My portfolio includes fully deployed tools featuring multi-dimensional ",
+            "date_modified": "2026-07-30T20:51:59.000Z",
+            "date_published": "2026-07-19T09:36:08.000Z",
             "author": {
-                "name": "upstockguru-ux",
-                "url": "https://github.com/upstockguru-ux"
+                "name": "Shek164",
+                "url": "https://github.com/Shek164"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8734488?u=07d54982182f81e6317d6036c7a27edc863b7d6f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Sense (心数) — lightweight WeChat Mini Program expense tracker: shared multi-user ledgers, multi-currency, ECharts stats, and an AI assistant (voice / receipt OCR / natural-language entry). Serverless on WeChat Cloud.</div>",
-            "url": "https://github.com/yuuteng/sense",
-            "title": "yuuteng/sense: Sense (心数) — lightweight WeChat Mini Program expense tracker: shared multi-user ledgers, multi-currency, ECharts stats, and an AI assistant (voice / receipt OCR / natural-language entry). Serverless on WeChat Cloud.",
-            "date_modified": "2026-07-30T19:06:19.000Z",
-            "date_published": "2026-07-02T13:17:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/83212752?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Timesaver Artius Browser: lightweight asset browser for modern ComfyUI workflows.</div>",
+            "url": "https://github.com/AlexYez/comfyui-artius-browser",
+            "title": "AlexYez/comfyui-artius-browser: Timesaver Artius Browser: lightweight asset browser for modern ComfyUI workflows.",
+            "date_modified": "2026-07-30T20:52:14.000Z",
+            "date_published": "2026-04-09T10:51:47.000Z",
             "author": {
-                "name": "yuuteng",
-                "url": "https://github.com/yuuteng"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/97479186?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.</div>",
-            "url": "https://github.com/descope/auth-hosting",
-            "title": "descope/auth-hosting: A lightweight React app that hosts your Descope authentication flows. Each Descope project includes a hosted version of this app (custom domain supported), or you can fork and deploy it yourself to customize visuals like the background, layout, or branding.",
-            "date_modified": "2026-07-30T19:04:37.000Z",
-            "date_published": "2023-06-04T12:07:44.000Z",
-            "author": {
-                "name": "descope",
-                "url": "https://github.com/descope"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20867252?u=659243849c12e1686df6065c522263e2299b04fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, modular AI agent framework optimized for local LLMs</div>",
-            "url": "https://github.com/quintonmiller/tailored-ai",
-            "title": "quintonmiller/tailored-ai: Lightweight, modular AI agent framework optimized for local LLMs",
-            "date_modified": "2026-07-30T19:05:27.000Z",
-            "date_published": "2026-02-24T07:12:53.000Z",
-            "author": {
-                "name": "quintonmiller",
-                "url": "https://github.com/quintonmiller"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43293123?u=fab26d6e4b4b531c8a326f92d482a59957fc8d6a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight YAML configuration editor for Home Assistant</div>",
-            "url": "https://github.com/roman-pinchuk/conf-edit-ha",
-            "title": "roman-pinchuk/conf-edit-ha: Lightweight YAML configuration editor for Home Assistant",
-            "date_modified": "2026-07-30T19:04:15.000Z",
-            "date_published": "2026-01-09T14:47:25.000Z",
-            "author": {
-                "name": "roman-pinchuk",
-                "url": "https://github.com/roman-pinchuk"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168124713?u=ce00dad5da77cd26b27531b3bb9d7bfc411289ed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ultra-lightweight Self-Hosted &amp; Open-Source Note Application featuring Client-Side AES-256-GCM End-to-End Encryption (E2EE), Native Markdown Formatting, and Zero Subscriptions.</div>",
-            "url": "https://github.com/Arelius-D/LucID",
-            "title": "Arelius-D/LucID: Ultra-lightweight Self-Hosted & Open-Source Note Application featuring Client-Side AES-256-GCM End-to-End Encryption (E2EE), Native Markdown Formatting, and Zero Subscriptions.",
-            "date_modified": "2026-07-30T19:04:00.000Z",
-            "date_published": "2026-07-30T13:28:04.000Z",
-            "author": {
-                "name": "Arelius-D",
-                "url": "https://github.com/Arelius-D"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/297985306?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Write HTML, get 60fps Canvas animations. A lightweight, zero-build Web Component framework for declarative graphics.</div>",
-            "url": "https://github.com/woodoo-labs/kilopixel",
-            "title": "woodoo-labs/kilopixel: Write HTML, get 60fps Canvas animations. A lightweight, zero-build Web Component framework for declarative graphics.",
-            "date_modified": "2026-07-30T19:02:28.000Z",
-            "date_published": "2026-06-29T17:08:54.000Z",
-            "author": {
-                "name": "woodoo-labs",
-                "url": "https://github.com/woodoo-labs"
+                "name": "AlexYez",
+                "url": "https://github.com/AlexYez"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/155315034?u=1063619f8f9d46d644c49bf218281c75ab2c764d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight framework-agnostic data grid\"</div>",
             "url": "https://github.com/svatekr70/lattice",
             "title": "svatekr70/lattice: Lightweight framework-agnostic data grid\"",
-            "date_modified": "2026-07-30T19:01:26.000Z",
+            "date_modified": "2026-07-30T20:50:41.000Z",
             "date_published": "2026-07-22T12:36:04.000Z",
             "author": {
                 "name": "svatekr70",
@@ -138,21 +83,120 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91549538?u=6294ad251678e0483c23b9fe075ceab279acb3d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight &amp; SVG based diagramming toolkit.</div>",
-            "url": "https://github.com/Ashutoshbind15/ScribbleSVG",
-            "title": "Ashutoshbind15/ScribbleSVG: A lightweight & SVG based diagramming toolkit.",
-            "date_modified": "2026-07-30T18:59:43.000Z",
-            "date_published": "2026-07-02T10:49:58.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/244889598?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌱 EcoSort AI is a lightweight AI-powered waste classification system built with TensorFlow, MobileNetV2, Flask, and React. It classifies waste into six categories and recommends the appropriate disposal bin to promote smart recycling and sustainable waste management.</div>",
+            "url": "https://github.com/rudraksh290707-cpu/EcoSort.",
+            "title": "rudraksh290707-cpu/EcoSort.: 🌱 EcoSort AI is a lightweight AI-powered waste classification system built with TensorFlow, MobileNetV2, Flask, and React. It classifies waste into six categories and recommends the appropriate disposal bin to promote smart recycling and sustainable waste management.",
+            "date_modified": "2026-07-30T20:50:10.000Z",
+            "date_published": "2026-07-30T14:02:34.000Z",
             "author": {
-                "name": "Ashutoshbind15",
-                "url": "https://github.com/Ashutoshbind15"
+                "name": "rudraksh290707-cpu",
+                "url": "https://github.com/rudraksh290707-cpu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/257046681?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>NYC Soccer Matchday is a lightweight web MVP that helps fans find NYC bars showing a specific soccer match. It highlights bar type (general vs club-specific) and live social signals like “people going,” while allowing bar owners to post simple matchday updates. Built with a tight MVP scope using AI-assisted vibe coding.</div>",
+            "url": "https://github.com/hs5618-vibe/nyc-soccer-matchday-mvp",
+            "title": "hs5618-vibe/nyc-soccer-matchday-mvp: NYC Soccer Matchday is a lightweight web MVP that helps fans find NYC bars showing a specific soccer match. It highlights bar type (general vs club-specific) and live social signals like “people going,” while allowing bar owners to post simple matchday updates. Built with a tight MVP scope using AI-assisted vibe coding.",
+            "date_modified": "2026-07-30T20:49:55.000Z",
+            "date_published": "2026-01-25T02:45:48.000Z",
+            "author": {
+                "name": "hs5618-vibe",
+                "url": "https://github.com/hs5618-vibe"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/237402820?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight NestJS decorators for validating values against TypeORM entities.</div>",
+            "url": "https://github.com/rotyro-tools/nestjs-typeorm-validator",
+            "title": "rotyro-tools/nestjs-typeorm-validator: Lightweight NestJS decorators for validating values against TypeORM entities.",
+            "date_modified": "2026-07-30T20:49:22.000Z",
+            "date_published": "2025-10-29T13:04:40.000Z",
+            "author": {
+                "name": "rotyro-tools",
+                "url": "https://github.com/rotyro-tools"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33987852?u=7daecc8195f67d1c36a4d813e63e31e26a54d9c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>All-in-One Desktop Agent Skills Utility. Welcome to the Skill Zoo, where all your skills live!</div>",
+            "url": "https://github.com/luochang212/skill-zoo",
+            "title": "luochang212/skill-zoo: All-in-One Desktop Agent Skills Utility. Welcome to the Skill Zoo, where all your skills live!",
+            "date_modified": "2026-07-30T20:49:00.000Z",
+            "date_published": "2026-05-02T16:00:53.000Z",
+            "author": {
+                "name": "luochang212",
+                "url": "https://github.com/luochang212"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/302405968?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight canvas texture cropper and proportion scaler.</div>",
+            "url": "https://github.com/upstockguru-ux/uppity",
+            "title": "upstockguru-ux/uppity: Lightweight canvas texture cropper and proportion scaler.",
+            "date_modified": "2026-07-30T20:48:51.000Z",
+            "date_published": "2026-07-11T07:20:38.000Z",
+            "author": {
+                "name": "upstockguru-ux",
+                "url": "https://github.com/upstockguru-ux"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/747612?u=5d9493f9c74f5cf1aaeab7535b79c3289115bd88&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ArgoNVR is a lightweight, self-hosted Network Video Recorder (NVR) designed to run on low-power hardware.</div>",
+            "url": "https://github.com/DaveVoorhis/argonvr",
+            "title": "DaveVoorhis/argonvr: ArgoNVR is a lightweight, self-hosted Network Video Recorder (NVR) designed to run on low-power hardware.",
+            "date_modified": "2026-07-30T20:48:38.000Z",
+            "date_published": "2026-07-14T19:21:45.000Z",
+            "author": {
+                "name": "DaveVoorhis",
+                "url": "https://github.com/DaveVoorhis"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1263515?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>BareScript; a lightweight scripting and expression language</div>",
+            "url": "https://github.com/craigahobbs/bare-script",
+            "title": "craigahobbs/bare-script: BareScript; a lightweight scripting and expression language",
+            "date_modified": "2026-07-30T20:48:06.000Z",
+            "date_published": "2022-01-31T23:48:25.000Z",
+            "author": {
+                "name": "craigahobbs",
+                "url": "https://github.com/craigahobbs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38448416?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight browser Sudoku pencil-mark helper: auto-place singles, conflict highlights, digit stats, undo/redo. No build step.</div>",
+            "url": "https://github.com/azchester/sudoku-helper",
+            "title": "azchester/sudoku-helper: Lightweight browser Sudoku pencil-mark helper: auto-place singles, conflict highlights, digit stats, undo/redo. No build step.",
+            "date_modified": "2026-07-30T20:47:53.000Z",
+            "date_published": "2026-07-30T19:40:08.000Z",
+            "author": {
+                "name": "azchester",
+                "url": "https://github.com/azchester"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6332055?u=a7e3e10c6242e00346e3ca205c364fc93630ec37&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight MCP server and tool that lets you seamlessly create, read, and manage personal JIRA tickets</div>",
+            "url": "https://github.com/timtoth/j-lite",
+            "title": "timtoth/j-lite: Lightweight MCP server and tool that lets you seamlessly create, read, and manage personal JIRA tickets",
+            "date_modified": "2026-07-30T20:47:09.000Z",
+            "date_published": "2026-05-24T13:02:30.000Z",
+            "author": {
+                "name": "timtoth",
+                "url": "https://github.com/timtoth"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/64441155?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight React lightbox component</div>",
+            "url": "https://github.com/igordanchenko/yet-another-react-lightbox-lite",
+            "title": "igordanchenko/yet-another-react-lightbox-lite: Lightweight React lightbox component",
+            "date_modified": "2026-07-30T20:44:40.000Z",
+            "date_published": "2024-08-09T00:27:04.000Z",
+            "author": {
+                "name": "igordanchenko",
+                "url": "https://github.com/igordanchenko"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76421360?u=d88164dcbcf894ca943648de64fc72e5a8f18c29&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight network security checker that verifies IP location and detects unexpected country changes before accessing sensitive services.</div>",
             "url": "https://github.com/AhmadJeddi/SafeIP",
             "title": "AhmadJeddi/SafeIP: A lightweight network security checker that verifies IP location and detects unexpected country changes before accessing sensitive services.",
-            "date_modified": "2026-07-30T19:02:15.000Z",
+            "date_modified": "2026-07-30T20:45:08.000Z",
             "date_published": "2026-07-30T18:56:01.000Z",
             "author": {
                 "name": "AhmadJeddi",
@@ -160,69 +204,25 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/48646114?u=c19d09130e2b7ea8e4b53e71c69d0b9b45e8a45a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>[SH] Self-Hosted PaaS Panel for deploying applications straight from a git repository into Docker a lightweight, self-hosted alternative to Heroku / Railway / Render</div>",
-            "url": "https://github.com/KROWIEL/self-hosted-public",
-            "title": "KROWIEL/self-hosted-public: [SH] Self-Hosted PaaS Panel for deploying applications straight from a git repository into Docker a lightweight, self-hosted alternative to Heroku / Railway / Render",
-            "date_modified": "2026-07-30T18:54:56.000Z",
-            "date_published": "2026-07-11T12:35:18.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/219229544?u=3cd0492b120a1864ee6da05fcff02b966b92b0bf&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight container image update manager with an automated rollback engine, live container logs, and webhook notifications.</div>",
+            "url": "https://github.com/nurdy-dude/imgnurd",
+            "title": "nurdy-dude/imgnurd: A lightweight container image update manager with an automated rollback engine, live container logs, and webhook notifications.",
+            "date_modified": "2026-07-30T20:43:50.000Z",
+            "date_published": "2026-07-30T11:31:43.000Z",
             "author": {
-                "name": "KROWIEL",
-                "url": "https://github.com/KROWIEL"
+                "name": "nurdy-dude",
+                "url": "https://github.com/nurdy-dude"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/277028901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The complete toolkit for building AI agents in JavaScript. Lightweight core, React &amp; Terminal UIs, autonomous runtime, tools, skills, memory, RAG and observability. Plug-and-play from chat UI to full agents.</div>",
-            "url": "https://github.com/AgentsKit-io/agentskit",
-            "title": "AgentsKit-io/agentskit: The complete toolkit for building AI agents in JavaScript. Lightweight core, React & Terminal UIs, autonomous runtime, tools, skills, memory, RAG and observability. Plug-and-play from chat UI to full agents.",
-            "date_modified": "2026-07-30T18:54:39.000Z",
-            "date_published": "2026-04-02T23:05:48.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63555728?u=ac9d97a9dd105b271181fcb0e336655f9c540be7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a lightweight web game engine, built with js</div>",
+            "url": "https://github.com/immaturegoat/matu",
+            "title": "immaturegoat/matu: a lightweight web game engine, built with js",
+            "date_modified": "2026-07-30T20:43:43.000Z",
+            "date_published": "2026-07-02T16:12:09.000Z",
             "author": {
-                "name": "AgentsKit-io",
-                "url": "https://github.com/AgentsKit-io"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73742237?u=058f47efc41e6b8c3bcb58fe8346524c5c4efd38&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div> A lightweight native Windows desktop application built with Tauri 2, Rust,      and React that displays real-time synchronized lyrics over Spotify and YouTube.</div>",
-            "url": "https://github.com/YUKILL-CLOUD/lyrica",
-            "title": "YUKILL-CLOUD/lyrica:  A lightweight native Windows desktop application built with Tauri 2, Rust,      and React that displays real-time synchronized lyrics over Spotify and YouTube.",
-            "date_modified": "2026-07-30T18:52:48.000Z",
-            "date_published": "2026-07-22T19:03:00.000Z",
-            "author": {
-                "name": "YUKILL-CLOUD",
-                "url": "https://github.com/YUKILL-CLOUD"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/246818976?u=b160e882e0cf55f003a10bf417c761bb4e48c361&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is a lightweight website built with Node.js, featuring simple server-side logic to handle routing and serve pages dynamically. It's designed as a small-scale project to demonstrate core backend fundamentals using pure Node.js.</div>",
-            "url": "https://github.com/rayapu776-ui/server",
-            "title": "rayapu776-ui/server: This is a lightweight website built with Node.js, featuring simple server-side logic to handle routing and serve pages dynamically. It's designed as a small-scale project to demonstrate core backend fundamentals using pure Node.js.",
-            "date_modified": "2026-07-30T18:55:23.000Z",
-            "date_published": "2026-07-30T18:46:22.000Z",
-            "author": {
-                "name": "rayapu776-ui",
-                "url": "https://github.com/rayapu776-ui"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/225899850?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight service booking web app for home repair, cleaning, wellness, and worker booking.</div>",
-            "url": "https://github.com/Heet0804/QuickFix-Home-Service",
-            "title": "Heet0804/QuickFix-Home-Service: A lightweight service booking web app for home repair, cleaning, wellness, and worker booking.",
-            "date_modified": "2026-07-30T18:54:30.000Z",
-            "date_published": "2026-05-26T06:02:48.000Z",
-            "author": {
-                "name": "Heet0804",
-                "url": "https://github.com/Heet0804"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/8044303?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Official Codex marketplace for Sunear Designer. Turn door and window documents into structured Sunear projects through a secure, lightweight plugin while keeping design, geometry, pricing, and manufacturing engines server-side.</div>",
-            "url": "https://github.com/lesnicaaa/sunear-codex-marketplace",
-            "title": "lesnicaaa/sunear-codex-marketplace: Official Codex marketplace for Sunear Designer. Turn door and window documents into structured Sunear projects through a secure, lightweight plugin while keeping design, geometry, pricing, and manufacturing engines server-side.",
-            "date_modified": "2026-07-30T18:53:38.000Z",
-            "date_published": "2026-07-30T16:35:06.000Z",
-            "author": {
-                "name": "lesnicaaa",
-                "url": "https://github.com/lesnicaaa"
+                "name": "immaturegoat",
+                "url": "https://github.com/immaturegoat"
             }
         }
     ]
