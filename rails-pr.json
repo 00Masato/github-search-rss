@@ -6,6 +6,17 @@
     "description": "rails/rails pr on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12642?u=76645b9234fbbeb252f789a670b62927cf998541&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">reflection.foreign_key</code> was passed directly to code that didn't handle composite (Array coerced via <code class=\"notranslate\">to_s</code>) or aliased (mutation tracker keys by real column) FKs:</p>\n<ul dir=\"auto\">\n<li>\n<p dir=\"auto\"><code class=\"notranslate\">BelongsToAssociation</code> counter cache — no-op'd. Iterate per FK; use <code class=\"notranslate\">ActiveRecord::Key#where_hash</code> for the composite WHERE. (Aliased FKs handled via the init-time <code class=\"notranslate\">@foreign_key</code> cache.)</p>\n</li>\n<li>\n<p dir=\"auto\"><code class=\"notranslate\">AutosaveAssociation#_record_changed?</code> — the <code class=\"notranslate\">will_save_change_to_attribute?</code> fallback silently returned false. Iterate per FK and resolve aliases inline.</p>\n</li>\n<li>\n<p dir=\"auto\"><code class=\"notranslate\">HasManyThroughAssociation#delete_records</code> <code class=\"notranslate\">:nullify</code> — produced <code class=\"notranslate\">UPDATE ... SET \"[\\\"col1\\\", \\\"col2\\\"]\" = NULL</code> / <code class=\"notranslate\">SET \"aliased\" = NULL</code>. Expand the composite FK to a multi-column update Hash (<code class=\"notranslate\">Arel::Table#[]</code> resolves aliases for each scalar key).</p>\n</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/58364",
+            "title": "Honor composite / aliased FKs in belongs_to counter cache, autosave, and has_many :through nullify",
+            "date_modified": "2026-08-03T20:08:29.000Z",
+            "date_published": "2026-08-03T19:48:57.000Z",
+            "author": {
+                "name": "kamipo",
+                "url": "https://github.com/kamipo"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">At first I thought that could stay strictly a problem for applications running Ractor, but turbo-rails provides a <a href=\"https://github.com/hotwired/turbo-rails/blob/v2.0.23/app/controllers/turbo/frames/frame_request.rb#L24\">proc layout for turbo frames</a> so I reconsidered.</p>\n<p dir=\"auto\">Given we have <code class=\"notranslate\">ActiveSupport::Ractors.try_shareable_proc</code> it's pretty straightforward without adding incompatibility issues. And if an application owner wants to try the ractor support, this will show the issue directly instead of indirectly at request time.</p>\n<p dir=\"auto\">I will also push a PR to turbo-rails to turn the proc in a method. Actually there's already a PR: <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4589565734\" data-permission-text=\"Title is private\" data-url=\"https://github.com/hotwired/turbo-rails/issues/786\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/hotwired/turbo-rails/pull/786/hovercard\" href=\"https://github.com/hotwired/turbo-rails/pull/786\">hotwired/turbo-rails#786</a>.</p>",
             "url": "https://github.com/rails/rails/pull/58363",
             "title": "Make Proc layouts shareable",
@@ -91,17 +102,6 @@
             "author": {
                 "name": "nicolasva",
                 "url": "https://github.com/nicolasva"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/153918146?u=7a00299f28a48e21c1244c881c9b9d72f6b4a962&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Follow-up to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5043738614\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/58348\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/rails/rails/pull/58348/hovercard\" href=\"https://github.com/rails/rails/pull/58348\">#58348</a>.</p>\n<p dir=\"auto\"><code class=\"notranslate\">alias_attribute</code> on a <code class=\"notranslate\">belongs_to</code> foreign key is honored for reads and writes, but change tracking is keyed by the real column name. Querying it under the alias never reported a change, so re-pointing the association broke <code class=\"notranslate\">counter_cache</code> (counters went negative on destroy), <code class=\"notranslate\">touch: true</code> (previous parent not touched), and required validation with <code class=\"notranslate\">belongs_to_required_validates_foreign_key = false</code> (dangling FK saved without error).</p>\n<p dir=\"auto\">Aliases are now resolved to their column names wherever <code class=\"notranslate\">belongs_to</code> consults the Dirty API, matching how the attribute itself is read and written.</p>",
-            "url": "https://github.com/rails/rails/pull/58354",
-            "title": "Resolve attribute aliases in belongs_to change tracking",
-            "date_modified": "2026-08-03T11:37:33.000Z",
-            "date_published": "2026-08-03T11:37:22.000Z",
-            "author": {
-                "name": "55728",
-                "url": "https://github.com/55728"
             }
         },
         {
