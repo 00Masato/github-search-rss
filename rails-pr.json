@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103438607?u=1ef31a45bb15573c57fb880557a81ad2d1d6eace&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Currently this \"define_method_\" string is allocated per Pattern (~16) per attribute (~N, really big) defined.</p>\n<p dir=\"auto\">This commit moves the string into Pattern so that it is only allocated once per pattern (~16).</p>",
             "url": "https://github.com/rails/rails/pull/58387",
             "title": "Reduce allocations during attribute definition",
-            "date_modified": "2026-08-05T23:19:57.000Z",
+            "date_modified": "2026-08-05T23:49:49.000Z",
             "date_published": "2026-08-05T23:19:43.000Z",
             "author": {
                 "name": "hmcguire-shopify",
