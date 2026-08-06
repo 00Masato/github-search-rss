@@ -86,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/34685103?u=5595536b5c8eb387b98a43c00d3288694b99e519&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><em><a href=\"https://triagebot.infra.rust-lang.org/gh-comments/rust-lang/rfcs/pull/3966\" rel=\"nofollow\">View all comments</a></em></p>\n<p dir=\"auto\">The RFC proposes the <code class=\"notranslate\">btf_relocatable_types</code> feature gate, that provides a <code class=\"notranslate\">#[repr(Btf)]</code> representation and low-level field-info intrinsics that emit <a href=\"https://docs.kernel.org/bpf/btf.html\" rel=\"nofollow\">BTF (BPF TypeFormat)</a> <a href=\"https://nakryiko.com/posts/bpf-portability-and-co-re/\" rel=\"nofollow\">CO-RE (Compile Once, Run Everywhere)</a> relocations.</p>\n<p dir=\"auto\">It also documents the relationship to <code class=\"notranslate\">offset_of!</code>, ordinary field projection and LLVM BPF lowering.</p>\n<p dir=\"auto\">This feature was originally proposed as <a href=\"https://internals.rust-lang.org/t/pre-rfc-btf-relocations/24161/25\" rel=\"nofollow\">pre-RFC</a>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/vadorovsky/rfcs/blob/btf-relocations/text/0000-btf-relocations.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3966",
             "title": "BTF relocations",
-            "date_modified": "2026-08-05T11:49:42.000Z",
+            "date_modified": "2026-08-06T08:31:39.000Z",
             "date_published": "2026-05-31T08:16:14.000Z",
             "author": {
                 "name": "vadorovsky",
