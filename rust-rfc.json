@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/14314532?u=7d15a598ef22e1e2725875dfa78eda6817f8e629&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/weihanglo/rfcs/blob/3924/text/3924-cargo-hints-min-opt-level.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/3994",
-            "title": "fix(3924): update tracking issue link",
-            "date_modified": "2026-08-07T21:05:47.000Z",
-            "date_published": "2026-08-07T21:05:43.000Z",
-            "author": {
-                "name": "weihanglo",
-                "url": "https://github.com/weihanglo"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/720498?u=3c16b16a4d73b17656db81b2a0e1314bb38b897c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC partially stabilises a version 0 of the <code class=\"notranslate\">rlib</code> format, and defines a 'standard library bundle' mechanism with the aim to make this a supported workflow:</p>\n<blockquote>\n<p dir=\"auto\">A C or C++ application built in a monorepo / hermetic-build environment can link in a library built in Rust without changes to its existing link process</p>\n</blockquote>\n<p dir=\"auto\">Getting there requires a couple of practical steps, which would come if this RFC is accepted - or could happen in parallel if desirable:</p>\n<ol dir=\"auto\">\n<li>Some compiler changes to support the new versions and flags - although in reality the existing rustc works without any of these flags today, they are important for the long term support for this feature.</li>\n<li><code class=\"notranslate\">rustc</code> documents and supports a \"build crate as <code class=\"notranslate\">rlib</code>, link with a non-<code class=\"notranslate\">rustc</code> linker\" model as a first-class workflow, with clearly stated constraints that keep long-term support feasible.</li>\n<li>Tests to ensure the workflow does not regress, at minimum for <code class=\"notranslate\">x86_64-unknown-linux-gnu</code>.</li>\n</ol>\n<p dir=\"auto\">I decided to pick this up after some conversations with folks where I work, and others within the Rust Community. My understanding is that this technique is already used today by a few large companies who are also active in the Rust community. Standardising this feels like a positive step forward, which makes it easier for more projects to adopt Rust in existing C++ codebases.</p>\n<p dir=\"auto\">It's my first RFC &amp; I probably didn't get everything right but hopefully I'm close enough. Happy to discuss here/on Zuilip/zoom/etc as needed to keep this moving.</p>\n<p dir=\"auto\">Credit note: Although I am submitting this RFC, and stand by every word in it, a large majority of its content comes directly from <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/pcwalton/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/pcwalton\">@pcwalton</a>'s pre-RFC here: <a href=\"https://internals.rust-lang.org/t/pre-rfc-stabilize-a-version-of-the-rlib-format/17558\" rel=\"nofollow\">https://internals.rust-lang.org/t/pre-rfc-stabilize-a-version-of-the-rlib-format/17558</a> which was attached to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"643352932\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rust-lang/rust/issues/73632\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rust-lang/rust/issues/73632/hovercard\" href=\"https://github.com/rust-lang/rust/issues/73632\">rust-lang/rust#73632</a></p>\n<p dir=\"auto\"><a href=\"https://github.com/adamncasey/rfcs/blob/support-external-linkers-2/text/3993-support-external-linkers.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/3993",
             "title": "RFC: Support External Linkers",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "davidv1992",
                 "url": "https://github.com/davidv1992"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/60961?u=967a9ccc3f7dba0d5d3acd694e3cf81893defe96&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Extend Cargo's dependency specifications so users can mark that a dependency is used, independent of what <a href=\"https://doc.rust-lang.org/nightly/rustc/json.html#unused-dependency-notifications\" rel=\"nofollow\">unused externs</a> says.</p>\n<div class=\"markdown-alert markdown-alert-important\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg data-component=\"Octicon\" class=\"octicon octicon-report mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path></svg>Important</p><p dir=\"auto\">When responding to RFCs, try to use inline review comments (it is possible to leave an inline review comment for the entire file at the top) instead of direct comments for normal comments and keep normal comments for procedural matters like starting FCPs.</p>\n<p dir=\"auto\">This keeps the discussion more organized.</p>\n</div>\n<p dir=\"auto\"><a href=\"https://github.com/epage/rfcs/blob/used-deps/text/3920-used-deps.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3920",
+            "title": "RFC: Extend manifest dependencies with `used`",
+            "date_modified": "2026-04-23T15:08:53.000Z",
+            "date_published": "2026-02-13T14:17:31.000Z",
+            "author": {
+                "name": "epage",
+                "url": "https://github.com/epage"
             }
         }
     ]
