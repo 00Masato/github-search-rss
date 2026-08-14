@@ -6,6 +6,72 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/189964965?u=5e030a50f854f5d4d5c0c9e3e0d2599fe830e4f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a typo in the NavigateEvent.intercept docs. Content-only change.</p>",
+            "url": "https://github.com/mdn/content/pull/45133",
+            "title": "Fix typo in NavigateEvent.intercept docs",
+            "date_modified": "2026-08-14T03:46:37.000Z",
+            "date_published": "2026-08-14T03:44:49.000Z",
+            "author": {
+                "name": "rajanpanth",
+                "url": "https://github.com/rajanpanth"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62324847?u=305f6e3037692f1c5d10cb4b96403e28a427f737&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">{\"title\":\"docs: history APIs silently no-op on rate limiting per spec\",\"head\":\"fufu1209:fix-history-rate-limit-noop\",\"base\":\"main\",\"body\":\"### Description\\n\\nAddresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4667059019\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/44477\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/44477/hovercard\" href=\"https://github.com/mdn/content/issues/44477\">#44477</a>. The History API pages claimed that <code class=\"notranslate\">pushState()</code>, <code class=\"notranslate\">replaceState()</code>, <code class=\"notranslate\">back()</code>, <code class=\"notranslate\">go()</code>, and <code class=\"notranslate\">forward()</code> throw a <code class=\"notranslate\">SecurityError</code> when called too frequently. Per <a href=\"https://github.com/whatwg/html/pull/12492\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/whatwg/html/pull/12492/hovercard\">whatwg/html#12492</a> (merged 2026-06-16), the spec changed: the navigable's \"allowed to perform a navigation or history update\" algorithm now returns <code class=\"notranslate\">blocked</code> when the API is invoked too frequently, and the method <strong>silently returns (no-op)</strong> instead of throwing.\\n\\nVerified against the current HTML spec (shared history push/replace state steps and delta traverse steps): both check the navigable's <em>allowed to perform a navigation or history update</em> and <code class=\"notranslate\">return</code> on <code class=\"notranslate\">blocked</code>. The remaining <code class=\"notranslate\">SecurityError</code> cases (document not fully active, invalid/cross-origin URL) are unchanged.\\n\\nChanges (5 pages):\\n- <code class=\"notranslate\">History/pushState</code> and <code class=\"notranslate\">History/replaceState</code>: removed \"or if the method is called too frequently\" from the <code class=\"notranslate\">SecurityError</code> description; added a note that rate-limited calls are silently ignored (no exception), with the rate limit being implementation-defined.\\n- <code class=\"notranslate\">History/back</code>, <code class=\"notranslate\">History/go</code>, <code class=\"notranslate\">History/forward</code>: removed the sentence about throwing/warning/ignoring on throttling; added the same note.\\n\\n### Motivation\\n\\nThe pages described behavior that no longer matches the spec and current Chromium behavior (Gecko is following), which misled developers relying on catching a <code class=\"notranslate\">SecurityError</code> to detect rate limiting.\\n\\n### Related issues and pull requests\\n\\nFixes <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4667059019\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/44477\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/44477/hovercard\" href=\"https://github.com/mdn/content/issues/44477\">#44477</a>\\n\"}</p>",
+            "url": "https://github.com/mdn/content/pull/45132",
+            "title": "docs: history APIs silently no-op on rate limiting per spec",
+            "date_modified": "2026-08-14T03:47:13.000Z",
+            "date_published": "2026-08-14T03:44:45.000Z",
+            "author": {
+                "name": "fufu1209",
+                "url": "https://github.com/fufu1209"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/189964965?u=5e030a50f854f5d4d5c0c9e3e0d2599fe830e4f2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Fixes a typo in the guide text. Content-only change.</p>",
+            "url": "https://github.com/mdn/content/pull/45130",
+            "title": "Fix typo in resource management guide",
+            "date_modified": "2026-08-14T03:46:06.000Z",
+            "date_published": "2026-08-14T03:44:33.000Z",
+            "author": {
+                "name": "rajanpanth",
+                "url": "https://github.com/rajanpanth"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96412244?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Changes the sidebar group macro on the <code class=\"notranslate\">Window</code> page from <code class=\"notranslate\">{{APIRef(\"DOM\")}}</code> to <code class=\"notranslate\">{{APIRef(\"HTML DOM\")}}</code>, so the sidebar shows \"HTML DOM API\" instead of the misleading \"Document Object Model (DOM)\".</p>\n<h3 dir=\"auto\">Additional details</h3>\n<ul dir=\"auto\">\n<li><a href=\"https://html.spec.whatwg.org/multipage/nav-history-apis.html#window\" rel=\"nofollow\">HTML Standard: the <code class=\"notranslate\">Window</code> object</a></li>\n<li><a href=\"https://dom.spec.whatwg.org/#interface-window\" rel=\"nofollow\">DOM Standard interfaces list</a> (does not include <code class=\"notranslate\">Window</code>)</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #45123.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5146323062\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45123\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45123/hovercard\" href=\"https://github.com/mdn/content/issues/45123\">#45123</a></p>",
+            "url": "https://github.com/mdn/content/pull/45129",
+            "title": "Fix incorrect sidebar group on Window page",
+            "date_modified": "2026-08-14T02:51:21.000Z",
+            "date_published": "2026-08-14T02:49:49.000Z",
+            "author": {
+                "name": "maitreyi03",
+                "url": "https://github.com/maitreyi03"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96412244?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Corrects an invalid CSS media feature name in the <code class=\"notranslate\">@custom-media</code> example. The example used <code class=\"notranslate\">not (script)</code>, but <code class=\"notranslate\">script</code> is not a valid media feature, it should be <code class=\"notranslate\">not (scripting)</code>.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">See the <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting\" rel=\"nofollow\"><code class=\"notranslate\">scripting</code> media feature reference</a> for the valid feature name and its accepted values.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #45125.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5147382743\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45125\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45125/hovercard\" href=\"https://github.com/mdn/content/issues/45125\">#45125</a></p>",
+            "url": "https://github.com/mdn/content/pull/45127",
+            "title": "Fix incorrect media feature name in @custom-media example",
+            "date_modified": "2026-08-14T02:39:05.000Z",
+            "date_published": "2026-08-14T02:37:30.000Z",
+            "author": {
+                "name": "maitreyi03",
+                "url": "https://github.com/maitreyi03"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/62324847?u=305f6e3037692f1c5d10cb4b96403e28a427f737&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">{\"title\":\"docs: use generic() syntax for script-specific font families\",\"head\":\"fufu1209:fix-font-family-generic-fangsong\",\"base\":\"main\",\"body\":\"### Description\\n\\nAddresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4063297756\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/43412\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/43412/hovercard\" href=\"https://github.com/mdn/content/issues/43412\">#43412</a>. The <code class=\"notranslate\">font-family</code> page listed <code class=\"notranslate\">fangsong</code> as a plain generic-family keyword, but per the <a href=\"https://drafts.csswg.org/css-fonts/#generic-font-script-specific\" rel=\"nofollow\">CSS Fonts 4 specification</a>, the script-specific generic font families use the functional <code class=\"notranslate\">generic()</code> syntax: <code class=\"notranslate\">generic(fangsong)</code>, <code class=\"notranslate\">generic(kai)</code>, <code class=\"notranslate\">generic(khmer-mul)</code>, <code class=\"notranslate\">generic(nastaliq)</code>.\\n\\nChanges:\\n- Syntax section: <code class=\"notranslate\">font-family: fangsong;</code> -&gt; <code class=\"notranslate\">font-family: generic(fangsong);</code>.\\n- Values section: replaced the bare <code class=\"notranslate\">fangsong</code> keyword bullet with the four script-specific <code class=\"notranslate\">generic()</code> families, described per the spec (Fang Song/Kai/Khmer mul/Nastaliq), with a note that they use the <code class=\"notranslate\">generic()</code> functional syntax and are not yet supported by any browser.\\n- Examples: removed the fangsong live-example block, since no browser supports the value (it rendered as plain fallback text).\\n\\n### Motivation\\n\\nThe page previously suggested that <code class=\"notranslate\">fangsong</code> (and implicitly the other script-specific families) was a usable keyword value, which is not the case: no browser supports these values, and the bare keyword is not in the current spec grammar.\\n\\n### Related issues and pull requests\\n\\nFixes <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4063297756\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/43412\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/43412/hovercard\" href=\"https://github.com/mdn/content/issues/43412\">#43412</a>\\n\"}</p>",
+            "url": "https://github.com/mdn/content/pull/45124",
+            "title": "docs: use generic() syntax for script-specific font families",
+            "date_modified": "2026-08-14T01:44:55.000Z",
+            "date_published": "2026-08-14T01:44:35.000Z",
+            "author": {
+                "name": "fufu1209",
+                "url": "https://github.com/fufu1209"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176228199?u=79263a5800d6a0c47f8ce53365fc113d033acaad&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Description</h2>\n<p dir=\"auto\">The Marionette documentation moved from <code class=\"notranslate\">firefox-source-docs.mozilla.org/testing/marionette/</code> to <code class=\"notranslate\">/remote/marionette/</code>, and the old URLs now return a 301 to the new location. This updates the four affected links across three Firefox release notes pages.</p>\n<p dir=\"auto\">Two of the links carry anchors (<code class=\"notranslate\">#marionette-navigate-after-click-timeout</code> and <code class=\"notranslate\">#marionette-navigate-after-click-enabled</code>); both still resolve on the new page.</p>\n<h2 dir=\"auto\">Motivation</h2>\n<p dir=\"auto\">The links currently redirect rather than resolving directly.</p>",
             "url": "https://github.com/mdn/content/pull/45119",
             "title": "Update Marionette documentation links to their new location",
@@ -75,22 +141,11 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This PR includes the creation of three new reference pages:</p>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">row-rule-break</code></li>\n<li><code class=\"notranslate\">column-rule-break</code></li>\n<li><code class=\"notranslate\">rule-break</code> shorthand</li>\n</ul>\n<p dir=\"auto\">Spec: <a href=\"https://drafts.csswg.org/css-gaps-1/#break\" rel=\"nofollow\">https://drafts.csswg.org/css-gaps-1/#break</a><br>\nThe <a href=\"https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Gaps\" rel=\"nofollow\">CSS gaps module page</a> is already live.</p>\n<p dir=\"auto\">Part of <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4718339915\" data-permission-text=\"Title is private\" data-url=\"https://github.com/openwebdocs/project/issues/238\" data-hovercard-type=\"issue\" data-hovercard-url=\"/openwebdocs/project/issues/238/hovercard\" href=\"https://github.com/openwebdocs/project/issues/238\">openwebdocs/project#238</a></p>",
             "url": "https://github.com/mdn/content/pull/45095",
             "title": "New pages: rule-break properties",
-            "date_modified": "2026-08-13T14:47:06.000Z",
+            "date_modified": "2026-08-14T02:00:13.000Z",
             "date_published": "2026-08-11T22:51:48.000Z",
             "author": {
                 "name": "estelle",
                 "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/89297042?u=6418748396e1f92b5b8a5728a299c895f2a49d56&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Removes the sentence under <strong>Don't cache / Do not share with others</strong> that claimed <code class=\"notranslate\">private</code> must also be given even when <code class=\"notranslate\">no-store</code> is present.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">That guidance contradicts the Cache-Control reference and the HTTP caching spec: <code class=\"notranslate\">no-store</code> is already the most restrictive directive, so requiring <code class=\"notranslate\">private</code> alongside it is incorrect. Maintainer confirmation was to remove the paragraph.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">Minimal docs-only change in <code class=\"notranslate\">files/en-us/web/http/guides/caching/index.md</code>.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #39127.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"2995303032\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/39127\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/39127/hovercard\" href=\"https://github.com/mdn/content/issues/39127\">#39127</a></p>",
-            "url": "https://github.com/mdn/content/pull/45094",
-            "title": "Remove incorrect private+no-store guidance from HTTP caching guide",
-            "date_modified": "2026-08-14T00:44:15.000Z",
-            "date_published": "2026-08-11T21:15:34.000Z",
-            "author": {
-                "name": "AzazelSensei",
-                "url": "https://github.com/AzazelSensei"
             }
         },
         {
@@ -168,61 +223,6 @@
             "author": {
                 "name": "nrps9909",
                 "url": "https://github.com/nrps9909"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/185269030?u=1fc22565ccf4566b6f734fabaa87e03d9a31cfe4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Updated the <code class=\"notranslate\">hyphenate-limit-chars</code> values section to use a proper definition list for <code class=\"notranslate\">&lt;number&gt;</code> and <code class=\"notranslate\">auto</code>.</p>\n<p dir=\"auto\">The <code class=\"notranslate\">&lt;number&gt;</code> entry now explains how one, two, and three numeric values are interpreted. The <code class=\"notranslate\">auto</code> entry now separately describes the user agent behavior and its default values.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The <code class=\"notranslate\">auto</code> value was previously described outside the definition list, making the values section inconsistent with the CSS property's other value documentation.</p>\n<p dir=\"auto\">This change brings the <code class=\"notranslate\">hyphenate-limit-chars</code> values section in line with the expected MDN structure.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<ul dir=\"auto\">\n<li>No behavior or technical information was changed.</li>\n<li>Only the structure and placement of the existing value descriptions were updated.</li>\n<li>Prettier and Markdownlint checks passed.</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #45071.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5112357853\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45071\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45071/hovercard\" href=\"https://github.com/mdn/content/issues/45071\">#45071</a></li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/45079",
-            "title": "fix(css): update hyphenate-limit-chars values",
-            "date_modified": "2026-08-11T20:05:21.000Z",
-            "date_published": "2026-08-11T03:10:29.000Z",
-            "author": {
-                "name": "BHUVANSH855",
-                "url": "https://github.com/BHUVANSH855"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The values sections on property pages are a DL of data types, preceded by an explanation of the value's syntax.<br>\nupdated the writing guidelines to reflect this.</p>\n<p dir=\"auto\">Removed optional explanation text and clarified the 'Values' section description.</p>",
-            "url": "https://github.com/mdn/content/pull/45077",
-            "title": "Values section for CSS property pages",
-            "date_modified": "2026-08-10T21:48:07.000Z",
-            "date_published": "2026-08-10T21:32:00.000Z",
-            "author": {
-                "name": "estelle",
-                "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6571445?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">… digests</p>\n\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Addresses <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5099885606\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45058\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45058/hovercard\" href=\"https://github.com/mdn/content/issues/45058\">#45058</a> (points 3-6) and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5099969799\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45059\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45059/hovercard\" href=\"https://github.com/mdn/content/issues/45059\">#45059</a> (points 5-9): every worked example on both pages either copied values from RFC 9530 without stating the input bytes, used placeholder digests (sha-512=:ABC...=:, [message body]), or was built on the incorrect premise that Content-Encoding causes Content-Digest and Repr-Digest to diverge. Content-Encoding identifies a different representation, so a whole representation sent in one message always produces matching Content-Digest and Repr-Digest values regardless of encoding; real divergence comes from partial responses (Range requests).</p>\n<p dir=\"auto\">Replaced with an MDN-original example body, {\"hello\": \"mdn\"}, with every digest value computed and independently cross-verified (Python hashlib and sha256sum/sha512sum, plus a gzip -dc round-trip for the GZIP example). Migrated the fixed Content-Digest examples onto Repr-Digest.</p>\n<p dir=\"auto\">Removed the Want-*-Digest mentions as those are not commonly used in practce and seem like a distraction. They can be handled on the specific relevant pages.</p>\n<p dir=\"auto\">Removed the 406 examples, since they are behavior RFC 9530 doesn't define.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The two pages had examples that were confusing, inaccurate or wrong. This change corrects them and makes them consistent on both pages (since they are both inter-related)</p>\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Relates to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5099885606\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45058\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45058/hovercard\" href=\"https://github.com/mdn/content/issues/45058\">#45058</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5099969799\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45059\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45059/hovercard\" href=\"https://github.com/mdn/content/issues/45059\">#45059</a></p>\n",
-            "url": "https://github.com/mdn/content/pull/45076",
-            "title": "Rewrite Content-Digest and Repr-Digest examples with real, verifiable…",
-            "date_modified": "2026-08-11T02:06:17.000Z",
-            "date_published": "2026-08-10T21:03:41.000Z",
-            "author": {
-                "name": "LPardue",
-                "url": "https://github.com/LPardue"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6571445?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ul dir=\"auto\">\n<li>Note Content-Digest/Repr-Digest are structured field Dictionaries</li>\n<li>Fix digest-value encoding claim on Content-Digest/Repr-Digest pages</li>\n</ul>\n\n\n<h3 dir=\"auto\">Description</h3>\n<ul dir=\"auto\">\n<li>Tweak the syntax to more clearly mention structured fields</li>\n<li>Update the  of the directives section to make it clear how the value is calculated and serialized</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n\n<h3 dir=\"auto\">Additional details</h3>\n\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">Relates to <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5099885606\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45058\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45058/hovercard\" href=\"https://github.com/mdn/content/issues/45058\">#45058</a> and <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5099969799\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45059\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45059/hovercard\" href=\"https://github.com/mdn/content/issues/45059\">#45059</a></p>\n",
-            "url": "https://github.com/mdn/content/pull/45074",
-            "title": "Slight tweaks to digest field syntax and directives sections",
-            "date_modified": "2026-08-11T07:41:03.000Z",
-            "date_published": "2026-08-10T19:31:40.000Z",
-            "author": {
-                "name": "LPardue",
-                "url": "https://github.com/LPardue"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Updated content for clarity and detail in guidelines.</p>\n<ul dir=\"auto\">\n<li>explanations belong in description</li>\n<li>intro to values should be in values</li>\n<li>basic usage header for basic value assignment examples</li>\n<li>suggest adding link to module in see also</li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/45072",
-            "title": "update CSS property template guidelines",
-            "date_modified": "2026-08-11T14:35:44.000Z",
-            "date_published": "2026-08-10T16:56:19.000Z",
-            "author": {
-                "name": "estelle",
-                "url": "https://github.com/estelle"
             }
         }
     ]
