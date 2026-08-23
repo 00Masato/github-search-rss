@@ -20,7 +20,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/25246024?u=45bc5dab950868e9945f9455cff98e7196ef5a27&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><ol dir=\"auto\">\n<li>Added note about the mild deprecation of dynamic attribute-based finders in Active Record. This is to match the <a href=\"https://github.com/rails/rails/blob/2a2db1e8d6d104ee0611efcae7eb023af65cff34/activerecord/lib/active_record/base.rb#L170\">comment in the source code</a>.</li>\n<li>Removed the tiny example that used a column named \"locked\". I think that example was unnecessarily confusing because the term \"lock\" has a lot of strong connotations that are unrelated to dynamic finder methods. Since these are basically deprecated, I thought to not replace the example and just make this section shorter.</li>\n</ol>",
             "url": "https://github.com/rails/rails/pull/58542",
             "title": "[Docs][ci skip] Clarify that dynamic finder method are mildly deprecated",
-            "date_modified": "2026-08-22T22:51:22.000Z",
+            "date_modified": "2026-08-23T18:52:36.000Z",
             "date_published": "2026-08-22T22:51:10.000Z",
             "author": {
                 "name": "flavio-b",
