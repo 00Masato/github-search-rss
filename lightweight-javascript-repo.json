@@ -6,54 +6,109 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79872299?u=3dad82c4fe7ca8b4fc1690f6c030ecc2c1007be2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight TypeScript-native RPC protocol over raw TCP built for learning, experimentation, benchmarking, and infrastructure research.</div>",
-            "url": "https://github.com/wbizmo/argus-rpc",
-            "title": "wbizmo/argus-rpc: A lightweight TypeScript-native RPC protocol over raw TCP built for learning, experimentation, benchmarking, and infrastructure research.",
-            "date_modified": "2026-08-29T20:35:15.000Z",
-            "date_published": "2026-06-17T22:52:38.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/117679477?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A small, lightweight cron/job scheduling utility for asynchronous jobs. Designed to schedule, run, and automatically re-schedule jobs at precise intervals with optional debug logging.</div>",
+            "url": "https://github.com/abofs/stonyx-cron",
+            "title": "abofs/stonyx-cron: A small, lightweight cron/job scheduling utility for asynchronous jobs. Designed to schedule, run, and automatically re-schedule jobs at precise intervals with optional debug logging.",
+            "date_modified": "2026-08-29T22:54:45.000Z",
+            "date_published": "2025-08-08T00:22:37.000Z",
             "author": {
-                "name": "wbizmo",
-                "url": "https://github.com/wbizmo"
+                "name": "abofs",
+                "url": "https://github.com/abofs"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/179017508?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>SveltyCMS is a headless CMS. Built with modern and lightweight SvelteKit,  This CMS is designed for speed, flexibility, and scalability. Perfect for developers looking for a fast &amp; fully customizable CMS with minimal setup. TailwindCSS, theme and widgets allow easy expansion. </div>",
-            "url": "https://github.com/SveltyCMS/SveltyCMS",
-            "title": "SveltyCMS/SveltyCMS: SveltyCMS is a headless CMS. Built with modern and lightweight SvelteKit,  This CMS is designed for speed, flexibility, and scalability. Perfect for developers looking for a fast & fully customizable CMS with minimal setup. TailwindCSS, theme and widgets allow easy expansion. ",
-            "date_modified": "2026-08-29T20:34:06.000Z",
-            "date_published": "2023-02-01T18:39:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67333314?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight local PaaS — deploy Git repositories to isolated Docker containers with health checks, live logs, CLI and dashboard.</div>",
+            "url": "https://github.com/albertaizic/minicloud",
+            "title": "albertaizic/minicloud: Lightweight local PaaS — deploy Git repositories to isolated Docker containers with health checks, live logs, CLI and dashboard.",
+            "date_modified": "2026-08-29T22:54:33.000Z",
+            "date_published": "2026-08-24T10:58:52.000Z",
             "author": {
-                "name": "SveltyCMS",
-                "url": "https://github.com/SveltyCMS"
+                "name": "albertaizic",
+                "url": "https://github.com/albertaizic"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20130902?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Jarela is a lightweight, full‑featured multi‑agent application that runs locally on your machine.</div>",
-            "url": "https://github.com/CircuitWall/jarela",
-            "title": "CircuitWall/jarela: Jarela is a lightweight, full‑featured multi‑agent application that runs locally on your machine.",
-            "date_modified": "2026-08-29T20:34:03.000Z",
-            "date_published": "2026-05-17T16:43:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/117679477?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Stonyx is a lightweight, modular framework for building modern Node.js applications. It provides a plug-and-play architecture, centralized color-coded logging, and seamless integration of asynchronous modules, making development faster, cleaner, and more maintainable.</div>",
+            "url": "https://github.com/abofs/stonyx",
+            "title": "abofs/stonyx: Stonyx is a lightweight, modular framework for building modern Node.js applications. It provides a plug-and-play architecture, centralized color-coded logging, and seamless integration of asynchronous modules, making development faster, cleaner, and more maintainable.",
+            "date_modified": "2026-08-29T22:54:02.000Z",
+            "date_published": "2025-07-27T15:50:47.000Z",
             "author": {
-                "name": "CircuitWall",
-                "url": "https://github.com/CircuitWall"
+                "name": "abofs",
+                "url": "https://github.com/abofs"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/309713913?u=190ead0e88692d9208ce30de8f25147d119fc74b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.</div>",
-            "url": "https://github.com/pkmdinesh/indiaoceanwatch",
-            "title": "pkmdinesh/indiaoceanwatch: Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.",
-            "date_modified": "2026-08-29T20:32:19.000Z",
-            "date_published": "2026-07-30T19:28:00.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/319795177?u=ddb438562ff229b512f95bef0c8da7c5df6d2054&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Mini Version of  bot which is very lightweight and has multi-session support</div>",
+            "url": "https://github.com/bonyke2-bot/BONY-XMD",
+            "title": "bonyke2-bot/BONY-XMD: Mini Version of  bot which is very lightweight and has multi-session support",
+            "date_modified": "2026-08-29T22:52:26.000Z",
+            "date_published": "2026-08-28T11:23:41.000Z",
             "author": {
-                "name": "pkmdinesh",
-                "url": "https://github.com/pkmdinesh"
+                "name": "bonyke2-bot",
+                "url": "https://github.com/bonyke2-bot"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6341478?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight modern IRCv3 desktop client (Rust + Tauri)</div>",
+            "url": "https://github.com/sykk/ircx",
+            "title": "sykk/ircx: Lightweight modern IRCv3 desktop client (Rust + Tauri)",
+            "date_modified": "2026-08-29T22:52:22.000Z",
+            "date_published": "2026-07-29T22:29:23.000Z",
+            "author": {
+                "name": "sykk",
+                "url": "https://github.com/sykk"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/82662379?u=1669a93d58f1937f9ce32a2a4e750a16c7ca5f92&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight framework-agnostic Thanos snap effect with smooth layout transitions and optional sound</div>",
+            "url": "https://github.com/uvarov-frontend/vanilla-disintegrate",
+            "title": "uvarov-frontend/vanilla-disintegrate: Lightweight framework-agnostic Thanos snap effect with smooth layout transitions and optional sound",
+            "date_modified": "2026-08-29T22:52:40.000Z",
+            "date_published": "2026-08-27T08:40:31.000Z",
+            "author": {
+                "name": "uvarov-frontend",
+                "url": "https://github.com/uvarov-frontend"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/121905684?u=d832bf8ad0e0a5d89c983e287ccfa23dedf63590&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, frontend-only task management web app for creating lists, organizing tasks, and tracking progress — all in the browser.</div>",
+            "url": "https://github.com/ziadshalaby00/PatheToDone-Project",
+            "title": "ziadshalaby00/PatheToDone-Project: A lightweight, frontend-only task management web app for creating lists, organizing tasks, and tracking progress — all in the browser.",
+            "date_modified": "2026-08-29T22:52:10.000Z",
+            "date_published": "2025-01-15T15:08:48.000Z",
+            "author": {
+                "name": "ziadshalaby00",
+                "url": "https://github.com/ziadshalaby00"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43192760?u=5a40bfd648c0a827fcb360e1aa2ee9c7d72a590b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>tldr-experts (tldrx): a lightweight, file-based AI development workflow — one loop, five phases, experts on disk. Pre-alpha.</div>",
+            "url": "https://github.com/ederwii/tldr-experts",
+            "title": "ederwii/tldr-experts: tldr-experts (tldrx): a lightweight, file-based AI development workflow — one loop, five phases, experts on disk. Pre-alpha.",
+            "date_modified": "2026-08-29T22:51:23.000Z",
+            "date_published": "2026-08-29T01:54:05.000Z",
+            "author": {
+                "name": "ederwii",
+                "url": "https://github.com/ederwii"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/300208148?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight shop-floor tracking system for purchase orders, parts, departments, barcode scans, and production movement history.</div>",
+            "url": "https://github.com/CDSemi/part-flow",
+            "title": "CDSemi/part-flow: Lightweight shop-floor tracking system for purchase orders, parts, departments, barcode scans, and production movement history.",
+            "date_modified": "2026-08-29T22:50:00.000Z",
+            "date_published": "2026-07-20T22:06:48.000Z",
+            "author": {
+                "name": "CDSemi",
+                "url": "https://github.com/CDSemi"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54117632?u=99ee0ac17352542022f325f1df993d3ce0696cfa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight local sandbox and mock gateway for anchoring autonomous AI agents.</div>",
             "url": "https://github.com/ScottVentures/agent-jail",
             "title": "ScottVentures/agent-jail: A lightweight local sandbox and mock gateway for anchoring autonomous AI agents.",
-            "date_modified": "2026-08-29T20:32:09.000Z",
+            "date_modified": "2026-08-29T22:48:16.000Z",
             "date_published": "2026-08-29T19:51:21.000Z",
             "author": {
                 "name": "ScottVentures",
@@ -61,65 +116,43 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20213436?u=642baebb3f657703150f1ef32afa819a2d017e2e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight data grid/table for fast, modern web apps</div>",
-            "url": "https://github.com/petera2c/simple-table",
-            "title": "petera2c/simple-table: Lightweight data grid/table for fast, modern web apps",
-            "date_modified": "2026-08-29T20:32:01.000Z",
-            "date_published": "2024-09-27T02:15:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/309713913?u=190ead0e88692d9208ce30de8f25147d119fc74b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.</div>",
+            "url": "https://github.com/pkmdinesh/indiaoceanwatch",
+            "title": "pkmdinesh/indiaoceanwatch: Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.",
+            "date_modified": "2026-08-29T22:47:07.000Z",
+            "date_published": "2026-07-30T19:28:00.000Z",
             "author": {
-                "name": "petera2c",
-                "url": "https://github.com/petera2c"
+                "name": "pkmdinesh",
+                "url": "https://github.com/pkmdinesh"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1021144?u=0be8ee61562de39aca80bebd50c5402751f9b70a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🦖 Ultra-lightweight native macOS desktop EPUB reader app with 1P/2P spreads, themes, search, bookmarks, and favorites</div>",
-            "url": "https://github.com/hieuza/epub-reaper",
-            "title": "hieuza/epub-reaper: 🦖 Ultra-lightweight native macOS desktop EPUB reader app with 1P/2P spreads, themes, search, bookmarks, and favorites",
-            "date_modified": "2026-08-29T20:31:02.000Z",
-            "date_published": "2026-08-28T21:31:49.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/643505?u=dae9100bbd42543c6f8e0ca857a0d34e820c6432&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Node.js HTTP server library with trie router, compression, ETag caching, streaming, and dev logger</div>",
+            "url": "https://github.com/jonathanong/api-server",
+            "title": "jonathanong/api-server: Lightweight Node.js HTTP server library with trie router, compression, ETag caching, streaming, and dev logger",
+            "date_modified": "2026-08-29T22:46:01.000Z",
+            "date_published": "2026-05-16T20:24:34.000Z",
             "author": {
-                "name": "hieuza",
-                "url": "https://github.com/hieuza"
+                "name": "jonathanong",
+                "url": "https://github.com/jonathanong"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/321067325?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.</div>",
-            "url": "https://github.com/Valley-of-the-Commons/LibreSesh",
-            "title": "Valley-of-the-Commons/LibreSesh: A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.",
-            "date_modified": "2026-08-29T20:29:26.000Z",
-            "date_published": "2026-08-28T17:28:14.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/225620529?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LumenHealth is a lightweight, AI-assisted electronic medical record (EMR) system designed for clinics, mobile health teams, and underserved communities. Powered by Google Gemini and Stellar blockchain, it streamlines patient care, generates smart clinical summaries, and enables fast, secure crypto payments,  even in low-connectivity settings.</div>",
+            "url": "https://github.com/CIVRA-INC/LumenHealth",
+            "title": "CIVRA-INC/LumenHealth: LumenHealth is a lightweight, AI-assisted electronic medical record (EMR) system designed for clinics, mobile health teams, and underserved communities. Powered by Google Gemini and Stellar blockchain, it streamlines patient care, generates smart clinical summaries, and enables fast, secure crypto payments,  even in low-connectivity settings.",
+            "date_modified": "2026-08-29T22:45:15.000Z",
+            "date_published": "2025-09-21T21:47:41.000Z",
             "author": {
-                "name": "Valley-of-the-Commons",
-                "url": "https://github.com/Valley-of-the-Commons"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96288308?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔎 A simple, tiny and lightweight benchmarking library!</div>",
-            "url": "https://github.com/tinylibs/tinybench",
-            "title": "tinylibs/tinybench: 🔎 A simple, tiny and lightweight benchmarking library!",
-            "date_modified": "2026-08-29T20:28:59.000Z",
-            "date_published": "2022-07-30T07:57:59.000Z",
-            "author": {
-                "name": "tinylibs",
-                "url": "https://github.com/tinylibs"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268183997?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Stellar Tip Jar is a lightweight platform that allows creators to receive tips directly from supporters using blockchain payments.  Instead of relying on centralized platforms, creators can simply share a link like:  <a href=\"https://tipjar.app/username\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://tipjar.app/username</a>  Supporters can then send tips using Stellar tokens.</div>",
-            "url": "https://github.com/Bonizozo/stellar-tipjar-frontend",
-            "title": "Bonizozo/stellar-tipjar-frontend: Stellar Tip Jar is a lightweight platform that allows creators to receive tips directly from supporters using blockchain payments.  Instead of relying on centralized platforms, creators can simply share a link like:  https://tipjar.app/username  Supporters can then send tips using Stellar tokens.",
-            "date_modified": "2026-08-29T20:28:02.000Z",
-            "date_published": "2026-03-14T14:37:55.000Z",
-            "author": {
-                "name": "Bonizozo",
-                "url": "https://github.com/Bonizozo"
+                "name": "CIVRA-INC",
+                "url": "https://github.com/CIVRA-INC"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/257942737?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight 3840 × 804 split-flap world office wall with 49×7 and 42×6 layouts, built for NVIDIA Shield signage.</div>",
             "url": "https://github.com/creative-innovation-labs-bmc/aurecon-split-flap-wall",
             "title": "creative-innovation-labs-bmc/aurecon-split-flap-wall: A lightweight 3840 × 804 split-flap world office wall with 49×7 and 42×6 layouts, built for NVIDIA Shield signage.",
-            "date_modified": "2026-08-29T20:25:37.000Z",
+            "date_modified": "2026-08-29T22:43:56.000Z",
             "date_published": "2026-08-02T13:00:39.000Z",
             "author": {
                 "name": "creative-innovation-labs-bmc",
@@ -127,32 +160,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13643556?u=389738a55fc1c1e4403e98579a3669b9ad77722b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight, and dependency-free lightbox library for images, with zoom, pan, and fullscreen features.</div>",
-            "url": "https://github.com/alekstar79/lightbox",
-            "title": "alekstar79/lightbox: A modern, lightweight, and dependency-free lightbox library for images, with zoom, pan, and fullscreen features.",
-            "date_modified": "2026-08-29T20:25:24.000Z",
-            "date_published": "2023-07-17T09:48:12.000Z",
-            "author": {
-                "name": "alekstar79",
-                "url": "https://github.com/alekstar79"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/174895439?u=45a8a5ee6c93dda39023db52b85311e52538d806&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight self-hosted chat app for small groups of friends, designed for LAN use and NAT traversal.</div>",
-            "url": "https://github.com/LumineTraveller/Cove",
-            "title": "LumineTraveller/Cove: A lightweight self-hosted chat app for small groups of friends, designed for LAN use and NAT traversal.",
-            "date_modified": "2026-08-29T20:25:23.000Z",
-            "date_published": "2026-08-25T08:55:19.000Z",
-            "author": {
-                "name": "LumineTraveller",
-                "url": "https://github.com/LumineTraveller"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/268516410?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>AGIeX is a lightweight node infrastructure for powering the AGI Expert network (<a href=\"https://agi.expert\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://agi.expert</a>). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.</div>",
             "url": "https://github.com/AGI-expert/AGIeX",
             "title": "AGI-expert/AGIeX: AGIeX is a lightweight node infrastructure for powering the AGI Expert network (https://agi.expert). It enables distributed agents to run, validate, and coordinate autonomous intelligence tasks across a decentralized system, supporting scalable execution, secure communication, and real-time decision pipelines.",
-            "date_modified": "2026-08-29T20:24:13.000Z",
+            "date_modified": "2026-08-29T22:43:18.000Z",
             "date_published": "2026-03-21T10:15:37.000Z",
             "author": {
                 "name": "AGI-expert",
@@ -160,69 +171,58 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38498804?u=8f88c9f1fc22f1c64d124ffe43bac800f3702bbe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Explicit lightweight persistent memory for Pi agents</div>",
-            "url": "https://github.com/ProbabilityEngineer/pi-diet-memory",
-            "title": "ProbabilityEngineer/pi-diet-memory: Explicit lightweight persistent memory for Pi agents",
-            "date_modified": "2026-08-29T20:23:59.000Z",
-            "date_published": "2026-05-23T15:29:24.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/36902158?u=2b618c8d76eeeb5472c86db889fa52b230448bb2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, high-performance desktop task manager built with Tauri 2, React, and TypeScript. Features nested sub-tasks in a tree grid, privacy-first local JSON storage, and a lightweight, keyboard-driven UI.</div>",
+            "url": "https://github.com/HyperNebula/TODOer",
+            "title": "HyperNebula/TODOer: A modern, high-performance desktop task manager built with Tauri 2, React, and TypeScript. Features nested sub-tasks in a tree grid, privacy-first local JSON storage, and a lightweight, keyboard-driven UI.",
+            "date_modified": "2026-08-29T22:42:59.000Z",
+            "date_published": "2026-06-29T13:57:15.000Z",
             "author": {
-                "name": "ProbabilityEngineer",
-                "url": "https://github.com/ProbabilityEngineer"
+                "name": "HyperNebula",
+                "url": "https://github.com/HyperNebula"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278080873?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cpaste - A lightweight, local-first clipboard manager built with Tauri 2 + Rust</div>",
-            "url": "https://github.com/gaogx96/Cpaste",
-            "title": "gaogx96/Cpaste: Cpaste - A lightweight, local-first clipboard manager built with Tauri 2 + Rust",
-            "date_modified": "2026-08-29T20:23:26.000Z",
-            "date_published": "2026-06-17T21:09:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101540790?u=7bd952f947ead82bbd517d6d12e2fea35d20bb7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This is the NanoFly, A self-hosted server control panel. A premium, self-hostable, lightweight PaaS. The open-source alternative to Vercel, Netlify, and Heroku.  Deploy applications, build from Git repositories, and provision databases in seconds on your own hardware. Perfect for VPS, bare-metal servers, and Raspberry Pi.</div>",
+            "url": "https://github.com/tamalmaity-dev/nanofly",
+            "title": "tamalmaity-dev/nanofly: This is the NanoFly, A self-hosted server control panel. A premium, self-hostable, lightweight PaaS. The open-source alternative to Vercel, Netlify, and Heroku.  Deploy applications, build from Git repositories, and provision databases in seconds on your own hardware. Perfect for VPS, bare-metal servers, and Raspberry Pi.",
+            "date_modified": "2026-08-29T22:40:52.000Z",
+            "date_published": "2026-05-19T17:10:26.000Z",
             "author": {
-                "name": "gaogx96",
-                "url": "https://github.com/gaogx96"
+                "name": "tamalmaity-dev",
+                "url": "https://github.com/tamalmaity-dev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/96777798?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Serverless Email Queue Service:  A lightweight email queue built on Cloudflare Workers + D1 with SMTP support, retries, concurrency control, and a web dashboard.</div>",
-            "url": "https://github.com/Rishi-Bhati/Serverless-email-service",
-            "title": "Rishi-Bhati/Serverless-email-service: Serverless Email Queue Service:  A lightweight email queue built on Cloudflare Workers + D1 with SMTP support, retries, concurrency control, and a web dashboard.",
-            "date_modified": "2026-08-29T20:22:51.000Z",
-            "date_published": "2026-07-18T19:57:05.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93073352?u=a62369de039a5033e7107d0b7464fa3c77374bac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>RayShot is an on-the-web lightweight, non-linear video editor for beginners and hobbyists seeking a simple workflow.</div>",
+            "url": "https://github.com/SoujanyaDasRoy/rayshot",
+            "title": "SoujanyaDasRoy/rayshot: RayShot is an on-the-web lightweight, non-linear video editor for beginners and hobbyists seeking a simple workflow.",
+            "date_modified": "2026-08-29T22:39:53.000Z",
+            "date_published": "2026-08-29T08:43:18.000Z",
             "author": {
-                "name": "Rishi-Bhati",
-                "url": "https://github.com/Rishi-Bhati"
+                "name": "SoujanyaDasRoy",
+                "url": "https://github.com/SoujanyaDasRoy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/74231782?u=ad713d4f59f83a5c3f7cd54bb79dcec7edd61426&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Ultra-lightweight 0-patch enhancement suite for GitHub Desktop. Custom AI commit (OpenAI/DeepSeek/Ollama), multi-editor/terminal launch, full i18n localization, telemetry blocker &amp; hot reload settings without modifying official binaries.</div>",
-            "url": "https://github.com/sj817/github-desktop-plus",
-            "title": "sj817/github-desktop-plus: 🚀 Ultra-lightweight 0-patch enhancement suite for GitHub Desktop. Custom AI commit (OpenAI/DeepSeek/Ollama), multi-editor/terminal launch, full i18n localization, telemetry blocker & hot reload settings without modifying official binaries.",
-            "date_modified": "2026-08-29T20:21:56.000Z",
-            "date_published": "2026-04-08T21:29:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/139642709?u=e90711e8280e19c54930af03487d99f73e6a2438&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>ZIRON Studio - Lightweight 3D scene prototyping tool built with Tauri, Three.js and Vite.</div>",
+            "url": "https://github.com/superstrellaa/Ziron",
+            "title": "superstrellaa/Ziron: ZIRON Studio - Lightweight 3D scene prototyping tool built with Tauri, Three.js and Vite.",
+            "date_modified": "2026-08-29T22:39:49.000Z",
+            "date_published": "2026-04-09T21:53:19.000Z",
             "author": {
-                "name": "sj817",
-                "url": "https://github.com/sj817"
+                "name": "superstrellaa",
+                "url": "https://github.com/superstrellaa"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/88273576?u=4c02ef43c82ca987fbb16d7d8e0d556db57c3a4c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight FIRE Tracker &amp; API Server</div>",
-            "url": "https://github.com/nitsuah/fire",
-            "title": "nitsuah/fire: Lightweight FIRE Tracker & API Server",
-            "date_modified": "2026-08-29T20:21:37.000Z",
-            "date_published": "2026-06-03T05:13:54.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1207507?u=3508f4f9190e73cbdb3b36b02b919f9faf756c04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight full-stack SSR &amp; Islands-framework for Svelte 5 + Bun</div>",
+            "url": "https://github.com/khromov/mochi",
+            "title": "khromov/mochi: Lightweight full-stack SSR & Islands-framework for Svelte 5 + Bun",
+            "date_modified": "2026-08-29T22:38:38.000Z",
+            "date_published": "2026-04-03T22:50:06.000Z",
             "author": {
-                "name": "nitsuah",
-                "url": "https://github.com/nitsuah"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10298023?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight  WebSocket app for synchronized, sub-50ms drift, multi-user YouTube video playback. </div>",
-            "url": "https://github.com/FullSpade/syncplay",
-            "title": "FullSpade/syncplay: A lightweight  WebSocket app for synchronized, sub-50ms drift, multi-user YouTube video playback. ",
-            "date_modified": "2026-08-29T20:21:11.000Z",
-            "date_published": "2026-08-29T19:52:25.000Z",
-            "author": {
-                "name": "FullSpade",
-                "url": "https://github.com/FullSpade"
+                "name": "khromov",
+                "url": "https://github.com/khromov"
             }
         }
     ]
