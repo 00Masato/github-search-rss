@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/946674?u=c87b20b9a8bc4536c53cde4688337f522448aa0d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><code class=\"notranslate\">SchemaContext#attributes</code> uses <code class=\"notranslate\">Ractor.store_if_absent</code> to initialize an <code class=\"notranslate\">Attributes</code> object. However, <code class=\"notranslate\">Attributes.new</code> calls <code class=\"notranslate\">AttributeRegistration#apply_pending_attribute_modifications</code>, which walks up the superclass chain and applies attribute modifiers from them (e.g. from <code class=\"notranslate\">EncryptableRecord</code>). Those modifiers call <code class=\"notranslate\">columns_hash</code> on the superclass, which triggers <code class=\"notranslate\">load_schema</code>, which calls <code class=\"notranslate\">SchemaContext#attributes</code> again, thus calling <code class=\"notranslate\">Ractor.store_if_absent</code>, causing a deadlock.</p>\n<p dir=\"auto\">This PR <span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #58650.\">fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5329492045\" data-permission-text=\"Title is private\" data-url=\"https://github.com/rails/rails/issues/58650\" data-hovercard-type=\"issue\" data-hovercard-url=\"/rails/rails/issues/58650/hovercard\" href=\"https://github.com/rails/rails/issues/58650\">#58650</a> by pre-loading superclass schemas before entering the <code class=\"notranslate\">Ractor.store_if_absent</code> section, thereby ensuring no nested calls will take place. Given that loading the schema short-circuits if the schema is already loaded, this should have no performance impact.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<p dir=\"auto\">Before submitting the PR make sure the following are checked:</p>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why. If this PR fixes a related issue include it in the commit message. Ex: <code class=\"notranslate\">[Fix #issue-number]</code></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated if you fix a bug or add a feature.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the changed libraries if there is a behavior change or additional feature. Minor bug fixes and documentation changes should not be included.</li>\n</ul>",
             "url": "https://github.com/rails/rails/pull/58651",
             "title": "SchemaContext#attributes: preload schemas to prevent deadlock",
-            "date_modified": "2026-09-02T22:01:54.000Z",
+            "date_modified": "2026-09-02T22:11:37.000Z",
             "date_published": "2026-09-02T22:01:30.000Z",
             "author": {
                 "name": "kyrofa",
@@ -25,17 +25,6 @@
             "author": {
                 "name": "antonysastre",
                 "url": "https://github.com/antonysastre"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3535?u=6d56cccdc01d83cca3ac0b12468aa1c0d9c3ba0b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This makes sure the controller configs are shareable. I didn't go with freeze+copy on write because it adds a bunch of complexity and doesn't bring anything at the moment, but it does seem that controller-level configs shouldn't be mutated once the app has booted. Especially since controller instances have their own inherited copy of the config to mutate.</p>",
-            "url": "https://github.com/rails/rails/pull/58647",
-            "title": "Make the controller configs shareable in ractorize!",
-            "date_modified": "2026-09-02T16:30:37.000Z",
-            "date_published": "2026-09-02T16:30:28.000Z",
-            "author": {
-                "name": "etiennebarrie",
-                "url": "https://github.com/etiennebarrie"
             }
         },
         {
@@ -220,6 +209,17 @@
             "title": "Fix reloader interlock completion across fibers",
             "date_modified": "2026-09-02T14:54:43.000Z",
             "date_published": "2026-08-28T12:34:35.000Z",
+            "author": {
+                "name": "samuel-williams-shopify",
+                "url": "https://github.com/samuel-williams-shopify"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/203569315?u=6598177626e4e52791bb99b94e56cada33178639&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Motivation / Background</h3>\n<p dir=\"auto\">Rails execution-local state defaults to thread locality. In fiber-based concurrency, multiple fibers running on the same thread can therefore share state that should be isolated, including Active Record connection leases.</p>\n<p dir=\"auto\">Rails 9 provides a versioned-default boundary for changing this behavior without affecting applications that retain an earlier config.load_defaults target.</p>\n<h3 dir=\"auto\">Detail</h3>\n<p dir=\"auto\">This Pull Request:</p>\n<ul dir=\"auto\">\n<li>Adds a Rails 9.0 defaults block that sets config.active_support.isolation_level to :fiber.</li>\n<li>Keeps the underlying Active Support default and Rails 8.2 defaults at :thread for compatibility.</li>\n<li>Adds configuration tests covering both sides of the version boundary.</li>\n<li>Documents the versioned default.</li>\n</ul>\n<h3 dir=\"auto\">Additional information</h3>\n<p dir=\"auto\">Only applications that opt into config.load_defaults \"9.0\" use fiber isolation. Existing applications remain thread-isolated until they adopt the Rails 9.0 defaults.</p>\n<p dir=\"auto\">This PR intentionally does not add new_framework_defaults_9_0.rb.tt while Rails itself is version 8.2. The current app and plugin generators discover and copy every framework defaults initializer template, so adding that future template now causes generated Rails 8.2 applications to include it. The Rails 9.0 template should be added when Rails::VERSION advances to 9.0.</p>\n<h3 dir=\"auto\">Checklist</h3>\n<ul class=\"contains-task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> This Pull Request is related to one change. Unrelated changes should be opened in separate PRs.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Commit message has a detailed description of what changed and why.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> Tests are added or updated.</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" id=\"\" disabled=\"\" class=\"task-list-item-checkbox\" aria-label=\"Completed task\" checked=\"\"> CHANGELOG files are updated for the behavior change.</li>\n</ul>",
+            "url": "https://github.com/rails/rails/pull/58597",
+            "title": "Default to fiber isolation with Rails 9.0 defaults",
+            "date_modified": "2026-08-28T16:30:32.000Z",
+            "date_published": "2026-08-27T21:03:39.000Z",
             "author": {
                 "name": "samuel-williams-shopify",
                 "url": "https://github.com/samuel-williams-shopify"
