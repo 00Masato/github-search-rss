@@ -6,17 +6,6 @@
     "description": "rust-lang/rfcs pr on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/179652704?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/rustbot/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/rustbot\">@rustbot</a> label not-rfc</p>\n<p dir=\"auto\"><a href=\"https://github.com/DanielEScherzer/rfcs/blob/3368-lowercase/text/3368-diagnostic-attribute-namespace.md\">Rendered</a></p>",
-            "url": "https://github.com/rust-lang/rfcs/pull/4007",
-            "title": "RFC 3368: fix misplaced capitalization within a sentence",
-            "date_modified": "2026-09-10T01:53:03.000Z",
-            "date_published": "2026-09-10T01:52:59.000Z",
-            "author": {
-                "name": "DanielEScherzer",
-                "url": "https://github.com/DanielEScherzer"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/184831353?u=a19a3973ebcc879af8e660450865a2232873ce4b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h2 dir=\"auto\">Summary</h2>\n<ul dir=\"auto\">\n<li><code class=\"notranslate\">text/3308-offset_of.md</code>: the <code class=\"notranslate\">[zigoffsetof]</code> link-reference definition read <code class=\"notranslate\">hhttps://ziglang.org/...</code>, so the <code class=\"notranslate\">@offsetOf</code> citation at line 418 rendered as a relative path instead of linking to the Zig docs. Corrected to <code class=\"notranslate\">https://</code>.</li>\n<li>Corrects misspellings in RFC prose, e.g. <code class=\"notranslate\">stablization</code>/<code class=\"notranslate\">stablized</code> (3389, 3424, 3502), <code class=\"notranslate\">dereferencable</code> (3336, 3467), <code class=\"notranslate\">superceded</code>, <code class=\"notranslate\">compatability</code> (3637), <code class=\"notranslate\">visiblity</code>, <code class=\"notranslate\">overriden</code>, <code class=\"notranslate\">authoratitative</code> (3834), <code class=\"notranslate\">ocurring</code> (3791), <code class=\"notranslate\">possiblilities</code> (2996), <code class=\"notranslate\">incompatibilties</code>/<code class=\"notranslate\">incompatibilty</code>/<code class=\"notranslate\">issused</code>/<code class=\"notranslate\">repostory</code>/<code class=\"notranslate\">abot</code> (2834), <code class=\"notranslate\">Iteratable</code> for the Dart <code class=\"notranslate\">Iterable</code> type (3513), and <code class=\"notranslate\">Carrer</code> for the <code class=\"notranslate\">Carrier</code> trait (1859).</li>\n<li>Removes doubled words: <code class=\"notranslate\">is is</code> (3874, 3875), <code class=\"notranslate\">the the</code> (3681, 3875), <code class=\"notranslate\">of of</code> (0560, 2532, 2856, 2912), <code class=\"notranslate\">with with</code> (1252, 3681), <code class=\"notranslate\">we we</code> (1214), <code class=\"notranslate\">a a</code> (1643), <code class=\"notranslate\">for for</code> (3323), <code class=\"notranslate\">it it's</code> (0235), and <code class=\"notranslate\">are are few</code> → <code class=\"notranslate\">are a few</code> (3192).</li>\n</ul>\n<p dir=\"auto\">Markdown only, RFC text bodies only; 75 files, 109 lines. Left alone: Rust terms (<code class=\"notranslate\">statics</code>, <code class=\"notranslate\">inout</code>, <code class=\"notranslate\">implementor</code>), code identifiers, quoted text, the deliberate <code class=\"notranslate\">widnows</code> typo example in RFC 3013, and hyphenation variants like <code class=\"notranslate\">re-use</code>.</p>\n<p dir=\"auto\"><a href=\"https://github.com/toyeshhm/rfcs/blob/fix-doc-typos/text/2103-tool-attributes.md\">Rendered</a></p>",
             "url": "https://github.com/rust-lang/rfcs/pull/4006",
             "title": "Fix broken Zig link in RFC 3308 and typos across RFC texts",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "Amanieu",
                 "url": "https://github.com/Amanieu"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15850505?u=064c10efd2d57ae0bb9d53c6d97ea0a8e550c2a6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">This RFC proposes adding a number of \"reasonable changes\" to the current crates.io deletion policy that will allow the deletion of several \"reasonable to delete\" crates which currently do not qualify.</p>\n<p dir=\"auto\">They are definitely, directly, shamelessly motivated by the personal experience of the RFC author. Please let them know if anything was poorly or hastily worded.</p>\n<div class=\"markdown-alert markdown-alert-important\" dir=\"auto\"><p class=\"markdown-alert-title\" dir=\"auto\"><svg data-component=\"Octicon\" class=\"octicon octicon-report mr-2\" viewBox=\"0 0 16 16\" version=\"1.1\" width=\"16\" height=\"16\" aria-hidden=\"true\"><path d=\"M0 1.75C0 .784.784 0 1.75 0h12.5C15.216 0 16 .784 16 1.75v9.5A1.75 1.75 0 0 1 14.25 13H8.06l-2.573 2.573A1.458 1.458 0 0 1 3 14.543V13H1.75A1.75 1.75 0 0 1 0 11.25Zm1.75-.25a.25.25 0 0 0-.25.25v9.5c0 .138.112.25.25.25h2a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h6.5a.25.25 0 0 0 .25-.25v-9.5a.25.25 0 0 0-.25-.25Zm7 2.25v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0ZM9 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z\"></path></svg>Important</p><p dir=\"auto\">When responding to RFCs, try to use inline review comments (it is possible to leave an inline review comment for the entire file at the top) instead of direct comments for normal comments and keep normal comments for procedural matters like starting FCPs.</p>\n<p dir=\"auto\">This keeps the discussion more organized.</p>\n</div>\n<p dir=\"auto\"><a href=\"https://github.com/clarfonthey/rust-rfcs/blob/deletion-allowances/text/0000-crate-deletion-allowances.md\">Rendered</a></p>",
+            "url": "https://github.com/rust-lang/rfcs/pull/3927",
+            "title": "Crate deletion allowances",
+            "date_modified": "2026-03-24T19:16:27.000Z",
+            "date_published": "2026-03-12T01:23:08.000Z",
+            "author": {
+                "name": "clarfonthey",
+                "url": "https://github.com/clarfonthey"
             }
         }
     ]
