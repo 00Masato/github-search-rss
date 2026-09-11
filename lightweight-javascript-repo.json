@@ -6,197 +6,32 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/57839971?u=4ae6a86f4ba075de1ef6d976c47d8380c0f05104&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight framework that turns RSS feeds into daily AI-ranked digests. You define the sources and rules; the engine handles the rest. No paid subscriptions required.</div>",
-            "url": "https://github.com/Ali-Cheikh/nosey-agent",
-            "title": "Ali-Cheikh/nosey-agent: A lightweight framework that turns RSS feeds into daily AI-ranked digests. You define the sources and rules; the engine handles the rest. No paid subscriptions required.",
-            "date_modified": "2026-09-11T10:10:34.000Z",
-            "date_published": "2026-07-30T08:59:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/282590524?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>The very small lightweight framework for embeddable widgets that output structured results for AI discoverability</div>",
+            "url": "https://github.com/airo-studio/airo-js",
+            "title": "airo-studio/airo-js: The very small lightweight framework for embeddable widgets that output structured results for AI discoverability",
+            "date_modified": "2026-09-11T14:39:30.000Z",
+            "date_published": "2026-05-07T13:17:10.000Z",
             "author": {
-                "name": "Ali-Cheikh",
-                "url": "https://github.com/Ali-Cheikh"
+                "name": "airo-studio",
+                "url": "https://github.com/airo-studio"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37071670?u=78d74cc528a77e73fbb1ee7800c86b15da309309&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.</div>",
-            "url": "https://github.com/marceljay/LibreSesh",
-            "title": "marceljay/LibreSesh: A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.",
-            "date_modified": "2026-09-11T10:10:02.000Z",
-            "date_published": "2026-08-31T09:00:47.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/295925312?u=64005ae9da8916c441700c602ff3f0ccd1e0a582&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight spectral‑geometry engine providing Laplacian, eigenflow, gradient/divergence, and manifold‑adjacency primitives. Designed for portability, stability, and low‑memory environments. Forms the optimized core beneath higher‑altitude NDH and Serenity runtimes.</div>",
+            "url": "https://github.com/Borealiscodes/Spectral-Base-Runtime",
+            "title": "Borealiscodes/Spectral-Base-Runtime: Lightweight spectral‑geometry engine providing Laplacian, eigenflow, gradient/divergence, and manifold‑adjacency primitives. Designed for portability, stability, and low‑memory environments. Forms the optimized core beneath higher‑altitude NDH and Serenity runtimes.",
+            "date_modified": "2026-09-11T14:39:08.000Z",
+            "date_published": "2026-09-10T00:42:43.000Z",
             "author": {
-                "name": "marceljay",
-                "url": "https://github.com/marceljay"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/113002463?u=3a689a1edc154c9cedc5557f098ef324a89fc187&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight terminal and server management application built with Go, Wails, and xterm.js, featuring SSH connectivity, organized server sessions, tabbed terminals, secure credential storage, and a scalable foundation for SFTP and advanced remote-management capabilities.</div>",
-            "url": "https://github.com/kunal-gin/NexTerm",
-            "title": "kunal-gin/NexTerm: A modern, lightweight terminal and server management application built with Go, Wails, and xterm.js, featuring SSH connectivity, organized server sessions, tabbed terminals, secure credential storage, and a scalable foundation for SFTP and advanced remote-management capabilities.",
-            "date_modified": "2026-09-11T10:08:32.000Z",
-            "date_published": "2026-09-08T06:44:45.000Z",
-            "author": {
-                "name": "kunal-gin",
-                "url": "https://github.com/kunal-gin"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5901245?u=32a0040f35fb2dd1caaf88c278a695d94f5ba72c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cache and coordination library that runs on PostgreSQL. It provides key/value storage, TTL expiry, atomic counters, distributed locks, conditional writes, namespaces, scanning, and lightweight pub/sub inside the same transactional envelope as your business data.</div>",
-            "url": "https://github.com/mraysmit/peegeeq-cache",
-            "title": "mraysmit/peegeeq-cache: Cache and coordination library that runs on PostgreSQL. It provides key/value storage, TTL expiry, atomic counters, distributed locks, conditional writes, namespaces, scanning, and lightweight pub/sub inside the same transactional envelope as your business data.",
-            "date_modified": "2026-09-11T10:07:11.000Z",
-            "date_published": "2026-03-15T03:10:39.000Z",
-            "author": {
-                "name": "mraysmit",
-                "url": "https://github.com/mraysmit"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286598806?u=6d729d7d6d55e3025d900917ba9611f5d3246f48&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.</div>",
-            "url": "https://github.com/Jubei-tech/llm-metadata",
-            "title": "Jubei-tech/llm-metadata: LLM Metadata A lightweight static API for discovering and integrating LLM metadata. Live: GitHub Pages · Cloudflare Pages  English | 中文文档 | 日本語  High-throughput friendly, static-by-default interface: rebuild on change; serve static JSON via GitHub Pages.  Sources: models.dev/api.json + basellm community contributions.",
-            "date_modified": "2026-09-11T10:06:08.000Z",
-            "date_published": "2026-05-21T09:33:54.000Z",
-            "author": {
-                "name": "Jubei-tech",
-                "url": "https://github.com/Jubei-tech"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/187354261?u=c4850cc291ce9de894dfe24c1bcbdaa67593b584&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight desktop tray app for monitoring Codex usage</div>",
-            "url": "https://github.com/bonkval/Codex-Pulse",
-            "title": "bonkval/Codex-Pulse: A lightweight desktop tray app for monitoring Codex usage",
-            "date_modified": "2026-09-11T10:05:37.000Z",
-            "date_published": "2026-09-11T04:31:11.000Z",
-            "author": {
-                "name": "bonkval",
-                "url": "https://github.com/bonkval"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7858932?u=acecc4ac2fac2eb7b3c4c5a864db213c387a5e04&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bring your own key (BYOK) relay to enable lightweight frontend-only apps to use LLMs using the user's API keys without hitting CORS.</div>",
-            "url": "https://github.com/avikalpg/byok-relay",
-            "title": "avikalpg/byok-relay: Bring your own key (BYOK) relay to enable lightweight frontend-only apps to use LLMs using the user's API keys without hitting CORS.",
-            "date_modified": "2026-09-11T10:04:50.000Z",
-            "date_published": "2026-04-14T14:06:56.000Z",
-            "author": {
-                "name": "avikalpg",
-                "url": "https://github.com/avikalpg"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278209689?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Windows desktop shell for Claude Code: session tabs, live file tree with unread marks, usable app preview</div>",
-            "url": "https://github.com/crymetr/crydeck",
-            "title": "crymetr/crydeck: Lightweight Windows desktop shell for Claude Code: session tabs, live file tree with unread marks, usable app preview",
-            "date_modified": "2026-09-11T10:04:41.000Z",
-            "date_published": "2026-07-29T09:06:04.000Z",
-            "author": {
-                "name": "crymetr",
-                "url": "https://github.com/crymetr"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/192685034?u=dafc1702a4b6029b2d8c6448440fafa810e1958b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>零框架零依赖的个人博客系统 — 双击 index.html 即用，支持 Cloudflare Workers + D1 云端部署</div>",
-            "url": "https://github.com/kejiland/qingyu-blog",
-            "title": "kejiland/qingyu-blog: 零框架零依赖的个人博客系统 — 双击 index.html 即用，支持 Cloudflare Workers + D1 云端部署",
-            "date_modified": "2026-09-11T10:04:25.000Z",
-            "date_published": "2026-08-20T04:39:21.000Z",
-            "author": {
-                "name": "kejiland",
-                "url": "https://github.com/kejiland"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/309713913?u=190ead0e88692d9208ce30de8f25147d119fc74b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.</div>",
-            "url": "https://github.com/pkmdinesh/indiaoceanwatch",
-            "title": "pkmdinesh/indiaoceanwatch: Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.",
-            "date_modified": "2026-09-11T10:03:15.000Z",
-            "date_published": "2026-07-30T19:28:00.000Z",
-            "author": {
-                "name": "pkmdinesh",
-                "url": "https://github.com/pkmdinesh"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/216525371?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight self-hosted OpenID Connect (OIDC) provider with OAuth2, passkeys, 2FA, social login, and customizable UI</div>",
-            "url": "https://github.com/tinyrack-net/issuary",
-            "title": "tinyrack-net/issuary: Lightweight self-hosted OpenID Connect (OIDC) provider with OAuth2, passkeys, 2FA, social login, and customizable UI",
-            "date_modified": "2026-09-11T10:02:38.000Z",
-            "date_published": "2026-01-07T02:18:13.000Z",
-            "author": {
-                "name": "tinyrack-net",
-                "url": "https://github.com/tinyrack-net"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87715013?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight app for claude code cli agent organization in Rust</div>",
-            "url": "https://github.com/respeak-io/episko",
-            "title": "respeak-io/episko: A lightweight app for claude code cli agent organization in Rust",
-            "date_modified": "2026-09-11T10:01:40.000Z",
-            "date_published": "2026-07-16T07:32:40.000Z",
-            "author": {
-                "name": "respeak-io",
-                "url": "https://github.com/respeak-io"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/79302145?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, interactive Node.js Command Line Interface (CLI) application designed to ingest and analyze IT system logs for threat detection.</div>",
-            "url": "https://github.com/Krish-Kothari/IT-System-log-analyzer",
-            "title": "Krish-Kothari/IT-System-log-analyzer: A lightweight, interactive Node.js Command Line Interface (CLI) application designed to ingest and analyze IT system logs for threat detection.",
-            "date_modified": "2026-09-11T10:01:10.000Z",
-            "date_published": "2026-09-01T13:31:56.000Z",
-            "author": {
-                "name": "Krish-Kothari",
-                "url": "https://github.com/Krish-Kothari"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/878437?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Vibe code with pi in a lightweight, real IDE - The Vibe You Need</div>",
-            "url": "https://github.com/JetBrains/thinkrail",
-            "title": "JetBrains/thinkrail: Vibe code with pi in a lightweight, real IDE - The Vibe You Need",
-            "date_modified": "2026-09-11T10:07:23.000Z",
-            "date_published": "2026-07-08T07:40:43.000Z",
-            "author": {
-                "name": "JetBrains",
-                "url": "https://github.com/JetBrains"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4174322?u=14d64181d4267d9c7b78b27e1af9e55412a8fa9b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, modular coding agent harness compatible with **`model-router`** (or any OpenAI-compatible Chat Completions API).</div>",
-            "url": "https://github.com/Mitriyweb/mini-agent",
-            "title": "Mitriyweb/mini-agent: A lightweight, modular coding agent harness compatible with **`model-router`** (or any OpenAI-compatible Chat Completions API).",
-            "date_modified": "2026-09-11T09:58:36.000Z",
-            "date_published": "2026-09-04T17:36:28.000Z",
-            "author": {
-                "name": "Mitriyweb",
-                "url": "https://github.com/Mitriyweb"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49461500?u=91cac1e4782b5cde0aa620f7b9eb74f3cf8960f0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight data service and automation pipeline that tracks, fetches, and parses scheduled YouTube live streams across sports channels.</div>",
-            "url": "https://github.com/phmachado/json-latest",
-            "title": "phmachado/json-latest: A lightweight data service and automation pipeline that tracks, fetches, and parses scheduled YouTube live streams across sports channels.",
-            "date_modified": "2026-09-11T09:58:25.000Z",
-            "date_published": "2026-08-25T11:57:27.000Z",
-            "author": {
-                "name": "phmachado",
-                "url": "https://github.com/phmachado"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/177312316?u=f6885aee10f48a174ea66ed8347d5bf121b770b7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>PratiBimb - on-device visual perception for lightweight browser agents. A privacy firewall that happens to power an agent. SIH 2026, PS 26171, ISRO/DoS.</div>",
-            "url": "https://github.com/ronitsaha11/pratibimb",
-            "title": "ronitsaha11/pratibimb: PratiBimb - on-device visual perception for lightweight browser agents. A privacy firewall that happens to power an agent. SIH 2026, PS 26171, ISRO/DoS.",
-            "date_modified": "2026-09-11T09:57:16.000Z",
-            "date_published": "2026-09-07T14:20:02.000Z",
-            "author": {
-                "name": "ronitsaha11",
-                "url": "https://github.com/ronitsaha11"
+                "name": "Borealiscodes",
+                "url": "https://github.com/Borealiscodes"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/250217925?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Pulse is a privacy-first web analytics dashboard. A simple, lightweight Google Analytics alternative with no cookies, GDPR compliant, and open source.</div>",
             "url": "https://github.com/ciphera-net/pulse",
             "title": "ciphera-net/pulse: Pulse is a privacy-first web analytics dashboard. A simple, lightweight Google Analytics alternative with no cookies, GDPR compliant, and open source.",
-            "date_modified": "2026-09-11T09:56:29.000Z",
+            "date_modified": "2026-09-11T14:38:40.000Z",
             "date_published": "2026-01-16T12:03:51.000Z",
             "author": {
                 "name": "ciphera-net",
@@ -204,25 +39,190 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4601965?u=faf4e4af76459cb1cba644fa54d23f0f2191d341&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight GPL-3.0 desktop database client (PostgreSQL / MySQL / SQLite / Redis). Built with Tauri + Rust, under 10MB.</div>",
-            "url": "https://github.com/flyxl/datazen",
-            "title": "flyxl/datazen: Lightweight GPL-3.0 desktop database client (PostgreSQL / MySQL / SQLite / Redis). Built with Tauri + Rust, under 10MB.",
-            "date_modified": "2026-09-11T09:56:25.000Z",
-            "date_published": "2025-10-27T06:47:10.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/319219?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A \"lightweight\" activities runtime and authoring (LARA) app in Rails 8.</div>",
+            "url": "https://github.com/concord-consortium/lara",
+            "title": "concord-consortium/lara: A \"lightweight\" activities runtime and authoring (LARA) app in Rails 8.",
+            "date_modified": "2026-09-11T14:36:42.000Z",
+            "date_published": "2012-11-02T20:58:55.000Z",
             "author": {
-                "name": "flyxl",
-                "url": "https://github.com/flyxl"
+                "name": "concord-consortium",
+                "url": "https://github.com/concord-consortium"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/290539928?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>TreeThinkerAgent is a lightweight orchestration layer that turns any LLM into an autonomous multi-step reasoning agent. It supports multi-step planning, tool execution, and final synthesis while exposing the entire reasoning process as a tree you can explore.</div>",
-            "url": "https://github.com/cstar0521/TreeThinkerAgent",
-            "title": "cstar0521/TreeThinkerAgent: TreeThinkerAgent is a lightweight orchestration layer that turns any LLM into an autonomous multi-step reasoning agent. It supports multi-step planning, tool execution, and final synthesis while exposing the entire reasoning process as a tree you can explore.",
-            "date_modified": "2026-09-11T09:55:55.000Z",
-            "date_published": "2026-09-11T09:28:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37071670?u=78d74cc528a77e73fbb1ee7800c86b15da309309&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.</div>",
+            "url": "https://github.com/marceljay/LibreSesh",
+            "title": "marceljay/LibreSesh: A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.",
+            "date_modified": "2026-09-11T14:35:53.000Z",
+            "date_published": "2026-08-31T09:00:47.000Z",
             "author": {
-                "name": "cstar0521",
-                "url": "https://github.com/cstar0521"
+                "name": "marceljay",
+                "url": "https://github.com/marceljay"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33373536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A 40kb+ webgl library, with concise code and extensive world sandbox! World engine prioritizes first-person view!The world is your viewpoint. </div>",
+            "url": "https://github.com/kohunglee/openworld-js",
+            "title": "kohunglee/openworld-js: A 40kb+ webgl library, with concise code and extensive world sandbox! World engine prioritizes first-person view!The world is your viewpoint. ",
+            "date_modified": "2026-09-11T14:35:37.000Z",
+            "date_published": "2025-06-29T04:33:54.000Z",
+            "author": {
+                "name": "kohunglee",
+                "url": "https://github.com/kohunglee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/73583588?u=3fdf6c0b4c4d2394dfabc28b7ae3fc636e14fc6b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight web-based diagnostics dashboard for analyzing application logs, grouping errors, tracking occurrences, comparing versions, and viewing detailed stack traces using Vite and TypeScript.</div>",
+            "url": "https://github.com/nextcodelab/app-diagnostics.web",
+            "title": "nextcodelab/app-diagnostics.web: A lightweight web-based diagnostics dashboard for analyzing application logs, grouping errors, tracking occurrences, comparing versions, and viewing detailed stack traces using Vite and TypeScript.",
+            "date_modified": "2026-09-11T14:34:58.000Z",
+            "date_published": "2026-09-06T06:35:25.000Z",
+            "author": {
+                "name": "nextcodelab",
+                "url": "https://github.com/nextcodelab"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101118850?u=a2fc88150150678161661215319ba5171ed8f1ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast, lightweight Markdown editor with Typora-style live inline preview. Desktop and browser, cross-device sync, one-click publishing, and a built-in MCP server.</div>",
+            "url": "https://github.com/lxorb/nibeditor",
+            "title": "lxorb/nibeditor: Fast, lightweight Markdown editor with Typora-style live inline preview. Desktop and browser, cross-device sync, one-click publishing, and a built-in MCP server.",
+            "date_modified": "2026-09-11T14:34:44.000Z",
+            "date_published": "2026-09-03T13:07:44.000Z",
+            "author": {
+                "name": "lxorb",
+                "url": "https://github.com/lxorb"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/322230256?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight D&amp;D character sheet where you can enter all your character data, view the rules and much more. All in Italian!</div>",
+            "url": "https://github.com/LagNeeky/libro-mastro",
+            "title": "LagNeeky/libro-mastro: A lightweight D&D character sheet where you can enter all your character data, view the rules and much more. All in Italian!",
+            "date_modified": "2026-09-11T14:34:09.000Z",
+            "date_published": "2026-08-30T20:45:25.000Z",
+            "author": {
+                "name": "LagNeeky",
+                "url": "https://github.com/LagNeeky"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111830390?u=d644477694dfaeb5a328e6bcff5e82537f3661aa&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Morii's lightweight multilingual personal blog. Astro static output, Chinese/Japanese/English.</div>",
+            "url": "https://github.com/Morii9961/Moriium",
+            "title": "Morii9961/Moriium: Morii's lightweight multilingual personal blog. Astro static output, Chinese/Japanese/English.",
+            "date_modified": "2026-09-11T14:33:48.000Z",
+            "date_published": "2026-08-29T05:57:21.000Z",
+            "author": {
+                "name": "Morii9961",
+                "url": "https://github.com/Morii9961"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/746474?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight persistent-memory companion for OpenCode &amp; Claude</div>",
+            "url": "https://github.com/kunickiaj/codemem",
+            "title": "kunickiaj/codemem: A lightweight persistent-memory companion for OpenCode & Claude",
+            "date_modified": "2026-09-11T14:33:42.000Z",
+            "date_published": "2026-01-13T21:51:11.000Z",
+            "author": {
+                "name": "kunickiaj",
+                "url": "https://github.com/kunickiaj"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/309713913?u=190ead0e88692d9208ce30de8f25147d119fc74b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.</div>",
+            "url": "https://github.com/pkmdinesh/indiaoceanwatch",
+            "title": "pkmdinesh/indiaoceanwatch: Compact, Lightweight, Resilient Web Platform for India coastal advisory dashboard using official INCOIS and ITEWC sources.",
+            "date_modified": "2026-09-11T14:33:08.000Z",
+            "date_published": "2026-07-30T19:28:00.000Z",
+            "author": {
+                "name": "pkmdinesh",
+                "url": "https://github.com/pkmdinesh"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20860294?u=aa2361d0fa76c38d0c5852d29e4476f3706615d2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.</div>",
+            "url": "https://github.com/vheins/local-memory-mcp",
+            "title": "vheins/local-memory-mcp: A lightweight MCP server enabling persistent AI memory with semantic search, powered by SQLite. Designed for local-first workflows with fast retrieval, domain-based context isolation, and zero external database dependencies.",
+            "date_modified": "2026-09-11T14:32:59.000Z",
+            "date_published": "2026-01-21T12:33:27.000Z",
+            "author": {
+                "name": "vheins",
+                "url": "https://github.com/vheins"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/49798519?u=f166ac98cdb05754f6f0da86d1c58667c2899700&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight HTTP playground server for instantly simulating requests and responses—no complex pre-configuration needed.</div>",
+            "url": "https://github.com/ryo8000/http-playground-server",
+            "title": "ryo8000/http-playground-server: A lightweight HTTP playground server for instantly simulating requests and responses—no complex pre-configuration needed.",
+            "date_modified": "2026-09-11T14:32:03.000Z",
+            "date_published": "2024-10-09T22:51:53.000Z",
+            "author": {
+                "name": "ryo8000",
+                "url": "https://github.com/ryo8000"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/78500016?u=71e41d7fa010a5aeb81c76c041906eb470a82178&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast, focused Kubernetes desktop IDE  Explore workloads, logs, metrics, Helm releases and dependency topology from one lightweight desktop app.</div>",
+            "url": "https://github.com/ajjs1ajjs/KubeLens",
+            "title": "ajjs1ajjs/KubeLens: A fast, focused Kubernetes desktop IDE  Explore workloads, logs, metrics, Helm releases and dependency topology from one lightweight desktop app.",
+            "date_modified": "2026-09-11T14:31:10.000Z",
+            "date_published": "2026-08-28T08:23:45.000Z",
+            "author": {
+                "name": "ajjs1ajjs",
+                "url": "https://github.com/ajjs1ajjs"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51080127?u=d9a73aa38ca23fc86fc851e6cdc4a8df6ce07d8d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight inventory and sales platform for SMEs to track products, monitor stock levels, record daily sales, and manage real-time low-stock alerts.</div>",
+            "url": "https://github.com/St80ene/swiftbuy",
+            "title": "St80ene/swiftbuy: A lightweight inventory and sales platform for SMEs to track products, monitor stock levels, record daily sales, and manage real-time low-stock alerts.",
+            "date_modified": "2026-09-11T14:30:03.000Z",
+            "date_published": "2026-06-18T21:41:48.000Z",
+            "author": {
+                "name": "St80ene",
+                "url": "https://github.com/St80ene"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11037737?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight conda channel server: Cloudflare Workers + R2 + Containers. Shard-first incremental indexing, browse UI, presigned uploads.</div>",
+            "url": "https://github.com/mattkram/poc-conda-wit",
+            "title": "mattkram/poc-conda-wit: Lightweight conda channel server: Cloudflare Workers + R2 + Containers. Shard-first incremental indexing, browse UI, presigned uploads.",
+            "date_modified": "2026-09-11T14:29:51.000Z",
+            "date_published": "2026-08-19T14:22:44.000Z",
+            "author": {
+                "name": "mattkram",
+                "url": "https://github.com/mattkram"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/317453951?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.</div>",
+            "url": "https://github.com/vibeunion/supacloud",
+            "title": "vibeunion/supacloud: ⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.",
+            "date_modified": "2026-09-11T14:28:35.000Z",
+            "date_published": "2025-12-25T15:16:04.000Z",
+            "author": {
+                "name": "vibeunion",
+                "url": "https://github.com/vibeunion"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3324639?u=f5a62a61d128da568401f01b092031b22bae13c7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, reactive, and fully customizable vanilla JS UI library.</div>",
+            "url": "https://github.com/WangShai123/vanilla-jui",
+            "title": "WangShai123/vanilla-jui: A lightweight, reactive, and fully customizable vanilla JS UI library.",
+            "date_modified": "2026-09-11T14:27:56.000Z",
+            "date_published": "2026-06-07T12:54:34.000Z",
+            "author": {
+                "name": "WangShai123",
+                "url": "https://github.com/WangShai123"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/164031869?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | <a href=\"https://cat21.space\" class=\"Link--inTextBlock\" rel=\"nofollow\">https://cat21.space</a></div>",
+            "url": "https://github.com/ordpool-space/cat21-indexer",
+            "title": "ordpool-space/cat21-indexer: 😸 Rare and exotic cats – Lightweight frontend on top of cat21-ord | https://cat21.space",
+            "date_modified": "2026-09-11T14:25:25.000Z",
+            "date_published": "2024-01-18T08:05:04.000Z",
+            "author": {
+                "name": "ordpool-space",
+                "url": "https://github.com/ordpool-space"
             }
         }
     ]
