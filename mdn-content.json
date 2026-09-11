@@ -6,6 +6,61 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/198354403?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Restructures the promise chain in the <code class=\"notranslate\">Cache</code> reference page's service-worker example so <code class=\"notranslate\">cache</code> is in scope where <code class=\"notranslate\">cache.put()</code> is called.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The example called <code class=\"notranslate\">caches.open(...).then((cache) =&gt; cache.match(...))</code> and then chained a separate <code class=\"notranslate\">.then((response) =&gt; ...)</code>, so <code class=\"notranslate\">cache</code> was out of scope by the time <code class=\"notranslate\">cache.put(event.request, response.clone())</code> ran later in that callback — the example was not valid, runnable code. Nesting <code class=\"notranslate\">cache.match(event.request).then(...)</code> inside the <code class=\"notranslate\">caches.open()</code> callback keeps <code class=\"notranslate\">cache</code> in scope throughout the handler.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\"><em>No response</em></p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #45595.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5402580099\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45595\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45595/hovercard\" href=\"https://github.com/mdn/content/issues/45595\">#45595</a></p>\n<p dir=\"auto\">🤖 Generated with <a href=\"https://claude.com/claude-code\" rel=\"nofollow\">Claude Code</a></p>\n<p dir=\"auto\"><a href=\"https://claude.ai/code/session_01UHoV4KcSRcDrUoNmk2ohVD\" rel=\"nofollow\">https://claude.ai/code/session_01UHoV4KcSRcDrUoNmk2ohVD</a></p>",
+            "url": "https://github.com/mdn/content/pull/45619",
+            "title": "Fix cache scoping bug in Cache API example",
+            "date_modified": "2026-09-11T00:38:59.000Z",
+            "date_published": "2026-09-11T00:38:34.000Z",
+            "author": {
+                "name": "BaconMan1168",
+                "url": "https://github.com/BaconMan1168"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #43131.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3941254411\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/43131\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/43131/hovercard\" href=\"https://github.com/mdn/content/issues/43131\">#43131</a>. Note that Firefox seems to behave differently but not sure if it merits a note.</p>",
+            "url": "https://github.com/mdn/content/pull/45617",
+            "title": "Document border image sizing with SVG",
+            "date_modified": "2026-09-11T00:13:17.000Z",
+            "date_published": "2026-09-11T00:11:47.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87750369?u=ccc1f52005708ae16bcb50e325e02145bff0ef7d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><a href=\"https://github.com/mdn/browser-compat-data/releases/tag/v8.1.1\">BCD release v8.1.1</a></p>\n<p dir=\"auto\">/cc <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/pepelsbey/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/pepelsbey\">@pepelsbey</a> <a class=\"user-mention notranslate\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/wbamberg/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/wbamberg\">@wbamberg</a></p>",
+            "url": "https://github.com/mdn/content/pull/45616",
+            "title": "Synchronize with BCD v8.1.1",
+            "date_modified": "2026-09-10T23:58:06.000Z",
+            "date_published": "2026-09-10T23:56:30.000Z",
+            "author": {
+                "name": "OnkarRuikar",
+                "url": "https://github.com/OnkarRuikar"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #22588.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1466998757\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/22588\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/22588/hovercard\" href=\"https://github.com/mdn/content/issues/22588\">#22588</a>.</p>\n<p dir=\"auto\">According to BCD, FF 149+ supports <code class=\"notranslate\">console.timeStamp()</code> to the profiler, so this content isn't \"wrong\" per se, but certainly not future-proof. Replaced with handwavy claims that it's implementation dependent, because there's BCD anyway.</p>",
+            "url": "https://github.com/mdn/content/pull/45615",
+            "title": "Remove browser-specific claims about console.timeStamp()",
+            "date_modified": "2026-09-10T23:11:23.000Z",
+            "date_published": "2026-09-10T23:09:44.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #44512.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4699405024\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/44512\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/44512/hovercard\" href=\"https://github.com/mdn/content/issues/44512\">#44512</a>. I did some research and came to the conclusion that there's no real reason to use <code class=\"notranslate\">&lt;object&gt;</code> or <code class=\"notranslate\">&lt;embed&gt;</code> at all for any purpose.</p>",
+            "url": "https://github.com/mdn/content/pull/45614",
+            "title": "More explicitly recommend iframe for PDFs",
+            "date_modified": "2026-09-10T22:56:04.000Z",
+            "date_published": "2026-09-10T22:54:35.000Z",
+            "author": {
+                "name": "Josh-Cena",
+                "url": "https://github.com/Josh-Cena"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #18045.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1295954202\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/18045\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/18045/hovercard\" href=\"https://github.com/mdn/content/issues/18045\">#18045</a></p>",
             "url": "https://github.com/mdn/content/pull/45612",
             "title": "Document SubtleCrypto.encrypt plaintext length limit for different algos",
@@ -31,7 +86,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #25424.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"1629474651\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/25424\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/25424/hovercard\" href=\"https://github.com/mdn/content/issues/25424\">#25424</a>.</p>\n<p dir=\"auto\">The key problem is that disconnection is asynchronous, but the current code treats it as synchronous, so there's a subtle race condition. Also as the issue describes, closing the connection makes the channel close happen abruptly without graceful shutdown.</p>\n<p dir=\"auto\">Made the function async to solve this problem.</p>",
             "url": "https://github.com/mdn/content/pull/45610",
             "title": "Wait for channels to close before closing connections in disconnectPeers ex",
-            "date_modified": "2026-09-10T19:31:58.000Z",
+            "date_modified": "2026-09-11T00:30:19.000Z",
             "date_published": "2026-09-10T19:30:13.000Z",
             "author": {
                 "name": "Josh-Cena",
@@ -127,10 +182,10 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #41604.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3532560050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/41604\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/41604/hovercard\" href=\"https://github.com/mdn/content/issues/41604\">#41604</a>.</p>\n<p dir=\"auto\">There's no need not to use ESM. It offers top-level await, avoiding some very weird coding patterns. All documentation offers code examples in the ESM version.</p>\n<p dir=\"auto\">Also removed Luxon, but not sure about modernizing the other dependencies. If agreed, they could be a follow-up tasks.</p>",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #41604.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3532560050\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/41604\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/41604/hovercard\" href=\"https://github.com/mdn/content/issues/41604\">#41604</a>.</p>\n<p dir=\"auto\">There's no need not to use ESM. It offers top-level await, avoiding some very weird coding patterns. All documentation offers code examples in the ESM version.</p>\n<p dir=\"auto\">Also removed Luxon, but not sure about modernizing the other dependencies. If agreed, they could be a follow-up tasks.</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5405756758\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/express-locallibrary-tutorial/issues/369\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/express-locallibrary-tutorial/pull/369/hovercard\" href=\"https://github.com/mdn/express-locallibrary-tutorial/pull/369\">mdn/express-locallibrary-tutorial#369</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/45596",
             "title": "Yank Express Application Generator, migrate Express tutorial to ESM",
-            "date_modified": "2026-09-09T23:20:52.000Z",
+            "date_modified": "2026-09-10T23:45:02.000Z",
             "date_published": "2026-09-09T18:02:11.000Z",
             "author": {
                 "name": "Josh-Cena",
@@ -165,61 +220,6 @@
             "title": "Add ::-webkit-scrollbar changes to Firefox 155 and 156 release notes",
             "date_modified": "2026-09-09T10:23:05.000Z",
             "date_published": "2026-09-09T10:21:17.000Z",
-            "author": {
-                "name": "pepelsbey",
-                "url": "https://github.com/pepelsbey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">mostly added an intro statement or standardized the existing statement between the values header and the list of values, but also added description sections as needed, and, in one case, global values.</p>",
-            "url": "https://github.com/mdn/content/pull/45588",
-            "title": "Consistent value intro statements #6",
-            "date_modified": "2026-09-09T12:44:15.000Z",
-            "date_published": "2026-09-09T09:54:45.000Z",
-            "author": {
-                "name": "estelle",
-                "url": "https://github.com/estelle"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/160158213?u=24cc7b7b6e2b8a5b15ed178d43a856ebb7a126ac&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">The issue: a form can hold several elements sharing one name, so FormData iteration can yield the same key many times. Readers coming from Map reasonably assume unique keys, and code like new Map(fd) silently drops values. None of the three iteration pages said keys may repeat.</p>\n<p dir=\"auto\">What I changed, per page:</p>\n<ul dir=\"auto\">\n<li>keys(): a Note that keys are not necessarily unique, pointing at getAll() for every value of a key and get() for the first value only.</li>\n<li>entries(): the same callout, worded for key/value pairs.</li>\n<li>values(): the same callout, worded for values sharing one key.</li>\n</ul>\n<p dir=\"auto\">I used the two-argument domxref form the get() page already uses, and kept each note to one paragraph right after the intro so the pages read the same as before. Only these three method pages change; examples, front matter, and everything else are untouched. I left the top-level FormData() constructor page alone to keep this small, but I can follow up there if reviewers want it.</p>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #45582.\">Closes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5392016617\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45582\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45582/hovercard\" href=\"https://github.com/mdn/content/issues/45582\">#45582</a></p>\n<h2 dir=\"auto\">Verification</h2>\n<ul dir=\"auto\">\n<li>Read all three pages and checked the note wording against the issue's duplicate-name example</li>\n<li>Checked the get()/getAll() targets exist and the domxref form matches existing usage on the get() page</li>\n<li>No trailing whitespace; no front-matter changes</li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/45584",
-            "title": "docs(WebAPI): call out duplicate keys on FormData iteration methods",
-            "date_modified": "2026-09-10T08:49:57.000Z",
-            "date_published": "2026-09-09T04:46:12.000Z",
-            "author": {
-                "name": "MeGaurav4",
-                "url": "https://github.com/MeGaurav4"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7352080?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">This change expands the tool power button section to provide a more detailed explanation of the value set in the action key along with links to the two icons used.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Primarily motivated by a desire to address concerns that links weren't provided for the icons used in the key, but also to provide more complete information on the key's purpose and behavior.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">I was curious as to why we were defining both the default icon and theme icons. I did some testing, and as far as I can tell, once you define the theme icons, the default icon is never used. An AI review of the source code says it should occur when the \"System theme (<a href=\"mailto:default-theme@mozilla.org\">default-theme@mozilla.org</a>) [is set and], OS in light mode\" but I couldn't reproduce this. But I'm not sure whether that's because I simply didn't have the correct settings. If the theme icons are always used instead of the default, we don't document this in the action key.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #45524.\">Fixes</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5357048065\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45524\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45524/hovercard\" href=\"https://github.com/mdn/content/issues/45524\">#45524</a></p>",
-            "url": "https://github.com/mdn/content/pull/45583",
-            "title": "Issue 45524 Expanded toolbar button details in your second extension tutorial",
-            "date_modified": "2026-09-09T18:23:27.000Z",
-            "date_published": "2026-09-08T23:34:34.000Z",
-            "author": {
-                "name": "rebloor",
-                "url": "https://github.com/rebloor"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105274?u=173310b843e2751843265438af8cfb79eda02039&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<ul dir=\"auto\">\n<li>Documents the <code class=\"notranslate\">options</code> parameter and its members</li>\n<li>Adds a live sample outlining the bounding box for each set of options</li>\n<li>Fixes the <code class=\"notranslate\">getBoundingClientRect()</code> example</li>\n<li>Corrects the return value to <code class=\"notranslate\">DOMRect</code></li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5170085235\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45193\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45193/hovercard\" href=\"https://github.com/mdn/content/issues/45193\">#45193</a></li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/45581",
-            "title": "Document getBBox() options and update examples",
-            "date_modified": "2026-09-08T21:10:05.000Z",
-            "date_published": "2026-09-08T21:08:21.000Z",
-            "author": {
-                "name": "pepelsbey",
-                "url": "https://github.com/pepelsbey"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105274?u=173310b843e2751843265438af8cfb79eda02039&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<ul dir=\"auto\">\n<li>Documents bracket notation on <code class=\"notranslate\">SVG*List</code></li>\n<li>Adds a note to their <code class=\"notranslate\">replaceItem()</code> pages</li>\n<li>Adds a live example to <code class=\"notranslate\">SVGTransformList</code></li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5170082837\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45189\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45189/hovercard\" href=\"https://github.com/mdn/content/issues/45189\">#45189</a></li>\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5194081277\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45245\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/45245/hovercard\" href=\"https://github.com/mdn/content/pull/45245\">#45245</a></li>\n</ul>\n<h3 dir=\"auto\">Note</h3>\n<p dir=\"auto\">BCD isn’t updated: there’s no subfeature for indexed setters.</p>",
-            "url": "https://github.com/mdn/content/pull/45579",
-            "title": "Document bracket notation for SVG*List interfaces",
-            "date_modified": "2026-09-08T19:36:38.000Z",
-            "date_published": "2026-09-08T19:34:50.000Z",
             "author": {
                 "name": "pepelsbey",
                 "url": "https://github.com/pepelsbey"

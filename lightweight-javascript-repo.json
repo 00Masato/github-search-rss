@@ -6,65 +6,21 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/254781386?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bunnix: ultra-lightweight, functional-first UI framework with fine-grained reactivity and keyed list rendering</div>",
-            "url": "https://github.com/bunnix-js/bunnix",
-            "title": "bunnix-js/bunnix: Bunnix: ultra-lightweight, functional-first UI framework with fine-grained reactivity and keyed list rendering",
-            "date_modified": "2026-09-10T22:02:42.000Z",
-            "date_published": "2026-01-08T00:34:23.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44975352?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, high-performance microservice for forwarding browser-side logs to server-side log aggregation systems (ELK, Loki, Splunk, etc.).</div>",
+            "url": "https://github.com/MTSWebServices/logs",
+            "title": "MTSWebServices/logs: A lightweight, high-performance microservice for forwarding browser-side logs to server-side log aggregation systems (ELK, Loki, Splunk, etc.).",
+            "date_modified": "2026-09-11T00:38:55.000Z",
+            "date_published": "2022-12-27T10:50:49.000Z",
             "author": {
-                "name": "bunnix-js",
-                "url": "https://github.com/bunnix-js"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15668205?u=9c7c3f3d3db053291f5a797bb948a34b1b3e0f60&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, distraction-free Google Chrome Extension built with Manifest V3 to extract, read, search, copy, and export YouTube video transcripts and subtitles instantly</div>",
-            "url": "https://github.com/jeriatno/xtranscriber",
-            "title": "jeriatno/xtranscriber: A lightweight, distraction-free Google Chrome Extension built with Manifest V3 to extract, read, search, copy, and export YouTube video transcripts and subtitles instantly",
-            "date_modified": "2026-09-10T22:02:06.000Z",
-            "date_published": "2026-09-10T22:00:43.000Z",
-            "author": {
-                "name": "jeriatno",
-                "url": "https://github.com/jeriatno"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/180086504?u=23c641bcc96d22723ad068a5abb935abd8c6ed4d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Enclave is a privacy-focused lightweight encryption web-app that allows you to encrypt and decrypt any file type locally in your browser without any data ever leaving your device. Built with security and privacy as core principles.</div>",
-            "url": "https://github.com/hopeugetherpes/enclave",
-            "title": "hopeugetherpes/enclave: Enclave is a privacy-focused lightweight encryption web-app that allows you to encrypt and decrypt any file type locally in your browser without any data ever leaving your device. Built with security and privacy as core principles.",
-            "date_modified": "2026-09-10T22:00:59.000Z",
-            "date_published": "2026-09-10T17:07:14.000Z",
-            "author": {
-                "name": "hopeugetherpes",
-                "url": "https://github.com/hopeugetherpes"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/15696922?u=6bd9b45562be74bb6fd9d4f93cac80781abe6c7f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Ultra-lightweight, high-speed, AI-native Markdown &amp; Text Editor with LLM autocomplete &amp; Gemini Vision OCR</div>",
-            "url": "https://github.com/youshinh/md-memo",
-            "title": "youshinh/md-memo: Ultra-lightweight, high-speed, AI-native Markdown & Text Editor with LLM autocomplete & Gemini Vision OCR",
-            "date_modified": "2026-09-10T22:00:31.000Z",
-            "date_published": "2026-08-29T11:13:09.000Z",
-            "author": {
-                "name": "youshinh",
-                "url": "https://github.com/youshinh"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26239560?u=12be05997c962e069bef894f87a2c7d86acee1c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight local diff viewer for inspecting changes with agent-aware ephemeral notes</div>",
-            "url": "https://github.com/ytakahashi/sift",
-            "title": "ytakahashi/sift: A lightweight local diff viewer for inspecting changes with agent-aware ephemeral notes",
-            "date_modified": "2026-09-10T22:00:08.000Z",
-            "date_published": "2026-04-05T00:39:21.000Z",
-            "author": {
-                "name": "ytakahashi",
-                "url": "https://github.com/ytakahashi"
+                "name": "MTSWebServices",
+                "url": "https://github.com/MTSWebServices"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/170841386?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>WarpDrive is the lightweight data library for ambitious web apps — universal, typed, reactive, and ready to scale.</div>",
             "url": "https://github.com/warp-drive-data/warp-drive",
             "title": "warp-drive-data/warp-drive: WarpDrive is the lightweight data library for ambitious web apps — universal, typed, reactive, and ready to scale.",
-            "date_modified": "2026-09-10T21:59:45.000Z",
+            "date_modified": "2026-09-11T00:38:23.000Z",
             "date_published": "2011-12-20T01:50:40.000Z",
             "author": {
                 "name": "warp-drive-data",
@@ -72,157 +28,201 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/3841872?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>💎 Lightweight WebApp development library using custom elements</div>",
-            "url": "https://github.com/mantou132/gem",
-            "title": "mantou132/gem: 💎 Lightweight WebApp development library using custom elements",
-            "date_modified": "2026-09-10T21:59:26.000Z",
-            "date_published": "2019-06-30T10:34:46.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55247450?u=2485a0e78f19128c7427a6b6014acec7203f7dd8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Codex/Claude loop harness with strict evidence gates.</div>",
+            "url": "https://github.com/beefiker/superloopy",
+            "title": "beefiker/superloopy: Lightweight Codex/Claude loop harness with strict evidence gates.",
+            "date_modified": "2026-09-11T00:37:47.000Z",
+            "date_published": "2026-06-29T04:32:17.000Z",
             "author": {
-                "name": "mantou132",
-                "url": "https://github.com/mantou132"
+                "name": "beefiker",
+                "url": "https://github.com/beefiker"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11887183?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A powerful and lightweight inversion of control container for JavaScript &amp; Node.js apps powered by TypeScript.</div>",
-            "url": "https://github.com/inversify/monorepo",
-            "title": "inversify/monorepo: A powerful and lightweight inversion of control container for JavaScript & Node.js apps powered by TypeScript.",
-            "date_modified": "2026-09-10T21:58:28.000Z",
-            "date_published": "2024-10-13T10:20:33.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/326699214?u=97c4badd70459523145ab549657e45531fe641c8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>NONT Nexus is a lightweight desktop hub for centralized downloads, app installs, updates, utilities, and launching NONT alongside completely unrelated software.</div>",
+            "url": "https://github.com/voidnont/NONT-Nexus",
+            "title": "voidnont/NONT-Nexus: NONT Nexus is a lightweight desktop hub for centralized downloads, app installs, updates, utilities, and launching NONT alongside completely unrelated software.",
+            "date_modified": "2026-09-11T00:37:44.000Z",
+            "date_published": "2026-09-10T14:50:31.000Z",
             "author": {
-                "name": "inversify",
-                "url": "https://github.com/inversify"
+                "name": "voidnont",
+                "url": "https://github.com/voidnont"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/266381743?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a lightweight, zero-dependency TypeScript library for date formatting, parsing, business day logic, and internationalization.</div>",
-            "url": "https://github.com/Arcangelocorellishahjahan367/date-wiz",
-            "title": "Arcangelocorellishahjahan367/date-wiz: Provide a lightweight, zero-dependency TypeScript library for date formatting, parsing, business day logic, and internationalization.",
-            "date_modified": "2026-09-10T21:57:57.000Z",
-            "date_published": "2026-03-28T18:33:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67819201?u=fdc4e1e8c73b121ebd0b20604fc568938f67b191&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight command-line companion for a rule-based network core and its web dashboard. For developers and advanced users.</div>",
+            "url": "https://github.com/ming-kang/Sash",
+            "title": "ming-kang/Sash: A lightweight command-line companion for a rule-based network core and its web dashboard. For developers and advanced users.",
+            "date_modified": "2026-09-11T00:36:21.000Z",
+            "date_published": "2026-09-05T04:06:03.000Z",
             "author": {
-                "name": "Arcangelocorellishahjahan367",
-                "url": "https://github.com/Arcangelocorellishahjahan367"
+                "name": "ming-kang",
+                "url": "https://github.com/ming-kang"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/182004016?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight 3D viewer for sharing architectural models. Free to use, no uploads or account required.</div>",
-            "url": "https://github.com/hildgyorgy/drop-3d-view",
-            "title": "hildgyorgy/drop-3d-view: A lightweight 3D viewer for sharing architectural models. Free to use, no uploads or account required.",
-            "date_modified": "2026-09-10T21:57:43.000Z",
-            "date_published": "2026-08-17T19:23:35.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9016495?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Jellyfin lightweight random kanban client</div>",
+            "url": "https://github.com/sadgen/jellyfin-faraday",
+            "title": "sadgen/jellyfin-faraday: Jellyfin lightweight random kanban client",
+            "date_modified": "2026-09-11T00:33:54.000Z",
+            "date_published": "2026-08-19T06:25:26.000Z",
             "author": {
-                "name": "hildgyorgy",
-                "url": "https://github.com/hildgyorgy"
+                "name": "sadgen",
+                "url": "https://github.com/sadgen"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/110035339?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Control web pages using natural language commands through a lightweight, TypeScript-based GUI agent integrated into your webpage.</div>",
-            "url": "https://github.com/rotss2/page-agent",
-            "title": "rotss2/page-agent: Control web pages using natural language commands through a lightweight, TypeScript-based GUI agent integrated into your webpage.",
-            "date_modified": "2026-09-10T21:56:12.000Z",
-            "date_published": "2026-02-14T12:51:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/229216808?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Electron photo editor with local MCP automation</div>",
+            "url": "https://github.com/IT-PSAPE/lumaflux",
+            "title": "IT-PSAPE/lumaflux: A lightweight Electron photo editor with local MCP automation",
+            "date_modified": "2026-09-11T00:31:54.000Z",
+            "date_published": "2026-09-10T09:23:14.000Z",
             "author": {
-                "name": "rotss2",
-                "url": "https://github.com/rotss2"
+                "name": "IT-PSAPE",
+                "url": "https://github.com/IT-PSAPE"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/125482226?u=b231b10983ba1563729f3a890592a88efbcf44f6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Track and manage ACGN works with user accounts, multi-criteria search, data visualization, and CSV import/export in a lightweight Java web system.</div>",
-            "url": "https://github.com/sharkX2/ACGN-Works-Tracker",
-            "title": "sharkX2/ACGN-Works-Tracker: Track and manage ACGN works with user accounts, multi-criteria search, data visualization, and CSV import/export in a lightweight Java web system.",
-            "date_modified": "2026-09-10T21:56:03.000Z",
-            "date_published": "2023-02-16T15:16:39.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/51244673?u=e7736d03d08ff1bd39c15b0231ae0230010b829a&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Mini Mealie is a lightweight Chrome extension designed to enhance the experience of Mealie, an open-source recipe manager. With Mini Mealie, users can quickly import recipes from any website into their Mealie instance with a simple right-click.</div>",
+            "url": "https://github.com/mrshappy0/mini-mealie",
+            "title": "mrshappy0/mini-mealie: Mini Mealie is a lightweight Chrome extension designed to enhance the experience of Mealie, an open-source recipe manager. With Mini Mealie, users can quickly import recipes from any website into their Mealie instance with a simple right-click.",
+            "date_modified": "2026-09-11T00:28:45.000Z",
+            "date_published": "2025-02-24T03:49:04.000Z",
             "author": {
-                "name": "sharkX2",
-                "url": "https://github.com/sharkX2"
+                "name": "mrshappy0",
+                "url": "https://github.com/mrshappy0"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/37071670?u=78d74cc528a77e73fbb1ee7800c86b15da309309&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.</div>",
-            "url": "https://github.com/marceljay/LibreSesh",
-            "title": "marceljay/LibreSesh: A lightweight, live schedule board for conferences and unconferences. No accounts, no fuss.",
-            "date_modified": "2026-09-10T21:56:01.000Z",
-            "date_published": "2026-08-31T09:00:47.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7144234?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight way to connect agents across harnesses for collaboration and shared memory. Includes conversation room, scrum board, and wiki.</div>",
+            "url": "https://github.com/mjoneill/manyhands",
+            "title": "mjoneill/manyhands: A lightweight way to connect agents across harnesses for collaboration and shared memory. Includes conversation room, scrum board, and wiki.",
+            "date_modified": "2026-09-11T00:28:26.000Z",
+            "date_published": "2026-07-26T13:32:36.000Z",
             "author": {
-                "name": "marceljay",
-                "url": "https://github.com/marceljay"
+                "name": "mjoneill",
+                "url": "https://github.com/mjoneill"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/200506074?u=c8b0a23df292439f74ce21275bfa315607ea951b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Manage multiple split panes in Claude Code efficiently with a lightweight, cross-platform desktop app built on Tauri and React.</div>",
-            "url": "https://github.com/eltonyaw/cc-pane",
-            "title": "eltonyaw/cc-pane: Manage multiple split panes in Claude Code efficiently with a lightweight, cross-platform desktop app built on Tauri and React.",
-            "date_modified": "2026-09-10T21:55:39.000Z",
-            "date_published": "2025-02-24T09:10:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/104621500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Drop-in context optimizer for Claude, Codex, and Antigravity that reduces unnecessary repo scanning and token usage with lightweight, on-demand project context.</div>",
+            "url": "https://github.com/jaymac95/lean-context",
+            "title": "jaymac95/lean-context: Drop-in context optimizer for Claude, Codex, and Antigravity that reduces unnecessary repo scanning and token usage with lightweight, on-demand project context.",
+            "date_modified": "2026-09-11T00:28:19.000Z",
+            "date_published": "2026-09-10T01:48:38.000Z",
             "author": {
-                "name": "eltonyaw",
-                "url": "https://github.com/eltonyaw"
+                "name": "jaymac95",
+                "url": "https://github.com/jaymac95"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/38019421?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a lightweight, themeable, and dependency-free stepper component for React and Vue with fluid animation and autoplay support.</div>",
-            "url": "https://github.com/joscgh/pasito",
-            "title": "joscgh/pasito: Provide a lightweight, themeable, and dependency-free stepper component for React and Vue with fluid animation and autoplay support.",
-            "date_modified": "2026-09-10T21:55:27.000Z",
-            "date_published": "2018-04-02T22:15:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/10255018?u=aeb33725a108d6e997a56352fc90f46905d299b4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Typescript library that interacts with Gotenberg's different modules to convert a variety of document formats to PDF files.</div>",
+            "url": "https://github.com/cherfia/chromiumly",
+            "title": "cherfia/chromiumly: A lightweight Typescript library that interacts with Gotenberg's different modules to convert a variety of document formats to PDF files.",
+            "date_modified": "2026-09-11T00:27:22.000Z",
+            "date_published": "2022-03-22T11:04:55.000Z",
             "author": {
-                "name": "joscgh",
-                "url": "https://github.com/joscgh"
+                "name": "cherfia",
+                "url": "https://github.com/cherfia"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168300217?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Manage Agent Skills as npm packages to publish, install, version, and share them with full dependency support.</div>",
-            "url": "https://github.com/musharrafsaroof-123/skillpm",
-            "title": "musharrafsaroof-123/skillpm: Manage Agent Skills as npm packages to publish, install, version, and share them with full dependency support.",
-            "date_modified": "2026-09-10T21:54:03.000Z",
-            "date_published": "2026-03-09T02:34:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154926964?u=87b99d564f06566f85f6310cb0ad109bfce4bc6b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🍀 A lightweight thread viewer and media gallery for 4chan</div>",
+            "url": "https://github.com/nilville/4chan-Media-Gallery",
+            "title": "nilville/4chan-Media-Gallery: 🍀 A lightweight thread viewer and media gallery for 4chan",
+            "date_modified": "2026-09-11T00:24:35.000Z",
+            "date_published": "2026-09-09T22:49:43.000Z",
             "author": {
-                "name": "musharrafsaroof-123",
-                "url": "https://github.com/musharrafsaroof-123"
+                "name": "nilville",
+                "url": "https://github.com/nilville"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/282852765?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight self-hosted telemetry: errors, events, sessions, and a dashboard. Fastify API, Next.js UI, PostgreSQL, <a class=\"user-mention\" data-hovercard-type=\"user\" data-hovercard-url=\"/users/tacko/hovercard\" data-octo-click=\"hovercard-link-click\" data-octo-dimensions=\"link_type:self\" href=\"https://github.com/tacko\">@tacko</a> SDKs.</div>",
-            "url": "https://github.com/Telemetry-Tracker/telemetry-tracker",
-            "title": "Telemetry-Tracker/telemetry-tracker: Lightweight self-hosted telemetry: errors, events, sessions, and a dashboard. Fastify API, Next.js UI, PostgreSQL, @tacko SDKs.",
-            "date_modified": "2026-09-10T21:54:15.000Z",
-            "date_published": "2026-03-15T15:24:26.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105140029?u=5842dd9c543fb97a6e45f48579384e8c588f63b3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div> Lightweight Whatsapp Bot with Voip Call, Website, and AI Agent. — Built with Baileys and NodeJS 24.</div>",
+            "url": "https://github.com/HirooSy/HIROBOT",
+            "title": "HirooSy/HIROBOT:  Lightweight Whatsapp Bot with Voip Call, Website, and AI Agent. — Built with Baileys and NodeJS 24.",
+            "date_modified": "2026-09-11T00:27:23.000Z",
+            "date_published": "2026-07-04T23:43:39.000Z",
             "author": {
-                "name": "Telemetry-Tracker",
-                "url": "https://github.com/Telemetry-Tracker"
+                "name": "HirooSy",
+                "url": "https://github.com/HirooSy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/146451182?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Provide a lightweight dashboard to manage and monitor OpenClaw AI missions efficiently from a single browser tab.</div>",
-            "url": "https://github.com/Syed7625/openclaw-opsdeck-core",
-            "title": "Syed7625/openclaw-opsdeck-core: Provide a lightweight dashboard to manage and monitor OpenClaw AI missions efficiently from a single browser tab.",
-            "date_modified": "2026-09-10T21:52:59.000Z",
-            "date_published": "2023-09-29T13:37:10.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/173432433?u=9adfaaf45e699c311af01afb3b5f8a35f6dfd043&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
+            "url": "https://github.com/OMgaupale1024/On-device-Visual-Perception-for-Lightweight-Browser-Agents",
+            "title": "OMgaupale1024/On-device-Visual-Perception-for-Lightweight-Browser-Agents",
+            "date_modified": "2026-09-11T00:22:09.000Z",
+            "date_published": "2026-09-09T17:38:01.000Z",
             "author": {
-                "name": "Syed7625",
-                "url": "https://github.com/Syed7625"
+                "name": "OMgaupale1024",
+                "url": "https://github.com/OMgaupale1024"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/186774084?u=73531fa598b3ba26d044a458af196ee473081d03&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bichon – A lightweight, high-performance Rust email archiver with WebUI</div>",
-            "url": "https://github.com/rustmailer/bichon",
-            "title": "rustmailer/bichon: Bichon – A lightweight, high-performance Rust email archiver with WebUI",
-            "date_modified": "2026-09-10T21:52:10.000Z",
-            "date_published": "2025-11-18T18:02:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/180168153?u=d371a0dedfa851c3d87a27df7f624191963261e7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Python bot that watches career sites (Greenhouse, Lever, Ashby, Workday, Phenom), filters roles by keyword and location, and sends new-job alerts to Discord.</div>",
+            "url": "https://github.com/sk7-dev/Job_Post_Bot",
+            "title": "sk7-dev/Job_Post_Bot: Lightweight Python bot that watches career sites (Greenhouse, Lever, Ashby, Workday, Phenom), filters roles by keyword and location, and sends new-job alerts to Discord.",
+            "date_modified": "2026-09-11T00:22:03.000Z",
+            "date_published": "2026-03-23T01:48:40.000Z",
             "author": {
-                "name": "rustmailer",
-                "url": "https://github.com/rustmailer"
+                "name": "sk7-dev",
+                "url": "https://github.com/sk7-dev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13279536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌿 Display lightweight CO₂e emissions badge per page view using a web component, enhancing sustainable web design with minimal performance impact.</div>",
-            "url": "https://github.com/jakyjackal/CometWeb-Carbon_Badge",
-            "title": "jakyjackal/CometWeb-Carbon_Badge: 🌿 Display lightweight CO₂e emissions badge per page view using a web component, enhancing sustainable web design with minimal performance impact.",
-            "date_modified": "2026-09-10T21:51:20.000Z",
-            "date_published": "2026-02-25T23:31:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6341478?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight modern IRCv3 desktop client (Rust + Tauri)</div>",
+            "url": "https://github.com/sykk/ircx",
+            "title": "sykk/ircx: Lightweight modern IRCv3 desktop client (Rust + Tauri)",
+            "date_modified": "2026-09-11T00:19:40.000Z",
+            "date_published": "2026-07-29T22:29:23.000Z",
             "author": {
-                "name": "jakyjackal",
-                "url": "https://github.com/jakyjackal"
+                "name": "sykk",
+                "url": "https://github.com/sykk"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/252721181?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight knowledge system for small‑and‑medium teams tailored to AI Agents. It compiles Feishu Docs, local Markdown, code structures and curated business data into structured, traceable knowledge, guiding Agents to retrieve high‑quality content via pattern‑driven reasoning and exploration.</div>",
+            "url": "https://github.com/context4ai/context",
+            "title": "context4ai/context: A lightweight knowledge system for small‑and‑medium teams tailored to AI Agents. It compiles Feishu Docs, local Markdown, code structures and curated business data into structured, traceable knowledge, guiding Agents to retrieve high‑quality content via pattern‑driven reasoning and exploration.",
+            "date_modified": "2026-09-11T00:18:42.000Z",
+            "date_published": "2026-05-11T14:55:37.000Z",
+            "author": {
+                "name": "context4ai",
+                "url": "https://github.com/context4ai"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/6821005?u=0b0b04f82e210dc8d9ff0c1694425defdd451848&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight data visualization library for enterprise web apps</div>",
+            "url": "https://github.com/psdpainter/datum",
+            "title": "psdpainter/datum: Lightweight data visualization library for enterprise web apps",
+            "date_modified": "2026-09-11T00:17:50.000Z",
+            "date_published": "2026-09-09T18:28:54.000Z",
+            "author": {
+                "name": "psdpainter",
+                "url": "https://github.com/psdpainter"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/324385534?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight meeting-room booking app: Bootstrap 5 front end, Supabase for auth + database. No build step — plain HTML/CSS/JS, deployable to GitHub Pages.</div>",
+            "url": "https://github.com/averota/room-booking",
+            "title": "averota/room-booking: A lightweight meeting-room booking app: Bootstrap 5 front end, Supabase for auth + database. No build step — plain HTML/CSS/JS, deployable to GitHub Pages.",
+            "date_modified": "2026-09-11T00:17:41.000Z",
+            "date_published": "2026-09-08T05:35:34.000Z",
+            "author": {
+                "name": "averota",
+                "url": "https://github.com/averota"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/261168501?u=58989be7d960849427e18f05f117050868a4261f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>FlowLens — a lightweight AI tool that analyzes your daily work to spot repetitive, time-consuming, and rule-based tasks, then generates automation suggestions,   priority scores, SOPs, and reusable prompts.</div>",
+            "url": "https://github.com/imyuhan/flowlens",
+            "title": "imyuhan/flowlens: FlowLens — a lightweight AI tool that analyzes your daily work to spot repetitive, time-consuming, and rule-based tasks, then generates automation suggestions,   priority scores, SOPs, and reusable prompts.",
+            "date_modified": "2026-09-11T00:17:34.000Z",
+            "date_published": "2026-09-10T03:23:43.000Z",
+            "author": {
+                "name": "imyuhan",
+                "url": "https://github.com/imyuhan"
             }
         }
     ]
