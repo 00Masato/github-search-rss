@@ -9,7 +9,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">I've been meaning to do this since 2023. I've finally got around to actually send it. It was huge work for little return (because I write almost all new JS pages anyway), but it may be good for posterity.</p>",
             "url": "https://github.com/mdn/content/pull/45648",
             "title": "JS reference page templates",
-            "date_modified": "2026-09-12T03:47:27.000Z",
+            "date_modified": "2026-09-12T09:06:21.000Z",
             "date_published": "2026-09-12T03:42:06.000Z",
             "author": {
                 "name": "Josh-Cena",
@@ -97,7 +97,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #43960.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4348950633\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/43960\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/43960/hovercard\" href=\"https://github.com/mdn/content/issues/43960\">#43960</a>. The current example is unhelpful while there's an actually helpful situation.</p>\n<p dir=\"auto\">I failed to come up with any compelling use case for <code class=\"notranslate\">Document.moveBefore</code> so I've kept it as-is.</p>\n<p dir=\"auto\">Also fixed some other technical errors.</p>",
             "url": "https://github.com/mdn/content/pull/45611",
             "title": "Make DocumentFragment.moveBefore example actually useful",
-            "date_modified": "2026-09-11T16:21:58.000Z",
+            "date_modified": "2026-09-12T09:20:56.000Z",
             "date_published": "2026-09-10T20:12:58.000Z",
             "author": {
                 "name": "Josh-Cena",
@@ -207,7 +207,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105274?u=173310b843e2751843265438af8cfb79eda02039&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Adds a note for <code class=\"notranslate\">::-webkit-scrollbar</code>:</p>\n<ul dir=\"auto\">\n<li>Firefox 155: support being limited to a pref-controlled site list</li>\n<li>Firefox 156: being reported as unsupported in <code class=\"notranslate\">@supports</code> conditions</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">Firefox 153 started reporting <code class=\"notranslate\">::-webkit-scrollbar</code> as supported, and these two changes walk that back.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<ul dir=\"auto\">\n<li>Bugzilla: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=2061547\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=2061547</a></li>\n<li>Bugzilla: <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=2062782\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=2062782</a></li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li>Project <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5234311678\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45303\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45303/hovercard\" href=\"https://github.com/mdn/content/issues/45303\">#45303</a></li>\n<li>Project <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5312309127\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45432\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45432/hovercard\" href=\"https://github.com/mdn/content/issues/45432\">#45432</a></li>\n<li>BCD <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5182473497\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/browser-compat-data/issues/30265\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/browser-compat-data/pull/30265/hovercard\" href=\"https://github.com/mdn/browser-compat-data/pull/30265\">mdn/browser-compat-data#30265</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/45589",
             "title": "Add ::-webkit-scrollbar changes to Firefox 155 and 156 release notes",
-            "date_modified": "2026-09-11T18:59:22.000Z",
+            "date_modified": "2026-09-12T08:09:07.000Z",
             "date_published": "2026-09-09T10:21:17.000Z",
             "author": {
                 "name": "pepelsbey",
