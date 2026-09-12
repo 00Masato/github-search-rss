@@ -6,10 +6,32 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/70112593?u=aeaa45f95c276e26f71d53f0ea191234d434e574&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lyla: a lightweight, model-agnostic coding harness with durable sessions and a foundation for evaluated learning</div>",
+            "url": "https://github.com/MNWinn/lyla-harness",
+            "title": "MNWinn/lyla-harness: Lyla: a lightweight, model-agnostic coding harness with durable sessions and a foundation for evaluated learning",
+            "date_modified": "2026-09-12T00:45:48.000Z",
+            "date_published": "2026-09-12T00:15:09.000Z",
+            "author": {
+                "name": "MNWinn",
+                "url": "https://github.com/MNWinn"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/180119032?u=36bf5a586d59eb40fccb42cf95f223f102b49c59&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, standalone Express.js REST API microservice to send WhatsApp messages from any application (Python scripts, SaaS backends, mobile apps, webhooks).</div>",
+            "url": "https://github.com/Abdelrahman0xFF/whatsapp-gateway",
+            "title": "Abdelrahman0xFF/whatsapp-gateway: A lightweight, standalone Express.js REST API microservice to send WhatsApp messages from any application (Python scripts, SaaS backends, mobile apps, webhooks).",
+            "date_modified": "2026-09-12T00:45:00.000Z",
+            "date_published": "2026-09-11T22:51:52.000Z",
+            "author": {
+                "name": "Abdelrahman0xFF",
+                "url": "https://github.com/Abdelrahman0xFF"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101118850?u=a2fc88150150678161661215319ba5171ed8f1ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast, lightweight Markdown editor with Typora-style live inline preview. Desktop and browser, cross-device sync, one-click publishing, and a built-in MCP server.</div>",
             "url": "https://github.com/lxorb/nibeditor",
             "title": "lxorb/nibeditor: Fast, lightweight Markdown editor with Typora-style live inline preview. Desktop and browser, cross-device sync, one-click publishing, and a built-in MCP server.",
-            "date_modified": "2026-09-11T22:50:47.000Z",
+            "date_modified": "2026-09-12T00:44:18.000Z",
             "date_published": "2026-09-03T13:07:44.000Z",
             "author": {
                 "name": "lxorb",
@@ -17,21 +39,54 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154516981?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight IDE for agent-driven development. Files, Git worktrees, and local or remote agent terminals in one workspace.</div>",
-            "url": "https://github.com/Erdos-Miller/emdeck",
-            "title": "Erdos-Miller/emdeck: A lightweight IDE for agent-driven development. Files, Git worktrees, and local or remote agent terminals in one workspace.",
-            "date_modified": "2026-09-11T22:47:01.000Z",
-            "date_published": "2026-09-09T18:48:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/445666?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight upload host and tool for coding agents to add files to pull requests. Cloud and self-host options.</div>",
+            "url": "https://github.com/buildinternet/uploads",
+            "title": "buildinternet/uploads: Lightweight upload host and tool for coding agents to add files to pull requests. Cloud and self-host options.",
+            "date_modified": "2026-09-12T00:44:06.000Z",
+            "date_published": "2026-07-06T20:39:53.000Z",
             "author": {
-                "name": "Erdos-Miller",
-                "url": "https://github.com/Erdos-Miller"
+                "name": "buildinternet",
+                "url": "https://github.com/buildinternet"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/260766686?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight JavaScript library for playing SVG animations in the browser. Pixodesk Animator runs animations created in the Pixodesk editor using the Web Animations API or requestAnimationFrame. It supports event triggers such as click, hover, and scroll. The library ships as ESM, CJS, and UMD bundles.</div>",
+            "url": "https://github.com/pixodesk/pixodesk-svg-animator",
+            "title": "pixodesk/pixodesk-svg-animator: A lightweight JavaScript library for playing SVG animations in the browser. Pixodesk Animator runs animations created in the Pixodesk editor using the Web Animations API or requestAnimationFrame. It supports event triggers such as click, hover, and scroll. The library ships as ESM, CJS, and UMD bundles.",
+            "date_modified": "2026-09-12T00:44:02.000Z",
+            "date_published": "2026-02-12T15:00:34.000Z",
+            "author": {
+                "name": "pixodesk",
+                "url": "https://github.com/pixodesk"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/255066954?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK</div>",
+            "url": "https://github.com/nanocoai/nanoclaw",
+            "title": "nanocoai/nanoclaw: A lightweight alternative to OpenClaw that runs in containers for security. Connects to WhatsApp, Telegram, Slack, Discord, Gmail and other messaging apps,, has memory, scheduled jobs, and runs directly on Anthropic's Agents SDK",
+            "date_modified": "2026-09-12T00:44:14.000Z",
+            "date_published": "2026-01-31T15:47:22.000Z",
+            "author": {
+                "name": "nanocoai",
+                "url": "https://github.com/nanocoai"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30312044?u=2084133a78d35a9d260ff08339679e34ef2db481&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight local comic/manga reader for macOS, built with Tauri</div>",
+            "url": "https://github.com/piro0919/mekuri",
+            "title": "piro0919/mekuri: A lightweight local comic/manga reader for macOS, built with Tauri",
+            "date_modified": "2026-09-12T00:43:33.000Z",
+            "date_published": "2026-03-02T19:30:03.000Z",
+            "author": {
+                "name": "piro0919",
+                "url": "https://github.com/piro0919"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/220891822?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Huddle — a lightweight team collaboration and messaging platform.</div>",
             "url": "https://github.com/056comfort/huddle-demo-sprint",
             "title": "056comfort/huddle-demo-sprint: Huddle — a lightweight team collaboration and messaging platform.",
-            "date_modified": "2026-09-11T22:44:26.000Z",
+            "date_modified": "2026-09-12T00:42:33.000Z",
             "date_published": "2026-09-07T08:45:55.000Z",
             "author": {
                 "name": "056comfort",
@@ -39,190 +94,135 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/166004764?u=41cc784a563258ba67567c09b3e0789509f9417b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Bug Tracker is a lightweight alternative of JIRA, a full-stack SaaS application for bugs and project management. It enables users to create, prioritize, and manage bugs within collaborative projects.</div>",
-            "url": "https://github.com/raahthor/bugTracker",
-            "title": "raahthor/bugTracker: Bug Tracker is a lightweight alternative of JIRA, a full-stack SaaS application for bugs and project management. It enables users to create, prioritize, and manage bugs within collaborative projects.",
-            "date_modified": "2026-09-11T22:43:26.000Z",
-            "date_published": "2025-07-13T05:17:03.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/326400275?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Scroll Runner is a complete, lightweight, offline-first Chrome/Chromium extension (Manifest V3) inspired by 2000s handheld games and retro pixel arcades. As you scroll webpages, an adorable chunky pixel character runs on a tiny treadmill in real time.</div>",
+            "url": "https://github.com/joyaljoy8714-cyber/Scroll-Runner---Walkthrough",
+            "title": "joyaljoy8714-cyber/Scroll-Runner---Walkthrough: Scroll Runner is a complete, lightweight, offline-first Chrome/Chromium extension (Manifest V3) inspired by 2000s handheld games and retro pixel arcades. As you scroll webpages, an adorable chunky pixel character runs on a tiny treadmill in real time.",
+            "date_modified": "2026-09-12T00:41:15.000Z",
+            "date_published": "2026-09-12T00:39:17.000Z",
             "author": {
-                "name": "raahthor",
-                "url": "https://github.com/raahthor"
+                "name": "joyaljoy8714-cyber",
+                "url": "https://github.com/joyaljoy8714-cyber"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/214592323?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌍 Discover your IP details and test network connectivity with IP Sentinel, a lightweight tool built on Cloudflare Workers, featuring privacy checks and modern UI.</div>",
-            "url": "https://github.com/ghjkldfdfg/ipSentinel",
-            "title": "ghjkldfdfg/ipSentinel: 🌍 Discover your IP details and test network connectivity with IP Sentinel, a lightweight tool built on Cloudflare Workers, featuring privacy checks and modern UI.",
-            "date_modified": "2026-09-11T22:42:15.000Z",
-            "date_published": "2026-01-26T00:12:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1263515?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>BareScript; a lightweight scripting and expression language</div>",
+            "url": "https://github.com/craigahobbs/bare-script",
+            "title": "craigahobbs/bare-script: BareScript; a lightweight scripting and expression language",
+            "date_modified": "2026-09-12T00:41:08.000Z",
+            "date_published": "2022-01-31T23:48:25.000Z",
             "author": {
-                "name": "ghjkldfdfg",
-                "url": "https://github.com/ghjkldfdfg"
+                "name": "craigahobbs",
+                "url": "https://github.com/craigahobbs"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/278080873?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Cpaste - A lightweight, local-first clipboard manager built with Tauri 2 + Rust</div>",
-            "url": "https://github.com/gaogx96/Cpaste",
-            "title": "gaogx96/Cpaste: Cpaste - A lightweight, local-first clipboard manager built with Tauri 2 + Rust",
-            "date_modified": "2026-09-11T22:41:55.000Z",
-            "date_published": "2026-06-17T21:09:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236059052?u=b7b655a6616a6ade7343891135e141acb3cc4a8d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight local server to stream Project Zomboid web mods directly to your mobile devices.</div>",
+            "url": "https://github.com/Vlaseeds/Pulse-Pad",
+            "title": "Vlaseeds/Pulse-Pad: A lightweight local server to stream Project Zomboid web mods directly to your mobile devices.",
+            "date_modified": "2026-09-12T00:40:46.000Z",
+            "date_published": "2026-09-05T21:10:38.000Z",
             "author": {
-                "name": "gaogx96",
-                "url": "https://github.com/gaogx96"
+                "name": "Vlaseeds",
+                "url": "https://github.com/Vlaseeds"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/11029246?u=db8b86c9b00cbc8b0162a79420a212b2ea730921&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Node.js CLI tool to serve static front-end files and reverse-proxy API requests to a back-end server. Zero-config start, flexible JSON configuration, PM2 and Docker ready.</div>",
-            "url": "https://github.com/lopatnov/express-reverse-proxy",
-            "title": "lopatnov/express-reverse-proxy: Lightweight Node.js CLI tool to serve static front-end files and reverse-proxy API requests to a back-end server. Zero-config start, flexible JSON configuration, PM2 and Docker ready.",
-            "date_modified": "2026-09-11T22:41:48.000Z",
-            "date_published": "2020-06-02T00:02:04.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188930?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔥 Lightweight, Airbrake/Sentry-compatible, PostgreSQL-based Open Source Error Catcher</div>",
+            "url": "https://github.com/icoretech/airbroke",
+            "title": "icoretech/airbroke: 🔥 Lightweight, Airbrake/Sentry-compatible, PostgreSQL-based Open Source Error Catcher",
+            "date_modified": "2026-09-12T00:39:59.000Z",
+            "date_published": "2023-05-05T14:20:57.000Z",
             "author": {
-                "name": "lopatnov",
-                "url": "https://github.com/lopatnov"
+                "name": "icoretech",
+                "url": "https://github.com/icoretech"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/848102?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight extensible spacecraft commanding &amp; telemetry processing framework</div>",
-            "url": "https://github.com/nasa/hermes",
-            "title": "nasa/hermes: A lightweight extensible spacecraft commanding & telemetry processing framework",
-            "date_modified": "2026-09-11T22:40:53.000Z",
-            "date_published": "2026-03-03T15:27:32.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/234755050?u=c99b583178aa9eb3cf224ee9bd134798d6bab567&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A WhatsApp Assistant. Built with Node.js [WIP]</div>",
+            "url": "https://github.com/d1pzyy/nexa",
+            "title": "d1pzyy/nexa: A WhatsApp Assistant. Built with Node.js [WIP]",
+            "date_modified": "2026-09-12T00:39:19.000Z",
+            "date_published": "2026-08-31T09:08:13.000Z",
             "author": {
-                "name": "nasa",
-                "url": "https://github.com/nasa"
+                "name": "d1pzyy",
+                "url": "https://github.com/d1pzyy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2695198?u=a92014b3d5c10c7ca9cc58ab42386f40920c59b9&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Prompt Evaluation &amp; Scoring Toolkit. A lightweight, config-driven TypeScript library for testing LLM prompts, comparing models, verifying tool calls, and optimizing prompts automatically</div>",
-            "url": "https://github.com/heilgar/pest",
-            "title": "heilgar/pest: Prompt Evaluation & Scoring Toolkit. A lightweight, config-driven TypeScript library for testing LLM prompts, comparing models, verifying tool calls, and optimizing prompts automatically",
-            "date_modified": "2026-09-11T22:40:45.000Z",
-            "date_published": "2026-03-13T21:26:56.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/310641824?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A fast, lightweight image editor for everyday work.</div>",
+            "url": "https://github.com/photrez/photrez",
+            "title": "photrez/photrez: A fast, lightweight image editor for everyday work.",
+            "date_modified": "2026-09-12T00:39:13.000Z",
+            "date_published": "2026-06-23T05:22:27.000Z",
             "author": {
-                "name": "heilgar",
-                "url": "https://github.com/heilgar"
+                "name": "photrez",
+                "url": "https://github.com/photrez"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199042787?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Build efficient corporate intranets with this lightweight PHP MVC framework, offering modularity, session management, and easy extensibility.</div>",
-            "url": "https://github.com/redichigo/php-intranet-mvc-framework",
-            "title": "redichigo/php-intranet-mvc-framework: 🌐 Build efficient corporate intranets with this lightweight PHP MVC framework, offering modularity, session management, and easy extensibility.",
-            "date_modified": "2026-09-11T22:40:20.000Z",
-            "date_published": "2026-01-15T22:18:30.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131487967?u=312682a2230060cec311ed5b21c06c918889ce3c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Open-source registry for modern lightweight products</div>",
+            "url": "https://github.com/rbzdev/orix",
+            "title": "rbzdev/orix: Open-source registry for modern lightweight products",
+            "date_modified": "2026-09-12T00:36:52.000Z",
+            "date_published": "2026-02-26T19:12:34.000Z",
             "author": {
-                "name": "redichigo",
-                "url": "https://github.com/redichigo"
+                "name": "rbzdev",
+                "url": "https://github.com/rbzdev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/181491164?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Generate ICMP9 subscriptions easily for V2Ray, Clash, and more with this lightweight Cloudflare Workers service, ensuring seamless global connectivity.</div>",
-            "url": "https://github.com/kylepeart21/get-icmp9-node",
-            "title": "kylepeart21/get-icmp9-node: 🌐 Generate ICMP9 subscriptions easily for V2Ray, Clash, and more with this lightweight Cloudflare Workers service, ensuring seamless global connectivity.",
-            "date_modified": "2026-09-11T22:40:18.000Z",
-            "date_published": "2024-09-13T14:21:07.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/30312044?u=2084133a78d35a9d260ff08339679e34ef2db481&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and customizable comic viewer component for React. Supports multiple pages and image formats. Ideal for displaying manga, comics, or webtoons in modern web applications</div>",
+            "url": "https://github.com/piro0919/react-comic-viewer",
+            "title": "piro0919/react-comic-viewer: A lightweight and customizable comic viewer component for React. Supports multiple pages and image formats. Ideal for displaying manga, comics, or webtoons in modern web applications",
+            "date_modified": "2026-09-12T00:33:14.000Z",
+            "date_published": "2021-01-04T20:16:28.000Z",
             "author": {
-                "name": "kylepeart21",
-                "url": "https://github.com/kylepeart21"
+                "name": "piro0919",
+                "url": "https://github.com/piro0919"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/224218482?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight browser companion extension for 1-click YouTube Music account linking with Red Music Locker</div>",
-            "url": "https://github.com/jakej985-rgb/red-music-locker-account-linker",
-            "title": "jakej985-rgb/red-music-locker-account-linker: Lightweight browser companion extension for 1-click YouTube Music account linking with Red Music Locker",
-            "date_modified": "2026-09-11T22:40:02.000Z",
-            "date_published": "2026-09-11T21:13:48.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/167809131?u=f920a7bce16ab014082bebb1363eac34718607c1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>hypo.md is a lightweight, self-hosted Markdown notes server on Node.js and Express. Any folder of .md files becomes a browsable wiki with a sidebar tree, [[wiki links]], syntax highlighting, and Mermaid diagrams. Cyrillic filenames get clean ASCII slugs. Light/dark themes, no build step — just node server.js.</div>",
+            "url": "https://github.com/pridatkin/hypo.md",
+            "title": "pridatkin/hypo.md: hypo.md is a lightweight, self-hosted Markdown notes server on Node.js and Express. Any folder of .md files becomes a browsable wiki with a sidebar tree, [[wiki links]], syntax highlighting, and Mermaid diagrams. Cyrillic filenames get clean ASCII slugs. Light/dark themes, no build step — just node server.js.",
+            "date_modified": "2026-09-12T00:32:10.000Z",
+            "date_published": "2026-09-11T22:57:58.000Z",
             "author": {
-                "name": "jakej985-rgb",
-                "url": "https://github.com/jakej985-rgb"
+                "name": "pridatkin",
+                "url": "https://github.com/pridatkin"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/222572584?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Build a lightweight Linux distribution using JavaScript and a touch of C for fun command-line exploration.</div>",
-            "url": "https://github.com/rosehome2/ultimate-linux",
-            "title": "rosehome2/ultimate-linux: 🚀 Build a lightweight Linux distribution using JavaScript and a touch of C for fun command-line exploration.",
-            "date_modified": "2026-09-11T22:39:32.000Z",
-            "date_published": "2025-07-24T07:09:16.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/12826809?u=91b509b7855619f7c5e58b03345dea15ddb51bc4&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, beautiful WYSIWYG Markdown editor with bidirectional links and AI-native editing — built with Tauri, React &amp; Rust.</div>",
+            "url": "https://github.com/sayinel/baram",
+            "title": "sayinel/baram: A lightweight, beautiful WYSIWYG Markdown editor with bidirectional links and AI-native editing — built with Tauri, React & Rust.",
+            "date_modified": "2026-09-12T00:30:15.000Z",
+            "date_published": "2026-02-13T16:32:29.000Z",
             "author": {
-                "name": "rosehome2",
-                "url": "https://github.com/rosehome2"
+                "name": "sayinel",
+                "url": "https://github.com/sayinel"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/117357874?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>IconPreview is a lightweight VSCode plugin that allows you to preview image files in the view</div>",
-            "url": "https://github.com/tlcsdm/vscode-iconpreview",
-            "title": "tlcsdm/vscode-iconpreview: IconPreview is a lightweight VSCode plugin that allows you to preview image files in the view",
-            "date_modified": "2026-09-11T22:38:58.000Z",
-            "date_published": "2026-01-06T12:21:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/206250851?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight minecraft launcher</div>",
+            "url": "https://github.com/MC7DZ/Zero-Launcher",
+            "title": "MC7DZ/Zero-Launcher: Lightweight minecraft launcher",
+            "date_modified": "2026-09-12T00:29:46.000Z",
+            "date_published": "2026-06-25T12:11:08.000Z",
             "author": {
-                "name": "tlcsdm",
-                "url": "https://github.com/tlcsdm"
+                "name": "MC7DZ",
+                "url": "https://github.com/MC7DZ"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20081527?u=3e080efd0bfdac40877d5ff23e36d5db22549e71&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, promise-based IndexedDB wrapper for modern client-side storage.</div>",
-            "url": "https://github.com/joncody/idb",
-            "title": "joncody/idb: A lightweight, promise-based IndexedDB wrapper for modern client-side storage.",
-            "date_modified": "2026-09-11T22:38:42.000Z",
-            "date_published": "2025-12-22T20:30:50.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13065208?u=b7f1030c7efdff11896c784d76299b11c795bd3c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Directory-contained markdown fibers with YAML frontmatter and wikilinks. A lightweight substrate for accumulating context — decisions, claims, tasks, questions, specs — and keeping it searchable, connected, and round-trippable through whatever tooling layers on top.</div>",
+            "url": "https://github.com/cailmdaley/felt",
+            "title": "cailmdaley/felt: Directory-contained markdown fibers with YAML frontmatter and wikilinks. A lightweight substrate for accumulating context — decisions, claims, tasks, questions, specs — and keeping it searchable, connected, and round-trippable through whatever tooling layers on top.",
+            "date_modified": "2026-09-12T00:29:36.000Z",
+            "date_published": "2026-01-13T09:02:09.000Z",
             "author": {
-                "name": "joncody",
-                "url": "https://github.com/joncody"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/72184082?u=f96893db24b5c1be34b33c9ad2bbb0884d2179b8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀 Streamline your React projects with hugeicons-proxy, a lightweight helper that converts Hugeicons into ready-to-use components with full TypeScript support.</div>",
-            "url": "https://github.com/M-ux349/hugeicons-proxy",
-            "title": "M-ux349/hugeicons-proxy: 🚀 Streamline your React projects with hugeicons-proxy, a lightweight helper that converts Hugeicons into ready-to-use components with full TypeScript support.",
-            "date_modified": "2026-09-11T22:38:28.000Z",
-            "date_published": "2026-01-04T18:16:03.000Z",
-            "author": {
-                "name": "M-ux349",
-                "url": "https://github.com/M-ux349"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20111007?u=544ab46a4361c25dc3501d9375e05ad9888aa219&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A local-first Kanban board that syncs across devices. Clean, lightweight, markdown-first.</div>",
-            "url": "https://github.com/romenkova/doska",
-            "title": "romenkova/doska: A local-first Kanban board that syncs across devices. Clean, lightweight, markdown-first.",
-            "date_modified": "2026-09-11T22:38:48.000Z",
-            "date_published": "2026-06-16T22:19:23.000Z",
-            "author": {
-                "name": "romenkova",
-                "url": "https://github.com/romenkova"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/132567653?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔍 Discover and manage object properties with ease using object-some-own-by, a lightweight library for efficient data handling in JavaScript.</div>",
-            "url": "https://github.com/Llmsll2/object-some-own-by",
-            "title": "Llmsll2/object-some-own-by: 🔍 Discover and manage object properties with ease using object-some-own-by, a lightweight library for efficient data handling in JavaScript.",
-            "date_modified": "2026-09-11T22:36:30.000Z",
-            "date_published": "2025-12-24T08:47:21.000Z",
-            "author": {
-                "name": "Llmsll2",
-                "url": "https://github.com/Llmsll2"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/175400298?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🎮 Play the classic 2048 puzzle game in your Chrome browser with dark mode, undo functionality, and persistent stats for a fun, lightweight experience.</div>",
-            "url": "https://github.com/buckisback/2048-chrome-extension",
-            "title": "buckisback/2048-chrome-extension: 🎮 Play the classic 2048 puzzle game in your Chrome browser with dark mode, undo functionality, and persistent stats for a fun, lightweight experience.",
-            "date_modified": "2026-09-11T22:36:04.000Z",
-            "date_published": "2025-12-23T00:41:37.000Z",
-            "author": {
-                "name": "buckisback",
-                "url": "https://github.com/buckisback"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154838375?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>✨ Display popups easily with JQuery Fancy Light Box, a lightweight JavaScript library that enhances user experience on your website.</div>",
-            "url": "https://github.com/wifeybabyb/jquery-fancy-light-box",
-            "title": "wifeybabyb/jquery-fancy-light-box: ✨ Display popups easily with JQuery Fancy Light Box, a lightweight JavaScript library that enhances user experience on your website.",
-            "date_modified": "2026-09-11T22:35:37.000Z",
-            "date_published": "2025-12-20T12:35:23.000Z",
-            "author": {
-                "name": "wifeybabyb",
-                "url": "https://github.com/wifeybabyb"
+                "name": "cailmdaley",
+                "url": "https://github.com/cailmdaley"
             }
         }
     ]

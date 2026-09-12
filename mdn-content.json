@@ -39,17 +39,6 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/176228199?u=79263a5800d6a0c47f8ce53365fc113d033acaad&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Adds the missing preposition `to` after `grant permission` on two leftover Permissions-Policy notes.</p>\n<ul dir=\"auto\">\n<li>`Element.requestFullscreen()`</li>\n<li>Screen Wake Lock API</li>\n</ul>\n<p dir=\"auto\">Both currently say \"grant permission a particular third-party origin\". The Geolocation API note already has \"grant permission to a particular third-party origin\".</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The verb `grant permission` takes `to` before the recipient. These two sentences were missed when <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5426778468\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45635\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/45635/hovercard\" href=\"https://github.com/mdn/content/pull/45635\">#45635</a> hyphenated the leftover `third-party` modifiers in the same notes.</p>",
-            "url": "https://github.com/mdn/content/pull/45643",
-            "title": "fix typo",
-            "date_modified": "2026-09-11T22:16:43.000Z",
-            "date_published": "2026-09-11T19:00:37.000Z",
-            "author": {
-                "name": "husamemadH",
-                "url": "https://github.com/husamemadH"
-            }
-        },
-        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF156 adds support for the async Clipboard API to use web custom formats.</p>\n<p dir=\"auto\">The  API allows you to create a <code class=\"notranslate\">ClipboardItem</code> that contains several representations of a copied object, such as version in HTML and Text, and push it to the system clipboard. Something else can read the clipboard and get back tha object - then choose the best format it understands.</p>\n<p dir=\"auto\">The update allows you to (behind a pref) use other types than PNG, HTML, txt.</p>\n<p dir=\"auto\">What this update does is make the model above clear, because it wasn't - it referred too much to \"arbitrary types\" can didn't capture \"different representations\".</p>\n<p dir=\"auto\">This is the first part of the job. After this I'll do the custom web formats bit.</p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5312307167\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45430\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45430/hovercard\" href=\"https://github.com/mdn/content/issues/45430\">#45430</a></p>",
             "url": "https://github.com/mdn/content/pull/45620",
             "title": "FF156 ClipBoard Async API - clarify types",
@@ -223,6 +212,17 @@
             "author": {
                 "name": "pepelsbey",
                 "url": "https://github.com/pepelsbey"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/69888?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">mostly added an intro statement or standardized the existing statement between the values header and the list of values, but also added description sections as needed, and, in one case, global values.</p>",
+            "url": "https://github.com/mdn/content/pull/45588",
+            "title": "Consistent value intro statements #6",
+            "date_modified": "2026-09-11T22:26:37.000Z",
+            "date_published": "2026-09-09T09:54:45.000Z",
+            "author": {
+                "name": "estelle",
+                "url": "https://github.com/estelle"
             }
         }
     ]
