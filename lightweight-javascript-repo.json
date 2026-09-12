@@ -6,43 +6,54 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/209191704?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🛠️ Simplify error handling in TypeScript with a lightweight Result type that supports generator-based composition and clear value extraction.</div>",
-            "url": "https://github.com/gggjhgkuhgkug/better-result",
-            "title": "gggjhgkuhgkug/better-result: 🛠️ Simplify error handling in TypeScript with a lightweight Result type that supports generator-based composition and clear value extraction.",
-            "date_modified": "2026-09-12T13:13:30.000Z",
-            "date_published": "2026-01-22T19:05:36.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/103949676?u=6d980eadf507493b5f6eaf6da48b963663c61496&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight static blog theme based on Astro.</div>",
+            "url": "https://github.com/rightdoor/citrus-grid",
+            "title": "rightdoor/citrus-grid: A lightweight static blog theme based on Astro.",
+            "date_modified": "2026-09-12T16:36:54.000Z",
+            "date_published": "2026-09-01T16:51:50.000Z",
             "author": {
-                "name": "gggjhgkuhgkug",
-                "url": "https://github.com/gggjhgkuhgkug"
+                "name": "rightdoor",
+                "url": "https://github.com/rightdoor"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111288175?u=15feb26d9044b29834eb1f97842eb52ae7a22186&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight collaboration platform for small remote teams.</div>",
-            "url": "https://github.com/KessNelly/Huddle-Backend",
-            "title": "KessNelly/Huddle-Backend: A lightweight collaboration platform for small remote teams.",
-            "date_modified": "2026-09-12T13:13:29.000Z",
-            "date_published": "2026-09-08T15:10:34.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/308094834?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A budget-friendly, AI-powered local event aggregator built with **Next.js**, **Firebase**, and **Claude/OpenAI**.   The application automatically fetches public event feeds (RSS, news, municipal calendars), structures the unstructured data using lightweight LLMs, and presents it in a clean, Meetup-style feed sorted by date.</div>",
+            "url": "https://github.com/Kensj0/eventscraper",
+            "title": "Kensj0/eventscraper: A budget-friendly, AI-powered local event aggregator built with **Next.js**, **Firebase**, and **Claude/OpenAI**.   The application automatically fetches public event feeds (RSS, news, municipal calendars), structures the unstructured data using lightweight LLMs, and presents it in a clean, Meetup-style feed sorted by date.",
+            "date_modified": "2026-09-12T16:36:30.000Z",
+            "date_published": "2026-09-11T12:43:53.000Z",
             "author": {
-                "name": "KessNelly",
-                "url": "https://github.com/KessNelly"
+                "name": "Kensj0",
+                "url": "https://github.com/Kensj0"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/198517819?u=1f5c41886cae463bdcb8c85fda9fb3c702c06026&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight and efficient JavaScript address selector for the Philippines, designed to streamline the process of selecting regions, provinces, cities, and barangays in web applications.</div>",
-            "url": "https://github.com/its-ryyt/Philippines---Javascript-Address-Selector",
-            "title": "its-ryyt/Philippines---Javascript-Address-Selector: A lightweight and efficient JavaScript address selector for the Philippines, designed to streamline the process of selecting regions, provinces, cities, and barangays in web applications.",
-            "date_modified": "2026-09-12T13:13:24.000Z",
-            "date_published": "2025-02-13T13:29:57.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/244519541?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight sketching studio with seven natural-feeling pens, area erasing, and SVG/PNG export; the current sketch persists through Ryu's app storage.</div>",
+            "url": "https://github.com/amajorai/ryu-drawesome",
+            "title": "amajorai/ryu-drawesome: A lightweight sketching studio with seven natural-feeling pens, area erasing, and SVG/PNG export; the current sketch persists through Ryu's app storage.",
+            "date_modified": "2026-09-12T16:36:20.000Z",
+            "date_published": "2026-09-04T10:41:56.000Z",
             "author": {
-                "name": "its-ryyt",
-                "url": "https://github.com/its-ryyt"
+                "name": "amajorai",
+                "url": "https://github.com/amajorai"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/54844522?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, template-based PDF creation tool with a live editor and real-time preview, allowing users to customize predefined document templates and print them directly as PDFs.</div>",
+            "url": "https://github.com/bhrji4438/template-pdf-creator",
+            "title": "bhrji4438/template-pdf-creator: A lightweight, template-based PDF creation tool with a live editor and real-time preview, allowing users to customize predefined document templates and print them directly as PDFs.",
+            "date_modified": "2026-09-12T16:34:30.000Z",
+            "date_published": "2026-09-12T11:45:36.000Z",
+            "author": {
+                "name": "bhrji4438",
+                "url": "https://github.com/bhrji4438"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/101118850?u=a2fc88150150678161661215319ba5171ed8f1ec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast, lightweight Markdown editor with Typora-style live inline preview. Desktop and browser, cross-device sync, one-click publishing, and a built-in MCP server.</div>",
             "url": "https://github.com/lxorb/nibeditor",
             "title": "lxorb/nibeditor: Fast, lightweight Markdown editor with Typora-style live inline preview. Desktop and browser, cross-device sync, one-click publishing, and a built-in MCP server.",
-            "date_modified": "2026-09-12T13:11:40.000Z",
+            "date_modified": "2026-09-12T16:34:09.000Z",
             "date_published": "2026-09-03T13:07:44.000Z",
             "author": {
                 "name": "lxorb",
@@ -50,179 +61,168 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/208438942?u=934023ef67b06d1a5716a3f487ac10ee2cb34280&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📝 Create in a distraction-free markdown environment with write0, a lightweight, client-side tool designed for focused writing on the web.</div>",
-            "url": "https://github.com/HieuCoder2025/write0",
-            "title": "HieuCoder2025/write0: 📝 Create in a distraction-free markdown environment with write0, a lightweight, client-side tool designed for focused writing on the web.",
-            "date_modified": "2026-09-12T13:11:19.000Z",
-            "date_published": "2026-01-15T15:29:08.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17851143?u=dd7971fd1ddf1629eee5bf4273bc0a72e95001e5&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight dev tool to debug and inspect Hotwire Native apps, right from your mobile app</div>",
+            "url": "https://github.com/leonvogt/hotwire-native-dev-tools",
+            "title": "leonvogt/hotwire-native-dev-tools: A lightweight dev tool to debug and inspect Hotwire Native apps, right from your mobile app",
+            "date_modified": "2026-09-12T16:33:01.000Z",
+            "date_published": "2025-01-06T22:42:03.000Z",
             "author": {
-                "name": "HieuCoder2025",
-                "url": "https://github.com/HieuCoder2025"
+                "name": "leonvogt",
+                "url": "https://github.com/leonvogt"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63948511?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌟 Build dynamic web applications effortlessly with Alphabet, a lightweight JavaScript/TypeScript framework featuring reactive DOM and an optimized utility-first CSS.</div>",
-            "url": "https://github.com/DarkException22/alphabet",
-            "title": "DarkException22/alphabet: 🌟 Build dynamic web applications effortlessly with Alphabet, a lightweight JavaScript/TypeScript framework featuring reactive DOM and an optimized utility-first CSS.",
-            "date_modified": "2026-09-12T13:11:09.000Z",
-            "date_published": "2026-01-15T20:48:04.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/112750567?u=4c5a78bea44b312a4064d19d5a9606898e6611e1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, open-source browser extension for Blobgame.io featuring performance improvements, reduced website load, experimental features, and community voting for future updates.</div>",
+            "url": "https://github.com/SkyViewBlobio/Blobgame.io-Official-Web-Extension",
+            "title": "SkyViewBlobio/Blobgame.io-Official-Web-Extension: A lightweight, open-source browser extension for Blobgame.io featuring performance improvements, reduced website load, experimental features, and community voting for future updates.",
+            "date_modified": "2026-09-12T16:31:57.000Z",
+            "date_published": "2026-09-12T15:14:41.000Z",
             "author": {
-                "name": "DarkException22",
-                "url": "https://github.com/DarkException22"
+                "name": "SkyViewBlobio",
+                "url": "https://github.com/SkyViewBlobio"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/143774385?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div></div>",
-            "url": "https://github.com/Phrog1st/resafe",
-            "title": "Phrog1st/resafe",
-            "date_modified": "2026-09-12T13:10:44.000Z",
-            "date_published": "2023-09-01T03:49:19.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/231880594?u=e3110243bab51b255a8080146247db82c3126c08&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Raqule is a lightweight CLI code gatherer designed for AI models (ChatGPT, Claude, Gemini, etc.) to bundle your entire project's context and code architecture into a single, clean file.</div>",
+            "url": "https://github.com/OmarPGH/Raqule",
+            "title": "OmarPGH/Raqule: Raqule is a lightweight CLI code gatherer designed for AI models (ChatGPT, Claude, Gemini, etc.) to bundle your entire project's context and code architecture into a single, clean file.",
+            "date_modified": "2026-09-12T16:30:03.000Z",
+            "date_published": "2026-08-19T13:26:28.000Z",
             "author": {
-                "name": "Phrog1st",
-                "url": "https://github.com/Phrog1st"
+                "name": "OmarPGH",
+                "url": "https://github.com/OmarPGH"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/199811817?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📸 Capture video screenshots and generate GIFs effortlessly with this lightweight API built on Elysia and powered by FFmpeg.</div>",
-            "url": "https://github.com/rocky18313/episodes",
-            "title": "rocky18313/episodes: 📸 Capture video screenshots and generate GIFs effortlessly with this lightweight API built on Elysia and powered by FFmpeg.",
-            "date_modified": "2026-09-12T13:10:34.000Z",
-            "date_published": "2026-01-12T04:43:00.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29477798?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Android client for reading, editing, and syncing a Git-hosted Markdown vault over the GitHub API.</div>",
+            "url": "https://github.com/MuggleWu/mochi",
+            "title": "MuggleWu/mochi: Lightweight Android client for reading, editing, and syncing a Git-hosted Markdown vault over the GitHub API.",
+            "date_modified": "2026-09-12T16:29:16.000Z",
+            "date_published": "2026-09-12T15:43:11.000Z",
             "author": {
-                "name": "rocky18313",
-                "url": "https://github.com/rocky18313"
+                "name": "MuggleWu",
+                "url": "https://github.com/MuggleWu"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/196265932?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔄 Automate and manage remote server backups via SSH with BackApp, a lightweight Go + React application featuring an intuitive web interface.</div>",
-            "url": "https://github.com/Royer234/BackApp",
-            "title": "Royer234/BackApp: 🔄 Automate and manage remote server backups via SSH with BackApp, a lightweight Go + React application featuring an intuitive web interface.",
-            "date_modified": "2026-09-12T13:10:13.000Z",
-            "date_published": "2026-01-08T21:51:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/182065584?u=a811aac8bd0ddc9b9ac26524326cb4792407022b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>EXTPIXEL is a lightweight image resizer built for browser extension developers who need exact dimensions for store submissions.   EXTPIXEL makes resizing fast and painless. completely  client side no pics are stored on server hence privacy focus too</div>",
+            "url": "https://github.com/NubPlayz/EXTPIXEL-Client-Side-Image-Resizer-for-Developers",
+            "title": "NubPlayz/EXTPIXEL-Client-Side-Image-Resizer-for-Developers: EXTPIXEL is a lightweight image resizer built for browser extension developers who need exact dimensions for store submissions.   EXTPIXEL makes resizing fast and painless. completely  client side no pics are stored on server hence privacy focus too",
+            "date_modified": "2026-09-12T16:25:11.000Z",
+            "date_published": "2026-02-26T06:16:28.000Z",
             "author": {
-                "name": "Royer234",
-                "url": "https://github.com/Royer234"
+                "name": "NubPlayz",
+                "url": "https://github.com/NubPlayz"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/23276305?u=ada7b17959948b21a4ca0f288bc823482eb07cfb&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>YetAnotherSSHClient — is a lightweight SSH client on ReactJS.</div>",
-            "url": "https://github.com/megoRU/YetAnotherSSHClient",
-            "title": "megoRU/YetAnotherSSHClient: YetAnotherSSHClient — is a lightweight SSH client on ReactJS.",
-            "date_modified": "2026-09-12T13:10:07.000Z",
-            "date_published": "2026-02-26T17:40:31.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/108685241?u=28a21908c3d5c1d786469fa0b12bcb6d79d5dc32&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight floating webcam overlay that stays always-on-top across applications and windows.</div>",
+            "url": "https://github.com/sohail22dec/floaty",
+            "title": "sohail22dec/floaty: A lightweight floating webcam overlay that stays always-on-top across applications and windows.",
+            "date_modified": "2026-09-12T16:22:43.000Z",
+            "date_published": "2026-09-05T14:28:50.000Z",
             "author": {
-                "name": "megoRU",
-                "url": "https://github.com/megoRU"
+                "name": "sohail22dec",
+                "url": "https://github.com/sohail22dec"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/310318355?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight copy-paste UI components and reactive primitives for SolidJS, built natively for Tailwind CSS v4 and Tauri v2.</div>",
-            "url": "https://github.com/nikala-ui/ui",
-            "title": "nikala-ui/ui: Lightweight copy-paste UI components and reactive primitives for SolidJS, built natively for Tailwind CSS v4 and Tauri v2.",
-            "date_modified": "2026-09-12T13:09:36.000Z",
-            "date_published": "2026-07-23T21:01:15.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/315209804?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight GUI Desktop Application for Kubernetes</div>",
+            "url": "https://github.com/litelensapp/litelens",
+            "title": "litelensapp/litelens: A lightweight GUI Desktop Application for Kubernetes",
+            "date_modified": "2026-09-12T16:22:34.000Z",
+            "date_published": "2026-08-10T04:22:16.000Z",
             "author": {
-                "name": "nikala-ui",
-                "url": "https://github.com/nikala-ui"
+                "name": "litelensapp",
+                "url": "https://github.com/litelensapp"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154023375?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>📊 Build and manage a responsive business analytics dashboard using the MERN stack for effective data visualization and client interaction.</div>",
-            "url": "https://github.com/RetajGenius/business-analytics-dashboard",
-            "title": "RetajGenius/business-analytics-dashboard: 📊 Build and manage a responsive business analytics dashboard using the MERN stack for effective data visualization and client interaction.",
-            "date_modified": "2026-09-12T13:09:27.000Z",
-            "date_published": "2026-01-05T17:11:43.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/269994700?u=b7c19cb84bef0c0e8f1461c7a8b311412feb7bed&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Minecraft Bedrock launcher and companion for Windows, built for Vesper UI.</div>",
+            "url": "https://github.com/universalspaces/Vesper-Launcher",
+            "title": "universalspaces/Vesper-Launcher: A lightweight Minecraft Bedrock launcher and companion for Windows, built for Vesper UI.",
+            "date_modified": "2026-09-12T16:22:31.000Z",
+            "date_published": "2026-08-07T21:09:20.000Z",
             "author": {
-                "name": "RetajGenius",
-                "url": "https://github.com/RetajGenius"
+                "name": "universalspaces",
+                "url": "https://github.com/universalspaces"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/29589218?u=e78fd4c04be445eb705142ef675d9aea446afa0f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight run tracking app built with React and Firebase to provide insights and analytics into a person's training.</div>",
-            "url": "https://github.com/alyssavoccia/runnr",
-            "title": "alyssavoccia/runnr: Lightweight run tracking app built with React and Firebase to provide insights and analytics into a person's training.",
-            "date_modified": "2026-09-12T13:09:26.000Z",
-            "date_published": "2026-09-04T10:42:53.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/33373536?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A 40kb+ webgl library, with concise code and extensive world sandbox! World engine prioritizes first-person view!The world is your viewpoint. </div>",
+            "url": "https://github.com/kohunglee/openworld-js",
+            "title": "kohunglee/openworld-js: A 40kb+ webgl library, with concise code and extensive world sandbox! World engine prioritizes first-person view!The world is your viewpoint. ",
+            "date_modified": "2026-09-12T16:21:39.000Z",
+            "date_published": "2025-06-29T04:33:54.000Z",
             "author": {
-                "name": "alyssavoccia",
-                "url": "https://github.com/alyssavoccia"
+                "name": "kohunglee",
+                "url": "https://github.com/kohunglee"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/42935195?u=9eb623ab5e7231b58f2bd3ee68b4dd2dc18a3fc6&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, functional Discord bot framework built on @discordjs/core</div>",
-            "url": "https://github.com/almeidx/discore",
-            "title": "almeidx/discore: A lightweight, functional Discord bot framework built on @discordjs/core",
-            "date_modified": "2026-09-12T13:09:23.000Z",
-            "date_published": "2026-03-05T00:00:41.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2958534?u=1fd780b5870e46d6acae6e5b5d7f1078c46e2509&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Claude Code 對話回放與考古工具 — Replay &amp; search your Claude Code conversations. Lightweight, read-only, offline-first.</div>",
+            "url": "https://github.com/tznthou/ccRewind",
+            "title": "tznthou/ccRewind: Claude Code 對話回放與考古工具 — Replay & search your Claude Code conversations. Lightweight, read-only, offline-first.",
+            "date_modified": "2026-09-12T16:19:58.000Z",
+            "date_published": "2026-03-28T16:18:56.000Z",
             "author": {
-                "name": "almeidx",
-                "url": "https://github.com/almeidx"
+                "name": "tznthou",
+                "url": "https://github.com/tznthou"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/195787852?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🔍 Check if a URL points to a badge with this lightweight package, perfect for filtering and validating badge links efficiently.</div>",
-            "url": "https://github.com/Vininoo/is_badge",
-            "title": "Vininoo/is_badge: 🔍 Check if a URL points to a badge with this lightweight package, perfect for filtering and validating badge links efficiently.",
-            "date_modified": "2026-09-12T13:08:59.000Z",
-            "date_published": "2026-01-03T01:40:28.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/13617900?u=2a0c1618b833413efd49f7fdae9ab54fe0c939d1&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🚀  Lightweight open-source SSH/SFTP/FTP client built with Rust &amp; Tauri 2. Only ~34 MB memory. Installer under 10 MB . Split terminals, SFTP, GPU monitoring. macOS/Windows/Linux.</div>",
+            "url": "https://github.com/GOODBOY008/r-shell",
+            "title": "GOODBOY008/r-shell: 🚀  Lightweight open-source SSH/SFTP/FTP client built with Rust & Tauri 2. Only ~34 MB memory. Installer under 10 MB . Split terminals, SFTP, GPU monitoring. macOS/Windows/Linux.",
+            "date_modified": "2026-09-12T16:24:57.000Z",
+            "date_published": "2025-10-30T08:16:36.000Z",
             "author": {
-                "name": "Vininoo",
-                "url": "https://github.com/Vininoo"
+                "name": "GOODBOY008",
+                "url": "https://github.com/GOODBOY008"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/180564322?u=7cde1b52231ea11d17a22b058989b60b84deee6c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a very new lightweight framework replacing heavy frameworks</div>",
-            "url": "https://github.com/alakmar344/breeze-framework",
-            "title": "alakmar344/breeze-framework: a very new lightweight framework replacing heavy frameworks",
-            "date_modified": "2026-09-12T13:08:11.000Z",
-            "date_published": "2026-03-05T16:39:18.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/250762?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Plain CSS component framework with semantic classes, universal variants, small tokens, theme hooks, and progressive enhancements.</div>",
+            "url": "https://github.com/lekoala/actual-css",
+            "title": "lekoala/actual-css: Plain CSS component framework with semantic classes, universal variants, small tokens, theme hooks, and progressive enhancements.",
+            "date_modified": "2026-09-12T16:18:15.000Z",
+            "date_published": "2026-07-12T15:30:41.000Z",
             "author": {
-                "name": "alakmar344",
-                "url": "https://github.com/alakmar344"
+                "name": "lekoala",
+                "url": "https://github.com/lekoala"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/81916648?u=1ba058e350f5102d87163591cc40879ba5fae954&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight Codex skill for short, parallel WebGPT tasks.</div>",
-            "url": "https://github.com/Nhahan/WebGPT",
-            "title": "Nhahan/WebGPT: A lightweight Codex skill for short, parallel WebGPT tasks.",
-            "date_modified": "2026-09-12T13:06:00.000Z",
-            "date_published": "2026-09-12T10:17:14.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/44527179?u=b9beef42b99a4f3cb363837a9635bb9995a47fa8&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.</div>",
+            "url": "https://github.com/xsrazy/qr-code-generator",
+            "title": "xsrazy/qr-code-generator: qr code generator is a simple and lightweight application for generating QR Codes from any text or URL input. This project utilizes modern web technologies to create QR Codes that can be easily downloaded and shared.",
+            "date_modified": "2026-09-12T16:17:39.000Z",
+            "date_published": "2025-07-23T10:41:39.000Z",
             "author": {
-                "name": "Nhahan",
-                "url": "https://github.com/Nhahan"
+                "name": "xsrazy",
+                "url": "https://github.com/xsrazy"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20968051?u=72ff5d02e61c4adaefda1241b3e82f126678b157&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This site uses the amazing Astro.build  project. I added **Google Docs**  integration to serve as a lightweight, serverless backend to process and store basic data. Using a Google Doc allows the static site to securely hold sanitized inputs and track records without requiring a traditional database.</div>",
-            "url": "https://github.com/TJAdryan/astro_blog",
-            "title": "TJAdryan/astro_blog: This site uses the amazing Astro.build  project. I added **Google Docs**  integration to serve as a lightweight, serverless backend to process and store basic data. Using a Google Doc allows the static site to securely hold sanitized inputs and track records without requiring a traditional database.",
-            "date_modified": "2026-09-12T13:05:22.000Z",
-            "date_published": "2025-08-18T01:35:42.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/317453951?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.</div>",
+            "url": "https://github.com/vibeunion/supacloud",
+            "title": "vibeunion/supacloud: ⚡️ SupaCloud: The Ultra-Lightweight, Self-Hosted Supabase PaaS. Run 100+ isolated projects on a $5 VPS using Bun, Garage S3, and Shared Postgres.",
+            "date_modified": "2026-09-12T16:17:19.000Z",
+            "date_published": "2025-12-25T15:16:04.000Z",
             "author": {
-                "name": "TJAdryan",
-                "url": "https://github.com/TJAdryan"
+                "name": "vibeunion",
+                "url": "https://github.com/vibeunion"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/220677006?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🌐 Run a lightweight httpbin service on Cloudflare Workers for testing HTTP requests and responses, with full control and no rate limits.</div>",
-            "url": "https://github.com/6EJlKA/httpbin-hono",
-            "title": "6EJlKA/httpbin-hono: 🌐 Run a lightweight httpbin service on Cloudflare Workers for testing HTTP requests and responses, with full control and no rate limits.",
-            "date_modified": "2026-09-12T13:04:18.000Z",
-            "date_published": "2025-12-07T12:55:45.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/187519071?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, probably the fastest PaddleOCR SDK in TypeScript. Multilingual Support. Runs anywhere JavaScript runs: Node.js, Bun, Deno, mobile react-native, web browsers, web worker, and browser extensions. Docker &amp; CLI supported. The official SDK is browser-only.</div>",
+            "url": "https://github.com/PT-Perkasa-Pilar-Utama/ppu-paddle-ocr",
+            "title": "PT-Perkasa-Pilar-Utama/ppu-paddle-ocr: Lightweight, probably the fastest PaddleOCR SDK in TypeScript. Multilingual Support. Runs anywhere JavaScript runs: Node.js, Bun, Deno, mobile react-native, web browsers, web worker, and browser extensions. Docker & CLI supported. The official SDK is browser-only.",
+            "date_modified": "2026-09-12T16:17:15.000Z",
+            "date_published": "2025-05-08T09:26:34.000Z",
             "author": {
-                "name": "6EJlKA",
-                "url": "https://github.com/6EJlKA"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/17624378?u=ed8779c92723c03373d3d96f98a240cf82684826&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Angular inspired SDK to create lightweight, buildless and reactive SPAs</div>",
-            "url": "https://github.com/BernardoGiordano/srl",
-            "title": "BernardoGiordano/srl: Angular inspired SDK to create lightweight, buildless and reactive SPAs",
-            "date_modified": "2026-09-12T13:04:06.000Z",
-            "date_published": "2026-08-11T19:18:36.000Z",
-            "author": {
-                "name": "BernardoGiordano",
-                "url": "https://github.com/BernardoGiordano"
+                "name": "PT-Perkasa-Pilar-Utama",
+                "url": "https://github.com/PT-Perkasa-Pilar-Utama"
             }
         }
     ]
