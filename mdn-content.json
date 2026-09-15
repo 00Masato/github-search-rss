@@ -6,6 +6,39 @@
     "description": "mdn/content update content on GitHub",
     "items": [
         {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/236759479?u=6a2b51441b1015f9a4beae865bfcb3f1a2ea9899&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fixes the result value documented on the <code class=\"notranslate\">IDBFactory.deleteDatabase()</code> page:</p>\n<ul dir=\"auto\">\n<li>The \"Return value\" section said the request's <code class=\"notranslate\">result</code> is <code class=\"notranslate\">null</code> after a successful deletion. It is <code class=\"notranslate\">undefined</code>. The page's own \"Description\" section already says <code class=\"notranslate\">undefined</code>, so the page contradicted itself.</li>\n<li>The example logged <code class=\"notranslate\">event.result</code>. The <code class=\"notranslate\">success</code> event here is an <code class=\"notranslate\">IDBVersionChangeEvent</code>, which has no <code class=\"notranslate\">result</code> property, so the line printed <code class=\"notranslate\">undefined</code> for the wrong reason. It now logs <code class=\"notranslate\">dbDeleteRequest.result</code>.</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The spec sets the result to <code class=\"notranslate\">undefined</code>. <a href=\"https://w3c.github.io/IndexedDB/#dom-idbfactory-deletedatabase\" rel=\"nofollow\">IndexedDB 3.0, §4.3 The IDBFactory interface</a>, <code class=\"notranslate\">deleteDatabase(name)</code> steps:</p>\n<blockquote>\n<p dir=\"auto\">Otherwise, set request's result to undefined, set request's done flag to true, and fire a version change event named success at request with result and null.</p>\n</blockquote>\n<p dir=\"auto\">All three engines do the same:</p>\n<ul dir=\"auto\">\n<li>Blink: measured, see below.</li>\n<li>WebKit: <code class=\"notranslate\">IDBOpenDBRequest::onDeleteDatabaseSuccess()</code> calls <code class=\"notranslate\">setResultToUndefined()</code> (<a href=\"https://github.com/WebKit/WebKit/blob/main/Source/WebCore/Modules/indexeddb/IDBOpenDBRequest.cpp\">Source/WebCore/Modules/indexeddb/IDBOpenDBRequest.cpp</a>).</li>\n<li>Gecko: <code class=\"notranslate\">BackgroundFactoryRequestChild::HandleResponse(const DeleteDatabaseRequestResponse&amp;)</code> passes <code class=\"notranslate\">JS::UndefinedHandleValue</code> as the result (<a href=\"https://github.com/mozilla-firefox/firefox/blob/main/dom/indexedDB/ActorsChild.cpp\">dom/indexedDB/ActorsChild.cpp</a>).</li>\n</ul>\n<h3 dir=\"auto\">How I tested</h3>\n<p dir=\"auto\">I wrote a test page that opens a database (version 3), closes it, deletes it, and then deletes a database that doesn't exist. In each <code class=\"notranslate\">success</code> handler it logs the request's <code class=\"notranslate\">result</code>. Output in Edge 153 (Chromium, headless):</p>\n<div class=\"snippet-clipboard-content notranslate position-relative overflow-auto\" data-snippet-clipboard-copy-content=\"existing db: event type = success\nexisting db: event constructor = IDBVersionChangeEvent\nexisting db: request.result = undefined (typeof undefined)\nexisting db: event.target.result = undefined (typeof undefined)\nexisting db: 'result' in event = false\nexisting db: event.oldVersion = 3, event.newVersion = null\nmissing db: request.result = undefined (typeof undefined)\nmissing db: event.oldVersion = 0, event.newVersion = null\"><pre lang=\"plain\" class=\"notranslate\"><code class=\"notranslate\">existing db: event type = success\nexisting db: event constructor = IDBVersionChangeEvent\nexisting db: request.result = undefined (typeof undefined)\nexisting db: event.target.result = undefined (typeof undefined)\nexisting db: 'result' in event = false\nexisting db: event.oldVersion = 3, event.newVersion = null\nmissing db: request.result = undefined (typeof undefined)\nmissing db: event.oldVersion = 0, event.newVersion = null\n</code></pre></div>\n<p dir=\"auto\"><code class=\"notranslate\">markdownlint-cli2</code>, <code class=\"notranslate\">prettier --check</code>, and <code class=\"notranslate\">cspell</code> (with <code class=\"notranslate\">.vscode/cspell.json</code>) all pass on the changed file.</p>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<p dir=\"auto\">The page's other gaps (the <code class=\"notranslate\">blocked</code> state) were covered in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"4584959007\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/44350\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/44350/hovercard\" href=\"https://github.com/mdn/content/pull/44350\">#44350</a> for <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3814968197\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/42779\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/42779/hovercard\" href=\"https://github.com/mdn/content/issues/42779\">#42779</a>.</p>",
+            "url": "https://github.com/mdn/content/pull/45719",
+            "title": "IDBFactory.deleteDatabase(): result is undefined, not null",
+            "date_modified": "2026-09-15T13:43:46.000Z",
+            "date_published": "2026-09-15T13:42:13.000Z",
+            "author": {
+                "name": "RizgarOzan",
+                "url": "https://github.com/RizgarOzan"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/93594?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">One of the CSS details was duplicated. Also dropped some devtools things which felt like minor fixes (including one that was about a flagged feature anyway).</p>",
+            "url": "https://github.com/mdn/content/pull/45718",
+            "title": "Removing redundant info",
+            "date_modified": "2026-09-15T13:29:48.000Z",
+            "date_published": "2026-09-15T13:15:47.000Z",
+            "author": {
+                "name": "jakearchibald",
+                "url": "https://github.com/jakearchibald"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/219009286?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/>\n\n<h3 dir=\"auto\">Description</h3>\n<p dir=\"auto\">Fixed a code example that used <code class=\"notranslate\">await</code> outside of an <code class=\"notranslate\">async</code> function, which would cause a syntax error in a plain script context. Wrapped the <code class=\"notranslate\">fetch</code> calls in an <code class=\"notranslate\">async function main()</code> and invoked it.</p>\n<h3 dir=\"auto\">Motivation</h3>\n<p dir=\"auto\">The original example used <code class=\"notranslate\">await fetch(request)</code> directly at the top level, which only works in module scripts or environments that support top-level await. Since this snippet is a plain inline script example, it would throw a <code class=\"notranslate\">SyntaxError: await is only valid in async functions</code>. Wrapping the logic in an <code class=\"notranslate\">async function</code> makes the example runnable as-is for readers copying the code into a regular script.</p>\n<h3 dir=\"auto\">Additional details</h3>\n<p dir=\"auto\">No new APIs or behavior introduced — this is purely a fix to make the existing <code class=\"notranslate\">Request</code>/<code class=\"notranslate\">fetch</code> example (demonstrating that a request body can only be consumed once) executable in a standard script context.</p>\n",
+            "url": "https://github.com/mdn/content/pull/45716",
+            "title": "Update_index.md",
+            "date_modified": "2026-09-15T10:05:00.000Z",
+            "date_published": "2026-09-15T09:00:32.000Z",
+            "author": {
+                "name": "raghuveer5465",
+                "url": "https://github.com/raghuveer5465"
+            }
+        },
+        {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF157 adds support for the <a href=\"https://tc39.es/proposal-export-star-default/\" rel=\"nofollow\">Export * default proposal</a> in <a href=\"https://bugzilla.mozilla.org/show_bug.cgi?id=2065611\" rel=\"nofollow\">https://bugzilla.mozilla.org/show_bug.cgi?id=2065611</a></p>\n<p dir=\"auto\">This add an experimental features update.</p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5448400967\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45699\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45699/hovercard\" href=\"https://github.com/mdn/content/issues/45699\">#45699</a></p>",
             "url": "https://github.com/mdn/content/pull/45714",
             "title": "FF158 ExprFeat: JS Export * default proposal",
@@ -58,17 +91,6 @@
             "author": {
                 "name": "RizgarOzan",
                 "url": "https://github.com/RizgarOzan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/286386?u=bc4894b945491e0834d2306dade7fef748ddf698&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><h3 dir=\"auto\">Description</h3>\n<ul dir=\"auto\">\n<li>Added Firefox Experimental Release Notes</li>\n</ul>\n<h3 dir=\"auto\">Motivation</h3>\n<ul dir=\"auto\">\n<li>Release day is tomorrow</li>\n</ul>\n<h3 dir=\"auto\">Related issues and pull requests</h3>\n<ul dir=\"auto\">\n<li><a href=\"https://github.com/mdn/content/pull/45357\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/45357/hovercard\">Related Content PR</a></li>\n</ul>",
-            "url": "https://github.com/mdn/content/pull/45707",
-            "title": "added the experimental release notes",
-            "date_modified": "2026-09-14T22:07:45.000Z",
-            "date_published": "2026-09-14T15:27:57.000Z",
-            "author": {
-                "name": "dletorey",
-                "url": "https://github.com/dletorey"
             }
         },
         {
@@ -163,7 +185,7 @@
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">Our modules guide is currently one of the longest pages on MDN, and it's growing because modules keep getting more features. It's time to split it up so we can have breathing room, and also because not everything is relevant to every use case (I for example don't write native web modules so I don't need to know import maps).</p>\n<p dir=\"auto\">Depends on:</p>\n<ul dir=\"auto\">\n<li><a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5328000191\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45464\" data-hovercard-type=\"pull_request\" data-hovercard-url=\"/mdn/content/pull/45464/hovercard\" href=\"https://github.com/mdn/content/pull/45464\">#45464</a></li>\n</ul>",
             "url": "https://github.com/mdn/content/pull/45664",
             "title": "Split JS modules guide, document new features",
-            "date_modified": "2026-09-14T23:35:14.000Z",
+            "date_modified": "2026-09-15T08:50:28.000Z",
             "date_published": "2026-09-12T19:44:46.000Z",
             "author": {
                 "name": "Josh-Cena",
@@ -201,28 +223,6 @@
             "author": {
                 "name": "JalenBuildsHub",
                 "url": "https://github.com/JalenBuildsHub"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/5368500?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\">FF156 adds support for the async Clipboard API to use web custom formats.</p>\n<p dir=\"auto\">The  API allows you to create a <code class=\"notranslate\">ClipboardItem</code> that contains several representations of a copied object, such as version in HTML and Text, and push it to the system clipboard. Something else can read the clipboard and get back tha object - then choose the best format it understands.</p>\n<p dir=\"auto\">The update allows you to (behind a pref) use other types than PNG, HTML, txt.</p>\n<p dir=\"auto\">What this update does is make the model above clear, because it wasn't - it referred too much to \"arbitrary types\" can didn't capture \"different representations\".</p>\n<p dir=\"auto\">This is the first part of the job. After this I'll do the custom web formats bit.</p>\n<p dir=\"auto\">Related docs work can be tracked in <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"5312307167\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/45430\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/45430/hovercard\" href=\"https://github.com/mdn/content/issues/45430\">#45430</a></p>",
-            "url": "https://github.com/mdn/content/pull/45620",
-            "title": "FF156 ClipBoard Async API - clarify types",
-            "date_modified": "2026-09-15T01:22:09.000Z",
-            "date_published": "2026-09-11T07:07:56.000Z",
-            "author": {
-                "name": "hamishwillee",
-                "url": "https://github.com/hamishwillee"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/55398995?u=9f6a9837c9879eceb0abde487a338b92d4e206fc&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><p dir=\"auto\"><span class=\"issue-keyword tooltipped tooltipped-se\" aria-label=\"This pull request closes issue #43131.\">Fix</span> <a class=\"issue-link js-issue-link\" data-error-text=\"Failed to load title\" data-id=\"3941254411\" data-permission-text=\"Title is private\" data-url=\"https://github.com/mdn/content/issues/43131\" data-hovercard-type=\"issue\" data-hovercard-url=\"/mdn/content/issues/43131/hovercard\" href=\"https://github.com/mdn/content/issues/43131\">#43131</a>. Note that Firefox seems to behave differently but not sure if it merits a note.</p>",
-            "url": "https://github.com/mdn/content/pull/45617",
-            "title": "Document border image sizing with SVG",
-            "date_modified": "2026-09-11T00:13:17.000Z",
-            "date_published": "2026-09-11T00:11:47.000Z",
-            "author": {
-                "name": "Josh-Cena",
-                "url": "https://github.com/Josh-Cena"
             }
         }
     ]
