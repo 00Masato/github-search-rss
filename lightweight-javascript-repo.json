@@ -6,43 +6,175 @@
     "description": "LightWeight JavaScript repositories on GitHub",
     "items": [
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/76826079?u=09136792f64552558a6d207a4cd46ca37499348f&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A Lightweight blazingly fast Minecraft launcher</div>",
-            "url": "https://github.com/swarties/SaturnLauncher",
-            "title": "swarties/SaturnLauncher: A Lightweight blazingly fast Minecraft launcher",
-            "date_modified": "2026-09-24T02:08:33.000Z",
-            "date_published": "2026-09-12T22:19:06.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/43348824?u=2aaa475b6e12c08a1839698b6071f89cda8a624e&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern, lightweight local-first list manager built with React Native and Expo. Powered by SQLite via Drizzle ORM and Zod-validated schemas, Listly offers offline-first data persistence, custom i18n support, and seamless cross-platform support for mobile and web.</div>",
+            "url": "https://github.com/Alfonfdez/Listly",
+            "title": "Alfonfdez/Listly: A modern, lightweight local-first list manager built with React Native and Expo. Powered by SQLite via Drizzle ORM and Zod-validated schemas, Listly offers offline-first data persistence, custom i18n support, and seamless cross-platform support for mobile and web.",
+            "date_modified": "2026-09-24T07:56:26.000Z",
+            "date_published": "2026-09-11T09:03:51.000Z",
             "author": {
-                "name": "swarties",
-                "url": "https://github.com/swarties"
+                "name": "Alfonfdez",
+                "url": "https://github.com/Alfonfdez"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/554934?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, beautiful, static photo album generator</div>",
-            "url": "https://github.com/fankangsong/static-gallary-generator",
-            "title": "fankangsong/static-gallary-generator: Lightweight, beautiful, static photo album generator",
-            "date_modified": "2026-09-24T02:08:26.000Z",
-            "date_published": "2026-02-02T09:25:13.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/129896036?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.</div>",
+            "url": "https://github.com/opengeos/GeoLibre",
+            "title": "opengeos/GeoLibre: A lightweight, cloud-native GIS platform for visualizing, exploring, and analyzing geospatial data. It runs in the web browser, on the desktop, on mobile, and inside Jupyter notebooks.",
+            "date_modified": "2026-09-24T07:55:47.000Z",
+            "date_published": "2026-05-27T19:34:31.000Z",
             "author": {
-                "name": "fankangsong",
-                "url": "https://github.com/fankangsong"
+                "name": "opengeos",
+                "url": "https://github.com/opengeos"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/192685034?u=ea9c5af61c0591cc35725c498346d9afe6ec5525&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>零框架零依赖的个人博客系统 — 双击 index.html 即用，支持 Cloudflare Workers + D1 云端部署</div>",
-            "url": "https://github.com/kejiland/qingyu-blog",
-            "title": "kejiland/qingyu-blog: 零框架零依赖的个人博客系统 — 双击 index.html 即用，支持 Cloudflare Workers + D1 云端部署",
-            "date_modified": "2026-09-24T02:07:34.000Z",
-            "date_published": "2026-08-20T04:39:21.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/261002901?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>轻量极简漫画阅读客户端：支持 JMComic（18comic）浏览、搜索、离线缓存阅读，自动测速选择最快线路与图源，开源仅供学习交流。 A lightweight minimal manga/comic reader client for JMComic (18comic), offline reading, official APIs only.</div>",
+            "url": "https://github.com/gucheng910/jm-minimal",
+            "title": "gucheng910/jm-minimal: 轻量极简漫画阅读客户端：支持 JMComic（18comic）浏览、搜索、离线缓存阅读，自动测速选择最快线路与图源，开源仅供学习交流。 A lightweight minimal manga/comic reader client for JMComic (18comic), offline reading, official APIs only.",
+            "date_modified": "2026-09-24T07:54:03.000Z",
+            "date_published": "2026-09-05T04:23:52.000Z",
             "author": {
-                "name": "kejiland",
-                "url": "https://github.com/kejiland"
+                "name": "gucheng910",
+                "url": "https://github.com/gucheng910"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/24887399?u=3e52b53278ccafb9e6e7f68be272e76903a286fe&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight code agent</div>",
+            "url": "https://github.com/zhouronghua/code-agent",
+            "title": "zhouronghua/code-agent: A lightweight code agent",
+            "date_modified": "2026-09-24T07:53:51.000Z",
+            "date_published": "2026-04-24T23:52:45.000Z",
+            "author": {
+                "name": "zhouronghua",
+                "url": "https://github.com/zhouronghua"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91783175?u=3ebb09ccaae51d3782cb3cceca32ade8bcd4eef2&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>DSH 插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。 · DSH plugin: genuinely effortless in-window conversation rewind — never forking a new session; ships a lightweight workspace backup that restores files together with the rewind (full Claude Code /rewind semantics).</div>",
+            "url": "https://github.com/SiriLee/dsh-rewind",
+            "title": "SiriLee/dsh-rewind: DSH 插件：真正便捷无感的同窗口内对话回退，从不新建分支；自带轻量工作区备份，可一并还原文件（完整 Claude Code /rewind 语义）。 · DSH plugin: genuinely effortless in-window conversation rewind — never forking a new session; ships a lightweight workspace backup that restores files together with the rewind (full Claude Code /rewind semantics).",
+            "date_modified": "2026-09-24T07:53:06.000Z",
+            "date_published": "2026-08-17T04:42:48.000Z",
+            "author": {
+                "name": "SiriLee",
+                "url": "https://github.com/SiriLee"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/170841386?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>WarpDrive is the lightweight data library for ambitious web apps — universal, typed, reactive, and ready to scale.</div>",
+            "url": "https://github.com/warp-drive-data/warp-drive",
+            "title": "warp-drive-data/warp-drive: WarpDrive is the lightweight data library for ambitious web apps — universal, typed, reactive, and ready to scale.",
+            "date_modified": "2026-09-24T07:51:54.000Z",
+            "date_published": "2011-12-20T01:50:40.000Z",
+            "author": {
+                "name": "warp-drive-data",
+                "url": "https://github.com/warp-drive-data"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/26788419?u=67d95b951d193d6a22dc6477364c0ed265109593&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Zero-Trust PII &amp; secrets redaction MCP server for Cursor &amp; Claude. Lightweight, zero-dependency Presidio alternative for Node.js / TypeScript.</div>",
+            "url": "https://github.com/moxno/privacyscrubber-mcp",
+            "title": "moxno/privacyscrubber-mcp: Zero-Trust PII & secrets redaction MCP server for Cursor & Claude. Lightweight, zero-dependency Presidio alternative for Node.js / TypeScript.",
+            "date_modified": "2026-09-24T07:51:33.000Z",
+            "date_published": "2026-07-10T22:05:28.000Z",
+            "author": {
+                "name": "moxno",
+                "url": "https://github.com/moxno"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/252730242?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A modern TypeScript framework powered by Bun.</div>",
+            "url": "https://github.com/Bejibun-Framework/bejibun",
+            "title": "Bejibun-Framework/bejibun: A modern TypeScript framework powered by Bun.",
+            "date_modified": "2026-09-24T07:49:44.000Z",
+            "date_published": "2025-10-06T09:47:47.000Z",
+            "author": {
+                "name": "Bejibun-Framework",
+                "url": "https://github.com/Bejibun-Framework"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/67804911?u=1d4080290393bfc921b535597c23cba323d60c01&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Alter — a lightweight desktop AI companion with memory, file tools, and routines. Bring your own model (DeepSeek, Moonshot/Kimi, or any OpenAI-compatible endpoint).</div>",
+            "url": "https://github.com/iamejaaz/alter",
+            "title": "iamejaaz/alter: Alter — a lightweight desktop AI companion with memory, file tools, and routines. Bring your own model (DeepSeek, Moonshot/Kimi, or any OpenAI-compatible endpoint).",
+            "date_modified": "2026-09-24T07:48:05.000Z",
+            "date_published": "2026-08-25T16:03:44.000Z",
+            "author": {
+                "name": "iamejaaz",
+                "url": "https://github.com/iamejaaz"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/188654320?u=61ade5a395843fdbc5d70017995fdb442b977696&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, cache-aware break-even trigger for agent context compaction.</div>",
+            "url": "https://github.com/big-orange947/FoldPoint",
+            "title": "big-orange947/FoldPoint: A lightweight, cache-aware break-even trigger for agent context compaction.",
+            "date_modified": "2026-09-24T07:45:52.000Z",
+            "date_published": "2026-09-22T15:39:31.000Z",
+            "author": {
+                "name": "big-orange947",
+                "url": "https://github.com/big-orange947"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/261181058?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🤝 Open-source HubSpot alternative. A lightweight CRM for SaaS to manage contacts, companies, and deals with OpenClaw.</div>",
+            "url": "https://github.com/clawnify/OpenCRM",
+            "title": "clawnify/OpenCRM: 🤝 Open-source HubSpot alternative. A lightweight CRM for SaaS to manage contacts, companies, and deals with OpenClaw.",
+            "date_modified": "2026-09-24T07:45:23.000Z",
+            "date_published": "2026-02-25T14:53:14.000Z",
+            "author": {
+                "name": "clawnify",
+                "url": "https://github.com/clawnify"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/91594830?u=710db4995adc80bed41982cda9cf9aa50400a178&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Windows terminal that splits itself into an automatic grid (Tauri v2 + xterm.js)</div>",
+            "url": "https://github.com/seonggyujo/greenterm",
+            "title": "seonggyujo/greenterm: Lightweight Windows terminal that splits itself into an automatic grid (Tauri v2 + xterm.js)",
+            "date_modified": "2026-09-24T07:45:20.000Z",
+            "date_published": "2026-09-24T07:33:49.000Z",
+            "author": {
+                "name": "seonggyujo",
+                "url": "https://github.com/seonggyujo"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/131619569?u=d8e70907d9f69c4935781de6a78e07e5e3ec0823&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight, accessible React tooltips powered by Radix UI.</div>",
+            "url": "https://github.com/RentnerKev/RentnerTooltips",
+            "title": "RentnerKev/RentnerTooltips: Lightweight, accessible React tooltips powered by Radix UI.",
+            "date_modified": "2026-09-24T07:45:18.000Z",
+            "date_published": "2026-09-15T13:12:02.000Z",
+            "author": {
+                "name": "RentnerKev",
+                "url": "https://github.com/RentnerKev"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/40709702?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Claude Auto Code Review is a lightweight, simple GitHub Action that uses Claude Code to analyze and provide feedback on your code. This GitHub Action helps improve code quality by automatically reviewing pull requests, focusing on specified file extensions, and excluding specific paths.</div>",
+            "url": "https://github.com/iandis/claude-auto-code-review",
+            "title": "iandis/claude-auto-code-review: Claude Auto Code Review is a lightweight, simple GitHub Action that uses Claude Code to analyze and provide feedback on your code. This GitHub Action helps improve code quality by automatically reviewing pull requests, focusing on specified file extensions, and excluding specific paths.",
+            "date_modified": "2026-09-24T07:45:09.000Z",
+            "date_published": "2026-09-24T07:27:03.000Z",
+            "author": {
+                "name": "iandis",
+                "url": "https://github.com/iandis"
+            }
+        },
+        {
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/2197702?u=c5f226552f5771a14f0a235516d982ef9965700c&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, type-safe library implementing common functional programming abstractions</div>",
+            "url": "https://github.com/primalivet/gimme",
+            "title": "primalivet/gimme: A lightweight, type-safe library implementing common functional programming abstractions",
+            "date_modified": "2026-09-24T07:44:44.000Z",
+            "date_published": "2017-10-03T06:41:20.000Z",
+            "author": {
+                "name": "primalivet",
+                "url": "https://github.com/primalivet"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/105140029?u=5842dd9c543fb97a6e45f48579384e8c588f63b3&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight baileys built with Nodejs 22+ and Javascript</div>",
             "url": "https://github.com/HirooSy/baileys-lite",
             "title": "HirooSy/baileys-lite: Lightweight baileys built with Nodejs 22+ and Javascript",
-            "date_modified": "2026-09-24T02:07:14.000Z",
+            "date_modified": "2026-09-24T07:44:37.000Z",
             "date_published": "2026-09-22T02:48:01.000Z",
             "author": {
                 "name": "HirooSy",
@@ -50,179 +182,47 @@
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/139419055?u=ec2eb61fe3ab15a1d096ec899099c495467d65b0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight desktop app built with Tauri, React and shadcn/ui that scans any folder and shows which files and folders use the most storage.</div>",
-            "url": "https://github.com/brunorwanda4/folder-size-viewer",
-            "title": "brunorwanda4/folder-size-viewer: A lightweight desktop app built with Tauri, React and shadcn/ui that scans any folder and shows which files and folders use the most storage.",
-            "date_modified": "2026-09-24T02:06:44.000Z",
-            "date_published": "2026-09-23T23:28:37.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/180168153?u=d371a0dedfa851c3d87a27df7f624191963261e7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight Python bot that watches career sites (Greenhouse, Lever, Ashby, Workday, Phenom), filters roles by keyword and location, and sends new-job alerts to Discord.</div>",
+            "url": "https://github.com/sk7-dev/Job_Post_Bot",
+            "title": "sk7-dev/Job_Post_Bot: Lightweight Python bot that watches career sites (Greenhouse, Lever, Ashby, Workday, Phenom), filters roles by keyword and location, and sends new-job alerts to Discord.",
+            "date_modified": "2026-09-24T07:44:36.000Z",
+            "date_published": "2026-03-23T01:48:40.000Z",
             "author": {
-                "name": "brunorwanda4",
-                "url": "https://github.com/brunorwanda4"
+                "name": "sk7-dev",
+                "url": "https://github.com/sk7-dev"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/134572586?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Enterprise AI-coding-agent security: a lightweight endpoint agent governs Cursor, Claude Code, Codex, Windsurf, Gemini CLI, GitHub Copilot, QwenWork, Tongyi Lingma, CodeBuddy, WorkBuddy and more; scans Skill/MCP/code/dependency/secret risks; signed policy enforcement, zero-touch auto-enrollment, native macOS/Windows installers, RBAC console.</div>",
-            "url": "https://github.com/yjiod/aegis-ai-agent-security",
-            "title": "yjiod/aegis-ai-agent-security: Enterprise AI-coding-agent security: a lightweight endpoint agent governs Cursor, Claude Code, Codex, Windsurf, Gemini CLI, GitHub Copilot, QwenWork, Tongyi Lingma, CodeBuddy, WorkBuddy and more; scans Skill/MCP/code/dependency/secret risks; signed policy enforcement, zero-touch auto-enrollment, native macOS/Windows installers, RBAC console.",
-            "date_modified": "2026-09-24T02:05:14.000Z",
-            "date_published": "2026-09-06T04:08:25.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/18487436?u=b475c9986ba44966d5a9afb481e34a649290e679&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight textarea-based code editor: native undo/redo, fully custom syntax highlighting, VSCode-style completion, diagnostics, hover tooltips, and auto-sizing. Zero runtime dependencies; no CodeMirror, no Monaco.</div>",
+            "url": "https://github.com/citisen/litearea",
+            "title": "citisen/litearea: A lightweight textarea-based code editor: native undo/redo, fully custom syntax highlighting, VSCode-style completion, diagnostics, hover tooltips, and auto-sizing. Zero runtime dependencies; no CodeMirror, no Monaco.",
+            "date_modified": "2026-09-24T07:44:09.000Z",
+            "date_published": "2026-09-21T04:42:17.000Z",
             "author": {
-                "name": "yjiod",
-                "url": "https://github.com/yjiod"
+                "name": "citisen",
+                "url": "https://github.com/citisen"
             }
         },
         {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/135449518?u=6699687db5029a7ddf2570444919fb6518f00f0d&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight yet exquisite Hexo theme.</div>",
-            "url": "https://github.com/LeifWebber/hexo-theme-leaflet",
-            "title": "LeifWebber/hexo-theme-leaflet: A lightweight yet exquisite Hexo theme.",
-            "date_modified": "2026-09-24T02:03:09.000Z",
-            "date_published": "2024-12-06T08:01:12.000Z",
+            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/63644261?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight standalone PDF viewer for Windows — tabbed, annotatable, portable</div>",
+            "url": "https://github.com/nicholasHespe/Reamlet",
+            "title": "nicholasHespe/Reamlet: Lightweight standalone PDF viewer for Windows — tabbed, annotatable, portable",
+            "date_modified": "2026-09-24T07:43:21.000Z",
+            "date_published": "2026-03-20T22:30:07.000Z",
             "author": {
-                "name": "LeifWebber",
-                "url": "https://github.com/LeifWebber"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/9585126?u=dabbb0837831d7a4bdcec3c6800bf4f801071953&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, multi-purpose web file manager · Vue 3 + TypeScript + Go</div>",
-            "url": "https://github.com/canwdev/file-lite",
-            "title": "canwdev/file-lite: A lightweight, multi-purpose web file manager · Vue 3 + TypeScript + Go",
-            "date_modified": "2026-09-24T02:02:45.000Z",
-            "date_published": "2025-09-09T09:29:33.000Z",
-            "author": {
-                "name": "canwdev",
-                "url": "https://github.com/canwdev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/168002800?u=0e336727d7d4f499fe4ebab99d4f8cb252658963&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight DeepSeek Harness configuration sync — sync the recipe, not the 313 MB node_modules</div>",
-            "url": "https://github.com/Ibook000/dsh-config-sync",
-            "title": "Ibook000/dsh-config-sync: Lightweight DeepSeek Harness configuration sync — sync the recipe, not the 313 MB node_modules",
-            "date_modified": "2026-09-24T02:01:11.000Z",
-            "date_published": "2026-09-24T01:58:43.000Z",
-            "author": {
-                "name": "Ibook000",
-                "url": "https://github.com/Ibook000"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/111451392?u=422dd8427904e5b0acf520d9394994b624f513af&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Lightweight self-hosted Markdown file viewer with auth, dark mode, and folder watching</div>",
-            "url": "https://github.com/createdbynoah/md-file-viewer",
-            "title": "createdbynoah/md-file-viewer: Lightweight self-hosted Markdown file viewer with auth, dark mode, and folder watching",
-            "date_modified": "2026-09-24T02:00:22.000Z",
-            "date_published": "2026-02-20T18:36:13.000Z",
-            "author": {
-                "name": "createdbynoah",
-                "url": "https://github.com/createdbynoah"
+                "name": "nicholasHespe",
+                "url": "https://github.com/nicholasHespe"
             }
         },
         {
             "content_html": "<img src=\"https://avatars.githubusercontent.com/u/74608802?u=67576e83a020769270933d38ea6ab1f6cd10c6d7&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Fast-paced local &amp; online 4-player party mini-games in a single lightweight app.</div>",
             "url": "https://github.com/kemaladlig/brutal-party",
             "title": "kemaladlig/brutal-party: Fast-paced local & online 4-player party mini-games in a single lightweight app.",
-            "date_modified": "2026-09-24T01:59:18.000Z",
+            "date_modified": "2026-09-24T07:43:14.000Z",
             "date_published": "2026-09-17T01:41:58.000Z",
             "author": {
                 "name": "kemaladlig",
                 "url": "https://github.com/kemaladlig"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/68820496?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Sendlet is a lightweight, self-hosted mailing list tool. Use it to collect email subscribers from a public form and send broadcast emails. It features double opt-in confirmation, easy unsubscribe management, and a simple dashboard</div>",
-            "url": "https://github.com/nickkk56/SendLet",
-            "title": "nickkk56/SendLet: Sendlet is a lightweight, self-hosted mailing list tool. Use it to collect email subscribers from a public form and send broadcast emails. It features double opt-in confirmation, easy unsubscribe management, and a simple dashboard",
-            "date_modified": "2026-09-24T01:58:45.000Z",
-            "date_published": "2026-09-24T00:57:11.000Z",
-            "author": {
-                "name": "nickkk56",
-                "url": "https://github.com/nickkk56"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/746474?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight persistent-memory companion for OpenCode &amp; Claude</div>",
-            "url": "https://github.com/kunickiaj/codemem",
-            "title": "kunickiaj/codemem: A lightweight persistent-memory companion for OpenCode & Claude",
-            "date_modified": "2026-09-24T01:58:30.000Z",
-            "date_published": "2026-01-13T21:51:11.000Z",
-            "author": {
-                "name": "kunickiaj",
-                "url": "https://github.com/kunickiaj"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/20968051?u=72ff5d02e61c4adaefda1241b3e82f126678b157&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>This site uses the amazing Astro.build  project. I added **Google Docs**  integration to serve as a lightweight, serverless backend to process and store basic data. Using a Google Doc allows the static site to securely hold sanitized inputs and track records without requiring a traditional database.</div>",
-            "url": "https://github.com/TJAdryan/astro_blog",
-            "title": "TJAdryan/astro_blog: This site uses the amazing Astro.build  project. I added **Google Docs**  integration to serve as a lightweight, serverless backend to process and store basic data. Using a Google Doc allows the static site to securely hold sanitized inputs and track records without requiring a traditional database.",
-            "date_modified": "2026-09-24T01:56:36.000Z",
-            "date_published": "2025-08-18T01:35:42.000Z",
-            "author": {
-                "name": "TJAdryan",
-                "url": "https://github.com/TJAdryan"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/1545121?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>a lightweight agent coordination system</div>",
-            "url": "https://github.com/karansag/agent-swarm",
-            "title": "karansag/agent-swarm: a lightweight agent coordination system",
-            "date_modified": "2026-09-24T01:56:35.000Z",
-            "date_published": "2026-05-27T16:18:23.000Z",
-            "author": {
-                "name": "karansag",
-                "url": "https://github.com/karansag"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/4329905?u=fb426fdfbda86228fa77d5e08a82c44490872aa0&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, type-safe JS/TS DOM framework with reactive bindings and explicit updates. Plain mutable state, real DOM, no proxies, signals, or virtual DOM.</div>",
-            "url": "https://github.com/dan2dev/nuclo",
-            "title": "dan2dev/nuclo: A lightweight, type-safe JS/TS DOM framework with reactive bindings and explicit updates. Plain mutable state, real DOM, no proxies, signals, or virtual DOM.",
-            "date_modified": "2026-09-24T01:56:21.000Z",
-            "date_published": "2025-10-08T21:46:45.000Z",
-            "author": {
-                "name": "dan2dev",
-                "url": "https://github.com/dan2dev"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/7692340?u=7ad538a3487041db068cb3a5efcaee870f753a3b&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>Peek is a lightweight WebRTC-based screen sharing app built with vanilla JS, Node.js, and Tailwind CSS. It lets users share their screen in real-time over a unique session link, with optional stream quality controls.</div>",
-            "url": "https://github.com/theveug/peek",
-            "title": "theveug/peek: Peek is a lightweight WebRTC-based screen sharing app built with vanilla JS, Node.js, and Tailwind CSS. It lets users share their screen in real-time over a unique session link, with optional stream quality controls.",
-            "date_modified": "2026-09-24T01:51:18.000Z",
-            "date_published": "2025-04-17T09:47:58.000Z",
-            "author": {
-                "name": "theveug",
-                "url": "https://github.com/theveug"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/87978245?u=0d49293e8139d97fe3c8679f93e1c3a57a64d265&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A lightweight, privacy-first front-end execution sandbox built in React for offline   development, educational platforms, and technical documentation.</div>",
-            "url": "https://github.com/Favourz1/react-embedded-sandbox",
-            "title": "Favourz1/react-embedded-sandbox: A lightweight, privacy-first front-end execution sandbox built in React for offline   development, educational platforms, and technical documentation.",
-            "date_modified": "2026-09-24T01:50:55.000Z",
-            "date_published": "2023-02-03T17:26:40.000Z",
-            "author": {
-                "name": "Favourz1",
-                "url": "https://github.com/Favourz1"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/154730935?u=222df42db66f920c8e75ac864825163146703bec&v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>A sophisticated cross-browser extension for bulk Google Classroom downloads, backed by a high-performance distributed analytics pipeline using Cloudflare Durable Objects, Go, and SQLite.</div>",
-            "url": "https://github.com/adhamhaithameid/Classroom-Quick-Downloader",
-            "title": "adhamhaithameid/Classroom-Quick-Downloader: A sophisticated cross-browser extension for bulk Google Classroom downloads, backed by a high-performance distributed analytics pipeline using Cloudflare Durable Objects, Go, and SQLite.",
-            "date_modified": "2026-09-24T01:49:24.000Z",
-            "date_published": "2025-11-08T12:53:13.000Z",
-            "author": {
-                "name": "adhamhaithameid",
-                "url": "https://github.com/adhamhaithameid"
-            }
-        },
-        {
-            "content_html": "<img src=\"https://avatars.githubusercontent.com/u/114664568?v=4\" width=\"64\" height=\"64\" alt=\"\"/><br/><div>🗺️ Modern &amp; lightweight TypeScript library for creating interactive vector maps.</div>",
-            "url": "https://github.com/stacksjs/ts-maps",
-            "title": "stacksjs/ts-maps: 🗺️ Modern & lightweight TypeScript library for creating interactive vector maps.",
-            "date_modified": "2026-09-24T01:49:17.000Z",
-            "date_published": "2025-03-07T17:47:50.000Z",
-            "author": {
-                "name": "stacksjs",
-                "url": "https://github.com/stacksjs"
             }
         }
     ]
